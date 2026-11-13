@@ -17,7 +17,7 @@ statement: formalized
 > - [Alexeev] Boris Alexeev's sorry-free Lean 4 formalisation of the lower bound,
 >   [plby/lean-proofs](https://github.com/plby/lean-proofs/blob/8822f7ddef30fadbd92e1c6ab4ed897af356af5e/src/latest/ErdosProblems/Erdos882.lean).
 
-*Quoted from [FormalConjectures/ErdosProblems/882.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/882.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/882.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/882.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/882](https://www.erdosproblems.com/882).
 
@@ -45,7 +45,7 @@ theorem erdos_882 :
       Filter.atTop (nhds 1)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 64](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/882.lean#L64).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 64](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/882.lean#L64).
 
 ## `Erdos882.erdos_882.variants.lower_bound`
 
@@ -67,7 +67,7 @@ Solved: stated here; a Lean proof is at [https://github.com/ToshiDad/erdos-882/b
 theorem erdos_882.variants.lower_bound (m : ℕ) : IsSubsetSumAntichain (A m)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/882.lean#L114).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/882.lean#L114).
 
 ## `Erdos882.erdos_882.variants.lower_bound_explicit`
 
@@ -90,11 +90,11 @@ theorem erdos_882.variants.lower_bound_explicit (n : ℕ) (hn : 0 < n) :
     Real.logb 2 n - 1 < (maxAntichainCard n : ℝ)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/882.lean#L133).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/882.lean#L133).
 
 ## `Erdos882.erdos_882.variants.sandor`
 
-Solved: stated here without proof.
+Solved: stated here; a proof in another system is at [https://github.com/karlesmarin/formalizations/blob/1aa7ad1ccadb6c7ba2378e3ee595fdd798f0f1b4/Isabelle/AFP/Sandor_Subset_Sum_Antichain/Sandor_Antichain.thy#L250](https://github.com/karlesmarin/formalizations/blob/1aa7ad1ccadb6c7ba2378e3ee595fdd798f0f1b4/Isabelle/AFP/Sandor_Subset_Sum_Antichain/Sandor_Antichain.thy#L250).
 
 > Sándor's construction (reported without reference in [Er98]) is claimed to achieve
 > $\lvert A\rvert = (1-o(1))\log_2 n$ with $A = \{2^i + m 2^m : 0 \leq i < m\}$ and
@@ -105,7 +105,7 @@ theorem erdos_882.variants.sandor (m : ℕ) (hm : 1 ≤ m) :
     IsSubsetSumAntichain ((Finset.range m).image (fun i => 2 ^ i + m * 2 ^ m))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/882.lean#L143).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 144](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/882.lean#L144).
 
 ## `Erdos882.erdos_882.variants.greedy`
 
@@ -118,7 +118,7 @@ theorem erdos_882.variants.greedy :
     ∀ᶠ n : ℕ in Filter.atTop, (Real.logb 3 n - 1 : ℝ) ≤ (maxAntichainCard n : ℝ)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/882.lean#L151).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/882.lean, line 152](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/882.lean#L152).
 
 ## Depends on
 
@@ -126,5 +126,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/882.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/882.lean)
+- [FormalConjectures/ErdosProblems/882.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/882.lean)
 - [erdosproblems.com/882](https://www.erdosproblems.com/882)

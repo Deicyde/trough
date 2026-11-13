@@ -36,7 +36,7 @@ statement: formalized
 > * [CP2019] V. Cossart and O. Piltant, [Resolution of singularities of arithmetical
 >   threefolds](https://doi.org/10.1016/j.jalgebra.2019.02.017), J. Algebra 529 (2019), 268--535.
 
-*Quoted from [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open, 2 solved and 1 textbook result. It also has 1 test statement and 1 API statement, counted here but not shown.
 
@@ -59,7 +59,7 @@ theorem resolution_of_singularities (k : Type u) [Field k] [PerfectField k] (p :
     Scheme.HasResolution sX
 ```
 
-Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L105).
+Category `research open`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L105).
 
 ## `AlgebraicGeometry.resolution_of_singularities_of_charZero`
 
@@ -76,7 +76,7 @@ theorem resolution_of_singularities_of_charZero (k : Type u) [Field k] [CharZero
     Scheme.HasResolution sX
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L117).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L117).
 
 ## `AlgebraicGeometry.resolution_of_singularities_of_topologicalKrullDim_le_three`
 
@@ -99,7 +99,7 @@ theorem resolution_of_singularities_of_topologicalKrullDim_le_three (k : Type u)
     Scheme.HasResolution sX
 ```
 
-Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L134).
+Category `research solved`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L134).
 
 ## `AlgebraicGeometry.exists_not_hasResolution_of_not_perfectField`
 
@@ -126,7 +126,7 @@ theorem exists_not_hasResolution_of_not_perfectField (k : Type u) [Field k]
       ¬ Scheme.HasResolution sX
 ```
 
-Category `textbook`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 156](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L156).
+Category `textbook`; AMS [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean, line 156](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean#L156).
 
 ## Depends on
 
@@ -134,5 +134,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean)
+- [FormalConjectures/Wikipedia/ResolutionOfSingularities.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ResolutionOfSingularities.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Resolution_of_singularities)

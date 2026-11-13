@@ -10,7 +10,7 @@ statement: formalized
 > Authors: P. Erdős, S. Fajtlowicz and W. Staton,
 > Published in Discrete Mathematics 92 (1991) 85–88.
 
-*Quoted from [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 5 solved. A definition with a category attribute is not counted among them. It also has 8 API statements, counted here but not shown.
 
@@ -28,7 +28,7 @@ theorem theorem1 (G : SimpleGraph α) (h_conn: G.Connected) [DecidableRel G.Adj]
     G.IsBipartite ∧ G.minDegree = 1 ∧ HasCompactdegreeSequence G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 254](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L254).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 254](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L254).
 
 ## `SimpleGraph.theorem2`
 
@@ -44,7 +44,7 @@ theorem theorem2 (G : SimpleGraph α) [DecidableRel G.Adj] (h_conn: G.Connected)
       H.CliqueFree 3 ∧ degreeSequenceMultiplicity H = 3
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 287](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L287).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 287](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L287).
 
 ## `SimpleGraph.F`
 
@@ -57,7 +57,7 @@ A definition (`def`), not a statement; its category attribute says research solv
 noncomputable def F (n : ℕ) : ℕ
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 296](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L296).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 296](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L296).
 
 ## `SimpleGraph.F_three`
 
@@ -69,7 +69,7 @@ Solved: stated here; a Lean proof is at [https://github.com/anatoliiohorodnyk/le
 theorem F_three : F 3 = 7
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 303](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L303).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 303](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L303).
 
 ## `SimpleGraph.F_four_le`
 
@@ -81,7 +81,7 @@ Solved: stated here; a Lean proof is at [https://github.com/anatoliiohorodnyk/le
 theorem F_four_le : F 4 ≤ 19
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 309](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L309).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 309](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L309).
 
 ## `SimpleGraph.F_four_le_fifteen`
 
@@ -96,7 +96,7 @@ Solved: stated here; a Lean proof is at [https://github.com/anatoliiohorodnyk/le
 theorem F_four_le_fifteen : F 4 ≤ 15
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 318](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L318).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean, line 318](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean#L318).
 
 ## Depends on
 
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean)
+- [FormalConjectures/Paper/DegreeSequencesTriangleFree.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DegreeSequencesTriangleFree.lean)

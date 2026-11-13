@@ -92,7 +92,7 @@ statement: formalized
 >   *Quantum Designs: Foundations of a Noncommutative Design Theory*,
 >   PhD thesis, University of Vienna (1999).
 
-*Quoted from [FormalConjectures/OpenQuantumProblems/23.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OpenQuantumProblems/23.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 12 research or textbook statements: 12 open. It also has 17 test statements, counted here but not shown.
 
@@ -106,7 +106,7 @@ Open: stated without proof.
 theorem hasSICPOVM_56 : HasSICPOVM 56
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 320](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L320).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 320](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L320).
 
 ## `OpenQuantumProblem23.hasSICPOVM_58`
 
@@ -118,7 +118,7 @@ Open: stated without proof.
 theorem hasSICPOVM_58 : HasSICPOVM 58
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 324](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L324).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 324](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L324).
 
 ## `OpenQuantumProblem23.hasSICPOVM_59`
 
@@ -130,7 +130,7 @@ Open: stated without proof.
 theorem hasSICPOVM_59 : HasSICPOVM 59
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 328](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L328).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 328](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L328).
 
 ## `OpenQuantumProblem23.hasSICPOVM_60`
 
@@ -142,7 +142,7 @@ Open: stated without proof.
 theorem hasSICPOVM_60 : HasSICPOVM 60
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 332](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L332).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 332](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L332).
 
 ## `OpenQuantumProblem23.hasSICPOVM_64`
 
@@ -154,7 +154,7 @@ Open: stated without proof.
 theorem hasSICPOVM_64 : HasSICPOVM 64
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 336](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L336).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 336](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L336).
 
 ## `OpenQuantumProblem23.hasSICPOVM_68`
 
@@ -166,7 +166,7 @@ Open: stated without proof.
 theorem hasSICPOVM_68 : HasSICPOVM 68
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 340](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L340).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 340](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L340).
 
 ## `OpenQuantumProblem23.hasSICPOVM_69`
 
@@ -178,7 +178,7 @@ Open: stated without proof.
 theorem hasSICPOVM_69 : HasSICPOVM 69
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 344](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L344).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 344](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L344).
 
 ## `OpenQuantumProblem23.hasSICPOVM_70`
 
@@ -190,7 +190,7 @@ Open: stated without proof.
 theorem hasSICPOVM_70 : HasSICPOVM 70
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 348](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L348).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 348](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L348).
 
 ## `OpenQuantumProblem23.hasSICPOVM_71`
 
@@ -202,7 +202,7 @@ Open: stated without proof.
 theorem hasSICPOVM_71 : HasSICPOVM 71
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 352](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L352).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 352](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L352).
 
 ## `OpenQuantumProblem23.hasSICPOVM_72`
 
@@ -214,7 +214,7 @@ Open: stated without proof.
 theorem hasSICPOVM_72 : HasSICPOVM 72
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 356](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L356).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 356](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L356).
 
 ## `OpenQuantumProblem23.hasSICPOVM_75`
 
@@ -226,7 +226,7 @@ Open: stated without proof.
 theorem hasSICPOVM_75 : HasSICPOVM 75
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 360](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L360).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 360](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L360).
 
 ## `OpenQuantumProblem23.sicPOVMs`
 
@@ -239,7 +239,7 @@ theorem sicPOVMs :
     ∀ d : ℕ, 1 ≤ d → HasSICPOVM d
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 366](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean#L366).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [47 Operator theory](../by-subject/part-02/47-operator-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md). Declared in [FormalConjectures/OpenQuantumProblems/23.lean, line 366](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean#L366).
 
 ## Depends on
 
@@ -247,5 +247,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OpenQuantumProblems/23.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/23.lean)
+- [FormalConjectures/OpenQuantumProblems/23.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/23.lean)
 - [https://oqp.iqoqi.oeaw.ac.at/sic-povms-and-zauners-conjecture](https://oqp.iqoqi.oeaw.ac.at/sic-povms-and-zauners-conjecture)

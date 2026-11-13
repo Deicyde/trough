@@ -34,7 +34,7 @@ statement: formalized
 > - [CS26] Colbrook, M. J. and Stepaniants, G., *A computer-assisted counterexample to the planar
 >   Pompeiu and Schiffer conjectures*, [arXiv:2608.01579](https://arxiv.org/abs/2608.01579) (2026).
 
-*Quoted from [FormalConjectures/Wikipedia/PompeiuProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/PompeiuProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/PompeiuProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PompeiuProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 1 test statement, counted here but not shown.
 
@@ -53,7 +53,7 @@ theorem pompeiu_conjecture :
       IsAdmissibleDomain Ω → (¬ HasPompeiuProperty Ω ↔ IsBall Ω)
 ```
 
-Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/PompeiuProblem.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/PompeiuProblem.lean#L109).
+Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/PompeiuProblem.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PompeiuProblem.lean#L109).
 
 ## `PompeiuProblem.ball_not_hasPompeiuProperty`
 
@@ -70,7 +70,7 @@ theorem ball_not_hasPompeiuProperty (Ω : Set (EuclideanSpace ℝ (Fin (N + 1)))
     ¬ HasPompeiuProperty Ω
 ```
 
-Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/PompeiuProblem.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/PompeiuProblem.lean#L121).
+Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/PompeiuProblem.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PompeiuProblem.lean#L121).
 
 ## `PompeiuProblem.not_hasPompeiuProperty_imp_ball`
 
@@ -85,7 +85,7 @@ theorem not_hasPompeiuProperty_imp_ball :
       IsAdmissibleDomain Ω → ¬ HasPompeiuProperty Ω → IsBall Ω
 ```
 
-Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/PompeiuProblem.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/PompeiuProblem.lean#L134).
+Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md). Declared in [FormalConjectures/Wikipedia/PompeiuProblem.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PompeiuProblem.lean#L134).
 
 ## Depends on
 
@@ -93,5 +93,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/PompeiuProblem.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/PompeiuProblem.lean)
+- [FormalConjectures/Wikipedia/PompeiuProblem.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/PompeiuProblem.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Pompeiu_problem)

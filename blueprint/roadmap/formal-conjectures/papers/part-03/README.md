@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Simple zeros of the Riemann… to Zagier's Conjecture on Multiple…
+# Equivalents to the Riemann… to Zagier's Conjecture on Multiple…
 
+- [Equivalents to the Riemann Hypothesis](equivalents-to-the-riemann-hypothesis.md)
+- [Moments of the Riemann zeta function on the critical line](moments-of-the-riemann-zeta-function-on-the-crit.md)
 - [Simple zeros of the Riemann zeta function on the critical line](simple-zeros-of-the-riemann-zeta-function-on-the.md)
 - [Ringel's Conjecture](ringels-conjecture.md)
 - [Is Every Convex Polyhedron Rupert?](is-every-convex-polyhedron-rupert.md)

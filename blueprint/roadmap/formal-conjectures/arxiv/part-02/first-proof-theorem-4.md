@@ -11,7 +11,7 @@ statement: formalized
 > **First Proof**
 > by *Mohammed Abouzaid, Andrew J. Blumberg, Martin Hairer, Joe Kileel, Tamara G. Kolda, Paul D. Nelson, Daniel Spielman, Nikhil Srivastava, Rachel Ward, Shmuel Weinberger, Lauren Williams*
 
-*Quoted from [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 3 test statements, counted here but not shown.
 
@@ -30,7 +30,7 @@ Solved: stated here; a Lean proof is at [https://github.com/frenzymath/Archon-Fi
 theorem four : ∀ (p q : ℝ[X]) (n : ℕ), FourProp p q n
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean, line 158](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean#L158).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean, line 158](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean#L158).
 
 ## `Arxiv.«2602.05192».four_2`
 
@@ -45,7 +45,7 @@ Solved: stated here without proof.
 theorem four_2 : ∀ (p q : ℝ[X]), FourProp p q 2
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean, line 167](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean#L167).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean, line 167](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean#L167).
 
 ## `Arxiv.«2602.05192».four_3`
 
@@ -60,7 +60,7 @@ Solved: stated here without proof.
 theorem four_3 : ∀ (p q : ℝ[X]), FourProp p q 3
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean, line 176](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean#L176).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean, line 176](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean#L176).
 
 ## Depends on
 
@@ -68,5 +68,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean)
+- [FormalConjectures/Arxiv/2602.05192/FirstProof4.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2602.05192/FirstProof4.lean)
 - [arxiv/2602.05192v2](https://arxiv.org/abs/2602.05192v2)

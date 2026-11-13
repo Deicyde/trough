@@ -16,7 +16,7 @@ statement: formalized
 >   results of [Ono26], MIT licensed. Its `P`, `A`, `B` and `x` are the definitions used
 >   here.
 
-*Quoted from [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 1 open, 3 solved and 2 textbook results. It also has 3 test statements, counted here but not shown.
 
@@ -35,7 +35,7 @@ theorem tan_arctan_sum_not_integer :
     ∀ n : ℕ, 5 ≤ n → ¬ IsIntegerValue n
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L67).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L67).
 
 ## `Arxiv.«2607.05739».x_succ`
 
@@ -49,7 +49,7 @@ theorem x_succ (n : ℕ) (hn : 1 ≤ n) :
     x (n + 1) = (x n + (n + 1)) / (1 - (n + 1) * x n)
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L74).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L74).
 
 ## `Arxiv.«2607.05739».x_eq_tan_sum_arctan`
 
@@ -62,7 +62,7 @@ theorem x_eq_tan_sum_arctan (n : ℕ) (hn : 1 ≤ n) :
     (x n : ℝ) = Real.tan (∑ k ∈ Finset.Icc 1 n, Real.arctan k)
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L80).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L80).
 
 ## `Arxiv.«2607.05739».kernel_dvd_of_eq_intCast`
 
@@ -78,7 +78,7 @@ theorem kernel_dvd_of_eq_intCast {n : ℕ} (hn : 1 ≤ n) (hA : A n ≠ 0) {m : 
       (1 < kernel n → Real.sqrt ((kernel n : ℝ) - 1) ≤ |(m : ℝ)|)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L106).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L106).
 
 ## `Arxiv.«2607.05739».exists_near_half_pi`
 
@@ -91,7 +91,7 @@ theorem exists_near_half_pi {n : ℕ} (hn : n ∈ exceptional) :
     ∃ j : ℤ, |angleSum n - (j : ℝ) * (Real.pi / 2)| < 2 / (n : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L116).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L116).
 
 ## `Arxiv.«2607.05739».exceptional_ncard_le`
 
@@ -105,7 +105,7 @@ theorem exceptional_ncard_le : ∃ (C : ℝ) (N₀ : ℕ), 0 < C ∧ ∀ N : ℕ
     ((exceptional ∩ Set.Icc 1 N).ncard : ℝ) ≤ C * Real.log N
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L125).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean#L125).
 
 ## Depends on
 
@@ -113,5 +113,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean)
+- [FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05739/TanArctanSum.lean)
 - [arxiv/2607.05739](https://arxiv.org/abs/2607.05739)

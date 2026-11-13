@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# $a(n) = [x^{2n}] \left(\frac{1… to Conjectures associated with…
+# $a(n) = 3a(n-1) + a(n-2) -… to Conjectures associated with…
 
+- [$a(n) = 3a(n-1) + a(n-2) - 3a(n-3)$](../../../../../oeis/part-06/a-n-3a-n-1-a-n-2-3a-n-3.md)
+- [Smallest power with base>1 and exponent $n$ without digit 0](../../../../../oeis/part-06/smallest-power-with-base-1-and-exponent-n-withou.md)
 - [$a(n) = \[x^{2n}\] \left(\frac{1 + x}{1 - x}\right)^n$](../../../../../oeis/part-06/a-n-x-2n-left-frac-1-x-1-x-right-n.md)
 - [Number of zeros in ternary representation of $2^n$](../../../../../oeis/part-06/number-of-zeros-in-ternary-representation-of-2-n.md)
 - [Array read by upward antidiagonals](../../../../../oeis/part-06/array-read-by-upward-antidiagonals.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Numerator of $\sum_{k=1}^n 2^k/k$.](../../../../../oeis/part-07/numerator-of-sum-k-1-n-2-k-k.md)
 - [Numerator of $\binom{6n-2}{2n} / \left(2 \binom{4n-1}{2n}\right)$](../../../../../oeis/part-07/numerator-of-binom-6n-2-2n-left-2-binom-4n-1-2n.md)
 - [Conjectures associated with A109227](../../../../../oeis/part-07/conjectures-associated-with-a109227.md)
-- [Conjectures associated with A109671](../../../../../oeis/part-07/conjectures-associated-with-a109671.md)
-- [Conjectures associated with A109845](../../../../../oeis/part-07/conjectures-associated-with-a109845.md)

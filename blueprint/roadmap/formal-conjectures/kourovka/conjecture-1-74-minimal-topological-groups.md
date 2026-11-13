@@ -25,7 +25,7 @@ statement: formalized
 >   non-topologizable groups*, Topology Appl. 160 (2013), 2104–2120,
 >   [arXiv:1210.7895](https://arxiv.org/abs/1210.7895), Theorem 1.4.
 
-*Quoted from [FormalConjectures/Kourovka/1_74.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/1_74.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Kourovka/1_74.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/1_74.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved.
 
@@ -43,7 +43,7 @@ theorem kourovka_1_74 :
         kourovka_1_74.answer G
 ```
 
-Category `research open`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md), [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Kourovka/1_74.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/1_74.lean#L61).
+Category `research open`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md), [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Kourovka/1_74.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/1_74.lean#L61).
 
 ## `Kourovka.«1.74».kourovka_1_74.variants.tarski_monster`
 
@@ -62,7 +62,7 @@ theorem kourovka_1_74.variants.tarski_monster :
       ¬ DiscreteTopology G
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md), [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Kourovka/1_74.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/1_74.lean#L83).
+Category `research solved`; AMS [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md), [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md). Declared in [FormalConjectures/Kourovka/1_74.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/1_74.lean#L83).
 
 ## Depends on
 
@@ -70,5 +70,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Kourovka/1_74.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/1_74.lean)
+- [FormalConjectures/Kourovka/1_74.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/1_74.lean)
 - [The Kourovka Notebook](https://arxiv.org/abs/1401.0300v40)

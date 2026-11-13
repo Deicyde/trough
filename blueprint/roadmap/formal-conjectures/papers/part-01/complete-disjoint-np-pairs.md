@@ -20,7 +20,7 @@ statement: formalized
 >   in the finite domain." *J. Symbolic Logic* 87, pp. 912--937.
 >   [arXiv:1904.01362](https://arxiv.org/abs/1904.01362)
 
-*Quoted from [FormalConjectures/Paper/DisjointNPPairs.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DisjointNPPairs.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/DisjointNPPairs.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DisjointNPPairs.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open, 2 solved and 1 textbook result. It also has 4 API statements, counted here but not shown.
 
@@ -40,7 +40,7 @@ Open: stated without proof.
 theorem no_complete_disjoint_NP_pair : ¬∃ A B : DecisionProblem, IsCompleteNPPair A B
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 113](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DisjointNPPairs.lean#L113).
+Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 113](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DisjointNPPairs.lean#L113).
 
 ## `DisjointNPPairs.no_complete_disjoint_coNP_pair`
 
@@ -56,7 +56,7 @@ Open: stated without proof.
 theorem no_complete_disjoint_coNP_pair : ¬∃ A B : DecisionProblem, IsCompleteCoNPPair A B
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DisjointNPPairs.lean#L124).
+Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DisjointNPPairs.lean#L124).
 
 ## `DisjointNPPairs.no_complete_disjoint_NP_pair.variants.exists_of_NP_eq_coNP`
 
@@ -72,7 +72,7 @@ theorem no_complete_disjoint_NP_pair.variants.exists_of_NP_eq_coNP (h : NP = coN
     ∃ A B : DecisionProblem, IsCompleteNPPair A B
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DisjointNPPairs.lean#L134).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DisjointNPPairs.lean#L134).
 
 ## `DisjointNPPairs.no_complete_disjoint_NP_pair.variants.NP_ne_coNP`
 
@@ -85,7 +85,7 @@ theorem no_complete_disjoint_NP_pair.variants.NP_ne_coNP
     (h : ¬∃ A B : DecisionProblem, IsCompleteNPPair A B) : NP ≠ coNP
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 142](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DisjointNPPairs.lean#L142).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 142](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DisjointNPPairs.lean#L142).
 
 ## `DisjointNPPairs.no_complete_disjoint_NP_pair.variants.pSeparable_of_P_eq_NP`
 
@@ -99,7 +99,7 @@ theorem no_complete_disjoint_NP_pair.variants.pSeparable_of_P_eq_NP (h : P = NP)
     {A B : DecisionProblem} (hAB : IsDisjointNPPair A B) : IsPSeparable A B
 ```
 
-Category `textbook`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DisjointNPPairs.lean#L151).
+Category `textbook`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/DisjointNPPairs.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DisjointNPPairs.lean#L151).
 
 ## Depends on
 
@@ -107,5 +107,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/DisjointNPPairs.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/DisjointNPPairs.lean)
+- [FormalConjectures/Paper/DisjointNPPairs.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/DisjointNPPairs.lean)
 - [arXiv:1601.01487](https://arxiv.org/abs/1601.01487)

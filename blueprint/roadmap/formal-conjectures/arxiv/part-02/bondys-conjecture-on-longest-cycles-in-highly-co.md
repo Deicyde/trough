@@ -19,7 +19,7 @@ statement: formalized
 > The case `k = 1` is Dirac's theorem and the case `k = 2` is the theorem of Nash-Williams. The
 > case `k = 3` is proved. The cases `k ≥ 4` are open.
 
-*Quoted from [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 1 open and 5 solved.
 
@@ -46,7 +46,7 @@ theorem bondy_conjecture :
         P.support.length + 1 ≤ k
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L60).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L60).
 
 ## `Arxiv.«2606.03696».bondy_conjecture.variants.one`
 
@@ -63,7 +63,7 @@ theorem bondy_conjecture.variants.one {G : SimpleGraph V} [DecidableRel G.Adj]
     P.support.length + 1 ≤ 1
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L74).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L74).
 
 ## `Arxiv.«2606.03696».bondy_conjecture.variants.two`
 
@@ -79,7 +79,7 @@ theorem bondy_conjecture.variants.two {G : SimpleGraph V} [DecidableRel G.Adj]
     P.support.length + 1 ≤ 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L85).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L85).
 
 ## `Arxiv.«2606.03696».bondy_conjecture.variants.three`
 
@@ -95,7 +95,7 @@ theorem bondy_conjecture.variants.three {G : SimpleGraph V} [DecidableRel G.Adj]
     P.support.length + 1 ≤ 3
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L96).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L96).
 
 ## `Arxiv.«2606.03696».bondy_conjecture.variants.large_explicit`
 
@@ -116,7 +116,7 @@ theorem bondy_conjecture.variants.large_explicit :
         P.support.length + 1 ≤ k
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L109).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L109).
 
 ## `Arxiv.«2606.03696».bondy_conjecture.variants.large`
 
@@ -135,7 +135,7 @@ theorem bondy_conjecture.variants.large :
         P.support.length + 1 ≤ k
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L124).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean#L124).
 
 ## Depends on
 
@@ -143,5 +143,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean)
+- [FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2606.03696/BondyLongestCycles.lean)
 - [arxiv/2606.03696](https://arxiv.org/abs/2606.03696)

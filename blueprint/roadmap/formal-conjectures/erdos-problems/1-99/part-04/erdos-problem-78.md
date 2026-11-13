@@ -28,7 +28,7 @@ statement: formalized
 > - [Va99] Various, *Some of Paul's favorite problems*. Booklet produced for the conference "Paul
 >   Erdős and his mathematics", Budapest, July 1999 (1999).
 
-*Quoted from [FormalConjectures/ErdosProblems/78.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/78.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/78](https://www.erdosproblems.com/78).
 
@@ -57,7 +57,7 @@ theorem erdos_78 :
       ∀ᶠ n in atTop, NoHomogeneousSet (explicitGraph adj n) ⌈c * log n⌉₊
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean#L96).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean#L96).
 
 ## `Erdos78.erdos_78.variants.nonconstructive`
 
@@ -71,7 +71,7 @@ theorem erdos_78.variants.nonconstructive :
     ∃ C > (1 : ℝ), ∀ᶠ k in atTop, C ^ k < (SimpleGraph.diagonalRamsey k : ℝ)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean#L106).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean#L106).
 
 ## `Erdos78.erdos_78.variants.little_o_sqrt`
 
@@ -88,7 +88,7 @@ theorem erdos_78.variants.little_o_sqrt :
         ∀ᶠ n in atTop, NoHomogeneousSet (explicitGraph adj n) ⌈f n⌉₊
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean#L116).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean#L116).
 
 ## `Erdos78.erdos_78.variants.cohen`
 
@@ -104,7 +104,7 @@ theorem erdos_78.variants.cohen :
         NoHomogeneousSet (explicitGraph adj n) ⌈(2 : ℝ) ^ (log (log n)) ^ C⌉₊
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 127](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean#L127).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 127](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean#L127).
 
 ## `Erdos78.erdos_78.variants.li`
 
@@ -119,7 +119,7 @@ theorem erdos_78.variants.li :
       ∀ᶠ n in atTop, NoHomogeneousSet (explicitGraph adj n) ⌈(log n) ^ C⌉₊
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 138](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean#L138).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 138](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean#L138).
 
 ## `Erdos78.erdos_78.variants.strongly_explicit`
 
@@ -135,7 +135,7 @@ theorem erdos_78.variants.strongly_explicit :
       ∀ᶠ n in atTop, NoHomogeneousSet (stronglyExplicitGraph adj n) ⌈c * log n⌉₊
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 149](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean#L149).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 149](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean#L149).
 
 ## `Erdos78.erdos_78.variants.li_strongly_explicit`
 
@@ -151,7 +151,7 @@ theorem erdos_78.variants.li_strongly_explicit :
       ∀ᶠ n in atTop, NoHomogeneousSet (stronglyExplicitGraph adj n) ⌈(log n) ^ C⌉₊
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 160](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean#L160).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md), [68 Computer science](../../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/ErdosProblems/78.lean, line 160](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean#L160).
 
 ## Depends on
 
@@ -159,5 +159,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/78.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/78.lean)
+- [FormalConjectures/ErdosProblems/78.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/78.lean)
 - [erdosproblems.com/78](https://www.erdosproblems.com/78)

@@ -10,7 +10,7 @@ statement: formalized
 > *Reference:* [mathoverflow/347178](https://mathoverflow.net/questions/347178)
 > asked by user [*Biagio Ricceri*](https://mathoverflow.net/users/149235/biagio-ricceri)
 
-*Quoted from [FormalConjectures/Mathoverflow/347178.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/347178.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Mathoverflow/347178.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/347178.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved.
 
@@ -33,7 +33,7 @@ theorem mathoverflow_347178 :
         (⨆ x, (f x : EReal)) = ⨆ x, (f (x + gradient f x) : EReal)
 ```
 
-Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Mathoverflow/347178.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/347178.lean#L44).
+Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Mathoverflow/347178.lean, line 44](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/347178.lean#L44).
 
 ## `Mathoverflow347178.mathoverflow_347178.variants.bounded_iff`
 
@@ -50,7 +50,7 @@ theorem mathoverflow_347178.variants.bounded_iff :
         BddAbove (range f) ↔ BddAbove (range fun x ↦ f (x + gradient f x))
 ```
 
-Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Mathoverflow/347178.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/347178.lean#L60).
+Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Mathoverflow/347178.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/347178.lean#L60).
 
 ## `Mathoverflow347178.mathoverflow_347178.variants.bounded_only`
 
@@ -71,7 +71,7 @@ theorem mathoverflow_347178.variants.bounded_only :
         (⨆ x, f x) = ⨆ x, f (x + gradient f x)
 ```
 
-Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Mathoverflow/347178.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/347178.lean#L76).
+Category `research solved`; AMS [26 Real functions](../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/Mathoverflow/347178.lean, line 76](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/347178.lean#L76).
 
 ## Depends on
 
@@ -79,5 +79,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Mathoverflow/347178.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Mathoverflow/347178.lean)
+- [FormalConjectures/Mathoverflow/347178.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Mathoverflow/347178.lean)
 - [mathoverflow/347178](https://mathoverflow.net/questions/347178)

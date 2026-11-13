@@ -46,7 +46,7 @@ statement: formalized
 > known bounds and related conjectures. The known bounds use `sorry`; formalizing one would be a
 > substantial achievement.
 
-*Quoted from [FormalConjectures/OptimizationConstants/14.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OptimizationConstants/14.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 10 research or textbook statements: 3 open and 7 solved.
 
@@ -60,7 +60,7 @@ Solved: stated here without proof.
 theorem c14_ge_4 : 4 ≤ C14
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1729](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1729).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1729](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1729).
 
 ## `Constant14.c14_ge_5`
 
@@ -73,7 +73,7 @@ Solved: stated here without proof.
 theorem c14_ge_5 : 5 ≤ C14
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1734](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1734).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1734](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1734).
 
 ## `Constant14.c14_lower_bound`
 
@@ -90,7 +90,7 @@ Solved: stated here without proof.
 theorem c14_lower_bound : 6 ≤ C14
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1743](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1743).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1743](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1743).
 
 ## `Constant14.c14_lower_bound_improved`
 
@@ -102,7 +102,7 @@ Open: stated without proof.
 theorem c14_lower_bound_improved : 6 < C14
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1747](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1747).
+Category `research open`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1747](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1747).
 
 ## `Constant14.c14_le_7910`
 
@@ -115,7 +115,7 @@ Solved: stated here without proof.
 theorem c14_le_7910 : C14 ≤ 7910
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1752](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1752).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1752](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1752).
 
 ## `Constant14.c14_le_748`
 
@@ -128,7 +128,7 @@ Solved: stated here without proof.
 theorem c14_le_748 : C14 ≤ 748
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1757](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1757).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1757](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1757).
 
 ## `Constant14.c14_le_432`
 
@@ -141,7 +141,7 @@ Solved: stated here without proof.
 theorem c14_le_432 : C14 ≤ 432
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1762](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1762).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1762](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1762).
 
 ## `Constant14.c14_upper_bound`
 
@@ -154,7 +154,7 @@ Solved: stated here without proof.
 theorem c14_upper_bound : C14 ≤ 230
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1767](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1767).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1767](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1767).
 
 ## `Constant14.c14_upper_bound_improved`
 
@@ -166,7 +166,7 @@ Open: stated without proof.
 theorem c14_upper_bound_improved : C14 < 230
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1771](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1771).
+Category `research open`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1771](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1771).
 
 ## `Constant14.c14_le_20`
 
@@ -178,7 +178,7 @@ Open: stated without proof.
 theorem c14_le_20 : C14 ≤ 20
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1775](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean#L1775).
+Category `research open`; AMS [03 Mathematical logic and foundations](../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/OptimizationConstants/14.lean, line 1775](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean#L1775).
 
 ## Depends on
 
@@ -186,5 +186,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OptimizationConstants/14.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/14.lean)
+- [FormalConjectures/OptimizationConstants/14.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/14.lean)
 - [Tao's Optimization Constant 14](https://teorth.github.io/optimizationproblems/constants/14a.html)

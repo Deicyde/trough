@@ -20,7 +20,7 @@ statement: formalized
 > * [Zh21] Zhu, X. (2021). "Relatively small counterexamples to Hedetniemi's conjecture."
 >   *J. Combin. Theory Ser. B* 146, pp. 141--150.
 
-*Quoted from [FormalConjectures/Wikipedia/HedetniemiConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HedetniemiConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/HedetniemiConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HedetniemiConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 1 API statement, counted here but not shown.
 
@@ -43,7 +43,7 @@ theorem hedetniemi_conjecture : ¬
       (tensorProd G H).chromaticNumber = min G.chromaticNumber H.chromaticNumber
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/HedetniemiConjecture.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HedetniemiConjecture.lean#L72).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/HedetniemiConjecture.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HedetniemiConjecture.lean#L72).
 
 ## `HedetniemiConjecture.hedetniemi_conjecture.variants.el_zahar_sauer`
 
@@ -64,7 +64,7 @@ theorem hedetniemi_conjecture.variants.el_zahar_sauer
     (tensorProd G H).chromaticNumber = min G.chromaticNumber H.chromaticNumber
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/HedetniemiConjecture.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HedetniemiConjecture.lean#L100).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/HedetniemiConjecture.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HedetniemiConjecture.lean#L100).
 
 ## `HedetniemiConjecture.hedetniemi_conjecture.variants.shitov`
 
@@ -84,7 +84,7 @@ theorem hedetniemi_conjecture.variants.shitov :
       (tensorProd G H).chromaticNumber < min G.chromaticNumber H.chromaticNumber
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/HedetniemiConjecture.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HedetniemiConjecture.lean#L116).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/HedetniemiConjecture.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HedetniemiConjecture.lean#L116).
 
 ## Depends on
 
@@ -92,5 +92,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/HedetniemiConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HedetniemiConjecture.lean)
+- [FormalConjectures/Wikipedia/HedetniemiConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HedetniemiConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Hedetniemi%27s_conjecture)

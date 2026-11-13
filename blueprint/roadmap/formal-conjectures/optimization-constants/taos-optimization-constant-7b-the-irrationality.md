@@ -19,7 +19,7 @@ statement: formalized
 >   le cas de $\Gamma(1/4)$ et $\Gamma(1/3)$*](https://doi.org/10.4064/aa104-3-3).
 >   Acta Arith. **104** (2002), 243–281.
 
-*Quoted from [FormalConjectures/OptimizationConstants/7b.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7b.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OptimizationConstants/7b.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7b.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open and 3 solved.
 
@@ -33,7 +33,7 @@ Solved: stated here without proof.
 theorem irrational_gamma_one_div_four : Irrational (Real.Gamma (1 / 4))
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 49](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7b.lean#L49).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 49](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7b.lean#L49).
 
 ## `Constant7b.c7b_lower_bound`
 
@@ -46,7 +46,7 @@ Proved here.
 theorem c7b_lower_bound : 2 ≤ C7b
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7b.lean#L55).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7b.lean#L55).
 
 ## `Constant7b.c7b_lower_bound_improved`
 
@@ -58,7 +58,7 @@ Open: stated without proof.
 theorem c7b_lower_bound_improved : 2 < C7b
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7b.lean#L60).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 60](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7b.lean#L60).
 
 ## `Constant7b.c7b_upper_bound`
 
@@ -71,7 +71,7 @@ Solved: stated here without proof.
 theorem c7b_upper_bound : C7b ≤ 10 ^ 143
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7b.lean#L66).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7b.lean#L66).
 
 ## `Constant7b.c7b_upper_bound_improved`
 
@@ -83,7 +83,7 @@ Open: stated without proof.
 theorem c7b_upper_bound_improved : C7b < 10 ^ 143
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7b.lean#L71).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [33 Special functions](../by-subject/part-02/33-special-functions/README.md). Declared in [FormalConjectures/OptimizationConstants/7b.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7b.lean#L71).
 
 ## Depends on
 
@@ -91,5 +91,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OptimizationConstants/7b.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7b.lean)
+- [FormalConjectures/OptimizationConstants/7b.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7b.lean)
 - [Tao's Optimization Constant 7b](https://teorth.github.io/optimizationproblems/constants/7b.html)

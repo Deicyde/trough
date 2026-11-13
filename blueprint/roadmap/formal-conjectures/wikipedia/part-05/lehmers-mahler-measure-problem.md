@@ -11,7 +11,7 @@ statement: formalized
 > - [Wikipedia](https://en.wikipedia.org/wiki/Lehmer%27s_conjecture)
 > - [Tao's optimization constant 40a](https://teorth.github.io/optimizationproblems/constants/40a.html)
 
-*Quoted from [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 2 open and 2 solved.
 
@@ -27,7 +27,7 @@ Open: stated without proof.
 theorem lehmer_mahler_measure_problem : 1 < lehmerConstant
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L58).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L58).
 
 ## `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.best`
 
@@ -40,7 +40,7 @@ theorem lehmer_mahler_measure_problem.variants.best :
     mahlerMeasureZ lehmerPolynomial ≤ lehmerConstant
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L67).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 67](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L67).
 
 ## `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.not_reciprocal`
 
@@ -54,7 +54,7 @@ theorem lehmer_mahler_measure_problem.variants.not_reciprocal (f : ℤ[X]) (hi :
     mahlerMeasureZ f ≥ mahlerMeasureZ (X^3 - X - 1)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L75).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L75).
 
 ## `LehmerMahlerMeasureProblem.lehmer_mahler_measure_problem.variants.odd`
 
@@ -75,7 +75,7 @@ theorem lehmer_mahler_measure_problem.variants.odd (f : ℤ[X])
     mahlerMeasureZ f ≥ mahlerMeasureZ (X^2 - X - 1)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L94).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean#L94).
 
 ## Depends on
 
@@ -83,5 +83,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean)
+- [FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LehmerMahlerMeasureProblem.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Lehmer%27s_conjecture)

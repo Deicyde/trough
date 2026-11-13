@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Prime gaps to Least prime $\ge n$
+# $a(n) = 2^(2^n)$ to Wolstenholme numbers
 
+- [$a(n) = 2^(2^n)$](../../../../../oeis/part-01/a-n-2-2-n.md)
+- [Sum of squares of divisors of $n$](../../../../../oeis/part-01/sum-of-squares-of-divisors-of-n.md)
 - [Prime gaps](../../../../../oeis/part-01/prime-gaps.md)
 - [Lesser of twin primes](../../../../../oeis/part-01/lesser-of-twin-primes.md)
 - [Ore's harmonic numbers](../../../../../oeis/part-01/ores-harmonic-numbers.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Apéry numbers](../../../../../oeis/part-02/apery-numbers.md)
 - [Catalan-Mersenne numbers](../../../../../oeis/part-02/catalan-mersenne-numbers.md)
 - [Wolstenholme numbers](../../../../../oeis/part-02/wolstenholme-numbers.md)
-- [Sum of next $n$ primes](../../../../../oeis/part-02/sum-of-next-n-primes.md)
-- [Least prime $\ge n$](../../../../../oeis/part-02/least-prime-ge-n.md)

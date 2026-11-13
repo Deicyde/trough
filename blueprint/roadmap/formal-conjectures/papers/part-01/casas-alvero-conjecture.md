@@ -25,7 +25,7 @@ statement: formalized
 > The conjecture is now claimed to be proven in this paper:
 > * [Proof of the Casas-Alvero conjecture: Soham Ghosh)](https://arxiv.org/pdf/2501.09272)
 
-*Quoted from [FormalConjectures/Paper/CasasAlvero.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CasasAlvero.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/CasasAlvero.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CasasAlvero.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved. It also has 4 API statements, counted here but not shown.
 
@@ -41,7 +41,7 @@ theorem casas_alvero_conjecture (hP' : HasCasasAlveroProp P) :
     ∃ α : K, P = (X - C α) ^ P.natDegree
 ```
 
-Category `research open`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CasasAlvero.lean#L124).
+Category `research open`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CasasAlvero.lean#L124).
 
 ## `CasasAlvero.casas_alvero.prime_power`
 
@@ -57,7 +57,7 @@ theorem casas_alvero.prime_power (p k : ℕ) (hp : p.Prime) (hd : P.natDegree = 
     (hP' : HasCasasAlveroProp P) : ∃ α : K, P = (X - C α) ^ P.natDegree
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CasasAlvero.lean#L135).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CasasAlvero.lean#L135).
 
 ## `CasasAlvero.casas_alvero.double_prime_power`
 
@@ -73,7 +73,7 @@ theorem casas_alvero.double_prime_power (p k : ℕ) (hp : p.Prime) (hd : P.natDe
     (hP' : HasCasasAlveroProp P) : ∃ α : K, P = (X - C α) ^ P.natDegree
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CasasAlvero.lean#L146).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CasasAlvero.lean#L146).
 
 ## `CasasAlvero.casas_alvero.positive_char_counterexample`
 
@@ -94,7 +94,7 @@ theorem casas_alvero.positive_char_counterexample {p : ℕ} (hp : p.Prime) :
       ¬∃ α : K, P = (X - C α) ^ P.natDegree
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CasasAlvero.lean#L162).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/CasasAlvero.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CasasAlvero.lean#L162).
 
 ## Depends on
 
@@ -102,5 +102,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/CasasAlvero.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/CasasAlvero.lean)
+- [FormalConjectures/Paper/CasasAlvero.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/CasasAlvero.lean)
 - [The Casas-Alvero conjecture for infinitely many degrees](https://arxiv.org/pdf/math/0605090)

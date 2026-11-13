@@ -43,7 +43,7 @@ statement: formalized
 >   (with an appendix by Q.-Y. Zheng), K. Ono, A. Swaminathan, arXiv:2509.09553.
 > * [Cox] D. A. Cox, Primes of the Form $x^2 + ny^2$, 2nd ed., Wiley, 2013.
 
-*Quoted from [FormalConjectures/Paper/PartitionParity.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/PartitionParity.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 16 research or textbook statements: 2 open, 13 solved and 1 textbook result.
 
@@ -58,7 +58,7 @@ theorem kolberg :
     {n : ℕ | Even (partitionNumber n)}.Infinite ∧ {n : ℕ | Odd (partitionNumber n)}.Infinite
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L68).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L68).
 
 ## `PartitionParity.parkin_shanks`
 
@@ -73,7 +73,7 @@ theorem parkin_shanks :
     {n : ℕ | Odd (partitionNumber n)}.HasDensity (1 / 2)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L75).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L75).
 
 ## `PartitionParity.subbarao.even`
 
@@ -87,7 +87,7 @@ theorem subbarao.even : ∀ r t, 0 < t →
     {n : ℕ | n ≡ r [MOD t] ∧ Even (partitionNumber n)}.Infinite
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L83).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L83).
 
 ## `PartitionParity.subbarao.odd`
 
@@ -102,7 +102,7 @@ theorem subbarao.odd : ∀ r t, 0 < t →
     {n : ℕ | n ≡ r [MOD t] ∧ Odd (partitionNumber n)}.Infinite
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L91).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L91).
 
 ## `PartitionParity.ahlgren.even`
 
@@ -117,7 +117,7 @@ theorem ahlgren.even : ∀ r t, 0 < t →
       fun X : ℝ ↦ ({n : ℕ | n ≤ X ∧ n ≡ r [MOD t] ∧ Even (partitionNumber n)}.ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L98).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L98).
 
 ## `PartitionParity.ahlgren.odd`
 
@@ -133,7 +133,7 @@ theorem ahlgren.odd : ∀ r t, 0 < t →
       fun X : ℝ ↦ ({n : ℕ | n ≤ X ∧ n ≡ r [MOD t] ∧ Odd (partitionNumber n)}.ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L107).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L107).
 
 ## `PartitionParity.bellaiche_nicolas.even`
 
@@ -147,7 +147,7 @@ theorem bellaiche_nicolas.even :
       fun X : ℝ ↦ ({n : ℕ | n ≤ X ∧ Even (partitionNumber n)}.ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L114).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L114).
 
 ## `PartitionParity.bellaiche_nicolas.even_explicit`
 
@@ -161,7 +161,7 @@ theorem bellaiche_nicolas.even_explicit : ∀ x : ℝ, 1 < x →
     0.069 * √x * x.log.log ≤ ({n : ℕ | n ≤ x ∧ Even (partitionNumber n)}.ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L122).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 122](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L122).
 
 ## `PartitionParity.bellaiche_nicolas.odd_explicit`
 
@@ -175,7 +175,7 @@ theorem bellaiche_nicolas.odd_explicit : ∀ x : ℝ, 2 ≤ x →
     0.037 * √x / (x.log) ^ (7 / 8 : ℝ) ≤ ({n : ℕ | n ≤ x ∧ Odd (partitionNumber n)}.ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 129](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L129).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 129](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L129).
 
 ## `PartitionParity.bellaiche_green_soundararajan.odd`
 
@@ -190,7 +190,7 @@ theorem bellaiche_green_soundararajan.odd :
       fun X : ℝ ↦ ({n : ℕ | n ≤ X ∧ Odd (partitionNumber n)}.ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L136).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L136).
 
 ## `PartitionParity.ono_swaminathan.quadratic`
 
@@ -206,7 +206,7 @@ theorem ono_swaminathan.quadratic : ∀ D : ℕ, 1 < D → Squarefree D → D % 
     {m : ℕ | m.Coprime 6 ∧ Odd (partitionNumber ((D * m ^ 2 + 1) / 24))}.Infinite
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L145).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L145).
 
 ## `PartitionParity.ono_swaminathan.odd_bound`
 
@@ -226,7 +226,7 @@ theorem ono_swaminathan.odd_bound (D : ℕ) (hD : 1 < D) (hsq : Squarefree D) (h
       Odd (partitionNumber ((D * m ^ 2 + 1) / 24))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L155).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L155).
 
 ## `PartitionParity.classNumber_eq_ncard_reducedForms`
 
@@ -245,7 +245,7 @@ theorem classNumber_eq_ncard_reducedForms (D : ℕ) (hsq : Squarefree D) (h3 : D
       {⟨a, b, c⟩ : ℤ × ℤ × ℤ | IsReducedForm D a b c}.ncard
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 174](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L174).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 174](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L174).
 
 ## `PartitionParity.zheng.liminf`
 
@@ -261,7 +261,7 @@ theorem zheng.liminf :
         ((({n : ℕ | n ≤ X ∧ Odd (partitionNumber n)}.ncard : ℝ) / √X : ℝ) : EReal)) atTop
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 188](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L188).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 188](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L188).
 
 ## `PartitionParity.zheng.odd`
 
@@ -275,7 +275,7 @@ theorem zheng.odd :
       fun X : ℝ ↦ ({n : ℕ | n ≤ X ∧ Odd (partitionNumber n)}.ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 196](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L196).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 196](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L196).
 
 ## `PartitionParity.ono.polynomial`
 
@@ -293,7 +293,7 @@ theorem ono.polynomial (g : ℚ[X]) (hg : 0 < g.natDegree)
     {n : ℕ | Odd (partitionNumber ⌊g.eval (n : ℚ)⌋₊)}.Infinite
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 205](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean#L205).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Paper/PartitionParity.lean, line 205](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean#L205).
 
 ## Depends on
 
@@ -301,5 +301,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/PartitionParity.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PartitionParity.lean)
+- [FormalConjectures/Paper/PartitionParity.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PartitionParity.lean)
 - [On the distribution of parity in the partition function](https://www.jstor.org/stable/2003251)

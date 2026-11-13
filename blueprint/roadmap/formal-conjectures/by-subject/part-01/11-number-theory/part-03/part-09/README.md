@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# The Hasse--Weil conjecture for… to Oppermann's Conjecture
+# Hall's conjecture to Modularity conjecture
 
+- [Hall's conjecture](../../../../../wikipedia/part-04/halls-conjecture.md)
+- [First Hardy–Littlewood conjecture](../../../../../wikipedia/part-04/first-hardy-littlewood-conjecture.md)
 - [The Hasse--Weil conjecture for elliptic curves](../../../../../wikipedia/part-04/the-hasse-weil-conjecture-for-elliptic-curves.md)
 - [Idoneal numbers completeness conjecture](../../../../../wikipedia/part-04/idoneal-numbers-completeness-conjecture.md)
 - [Open questions on irrationality of numbers](../../../../../wikipedia/part-05/open-questions-on-irrationality-of-numbers.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Conjectures about Mersenne primes](../../../../../wikipedia/part-06/conjectures-about-mersenne-primes.md)
 - [Mills' Theorem](../../../../../wikipedia/part-06/mills-theorem.md)
 - [Modularity conjecture](../../../../../wikipedia/part-06/modularity-conjecture.md)
-- [Normality of mathematical constants](../../../../../wikipedia/part-06/normality-of-mathematical-constants.md)
-- [Oppermann's Conjecture](../../../../../wikipedia/part-06/oppermanns-conjecture.md)

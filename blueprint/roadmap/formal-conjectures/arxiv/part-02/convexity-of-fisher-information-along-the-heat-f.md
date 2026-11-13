@@ -20,7 +20,7 @@ statement: formalized
 >   formalization (2026),
 >   [GitHub repository](https://github.com/KitaKen1/fisher-information-nonconvexity/tree/a6ff274a04e5b6d813b6f06dc62d3d68a21ae31a).
 
-*Quoted from [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved.
 
@@ -37,7 +37,7 @@ theorem fisherInformationConvexity :
       ConvexOn ℝ (Set.Ioi 0) (fun t => fisherInformation (heatFlow f t))
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean#L84).
+Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean#L84).
 
 ## `Arxiv.«2605.18081».fisherInformationConvexity.variants.smooth`
 
@@ -52,7 +52,7 @@ theorem fisherInformationConvexity.variants.smooth :
       ConvexOn ℝ (Set.Ioi 0) (fun t => fisherInformation (heatFlow f t))
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean#L94).
+Category `research solved`; AMS [35 Partial differential equations](../../by-subject/part-02/35-partial-differential-equations/README.md), [60 Probability theory and stochastic processes](../../by-subject/part-02/60-probability-theory-and-stochastic-processes/README.md). Declared in [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean, line 94](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean#L94).
 
 ## Depends on
 
@@ -60,5 +60,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean)
+- [FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.18081/FisherInformationConvexity.lean)
 - [https://arxiv.org/abs/2605.18081](https://arxiv.org/abs/2605.18081)

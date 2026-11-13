@@ -13,7 +13,7 @@ statement: formalized
 >   Wetensch., Proc. (1949), 14-17 = Indagationes Math. 11 (1949), 46-49.
 >   [PDF](https://www.renyi.hu/~p_erdos/1949-13.pdf)
 
-*Quoted from [FormalConjectures/ErdosProblems/1221.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1221.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1221](https://www.erdosproblems.com/1221).
 
@@ -64,7 +64,7 @@ theorem erdos_1221.parts.i :
     ∀ K : ℝ, ∀ᶠ r : ℕ in atTop, ENNReal.ofReal ((r : ℝ) + K) < bigLambda r
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean#L119).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean#L119).
 
 ## `Erdos1221.erdos_1221.parts.ii`
 
@@ -105,7 +105,7 @@ theorem erdos_1221.parts.ii :
     ∀ K : ℝ, ∀ᶠ r : ℕ in atTop, smallLambda r < ENNReal.ofReal ((r : ℝ) - K)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean#L146).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean#L146).
 
 ## `Erdos1221.erdos_1221.parts.iii`
 
@@ -146,7 +146,7 @@ theorem erdos_1221.parts.iii :
     ∀ K : ℝ, ∀ᶠ r : ℕ in atTop, ENNReal.ofReal (1 + K / (r : ℝ)) < mu r
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean#L173).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean#L173).
 
 ## `Erdos1221.erdos_1221.variants.r_one`
 
@@ -162,7 +162,7 @@ theorem erdos_1221.variants.r_one :
       smallLambda 1 = ENNReal.ofReal (1 / Real.log 4) ∧ mu 1 = 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean#L183).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean#L183).
 
 ## `Erdos1221.erdos_1221.variants.bigLambda_ge`
 
@@ -179,7 +179,7 @@ theorem erdos_1221.variants.bigLambda_ge {r : ℕ} (hr : 1 ≤ r) :
     ENNReal.ofReal (1 / Real.log (1 + 1 / (r : ℝ))) ≤ bigLambda r
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 194](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean#L194).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 194](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean#L194).
 
 ## `Erdos1221.erdos_1221.variants.smallLambda_le`
 
@@ -197,7 +197,7 @@ theorem erdos_1221.variants.smallLambda_le {r : ℕ} (hr : 1 ≤ r) :
       ENNReal.ofReal ((r : ℝ) / ((r : ℝ) + 1) * (1 / Real.log (1 + 1 / (r : ℝ))))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 204](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean#L204).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 204](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean#L204).
 
 ## `Erdos1221.erdos_1221.variants.mu_ge`
 
@@ -212,7 +212,7 @@ theorem erdos_1221.variants.mu_ge {r : ℕ} (hr : 1 ≤ r) :
     ENNReal.ofReal (1 + 1 / (r : ℝ)) ≤ mu r
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 214](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean#L214).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1221.lean, line 214](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean#L214).
 
 ## Depends on
 
@@ -220,5 +220,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1221.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1221.lean)
+- [FormalConjectures/ErdosProblems/1221.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1221.lean)
 - [erdosproblems.com/1221](https://www.erdosproblems.com/1221)

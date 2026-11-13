@@ -2,8 +2,11 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1158 to Erdős Problem 1180
+# Erdős Problem 1152 to Erdős Problem 1177
 
+- [Erdős Problem 1152](erdos-problem-1152.md)
+- [Erdős Problem 1154](erdos-problem-1154.md)
+- [Erdős Problem 1157](erdos-problem-1157.md)
 - [Erdős Problem 1158](erdos-problem-1158.md)
 - [Erdős Problem 1159](erdos-problem-1159.md)
 - [Erdős Problem 1160](erdos-problem-1160.md)
@@ -21,6 +24,3 @@ navigation: transparent
 - [Erdős Problem 1175](erdos-problem-1175.md)
 - [Erdős Problem 1176](erdos-problem-1176.md)
 - [Erdős Problem 1177](erdos-problem-1177.md)
-- [Erdős Problem 1178](erdos-problem-1178.md)
-- [Erdős Problem 1179](erdos-problem-1179.md)
-- [Erdős Problem 1180](erdos-problem-1180.md)

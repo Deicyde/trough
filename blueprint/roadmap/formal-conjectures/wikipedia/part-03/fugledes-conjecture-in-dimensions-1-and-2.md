@@ -12,7 +12,7 @@ statement: formalized
 > - [Zh26] [Zhang, Tao, *Both directions of Fuglede's conjecture fail in dimension two*,
 >   arXiv:2607.15632 (2026)](https://arxiv.org/abs/2607.15632)
 
-*Quoted from [FormalConjectures/Wikipedia/Fuglede.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Fuglede.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Fuglede.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Fuglede.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 2 open and 1 solved.
 
@@ -27,7 +27,7 @@ theorem FugledeConjecture.variants.dim_1 :
     FugledeConjectureFor 1
 ```
 
-Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Wikipedia/Fuglede.lean, line 47](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Fuglede.lean#L47).
+Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Wikipedia/Fuglede.lean, line 47](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Fuglede.lean#L47).
 
 ## `Fuglede.FugledeConjecture.variants.dim_2`
 
@@ -44,7 +44,7 @@ theorem FugledeConjecture.variants.dim_2 :
     FugledeConjectureFor 2
 ```
 
-Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Wikipedia/Fuglede.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Fuglede.lean#L59).
+Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Wikipedia/Fuglede.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Fuglede.lean#L59).
 
 ## `Fuglede.FugledeConjecture.variants.dim_3_or_higher`
 
@@ -61,7 +61,7 @@ theorem FugledeConjecture.variants.dim_3_or_higher (n : ℕ) (hn : 3 ≤ n) :
     ¬ FugledeConjectureFor n
 ```
 
-Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Wikipedia/Fuglede.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Fuglede.lean#L71).
+Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Wikipedia/Fuglede.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Fuglede.lean#L71).
 
 ## Depends on
 
@@ -69,5 +69,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Fuglede.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Fuglede.lean)
+- [FormalConjectures/Wikipedia/Fuglede.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Fuglede.lean)
 - [Fuglede's conjecture](https://en.wikipedia.org/wiki/Fuglede%27s_conjecture)

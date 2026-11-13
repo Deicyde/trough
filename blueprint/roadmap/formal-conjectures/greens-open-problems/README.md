@@ -1,10 +1,10 @@
 # Green's open problems
 
-The 65 problem files in [FormalConjectures/GreensOpenProblems](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/GreensOpenProblems) that state a research or textbook statement, at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), one article each.
+The 75 problem files in [FormalConjectures/GreensOpenProblems](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems) that state a research or textbook statement, at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
-## [Ben Green's Open Problem 1 to Green's Open Problem 27](part-01/README.md)
+## [Ben Green's Open Problem 1 to Green's Open Problem 26](part-01/README.md)
 
 - [Ben Green's Open Problem 1](part-01/ben-greens-open-problem-1.md)
 - [Ben Green's Open Problem 2](part-01/ben-greens-open-problem-2.md)
@@ -17,6 +17,7 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Ben Green's Open Problem 14](part-01/ben-greens-open-problem-14.md)
 - [Green's Open Problem 15](part-01/greens-open-problem-15.md)
 - [Ben Green's Open Problem 16](part-01/ben-greens-open-problem-16.md)
+- [Ben Green's Open Problem 17](part-01/ben-greens-open-problem-17.md)
 - [Ben Green's Open Problem 18](part-01/ben-greens-open-problem-18.md)
 - [Ben Green's Open Problem 19](part-01/ben-greens-open-problem-19.md)
 - [Ben Green's Open Problem 21](part-01/ben-greens-open-problem-21.md)
@@ -25,10 +26,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Green's Open Problem 24](part-01/greens-open-problem-24.md)
 - [Green's Open Problem 25](part-01/greens-open-problem-25.md)
 - [Green's Open Problem 26](part-01/greens-open-problem-26.md)
-- [Green's Open Problem 27](part-01/greens-open-problem-27.md)
 
-## [Green's Open Problem 28 to Ben Green's Open Problem 50](part-02/README.md)
+## [Green's Open Problem 27 to Green's Open Problem 49](part-02/README.md)
 
+- [Green's Open Problem 27](part-02/greens-open-problem-27.md)
 - [Green's Open Problem 28](part-02/greens-open-problem-28.md)
 - [Ben Green's Open Problem 29](part-02/ben-greens-open-problem-29.md)
 - [Ben Green's Open Problem 31](part-02/ben-greens-open-problem-31.md)
@@ -48,16 +49,17 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Ben Green's Open Problem 46](part-02/ben-greens-open-problem-46.md)
 - [Green's Open Problem 47](part-02/greens-open-problem-47.md)
 - [Green's Open Problem 49](part-02/greens-open-problem-49.md)
-- [Ben Green's Open Problem 50](part-02/ben-greens-open-problem-50.md)
 
-## [Green's Open Problem 51 to Green's Open Problem 85](part-03/README.md)
+## [Ben Green's Open Problem 50 to Ben Green's Open Problem 75](part-03/README.md)
 
+- [Ben Green's Open Problem 50](part-03/ben-greens-open-problem-50.md)
 - [Green's Open Problem 51](part-03/greens-open-problem-51.md)
 - [Green's Open Problem 52](part-03/greens-open-problem-52.md)
 - [Green's Open Problem 53](part-03/greens-open-problem-53.md)
 - [Ben Green's Open Problem 54](part-03/ben-greens-open-problem-54.md)
 - [Ben Green's Open Problem 57](part-03/ben-greens-open-problem-57.md)
 - [Ben Green's Open Problem 58](part-03/ben-greens-open-problem-58.md)
+- [Ben Green's Open Problem 59](part-03/ben-greens-open-problem-59.md)
 - [Ben Green's Open Problem 60](part-03/ben-greens-open-problem-60.md)
 - [Ben Green's Open Problem 61](part-03/ben-greens-open-problem-61.md)
 - [Ben Green's Open Problem 62](part-03/ben-greens-open-problem-62.md)
@@ -65,20 +67,28 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Ben Green's Open Problem 65](part-03/ben-greens-open-problem-65.md)
 - [Ben Green's Open Problem 66](part-03/ben-greens-open-problem-66.md)
 - [Ben Green's Open Problem 68](part-03/ben-greens-open-problem-68.md)
+- [Ben Green's Open Problem 69](part-03/ben-greens-open-problem-69.md)
 - [Ben Green's Open Problem 70](part-03/ben-greens-open-problem-70.md)
 - [Ben Green's Open Problem 72](part-03/ben-greens-open-problem-72.md)
+- [Ben Green's Open Problem 74](part-03/ben-greens-open-problem-74.md)
 - [Ben Green's Open Problem 75](part-03/ben-greens-open-problem-75.md)
-- [Ben Green's Open Problem 76](part-03/ben-greens-open-problem-76.md)
-- [Ben Green's Open Problem 77](part-03/ben-greens-open-problem-77.md)
-- [Ben Green's Open Problem 82](part-03/ben-greens-open-problem-82.md)
-- [Green's Open Problem 85](part-03/greens-open-problem-85.md)
 
-## [Green's Open Problem 87 to Ben Green's Open Problem 97](part-04/README.md)
+## [Ben Green's Open Problem 76 to Ben Green's Open Problem 100](part-04/README.md)
 
+- [Ben Green's Open Problem 76](part-04/ben-greens-open-problem-76.md)
+- [Ben Green's Open Problem 77](part-04/ben-greens-open-problem-77.md)
+- [Ben Green's Open Problem 82](part-04/ben-greens-open-problem-82.md)
+- [Ben Green's Open Problem 84](part-04/ben-greens-open-problem-84.md)
+- [Green's Open Problem 85](part-04/greens-open-problem-85.md)
+- [Ben Green's Open Problem 86](part-04/ben-greens-open-problem-86.md)
 - [Green's Open Problem 87](part-04/greens-open-problem-87.md)
 - [Ben Green's Open Problem 88](part-04/ben-greens-open-problem-88.md)
+- [Ben Green's Open Problem 91](part-04/ben-greens-open-problem-91.md)
+- [Ben Green's Open Problem 92](part-04/ben-greens-open-problem-92.md)
 - [Ben Green's Open Problem 93](part-04/ben-greens-open-problem-93.md)
 - [Ben Green's Open Problem 94](part-04/ben-greens-open-problem-94.md)
+- [Ben Green's Open Problem 95](part-04/ben-greens-open-problem-95.md)
 - [Ben Green's Open Problem 97](part-04/ben-greens-open-problem-97.md)
+- [Ben Green's Open Problem 100](part-04/ben-greens-open-problem-100.md)
 
-No article: 2 files here state no research or textbook statement: [Ben Green's Open Problem 63](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/GreensOpenProblems/63.lean), [Ben Green's Open Problem 81](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/GreensOpenProblems/81.lean).
+No article: 2 files here state no research or textbook statement: [Ben Green's Open Problem 63](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/63.lean), [Ben Green's Open Problem 81](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/GreensOpenProblems/81.lean).

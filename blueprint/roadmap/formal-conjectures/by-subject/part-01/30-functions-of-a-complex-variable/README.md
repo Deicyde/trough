@@ -1,8 +1,8 @@
 # Functions of a complex variable
 
-The 31 problems with a statement whose `AMS` attribute names 30, Functions of a complex variable, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+The 33 problems with a statement whose `AMS` attribute names 30, Functions of a complex variable, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
 
-## [Erdős Problem 114 to Erdős Problem 1044](part-01/README.md)
+## [Erdős Problem 114 to Erdős Problem 1043](part-01/README.md)
 
 - [Erdős Problem 114](../../../erdos-problems/100-199/part-01/erdos-problem-114.md)
 - [Erdős Problem 115](../../../erdos-problems/100-199/part-01/erdos-problem-115.md)
@@ -22,11 +22,12 @@ The 31 problems with a statement whose `AMS` attribute names 30, Functions of a 
 - [Erdős Problem 967](../../../erdos-problems/900-999/part-03/erdos-problem-967.md)
 - [Erdős Problem 974](../../../erdos-problems/900-999/part-04/erdos-problem-974.md)
 - [Erdős Problem 990](../../../erdos-problems/900-999/part-04/erdos-problem-990.md)
+- [Erdős Problem 1042](../../../erdos-problems/1000-1099/part-02/erdos-problem-1042.md)
 - [Erdős Problem 1043](../../../erdos-problems/1000-1099/part-02/erdos-problem-1043.md)
+
+## [Erdős Problem 1044 to Ben Green's Open Problem 84](part-02/README.md)
+
 - [Erdős Problem 1044](../../../erdos-problems/1000-1099/part-02/erdos-problem-1044.md)
-
-## [Erdős Problem 1046 to Sendov's conjecture](part-02/README.md)
-
 - [Erdős Problem 1046](../../../erdos-problems/1000-1099/part-02/erdos-problem-1046.md)
 - [Erdős Problem 1047](../../../erdos-problems/1000-1099/part-02/erdos-problem-1047.md)
 - [Erdős Problem 1048](../../../erdos-problems/1000-1099/part-02/erdos-problem-1048.md)
@@ -38,3 +39,4 @@ The 31 problems with a statement whose `AMS` attribute names 30, Functions of a 
 - [Brennan's Conjecture](../../../wikipedia/part-02/brennans-conjecture.md)
 - [Goodman's conjecture on coefficients of $p$-valent functions](../../../wikipedia/part-04/goodmans-conjecture-on-coefficients-of-p-valent.md)
 - [Sendov's conjecture](../../../wikipedia/part-08/sendovs-conjecture.md)
+- [Ben Green's Open Problem 84](../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)

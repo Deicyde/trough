@@ -15,7 +15,7 @@ statement: formalized
 > - [Large Steiner Systems](https://epoch.ai/frontiermath/open-problems/large-steiner-systems)
 >   by Kunal Marwaha
 
-*Quoted from [FormalConjectures/Wikipedia/SteinerSystem.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SteinerSystem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/SteinerSystem.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SteinerSystem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 1 open and 4 solved. It also has 1 test statement, counted here but not shown.
 
@@ -34,7 +34,7 @@ Open: stated without proof.
 theorem large_steiner_systems : Nonempty LargeSteinerSystemWitness
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SteinerSystem.lean#L87).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SteinerSystem.lean#L87).
 
 ## `SteinerSystems.steiner_system_5_6_12`
 
@@ -50,7 +50,7 @@ Proved here.
 theorem steiner_system_5_6_12 : Nonempty S(5, 6, 12)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SteinerSystem.lean#L110).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SteinerSystem.lean#L110).
 
 ## `SteinerSystems.steiner_system_5_8_24`
 
@@ -66,7 +66,7 @@ Solved: stated here without proof.
 theorem steiner_system_5_8_24 : Nonempty S(5, 8, 24)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 253](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SteinerSystem.lean#L253).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 253](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SteinerSystem.lean#L253).
 
 ## `SteinerSystems.infinitely_many_steiner_t4`
 
@@ -90,7 +90,7 @@ theorem infinitely_many_steiner_t4 :
     {s : Σ k n : ℕ, S(4, k, n) | 4 < s.1 ∧ s.1 < s.2.1}.Infinite
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 271](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SteinerSystem.lean#L271).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 271](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SteinerSystem.lean#L271).
 
 ## `SteinerSystems.infinitely_many_steiner_t5`
 
@@ -116,7 +116,7 @@ theorem infinitely_many_steiner_t5 :
     {s : Σ k n : ℕ, S(5, k, n) | 5 < s.1 ∧ s.1 < s.2.1}.Infinite
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 292](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SteinerSystem.lean#L292).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SteinerSystem.lean, line 292](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SteinerSystem.lean#L292).
 
 ## Depends on
 
@@ -124,5 +124,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/SteinerSystem.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SteinerSystem.lean)
+- [FormalConjectures/Wikipedia/SteinerSystem.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SteinerSystem.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Steiner_system)

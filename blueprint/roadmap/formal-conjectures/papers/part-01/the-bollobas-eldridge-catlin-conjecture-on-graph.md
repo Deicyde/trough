@@ -18,7 +18,7 @@ statement: formalized
 > * [CSS03] Csaba, B., Shokoufandeh, A. and Szemerédi, E. (2003). "Proof of a conjecture of
 >   Bollobás and Eldridge for graphs of maximum degree three." *Combinatorica* 23, pp. 35--72.
 
-*Quoted from [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 1 open and 4 solved. It also has 2 API statements, counted here but not shown.
 
@@ -38,7 +38,7 @@ theorem bollobas_eldridge_catlin_conjecture :
       (G₁.maxDegree + 1) * (G₂.maxDegree + 1) ≤ Fintype.card V + 1 → Packs G₁ G₂
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L56).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L56).
 
 ## `BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.sauer_spencer`
 
@@ -57,7 +57,7 @@ theorem bollobas_eldridge_catlin_conjecture.variants.sauer_spencer
     (h : 2 * G₁.maxDegree * G₂.maxDegree < Fintype.card V) : Packs G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L70).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L70).
 
 ## `BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_le_two`
 
@@ -76,7 +76,7 @@ theorem bollobas_eldridge_catlin_conjecture.variants.maxDegree_le_two
     (h : (G₁.maxDegree + 1) * (G₂.maxDegree + 1) ≤ Fintype.card V + 1) : Packs G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L84).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 84](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L84).
 
 ## `BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.maxDegree_three_large_n`
 
@@ -96,7 +96,7 @@ theorem bollobas_eldridge_catlin_conjecture.variants.maxDegree_three_large_n :
       (G₁.maxDegree + 1) * (G₂.maxDegree + 1) ≤ Fintype.card V + 1 → Packs G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L100).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L100).
 
 ## `BollobasEldridgeCatlinConjecture.bollobas_eldridge_catlin_conjecture.variants.edgeless`
 
@@ -112,7 +112,7 @@ theorem bollobas_eldridge_catlin_conjecture.variants.edgeless
     [DecidableRel G₁.Adj] [DecidableRel G₂.Adj] (h : G₂.maxDegree = 0) : Packs G₁ G₂
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L124).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean, line 124](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean#L124).
 
 ## Depends on
 
@@ -120,4 +120,4 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean)
+- [FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BollobasEldridgeCatlinConjecture.lean)

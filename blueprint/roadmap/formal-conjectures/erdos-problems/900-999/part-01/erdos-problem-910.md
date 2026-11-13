@@ -15,7 +15,7 @@ statement: formalized
 >   [PDF](https://www.renyi.hu/~p_erdos/1944-06.pdf)
 > - [Ru58] Rudin, M. E., *A connected subset of the plane*. Fund. Math. 46 (1958), 15-24.
 
-*Quoted from [FormalConjectures/ErdosProblems/910.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/910.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/910.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/910.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/910](https://www.erdosproblems.com/910).
 
@@ -42,7 +42,7 @@ theorem erdos_910.parts.i :
       ∃ Y ⊆ X, IsConnected Y ∧ Y.Nontrivial ∧ ¬ Nonempty (Y ≃ₜ X)
 ```
 
-Category `research open`; AMS [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/910.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/910.lean#L51).
+Category `research open`; AMS [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/910.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/910.lean#L51).
 
 ## `Erdos910.erdos_910.parts.ii`
 
@@ -72,7 +72,7 @@ theorem erdos_910.parts.ii :
         Y ⊆ X ∧ IsConnected Y ∧ Y.Nontrivial}
 ```
 
-Category `research open`; AMS [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/910.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/910.lean#L74).
+Category `research open`; AMS [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/910.lean, line 74](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/910.lean#L74).
 
 ## `Erdos910.erdos_910.variants.rudin_CH`
 
@@ -93,7 +93,7 @@ theorem erdos_910.variants.rudin_CH :
       ∀ N ⊆ M, IsConnected N → N.Nontrivial → (M \ N).Countable
 ```
 
-Category `research solved`; AMS [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/910.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/910.lean#L92).
+Category `research solved`; AMS [54 General topology](../../../by-subject/part-02/54-general-topology/README.md). Declared in [FormalConjectures/ErdosProblems/910.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/910.lean#L92).
 
 ## Depends on
 
@@ -101,5 +101,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/910.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/910.lean)
+- [FormalConjectures/ErdosProblems/910.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/910.lean)
 - [erdosproblems.com/910](https://www.erdosproblems.com/910)

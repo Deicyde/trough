@@ -57,7 +57,7 @@ statement: formalized
 >   Amer. Math. Soc. 72 (2025), no. 7, 711–718,
 >   [doi:10.1090/noti3192](https://doi.org/10.1090/noti3192).
 
-*Quoted from [FormalConjectures/Paper/KaplanskyUInvariant.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/KaplanskyUInvariant.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 14 research or textbook statements: 4 open and 10 solved. It also has 2 test statements, counted here but not shown.
 
@@ -81,7 +81,7 @@ theorem u_invariant_values :
     ∀ n, n ∈ u_invariant_values.answer ↔ IsUInvariant n
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L136).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 136](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L136).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.kaplansky_conjecture`
 
@@ -96,7 +96,7 @@ theorem u_invariant_values.variants.kaplansky_conjecture :
     ¬ ∀ n, IsUInvariant n → ∃ k, n = 2 ^ k
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L146).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L146).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.not_three`
 
@@ -109,7 +109,7 @@ Solved: stated here without proof.
 theorem u_invariant_values.variants.not_three : ¬ IsUInvariant 3
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L153).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L153).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.not_five`
 
@@ -121,7 +121,7 @@ Solved: stated here without proof.
 theorem u_invariant_values.variants.not_five : ¬ IsUInvariant 5
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 158](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L158).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 158](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L158).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.not_seven`
 
@@ -133,7 +133,7 @@ Solved: stated here without proof.
 theorem u_invariant_values.variants.not_seven : ¬ IsUInvariant 7
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 163](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L163).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 163](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L163).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.two_pow`
 
@@ -147,7 +147,7 @@ Solved: stated here; a Lean proof is at [https://github.com/anatoliiohorodnyk/le
 theorem u_invariant_values.variants.two_pow (k : ℕ) : IsUInvariant (2 ^ k)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L173).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L173).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.even`
 
@@ -162,7 +162,7 @@ theorem u_invariant_values.variants.even (n : ℕ) (hn : Even n) (hn₀ : n ≠ 
     IsUInvariant n
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 182](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L182).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 182](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L182).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.nine`
 
@@ -175,7 +175,7 @@ Solved: stated here without proof.
 theorem u_invariant_values.variants.nine : IsUInvariant 9
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 189](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L189).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 189](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L189).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.two_pow_add_one`
 
@@ -189,7 +189,7 @@ theorem u_invariant_values.variants.two_pow_add_one (r : ℕ) (hr : 3 ≤ r) :
     IsUInvariant (2 ^ r + 1)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 195](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L195).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 195](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L195).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.karpenko`
 
@@ -205,7 +205,7 @@ theorem u_invariant_values.variants.karpenko (n : ℕ) (h₁ : ∀ r, 2 ^ r ≠ 
     (h₃ : ∀ r, 2 ^ r ≠ n + 3) : IsUInvariant n
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 206](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L206).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 206](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L206).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.eleven`
 
@@ -220,7 +220,7 @@ Proved here.
 theorem u_invariant_values.variants.eleven : IsUInvariant 11
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 217](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L217).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 217](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L217).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.odd`
 
@@ -235,7 +235,7 @@ theorem u_invariant_values.variants.odd :
     ∀ n, Odd n → 9 ≤ n → IsUInvariant n
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 230](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L230).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 230](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L230).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.thirteen`
 
@@ -247,7 +247,7 @@ Open: stated without proof.
 theorem u_invariant_values.variants.thirteen : IsUInvariant 13
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 236](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L236).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 236](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L236).
 
 ## `KaplanskyUInvariant.u_invariant_values.variants.fifteen`
 
@@ -259,7 +259,7 @@ Open: stated without proof.
 theorem u_invariant_values.variants.fifteen : IsUInvariant 15
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 241](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean#L241).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/Paper/KaplanskyUInvariant.lean, line 241](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean#L241).
 
 ## Depends on
 
@@ -267,5 +267,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/KaplanskyUInvariant.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/KaplanskyUInvariant.lean)
+- [FormalConjectures/Paper/KaplanskyUInvariant.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/KaplanskyUInvariant.lean)
 - [doi:10.2969/jmsj/00520200](https://doi.org/10.2969/jmsj/00520200)

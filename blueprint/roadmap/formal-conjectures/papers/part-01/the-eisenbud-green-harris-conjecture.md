@@ -59,7 +59,7 @@ statement: formalized
 >   functions, Lect. Notes Pure Appl. Math. 254, 113-144.
 >   [PDF](https://math.okstate.edu/people/chris/lpp-updated-final.pdf)
 
-*Quoted from [FormalConjectures/Paper/EisenbudGreenHarris.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/EisenbudGreenHarris.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/EisenbudGreenHarris.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/EisenbudGreenHarris.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved.
 
@@ -82,7 +82,7 @@ theorem eisenbud_green_harris {c : ℕ} (hc : c ≤ n) (d : Fin c → ℕ) (hd :
       ∀ e, hilbertFunction I e = hilbertFunction (L + purePowersIdeal hc d) e
 ```
 
-Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/EisenbudGreenHarris.lean#L92).
+Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/EisenbudGreenHarris.lean#L92).
 
 ## `EisenbudGreenHarris.eisenbud_green_harris.variants.macaulay`
 
@@ -99,7 +99,7 @@ theorem eisenbud_green_harris.variants.macaulay (I : Ideal (MvPolynomial (Fin n)
       ∀ e, hilbertFunction I e = hilbertFunction L e
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/EisenbudGreenHarris.lean#L108).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 108](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/EisenbudGreenHarris.lean#L108).
 
 ## `EisenbudGreenHarris.eisenbud_green_harris.variants.clements_lindstrom`
 
@@ -116,7 +116,7 @@ theorem eisenbud_green_harris.variants.clements_lindstrom {c : ℕ} (hc : c ≤ 
       ∀ e, hilbertFunction I e = hilbertFunction (L + purePowersIdeal hc d) e
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/EisenbudGreenHarris.lean#L119).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/EisenbudGreenHarris.lean#L119).
 
 ## `EisenbudGreenHarris.eisenbud_green_harris.variants.caviglia_deStefani`
 
@@ -140,7 +140,7 @@ theorem eisenbud_green_harris.variants.caviglia_deStefani {c : ℕ} (hc : c ≤ 
       ∀ e, hilbertFunction I e = hilbertFunction (L + purePowersIdeal hc d) e
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/EisenbudGreenHarris.lean#L134).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Paper/EisenbudGreenHarris.lean, line 134](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/EisenbudGreenHarris.lean#L134).
 
 ## Depends on
 
@@ -148,5 +148,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/EisenbudGreenHarris.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/EisenbudGreenHarris.lean)
+- [FormalConjectures/Paper/EisenbudGreenHarris.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/EisenbudGreenHarris.lean)
 - [PDF](https://www.ams.org/journals/bull/1996-33-03/S0273-0979-96-00666-0/S0273-0979-96-00666-0.pdf)

@@ -18,7 +18,7 @@ statement: formalized
 >   *J. Combin. Theory Ser. B* 166, pp. 183--202.
 >   [arXiv:2303.02611](https://arxiv.org/abs/2303.02611)
 
-*Quoted from [FormalConjectures/Paper/OneTwoThreeConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/OneTwoThreeConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/OneTwoThreeConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/OneTwoThreeConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 5 solved.
 
@@ -39,7 +39,7 @@ theorem one_two_three_conjecture :
         IsVertexColouringWeighting G w
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L66).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L66).
 
 ## `OneTwoThreeConjecture.one_two_three_conjecture.variants.one_to_five`
 
@@ -57,7 +57,7 @@ theorem one_two_three_conjecture.variants.one_to_five
       IsVertexColouringWeighting G w
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L79).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L79).
 
 ## `OneTwoThreeConjecture.one_two_three_conjecture.variants.one_to_thirty`
 
@@ -75,7 +75,7 @@ theorem one_two_three_conjecture.variants.one_to_thirty
       IsVertexColouringWeighting G w
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L92).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L92).
 
 ## `OneTwoThreeConjecture.one_two_three_conjecture.variants.isolated_edge_necessary`
 
@@ -91,7 +91,7 @@ theorem one_two_three_conjecture.variants.isolated_edge_necessary :
     ¬ ∃ w : Sym2 (Fin 2) → ℕ, IsVertexColouringWeighting (completeGraph (Fin 2)) w
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L106).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L106).
 
 ## `OneTwoThreeConjecture.one_two_three_conjecture.variants.two_weights_insufficient`
 
@@ -109,7 +109,7 @@ theorem one_two_three_conjecture.variants.two_weights_insufficient :
       IsVertexColouringWeighting (completeGraph (Fin 3)) w
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L132).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Paper/OneTwoThreeConjecture.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/OneTwoThreeConjecture.lean#L132).
 
 ## Depends on
 
@@ -117,5 +117,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/OneTwoThreeConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/OneTwoThreeConjecture.lean)
+- [FormalConjectures/Paper/OneTwoThreeConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/OneTwoThreeConjecture.lean)
 - [arXiv:2303.02611](https://arxiv.org/abs/2303.02611)

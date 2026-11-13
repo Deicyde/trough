@@ -50,7 +50,7 @@ statement: formalized
 > - [van den Dries–Goldbring 2015] L. van den Dries, I. Goldbring, *Hilbert's 5th problem*,
 >   Enseign. Math. 61 (2015), 3–43. https://doi.org/10.4171/LEM/61-1/2-2
 
-*Quoted from [FormalConjectures/HilbertProblems/5.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/HilbertProblems/5.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/HilbertProblems/5.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/HilbertProblems/5.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open and 3 solved. It also has 2 test statements, counted here but not shown.
 
@@ -70,7 +70,7 @@ theorem hilbert_smith_conjecture {X : Type*}
     AdmitsLieGroupStructure G
 ```
 
-Category `research open`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/HilbertProblems/5.lean#L89).
+Category `research open`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/HilbertProblems/5.lean#L89).
 
 ## `Hilbert5.hilbert_smith_conjecture.variants.riemannian`
 
@@ -96,7 +96,7 @@ theorem hilbert_smith_conjecture.variants.riemannian {X : Type*} [EMetricSpace X
     AdmitsLieGroupStructure G
 ```
 
-Category `research solved`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [53 Differential geometry](../by-subject/part-02/53-differential-geometry/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/HilbertProblems/5.lean#L104).
+Category `research solved`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [53 Differential geometry](../by-subject/part-02/53-differential-geometry/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/HilbertProblems/5.lean#L104).
 
 ## `Hilbert5.hilbert_smith_conjecture.variants.dimension_three`
 
@@ -114,7 +114,7 @@ theorem hilbert_smith_conjecture.variants.dimension_three {X : Type*}
     AdmitsLieGroupStructure G
 ```
 
-Category `research solved`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/HilbertProblems/5.lean#L119).
+Category `research solved`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/HilbertProblems/5.lean#L119).
 
 ## `Hilbert5.hilbert_smith_padic_formulation`
 
@@ -133,7 +133,7 @@ theorem hilbert_smith_padic_formulation {X : Type*}
     ¬ FaithfulVAdd ℤ_[p] X
 ```
 
-Category `research open`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/HilbertProblems/5.lean#L132).
+Category `research open`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md), [58 Global analysis, analysis on manifolds](../by-subject/part-02/58-global-analysis-analysis-on-manifolds/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/HilbertProblems/5.lean#L132).
 
 ## `Hilbert5.hilbert_fifth_problem`
 
@@ -153,7 +153,7 @@ theorem hilbert_fifth_problem
     Nonempty (LieGroupPresentation G n)
 ```
 
-Category `research solved`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/HilbertProblems/5.lean#L146).
+Category `research solved`; AMS [22 Topological groups, Lie groups](../by-subject/part-01/22-topological-groups-lie-groups/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/HilbertProblems/5.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/HilbertProblems/5.lean#L146).
 
 ## Depends on
 
@@ -161,5 +161,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/HilbertProblems/5.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/HilbertProblems/5.lean)
+- [FormalConjectures/HilbertProblems/5.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/HilbertProblems/5.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Hilbert%E2%80%93Smith_conjecture)

@@ -27,7 +27,7 @@ statement: formalized
 >   in the finite domain." *J. Symbolic Logic* 87, pp. 912--937.
 >   [arXiv:1904.01362](https://arxiv.org/abs/1904.01362)
 
-*Quoted from [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 7 research or textbook statements: 4 open, 2 solved and 1 textbook result. It also has 4 API statements, counted here but not shown.
 
@@ -48,7 +48,7 @@ theorem sat_no_p_optimal_proof_system (L : DecisionProblem) (hL : IsCompleteFor 
     ¬∃ P : List Bool → List Bool, IsPOptimalProofSystem L P
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L137).
+Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L137).
 
 ## `PudlakFiniteDomain.tfnp_no_complete_problem`
 
@@ -66,7 +66,7 @@ Open: stated without proof.
 theorem tfnp_no_complete_problem : ¬∃ T : TFNPProblem, T.IsComplete
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L151).
+Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L151).
 
 ## `PudlakFiniteDomain.up_no_complete_language`
 
@@ -82,7 +82,7 @@ Open: stated without proof.
 theorem up_no_complete_language : ¬∃ L : DecisionProblem, IsCompleteFor UP L
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L162).
+Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L162).
 
 ## `PudlakFiniteDomain.np_inter_conp_no_complete_language`
 
@@ -98,7 +98,7 @@ theorem np_inter_conp_no_complete_language :
     ¬∃ L : DecisionProblem, IsCompleteFor (NP ∩ coNP) L
 ```
 
-Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 172](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L172).
+Category `research open`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 172](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L172).
 
 ## `PudlakFiniteDomain.tfnp_no_complete_problem.variants.exists_of_NP_eq_coNP`
 
@@ -114,7 +114,7 @@ theorem tfnp_no_complete_problem.variants.exists_of_NP_eq_coNP (h : NP = coNP) :
     ∃ T : TFNPProblem, T.IsComplete
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L183).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L183).
 
 ## `PudlakFiniteDomain.tfnp_no_complete_problem.variants.NP_ne_coNP`
 
@@ -127,7 +127,7 @@ theorem tfnp_no_complete_problem.variants.NP_ne_coNP
     (h : ¬∃ T : TFNPProblem, T.IsComplete) : NP ≠ coNP
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 191](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L191).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 191](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L191).
 
 ## `PudlakFiniteDomain.sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP`
 
@@ -144,7 +144,7 @@ theorem sat_no_p_optimal_proof_system.variants.exists_of_P_eq_NP (h : P = NP)
     ∃ P : List Bool → List Bool, IsPOptimalProofSystem L P
 ```
 
-Category `textbook`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L202).
+Category `textbook`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean#L202).
 
 ## Depends on
 
@@ -152,5 +152,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean)
+- [FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/PudlakFiniteDomainConjectures.lean)
 - [arXiv:1601.01487](https://arxiv.org/abs/1601.01487)

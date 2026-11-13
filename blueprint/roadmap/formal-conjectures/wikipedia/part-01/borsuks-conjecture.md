@@ -61,7 +61,7 @@ statement: formalized
 > - [Ka15] Kalai, G. (2015). *Some old and new problems in combinatorial geometry I: Around
 >   Borsuk's problem*. https://arxiv.org/abs/1505.04952
 
-*Quoted from [FormalConjectures/Wikipedia/BorsukConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/BorsukConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 13 research or textbook statements: 1 open, 11 solved and 1 textbook result. It also has 1 test statement and 1 API statement, counted here but not shown.
 
@@ -81,7 +81,7 @@ Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc
 theorem borsuk_conjecture : ¬ ∀ n, 4 ≤ n → n ≤ 62 → BorsukConjecture n
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 141](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L141).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 141](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L141).
 
 ## `Borsuk.borsuk_conjecture.four`
 
@@ -93,7 +93,7 @@ Open: stated without proof.
 theorem borsuk_conjecture.four : BorsukConjecture 4
 ```
 
-Category `research open`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L146).
+Category `research open`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L146).
 
 ## `Borsuk.borsuk_conjecture.four.nine_parts`
 
@@ -108,7 +108,7 @@ theorem borsuk_conjecture.four.nine_parts (s : Set (ℝ^4)) (hs : IsBounded s)
     (hs' : s.Nontrivial) : HasBorsukCover 9 s
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L155).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L155).
 
 ## `Borsuk.borsuk_conjecture.four.eight_parts`
 
@@ -124,7 +124,7 @@ theorem borsuk_conjecture.four.eight_parts (s : Set (ℝ^4)) (hs : IsBounded s)
     (hs' : s.Nontrivial) : HasBorsukCover 8 s
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L166).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L166).
 
 ## `Borsuk.borsuk_conjecture.one`
 
@@ -137,7 +137,7 @@ Textbook result, stated without proof. A Lean proof is at [https://github.com/mo
 theorem borsuk_conjecture.one : BorsukConjecture 1
 ```
 
-Category `textbook`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 184](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L184).
+Category `textbook`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 184](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L184).
 
 ## `Borsuk.borsuk_conjecture.two`
 
@@ -149,7 +149,7 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 theorem borsuk_conjecture.two : BorsukConjecture 2
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 192](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L192).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 192](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L192).
 
 ## `Borsuk.borsuk_conjecture.three`
 
@@ -161,7 +161,7 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 theorem borsuk_conjecture.three : BorsukConjecture 3
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 200](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L200).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 200](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L200).
 
 ## `Borsuk.borsuk_conjecture.not_forall`
 
@@ -174,7 +174,7 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 theorem borsuk_conjecture.not_forall : ¬ ∀ n, BorsukConjecture n
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 211](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L211).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 211](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L211).
 
 ## `Borsuk.borsuk_conjecture.not_sixty_five`
 
@@ -186,7 +186,7 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 theorem borsuk_conjecture.not_sixty_five : ¬ BorsukConjecture 65
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 219](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L219).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 219](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L219).
 
 ## `Borsuk.borsuk_conjecture.not_sixty_four`
 
@@ -199,7 +199,7 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 theorem borsuk_conjecture.not_sixty_four : ¬ BorsukConjecture 64
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 230](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L230).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 230](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L230).
 
 ## `Borsuk.borsuk_conjecture.not_sixty_three`
 
@@ -213,7 +213,7 @@ Solved: stated here; a Lean proof is at [https://github.com/mo271/formal-conject
 theorem borsuk_conjecture.not_sixty_three : ¬ BorsukConjecture 63
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 242](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L242).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 242](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L242).
 
 ## `Borsuk.borsuk_conjecture.not_nine`
 
@@ -230,7 +230,7 @@ Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/adc
 theorem borsuk_conjecture.not_nine : ¬ BorsukConjecture 9
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 256](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L256).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 256](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L256).
 
 ## `Borsuk.borsuk_conjecture.not_of_nine_le`
 
@@ -244,7 +244,7 @@ Solved: stated here without proof.
 theorem borsuk_conjecture.not_of_nine_le (n : ℕ) (hn : 9 ≤ n) : ¬ BorsukConjecture n
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 263](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean#L263).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/BorsukConjecture.lean, line 263](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean#L263).
 
 ## Depends on
 
@@ -252,5 +252,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/BorsukConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BorsukConjecture.lean)
+- [FormalConjectures/Wikipedia/BorsukConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BorsukConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Borsuk%27s_conjecture)

@@ -19,7 +19,7 @@ statement: formalized
 >  - [arxiv/math/9902155](https://arxiv.org/abs/math/9902155)
 >  - [mathoverflow/37229](https://mathoverflow.net/questions/37229/)
 
-*Quoted from [FormalConjectures/Wikipedia/Mandelbrot.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/Mandelbrot.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 6 open. It also has 4 test statements and 2 API statements, counted here but not shown.
 
@@ -33,7 +33,7 @@ Open: stated without proof.
 theorem MLC : LocallyConnectedSpace mandelbrotSet
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean#L111).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean#L111).
 
 ## `Mandelbrot.MLC_general_exponent`
 
@@ -47,7 +47,7 @@ Open: stated without proof.
 theorem MLC_general_exponent (n : ℕ) : LocallyConnectedSpace (multibrotSet n)
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean#L118).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean#L118).
 
 ## `Mandelbrot.density_of_hyperbolicity`
 
@@ -61,7 +61,7 @@ theorem density_of_hyperbolicity :
     mandelbrotSet ⊆ closure {c | ∃ m z, IsAttractingCycle (fun z ↦ z ^ 2 + c) m z}
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean#L147).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean#L147).
 
 ## `Mandelbrot.density_of_hyperbolicity_general_exponent`
 
@@ -76,7 +76,7 @@ theorem density_of_hyperbolicity_general_exponent {n : ℕ} (hn : 2 ≤ n) :
     multibrotSet n ⊆ closure {c | ∃ m z, IsAttractingCycle (fun z ↦ z ^ n + c) m z}
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean#L155).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 155](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean#L155).
 
 ## `Mandelbrot.volume_frontier_mandelbrotSet_eq_zero`
 
@@ -88,7 +88,7 @@ Open: stated without proof.
 theorem volume_frontier_mandelbrotSet_eq_zero : volume (frontier mandelbrotSet) = 0
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean#L166).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean#L166).
 
 ## `Mandelbrot.volume_frontier_multibrotSet_eq_zero`
 
@@ -102,7 +102,7 @@ Open: stated without proof.
 theorem volume_frontier_multibrotSet_eq_zero {n : ℕ} : volume (frontier (multibrotSet n)) = 0
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean#L173).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Wikipedia/Mandelbrot.lean, line 173](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean#L173).
 
 ## Depends on
 
@@ -110,5 +110,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/Mandelbrot.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/Mandelbrot.lean)
+- [FormalConjectures/Wikipedia/Mandelbrot.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/Mandelbrot.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Mandelbrot_set#Local_connectivity)

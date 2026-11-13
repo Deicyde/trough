@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Erdős Problem 172 to Erdős Problem 197
+# Erdős Problem 172 to Erdős Problem 196
 
 - [Erdős Problem 172](erdos-problem-172.md)
 - [Erdős Problem 173](erdos-problem-173.md)
@@ -17,10 +17,10 @@ navigation: transparent
 - [Erdős Problem 186](erdos-problem-186.md)
 - [Erdős Problem 188](erdos-problem-188.md)
 - [Erdős Problem 189](erdos-problem-189.md)
+- [Erdős Problem 190](erdos-problem-190.md)
 - [Erdős Problem 191](erdos-problem-191.md)
 - [Erdős Problem 192](erdos-problem-192.md)
 - [Erdős Problem 193](erdos-problem-193.md)
 - [Erdős Problem 194](erdos-problem-194.md)
 - [Erdős Problem 195](erdos-problem-195.md)
 - [Erdős Problem 196](erdos-problem-196.md)
-- [Erdős Problem 197](erdos-problem-197.md)

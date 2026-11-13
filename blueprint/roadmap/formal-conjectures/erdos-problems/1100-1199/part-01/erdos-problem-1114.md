@@ -14,7 +14,7 @@ statement: formalized
 > - [Lo76] Lorch, L., *Some monotonicity properties of polynomials with equally spaced zeros*.
 >   Acta Math. Acad. Sci. Hungar. 27 (1976), 293-300.
 
-*Quoted from [FormalConjectures/ErdosProblems/1114.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1114.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1114.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1114.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1114](https://www.erdosproblems.com/1114).
 
@@ -45,7 +45,7 @@ theorem erdos_1114 {N : ℕ} (hN : 0 < N) {a d : ℝ} (hd : 0 < d) {f : ℝ[X]} 
     RightGapMonotone N b ∧ GapSymmetric N b
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [26 Real functions](../../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/ErdosProblems/1114.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1114.lean#L70).
+Category `research solved`; AMS [12 Field theory and polynomials](../../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [26 Real functions](../../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/ErdosProblems/1114.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1114.lean#L70).
 
 ## `Erdos1114.erdos_1114.variants.rolle`
 
@@ -67,7 +67,7 @@ theorem erdos_1114.variants.rolle {N : ℕ} {a d : ℝ} (hd : 0 < d) {f : ℝ[X]
       ∃ k : ℕ, k < N ∧ x ∈ Set.Ioo (a + d * k) (a + d * (k + 1)))
 ```
 
-Category `textbook`; AMS [12 Field theory and polynomials](../../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [26 Real functions](../../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/ErdosProblems/1114.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1114.lean#L86).
+Category `textbook`; AMS [12 Field theory and polynomials](../../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [26 Real functions](../../../by-subject/part-01/26-real-functions/README.md). Declared in [FormalConjectures/ErdosProblems/1114.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1114.lean#L86).
 
 ## Depends on
 
@@ -75,5 +75,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1114.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1114.lean)
+- [FormalConjectures/ErdosProblems/1114.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1114.lean)
 - [erdosproblems.com/1114](https://www.erdosproblems.com/1114)

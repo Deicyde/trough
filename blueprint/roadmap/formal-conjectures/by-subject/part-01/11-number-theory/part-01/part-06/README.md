@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Erdős Problem 251 to Erdős Problem 279
+# Erdős Problem 250 to Erdős Problem 277
 
+- [Erdős Problem 250](../../../../../erdos-problems/200-299/part-03/erdos-problem-250.md)
 - [Erdős Problem 251](../../../../../erdos-problems/200-299/part-03/erdos-problem-251.md)
 - [Erdős Problem 252](../../../../../erdos-problems/200-299/part-03/erdos-problem-252.md)
 - [Erdős Problem 253](../../../../../erdos-problems/200-299/part-03/erdos-problem-253.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Erdős Problem 275](../../../../../erdos-problems/200-299/part-04/erdos-problem-275.md)
 - [Erdős Problem 276](../../../../../erdos-problems/200-299/part-04/erdos-problem-276.md)
 - [Erdős Problem 277](../../../../../erdos-problems/200-299/part-04/erdos-problem-277.md)
-- [Erdős Problem 279](../../../../../erdos-problems/200-299/part-04/erdos-problem-279.md)

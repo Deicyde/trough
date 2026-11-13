@@ -33,7 +33,7 @@ statement: formalized
 > $(m, n) \notin \{(2,2), (3,3), (4,3), (4,4)\}$, the group $\Gamma_{m \oplus n}$ has
 > rank $2$ (i.e., is $2$-generated).
 
-*Quoted from [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 5 solved.
 
@@ -66,7 +66,7 @@ theorem conjecture_1 {m n : ℕ} (hm2 : 2 ≤ m) (hn2 : 2 ≤ n) (hmn : n ≤ m)
     ∃ g₁ g₂ : gammaSubgroup m n, Subgroup.closure {g₁, g₂} = ⊤
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 97](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L97).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 97](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L97).
 
 ## `Arxiv.«2605.12342».conjecture_1.variants.rank_2_2`
 
@@ -80,7 +80,7 @@ theorem conjecture_1.variants.rank_2_2 :
     ∃ g : gammaSubgroup 2 2, Subgroup.closure {g} = ⊤
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L107).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 107](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L107).
 
 ## `Arxiv.«2605.12342».conjecture_1.variants.rank_3_3`
 
@@ -93,7 +93,7 @@ theorem conjecture_1.variants.rank_3_3 :
     ∀ h₁ h₂ : gammaSubgroup 3 3, Subgroup.closure {h₁, h₂} ≠ ⊤
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 129](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L129).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 129](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L129).
 
 ## `Arxiv.«2605.12342».conjecture_1.variants.rank_4_3`
 
@@ -106,7 +106,7 @@ theorem conjecture_1.variants.rank_4_3 :
     ∀ h₁ h₂ : gammaSubgroup 4 3, Subgroup.closure {h₁, h₂} ≠ ⊤
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L137).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L137).
 
 ## `Arxiv.«2605.12342».conjecture_1.variants.rank_4_4`
 
@@ -119,7 +119,7 @@ theorem conjecture_1.variants.rank_4_4 :
     ∀ h₁ h₂ : gammaSubgroup 4 4, Subgroup.closure {h₁, h₂} ≠ ⊤
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L145).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean#L145).
 
 ## Depends on
 
@@ -127,5 +127,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean)
+- [FormalConjectures/Arxiv/2605.12342/Conjecture1.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2605.12342/Conjecture1.lean)
 - [arxiv/2605.12342](https://arxiv.org/abs/2605.12342)

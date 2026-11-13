@@ -2,11 +2,12 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1219 to Tao's Optimization Constant 14…
+# Erdős Problem 1177 to Tao's Optimization Constant 14…
 
+- [Erdős Problem 1177](../../../../erdos-problems/1100-1199/part-03/erdos-problem-1177.md)
 - [Erdős Problem 1219](../../../../erdos-problems/1200-1299/erdos-problem-1219.md)
 - [Busy Beaver](../../../../wikipedia/part-02/busy-beaver.md)
-- [Tarski's exponential function problem](../../../../wikipedia/part-08/tarskis-exponential-function-problem.md)
+- [Tarski's exponential function problem](../../../../wikipedia/part-09/tarskis-exponential-function-problem.md)
 - [Vaught conjecture](../../../../wikipedia/part-09/vaught-conjecture.md)
 - [Decidability of reachability for branching vector addition systems](../../../../papers/part-01/decidability-of-reachability-for-branching-vecto.md)
 - [Complete disjoint NP pairs](../../../../papers/part-01/complete-disjoint-np-pairs.md)

@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Partitions of $n$ into $x + y$… to Number of primes $p < n$ such…
+# Eighth root of the generating… to Representations $n = k^2 + m$…
 
+- [Eighth root of the generating function of an Apéry-like sequence](../../../../../oeis/part-12/eighth-root-of-the-generating-function-of-an-ape.md)
+- [Alternating sum of fourth powers of binomial coefficients](../../../../../oeis/part-12/alternating-sum-of-fourth-powers-of-binomial-coe.md)
 - [Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime](../../../../../oeis/part-12/partitions-of-n-into-x-y-with-x-x-1-2-y-2-prime.md)
 - [Square root of the absolute value of the determinant of the prime sum indicator matrix](../../../../../oeis/part-12/square-root-of-the-absolute-value-of-the-determi.md)
 - [Determinant of odd composite sum indicator matrix](../../../../../oeis/part-12/determinant-of-odd-composite-sum-indicator-matri.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Ways to write $n = x + y$ with $nx + y$ and $ny - x$ both prime](../../../../../oeis/part-13/ways-to-write-n-x-y-with-nx-y-and-ny-x-both-prim.md)
 - [Least $m > 0$ such that $\{2^k - k : k = 1, \dots, m\}$ covers all residues modulo $n$](../../../../../oeis/part-13/least-m-0-such-that-2-k-k-k-1-dots-m-covers-all.md)
 - [Representations $n = k^2 + m$ ($0 < k^2 \le m$) with $\sigma(k^2) + \phi(m)$ prime](../../../../../oeis/part-13/representations-n-k-2-m-0-k-2-le-m-with-sigma-k.md)
-- [Number of ways to write $n = p + q$ ($q > 0$) with $p$ and $(\phi(p)\phi(q))^4 + 1$ prime](../../../../../oeis/part-13/number-of-ways-to-write-n-p-q-q-0-with-p-and-phi.md)
-- [Number of primes $p < n$ such that $p \phi(n - p) - 1$ is also prime](../../../../../oeis/part-13/number-of-primes-p-n-such-that-p-phi-n-p-1-is-al.md)

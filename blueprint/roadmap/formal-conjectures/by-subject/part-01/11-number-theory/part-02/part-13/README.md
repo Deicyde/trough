@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Alternating sum of signs of… to Conjectures associated with…
+# Recurrence $a(n+2) =… to Expansion of $(1 - x)/(1 - 2 x…
 
+- [Recurrence $a(n+2) = |a(n+1)a(n) - a(n)a(n+1)|$ via concatenation](../../../../../oeis/part-04/recurrence-a-n-2-a-n-1-a-n-a-n-a-n-1-via-concate.md)
+- [Determinant of matrix with entries indicating primality of $i^2 + j^2$](../../../../../oeis/part-04/determinant-of-matrix-with-entries-indicating-pr.md)
 - [Alternating sum of signs of powers of $3/2$](../../../../../oeis/part-04/alternating-sum-of-signs-of-powers-of-3-2.md)
 - [Smallest factorial containing exactly $n$ 6's](../../../../../oeis/part-04/smallest-factorial-containing-exactly-n-6s.md)
 - [Number of times $n$ occurs as a binary sub-pattern of $n^2$](../../../../../oeis/part-04/number-of-times-n-occurs-as-a-binary-sub-pattern.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Smallest $r$ such that (concatenation of $n$, $r$ times) $\cdot 10 + 1$ is prime](../../../../../oeis/part-05/smallest-r-such-that-concatenation-of-n-r-times.md)
 - [Binary representation of primes that divide a number, in decimal](../../../../../oeis/part-05/binary-representation-of-primes-that-divide-a-nu.md)
 - [Expansion of $(1 - x)/(1 - 2 x + 3 x^2)$](../../../../../oeis/part-05/expansion-of-1-x-1-2-x-3-x-2.md)
-- [Smallest prime formed by concatenation $n, n-1, \dots, n-k$](../../../../../oeis/part-05/smallest-prime-formed-by-concatenation-n-n-1-dot.md)
-- [Conjectures associated with A087719](../../../../../oeis/part-05/conjectures-associated-with-a087719.md)

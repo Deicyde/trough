@@ -34,7 +34,7 @@ statement: formalized
 > - Lam-Litt conjecture implies Grothendieck p-curvature conjecture.
 > - Examples in Remark 1.1.3 and 1.1.5 on the conditions of the conjecture.
 
-*Quoted from [FormalConjectures/LittProblems/1.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/LittProblems/1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/LittProblems/1.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/LittProblems/1.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 2 open, 1 solved and 1 textbook result.
 
@@ -50,7 +50,7 @@ theorem lam_litt.variants.eisenstein (f : PowerSeries ℚ) (hAlg : IsAlgebraic (
     ∃ N : ℕ, IsCoeffIntegralAdjointInvNat f N
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/LittProblems/1.lean#L106).
+Category `research solved`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/LittProblems/1.lean#L106).
 
 ## `LamLitt.lam_litt.variants.integrality_implies_omega_integrality`
 
@@ -64,7 +64,7 @@ theorem lam_litt.variants.integrality_implies_omega_integrality
     ∃ ω : Nat.Primes → ℤ, omegaSuperlinear ω ∧ omegaIntegral ω (PowerSeries.coeff · f)
 ```
 
-Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/LittProblems/1.lean#L131).
+Category `textbook`; AMS [12 Field theory and polynomials](../by-subject/part-01/12-field-theory-and-polynomials/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/LittProblems/1.lean#L131).
 
 ## `LamLitt.lam_litt.variants.omega_integrality_implies_algebraicity`
 
@@ -80,7 +80,7 @@ theorem lam_litt.variants.omega_integrality_implies_algebraicity {n : ℕ} (f : 
     ∃ N : ℕ, IsCoeffIntegralAdjointInvNat f N
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 150](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/LittProblems/1.lean#L150).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 150](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/LittProblems/1.lean#L150).
 
 ## `LamLitt.lam_litt.variants.integrality_implies_algebraicity`
 
@@ -96,7 +96,7 @@ theorem lam_litt.variants.integrality_implies_algebraicity {n : ℕ} (f : PowerS
     IsAlgebraic (Polynomial ℚ) f
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 161](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/LittProblems/1.lean#L161).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/LittProblems/1.lean, line 161](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/LittProblems/1.lean#L161).
 
 ## Depends on
 
@@ -104,5 +104,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/LittProblems/1.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/LittProblems/1.lean)
+- [FormalConjectures/LittProblems/1.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/LittProblems/1.lean)
 - [Litt's problem 1](https://www.problemsilike.com/1)

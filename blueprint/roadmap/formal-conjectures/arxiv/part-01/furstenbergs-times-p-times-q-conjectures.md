@@ -12,7 +12,7 @@ statement: formalized
 > with some large Fourier coefficients**
 > by *Catalin Badea, Sophie Grivaux*
 
-*Quoted from [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 1 API statement, counted here but not shown.
 
@@ -31,7 +31,7 @@ theorem conjecture_1_3 {p q : ℕ} (hp : 2 <= p) (hq : 2 <= q) (hpq : Multiplica
     μ = volume
 ```
 
-Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean#L75).
+Category `research open`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean#L75).
 
 ## `Arxiv.id2303_01089.conjecture_1_4`
 
@@ -50,7 +50,7 @@ theorem conjecture_1_4 :
           (𝓝 UnitAddCircle.ProbabilityMeasure)
 ```
 
-Category `research solved`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean#L88).
+Category `research solved`; AMS [37 Dynamical systems and ergodic theory](../../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean#L88).
 
 ## Depends on
 
@@ -58,5 +58,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean)
+- [FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2303.01089/FurstenbergTimesPTimesQ.lean)
 - [arxiv/2303.01089](https://arxiv.org/abs/2303.01089)

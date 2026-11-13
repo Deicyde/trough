@@ -65,7 +65,7 @@ statement: formalized
 > - [Tem2013] M. Temkin, [Inseparable local
 >   uniformization](https://doi.org/10.1016/j.jalgebra.2012.09.023), J. Algebra 373 (2013), 65--119.
 
-*Quoted from [FormalConjectures/Wikipedia/LocalUniformization.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LocalUniformization.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/LocalUniformization.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LocalUniformization.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved. It also has 1 test statement, counted here but not shown.
 
@@ -88,7 +88,7 @@ theorem local_uniformization (k F : Type*) [Field k] [Field F] [Algebra k F]
     𝒪.HasLocalUniformization k
 ```
 
-Category `research open`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LocalUniformization.lean#L123).
+Category `research open`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 123](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LocalUniformization.lean#L123).
 
 ## `LocalUniformization.local_uniformization_of_charZero`
 
@@ -105,7 +105,7 @@ theorem local_uniformization_of_charZero (k F : Type*) [Field k] [Field F] [Alge
     𝒪.HasLocalUniformization k
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LocalUniformization.lean#L135).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 135](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LocalUniformization.lean#L135).
 
 ## `LocalUniformization.local_uniformization_of_trdeg_le_three`
 
@@ -128,7 +128,7 @@ theorem local_uniformization_of_trdeg_le_three (k F : Type*) [Field k] [Field F]
     𝒪.HasLocalUniformization k
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LocalUniformization.lean#L153).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LocalUniformization.lean#L153).
 
 ## `LocalUniformization.local_uniformization_after_finite_extension`
 
@@ -148,7 +148,7 @@ theorem local_uniformization_after_finite_extension (k F : Type*) [Field k] [Fie
       𝒪'.comap (algebraMap F E) = 𝒪 ∧ 𝒪'.HasLocalUniformization k
 ```
 
-Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LocalUniformization.lean#L166).
+Category `research solved`; AMS [12 Field theory and polynomials](../../by-subject/part-01/12-field-theory-and-polynomials/README.md), [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/LocalUniformization.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LocalUniformization.lean#L166).
 
 ## Depends on
 
@@ -156,5 +156,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/LocalUniformization.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LocalUniformization.lean)
+- [FormalConjectures/Wikipedia/LocalUniformization.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LocalUniformization.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Local_uniformization)

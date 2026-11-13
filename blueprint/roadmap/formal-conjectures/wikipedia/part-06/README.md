@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# The Lovász–Plummer conjecture… to The Petersen colouring…
+# Lovász's conjecture on… to Perfect numbers
 
+- [Lovász's conjecture on Hamiltonian paths in vertex-transitive graphs (1970)](lovaszs-conjecture-on-hamiltonian-paths-in-verte.md)
 - [The Lovász–Plummer conjecture (proved 2011) and Sheehan's conjecture](the-lovasz-plummer-conjecture-proved-2011-and-sh.md)
 - [Lychrel numbers in base 10](lychrel-numbers-in-base-10.md)
 - [Magic Squares](magic-squares.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Pebbling number conjecture](pebbling-number-conjecture.md)
 - [Infinitude of Pell number primes](infinitude-of-pell-number-primes.md)
 - [Perfect numbers](perfect-numbers.md)
-- [The Petersen colouring conjecture (Jaeger 1988)](the-petersen-colouring-conjecture-jaeger-1988.md)

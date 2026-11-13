@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1194 to Hedetniemi's conjecture (1966)
+# Erdős Problem 1192 to Graceful Tree Conjecture…
 
+- [Erdős Problem 1192](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1192.md)
+- [Erdős Problem 1193](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1193.md)
 - [Erdős Problem 1194](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1194.md)
 - [Erdős Problem 1198](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1198.md)
 - [Erdős Problem 1199](../../../../../erdos-problems/1100-1199/part-04/erdos-problem-1199.md)
@@ -17,10 +19,8 @@ navigation: transparent
 - [Alspach's conjecture on cycle decompositions of complete graphs (1981; proved 2014)](../../../../../wikipedia/part-01/alspachs-conjecture-on-cycle-decompositions-of-c.md)
 - [Beck–Fiala theorem and conjecture](../../../../../wikipedia/part-01/beck-fiala-theorem-and-conjecture.md)
 - [The Berge–Fulkerson conjecture](../../../../../wikipedia/part-01/the-berge-fulkerson-conjecture.md)
+- [Butson-type Hadamard matrices](../../../../../wikipedia/part-02/butson-type-hadamard-matrices.md)
 - [Conway's 99-graph problem](../../../../../wikipedia/part-02/conways-99-graph-problem.md)
 - [Dedekind Numbers](../../../../../wikipedia/part-02/dedekind-numbers.md)
 - [Babai–Seress Conjectures on the Diameter of Finite Groups](../../../../../wikipedia/part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
 - [Graceful Tree Conjecture (Ringel–Kotzig conjecture)](../../../../../wikipedia/part-04/graceful-tree-conjecture-ringel-kotzig-conjectur.md)
-- [The Gyárfás–Sumner conjecture](../../../../../wikipedia/part-04/the-gyarfas-sumner-conjecture.md)
-- [Hajós' conjecture (1961) — disproved](../../../../../wikipedia/part-04/hajos-conjecture-1961-disproved.md)
-- [Hedetniemi's conjecture (1966)](../../../../../wikipedia/part-04/hedetniemis-conjecture-1966.md)
