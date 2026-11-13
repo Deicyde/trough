@@ -14,7 +14,7 @@ statement: formalized
 > - [Po61] Pommerenke, Ch., *On metric properties of complex polynomials*. Michigan Math. J.
 >   (1961), 97-115.
 
-*Quoted from [FormalConjectures/ErdosProblems/1048.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1048.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1048](https://www.erdosproblems.com/1048).
 
@@ -44,7 +44,7 @@ theorem erdos_1048 :
         Metric.ediam (connectedComponentIn (openLevelSet f) z)
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L56).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L56).
 
 ## `Erdos1048.erdos_1048.variants.pommerenke_ncard_components`
 
@@ -60,7 +60,7 @@ theorem erdos_1048.variants.pommerenke_ncard_components (r : ℝ) (hr : 1 < r) (
     {C : Set ℂ | ∃ z ∈ levelSet f, C = connectedComponentIn (levelSet f) z}.ncard = n
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L68).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L68).
 
 ## `Erdos1048.erdos_1048.variants.pommerenke_diam_tendsto_zero`
 
@@ -78,7 +78,7 @@ theorem erdos_1048.variants.pommerenke_diam_tendsto_zero (r : ℝ) (hr : 1 < r) 
         Metric.ediam (connectedComponentIn (levelSet f) z) < ENNReal.ofReal ε
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L79).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L79).
 
 ## `Erdos1048.erdos_1048.variants.r_le_one`
 
@@ -93,7 +93,7 @@ theorem erdos_1048.variants.r_le_one (r : ℝ) (hr₀ : 0 < r) (hr₁ : r ≤ 1)
       Metric.ediam (connectedComponentIn (openLevelSet f) z)
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L90).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L90).
 
 ## `Erdos1048.erdos_1048.variants.diam_ge_two`
 
@@ -108,7 +108,7 @@ theorem erdos_1048.variants.diam_ge_two (r : ℝ) (hr₀ : 0 ≤ r) (hr₁ : r �
     2 ≤ Metric.ediam (connectedComponentIn (levelSet f) 0)
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L101).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L101).
 
 ## `Erdos1048.erdos_1048.variants.diam_ge_two_is_best`
 
@@ -122,7 +122,7 @@ theorem erdos_1048.variants.diam_ge_two_is_best (n : ℕ) (hn : 1 ≤ n) :
     Metric.ediam (connectedComponentIn (levelSet ((X : ℂ[X]) ^ n)) 0) = 2
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L111).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L111).
 
 ## `Erdos1048.erdos_1048.variants.diam_gt_inv_r`
 
@@ -138,7 +138,7 @@ theorem erdos_1048.variants.diam_gt_inv_r (r : ℝ) (hr₀ : 1 / 2 < r)
     ENNReal.ofReal (1 / r) < Metric.ediam (connectedComponentIn (levelSet f) 0)
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L120).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 120](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L120).
 
 ## `Erdos1048.erdos_1048.variants.diam_gt_two_sub_sq`
 
@@ -154,7 +154,7 @@ theorem erdos_1048.variants.diam_gt_two_sub_sq (r : ℝ) (hr₀ : (Real.sqrt 5 -
     ENNReal.ofReal (2 - r ^ 2) < Metric.ediam (connectedComponentIn (levelSet f) 0)
 ```
 
-Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean#L131).
+Category `research solved`; AMS [30 Functions of a complex variable](../../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/ErdosProblems/1048.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean#L131).
 
 ## Depends on
 
@@ -162,5 +162,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1048.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1048.lean)
+- [FormalConjectures/ErdosProblems/1048.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1048.lean)
 - [erdosproblems.com/1048](https://www.erdosproblems.com/1048)

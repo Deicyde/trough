@@ -2,10 +2,12 @@
 navigation: transparent
 ---
 
-# Partitions of $n$ into $x + y$… to Lam--Litt conjecture
+# Eighth root of the generating… to Lam--Litt conjecture
 
-## [Partitions of $n$ into $x + y$… to Number of primes $p < n$ such…](part-01/README.md)
+## [Eighth root of the generating… to Representations $n = k^2 + m$…](part-01/README.md)
 
+- [Eighth root of the generating function of an Apéry-like sequence](../../../../oeis/part-12/eighth-root-of-the-generating-function-of-an-ape.md)
+- [Alternating sum of fourth powers of binomial coefficients](../../../../oeis/part-12/alternating-sum-of-fourth-powers-of-binomial-coe.md)
 - [Partitions of $n$ into $x + y$ with $x(x+1)/2 + y^2$ prime](../../../../oeis/part-12/partitions-of-n-into-x-y-with-x-x-1-2-y-2-prime.md)
 - [Square root of the absolute value of the determinant of the prime sum indicator matrix](../../../../oeis/part-12/square-root-of-the-absolute-value-of-the-determi.md)
 - [Determinant of odd composite sum indicator matrix](../../../../oeis/part-12/determinant-of-odd-composite-sum-indicator-matri.md)
@@ -24,11 +26,11 @@ navigation: transparent
 - [Ways to write $n = x + y$ with $nx + y$ and $ny - x$ both prime](../../../../oeis/part-13/ways-to-write-n-x-y-with-nx-y-and-ny-x-both-prim.md)
 - [Least $m > 0$ such that $\{2^k - k : k = 1, \dots, m\}$ covers all residues modulo $n$](../../../../oeis/part-13/least-m-0-such-that-2-k-k-k-1-dots-m-covers-all.md)
 - [Representations $n = k^2 + m$ ($0 < k^2 \le m$) with $\sigma(k^2) + \phi(m)$ prime](../../../../oeis/part-13/representations-n-k-2-m-0-k-2-le-m-with-sigma-k.md)
+
+## [Number of ways to write $n = p… to Number of positive integers $k…](part-02/README.md)
+
 - [Number of ways to write $n = p + q$ ($q > 0$) with $p$ and $(\phi(p)\phi(q))^4 + 1$ prime](../../../../oeis/part-13/number-of-ways-to-write-n-p-q-q-0-with-p-and-phi.md)
 - [Number of primes $p < n$ such that $p \phi(n - p) - 1$ is also prime](../../../../oeis/part-13/number-of-primes-p-n-such-that-p-phi-n-p-1-is-al.md)
-
-## [Values $m = \sigma(k)$ ($0 < m… to Number of integers $0 < k \le…](part-02/README.md)
-
 - [Values $m = \sigma(k)$ ($0 < m < 2n$) with $2n - 1 - m$ and $2n - 1 + m$ prime](../../../../oeis/part-13/values-m-sigma-k-0-m-2n-with-2n-1-m-and-2n-1-m-p.md)
 - [Number of integers $0 < k < n$ such that $k \phi(n - k) + 1$ is a square](../../../../oeis/part-13/number-of-integers-0-k-n-such-that-k-phi-n-k-1-i.md)
 - [Number of integers $0 < k < n$ such that $(k + 1)^{\phi(n - k)} + k$ is prime](../../../../oeis/part-13/number-of-integers-0-k-n-such-that-k-1-phi-n-k-k.md)
@@ -47,11 +49,11 @@ navigation: transparent
 - [Pairs $\{j, k\}$ with $0 < j < k \le n$, $k \equiv 1 \pmod j$, and $\pi(jn) \mid \pi(kn)$](../../../../oeis/part-14/pairs-j-k-with-0-j-k-le-n-k-equiv-1-pmod-j-and-p.md)
 - [Equal prime counts in adjacent intervals $(kn, (k+1)n)$ and $((k+1)n, (k+2)n)$](../../../../oeis/part-14/equal-prime-counts-in-adjacent-intervals-kn-k-1.md)
 - [Number of positive integers $k < n$ such that $n^2 - \pi(k n)$ is prime](../../../../oeis/part-14/number-of-positive-integers-k-n-such-that-n-2-pi.md)
+
+## [Number of primes $p < n$ with… to Partitions of $n$ into distinct…](part-03/README.md)
+
 - [Number of primes $p < n$ with $\text{prime}(p)^2 + (\text{prime}(n) - 1)^2$ prime](../../../../oeis/part-14/number-of-primes-p-n-with-prime-p-2-prime-n-1-2.md)
 - [Number of integers $0 < k \le n$ such that $\pi(\pi(k n))$ is a square](../../../../oeis/part-14/number-of-integers-0-k-le-n-such-that-pi-pi-k-n.md)
-
-## [Primitive roots of the form k²… to Asymptotics of an inner sum…](part-03/README.md)
-
 - [Primitive roots of the form k² + 1](../../../../oeis/part-14/primitive-roots-of-the-form-k2-1.md)
 - [Ways of writing $n$ as an ordered sum of a triangular, square, and pentagonal number](../../../../oeis/part-14/ways-of-writing-n-as-an-ordered-sum-of-a-triangu.md)
 - [Largest smallest-base in a decomposition of $n$ into at most four squares](../../../../oeis/part-14/largest-smallest-base-in-a-decomposition-of-n-in.md)
@@ -70,11 +72,11 @@ navigation: transparent
 - [Representations of $n$ as the sum of two pentagonal and a generalized decagonal number](../../../../oeis/part-15/representations-of-n-as-the-sum-of-two-pentagona.md)
 - [Representations of $n$ as a sum of generalized heptagonal, octagonal, and nonagonal numbers](../../../../oeis/part-15/representations-of-n-as-a-sum-of-generalized-hep.md)
 - [Partitions of $n$ into distinct non-squarefree parts for $n > 23$](../../../../oeis/part-15/partitions-of-n-into-distinct-non-squarefree-par.md)
+
+## [Ways to write $n$ as the sum of… to Sum of four squares with square…](part-04/README.md)
+
 - [Ways to write $n$ as the sum of three elements of $\{\lfloor T(x)/3 \rfloor : x \ge 1\}$](../../../../oeis/part-15/ways-to-write-n-as-the-sum-of-three-elements-of.md)
 - [Asymptotics of an inner sum formula for $a(n)$](../../../../oeis/part-15/asymptotics-of-an-inner-sum-formula-for-a-n.md)
-
-## [Catalan numbers modulo $6$ to Sum of a triangular number, a…](part-04/README.md)
-
 - [Catalan numbers modulo $6$](../../../../oeis/part-15/catalan-numbers-modulo-6.md)
 - [A GCD-Driven Sequence with Universal Jumps](../../../../oeis/part-15/a-gcd-driven-sequence-with-universal-jumps.md)
 - [Prime values in recurrence $a(n+1) = |a(n) - \gcd(a(n), 7n+6)|$](../../../../oeis/part-15/prime-values-in-recurrence-a-n-1-a-n-gcd-a-n-7n.md)
@@ -93,11 +95,11 @@ navigation: transparent
 - [The 1680-Conjecture](../../../../oeis/part-16/the-1680-conjecture.md)
 - [The cup-of-coffee sequence](../../../../oeis/part-16/the-cup-of-coffee-sequence.md)
 - [Sum of four squares with square conditions](../../../../oeis/part-16/sum-of-four-squares-with-square-conditions.md)
+
+## [Period of $p$-th powers modulo… to A factorial ratio analogous to…](part-05/README.md)
+
 - [Period of $p$-th powers modulo $n$](../../../../oeis/part-16/period-of-p-th-powers-modulo-n.md)
 - [Sum of a triangular number, a generalized pentagonal number, and a generalized heptagonal number](../../../../oeis/part-16/sum-of-a-triangular-number-a-generalized-pentago.md)
-
-## [Symmetry of digit sum… to Realization of primes $p \equiv…](part-05/README.md)
-
 - [Symmetry of digit sum differences $\operatorname{sign}(S_5(k) - S_1(k))$](../../../../oeis/part-16/symmetry-of-digit-sum-differences-sign-s-5-k-s-1.md)
 - [Step difference bound $a(n+1) - a(n) \in \{1, 2\}$ in mass-redistribution cellular automata](../../../../oeis/part-16/step-difference-bound-a-n-1-a-n-in-1-2-in-mass-r.md)
 - [Sum of two squares and two central-binomial-type terms](../../../../oeis/part-16/sum-of-two-squares-and-two-central-binomial-type.md)
@@ -116,11 +118,11 @@ navigation: transparent
 - [Numerator of a sum involving binomial coefficients](../../../../oeis/part-17/numerator-of-a-sum-involving-binomial-coefficien.md)
 - [Factor bounds for Fermat numbers](../../../../oeis/part-17/factor-bounds-for-fermat-numbers.md)
 - [A factorial ratio analogous to the Catalan numbers](../../../../oeis/part-17/a-factorial-ratio-analogous-to-the-catalan-numbe.md)
+
+## [Primality of continued fraction… to Agrawal's conjecture](part-06/README.md)
+
 - [Primality of continued fraction denominators $a(n)$ for $n \ge 3$](../../../../oeis/part-17/primality-of-continued-fraction-denominators-a-n.md)
 - [Realization of primes $p \equiv \pm 1 \pmod{10}$ by continued fraction denominators](../../../../oeis/part-17/realization-of-primes-p-equiv-pm-1-pmod-10-by-co.md)
-
-## [A generating function with… to Non-Power-of-2 Almost Perfect…](part-06/README.md)
-
 - [A generating function with powers two and three](../../../../oeis/part-17/a-generating-function-with-powers-two-and-three.md)
 - [A generating function with powers two and four](../../../../oeis/part-17/a-generating-function-with-powers-two-and-four.md)
 - [A generating function with powers two and four](../../../../oeis/part-17/a-generating-function-with-powers-two-and-four-2.md)
@@ -139,11 +141,11 @@ navigation: transparent
 - [\*abc\* conjecture](../../../../wikipedia/part-01/abc-conjecture.md)
 - [Agoh-Giuga conjecture](../../../../wikipedia/part-01/agoh-giuga-conjecture.md)
 - [Agrawal's conjecture](../../../../wikipedia/part-01/agrawals-conjecture.md)
+
+## [Normality of Irrational… to Dirichlet divisor problem](part-07/README.md)
+
 - [Normality of Irrational Algebraic Numbers](../../../../wikipedia/part-01/normality-of-irrational-algebraic-numbers.md)
 - [Non-Power-of-2 Almost Perfect Numbers Conjecture](../../../../wikipedia/part-01/non-power-of-2-almost-perfect-numbers-conjecture.md)
-
-## [Amicable numbers to Some conjectures about ranks of…](part-07/README.md)
-
 - [Amicable numbers](../../../../wikipedia/part-01/amicable-numbers.md)
 - [Andrica's conjecture](../../../../wikipedia/part-01/andricas-conjecture.md)
 - [Artin's conjecture on primitive roots](../../../../wikipedia/part-01/artins-conjecture-on-primitive-roots.md)
@@ -161,12 +163,12 @@ navigation: transparent
 - [Congruent Number](../../../../wikipedia/part-02/congruent-number.md)
 - [Dickson's conjecture](../../../../wikipedia/part-02/dicksons-conjecture.md)
 - [Diophantine $m$-tuples](../../../../wikipedia/part-02/diophantine-m-tuples.md)
-- [Dirichlet divisor problem](../../../../wikipedia/part-02/dirichlet-divisor-problem.md)
+- [Dirichlet divisor problem](../../../../wikipedia/part-03/dirichlet-divisor-problem.md)
+
+## [Elliott–Halberstam conjecture to Grimm's conjecture](part-08/README.md)
+
 - [Elliott–Halberstam conjecture](../../../../wikipedia/part-03/elliott-halberstam-conjecture.md)
 - [Some conjectures about ranks of elliptic curves over ℚ](../../../../wikipedia/part-03/some-conjectures-about-ranks-of-elliptic-curves.md)
-
-## [Emirps to First Hardy–Littlewood…](part-08/README.md)
-
 - [Emirps](../../../../wikipedia/part-03/emirps.md)
 - [The Erdős–Moser equation](../../../../wikipedia/part-03/the-erdos-moser-equation.md)
 - [Euclid Numbers conjecture](../../../../wikipedia/part-03/euclid-numbers-conjecture.md)
@@ -185,11 +187,11 @@ navigation: transparent
 - [Goldbach's conjecture](../../../../wikipedia/part-04/goldbachs-conjecture.md)
 - [The Goormaghtigh conjecture](../../../../wikipedia/part-04/the-goormaghtigh-conjecture.md)
 - [Grimm's conjecture](../../../../wikipedia/part-04/grimms-conjecture.md)
+
+## [Hall's conjecture to Modularity conjecture](part-09/README.md)
+
 - [Hall's conjecture](../../../../wikipedia/part-04/halls-conjecture.md)
 - [First Hardy–Littlewood conjecture](../../../../wikipedia/part-04/first-hardy-littlewood-conjecture.md)
-
-## [The Hasse--Weil conjecture for… to Oppermann's Conjecture](part-09/README.md)
-
 - [The Hasse--Weil conjecture for elliptic curves](../../../../wikipedia/part-04/the-hasse-weil-conjecture-for-elliptic-curves.md)
 - [Idoneal numbers completeness conjecture](../../../../wikipedia/part-04/idoneal-numbers-completeness-conjecture.md)
 - [Open questions on irrationality of numbers](../../../../wikipedia/part-05/open-questions-on-irrationality-of-numbers.md)
@@ -208,11 +210,11 @@ navigation: transparent
 - [Conjectures about Mersenne primes](../../../../wikipedia/part-06/conjectures-about-mersenne-primes.md)
 - [Mills' Theorem](../../../../wikipedia/part-06/mills-theorem.md)
 - [Modularity conjecture](../../../../wikipedia/part-06/modularity-conjecture.md)
+
+## [Normality of mathematical… to Scholz conjecture on addition…](part-10/README.md)
+
 - [Normality of mathematical constants](../../../../wikipedia/part-06/normality-of-mathematical-constants.md)
 - [Oppermann's Conjecture](../../../../wikipedia/part-06/oppermanns-conjecture.md)
-
-## [Infinitude of Pell number primes to Sierpiński number](part-10/README.md)
-
 - [Infinitude of Pell number primes](../../../../wikipedia/part-06/infinitude-of-pell-number-primes.md)
 - [Perfect numbers](../../../../wikipedia/part-06/perfect-numbers.md)
 - [Pierpont primes](../../../../wikipedia/part-07/pierpont-primes.md)
@@ -229,18 +231,18 @@ navigation: transparent
 - [Rudin's conjecture on squares in arithmetic progressions](../../../../wikipedia/part-07/rudins-conjecture-on-squares-in-arithmetic-progr.md)
 - [Sato–Tate conjecture](../../../../wikipedia/part-07/sato-tate-conjecture.md)
 - [Schanuel's Conjecture](../../../../wikipedia/part-07/schanuels-conjecture.md)
-- [Hypothesis H](../../../../wikipedia/part-07/hypothesis-h.md)
+- [Hypothesis H](../../../../wikipedia/part-08/hypothesis-h.md)
 - [Scholz conjecture on addition chains](../../../../wikipedia/part-08/scholz-conjecture-on-addition-chains.md)
+
+## [Selfridge's conjectures to Ben Green's Open Problem 7](part-11/README.md)
+
 - [Selfridge's conjectures](../../../../wikipedia/part-08/selfridges-conjectures.md)
 - [Sierpiński number](../../../../wikipedia/part-08/sierpinski-number.md)
-
-## [Singmaster's conjecture to Ben Green's Open Problem 14](part-11/README.md)
-
 - [Singmaster's conjecture](../../../../wikipedia/part-08/singmasters-conjecture.md)
 - [Solitary Numbers](../../../../wikipedia/part-08/solitary-numbers.md)
 - [Sum of three cubes](../../../../wikipedia/part-08/sum-of-three-cubes.md)
 - [(m,k)-perfect numbers](../../../../wikipedia/part-08/m-k-perfect-numbers.md)
-- [Tarski's exponential function problem](../../../../wikipedia/part-08/tarskis-exponential-function-problem.md)
+- [Tarski's exponential function problem](../../../../wikipedia/part-09/tarskis-exponential-function-problem.md)
 - [Taxicab numbers](../../../../wikipedia/part-09/taxicab-numbers.md)
 - [Open questions on transcendence of numbers](../../../../wikipedia/part-09/open-questions-on-transcendence-of-numbers.md)
 - [Twin prime conjecture](../../../../wikipedia/part-09/twin-prime-conjecture.md)
@@ -254,13 +256,14 @@ navigation: transparent
 - [Ben Green's Open Problem 2](../../../../greens-open-problems/part-01/ben-greens-open-problem-2.md)
 - [Ben Green's Open Problem 3](../../../../greens-open-problems/part-01/ben-greens-open-problem-3.md)
 - [Ben Green's Open Problem 7](../../../../greens-open-problems/part-01/ben-greens-open-problem-7.md)
+
+## [Green's Open Problem 12 to Ben Green's Open Problem 43](part-12/README.md)
+
 - [Green's Open Problem 12](../../../../greens-open-problems/part-01/greens-open-problem-12.md)
 - [Ben Green's Open Problem 14](../../../../greens-open-problems/part-01/ben-greens-open-problem-14.md)
-
-## [Green's Open Problem 15 to Ben Green's Open Problem 46](part-12/README.md)
-
 - [Green's Open Problem 15](../../../../greens-open-problems/part-01/greens-open-problem-15.md)
 - [Ben Green's Open Problem 16](../../../../greens-open-problems/part-01/ben-greens-open-problem-16.md)
+- [Ben Green's Open Problem 17](../../../../greens-open-problems/part-01/ben-greens-open-problem-17.md)
 - [Ben Green's Open Problem 18](../../../../greens-open-problems/part-01/ben-greens-open-problem-18.md)
 - [Ben Green's Open Problem 19](../../../../greens-open-problems/part-01/ben-greens-open-problem-19.md)
 - [Ben Green's Open Problem 21](../../../../greens-open-problems/part-01/ben-greens-open-problem-21.md)
@@ -269,65 +272,70 @@ navigation: transparent
 - [Green's Open Problem 24](../../../../greens-open-problems/part-01/greens-open-problem-24.md)
 - [Green's Open Problem 25](../../../../greens-open-problems/part-01/greens-open-problem-25.md)
 - [Green's Open Problem 26](../../../../greens-open-problems/part-01/greens-open-problem-26.md)
-- [Green's Open Problem 27](../../../../greens-open-problems/part-01/greens-open-problem-27.md)
+- [Green's Open Problem 27](../../../../greens-open-problems/part-02/greens-open-problem-27.md)
 - [Ben Green's Open Problem 31](../../../../greens-open-problems/part-02/ben-greens-open-problem-31.md)
 - [Green's Open Problem 32](../../../../greens-open-problems/part-02/greens-open-problem-32.md)
 - [Ben Green's Open Problem 33](../../../../greens-open-problems/part-02/ben-greens-open-problem-33.md)
 - [Ben Green's Open Problem 37](../../../../greens-open-problems/part-02/ben-greens-open-problem-37.md)
 - [Green's Open Problem 38](../../../../greens-open-problems/part-02/greens-open-problem-38.md)
 - [Ben Green's Open Problem 43](../../../../greens-open-problems/part-02/ben-greens-open-problem-43.md)
+
+## [Green's Open Problem 44 to Ben Green's Open Problem 84](part-13/README.md)
+
 - [Green's Open Problem 44](../../../../greens-open-problems/part-02/greens-open-problem-44.md)
 - [Ben Green's Open Problem 45](../../../../greens-open-problems/part-02/ben-greens-open-problem-45.md)
 - [Ben Green's Open Problem 46](../../../../greens-open-problems/part-02/ben-greens-open-problem-46.md)
-
-## [Green's Open Problem 47 to Kaplansky's problem on the…](part-13/README.md)
-
 - [Green's Open Problem 47](../../../../greens-open-problems/part-02/greens-open-problem-47.md)
 - [Green's Open Problem 49](../../../../greens-open-problems/part-02/greens-open-problem-49.md)
-- [Ben Green's Open Problem 50](../../../../greens-open-problems/part-02/ben-greens-open-problem-50.md)
+- [Ben Green's Open Problem 50](../../../../greens-open-problems/part-03/ben-greens-open-problem-50.md)
 - [Green's Open Problem 51](../../../../greens-open-problems/part-03/greens-open-problem-51.md)
 - [Green's Open Problem 52](../../../../greens-open-problems/part-03/greens-open-problem-52.md)
 - [Green's Open Problem 53](../../../../greens-open-problems/part-03/greens-open-problem-53.md)
 - [Ben Green's Open Problem 57](../../../../greens-open-problems/part-03/ben-greens-open-problem-57.md)
 - [Ben Green's Open Problem 58](../../../../greens-open-problems/part-03/ben-greens-open-problem-58.md)
+- [Ben Green's Open Problem 59](../../../../greens-open-problems/part-03/ben-greens-open-problem-59.md)
 - [Ben Green's Open Problem 60](../../../../greens-open-problems/part-03/ben-greens-open-problem-60.md)
 - [Ben Green's Open Problem 61](../../../../greens-open-problems/part-03/ben-greens-open-problem-61.md)
 - [Ben Green's Open Problem 62](../../../../greens-open-problems/part-03/ben-greens-open-problem-62.md)
 - [Green's Open Problem 64](../../../../greens-open-problems/part-03/greens-open-problem-64.md)
 - [Ben Green's Open Problem 65](../../../../greens-open-problems/part-03/ben-greens-open-problem-65.md)
 - [Ben Green's Open Problem 66](../../../../greens-open-problems/part-03/ben-greens-open-problem-66.md)
-- [Ben Green's Open Problem 82](../../../../greens-open-problems/part-03/ben-greens-open-problem-82.md)
+- [Ben Green's Open Problem 82](../../../../greens-open-problems/part-04/ben-greens-open-problem-82.md)
+- [Ben Green's Open Problem 84](../../../../greens-open-problems/part-04/ben-greens-open-problem-84.md)
+
+## [Ben Green's Open Problem 86 to Cunningham chains — Jones's…](part-14/README.md)
+
+- [Ben Green's Open Problem 86](../../../../greens-open-problems/part-04/ben-greens-open-problem-86.md)
 - [Ben Green's Open Problem 93](../../../../greens-open-problems/part-04/ben-greens-open-problem-93.md)
+- [Ben Green's Open Problem 95](../../../../greens-open-problems/part-04/ben-greens-open-problem-95.md)
+- [Ben Green's Open Problem 100](../../../../greens-open-problems/part-04/ben-greens-open-problem-100.md)
 - [The Catch-Up game and conjecture](../../../../papers/part-01/the-catch-up-game-and-conjecture.md)
 - [Dubner's conjecture](../../../../papers/part-01/dubners-conjecture.md)
-- [Gourevitch's series identity](../../../../papers/part-01/gourevitchs-series-identity.md)
+- [Gourevitch's series identity](../../../../papers/part-02/gourevitchs-series-identity.md)
 - [Kaplansky's problem on the values of the $u$-invariant](../../../../papers/part-02/kaplanskys-problem-on-the-values-of-the-u-invari.md)
-
-## [Kurepa's conjecture to Minimum modulus for the unique…](part-14/README.md)
-
 - [Kurepa's conjecture](../../../../papers/part-02/kurepas-conjecture.md)
 - [Parities of partition numbers](../../../../papers/part-02/parities-of-partition-numbers.md)
 - [Pfister's problem on the Pythagoras number of $\mathbb{R}(X_1, \dots, X_n)$](../../../../papers/part-02/pfisters-problem-on-the-pythagoras-number-of-r-x.md)
 - [Prime Tuples Conjecture](../../../../papers/part-02/prime-tuples-conjecture.md)
-- [Equivalents to the Riemann Hypothesis](../../../../papers/part-02/equivalents-to-the-riemann-hypothesis.md)
-- [Moments of the Riemann zeta function on the critical line](../../../../papers/part-02/moments-of-the-riemann-zeta-function-on-the-crit.md)
+- [Equivalents to the Riemann Hypothesis](../../../../papers/part-03/equivalents-to-the-riemann-hypothesis.md)
+- [Moments of the Riemann zeta function on the critical line](../../../../papers/part-03/moments-of-the-riemann-zeta-function-on-the-crit.md)
 - [Simple zeros of the Riemann zeta function on the critical line](../../../../papers/part-03/simple-zeros-of-the-riemann-zeta-function-on-the.md)
 - [Serre's uniformity conjecture over the rationals](../../../../papers/part-03/serres-uniformity-conjecture-over-the-rationals.md)
 - [Tu-Deng Conjecture](../../../../papers/part-03/tu-deng-conjecture.md)
 - [Zagier's Conjecture on Multiple Zeta Values](../../../../papers/part-03/zagiers-conjecture-on-multiple-zeta-values.md)
 - [The Curling Number Conjecture](../../../../arxiv/part-01/the-curling-number-conjecture.md)
 - [Cunningham chains — Jones's conjecture](../../../../arxiv/part-01/cunningham-chains-joness-conjecture.md)
+
+## [Conway's subprime Fibonacci… to Bugeaud Collection of…](part-15/README.md)
+
 - [Conway's subprime Fibonacci sequences](../../../../arxiv/part-01/conways-subprime-fibonacci-sequences.md)
 - [Unique Crystal Components](../../../../arxiv/part-01/unique-crystal-components.md)
 - [Barker sequences](../../../../arxiv/part-01/barker-sequences.md)
 - [Digit $2$ in base $3$ representation of $2^n$](../../../../arxiv/part-01/digit-2-in-base-3-representation-of-2-n.md)
 - [An Arithmetic Sum Associated with the Classical Theta Function](../../../../arxiv/part-01/an-arithmetic-sum-associated-with-the-classical.md)
-- [A conjecture by Margulis on matrix groups](../../../../arxiv/part-01/a-conjecture-by-margulis-on-matrix-groups.md)
+- [A conjecture by Margulis on matrix groups](../../../../arxiv/part-02/a-conjecture-by-margulis-on-matrix-groups.md)
 - [Integer values of $\tan(\arctan 1 + \arctan 2 + \cdots + \arctan n)$](../../../../arxiv/part-02/integer-values-of-tan-arctan-1-arctan-2-cdots-ar.md)
 - [Minimum modulus for the unique multiset-sum problem](../../../../arxiv/part-02/minimum-modulus-for-the-unique-multiset-sum-prob.md)
-
-## [Mathoverflow 17560 to Tao's Optimization constant 1a…](part-15/README.md)
-
 - [Mathoverflow 17560](../../../../mathoverflow/mathoverflow-17560.md)
 - [Mathoverflow 75792](../../../../mathoverflow/mathoverflow-75792.md)
 - [Are prime numbers among sums of prime numbers distributed as $\frac n{2\ln(n)}$?](../../../../mathoverflow/are-prime-numbers-among-sums-of-prime-numbers-di.md)
@@ -340,6 +348,9 @@ navigation: transparent
 - [Bugeaud Collection of Conjectures and Open Questions: $p$-adic Littlewood Conjecture](../../../../books/bugeaud-collection-of-conjectures-and-open-quest-6.md)
 - [Bugeaud Collection of Conjectures and Open Questions: Mahler's Z-numbers](../../../../books/bugeaud-collection-of-conjectures-and-open-quest-7.md)
 - [Bugeaud Collection of Conjectures and Open Questions: Automatic Expansions in Two Bases](../../../../books/bugeaud-collection-of-conjectures-and-open-quest-8.md)
+
+## [Bugeaud Collection of… to Lam--Litt conjecture](part-16/README.md)
+
 - [Bugeaud Collection of Conjectures and Open Questions: Simultaneously Small Entropies](../../../../books/bugeaud-collection-of-conjectures-and-open-quest-9.md)
 - [Bugeaud Collection of Conjectures and Open Questions: Pisot orbits on the Cantor set](../../../../books/bugeaud-collection-of-conjectures-and-open-quest-10.md)
 - [Equidistributed Sequences](../../../../books/equidistributed-sequences.md)
@@ -348,9 +359,6 @@ navigation: transparent
 - [The Birch and Swinnerton-Dyer (BSD) Conjecture](../../../../millennium-problems/the-birch-and-swinnerton-dyer-bsd-conjecture.md)
 - [Riemann Hypothesis and its generalizations](../../../../millennium-problems/riemann-hypothesis-and-its-generalizations.md)
 - [Tao's Optimization constant 1a / An autocorrelation constant related to Sidon sets](../../../../optimization-constants/taos-optimization-constant-1a-an-autocorrelation.md)
-
-## [Tao's Optimization Constant 7a… to Lam--Litt conjecture](part-16/README.md)
-
 - [Tao's Optimization Constant 7a / The Irrationality Measure of $\pi$](../../../../optimization-constants/taos-optimization-constant-7a-the-irrationality.md)
 - [Tao's Optimization Constant 7b / The Irrationality Measure of $\Gamma(1/4)$](../../../../optimization-constants/taos-optimization-constant-7b-the-irrationality.md)
 - [Lam--Litt conjecture](../../../../litts-problems/lam-litt-conjecture.md)

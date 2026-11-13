@@ -14,7 +14,7 @@ statement: formalized
 > * [Ha99] Haxell, P. E. (1999). "Packing and covering triangles in graphs." *Discrete Math.*
 >   195, pp. 251--254.
 
-*Quoted from [FormalConjectures/Wikipedia/TuzaConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TuzaConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/TuzaConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TuzaConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 1 open and 1 solved. It also has 1 test statement and 2 API statements, counted here but not shown.
 
@@ -31,7 +31,7 @@ theorem tuza_conjecture {V : Type} [Fintype V] (G : SimpleGraph V) :
     triangleCoverNumber G ≤ 2 * trianglePackingNumber G
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TuzaConjecture.lean, line 78](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TuzaConjecture.lean#L78).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TuzaConjecture.lean, line 78](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TuzaConjecture.lean#L78).
 
 ## `TuzaConjecture.tuza_conjecture.variants.haxell`
 
@@ -46,7 +46,7 @@ theorem tuza_conjecture.variants.haxell {V : Type} [Fintype V] (G : SimpleGraph 
     (triangleCoverNumber G : ℝ) ≤ 66 / 23 * trianglePackingNumber G
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TuzaConjecture.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TuzaConjecture.lean#L88).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/TuzaConjecture.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TuzaConjecture.lean#L88).
 
 ## Depends on
 
@@ -54,5 +54,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/TuzaConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/TuzaConjecture.lean)
+- [FormalConjectures/Wikipedia/TuzaConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/TuzaConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Tuza%27s_conjecture)

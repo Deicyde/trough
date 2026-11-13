@@ -17,7 +17,7 @@ statement: formalized
 >   **On the Farrell–Jones Conjecture and its applications**
 >   by *Arthur Bartels, Wolfgang Lück, Holger Reich*, J. Topol. 1 (2008), 57–86.
 
-*Quoted from [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 open. It also has 2 API statements, counted here but not shown.
 
@@ -40,7 +40,7 @@ theorem projective_module_isStablyFree {G : Type*} [Group G] (hG : ∀ g : G, Is
     Module.IsStablyFree (MonoidAlgebra ℤ G) M
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../../by-subject/part-01/19-k-theory/README.md), [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean#L82).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../../by-subject/part-01/19-k-theory/README.md), [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean#L82).
 
 ## `Arxiv.«math.0703548».bass_conjecture_integral_domain`
 
@@ -61,7 +61,7 @@ theorem bass_conjecture_integral_domain {R : Type*} [CommRing R] [IsDomain R] {G
     matrixHattoriStallingsTraceAt A g = 0
 ```
 
-Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../../by-subject/part-01/19-k-theory/README.md), [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean#L98).
+Category `research open`; AMS [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [19 K-theory](../../by-subject/part-01/19-k-theory/README.md), [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean#L98).
 
 ## Depends on
 
@@ -69,5 +69,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean)
+- [FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/math.0703548/FarrellJonesConsequences.lean)
 - [arxiv/math.0703548](https://arxiv.org/abs/math/0703548)

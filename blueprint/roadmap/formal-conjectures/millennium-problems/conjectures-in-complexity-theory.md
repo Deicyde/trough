@@ -18,7 +18,7 @@ statement: formalized
 > - [Wikipedia](https://en.wikipedia.org/wiki/P_versus_NP_problem)
 > - [The Clay Institute](https://www.claymath.org/millennium/p-vs-np/)
 
-*Quoted from [FormalConjectures/Millennium/PvsNP.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Millennium/PvsNP.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 7 research or textbook statements: 3 open and 4 textbook results.
 
@@ -34,7 +34,7 @@ Open: stated without proof.
 theorem P_ne_NP : P ≠ NP
 ```
 
-Category `research open`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 45](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean#L45).
+Category `research open`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 45](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean#L45).
 
 ## `ComplexityTheory.NP_ne_coNP`
 
@@ -48,7 +48,7 @@ Open: stated without proof.
 theorem NP_ne_coNP : NP ≠ coNP
 ```
 
-Category `research open`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 53](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean#L53).
+Category `research open`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 53](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean#L53).
 
 ## `ComplexityTheory.P_eq_BPP`
 
@@ -62,7 +62,7 @@ Open: stated without proof.
 theorem P_eq_BPP : P = BPP
 ```
 
-Category `research open`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean#L61).
+Category `research open`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean#L61).
 
 ## `ComplexityTheory.coP_eq_P`
 
@@ -78,7 +78,7 @@ theorem coP_eq_P :
     { L | Lᶜ ∈ P } = P
 ```
 
-Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean#L70).
+Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean#L70).
 
 ## `ComplexityTheory.P_subset_NP`
 
@@ -95,7 +95,7 @@ theorem P_subset_NP :
     P ⊆ NP
 ```
 
-Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean#L83).
+Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean#L83).
 
 ## `ComplexityTheory.P_subset_coNP`
 
@@ -108,7 +108,7 @@ theorem P_subset_coNP :
     P ⊆ coNP
 ```
 
-Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean#L91).
+Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean#L91).
 
 ## `ComplexityTheory.P_subset_BPP`
 
@@ -125,7 +125,7 @@ theorem P_subset_BPP :
     P ⊆ BPP
 ```
 
-Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean#L106).
+Category `textbook`; AMS [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Millennium/PvsNP.lean, line 106](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean#L106).
 
 ## Depends on
 
@@ -133,5 +133,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Millennium/PvsNP.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/PvsNP.lean)
+- [FormalConjectures/Millennium/PvsNP.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/PvsNP.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/P_versus_NP_problem)

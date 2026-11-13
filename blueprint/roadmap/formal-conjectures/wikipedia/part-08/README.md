@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Scholz conjecture on addition… to Tarski's exponential function…
+# Hypothesis H to Gottschalk's surjunctivity…
 
+- [Hypothesis H](hypothesis-h.md)
 - [Scholz conjecture on addition chains](scholz-conjecture-on-addition-chains.md)
 - [Selfridge's conjectures](selfridges-conjectures.md)
 - [Sendov's conjecture](sendovs-conjecture.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Sum of three cubes](sum-of-three-cubes.md)
 - [(m,k)-perfect numbers](m-k-perfect-numbers.md)
 - [Gottschalk's surjunctivity conjecture](gottschalks-surjunctivity-conjecture.md)
-- [Tarski's exponential function problem](tarskis-exponential-function-problem.md)

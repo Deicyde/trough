@@ -18,7 +18,7 @@ statement: formalized
 > - [HaLe18] Haviv, Ishay and Levy, Dan, *Symmetric complete sum-free sets in cyclic groups*. Israel
 >   J. Math. (2018), 931-956.
 
-*Quoted from [FormalConjectures/ErdosProblems/133.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/133.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/133](https://www.erdosproblems.com/133).
 
@@ -47,7 +47,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 theorem erdos_133 : ¬ Tendsto (fun n : ℕ ↦ (f n : ℝ) / √n) atTop atTop
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean#L68).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean#L68).
 
 ## `Erdos133.erdos_133.variants.isTheta`
 
@@ -59,7 +59,7 @@ Solved: stated here; a Lean proof is at [https://github.com/plby/lean-proofs/blo
 theorem erdos_133.variants.isTheta : (fun n : ℕ ↦ (f n : ℝ)) =Θ[atTop] fun n ↦ √n
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean#L75).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean#L75).
 
 ## `Erdos133.erdos_133.variants.lower_bound`
 
@@ -73,7 +73,7 @@ theorem erdos_133.variants.lower_bound : ∀ ε : ℝ, 0 < ε →
     ∀ᶠ n : ℕ in atTop, (1 - ε) * √n ≤ f n
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean#L83).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 83](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean#L83).
 
 ## `Erdos133.erdos_133.variants.hanson_seyffarth`
 
@@ -86,7 +86,7 @@ theorem erdos_133.variants.hanson_seyffarth : ∀ ε : ℝ, 0 < ε →
     ∀ᶠ n : ℕ in atTop, (f n : ℝ) ≤ (√2 + ε) * √n
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean#L89).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean#L89).
 
 ## `Erdos133.erdos_133.variants.furedi_seress`
 
@@ -99,7 +99,7 @@ theorem erdos_133.variants.furedi_seress : ∀ ε : ℝ, 0 < ε →
     ∀ᶠ n : ℕ in atTop, (f n : ℝ) ≤ (2 / √3 + ε) * √n
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean#L95).
+Category `research solved`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean#L95).
 
 ## `Erdos133.erdos_133.variants.asymptotic`
 
@@ -112,7 +112,7 @@ theorem erdos_133.variants.asymptotic :
     (fun n : ℕ ↦ (f n : ℝ)) ~[atTop] fun n ↦ √n
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean#L101).
+Category `research open`; AMS [05 Combinatorics](../../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/ErdosProblems/133.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean#L101).
 
 ## Depends on
 
@@ -120,5 +120,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/133.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/133.lean)
+- [FormalConjectures/ErdosProblems/133.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/133.lean)
 - [erdosproblems.com/133](https://www.erdosproblems.com/133)

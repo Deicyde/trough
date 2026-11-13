@@ -22,7 +22,7 @@ statement: formalized
 > - No p-group can be a Leinster group.
 > - All abelian Leinster groups are cyclic with order equal to a perfect number.
 
-*Quoted from [FormalConjectures/Wikipedia/LeinsterGroup.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LeinsterGroup.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/LeinsterGroup.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LeinsterGroup.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved. It also has 1 API statement, counted here but not shown.
 
@@ -44,7 +44,7 @@ theorem infinitely_many_leinster_groups :
       IsLeinster G → Fintype.card G < n
 ```
 
-Category `research open`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LeinsterGroup.lean#L61).
+Category `research open`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LeinsterGroup.lean#L61).
 
 ## `LeinsterGroup.abelian_is_leinster_iff_cyclic_perfect`
 
@@ -60,7 +60,7 @@ theorem abelian_is_leinster_iff_cyclic_perfect (G : Type*) [CommGroup G] [Fintyp
     IsLeinster G ↔ IsCyclic G ∧ Nat.Perfect (Fintype.card G)
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LeinsterGroup.lean#L86).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 86](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LeinsterGroup.lean#L86).
 
 ## `LeinsterGroup.exists_nonabelian_leinster_group`
 
@@ -78,7 +78,7 @@ theorem exists_nonabelian_leinster_group :
       IsLeinster G ∧ ¬ ∀ (a b : G), a * b = b * a
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LeinsterGroup.lean#L98).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LeinsterGroup.lean#L98).
 
 ## `LeinsterGroup.dihedral_is_leinster_iff_odd_perfect`
 
@@ -98,7 +98,7 @@ theorem dihedral_is_leinster_iff_odd_perfect (n : ℕ) [NeZero n] :
     IsLeinster (DihedralGroup n) ↔ Nat.Perfect n ∧ Odd n
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LeinsterGroup.lean#L114).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Wikipedia/LeinsterGroup.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LeinsterGroup.lean#L114).
 
 ## Depends on
 
@@ -106,5 +106,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/LeinsterGroup.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LeinsterGroup.lean)
+- [FormalConjectures/Wikipedia/LeinsterGroup.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LeinsterGroup.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Leinster_group)

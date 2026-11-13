@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 450 to Erdős Problem 476
+# Erdős Problem 445 to Erdős Problem 472
 
+- [Erdős Problem 445](../../../../../erdos-problems/400-499/part-03/erdos-problem-445.md)
+- [Erdős Problem 448](../../../../../erdos-problems/400-499/part-03/erdos-problem-448.md)
 - [Erdős Problem 450](../../../../../erdos-problems/400-499/part-03/erdos-problem-450.md)
 - [Erdős Problem 452](../../../../../erdos-problems/400-499/part-03/erdos-problem-452.md)
 - [Erdős Problem 453](../../../../../erdos-problems/400-499/part-03/erdos-problem-453.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Erdős Problem 469](../../../../../erdos-problems/400-499/part-03/erdos-problem-469.md)
 - [Erdős Problem 470](../../../../../erdos-problems/400-499/part-03/erdos-problem-470.md)
 - [Erdős Problem 472](../../../../../erdos-problems/400-499/part-04/erdos-problem-472.md)
-- [Erdős Problem 473](../../../../../erdos-problems/400-499/part-04/erdos-problem-473.md)
-- [Erdős Problem 476](../../../../../erdos-problems/400-499/part-04/erdos-problem-476.md)

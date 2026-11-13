@@ -24,7 +24,7 @@ statement: formalized
 > - Goodman, A. W., *On some determinants related to $p$-valent functions*,
 >   Trans. Amer. Math. Soc. 63 (1948), 175–192.
 
-*Quoted from [FormalConjectures/Wikipedia/GoodmanConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GoodmanConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/GoodmanConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GoodmanConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open. It also has 2 test statements, counted here but not shown.
 
@@ -43,7 +43,7 @@ theorem goodman_conjecture (f : ℂ → ℂ) (p n : ℕ) (hf : IsPValent f p)
     ‖coeff f n‖ ≤ goodmanBound f p n
 ```
 
-Category `research open`; AMS [30 Functions of a complex variable](../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/Wikipedia/GoodmanConjecture.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GoodmanConjecture.lean#L99).
+Category `research open`; AMS [30 Functions of a complex variable](../../by-subject/part-01/30-functions-of-a-complex-variable/README.md). Declared in [FormalConjectures/Wikipedia/GoodmanConjecture.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GoodmanConjecture.lean#L99).
 
 ## Depends on
 
@@ -51,5 +51,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/GoodmanConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GoodmanConjecture.lean)
+- [FormalConjectures/Wikipedia/GoodmanConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GoodmanConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Goodman%27s_conjecture)

@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Gauss circle problem to Inverse Galois problem
+# Gap conjecture to Invariant Subspace Problem
 
+- [Gap conjecture](gap-conjecture.md)
 - [Gauss circle problem](gauss-circle-problem.md)
 - [Gilbreath's conjecture](gilbreaths-conjecture.md)
 - [Goldbach's conjecture](goldbachs-conjecture.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Inscribed square problem](inscribed-square-problem.md)
 - [Polynomial-time computability of factoring](polynomial-time-computability-of-factoring.md)
 - [Invariant Subspace Problem](invariant-subspace-problem.md)
-- [Inverse Galois problem](inverse-galois-problem.md)

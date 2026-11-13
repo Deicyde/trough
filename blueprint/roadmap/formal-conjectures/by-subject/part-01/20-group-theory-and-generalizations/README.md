@@ -1,8 +1,8 @@
 # Group theory and generalizations
 
-The 32 problems with a statement whose `AMS` attribute names 20, Group theory and generalizations, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+The 33 problems with a statement whose `AMS` attribute names 20, Group theory and generalizations, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
 
-## [Erdős Problem 274 to The $S_3$-conjecture (conjugacy…](part-01/README.md)
+## [Erdős Problem 274 to Ben Green's Open Problem 100](part-01/README.md)
 
 - [Erdős Problem 274](../../../erdos-problems/200-299/part-04/erdos-problem-274.md)
 - [Erdős Problem 1098](../../../erdos-problems/1000-1099/part-05/erdos-problem-1098.md)
@@ -12,7 +12,7 @@ The 32 problems with a statement whose `AMS` attribute names 20, Group theory an
 - [The Andrews-Curtis conjecture](../../../wikipedia/part-01/the-andrews-curtis-conjecture.md)
 - [Bounded Burnside problem](../../../wikipedia/part-02/bounded-burnside-problem.md)
 - [Babai–Seress Conjectures on the Diameter of Finite Groups](../../../wikipedia/part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
-- [Gap conjecture](../../../wikipedia/part-03/gap-conjecture.md)
+- [Gap conjecture](../../../wikipedia/part-04/gap-conjecture.md)
 - [Gromov's theorem on groups of polynomial growth](../../../wikipedia/part-04/gromovs-theorem-on-groups-of-polynomial-growth.md)
 - [Kaplansky's Conjectures](../../../wikipedia/part-05/kaplanskys-conjectures.md)
 - [Leinster Groups](../../../wikipedia/part-05/leinster-groups.md)
@@ -23,13 +23,14 @@ The 32 problems with a statement whose `AMS` attribute names 20, Group theory an
 - [Ben Green's Open Problem 29](../../../greens-open-problems/part-02/ben-greens-open-problem-29.md)
 - [Green's Open Problem 36](../../../greens-open-problems/part-02/greens-open-problem-36.md)
 - [Green's Open Problem 87](../../../greens-open-problems/part-04/greens-open-problem-87.md)
+- [Ben Green's Open Problem 100](../../../greens-open-problems/part-04/ben-greens-open-problem-100.md)
+
+## [The $S_3$-conjecture (conjugacy… to Conjecture 21.149](part-02/README.md)
+
 - [The $S_3$-conjecture (conjugacy classes of distinct sizes)](../../../papers/part-01/the-s-3-conjecture-conjugacy-classes-of-distinct.md)
-
-## [Group structure via subgroup… to Conjecture 21.149](part-02/README.md)
-
 - [Group structure via subgroup counts](../../../arxiv/part-02/group-structure-via-subgroup-counts.md)
 - [Fernandes' conjecture on the 2-generation of even direct product permutation groups](../../../arxiv/part-02/fernandes-conjecture-on-the-2-generation-of-even.md)
-- [Finite generation of the cohomology of finite-dimensional Hopf algebras](../../../arxiv/part-02/finite-generation-of-the-cohomology-of-finite-di.md)
+- [Finite generation of the cohomology of finite-dimensional Hopf algebras](../../../arxiv/part-03/finite-generation-of-the-cohomology-of-finite-di.md)
 - [Algebraic consequences of the Farrell–Jones conjecture](../../../arxiv/part-03/algebraic-consequences-of-the-farrell-jones-conj.md)
 - [Residual finiteness of hyperbolic groups](../../../other/residual-finiteness-of-hyperbolic-groups.md)
 - [Conjecture 1.35(c)](../../../kourovka/conjecture-1-35-c.md)

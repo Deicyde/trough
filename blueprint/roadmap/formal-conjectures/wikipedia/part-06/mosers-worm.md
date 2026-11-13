@@ -11,7 +11,7 @@ statement: formalized
 > - [Wikipedia](https://en.wikipedia.org/wiki/Moser%27s_worm_problem)
 > - [Tao's optimization constant 13a](https://teorth.github.io/optimizationproblems/constants/13a.html)
 
-*Quoted from [FormalConjectures/Wikipedia/MoserWorm.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/MoserWorm.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 7 research or textbook statements: 2 open, 4 solved and 1 textbook result.
 
@@ -27,7 +27,7 @@ Textbook result, proved here.
 theorem disc_mem_worm_covers : Metric.closedBall 0 0.5 ∈ WormCovers
 ```
 
-Category `textbook`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean#L55).
+Category `textbook`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 55](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean#L55).
 
 ## `MoserWorm.mosers_worm_problem`
 
@@ -42,7 +42,7 @@ theorem mosers_worm_problem :
     IsGLB {v | ∃ X ∈ WormCovers, volume X = v} mosers_worm_problem.answer
 ```
 
-Category `research open`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean#L80).
+Category `research open`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean#L80).
 
 ## `MoserWorm.mosers_worm_problem_upper_bound`
 
@@ -59,7 +59,7 @@ theorem mosers_worm_problem_upper_bound :
     ∃ X ∈ WormCovers, volume X = 0.260437
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean#L92).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean#L92).
 
 ## `MoserWorm.convex_mosers_worm_problem`
 
@@ -74,7 +74,7 @@ theorem convex_mosers_worm_problem :
     convexWormCoverConstant = convex_mosers_worm_problem.answer
 ```
 
-Category `research open`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean#L110).
+Category `research open`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean#L110).
 
 ## `MoserWorm.convex_mosers_worm_problem_bound_attained`
 
@@ -88,7 +88,7 @@ theorem convex_mosers_worm_problem_bound_attained :
     ∃ X ∈ WormCovers, Convex ℝ X ∧ volume X = convexWormCoverConstant
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean#L119).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean#L119).
 
 ## `MoserWorm.convex_mosers_worm_problem_upper_bound`
 
@@ -105,7 +105,7 @@ theorem convex_mosers_worm_problem_upper_bound :
     ∃ X ∈ WormCovers, Convex ℝ X ∧ volume X = 0.270911861
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean#L131).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 131](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean#L131).
 
 ## `MoserWorm.convex_mosers_worm_problem_lower_bound`
 
@@ -124,7 +124,7 @@ theorem convex_mosers_worm_problem_lower_bound :
     0.232239 ≤ convexWormCoverConstant
 ```
 
-Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean#L145).
+Category `research solved`; AMS [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/MoserWorm.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean#L145).
 
 ## Depends on
 
@@ -132,5 +132,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/MoserWorm.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MoserWorm.lean)
+- [FormalConjectures/Wikipedia/MoserWorm.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MoserWorm.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Moser%27s_worm_problem)

@@ -14,7 +14,7 @@ statement: formalized
 > - [Wikipedia](https://en.wikipedia.org/wiki/Carmichael%27s_totient_function_conjecture)
 > - [F1998] Kevin Ford. The distribution of totients. https://arxiv.org/abs/1104.3264
 
-*Quoted from [FormalConjectures/Wikipedia/CarmichaelTotient.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/CarmichaelTotient.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/CarmichaelTotient.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/CarmichaelTotient.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open, 1 solved and 1 textbook result. It also has 1 test statement, counted here but not shown.
 
@@ -28,7 +28,7 @@ Textbook result, proved here.
 theorem carmichealTotientFor_odd {n : ℕ} (hn : Odd n) : CarmichaelTotientFor n
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/CarmichaelTotient.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/CarmichaelTotient.lean#L51).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/CarmichaelTotient.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/CarmichaelTotient.lean#L51).
 
 ## `CarmichaelTotient.charmichaelTotient`
 
@@ -42,7 +42,7 @@ theorem charmichaelTotient :
     ∀ ⦃n : ℕ⦄, 0 < n → CarmichaelTotientFor n
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/CarmichaelTotient.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/CarmichaelTotient.lean#L59).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/CarmichaelTotient.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/CarmichaelTotient.lean#L59).
 
 ## `CarmichaelTotient.carchimaelTotient_bound`
 
@@ -56,7 +56,7 @@ theorem carchimaelTotient_bound {n : ℕ} (hn : 0 < n) (hn' : n < 10 ^ (10 ^ 10)
     CarmichaelTotientFor n
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/CarmichaelTotient.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/CarmichaelTotient.lean#L66).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/Wikipedia/CarmichaelTotient.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/CarmichaelTotient.lean#L66).
 
 ## Depends on
 
@@ -64,5 +64,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/CarmichaelTotient.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/CarmichaelTotient.lean)
+- [FormalConjectures/Wikipedia/CarmichaelTotient.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/CarmichaelTotient.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Carmichael%27s_totient_function_conjecture)

@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# TxGraffiti Conjecture 2: zero… to The Dixmier Conjecture
+# A conjecture by Margulis on… to Banach-Mazur Rotation Problem
 
+- [A conjecture by Margulis on matrix groups](a-conjecture-by-margulis-on-matrix-groups.md)
+- [TxGraffiti Conjecture 1: independence, annihilation, and residue](txgraffiti-conjecture-1-independence-annihilatio.md)
 - [TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs)](txgraffiti-conjecture-2-zero-forcing-versus-inde.md)
 - [TxGraffiti Conjecture 3: independent domination versus saturation (regular)](txgraffiti-conjecture-3-independent-domination-v.md)
 - [TxGraffiti Conjecture 4: the saturation number versus the harmonic index](txgraffiti-conjecture-4-the-saturation-number-ve.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [The Balister–Győri–Schelp conjecture](the-balister-gyori-schelp-conjecture.md)
 - [The Maxwell conjecture](the-maxwell-conjecture.md)
 - [Banach-Mazur Rotation Problem](banach-mazur-rotation-problem.md)
-- [Finite generation of the cohomology of finite-dimensional Hopf algebras](finite-generation-of-the-cohomology-of-finite-di.md)
-- [The Dixmier Conjecture](the-dixmier-conjecture.md)

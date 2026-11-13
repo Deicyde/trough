@@ -17,7 +17,7 @@ statement: formalized
 >   Oberwolfach problem." *J. Eur. Math. Soc.* 23, pp. 2511--2547.
 >   [arXiv:1806.04644](https://arxiv.org/abs/1806.04644)
 
-*Quoted from [FormalConjectures/Wikipedia/AlspachConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlspachConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/AlspachConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlspachConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open and 3 solved. It also has 2 test statements and 1 API statement, counted here but not shown.
 
@@ -39,7 +39,7 @@ theorem alspach_conjecture :
         IsCycleDecomposition (completeGraph (Fin n)) C ∧ lengths C = m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlspachConjecture.lean#L63).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlspachConjecture.lean#L63).
 
 ## `AlspachConjecture.alspach_conjecture.variants.even`
 
@@ -62,7 +62,7 @@ theorem alspach_conjecture.variants.even (n : ℕ) (hn : Even n)
       IsCycleDecomposition (completeGraph (Fin n) \ I.spanningCoe) C ∧ lengths C = m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlspachConjecture.lean#L81).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlspachConjecture.lean#L81).
 
 ## `AlspachConjecture.alspach_conjecture.variants.long_cycles`
 
@@ -80,7 +80,7 @@ theorem alspach_conjecture.variants.long_cycles (n : ℕ) (hn : Odd n) (m : Mult
       IsCycleDecomposition (completeGraph (Fin n)) C ∧ lengths C = m
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlspachConjecture.lean#L95).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 95](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlspachConjecture.lean#L95).
 
 ## `AlspachConjecture.alspach_conjecture.variants.oberwolfach`
 
@@ -103,7 +103,7 @@ theorem alspach_conjecture.variants.oberwolfach :
         ∀ u v, (completeGraph (Fin n)).Adj u v ↔ ∃! i, (D i).Adj u v
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlspachConjecture.lean#L183).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/AlspachConjecture.lean, line 183](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlspachConjecture.lean#L183).
 
 ## Depends on
 
@@ -111,5 +111,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/AlspachConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/AlspachConjecture.lean)
+- [FormalConjectures/Wikipedia/AlspachConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/AlspachConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Alspach%27s_conjecture)

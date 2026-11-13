@@ -75,7 +75,7 @@ statement: formalized
 > * [K26] [A Formal Conjectures Bézier--Bernstein Theorem in
 >   Lean](https://github.com/KitaKen1/bezier-bernstein-voronovskaja-lean), by *Kenta Kitamura*.
 
-*Quoted from [FormalConjectures/Paper/VoronovskajaTypeFormula.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/VoronovskajaTypeFormula.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/VoronovskajaTypeFormula.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/VoronovskajaTypeFormula.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved. It also has 21 API statements, counted here but not shown.
 
@@ -103,7 +103,7 @@ theorem voronovskaja_theorem.bernstein_operators
     (𝓝 ((1 / 2) * x * (1 - x) * f''))
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [40 Sequences, series, summability](../../by-subject/part-02/40-sequences-series-summability/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Paper/VoronovskajaTypeFormula.lean, line 448](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/VoronovskajaTypeFormula.lean#L448).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [40 Sequences, series, summability](../../by-subject/part-02/40-sequences-series-summability/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Paper/VoronovskajaTypeFormula.lean, line 448](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/VoronovskajaTypeFormula.lean#L448).
 
 ## `VoronovskajaTypeFormula.voronovskaja_theorem.bezier_bernstein_operators`
 
@@ -157,7 +157,7 @@ theorem voronovskaja_theorem.bezier_bernstein_operators
         ℝ → (ℝ → ℝ) → ℝ → ℝ) α f x))
 ```
 
-Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [40 Sequences, series, summability](../../by-subject/part-02/40-sequences-series-summability/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Paper/VoronovskajaTypeFormula.lean, line 498](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/VoronovskajaTypeFormula.lean#L498).
+Category `research solved`; AMS [26 Real functions](../../by-subject/part-01/26-real-functions/README.md), [40 Sequences, series, summability](../../by-subject/part-02/40-sequences-series-summability/README.md), [47 Operator theory](../../by-subject/part-02/47-operator-theory/README.md). Declared in [FormalConjectures/Paper/VoronovskajaTypeFormula.lean, line 498](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/VoronovskajaTypeFormula.lean#L498).
 
 ## Depends on
 
@@ -165,5 +165,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/VoronovskajaTypeFormula.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/VoronovskajaTypeFormula.lean)
+- [FormalConjectures/Paper/VoronovskajaTypeFormula.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/VoronovskajaTypeFormula.lean)
 - [Voronovskaja-type Formula for the Bézier Variant of the Bernstein Operators](https://www.math.bas.bg/mathmod/Proceedings_CTF/CTF-2010/files_CTF-2010/Open_problems.pdf)

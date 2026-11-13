@@ -64,7 +64,7 @@ statement: formalized
 > - [Bh14] B. Bhatt, *On the non-existence of small Cohen-Macaulay algebras*, J. Algebra 411
 >   (2014), 1-11. [arXiv:1207.5413](https://arxiv.org/abs/1207.5413)
 
-*Quoted from [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 1 open, 2 solved and 1 textbook result. It also has 1 test statement, counted here but not shown.
 
@@ -87,7 +87,7 @@ theorem exists_isSmallCohenMacaulay [IsAdicComplete (maximalIdeal R) R] :
     ∃ (M : Type u) (_ : AddCommGroup M) (_ : Module R M), IsSmallCohenMacaulay R M
 ```
 
-Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L116).
+Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L116).
 
 ## `SmallCohenMacaulayModules.exists_isSmallCohenMacaulay.variants.ringKrullDim_le_two`
 
@@ -103,7 +103,7 @@ theorem exists_isSmallCohenMacaulay.variants.ringKrullDim_le_two
     ∃ (M : Type u) (_ : AddCommGroup M) (_ : Module R M), IsSmallCohenMacaulay R M
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L126).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L126).
 
 ## `SmallCohenMacaulayModules.isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay`
 
@@ -121,7 +121,7 @@ theorem isBalancedBigCohenMacaulay_iff_isSmallCohenMacaulay [Module.Finite R M] 
     IsBalancedBigCohenMacaulay R M ↔ IsSmallCohenMacaulay R M
 ```
 
-Category `textbook`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 140](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L140).
+Category `textbook`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 140](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L140).
 
 ## `SmallCohenMacaulayModules.exists_isBalancedBigCohenMacaulay`
 
@@ -137,7 +137,7 @@ theorem exists_isBalancedBigCohenMacaulay :
     ∃ (W : Type u) (_ : AddCommGroup W) (_ : Module R W), IsBalancedBigCohenMacaulay R W
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L151).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md). Declared in [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean, line 151](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean#L151).
 
 ## Depends on
 
@@ -145,6 +145,6 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean)
+- [FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SmallCohenMacaulayModules.lean)
 - [Wikipedia, Homological conjectures in commutative
   algebra](https://en.wikipedia.org/wiki/Homological_conjectures_in_commutative_algebra)

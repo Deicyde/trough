@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Catalan numbers modulo $6$ to Sum of a triangular number, a…
+# Ways to write $n$ as the sum of… to Sum of four squares with square…
 
+- [Ways to write $n$ as the sum of three elements of $\{\lfloor T(x)/3 \rfloor : x \ge 1\}$](../../../../../oeis/part-15/ways-to-write-n-as-the-sum-of-three-elements-of.md)
+- [Asymptotics of an inner sum formula for $a(n)$](../../../../../oeis/part-15/asymptotics-of-an-inner-sum-formula-for-a-n.md)
 - [Catalan numbers modulo $6$](../../../../../oeis/part-15/catalan-numbers-modulo-6.md)
 - [A GCD-Driven Sequence with Universal Jumps](../../../../../oeis/part-15/a-gcd-driven-sequence-with-universal-jumps.md)
 - [Prime values in recurrence $a(n+1) = |a(n) - \gcd(a(n), 7n+6)|$](../../../../../oeis/part-15/prime-values-in-recurrence-a-n-1-a-n-gcd-a-n-7n.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [The 1680-Conjecture](../../../../../oeis/part-16/the-1680-conjecture.md)
 - [The cup-of-coffee sequence](../../../../../oeis/part-16/the-cup-of-coffee-sequence.md)
 - [Sum of four squares with square conditions](../../../../../oeis/part-16/sum-of-four-squares-with-square-conditions.md)
-- [Period of $p$-th powers modulo $n$](../../../../../oeis/part-16/period-of-p-th-powers-modulo-n.md)
-- [Sum of a triangular number, a generalized pentagonal number, and a generalized heptagonal number](../../../../../oeis/part-16/sum-of-a-triangular-number-a-generalized-pentago.md)

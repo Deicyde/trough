@@ -1,6 +1,6 @@
 # Wikipedia
 
-The 175 problem files in [FormalConjectures/Wikipedia](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia) that state a research or textbook statement, at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), one article each.
+The 177 problem files in [FormalConjectures/Wikipedia](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia) that state a research or textbook statement, at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
@@ -27,7 +27,7 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Bloch and Landau constants](part-01/bloch-and-landau-constants.md)
 - [Borsuk's conjecture](part-01/borsuks-conjecture.md)
 
-## [Bounded Burnside problem to Dirichlet divisor problem](part-02/README.md)
+## [Bounded Burnside problem to Diophantine $m$-tuples](part-02/README.md)
 
 - [Bounded Burnside problem](part-02/bounded-burnside-problem.md)
 - [Brennan's Conjecture](part-02/brennans-conjecture.md)
@@ -35,6 +35,7 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Büchi's problem](part-02/buchis-problem.md)
 - [Bunyakovsky conjecture](part-02/bunyakovsky-conjecture.md)
 - [Busy Beaver](part-02/busy-beaver.md)
+- [Butson-type Hadamard matrices](part-02/butson-type-hadamard-matrices.md)
 - [Carmichael's totient function conjecture](part-02/carmichaels-totient-function-conjecture.md)
 - [Catalan's conjecture and related Diophantine equations](part-02/catalans-conjecture-and-related-diophantine-equa.md)
 - [Černý Conjecture](part-02/cerny-conjecture.md)
@@ -48,10 +49,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Babai–Seress Conjectures on the Diameter of Finite Groups](part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
 - [Dickson's conjecture](part-02/dicksons-conjecture.md)
 - [Diophantine $m$-tuples](part-02/diophantine-m-tuples.md)
-- [Dirichlet divisor problem](part-02/dirichlet-divisor-problem.md)
 
-## [Elliott–Halberstam conjecture to Gap conjecture](part-03/README.md)
+## [Dirichlet divisor problem to Fuglede's conjecture in…](part-03/README.md)
 
+- [Dirichlet divisor problem](part-03/dirichlet-divisor-problem.md)
 - [Elliott–Halberstam conjecture](part-03/elliott-halberstam-conjecture.md)
 - [Some conjectures about ranks of elliptic curves over ℚ](part-03/some-conjectures-about-ranks-of-elliptic-curves.md)
 - [Emirps](part-03/emirps.md)
@@ -71,10 +72,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Convergence of the Flint Hills and Cookson Hills series](part-03/convergence-of-the-flint-hills-and-cookson-hills.md)
 - [Fortune's Conjecture](part-03/fortunes-conjecture.md)
 - [Fuglede's conjecture in dimensions 1 and 2](part-03/fugledes-conjecture-in-dimensions-1-and-2.md)
-- [Gap conjecture](part-03/gap-conjecture.md)
 
-## [Gauss circle problem to Inverse Galois problem](part-04/README.md)
+## [Gap conjecture to Invariant Subspace Problem](part-04/README.md)
 
+- [Gap conjecture](part-04/gap-conjecture.md)
 - [Gauss circle problem](part-04/gauss-circle-problem.md)
 - [Gilbreath's conjecture](part-04/gilbreaths-conjecture.md)
 - [Goldbach's conjecture](part-04/goldbachs-conjecture.md)
@@ -94,10 +95,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Inscribed square problem](part-04/inscribed-square-problem.md)
 - [Polynomial-time computability of factoring](part-04/polynomial-time-computability-of-factoring.md)
 - [Invariant Subspace Problem](part-04/invariant-subspace-problem.md)
-- [Inverse Galois problem](part-04/inverse-galois-problem.md)
 
-## [Open questions on irrationality… to Lovász's conjecture on…](part-05/README.md)
+## [Inverse Galois problem to Lonely runner conjecture](part-05/README.md)
 
+- [Inverse Galois problem](part-05/inverse-galois-problem.md)
 - [Open questions on irrationality of numbers](part-05/open-questions-on-irrationality-of-numbers.md)
 - [Jacobian conjecture](part-05/jacobian-conjecture.md)
 - [Jacobson Conjecture](part-05/jacobson-conjecture.md)
@@ -117,10 +118,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Littlewood conjectures](part-05/littlewood-conjectures.md)
 - [Local uniformization](part-05/local-uniformization.md)
 - [Lonely runner conjecture](part-05/lonely-runner-conjecture.md)
-- [Lovász's conjecture on Hamiltonian paths in vertex-transitive graphs (1970)](part-05/lovaszs-conjecture-on-hamiltonian-paths-in-verte.md)
 
-## [The Lovász–Plummer conjecture… to The Petersen colouring…](part-06/README.md)
+## [Lovász's conjecture on… to Perfect numbers](part-06/README.md)
 
+- [Lovász's conjecture on Hamiltonian paths in vertex-transitive graphs (1970)](part-06/lovaszs-conjecture-on-hamiltonian-paths-in-verte.md)
 - [The Lovász–Plummer conjecture (proved 2011) and Sheehan's conjecture](part-06/the-lovasz-plummer-conjecture-proved-2011-and-sh.md)
 - [Lychrel numbers in base 10](part-06/lychrel-numbers-in-base-10.md)
 - [Magic Squares](part-06/magic-squares.md)
@@ -140,10 +141,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Pebbling number conjecture](part-06/pebbling-number-conjecture.md)
 - [Infinitude of Pell number primes](part-06/infinitude-of-pell-number-primes.md)
 - [Perfect numbers](part-06/perfect-numbers.md)
-- [The Petersen colouring conjecture (Jaeger 1988)](part-06/the-petersen-colouring-conjecture-jaeger-1988.md)
 
-## [Pierce–Birkhoff conjecture to Hypothesis H](part-07/README.md)
+## [The Petersen colouring… to Schanuel's Conjecture](part-07/README.md)
 
+- [The Petersen colouring conjecture (Jaeger 1988)](part-07/the-petersen-colouring-conjecture-jaeger-1988.md)
 - [Pierce–Birkhoff conjecture](part-07/pierce-birkhoff-conjecture.md)
 - [Pierpont primes](part-07/pierpont-primes.md)
 - [Pollock's (tetrahedral numbers) conjecture](part-07/pollocks-tetrahedral-numbers-conjecture.md)
@@ -163,10 +164,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Rudin's conjecture on squares in arithmetic progressions](part-07/rudins-conjecture-on-squares-in-arithmetic-progr.md)
 - [Sato–Tate conjecture](part-07/sato-tate-conjecture.md)
 - [Schanuel's Conjecture](part-07/schanuels-conjecture.md)
-- [Hypothesis H](part-07/hypothesis-h.md)
 
-## [Scholz conjecture on addition… to Tarski's exponential function…](part-08/README.md)
+## [Hypothesis H to Gottschalk's surjunctivity…](part-08/README.md)
 
+- [Hypothesis H](part-08/hypothesis-h.md)
 - [Scholz conjecture on addition chains](part-08/scholz-conjecture-on-addition-chains.md)
 - [Selfridge's conjectures](part-08/selfridges-conjectures.md)
 - [Sendov's conjecture](part-08/sendovs-conjecture.md)
@@ -186,10 +187,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Sum of three cubes](part-08/sum-of-three-cubes.md)
 - [(m,k)-perfect numbers](part-08/m-k-perfect-numbers.md)
 - [Gottschalk's surjunctivity conjecture](part-08/gottschalks-surjunctivity-conjecture.md)
-- [Tarski's exponential function problem](part-08/tarskis-exponential-function-problem.md)
 
-## [Taxicab numbers to Woodall Primes](part-09/README.md)
+## [Tarski's exponential function… to Woodall Primes](part-09/README.md)
 
+- [Tarski's exponential function problem](part-09/tarskis-exponential-function-problem.md)
 - [Taxicab numbers](part-09/taxicab-numbers.md)
 - [Toronto spaces](part-09/toronto-spaces.md)
 - [The total colouring conjecture (Behzad 1965, Vizing 1968)](part-09/the-total-colouring-conjecture-behzad-1965-vizin.md)
@@ -200,10 +201,11 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Vaught conjecture](part-09/vaught-conjecture.md)
 - [Vizing's conjecture (1968)](part-09/vizings-conjecture-1968.md)
 - [Infinitude of Wall–Sun–Sun primes](part-09/infinitude-of-wall-sun-sun-primes.md)
+- [Weighing matrices and the Geramita–Seberry conjecture](part-09/weighing-matrices-and-the-geramita-seberry-conje.md)
 - [Can a prime $p$ satisfy $2^{p-1} \equiv 1 \pmod{p^2}$ and $3^{p-1} \equiv 1 \pmod{p^2}$?](part-09/can-a-prime-p-satisfy-2-p-1-equiv-1-pmod-p-2-and.md)
 - [Wieferich primes](part-09/wieferich-primes.md)
 - [Wilson primes](part-09/wilson-primes.md)
 - [Wolstenholme Prime](part-09/wolstenholme-prime.md)
 - [Woodall Primes](part-09/woodall-primes.md)
 
-No article: 9 files here state no research or textbook statement: [Brocard's Problem](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/BrocardProblem.lean), [Erdős–Rado sunflower conjecture](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ErdosRadoSunflowerConjecture.lean), [The Hadwiger-Nelson Problem](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HadwigerNelson.lean), [Happy Ending Problem](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HappyEndingProblem.lean), [Herzog–Schönheim conjecture](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HerzogSchonheimConjecture.lean), [Hilbert's Fifth Problem](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/HilbertFifthProblem.lean), [Minimum Overlap Problem](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MinimalOverlapProblem.lean), [No-three-in-line problem](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/NoThreeInLineProblem.lean), [Existence of Odd Weird Numbers](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/OddWeirdNumber.lean).
+No article: 9 files here state no research or textbook statement: [Brocard's Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/BrocardProblem.lean), [Erdős–Rado sunflower conjecture](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ErdosRadoSunflowerConjecture.lean), [The Hadwiger-Nelson Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HadwigerNelson.lean), [Happy Ending Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HappyEndingProblem.lean), [Herzog–Schönheim conjecture](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HerzogSchonheimConjecture.lean), [Hilbert's Fifth Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/HilbertFifthProblem.lean), [Minimum Overlap Problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MinimalOverlapProblem.lean), [No-three-in-line problem](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/NoThreeInLineProblem.lean), [Existence of Odd Weird Numbers](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/OddWeirdNumber.lean).

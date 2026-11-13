@@ -21,7 +21,7 @@ statement: formalized
 >
 > The function $\tau_\perp(n)$ is called $\tau_r(n)$ in [Er81h] and $f(n)$ in [ErHa78] and [ErTe89].
 
-*Quoted from [FormalConjectures/ErdosProblems/1100.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/1100.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/1100](https://www.erdosproblems.com/1100).
 
@@ -50,7 +50,7 @@ theorem erdos_1100.parts.i :
     ∀ C : ℝ, {n : ℕ | (tauPerp n : ℝ) ≤ C * (ω n : ℝ)}.HasDensity 0
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L75).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L75).
 
 ## `Erdos1100.erdos_1100.parts.ii`
 
@@ -81,7 +81,7 @@ theorem erdos_1100.parts.ii :
     ¬ ∀ ε : ℝ, 0 < ε → ∀ᶠ n : ℕ in atTop, (tauPerp n : ℝ) < Real.exp (Real.log n ^ ε)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L99).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 99](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L99).
 
 ## `Erdos1100.erdos_1100.parts.iii`
 
@@ -106,7 +106,7 @@ theorem erdos_1100.parts.iii :
     (fun k : ℕ ↦ (g k : ℝ)) =Θ[atTop] erdos_1100.parts.iii.answer
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L119).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 119](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L119).
 
 ## `Erdos1100.erdos_1100.variants.omega_le`
 
@@ -119,7 +119,7 @@ Textbook result, stated without proof.
 theorem erdos_1100.variants.omega_le : ∀ n : ℕ, 0 < n → ω n ≤ tauPerp n
 ```
 
-Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L128).
+Category `textbook`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 128](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L128).
 
 ## `Erdos1100.erdos_1100.variants.eq_omega`
 
@@ -134,7 +134,7 @@ theorem erdos_1100.variants.eq_omega (k : ℕ) :
     ∃ n : ℕ, Squarefree n ∧ ω n = k ∧ tauPerp n = k
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L137).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 137](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L137).
 
 ## `Erdos1100.erdos_1100.variants.erdos_hall`
 
@@ -151,7 +151,7 @@ theorem erdos_1100.variants.erdos_hall : ∀ ε : ℝ, 0 < ε → ∀ᶠ x : ℝ
     ∃ n : ℕ, (n : ℝ) < x ∧ Real.exp (Real.log (Real.log x) ^ (2 - ε)) < (tauPerp n : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L147).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 147](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L147).
 
 ## `Erdos1100.erdos_1100.variants.erdos_tenenbaum_max`
 
@@ -172,7 +172,7 @@ theorem erdos_1100.variants.erdos_tenenbaum_max : ∀ δ : ℝ, 0 < δ → ∀�
         (tauPerp n : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 159](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L159).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 159](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L159).
 
 ## `Erdos1100.erdos_1100.variants.normal_order`
 
@@ -193,7 +193,7 @@ theorem erdos_1100.variants.normal_order : ∀ ε : ℝ, 0 < ε →
       (tauPerp n : ℝ) ≤ Real.log n ^ (Real.log 2 - 1 / 2 + ε)}.HasDensity 1
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 174](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L174).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 174](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L174).
 
 ## `Erdos1100.erdos_1100.variants.erdos_simonovits`
 
@@ -216,7 +216,7 @@ theorem erdos_1100.variants.erdos_simonovits :
       ∃ c : ℝ, 0 < c ∧ ∀ᶠ k : ℕ in atTop, (g k : ℝ) < (2 - c) ^ k
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 190](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L190).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 190](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L190).
 
 ## `Erdos1100.erdos_1100.variants.erdos_tenenbaum_g`
 
@@ -234,7 +234,7 @@ theorem erdos_1100.variants.erdos_tenenbaum_g (k : ℕ) :
     (g k : ℝ) ≤ 3 * (3 / (2 : ℝ) ^ ((2 : ℝ) / 3)) ^ k
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean#L202).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/1100.lean, line 202](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean#L202).
 
 ## Depends on
 
@@ -242,5 +242,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/1100.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/1100.lean)
+- [FormalConjectures/ErdosProblems/1100.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/1100.lean)
 - [erdosproblems.com/1100](https://www.erdosproblems.com/1100)

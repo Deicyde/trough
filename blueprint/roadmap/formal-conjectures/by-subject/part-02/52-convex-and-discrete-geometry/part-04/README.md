@@ -12,7 +12,7 @@ navigation: transparent
 - [Erdős Problem 1066](../../../../erdos-problems/1000-1099/part-03/erdos-problem-1066.md)
 - [Erdős Problem 1069](../../../../erdos-problems/1000-1099/part-03/erdos-problem-1069.md)
 - [Erdős Problem 1070](../../../../erdos-problems/1000-1099/part-03/erdos-problem-1070.md)
-- [Erdős Problem 1071](../../../../erdos-problems/1000-1099/part-03/erdos-problem-1071.md)
+- [Erdős Problem 1071](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1071.md)
 - [Erdős Problem 1083](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1083.md)
 - [Erdős Problem 1084](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1084.md)
 - [Erdős Problem 1085](../../../../erdos-problems/1000-1099/part-04/erdos-problem-1085.md)

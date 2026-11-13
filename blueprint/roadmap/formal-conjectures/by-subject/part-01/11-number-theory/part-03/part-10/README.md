@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Infinitude of Pell number primes to Sierpiński number
+# Normality of mathematical… to Scholz conjecture on addition…
 
+- [Normality of mathematical constants](../../../../../wikipedia/part-06/normality-of-mathematical-constants.md)
+- [Oppermann's Conjecture](../../../../../wikipedia/part-06/oppermanns-conjecture.md)
 - [Infinitude of Pell number primes](../../../../../wikipedia/part-06/infinitude-of-pell-number-primes.md)
 - [Perfect numbers](../../../../../wikipedia/part-06/perfect-numbers.md)
 - [Pierpont primes](../../../../../wikipedia/part-07/pierpont-primes.md)
@@ -20,7 +22,5 @@ navigation: transparent
 - [Rudin's conjecture on squares in arithmetic progressions](../../../../../wikipedia/part-07/rudins-conjecture-on-squares-in-arithmetic-progr.md)
 - [Sato–Tate conjecture](../../../../../wikipedia/part-07/sato-tate-conjecture.md)
 - [Schanuel's Conjecture](../../../../../wikipedia/part-07/schanuels-conjecture.md)
-- [Hypothesis H](../../../../../wikipedia/part-07/hypothesis-h.md)
+- [Hypothesis H](../../../../../wikipedia/part-08/hypothesis-h.md)
 - [Scholz conjecture on addition chains](../../../../../wikipedia/part-08/scholz-conjecture-on-addition-chains.md)
-- [Selfridge's conjectures](../../../../../wikipedia/part-08/selfridges-conjectures.md)
-- [Sierpiński number](../../../../../wikipedia/part-08/sierpinski-number.md)

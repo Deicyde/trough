@@ -1,6 +1,6 @@
 {
  "schema": "trough-fc/v1",
- "rev": "2055e5adadae0b2e392365938faa82ef6f1464f0",
+ "rev": "5258ab9ac6db5eb0047aa4100ea0f995c5466da6",
  "subjects": {
   "0": "General and overarching topics",
   "1": "History and biography",
@@ -673,6 +673,54 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/Arxiv/1701.08900/SecondMoment.lean",
+   "module": "FormalConjectures.Arxiv.«1701.08900».SecondMoment",
+   "folder": "Arxiv",
+   "title": "Pittel's second-moment conjecture for nearly balanced markets",
+   "doc": "*Reference:* B. Pittel, [On Likely Solutions of the Stable Matching Problem with Unequal Numbers\nof Men and Women](https://arxiv.org/abs/1701.08900) (2017), unnumbered conjecture on\n[page 7](https://arxiv.org/pdf/1701.08900#page=7), following Theorem 1.3.\n\nThere are $n$ firms and $n+d_n$ workers with complete independent uniform strict preferences.\nEvery partner is preferable to being unmatched.",
+   "reference": {
+    "text": "On Likely Solutions of the Stable Matching Problem with Unequal Numbers\nof Men and Women",
+    "url": "https://arxiv.org/abs/1701.08900"
+   },
+   "statements": [
+    {
+     "name": "Arxiv.«1701.08900».second_moment",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      60,
+      91
+     ],
+     "formal_proofs": [],
+     "doc": "Pittel conjectures that if $d_n \\ge 1$ and $d_n/n \\to 0$, then the second moment of the number\n$S_n$ of stable matchings is $O((\\mathbb{E}[S_n])^2)$. The bound may depend on the sequence $d_n$.",
+     "statement": "theorem second_moment (d : ℕ → ℕ) (hd : ∀ n, 1 ≤ d n)\n    (hd_limit : Tendsto (fun n ↦ (d n : ℝ) / n) atTop (𝓝 0)) :\n    ∃ C : ℝ, 0 < C ∧ ∀ᶠ n : ℕ in atTop,\n      secondMomentNumStableMatchings n (n + d n) ≤\n        C * (expectedNumStableMatchings n (n + d n)) ^ 2",
+     "line": 45,
+     "sorry": true
+    },
+    {
+     "name": "Arxiv.«1701.08900».second_moment_one_extra_worker",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      60,
+      91
+     ],
+     "formal_proofs": [],
+     "doc": "Pittel's second-moment conjecture for a market with exactly one more worker than firm.",
+     "statement": "theorem second_moment_one_extra_worker :\n    ∃ C : ℝ, 0 < C ∧ ∀ᶠ n : ℕ in atTop,\n      secondMomentNumStableMatchings n (n + 1) ≤\n        C * (expectedNumStableMatchings n (n + 1)) ^ 2",
+     "line": 54,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/Arxiv/2001.02665/RingelConjecture.lean",
    "module": "FormalConjectures.Arxiv.«2001.02665».RingelConjecture",
    "folder": "Arxiv",
@@ -1092,6 +1140,38 @@
    ],
    "folded": {
     "test": 1,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/Arxiv/2406.10319/StableMatchingHyperbola.lean",
+   "module": "FormalConjectures.Arxiv.«2406.10319».StableMatchingHyperbola",
+   "folder": "Arxiv",
+   "title": "Pittel's stable-matching hyperbola threshold conjecture",
+   "doc": "*Reference:*\n[On Constrained Matchings, Stable Under Random Preferences](https://doi.org/10.1002/rsa.70036)\nby Boris Pittel, Section 6, Notes (2).\nThe conjecture also appears in the [arXiv preprint, p. 26](https://arxiv.org/pdf/2406.10319#page=26).",
+   "reference": {
+    "text": "On Constrained Matchings, Stable Under Random Preferences",
+    "url": "https://doi.org/10.1002/rsa.70036"
+   },
+   "statements": [
+    {
+     "name": "Arxiv.«2406.10319».pittel_hyperbola_threshold",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      60
+     ],
+     "formal_proofs": [],
+     "doc": "Pittel conjectures a threshold $p_*(n)$ for the rank pairs across stable matchings to trace\nout a hyperbola. For all sufficiently large $n$, it lies between $\\frac{9}{4}(\\log n)^2/n$ and $1$.\n\nThe fixed reciprocal arc $(t,t^{-1})$ for $t \\in [2/3,3/2]$ specifies the curve to cover in this\nformulation. For each fixed $0<\\delta<1$, compare probabilities at distance at least\n$\\delta\\min(p_*(n),1-p_*(n))$ from the threshold. The relative margin keeps both comparison\nranges nonempty. On the upper range, the event holds with high probability uniformly at every\npositive tolerance. On the lower range, it fails with high probability uniformly at one positive\ntolerance for each $\\delta$.",
+     "statement": "theorem pittel_hyperbola_threshold :\n    ∃ pStar : ℕ → Set.Ioo (0 : ℝ) 1,\n      let d (n : ℕ) := min (pStar n : ℝ) (1 - (pStar n : ℝ))\n      (∀ᶠ (n : ℕ) in atTop, (9 / 4 : ℝ) * (Real.log n) ^ 2 / n < (pStar n : ℝ)) ∧\n      ∀ δ ∈ Set.Ioo (0 : ℝ) 1,\n        (∀ ε > 0, Tendsto (fun n ↦\n          ⨆ p : {p : unitInterval // (pStar n : ℝ) + δ * d n ≤ (p : ℝ)},\n            marketLaw n p.1 (hyperbolaEvent n p.1 ε)ᶜ) atTop (𝓝 0)) ∧\n        ∃ ε > 0, Tendsto (fun n ↦\n          ⨆ p : {p : unitInterval // (p : ℝ) ≤ (pStar n : ℝ) - δ * d n},\n            marketLaw n p.1 (hyperbolaEvent n p.1 ε)) atTop (𝓝 0)",
+     "line": 63,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
     "api": 0
    },
    "unread": []
@@ -2492,10 +2572,15 @@
      "ams": [
       16
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000008"
+      }
+     ],
      "doc": "The **Dixmier Conjecture** (generalised to all dimensions; Problem 1 of [Dix68] for\n$n = 1$): for every `n`, every endomorphism of the `n`-th Weyl algebra over a field of\ncharacteristic zero is an automorphism. This is **false**: the Jacobian conjecture fails\nin dimension $3$ [Alp26], and $DC_n \\Longrightarrow JC_n$ [BCW82], so $DC_3$ fails.",
      "statement": "theorem dixmier_conjecture : ¬ ∀ n, DixmierConjectureFor K n",
-     "line": 89,
+     "line": 90,
      "sorry": true
     },
     {
@@ -2508,7 +2593,7 @@
      "formal_proofs": [],
      "doc": "The Dixmier Conjecture in dimension $1$ — Problem 1 of [Dix68] — is open. By [AvdE07],\nTheorem 7, it is implied by $PC_1$, and hence by $JC_2$ (Keller's problem).",
      "statement": "theorem dixmier_conjecture.variants.dimension_one : DixmierConjectureFor K 1",
-     "line": 97,
+     "line": 98,
      "sorry": true
     },
     {
@@ -2521,7 +2606,7 @@
      "formal_proofs": [],
      "doc": "The Dixmier Conjecture in dimension $2$ ($DC_2$) is open. It implies Keller's\ntwo-variable Jacobian conjecture $JC_2$ [BCW82]. It is implied by $JC_4$ ([AvdE07],\nTheorem 7), but $JC_4$ and $PC_2$ are false ([Alp26], [Lon26]).",
      "statement": "theorem dixmier_conjecture.variants.dimension_two : DixmierConjectureFor K 2",
-     "line": 106,
+     "line": 107,
      "sorry": true
     },
     {
@@ -2531,10 +2616,15 @@
      "ams": [
       16
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000008"
+      }
+     ],
      "doc": "The Dixmier Conjecture is false in dimension $3$: $DC_3$ implies the Jacobian conjecture in\ndimension $3$ [BCW82], which fails by the counterexample of [Alp26].",
      "statement": "theorem dixmier_conjecture.variants.dimension_three : ¬ DixmierConjectureFor K 3",
-     "line": 114,
+     "line": 116,
      "sorry": true
     },
     {
@@ -2544,10 +2634,15 @@
      "ams": [
       16
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000008"
+      }
+     ],
      "doc": "The Dixmier Conjecture is false in every dimension $n ≥ 3$, since the Jacobian conjecture\nis false in every dimension $n ≥ 3$ (padding the counterexample of [Alp26] with identity\ncoordinates) and $DC_n \\Longrightarrow JC_n$ [BCW82].",
      "statement": "theorem dixmier_conjecture.variants.dimension_ge_three (n : ℕ) (hn : 3 ≤ n) :\n    ¬ DixmierConjectureFor K n",
-     "line": 123,
+     "line": 126,
      "sorry": true
     },
     {
@@ -2558,10 +2653,15 @@
       14,
       16
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000008"
+      }
+     ],
      "doc": "The Dixmier conjecture in dimension `n` implies the Jacobian conjecture in dimension `n`\n([BCW82]; see also [AvdE07], Theorem 7).",
      "statement": "theorem dixmier_conjecture.variants.jacobian_implication (n : ℕ)\n    (h : DixmierConjectureFor K n) : JacobianConjectureProp K (Fin n)",
-     "line": 132,
+     "line": 136,
      "sorry": true
     },
     {
@@ -2576,7 +2676,7 @@
      "formal_proofs": [],
      "doc": "If the Poisson conjecture in dimension `n` holds over every field of characteristic zero,\nthen so does the Dixmier conjecture in dimension `n`. This is $CPC(n, 0) \\Longrightarrow\nCDC(n, 0)$ in [AvdE07], Theorem 7, where both statements quantify over all fields of\ncharacteristic zero (Notations 5 and 7). The proof reduces to prime characteristic and\nuses the Azumaya property of Weyl algebras in characteristic `p`.",
      "statement": "theorem dixmier_conjecture.variants.poisson_implication (n : ℕ)\n    (h : ∀ (L : Type) [Field L] [CharZero L], PoissonConjectureFor L n)\n    (L : Type) [Field L] [CharZero L] : DixmierConjectureFor L n",
-     "line": 144,
+     "line": 148,
      "sorry": true
     }
    ],
@@ -11477,14 +11577,14 @@
     {
      "name": "Erdos143.erdos_143.parts.i",
      "kind": "theorem",
-     "category": "research open",
+     "category": "research solved",
      "ams": [
       11
      ],
      "formal_proofs": [],
-     "doc": "Does this imply that\n$$\n\\liminf \\frac{|A \\cap [1,x]|}{x} = 0?\n$$",
+     "doc": "Does this imply that\n$$\n\\liminf \\frac{|A \\cap [1,x]|}{x} = 0?\n$$\n\nThe answer is yes: Koukoulopoulos, Lamzouri and Lichtman proved that every such $A$ satisfies\n$\\sum_{x \\in A,\\, x < n} \\frac{1}{x} = o(\\log n)$\n([arXiv:2502.09539](https://arxiv.org/abs/2502.09539), Theorem 1), and this implies\n$\\liminf \\frac{|A \\cap [1,x]|}{x} = 0$ by partial summation.",
      "statement": "theorem erdos_143.parts.i : ∀ (A : Set ℝ), WellSeparatedSet A →\n    liminf (fun x => (A ∩ (Set.Icc 1 x)).ncard / x) atTop = 0",
-     "line": 48,
+     "line": 53,
      "sorry": true
     },
     {
@@ -11497,7 +11597,7 @@
      "formal_proofs": [],
      "doc": "Or\n$$\n\\sum_{x \\in A} \\frac{1}{x \\log x} < \\infty,\n$$",
      "statement": "theorem erdos_143.parts.ii (A : Set ℝ) (h : WellSeparatedSet A) :\n    Summable fun (x : A) ↦ 1 / (x * Real.log x)",
-     "line": 59,
+     "line": 64,
      "sorry": true
     }
    ],
@@ -13543,6 +13643,62 @@
    ],
    "folded": {
     "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/ErdosProblems/190.lean",
+   "module": "FormalConjectures.ErdosProblems.«190»",
+   "folder": "ErdosProblems",
+   "title": "Erdős Problem 190",
+   "doc": "*References:*\n- [erdosproblems.com/190](https://www.erdosproblems.com/190)\n- [ErGr79] P. Erdős and R. L. Graham, *Old and new problems and results in combinatorial\n  number theory: van der Waerden's theorem and related topics*, Enseign. Math. (2) 25 (1979),\n  325–344 (p. 333).\n- [ErGr80] P. Erdős and R. L. Graham, *Old and New Problems and Results in Combinatorial\n  Number Theory*, Monogr. Enseign. Math. 28 (1980), p. 17.\n- [Ba26] J. H. Bae, *A resolution of Erdős Problem #190 via Erdős–Lovász, BCT, and\n  Baker–Harman–Pintz*, arXiv:2604.20588 (22 April 2026).\n- [FoHu26] J. Fox and Z. Hunter, *Three-color van der Waerden numbers grow\n  super-exponentially*, arXiv:2606.02541 (1 June 2026).",
+   "reference": {
+    "text": "erdosproblems.com/190",
+    "url": "https://www.erdosproblems.com/190"
+   },
+   "statements": [
+    {
+     "name": "Erdos190.erdos_190",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      11
+     ],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-15-000003"
+      }
+     ],
+     "doc": "Let $H(k)$ be the smallest $N$ such that in any finite colouring of $\\{1,\\ldots,N\\}$ (into\nany number of colours) there is always either a monochromatic $k$-term arithmetic progression\nor a rainbow arithmetic progression (i.e. all elements are different colours). Estimate\n$H(k)$. Is it true that $H(k)^{1/k}/k\\to\\infty$ as $k\\to\\infty$?\n\nThe question was answered affirmatively in [Ba26] (22 April 2026), which gave the first\npublicly available proof, with $H(k)\\geq k^{(2-o(1))k}$.  The subsequent work [FoHu26]\n(1 June 2026) describes [Ba26] as independent work that also resolves the problem, and\nobtains $H(k)\\geq k^{(1-o(1))k\\log k}$.\n\nThe statement is formalised without assuming the existence of $H(k)$: for every $C$, every\ncanonical $N$ exceeds $(Ck)^k$ for all large $k$. Given the existence of $H(k)$ this is\nequivalent to $H(k)^{1/k}/k\\to\\infty$ (see `erdos_190.variants.H`).\n\nThe formal proof (Lean 4 / Mathlib v4.33.0, following [Ba26]) is registered in\nthe Palomar registry as PALOMAR-2026-09-15-000003.  A bridge deriving this exact statement\n(with the definitions above) from the registered proof is available at\n[jbaelaw/erdos190-fc-bridge](https://github.com/jbaelaw/erdos190-fc-bridge).",
+     "statement": "theorem erdos_190 :\n    ∀ C : ℕ, ∀ᶠ k in atTop, ∀ N, IsCanonical N k → (C * k) ^ k < N",
+     "line": 113,
+     "sorry": true
+    },
+    {
+     "name": "Erdos190.erdos_190.variants.H",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      11
+     ],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-09-15-000003"
+      }
+     ],
+     "doc": "The same statement in terms of $H(k)$, assuming that a canonical `N` exists for every `k`\n(the Erdős–Graham theorem, via Szemerédi's theorem).",
+     "statement": "theorem erdos_190.variants.H :\n    (∀ k, {N | IsCanonical N k}.Nonempty) →\n      ∀ C : ℕ, ∀ᶠ k in atTop, (C * k) ^ k < H k",
+     "line": 121,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 3,
     "api": 0
    },
    "unread": []
@@ -18687,6 +18843,63 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/ErdosProblems/297.lean",
+   "module": "FormalConjectures.ErdosProblems.«297»",
+   "folder": "ErdosProblems",
+   "title": "Erdős Problem 297",
+   "doc": "*References:*\n- [erdosproblems.com/297](https://www.erdosproblems.com/297)\n- [ErGr80] Erdős, P. and Graham, R., *Old and new problems and results in combinatorial number\n  theory*. Monographies de L'Enseignement Mathematique (1980).\n- [CFHMPSV24] Conlon, D., Fox, J., He, X., Mubayi, D., Pham, H. T., Suk, A. and Verstraëte, J.,\n  *A question of Erdős and Graham on Egyptian fractions*. arXiv:2404.16016 (2024).\n- [LiSa24] Liu, Y. P. and Sawhney, M., *On further questions regarding unit fractions*.\n  arXiv:2404.07113 (2024).\n- [St24] Steinerberger, S., *On a problem involving unit fractions*. arXiv:2403.17041 (2024).",
+   "reference": {
+    "text": "erdosproblems.com/297",
+    "url": "https://www.erdosproblems.com/297"
+   },
+   "statements": [
+    {
+     "name": "Erdos297.erdos_297",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Let $N\\geq 1$. How many $A\\subseteq \\{1,\\ldots,N\\}$ are there such that\n$\\sum_{n\\in A}\\frac{1}{n}=1$?\n\nLiu and Sawhney [LiSa24] proved that the count is $2^{(0.91\\cdots+o(1))N}$, where $0.91\\cdots$ is\nan explicit number defined as the solution to a certain integral equation; independently the same\nasymptotic was proved by Conlon, Fox, He, Mubayi, Pham, Suk, and Verstraëte [CFHMPSV24]. We\nformalise the question as asking for the exponential growth rate\n$\\lim_{N\\to\\infty} \\frac{1}{N}\\log_2 \\#\\{A\\}$. The first conjunct is the existence and\nuniqueness of $\\lambda^*$, which [LiSa24] state with the theorem.",
+     "statement": "theorem erdos_297 : (∃! l : ℝ, massIntegral l = 1) ∧\n    Tendsto (fun N : ℕ => Real.logb 2 (count 1 N) / N) atTop (𝓝 erdos_297.answer)",
+     "line": 87,
+     "sorry": true
+    },
+    {
+     "name": "Erdos297.erdos_297.variants.steinerberger",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Steinerberger [St24] proved that, for $N$ sufficiently large, the number of\n$A \\subseteq \\{1, \\ldots, N\\}$ with $\\sum_{n\\in A}\\frac{1}{n} \\leq 1$ is at most $2^{0.93N}$.",
+     "statement": "theorem erdos_297.variants.steinerberger : ∀ᶠ N : ℕ in atTop,\n    ({A ∈ (Finset.Icc 1 N).powerset | ∑ n ∈ A, (1 / (n : ℕ) : ℚ) ≤ 1}.card : ℝ) ≤\n      2 ^ (0.93 * N : ℝ)",
+     "line": 96,
+     "sorry": true
+    },
+    {
+     "name": "Erdos297.erdos_297.variants.general",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Conlon, Fox, He, Mubayi, Pham, Suk, and Verstraëte [CFHMPSV24] prove more generally, for any\n$x\\in \\mathbb{Q}_{>0}$, that the number of $A\\subseteq \\{1,\\ldots,N\\}$ such that\n$\\sum_{n\\in A}\\frac{1}{n}=x$ is $2^{(c_x + o(1))N}$, with $c_x$ as in `exponentOf`.",
+     "statement": "theorem erdos_297.variants.general (x : ℚ) (hx : 0 < x) : (∃! l : ℝ, massIntegral l = x) ∧\n    Tendsto (fun N : ℕ => Real.logb 2 (count x N) / N) atTop (𝓝 (exponentOf x))",
+     "line": 114,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 3,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/ErdosProblems/298.lean",
    "module": "FormalConjectures.ErdosProblems.«298»",
    "folder": "ErdosProblems",
@@ -20867,8 +21080,8 @@
      "formal_proofs": [],
      "doc": "Kelly [Ke57] conjectured that any basis of order $2$ has restricted order at most $3$.\n\nThis was disproved by Hennecart [He05], who constructed a basis of order $2$ with restricted\norder $4$.",
      "statement": "theorem erdos_338.variants.kelly_conjecture :\n    ¬ ∀ A : Set ℕ, HasOrder A 2 → HasRestrictedOrder A 3",
-     "line": 176,
-     "sorry": true
+     "line": 300,
+     "sorry": false
     },
     {
      "name": "Erdos338.erdos_338.variants.squares",
@@ -20880,7 +21093,7 @@
      "formal_proofs": [],
      "doc": "The set of squares has order $4$ and restricted order $5$ (see [Pa33]).\n\nHere $0$ is a square. The order is $4$ by Lagrange's four-square theorem, and is not $3$ because\nno integer $\\equiv 7 \\pmod 8$ is a sum of three squares.",
      "statement": "theorem erdos_338.variants.squares :\n    basisOrder (Set.range fun k : ℕ ↦ k ^ 2) = 4 ∧\n      restrictedOrder (Set.range fun k : ℕ ↦ k ^ 2) = 5",
-     "line": 187,
+     "line": 311,
      "sorry": true
     },
     {
@@ -20893,7 +21106,7 @@
      "formal_proofs": [],
      "doc": "The set of triangular numbers has order $3$ and restricted order $3$ (see [Sc54]).\n\nHere $0$ is a triangular number.",
      "statement": "theorem erdos_338.variants.triangular :\n    basisOrder (Set.range fun k : ℕ ↦ k * (k + 1) / 2) = 3 ∧\n      restrictedOrder (Set.range fun k : ℕ ↦ k * (k + 1) / 2) = 3",
-     "line": 198,
+     "line": 322,
      "sorry": true
     },
     {
@@ -20906,7 +21119,7 @@
      "formal_proofs": [],
      "doc": "Hegyvári, Hennecart and Plagne [HHP07] showed that for all $k \\geq 2$ there exists a basis of\norder $k$ which has restricted order at least $2^{k-2}+k-1$.\n\nThe basis built in the proof of Theorem 4 of [HHP07] (for $k \\geq 3$) has order exactly $k$ and a\nfinite restricted order, equal to $2^{k-2}+k-1$. The finiteness matters: without it, Bateman's\nexample `Erdos338.erdos_338.variants.bateman` would already give the bound. For $k = 2$ the bound\nis $2$, and $A = \\{1\\} \\cup \\{x : 2 \\mid x\\}$ works.",
      "statement": "theorem erdos_338.variants.hegyvari_hennecart_plagne :\n    ∀ k : ℕ, 2 ≤ k → ∃ A : Set ℕ,\n      basisOrder A = k ∧ restrictedOrder A = (2 ^ (k - 2) + k - 1 : ℕ)",
-     "line": 213,
+     "line": 337,
      "sorry": true
     }
    ],
@@ -25700,7 +25913,7 @@
      "doc": "Bolan and Tang [Ta26] independently proved that $a_n-n$ is nondecreasing.",
      "statement": "theorem erdos_423.variants.nondecreasing :\n    ∀ a : ℕ → ℕ, IsHofstadterSeq a →\n    ∀ n m : ℕ, 1 ≤ n → n ≤ m → a n - n ≤ a m - m",
      "line": 119,
-     "sorry": true
+     "sorry": false
     },
     {
      "name": "Erdos423.erdos_423.variants.unbounded",
@@ -25713,7 +25926,7 @@
      "formal_proofs": [],
      "doc": "Bolan and Tang [Ta26] independently proved that $a_n-n\\to\\infty$.",
      "statement": "theorem erdos_423.variants.unbounded :\n    ∀ a : ℕ → ℕ, IsHofstadterSeq a →\n    ∀ M : ℕ, ∀ᶠ n in atTop, M + n ≤ a n",
-     "line": 128,
+     "line": 148,
      "sorry": true
     },
     {
@@ -25727,7 +25940,7 @@
      "formal_proofs": [],
      "doc": "Bolan and Tang [Ta26] independently proved that infinitely many positive integers do not occur in\nthe Hofstadter sequence.",
      "statement": "theorem erdos_423.variants.infinite_complement :\n    ∀ a : ℕ → ℕ, IsHofstadterSeq a → Set.Infinite (Set.range a)ᶜ",
-     "line": 138,
+     "line": 158,
      "sorry": true
     },
     {
@@ -25741,7 +25954,7 @@
      "formal_proofs": [],
      "doc": "Tang [Ta26] proved $a_n \\ll n^{1/(c-1)+o(1)}$ whenever every finite convex set $A$ satisfies\n$|A-A|\\geq |A|^{c-o(1)}$. Using the bound of Cushman [Cu25] gives\n$a_n\\ll n^{688/413+o(1)}$.",
      "statement": "theorem erdos_423.variants.upper_bound :\n    ∀ a : ℕ → ℕ, IsHofstadterSeq a →\n    ∀ ε > (0 : ℝ), (fun n => (a n : ℝ)) =O[atTop]\n      (fun n => (n : ℝ) ^ ((688 : ℝ) / 413 + ε))",
-     "line": 275,
+     "line": 295,
      "sorry": true
     },
     {
@@ -25755,7 +25968,7 @@
      "formal_proofs": [],
      "doc": "Tang [Ta26] proved the lower bound $a_n=n+\\Omega(\\log\\log n)$.",
      "statement": "theorem erdos_423.variants.lower_bound :\n    ∀ a : ℕ → ℕ, IsHofstadterSeq a →\n    (fun n : ℕ => Real.log (Real.log n)) =O[atTop]\n      (fun n : ℕ => (a n : ℝ) - n)",
-     "line": 285,
+     "line": 305,
      "sorry": true
     }
    ],
@@ -25949,7 +26162,7 @@
      "doc": "Cedric Pilatte has observed that a positive solution to Erdős Problem 427 follows from Shiu's theorem.",
      "statement": "theorem erdos_427.variants.of_shiu (H : ShiuTheorem) : erdos427",
      "line": 87,
-     "sorry": true
+     "sorry": false
     }
    ],
    "folded": {
@@ -36185,10 +36398,15 @@
      "ams": [
       52
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000006"
+      }
+     ],
      "doc": "Let $f(n)$ be such that, given any $x_1,\\ldots,x_n\\in \\mathbb{R}^2$ with no four points on a\ncircle, there exists some $x_i$ with at least $f(n)$ many distinct distances to the other $x_j$.\nIs it true that $f(n) > (1-o(1))n$?\n\nErdős asks this in [Er97e]. The answer is no: Aletheia [Fe26] constructed, for every $m \\geq 10$,\na set of $n = 4m$ points with no four on a circle such that every point has fewer than\n$\\frac{3}{4}n$ distinct distances to the other points. This gives infinitely many $n$, which is\nenough to refute the statement with $\\varepsilon = 1/8$. See `Erdos654.erdos_654.variants.feng`.",
      "statement": "theorem erdos_654.parts.i :\n    ¬ ∀ ε > (0 : ℝ), ∀ᶠ n : ℕ in atTop, ∀ A : Finset ℝ², #A = n → NoFourConcyclic A →\n      ∃ x ∈ A, (1 - ε) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)",
-     "line": 51,
+     "line": 52,
      "sorry": true
     },
     {
@@ -36201,7 +36419,7 @@
      "formal_proofs": [],
      "doc": "Let $f(n)$ be as in `erdos_654.parts.i`. Is it true that $f(n) > (\\frac{1}{3}+c)n$ for some\nconstant $c>0$ and all large $n$?",
      "statement": "theorem erdos_654.parts.ii :\n    ∃ c > (0 : ℝ), ∀ᶠ n : ℕ in atTop, ∀ A : Finset ℝ², #A = n → NoFourConcyclic A →\n      ∃ x ∈ A, (1 / 3 + c) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)",
-     "line": 61,
+     "line": 62,
      "sorry": true
     },
     {
@@ -36214,7 +36432,7 @@
      "formal_proofs": [],
      "doc": "It is trivial that $f(n) \\geq \\frac{n-1}{3}$.\n\nIn fact every point $x$ has at least $\\frac{n-1}{3}$ distinct distances to the other points: a\ncircle centred at $x$ contains at most three other points, since four would lie on a common\ncircle.",
      "statement": "theorem erdos_654.variants.trivial_bound (A : Finset ℝ²) (hA : NoFourConcyclic A) :\n    ∀ x ∈ A, ((#A : ℝ) - 1) / 3 ≤ (distinctDistancesFrom A x : ℝ)",
-     "line": 74,
+     "line": 75,
      "sorry": false
     },
     {
@@ -36224,10 +36442,15 @@
      "ams": [
       52
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000006"
+      }
+     ],
      "doc": "Aletheia [Fe26] showed that for every $m \\geq 10$ there is a set of $n = 4m$ points in\n$\\mathbb{R}^2$, no four on a circle, such that every point has fewer than $\\frac{3}{4}n = 3m$\ndistinct distances to the other points.\n\nThe construction places $2m$ points on each of two perpendicular lines, so it is not in general\nposition. Each point has at most $3m - 1$ distinct distances to the other points.",
      "statement": "theorem erdos_654.variants.feng (m : ℕ) (hm : 10 ≤ m) :\n    ∃ A : Finset ℝ², #A = 4 * m ∧ NoFourConcyclic A ∧\n      ∀ x ∈ A, distinctDistancesFrom A x < 3 * m",
-     "line": 107,
+     "line": 109,
      "sorry": true
     },
     {
@@ -36240,7 +36463,7 @@
      "formal_proofs": [],
      "doc": "Erdős [Er87b] and Erdős and Pach [ErPa90] ask the question of `erdos_654.parts.ii` under the\nadditional assumption that no three points are on a line. Let $x_1,\\ldots,x_n\\in \\mathbb{R}^2$ with\nno three points on a line and no four points on a circle. Is there some $x_i$ with at least\n$(\\frac{1}{3}+c)n$ distinct distances to the other $x_j$, for some constant $c>0$ and all large\n$n$?",
      "statement": "theorem erdos_654.variants.general_position :\n    ∃ c > (0 : ℝ), ∀ᶠ n : ℕ in atTop, ∀ A : Finset ℝ², #A = n → InGeneralPosition A →\n      ∃ x ∈ A, (1 / 3 + c) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)",
-     "line": 120,
+     "line": 122,
      "sorry": true
     },
     {
@@ -36253,7 +36476,7 @@
      "formal_proofs": [],
      "doc": "Let $x_1,\\ldots,x_n\\in \\mathbb{R}^2$ with no three points on a line and no four points on a\ncircle. Is there some $x_i$ with at least $(1-o(1))n$ distinct distances to the other $x_j$?\n\nThis is the general-position analogue of `Erdos654.erdos_654.parts.i`. The remark on\nerdosproblems.com notes that the construction of [Fe26], which has all points on two lines, does\nnot settle the version in general position.",
      "statement": "theorem erdos_654.variants.general_position_one_sub_eps :\n    ∀ ε > (0 : ℝ), ∀ᶠ n : ℕ in atTop, ∀ A : Finset ℝ², #A = n → InGeneralPosition A →\n      ∃ x ∈ A, (1 - ε) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)",
-     "line": 134,
+     "line": 136,
      "sorry": true
     },
     {
@@ -36266,7 +36489,7 @@
      "formal_proofs": [],
      "doc": "Erdős and Pach [ErPa90] suggest that the bound $(1-o(1))n$ holds under the assumption that every\ncircle centred at a point $x_i$ contains at most $2$ other points $x_j$. We state this for points\nin general position (no three on a line and no four on a circle [Er87b, p. 167]), the setting in\nwhich [Er87b] and [ErPa90] ask the weaker question. Without the assumption of no three points on a\nline the statement is false: the sets of [Fe26] satisfy the circle condition.",
      "statement": "theorem erdos_654.variants.erdos_pach :\n    ∀ ε > (0 : ℝ), ∀ᶠ n : ℕ in atTop, ∀ A : Finset ℝ², #A = n → InGeneralPosition A →\n      AtMostTwoPerCircle A → ∃ x ∈ A, (1 - ε) * (n : ℝ) < (distinctDistancesFrom A x : ℝ)",
-     "line": 152,
+     "line": 154,
      "sorry": true
     }
    ],
@@ -36445,10 +36668,15 @@
      "ams": [
       52
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000007"
+      }
+     ],
      "doc": "Straus observed that for every $k$ there is a set of $2^k$ points in $\\mathbb{R}^k$ with no\nisosceles triangles which determines at most $2^k - 1$ distinct distances.",
      "statement": "theorem erdos_657.variants.straus (k : ℕ) :\n    ∃ A : Finset (ℝ^k), A.card = 2 ^ k ∧ (A : Set (ℝ^k)).IsIsoscelesFree ∧\n      distinctDistances A ≤ 2 ^ k - 1",
-     "line": 118,
+     "line": 119,
      "sorry": true
     }
    ],
@@ -40861,6 +41089,78 @@
    ],
    "folded": {
     "test": 1,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/ErdosProblems/739.lean",
+   "module": "FormalConjectures.ErdosProblems.«739»",
+   "folder": "ErdosProblems",
+   "title": "Erdős Problem 739",
+   "doc": "*References:*\n- [erdosproblems.com/739](https://www.erdosproblems.com/739)\n- [dBE51] de Bruijn, N. G. and Erdős, P., *A colour problem for infinite graphs and a problem in\n  the theory of relations*. Indag. Math. (1951), 369-373.\n- [Ga73] Galvin, F., *Chromatic numbers of subgraphs*. Period. Math. Hungar. (1973), 117-119.\n- [Ko88b] Komjáth, Péter, *Consistency results on infinite graphs*. Israel J. Math. (1988),\n  285-294.\n- [Sh90] Shelah, Saharon, *Incompactness for chromatic numbers of graphs*. A tribute to Paul Erdős\n  (1990), 361-371.",
+   "reference": {
+    "text": "erdosproblems.com/739",
+    "url": "https://www.erdosproblems.com/739"
+   },
+   "statements": [
+    {
+     "name": "Erdos739.erdos_739",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5
+     ],
+     "formal_proofs": [],
+     "doc": "Let $\\mathfrak{m}$ be an infinite cardinal and $G$ be a graph with chromatic number $\\mathfrak{m}$.\nIs it true that, for every infinite cardinal $\\mathfrak{n}< \\mathfrak{m}$, there exists a subgraph\nof $G$ with chromatic number $\\mathfrak{n}$?\n\nA question of Galvin [Ga73]. Komjáth [Ko88b] proved it is consistent that\n$2^{\\aleph_0}=2^{\\aleph_1}=2^{\\aleph_2}=\\aleph_3$ and that there exist graphs which fail this\nproperty (with $\\mathfrak{m}=\\aleph_2$ and $\\mathfrak{n}=\\aleph_1$), so the statement below is\nnot provable in ZFC (if ZFC is consistent). Shelah [Sh90] proved that, assuming the axiom of\nconstructibility, the answer is yes with $\\mathfrak{m}=\\aleph_2$ and $\\mathfrak{n}=\\aleph_1$. It\nremains open whether the answer is yes assuming the Generalized Continuum Hypothesis (see\n`erdos_739.variants.gch`), so the statement is not known to be refutable either. Consistency\nresults about models of ZFC are not directly formalizable inside Lean's fixed model, so only the\nquestion is recorded here.\n\nThe subgraph need not be induced (see `erdos_739.variants.induced`). The hypothesis that\n$\\mathfrak{m}$ is infinite follows from $\\aleph_0 \\le \\mathfrak{n} < \\mathfrak{m}$.",
+     "statement": "theorem erdos_739 :\n    ∀ (V : Type u) (G : SimpleGraph V) (n : Cardinal.{u}),\n      ℵ₀ ≤ n → n < G.chromaticCardinal →\n        ∃ H : G.Subgraph, H.coe.chromaticCardinal = n",
+     "line": 61,
+     "sorry": true
+    },
+    {
+     "name": "Erdos739.erdos_739.variants.aleph_zero",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5
+     ],
+     "formal_proofs": [],
+     "doc": "Every graph with chromatic number $\\mathfrak{m}>\\aleph_0$ has a subgraph with chromatic number\n$\\aleph_0$. This is the case $\\mathfrak{n}=\\aleph_0$ of the question and follows from the\nde Bruijn–Erdős theorem [dBE51]. The source credits Galvin [Ga73] with the case\n$\\mathfrak{m}=\\aleph_0$, which has no infinite $\\mathfrak{n}<\\mathfrak{m}$; it is read here as\n$\\mathfrak{n}=\\aleph_0$.",
+     "statement": "theorem erdos_739.variants.aleph_zero :\n    ∀ (V : Type u) (G : SimpleGraph V), ℵ₀ < G.chromaticCardinal →\n      ∃ H : G.Subgraph, H.coe.chromaticCardinal = ℵ₀",
+     "line": 75,
+     "sorry": true
+    },
+    {
+     "name": "Erdos739.erdos_739.variants.induced",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      3,
+      5
+     ],
+     "formal_proofs": [],
+     "doc": "Galvin [Ga73] proved that the stronger version of `erdos_739`, in which the subgraph is induced,\nimplies $2^{\\mathfrak{k}}<2^{\\mathfrak{n}}$ for all cardinals $\\mathfrak{k}<\\mathfrak{n}$.",
+     "statement": "theorem erdos_739.variants.induced :\n    (∀ (V : Type u) (G : SimpleGraph V) (n : Cardinal.{u}),\n      ℵ₀ ≤ n → n < G.chromaticCardinal →\n        ∃ s : Set V, (G.induce s).chromaticCardinal = n) →\n    ∀ κ μ : Cardinal.{u}, κ < μ → (2 : Cardinal.{u}) ^ κ < 2 ^ μ",
+     "line": 85,
+     "sorry": true
+    },
+    {
+     "name": "Erdos739.erdos_739.variants.gch",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      3,
+      5
+     ],
+     "formal_proofs": [],
+     "doc": "It remains open whether the answer to `erdos_739` is yes assuming the Generalized Continuum\nHypothesis, stated as $2^{\\mathfrak{c}} = \\mathfrak{c}^+$ for every infinite cardinal\n$\\mathfrak{c}$.",
+     "statement": "theorem erdos_739.variants.gch :\n    (∀ c : Cardinal.{u}, ℵ₀ ≤ c → 2 ^ c = Order.succ c) →\n    ∀ (V : Type u) (G : SimpleGraph V) (n : Cardinal.{u}),\n      ℵ₀ ≤ n → n < G.chromaticCardinal →\n        ∃ H : G.Subgraph, H.coe.chromaticCardinal = n",
+     "line": 98,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
     "api": 0
    },
    "unread": []
@@ -45456,7 +45756,7 @@
      "formal_proofs": [],
      "doc": "Alternative statement of Erdős Problem 835 using the chromatic number of the Johnson graph.\nThis is equivalent to asking whether there exists $k > 2$ such that the chromatic number of the\nJohnson graph $J(2k, k)$ is $k+1$.",
      "statement": "theorem erdos_835.variants.johnson : ∃ l,\n    -- making sure k > 2\n    letI k := l + 3\n    J(2 * k, k).chromaticNumber = k + 1",
-     "line": 67,
+     "line": 69,
      "sorry": true
     },
     {
@@ -45469,7 +45769,7 @@
      "formal_proofs": [],
      "doc": "It is known that for $3 \\leq k \\leq 8$, the chromatic number of $J(2k, k)$ is greater than $k+1$,\nsee [Johnson graphs](https://aeb.win.tue.nl/graphs/Johnson.html).",
      "statement": "theorem johnsonGraph_2k_k_chromaticNumber_known_cases (k : ℕ) (hk : 3 ≤ k) (hk' : k ≤ 8) :\n    J(2 * k, k).chromaticNumber > k + 1",
-     "line": 78,
+     "line": 80,
      "sorry": true
     },
     {
@@ -45479,10 +45779,15 @@
      "ams": [
       5
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-01-000008"
+      }
+     ],
      "doc": "The smallest case not on this page is $k=9$:\nBut that one can be solved as well:\nThe chromatic number of $J(18, 9)$ is at least $11$.",
      "statement": "theorem johnsonGraph_18_9_chromaticNumber : J(18, 9).chromaticNumber > 9 + 1",
-     "line": 88,
+     "line": 92,
      "sorry": true
     },
     {
@@ -45492,10 +45797,15 @@
      "ams": [
       5
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000013"
+      }
+     ],
      "doc": "Johnson's bound for the independence number of the Johnson graph.",
      "statement": "lemma indepNum_johnson_le_johnsonBound : α(J(n, k)) ≤ johnsonBound n 4 k",
-     "line": 102,
+     "line": 107,
      "sorry": true
     },
     {
@@ -45508,7 +45818,7 @@
      "formal_proofs": [],
      "doc": "Johnson's bound for the chromatic number of the Johnson graph.",
      "statement": "lemma div_johnsonBound_le_chromaticNum_johnson :\n    ⌈(n.choose k / johnsonBound n 4 k : ℚ≥0)⌉₊ ≤ χ(J(n, k))",
-     "line": 106,
+     "line": 111,
      "sorry": false
     },
     {
@@ -45521,7 +45831,7 @@
      "formal_proofs": [],
      "doc": "It is known that for $3 \\leq k \\leq 8$, the chromatic number of $J(2k, k)$ is greater than\n$k+1$, see [Johnson graphs](https://aeb.win.tue.nl/graphs/Johnson.html).",
      "statement": "theorem chromaticNumber_johnson_2k_k_lower_bound (hk : 3 ≤ k) (hk' : k ≤ 8) :\n    k + 1 < J(2 * k, k).chromaticNumber",
-     "line": 117,
+     "line": 122,
      "sorry": true
     },
     {
@@ -45534,7 +45844,7 @@
      "formal_proofs": [],
      "doc": "It is also known that for $3 \\leq k \\leq 203$ odd, the chromatic number of $J(2k, k)$ is\ngreater than $k+1$, see [Johnson graphs](https://aeb.win.tue.nl/graphs/Johnson.html).",
      "statement": "theorem chromaticNumber_johnson_2k_k_lower_bound_odd (hk : 3 ≤ k) (hk' : k ≤ 300) (hk_odd : Odd k) :\n    k + 1 < J(2 * k, k).chromaticNumber",
-     "line": 124,
+     "line": 129,
      "sorry": false
     },
     {
@@ -45544,10 +45854,15 @@
      "ams": [
       5
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-01-000008"
+      }
+     ],
      "doc": "It can be seen that the chromatic number of $J(2k,k)$ is $>k+1$ for all odd $k>2$.",
      "statement": "theorem johnson_chromaticNumber_odd (k : ℕ) (hk : 2 < k) (h : Odd k) :\n    k + 1 < J(2 * k, k).chromaticNumber",
-     "line": 133,
+     "line": 140,
      "sorry": true
     },
     {
@@ -45557,10 +45872,15 @@
      "ams": [
       5
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-01-000008"
+      }
+     ],
      "doc": "Ma and Tang have proved that the chromatic number of $J(2k,k)$ is $>k+1$ for all $k>2$ not of the\nform $p-1$ for prime $p$.",
      "statement": "theorem johnson_chromaticNumber_composite (k : ℕ) (hk : 2 < k) (h : (k + 1).Composite) :\n    k + 1 < J(2 * k, k).chromaticNumber",
-     "line": 142,
+     "line": 151,
      "sorry": true
     },
     {
@@ -45573,7 +45893,7 @@
      "formal_proofs": [],
      "doc": "Is the chromatic number of `J(2 * k, k)` always at least `k + 2`?",
      "statement": "theorem johnson_chromaticNumber :\n    ∀ k ≥ 3, k + 2 ≤ J(2 * k, k).chromaticNumber",
-     "line": 162,
+     "line": 171,
      "sorry": true
     }
    ],
@@ -48000,10 +48320,15 @@
       5,
       11
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "other_system",
+       "url": "https://github.com/karlesmarin/formalizations/blob/1aa7ad1ccadb6c7ba2378e3ee595fdd798f0f1b4/Isabelle/AFP/Sandor_Subset_Sum_Antichain/Sandor_Antichain.thy#L250"
+      }
+     ],
      "doc": "Sándor's construction (reported without reference in [Er98]) is claimed to achieve\n$\\lvert A\\rvert = (1-o(1))\\log_2 n$ with $A = \\{2^i + m 2^m : 0 \\leq i < m\\}$ and\n$n = 2^{m-1} + m 2^m$.",
      "statement": "theorem erdos_882.variants.sandor (m : ℕ) (hm : 1 ≤ m) :\n    IsSubsetSumAntichain ((Finset.range m).image (fun i => 2 ^ i + m * 2 ^ m))",
-     "line": 143,
+     "line": 144,
      "sorry": true
     },
     {
@@ -48017,7 +48342,7 @@
      "formal_proofs": [],
      "doc": "The greedy algorithm shows that $\\lvert A\\rvert \\geq (1-o(1))\\log_3 n$ is possible.",
      "statement": "theorem erdos_882.variants.greedy :\n    ∀ᶠ n : ℕ in Filter.atTop, (Real.logb 3 n - 1 : ℝ) ≤ (maxAntichainCard n : ℝ)",
-     "line": 151,
+     "line": 152,
      "sorry": true
     }
    ],
@@ -52259,8 +52584,8 @@
      "formal_proofs": [],
      "doc": "Erdős noted that the greedy algorithm showed $f(n)\\geq \\lfloor \\log_3 n\\rfloor$\n[Er65, p. 188].",
      "statement": "theorem erdos_963.variants.greedy (n : ℕ) : Nat.log 3 n ≤ f n",
-     "line": 114,
-     "sorry": true
+     "line": 154,
+     "sorry": false
     },
     {
      "name": "Erdos963.erdos_963.variants.positive",
@@ -52273,7 +52598,7 @@
      "formal_proofs": [],
      "doc": "The second part for sets of positive reals, with $\\lfloor\\log_2\\lvert A\\rvert\\rfloor$ as in\n[Er65, p. 188] and its example $a_i=i$: every set $A$ of positive reals has a dissociated subset\nwith at least $\\lfloor\\log_2 \\lvert A\\rvert\\rfloor$ elements.",
      "statement": "theorem erdos_963.variants.positive :\n    ∀ A : Finset ℝ, (∀ a ∈ A, 0 < a) →\n      ∃ B ⊆ A, Nat.log 2 A.card ≤ B.card ∧ AddDissociated (B : Set ℝ)",
-     "line": 123,
+     "line": 190,
      "sorry": true
     }
    ],
@@ -53587,7 +53912,7 @@
      "doc": "It is trivial that $f(k,n)\\leq \\pi(n)$ [Er70b, p. 138]. Here $\\pi(n)<k$.",
      "statement": "theorem erdos_983.variants.le_primeCounting {k n : ℕ} (hk : Nat.primeCounting n < k) :\n    f k n ≤ Nat.primeCounting n",
      "line": 116,
-     "sorry": true
+     "sorry": false
     },
     {
      "name": "Erdos983.erdos_983.variants.upper_bound",
@@ -53599,7 +53924,7 @@
      "formal_proofs": [],
      "doc": "Erdős and Straus [Er70b, p. 139, (14)] proved\n$$f(\\pi(n)+1,n)\\leq 2\\pi(n^{1/2})+1.$$",
      "statement": "theorem erdos_983.variants.upper_bound (n : ℕ) :\n    f (Nat.primeCounting n + 1) n ≤ 2 * Nat.primeCounting (Nat.sqrt n) + 1",
-     "line": 125,
+     "line": 137,
      "sorry": true
     },
     {
@@ -53612,7 +53937,7 @@
      "formal_proofs": [],
      "doc": "Erdős and Straus proved [Er70b, pp. 138-140] that\n$$f(\\pi(n)+1,n)=2\\pi(n^{1/2})+o_A\\left(\\frac{n^{1/2}}{(\\log n)^A}\\right)$$\nfor any $A>0$.",
      "statement": "theorem erdos_983.variants.erdos_straus :\n    ∀ A : ℝ, 0 < A →\n      (fun n : ℕ ↦ (f (Nat.primeCounting n + 1) n : ℝ) -\n          2 * (Nat.primeCounting (Nat.sqrt n) : ℝ)) =o[atTop]\n        (fun n : ℕ ↦ Real.sqrt n / Real.log n ^ A)",
-     "line": 135,
+     "line": 147,
      "sorry": true
     }
    ],
@@ -55671,10 +55996,15 @@
      "ams": [
       5
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-03-000006"
+      }
+     ],
      "doc": "Let $h(n)$ be such that every graph on $n$ vertices with $>n^2/4$ many edges contains a triangle\nwhose vertices have degrees summing to at least $h(n)$. Estimate $h(n)$. In particular, is it\ntrue that\n$$h(n)\\geq (2(\\sqrt{3}-1)-o(1))n?$$\n\nA conjecture of Bollobás and Erdős.\n\nThe answer is no. A blow-up of the butterfly graph, posted on the\n[Erdős problems forum](https://www.erdosproblems.com/forum/thread/1033) in June and July 2026 and\nwritten up in [this note](https://woutercvb.github.io/Erdos1033_smalloptimization.pdf), gives\narbitrarily large graphs with more than $n^2/4$ edges in which every triangle has degree sum at\nmost $1.464n$, which is less than $2(\\sqrt{3}-1)n$. Estimating the optimal value of $h(n)$ is\nstill open.",
      "statement": "theorem erdos_1033 :\n    ¬ ∀ ε > (0 : ℝ), ∀ᶠ n : ℕ in atTop, ∀ (G : SimpleGraph (Fin n)) [DecidableRel G.Adj],\n      n ^ 2 < 4 * #G.edgeFinset →\n        ∃ t, G.IsNClique 3 t ∧\n          (2 * (Real.sqrt 3 - 1) - ε) * n ≤ ∑ v ∈ t, (G.degree v : ℝ)",
-     "line": 56,
+     "line": 57,
      "sorry": true
     },
     {
@@ -55687,7 +56017,7 @@
      "formal_proofs": [],
      "doc": "In [Er82e] it is asked whether $h(n)\\geq \\frac{3}{2}n$. The answer is no, since the construction\nof Erdős and Laskar [ErLa85] gives $h(n) \\leq 2(\\sqrt{3}-1)n+O(1)$ and\n$2(\\sqrt{3}-1) < \\frac{3}{2}$.",
      "statement": "theorem erdos_1033.variants.three_halves :\n    ¬ ∀ n : ℕ, ∀ (G : SimpleGraph (Fin n)) [DecidableRel G.Adj], n ^ 2 < 4 * #G.edgeFinset →\n      ∃ t, G.IsNClique 3 t ∧ 3 * n ≤ 2 * ∑ v ∈ t, G.degree v",
-     "line": 69,
+     "line": 70,
      "sorry": true
     },
     {
@@ -55700,7 +56030,7 @@
      "formal_proofs": [],
      "doc": "Fan [Fa88] proved that $h(n) \\geq \\frac{21}{16}n$: every graph on $n$ vertices with $>n^2/4$\nedges contains a triangle whose degrees sum to at least $\\frac{21}{16}n$.",
      "statement": "theorem erdos_1033.variants.fan (n : ℕ) (G : SimpleGraph (Fin n)) [DecidableRel G.Adj]\n    (hG : n ^ 2 < 4 * #G.edgeFinset) :\n    ∃ t, G.IsNClique 3 t ∧ 21 * n ≤ 16 * ∑ v ∈ t, G.degree v",
-     "line": 79,
+     "line": 80,
      "sorry": true
     },
     {
@@ -55713,7 +56043,7 @@
      "formal_proofs": [],
      "doc": "Erdős and Laskar [ErLa85] gave a construction showing that $h(n) \\leq 2(\\sqrt{3}-1)n+O(1)$:\nfor all large $n$ there is a graph on $n$ vertices with $>n^2/4$ edges in which every triangle\nhas degree sum at most $2(\\sqrt{3}-1)n+O(1)$. The construction is made explicit in [Fa88].",
      "statement": "theorem erdos_1033.variants.erdos_laskar :\n    ∃ C : ℝ, ∀ᶠ n : ℕ in atTop, ∃ G : SimpleGraph (Fin n), n ^ 2 < 4 * #G.edgeFinset ∧\n      ∀ t, G.IsNClique 3 t → ∑ v ∈ t, (G.degree v : ℝ) ≤ 2 * (Real.sqrt 3 - 1) * n + C",
-     "line": 91,
+     "line": 92,
      "sorry": true
     }
    ],
@@ -56115,6 +56445,89 @@
      "doc": "Let\n$$ f(z) = \\prod_{i=1}^{n} (z - z_i) \\in \\mathbb{C}[x] $$\nwith $|z_i| < 1$ for all $i$.\n\nConjecture: Must there always exist a path of length less than 2 in\n$$ \\{ z \\in \\mathbb{C} \\mid |f(z)| < 1 \\} $$\nwhich connects two of the roots of $f$?\n\nThe answer is negative. ani gave a counterexample of degree seven on the\n[Erdős problems forum](https://www.erdosproblems.com/forum/thread/1041) on 7 September 2026.\nThe linked formalisation proves, for the member $s = 10^{-6}$ of ani's family, that every\nconnected subset of $\\{ z \\mid |f(z)| < 1 \\}$ containing two distinct roots has\none-dimensional Hausdorff measure greater than $2$.",
      "statement": "theorem erdos_1041 :\n    ¬ ∀ (n : ℕ) (f : ℂ[X]), n ≥ 2 → f.natDegree = n → f.Monic →\n      f.rootSet ℂ ⊆ Metric.ball 0 1 →\n      ∃ (z₁ z₂ : ℂ) (h : ({z₁, z₂} : Multiset ℂ) ≤ f.roots) (γ : Path z₁ z₂),\n        Set.range γ ⊆ { z : ℂ | ‖f.eval z‖ < 1 } ∧ length (Set.range γ) < 2",
      "line": 82,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/ErdosProblems/1042.lean",
+   "module": "FormalConjectures.ErdosProblems.«1042»",
+   "folder": "ErdosProblems",
+   "title": "Erdős Problem 1042",
+   "doc": "*References:*\n- [erdosproblems.com/1042](https://www.erdosproblems.com/1042)\n- [EHP58] Erdős, P. and Herzog, F. and Piranian, G., *Metric properties of polynomials*.\n  J. Analyse Math. (1958), 125-148. [PDF](https://www.renyi.hu/~p_erdos/1958-05.pdf)\n- [GhRa24] Ghosh, S. and Ramachandran, K., *Number of components of polynomial lemniscates: a\n  problem of Erdős, Herzog, and Piranian*. J. Math. Anal. Appl. (2024), Paper No. 128571.\n  [arXiv:2312.13673](https://arxiv.org/abs/2312.13673)",
+   "reference": {
+    "text": "erdosproblems.com/1042",
+    "url": "https://www.erdosproblems.com/1042"
+   },
+   "statements": [
+    {
+     "name": "Erdos1042.erdos_1042.parts.i",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      30
+     ],
+     "formal_proofs": [],
+     "doc": "Let $F\\subset\\mathbb{C}$ be a closed set of transfinite diameter $1$ which is not contained in\nany closed disc of radius $1$.\n\nIf $f(z)=\\prod_{i=1}^n(z-z_i)\\in\\mathbb{C}[x]$ with all $z_i\\in F$ then can\n$$\\{ z: \\lvert f(z)\\rvert < 1\\}$$\nhave $n$ connected components?\n\nA problem of Erdős, Herzog, and Piranian [EHP58, p. 139, Problem 6], who proved that if $F$ is the\ndisc of radius $1$ then this set can have $n$ connected components (for example $f(z)=z^n+1$).\n\nAs in the answer of Ghosh and Ramachandran [GhRa24] to their Question 1.2, we read \"can\"\nexistentially: there is such an $F$ for which $n$ components occur for infinitely many $n$.\n[GhRa24] answer this question in the affirmative; the classical example $F=[-2,2]$\n[GhRa24, Example 2.7] already gives $n$ components for every $n\\ge 1$, see\n`erdos_1042.variants.chebyshev_segment`. The universal reading, for every such $F$, is\n`erdos_1042.variants.universal`.",
+     "statement": "theorem erdos_1042.parts.i :\n    ∃ F : Set ℂ, IsClosed F ∧ transfiniteDiameter F = 1 ∧\n      (∀ c : ℂ, ¬ F ⊆ Metric.closedBall c 1) ∧\n      ∃ᶠ n : ℕ in atTop, ∃ f : ℂ[X], MonicWithRootsIn F n f ∧ numComponents f = n",
+     "line": 88,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1042.erdos_1042.variants.chebyshev_segment",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      30
+     ],
+     "formal_proofs": [],
+     "doc": "Ghosh and Ramachandran [GhRa24, Example 2.7] note that for $F=[-2,2]\\subset\\mathbb{C}$ (a closed\nset of transfinite diameter $1$ which is not contained in any closed disc of radius $1$) the\nmonic Chebyshev polynomial $f_n(z)=2T_n(z/2)$ has all its roots in $F$ and all its $n-1$ critical\nvalues equal to $\\pm 2$, so $\\{\\lvert f_n\\rvert<1\\}$ has exactly $n$ components, for every\n$n\\ge 1$.",
+     "statement": "theorem erdos_1042.variants.chebyshev_segment (F : Set ℂ)\n    (hF : F = Complex.ofReal '' Set.Icc (-2 : ℝ) 2) :\n    IsClosed F ∧ transfiniteDiameter F = 1 ∧ (∀ c : ℂ, ¬ F ⊆ Metric.closedBall c 1) ∧\n      ∀ n : ℕ, 1 ≤ n → ∃ f : ℂ[X], MonicWithRootsIn F n f ∧ numComponents f = n",
+     "line": 102,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1042.erdos_1042.variants.universal",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      30
+     ],
+     "formal_proofs": [],
+     "doc": "The first question of [EHP58, p. 139, Problem 6] read universally: for every closed $F$ of\ntransfinite diameter $1$ which is not contained in any closed disc of radius $1$, are there\ninfinitely many $n$ for which some $f$ with all roots in $F$ gives $n$ components?\n\nThis is not settled by [GhRa24], who prove it for closed lemniscates [GhRa24, Proposition 2.3]\nand conjecture the weaker statement $\\limsup_n C_n(F)/n=1$ for every compact $F$ of capacity $1$\n[GhRa24, §2.1.1]. \"Some $n$\" instead of infinitely many would be trivial ($n=1$).",
+     "statement": "theorem erdos_1042.variants.universal :\n    ∀ F : Set ℂ, IsClosed F → transfiniteDiameter F = 1 →\n      (∀ c : ℂ, ¬ F ⊆ Metric.closedBall c 1) →\n      ∃ᶠ n : ℕ in atTop, ∃ f : ℂ[X], MonicWithRootsIn F n f ∧ numComponents f = n",
+     "line": 118,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1042.erdos_1042.parts.ii",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      30
+     ],
+     "formal_proofs": [],
+     "doc": "If the transfinite diameter of $F$ is $<1$ then must this set only have at most $(1-c)n$\nconnected components, where $c>0$ depends only on $F$ (or just the transfinite diameter of $F$)?\n\nThis is the second question of [EHP58, p. 139, Problem 6], which asks for $n$ large. It was solved\nby Ghosh and Ramachandran [GhRa24, Theorem 2.1(a)], who proved that, if $d$ is the transfinite\ndiameter of $F$ and $0<d<1$, then the set has at most $(1-c)n$ connected components for some\n$c>0$ depending on $F$. Precisely, they prove $\\limsup_n C_n(F)/n<1$, where $C_n(F)$ is the\nmaximal number of components over all admissible $f$ of degree $n$; this is the statement below.\nThe answer is yes, in this form.\n\n[GhRa24] assume throughout that $F$ is compact of positive capacity, so we assume $0<d$; a closed\n$F$ with $d<1$ is bounded, hence compact. The condition \"$n$ large\" is needed: for $n=1$ the set\n$\\{\\lvert z-z_1\\rvert<1\\}$ has one component, which is more than $(1-c)n$. The parenthetical\n\"or just the transfinite diameter of $F$\" is not formalised: [GhRa24] only remark that their\nquantities $M(K)$ and $m(K)$ are not determined by the capacity.",
+     "statement": "theorem erdos_1042.parts.ii :\n    ∀ F : Set ℂ, IsClosed F → 0 < transfiniteDiameter F → transfiniteDiameter F < 1 →\n      ∃ c : ℝ, 0 < c ∧ ∀ᶠ n : ℕ in atTop, ∀ f : ℂ[X], MonicWithRootsIn F n f →\n        (numComponents f : ℝ) ≤ (1 - c) * n",
+     "line": 142,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1042.erdos_1042.variants.connected_le_quarter",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      30
+     ],
+     "formal_proofs": [],
+     "doc": "If $d\\leq 1/4$ and $F$ is connected then the set has only one connected component.\n\nThis is [GhRa24, Theorem 2.1(c)]: if the logarithmic capacity of the compact connected set $K$ is\nat most $1/4$ then $\\{\\lvert f\\rvert<1\\}$ is connected for every monic $f$ with all roots in $K$.\nWe take the degree $n\\ge 1$ (for $n=0$ the set is empty) and, as in [GhRa24], positive capacity.",
+     "statement": "theorem erdos_1042.variants.connected_le_quarter (F : Set ℂ) (hF : IsClosed F)\n    (hconn : IsConnected F) (h₀ : 0 < transfiniteDiameter F) (hd : transfiniteDiameter F ≤ 1 / 4)\n    (n : ℕ) (hn : 1 ≤ n) (f : ℂ[X]) (hf : MonicWithRootsIn F n f) :\n    numComponents f = 1",
+     "line": 156,
      "sorry": true
     }
    ],
@@ -59264,7 +59677,7 @@
      "doc": "Neumann [Ne76] noted that if the centre has index $n$ then $\\Gamma$ contains no complete subgraph\non $>n$ vertices.",
      "statement": "theorem erdos_1098.variants.upper_bound (G : Type*) [Group G]\n    [(Subgroup.center G).FiniteIndex] :\n    (nonCommutingGraph G).CliqueFree ((Subgroup.center G).index + 1)",
      "line": 77,
-     "sorry": true
+     "sorry": false
     }
    ],
    "folded": {
@@ -60586,6 +60999,307 @@
    "folded": {
     "test": 0,
     "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/ErdosProblems/1129.lean",
+   "module": "FormalConjectures.ErdosProblems.«1129»",
+   "folder": "ErdosProblems",
+   "title": "Erdős Problem 1129",
+   "doc": "*References:*\n- [erdosproblems.com/1129](https://www.erdosproblems.com/1129)\n- [Be31] Bernstein, S., *Sur la limitation des valeurs d'un polynôme P_n(x) de degré n sur\n  tout un segment par ses valeurs en (n+1) points du segment*. Izv. Akad. Nauk SSSR 7 (1931),\n  1025-1050.\n- [dBPi78] de Boor, C. and Pinkus, A., *Proof of the conjectures of Bernstein and Erdős\n  concerning the optimal nodes for polynomial interpolation*. J. Approx. Theory 24 (1978),\n  289-303.\n- [Er47] Erdős, P., *Some remarks on polynomials*. Bull. Amer. Math. Soc. 53 (1947), 1169-1176.\n  [PDF](https://www.renyi.hu/~p_erdos/1947-08.pdf)\n- [Er61c] Erdős, P., *Problems and results on the theory of interpolation. II*. Acta Math.\n  Acad. Sci. Hungar. 12 (1961), 235-244. [PDF](https://www.renyi.hu/~p_erdos/1961-20.pdf)\n- [Er67] Erdős, P., *Problems and results on the convergence and divergence properties of the\n  Lagrange interpolation polynomials and some extremal problems*. Mathematica (Cluj) (1967),\n  65-73. [PDF](https://www.renyi.hu/~p_erdos/1967-20.pdf)\n- [Fa14] Faber, G., *Über die interpolatorische Darstellung stetiger Funktionen*. Jahresber.\n  Deutsch. Math.-Verein. 23 (1914), 190-210.\n- [Ib16] Ibrahimoglu, B. A., *Lebesgue functions and Lebesgue constants in polynomial\n  interpolation*. J. Inequal. Appl. (2016), Paper No. 93.\n  [DOI](https://doi.org/10.1186/s13660-016-1030-3)\n- [Ki77] Kilgore, T. A., *Optimization of the norm of the Lagrange interpolation operator*.\n  Bull. Amer. Math. Soc. 83 (1977), 1069-1071.\n- [Ki78] Kilgore, T. A., *A characterization of the Lagrange interpolating projection with\n  minimal Tchebycheff norm*. J. Approx. Theory 24 (1978), 273-288.\n- [RaVa15] Rack, H.-J. and Vajda, R., *Optimal cubic Lagrange interpolation: Extremal node\n  systems with minimal Lebesgue constant*. Stud. Univ. Babeş-Bolyai Math. 60 (2015), 151-171.\n  [Link](https://studia.reviste.ubbcluj.ro/index.php/subbmathematica/article/view/5710)\n- [Ren26] Ren, C. Y., *Erdős 1129: all optimal free interpolation nodes*, Lean formalisation\n  (2026), building on randyxian08's Lean formalisation of the canonical case.\n  [GitHub](https://github.com/CollinYuanjieRen/awards/blob/791bf61df4366b60b6b47b9e062661ee65b3143b/submissions/jsp-000936-cyr/README.md)\n\nSee also [erdosproblems.com/1130](https://www.erdosproblems.com/1130), which uses the\ndefinitions of this file.",
+   "reference": {
+    "text": "erdosproblems.com/1129",
+    "url": "https://www.erdosproblems.com/1129"
+   },
+   "statements": [
+    {
+     "name": "Erdos1129.erdos_1129",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "For $x_1,\\ldots,x_n\\in [-1,1]$ let\n$$l_k(x)=\\frac{\\prod_{i\\neq k}(x-x_i)}{\\prod_{i\\neq k}(x_k-x_i)},$$\nwhich are such that $l_k(x_k)=1$ and $l_k(x_i)=0$ for $i\\neq k$.\n\nDescribe which choice of $x_i$ minimise\n$$\\Lambda(x_1,\\ldots,x_n)=\\max_{x\\in [-1,1]} \\sum_k \\lvert l_k(x)\\rvert.$$\n\nA problem of Bernstein [Be31] and Erdős [Er47, p. 1171], [Er67, p. 66]. They conjectured that\nthe minimisers are characterised by equioscillation of the Lebesgue function. This was proved by\nKilgore [Ki77], [Ki78] and by de Boor and Pinkus [dBPi78] for canonical node sets, that is, node\nsets with $x_1=-1$ and $x_n=1$ (see [Ib16, Section 3.7] and [RaVa15, Proposition 2.8]); this is\n`erdos_1129.variants.canonical`.\n\nHere the minimisers range over all node sets in $[-1,1]$, as in the question. For $n\\ge 3$ there\nare uncountably many of them [RaVa15, Theorem 2.5] (`erdos_1129.variants.free_nodes_not_unique`):\nsuitable affine images of the canonical minimiser inside $[-1,1]$ are minimisers too. All of them\nare described in the Lean formalisation [Ren26], which erdosproblems.com lists for this problem:\nfor $n\\ge 2$ a node set minimises $\\Lambda$ if and only if its local maxima between consecutive\nnodes are all equal and both $\\sum_k\\lvert l_k(-1)\\rvert$ and $\\sum_k\\lvert l_k(1)\\rvert$ are at\nmost that common value, and for $n=1$ every node set minimises $\\Lambda$. For $n=4$ all minimisers\nare also given in [RaVa15, Theorem 5.2].",
+     "statement": "theorem erdos_1129 (n : ℕ) :\n    {x : Fin n → ℝ | IsMinimiser x} = erdos_1129.answer n",
+     "line": 155,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1129.erdos_1129.variants.canonical",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "The theorem of Kilgore [Ki77], [Ki78] and de Boor and Pinkus [dBPi78] for canonical node sets\n($x_1=-1$, $x_n=1$), as in [Ib16, Section 3.7] and [RaVa15, Definition 2.7 and Proposition 2.8]:\nthe canonical node sets that minimise $\\Lambda$ among all node sets are exactly the canonical node\nsets whose local maxima $\\lambda_i=\\max_{[x_i,x_{i+1}]}\\sum_k\\lvert l_k\\rvert$ between consecutive\nnodes are all equal. The two outer gaps $[-1,x_1]$ and $[x_n,1]$ are single points for canonical\nnodes and are not used.",
+     "statement": "theorem erdos_1129.variants.canonical (n : ℕ) :\n    {x : Fin n → ℝ | IsCanonical x ∧ IsMinimiser x} = {x | IsCanonical x ∧ Equioscillates x}",
+     "line": 168,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1129.erdos_1129.variants.unique",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "Kilgore [Ki78] and de Boor and Pinkus [dBPi78] proved that for $n\\ge 2$ there is at most one\ncanonical node set whose local maxima $\\lambda_1,\\ldots,\\lambda_{n-1}$ are all equal, and that it\nis symmetric about $0$ ([Ib16, Section 3.7], [RaVa15, Proposition 2.8]). A canonical minimiser\nexists ([RaVa15, Section 2]) and must equioscillate ([Ki77], [Ib16, Section 3.7]), so there is\nexactly one such node set, and hence a unique canonical minimiser of $\\Lambda$.",
+     "statement": "theorem erdos_1129.variants.unique (n : ℕ) (hn : 2 ≤ n) :\n    ∃! x : Fin n → ℝ, IsCanonical x ∧ Equioscillates x",
+     "line": 180,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1129.erdos_1129.variants.free_nodes_not_unique",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "Without the canonical hypothesis the minimiser of $\\Lambda$ is not unique. For every $n\\ge 3$\nthere are uncountably many node sets $x_1<\\dots<x_n$ in $[-1,1]$ with the minimal Lebesgue\nconstant [RaVa15, Theorem 2.5]. The reason is affine invariance. Rescaling a node set to a\ncanonical one keeps its local maxima between consecutive nodes and does not increase $\\Lambda$\n([Ib16, Section 2.1 (e)]), so the minimal Lebesgue constant $\\Lambda^*$ is attained by the\ncanonical minimiser $x^*$. The shrunk node set $x^*/\\tau$ with $\\tau\\ge 1$ has\n$\\Lambda(x^*/\\tau)=\\max_{\\lvert u\\rvert\\le\\tau}L_{x^*}(u)$. Since $L_{x^*}(\\pm 1)=1<\\Lambda^*$ for\n$n\\ge 3$, this is still $\\Lambda^*$ for all $\\tau\\ge 1$ close to $1$ (see the proof of\n[RaVa15, Theorem 2.5]). For $n=4$ the node sets\n$\\pm 1/\\tau,\\pm t/\\tau$ with $1\\le\\tau\\le b$ for a constant $b\\approx 1.0433$, where $t$ is as\nin `erdos_1129.variants.four_nodes`, are all optimal [RaVa15, Theorem 4.2].",
+     "statement": "theorem erdos_1129.variants.free_nodes_not_unique (n : ℕ) (hn : 3 ≤ n) :\n    ¬ {x : Fin n → ℝ | IsMinimiser x}.Countable",
+     "line": 198,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1129.erdos_1129.variants.three_nodes",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "For $n=3$ the canonical minimiser is $-1,0,1$, with $\\Lambda=\\frac54$ (Bernstein [Be31], see\n[RaVa15, Section 2]).",
+     "statement": "theorem erdos_1129.variants.three_nodes :\n    {x : Fin 3 → ℝ | IsCanonical x ∧ IsMinimiser x} = ({![(-1 : ℝ), 0, 1]} : Set (Fin 3 → ℝ)) ∧\n      lebesgueConstant (![(-1 : ℝ), 0, 1] : Fin 3 → ℝ) = 5 / 4",
+     "line": 207,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1129.erdos_1129.variants.four_nodes",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "For $n=4$ the canonical minimiser is $-1,-t,t,1$, where $t>0$ is the (unique positive) root of\n$25t^6+17t^4+2t^2-1$, so $t\\approx 0.4178$, and\n$\\Lambda=\\frac{1+t^2}{1-t^2}\\approx 1.4229$ [RaVa15, Section 3, (3.4)-(3.9)].",
+     "statement": "theorem erdos_1129.variants.four_nodes (t : ℝ) (ht : 0 < t)\n    (hroot : 25 * t ^ 6 + 17 * t ^ 4 + 2 * t ^ 2 - 1 = 0) :\n    {x : Fin 4 → ℝ | IsCanonical x ∧ IsMinimiser x} =\n        ({![(-1 : ℝ), -t, t, 1]} : Set (Fin 4 → ℝ)) ∧\n      lebesgueConstant (![(-1 : ℝ), -t, t, 1] : Fin 4 → ℝ) = (1 + t ^ 2) / (1 - t ^ 2)",
+     "line": 218,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1129.erdos_1129.variants.erdos_lower_bound",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "Faber [Fa14] proved $\\Lambda(x_1,\\ldots,x_n)\\gg \\log n$ for all choices of $x_i$, and Bernstein\n[Be31] announced $\\Lambda>(\\frac{2}{\\pi}-o(1))\\log n$ (see [Er61c, p. 235]). Erdős [Er61c,\nTheorem 1] improved this: there is an absolute constant $c_1$ such that for all\n$-1\\le x_1<\\cdots<x_n\\le 1$\n$$\\max_{x\\in[-1,1]}\\sum_k\\lvert l_k(x)\\rvert>\\frac{2}{\\pi}\\log n-c_1.$$",
+     "statement": "theorem erdos_1129.variants.erdos_lower_bound :\n    ∃ C : ℝ, ∀ (n : ℕ) (x : Fin n → ℝ), 1 ≤ n → IsNodeSet x →\n      2 / Real.pi * Real.log n - C < lebesgueConstant x",
+     "line": 233,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1129.erdos_1129.variants.chebyshev_upper_bound",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "This is best possible: for the zeros of the Chebyshev polynomial $T_n$ there is an absolute\nconstant $c_2$ with $\\max_{x\\in[-1,1]}\\sum_k\\lvert l_k(x)\\rvert<\\frac{2}{\\pi}\\log n+c_2$\n([Er61c, p. 236], [Er67, p. 66]). [Ib16, Section 3.2] gives the precise asymptotics.",
+     "statement": "theorem erdos_1129.variants.chebyshev_upper_bound :\n    ∃ C : ℝ, ∀ (n : ℕ) (x : Fin n → ℝ), 1 ≤ n → IsChebyshevNodes x →\n      lebesgueConstant x < 2 / Real.pi * Real.log n + C",
+     "line": 244,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 1
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/ErdosProblems/1130.lean",
+   "module": "FormalConjectures.ErdosProblems.«1130»",
+   "folder": "ErdosProblems",
+   "title": "Erdős Problem 1130",
+   "doc": "*References:*\n- [erdosproblems.com/1130](https://www.erdosproblems.com/1130)\n- [dBPi78] de Boor, C. and Pinkus, A., *Proof of the conjectures of Bernstein and Erdős\n  concerning the optimal nodes for polynomial interpolation*. J. Approx. Theory 24 (1978),\n  289-303.\n- [Er47] Erdős, P., *Some remarks on polynomials*. Bull. Amer. Math. Soc. 53 (1947), 1169-1176.\n  [PDF](https://www.renyi.hu/~p_erdos/1947-08.pdf)\n- [Er61c] Erdős, P., *Problems and results on the theory of interpolation. II*. Acta Math.\n  Acad. Sci. Hungar. 12 (1961), 235-244. [PDF](https://www.renyi.hu/~p_erdos/1961-20.pdf)\n- [Er67] Erdős, P., *Problems and results on the convergence and divergence properties of the\n  Lagrange interpolation polynomials and some extremal problems*. Mathematica (Cluj) (1967),\n  65-73. [PDF](https://www.renyi.hu/~p_erdos/1967-20.pdf)\n- [Ib16] Ibrahimoglu, B. A., *Lebesgue functions and Lebesgue constants in polynomial\n  interpolation*. J. Inequal. Appl. (2016), Paper No. 93.\n  [DOI](https://doi.org/10.1186/s13660-016-1030-3)\n- [Ki77] Kilgore, T. A., *Optimization of the norm of the Lagrange interpolation operator*.\n  Bull. Amer. Math. Soc. 83 (1977), 1069-1071.\n- [Ki78] Kilgore, T. A., *A characterization of the Lagrange interpolating projection with\n  minimal Tchebycheff norm*. J. Approx. Theory 24 (1978), 273-288.\n\nThe definitions (nodes, Lebesgue function, canonical node sets, equioscillation) are in\n`FormalConjectures.ErdosProblems.«1129»`, the file of\n[erdosproblems.com/1129](https://www.erdosproblems.com/1129).",
+   "reference": {
+    "text": "erdosproblems.com/1130",
+    "url": "https://www.erdosproblems.com/1130"
+   },
+   "statements": [
+    {
+     "name": "Erdos1130.erdos_1130.parts.i",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "For $x_1,\\ldots,x_n\\in [-1,1]$ let\n$$l_k(x)=\\frac{\\prod_{i\\neq k}(x-x_i)}{\\prod_{i\\neq k}(x_k-x_i)},$$\nwhich are such that $l_k(x_k)=1$ and $l_k(x_i)=0$ for $i\\neq k$.\n\nLet $x_0=-1$ and $x_{n+1}=1$ and\n$$\\Upsilon(x_1,\\ldots,x_n)=\\min_{0\\leq i\\leq n}\\max_{x\\in[x_i,x_{i+1}]}\n\\sum_k \\lvert l_k(x)\\rvert.$$\nIs it true that\n$$\\Upsilon(x_1,\\ldots,x_n)\\ll \\log n?$$\n\nThis is the first part, a question of Erdős [Er67, p. 66], who could prove only\n$\\Upsilon<\\sqrt n$ [Er47, Theorem 2]. We read $\\ll$ as: there is an absolute constant $C$ with\n$\\Upsilon(x_1,\\ldots,x_n)\\le C\\log n$ for all $n\\ge 2$ and all nodes\n$-1\\le x_1<\\cdots<x_n\\le 1$. The answer is yes: $\\Upsilon(x)$ is at most the minimal Lebesgue\nconstant (`erdos_1130.variants.erdos_inequality`, from [Ki77], [Ki78] and [dBPi78]), and the\nChebyshev nodes show that this is $<\\frac2\\pi\\log n+O(1)$ [Er61c, p. 236].",
+     "statement": "theorem erdos_1130.parts.i :\n    ∃ C : ℝ, 0 < C ∧ ∀ (n : ℕ) (x : Fin n → ℝ), 2 ≤ n → IsNodeSet x →\n      upsilon x ≤ C * Real.log n",
+     "line": 87,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1130.erdos_1130.parts.ii",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "For $x_1,\\ldots,x_n\\in [-1,1]$ let\n$$l_k(x)=\\frac{\\prod_{i\\neq k}(x-x_i)}{\\prod_{i\\neq k}(x_k-x_i)},$$\nwhich are such that $l_k(x_k)=1$ and $l_k(x_i)=0$ for $i\\neq k$.\n\nLet $x_0=-1$ and $x_{n+1}=1$ and\n$$\\Upsilon(x_1,\\ldots,x_n)=\\min_{0\\leq i\\leq n}\\max_{x\\in[x_i,x_{i+1}]}\n\\sum_k \\lvert l_k(x)\\rvert.$$\nDescribe which choice of $x_i$ maximise $\\Upsilon(x_1,\\ldots,x_n)$.\n\nThis is the second part. Erdős [Er47, p. 1172], [Er67, p. 66] conjectured that the maximisers are\nthe node sets of [erdosproblems.com/1129](https://www.erdosproblems.com/1129), characterised by\nequal local maxima. This was proved by Kilgore [Ki77], [Ki78] and by de Boor and Pinkus [dBPi78]\nfor canonical node sets, with the smallest local maximum between consecutive nodes in place of\n$\\Upsilon$ (see [Ib16, Section 3.7]); this is `erdos_1130.variants.canonical`.\n\nHere, as in the question, $\\Upsilon$ includes the two outer gaps and the maximisers range over\nall node sets in $[-1,1]$. A maximiser is then not unique in general, and it need not have all\n$n+1$ local maxima $\\lambda_0,\\ldots,\\lambda_n$ equal: for $n=3$ the nodes $-s,0,s$ with\n$0<s\\le\\frac{2\\sqrt2}{3}$ all give $\\Upsilon=\\frac54$, the largest possible value, and for\n$s=\\frac12$ the four local maxima are $7,\\frac54,\\frac54,7$. The cited sources do not describe the\nwhole set of maximisers, so `erdos_1130.parts.ii.answer` is left as `sorry`.",
+     "statement": "theorem erdos_1130.parts.ii (n : ℕ) :\n    {x : Fin n → ℝ | IsNodeSet x ∧ ∀ y : Fin n → ℝ, IsNodeSet y → upsilon y ≤ upsilon x} =\n      erdos_1130.parts.ii.answer n",
+     "line": 121,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1130.erdos_1130.variants.canonical",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "The theorem of Kilgore [Ki77], [Ki78] and de Boor and Pinkus [dBPi78] in the form of\n[Ib16, Section 3.7]: among canonical node sets ($x_1=-1$, $x_n=1$), the ones at which the smallest\nof the $n-1$ local maxima between consecutive nodes is largest are exactly the canonical node sets\nwhose local maxima between consecutive nodes are all equal, that is, the canonical minimisers of\n$\\Lambda$ (`Erdos1129.erdos_1129.variants.canonical`). For canonical nodes the two outer gaps are\nsingle points and the literal $\\Upsilon$ is $1$, which is why $\\Upsilon$ is replaced by\n`minInteriorGapMax` here.",
+     "statement": "theorem erdos_1130.variants.canonical (n : ℕ) :\n    {x : Fin n → ℝ | IsCanonical x ∧\n      ∀ y : Fin n → ℝ, IsCanonical y → minInteriorGapMax y ≤ minInteriorGapMax x} =\n        {x | IsCanonical x ∧ Equioscillates x}",
+     "line": 136,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1130.erdos_1130.variants.erdos_inequality",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "The inequality conjectured by Erdős and proved by Kilgore [Ki77], [Ki78] and by de Boor and\nPinkus [dBPi78] (stated in\n[Ib16, Section 3.7] as $m_n(X)\\le \\Lambda_n(X^*)$ for every node set $X$): the smallest local\nmaximum of the Lebesgue function of any node set is at most the minimal Lebesgue constant. Here\n$y$ is a minimiser of $\\Lambda$. For nodes that contain neither $-1$ nor $1$, $\\Upsilon$ is this\nsmallest local maximum [Ib16, Section 2.1 (b), (c)]; otherwise $\\Upsilon=1$.",
+     "statement": "theorem erdos_1130.variants.erdos_inequality (n : ℕ) (x y : Fin n → ℝ)\n    (hx : IsNodeSet x) (hy : IsMinimiser y) :\n    upsilon x ≤ lebesgueConstant y",
+     "line": 151,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1130.erdos_1130.variants.erdos_inequality_canonical",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "The same inequality for a canonical node set `x`, in the form of [Ib16, Section 3.7]: the smallest\nof the local maxima between consecutive nodes is at most the minimal Lebesgue constant.",
+     "statement": "theorem erdos_1130.variants.erdos_inequality_canonical (n : ℕ) (x y : Fin n → ℝ)\n    (hx : IsCanonical x) (hy : IsMinimiser y) :\n    minInteriorGapMax x ≤ lebesgueConstant y",
+     "line": 161,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1130.erdos_1130.variants.log_bound",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "It follows from `erdos_1130.variants.erdos_inequality` and the bound for Chebyshev nodes in\n[Er61c, p. 236] that\n$$\\Upsilon(x_1,\\ldots,x_n)\\le\\frac{2}{\\pi}\\log n+O(1).$$",
+     "statement": "theorem erdos_1130.variants.log_bound :\n    ∃ C : ℝ, ∀ (n : ℕ) (x : Fin n → ℝ), 1 ≤ n → IsNodeSet x →\n      upsilon x ≤ 2 / Real.pi * Real.log n + C",
+     "line": 172,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1130.erdos_1130.variants.erdos_sqrt",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "Erdős [Er47, Theorem 2, pp. 1171-1172] proved that for nodes $x_1\\le\\cdots\\le x_n$ in $[-1,1]$\nthere is an $i$ with $\\max_{x\\in[x_i,x_{i+1}]}\\sum_k\\lvert l_k(x)\\rvert<\\sqrt n$, that is,\n$\\Upsilon(x_1,\\ldots,x_n)<\\sqrt n$. The paper allows coinciding nodes (then it calls the claim\nobvious); here the nodes are distinct. We take $n\\ge 2$: for $n=1$ the sum is identically $1$.",
+     "statement": "theorem erdos_1130.variants.erdos_sqrt (n : ℕ) (hn : 2 ≤ n) (x : Fin n → ℝ)\n    (hx : IsNodeSet x) :\n    upsilon x < Real.sqrt n",
+     "line": 184,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/ErdosProblems/1132.lean",
+   "module": "FormalConjectures.ErdosProblems.«1132»",
+   "folder": "ErdosProblems",
+   "title": "Erdős Problem 1132",
+   "doc": "*References:*\n- [erdosproblems.com/1132](https://www.erdosproblems.com/1132)\n- [Be31] Bernstein, S., *Sur la limitation des valeurs d'un polynome $P_n(x)$ de degré $n$ sur\n  tout un segment par ses valeurs en $(n+1)$ points du segment*. Izv. Akad. Nauk SSSR (1931),\n  1025-1050.\n- [Er61c] Erdős, P., *Problems and results on the theory of interpolation. II*. Acta Math. Acad.\n  Sci. Hungar. 12 (1961), 235-244. [PDF](https://www.renyi.hu/~p_erdos/1961-20.pdf)\n- [Er67] Erdős, P., *Problems and results on the convergence and divergence properties of the\n  Lagrange interpolation polynomials and some extremal problems*. Mathematica (Cluj) 10 (1968),\n  65-73. [PDF](https://www.renyi.hu/~p_erdos/1967-20.pdf)\n- [Ta26b] Tao, T., *Local Bernstein theory, and lower bounds for Lebesgue constants*.\n  [arXiv:2603.21453](https://arxiv.org/abs/2603.21453) (2026).\n- [Va99] Various, *Some of Paul's favorite problems*. Booklet produced for the conference\n  \"Paul Erdős and his mathematics\", Budapest, July 1999 (1999).",
+   "reference": {
+    "text": "erdosproblems.com/1132",
+    "url": "https://www.erdosproblems.com/1132"
+   },
+   "statements": [
+    {
+     "name": "Erdos1132.erdos_1132.parts.i",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "For $x_1,\\ldots,x_n\\in [-1,1]$ let\n$$l_k(x)=\\frac{\\prod_{i\\neq k}(x-x_i)}{\\prod_{i\\neq k}(x_k-x_i)},$$\nwhich are such that $l_k(x_k)=1$ and $l_k(x_i)=0$ for $i\\neq k$.\n\nLet $x_1,x_2,\\ldots\\in [-1,1]$ be an infinite sequence, and let\n$$L_n(x) = \\sum_{1\\leq k\\leq n}\\lvert l_k(x)\\rvert,$$\nwhere each $l_k(x)$ is defined above with respect to $x_1,\\ldots,x_n$.\n\nMust there exist $x\\in (-1,1)$ such that\n$$L_n(x) >\\frac{2}{\\pi}\\log n-O(1)$$\nfor infinitely many $n$?\n\nThis is the first part, asked in [Er67, p. 68] (see also [Va99, 2.43]); [Er61c, (4)] states it as\n\"quite possibly true\". Both papers consider an arbitrary triangular array of nodes; as on the\nproblem page, we take the first $n$ terms of one sequence, a special case. The nodes are required\nto be distinct, so that $l_k$ is defined. We let the constant $C$ in $O(1)$ depend on the sequence\nand on $x$, the weakest reading. In [Er61c, (4)] it is an absolute constant.",
+     "statement": "theorem erdos_1132.parts.i :\n    ∀ x : ℕ → ℝ, (∀ k, x k ∈ Set.Icc (-1 : ℝ) 1) → Function.Injective x →\n      ∃ t ∈ Set.Ioo (-1 : ℝ) 1, ∃ C : ℝ, ∃ᶠ n : ℕ in atTop,\n        2 / Real.pi * Real.log n - C < lebesgueFunction n x t",
+     "line": 88,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1132.erdos_1132.parts.ii",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "For $x_1,\\ldots,x_n\\in [-1,1]$ let\n$$l_k(x)=\\frac{\\prod_{i\\neq k}(x-x_i)}{\\prod_{i\\neq k}(x_k-x_i)},$$\nwhich are such that $l_k(x_k)=1$ and $l_k(x_i)=0$ for $i\\neq k$.\n\nLet $x_1,x_2,\\ldots\\in [-1,1]$ be an infinite sequence, and let\n$$L_n(x) = \\sum_{1\\leq k\\leq n}\\lvert l_k(x)\\rvert,$$\nwhere each $l_k(x)$ is defined above with respect to $x_1,\\ldots,x_n$.\n\nIs it true that\n$$\\limsup_{n\\to \\infty}\\frac{L_n(x)}{\\log n}\\geq \\frac{2}{\\pi}$$\nfor almost all $x\\in (-1,1)$?\n\nThis is the second part, asked in [Er67, p. 68] (\"Perhaps (7) holds for almost all $x_0$\"), again\nfor triangular arrays. The nodes are required to be distinct. We write the $\\limsup$ condition as:\nfor every $\\varepsilon>0$, there are infinitely many $n$ with\n$$L_n(x)\\geq\\left(\\frac{2}{\\pi}-\\varepsilon\\right)\\log n.$$\nThis is equivalent, and avoids the junk value of a real `limsup` of an unbounded sequence.\n\nThe problem page says that a result of Bernstein [Be31] implies that the set of such $x$ is\neverywhere dense. In [Er67, p. 68] Erdős derives this from his own unpublished bound (6), which\nsharpens a result of Bernstein. It also follows from `erdos_1132.variants.tao` with\n$\\omega(n)=\\log\\log n$.",
+     "statement": "theorem erdos_1132.parts.ii :\n    ∀ x : ℕ → ℝ, (∀ k, x k ∈ Set.Icc (-1 : ℝ) 1) → Function.Injective x →\n      ∀ᵐ t ∂(volume.restrict (Set.Ioo (-1 : ℝ) 1)),\n        ∀ ε > (0 : ℝ), ∃ᶠ n : ℕ in atTop,\n          (2 / Real.pi - ε) * Real.log n ≤ lebesgueFunction n x t",
+     "line": 119,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1132.erdos_1132.variants.erdos_max",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "Erdős [Er61c, Theorem 1] proved that, for any fixed $x_1,\\ldots,x_n\\in [-1,1]$,\n$$\\max_{x\\in [-1,1]}\\sum_{1\\leq k\\leq n}\\lvert l_k(x)\\rvert>\\frac{2}{\\pi}\\log n-O(1).$$\nHere $O(1)$ is an absolute constant $C$, and the maximum exceeds a bound if and only if some point\ndoes, so we write the statement with `∃ t`. The nodes are required to be distinct.",
+     "statement": "theorem erdos_1132.variants.erdos_max :\n    ∃ C : ℝ, ∀ n : ℕ, 1 ≤ n → ∀ x : ℕ → ℝ, (∀ k < n, x k ∈ Set.Icc (-1 : ℝ) 1) →\n      Set.InjOn x (Set.Iio n) →\n        ∃ t ∈ Set.Icc (-1 : ℝ) 1, 2 / Real.pi * Real.log n - C < lebesgueFunction n x t",
+     "line": 133,
+     "sorry": true
+    },
+    {
+     "name": "Erdos1132.erdos_1132.variants.tao",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      41
+     ],
+     "formal_proofs": [],
+     "doc": "Tao [Ta26b, Corollary 1.11] has proved that for any function $\\omega(n)$ which tends to infinity\nwith $n$ there exists a dense set of $x\\in (-1,1)$ such that\n$$L_n(x)\\geq \\frac{2}{\\pi}\\log n-\\omega(n)$$\nfor infinitely many $n$.\n\nTao proves this for an arbitrary triangular array of distinct nodes in $[-1,1]$, so in particular\nfor the first $n$ terms of a sequence. We state the array version: `x n k` is the $k$-th node\n(counted from $0$) of the $n$-th row, and the set is dense in $(-1,1)$ if every point of\n$(-1,1)$ is in its closure.",
+     "statement": "theorem erdos_1132.variants.tao :\n    ∀ x : ℕ → ℕ → ℝ, (∀ n, ∀ k < n, x n k ∈ Set.Icc (-1 : ℝ) 1) →\n      (∀ n, Set.InjOn (x n) (Set.Iio n)) →\n      ∀ ω : ℕ → ℝ, Tendsto ω atTop atTop →\n        Set.Ioo (-1 : ℝ) 1 ⊆ closure {t ∈ Set.Ioo (-1 : ℝ) 1 |\n          ∃ᶠ n : ℕ in atTop, 2 / Real.pi * Real.log n - ω n ≤ lebesgueFunction n (x n) t}",
+     "line": 151,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 1
    },
    "unread": []
   },
@@ -63409,7 +64123,7 @@
      "doc": "Let $A\\subset \\mathbb{N}$ and let $g(n)$ be a non-decreasing function of $n$ which is always $>0$.\n\nIs the lower density of\n$$\\{ n : 1_A\\ast 1_A(n)=g(n)\\}$$\nalways $0$?\n\nThe answer is trivially no to both questions: indeed if $A=\\mathbb{N}$ (assuming $0\\in\\mathbb{N}$)\nthen $1_A\\ast 1_A(n)=n+1$ for all $n$. Presumably Erdős had some additional restrictions on either\n$g$ or $A$ in mind, but these are not recorded in [Er80].",
      "statement": "theorem erdos_1193.parts.i :\n    ¬ ∀ (A : Set ℕ) (g : ℕ → ℕ), Monotone g → (∀ n, 0 < g n) →\n      {n : ℕ | sumRep A n = g n}.lowerDensity = 0",
      "line": 47,
-     "sorry": true
+     "sorry": false
     },
     {
      "name": "Erdos1193.erdos_1193.parts.ii",
@@ -63422,8 +64136,8 @@
      "formal_proofs": [],
      "doc": "Let $A\\subset \\mathbb{N}$ and let $g(n)$ be a non-decreasing function of $n$ which is always $>0$.\n\nIs the upper density of\n$$\\{ n : 1_A\\ast 1_A(n)=g(n)\\}$$\nalways $<c$ for some constant $c<1$?\n\nThe answer is trivially no to both questions: indeed if $A=\\mathbb{N}$ (assuming $0\\in\\mathbb{N}$)\nthen $1_A\\ast 1_A(n)=n+1$ for all $n$. Presumably Erdős had some additional restrictions on either\n$g$ or $A$ in mind, but these are not recorded in [Er80].",
      "statement": "theorem erdos_1193.parts.ii :\n    ¬ ∃ c < (1 : ℝ), ∀ (A : Set ℕ) (g : ℕ → ℕ), Monotone g → (∀ n, 0 < g n) →\n      {n : ℕ | sumRep A n = g n}.upperDensity < c",
-     "line": 64,
-     "sorry": true
+     "line": 70,
+     "sorry": false
     },
     {
      "name": "Erdos1193.erdos_1193.variants.sumRep_univ",
@@ -63441,7 +64155,7 @@
      ],
      "doc": "Indeed if $A=\\mathbb{N}$ (assuming $0\\in\\mathbb{N}$) then $1_A\\ast 1_A(n)=n+1$ for all $n$.",
      "statement": "theorem erdos_1193.variants.sumRep_univ (n : ℕ) : sumRep (Set.univ : Set ℕ) n = n + 1",
-     "line": 74,
+     "line": 86,
      "sorry": true
     },
     {
@@ -63455,8 +64169,8 @@
      "formal_proofs": [],
      "doc": "Erdős writes the upper density can be positive, but he believes it is bounded away from $1$.",
      "statement": "theorem erdos_1193.variants.upper_density_pos :\n    ∃ (A : Set ℕ) (g : ℕ → ℕ), Monotone g ∧ (∀ n, 0 < g n) ∧\n      0 < {n : ℕ | sumRep A n = g n}.upperDensity",
-     "line": 81,
-     "sorry": true
+     "line": 93,
+     "sorry": false
     }
    ],
    "folded": {
@@ -66008,6 +66722,94 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/GreensOpenProblems/17.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«17»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 17",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.17)\n- [Hą20] Hązła, J., *On arithmetic progressions in symmetric sets in finite field model*.\n  Electron. J. Combin. 27 (2020), no. 3, Paper No. 3.61.\n  [arXiv:1811.09947](https://arxiv.org/abs/1811.09947)\n- [BKLM24] Bhangale, A., Khot, S., Liu, Y. P. and Minzer, D., *On approximability of satisfiable\n  $k$-CSPs: VI*. [arXiv:2411.15133](https://arxiv.org/abs/2411.15133) (2024).",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.17"
+   },
+   "statements": [
+    {
+     "name": "Green17.green_17.parts.i",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Suppose that $A \\subset \\mathbb{F}_3^n$ is a set of density $\\alpha$. Under what conditions on\n$\\alpha$ is $A$ guaranteed to contain a 3-term progression with nonzero common difference in\n$\\{0, 1\\}^n$?\n\nWe read the question as asking for the order of magnitude of the threshold density\n$\\alpha(n) = r(n) / 3^n$, where $r(n)$ is `maxFree n`: every set of density greater than\n$\\alpha(n)$ contains such a progression, and some set of density $\\alpha(n)$ does not. [Gr24]\nnotes that $\\alpha(n) \\to 0$ by the density Hales-Jewett theorem; for the best known bound see\n`green_17.variants.bklm`.",
+     "statement": "theorem green_17.parts.i :\n    (fun n : ℕ ↦ (maxFree n : ℝ) / 3 ^ n) =Θ[atTop] green_17.parts.i.answer",
+     "line": 101,
+     "sorry": true
+    },
+    {
+     "name": "Green17.green_17.parts.ii",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Suppose that $A \\subset \\mathbb{F}_3^n$ is a set of density $\\alpha$. For fixed $\\alpha$, must\n$A$ contain $\\gg_\\alpha 6^n$ 3-term progressions with nonzero common difference in\n$\\{0, 1\\}^n$?\n\nA progression is counted as a pair $(x, d)$, see `numRestrictedAPs`. We read $\\gg_\\alpha 6^n$ as\nat least $c(\\alpha) 6^n$ for all $n \\ge n_0(\\alpha)$. A bound for all $n$ is false: for $n = 1$\nthe set $\\{0, 1\\}$ has density $2/3$ and contains no such progression.",
+     "statement": "theorem green_17.parts.ii :\n    ∀ α : ℝ, 0 < α → ∃ c : ℝ, 0 < c ∧ ∀ᶠ n : ℕ in atTop, ∀ A : Finset (𝔽₃ n),\n      α * 3 ^ n ≤ (A.card : ℝ) → c * 6 ^ n ≤ (numRestrictedAPs A : ℝ)",
+     "line": 115,
+     "sorry": true
+    },
+    {
+     "name": "Green17.green_17.variants.exponential",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Is there a constant $c \\in (0, 1)$ such that, for all large $n$, every set\n$A \\subseteq \\mathbb{F}_3^n$ of density at least $(1 - c)^n$ contains a 3-term progression with\nnonzero common difference in $\\{0, 1\\}^n$?\n\n[Gr24] notes that a density $\\alpha \\to 0$ slowly enough forces such a progression, and that\nthis may even hold with $\\alpha = (1-c)^n$ for some $c > 0$. We require $c < 1$, so that\n$(1 - c)^n > 0$.",
+     "statement": "theorem green_17.variants.exponential :\n    ∃ c : ℝ, 0 < c ∧ c < 1 ∧ ∀ᶠ n : ℕ in atTop, ∀ A : Finset (𝔽₃ n),\n      (1 - c) ^ n * 3 ^ n ≤ (A.card : ℝ) → HasRestrictedAP A",
+     "line": 130,
+     "sorry": true
+    },
+    {
+     "name": "Green17.green_17.variants.bklm",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "**Bhangale, Khot, Liu and Minzer.** There are constants $c, C > 0$ such that every set\n$A \\subseteq \\mathbb{F}_3^n$ of density at least $C (\\log \\log \\log n)^{-c}$ contains a 3-term\nprogression with nonzero common difference in $\\{0, 1\\}^n$.\n\nThis is [BKLM24, Theorem 3] for $\\Sigma = \\mathbb{F}_3$ and\n$S = \\{(x, x + a, x + 2a) : x \\in \\mathbb{F}_3, a \\in \\{0, 1\\}\\}$, as in [BKLM24, Section 1.2.1]:\nthree points of $A$, not all equal, with $(x_i, y_i, z_i) \\in S$ for all $i$ form such a\nprogression. We state it for large $n$, where $\\log \\log \\log n > 0$.",
+     "statement": "theorem green_17.variants.bklm :\n    ∃ c C : ℝ, 0 < c ∧ 0 < C ∧ ∀ᶠ n : ℕ in atTop, ∀ A : Finset (𝔽₃ n),\n      C / Real.log (Real.log (Real.log n)) ^ c * 3 ^ n ≤ (A.card : ℝ) → HasRestrictedAP A",
+     "line": 146,
+     "sorry": true
+    },
+    {
+     "name": "Green17.green_17.variants.symmetric",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "**Hązła.** For every $\\mu > 0$ there is $\\delta > 0$ such that every symmetric set\n$A \\subseteq \\mathbb{F}_3^n$ of density at least $\\mu$ contains at least $\\delta 6^n$\nprogressions $x, x + d, x + 2d$ with $d \\in \\{0, 1\\}^n$ [Hą20, abstract and Theorem 2, case\n$q = 3$].\n\n[Hą20] counts all pairs $(x, d)$ with $d \\in \\{0, 1\\}^n$, including the $|A|$ pairs with\n$d = 0$; this is why `A.card` is added to `numRestrictedAPs A`. For large $n$ the $d = 0$ pairs\nare negligible, so `green_17.parts.ii` holds for symmetric sets. [Hą20, abstract] states the\nresult for sets of density exactly $\\mu$. The form with density at least $\\mu$ follows from the\nremoval statement [Hą20, Theorem 2] with $\\mu/2$ in place of $\\mu$: it removes a single symmetric\nset of density at most $\\mu/2$ and leaves a set with no progressions, but the remaining set is\nnonempty and contains the progressions with $d = 0$.",
+     "statement": "theorem green_17.variants.symmetric :\n    ∀ μ : ℝ, 0 < μ → ∃ δ : ℝ, 0 < δ ∧ ∀ n : ℕ, ∀ A : Finset (𝔽₃ n), IsSymmetric A →\n      μ * 3 ^ n ≤ (A.card : ℝ) → δ * 6 ^ n ≤ (numRestrictedAPs A + A.card : ℝ)",
+     "line": 166,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 1,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/GreensOpenProblems/18.lean",
    "module": "FormalConjectures.GreensOpenProblems.«18»",
    "folder": "GreensOpenProblems",
@@ -66753,7 +67555,7 @@
    "module": "FormalConjectures.GreensOpenProblems.«29»",
    "folder": "GreensOpenProblems",
    "title": "Ben Green's Open Problem 29",
-   "doc": "*References:*\n- [Ben Green's Open Problem 29](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.29)\n- [Gr12] Green, Ben. \"What is... an approximate group.\" Notices Amer. Math. Soc 59.5 (2012): 655-656.\n- [Br13] Breuillard, Emmanuel, Ben Green, and Terence Tao. \"Small doubling in groups.\"\n  Erdős Centennial. Berlin, Heidelberg: Springer Berlin Heidelberg, 2013. 129-151.\n- [Sa10] Sanders, Tom. \"On a nonabelian Balog–Szemerédi-type lemma.\" Journal of the Australian\n  Mathematical Society 89.1 (2010): 127-132.\n- [CrSi10] Croot, Ernie, and Olof Sisask. \"A probabilistic technique for finding almost-periods of\n  convolutions.\" Geometric and functional analysis 20.6 (2010): 1367-1396.",
+   "doc": "*References:*\n- [Ben Green's Open Problem 29](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.29)\n- [Gr12] Green, Ben. \"What is... an approximate group.\" Notices Amer. Math. Soc 59.5 (2012): 655-656.\n- [Br13] Breuillard, Emmanuel, Ben Green, and Terence Tao. \"Small doubling in groups.\"\n  Erdős Centennial. Berlin, Heidelberg: Springer Berlin Heidelberg, 2013. 129-151.\n  [arXiv:1301.7718](https://arxiv.org/abs/1301.7718)\n- [Sa10] Sanders, Tom. \"On a nonabelian Balog–Szemerédi-type lemma.\" Journal of the Australian\n  Mathematical Society 89.1 (2010): 127-132.\n- [CrSi10] Croot, Ernie, and Olof Sisask. \"A probabilistic technique for finding almost-periods of\n  convolutions.\" Geometric and functional analysis 20.6 (2010): 1367-1396.\n\nThe printed Problem 29 includes the stronger hypothesis `S ⊆ A`; that strengthened variant is\nfalse (see `green_29.subset_counterexample`). The open problem is the version without `S ⊆ A`,\nfollowing [Br13, Theorem 6.5 and Problem 6.6].",
    "reference": {
     "text": "Ben Green's Open Problem 29",
     "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.29"
@@ -66761,6 +67563,19 @@
    "statements": [
     {
      "name": "Green29.green_29",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      20
+     ],
+     "formal_proofs": [],
+     "doc": "**Ben Green's Open Problem 29 / [Br13, Problem 6.6].**\nSuppose that $A$ is a $K$-approximate group (not necessarily abelian). Can one find a set\n$S$ (not necessarily contained in $A$) with $|S| \\gg K^{-O(1)} |A|$ and $S^8 \\subseteq A^4$?\n\nThe stronger variant requiring $S \\subseteq A$ is false; see `green_29.subset_counterexample`.\nThe known result with $|S| \\gg_K |A|$ is `green_29.variant`.",
+     "statement": "theorem green_29 :\n    ∃ C c : ℝ, 0 < C ∧ 0 < c ∧\n      ∀ {G : Type*} [Group G] [DecidableEq G] (K : ℝ) (A : Finset G),\n        1 ≤ K → IsApproximateSubgroup K (A : Set G) →\n          ∃ S : Finset G, C * K ^ (-c) * (A.card : ℝ) ≤ (S.card : ℝ) ∧\n            S ^ 8 ⊆ A ^ 4",
+     "line": 52,
+     "sorry": true
+    },
+    {
+     "name": "Green29.green_29.subset_counterexample",
      "kind": "theorem",
      "category": "research solved",
      "ams": [
@@ -66772,9 +67587,9 @@
        "url": "https://github.com/KitaKen1/green-29-counterexample/blob/1cbf80c3d5a333b2b79c203c0d60129924c8c712/lean/Green29FC.lean#L280-L287"
       }
      ],
-     "doc": "Suppose that $A$ is a $K$-approximate group (not necessarily abelian). Is there $S \\subset A$,\n$|S| \\gg K^{-O(1)} |A|$, with $S^8 \\subset A^4$?\n\nThe answer is negative. A counterexample is given, for arbitrarily large finite groups `H`, by\n`A = ({-1} × H) ∪ ({1} × H) ∪ {(0, 1)}` in `Multiplicative ℤ × H`.",
-     "statement": "theorem green_29 :\n    ¬ ∃ C c : ℝ, 0 < C ∧ 0 < c ∧\n      ∀ {G : Type*} [Group G] [DecidableEq G] (K : ℝ) (A : Finset G),\n        1 ≤ K → IsApproximateSubgroup K (A : Set G) →\n          ∃ S ⊆ A, C * K ^ (-c) * (A.card : ℝ) ≤ (S.card : ℝ) ∧\n          S ^ 8 ⊆ A ^ 4",
-     "line": 50,
+     "doc": "The strengthened variant of Green's Problem 29 requiring $S \\subseteq A$ is false.\nA counterexample is given, for arbitrarily large finite groups $H$, by\n$A = (\\{-1\\} \\times H) \\cup (\\{1\\} \\times H) \\cup \\{(0, 1)\\}$ in $\\mathbb{Z} \\times H$.",
+     "statement": "theorem green_29.subset_counterexample :\n    ¬ ∃ C c : ℝ, 0 < C ∧ 0 < c ∧\n      ∀ {G : Type*} [Group G] [DecidableEq G] (K : ℝ) (A : Finset G),\n        1 ≤ K → IsApproximateSubgroup K (A : Set G) →\n          ∃ S ⊆ A, C * K ^ (-c) * (A.card : ℝ) ≤ (S.card : ℝ) ∧\n          S ^ 8 ⊆ A ^ 4",
+     "line": 67,
      "sorry": true
     },
     {
@@ -66785,9 +67600,9 @@
       20
      ],
      "formal_proofs": [],
-     "doc": "Such a conclusion is known with $|S| \\gg_K |A|$ [Br13 Problem 6.5, CrSi10, Sa10].",
+     "doc": "The known result [Br13, Theorem 6.5; CrSi10; Sa10]: for each $K$ there is $c(K) > 0$\nsuch that every $K$-approximate group $A$ has a set $S$ (not necessarily contained in $A$) with\n$|S| \\ge c(K)|A|$ and $S^8 \\subseteq A^4$. The open problem asks whether $c(K)$ can be bounded\nbelow by $C K^{-c}$ for absolute constants $C, c > 0$.",
      "statement": "theorem green_29.variant :\n    ∀ K : ℝ, 1 ≤ K →\n      ∃ c : ℝ, 0 < c ∧ -- Allow c to depend on K.\n        ∀ {G : Type*} [Group G] [DecidableEq G] (A : Finset G),\n          IsApproximateSubgroup K (A : Set G) →\n            ∃ S : Finset G, -- No S ⊆ A requirement in this variant.\n              c * (A.card : ℝ) ≤ (S.card : ℝ) ∧\n              S ^ 8 ⊆ A ^ 4",
-     "line": 60,
+     "line": 80,
      "sorry": true
     }
    ],
@@ -68605,6 +69420,50 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/GreensOpenProblems/59.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«59»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 59",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.59)\n- [Er82] Erdős, P., *Some new problems and results in number theory*. Number theory (Mysore,\n  1981), Lecture Notes in Math. 938, Springer (1982), 50--74.\n- [Ba89] Balog, A., *On additive representation of integers*. Acta Math. Hungar. 54 (1989),\n  297--301.\n- [NS08] Naccache, D. and Shparlinski, I. E., *Divisibility, smoothness and cryptographic\n  applications*. [arXiv:0810.2067](https://arxiv.org/abs/0810.2067) (2008).\n- [DVA21] Dimitrov, V., Vigneri, L. and Attias, V., *Fast generation of RSA keys using smooth\n  integers*. IEEE Trans. Comput. (2021).\n  [arXiv:1912.11546](https://arxiv.org/abs/1912.11546)",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.59"
+   },
+   "statements": [
+    {
+     "name": "Green59.green_59",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Is every $n \\le N$ the sum of two integers, all of whose prime factors are at most\n$N^\\varepsilon$?\n\nWe read this as: for every $\\varepsilon > 0$ and every sufficiently large $N$, every integer\n$2 \\le n \\le N$ is $a + b$ with positive integers $a, b$ whose prime factors are all at most\n$N^\\varepsilon$. Positive summands exclude $n = 1$. [Gr24] quotes Erdős [Er82] for an\nessentially equivalent conjecture, which is\n[Erdős Problem 334](https://www.erdosproblems.com/334). [Gr24] also reports a remark of Wooley:\na positive answer for every $\\varepsilon > 0$ would solve Vinogradov's least quadratic\nnon-residue problem for primes $p \\equiv 3 \\pmod 4$.",
+     "statement": "theorem green_59 :\n    ∀ ε : ℝ, 0 < ε → ∀ᶠ N : ℕ in atTop, ∀ n ∈ Finset.Icc 2 N, ∃ a b : ℕ, 0 < a ∧ 0 < b ∧\n      a + b = n ∧ IsSmooth ((N : ℝ) ^ ε) a ∧ IsSmooth ((N : ℝ) ^ ε) b",
+     "line": 69,
+     "sorry": true
+    },
+    {
+     "name": "Green59.green_59.variants.balog",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "**Balog's theorem.** For every $\\varepsilon > 0$, every sufficiently large integer $N$ is\n$n_1 + n_2$ with positive integers $n_1, n_2$ whose prime factors are all at most\n$N^{4/(9\\sqrt{e}) + \\varepsilon}$, where $4/(9\\sqrt{e}) \\approx 0.2695$.\n\nThis is due to Balog [Ba89]. We take it from [NS08, Section 6.6], which states it with exponent\n$4/(9\\sqrt{e})$, and [DVA21, Theorem 4], which states it with exponent\n$4/(9\\sqrt{e}) + \\varepsilon$, as here. Applied to each large $n \\le N$ (and with\n$n = 1 + (n - 1)$ for small $n$), it gives `green_59` with $\\varepsilon$ replaced by any number\ngreater than $4/(9\\sqrt{e})$; [Gr24] says this is still the record.",
+     "statement": "theorem green_59.variants.balog :\n    ∀ ε : ℝ, 0 < ε → ∀ᶠ N : ℕ in atTop, ∃ a b : ℕ, 0 < a ∧ 0 < b ∧ a + b = N ∧\n      IsSmooth ((N : ℝ) ^ (4 / (9 * Real.sqrt (Real.exp 1)) + ε)) a ∧\n      IsSmooth ((N : ℝ) ^ (4 / (9 * Real.sqrt (Real.exp 1)) + ε)) b",
+     "line": 86,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 1,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/GreensOpenProblems/60.lean",
    "module": "FormalConjectures.GreensOpenProblems.«60»",
    "folder": "GreensOpenProblems",
@@ -68954,6 +69813,54 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/GreensOpenProblems/69.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«69»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 69",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.69)\n- [ES13] Elekes, G. and Szabó, E., *On triple lines and cubic curves --- the Orchard problem\n  revisited*. (2013). [arXiv:1302.5777](https://arxiv.org/abs/1302.5777)\n- [GT13] Green, B. and Tao, T., *On sets defining few ordinary lines*. Discrete Comput. Geom. 50\n  (2013), 409--468. [arXiv:1208.4714](https://arxiv.org/abs/1208.4714)",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.69"
+   },
+   "statements": [
+    {
+     "name": "Green69.green_69",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      14,
+      52
+     ],
+     "formal_proofs": [],
+     "doc": "Fix a number $k$. Let $A \\subset \\mathbb{R}^2$ be a set of $n$ points, with no more than $k$ on\nany line. Suppose that, for at least $\\delta n^2$ pairs of points $(x, y) \\in A \\times A$, the\nline $xy$ contains a third point of $A$. Is there some cubic curve containing at least $cn$\npoints of $A$, for some $c = c(k, \\delta) > 0$?\n\nWe count ordered pairs of distinct points (`numPairsWithThird`), and a cubic curve is the zero set\nof any nonzero real polynomial of degree at most $3$ (`OnCubic`), reducible ones included. The\nconstant $c$ depends only on $k$ and $\\delta$. Small $n$ are harmless, since any $9$ points lie on\na cubic curve. [Gr24] notes that very little is known, except when $\\delta = 1 - O(1/n)$, where the\nstatement follows from the main results of [GT13].",
+     "statement": "theorem green_69 :\n    ∀ k : ℕ, ∀ δ : ℝ, 0 < δ → ∃ c : ℝ, 0 < c ∧ ∀ A : Finset (ℝ × ℝ), AtMostOnLine k A →\n      δ * (#A : ℝ) ^ 2 ≤ numPairsWithThird A → ∃ S ⊆ A, c * #A ≤ #S ∧ OnCubic S",
+     "line": 87,
+     "sorry": true
+    },
+    {
+     "name": "Green69.green_69.variants.elekes_szabo",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      14,
+      52
+     ],
+     "formal_proofs": [],
+     "doc": "**Elekes–Szabó conjecture.** If a set $H$ of points in the plane has at least $c|H|^2$ triple\nlines (lines containing at least three points of $H$), then ten or more points of $H$ lie on a\n(possibly degenerate) cubic, provided that $|H| > n_0(c)$ [ES13, Conjecture 2.1].\n\n[Gr24] states it with $cn^2$ collinear triples in place of triple lines, and notes that it is much\nweaker than `green_69` but should hold without the assumption of no more than $k$ points on a\nline. The two forms are equivalent: $10$ collinear points lie on a cubic, and otherwise each\ntriple line contains at most $\\binom{9}{3}$ collinear triples. The bound $n_0(c)$ is needed, since\na set of fewer than $10$ points can have $c|H|^2$ triple lines for small $c$. For points on an\nirreducible curve of bounded degree, see [ES13, Theorem 2.2].",
+     "statement": "theorem green_69.variants.elekes_szabo :\n    ∀ c : ℝ, 0 < c → ∃ n₀ : ℕ, ∀ A : Finset (ℝ × ℝ), n₀ < #A →\n      c * (#A : ℝ) ^ 2 ≤ (tripleLines A).ncard → ∃ S ⊆ A, #S = 10 ∧ OnCubic S",
+     "line": 105,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 1
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/GreensOpenProblems/70.lean",
    "module": "FormalConjectures.GreensOpenProblems.«70»",
    "folder": "GreensOpenProblems",
@@ -69112,6 +70019,66 @@
    "folded": {
     "test": 0,
     "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/GreensOpenProblems/74.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«74»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 74",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.74)",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.74"
+   },
+   "statements": [
+    {
+     "name": "Green74.green_74",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      52
+     ],
+     "formal_proofs": [],
+     "doc": "What is the largest subset of $[N]^d$ with no $5$ points on a $2$-plane?\n\nHere $[N] = \\{1, \\dots, N\\}$ as in [Gr24], and a $2$-plane is a $2$-dimensional affine subspace of\n$\\mathbb{R}^d$. We ask for the size $f(d, N)$ of a largest such subset (`maxNoFiveCoplanar`) as a\nfunction of $d$ and $N$; for its order of growth in $N$ see `green_74.variants.order`. For\n$d \\le 2$ any $5$ points are coplanar, so then $f(d, N) \\le 4$.",
+     "statement": "theorem green_74 : ∀ d N : ℕ, maxNoFiveCoplanar d N = green_74.answer d N",
+     "line": 73,
+     "sorry": true
+    },
+    {
+     "name": "Green74.green_74.variants.order",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      52
+     ],
+     "formal_proofs": [],
+     "doc": "For fixed $d$, what is the order of magnitude of $f(d, N)$, the size of the largest subset of\n$[N]^d$ with no $5$ points on a $2$-plane, as $N \\to \\infty$?\n\nThis asks for `green_74` up to constant factors that may depend on $d$.",
+     "statement": "theorem green_74.variants.order :\n    ∀ d : ℕ, (fun N ↦ (maxNoFiveCoplanar d N : ℝ)) =Θ[atTop] green_74.variants.order.answer d",
+     "line": 85,
+     "sorry": true
+    },
+    {
+     "name": "Green74.green_74.variants.large",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      52
+     ],
+     "formal_proofs": [],
+     "doc": "[Gr24] writes: \"I do not know if there can be such a set of size $N^{d-100}$.\" We read this as\nthe question whether, for every $d$, $f(d, N) \\ge N^{d - 100}$ for all sufficiently large $N$.\n\nThe exponent uses truncated subtraction, so the case $d \\le 100$ is trivial. For $d \\ge 2$,\n$[N]^d$ is covered by $N^{d-2}$ parallel coordinate $2$-planes, so $f(d, N) \\le 4N^{d-2}$; the\nquestion is whether the loss in the exponent can be kept at $100$ for every $d$ (Green's $100$\npresumably stands for an absolute constant).",
+     "statement": "theorem green_74.variants.large :\n    ∀ d : ℕ, ∀ᶠ N in atTop, N ^ (d - 100) ≤ maxNoFiveCoplanar d N",
+     "line": 99,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 1
    },
    "unread": []
   },
@@ -69387,6 +70354,97 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/GreensOpenProblems/84.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«84»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 84",
+   "doc": "Erdős's two-sided version of this question, $\\sqrt{N} \\ll |P(z)| \\ll \\sqrt{N}$ on the unit\ncircle, is `Erdos228.erdos_228` in `FormalConjectures.ErdosProblems.«228»`.\n\n*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.84)\n- [BBMST20] Balister, P., Bollobás, B., Morris, R., Sahasrabudhe, J. and Tiba, M., *Flat\n  Littlewood polynomials exist*. Ann. of Math. (2) 192 (2020), 977--1004.\n  [arXiv:1907.09464](https://arxiv.org/abs/1907.09464)\n- [JKS13] Jedwab, J., Katz, D. J. and Schmidt, K.-U., *Advances in the merit factor problem for\n  binary sequences*. J. Combin. Theory Ser. A 120 (2013), 882--906.\n  [arXiv:1205.0626](https://arxiv.org/abs/1205.0626)\n- [OAI26a] OpenAI, *Asymptotically minimal maxima of real Littlewood polynomials*. OpenAI Math\n  Release preprint (2026).\n  https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/Asymptotically-minimal-maxima-of-real-Littlewood-polynomials-September-23-2026/paper.pdf",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.84"
+   },
+   "statements": [
+    {
+     "name": "Green84.green_84",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      42
+     ],
+     "formal_proofs": [],
+     "doc": "Is there a function $f : \\{1, \\dots, N\\} \\to \\{-1, 1\\}$ with $|\\hat{f}(\\theta)| \\geq c\\sqrt{N}$\nfor all $\\theta$?\n\nWe read this as: is there an absolute constant $c > 0$ such that such an $f$ exists for all\nsufficiently large $N$? It cannot hold for all $N$: for $N = 2$,\n$\\hat f(\\theta) = e(\\theta)(f(1) + f(2)e(\\theta))$ vanishes for some $\\theta$. The answer is yes\n[BBMST20], see `green_84.variants.bbmst`.",
+     "statement": "theorem green_84 :\n    ∃ c : ℝ, 0 < c ∧ ∀ᶠ N in atTop, ∃ f : ℕ → ℤ, IsSignOn N f ∧\n      ∀ θ : ℝ, c * √N ≤ ‖fourierSum N f θ‖",
+     "line": 80,
+     "sorry": true
+    },
+    {
+     "name": "Green84.green_84.variants.bbmst",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      30,
+      42
+     ],
+     "formal_proofs": [],
+     "doc": "**Flat Littlewood polynomials exist.** There are constants $\\Delta > \\delta > 0$ such that, for\nall $n \\ge 2$, there is a polynomial $P(z) = \\sum_{k=0}^{n} \\varepsilon_k z^k$ with\n$\\varepsilon_k \\in \\{-1, 1\\}$ such that $\\delta\\sqrt{n} \\le |P(z)| \\le \\Delta\\sqrt{n}$ for all\n$z \\in \\mathbb{C}$ with $|z| = 1$ [BBMST20, Theorem 1.1].\n\nWith $N = n + 1$ and $f(m) = \\varepsilon_{m-1}$, one has $|\\hat f(\\theta)| = |P(e(\\theta))|$, so\nthis answers `green_84` for all $N \\ge 3$.",
+     "statement": "theorem green_84.variants.bbmst :\n    ∃ δ Δ : ℝ, 0 < δ ∧ δ < Δ ∧ ∀ n : ℕ, 2 ≤ n → ∃ ε : Fin (n + 1) → ℤ,\n      (∀ k, ε k = 1 ∨ ε k = -1) ∧\n        ∀ z : ℂ, ‖z‖ = 1 → δ * √n ≤ ‖signPoly ε z‖ ∧ ‖signPoly ε z‖ ≤ Δ * √n",
+     "line": 95,
+     "sorry": true
+    },
+    {
+     "name": "Green84.green_84.variants.littlewood",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      30,
+      42
+     ],
+     "formal_proofs": [],
+     "doc": "Littlewood's problem asks \"whether there is in fact such a polynomial with\n$|P(z)| = (1 + o(1))\\sqrt{N}$ always\"; [Gr24] adds that \"the answer to this may well be no\".\n\nWe read it as for `green_84`: for every $\\varepsilon > 0$ and all sufficiently large $N$ there is\n$f : [N] \\to \\{-1, 1\\}$ with $\\bigl||\\hat f(\\theta)| - \\sqrt{N}\\bigr| \\le \\varepsilon\\sqrt{N}$ for\nall $\\theta$. With unimodular complex coefficients in place of $\\pm 1$ such polynomials exist,\nby Kahane's theorem `Erdos230.erdos_230.variants.ultraflat`. For $\\pm 1$ coefficients the upper\nhalf holds: for every $\\eta > 0$ and all large $N$ some choice gives $\\max_\\theta |\\hat f(\\theta)|\n\\le (1 + \\eta)\\sqrt{N}$ [OAI26a, Theorem 1.1] (which answers `Erdos1150.erdos_1150`), but that\ntheorem gives no lower bound for $|\\hat f|$.",
+     "statement": "theorem green_84.variants.littlewood :\n    ∀ ε : ℝ, 0 < ε → ∀ᶠ N in atTop, ∃ f : ℕ → ℤ, IsSignOn N f ∧\n      ∀ θ : ℝ, |‖fourierSum N f θ‖ - √N| ≤ ε * √N",
+     "line": 114,
+     "sorry": true
+    },
+    {
+     "name": "Green84.green_84.variants.golay",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      42
+     ],
+     "formal_proofs": [],
+     "doc": "The merit factor problem of Golay: \"it is conjectured ... that\n$\\int_0^1 |P(z)|^4 \\, dz \\geq (1 + c)N^2$ for some universal $c > 0$\" [Gr24], for every\npolynomial $P(z) = \\sum_{i=0}^{N-1} \\varepsilon_i z^i$ with $\\pm 1$ coefficients, where\n$z = e(\\theta)$. Since $|P(e(\\theta))| = |\\hat f(\\theta)|$ for $f(n) = \\varepsilon_{n-1}$, we\nintegrate $|\\hat f|^4$.\n\nWe require $N \\ge 2$, since for $N = 1$ the integral equals $1 = N^2$. The integral is\n$N^2(1 + 1/F)$, where $F$ is the merit factor of the coefficient sequence [JKS13], so the\nconjecture says that the merit factor of binary sequences is bounded.\n\n[Gr24] lists this as open. The conjecture is false: the largest merit factor of a binary sequence\nof length $N$ tends to infinity as $N \\to \\infty$ [OAI26a, Corollary 8.1], a consequence of\n[OAI26a, Theorem 1.1], which answers `Erdos1150.erdos_1150`. [OAI26a] is a 2026 preprint.",
+     "statement": "theorem green_84.variants.golay :\n    ¬ ∃ c : ℝ, 0 < c ∧ ∀ N : ℕ, 2 ≤ N → ∀ f : ℕ → ℤ, IsSignOn N f →\n      (1 + c) * (N : ℝ) ^ 2 ≤ ∫ θ in (0 : ℝ)..1, ‖fourierSum N f θ‖ ^ 4",
+     "line": 135,
+     "sorry": true
+    },
+    {
+     "name": "Green84.green_84.variants.ultraflat_mod",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      11,
+      42
+     ],
+     "formal_proofs": [],
+     "doc": "[Gr24]: \"I am not sure if it known whether or not there exists, for infinitely many $q$, a subset\n$A \\subset \\mathbb{Z}/q\\mathbb{Z}$ of size $\\sim q^{1/3}$, all of whose nontrivial Fourier\ncoefficients have size $O(q^{1/6})$.\"\n\nWe read $\\sim$ as asymptotic equality, $|A_q| / q^{1/3} \\to 1$ as $q \\to \\infty$ in an infinite set\n$Q$, and the $O(q^{1/6})$ bound as uniform in $q \\in Q$. [Gr24] notes that $O(q^{1/6} \\log q)$\nfollows easily from a random construction.",
+     "statement": "theorem green_84.variants.ultraflat_mod :\n    ∃ Q : Set ℕ, Q.Infinite ∧ ∃ C : ℝ, ∃ A : (q : ℕ) → Finset (ZMod q),\n      Tendsto (fun q ↦ (#(A q) : ℝ) / (q : ℝ) ^ ((1 : ℝ) / 3))\n        (atTop ⊓ Filter.principal Q) (𝓝 1) ∧\n      ∀ q ∈ Q, ∀ r : ZMod q, r ≠ 0 → ‖fourierMod (A q) r‖ ≤ C * (q : ℝ) ^ ((1 : ℝ) / 6)",
+     "line": 150,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/GreensOpenProblems/85.lean",
    "module": "FormalConjectures.GreensOpenProblems.«85»",
    "folder": "GreensOpenProblems",
@@ -69429,6 +70487,37 @@
    "folded": {
     "test": 0,
     "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/GreensOpenProblems/86.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«86»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 86",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.86)\n- [KRS00] Konyagin, S. V., Ruzsa, I. Z. and Schlag, W., *On uniformly distributed dilates of\n  finite integer sequences*. J. Number Theory 82 (2000), 165--187.\n  [doi:10.1006/jnth.1999.2420](https://doi.org/10.1006/jnth.1999.2420)\n- [Mo94] Montgomery, H. L., *Ten lectures on the interface between analytic number theory and\n  harmonic analysis*. CBMS Regional Conference Series in Mathematics 84, American Mathematical\n  Society (1994).",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.86"
+   },
+   "statements": [
+    {
+     "name": "Green86.green_86",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Let $c > 0$. Let $A$ be a set of $n$ (distinct) integers. Does there exist $\\theta$ such that\nno interval of length $\\frac{1}{n}$ in $\\mathbb{R}/\\mathbb{Z}$ contains more than $n^c$ of the\nnumbers $\\theta a \\pmod 1$, $a \\in A$?\n\nWe read the question for every $c > 0$ and all $n \\ge n_0(c)$. For small $n$ it can fail: for\n$A = \\{0, 1, 3\\}$ and $3^c < 2$, three points with at most one in each interval of length\n$1/3$ must be equally spaced, which is impossible. Intervals are half-open; for the question\nover all $c > 0$ this does not matter, since a closed interval of length $1/n$ is covered by two\nhalf-open ones. [Gr24] reports that the answer is yes for $c > 1/3$ [KRS00], and that\n[Mo94, Problem 17 (4)] attributes the problem to Komlós and Ruzsa.",
+     "statement": "theorem green_86 :\n    ∀ c : ℝ, 0 < c → ∃ n₀ : ℕ, ∀ A : Finset ℤ, n₀ ≤ #A →\n      ∃ θ : ℝ, ∀ t : ℝ, (numInInterval A θ t : ℝ) ≤ (#A : ℝ) ^ c",
+     "line": 68,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 1
    },
    "unread": []
   },
@@ -69538,6 +70627,126 @@
    ],
    "folded": {
     "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/GreensOpenProblems/91.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«91»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 91",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.91)\n- [FKNSS22] Ferber, A., Kwan, M., Narayanan, B., Sah, A. and Sawhney, M., *Friendly bisections of\n  random graphs*. Comm. Amer. Math. Soc. 2 (2022), 380--416.\n  [arXiv:2105.13337](https://arxiv.org/abs/2105.13337)\n- [MSS24] Minzer, D., Sah, A. and Sawhney, M., *On perfectly friendly bisections of random\n  graphs*. Ann. Probab. 52 (2024), 2281--2341.\n  [arXiv:2305.03543](https://arxiv.org/abs/2305.03543)",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.91"
+   },
+   "statements": [
+    {
+     "name": "Green91.green_91",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      60
+     ],
+     "formal_proofs": [],
+     "doc": "Take a random graph $G(n, \\frac{1}{2})$. Is there almost surely a bipartition of $G$ into two sets\nof $n/2$ vertices with the property that $99\\%$ of vertices have more neighbours on their own side\nthan on the other?\n\nWe read \"almost surely\" as \"with probability tending to $1$ as $n \\to \\infty$\", and \"$99\\%$ of\nvertices\" as at least $\\frac{99}{100} n$ vertices. A bisection is the partition into a set `s` with\n$\\lfloor n/2 \\rfloor$ elements and its complement; for odd $n$ the parts have sizes differing by\none, as in [FKNSS22]. [Gr24] writes that the question \"was apparently asked by Füredi in 1988\".\nThe answer is yes\n[FKNSS22, Theorem 1.1], see `green_91.variants.fknss`.",
+     "statement": "theorem green_91 :\n    Tendsto (fun n : ℕ ↦ prob n fun G ↦\n      ∃ s : Finset (Fin n), s.card = n / 2 ∧ (99 / 100 : ℝ) * n ≤ numFriendly G s)\n      atTop (𝓝 1)",
+     "line": 81,
+     "sorry": true
+    },
+    {
+     "name": "Green91.green_91.variants.fknss",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      60
+     ],
+     "formal_proofs": [],
+     "doc": "**Ferber, Kwan, Narayanan, Sah and Sawhney.** With high probability, $G(n, \\frac{1}{2})$ admits a\nbisection in which $n - o(n)$ vertices are friendly [FKNSS22, Theorem 1.1]. A vertex is friendly\nif it has more neighbours in its own part than across, and a bisection is a partition into two\nparts whose sizes differ by at most one. This implies `green_91`.",
+     "statement": "theorem green_91.variants.fknss :\n    ∃ f : ℕ → ℝ, f =o[atTop] (fun n : ℕ ↦ (n : ℝ)) ∧\n      Tendsto (fun n : ℕ ↦ prob n fun G ↦\n        ∃ s : Finset (Fin n), s.card = n / 2 ∧ (n : ℝ) - f n ≤ numFriendly G s)\n        atTop (𝓝 1)",
+     "line": 94,
+     "sorry": true
+    },
+    {
+     "name": "Green91.green_91.variants.all_friendly",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      60
+     ],
+     "formal_proofs": [],
+     "doc": "Is there almost surely a bipartition of $G(n, \\frac{1}{2})$ into two sets of $n/2$ vertices with\nthe property that all vertices have more neighbours on their own side than on the other?\n\n[Gr24] reports that the authors of [FKNSS22] believe this may be true. Minzer, Sah and Sawhney\n[MSS24, Theorem 1.3] prove it, conditional on a numerical hypothesis [MSS24, Assumption 1.5] that\nthey check by computer, partly with interval arithmetic and partly in floating point only. Under\nthe same hypothesis they find the critical margin: for every $\\varepsilon > 0$, with high\nprobability there is a bisection in which every vertex has at least\n$(\\gamma - \\varepsilon)\\sqrt{n}$ more neighbours in its own part than in the other, but none with\n$(\\gamma + \\varepsilon)\\sqrt{n}$. Here $\\gamma = \\gamma_{\\mathrm{crit}} / \\sqrt{2} \\approx 0.17566$,\nand $\\gamma_{\\mathrm{crit}}$ is defined by an optimisation problem for Gaussian tail\nprobabilities [MSS24, Definition 1.2].",
+     "statement": "theorem green_91.variants.all_friendly :\n    Tendsto (fun n : ℕ ↦ prob n fun G ↦\n      ∃ s : Finset (Fin n), s.card = n / 2 ∧ ∀ v, 0 < friendliness G s v)\n      atTop (𝓝 1)",
+     "line": 116,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/GreensOpenProblems/92.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«92»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 92",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.92)\n- [NP17] Nazarov, F. and Peres, Y., *Trace reconstruction with $\\exp(O(n^{1/3}))$ samples*.\n  Proceedings of STOC 2017, ACM, New York (2017), 1042--1046.\n  [arXiv:1612.03599](https://arxiv.org/abs/1612.03599)\n- [DOS19] De, A., O'Donnell, R. and Servedio, R., *Optimal mean-based algorithms for trace\n  reconstruction*. Ann. Appl. Probab. 29 (2019), 851--874.\n  [arXiv:1612.03148](https://arxiv.org/abs/1612.03148)\n- [Ch20] Chase, Z., *New upper bounds for trace reconstruction*.\n  [arXiv:2009.03296](https://arxiv.org/abs/2009.03296) (2020).\n- [Ch21] Chase, Z., *New lower bounds for trace reconstruction*. Ann. Inst. Henri Poincaré\n  Probab. Stat. 57 (2021), 627--643. [arXiv:1905.03031](https://arxiv.org/abs/1905.03031)",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.92"
+   },
+   "statements": [
+    {
+     "name": "Green92.green_92",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      60,
+      68
+     ],
+     "formal_proofs": [],
+     "doc": "I have a string $x \\in \\{0,1\\}^n$. Let $\\tilde{x}$ be the random string obtained by deleting bits\nfrom $x$ independently at random with probability $\\frac{1}{2}$ (thus, for example, if $n = 8$ and\n$x = 00110110$, it might be the case that $\\tilde{x} = 0111$, generated by deleting bits\n$2, 3, 5, 8$.) An instance of $\\tilde{x}$ is called a 'trace'. How many independent traces\n$\\tilde{x}_1, \\dots, \\tilde{x}_m$ are needed before one can reconstruct $x$ with probability $0.9$?\n\nThis is the trace reconstruction problem. `numTraces n` is the least $m$ for which some decoder\nsucceeds with probability at least $0.9$ for every $x$. Replacing $0.9$ by another constant in\n$(1/2, 1)$ changes $m$ by at most a constant factor (repeat and take a majority vote), so we ask\nfor `numTraces n` up to constant factors.",
+     "statement": "theorem green_92 : (fun n ↦ (numTraces n : ℝ)) =Θ[atTop] green_92.answer",
+     "line": 98,
+     "sorry": true
+    },
+    {
+     "name": "Green92.green_92.variants.chase_upper",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      60,
+      68
+     ],
+     "formal_proofs": [],
+     "doc": "**Chase's upper bound.** For every deletion probability $q \\in (0, 1)$ and every $\\delta > 0$\nthere is $C > 0$ such that every $x \\in \\{0,1\\}^n$ can be reconstructed with probability at least\n$1 - \\delta$ from $\\exp(C n^{1/5} \\log^5 n)$ independent traces of $x$ [Ch20, Theorem 1]. We\nstate it for $q = 1/2$ and $\\delta = 1/10$, with the number of traces rounded up, for large $n$.\nIt improves the bound $\\exp(C n^{1/3})$ of [NP17] and [DOS19].",
+     "statement": "theorem green_92.variants.chase_upper :\n    ∃ C : ℝ, 0 < C ∧ ∀ᶠ n : ℕ in atTop,\n      numTraces n ≤ ⌈Real.exp (C * (n : ℝ) ^ (1 / 5 : ℝ) * Real.log n ^ 5)⌉₊",
+     "line": 109,
+     "sorry": true
+    },
+    {
+     "name": "Green92.green_92.variants.chase_lower",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      60,
+      68
+     ],
+     "formal_proofs": [],
+     "doc": "**Chase's lower bound.** For every deletion probability $q \\in (0, 1)$ and every\n$\\delta \\in (0, 1)$ there is $c > 0$ such that at least $c n^{3/2} / \\log^7 n$ traces are required\nto distinguish between $x_n = (01)^k 1 (01)^{k+1}$ and $y_n = (01)^{k+1} 1 (01)^k$ with\nprobability at least $1 - \\delta$, where $n = 4k + 3$ [Ch21, Theorem 1]. A decoder that recovers\nevery string distinguishes these two. We state it for $q = 1/2$ and $\\delta = 1/10$, for large\n$n \\equiv 3 \\pmod 4$. [Gr24] quotes the bound $n^{3/2} (\\log n)^{-16}$ of the first arXiv\nversion of [Ch21]; the published version has $(\\log n)^{-7}$.",
+     "statement": "theorem green_92.variants.chase_lower :\n    ∃ c : ℝ, 0 < c ∧ ∀ᶠ n : ℕ in atTop, n % 4 = 3 →\n      c * (n : ℝ) ^ (3 / 2 : ℝ) / Real.log n ^ 7 ≤ numTraces n",
+     "line": 124,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 1,
     "api": 0
    },
    "unread": []
@@ -69690,6 +70899,76 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/GreensOpenProblems/95.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«95»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 95",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.95)\n- [CLB18] Cilleruelo, J., Luca, F. and Baxter, L., *Every positive integer is a sum of three\n  palindromes*. Math. Comp. 87 (2018), 3023--3055.\n  [arXiv:1602.06208](https://arxiv.org/abs/1602.06208)\n- [Za24] Zakharov, D., *Most integers are not a sum of two palindromes*. Math. Proc. Cambridge\n  Philos. Soc. 177 (2024), 363--366. [arXiv:2402.10808](https://arxiv.org/abs/2402.10808)",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.95"
+   },
+   "statements": [
+    {
+     "name": "Green95.green_95",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "Are a positive proportion of positive integers a sum of two palindromes?\n\n[Gr24] adds: \"Of course one must specify a base $g$ (say $g = 10$) in which one is working.\" We\nstate the question in every base $g \\ge 2$ and read \"a positive proportion\" as positive lower\ndensity. Whether $0$ counts as a palindrome does not change the density.\n\nThe answer is no: Zakharov showed that the number of $n < X$ which are sums of two base-$g$\npalindromes is at most $X / \\log^c X$ [Za24, Theorem 1], see `green_95.variants.zakharov`.",
+     "statement": "theorem green_95 : ∀ g : ℕ, 2 ≤ g → ¬ 0 < (sumsOfTwo g).lowerDensity",
+     "line": 81,
+     "sorry": true
+    },
+    {
+     "name": "Green95.green_95.variants.zakharov",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "**Zakharov's theorem.** For every integer $g \\ge 2$ there is a constant $c > 0$ such that, for all\nlarge $X$, the number of $n < X$ which are a sum of two positive base-$g$ palindromes is at most\n$X / \\log^c X$ [Za24, Theorem 1]. We state it for integer $X$. This answers the question of\n[CLB18], who had proved an upper bound $c X$ with $c < 1$ for $g \\ge 3$ [CLB18, Theorem 1.4].",
+     "statement": "theorem green_95.variants.zakharov :\n    ∀ g : ℕ, 2 ≤ g → ∃ c : ℝ, 0 < c ∧ ∀ᶠ X : ℕ in atTop,\n      ((sumsOfTwoPositive g ∩ Set.Iio X).ncard : ℝ) ≤ (X : ℝ) / Real.log X ^ c",
+     "line": 91,
+     "sorry": true
+    },
+    {
+     "name": "Green95.green_95.variants.three_palindromes",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "**Cilleruelo, Luca and Baxter.** Let $g \\ge 5$. Then every positive integer is a sum of three\nbase-$g$ palindromes [CLB18, Theorem 1.2]. Here $0$ counts as a palindrome, as in [CLB18], so\nthis says that every positive integer is a sum of at most three positive palindromes.",
+     "statement": "theorem green_95.variants.three_palindromes :\n    ∀ g : ℕ, 5 ≤ g → ∀ n : ℕ, 0 < n →\n      ∃ p q r, IsPalindrome g p ∧ IsPalindrome g q ∧ IsPalindrome g r ∧ p + q + r = n",
+     "line": 102,
+     "sorry": true
+    },
+    {
+     "name": "Green95.green_95.variants.lower_bound",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11
+     ],
+     "formal_proofs": [],
+     "doc": "**Cilleruelo, Luca and Baxter.** Let $g \\ge 2$. There is a constant $c_1 > 0$ such that, for all\nreal $x \\ge 2$, the number of $n \\le x$ which are a sum of two base-$g$ palindromes is at least\n$x^{1 - c_1 / \\sqrt{\\log x}} = x e^{-c_1 \\sqrt{\\log x}}$ [CLB18, Theorem 1.3]. We count positive\n$n$ only.",
+     "statement": "theorem green_95.variants.lower_bound :\n    ∀ g : ℕ, 2 ≤ g → ∃ c₁ : ℝ, 0 < c₁ ∧ ∀ x : ℝ, 2 ≤ x →\n      x ^ (1 - c₁ / Real.sqrt (Real.log x)) ≤\n        ({n : ℕ | 0 < n ∧ (n : ℝ) ≤ x ∧ n ∈ sumsOfTwo g}.ncard : ℝ)",
+     "line": 114,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 2,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/GreensOpenProblems/97.lean",
    "module": "FormalConjectures.GreensOpenProblems.«97»",
    "folder": "GreensOpenProblems",
@@ -69781,6 +71060,133 @@
    ],
    "folded": {
     "test": 3,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/GreensOpenProblems/100.lean",
+   "module": "FormalConjectures.GreensOpenProblems.«100»",
+   "folder": "GreensOpenProblems",
+   "title": "Ben Green's Open Problem 100",
+   "doc": "*References:*\n- [Gr24] [Green, Ben. \"100 open problems.\" (2024).](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.100)\n- [Pe08] Pestov, V. G., *Hyperlinear and sofic groups: a brief guide*. Bull. Symbolic Logic 14\n  (2008), 449--480. [arXiv:0804.3968](https://arxiv.org/abs/0804.3968)\n- [HJ19] Helfgott, H. A. and Juschenko, K., *Soficity, short cycles, and the Higman group*.\n  Trans. Amer. Math. Soc. 371 (2019), 2771--2795.\n  [arXiv:1512.02135](https://arxiv.org/abs/1512.02135)\n- [Op26] OpenAI, *Non-sofic groups exist* (2026).\n  https://openai.com/index/ten-advances-in-mathematics/\n- [FF26] Fournier-Facio, F., *A torsion-free non-sofic group* (2026).\n  [arXiv:2608.02025](https://arxiv.org/abs/2608.02025)\n- [KT26] Kun, G. and Thom, A., *Nonsofic wreath products of residually finite groups* (2026).\n  [arXiv:2608.06222](https://arxiv.org/abs/2608.06222)\n- [Ec26] Eckhardt, C., *Non-MF groups and non-finite full group C\\*-algebras* (2026).\n  [arXiv:2608.28772](https://arxiv.org/abs/2608.28772)\n- [Li26] Liu, J., *Nonhyperlinear groups exist* (2026).\n  https://jihaoliu.org/ai-results/nonhyperlinear-groups-exist-2026-09-20.pdf",
+   "reference": {
+    "text": "Green, Ben. \"100 open problems.\" (2024).",
+    "url": "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.100"
+   },
+   "statements": [
+    {
+     "name": "Green100.green_100.parts.i",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      20
+     ],
+     "formal_proofs": [],
+     "doc": "Is every group well-approximated by finite groups? There are really two questions here, namely\nis every group sofic? and is every group hyperlinear? This is the first one: is every group sofic?\n\nWe use the characterisation of soficity in [Pe08, Theorem 3.5], see `IsSofic`. It only involves\nfinite subsets, so a group is sofic if all its finitely generated subgroups are. These are\ncountable, so it is enough to quantify over groups in `Type`.\n\n[Gr24] lists this as open. The answer is no: OpenAI announced in 2026 that the unit group of the\nbinary Leavitt algebra is not sofic [Op26], and Fournier-Facio [FF26, Theorem 1.3] gives a\nfinitely presented torsion-free non-sofic group, using a criterion from [Op26]. Kun and Thom\n[KT26] give further non-sofic groups. These results are in 2026 preprints.",
+     "statement": "theorem green_100.parts.i : ¬ ∀ (G : Type) [Group G], IsSofic G",
+     "line": 136,
+     "sorry": true
+    },
+    {
+     "name": "Green100.green_100.parts.ii",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      20,
+      46
+     ],
+     "formal_proofs": [],
+     "doc": "Is every group well-approximated by finite groups? There are really two questions here, namely\nis every group sofic? and is every group hyperlinear? This is the second one: is every group\nhyperlinear?\n\nWe use the characterisation of hyperlinearity in [Pe08, Theorem 3.6], see `IsHyperlinear`, with\nthe normalised Hilbert–Schmidt norm. [Gr24] gives a precise form of this question with the\noperator norm instead, see `green_100.variants.operator_norm`. As for `green_100.parts.i`, it is\nenough to quantify over groups in `Type`.\n\n[Gr24] lists this as open. The answer is no: Liu [Li26, Theorem 1.1] constructs a countable group,\na wreath product, that is not hyperlinear. This is a 2026 preprint.",
+     "statement": "theorem green_100.parts.ii : ¬ ∀ (G : Type) [Group G], IsHyperlinear G",
+     "line": 153,
+     "sorry": true
+    },
+    {
+     "name": "Green100.green_100.variants.operator_norm",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      20,
+      46
+     ],
+     "formal_proofs": [],
+     "doc": "Suppose that $G$ is a group. Is the following true? For every finite set $A \\subset G$ containing\nthe identity $e_G$ and for every $\\varepsilon > 0$, there is some unitary group $U(n)$ and a map\n$\\phi : A \\to U(n)$ such that $\\phi(e_G) = I_n$, such that $\\phi$ is an 'approximate\nhomomorphism' in the sense that $\\|\\phi(a_1 a_2) - \\phi(a_1)\\phi(a_2)\\| < \\varepsilon$ for all\n$a_1, a_2 \\in A$ such that $a_1 a_2 \\in A$, whilst $\\phi$ is 'nontrivial' in the sense that\n$\\|\\phi(a) - I_n\\| \\ge 1$ for all $a \\in A$, $a \\ne e_G$. (Here $\\|-\\|$ is the\n$\\ell^2$-to-$\\ell^2$ operator norm.)\n\n[Gr24] gives this as a precise statement of `green_100.parts.ii`. In [Pe08], hyperlinearity uses\nthe normalised Hilbert–Schmidt norm, and approximation in the operator norm defines a class of\ngroups whose relation to hyperlinear groups was open there [Pe08, Remark 8.6 and Question 8.7];\nthese are now usually called MF groups. We state the question as written, with the operator\nnorm, for every group.\n\n[Gr24] lists this as open. The answer is no. Exhausting a countable group by finite sets\ncontaining the identity, with errors tending to zero, the maps $\\phi$ give a homomorphism into the\nunitary group of $\\prod_k M_{n_k}(\\mathbb{C}) / \\bigoplus_k M_{n_k}(\\mathbb{C})$, which is\ninjective by the bound $\\|\\phi(a) - I_n\\| \\ge 1$. So every countable group with this property is\nMF in the sense of [Ec26, Definition 4.1]. Eckhardt [Ec26, Theorem 4.3 and Examples 3.2 and 4.5]\ngives a countable group that is not MF, built from a property (T) group such as\n$\\mathbb{Z}^3 \\rtimes \\mathrm{SL}_3(\\mathbb{Z})$. This is a 2026 preprint.",
+     "statement": "theorem green_100.variants.operator_norm :\n    ¬ ∀ (G : Type) [Group G], OperatorNormApprox G",
+     "line": 180,
+     "sorry": true
+    },
+    {
+     "name": "Green100.green_100.variants.sofic_isHyperlinear",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      20,
+      46
+     ],
+     "formal_proofs": [],
+     "doc": "Every sofic group is hyperlinear [Pe08, Theorem 3.3], a result of Elek and Szabó. The converse is\nnot known [Gr24].",
+     "statement": "theorem green_100.variants.sofic_isHyperlinear (G : Type*) [Group G] (hG : IsSofic G) :\n    IsHyperlinear G",
+     "line": 189,
+     "sorry": true
+    },
+    {
+     "name": "Green100.green_100.variants.residuallyFinite_isSofic",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      20
+     ],
+     "formal_proofs": [],
+     "doc": "Every residually finite group is sofic [Pe08, Example 4.2].",
+     "statement": "theorem green_100.variants.residuallyFinite_isSofic (G : Type*) [Group G]\n    [Group.ResiduallyFinite G] : IsSofic G",
+     "line": 195,
+     "sorry": true
+    },
+    {
+     "name": "Green100.green_100.variants.higman_isSofic",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      20
+     ],
+     "formal_proofs": [],
+     "doc": "Is the Higman group sofic? [Gr24] notes that the Higman group is not known to be either\nhyperlinear or sofic.",
+     "statement": "theorem green_100.variants.higman_isSofic : IsSofic HigmanGroup",
+     "line": 204,
+     "sorry": true
+    },
+    {
+     "name": "Green100.green_100.variants.higman_isHyperlinear",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      20,
+      46
+     ],
+     "formal_proofs": [],
+     "doc": "Is the Higman group hyperlinear? [Gr24] notes that the Higman group is not known to be either\nhyperlinear or sofic.",
+     "statement": "theorem green_100.variants.higman_isHyperlinear : IsHyperlinear HigmanGroup",
+     "line": 212,
+     "sorry": true
+    },
+    {
+     "name": "Green100.green_100.variants.helfgott_juschenko",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      11,
+      20
+     ],
+     "formal_proofs": [],
+     "doc": "**Helfgott and Juschenko.** If the Higman group is sofic, then for every $\\varepsilon > 0$ there\nis $N$ such that for every odd $n \\ge N$ there is a bijection $f : \\mathbb{Z}/n\\mathbb{Z} \\to\n\\mathbb{Z}/n\\mathbb{Z}$ with $f(x + 1) = 2 f(x)$ for at least $(1 - \\varepsilon) n$ values of $x$\nand $f(f(f(f(x)))) = x$ for all $x$ [HJ19, Theorem 2, case $m = 2$]. The last condition already\nmakes $f$ a bijection. [HJ19] presents the Higman group with the order of the generators\nreversed, which gives an isomorphic group.",
+     "statement": "theorem green_100.variants.helfgott_juschenko :\n    IsSofic HigmanGroup → ∀ ε : ℝ, 0 < ε → ∃ N : ℕ, ∀ n : ℕ, N ≤ n → n.Coprime 2 →\n      ∃ f : ZMod n → ZMod n, (1 - ε) * n ≤ Set.ncard {x | f (x + 1) = 2 * f x} ∧\n        ∀ x, f (f (f (f x))) = x",
+     "line": 224,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
     "api": 0
    },
    "unread": []
@@ -74972,7 +76378,7 @@
      "doc": "There exists m such that countExceeding n m > countNotExceeding n m.",
      "statement": "theorem a_exists (n : ℕ) : ∃ m, countExceeding n m > countNotExceeding n m",
      "line": 49,
-     "sorry": true
+     "sorry": false
     },
     {
      "name": "OeisA87719.a_formula",
@@ -74989,7 +76395,7 @@
      ],
      "doc": "We have the following formula: $a(n) = 3^n + 3 * 2^n + 6$ for $n \\geq 1$.",
      "statement": "theorem a_formula {n : ℕ} (hn : n ≥ 1) : a n = 3 ^ n + 3 * 2 ^ n + 6",
-     "line": 84,
+     "line": 120,
      "sorry": true
     }
    ],
@@ -86680,10 +88086,15 @@
       81,
       94
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000010"
+      }
+     ],
      "doc": "Source-backed benchmark statement: no $\\mathrm{AME}(7,2)$ state exists; see Huber--Gühne--Siewert (2017) and the OQP page.",
      "statement": "theorem ame_7_2_not_exists : ¬ ExistsAME 7 2",
-     "line": 747,
+     "line": 748,
      "sorry": true
     },
     {
@@ -86696,10 +88107,15 @@
       81,
       94
      ],
-     "formal_proofs": [],
+     "formal_proofs": [
+      {
+       "system": "lean4",
+       "url": "https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-02-000010"
+      }
+     ],
      "doc": "For a physical local dimension $d \\ge 2$, a seven-party AME state exists exactly when\n$d \\ge 3$. The hypothesis excludes the degenerate dimension $d = 1$, for which the unique\ncomputational-basis state is AME under the definitions of this file.\nShi--Zhang--Zhao--Li (2026) construct cyclic quadratic-phase states in every odd dimension and\na coupled binary--odd-dimensional state in every dimension congruent to `2` modulo `4`; together\nwith power-of-two constructions and the product property, this covers every `d ≥ 3`.",
      "statement": "theorem ame_7_exists_iff (d : ℕ) (hd : 2 ≤ d) : ExistsAME 7 d ↔ 3 ≤ d",
-     "line": 757,
+     "line": 759,
      "sorry": true
     },
     {
@@ -86720,7 +88136,7 @@
      ],
      "doc": "Source-backed benchmark statement: an $\\mathrm{AME}(4,3)$ state exists; see Helwig et al. (2012) and Goyeneche et al. (2015).",
      "statement": "theorem ame_4_3_exists : ExistsAME 4 3",
-     "line": 764,
+     "line": 766,
      "sorry": true
     },
     {
@@ -86741,7 +88157,7 @@
      ],
      "doc": "Source-backed benchmark statement: an $\\mathrm{AME}(4,6)$ state exists; see Rather et al. (2022).",
      "statement": "theorem ame_4_6_exists : ExistsAME 4 6",
-     "line": 771,
+     "line": 773,
      "sorry": true
     },
     {
@@ -86757,7 +88173,7 @@
      "formal_proofs": [],
      "doc": "An $\\mathrm{AME}(7,6)$ state exists, by the complete seven-party classification of\nShi--Zhang--Zhao--Li (2026).",
      "statement": "theorem ame_7_6_open :\n    ExistsAME 7 6",
-     "line": 779,
+     "line": 781,
      "sorry": false
     },
     {
@@ -86773,7 +88189,7 @@
      "formal_proofs": [],
      "doc": "An $\\mathrm{AME}(7,10)$ state exists, by the complete seven-party classification of\nShi--Zhang--Zhao--Li (2026).",
      "statement": "theorem ame_7_10_open :\n    ExistsAME 7 10",
-     "line": 786,
+     "line": 788,
      "sorry": false
     },
     {
@@ -86789,7 +88205,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(8,4)$ state exist?",
      "statement": "theorem ame_8_4_open :\n    ExistsAME 8 4",
-     "line": 792,
+     "line": 794,
      "sorry": true
     },
     {
@@ -86805,7 +88221,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(8,6)$ state exist?",
      "statement": "theorem ame_8_6_open :\n    ExistsAME 8 6",
-     "line": 798,
+     "line": 800,
      "sorry": true
     },
     {
@@ -86821,7 +88237,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(8,10)$ state exist?",
      "statement": "theorem ame_8_10_open :\n    ExistsAME 8 10",
-     "line": 804,
+     "line": 806,
      "sorry": true
     },
     {
@@ -86842,7 +88258,7 @@
      ],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(9,6)$ state exist?\n\nAnswer: Yes. A witness found by Kenta Kitamura (KitaKen1 on GitHub)\nis given here:\nhttps://github.com/KitaKen1/ame-9-6-lean",
      "statement": "theorem ame_9_6_open :\n    ExistsAME 9 6",
-     "line": 817,
+     "line": 819,
      "sorry": true
     },
     {
@@ -86863,7 +88279,7 @@
      ],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(9,10)$ state exist?\n\nSolved: a Lean 4 proof, derived from the Atlas proofs in\n[facebookresearch/atlas-lean](https://github.com/facebookresearch/atlas-lean), is linked in\n`formal_proof`.",
      "statement": "theorem ame_9_10_open :\n    ExistsAME 9 10",
-     "line": 832,
+     "line": 834,
      "sorry": true
     },
     {
@@ -86879,7 +88295,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(10,6)$ state exist?",
      "statement": "theorem ame_10_6_open :\n    ExistsAME 10 6",
-     "line": 838,
+     "line": 840,
      "sorry": true
     },
     {
@@ -86895,7 +88311,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(10,10)$ state exist?",
      "statement": "theorem ame_10_10_open :\n    ExistsAME 10 10",
-     "line": 844,
+     "line": 846,
      "sorry": true
     },
     {
@@ -86911,7 +88327,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(11,3)$ state exist?",
      "statement": "theorem ame_11_3_open :\n    ExistsAME 11 3",
-     "line": 850,
+     "line": 852,
      "sorry": true
     },
     {
@@ -86932,7 +88348,7 @@
      ],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(11,4)$ state exist?\n\nAnswer: `AME(11, 4)` exists. The graph state defined by the circulant matrix Gamma\n    over $GF(4)$ with first row $(0, 0, 0, 1, ω, ω, ω, ω, 1, 0, 0)$ is an\n    absolutely maximally entangled state of $11$ ququarts.\n   This result has been found by Moritz Firsching and Goran Žužić using an\nexperimental pipeline\n\n\n Before, it was already known that there is a quantum code for `[11,0]]_5`, which corresponds to an `AME(11,4)` state (which is another approach to a solution).",
      "statement": "theorem ame_11_4_open :\n    ExistsAME 11 4",
-     "line": 868,
+     "line": 870,
      "sorry": true
     },
     {
@@ -86953,7 +88369,7 @@
      ],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(11,5)$ state exist?\n\nThe DeepMind prover agent has shown that such a state exists.",
      "statement": "theorem ame_11_5_open :\n    ExistsAME 11 5",
-     "line": 879,
+     "line": 881,
      "sorry": true
     },
     {
@@ -86969,7 +88385,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(11,6)$ state exist?",
      "statement": "theorem ame_11_6_open :\n    ExistsAME 11 6",
-     "line": 885,
+     "line": 887,
      "sorry": true
     },
     {
@@ -86990,7 +88406,7 @@
      ],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(11,10)$ state exist?\n\nAnswer: Yes. A witness found by Kenta Kitamura (KitaKen1 on GitHub)\nis given here:\nhttps://github.com/KitaKen1/ame-11-10-lean",
      "statement": "theorem ame_11_10_open :\n    ExistsAME 11 10",
-     "line": 899,
+     "line": 901,
      "sorry": true
     },
     {
@@ -87006,7 +88422,7 @@
      "formal_proofs": [],
      "doc": "Does an $\\mathrm{AME}(12,5)$ state exist?\n\nThe answer is yes. Bevins and Bidav construct an explicit Hermitian self-dual MDS code with\nparameters $[12,6,7]_{25}$, whose associated nonbinary stabilizer state is an\n$\\mathrm{AME}(12,5)$ state.",
      "statement": "theorem ame_12_5_open :\n    ExistsAME 12 5",
-     "line": 909,
+     "line": 911,
      "sorry": true
     },
     {
@@ -87022,7 +88438,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(12,6)$ state exist?",
      "statement": "theorem ame_12_6_open :\n    ExistsAME 12 6",
-     "line": 915,
+     "line": 917,
      "sorry": true
     },
     {
@@ -87038,7 +88454,7 @@
      "formal_proofs": [],
      "doc": "Open benchmark statement: does an $\\mathrm{AME}(12,10)$ state exist?",
      "statement": "theorem ame_12_10_open :\n    ExistsAME 12 10",
-     "line": 921,
+     "line": 923,
      "sorry": true
     },
     {
@@ -87054,7 +88470,7 @@
      "formal_proofs": [],
      "doc": "Open Quantum Problem 35: classify all pairs $(n,d)$ with $n \\ge 2$ and $d \\ge 2$ for which an $\\mathrm{AME}(n,d)$ state exists.",
      "statement": "theorem oqp_35 :\n    {nd : ℕ × ℕ | 2 ≤ nd.1 ∧ 2 ≤ nd.2 ∧ ExistsAME nd.1 nd.2} = oqp_35.answer",
-     "line": 931,
+     "line": 933,
      "sorry": true
     }
    ],
@@ -88397,6 +89813,39 @@
      "doc": "Is it true that, for all $n$, every convex set in $\\mathbb R^{n + 1}$ has\n$\\mathrm{VC}_n$ dimension at most 3?",
      "statement": "lemma hasAddVCNDimAtMost_n_two_of_convex_rn_add_one :\n    ∀ ⦃n : ℕ⦄, n ≠ 0 → ∀ ⦃C : Set (EuclideanSpace ℝ (Fin (n + 1)))⦄,\n      Convex ℝ C → HasAddVCNDimAtMost C n 3",
      "line": 100,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/Paper/ApproximatelyStableMatching.lean",
+   "module": "FormalConjectures.Paper.ApproximatelyStableMatching",
+   "folder": "Paper",
+   "title": "Fanelli–Moscardelli conjecture on approximate roommates stability",
+   "doc": "*Reference:* A. Fanelli and L. Moscardelli,\n[Approximately Stable Matching](https://doi.org/10.3233/FAIA251234), Section 5.\n\nFor complete strict preferences on $N$ agents, let $K(N)$ be the least positive rank-improvement\nthreshold that guarantees a stable matching for every profile. A pair blocks at threshold $k$\nwhen both agents gain at least $k$ positions. Singles have rank $N$.",
+   "reference": {
+    "text": "Approximately Stable Matching",
+    "url": "https://doi.org/10.3233/FAIA251234"
+   },
+   "statements": [
+    {
+     "name": "FanelliMoscardelli.stability_threshold_tight",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      68,
+      91
+     ],
+     "formal_proofs": [],
+     "doc": "The universal rank-improvement threshold is $K(N)=\\lceil N/2\\rceil$ for every sufficiently\nlarge number of agents.",
+     "statement": "theorem stability_threshold_tight :\n    ∃ N₀ : ℕ, 3 ≤ N₀ ∧\n      ∀ N ≥ N₀, Roommates.stabilityThreshold N = (N + 1) / 2",
+     "line": 41,
      "sorry": true
     }
    ],
@@ -89800,6 +91249,50 @@
    ],
    "folded": {
     "test": 5,
+    "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/Paper/IrvingLeatherStableMatchings.lean",
+   "module": "FormalConjectures.Paper.IrvingLeatherStableMatchings",
+   "folder": "Paper",
+   "title": "The Irving–Leather conjecture on stable matchings",
+   "doc": "*References:*\n- [Concerning the maximum number of stable matchings in the stable marriage problem](https://core.ac.uk/download/pdf/82220141.pdf)\n  by E. G. Thurber, §2 and Appendix A.\n- [A recurrence giving a lower bound for stable matchings](https://oeis.org/A005154/a005154.pdf)\n  by Clay Thomas, Proposition 1.\n\nLet $M(n)$ be the maximum number of stable matchings with $n$ participants per side and complete,\nstrict preferences. The Irving–Leather construction has $a_k$ stable matchings at size $2^k$.",
+   "reference": {
+    "text": "Concerning the maximum number of stable matchings in the stable marriage problem",
+    "url": "https://core.ac.uk/download/pdf/82220141.pdf"
+   },
+   "statements": [
+    {
+     "name": "IrvingLeather.irving_leather_pow_two",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5
+     ],
+     "formal_proofs": [],
+     "doc": "Thurber's §2 attributes to Irving and Leather the conjecture that their construction attains\nthe maximum number of stable matchings at every power-of-two size.",
+     "statement": "theorem irving_leather_pow_two (k : ℕ) :\n    maxStableMatchings (2 ^ k) = irvingLeatherCount k",
+     "line": 56,
+     "sorry": true
+    },
+    {
+     "name": "IrvingLeather.irving_leather_growth_rate",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5
+     ],
+     "formal_proofs": [],
+     "doc": "A proposed weaker variant states that $M(n)^{1/n}$ and $a_k^{1/2^k}$ converge to the same real\nnumber. Thomas's recurrence analysis gives approximately $2.280142$ for the second limit.\nThe first sequence is indexed by $n+1$ to start at positive sizes.",
+     "statement": "theorem irving_leather_growth_rate :\n    ∃ c : ℝ,\n      Tendsto (fun n : ℕ ↦ Real.rpow (maxStableMatchings (n + 1) : ℝ)\n        (1 / ((n : ℝ) + 1))) atTop (𝓝 c) ∧\n      Tendsto (fun k : ℕ ↦ Real.rpow (irvingLeatherCount k : ℝ)\n        (1 / (2 : ℝ) ^ k)) atTop (𝓝 c)",
+     "line": 66,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 0,
     "api": 0
    },
    "unread": []
@@ -94721,6 +96214,52 @@
    "unread": []
   },
   {
+   "file": "FormalConjectures/Wikipedia/ButsonHadamardMatrix.lean",
+   "module": "FormalConjectures.Wikipedia.ButsonHadamardMatrix",
+   "folder": "Wikipedia",
+   "title": "Butson-type Hadamard matrices",
+   "doc": "A *Butson-type Hadamard matrix* $H(k, n)$ (also written $\\operatorname{BH}(n, k)$) is an\n$n \\times n$ complex matrix $M$ whose entries are $k$-th roots of unity ($M_{ij}^k = 1$) and whose\nrows are mutually orthogonal in $\\mathbb{C}^n$, so that $M M^* = n I_n$. At $k = 2$, $H(2, n)$\nrecovers real Hadamard matrices; at $k = 4$, $H(4, n)$ consists of matrices with entries in\n$\\{\\pm 1, \\pm i\\}$.\n\n*References:*\n- [Wikipedia](https://en.wikipedia.org/wiki/Butson-type_Hadamard_matrix)\n- [Bu62] Butson, A. T. (1962). *Generalized Hadamard matrices*, Proc. Amer. Math. Soc. 13,\n  894--898.\n- [Tu70] Turyn, R. J. (1970). *Complex Hadamard matrices*, in Combinatorial Structures and their\n  Applications (Calgary, 1969), Gordon and Breach, New York, 435--437.\n- [Wi00] Winterhof, A. (2000). *On the non-existence of generalized Hadamard matrices*, J. Statist.\n  Plann. Inference 84, 337--342.\n- [dLF11] de Launey, W. and Flannery, D. L. (2011). *Algebraic Design Theory*, Mathematical Surveys\n  and Monographs 175, Amer. Math. Soc.",
+   "reference": {
+    "text": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Butson-type_Hadamard_matrix"
+   },
+   "statements": [
+    {
+     "name": "ButsonHadamardMatrix.butson_prime_divisibility",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      15
+     ],
+     "formal_proofs": [],
+     "doc": "**Butson's prime divisibility theorem** [Bu62]: if $p$ is prime, $n \\ge 2$, and a Butson-type\nHadamard matrix $H(p, n)$ exists, then $p \\mid n$.\n\nThe hypothesis $n \\ge 2$ excludes the trivial $1 \\times 1$ matrix $[1]$, which satisfies\n$H(p, 1)$ for every $p$.",
+     "statement": "theorem butson_prime_divisibility {p n : ℕ} (hp : p.Prime) (hn : 2 ≤ n)\n    (hex : ∃ M, IsButsonHadamard p n M) :\n    p ∣ n",
+     "line": 91,
+     "sorry": true
+    },
+    {
+     "name": "ButsonHadamardMatrix.butson_hadamard_fourth_roots_conjecture",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      15
+     ],
+     "formal_proofs": [],
+     "doc": "**Complex Hadamard conjecture for fourth roots of unity** [Tu70, dLF11]: for every integer\n$m \\ge 1$, there exists a $2m \\times 2m$ Butson-type Hadamard matrix $H(4, 2m)$ with entries in\n$\\{1, -1, i, -i\\}$.\n\nBy Turyn's doubling construction [Tu70], an $H(4, 2m)$ matrix yields a real Hadamard matrix\n$H(2, 4m)$, so this conjecture implies Hadamard's conjecture.",
+     "statement": "theorem butson_hadamard_fourth_roots_conjecture (m : ℕ) (hm : 1 ≤ m) :\n    ∃ M, IsButsonHadamard 4 (2 * m) M",
+     "line": 105,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 2,
+    "api": 1
+   },
+   "unread": []
+  },
+  {
    "file": "FormalConjectures/Wikipedia/CarmichaelTotient.lean",
    "module": "FormalConjectures.Wikipedia.CarmichaelTotient",
    "folder": "Wikipedia",
@@ -95428,7 +96967,7 @@
      "formal_proofs": [],
      "doc": "The Diophantine 5-tuple theorem: there does not exist an integral Diophantine 5-tuple. [HTZ19]",
      "statement": "theorem noIntegralDiophantineFiveTuple : NoIntegralDiophantineFiveTuple",
-     "line": 109,
+     "line": 141,
      "sorry": true
     },
     {
@@ -95441,7 +96980,7 @@
      "formal_proofs": [],
      "doc": "The \"strong Diophantine 5-tuple conjecture\", so-called because it implies the Diophantine\n5-tuple theorem (see `noIntegralDiophantineFiveTuple_of_hasUniqueExtensionOfForall`). [Du]",
      "statement": "theorem hasUniqueExtension_of_forall : HasUniqueExtensionOfForall",
-     "line": 150,
+     "line": 182,
      "sorry": true
     },
     {
@@ -95454,7 +96993,7 @@
      "formal_proofs": [],
      "doc": "If every integral Diophantine triple has a unique extension by a larger element, then there\nis no integral Diophantine 5-tuple. [Du]\n\nProof: suppose a 5-tuple $a < b < c < d_1 < d_2$ exists; then $d_1 = d_2$ by unique extension.",
      "statement": "theorem noIntegralDiophantineFiveTuple_of_hasUniqueExtensionOfForall :\n    HasUniqueExtensionOfForall → NoIntegralDiophantineFiveTuple",
-     "line": 159,
+     "line": 191,
      "sorry": false
     },
     {
@@ -95467,7 +97006,7 @@
      "formal_proofs": [],
      "doc": "`HasUniqueExtension` is known to hold for certain triples, including $\\{1, 3, 8\\}$: this is\nessentially the Baker–Davenport theorem [BD69], which states that $120$ is the only integer\n$d$ such that $\\{1, 3, 8, d\\}$ is a Diophantine tuple. Together with a finite check ruling out\n$d < 8$, this shows that no integral Diophantine tuple properly extends $\\{1, 3, 8, 120\\}$.",
      "statement": "theorem hasUniqueExtension_of_1_3_8 : HasUniqueExtension 1 3 8",
-     "line": 195,
+     "line": 227,
      "sorry": true
     },
     {
@@ -95480,7 +97019,7 @@
      "formal_proofs": [],
      "doc": "Does there exist a rational Diophantine 7-tuple? [Du16]",
      "statement": "theorem rational_7_tuple :\n    ∃ t, IsRationalDiophantineTuple t ∧ t.card = 7",
-     "line": 221,
+     "line": 253,
      "sorry": true
     }
    ],
@@ -100252,11 +101791,63 @@
      "statement": "theorem volume_eq_sofaConstant_iff_congruent_gerversSofa (s : Set ℝ²)\n    (hs : ∃ m, IsMovingSofa s m) :\n    volume s = sofaConstant ↔ ∃ g : E(2), s = g '' gerversSofa",
      "line": 262,
      "sorry": true
+    },
+    {
+     "name": "MovingSofa.RomiksSofa.existsUnique_X",
+     "kind": "theorem",
+     "category": "textbook",
+     "ams": [
+      49
+     ],
+     "formal_proofs": [],
+     "doc": "The cubic $x^2 (x + 3) = 8$ has exactly one real root.",
+     "statement": "theorem existsUnique_X : ∃! x : ℝ, x ^ 2 * (x + 3) = 8",
+     "line": 357,
+     "sorry": false
+    },
+    {
+     "name": "MovingSofa.RomiksSofa.existsUnique_Y",
+     "kind": "theorem",
+     "category": "textbook",
+     "ams": [
+      49
+     ],
+     "formal_proofs": [],
+     "doc": "The cubic $x (4 x^2 + 3) = 1$ has exactly one real root.",
+     "statement": "theorem existsUnique_Y : ∃! x : ℝ, x * (4 * x ^ 2 + 3) = 1",
+     "line": 368,
+     "sorry": false
+    },
+    {
+     "name": "MovingSofa.romiksSofa_area_le_ambidextrousSofaConstant",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      49
+     ],
+     "formal_proofs": [],
+     "doc": "Romik's ambidextrous sofa has area `RomiksSofa.area` [Ro18, Thm. 5], so the ambidextrous sofa\nconstant is at least that.",
+     "statement": "theorem romiksSofa_area_le_ambidextrousSofaConstant :\n    ENNReal.ofReal RomiksSofa.area ≤ ambidextrousSofaConstant",
+     "line": 396,
+     "sorry": true
+    },
+    {
+     "name": "MovingSofa.ambidextrousSofaConstant_eq_romiksSofa_area",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      49
+     ],
+     "formal_proofs": [],
+     "doc": "Romik's ambidextrous sofa is optimal. Romik derived it from local-optimality considerations and\nproposed it as the solution [Ro18, §1.2, §5]; [Wikipedia] records it as the conjectured optimum.\nEven its local optimality is open [Ro18, §7, Problem 1].",
+     "statement": "theorem ambidextrousSofaConstant_eq_romiksSofa_area :\n    ambidextrousSofaConstant = ENNReal.ofReal RomiksSofa.area",
+     "line": 406,
+     "sorry": true
     }
    ],
    "folded": {
-    "test": 3,
-    "api": 0
+    "test": 7,
+    "api": 1
    },
    "unread": []
   },
@@ -104454,6 +106045,52 @@
    "folded": {
     "test": 1,
     "api": 0
+   },
+   "unread": []
+  },
+  {
+   "file": "FormalConjectures/Wikipedia/WeighingMatrix.lean",
+   "module": "FormalConjectures.Wikipedia.WeighingMatrix",
+   "folder": "Wikipedia",
+   "title": "Weighing matrices and the Geramita–Seberry conjecture",
+   "doc": "A *weighing matrix* $W(n, w)$ of order $n$ and weight $w$ is an $n \\times n$ matrix with entries in\n$\\{-1, 0, 1\\}$ satisfying $W W^{\\mathsf{T}} = w I_n$. At $w = n$, this recovers Hadamard matrices.\n\n*References:*\n- [Wikipedia](https://en.wikipedia.org/wiki/Weighing_matrix)\n- [GS79] Geramita, A. V. and Seberry, J. (1979). *Orthogonal Designs: Quadratic Forms and Hadamard\n  Matrices*, Lecture Notes in Pure and Applied Mathematics 45, Marcel Dekker, New York.",
+   "reference": {
+    "text": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Weighing_matrix"
+   },
+   "statements": [
+    {
+     "name": "WeighingMatrix.weighing_matrix_conjecture",
+     "kind": "theorem",
+     "category": "research open",
+     "ams": [
+      5,
+      15
+     ],
+     "formal_proofs": [],
+     "doc": "**Weighing matrix conjecture** (Wallis 1972; Geramita–Seberry [GS79]): for every positive integer\n$m \\ge 1$ and every weight $0 \\le w \\le 4m$, there exists a weighing matrix $W(4m, w)$ of order\n$4m$ and weight $w$.\n\nAt $w = 4m$, this specializes to Hadamard's conjecture.",
+     "statement": "theorem weighing_matrix_conjecture (m w : ℕ) (hm : 1 ≤ m) (hw : w ≤ 4 * m) :\n    ∃ W, IsWeighingMatrix (4 * m) w W",
+     "line": 92,
+     "sorry": true
+    },
+    {
+     "name": "WeighingMatrix.weighing_matrix_conjecture.variants.asymptotic",
+     "kind": "theorem",
+     "category": "research solved",
+     "ams": [
+      5,
+      15
+     ],
+     "formal_proofs": [],
+     "doc": "**Asymptotic existence of weighing matrices** (Geramita–Seberry [GS79]): for every fixed weight\n$w$, a weighing matrix $W(4m, w)$ exists for all sufficiently large multiples $4m$.",
+     "statement": "theorem weighing_matrix_conjecture.variants.asymptotic (w : ℕ) :\n    ∀ᶠ m in Filter.atTop, ∃ W, IsWeighingMatrix (4 * m) w W",
+     "line": 101,
+     "sorry": true
+    }
+   ],
+   "folded": {
+    "test": 2,
+    "api": 3
    },
    "unread": []
   },

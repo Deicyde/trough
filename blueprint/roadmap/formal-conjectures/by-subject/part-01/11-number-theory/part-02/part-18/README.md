@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Collatz step differences to Number of ways to write $n = x…
+# Number of Abelian cubes of… to Number of odd primes between…
 
+- [Number of Abelian cubes of length $3n$ over an alphabet of size 3](../../../../../oeis/part-09/number-of-abelian-cubes-of-length-3n-over-an-alp.md)
+- [Factorial distance to nearest square](../../../../../oeis/part-09/factorial-distance-to-nearest-square.md)
 - [Collatz step differences](../../../../../oeis/part-09/collatz-step-differences.md)
 - [Representations as $p + 2^x + 7 \cdot 2^y$ with $p \equiv 5 \pmod 6$](../../../../../oeis/part-09/representations-as-p-2-x-7-cdot-2-y-with-p-equiv.md)
 - [Representations as $p + 2^x + 11 \cdot 2^y$ with $p \equiv 1 \pmod 6$](../../../../../oeis/part-09/representations-as-p-2-x-11-cdot-2-y-with-p-equi.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Product of two consecutive primes modulo the next prime](../../../../../oeis/part-10/product-of-two-consecutive-primes-modulo-the-nex.md)
 - [Recurrence with bitwise XOR](../../../../../oeis/part-10/recurrence-with-bitwise-xor.md)
 - [Number of odd primes between $n^2$ and $(n+1)^2$ with $(n/p) = 1$](../../../../../oeis/part-10/number-of-odd-primes-between-n-2-and-n-1-2-with.md)
-- [Coefficients of $\prod_{k>0} (1 - x^k/k!)$](../../../../../oeis/part-10/coefficients-of-prod-k-0-1-x-k-k.md)
-- [Number of ways to write $n = x + y$ ($0 < x < y < n$) with $6x \pm 1$ and $6y \pm 1$ prime](../../../../../oeis/part-10/number-of-ways-to-write-n-x-y-0-x-y-n-with-6x-pm.md)

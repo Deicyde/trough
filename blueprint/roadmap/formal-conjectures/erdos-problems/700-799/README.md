@@ -25,7 +25,7 @@ The Erdős problems numbered 700 to 799 that Formal Conjectures states, one arti
 - [Erdős Problem 721](part-01/erdos-problem-721.md)
 - [Erdős Problem 722](part-01/erdos-problem-722.md)
 
-## [Erdős Problem 723: The prime… to Erdős Problem 747](part-02/README.md)
+## [Erdős Problem 723: The prime… to Erdős Problem 745…](part-02/README.md)
 
 - [Erdős Problem 723: The prime power conjecture.](part-02/erdos-problem-723-the-prime-power-conjecture.md)
 - [Erdős Problem 724](part-02/erdos-problem-724.md)
@@ -41,15 +41,16 @@ The Erdős problems numbered 700 to 799 that Formal Conjectures states, one arti
 - [Erdős Problem 734](part-02/erdos-problem-734.md)
 - [Erdős Problem 735](part-02/erdos-problem-735.md)
 - [Erdős Problem 737](part-02/erdos-problem-737.md)
+- [Erdős Problem 739](part-02/erdos-problem-739.md)
 - [Erdős Problem 740: Infinitary version of chromatic number and odd cycles](part-02/erdos-problem-740-infinitary-version-of-chromati.md)
 - [Erdős Problem 741](part-02/erdos-problem-741.md)
 - [Erdős Problem 742](part-02/erdos-problem-742.md)
 - [Erdős Problem 743](part-02/erdos-problem-743.md)
 - [Erdős Problem 745: Second-largest component of a random graph](part-02/erdos-problem-745-second-largest-component-of-a.md)
-- [Erdős Problem 747](part-02/erdos-problem-747.md)
 
-## [Erdős Problem 748 to Erdős Problem 772](part-03/README.md)
+## [Erdős Problem 747 to Erdős Problem 771](part-03/README.md)
 
+- [Erdős Problem 747](part-03/erdos-problem-747.md)
 - [Erdős Problem 748](part-03/erdos-problem-748.md)
 - [Erdős Problem 749](part-03/erdos-problem-749.md)
 - [Erdős Problem 750](part-03/erdos-problem-750.md)
@@ -69,10 +70,10 @@ The Erdős problems numbered 700 to 799 that Formal Conjectures states, one arti
 - [Erdős Problem 769](part-03/erdos-problem-769.md)
 - [Erdős Problem 770](part-03/erdos-problem-770.md)
 - [Erdős Problem 771](part-03/erdos-problem-771.md)
-- [Erdős Problem 772](part-03/erdos-problem-772.md)
 
-## [Erdős Problem 773 to Erdős Problem 798](part-04/README.md)
+## [Erdős Problem 772 to Erdős Problem 798](part-04/README.md)
 
+- [Erdős Problem 772](part-04/erdos-problem-772.md)
 - [Erdős Problem 773](part-04/erdos-problem-773.md)
 - [Erdős Problem 774](part-04/erdos-problem-774.md)
 - [Erdős Problem 775](part-04/erdos-problem-775.md)

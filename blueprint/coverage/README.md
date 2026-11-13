@@ -58,7 +58,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Formal Frontier / Toric ideals | `DECOMPOSED` | [3 highlights of its formalization.yaml](../roadmap/formal-frontier/commutative-algebra/toric-ideals/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Valuation integers | `DECOMPOSED` | [5 highlights of its formalization.yaml](../roadmap/formal-frontier/number-theory/valuation-integers/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Vector bundles | `DECOMPOSED` | [4 highlights of its formalization.yaml and 1 headline result](../roadmap/formal-frontier/topology/vector-bundles/README.md) whose declarations the scan finds in the linked file, one article each. |
-| Formal Conjectures | `DECOMPOSED` | [1,814 problem files](../roadmap/formal-conjectures/README.md) that state a research or textbook statement, one article each, with a card per statement. |
+| Formal Conjectures | `DECOMPOSED` | [1,837 problem files](../roadmap/formal-conjectures/README.md) that state a research or textbook statement, one article each, with a card per statement. |
 | Lean Pool | `DECOMPOSED` | [334 project cards](../roadmap/lean-pool/README.md), one article per card. |
 | Fermat's Last Theorem (Anthropic) | `DECOMPOSED` | [49 landmark theorems](../roadmap/anthropic-flt/README.md) in the steps of PROOF-PATH.md, one article each; the other 29,462 theorems are counted, not mapped. |
 | Classification of Finite Simple Groups (Axiom) | `DECOMPOSED` | [The top theorem, its reduction to 9 cases and the theorem for each case, and 110 milestone modules](../roadmap/cfsg/README.md), one article each, with their Lean statements. |

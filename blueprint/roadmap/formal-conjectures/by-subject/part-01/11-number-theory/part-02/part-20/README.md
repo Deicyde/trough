@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Number of $0$'s in the binary… to Alternating sum of fourth…
+# Remainder of $2^{n+2}$ modulo… to Representations using Sophie…
 
+- [Remainder of $2^{n+2}$ modulo $n$](../../../../../oeis/part-11/remainder-of-2-n-2-modulo-n.md)
+- [Twin primes of the form $(3^n - k) 2^n \pm 1$](../../../../../oeis/part-11/twin-primes-of-the-form-3-n-k-2-n-pm-1.md)
 - [Number of $0$'s in the binary expansion of $n^2$](../../../../../oeis/part-11/number-of-0-s-in-the-binary-expansion-of-n-2.md)
 - [Smallest deficient multiplier for non-deficiency](../../../../../oeis/part-11/smallest-deficient-multiplier-for-non-deficiency.md)
 - [Number of primes between $n^3 - n$ and $n^3$](../../../../../oeis/part-11/number-of-primes-between-n-3-n-and-n-3.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Determinant of Legendre symbol matrix with factorial shifts](../../../../../oeis/part-12/determinant-of-legendre-symbol-matrix-with-facto.md)
 - [Representation of sequence terms by harmonic numbers $\lfloor \frac{1}{2H(n) - H(n^2+n-1) - \gamma} \rfloor$](../../../../../oeis/part-12/representation-of-sequence-terms-by-harmonic-num.md)
 - [Representations using Sophie Germain primes and twin prime pairs](../../../../../oeis/part-12/representations-using-sophie-germain-primes-and.md)
-- [Eighth root of the generating function of an Apéry-like sequence](../../../../../oeis/part-12/eighth-root-of-the-generating-function-of-an-ape.md)
-- [Alternating sum of fourth powers of binomial coefficients](../../../../../oeis/part-12/alternating-sum-of-fourth-powers-of-binomial-coe.md)

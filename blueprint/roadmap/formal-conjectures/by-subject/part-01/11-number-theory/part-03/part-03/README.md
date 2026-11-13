@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Primitive roots of the form k²… to Asymptotics of an inner sum…
+# Number of primes $p < n$ with… to Partitions of $n$ into distinct…
 
+- [Number of primes $p < n$ with $\text{prime}(p)^2 + (\text{prime}(n) - 1)^2$ prime](../../../../../oeis/part-14/number-of-primes-p-n-with-prime-p-2-prime-n-1-2.md)
+- [Number of integers $0 < k \le n$ such that $\pi(\pi(k n))$ is a square](../../../../../oeis/part-14/number-of-integers-0-k-le-n-such-that-pi-pi-k-n.md)
 - [Primitive roots of the form k² + 1](../../../../../oeis/part-14/primitive-roots-of-the-form-k2-1.md)
 - [Ways of writing $n$ as an ordered sum of a triangular, square, and pentagonal number](../../../../../oeis/part-14/ways-of-writing-n-as-an-ordered-sum-of-a-triangu.md)
 - [Largest smallest-base in a decomposition of $n$ into at most four squares](../../../../../oeis/part-14/largest-smallest-base-in-a-decomposition-of-n-in.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Representations of $n$ as the sum of two pentagonal and a generalized decagonal number](../../../../../oeis/part-15/representations-of-n-as-the-sum-of-two-pentagona.md)
 - [Representations of $n$ as a sum of generalized heptagonal, octagonal, and nonagonal numbers](../../../../../oeis/part-15/representations-of-n-as-a-sum-of-generalized-hep.md)
 - [Partitions of $n$ into distinct non-squarefree parts for $n > 23$](../../../../../oeis/part-15/partitions-of-n-into-distinct-non-squarefree-par.md)
-- [Ways to write $n$ as the sum of three elements of $\{\lfloor T(x)/3 \rfloor : x \ge 1\}$](../../../../../oeis/part-15/ways-to-write-n-as-the-sum-of-three-elements-of.md)
-- [Asymptotics of an inner sum formula for $a(n)$](../../../../../oeis/part-15/asymptotics-of-an-inner-sum-formula-for-a-n.md)

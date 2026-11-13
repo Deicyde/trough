@@ -71,7 +71,7 @@ The Erdős problems numbered 100 to 199 that Formal Conjectures states, one arti
 - [Erdős Problem 170](part-03/erdos-problem-170.md)
 - [Erdős Problem 171](part-03/erdos-problem-171.md)
 
-## [Erdős Problem 172 to Erdős Problem 197](part-04/README.md)
+## [Erdős Problem 172 to Erdős Problem 196](part-04/README.md)
 
 - [Erdős Problem 172](part-04/erdos-problem-172.md)
 - [Erdős Problem 173](part-04/erdos-problem-173.md)
@@ -86,15 +86,16 @@ The Erdős problems numbered 100 to 199 that Formal Conjectures states, one arti
 - [Erdős Problem 186](part-04/erdos-problem-186.md)
 - [Erdős Problem 188](part-04/erdos-problem-188.md)
 - [Erdős Problem 189](part-04/erdos-problem-189.md)
+- [Erdős Problem 190](part-04/erdos-problem-190.md)
 - [Erdős Problem 191](part-04/erdos-problem-191.md)
 - [Erdős Problem 192](part-04/erdos-problem-192.md)
 - [Erdős Problem 193](part-04/erdos-problem-193.md)
 - [Erdős Problem 194](part-04/erdos-problem-194.md)
 - [Erdős Problem 195](part-04/erdos-problem-195.md)
 - [Erdős Problem 196](part-04/erdos-problem-196.md)
-- [Erdős Problem 197](part-04/erdos-problem-197.md)
 
-## [Erdős Problem 198 to Erdős Problem 199](part-05/README.md)
+## [Erdős Problem 197 to Erdős Problem 199](part-05/README.md)
 
+- [Erdős Problem 197](part-05/erdos-problem-197.md)
 - [Erdős Problem 198](part-05/erdos-problem-198.md)
 - [Erdős Problem 199](part-05/erdos-problem-199.md)

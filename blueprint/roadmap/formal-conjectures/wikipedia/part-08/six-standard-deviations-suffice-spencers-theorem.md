@@ -36,7 +36,7 @@ statement: formalized
 > - [S. Lovett and R. Meka, *Constructive discrepancy minimization by walking on the edges*,
 >   SIAM J. Comput. **44** (2015), 1573–1582](https://doi.org/10.1137/130929400)
 
-*Quoted from [FormalConjectures/Wikipedia/SixStandardDeviations.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SixStandardDeviations.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/SixStandardDeviations.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SixStandardDeviations.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 1 test statement, counted here but not shown.
 
@@ -57,7 +57,7 @@ theorem six_standard_deviations :
         ∀ i, |∑ j ∈ S i, χ j| ≤ 6 * Real.sqrt n
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SixStandardDeviations.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SixStandardDeviations.lean#L63).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SixStandardDeviations.lean, line 63](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SixStandardDeviations.lean#L63).
 
 ## `SixStandardDeviations.six_standard_deviations.variants.random_bound`
 
@@ -81,7 +81,7 @@ theorem six_standard_deviations.variants.random_bound :
         ∀ i, |∑ j ∈ S i, χ j| ≤ K * Real.sqrt (n * Real.log (n + 2))
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SixStandardDeviations.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SixStandardDeviations.lean#L85).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SixStandardDeviations.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SixStandardDeviations.lean#L85).
 
 ## `SixStandardDeviations.six_standard_deviations.variants.universal_bound`
 
@@ -101,7 +101,7 @@ theorem six_standard_deviations.variants.universal_bound :
         ∀ i, |∑ j ∈ S i, χ j| ≤ K * Real.sqrt n
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SixStandardDeviations.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SixStandardDeviations.lean#L103).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/SixStandardDeviations.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SixStandardDeviations.lean#L103).
 
 ## Depends on
 
@@ -109,5 +109,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/SixStandardDeviations.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SixStandardDeviations.lean)
+- [FormalConjectures/Wikipedia/SixStandardDeviations.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SixStandardDeviations.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Discrepancy_of_hypergraphs#General_hypergraphs)

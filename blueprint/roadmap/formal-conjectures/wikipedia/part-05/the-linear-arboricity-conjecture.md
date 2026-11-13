@@ -16,7 +16,7 @@ statement: formalized
 > * [Al88] Alon, N. (1988). "The linear arboricity of graphs." *Israel J. Math.* 62,
 >   pp. 311--325.
 
-*Quoted from [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 2 open and 2 solved. It also has 1 test statement and 1 API statement, counted here but not shown.
 
@@ -35,7 +35,7 @@ theorem linear_arboricity_conjecture {V : Type} [Fintype V] (G : SimpleGraph V)
     linearArboricity G ≤ (G.maxDegree + 2) / 2
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L77).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 77](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L77).
 
 ## `LinearArboricityConjecture.linear_arboricity_conjecture.variants.regular`
 
@@ -55,7 +55,7 @@ theorem linear_arboricity_conjecture.variants.regular {V : Type} [Fintype V] [No
     linearArboricity G = (Δ + 2) / 2
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L91).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L91).
 
 ## `LinearArboricityConjecture.linear_arboricity_conjecture.variants.cubic`
 
@@ -72,7 +72,7 @@ theorem linear_arboricity_conjecture.variants.cubic {V : Type} [Fintype V] [None
     linearArboricity G = 2
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L104).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L104).
 
 ## `LinearArboricityConjecture.linear_arboricity_conjecture.variants.alon`
 
@@ -92,7 +92,7 @@ theorem linear_arboricity_conjecture.variants.alon (ε : ℝ) (hε : 0 < ε) :
         (linearArboricity G : ℝ) ≤ (1 / 2 + ε) * Δ
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L118).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean#L118).
 
 ## Depends on
 
@@ -100,5 +100,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean)
+- [FormalConjectures/Wikipedia/LinearArboricityConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/LinearArboricityConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Linear_arboricity)

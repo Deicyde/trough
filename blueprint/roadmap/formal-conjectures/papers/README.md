@@ -1,11 +1,12 @@
 # Papers
 
-The 52 problem files in [FormalConjectures/Paper](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper) that state a research or textbook statement, at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), one article each.
+The 54 problem files in [FormalConjectures/Paper](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper) that state a research or textbook statement, at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
-## [The Auslander-Reiten conjecture to Gourevitch's series identity](part-01/README.md)
+## [Fanelli–Moscardelli conjecture… to Main conjecture on fusible…](part-01/README.md)
 
+- [Fanelli–Moscardelli conjecture on approximate roommates stability](part-01/fanelli-moscardelli-conjecture-on-approximate-ro.md)
 - [The Auslander-Reiten conjecture](part-01/the-auslander-reiten-conjecture.md)
 - [The Bollobás–Eldridge–Catlin conjecture on graph packing (1978)](part-01/the-bollobas-eldridge-catlin-conjecture-on-graph.md)
 - [Decidability of reachability for branching vector addition systems](part-01/decidability-of-reachability-for-branching-vecto.md)
@@ -25,13 +26,14 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Euclidean Ramsey configurations on a circle](part-01/euclidean-ramsey-configurations-on-a-circle.md)
 - [Is a finite locally free group scheme killed by its order?](part-01/is-a-finite-locally-free-group-scheme-killed-by.md)
 - [Main conjecture on fusible numbers](part-01/main-conjecture-on-fusible-numbers.md)
-- [Gourevitch's series identity](part-01/gourevitchs-series-identity.md)
 
-## [The Hall ratio conjecture… to Moments of the Riemann zeta…](part-02/README.md)
+## [Gourevitch's series identity to Reed's omega, delta, and chi…](part-02/README.md)
 
+- [Gourevitch's series identity](part-02/gourevitchs-series-identity.md)
 - [The Hall ratio conjecture (Harris 2019) — disproved](part-02/the-hall-ratio-conjecture-harris-2019-disproved.md)
 - [Hartshorne's conjecture on Vector Bundles](part-02/hartshornes-conjecture-on-vector-bundles.md)
 - [Conjectures around homogeneous topological spaces](part-02/conjectures-around-homogeneous-topological-space.md)
+- [The Irving–Leather conjecture on stable matchings](part-02/the-irving-leather-conjecture-on-stable-matching.md)
 - [Kaplansky's problem on the values of the $u$-invariant](part-02/kaplanskys-problem-on-the-values-of-the-u-invari.md)
 - [Kotzig's Conjecture](part-02/kotzigs-conjecture.md)
 - [Kurepa's conjecture](part-02/kurepas-conjecture.md)
@@ -47,11 +49,11 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Prime Tuples Conjecture](part-02/prime-tuples-conjecture.md)
 - [Pudlák's conjectures on incompleteness in the finite domain](part-02/pudlaks-conjectures-on-incompleteness-in-the-fin.md)
 - [Reed's omega, delta, and chi conjecture](part-02/reeds-omega-delta-and-chi-conjecture.md)
-- [Equivalents to the Riemann Hypothesis](part-02/equivalents-to-the-riemann-hypothesis.md)
-- [Moments of the Riemann zeta function on the critical line](part-02/moments-of-the-riemann-zeta-function-on-the-crit.md)
 
-## [Simple zeros of the Riemann… to Zagier's Conjecture on Multiple…](part-03/README.md)
+## [Equivalents to the Riemann… to Zagier's Conjecture on Multiple…](part-03/README.md)
 
+- [Equivalents to the Riemann Hypothesis](part-03/equivalents-to-the-riemann-hypothesis.md)
+- [Moments of the Riemann zeta function on the critical line](part-03/moments-of-the-riemann-zeta-function-on-the-crit.md)
 - [Simple zeros of the Riemann zeta function on the critical line](part-03/simple-zeros-of-the-riemann-zeta-function-on-the.md)
 - [Ringel's Conjecture](part-03/ringels-conjecture.md)
 - [Is Every Convex Polyhedron Rupert?](part-03/is-every-convex-polyhedron-rupert.md)

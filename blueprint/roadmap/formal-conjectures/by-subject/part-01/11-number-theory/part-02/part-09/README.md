@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 1203 to Sum of squares of divisors of…
+# Erdős Problem 1201 to Euclid-Mullin sequence
 
+- [Erdős Problem 1201](../../../../../erdos-problems/1200-1299/erdos-problem-1201.md)
+- [Erdős Problem 1202](../../../../../erdos-problems/1200-1299/erdos-problem-1202.md)
 - [Erdős Problem 1203](../../../../../erdos-problems/1200-1299/erdos-problem-1203.md)
 - [Erdős Problem 1204](../../../../../erdos-problems/1200-1299/erdos-problem-1204.md)
 - [Erdős Problem 1205](../../../../../erdos-problems/1200-1299/erdos-problem-1205.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Fractional parts of sums of reciprocals of Catalan numbers $C(n)$](../../../../../oeis/part-01/fractional-parts-of-sums-of-reciprocals-of-catal.md)
 - [Number of squares $\bmod n$](../../../../../oeis/part-01/number-of-squares-bmod-n.md)
 - [Euclid-Mullin sequence](../../../../../oeis/part-01/euclid-mullin-sequence.md)
-- [$a(n) = 2^(2^n)$](../../../../../oeis/part-01/a-n-2-2-n.md)
-- [Sum of squares of divisors of $n$](../../../../../oeis/part-01/sum-of-squares-of-divisors-of-n.md)

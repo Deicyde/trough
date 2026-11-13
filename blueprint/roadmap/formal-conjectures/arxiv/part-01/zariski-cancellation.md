@@ -15,7 +15,7 @@ statement: formalized
 >   OpenAI Math Release preprint (2026).
 >   https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-failure-of-complex-affine-space-cancellation-September-23-2026/paper.pdf
 
-*Quoted from [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 5 solved.
 
@@ -36,7 +36,7 @@ theorem zariski_cancellation_problem :
       IsCancellative k (MvPolynomial ι k)
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L58).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L58).
 
 ## `Arxiv.«2208.14736».zariski_cancellation_problem.variants.false_complex_four`
 
@@ -52,7 +52,7 @@ theorem zariski_cancellation_problem.variants.false_complex_four :
     ¬ IsCancellative ℂ (MvPolynomial (Fin 4) ℂ)
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L72).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L72).
 
 ## `Arxiv.«2208.14736».zariski_cancellation_problem.variants.dim_one`
 
@@ -65,7 +65,7 @@ theorem zariski_cancellation_problem.variants.dim_one
     {k : Type*} [Field k] : IsCancellative k k[X]
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L80).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 80](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L80).
 
 ## `Arxiv.«2208.14736».zariski_cancellation_problem.variants.dim_two`
 
@@ -78,7 +78,7 @@ theorem zariski_cancellation_problem.variants.dim_two {k : Type*} [Field k] :
     IsCancellative k (MvPolynomial (Fin 2) k)
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L88).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L88).
 
 ## `Arxiv.«2208.14736».zariski_cancellation_problem.variants.false_pos_card`
 
@@ -92,7 +92,7 @@ theorem zariski_cancellation_problem.variants.false_pos_card
     ¬ IsCancellative (ZMod p) (MvPolynomial ι (ZMod p))
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L96).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean#L96).
 
 ## Depends on
 
@@ -100,5 +100,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean)
+- [FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2208.14736/ZariskiCancellation.lean)
 - [arxiv/2208.14736](https://arxiv.org/abs/2208.14736)

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: MovingSofa.GerversSofa.ABφθSpec.existsUnique, MovingSofa.isMovingSofa_gerversSofa, MovingSofa.sofaConstant_eq, MovingSofa.sofaConstant_eq_volume_gerversSofa, MovingSofa.volume_eq_sofaConstant_iff_congruent_gerversSofa
+lean: MovingSofa.GerversSofa.ABφθSpec.existsUnique, MovingSofa.isMovingSofa_gerversSofa, MovingSofa.sofaConstant_eq, MovingSofa.sofaConstant_eq_volume_gerversSofa, MovingSofa.volume_eq_sofaConstant_iff_congruent_gerversSofa, MovingSofa.RomiksSofa.existsUnique_X, MovingSofa.RomiksSofa.existsUnique_Y, MovingSofa.romiksSofa_area_le_ambidextrousSofaConstant, MovingSofa.ambidextrousSofaConstant_eq_romiksSofa_area
 statement: formalized
 ---
 
@@ -13,9 +13,9 @@ statement: formalized
 > - [Ro18] Romik, D. _Differential equations and exact solutions in the moving sofa problem_. Experimental mathematics 27.3 (2018): 316-330.
 > - [Ba24] Baek, J. _Optimality of Gerver's Sofa_. arXiv preprint arXiv:2411.19826 (2024).
 
-*Quoted from [FormalConjectures/Wikipedia/MovingSofa.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MovingSofa.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/MovingSofa.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
-The file states 5 research or textbook statements: 4 solved and 1 textbook result. It also has 3 test statements, counted here but not shown.
+The file states 9 research or textbook statements: 1 open, 5 solved and 3 textbook results. It also has 7 test statements and 1 API statement, counted here but not shown.
 
 ## `MovingSofa.GerversSofa.ABφθSpec.existsUnique`
 
@@ -28,7 +28,7 @@ theorem ABφθSpec.existsUnique : ∃! ABφθ : ℝ × ℝ × ℝ × ℝ,
     ABφθSpec ABφθ.1 ABφθ.2.1 ABφθ.2.2.1 ABφθ.2.2.2
 ```
 
-Category `textbook`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 164](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MovingSofa.lean#L164).
+Category `textbook`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 164](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L164).
 
 ## `MovingSofa.isMovingSofa_gerversSofa`
 
@@ -40,7 +40,7 @@ Solved: stated here; a Lean proof is at [https://github.com/dawidmtrela-dotcom/G
 theorem isMovingSofa_gerversSofa : ∃ m, IsMovingSofa gerversSofa m
 ```
 
-Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 212](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MovingSofa.lean#L212).
+Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 212](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L212).
 
 ## `MovingSofa.sofaConstant_eq`
 
@@ -52,7 +52,7 @@ Solved: stated here; a Lean proof is at [https://github.com/deancureton/MovingSo
 theorem sofaConstant_eq : sofaConstant = sofaConstant_eq.answer
 ```
 
-Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 238](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MovingSofa.lean#L238).
+Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 238](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L238).
 
 ## `MovingSofa.sofaConstant_eq_volume_gerversSofa`
 
@@ -64,7 +64,7 @@ Solved: stated here; a Lean proof is at [https://github.com/deancureton/MovingSo
 theorem sofaConstant_eq_volume_gerversSofa : sofaConstant = volume gerversSofa
 ```
 
-Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 248](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MovingSofa.lean#L248).
+Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 248](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L248).
 
 ## `MovingSofa.volume_eq_sofaConstant_iff_congruent_gerversSofa`
 
@@ -82,7 +82,60 @@ theorem volume_eq_sofaConstant_iff_congruent_gerversSofa (s : Set ℝ²)
     volume s = sofaConstant ↔ ∃ g : E(2), s = g '' gerversSofa
 ```
 
-Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 262](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MovingSofa.lean#L262).
+Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 262](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L262).
+
+## `MovingSofa.RomiksSofa.existsUnique_X`
+
+Textbook result, proved here.
+
+> The cubic $x^2 (x + 3) = 8$ has exactly one real root.
+
+```lean
+theorem existsUnique_X : ∃! x : ℝ, x ^ 2 * (x + 3) = 8
+```
+
+Category `textbook`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 357](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L357).
+
+## `MovingSofa.RomiksSofa.existsUnique_Y`
+
+Textbook result, proved here.
+
+> The cubic $x (4 x^2 + 3) = 1$ has exactly one real root.
+
+```lean
+theorem existsUnique_Y : ∃! x : ℝ, x * (4 * x ^ 2 + 3) = 1
+```
+
+Category `textbook`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 368](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L368).
+
+## `MovingSofa.romiksSofa_area_le_ambidextrousSofaConstant`
+
+Solved: stated here without proof.
+
+> Romik's ambidextrous sofa has area `RomiksSofa.area` [Ro18, Thm. 5], so the ambidextrous sofa
+> constant is at least that.
+
+```lean
+theorem romiksSofa_area_le_ambidextrousSofaConstant :
+    ENNReal.ofReal RomiksSofa.area ≤ ambidextrousSofaConstant
+```
+
+Category `research solved`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 396](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L396).
+
+## `MovingSofa.ambidextrousSofaConstant_eq_romiksSofa_area`
+
+Open: stated without proof.
+
+> Romik's ambidextrous sofa is optimal. Romik derived it from local-optimality considerations and
+> proposed it as the solution [Ro18, §1.2, §5]; [Wikipedia] records it as the conjectured optimum.
+> Even its local optimality is open [Ro18, §7, Problem 1].
+
+```lean
+theorem ambidextrousSofaConstant_eq_romiksSofa_area :
+    ambidextrousSofaConstant = ENNReal.ofReal RomiksSofa.area
+```
+
+Category `research open`; AMS [49 Calculus of variations and optimal control; optimization](../../by-subject/part-02/49-calculus-of-variations-and-optimal-control-optim/README.md). Declared in [FormalConjectures/Wikipedia/MovingSofa.lean, line 406](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean#L406).
 
 ## Depends on
 
@@ -90,5 +143,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/MovingSofa.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/MovingSofa.lean)
+- [FormalConjectures/Wikipedia/MovingSofa.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/MovingSofa.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Moving_sofa_problem)

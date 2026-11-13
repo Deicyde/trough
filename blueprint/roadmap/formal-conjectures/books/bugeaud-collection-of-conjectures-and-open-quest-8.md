@@ -34,7 +34,7 @@ statement: formalized
 >     Mathematik 330 (1982): 159-172. Its transcendence method was the first attack on the
 >     problem; Nishioka later reported a gap in its main proof.
 
-*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved.
 
@@ -62,7 +62,7 @@ theorem adamczewski_faverjon {r : ℕ} (b : Fin r → ℕ) (hb : ∀ i, 2 ≤ b 
     AlgebraicIndependent ℚ ξ
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean#L71).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean#L71).
 
 ## `Bugeaud32.problem_10_32.variants.strong`
 
@@ -79,7 +79,7 @@ theorem problem_10_32.variants.strong (ξ : ℝ) (hξ : Irrational ξ) (b₁ b�
     (h₁ : IsBroadlyAutomaticInBase b₁ ξ) (h₂ : IsBroadlyAutomaticInBase b₂ ξ) : False
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean#L85).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean#L85).
 
 ## `Bugeaud32.problem_10_32`
 
@@ -95,7 +95,7 @@ theorem problem_10_32 :
       IsAutomaticInBase b₁ ξ ∧ IsAutomaticInBase b₂ ξ
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean#L103).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean#L103).
 
 ## Depends on
 
@@ -103,5 +103,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean)
+- [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_32.lean)
 - [AF20](https://arxiv.org/abs/2012.08283)

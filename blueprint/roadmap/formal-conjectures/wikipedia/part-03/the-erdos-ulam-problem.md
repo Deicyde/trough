@@ -18,7 +18,7 @@ statement: formalized
 > * [AE45] Anning, N. H. and Erdős, P. (1945). "Integral distances." *Bull. Amer. Math. Soc.* 51,
 >   pp. 598--600.
 
-*Quoted from [FormalConjectures/Wikipedia/ErdosUlamProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ErdosUlamProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/ErdosUlamProblem.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ErdosUlamProblem.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved. It also has 1 test statement, counted here but not shown.
 
@@ -38,7 +38,7 @@ theorem erdos_ulam_problem :
     ∃ S : Set (EuclideanSpace ℝ (Fin 2)), Dense S ∧ PairwiseRationalDistances S
 ```
 
-Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ErdosUlamProblem.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ErdosUlamProblem.lean#L56).
+Category `research open`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ErdosUlamProblem.lean, line 56](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ErdosUlamProblem.lean#L56).
 
 ## `ErdosUlamProblem.erdos_ulam_problem.variants.anning_erdos`
 
@@ -59,7 +59,7 @@ theorem erdos_ulam_problem.variants.anning_erdos
       S ⊆ {x | ∃ t : ℝ, x = a + t • (b - a)}
 ```
 
-Category `research solved`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ErdosUlamProblem.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ErdosUlamProblem.lean#L82).
+Category `research solved`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ErdosUlamProblem.lean, line 82](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ErdosUlamProblem.lean#L82).
 
 ## `ErdosUlamProblem.erdos_ulam_problem.variants.solymosi_de_zeeuw`
 
@@ -84,7 +84,7 @@ theorem erdos_ulam_problem.variants.solymosi_de_zeeuw
         {x ∈ S | dist x c ≠ ρ}.Finite)
 ```
 
-Category `research solved`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ErdosUlamProblem.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ErdosUlamProblem.lean#L96).
+Category `research solved`; AMS [51 Geometry](../../by-subject/part-02/51-geometry/README.md), [52 Convex and discrete geometry](../../by-subject/part-02/52-convex-and-discrete-geometry/README.md). Declared in [FormalConjectures/Wikipedia/ErdosUlamProblem.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ErdosUlamProblem.lean#L96).
 
 ## Depends on
 
@@ -92,5 +92,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/ErdosUlamProblem.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ErdosUlamProblem.lean)
+- [FormalConjectures/Wikipedia/ErdosUlamProblem.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ErdosUlamProblem.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Ulam_problem)

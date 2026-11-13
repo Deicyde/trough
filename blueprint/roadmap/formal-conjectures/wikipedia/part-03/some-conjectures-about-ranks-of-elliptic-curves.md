@@ -23,7 +23,7 @@ statement: formalized
 > - [Stoll] Michael Stoll. EllipticCurves, a Lean 4 formalization of the Mordell–Weil theorem
 >    and explicit 2-descent, https://github.com/MichaelStollBayreuth/EllipticCurves
 
-*Quoted from [FormalConjectures/Wikipedia/EllipticCurveRank.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/EllipticCurveRank.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 23 research or textbook statements: 12 open, 10 solved and 1 textbook result. It also has 6 test statements and 4 API statements, counted here but not shown.
 
@@ -43,7 +43,7 @@ theorem mordell_weil {K} [Field K] [NumberField K] [DecidableEq K] (E : Affine K
     Module.Finite ℤ E.Point
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L68).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 68](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L68).
 
 ## `EllipticCurveRank.RatEllipticCurve.card_heightLE_div_pow_five_div_six_tensto`
 
@@ -58,7 +58,7 @@ theorem card_heightLE_div_pow_five_div_six_tensto :
       (𝓝 (2 ^ (4 / 3 : ℝ) * 3 ^ (-3 / 2 : ℝ) / (riemannZeta 10).re))
 ```
 
-Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L100).
+Category `textbook`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L100).
 
 ## `EllipticCurveRank.RatEllipticCurve.half_rank_zero_and_half_rank_one`
 
@@ -74,7 +74,7 @@ theorem half_rank_zero_and_half_rank_one (r : ℕ) (hr : r = 0 ∨ r = 1) :
       (fun H ↦ ({E ∈ heightLE H | E.rank = r}.ncard / (heightLE H).ncard : ℝ)) (𝓝 (1 / 2))
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L109).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L109).
 
 ## `EllipticCurveRank.RatEllipticCurve.avg_rank_lt_0885`
 
@@ -88,7 +88,7 @@ theorem avg_rank_lt_0885 :
     atTop.limsup (fun H ↦ ((∑ᶠ E : heightLE H, E.1.rank) / (heightLE H).ncard : ℝ)) < 0.885
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L117).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L117).
 
 ## `EllipticCurveRank.RatEllipticCurve._08375_le_density_rank_zero_one`
 
@@ -103,7 +103,7 @@ theorem _08375_le_density_rank_zero_one : 0.8375 ≤ atTop.liminf
     fun H ↦ ({E ∈ heightLE H | E.rank = 0 ∨ E.rank = 1}.ncard / (heightLE H).ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L125).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L125).
 
 ## `EllipticCurveRank.RatEllipticCurve._02062_le_density_rank_zero`
 
@@ -117,7 +117,7 @@ theorem _02062_le_density_rank_zero : 0.2062 ≤ atTop.liminf
     fun H ↦ ({E ∈ heightLE H | E.rank = 0}.ncard / (heightLE H).ncard : ℝ)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L132).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L132).
 
 ## `EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture`
 
@@ -140,7 +140,7 @@ theorem goldfeld_conjecture (E : RatEllipticCurve) (r : ℕ) (hr : r = 0 ∨ r =
       (𝓝 (1 / 2))
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 193](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L193).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 193](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L193).
 
 ## `EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.two_le`
 
@@ -163,7 +163,7 @@ theorem goldfeld_conjecture.variants.two_le (E : RatEllipticCurve) (r : ℕ) (hr
       (𝓝 0)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 209](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L209).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 209](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L209).
 
 ## `EllipticCurveRank.RatEllipticCurve.goldfeld_conjecture.variants.squarefree`
 
@@ -184,7 +184,7 @@ theorem goldfeld_conjecture.variants.squarefree (E : RatEllipticCurve) (r : ℕ)
       (𝓝 (1 / 2))
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 221](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L221).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 221](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L221).
 
 ## `EllipticCurveRank.RatEllipticCurve.unbounded_rank_conjecture`
 
@@ -197,7 +197,7 @@ Open: stated without proof.
 theorem unbounded_rank_conjecture (n : ℕ) : ∃ E : RatEllipticCurve, n ≤ E.rank
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 232](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L232).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 232](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L232).
 
 ## `EllipticCurveRank.RatEllipticCurve.finite_twentyone_lt_finrank`
 
@@ -213,7 +213,7 @@ Open: stated without proof.
 theorem finite_twentyone_lt_finrank : {E : RatEllipticCurve | 21 < E.rank}.Finite
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 241](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L241).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 241](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L241).
 
 ## `EllipticCurveRank.RatEllipticCurve.rank_height_count_asymptotic`
 
@@ -238,7 +238,7 @@ theorem rank_height_count_asymptotic (r : ℕ) (h₁ : 1 ≤ r) (h₂ : r ≤ 20
         {E ∈ heightLE H | r ≤ E.rank}.ncard = (H : ℝ) ^ ((21 - r) / 24 + f H)
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 256](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L256).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 256](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L256).
 
 ## `EllipticCurveRank.RatEllipticCurve.twentyone_le_rank_height_count_asymptotic`
 
@@ -253,7 +253,7 @@ theorem twentyone_le_rank_height_count_asymptotic :
       ∀ H : ℕ, 1 < H → {E ∈ heightLE H | 21 ≤ E.rank}.ncard ≤ (H : ℝ) ^ f H
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 265](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L265).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 265](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L265).
 
 ## `EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtyone`
 
@@ -269,7 +269,7 @@ Solved: stated here without proof.
 theorem exists_rank_ge_thirtyone : ∃ E : RatEllipticCurve, 31 ≤ E.rank
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 276](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L276).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 276](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L276).
 
 ## `EllipticCurveRank.RatEllipticCurve.exists_rank_ge_thirtytwo`
 
@@ -284,7 +284,7 @@ Open: stated without proof.
 theorem exists_rank_ge_thirtytwo : ∃ E : RatEllipticCurve, 32 ≤ E.rank
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 284](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L284).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 284](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L284).
 
 ## `EllipticCurveRank.WeierstrassCurve.thirtyone_le_rank_claudeAlpogeHowell31`
 
@@ -296,7 +296,7 @@ Solved: stated here without proof.
 theorem thirtyone_le_rank_claudeAlpogeHowell31 : 31 ≤ finrank ℤ claudeAlpogeHowell31.Point
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 321](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L321).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 321](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L321).
 
 ## `EllipticCurveRank.WeierstrassCurve.rank_claudeAlpogeHowell31`
 
@@ -310,7 +310,7 @@ Open: stated without proof.
 theorem rank_claudeAlpogeHowell31 : finrank ℤ claudeAlpogeHowell31.Point = 31
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 329](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L329).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 329](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L329).
 
 ## `EllipticCurveRank.WeierstrassCurve.thirty_le_rank_ranksunbounded30`
 
@@ -322,7 +322,7 @@ Solved: stated here without proof.
 theorem thirty_le_rank_ranksunbounded30 : 30 ≤ finrank ℤ ranksunbounded30.Point
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 357](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L357).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 357](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L357).
 
 ## `EllipticCurveRank.WeierstrassCurve.rank_ranksunbounded30`
 
@@ -334,7 +334,7 @@ Open: stated without proof.
 theorem rank_ranksunbounded30 : finrank ℤ ranksunbounded30.Point = 30
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 362](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L362).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 362](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L362).
 
 ## `EllipticCurveRank.WeierstrassCurve.twentynine_le_rank_elkiesKlagsbrun29`
 
@@ -346,7 +346,7 @@ Solved: stated here without proof.
 theorem twentynine_le_rank_elkiesKlagsbrun29 : 29 ≤ finrank ℤ elkiesKlagsbrun29.Point
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 389](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L389).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 389](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L389).
 
 ## `EllipticCurveRank.WeierstrassCurve.rank_elkiesKlagsbrun29`
 
@@ -358,7 +358,7 @@ Open: stated without proof.
 theorem rank_elkiesKlagsbrun29 : finrank ℤ elkiesKlagsbrun29.Point = 29
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 394](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L394).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 394](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L394).
 
 ## `EllipticCurveRank.WeierstrassCurve.twentyeight_le_rank_elkies28`
 
@@ -370,7 +370,7 @@ Solved: stated here without proof.
 theorem twentyeight_le_rank_elkies28 : 28 ≤ finrank ℤ elkies28.Point
 ```
 
-Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 420](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L420).
+Category `research solved`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 420](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L420).
 
 ## `EllipticCurveRank.WeierstrassCurve.rank_elkies28`
 
@@ -382,7 +382,7 @@ Open: stated without proof.
 theorem rank_elkies28 : finrank ℤ elkies28.Point = 28
 ```
 
-Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 425](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L425).
+Category `research open`; AMS [11 Number theory](../../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/EllipticCurveRank.lean, line 425](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean#L425).
 
 ## Depends on
 
@@ -390,5 +390,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/EllipticCurveRank.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/EllipticCurveRank.lean)
+- [FormalConjectures/Wikipedia/EllipticCurveRank.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/EllipticCurveRank.lean)
 - [https://ems.press/journals/jems/articles/16228](https://ems.press/journals/jems/articles/16228)

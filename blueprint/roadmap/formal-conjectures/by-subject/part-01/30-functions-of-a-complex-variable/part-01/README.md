@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Erdős Problem 114 to Erdős Problem 1044
+# Erdős Problem 114 to Erdős Problem 1043
 
 - [Erdős Problem 114](../../../../erdos-problems/100-199/part-01/erdos-problem-114.md)
 - [Erdős Problem 115](../../../../erdos-problems/100-199/part-01/erdos-problem-115.md)
@@ -22,5 +22,5 @@ navigation: transparent
 - [Erdős Problem 967](../../../../erdos-problems/900-999/part-03/erdos-problem-967.md)
 - [Erdős Problem 974](../../../../erdos-problems/900-999/part-04/erdos-problem-974.md)
 - [Erdős Problem 990](../../../../erdos-problems/900-999/part-04/erdos-problem-990.md)
+- [Erdős Problem 1042](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1042.md)
 - [Erdős Problem 1043](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1043.md)
-- [Erdős Problem 1044](../../../../erdos-problems/1000-1099/part-02/erdos-problem-1044.md)

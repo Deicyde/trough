@@ -50,7 +50,7 @@ statement: formalized
 >   Release preprint (2026).
 >   https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/An-explicit-counterexample-to-the-Auslander-Reiten-conjecture-September-23-2026/paper.pdf
 
-*Quoted from [FormalConjectures/Paper/AuslanderReiten.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/AuslanderReiten.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/AuslanderReiten.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/AuslanderReiten.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open, 2 solved and 1 textbook result. It also has 1 test statement, counted here but not shown.
 
@@ -79,7 +79,7 @@ theorem auslander_reiten :
       Module.Projective Λ M
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/AuslanderReiten.lean#L109).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [16 Associative rings and algebras](../../by-subject/part-01/16-associative-rings-and-algebras/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 109](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/AuslanderReiten.lean#L109).
 
 ## `AuslanderReiten.auslander_reiten.variants.commutative`
 
@@ -96,7 +96,7 @@ theorem auslander_reiten.variants.commutative
     Module.Projective R M
 ```
 
-Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 130](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/AuslanderReiten.lean#L130).
+Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 130](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/AuslanderReiten.lean#L130).
 
 ## `AuslanderReiten.auslander_reiten.variants.local_free`
 
@@ -112,7 +112,7 @@ theorem auslander_reiten.variants.local_free [IsLocalRing R]
     Module.Free R M
 ```
 
-Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 141](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/AuslanderReiten.lean#L141).
+Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 141](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/AuslanderReiten.lean#L141).
 
 ## `AuslanderReiten.auslander_reiten.variants.normal`
 
@@ -129,7 +129,7 @@ theorem auslander_reiten.variants.normal [IsDomain R] [IsIntegrallyClosed R]
     Module.Projective R M
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/AuslanderReiten.lean#L153).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 153](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/AuslanderReiten.lean#L153).
 
 ## `AuslanderReiten.auslander_reiten.variants.regular_local`
 
@@ -145,7 +145,7 @@ theorem auslander_reiten.variants.regular_local [IsRegularLocalRing R]
     Module.Free R M
 ```
 
-Category `textbook`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/AuslanderReiten.lean#L166).
+Category `textbook`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [18 Category theory; homological algebra](../../by-subject/part-01/18-category-theory-homological-algebra/README.md). Declared in [FormalConjectures/Paper/AuslanderReiten.lean, line 166](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/AuslanderReiten.lean#L166).
 
 ## Depends on
 
@@ -153,5 +153,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/AuslanderReiten.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/AuslanderReiten.lean)
+- [FormalConjectures/Paper/AuslanderReiten.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/AuslanderReiten.lean)
 - [PDF](https://www.ams.org/journals/proc/1975-052-01/S0002-9939-1975-0389977-6/S0002-9939-1975-0389977-6.pdf)

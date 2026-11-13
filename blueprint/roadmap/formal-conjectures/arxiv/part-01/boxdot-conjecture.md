@@ -16,7 +16,7 @@ statement: formalized
 > - [The Boxdot Conjecture and the Generalized McKinsey Axiom](https://ojs.victoria.ac.nz/ajl/article/view/4891)
 >   by *Christopher Steinsvold*, Australasian Journal of Logic
 
-*Quoted from [FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 solved. It also has 3 API statements, counted here but not shown.
 
@@ -31,7 +31,7 @@ Solved: stated here; a Lean proof is at [https://github.com/FormalizedFormalLogi
 theorem BoxdotConjecture (L : NormalModalLogic) (H : ∀ φ, L ⊢ ■ φ ↔ KT ⊢ φ) : L.thms ⊆ KT.thms
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean, line 238](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean#L238).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md). Declared in [FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean, line 238](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean#L238).
 
 ## Depends on
 
@@ -39,5 +39,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean)
+- [FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/1308.0994/BoxdotConjecture.lean)
 - [arxiv/1308.0994](https://arxiv.org/abs/1308.0994)

@@ -41,7 +41,7 @@ statement: formalized
 >   Grégoire Sutre* (2026), a recent preprint claiming a positive resolution to the conjecture:
 >   reachability for branching vector addition systems is decidable.
 
-*Quoted from [FormalConjectures/Paper/BranchingVAS.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BranchingVAS.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Paper/BranchingVAS.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BranchingVAS.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 solved. It also has 4 test statements and 3 API statements, counted here but not shown.
 
@@ -64,7 +64,7 @@ theorem reachability_decidable :
     ComputablePred fun p : Σ d : ℕ, Bvas d × (Fin d → ℤ) => p.2.1.Reachable p.2.2
 ```
 
-Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/BranchingVAS.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BranchingVAS.lean#L143).
+Category `research solved`; AMS [03 Mathematical logic and foundations](../../by-subject/part-01/03-mathematical-logic-and-foundations/README.md), [68 Computer science](../../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Paper/BranchingVAS.lean, line 143](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BranchingVAS.lean#L143).
 
 ## Depends on
 
@@ -72,5 +72,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Paper/BranchingVAS.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Paper/BranchingVAS.lean)
+- [FormalConjectures/Paper/BranchingVAS.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Paper/BranchingVAS.lean)
 - [The covering and boundedness problems for branching vector addition systems](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSTTCS.2009.2317)

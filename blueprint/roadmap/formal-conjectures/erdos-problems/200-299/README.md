@@ -101,5 +101,6 @@ The Erdős problems numbered 200 to 299 that Formal Conjectures states, one arti
 - [Erdős Problem 294](part-05/erdos-problem-294.md)
 - [Erdős Problem 295](part-05/erdos-problem-295.md)
 - [Erdős Problem 296](part-05/erdos-problem-296.md)
+- [Erdős Problem 297](part-05/erdos-problem-297.md)
 - [Erdős Problem 298](part-05/erdos-problem-298.md)
 - [Erdős Problem 299](part-05/erdos-problem-299.md)

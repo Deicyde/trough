@@ -7,5 +7,5 @@ The 7 problems with a statement whose `AMS` attribute names 33, Special function
 - [Particular values of the Riemann zeta function](../../../wikipedia/part-07/particular-values-of-the-riemann-zeta-function.md)
 - [Schanuel's Conjecture](../../../wikipedia/part-07/schanuels-conjecture.md)
 - [Open questions on transcendence of numbers](../../../wikipedia/part-09/open-questions-on-transcendence-of-numbers.md)
-- [Gourevitch's series identity](../../../papers/part-01/gourevitchs-series-identity.md)
+- [Gourevitch's series identity](../../../papers/part-02/gourevitchs-series-identity.md)
 - [Tao's Optimization Constant 7b / The Irrationality Measure of $\Gamma(1/4)$](../../../optimization-constants/taos-optimization-constant-7b-the-irrationality.md)

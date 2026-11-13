@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 355 to Erdős Problem 376
+# Erdős Problem 351 to Erdős Problem 373
 
+- [Erdős Problem 351](../../../../../erdos-problems/300-399/part-03/erdos-problem-351.md)
+- [Erdős Problem 354](../../../../../erdos-problems/300-399/part-03/erdos-problem-354.md)
 - [Erdős Problem 355](../../../../../erdos-problems/300-399/part-03/erdos-problem-355.md)
 - [Erdős Problem 357](../../../../../erdos-problems/300-399/part-03/erdos-problem-357.md)
 - [Erdős Problem 358](../../../../../erdos-problems/300-399/part-03/erdos-problem-358.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Erdős Problem 371](../../../../../erdos-problems/300-399/part-04/erdos-problem-371.md)
 - [Erdős Problem 372](../../../../../erdos-problems/300-399/part-04/erdos-problem-372.md)
 - [Erdős Problem 373](../../../../../erdos-problems/300-399/part-04/erdos-problem-373.md)
-- [Erdős Problem 375](../../../../../erdos-problems/300-399/part-04/erdos-problem-375.md)
-- [Erdős Problem 376](../../../../../erdos-problems/300-399/part-04/erdos-problem-376.md)
