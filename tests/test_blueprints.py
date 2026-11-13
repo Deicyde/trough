@@ -327,6 +327,11 @@ def test_a_title_block_in_the_text_is_dropped():
     assert writer().statement(r"\title[Short]{A long title} \date{\today} \author{A \and B} Text.") == "Text."
 
 
+def test_a_thebibliography_is_a_list():
+    tex_ = "\\begin{thebibliography}{9}\n\\bibitem{a}\nL.~Carlitz, \\emph{Note}.\n\n\\bibitem[IR]{b} K. Ireland.\n\\end{thebibliography}"
+    assert writer().statement(tex_) == "- L. Carlitz, *Note*.\n- K. Ireland."
+
+
 def test_a_proof_inside_a_proof_is_part_of_it(tmp_path):
     (tmp_path / "web.tex").write_text(
         "\\begin{document}\\chapter{C}\\begin{lemma}\\label{a} A. \\end{lemma}\n"

@@ -520,6 +520,9 @@ class Writer:
                 elif env in LISTS:
                     flush()
                     out.extend(self.list_block(env, body))
+                elif env == "thebibliography":
+                    flush()
+                    out.extend(self.list_block("itemize", bibliography_items(body)))
                 elif env in QUOTES:
                     flush()
                     out.append(Quote(self.blocks(body)))
@@ -920,6 +923,14 @@ class Writer:
     def plain_text(self, tex: str) -> str:
         writer = Writer(self.macros, self.ref, self.bib, markdown=False)
         return re.sub(r"\s+", " ", writer.inline(tex)).strip()
+
+
+def bibliography_items(body: str) -> str:
+    """A thebibliography's body as an itemize body: the widest label goes, and each \\bibitem, with its
+    key and any printed label, is an \\item."""
+    widest = argument(body, 0)
+    body = body[widest[1]:] if widest else body
+    return re.sub(r"\\bibitem\s*(?:\[[^\]]*\])?\s*\{[^}]*\}", r"\\item ", body)
 
 
 def cited(text: str) -> list[str]:
