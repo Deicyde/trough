@@ -7,7 +7,7 @@ statement: formalized
 
 # Bernoulli identities via Stirling and harmonic numbers
 
-11 results, 3 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html).
+11 results, 3 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html).
 
 ## Poly-Bernoulli polynomials
 
@@ -26,7 +26,7 @@ which is how the source defines them.
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, definition of poly-Bernoulli polynomials before Corollary 3.
 
-Formalized by `MetaMathlibExt.polyBernoulliPoly`, a definition declared in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#poly-bernoulli-poly).
+Formalized by `MetaMathlibExt.polyBernoulliPoly`, a definition declared in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#poly-bernoulli-poly).
 
 ## Poly-Bernoulli polynomials at zero
 
@@ -38,7 +38,7 @@ poly-Bernoulli number of index $n$ and order $k$: $B_n^{(k)}(0) = B_n^{(k)}$.
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, definition of poly-Bernoulli polynomials before Corollary 3.
 
-Formalized by `MetaMathlibExt.polyBernoulliPoly_zero`, a theorem declared in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#poly-bernoulli-poly-zero).
+Formalized by `MetaMathlibExt.polyBernoulliPoly_zero`, a theorem declared in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#poly-bernoulli-poly-zero).
 
 ## Poly-Bernoulli polynomials of degree zero
 
@@ -49,7 +49,7 @@ $x$, the poly-Bernoulli polynomial of degree $0$ and order $k$ satisfies $B_0^{(
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, definition of poly-Bernoulli polynomials before Corollary 3.
 
-Formalized by `MetaMathlibExt.polyBernoulliPoly_zero_index`, a theorem declared in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#poly-bernoulli-poly-zero-index).
+Formalized by `MetaMathlibExt.polyBernoulliPoly_zero_index`, a theorem declared in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#poly-bernoulli-poly-zero-index).
 
 ## Bernoulli numbers from Stirling and harmonic numbers
 
@@ -71,7 +71,7 @@ sides are then $H_j$); that case is not included here.
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Theorem 1, equation (5).
 
-Stated but not proved: `MetaMathlibExt.sum_stirling_harmonic_eq_bernoulli` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-stirling-harmonic-eq-bernoulli).
+Stated but not proved: `MetaMathlibExt.sum_stirling_harmonic_eq_bernoulli` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-stirling-harmonic-eq-bernoulli).
 
 ## A Bernoulli–harmonic power-sum identity
 
@@ -86,7 +86,7 @@ m^n (H_m - H_n) - \sum_{j=1}^{m} \frac{(m-j)^n}{j}.$$
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Corollary 1, equation (11).
 
-Stated but not proved: `MetaMathlibExt.sum_bernoulli_harmonic_power_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-harmonic-power-identity).
+Stated but not proved: `MetaMathlibExt.sum_bernoulli_harmonic_power_identity` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-harmonic-power-identity).
 
 ## A weighted Bernoulli sum with factors $1 - 2^j$
 
@@ -99,7 +99,7 @@ $$\sum_{j=1}^{n} \left(\binom{n}{j} + 1\right) \frac{B_j}{j} \left(1 - 2^j\right
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Corollary 2, equation (14).
 
-Stated but not proved: `MetaMathlibExt.sum_bernoulli_one_sub_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-one-sub-two-pow).
+Stated but not proved: `MetaMathlibExt.sum_bernoulli_one_sub_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-one-sub-two-pow).
 
 ## Sums of Bernoulli numbers via poly-Bernoulli polynomials
 
@@ -114,7 +114,7 @@ $$\sum_{j=0}^{n} B_j = B_n^{(2)}(1) + B_n - B_n^{(2)} - 1.$$
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.sum_bernoulli_eq_polyBernoulli` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-eq-poly-bernoulli).
+Stated but not proved: `MetaMathlibExt.sum_bernoulli_eq_polyBernoulli` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-eq-poly-bernoulli).
 
 ## The congruence $\sum_{j=0}^{p} pB_j \equiv -1 \pmod p$
 
@@ -127,7 +127,7 @@ numerator times the inverse of its denominator in $\mathbb{Z}/p\mathbb{Z}$) equa
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Corollary 4, equation (23).
 
-Stated but not proved: `MetaMathlibExt.sum_prime_mul_bernoulli_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-prime-mul-bernoulli-mod-prime).
+Stated but not proved: `MetaMathlibExt.sum_prime_mul_bernoulli_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-prime-mul-bernoulli-mod-prime).
 
 ## The congruence $\sum_{j=0}^{p-3} B_j \equiv -1 \pmod p$
 
@@ -140,7 +140,7 @@ $p$ (its numerator times the inverse of its denominator in $\mathbb{Z}/p\mathbb{
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Corollary 4, equation (24).
 
-Stated but not proved: `MetaMathlibExt.sum_bernoulli_to_prime_sub_three_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-to-prime-sub-three-mod-pri).
+Stated but not proved: `MetaMathlibExt.sum_bernoulli_to_prime_sub_three_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-bernoulli-to-prime-sub-three-mod-pri).
 
 ## The congruence $\sum_{j=0}^{p} E_j(0) \equiv 3/2 \pmod p$
 
@@ -156,7 +156,7 @@ $2e^{xt}/(e^t + 1)$ and begin $1, -\tfrac12, 0, \tfrac14$.
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Corollary 4, equation (25).
 
-Stated but not proved: `MetaMathlibExt.sum_euler_eval_zero_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-euler-eval-zero-mod-prime).
+Stated but not proved: `MetaMathlibExt.sum_euler_eval_zero_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#sum-euler-eval-zero-mod-prime).
 
 ## The congruence $p\sum_{j=0}^{p} B_j/(p-j+1) \equiv -1 \pmod p$
 
@@ -172,7 +172,7 @@ inverse of its denominator in $\mathbb{Z}/p\mathbb{Z}$) equals $-1$.
 
 - Levent Kargın and Merve Mutluer, *A New Expression for the Bernoulli Numbers and Its Applications*, INTEGERS 26 (2026), Article A120, Corollary 4, equation (26).
 
-Stated but not proved: `MetaMathlibExt.prime_mul_sum_bernoulli_div_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#prime-mul-sum-bernoulli-div-mod-prime).
+Stated but not proved: `MetaMathlibExt.prime_mul_sum_bernoulli_div_mod_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliStirlingHarmonicWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html#prime-mul-sum-bernoulli-div-mod-prime).
 
 ## Depends on
 
@@ -181,4 +181,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bernoulli identities via Stirling and harmonic numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/bernoulli-identities-via-stirling-and-harmonic-n)

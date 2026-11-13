@@ -7,7 +7,7 @@ statement: formalized
 
 # 2-adic odd part of factorials of powers of two
 
-45 results, 26 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html).
+45 results, 26 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html).
 
 ## Odd part
 
@@ -20,7 +20,7 @@ $\operatorname{od}(0) = 0$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of od.
 
-Formalized by `MetaMathlibExt.oddPart`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part).
+Formalized by `MetaMathlibExt.oddPart`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part).
 
 ## Odd part as a quotient by a power of two
 
@@ -32,7 +32,7 @@ $\nu_2(n)$ is the exponent of $2$ in the prime factorization of $n$, with $\nu_2
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of od.
 
-Formalized by `MetaMathlibExt.oddPart_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-eq).
+Formalized by `MetaMathlibExt.oddPart_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-eq).
 
 ## Odd-range product
 
@@ -44,7 +44,7 @@ it equals $1$ when there are none.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of odpr.
 
-Formalized by `MetaMathlibExt.oddRangeProduct`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-range-product).
+Formalized by `MetaMathlibExt.oddRangeProduct`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-range-product).
 
 ## Odd-range product as a filtered product
 
@@ -56,7 +56,7 @@ the closed interval $[l, m]$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of odpr.
 
-Formalized by `MetaMathlibExt.oddRangeProduct_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-range-product-eq).
+Formalized by `MetaMathlibExt.oddRangeProduct_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-range-product-eq).
 
 ## Odd product block
 
@@ -68,7 +68,7 @@ products.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of h.
 
-Formalized by `MetaMathlibExt.oddProductBlock`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-product-block).
+Formalized by `MetaMathlibExt.oddProductBlock`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-product-block).
 
 ## Odd product block as an odd-range product
 
@@ -80,7 +80,7 @@ $2^{m-1}+1 \le j \le 2^m-1$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of h.
 
-Formalized by `MetaMathlibExt.oddProductBlock_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-product-block-eq).
+Formalized by `MetaMathlibExt.oddProductBlock_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-product-block-eq).
 
 ## Unstable bits
 
@@ -96,7 +96,7 @@ The paper assumes $e > d$ only when stating Theorem 1, so the definition itself 
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of uns.
 
-Formalized by `MetaMathlibExt.unstableBits`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-bits).
+Formalized by `MetaMathlibExt.unstableBits`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-bits).
 
 ## Formula for the unstable bits
 
@@ -111,7 +111,7 @@ bits of $\operatorname{od}((2^e)!)$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of uns.
 
-Formalized by `MetaMathlibExt.unstableBits_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-bits-eq).
+Formalized by `MetaMathlibExt.unstableBits_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-bits-eq).
 
 ## Stable bits of the odd part of a factorial
 
@@ -130,7 +130,7 @@ $e + 1, \dots, e + d$ of $\operatorname{od}((2^{e+d})!)$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of stab.
 
-Formalized by `MetaMathlibExt.stableBits`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#stable-bits).
+Formalized by `MetaMathlibExt.stableBits`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#stable-bits).
 
 ## Formula for the stable bits
 
@@ -146,7 +146,7 @@ modulus is $2^d$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of stab.
 
-Formalized by `MetaMathlibExt.stableBits_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#stable-bits-eq).
+Formalized by `MetaMathlibExt.stableBits_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#stable-bits-eq).
 
 ## The unstable bits for $e = 4$ and $d = 2$
 
@@ -160,7 +160,7 @@ This small case stands in for the paper's worked example $\operatorname{uns}(17,
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Worked example after Theorem 1.
 
-Formalized by `MetaMathlibExt.unstableBits_four_two`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-bits-four-two).
+Formalized by `MetaMathlibExt.unstableBits_four_two`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-bits-four-two).
 
 ## The stable bits $\operatorname{stab}(5, 2)$ vanish
 
@@ -176,7 +176,7 @@ larger worked example $\operatorname{stab}(18, 7) = 55$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Worked example after Theorem 1.
 
-Formalized by `MetaMathlibExt.stableBits_five_two`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#stable-bits-five-two).
+Formalized by `MetaMathlibExt.stableBits_five_two`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#stable-bits-five-two).
 
 ## Dyadic upper half interval
 
@@ -188,7 +188,7 @@ empty.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of I_e.
 
-Formalized by `MetaMathlibExt.dyadicUpperHalf`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#dyadic-upper-half).
+Formalized by `MetaMathlibExt.dyadicUpperHalf`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#dyadic-upper-half).
 
 ## Membership in the dyadic upper half
 
@@ -200,7 +200,7 @@ subtraction.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of I_e.
 
-Formalized by `MetaMathlibExt.mem_dyadicUpperHalf`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#mem-dyadic-upper-half).
+Formalized by `MetaMathlibExt.mem_dyadicUpperHalf`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#mem-dyadic-upper-half).
 
 ## Odd numbers below a power of two
 
@@ -211,7 +211,7 @@ natural numbers $i$ with $1 \le i < 2^e$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of S_e.
 
-Formalized by `MetaMathlibExt.oddBelowTwoPow`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-below-two-pow).
+Formalized by `MetaMathlibExt.oddBelowTwoPow`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-below-two-pow).
 
 ## Membership in the odd numbers below $2^e$
 
@@ -222,7 +222,7 @@ set $S_e$ of odd positive integers below $2^e$ if and only if $1 \le i$, $i < 2^
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of S_e.
 
-Formalized by `MetaMathlibExt.mem_oddSet`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#mem-odd-set).
+Formalized by `MetaMathlibExt.mem_oddSet`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#mem-odd-set).
 
 ## Integer multiset of a finite set of naturals
 
@@ -234,7 +234,7 @@ viewed as an integer, so each element of $s$ occurs exactly once.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Convention for finite multisets.
 
-Formalized by `MetaMathlibExt.integerMultiset`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#integer-multiset).
+Formalized by `MetaMathlibExt.integerMultiset`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#integer-multiset).
 
 ## Cardinality of the integer multiset
 
@@ -245,7 +245,7 @@ multiset of $s$ has the same number of elements, counted with multiplicity, as $
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Convention for finite multisets.
 
-Formalized by `MetaMathlibExt.integerMultiset_card`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#integer-multiset-card).
+Formalized by `MetaMathlibExt.integerMultiset_card`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#integer-multiset-card).
 
 ## Reversed elementary symmetric functions
 
@@ -259,7 +259,7 @@ Here $n - i$ is truncated subtraction, so $\hat\sigma_i(S) = \sigma_0(S) = 1$ wh
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of σ̂_i.
 
-Formalized by `MetaMathlibExt.reverseESymm`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm).
+Formalized by `MetaMathlibExt.reverseESymm`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm).
 
 ## Unfolding the reversed elementary symmetric function
 
@@ -273,7 +273,7 @@ where $n - i$ is truncated subtraction.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of σ̂_i.
 
-Formalized by `MetaMathlibExt.reverseESymm_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-eq).
+Formalized by `MetaMathlibExt.reverseESymm_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-eq).
 
 ## Odd double factorial below a power of two
 
@@ -285,7 +285,7 @@ exponent $e$, not the odd endpoint $2^e-1$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of (2^e-1)!!.
 
-Formalized by `MetaMathlibExt.oddDoubleFactorial`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-double-factorial).
+Formalized by `MetaMathlibExt.oddDoubleFactorial`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-double-factorial).
 
 ## Odd double factorial below a power of two as an odd-range product
 
@@ -297,7 +297,7 @@ $[1, 2^e-1]$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition of (2^e-1)!!.
 
-Formalized by `MetaMathlibExt.oddDoubleFactorial_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-double-factorial-eq).
+Formalized by `MetaMathlibExt.oddDoubleFactorial_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-double-factorial-eq).
 
 ## Numbers below $2^e$ congruent to $1$ modulo $8$
 
@@ -311,7 +311,7 @@ the source.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 21 notation.
 
-Formalized by `MetaMathlibExt.oneModEightBelowTwoPow`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#one-mod-eight-below-two-pow).
+Formalized by `MetaMathlibExt.oneModEightBelowTwoPow`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 292](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L292). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#one-mod-eight-below-two-pow).
 
 ## Membership in the residues one modulo eight below a power of two
 
@@ -323,7 +323,7 @@ if and only if $n < 2^e$ and $n \equiv 1 \pmod 8$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 21 notation.
 
-Formalized by `MetaMathlibExt.mem_oneModEight`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#mem-one-mod-eight).
+Formalized by `MetaMathlibExt.mem_oneModEight`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#mem-one-mod-eight).
 
 ## Four copies of the residues $1 \bmod 8$ below $2^e$
 
@@ -335,7 +335,7 @@ $n \equiv 1 \pmod 8$, that is, of each of $1, 9, \dots, 2^e - 7$ when $e \ge 3$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 21.
 
-Formalized by `MetaMathlibExt.fourCopiesOneModEightBelowTwoPow`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#four-copies-one-mod-eight-below-two-pow).
+Formalized by `MetaMathlibExt.fourCopiesOneModEightBelowTwoPow`, a definition declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#four-copies-one-mod-eight-below-two-pow).
 
 ## Four copies as a multiset scalar multiple
 
@@ -347,7 +347,7 @@ where $M$ is the integer multiset of the set of natural numbers $n < 2^e$ with $
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 21.
 
-Formalized by `MetaMathlibExt.fourCopiesOneModEight_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#four-copies-one-mod-eight-eq).
+Formalized by `MetaMathlibExt.fourCopiesOneModEight_eq`, a theorem declared in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#four-copies-one-mod-eight-eq).
 
 ## A 2-adic constant relating unstable and stable bits
 
@@ -362,7 +362,7 @@ $\mathrm{uns}(e, d) + K - \mathrm{stab}(e + 1, d)$ in $\mathbb{Z}_2$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_twoAdic_unstable_add_eq_stable` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#exists-two-adic-unstable-add-eq-stable).
+Stated but not proved: `MetaMathlibExt.exists_twoAdic_unstable_add_eq_stable` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#exists-two-adic-unstable-add-eq-stable).
 
 ## Odd part of a dyadic factorial as a product of odd blocks
 
@@ -378,7 +378,7 @@ $2^{m-1}+1$ to $2^m-1$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.oddPart_factorial_eq_prod_h` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-factorial-eq-prod-h).
+Stated but not proved: `MetaMathlibExt.oddPart_factorial_eq_prod_h` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-factorial-eq-prod-h).
 
 ## Initial-segment congruence for the odd product block
 
@@ -400,7 +400,7 @@ divisible by $4$. Requiring $m \ge 4$ removes exactly that case and keeps every 
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.oddProductBlock_congr_initial_segment` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-product-block-congr-initial-segment).
+Stated but not proved: `MetaMathlibExt.oddProductBlock_congr_initial_segment` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-product-block-congr-initial-segment).
 
 ## Odd parts biject the upper dyadic half onto the odd numbers below a power of two
 
@@ -412,7 +412,7 @@ natural numbers $i$ with $1 \le i < 2^e$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.oddPart_bijOn_upperHalf_oddSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-bij-on-upper-half-odd-set).
+Stated but not proved: `MetaMathlibExt.oddPart_bijOn_upperHalf_oddSet` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-bij-on-upper-half-odd-set).
 
 ## Product of the odd numbers below $2^e$
 
@@ -423,7 +423,7 @@ odd integers $i$ with $1 \le i < 2^e$ is congruent to $2^e + 1$ modulo $2^{e+1}$
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.oddSet_product_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-congr).
+Stated but not proved: `MetaMathlibExt.oddSet_product_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-congr).
 
 ## Odd parts of consecutive dyadic factorials agree modulo a power of two
 
@@ -435,7 +435,7 @@ $\mathrm{od}(n)$ denotes the odd part of $n$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.oddPart_factorial_congr_previous` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-factorial-congr-previous).
+Stated but not proved: `MetaMathlibExt.oddPart_factorial_congr_previous` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-factorial-congr-previous).
 
 ## A 2-adic limit of the odd parts of $(2^e)!$
 
@@ -447,7 +447,7 @@ number $e \ge 1$, where $\operatorname{od}(n)$ is the odd part of $n$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.exists_twoAdic_oddPart_factorial_limit` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#exists-two-adic-odd-part-factorial-limit).
+Stated but not proved: `MetaMathlibExt.exists_twoAdic_oddPart_factorial_limit` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#exists-two-adic-odd-part-factorial-limit).
 
 ## Shifting the odd numbers below $2^e$ by $2^e$
 
@@ -462,7 +462,7 @@ $$
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.oddSet_product_congr_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-congr-shift).
+Stated but not proved: `MetaMathlibExt.oddSet_product_congr_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-congr-shift).
 
 ## Congruence of normalized odd double factorials
 
@@ -479,7 +479,7 @@ $(2^2-1)!! - 1 = 2$ is not divisible by $4$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Corollary 10.
 
-Stated but not proved: `MetaMathlibExt.oddDoubleFactorial_normalized_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-double-factorial-normalized-congr).
+Stated but not proved: `MetaMathlibExt.oddDoubleFactorial_normalized_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-double-factorial-normalized-congr).
 
 ## A 2-adic limit of normalized odd double factorials
 
@@ -495,7 +495,7 @@ $(3 - 1)/4$ is not an integer.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Definition after Corollary 10.
 
-Stated but not proved: `MetaMathlibExt.exists_twoAdic_oddDoubleFactorial_limit` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#exists-two-adic-odd-double-factorial-lim).
+Stated but not proved: `MetaMathlibExt.exists_twoAdic_oddDoubleFactorial_limit` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#exists-two-adic-odd-double-factorial-lim).
 
 ## Normalized difference of odd parts of dyadic factorials
 
@@ -512,7 +512,7 @@ $$\lfloor (\mathrm{od}((2^e)!) - \mathrm{od}((2^{e-1})!))/2^e \rfloor \equiv zw 
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.oddPart_factorial_difference_congr_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 477](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L477). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-factorial-difference-congr-prod).
+Stated but not proved: `MetaMathlibExt.oddPart_factorial_difference_congr_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 477](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L477). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-part-factorial-difference-congr-prod).
 
 ## The unstable translation constant equals $-zw$
 
@@ -532,7 +532,7 @@ The three hypotheses are the defining properties of $K$ (Theorem 1), $z$ (Coroll
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Theorem 14.
 
-Stated but not proved: `MetaMathlibExt.unstable_translation_eq_neg_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-translation-eq-neg-product).
+Stated but not proved: `MetaMathlibExt.unstable_translation_eq_neg_product` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#unstable-translation-eq-neg-product).
 
 ## Shifting the odd numbers below $2^e$ by a multiple of $2^e$
 
@@ -547,7 +547,7 @@ $$
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Theorem 16.
 
-Stated but not proved: `MetaMathlibExt.oddSet_product_linear_shift_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-linear-shift-congr).
+Stated but not proved: `MetaMathlibExt.oddSet_product_linear_shift_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-linear-shift-congr).
 
 ## Powers of shifted products over the odd numbers below $2^e$
 
@@ -564,7 +564,7 @@ $$
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Corollary 17.
 
-Stated but not proved: `MetaMathlibExt.oddSet_product_power_shift_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-power-shift-congr).
+Stated but not proved: `MetaMathlibExt.oddSet_product_power_shift_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 532](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L532). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#odd-set-product-power-shift-congr).
 
 ## $\hat\sigma_1$ of the odd numbers below $2^e$
 
@@ -578,7 +578,7 @@ $\hat\sigma_1(S_e) \equiv 2^{2e-2} \pmod{2^{2e-1}}$ in $\mathbb{Z}$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 18.
 
-Stated but not proved: `MetaMathlibExt.reverseESymm_one_oddSet_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-one-odd-set-congr).
+Stated but not proved: `MetaMathlibExt.reverseESymm_one_oddSet_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-one-odd-set-congr).
 
 ## $\hat\sigma_2$ of the odd numbers below $2^e$
 
@@ -592,7 +592,7 @@ $\hat\sigma_2(S_e) \equiv 2^{e-2} \pmod{2^{e-1}}$ in $\mathbb{Z}$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 19.
 
-Stated but not proved: `MetaMathlibExt.reverseESymm_two_oddSet_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-two-odd-set-congr).
+Stated but not proved: `MetaMathlibExt.reverseESymm_two_oddSet_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-two-odd-set-congr).
 
 ## Each residue $1 \bmod 8$ has four odd square roots modulo $2^e$
 
@@ -604,7 +604,7 @@ with $v \equiv 1 \pmod 8$, exactly four elements $i \in S_e$ satisfy $i^2 \bmod 
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 20.
 
-Stated but not proved: `MetaMathlibExt.square_mod_twoPower_fiber_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#square-mod-two-power-fiber-card).
+Stated but not proved: `MetaMathlibExt.square_mod_twoPower_fiber_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#square-mod-two-power-fiber-card).
 
 ## $\hat\sigma_1$ of four copies of the numbers $1 \bmod 8$ below $2^e$
 
@@ -620,7 +620,7 @@ in $\mathbb{Z}$.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Lemma 21.
 
-Stated but not proved: `MetaMathlibExt.reverseESymm_fourCopies_oneModEight_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-four-copies-one-mod-eight).
+Stated but not proved: `MetaMathlibExt.reverseESymm_fourCopies_oneModEight_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#reverse-esymm-four-copies-one-mod-eight).
 
 ## Squared products of the odd residues omitting one factor
 
@@ -636,7 +636,7 @@ division for every summand.
 
 - Donald M. Davis, *Some 2-adic Integers Related to the Odd Part of 2^e!*, Journal of Integer Sequences 29 (2026), Article 26.3.1, Proposition 22.
 
-Stated but not proved: `MetaMathlibExt.sum_square_erased_oddSet_product_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#sum-square-erased-odd-set-product-congr).
+Stated but not proved: `MetaMathlibExt.sum_square_erased_oddSet_product_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddPartFactorialTwoAdicWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html#sum-square-erased-odd-set-product-congr).
 
 ## Depends on
 
@@ -645,4 +645,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: 2-adic odd part of factorials of powers of two](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/p-adic-numbers/2-adic-odd-part-of-factorials-of-powers-of-two)

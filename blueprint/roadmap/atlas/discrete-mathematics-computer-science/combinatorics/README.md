@@ -1,6 +1,6 @@
 # Combinatorics
 
-5,678 results of ATLAS's vault, 3,382 proved and 2,296 stated but not proved, in this subject's topics.
+5,678 results of ATLAS's vault, 3,392 proved and 2,286 stated but not proved, in this subject's topics.
 
 Combinatorics studies finite and discrete configurations through counting, extremal structure, and constructive arguments.
 

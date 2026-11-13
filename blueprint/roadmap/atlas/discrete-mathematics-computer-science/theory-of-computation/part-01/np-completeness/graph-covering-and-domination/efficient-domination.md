@@ -7,7 +7,7 @@ statement: formalized
 
 # Efficient domination
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html).
 
 ## Efficient Domination instances
 
@@ -15,7 +15,7 @@ An instance of EFFICIENT DOMINATION is a pair $(n, E)$
 of a natural number $n$, the number of vertices, and a list $E$ of pairs of natural numbers, the
 edges.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.EfficientDominationInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.EfficientDominationInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-instance).
 
 ## Graph of an Efficient Domination instance
 
@@ -23,7 +23,7 @@ For an instance $(n, E)$, its graph is the
 simple graph on the vertex set $\{0, \dots, n - 1\}$ in which distinct vertices $u$ and $v$ are
 adjacent when $(u, v)$ or $(v, u)$ belongs to $E$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.Graph`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#graph).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.Graph`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#graph).
 
 ## Well-formed Efficient Domination instances
 
@@ -31,7 +31,7 @@ An instance $(n, E)$ is well formed when the
 list $E$ has no repeated entries and every pair $(a, b)$ in $E$ satisfies $a < n$, $b < n$ and
 $a \ne b$, and $(b, a)$ does not belong to $E$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#well-formed).
 
 ## Instances with an efficient dominating set
 
@@ -40,7 +40,7 @@ is feasible when its graph has an efficient dominating set (a perfect code): a s
 vertices such that every vertex $v$ has exactly one vertex $u \in S$ with $u = v$ or $u$
 adjacent to $v$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.EfficientDominationFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.EfficientDominationFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-feasible).
 
 ## EFFICIENT DOMINATION (PERFECT CODE) as a decision problem
 
@@ -49,7 +49,7 @@ EFFICIENT DOMINATION accepts a bitstring $x$ exactly when $x$ decodes, under the
 bitstring encoding of instances, to an instance $(n, E)$ that is well formed and whose graph has
 an efficient dominating set. Bitstrings that do not decode to an instance are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.efficientDominationDec`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.efficientDominationDec`, a definition declared in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-dec).
 
 ## EFFICIENT DOMINATION (PERFECT CODE) is NP-complete
 
@@ -61,7 +61,7 @@ many-one reduction.
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), EFFICIENT DOMINATION; D. G. Corneil and Y. Perl, "Clustering and domination in perfect graphs" (1984) and the perfect-code literature.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.efficientDomination_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.EfficientDomination.efficientDomination_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/EfficientDominationWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html#efficient-domination-np-complete).
 
 ## Depends on
 
@@ -70,4 +70,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Efficient domination](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-covering-and-domination/efficient-domination)

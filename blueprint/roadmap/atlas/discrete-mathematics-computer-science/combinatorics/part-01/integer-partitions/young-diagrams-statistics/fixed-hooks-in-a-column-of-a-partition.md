@@ -7,7 +7,7 @@ statement: formalized
 
 # Fixed hooks in a column of a partition
 
-21 results, 8 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html).
+21 results, 8 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html).
 
 ## Column lengths of a partition
 
@@ -20,7 +20,7 @@ $\lambda$, with columns numbered from $1$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Section 1 (`λ'`, the conjugate partition).
 
-Formalized by `MetaMathlibExt.partitionColLen`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition-col-len).
+Formalized by `MetaMathlibExt.partitionColLen`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition-col-len).
 
 ## Row lengths of a partition
 
@@ -33,7 +33,7 @@ $1$), and it is $0$ when $\lambda$ has fewer than $s$ parts.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Section 1 (`λ = (λ₁, λ₂, …)` weakly decreasing).
 
-Formalized by `MetaMathlibExt.partitionRowLen`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition-row-len).
+Formalized by `MetaMathlibExt.partitionRowLen`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition-row-len).
 
 ## Hook length of a square of a partition
 
@@ -48,7 +48,7 @@ the Young diagram.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Section 1.
 
-Formalized by `MetaMathlibExt.partitionHookLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition-hook-length).
+Formalized by `MetaMathlibExt.partitionHookLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition-hook-length).
 
 ## Fixed hooks in a column of a partition
 
@@ -63,7 +63,7 @@ in column $m$ is an $h$-fixed point.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Section 1 (an `h`-fixed point of the sequence `h_{1,m}(λ), h_{2,m}(λ), …`; Figure 2: `h_{m,s} = s + h` at part `λ_s`).
 
-Formalized by `MetaMathlibExt.IsFixedColumnHook`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#is-fixed-column-hook).
+Formalized by `MetaMathlibExt.IsFixedColumnHook`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#is-fixed-column-hook).
 
 ## The partition $(4, 4, 3, 1)$ of $12$
 
@@ -74,7 +74,7 @@ and $1$; it is the example partition drawn in Figure 1 of the source.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Figure 1.
 
-Formalized by `MetaMathlibExt.partition4431`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431).
+Formalized by `MetaMathlibExt.partition4431`, a definition declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431).
 
 ## Row and column lengths of the partition $(4, 4, 3, 1)$
 
@@ -87,7 +87,7 @@ $\lambda'_2 = 3$, $\lambda'_3 = 3$, $\lambda'_4 = 2$ and $\lambda'_5 = 0$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Figure 1.
 
-Formalized by `MetaMathlibExt.partition4431_row_col`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431-row-col).
+Formalized by `MetaMathlibExt.partition4431_row_col`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431-row-col).
 
 ## Hook lengths of the partition $(4, 4, 3, 1)$
 
@@ -101,7 +101,7 @@ $h_{3,3} = 1$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Figure 1.
 
-Formalized by `MetaMathlibExt.partition4431_hookLength`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431-hook-length).
+Formalized by `MetaMathlibExt.partition4431_hookLength`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431-hook-length).
 
 ## Fixed hooks in the partition $(4, 4, 3, 1)$
 
@@ -115,7 +115,7 @@ square $(4, 3)$ lies outside the Young diagram, since $\lambda_4 = 1 < 3$).
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Figure 1.
 
-Formalized by `MetaMathlibExt.partition4431_isFixedColumnHook`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431-is-fixed-column-hook).
+Formalized by `MetaMathlibExt.partition4431_isFixedColumnHook`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#partition4431-is-fixed-column-hook).
 
 ## Zero-fixed hooks in column $m$ and two-colored partitions
 
@@ -139,7 +139,7 @@ colors, $\mu$ collecting the parts of the first color.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_zeroFixedColumnHook_eq_twoColor_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#card-zero-fixed-column-hook-eq-two-color).
+Stated but not proved: `MetaMathlibExt.card_zeroFixedColumnHook_eq_twoColor_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#card-zero-fixed-column-hook-eq-two-color).
 
 ## Fixed hooks in column $m$ arising from parts of size $m$
 
@@ -160,7 +160,7 @@ number is $0$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_fixedColumnHook_part_eq_column` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#card-fixed-column-hook-part-eq-column).
+Stated but not proved: `MetaMathlibExt.card_fixedColumnHook_part_eq_column` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#card-fixed-column-hook-part-eq-column).
 
 ## Generating function for column-$m$ hooks of size $k$
 
@@ -192,7 +192,7 @@ $q^{n+1}$; the exponent $km - (l-1)(m-1)$ is at least $k + m - 1$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.columnHook_size_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#column-hook-size-gen-fun).
+Stated but not proved: `MetaMathlibExt.columnHook_size_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#column-hook-size-gen-fun).
 
 ## Limit of the fixed-hook generating functions
 
@@ -228,7 +228,7 @@ coefficient below $q^{n+1}$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.columnHook_size_genFun_limit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#column-hook-size-gen-fun-limit).
+Stated but not proved: `MetaMathlibExt.columnHook_size_genFun_limit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#column-hook-size-gen-fun-limit).
 
 ## Partitions with a fixed first-column hook arising from a part of given size
 
@@ -251,7 +251,7 @@ $k - h$ is a positive row index.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.fixedFirstColumnHook_part_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-first-column-hook-part-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedFirstColumnHook_part_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-first-column-hook-part-gen-fun).
 
 ## Generating function for fixed column hooks from a part of size $k$
 
@@ -288,7 +288,7 @@ whose lower limit $k - h - m + 1$ is a positive row index.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.fixedColumnHook_part_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-part-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedColumnHook_part_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-part-gen-fun).
 
 ## Odd partitions with a fixed hook in a given column arising from an odd part
 
@@ -326,7 +326,7 @@ printed series has no $q^6$ term.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 8, corrected per its proof.
 
-Stated but not proved: `MetaMathlibExt.fixedColumnHook_part_odd_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-part-odd-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedColumnHook_part_odd_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-part-odd-gen-fun).
 
 ## Fixed column hooks from a part of size $k$ in distinct partitions
 
@@ -356,7 +356,7 @@ number of such partitions of $12$ is $3$, but the coefficient of $q^{12}$ is $2$
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.fixedColumnHook_part_distinct_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-part-distinct-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedColumnHook_part_distinct_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-part-distinct-gen-fun).
 
 ## Partitions with a fixed first-column hook of given size
 
@@ -376,7 +376,7 @@ Such a hook sits in row $s = k - h \ge 1$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.fixedFirstColumnHook_hook_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-first-column-hook-hook-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedFirstColumnHook_hook_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-first-column-hook-hook-gen-fun).
 
 ## Generating function for fixed column hooks of size $k$
 
@@ -402,7 +402,7 @@ coefficient.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-gen-fun).
 
 ## Generating function for fixed column hooks of size $k$ in odd partitions
 
@@ -438,7 +438,7 @@ the sum running over the even $l$ with $1 \le l \le k$.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_odd_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-odd-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_odd_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-odd-gen-fun).
 
 ## Generating function for fixed column hooks of size $k$ in distinct partitions
 
@@ -465,7 +465,7 @@ $\binom{a}{b}_q$ is the Gaussian binomial coefficient.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 13.
 
-Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_distinct_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-distinct-gen-fun).
+Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_distinct_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-distinct-gen-fun).
 
 ## Fixed column hooks of size $k$ in odd distinct partitions, even column
 
@@ -496,7 +496,7 @@ $k - l + (3l-2k)/2$ over odd $l$, which is not an integer.
 
 - Philip Cuthbertson, *Fixed Hooks in Arbitrary Columns of Partitions*, INTEGERS 25 (2025), Article A28, Theorem 14, even `m`.
 
-Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_oddDistinct_genFun_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-odd-distinct-gen).
+Stated but not proved: `MetaMathlibExt.fixedColumnHook_hook_oddDistinct_genFun_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean, line 384](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FixedColumnHooksWanted.lean#L384). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html#fixed-column-hook-hook-odd-distinct-gen).
 
 ## Depends on
 
@@ -505,4 +505,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fixed hooks in a column of a partition](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/fixed-hooks-in-a-column-of-a-partition)

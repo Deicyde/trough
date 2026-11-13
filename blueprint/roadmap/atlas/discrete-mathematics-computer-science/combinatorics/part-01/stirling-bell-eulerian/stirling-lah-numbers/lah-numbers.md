@@ -8,7 +8,7 @@ proof: formalized
 
 # Lah numbers
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers/index.html).
 
 ## Unsigned Lah number
 
@@ -22,7 +22,7 @@ $L(n, k)$ counts the partitions of an $n$-element set into $k$ nonempty linearly
 
 - closed formula from Maxie D. Schmidt, *Jacobi-Type Continued Fractions for the Ordinary Generating Functions of Generalized Factorial Functions*, Journal of Integer Sequences 20 (2017): https://cs.uwaterloo.ca/journals/JIS/VOL20/Schmidt/schmidt14.tex.
 
-Formalized by `MetaMathlibExt.unsignedLahNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/LahNumber.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/LahNumber.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers/index.html#unsigned-lah-number).
+Formalized by `MetaMathlibExt.unsignedLahNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/LahNumber.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/LahNumber.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers/index.html#unsigned-lah-number).
 
 ## Signed Lah number
 
@@ -34,7 +34,7 @@ $k > n$.
 
 - sign convention from Toufik Mansour, Matthias Schork, and Mark Shattuck, *The Generalized Stirling and Bell Numbers Revisited*, Journal of Integer Sequences 15 (2012): https://cs.uwaterloo.ca/journals/JIS/VOL15/Schork/schork2.tex.
 
-Formalized by `MetaMathlibExt.signedLahNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/LahNumber.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/LahNumber.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers/index.html#signed-lah-number).
+Formalized by `MetaMathlibExt.signedLahNumber`, a definition declared in [MathlibExt/Combinatorics/Enumerative/LahNumber.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/LahNumber.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers/index.html#signed-lah-number).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lah numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lah-numbers)

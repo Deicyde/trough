@@ -8,7 +8,7 @@ proof: formalized
 
 # Permutation stability
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html).
 
 ## Normalized Hamming distance
 
@@ -17,7 +17,7 @@ $\{0, \dots, n-1\}$, the normalized Hamming distance $d_n(\sigma, \tau)$ is the 
 $i < n$ with $\sigma(i) \ne \tau(i)$, divided by $n$, as a real number. For $n = 0$ it is $0$;
 this single value does not affect statements about limits as $n \to \infty$.
 
-Formalized by `PermutationStability.normalizedHammingDistance`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#normalized-hamming-distance).
+Formalized by `PermutationStability.normalizedHammingDistance`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#normalized-hamming-distance).
 
 ## Almost-homomorphisms to symmetric groups
 
@@ -28,7 +28,7 @@ normalized Hamming distance $d_n(f_n(g) f_n(h), f_n(gh))$ tends to $0$ as $n \to
 
 Following the source, no condition such as $f_n(1) = 1$ is imposed.
 
-Formalized by `PermutationStability.IsAlmostHomomorphism`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#is-almost-homomorphism).
+Formalized by `PermutationStability.IsAlmostHomomorphism`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#is-almost-homomorphism).
 
 ## Closeness to homomorphisms
 
@@ -38,7 +38,7 @@ The sequence $(f_n)$ is close to homomorphisms when there are group homomorphism
 $\rho_n \colon G \to S_n$ such that for every $g \in G$ the normalized Hamming distance
 $d_n(\rho_n(g), f_n(g))$ tends to $0$ as $n \to \infty$.
 
-Formalized by `PermutationStability.IsCloseToHomomorphisms`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#is-close-to-homomorphisms).
+Formalized by `PermutationStability.IsCloseToHomomorphisms`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#is-close-to-homomorphisms).
 
 ## Permutation stability
 
@@ -46,7 +46,7 @@ A group $G$ is permutation stable when every
 almost-homomorphism $(f_n)$ from $G$ to the symmetric groups $S_n$ is close to
 homomorphisms.
 
-Formalized by `PermutationStability.PermutationStable`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#permutation-stable).
+Formalized by `PermutationStability.PermutationStable`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#permutation-stable).
 
 ## Flexible Hamming distance
 
@@ -65,7 +65,7 @@ limits as $n \to \infty$.
 
 - Kourovka Notebook 21.84. The source is internally inconsistent about the argument order: it first defines the distance with the small permutation first, `d_n^flex(σ, τ)` for `σ ∈ S_n`, `τ ∈ S_m`, but later writes the convergence expression with `ρ_n(g)` first. This formalization follows the definition site (small first), which is also the type-correct order for the embedding `Fin n → Fin m`.
 
-Formalized by `PermutationStability.flexibleHammingDistance`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#flexible-hamming-distance).
+Formalized by `PermutationStability.flexibleHammingDistance`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#flexible-hamming-distance).
 
 ## Flexible closeness to homomorphisms
 
@@ -75,21 +75,21 @@ The sequence $(f_n)$ is flexibly close to homomorphisms when there are natural n
 and group homomorphisms $\rho_n \colon G \to S_{m_n}$ such that for every $g \in G$ the flexible
 Hamming distance $d^{\mathrm{flex}}_n(f_n(g), \rho_n(g))$ tends to $0$ as $n \to \infty$.
 
-Formalized by `PermutationStability.IsFlexiblyCloseToHomomorphisms`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#is-flexibly-close-to-homomorphisms).
+Formalized by `PermutationStability.IsFlexiblyCloseToHomomorphisms`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#is-flexibly-close-to-homomorphisms).
 
 ## Flexible permutation stability
 
 A group $G$ is flexibly permutation stable when every
 almost-homomorphism $(f_n)$ from $G$ to the symmetric groups is flexibly close to homomorphisms.
 
-Formalized by `PermutationStability.FlexiblePermutationStable`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#flexible-permutation-stable).
+Formalized by `PermutationStability.FlexiblePermutationStable`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#flexible-permutation-stable).
 
 ## Metabelian groups
 
 Let $G$ be a group and let $G' = [G, G]$ be its commutator subgroup.
 Then $G$ is metabelian when its second derived subgroup $G'' = [G', G']$ is trivial.
 
-Formalized by `PermutationStability.Metabelian`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/GroupTheory/PermutationStability.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#metabelian).
+Formalized by `PermutationStability.Metabelian`, a definition declared in [MathlibExt/GroupTheory/PermutationStability.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/GroupTheory/PermutationStability.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html#metabelian).
 
 ## Depends on
 
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Permutation stability](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/permutation-stability/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/geometric-group-theory/permutation-stability)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/geometric-group-theory/permutation-stability)

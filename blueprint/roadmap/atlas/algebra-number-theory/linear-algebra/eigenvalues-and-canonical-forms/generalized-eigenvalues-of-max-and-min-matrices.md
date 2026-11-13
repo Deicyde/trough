@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized eigenvalues of max and min matrices
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices/index.html).
 
 ## Generalized eigenvalues of a MAX matrix to a MIN matrix
 
@@ -25,7 +25,7 @@ The roots of $\det(M - XN)$ are the generalized eigenvalues of $M$ to $N$.
 
 - Jorma K. Merikoski, Pentti Haukkanen, Antonio Sasaki, and Timo Tossavainen, *On Generalized Eigenvalues of MAX Matrices to MIN Matrices and LCM Matrices to GCD Matrices*, Journal of Integer Sequences 28 (2025), Article 25.7.1, Theorem 1 (`jis-2025-25.7.1-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.det_maxMatrix_sub_X_smul_minMatrix` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices/index.html#det-max-matrix-sub-x-smul-min-matrix).
+Stated but not proved: `MetaMathlibExt.det_maxMatrix_sub_X_smul_minMatrix` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices/index.html#det-max-matrix-sub-x-smul-min-matrix).
 
 ## Cauchy interlacing for generalized eigenvalues
 
@@ -42,7 +42,7 @@ $\lambda_{k+1} \le \lambda'_k \le \lambda_k$ for every $k = 1, \dots, n$.
 
 - Jorma K. Merikoski, Pentti Haukkanen, Antonio Sasaki, and Timo Tossavainen, *On Generalized Eigenvalues of MAX Matrices to MIN Matrices and LCM Matrices to GCD Matrices*, Journal of Integer Sequences 28 (2025), Article 25.7.1, Theorem 6 (`jis-2025-25.7.1-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.generalizedEigenvalue_interlacing` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices/index.html#generalized-eigenvalue-interlacing).
+Stated but not proved: `MetaMathlibExt.generalizedEigenvalue_interlacing` is written with `theorem_wanted` in [WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/LinearAlgebra/MaxMinGeneralizedEigenvalueWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices/index.html#generalized-eigenvalue-interlacing).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized eigenvalues of max and min matrices](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/generalized-eigenvalues-of-max-and-min-matrices)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Hypergraph colouring, matchings and covers: its own results
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html).
 
 Property B and hypergraph colouring, Erdős–Faber–Lovász, Kneser hypergraphs, independence in Steiner and linear triple systems, set mappings, strongly maximal matchings, minimal covers, transversals, Baranyai's theorem and common elements of small set families.
 
@@ -25,7 +25,7 @@ whose union is $V$.
 
 - https://en.wikipedia.org/wiki/Baranyai%27s_theorem.
 
-Formalized by `MetaMathlibExt.baranyai_theorem`, a theorem declared in [MathlibExt/Combinatorics/Baranyai.lean, line 899](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Baranyai.lean#L899). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html#baranyai-theorem).
+Formalized by `MetaMathlibExt.baranyai_theorem`, a theorem declared in [MathlibExt/Combinatorics/Baranyai.lean, line 899](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Baranyai.lean#L899). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html#baranyai-theorem).
 
 ## Property B for families of finite sets
 
@@ -34,7 +34,7 @@ A family `F` of finite sets has **property B** (equivalently, it is
 `2`-colouring of the ground set under which no
 member of `F` is monochromatic.
 
-Formalized by `Finset.HasPropertyB`, a definition declared in [MathlibExt/Data/Finset/PropertyB.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Finset/PropertyB.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html#has-property-b).
+Formalized by `Finset.HasPropertyB`, a definition declared in [MathlibExt/Data/Finset/PropertyB.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Finset/PropertyB.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html#has-property-b).
 
 ## Scottish Book Problem 9 (a common element of small finite sets)
 
@@ -54,7 +54,7 @@ repetition reading is the intended one.
 
 - S. Mazur and W. Orlicz, Problem 9 of the Scottish Book, stated as a theorem by Ulam in the Scottish Book typescript; see also the 2026 survey "90+ years of the Scottish Book" (arXiv:2603.27867), which records that Ulam solved Problem 9.
 
-Stated but not proved: `MathlibExt.Combinatorics.ScottishBook9Wanted.finiteSetsCommonElement` is written with `theorem_wanted` in [WantedExt/Combinatorics/ScottishBook9Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ScottishBook9Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html#finite-sets-common-element).
+Stated but not proved: `MathlibExt.Combinatorics.ScottishBook9Wanted.finiteSetsCommonElement` is written with `theorem_wanted` in [WantedExt/Combinatorics/ScottishBook9Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ScottishBook9Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html#finite-sets-common-element).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hypergraph colouring, matchings and covers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/hypergraph-colouring-matching)

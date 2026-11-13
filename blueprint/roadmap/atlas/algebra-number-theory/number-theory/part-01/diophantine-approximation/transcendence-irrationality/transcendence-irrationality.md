@@ -7,7 +7,7 @@ statement: formalized
 
 # Transcendence and irrationality: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/index.html).
 
 Hermite–Lindemann, Lindemann–Weierstrass, Gelfond–Schneider, Mahler functions, irrationality and linear independence of constants.
 
@@ -27,7 +27,7 @@ over $\mathbb{Q}$.
 
 - https://arxiv.org/abs/2408.15403. Problem `cdt_linearIndependent` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.CalegariDimitrovTangLinearIndependentWanted.NumberTheory.CalegariDimitrovTangLinearIndependent.cdt_linearIndependent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CalegariDimitrovTangLinearIndependentWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CalegariDimitrovTangLinearIndependentWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/index.html#cdt-linear-independent).
+Stated but not proved: `MathlibExt.NumberTheory.CalegariDimitrovTangLinearIndependentWanted.NumberTheory.CalegariDimitrovTangLinearIndependent.cdt_linearIndependent` is written with `theorem_wanted` in [WantedExt/NumberTheory/CalegariDimitrovTangLinearIndependentWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CalegariDimitrovTangLinearIndependentWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/index.html#cdt-linear-independent).
 
 ## Hermite–Lindemann theorem
 
@@ -38,7 +38,7 @@ $\mathbb{Q}$, then $e^{\alpha}$ is transcendental over $\mathbb{Q}$.
 
 - C. Hermite, Sur la fonction exponentielle, C. R. Acad. Sci. Paris 77 (1873) for e; F. von Lindemann, Über die Zahl π, Math. Ann. 20 (1882) 213–225 extension to π; textbook in Baker, Transcendental Number Theory
 
-Formalized by `MathlibExt.NumberTheory.LindemannWanted.hermite_lindemann`, a theorem declared in [MathlibExt/NumberTheory/Lindemann.lean, line 1494](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Lindemann.lean#L1494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/index.html#hermite-lindemann).
+Formalized by `MathlibExt.NumberTheory.LindemannWanted.hermite_lindemann`, a theorem declared in [MathlibExt/NumberTheory/Lindemann.lean, line 1494](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Lindemann.lean#L1494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/index.html#hermite-lindemann).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Transcendence and irrationality](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/transcendence-irrationality)

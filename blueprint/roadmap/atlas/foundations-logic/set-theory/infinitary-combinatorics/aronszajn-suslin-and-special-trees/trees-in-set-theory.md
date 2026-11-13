@@ -8,21 +8,21 @@ proof: formalized
 
 # Trees in set theory
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html).
 
 ## Tree (set theory)
 
 A *tree* is a partially ordered set (T, <) iwith the property that for each x ∈ T, the set {  y
 ∈ T : y < x  } of all predecessors of x is well-ordered by <).
 
-Formalized by `MetaMathlibExt.IsTree`, a definition declared in [MathlibExt/SetTheory/Tree/Basic.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Tree/Basic.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html#tree-set-theory).
+Formalized by `MetaMathlibExt.IsTree`, a definition declared in [MathlibExt/SetTheory/Tree/Basic.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Tree/Basic.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html#tree-set-theory).
 
 ## Level of a well-founded partial order
 
 For an ordinal α, the *α-th level* of a well-founded partial order (T, <) is Lev_α(T) = {  x ∈ T
 : ht(x) = α  }, the set of elements whose height equals α.
 
-Formalized by `MetaMathlibExt.level`, a definition declared in [MathlibExt/SetTheory/Tree/Basic.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Tree/Basic.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html#level-of-a-well-founded-partial-order).
+Formalized by `MetaMathlibExt.level`, a definition declared in [MathlibExt/SetTheory/Tree/Basic.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Tree/Basic.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html#level-of-a-well-founded-partial-order).
 
 ## Normal tree at a cardinal
 
@@ -51,7 +51,7 @@ of x in the well-founded relation <. α is a *normal tree at κ* if:
   \]
 \end{enumerate}
 
-Formalized by `MetaMathlibExt.IsNormalTreeAt`, a definition declared in [MathlibExt/SetTheory/Tree/Basic.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Tree/Basic.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html#normal-tree-at-a-cardinal).
+Formalized by `MetaMathlibExt.IsNormalTreeAt`, a definition declared in [MathlibExt/SetTheory/Tree/Basic.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Tree/Basic.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html#normal-tree-at-a-cardinal).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Trees in set theory](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/SetTheory/infinitary-combinatorics/aronszajn-suslin-and-special-trees/trees-in-set-theory)

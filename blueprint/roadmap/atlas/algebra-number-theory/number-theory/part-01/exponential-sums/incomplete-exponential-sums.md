@@ -7,7 +7,7 @@ statement: formalized
 
 # Incomplete exponential sums
 
-16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html).
+16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html).
 
 ## Partial-fraction bound for the cosecant
 
@@ -22,7 +22,7 @@ from above.
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 3.1 (quoted from [3, Lemma 2.2]).
 
-Stated but not proved: `MetaMathlibExt.one_div_sin_pi_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#one-div-sin-pi-lt).
+Stated but not proved: `MetaMathlibExt.one_div_sin_pi_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#one-div-sin-pi-lt).
 
 ## Bound for a sum of reciprocal sines
 
@@ -39,7 +39,7 @@ $$
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 3.2.
 
-Stated but not proved: `MetaMathlibExt.sum_one_div_abs_sin_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-one-div-abs-sin-lt).
+Stated but not proved: `MetaMathlibExt.sum_one_div_abs_sin_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-one-div-abs-sin-lt).
 
 ## Bound for a weighted sum of absolute sines
 
@@ -64,7 +64,7 @@ The second bound is the form (3.1) of the first, obtained from $\log(K + 1) < \l
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 3.4 (quoted from [3, Lemma 2.1]) and inequality (3.1).
 
-Stated but not proved: `MetaMathlibExt.sum_abs_sin_mul_div_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-abs-sin-mul-div-lt).
+Stated but not proved: `MetaMathlibExt.sum_abs_sin_mul_div_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-abs-sin-mul-div-lt).
 
 ## Trigonometric polynomials bounding the indicator of an arc
 
@@ -83,7 +83,7 @@ coefficients $\alpha_\pm(k)$ with $k \ne 0$ are asserted.
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 4.1.
 
-Stated but not proved: `MetaMathlibExt.exists_trigPoly_minorant_majorant` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#exists-trig-poly-minorant-majorant).
+Stated but not proved: `MetaMathlibExt.exists_trigPoly_minorant_majorant` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#exists-trig-poly-minorant-majorant).
 
 ## Incomplete quadratic exponential sums of medium length
 
@@ -96,7 +96,7 @@ with $\sqrt{p} < B < p/2$. Then $\left|\sum_{x=1}^{B} e_p(a x^2 + b x + c)\right
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.2.
 
-Stated but not proved: `MetaMathlibExt.norm_incomplete_quadratic_sum_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-quadratic-sum-lt).
+Stated but not proved: `MetaMathlibExt.norm_incomplete_quadratic_sum_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-quadratic-sum-lt).
 
 ## Bounds for short incomplete exponential sums of monic cubics
 
@@ -113,7 +113,7 @@ although the source states it for $B < \sqrt{p/12}$.
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.4.
 
-Stated but not proved: `MetaMathlibExt.norm_incomplete_monic_cubic_sum_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-monic-cubic-sum-lt).
+Stated but not proved: `MetaMathlibExt.norm_incomplete_monic_cubic_sum_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-monic-cubic-sum-lt).
 
 ## Completing an incomplete exponential sum
 
@@ -129,7 +129,7 @@ $\sum_{x=1}^{B} e_p(f(x)) = \frac{B}{p} \sum_{x=1}^{p} e_p(f(x)) + \theta \, T_p
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 2.1.
 
-Stated but not proved: `MetaMathlibExt.exists_incompleteSum_eq_completeSum_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#exists-incomplete-sum-eq-complete-sum-ad).
+Stated but not proved: `MetaMathlibExt.exists_incompleteSum_eq_completeSum_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#exists-incomplete-sum-eq-complete-sum-ad).
 
 ## Lower bound for the maximal twisted complete exponential sum
 
@@ -143,7 +143,7 @@ $$\max_{0 \le y \le p - 1} \left| \sum_{x=1}^{p} e_p(f(x) + yx) \right| \ge \sqr
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.sqrt_le_sup_norm_completeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sqrt-le-sup-norm-complete-sum).
+Stated but not proved: `MetaMathlibExt.sqrt_le_sup_norm_completeSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sqrt-le-sup-norm-complete-sum).
 
 ## Explicit completion bound for incomplete exponential sums
 
@@ -159,7 +159,7 @@ $\left|\sum_{x=1}^{B} e_p(f(x))\right| \le
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.norm_incompleteSum_le_min_mul_sup` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-sum-le-min-mul-sup).
+Stated but not proved: `MetaMathlibExt.norm_incompleteSum_le_min_mul_sup` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-sum-le-min-mul-sup).
 
 ## Logarithmic completion bound for incomplete exponential sums
 
@@ -173,7 +173,7 @@ $\left|\sum_{x=1}^{B} e_p(f(x))\right| < \Phi(f, p) \log p$.
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Corollary 1.1.
 
-Stated but not proved: `MetaMathlibExt.norm_incompleteSum_lt_sup_mul_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-sum-lt-sup-mul-log).
+Stated but not proved: `MetaMathlibExt.norm_incompleteSum_lt_sup_mul_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-sum-lt-sup-mul-log).
 
 ## Bound for a truncated sum of reciprocal sines
 
@@ -190,7 +190,7 @@ $$
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 3.3.
 
-Stated but not proved: `MetaMathlibExt.sum_min_one_div_abs_sin_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-min-one-div-abs-sin-lt).
+Stated but not proved: `MetaMathlibExt.sum_min_one_div_abs_sin_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-min-one-div-abs-sin-lt).
 
 ## Bound for a sum of sine ratios
 
@@ -207,7 +207,7 @@ $$
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 3.5.
 
-Stated but not proved: `MetaMathlibExt.sum_abs_sin_div_abs_sin_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-abs-sin-div-abs-sin-lt).
+Stated but not proved: `MetaMathlibExt.sum_abs_sin_div_abs_sin_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#sum-abs-sin-div-abs-sin-lt).
 
 ## Square of an incomplete quadratic exponential sum
 
@@ -222,7 +222,7 @@ $\frac{2p}{\pi} \log B + 0.368 p + B + \frac{p}{\pi B} + R$.
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Proposition 6.1.
 
-Stated but not proved: `MetaMathlibExt.norm_sq_incomplete_quadratic_sum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-sq-incomplete-quadratic-sum-le).
+Stated but not proved: `MetaMathlibExt.norm_sq_incomplete_quadratic_sum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-sq-incomplete-quadratic-sum-le).
 
 ## Uniform bound for incomplete quadratic exponential sums
 
@@ -235,7 +235,7 @@ with $1 \le B \le p$. Then $\left|\sum_{x=1}^{B} e_p(a x^2 + b x + c)\right| <
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Corollary 6.1.
 
-Stated but not proved: `MetaMathlibExt.norm_incomplete_quadratic_sum_lt_sqrt_add_sqrt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-quadratic-sum-lt-sqrt-ad).
+Stated but not proved: `MetaMathlibExt.norm_incomplete_quadratic_sum_lt_sqrt_add_sqrt` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-quadratic-sum-lt-sqrt-ad).
 
 ## Explicit bounds for incomplete cubic exponential sums
 
@@ -253,7 +253,7 @@ the sum equals $2$ while the second bound is below $0.86$.
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.norm_incomplete_cubic_sum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-cubic-sum-le).
+Stated but not proved: `MetaMathlibExt.norm_incomplete_cubic_sum_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#norm-incomplete-cubic-sum-le).
 
 ## Explicit asymptotic for the logarithmic mean of the divisor function
 
@@ -272,7 +272,7 @@ is the first Stieltjes constant.
 
 - Todd Cochrane, *Explicit Estimates for Incomplete Exponential Sums*, INTEGERS 25 (2025), Article A48, Lemma 7.1.
 
-Stated but not proved: `MetaMathlibExt.exists_sum_card_divisors_div_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#exists-sum-card-divisors-div-sub-le).
+Stated but not proved: `MetaMathlibExt.exists_sum_card_divisors_div_sub_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/IncompleteExponentialSumWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html#exists-sum-card-divisors-div-sub-le).
 
 ## Depends on
 
@@ -281,4 +281,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Incomplete exponential sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/exponential-sums/incomplete-exponential-sums)

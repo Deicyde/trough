@@ -7,7 +7,7 @@ statement: formalized
 
 # Convex analysis and calculus of variations: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/index.html).
 
 Convex functions and sets in analysis and optimization: Fenchel conjugates, polar sets, Moreau decomposition, convex projections, KKT conditions, gradient descent rates, Stampacchia, Tikhonov regularization, Euler–Lagrange, mountain pass and Ekeland principles; linear programming goes to convex geometry.
 
@@ -23,7 +23,7 @@ $f$ at $a$ within $X$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functional analysis; Measures, integration, derivative, holomorphy), problem `ma_proofbench_l1_95`.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ConvexOnIffAboveTangentWanted.convexOn_iff_forall_le_add_fderivWithin` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ConvexOnIffAboveTangentWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ConvexOnIffAboveTangentWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/index.html#convex-on-iff-forall-le-add-fderiv-withi).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ConvexOnIffAboveTangentWanted.convexOn_iff_forall_le_add_fderivWithin` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ConvexOnIffAboveTangentWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ConvexOnIffAboveTangentWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/index.html#convex-on-iff-forall-le-add-fderiv-withi).
 
 ## Karush–Kuhn–Tucker conditions for inequality constraints
 
@@ -41,7 +41,7 @@ and $Df(x) + \sum_{i=1}^m \lambda_i Dg_i(x) = 0$.
 
 - W. Karush, Minima of Functions of Several Variables with Inequalities as Side Conditions (M.Sc. thesis, Univ. Chicago, 1939); H. W. Kuhn and A. W. Tucker, Nonlinear Programming, Proc. Second Berkeley Symposium (1951), 481–492, DOI 10.1525/9780520411586-036.
 
-Formalized by `MathlibExt.Analysis.Convex.KarushKuhnTucker.karush_kuhn_tucker_inequality`, a theorem declared in [MathlibExt/Analysis/Convex/KarushKuhnTucker.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/KarushKuhnTucker.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/index.html#karush-kuhn-tucker-inequality).
+Formalized by `MathlibExt.Analysis.Convex.KarushKuhnTucker.karush_kuhn_tucker_inequality`, a theorem declared in [MathlibExt/Analysis/Convex/KarushKuhnTucker.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/KarushKuhnTucker.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/index.html#karush-kuhn-tucker-inequality).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Convex analysis and calculus of variations](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/convex-analysis-and-variations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/convex-analysis-and-variations)

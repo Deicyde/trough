@@ -7,7 +7,7 @@ statement: formalized
 
 # Comparable pairs in set families
 
-7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html).
+7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html).
 
 ## Number of comparable pairs
 
@@ -16,7 +16,7 @@ $\{0, \dots, n - 1\}$, the number of comparable pairs of $F$ is the number of or
 $(A, B)$ of members of $F$ with $A \subsetneq B$. It is the number of edges of the comparability
 graph $G_F$ on $F$, in which two distinct members are adjacent when one contains the other.
 
-Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.comparablePairs`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#comparable-pairs).
+Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.comparablePairs`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#comparable-pairs).
 
 ## Erdős Problem 777, first question
 
@@ -25,7 +25,7 @@ for every $n \ge N$, every family $F$ of subsets of $\{0, \dots, n - 1\}$ with
 $|F| \le (2 - \varepsilon) 2^{n/2}$ has fewer than $2^n$ comparable pairs, that is, ordered pairs
 $(A, B)$ of members of $F$ with $A \subsetneq B$.
 
-Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.fewComparablePairsBelowTwoHalfPower`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#few-comparable-pairs-below-two-half-powe).
+Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.fewComparablePairsBelowTwoHalfPower`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#few-comparable-pairs-below-two-half-powe).
 
 ## Erdős Problem 777, second question
 
@@ -34,7 +34,7 @@ such that for every $n$ and every family $F$ of subsets of $\{0, \dots, n - 1\}$
 $c |F|^2$ comparable pairs (ordered pairs $(A, B)$ of members of $F$ with $A \subsetneq B$), we
 have $|F| \le C \cdot 2^{n/2}$.
 
-Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.denseComparabilityFamilySmall`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#dense-comparability-family-small).
+Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.denseComparabilityFamilySmall`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#dense-comparability-family-small).
 
 ## Erdős Problem 777, third question
 
@@ -43,7 +43,7 @@ $\delta > 0$ such that for every $n$, every family $F$ of subsets of $\{0, \dots
 more than $|F|^{2 - \delta}$ comparable pairs (ordered pairs $(A, B)$ of members of $F$ with
 $A \subsetneq B$) satisfies $|F| < (2 + \varepsilon)^{n/2}$.
 
-Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.nearlyCompleteComparabilityFamilySmall`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#nearly-complete-comparability-family-sma).
+Formalized by `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.nearlyCompleteComparabilityFamilySmall`, a definition declared in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#nearly-complete-comparability-family-sma).
 
 ## Affirmative answer to Erdős Problem 777, first question
 
@@ -60,7 +60,7 @@ answer follows from Theorem 1.4 and Corollary 1.5 of Alon, Das, Glebov and Sudak
 
 - T. F. Bloom, Erdős Problems, Problem #777, https://www.erdosproblems.com/777 (status SOLVED); resolution: N. Alon and P. Frankl, The maximum number of disjoint pairs in a family of subsets, Graphs Combin. 1 (1985), 13-21; N. Alon, S. Das, R. Glebov and B. Sudakov, Comparable pairs in families of sets, J. Combin. Theory Ser. B (2015), 164-185, arXiv:1411.4196, Alon-Frankl Theorem 1.4: for every k ≥ 1 there is β(k) > 0 such that for m = 2^{(1/(k+1) + δ)n}, c(n, m) < (1 - 1/k) C(m, 2) + O(m^{2 - β δ^{k+1}}), the case k = 1 conjectured by Daykin and Erdős; Alon-Frankl Section 6, Example 6.1: the sets meeting the second half of [n] in at most d elements or missing at most d elements of the first half form a family of Θ(n^d 2^{n/2}) sets with a constant fraction of comparable pairs, disproving a conjecture of Erdős; erdosproblems.com/777: Alon and Frankl answer the third question in the affirmative and the second in the negative, and an affirmative answer to the first follows from Theorem 1.4 and Corollary 1.5 of Alon, Das, Glebov and Sudakov, https://www.erdosproblems.com/777.
 
-Stated but not proved: `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.fewComparablePairsBelowTwoHalfPower_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#few-comparable-pairs-below-two-half-powe-2).
+Stated but not proved: `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.fewComparablePairsBelowTwoHalfPower_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#few-comparable-pairs-below-two-half-powe-2).
 
 ## Negative answer to Erdős Problem 777, second question
 
@@ -78,7 +78,7 @@ $n$-element set with at least $2^{-5} \binom{m}{2}$ comparable pairs (erdosprobl
 
 - T. F. Bloom, Erdős Problems, Problem #777, https://www.erdosproblems.com/777 (status SOLVED); resolution: N. Alon and P. Frankl, The maximum number of disjoint pairs in a family of subsets, Graphs Combin. 1 (1985), 13-21; N. Alon, S. Das, R. Glebov and B. Sudakov, Comparable pairs in families of sets, J. Combin. Theory Ser. B (2015), 164-185, arXiv:1411.4196, Alon-Frankl Theorem 1.4: for every k ≥ 1 there is β(k) > 0 such that for m = 2^{(1/(k+1) + δ)n}, c(n, m) < (1 - 1/k) C(m, 2) + O(m^{2 - β δ^{k+1}}), the case k = 1 conjectured by Daykin and Erdős; Alon-Frankl Section 6, Example 6.1: the sets meeting the second half of [n] in at most d elements or missing at most d elements of the first half form a family of Θ(n^d 2^{n/2}) sets with a constant fraction of comparable pairs, disproving a conjecture of Erdős; erdosproblems.com/777: Alon and Frankl answer the third question in the affirmative and the second in the negative, and an affirmative answer to the first follows from Theorem 1.4 and Corollary 1.5 of Alon, Das, Glebov and Sudakov, https://www.erdosproblems.com/777.
 
-Stated but not proved: `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.denseComparabilityFamilySmall_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#dense-comparability-family-small-refuted).
+Stated but not proved: `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.denseComparabilityFamilySmall_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#dense-comparability-family-small-refuted).
 
 ## Affirmative answer to Erdős Problem 777, third question
 
@@ -96,7 +96,7 @@ comparable pairs.
 
 - T. F. Bloom, Erdős Problems, Problem #777, https://www.erdosproblems.com/777 (status SOLVED); resolution: N. Alon and P. Frankl, The maximum number of disjoint pairs in a family of subsets, Graphs Combin. 1 (1985), 13-21; N. Alon, S. Das, R. Glebov and B. Sudakov, Comparable pairs in families of sets, J. Combin. Theory Ser. B (2015), 164-185, arXiv:1411.4196, Alon-Frankl Theorem 1.4: for every k ≥ 1 there is β(k) > 0 such that for m = 2^{(1/(k+1) + δ)n}, c(n, m) < (1 - 1/k) C(m, 2) + O(m^{2 - β δ^{k+1}}), the case k = 1 conjectured by Daykin and Erdős; Alon-Frankl Section 6, Example 6.1: the sets meeting the second half of [n] in at most d elements or missing at most d elements of the first half form a family of Θ(n^d 2^{n/2}) sets with a constant fraction of comparable pairs, disproving a conjecture of Erdős; erdosproblems.com/777: Alon and Frankl answer the third question in the affirmative and the second in the negative, and an affirmative answer to the first follows from Theorem 1.4 and Corollary 1.5 of Alon, Das, Glebov and Sudakov, https://www.erdosproblems.com/777.
 
-Stated but not proved: `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.nearlyCompleteComparabilityFamilySmall_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#nearly-complete-comparability-family-sma-2).
+Stated but not proved: `MathlibExt.Combinatorics.ComparablePairsSetFamilyErdosProblem777Wanted.nearlyCompleteComparabilityFamilySmall_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ComparablePairsSetFamilyErdosProblem777Wanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html#nearly-complete-comparability-family-sma-2).
 
 ## Depends on
 
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Comparable pairs in set families](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families/comparable-pairs-in-set-families)

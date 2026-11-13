@@ -7,7 +7,7 @@ statement: formalized
 
 # Iterated factorials and power towers
 
-11 results, 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html).
+11 results, 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html).
 
 ## Iterated logarithms of power towers increase to a limit
 
@@ -25,7 +25,7 @@ to a real number.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Lemma 2 (`jis-2025-25.2.8-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.iterate_logb_tetration_strictMono_and_converges` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#iterate-logb-tetration-strict-mono-and-c).
+Stated but not proved: `MetaMathlibExt.iterate_logb_tetration_strictMono_and_converges` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#iterate-logb-tetration-strict-mono-and-c).
 
 ## Lower bound $\Gamma(x + 1) > (x/e)^x$ for the Gamma function
 
@@ -36,7 +36,7 @@ $x \ge 1$, $\Gamma(x + 1) > (x/e)^x$.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Lemma 9 (`jis-2025-25.2.8-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.div_exp_one_rpow_lt_Gamma_add_one` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#div-exp-one-rpow-lt-gamma-add-one).
+Stated but not proved: `MetaMathlibExt.div_exp_one_rpow_lt_Gamma_add_one` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#div-exp-one-rpow-lt-gamma-add-one).
 
 ## Upper bound $\Gamma(x + 1) \ln \Gamma(x + 1) \le \Gamma(x)^{\Gamma(x)}$
 
@@ -47,7 +47,7 @@ number $x > 4$, $\Gamma(x + 1) \ln \Gamma(x + 1) \le \Gamma(x)^{\Gamma(x)}$.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Lemma 9 (`jis-2025-25.2.8-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.Gamma_add_one_mul_log_le_Gamma_rpow_self` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#gamma-add-one-mul-log-le-gamma-rpow-self).
+Stated but not proved: `MetaMathlibExt.Gamma_add_one_mul_log_le_Gamma_rpow_self` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#gamma-add-one-mul-log-le-gamma-rpow-self).
 
 ## Normalization of power towers
 
@@ -65,7 +65,7 @@ The paper leaves the condition $n + k \ge 0$ implicit.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Theorem 1 (`jis-2025-25.2.8-thm-1`), quoted from the author's earlier paper.
 
-Stated but not proved: `MetaMathlibExt.exists_tetration_eq_iterate_rpow_eventually` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-tetration-eq-iterate-rpow-eventua).
+Stated but not proved: `MetaMathlibExt.exists_tetration_eq_iterate_rpow_eventually` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-tetration-eq-iterate-rpow-eventua).
 
 ## Power towers rewritten in another base
 
@@ -79,7 +79,7 @@ $a \uparrow\uparrow n = E_p(b, c)$.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Lemma 3 (`jis-2025-25.2.8-lem-3`), quoted from the author's earlier paper.
 
-Stated but not proved: `MetaMathlibExt.exists_tetration_eq_iterate_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-tetration-eq-iterate-rpow).
+Stated but not proved: `MetaMathlibExt.exists_tetration_eq_iterate_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-tetration-eq-iterate-rpow).
 
 ## Comparison of iterated factorials
 
@@ -91,7 +91,7 @@ natural numbers. If $n' < F_{k-k'}(n)$, then $F_{k'}(n') < F_k(n)$.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Theorem 4 (`jis-2025-25.2.8-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.iterate_factorial_lt_iterate_factorial` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#iterate-factorial-lt-iterate-factorial).
+Stated but not proved: `MetaMathlibExt.iterate_factorial_lt_iterate_factorial` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#iterate-factorial-lt-iterate-factorial).
 
 ## Iterated factorials as base-$10$ power towers
 
@@ -110,7 +110,7 @@ The paper leaves the condition $n + \ell \ge 0$ implicit.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Theorem 5 (`jis-2025-25.2.8-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.exists_iterate_factorial_eq_iterate_rpow_ten` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-iterate-factorial-eq-iterate-rpow).
+Stated but not proved: `MetaMathlibExt.exists_iterate_factorial_eq_iterate_rpow_ten` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-iterate-factorial-eq-iterate-rpow).
 
 ## Iterated factorials as tetrations
 
@@ -126,7 +126,7 @@ The case $n = 0$ is excluded, as the paper defines power towers only for $n \ge 
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Theorem 8 (`jis-2025-25.2.8-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.exists_iterate_factorial_eq_tetration` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-iterate-factorial-eq-tetration).
+Stated but not proved: `MetaMathlibExt.exists_iterate_factorial_eq_tetration` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-iterate-factorial-eq-tetration).
 
 ## Iterated Gamma values as power towers
 
@@ -149,7 +149,7 @@ restatement in the proof of Theorem 12, for the printed $c_n \le 10$ (copied fro
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Theorem 10 (`jis-2025-25.2.8-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.exists_iterate_Gamma_eq_iterate_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-iterate-gamma-eq-iterate-rpow).
+Stated but not proved: `MetaMathlibExt.exists_iterate_Gamma_eq_iterate_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-iterate-gamma-eq-iterate-rpow).
 
 ## Gamma of an iterated exponential exceeds the next iterate
 
@@ -162,7 +162,7 @@ $E_{n+1}(b, b) < \Gamma(E_n(b, b))$.
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Lemma 11 (`jis-2025-25.2.8-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.iterate_rpow_succ_lt_Gamma_iterate_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#iterate-rpow-succ-lt-gamma-iterate-rpow).
+Stated but not proved: `MetaMathlibExt.iterate_rpow_succ_lt_Gamma_iterate_rpow` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#iterate-rpow-succ-lt-gamma-iterate-rpow).
 
 ## Tetrations as iterated Gamma values
 
@@ -178,7 +178,7 @@ The case $n = 0$ is excluded, as the paper defines power towers only for $n \ge 
 
 - Karol Gryszka, *Exponential versus Factorial Revisited*, Journal of Integer Sequences 28 (2025), Article 25.2.8, Theorem 12 (`jis-2025-25.2.8-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.exists_tetration_eq_iterate_Gamma` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-tetration-eq-iterate-gamma).
+Stated but not proved: `MetaMathlibExt.exists_tetration_eq_iterate_Gamma` is written with `theorem_wanted` in [WantedExt/Analysis/ExponentialVersusFactorialWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/ExponentialVersusFactorialWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html#exists-tetration-eq-iterate-gamma).
 
 ## Depends on
 
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Iterated factorials and power towers](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/gamma-function/iterated-factorials-and-power-towers)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Geometric equivalence of groups
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html).
 
 ## Quasi-identities of groups
 
@@ -16,7 +16,7 @@ list of premises $w_1, \dots, w_k$ and a conclusion $w$, all elements of the fre
 the unknowns $x_0, \dots, x_{n-1}$. It stands for the formula
 $\forall x_0, \dots, x_{n-1}\, (w_1 = 1 \wedge \dots \wedge w_k = 1 \to w = 1)$.
 
-Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.QuasiIdentity`, a structure declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#quasi-identity).
+Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.QuasiIdentity`, a structure declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#quasi-identity).
 
 ## Satisfaction of a quasi-identity in a group
 
@@ -27,7 +27,7 @@ $u(g_0, \dots, g_{n-1})$ for the image of $u$ under the homomorphism $F_n \to G$
 $x_j$ to $g_j$. Then $q$ holds in $G$ when for all $g_0, \dots, g_{n-1} \in G$ with
 $w_i(g_0, \dots, g_{n-1}) = 1$ for every premise $w_i$, also $w(g_0, \dots, g_{n-1}) = 1$.
 
-Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.QuasiIdentity.HoldsIn`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#holds-in).
+Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.QuasiIdentity.HoldsIn`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#holds-in).
 
 ## Closure of a set of words with respect to a group
 
@@ -37,7 +37,7 @@ $\mathrm{cl}_G(T)$ is the set of $w \in F_n$ such that $\mu(w) = 1$ for every ho
 $\mu : F_n \to G$ with $\mu(t) = 1$ for all $t \in T$, that is, the intersection of the kernels
 of all homomorphisms $F_n \to G$ that vanish on $T$.
 
-Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.gClosure`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#g-closure).
+Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.gClosure`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#g-closure).
 
 ## Geometrically equivalent groups
 
@@ -47,7 +47,7 @@ every subset $T$ of the free group $F_n$ of rank $n$, where $\mathrm{cl}_G(T)$ i
 $G$-closure of $T$: the intersection of the kernels of all homomorphisms $F_n \to G$ that
 vanish on $T$.
 
-Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.GeometricallyEquivalent`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#geometrically-equivalent).
+Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.GeometricallyEquivalent`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#geometrically-equivalent).
 
 ## Plotkin's problem on quasi-identities and geometric equivalence
 
@@ -56,7 +56,7 @@ The proposition
 quasi-identities, meaning that every quasi-identity holds in $G$ if and only if it holds in $H$,
 are geometrically equivalent.
 
-Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.sameQuasiIdentitiesImpliesGeometricallyEquivalent`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#same-quasi-identities-implies-geometrica).
+Formalized by `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.sameQuasiIdentitiesImpliesGeometricallyEquivalent`, a definition declared in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#same-quasi-identities-implies-geometrica).
 
 ## Groups with the same quasi-identities need not be geometrically equivalent
 
@@ -68,7 +68,7 @@ holds in $G$ if and only if it holds in $H$, but $G$ and $H$ are not geometrical
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 14.71 (B. I. Plotkin); resolution: V. V. Bludov, Abstracts of the 7th Int. Conf. Groups and Group Rings, Supraśl, 1999, p. 6; R. Göbel and S. Shelah, Proc. Amer. Math. Soc. 130 (2002), 673-674; A. G. Myasnikov and V. N. Remeslennikov, J. Algebra 234 (2000), no. 1, 225-276, Kourovka Archive, Problem 14.71 (answer: No, not always).
 
-Stated but not proved: `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.sameQuasiIdentitiesImpliesGeometricallyEquivalent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#same-quasi-identities-implies-geometrica-2).
+Stated but not proved: `MathlibExt.GroupTheory.QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.sameQuasiIdentitiesImpliesGeometricallyEquivalent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/QuasiIdentitiesGeometricEquivalenceKourovka14Problem71Wanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html#same-quasi-identities-implies-geometrica-2).
 
 ## Depends on
 
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Geometric equivalence of groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/varieties-and-equations/geometric-equivalence-of-groups)

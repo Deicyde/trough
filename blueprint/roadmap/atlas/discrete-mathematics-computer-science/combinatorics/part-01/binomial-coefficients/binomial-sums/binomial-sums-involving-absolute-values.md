@@ -8,7 +8,7 @@ proof: formalized
 
 # Binomial sums involving absolute values
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values/index.html).
 
 ## Brent–Osborn binomial absolute moment identity
 
@@ -25,7 +25,7 @@ the sum running over all integers $k, \ell$, since the binomial coefficients van
 
 - Richard P. Brent, Hideyuki Ohtsuka, Judy-anne H. Osborn, and Helmut Prodinger, "Some Binomial Sums Involving Absolute Values," Journal of Integer Sequences 19 (2016), Article 16.3.7, Theorem [Brent and Osborn], lines 377–383 (with the `W_β` definition at lines 345–349), https://cs.uwaterloo.ca/journals/JIS/VOL19/Brent/brent9.tex
 
-Formalized by `MetaMathlibExt.brent_osborn_binomial_absolute_moment`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BrentOsbornBinomialAbsoluteMoment.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BrentOsbornBinomialAbsoluteMoment.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values/index.html#brent-osborn-binomial-absolute-moment).
+Formalized by `MetaMathlibExt.brent_osborn_binomial_absolute_moment`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BrentOsbornBinomialAbsoluteMoment.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BrentOsbornBinomialAbsoluteMoment.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values/index.html#brent-osborn-binomial-absolute-moment).
 
 ## Reduction of a double binomial absolute-value sum
 
@@ -45,7 +45,7 @@ the identity reads $T_\beta(m,n) = S_\beta(m+n)$, after the shift $i = m + k$, $
 
 - Richard P. Brent, Hideyuki Ohtsuka, Judy-anne H. Osborn, and Helmut Prodinger, "Some Binomial Sums Involving Absolute Values," Journal of Integer Sequences 19 (2016), Article 16.3.7, Theorem, lines 278–283 (with `S_β` defined at lines 245–247 and `T_β` at 271–274), https://cs.uwaterloo.ca/journals/JIS/VOL19/Brent/brent9.tex
 
-Formalized by `MetaMathlibExt.double_binomial_sum_eq_single_binomial_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/DoubleBinomialSumReduction.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/DoubleBinomialSumReduction.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values/index.html#double-binomial-sum-eq-single-binomial-s).
+Formalized by `MetaMathlibExt.double_binomial_sum_eq_single_binomial_sum`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/DoubleBinomialSumReduction.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/DoubleBinomialSumReduction.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values/index.html#double-binomial-sum-eq-single-binomial-s).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Binomial sums involving absolute values](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/binomial-sums/binomial-sums-involving-absolute-values)

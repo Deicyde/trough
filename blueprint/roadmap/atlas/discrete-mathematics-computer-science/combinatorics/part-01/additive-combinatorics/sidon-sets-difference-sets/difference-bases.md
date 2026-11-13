@@ -7,7 +7,7 @@ statement: formalized
 
 # Difference bases
 
-26 results, 9 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html).
+26 results, 9 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html).
 
 ## Difference representation function
 
@@ -19,7 +19,7 @@ ordered pairs $(a, a') \in A \times A$ with $a - a' = x$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.subRepCount`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sub-rep-count).
+Formalized by `MetaMathlibExt.subRepCount`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sub-rep-count).
 
 ## The $g$-difference basis number
 
@@ -33,7 +33,7 @@ $\eta_g(n)$ is the least size of such a set.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.diffBasisNumber`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number).
+Formalized by `MetaMathlibExt.diffBasisNumber`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number).
 
 ## Difference basis number of an abelian group
 
@@ -53,7 +53,7 @@ $S = G$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Sections 1 and 3.
 
-Formalized by `MetaMathlibExt.groupDiffBasisNumber`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number).
+Formalized by `MetaMathlibExt.groupDiffBasisNumber`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number).
 
 ## Maximal sets with bounded difference multiplicities
 
@@ -67,7 +67,7 @@ every nonzero integer $x$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Sections 1 and 4.
 
-Formalized by `MetaMathlibExt.boundedDiffSetNumber`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number).
+Formalized by `MetaMathlibExt.boundedDiffSetNumber`, a definition declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number).
 
 ## Representations of zero as a difference
 
@@ -79,7 +79,7 @@ $a - a' = 0$ equals the number of elements of $A$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.subRepCount_zero`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sub-rep-count-zero).
+Formalized by `MetaMathlibExt.subRepCount_zero`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sub-rep-count-zero).
 
 ## The value $\eta_1(1) = 2$
 
@@ -91,7 +91,7 @@ set needs two elements, and $\{0, 1\}$ is one.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Section 1.
 
-Formalized by `MetaMathlibExt.diffBasisNumber_one_one`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-one-one).
+Formalized by `MetaMathlibExt.diffBasisNumber_one_one`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-one-one).
 
 ## Difference basis number of $\mathbb{Z}/3\mathbb{Z}$
 
@@ -104,7 +104,7 @@ the set $\{0, 1\}$ has differences $0, 1, 2$, and one element is not enough.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Section 3.
 
-Formalized by `MetaMathlibExt.groupDiffBasisNumber_one_zmod_three`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-one-zmod-three).
+Formalized by `MetaMathlibExt.groupDiffBasisNumber_one_zmod_three`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-one-zmod-three).
 
 ## Trivial upper bound for sets with bounded difference multiplicities
 
@@ -117,7 +117,7 @@ $(a, a') \in A \times A$. Then $\alpha_g(n) \le n$, since these sets are subsets
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Section 4.
 
-Formalized by `MetaMathlibExt.boundedDiffSetNumber_le`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number-le).
+Formalized by `MetaMathlibExt.boundedDiffSetNumber_le`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number-le).
 
 ## The value $\alpha_g(1) = 1$
 
@@ -130,7 +130,7 @@ number $g$ we have $\alpha_g(1) = 1$: the singleton $\{1\}$ has no nonzero diffe
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Section 4.
 
-Formalized by `MetaMathlibExt.boundedDiffSetNumber_one`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number-one).
+Formalized by `MetaMathlibExt.boundedDiffSetNumber_one`, a theorem declared in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number-one).
 
 ## Trivial lower bound for difference bases of an interval
 
@@ -143,7 +143,7 @@ $(a, a') \in A \times A$. Then $\eta_g(n) / \sqrt{n} \ge \sqrt{2g}$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sqrt_two_mul_le_diffBasisNumber_div_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sqrt-two-mul-le-diff-basis-number-div-sq).
+Stated but not proved: `MetaMathlibExt.sqrt_two_mul_le_diffBasisNumber_div_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sqrt-two-mul-le-diff-basis-number-div-sq).
 
 ## Rédei–Rényi difference basis
 
@@ -155,7 +155,7 @@ and every $x \in \{1, \dots, n\}$ is a difference $b - b'$ of two elements of $B
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.redeiRenyi_diffBasis` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#redei-renyi-diff-basis).
+Stated but not proved: `MetaMathlibExt.redeiRenyi_diffBasis` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#redei-renyi-diff-basis).
 
 ## Upper bound for the $g$-difference basis number
 
@@ -172,7 +172,7 @@ where for $n = 0$ both quotients are read with the convention that division by $
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.diffBasisNumber_div_sqrt_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-div-sqrt-le).
+Stated but not proved: `MetaMathlibExt.diffBasisNumber_div_sqrt_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-div-sqrt-le).
 
 ## Comparing $g$-difference bases with difference bases
 
@@ -186,7 +186,7 @@ $\eta_1(n) \le \eta_g(n) \le g\,\eta_1(n)$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.diffBasisNumber_one_le_and_le_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-one-le-and-le-mul).
+Stated but not proved: `MetaMathlibExt.diffBasisNumber_one_le_and_le_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-one-le-and-le-mul).
 
 ## Kravitz's question: the normalized difference basis numbers converge
 
@@ -201,7 +201,7 @@ $n \to \infty$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_diffBasisNumber_div_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-diff-basis-number-div-sqrt).
+Stated but not proved: `MetaMathlibExt.tendsto_diffBasisNumber_div_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-diff-basis-number-div-sqrt).
 
 ## Singer product construction of difference bases
 
@@ -220,7 +220,7 @@ fails.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.singer_product_diffBasis` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#singer-product-diff-basis).
+Stated but not proved: `MetaMathlibExt.singer_product_diffBasis` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#singer-product-diff-basis).
 
 ## Scaling bound for the $g$-difference basis number
 
@@ -237,7 +237,7 @@ prints the factor $q$, obtained from the misprinted Lemma 4; its proof gives $q 
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.diffBasisNumber_le_succ_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-le-succ-mul).
+Stated but not proved: `MetaMathlibExt.diffBasisNumber_le_succ_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#diff-basis-number-le-succ-mul).
 
 ## Products of difference bases
 
@@ -252,7 +252,7 @@ $(z, z') \in (A_1 \times A_2) \times (A_1 \times A_2)$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.subRepCount_prod_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sub-rep-count-prod-ge).
+Stated but not proved: `MetaMathlibExt.subRepCount_prod_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#sub-rep-count-prod-ge).
 
 ## Difference bases of the integers modulo a prime
 
@@ -267,7 +267,7 @@ The bound comes from reducing the Rédei–Rényi set modulo $p$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, equation (5) after Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.groupDiffBasisNumber_zmod_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-zmod-le).
+Stated but not proved: `MetaMathlibExt.groupDiffBasisNumber_zmod_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-zmod-le).
 
 ## Difference bases of the square of a finite field
 
@@ -281,7 +281,7 @@ $K \times K$ are taken as additive groups.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.groupDiffBasisNumber_prod_self_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-prod-self-le).
+Stated but not proved: `MetaMathlibExt.groupDiffBasisNumber_prod_self_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-prod-self-le).
 
 ## Square-root bound for difference bases of finite fields
 
@@ -293,7 +293,7 @@ is a difference $a - a'$ of two elements of $A$ satisfies $\eta_1(K) \le 100 \sq
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.groupDiffBasisNumber_le_hundred_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-le-hundred-sqrt).
+Stated but not proved: `MetaMathlibExt.groupDiffBasisNumber_le_hundred_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#group-diff-basis-number-le-hundred-sqrt).
 
 ## Difference bases of $\mathbb{F}_{p^t} \times \mathbb{F}_{p^t}$
 
@@ -311,7 +311,7 @@ The restriction to odd $p$ is deliberate: for $p = 2$ the claim fails.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.tendsto_groupDiffBasisNumber_galoisField_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-group-diff-basis-number-galois-f).
+Stated but not proved: `MetaMathlibExt.tendsto_groupDiffBasisNumber_galoisField_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-group-diff-basis-number-galois-f).
 
 ## Even and odd limits for difference bases of $\mathbb{F}_p^n$
 
@@ -328,7 +328,7 @@ group of $n$-tuples over the field $\mathbb{F}_p$ with $p$ elements.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.tendsto_groupDiffBasisNumber_even_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-group-diff-basis-number-even-odd).
+Stated but not proved: `MetaMathlibExt.tendsto_groupDiffBasisNumber_even_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-group-diff-basis-number-even-odd).
 
 ## Nonzero differences of the Bose–Chowla set avoid the subgroup of order $g$
 
@@ -348,7 +348,7 @@ $(B_q - B_q) \cap H = \{0\}$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Lemma 9, quoting Bose–Chowla and Brandão–Debarre–Tait / Gómez–Trujillo–Tait.
 
-Stated but not proved: `MetaMathlibExt.boseChowla_sub_mem_subgroup_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bose-chowla-sub-mem-subgroup-eq).
+Stated but not proved: `MetaMathlibExt.boseChowla_sub_mem_subgroup_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bose-chowla-sub-mem-subgroup-eq).
 
 ## Upper bound for sets with bounded difference multiplicities
 
@@ -363,7 +363,7 @@ $\alpha_g(n) \le (1 + o(1))\sqrt{gn}$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.boundedDiffSetNumber_le_one_add_mul_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number-le-one-add-mul-s).
+Stated but not proved: `MetaMathlibExt.boundedDiffSetNumber_le_one_add_mul_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#bounded-diff-set-number-le-one-add-mul-s).
 
 ## Lower-bound construction for sets with bounded difference multiplicities
 
@@ -376,7 +376,7 @@ $g$ ordered pairs $(a, a') \in A_n \times A_n$, and $|A_n| / \sqrt{gn} \to 1$ as
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.exists_boundedDiffSet_card_div_sqrt_tendsto` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#exists-bounded-diff-set-card-div-sqrt-te).
+Stated but not proved: `MetaMathlibExt.exists_boundedDiffSet_card_div_sqrt_tendsto` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#exists-bounded-diff-set-card-div-sqrt-te).
 
 ## Asymptotics of the largest sets with bounded difference counts
 
@@ -391,7 +391,7 @@ $\alpha_g(n) = (1 + o_g(1)) \sqrt{gn}$.
 
 - Eric Schmutz and Michael Tait, *Cardinalities of g-Difference Sets*, INTEGERS 25 (2025), Article A77, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.tendsto_boundedDiffSetNumber_div_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-bounded-diff-set-number-div-sqrt).
+Stated but not proved: `MetaMathlibExt.tendsto_boundedDiffSetNumber_div_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/GDifferenceBasesWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/GDifferenceBasesWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html#tendsto-bounded-diff-set-number-div-sqrt).
 
 ## Depends on
 
@@ -400,4 +400,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Difference bases](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/difference-bases)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Finite multiple zeta values of level N
 
-17 results, 5 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html).
+17 results, 5 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html).
 
 ## Colored finite multiple harmonic sums
 
@@ -25,7 +25,7 @@ $0 < m < p$ is invertible, and for other $p$ non-units get a conventional value.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Section 2.2 (definition of `ζ^α_{p,N}(k)`).
 
-Formalized by `MetaMathlibExt.coloredFiniteMZV`, a definition declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#colored-finite-mzv).
+Formalized by `MetaMathlibExt.coloredFiniteMZV`, a definition declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#colored-finite-mzv).
 
 ## Colored finite multiple harmonic sum of the empty index
 
@@ -37,7 +37,7 @@ empty index, with the empty tuple of colors, equals $1$ in $\mathbb{Z}/p\mathbb{
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Section 2.2 (`ζ^∅_{p,N}(∅) = 1`).
 
-Formalized by `MetaMathlibExt.coloredFiniteMZV_zero`, a theorem declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#colored-finite-mzv-zero).
+Formalized by `MetaMathlibExt.coloredFiniteMZV_zero`, a theorem declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#colored-finite-mzv-zero).
 
 ## Sums over a subinterval of $(0, p)$ as colored finite multiple zeta values
 
@@ -58,7 +58,7 @@ The entries of $k$ may be $0$; the paper's indices have positive entries.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sum_Ioo_eq_pow_mul_coloredFiniteMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#sum-ioo-eq-pow-mul-colored-finite-mzv).
+Stated but not proved: `MetaMathlibExt.sum_Ioo_eq_pow_mul_coloredFiniteMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#sum-ioo-eq-pow-mul-colored-finite-mzv).
 
 ## Level-$12$ colored finite zeta values and Bernoulli numbers
 
@@ -74,7 +74,7 @@ $2\zeta^{-3p}_{p,12}(k) = (3^{-k} - 4^{-k} - 6^{-k} + 12^{-k}) Z_p(k)$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.two_mul_coloredFiniteMZV_twelve` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#two-mul-colored-finite-mzv-twelve).
+Stated but not proved: `MetaMathlibExt.two_mul_coloredFiniteMZV_twelve` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#two-mul-colored-finite-mzv-twelve).
 
 ## Kummer's theorem for regular primes
 
@@ -87,7 +87,7 @@ holds for the exponent $p$: there are no positive integers $a, b, c$ with $a^p +
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.fermatLastTheoremFor_of_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#fermat-last-theorem-for-of-regular).
+Stated but not proved: `MetaMathlibExt.fermatLastTheoremFor_of_regular` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#fermat-last-theorem-for-of-regular).
 
 ## Wieferich's criterion for the first case of Fermat's Last Theorem
 
@@ -99,7 +99,7 @@ $x, y, z$ with $p \nmid xyz$ and $x^p + y^p = z^p$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.fermat_first_case_of_not_isWieferichPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#fermat-first-case-of-not-is-wieferich-pr).
+Stated but not proved: `MetaMathlibExt.fermat_first_case_of_not_isWieferichPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#fermat-first-case-of-not-is-wieferich-pr).
 
 ## Skula–Dobson–Ichimura congruence for the Fermat quotient of $2$
 
@@ -113,7 +113,7 @@ $(N + 1)\, q_p(2) \equiv -\sum_{0 \le j < N/2} s_p(2j, 2N) \pmod{p}$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.fermatQuotient_two_mul_eq_neg_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#fermat-quotient-two-mul-eq-neg-sum).
+Stated but not proved: `MetaMathlibExt.fermatQuotient_two_mul_eq_neg_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#fermat-quotient-two-mul-eq-neg-sum).
 
 ## A small odd $k$ with $p \nmid B_{p-k}$
 
@@ -129,7 +129,7 @@ $2$, the convention for $B_1$ does not matter.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.exists_odd_not_dvd_bernoulli_num_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-odd-not-dvd-bernoulli-num-le).
+Stated but not proved: `MetaMathlibExt.exists_odd_not_dvd_bernoulli_num_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-odd-not-dvd-bernoulli-num-le).
 
 ## Finite multiple zeta value of level $N$ with a color map
 
@@ -148,7 +148,7 @@ but finitely many $p$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Definition 2.1 (finite multiple zeta values of level `N` with color map).
 
-Formalized by `MetaMathlibExt.finiteMZVColored`, a definition declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored).
+Formalized by `MetaMathlibExt.finiteMZVColored`, a definition declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored).
 
 ## The empty color map gives zero
 
@@ -161,7 +161,7 @@ of the finite multiple zeta value of level $N$ with color map $c$ is $0$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Definition 2.1.
 
-Formalized by `MetaMathlibExt.finiteMZVColored_none`, a theorem declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored-none).
+Formalized by `MetaMathlibExt.finiteMZVColored_none`, a theorem declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored-none).
 
 ## A constant color map gives the colored harmonic sum
 
@@ -176,7 +176,7 @@ multiple harmonic sum $\zeta^{\alpha}_{p,N}(k)$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Definition 2.1.
 
-Formalized by `MetaMathlibExt.finiteMZVColored_some`, a theorem declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored-some).
+Formalized by `MetaMathlibExt.finiteMZVColored_some`, a theorem declared in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored-some).
 
 ## Reversal for finite multiple zeta values of level $N$
 
@@ -195,7 +195,7 @@ in $\mathbb{Z}/p\mathbb{Z}$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.finiteMZVColored_eq_neg_one_pow_mul_reverse` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored-eq-neg-one-pow-mul-rev).
+Stated but not proved: `MetaMathlibExt.finiteMZVColored_eq_neg_one_pow_mul_reverse` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#finite-mzvcolored-eq-neg-one-pow-mul-rev).
 
 ## Decomposition of finite multiple zeta values into level-$N$ pieces
 
@@ -219,7 +219,7 @@ $i_j = i_{j+1}$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.coloredFiniteMZV_one_eq_pow_mul_sum_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#colored-finite-mzv-one-eq-pow-mul-sum-pr).
+Stated but not proved: `MetaMathlibExt.coloredFiniteMZV_one_eq_pow_mul_sum_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#colored-finite-mzv-one-eq-pow-mul-sum-pr).
 
 ## Raising the level of finite multiple zeta values
 
@@ -244,7 +244,7 @@ where a rational $q = a/b$ in lowest terms with $b > 0$ is read modulo $p$ as $a
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exists_finiteMZVColored_eq_sum_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-finite-mzvcolored-eq-sum-of-dvd).
+Stated but not proved: `MetaMathlibExt.exists_finiteMZVColored_eq_sum_of_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-finite-mzvcolored-eq-sum-of-dvd).
 
 ## Criterion for a uniform bound on the least non-Wieferich base
 
@@ -264,7 +264,7 @@ $N^{p-1} \equiv 1 \pmod{p^2}$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.exists_bound_fermatQuotient_iff_finite_iInter` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-bound-fermat-quotient-iff-finite).
+Stated but not proved: `MetaMathlibExt.exists_bound_fermatQuotient_iff_finite_iInter` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-bound-fermat-quotient-iff-finite).
 
 ## Criterion for a uniform bound on the least non-vanishing Bernoulli index
 
@@ -286,7 +286,7 @@ the set of primes $p > k$ with $p \mid \operatorname{num}(B_{p-k})$.
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.exists_bound_bernoulli_iff_finite_iInter` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-bound-bernoulli-iff-finite-i-inte).
+Stated but not proved: `MetaMathlibExt.exists_bound_bernoulli_iff_finite_iInter` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-bound-bernoulli-iff-finite-i-inte).
 
 ## Regular and non-Wieferich primes give non-vanishing finite multiple zeta values
 
@@ -309,7 +309,7 @@ The weight $w = 0$ is allowed (the empty index has value $1$); the paper takes $
 
 - Seki, *Regular Primes, Non-Wieferich Primes, and Finite Multiple Zeta Values of Level N*, INTEGERS 24 (2024), Article A22, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.exists_finiteMZV_ne_zero_of_conjectures` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-finite-mzv-ne-zero-of-conjectures).
+Stated but not proved: `MetaMathlibExt.exists_finiteMZV_ne_zero_of_conjectures` is written with `theorem_wanted` in [WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FiniteMultipleZetaLevelWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html#exists-finite-mzv-ne-zero-of-conjectures).
 
 ## Depends on
 
@@ -318,4 +318,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Finite multiple zeta values of level N](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/finite-multiple-zeta-values-of-level-n)

@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "GraphTheory/algebraic-graph-theory/part-01/adj-matrix-pow-weighted-walk-sum.md",
@@ -6787,96 +6787,56 @@
    "title": "Recursion for rook placements covering all rows and columns",
    "statement": "For natural numbers\n$n, m \\ge 1$ and $k$, let $E_{a,b}(k)$ denote the number of $k$-element sets of cells of the\n$a \\times b$ board that contain a cell in every row and a cell in every column. Then\n\n$$E_{n,m}(k) = \\binom{nm}{k} -\n\\sum_{(r,c) \\ne (0,0)} \\binom{n}{r} \\binom{m}{c} E_{n-r,m-c}(k),$$\n\nwhere the sum runs over all pairs $(r, c) \\ne (0, 0)$ with $0 \\le r \\le n$ and $0 \\le c \\le m$.\n\n## Sources\n\n- Stephan Mertens, \"Domination Polynomial of the Rook Graph\", Theorem 2 (`thm:E-recursion`).",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookCoverCount_eq_choose_sub_sum_rookCoverCount",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 82,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-cover-count.md",
    "title": "Rook placements covering all rows and columns",
    "statement": "For natural numbers $n$, $m$ and $k$,\n$E_{n,m}(k)$ is the number of $k$-element sets of cells of the $n \\times m$ board that contain a\ncell in every row and a cell in every column (Mertens' $E_{n,m}(k)$).",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookCoverCount",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 44,
-    "kind": "def",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-dominating-count-eq-choose-sub-mul.md",
    "title": "Dominating rook placements at high density",
    "statement": "For natural numbers $n, m \\ge 1$ and $k$ with\n$k > nm - n - m - \\min(n, m) + 2$, let $d_{n,m}(k)$ be the number of $k$-element sets of cells\nof the $n \\times m$ board that are dominating sets of the rook graph on that board. Then\n\n$$d_{n,m}(k) = \\binom{nm}{k} - nm \\binom{(n-1)(m-1)}{k}.$$\n\n## Sources\n\n- Stephan Mertens, \"Domination Polynomial of the Rook Graph\", Corollary 3 (`cor:high-density`).",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookDominatingCount_eq_choose_sub_mul_choose",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 96,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-dominating-count-eq-choose-sub-sum.md",
    "title": "Dominating rook placements via covering placements",
    "statement": "For natural numbers $n, m \\ge 1$ and\n$k$, let $d_{n,m}(k)$ be the number of $k$-element sets of cells of the $n \\times m$ board that\nare dominating sets of the rook graph on that board, and let $E_{a,b}(k)$ be the number of\n$k$-element sets of cells of the $a \\times b$ board that contain a cell in every row and a cell\nin every column. Then\n\n$$d_{n,m}(k) = \\binom{nm}{k} -\n\\sum_{r=1}^{n} \\sum_{c=1}^{m} \\binom{n}{r} \\binom{m}{c} E_{n-r,m-c}(k).$$\n\n## Sources\n\n- Stephan Mertens, \"Domination Polynomial of the Rook Graph\", Theorem 1 (`thm:R-E`).",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookDominatingCount_eq_choose_sub_sum_rookCoverCount",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 69,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-dominating-count.md",
    "title": "Dominating rook placements",
    "statement": "For natural numbers $n$, $m$ and $k$, $d_{n,m}(k)$ is the\nnumber of $k$-element sets of cells of the $n \\times m$ board that are dominating sets of the rook\ngraph on that board (Mertens' $d_{R_{n,m}}(k)$).",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookDominatingCount",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 52,
-    "kind": "def",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-domination-polynomial-eq-symmetric.md",
    "title": "Symmetric formula for the rook domination polynomial",
    "statement": "For natural numbers $n, m \\ge 1$,\nthe rook domination polynomial $D_{n,m}(x)$ of the $n \\times m$ board, an integer polynomial,\nsatisfies\n\n$$D_{n,m}(x) = ((1+x)^n - 1)^m + ((1+x)^m - 1)^n -\n(-1)^{n+m} \\sum_{\\ell=0}^{n} \\sum_{k=0}^{m} (-1)^{k+\\ell}\n\\binom{n}{\\ell} \\binom{m}{k} (1+x)^{k\\ell}.$$\n\n## Sources\n\n- Stephan Mertens, \"Domination Polynomial of the Rook Graph\", Corollary 5 (`cor:domination-polynomial`).",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookDominationPolynomial_eq_symmetric",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 122,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-domination-polynomial-eq.md",
    "title": "Single-sum formula for the rook domination polynomial",
    "statement": "For natural numbers $n, m \\ge 1$,\nthe rook domination polynomial $D_{n,m}(x)$ of the $n \\times m$ board, an integer polynomial,\nsatisfies\n\n$$D_{n,m}(x) = ((1+x)^n - 1)^m -\n(-1)^m \\sum_{k=0}^{m-1} (-1)^k \\binom{m}{k} ((1+x)^k - 1)^n.$$\n\n## Sources\n\n- Stephan Mertens, \"Domination Polynomial of the Rook Graph\", Theorem 4 (`thm:domination-polynomial`).",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookDominationPolynomial_eq",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 108,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-domination-polynomial.md",
    "title": "Domination polynomial of the rook graph",
    "statement": "For natural numbers $n$ and $m$, the rook\ndomination polynomial of the $n \\times m$ board is the integer polynomial\n$D_{n,m}(x) = \\sum_{k=0}^{nm} d_{n,m}(k)\\, x^k$, where $d_{n,m}(k)$ is the number of $k$-element\nsets of cells of the $n \\times m$ board that are dominating sets of the rook graph on that\nboard.",
    "declaration": "MathlibExt.GraphTheory.RookDominationPolynomialWanted.rookDominationPolynomial",
-   "lean": {
-    "file": "WantedExt/GraphTheory/RookDominationPolynomialWanted.lean",
-    "line": 59,
-    "kind": "def",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "GraphTheory/independence-and-domination/domination-in-rook-graphs/rook-graph-is-dominating-iff.md",

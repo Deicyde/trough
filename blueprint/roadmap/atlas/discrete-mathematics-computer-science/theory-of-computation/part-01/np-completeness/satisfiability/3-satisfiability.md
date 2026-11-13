@@ -8,42 +8,42 @@ proof: formalized
 
 # 3-satisfiability
 
-109 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html).
+109 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html).
 
 ## Three-literal clause test
 
 For a CNF formula $\varphi$, this Boolean test holds exactly
 when every clause of $\varphi$ has at most three literals.
 
-Formalized by `Cslib.Complexity.Karp.is3`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is3).
+Formalized by `Cslib.Complexity.Karp.is3`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is3).
 
 ## The 3SAT decision problem
 
 3SAT accepts a bit string $x$ exactly when $x$ is the binary
 code of a satisfiable CNF formula in which every clause has at most three literals.
 
-Formalized by `Cslib.Complexity.Karp.sat3Dec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat3-dec).
+Formalized by `Cslib.Complexity.Karp.sat3Dec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat3-dec).
 
 ## Renaming of the original variables
 
 Variable index $n$ is renamed to $2n$, so the
 variables of the original formula get even indices.
 
-Formalized by `Cslib.Complexity.Karp.ren`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#ren).
+Formalized by `Cslib.Complexity.Karp.ren`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#ren).
 
 ## Fresh variable indices
 
 For $u \in \mathbb{N}$, the $u$-th fresh variable has index
 $2^{u+1} + 1$, an odd number.
 
-Formalized by `Cslib.Complexity.Karp.fresh`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fresh).
+Formalized by `Cslib.Complexity.Karp.fresh`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fresh).
 
 ## Renaming a literal
 
 The literal with variable index $n$ and polarity $b$ is renamed to
 the literal with variable index $2n$ and the same polarity $b$.
 
-Formalized by `Cslib.Complexity.Karp.renLit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#ren-lit).
+Formalized by `Cslib.Complexity.Karp.renLit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#ren-lit).
 
 ## The tail of a clause chain
 
@@ -57,7 +57,7 @@ $i = 1, \dots, m - 1$, followed by $(\neg y_{z \ominus (m - 1)} \lor \ell_m')$.
 Here $z$ is the fresh number of the variable asserted by the clause before the tail; fresh
 numbers decrease along the chain.
 
-Formalized by `Cslib.Complexity.Karp.chainTail`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-tail).
+Formalized by `Cslib.Complexity.Karp.chainTail`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-tail).
 
 ## The chain of clauses replacing one clause
 
@@ -70,7 +70,7 @@ $(\ell_1' \lor y_{u+k-2})$, then $(\neg y_{u+k-i} \lor \ell_i' \lor y_{u+k-i-1})
 $i = 2, \dots, k - 1$, then $(\neg y_u \lor \ell_k')$. A clause of length $k \ge 2$ thus uses
 the fresh numbers $u$ to $u + k - 2$.
 
-Formalized by `Cslib.Complexity.Karp.chain`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain).
+Formalized by `Cslib.Complexity.Karp.chain`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain).
 
 ## Fresh variables reserved for a clause
 
@@ -78,7 +78,7 @@ The number of fresh variables reserved for a CNF
 clause $C$ in the SAT-to-3SAT translation: $k - 1$ if $C$ has $k \ge 1$ literals, and $0$ if $C$
 is empty.
 
-Formalized by `Cslib.Complexity.Karp.used`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#used).
+Formalized by `Cslib.Complexity.Karp.used`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#used).
 
 ## Clause-by-clause translation with a fresh-number counter
 
@@ -90,7 +90,7 @@ $C$ with fresh numbers from $N'$ on, followed by the clauses of $\psi'$.
 
 Fresh numbers are thus handed out from the last clause backwards, and $N$ is the next free one.
 
-Formalized by `Cslib.Complexity.Karp.to3Aux`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3-aux).
+Formalized by `Cslib.Complexity.Karp.to3Aux`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3-aux).
 
 ## The SAT-to-3SAT translation
 
@@ -98,7 +98,7 @@ For a CNF formula with clauses $C_1, \dots, C_m$, the
 translation is the concatenation, in order, of the chains of clauses replacing $C_1, \dots, C_m$,
 where the chain for $C_i$ uses fresh numbers from $u_i = \sum_{j > i} \max(|C_j| - 1, 0)$ on.
 
-Formalized by `Cslib.Complexity.Karp.to3`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3).
+Formalized by `Cslib.Complexity.Karp.to3`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3).
 
 ## The SAT-to-3SAT reduction on bit strings
 
@@ -106,21 +106,21 @@ A bit string that decodes, with no bits left
 over, to a CNF formula $\varphi$ is sent to the binary code of the SAT-to-3SAT translation of
 $\varphi$; any other bit string is sent to the empty string.
 
-Formalized by `Cslib.Complexity.Karp.reduce3`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#reduce3).
+Formalized by `Cslib.Complexity.Karp.reduce3`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSat.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSat.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#reduce3).
 
 ## Chain-tail clauses have at most three literals
 
 For every clause $C$ and natural number
 $z$, every clause of $\mathrm{chainTail}(C, z)$ has at most three literals.
 
-Formalized by `Cslib.Complexity.Karp.length_le_three_of_mem_chainTail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#length-le-three-of-mem-chain-tail).
+Formalized by `Cslib.Complexity.Karp.length_le_three_of_mem_chainTail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#length-le-three-of-mem-chain-tail).
 
 ## Chain clauses have at most three literals
 
 For every clause $C$ and natural number $u$,
 every clause of $\mathrm{chain}(C, u)$ has at most three literals.
 
-Formalized by `Cslib.Complexity.Karp.length_le_three_of_mem_chain`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#length-le-three-of-mem-chain).
+Formalized by `Cslib.Complexity.Karp.length_le_three_of_mem_chain`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#length-le-three-of-mem-chain).
 
 ## Clauses of the auxiliary 3SAT translation have at most three literals
 
@@ -129,14 +129,14 @@ formula $\varphi$, every clause of the clause list produced by the auxiliary SAT
 translation of $\varphi$ (which replaces each clause by its chain of clauses with fresh
 variables) has at most three literals.
 
-Formalized by `Cslib.Complexity.Karp.length_le_three_of_mem_to3Aux`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#length-le-three-of-mem-to3-aux).
+Formalized by `Cslib.Complexity.Karp.length_le_three_of_mem_to3Aux`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#length-le-three-of-mem-to3-aux).
 
 ## The SAT-to-3SAT translation yields clauses of length at most three
 
 For every CNF formula
 $\varphi$, every clause of the translation $\mathrm{to3}(\varphi)$ has at most three literals.
 
-Formalized by `Cslib.Complexity.Karp.is3_to3`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is3-to3).
+Formalized by `Cslib.Complexity.Karp.is3_to3`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is3-to3).
 
 ## Soundness of the tail of a chain
 
@@ -145,7 +145,7 @@ an assignment $v'$ satisfies every clause of $\mathrm{chainTail}(C, z)$ and give
 variable $\mathrm{fresh}(z)$ the value true, then the assignment $n \mapsto v'(2n)$ satisfies
 $C$.
 
-Formalized by `Cslib.Complexity.Karp.chainTail_sound`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-tail-sound).
+Formalized by `Cslib.Complexity.Karp.chainTail_sound`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-tail-sound).
 
 ## Soundness of the chain of one clause
 
@@ -153,7 +153,7 @@ Let $C$ be a clause and $u$ a natural number. If an
 assignment $v'$ satisfies every clause of $\mathrm{chain}(C, u)$, then the assignment
 $n \mapsto v'(2n)$ satisfies $C$.
 
-Formalized by `Cslib.Complexity.Karp.chain_sound`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-sound).
+Formalized by `Cslib.Complexity.Karp.chain_sound`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-sound).
 
 ## Soundness of the auxiliary 3SAT translation
 
@@ -162,7 +162,7 @@ $v' : \mathbb{N} \to \mathrm{Bool}$ and every CNF formula $\varphi$, if $v'$ sat
 clause list produced by the auxiliary SAT-to-3SAT translation of $\varphi$, then the assignment
 $n \mapsto v'(2n)$ satisfies $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.to3Aux_sound`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3-aux-sound).
+Formalized by `Cslib.Complexity.Karp.to3Aux_sound`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3-aux-sound).
 
 ## Completeness of the tail of a chain
 
@@ -173,7 +173,7 @@ the value true exactly when $v$ satisfies some literal of the clause obtained fr
 dropping its first $j$ literals, where $z - j$ is truncated subtraction ($0$ when $j > z$). Then
 $v'$ satisfies every clause of $\mathrm{chainTail}(C, z)$.
 
-Formalized by `Cslib.Complexity.Karp.chainTail_complete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-tail-complete).
+Formalized by `Cslib.Complexity.Karp.chainTail_complete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-tail-complete).
 
 ## Completeness of the chain of one clause
 
@@ -184,7 +184,7 @@ $u \le w < u + k$, $v'$ gives the fresh variable $\mathrm{fresh}(w)$ the value t
 $v$ satisfies some literal of the clause obtained from $C$ by dropping its first $u + k - w$
 literals. Then $v'$ satisfies every clause of $\mathrm{chain}(C, u)$.
 
-Formalized by `Cslib.Complexity.Karp.chain_complete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-complete).
+Formalized by `Cslib.Complexity.Karp.chain_complete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#chain-complete).
 
 ## Values of the fresh variables in the 3SAT translation
 
@@ -201,7 +201,7 @@ subtraction is truncated at $0$.
 The chain of clauses replacing $C$ uses the fresh numbers $N'$ to $N' + k - 1$, so for these $w$
 the value records whether $v$ satisfies one of the last $w - N' + 1$ literals of $C$.
 
-Formalized by `Cslib.Complexity.Karp.freshVal`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fresh-val).
+Formalized by `Cslib.Complexity.Karp.freshVal`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fresh-val).
 
 ## Completeness of the auxiliary 3SAT translation
 
@@ -212,7 +212,7 @@ $\varphi$. If for every $w < N$ the assignment $v'$ gives fresh variable number 
 $2^{w+1} + 1$, the fresh-variable value of $w$ built from $v$ and $\varphi$, then $v'$ satisfies
 the clause list produced by the auxiliary translation of $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.to3Aux_complete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3-aux-complete).
+Formalized by `Cslib.Complexity.Karp.to3Aux_complete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#to3-aux-complete).
 
 ## Lifting an assignment to the 3SAT translation
 
@@ -222,7 +222,7 @@ even variable $n$ to $v(n/2)$ and an odd variable $n$ to the fresh-variable valu
 and $\varphi$ at the number $\lfloor \log_2 (n - 1) \rfloor - 1$, where $\lfloor \log_2 0 \rfloor$
 is taken to be $0$ and subtraction is truncated at $0$.
 
-Formalized by `Cslib.Complexity.Karp.lift`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lift).
+Formalized by `Cslib.Complexity.Karp.lift`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lift).
 
 ## The lifted assignment on renamed variables
 
@@ -231,7 +231,7 @@ $v : \mathbb{N} \to \mathrm{Bool}$, every CNF formula $\varphi$ and every $n \in
 the assignment lifted from $v$ for the 3SAT translation of $\varphi$ gives the renamed variable
 $2n$ the value $v(n)$.
 
-Formalized by `Cslib.Complexity.Karp.lift_ren`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lift-ren).
+Formalized by `Cslib.Complexity.Karp.lift_ren`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lift-ren).
 
 ## The lifted assignment on fresh variables
 
@@ -241,21 +241,21 @@ the assignment lifted from $v$ for the 3SAT translation of $\varphi$ gives fresh
 $w$, that is variable $2^{w+1} + 1$, the fresh-variable value of $w$ built from $v$ and
 $\varphi$.
 
-Formalized by `Cslib.Complexity.Karp.lift_fresh`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lift-fresh).
+Formalized by `Cslib.Complexity.Karp.lift_fresh`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lift-fresh).
 
 ## The SAT-to-3SAT translation preserves satisfiability
 
 For every CNF formula $\varphi$, the
 translation $\mathrm{to3}(\varphi)$ is satisfiable if and only if $\varphi$ is satisfiable.
 
-Formalized by `Cslib.Complexity.Karp.cnfSat_to3_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cnf-sat-to3-iff).
+Formalized by `Cslib.Complexity.Karp.cnfSat_to3_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cnf-sat-to3-iff).
 
 ## CNF encodings are nonempty
 
 For every CNF formula $\varphi$, the binary encoding of
 $\varphi$ is not the empty bit string.
 
-Formalized by `Cslib.Complexity.Karp.encodeCNF_ne_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-cnf-ne-nil).
+Formalized by `Cslib.Complexity.Karp.encodeCNF_ne_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-cnf-ne-nil).
 
 ## Correctness of the SAT-to-3SAT reduction on bit strings
 
@@ -264,7 +264,7 @@ accepts $x$ (that is, $x$ encodes a satisfiable CNF formula) exactly when 3SAT a
 of $x$ under the SAT-to-3SAT reduction (that is, the image encodes a satisfiable CNF formula in
 which every clause has at most three literals).
 
-Formalized by `Cslib.Complexity.Karp.satDec_eq_sat3Dec_reduce3`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat-dec-eq-sat3-dec-reduce3).
+Formalized by `Cslib.Complexity.Karp.satDec_eq_sat3Dec_reduce3`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatCorrect.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat-dec-eq-sat3-dec-reduce3).
 
 ## Binary representation of a fresh name
 
@@ -272,7 +272,7 @@ For every natural number $z$, the binary
 representation (least significant bit first) of $\mathrm{fresh}(z) = 2^{z+1} + 1$ is
 $\mathrm{true}$, then $z$ copies of $\mathrm{false}$, then $\mathrm{true}$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.encodeNat_fresh`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-nat-fresh).
+Formalized by `Cslib.Complexity.Karp.Emit3.encodeNat_fresh`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-nat-fresh).
 
 ## Code of a fresh literal
 
@@ -281,7 +281,7 @@ code of the literal $(\mathrm{fresh}(z), b)$, where $\mathrm{fresh}(z) = 2^{z+1}
 $\mathrm{true}, \mathrm{true}$, then $z$ copies of the pair $\mathrm{true}, \mathrm{false}$, then
 $\mathrm{true}, \mathrm{true}, \mathrm{false}, b$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.encodeLit_fresh`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-lit-fresh).
+Formalized by `Cslib.Complexity.Karp.Emit3.encodeLit_fresh`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-lit-fresh).
 
 ## Code of a renamed literal
 
@@ -290,7 +290,7 @@ literal $(2n, p)$ is: the pair $\mathrm{true}, \mathrm{false}$ if $n \neq 0$ and
 $n = 0$, then the pair $\mathrm{true}, b$ for each bit $b$ of the binary representation of $n$
 (least significant bit first, no bits for $n = 0$), then $\mathrm{false}, p$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.encodeLit_renLit`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-lit-ren-lit).
+Formalized by `Cslib.Complexity.Karp.Emit3.encodeLit_renLit`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#encode-lit-ren-lit).
 
 ## Stacks of the 3SAT emitter
 
@@ -298,7 +298,7 @@ The 3SAT emitter machine has six stacks: the token stack
 $T$, the output stack $O$, the fresh counter $U$, two scratch counters $Z$ and $W$, and the
 output clause count $C$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#k).
+Formalized by `Cslib.Complexity.Karp.Emit3.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#k).
 
 ## Stack alphabets of the SAT-to-3SAT emitter
 
@@ -308,7 +308,7 @@ and the output clause count) holds symbols of the SAT verifier's token alphabet.
 
 The counters are unary: they hold only the clause token.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#untitled).
+Formalized by `Cslib.Complexity.Karp.Emit3.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#untitled).
 
 ## Control labels of the SAT-to-3SAT emitter
 
@@ -326,7 +326,7 @@ when $s$ is true and its first-literal flag when $s$ is false. The labels $\math
 $\mathrm{cp}$ prepend the renamed literal, and $\mathrm{aft}$ and $\mathrm{sfx}$ close the output
 clause.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.Emit3.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lab).
 
 ## Literal-marker test of the 3SAT emitter
 
@@ -334,7 +334,7 @@ For an optional token $s$ (the top of a stack,
 absent when the stack is empty), the test is true exactly when $s$ is present and is a literal
 marker, of either polarity.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.isLit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-lit).
+Formalized by `Cslib.Complexity.Karp.Emit3.isLit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-lit).
 
 ## Entry label of a literal
 
@@ -344,7 +344,7 @@ copies the name directly, if $f$ holds (the literal is the first walked in its c
 $\mathrm{fa}(\text{true}, p)$, which first prepends the fresh literal of the current counter
 with polarity true, otherwise.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.pre`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#pre).
+Formalized by `Cslib.Complexity.Karp.Emit3.pre`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#pre).
 
 ## Return label of the fresh-literal subroutine
 
@@ -354,7 +354,7 @@ $\mathrm{body}(\text{false}, x)$ if $s$ is true, which copies the name of the pe
 polarity $x$, and $\mathrm{sfx}(x)$ if $s$ is false, which closes the output clause, $x$ being
 the first-literal flag.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.ret`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#ret).
+Formalized by `Cslib.Complexity.Karp.Emit3.ret`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#ret).
 
 ## The SAT-to-3SAT emitter machine
 
@@ -399,7 +399,7 @@ act as follows.
 Each test of a stack top and each pop of a loop also stores its outcome in the internal
 variable.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.Emit3.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#prog).
 
 ## Start label of the SAT-to-3SAT emitter
 
@@ -407,7 +407,7 @@ The start label of the emitter machine is its label
 $\mathrm{start}$, at which the machine begins each input clause or, once the token stack is
 empty, moves on to its final phase, which writes the output clause count.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#start).
+Formalized by `Cslib.Complexity.Karp.Emit3.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#start).
 
 ## Stack contents of the SAT-to-3SAT emitter
 
@@ -417,7 +417,7 @@ in which the token stack holds $t$, the output stack holds $o$, the fresh counte
 $z$ copies of the clause token $\mathrm{cl}$, the output clause count holds exactly $c$ copies of
 $\mathrm{cl}$, and the two scratch counters are empty.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#st).
+Formalized by `Cslib.Complexity.Karp.Emit3.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#st).
 
 ## Fresh-literal subroutine of the 3SAT emitter
 
@@ -437,7 +437,7 @@ counter $U$ into the scratch counter $Z$ (restoring $U$ through the scratch coun
 prepends $\mathrm{true}, \mathrm{false}$ per unit of $Z$, then prepends
 $\mathrm{true}, \mathrm{true}$, and for $s$ true adds one to $U$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.fresh_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fresh-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.fresh_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fresh-run).
 
 ## Name copy loop of the 3SAT emitter
 
@@ -455,7 +455,7 @@ $m > 0$, and is empty otherwise.
 Each name bit $b$ read prepends $b$ and then $\mathrm{true}$; the leading pair
 $\mathrm{true}, \mathrm{false}$ codes the low bit $0$ of a renamed name $2n$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.cp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cp-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.cp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cp-run).
 
 ## Copying a renamed name
 
@@ -470,7 +470,7 @@ $\langle \mathrm{body}(f, b), v, B R, o, z, c\rangle$ to
 $\langle \mathrm{aft}(f), w', R, e\,o, z, c\rangle$, where juxtaposition is concatenation of
 stacks, top first.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.name_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#name-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.name_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#name-run).
 
 ## The 3SAT emitter reads a literal marker
 
@@ -486,7 +486,7 @@ literal $(\mathrm{fresh}(z), \mathrm{true})$ followed by $o$, where
 $\mathrm{fresh}(z) = 2^{z+1} + 1$, and the fresh counter becomes $z + 1$. In both cases the
 clause count stays $c$ and the scratch counters stay empty.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.head_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#head-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.head_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#head-run).
 
 ## Closing an output clause in the SAT-to-3SAT emitter
 
@@ -504,7 +504,7 @@ after exactly one step the machine is at the label $\mathrm{start}$ with stack c
 $\mathrm{st}(R, o', z, c + 1)$, where $o'$ consists of $m$ copies of true, then false, then $o$.
 In both cases the final internal state is unspecified.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tail-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.tail_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 378](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L378). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tail-run).
 
 ## Output clause of one literal
 
@@ -515,7 +515,7 @@ holds, then the renamed literal $(2n, b)$, then the literal $(2^{z+1} + 1, \text
 $f$ holds. Here $f$ tells whether $l$ is the first literal walked in its clause, $g$ whether it
 is the last one, and $z'$ is the counter after $l$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.litCl`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lit-cl).
+Formalized by `Cslib.Complexity.Karp.Emit3.litCl`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lit-cl).
 
 ## Fresh numbers used by a run of literals
 
@@ -524,7 +524,7 @@ the number of fresh numbers used up by walking $L$ is $|L| - 1$ (truncated at $0
 and $|L|$ otherwise; $f$ tells whether the last literal of $L$ is the first literal walked in
 its clause.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.nz`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#nz).
+Formalized by `Cslib.Complexity.Karp.Emit3.nz`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#nz).
 
 ## Output clauses of a walked list of literals
 
@@ -539,7 +539,7 @@ empty, whose last-walked flag is $g$, and whose counter is $z + n$, where $n$ is
 fresh numbers used up by walking $L'$ ($|L'| - 1$ if $f$ is true, with $0 - 1 = 0$, and $|L'|$
 otherwise); it is followed by $\mathrm{walkF}(L', f, \mathrm{false}, z)$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.walkF`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-f).
+Formalized by `Cslib.Complexity.Karp.Emit3.walkF`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-f).
 
 ## Walking a whole clause gives its chain
 
@@ -549,7 +549,7 @@ counter $z$, with both the first-walked flag and the last-walked flag true, that
 $\mathrm{walkF}(C, \mathrm{true}, \mathrm{true}, z)$, are the chain of clauses replacing $C$ with
 fresh numbers from $z$ on.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.walkF_chain`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-f-chain).
+Formalized by `Cslib.Complexity.Karp.Emit3.walkF_chain`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-f-chain).
 
 ## One literal of the emitter
 
@@ -568,7 +568,7 @@ $\langle \mathrm{lit}(f), v, T_l R, o, z, c\rangle$ to
 $\langle \ell', w', R, e\,o, z + d, c + 1\rangle$, where juxtaposition is concatenation of
 stacks, top first.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lit-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.lit_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 499](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L499). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lit-run).
 
 ## The literals of a clause in the emitter
 
@@ -589,7 +589,7 @@ at most $|T| + k (6 Z_b + 14)$ steps from $\langle \mathrm{lit}(f), v, T R, o, z
 $\langle \mathrm{lit}(f'), w', R, E\,o, z + m, c + k\rangle$, where juxtaposition is
 concatenation of stacks, top first.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lits-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.lits_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lits-run).
 
 ## The 3SAT emitter processes one clause
 
@@ -606,7 +606,7 @@ output stack $\mathrm{enc}(D_1) \cdots \mathrm{enc}(D_k)$ followed by $o$, fresh
 $z + \mathrm{used}(C)$, clause count $c + k$ and empty scratch counters, where $\mathrm{enc}$ is
 the binary clause encoding.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#clause-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.clause_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#clause-run).
 
 ## The 3SAT emitter processes a whole formula
 
@@ -623,14 +623,14 @@ $|T| \cdot (6 Z_b + 15)$ steps its start label with flag $v'$, token stack $R$, 
 $\mathrm{enc}(D_1) \cdots \mathrm{enc}(D_k)$ followed by $o$, fresh counter $u$, clause count $k$
 and empty scratch counters, where $\mathrm{enc}$ is the binary clause encoding.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.formula_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#formula-run).
+Formalized by `Cslib.Complexity.Karp.Emit3.formula_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 594](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L594). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#formula-run).
 
 ## Repeating a single bit
 
 For every bit $x$ and every $n \in \mathbb{N}$, the repeated block
 $\mathrm{rep}([x], n)$ is the list consisting of $n$ copies of $x$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.rep_single`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 628](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L628). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#rep-single).
+Formalized by `Cslib.Complexity.Karp.Emit3.rep_single`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 628](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L628). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#rep-single).
 
 ## The SAT-to-3SAT emitter writes the encoded translation in quadratic time
 
@@ -642,14 +642,14 @@ stack empty. Then after at most $8(|T| + 1)^2$ steps the machine reaches its lab
 $\mathrm{done}$, with some internal state and stack contents in which the output stack, read from
 the top, holds the binary code of the SAT-to-3SAT translation of $\varphi$ followed by $o$.
 
-Formalized by `Cslib.Complexity.Karp.Emit3.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#run).
+Formalized by `Cslib.Complexity.Karp.Emit3.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean, line 636](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatEmit.lean#L636). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#run).
 
 ## Stacks of the 3SAT clause-length filter
 
 The filter has exactly two stacks: the token
 stack $T$ and the side stack $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#k-2).
+Formalized by `Cslib.Complexity.Karp.Filter3.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#k-2).
 
 ## Labels of the 3SAT clause-length filter
 
@@ -658,7 +658,7 @@ labels $w_0, w_1, w_2, w_3$, at which it walks the token stack having seen that 
 the current clause ($w_3$: three or more); the return label $\mathsf{back}$, at which it moves
 the tokens back; and the exits $\mathsf{pass}$ and $\mathsf{fail}$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lab-2).
+Formalized by `Cslib.Complexity.Karp.Filter3.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lab-2).
 
 ## Statements of the filter
 
@@ -666,14 +666,14 @@ The statements of a multi-stack Turing machine (Mathlib's TM2
 model) with the two stacks $T$ and $U$, each over the symbol alphabet of the SAT verifier, the
 labels of the filter, and a Boolean internal state.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#stmt).
+Formalized by `Cslib.Complexity.Karp.Filter3.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#stmt).
 
 ## Walking label for a literal count
 
 The walking label after $n$ literals of the current
 clause: $w_0$, $w_1$, $w_2$ for $n = 0, 1, 2$, and $w_3$ for every $n \ge 3$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.wl`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#wl).
+Formalized by `Cslib.Complexity.Karp.Filter3.wl`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#wl).
 
 ## Next walking label
 
@@ -682,7 +682,7 @@ clause ($w_3$: three or more). For a Boolean $c$ (whether the filter is capped),
 one more literal sends $w_0$ to $w_1$, $w_1$ to $w_2$ and $w_2$ to $w_3$; it sends $w_3$ to the
 failure label when $c$ is true and to $w_3$ when $c$ is false; every other label is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.nxt`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#nxt).
+Formalized by `Cslib.Complexity.Karp.Filter3.nxt`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#nxt).
 
 ## Conditional move between stacks
 
@@ -691,7 +691,7 @@ label $\ell$ and a statement $q$: the statement that tests whether the top of st
 sets the internal state to the outcome; if it is, it pops $a$, pushes $s$ onto $b$ and jumps to
 $\ell$, and otherwise it runs $q$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.mvIf`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#mv-if).
+Formalized by `Cslib.Complexity.Karp.Filter3.mvIf`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#mv-if).
 
 ## One step of the clause-length walk
 
@@ -705,7 +705,7 @@ $\ell = w_3$ and $\mathrm{cap}$ is true, and to $\ell$ otherwise; if its top is 
 it onto the side stack and stay at $\ell$; on any other symbol, go to $\mathrm{fail}$ without
 moving it. Each test stores its outcome in the local variable.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.walk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk).
+Formalized by `Cslib.Complexity.Karp.Filter3.walk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk).
 
 ## The clause-length filter program
 
@@ -716,14 +716,14 @@ when that top is a token (a clause marker, a literal marker or a name bit), goes
 when $U$ is empty, and goes to the label fail otherwise; at pass and at fail it halts. Each test
 records its outcome in the internal state.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#prog-2).
+Formalized by `Cslib.Complexity.Karp.Filter3.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#prog-2).
 
 ## Start label of the filter
 
 The filter starts at the walking label $w_0$, the label for
 having seen no literal of the current clause.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#start-2).
+Formalized by `Cslib.Complexity.Karp.Filter3.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#start-2).
 
 ## Token symbols of the 3SAT filter
 
@@ -731,7 +731,7 @@ A symbol of the SAT verifier's alphabet is a token
 symbol when it is the clause marker, a literal marker of either polarity, or a name bit. The value
 markers and the dead marker are not token symbols.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.IsTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-tok).
+Formalized by `Cslib.Complexity.Karp.Filter3.IsTok`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-tok).
 
 ## Label after a token
 
@@ -742,14 +742,14 @@ is a literal marker, $w_1$, $w_2$ or $w_3$ when $\ell$ is $w_0$, $w_1$ or $w_2$ 
 failure label when $\ell = w_3$ and $c$ is true, and $\ell$ itself otherwise; and $\ell$ itself
 for every other symbol.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.tgt`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tgt).
+Formalized by `Cslib.Complexity.Karp.Filter3.tgt`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tgt).
 
 ## Filter stacks from two lists
 
 For lists of symbols $t$ and $u$, the stack contents that
 put $t$ on the token stack $T$ and $u$ on the side stack $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#st-2).
+Formalized by `Cslib.Complexity.Karp.Filter3.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#st-2).
 
 ## One step of the clause-length walk on a token
 
@@ -762,7 +762,7 @@ and $w_{n+1}$ otherwise. The clause-length filter with cap flag $\mathrm{cap}$ g
 one step from label $w_n$, local variable $v$, token stack $s$ on top of $R$ and side stack $U$
 to label $t$, local variable true, token stack $R$ and side stack $s$ on top of $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.walk_step`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-step).
+Formalized by `Cslib.Complexity.Karp.Filter3.walk_step`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-step).
 
 ## Walking over name bits keeps the label
 
@@ -775,7 +775,7 @@ from label $w_n$, local variable $v$, token stack $\mathrm{bit}(b_1), \dots, \ma
 on top of $R$ and side stack $U$ to label $w_n$, local variable $v'$, token stack $R$ and side
 stack $\mathrm{bit}(b_k), \dots, \mathrm{bit}(b_1)$ on top of $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.walk_bits`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-bits).
+Formalized by `Cslib.Complexity.Karp.Filter3.walk_bits`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-bits).
 
 ## Walking over a literal advances the literal count
 
@@ -791,7 +791,7 @@ $\mathrm{lit}(p), \mathrm{bit}(e_k), \dots, \mathrm{bit}(e_1)$ on top of $R$ and
 to label $w_{n+1}$, local variable $v'$, token stack $R$ and side stack
 $\mathrm{bit}(e_1), \dots, \mathrm{bit}(e_k), \mathrm{lit}(p)$ on top of $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.walk_lit`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-lit).
+Formalized by `Cslib.Complexity.Karp.Filter3.walk_lit`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-lit).
 
 ## A capped walk fails on a literal past the third
 
@@ -806,7 +806,7 @@ true) goes in exactly one step from label $w_n$, local variable $v$, token stack
 $\mathrm{lit}(p), \mathrm{bit}(e_m), \dots, \mathrm{bit}(e_1)$ on top of $R$ and side stack $U$
 to the label $\mathrm{fail}$ with local variable $v'$ and stacks $S'$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.walk_lit_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-lit-fail).
+Formalized by `Cslib.Complexity.Karp.Filter3.walk_lit_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-lit-fail).
 
 ## The filter walks a clause's literals within the cap
 
@@ -819,7 +819,7 @@ literals with internal state $v$, token stack $wR$ (top first) and side stack $U
 exactly $|w|$ steps the walking label for $n + k$ literals, with some internal state, token stack
 $R$ and side stack $w^{\mathrm{rev}} U$, where $w^{\mathrm{rev}}$ is $w$ reversed.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.lits_ok`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lits-ok).
+Formalized by `Cslib.Complexity.Karp.Filter3.lits_ok`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lits-ok).
 
 ## The capped filter fails on a clause with too many literals
 
@@ -831,7 +831,7 @@ walking label for $n$ literals with internal state $v$, token stack $wR$ (top fi
 stack $U$, reaches the failure label, with some internal state and some stacks, in at most $|w|$
 steps.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.lits_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lits-fail).
+Formalized by `Cslib.Complexity.Karp.Filter3.lits_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#lits-fail).
 
 ## The 3SAT filter walks one clause within the cap
 
@@ -846,7 +846,7 @@ $v'$, token stack $R$, and side stack the reversal of $\overline{C}$ on top of $
 
 The clause marker resets the literal count, and each literal then advances it.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.clause_ok`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#clause-ok).
+Formalized by `Cslib.Complexity.Karp.Filter3.clause_ok`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#clause-ok).
 
 ## A clause with more than three literals makes the capped 3SAT filter fail
 
@@ -859,7 +859,7 @@ $\mathsf{fail}$, with some value of the variable and some stacks, in at most $|\
 steps from label $w_n$ with variable $v$, token stack $\overline{C}$ on top of $R$, and side
 stack $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.clause_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#clause-fail).
+Formalized by `Cslib.Complexity.Karp.Filter3.clause_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#clause-fail).
 
 ## The 3SAT filter walks a list of clauses within the cap
 
@@ -874,7 +874,7 @@ clause-length filter takes exactly $|X|$ steps from label $w_n$ with variable $v
 $X$ on top of $R$ and side stack $U$ to label $w_m$ with variable $v'$, token stack $R$, and side
 stack the reversal of $X$ on top of $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.cls_ok`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cls-ok).
+Formalized by `Cslib.Complexity.Karp.Filter3.cls_ok`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cls-ok).
 
 ## A long clause makes the capped 3SAT filter fail on a list of clauses
 
@@ -888,7 +888,7 @@ variable, the 3SAT clause-length filter with the cap on reaches label $\mathsf{f
 value of the variable and some stacks, in at most $|X|$ steps from label $w_n$ with variable $v$,
 token stack $X$ on top of $R$, and side stack $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.cls_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cls-fail).
+Formalized by `Cslib.Complexity.Karp.Filter3.cls_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#cls-fail).
 
 ## An empty token stack ends the walk
 
@@ -898,7 +898,7 @@ The clause-length filter with cap flag $\mathrm{cap}$ goes in exactly one step f
 local variable $v$, empty token stack and side stack $U$ to the label $\mathrm{back}$, local
 variable true, empty token stack and side stack $U$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.walk_end`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-end).
+Formalized by `Cslib.Complexity.Karp.Filter3.walk_end`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#walk-end).
 
 ## One step of the 3SAT filter's return phase
 
@@ -908,7 +908,7 @@ clause-length filter takes exactly one step from label $\mathsf{back}$ with vari
 stack $R$ and side stack $s$ on top of $M$ to label $\mathsf{back}$ with variable true, token
 stack $s$ on top of $R$, and side stack $M$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.back_step`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#back-step).
+Formalized by `Cslib.Complexity.Karp.Filter3.back_step`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#back-step).
 
 ## The 3SAT filter's return phase moves the side stack back
 
@@ -919,7 +919,7 @@ takes exactly $|M|$ steps from label $\mathsf{back}$ with variable $v$, token st
 stack $M$ to label $\mathsf{back}$ with variable $v'$, token stack the reversal of $M$ on top of
 $R$, and empty side stack.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.back_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#back-run).
+Formalized by `Cslib.Complexity.Karp.Filter3.back_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#back-run).
 
 ## The return phase ends on an empty side stack
 
@@ -928,7 +928,7 @@ list of symbols $R$ and every value $v$ of the Boolean variable, the 3SAT clause
 takes exactly one step from label $\mathsf{back}$ with variable $v$, token stack $R$ and empty
 side stack to label $\mathsf{pass}$ with variable true, token stack $R$ and empty side stack.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.back_end`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#back-end).
+Formalized by `Cslib.Complexity.Karp.Filter3.back_end`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#back-end).
 
 ## Correctness of the clause-length filter
 
@@ -941,7 +941,7 @@ start label with internal state $v$ and stacks $S$, reaches within $2N + 2$ step
 if $b$ holds and the label fail otherwise, with some internal state $v'$ and stacks $S'$; and if
 $b$ holds, then $S' = S$.
 
-Formalized by `Cslib.Complexity.Karp.Filter3.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#run-2).
+Formalized by `Cslib.Complexity.Karp.Filter3.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatFilter.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#run-2).
 
 ## Emitter
 
@@ -958,7 +958,7 @@ the token bijection, and every other stack is empty, the program goes from the s
 the exit label in at most $B(n)$ steps and ends with the output stack holding $g(\varphi)$, each
 bit translated by the inverse of the output bijection.
 
-Formalized by `Cslib.Complexity.Karp.Emitter`, a structure declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emitter).
+Formalized by `Cslib.Complexity.Karp.Emitter`, a structure declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emitter).
 
 ## Output of an emitter on a bit string
 
@@ -967,7 +967,7 @@ string $x$: if the length-prefixed CNF decoder reads a CNF formula $\varphi$ fro
 left over, the output is $g(\varphi)$; otherwise it is the bit string that $E$ reserves as the
 output for undecodable inputs.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.out`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#out).
+Formalized by `Cslib.Complexity.Karp.TokThen.out`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#out).
 
 ## Stacks of the tokenize-then-emit machine
 
@@ -977,7 +977,7 @@ an emitter $E$ are the disjoint union of the SAT tokenizer's stacks and $E$'s st
 The copy of the tokenizer's own token stack $T$ stays unused: the tokenizer writes its tokens on
 $E$'s token stack.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.K`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#k-3).
+Formalized by `Cslib.Complexity.Karp.TokThen.K`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#k-3).
 
 ## Alphabets of the tokenize-then-emit machine
 
@@ -985,7 +985,7 @@ For an emitter $E$, every stack of the
 combined machine that comes from the SAT tokenizer has the tokenizer's symbol alphabet, and every
 stack $k$ that comes from $E$ has the alphabet of $k$ in $E$.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#untitled-2).
+Formalized by `Cslib.Complexity.Karp.TokThen.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#untitled-2).
 
 ## Labels of the tokenize-then-emit machine
 
@@ -994,7 +994,7 @@ machine form the disjoint union of the SAT tokenizer's labels, the labels of $E$
 booleans: false labels the step that writes the output $E$ fixes for undecodable input, and true
 is the exit label.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.L`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#l).
+Formalized by `Cslib.Complexity.Karp.TokThen.L`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#l).
 
 ## Exit label of the tokenize-then-emit machine
 
@@ -1002,7 +1002,7 @@ The labels of the tokenize-then-emit machine
 for an emitter $E$ are the SAT tokenizer's labels, $E$'s labels and two extra labels indexed by
 the booleans; the exit label is the extra label indexed by true.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.fin`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fin).
+Formalized by `Cslib.Complexity.Karp.TokThen.fin`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#fin).
 
 ## Tokenizer stacks in the tokenize-then-emit machine
 
@@ -1011,7 +1011,7 @@ stacks to the stacks of the tokenize-then-emit machine for an emitter $E$ that s
 tokenizer's token stack $T$ to $E$'s token stack, and each other tokenizer stack ($X$, $W$, $B$,
 $CC$, $LC$) to its own copy among the tokenizer stacks of the combined machine.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.eT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#e-t).
+Formalized by `Cslib.Complexity.Karp.TokThen.eT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#e-t).
 
 ## Embedding the tokenizer's stacks into tokenize-then-emit
 
@@ -1021,7 +1021,7 @@ goes to $E$'s token stack, with token symbols translated by $E$'s bijection from
 that stack's alphabet, and each other tokenizer stack goes to its own copy among the tokenizer
 stacks of the combined machine, with symbols left unchanged.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.embT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emb-t).
+Formalized by `Cslib.Complexity.Karp.TokThen.embT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emb-t).
 
 ## Embedding the emitter's stacks into tokenize-then-emit
 
@@ -1030,7 +1030,7 @@ $E$ into the tokenize-then-emit machine for $E$: each stack of $E$ goes to its o
 emitter stacks of the combined machine, which carries the same alphabet, and symbols are left
 unchanged.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.embE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emb-e).
+Formalized by `Cslib.Complexity.Karp.TokThen.embE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emb-e).
 
 ## Renaming the tokenizer's labels
 
@@ -1039,7 +1039,7 @@ to the start label of $E$, its rejecting label goes to the label of the combined
 writes the output $E$ fixes for undecodable input, and every other tokenizer label goes to its own
 copy among the combined machine's labels.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.φT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#t).
+Formalized by `Cslib.Complexity.Karp.TokThen.φT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#t).
 
 ## Emitter labels in the tokenize-then-emit machine
 
@@ -1047,7 +1047,7 @@ The map from the labels of an emitter
 $E$ to the labels of the tokenize-then-emit machine for $E$ that sends $E$'s exit label to the
 machine's exit label, and every other label of $E$ to its own copy among the emitter labels.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.φE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#e).
+Formalized by `Cslib.Complexity.Karp.TokThen.φE`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#e).
 
 ## Program of the tokenize-then-emit machine
 
@@ -1063,14 +1063,14 @@ to undecodable input, as output symbols of $E$, onto the output stack of $E$ (so
 then reads that output from the top) and goes to the exit label. At the exit label the machine
 halts.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#prog-3).
+Formalized by `Cslib.Complexity.Karp.TokThen.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#prog-3).
 
 ## Start label of the tokenize-then-emit machine
 
 For an emitter $E$, the combined machine
 starts at the start label of the SAT tokenizer.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#start-3).
+Formalized by `Cslib.Complexity.Karp.TokThen.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#start-3).
 
 ## Initial stacks of the tokenize-then-emit machine
 
@@ -1078,14 +1078,14 @@ For a bit string $x$, the initial stack
 contents of the tokenize-then-emit machine for an emitter $E$: the tokenizer's input stack $X$
 holds the bits of $x$ in order, each written as a bit symbol, and every other stack is empty.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.init`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#init).
+Formalized by `Cslib.Complexity.Karp.TokThen.init`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#init).
 
 ## Initial stacks of the tokenizer
 
 For a bit string $x$, the SAT tokenizer's initial stacks
 hold $x$, as bit symbols, on the formula-bit stack $X$ and leave every other stack empty.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.tokS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tok-s).
+Formalized by `Cslib.Complexity.Karp.TokThen.tokS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tok-s).
 
 ## Tokenize, then emit
 
@@ -1095,7 +1095,7 @@ false, with $x$ as bit symbols on the tokenizer's input stack and every other st
 reaches its exit label, with some internal state, in at most $2|x| + 3 + B(|x|)$ steps, and the
 output stack of $E$ then holds the output on $x$, written in the output symbols of $E$.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#run-3).
+Formalized by `Cslib.Complexity.Karp.TokThen.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#run-3).
 
 ## List of the tokenizer's stacks
 
@@ -1103,7 +1103,7 @@ The list of the SAT tokenizer's six stacks in the order:
 the formula-bit stack $X$, the witness-bit stack $W$, the token stack $T$, the table stack $B$,
 the clause counter $CC$ and the literal counter $LC$.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.tokKs`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tok-ks).
+Formalized by `Cslib.Complexity.Karp.TokThen.tokKs`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#tok-ks).
 
 ## The tokenize-then-emit machine as a host component
 
@@ -1113,7 +1113,7 @@ contains every stack exactly once, this is the reduction-host component whose st
 labels and program are those of the tokenize-then-emit machine for $E$, with its stacks listed
 as the SAT tokenizer's six stacks followed by the given list of $E$'s stacks.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.comp`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#comp).
+Formalized by `Cslib.Complexity.Karp.TokThen.comp`, a definition declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#comp).
 
 ## Emitter reductions out of SAT are polynomial-time
 
@@ -1126,7 +1126,7 @@ sending a bit string $x$ to $g(\varphi)$ when $x$ is the binary code of a CNF fo
 (its clause count in unary followed by the encoded clauses), and to $o$ otherwise, is
 polynomial-time computable for the canonical bit-string encoding of lists of booleans.
 
-Formalized by `Cslib.Complexity.Karp.TokThen.isPolyTime_out`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-poly-time-out).
+Formalized by `Cslib.Complexity.Karp.TokThen.isPolyTime_out`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/TokThen.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/TokThen.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-poly-time-out).
 
 ## Transitivity of polynomial-time many-one reductions
 
@@ -1134,7 +1134,7 @@ For decision problems $L_1$, $L_2$
 and $L_3$, if $L_1$ has a polynomial-time many-one reduction to $L_2$ and $L_2$ has one to $L_3$,
 then $L_1$ has a polynomial-time many-one reduction to $L_3$.
 
-Formalized by `Cslib.Complexity.Karp.polyManyOneRed_trans`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#poly-many-one-red-trans).
+Formalized by `Cslib.Complexity.Karp.polyManyOneRed_trans`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#poly-many-one-red-trans).
 
 ## NP-hardness transfers along reductions
 
@@ -1143,7 +1143,7 @@ decision problem in NP has a polynomial-time many-one reduction to $L$, and $L$ 
 polynomial-time many-one reduction to $L'$, then every decision problem in NP has a
 polynomial-time many-one reduction to $L'$.
 
-Formalized by `Cslib.Complexity.Karp.npHard_of_polyManyOneRed`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#np-hard-of-poly-many-one-red).
+Formalized by `Cslib.Complexity.Karp.npHard_of_polyManyOneRed`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#np-hard-of-poly-many-one-red).
 
 ## The SAT-to-3SAT emitter
 
@@ -1156,7 +1156,7 @@ $B(n) = 8(n+1)^2$: started at its start label with the reversed token sequence o
 token stack and every other stack empty, it reaches its exit label within $B(n)$ steps, where $n$
 is the number of tokens of $\varphi$, with the output for $\varphi$ on the output stack.
 
-Formalized by `Cslib.Complexity.Karp.emit3`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emit3).
+Formalized by `Cslib.Complexity.Karp.emit3`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emit3).
 
 ## The stacks of the 3SAT emitter
 
@@ -1164,7 +1164,7 @@ The list of all six stacks of the SAT-to-3SAT emitter
 machine, each listed once, in the order: token stack, output stack, fresh-variable counter, two
 scratch counters, output clause counter.
 
-Formalized by `Cslib.Complexity.Karp.emit3Ks`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emit3-ks).
+Formalized by `Cslib.Complexity.Karp.emit3Ks`, a definition declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#emit3-ks).
 
 ## The SAT-to-3SAT reduction is polynomial-time
 
@@ -1173,7 +1173,7 @@ binary encoding of a CNF formula $\varphi$ to the binary encoding of the SAT-to-
 of $\varphi$, and sends every bit string that encodes no CNF formula to the empty bit string, is
 computable in polynomial time.
 
-Formalized by `Cslib.Complexity.Karp.isPolyTime_reduce3`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-poly-time-reduce3).
+Formalized by `Cslib.Complexity.Karp.isPolyTime_reduce3`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#is-poly-time-reduce3).
 
 ## SAT reduces to 3SAT
 
@@ -1182,7 +1182,7 @@ encode a satisfiable CNF formula, has a polynomial-time many-one reduction to th
 3SAT, which accepts exactly the bit strings that encode a satisfiable CNF formula with at most
 three literals per clause.
 
-Formalized by `Cslib.Complexity.Karp.satDec_polyManyOneRed_sat3Dec`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat-dec-poly-many-one-red-sat3-dec).
+Formalized by `Cslib.Complexity.Karp.satDec_polyManyOneRed_sat3Dec`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat-dec-poly-many-one-red-sat3-dec).
 
 ## 3SAT is NP-hard
 
@@ -1190,7 +1190,7 @@ Every decision problem in NP has a polynomial-time many-one reduction to
 the decision problem 3SAT, which accepts exactly the bit strings that encode a satisfiable CNF
 formula with at most three literals per clause.
 
-Formalized by `Cslib.Complexity.Karp.sat3Dec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat3-dec-np-hard).
+Formalized by `Cslib.Complexity.Karp.sat3Dec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat3-dec-np-hard).
 
 ## 3SAT is NP-complete
 
@@ -1198,7 +1198,7 @@ The decision problem 3SAT, which accepts exactly the bit strings
 that encode a satisfiable CNF formula with at most three literals per clause, is in NP, and every
 decision problem in NP has a polynomial-time many-one reduction to 3SAT.
 
-Formalized by `Cslib.Complexity.Karp.sat3Dec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat3-dec-np-complete).
+Formalized by `Cslib.Complexity.Karp.sat3Dec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/ThreeSatComplete.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html#sat3-dec-np-complete).
 
 ## Depends on
 
@@ -1207,4 +1207,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: 3-satisfiability](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/3-satisfiability)

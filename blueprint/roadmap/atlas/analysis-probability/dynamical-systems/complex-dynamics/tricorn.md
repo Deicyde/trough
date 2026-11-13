@@ -7,7 +7,7 @@ statement: formalized
 
 # Tricorn
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html).
 
 ## The antiholomorphic quadratic map
 
@@ -15,7 +15,7 @@ For $c \in \mathbb{C}$, the map
 $T_c : \mathbb{C} \to \mathbb{C}$ is $T_c(z) = \bar z^2 + c$, where $\bar z$ is the complex
 conjugate of $z$.
 
-Formalized by `MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.Tantibar`, a definition declared in [WantedExt/Analysis/MandelbarWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MandelbarWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html#tantibar).
+Formalized by `MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.Tantibar`, a definition declared in [WantedExt/Analysis/MandelbarWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MandelbarWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html#tantibar).
 
 ## The Mandelbar set (tricorn)
 
@@ -26,7 +26,7 @@ $T_c^0$ is the identity.
 
 This set is the connectedness locus of the family $z \mapsto \bar z^2 + c$.
 
-Formalized by `MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.Mandelbar`, a definition declared in [WantedExt/Analysis/MandelbarWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MandelbarWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html#mandelbar).
+Formalized by `MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.Mandelbar`, a definition declared in [WantedExt/Analysis/MandelbarWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MandelbarWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html#mandelbar).
 
 ## The Mandelbar set is not path-connected
 
@@ -41,7 +41,7 @@ path-connected.
 
 - John H. Hubbard and Dierk Schleicher, *Multicorns are not Path Connected*, arXiv:1209.1753 (2012); published in *Frontiers in Complex Dynamics* (Princeton University Press, 2014), pp. 73-102. Listed as §62 (additional statement 2) in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `mandelbar_not_path_connected` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.mandelbar_not_path_connected` is written with `theorem_wanted` in [WantedExt/Analysis/MandelbarWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/MandelbarWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html#mandelbar-not-path-connected).
+Stated but not proved: `MathlibExt.Analysis.MandelbarWanted.ComplexAnalysis.mandelbar_not_path_connected` is written with `theorem_wanted` in [WantedExt/Analysis/MandelbarWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/MandelbarWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html#mandelbar-not-path-connected).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tricorn](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/complex-dynamics/tricorn/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/complex-dynamics/tricorn)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/complex-dynamics/tricorn)

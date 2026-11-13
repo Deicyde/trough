@@ -8,7 +8,7 @@ proof: formalized
 
 # Biunitary divisors
 
-20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html).
+20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html).
 
 ## Greatest common unitary divisor
 
@@ -21,7 +21,7 @@ common unitary divisor and $\gcd_1(a, b) = 0$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary).
+Formalized by `MetaMathlibExt.gcdUnitary`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary).
 
 ## Symmetry of the greatest common unitary divisor
 
@@ -32,7 +32,7 @@ greatest common unitary divisor satisfies $\gcd_1(a, b) = \gcd_1(b, a)$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary_comm`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-comm).
+Formalized by `MetaMathlibExt.gcdUnitary_comm`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-comm).
 
 ## Greatest common unitary divisor with zero on the left
 
@@ -43,7 +43,7 @@ greatest common unitary divisor satisfies $\gcd_1(0, b) = 0$, since $0$ has no u
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary_zero_left`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-zero-left).
+Formalized by `MetaMathlibExt.gcdUnitary_zero_left`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-zero-left).
 
 ## Greatest common unitary divisor with zero on the right
 
@@ -55,7 +55,7 @@ divisors.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary_zero_right`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-zero-right).
+Formalized by `MetaMathlibExt.gcdUnitary_zero_right`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-zero-right).
 
 ## Common unitary divisors are at most the greatest one
 
@@ -67,7 +67,7 @@ the greatest common unitary divisor of $a$ and $b$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.le_gcdUnitary`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#le-gcd-unitary).
+Formalized by `MetaMathlibExt.le_gcdUnitary`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#le-gcd-unitary).
 
 ## The greatest common unitary divisor is a common unitary divisor
 
@@ -79,7 +79,7 @@ $a$ and a unitary divisor of $b$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary_mem_unitaryDivisors`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-mem-unitary-divisors).
+Formalized by `MetaMathlibExt.gcdUnitary_mem_unitaryDivisors`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-mem-unitary-divisors).
 
 ## The greatest common unitary divisor divides its first argument
 
@@ -90,7 +90,7 @@ numbers $a$ and $b$, the greatest common unitary divisor $\gcd_1(a, b)$ divides 
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary_dvd_left`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-dvd-left).
+Formalized by `MetaMathlibExt.gcdUnitary_dvd_left`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-dvd-left).
 
 ## The greatest common unitary divisor divides its second argument
 
@@ -101,7 +101,7 @@ numbers $a$ and $b$, the greatest common unitary divisor $\gcd_1(a, b)$ divides 
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary_dvd_right`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-dvd-right).
+Formalized by `MetaMathlibExt.gcdUnitary_dvd_right`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-dvd-right).
 
 ## Positivity of the greatest common unitary divisor
 
@@ -112,7 +112,7 @@ $b$, the greatest common unitary divisor $\gcd_1(a, b)$ is positive.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.gcdUnitary_pos`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-pos).
+Formalized by `MetaMathlibExt.gcdUnitary_pos`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#gcd-unitary-pos).
 
 ## Biunitary divisors
 
@@ -124,7 +124,7 @@ unitary divisor of $a$ and $b$. For $n = 0$ the set is empty.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.biunitaryDivisors`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#biunitary-divisors).
+Formalized by `MetaMathlibExt.biunitaryDivisors`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#biunitary-divisors).
 
 ## Biunitary divisor sum
 
@@ -137,7 +137,7 @@ $\sigma^{**}(0) = 0$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.sigmaBiunitary`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary).
+Formalized by `MetaMathlibExt.sigmaBiunitary`, a definition declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary).
 
 ## Characterization of biunitary divisors
 
@@ -149,7 +149,7 @@ $\gcd_1$ denotes the greatest common unitary divisor.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.mem_biunitaryDivisors`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#mem-biunitary-divisors).
+Formalized by `MetaMathlibExt.mem_biunitaryDivisors`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#mem-biunitary-divisors).
 
 ## Zero has no biunitary divisors
 
@@ -159,7 +159,7 @@ The set of biunitary divisors of $0$ is empty.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.biunitaryDivisors_zero`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#biunitary-divisors-zero).
+Formalized by `MetaMathlibExt.biunitaryDivisors_zero`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#biunitary-divisors-zero).
 
 ## The biunitary divisor sum of $0$
 
@@ -170,7 +170,7 @@ equals $0$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.sigmaBiunitary_zero`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-zero).
+Formalized by `MetaMathlibExt.sigmaBiunitary_zero`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-zero).
 
 ## Biunitary divisors divide
 
@@ -181,7 +181,7 @@ divisor of $n$, then $d$ divides $n$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.dvd_of_mem_biunitaryDivisors`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#dvd-of-mem-biunitary-divisors).
+Formalized by `MetaMathlibExt.dvd_of_mem_biunitaryDivisors`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#dvd-of-mem-biunitary-divisors).
 
 ## The biunitary divisor sum of $1$
 
@@ -192,7 +192,7 @@ equals $1$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (after Wall).
 
-Formalized by `MetaMathlibExt.sigmaBiunitary_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-one).
+Formalized by `MetaMathlibExt.sigmaBiunitary_one`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-one).
 
 ## The biunitary divisor sum of $4$
 
@@ -206,7 +206,7 @@ common unitary divisor of $2$ and $2$ is $2$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Lemma 3.1 (`σ**(2²) = 5`).
 
-Formalized by `MetaMathlibExt.sigmaBiunitary_four`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-four).
+Formalized by `MetaMathlibExt.sigmaBiunitary_four`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-four).
 
 ## The biunitary divisor sum of $16$
 
@@ -217,7 +217,7 @@ $16$ equals $1 + 2 + 8 + 16 = 27$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, formula (1) at `p = 2`, `e = 4`.
 
-Formalized by `MetaMathlibExt.sigmaBiunitary_sixteen`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-sixteen).
+Formalized by `MetaMathlibExt.sigmaBiunitary_sixteen`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-sixteen).
 
 ## The biunitary divisor sum of $27$
 
@@ -228,7 +228,7 @@ $27$ equals $1 + 3 + 9 + 27 = 40$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Lemma 3.6 (`σ**(3³) = 2³ · 5`).
 
-Formalized by `MetaMathlibExt.sigmaBiunitary_twentySeven`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-twenty-seven).
+Formalized by `MetaMathlibExt.sigmaBiunitary_twentySeven`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-twenty-seven).
 
 ## $120$ is biunitary triperfect
 
@@ -239,7 +239,7 @@ $120$ equals $3 \cdot 120 = 360$.
 
 - Tomohiro Yamada, *Determining all Biunitary Triperfect Numbers of a Certain Form*, Journal of Integer Sequences 28 (2025), Article 25.4.5, Section 1 (smallest instances `120, 672, 2160` with `k = 3`).
 
-Formalized by `MetaMathlibExt.sigmaBiunitary_oneHundredTwenty`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-one-hundred-twenty).
+Formalized by `MetaMathlibExt.sigmaBiunitary_oneHundredTwenty`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/BiunitaryDivisor.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html#sigma-biunitary-one-hundred-twenty).
 
 ## Depends on
 
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Biunitary divisors](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/divisor-totient-functions/part-01/biunitary-divisors)

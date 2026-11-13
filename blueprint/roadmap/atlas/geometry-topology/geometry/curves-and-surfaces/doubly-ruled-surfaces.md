@@ -7,7 +7,7 @@ statement: formalized
 
 # Doubly ruled surfaces
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html).
 
 ## Line lying in a graph
 
@@ -16,7 +16,7 @@ $x_0, y_0, u, v, w$ be real numbers. The line through $(x_0, y_0, f(x_0, y_0))$ 
 $(u, v, w)$ lies in the graph of $f$ when $(u, v) \ne (0, 0)$ and
 $f(x_0 + tu, y_0 + tv) = f(x_0, y_0) + tw$ for every real $t$.
 
-Formalized by `MathlibExt.Analysis.Calculus.ScottishBook44Wanted.LineInGraph`, a definition declared in [WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html#line-in-graph).
+Formalized by `MathlibExt.Analysis.Calculus.ScottishBook44Wanted.LineInGraph`, a definition declared in [WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html#line-in-graph).
 
 ## Doubly ruled graph
 
@@ -29,7 +29,7 @@ is not a real multiple of $(u_1, v_1)$.
 A line lying in the graph has a nonzero horizontal direction, so the last condition holds exactly
 when the two lines are distinct.
 
-Formalized by `MathlibExt.Analysis.Calculus.ScottishBook44Wanted.DoublyRuledGraph`, a definition declared in [WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html#doubly-ruled-graph).
+Formalized by `MathlibExt.Analysis.Calculus.ScottishBook44Wanted.DoublyRuledGraph`, a definition declared in [WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html#doubly-ruled-graph).
 
 ## Doubly ruled graphs are planes or hyperbolic paraboloids
 
@@ -49,7 +49,7 @@ $xy$-plane; planes are the degenerate doubly ruled case.
 
 - H. Steinhaus, Problem 44 of the Scottish Book; addendum in the Scottish Book, 30 July 1935: solved affirmatively by Banach, also without assuming continuity; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.ScottishBook44Wanted.doubly_ruled_graph_is_quadric` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html#doubly-ruled-graph-is-quadric).
+Stated but not proved: `MathlibExt.Analysis.Calculus.ScottishBook44Wanted.doubly_ruled_graph_is_quadric` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ScottishBook44Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html#doubly-ruled-graph-is-quadric).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Doubly ruled surfaces](https://deicyde.github.io/atlas-lean/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/curves-and-surfaces/doubly-ruled-surfaces)

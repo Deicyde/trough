@@ -7,7 +7,7 @@ statement: formalized
 
 # Progression-free Ramsey sets
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets/index.html).
 
 ## Erdős Problem 966: progression-free sets that are Ramsey for shorter progressions
 
@@ -21,7 +21,7 @@ $c(x) = i$ for every $x \in t$.
 Only the colours of elements of $A$ matter, so the colouring condition says that every
 colouring of $A$ with $r$ colours has a monochromatic progression of $k$ distinct terms.
 
-Formalized by `MathlibExt.Combinatorics.ProgressionFreeRamseySetErdosProblem966Wanted.progressionFreeRamseySet`, a definition declared in [WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets/index.html#progression-free-ramsey-set).
+Formalized by `MathlibExt.Combinatorics.ProgressionFreeRamseySetErdosProblem966Wanted.progressionFreeRamseySet`, a definition declared in [WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets/index.html#progression-free-ramsey-set).
 
 ## Erdős Problem 966 holds
 
@@ -35,7 +35,7 @@ $c(x) = i$ for every $x \in t$.
 
 - T. F. Bloom, Erdős Problems, Problem #966, https://www.erdosproblems.com/966 (status PROVED (LEAN)); resolution: formal proof linked from erdosproblems.com/966 (found with Aristotle, posted in the comment thread); P. Erdős, Problems and results in combinatorial number theory (1975), 295-310, reports that Spencer had shown that such a sequence exists, erdosproblems.com/966 status 'proved (Lean)'; formal proof cited by formal-conjectures, https://github.com/plby/lean-proofs/blob/main/src/v4.29.1/ErdosProblems/Erdos966.lean.
 
-Stated but not proved: `MathlibExt.Combinatorics.ProgressionFreeRamseySetErdosProblem966Wanted.progressionFreeRamseySet_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets/index.html#progression-free-ramsey-set-holds).
+Stated but not proved: `MathlibExt.Combinatorics.ProgressionFreeRamseySetErdosProblem966Wanted.progressionFreeRamseySet_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ProgressionFreeRamseySetErdosProblem966Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets/index.html#progression-free-ramsey-set-holds).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Progression-free Ramsey sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/van-der-waerden-theorems/progression-free-ramsey-sets)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Stable marriage problem
 
-44 results, 33 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html).
+44 results, 33 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html).
 
 ## Strict preference order
 
@@ -16,7 +16,7 @@ $<$ on $\alpha$ that is irreflexive ($a < a$ holds for no $a$), transitive ($a <
 imply $a < c$) and total on distinct elements ($a \ne b$ implies $a < b$ or $b < a$). In the
 Gale–Shapley development it models strict preference.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#strict-total-order).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#strict-total-order).
 
 ## Building a strict total order from a relation
 
@@ -25,7 +25,7 @@ that is irreflexive ($a \not< a$ for all $a$), transitive ($a < b$ and $b < c$ i
 total on distinct elements ($a \ne b$ implies $a < b$ or $b < a$) defines a strict total order on
 $\alpha$ whose relation is $<$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.mk`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#mk).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.mk`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#mk).
 
 ## Relation of a strict total order
 
@@ -33,28 +33,28 @@ The relation of a strict total order $T$ on a set
 $\alpha$ is its underlying binary relation $\lt _T$ on $\alpha$, which is irreflexive, transitive,
 and relates any two distinct elements in one direction or the other.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.lt`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#lt).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.lt`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#lt).
 
 ## Irreflexivity of a strict total order
 
 Let $T$ be a strict total order on a set $\alpha$,
 with relation $\lt _T$. Then $a \lt _T a$ fails for every $a \in \alpha$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.irrefl`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#irrefl).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.irrefl`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#irrefl).
 
 ## Transitivity of a strict total order
 
 Let $<$ be the relation of a strict total order on a
 type $\alpha$. If $a, b, c \in \alpha$ satisfy $a < b$ and $b < c$, then $a < c$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.trans`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#trans).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.trans`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#trans).
 
 ## Strict total orders are total on distinct elements
 
 Let $<$ be the relation of a strict
 total order on a type $\alpha$. If $a, b \in \alpha$ and $a \ne b$, then $a < b$ or $b < a$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.total`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#total).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.total`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#total).
 
 ## Strict total orders are determined by their relation
 
@@ -62,14 +62,14 @@ Let $T$ and $T'$ be strict total
 orders on a set $\alpha$, with relations $\lt _T$ and $\lt _{T'}$. If $x \lt _T y \iff x \lt _{T'} y$ for all
 $x, y \in \alpha$, then $T = T'$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.ext`, a theorem declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#ext).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.StrictTotalOrder.ext`, a theorem declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#ext).
 
 ## Men's preferences
 
 For sets $M$ (men) and $W$ (women), a preference profile of the men
 assigns to each $m \in M$ a strict total order on $W$, the preferences of $m$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.MPrefs`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#mprefs).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.MPrefs`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#mprefs).
 
 ## Women's preference profile
 
@@ -77,14 +77,14 @@ For types $M$ and $W$, a preference profile of $W$ over $M$
 assigns to each $w \in W$ a strict total order on $M$, read as the strict preference of $w$
 among the elements of $M$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.WPrefs`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#wprefs).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.WPrefs`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#wprefs).
 
 ## Perfect matching
 
 A perfect matching between sets $M$ and $W$ is a bijection
 $\mu \colon M \to W$, which matches each $m \in M$ with $\mu(m) \in W$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.PerfectMatching`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#perfect-matching).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.PerfectMatching`, an abbreviation declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#perfect-matching).
 
 ## Blocking pair
 
@@ -95,7 +95,7 @@ matching $\mu$ between $M$ and $W$, a pair $(m, w) \in M \times W$ is a blocking
 $w \lt _m \mu(m)$ and $m \lt _w \mu^{-1}(w)$, that is, when $m$ prefers $w$ to $\mu(m)$ and $w$ prefers
 $m$ to $\mu^{-1}(w)$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.IsBlockingPair`, a definition declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-blocking-pair).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.IsBlockingPair`, a definition declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-blocking-pair).
 
 ## Stable perfect matching
 
@@ -104,7 +104,7 @@ total order of preference on $W$ and each $w \in W$ has a strict total order of 
 $M$. A perfect matching $\mu$ between $M$ and $W$ is stable for these preferences when no pair
 $(m, w) \in M \times W$ is a blocking pair for $\mu$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.IsStable`, a definition declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-stable).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.IsStable`, a definition declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-stable).
 
 ## Existence of stable perfect matchings
 
@@ -115,7 +115,7 @@ $M$ and $W$ is stable for these preferences.
 
 This is the Gale–Shapley theorem, stated without decidability assumptions on $M$ and $W$.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.gale_shapley_exists_stable_matching_general`, a theorem declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-exists-stable-matching-gene).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.gale_shapley_exists_stable_matching_general`, a theorem declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-exists-stable-matching-gene).
 
 ## Gale–Shapley theorem
 
@@ -128,7 +128,7 @@ stable for these preferences.
 
 - D. Gale and L. S. Shapley, "College Admissions and the Stability of Marriage", American Mathematical Monthly 69 (1962), 9–15, DOI 10.2307/2312726. It follows from `gale_shapley_exists_stable_matching_general`; the instances `[DecidableEq M]` and `[DecidableEq W]` are unused and keep the source's shape.
 
-Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.gale_shapley_exists_stable_matching`, a theorem declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-exists-stable-matching).
+Formalized by `MathlibExt.Combinatorics.Matching.GaleShapley.gale_shapley_exists_stable_matching`, a theorem declared in [MathlibExt/Combinatorics/Matching/GaleShapley.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Matching/GaleShapley.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-exists-stable-matching).
 
 ## Preference profile for $n$ men and $n$ women
 
@@ -142,7 +142,7 @@ position $r$, and $W_j(r)$ is the man woman $j$ ranks at position $r$.
 
 - Borodin, Duncan, Litchev, Liu, Moroz, Qian, Raghavan, Rastogi, Voigt, and Khovanova, *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.PreferenceProfile`, an abbreviation declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#preference-profile).
+Formalized by `MetaMathlibExt.StableMatchingSequences.PreferenceProfile`, an abbreviation declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#preference-profile).
 
 ## Rank of a woman for a man
 
@@ -156,7 +156,7 @@ The paper's one-based ranking is this rank plus one.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.manRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#man-rank).
+Formalized by `MetaMathlibExt.StableMatchingSequences.manRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#man-rank).
 
 ## A woman's rank of a man
 
@@ -168,7 +168,7 @@ paper's ranking minus one.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.womanRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#woman-rank).
+Formalized by `MetaMathlibExt.StableMatchingSequences.womanRank`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#woman-rank).
 
 ## Soulmate pair
 
@@ -180,7 +180,7 @@ first choice of $j$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.1.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.IsSoulmatePair`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-soulmate-pair).
+Formalized by `MetaMathlibExt.StableMatchingSequences.IsSoulmatePair`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-soulmate-pair).
 
 ## Number of soulmate pairs
 
@@ -194,7 +194,7 @@ This is the paper's $k$ in $F(k, n)$, the number of profiles with exactly $k$ so
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 4.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.soulmatePairCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#soulmate-pair-count).
+Formalized by `MetaMathlibExt.StableMatchingSequences.soulmatePairCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#soulmate-pair-count).
 
 ## Men's preferences induced by rankings
 
@@ -206,7 +206,7 @@ woman $b$ exactly when he ranks $a$ at an earlier position than $b$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.manPrefs`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#man-prefs).
+Formalized by `MetaMathlibExt.StableMatchingSequences.manPrefs`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#man-prefs).
 
 ## Women's preference orders of a profile
 
@@ -218,7 +218,7 @@ women, each woman $j$ gets the strict total order on the men in which man $a$ co
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.womanPrefs`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#woman-prefs).
+Formalized by `MetaMathlibExt.StableMatchingSequences.womanPrefs`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#woman-prefs).
 
 ## Stable matching
 
@@ -231,7 +231,7 @@ preferences induced by the men's and the women's rankings.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.IsStableMatching`, an abbreviation declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-stable-matching).
+Formalized by `MetaMathlibExt.StableMatchingSequences.IsStableMatching`, an abbreviation declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-stable-matching).
 
 ## Stability in terms of ranks
 
@@ -244,7 +244,7 @@ strictly above her husband $\mu^{-1}(j)$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.isStableMatching_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-stable-matching-iff).
+Formalized by `MetaMathlibExt.StableMatchingSequences.isStableMatching_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-stable-matching-iff).
 
 ## Hell-couple
 
@@ -257,7 +257,7 @@ $\mu(i)$ ranks $i$ in her last position.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 6.1.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.IsHellCouple`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-hell-couple).
+Formalized by `MetaMathlibExt.StableMatchingSequences.IsHellCouple`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#is-hell-couple).
 
 ## Number of Latin squares
 
@@ -270,7 +270,7 @@ pairwise distinct.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 4.2 (OEIS A002860).
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.latinSquareCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#latin-square-count).
+Formalized by `MetaMathlibExt.StableMatchingSequences.latinSquareCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#latin-square-count).
 
 ## Provisional engagement in the Gale–Shapley algorithm
 
@@ -286,7 +286,7 @@ at most her position for every man $i'$ who has $w$ at some position $r' < p(i')
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2 (description of the Gale–Shapley algorithm).
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.GSEngaged`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gsengaged).
+Formalized by `MetaMathlibExt.StableMatchingSequences.GSEngaged`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gsengaged).
 
 ## Proposal counts in the Gale–Shapley algorithm
 
@@ -301,7 +301,7 @@ proposes to his next choice.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.gsProposals`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gs-proposals).
+Formalized by `MetaMathlibExt.StableMatchingSequences.gsProposals`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 184](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L184). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gs-proposals).
 
 ## Number of Gale–Shapley rounds
 
@@ -313,7 +313,7 @@ that every man is provisionally engaged after $t$ rounds (or $0$ if there is no 
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds).
+Formalized by `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds`, a definition declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds).
 
 ## No proposals before the first round
 
@@ -324,7 +324,7 @@ the men-proposing Gale–Shapley algorithm every man has made zero proposals.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.gsProposals_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gs-proposals-zero).
+Formalized by `MetaMathlibExt.StableMatchingSequences.gsProposals_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gs-proposals-zero).
 
 ## One round of the Gale–Shapley algorithm
 
@@ -338,7 +338,7 @@ $t$ rounds.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.gsProposals_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gs-proposals-succ).
+Formalized by `MetaMathlibExt.StableMatchingSequences.gsProposals_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gs-proposals-succ).
 
 ## Gale–Shapley rounds with no participants
 
@@ -349,7 +349,7 @@ women, the men-proposing Gale–Shapley algorithm takes zero rounds.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 2.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_of_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds-of-zero).
+Formalized by `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_of_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds-of-zero).
 
 ## A profile has at most $n$ soulmate pairs
 
@@ -360,7 +360,7 @@ women has at most $n$ soulmate pairs, since a man's soulmate is his first choice
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 4.
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.soulmatePairCount_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#soulmate-pair-count-le).
+Formalized by `MetaMathlibExt.StableMatchingSequences.soulmatePairCount_le`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#soulmate-pair-count-le).
 
 ## Latin squares of order zero
 
@@ -371,7 +371,7 @@ $L_0 = 1$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Section 4.2 (OEIS A002860).
 
-Formalized by `MetaMathlibExt.StableMatchingSequences.latinSquareCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#latin-square-count-zero).
+Formalized by `MetaMathlibExt.StableMatchingSequences.latinSquareCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#latin-square-count-zero).
 
 ## Gale–Shapley rounds when all men have the same preferences
 
@@ -383,7 +383,7 @@ men-proposing Gale–Shapley algorithm on $P$ ends in exactly $n$ rounds.
 
 - Borodin, Duncan, Litchev, Liu, Moroz, Qian, Raghavan, Rastogi, Voigt, and Khovanova, *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Proposition 1 (`jis-2024-24.2.2-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_of_same_taste` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds-of-same-taste).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_of_same_taste` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds-of-same-taste).
 
 ## When the Gale–Shapley algorithm ends in one round
 
@@ -395,7 +395,7 @@ in exactly one round if and only if every woman is the first choice of exactly o
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Proposition 2 (`jis-2024-24.2.2-prop-2`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_eq_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds-eq-one-iff).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.galeShapleyRounds_eq_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#gale-shapley-rounds-eq-one-iff).
 
 ## Counting disjoint preference profiles
 
@@ -408,7 +408,7 @@ number $n$, the number of disjoint profiles is at most $(n^2)!$ and is divisible
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Proposition 3 (`jis-2024-24.2.2-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.disjoint_profiles_card_le_and_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#disjoint-profiles-card-le-and-dvd).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.disjoint_profiles_card_le_and_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#disjoint-profiles-card-le-and-dvd).
 
 ## Outsiders without soulmate pairs
 
@@ -427,7 +427,7 @@ ignored.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Lemma 4 (`jis-2024-24.2.2-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.outside_no_soulmates_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#outside-no-soulmates-card).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.outside_no_soulmates_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#outside-no-soulmates-card).
 
 ## Number of profiles with exactly $k$ soulmate pairs
 
@@ -449,7 +449,7 @@ the $k$ soulmate couples that create no further soulmate pair.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Theorem 6 (`jis-2024-24.2.2-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.soulmate_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#soulmate-profiles-card).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.soulmate_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 302](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L302). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#soulmate-profiles-card).
 
 ## Profiles with $n - 1$ soulmate pairs
 
@@ -463,7 +463,7 @@ the zero-based position at which man $i$ ranks his wife $\mu(i)$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Proposition 7 (`jis-2024-24.2.2-prop-7`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.unique_stable_matching_of_soulmatePairCount_eq_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#unique-stable-matching-of-soulmate-pair).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.unique_stable_matching_of_soulmatePairCount_eq_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#unique-stable-matching-of-soulmate-pair).
 
 ## Profiles with Latin-square men's preferences, counted by soulmate pairs
 
@@ -482,7 +482,7 @@ Here $n - 1$ and $n - k$ are truncated subtractions in $\mathbb{N}$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Theorem 8 (`jis-2024-24.2.2-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.men_latin_soulmate_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#men-latin-soulmate-profiles-card).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.men_latin_soulmate_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#men-latin-soulmate-profiles-card).
 
 ## Mutually Latin profiles with $k$ soulmate pairs
 
@@ -501,7 +501,7 @@ When $k > n$ the binomial coefficient vanishes and both sides are $0$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Theorem 9 (`jis-2024-24.2.2-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.mutually_latin_soulmate_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#mutually-latin-soulmate-profiles-card).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.mutually_latin_soulmate_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#mutually-latin-soulmate-profiles-card).
 
 ## At most one hell-couple in a stable matching
 
@@ -513,7 +513,7 @@ $\mu(i)$. Then at most one man $i$ forms a hell-couple with his wife $\mu(i)$.
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Proposition 12 (`jis-2024-24.2.2-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.hellCouple_subsingleton` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#hell-couple-subsingleton).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.hellCouple_subsingleton` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#hell-couple-subsingleton).
 
 ## A hell-couple belongs to every stable matching
 
@@ -525,7 +525,7 @@ $\mu(i)$ form a hell-couple in $\mu$ (each ranks the other last), then $\nu(i) =
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Proposition 13 (`jis-2024-24.2.2-prop-13`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.hellCouple_mem_all_stable` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#hell-couple-mem-all-stable).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.hellCouple_mem_all_stable` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#hell-couple-mem-all-stable).
 
 ## Profiles with a pair of outcasts
 
@@ -538,7 +538,7 @@ outcasts is $14$ if $n = 2$ and $n^4 ((n-1)!)^{2n}$ if $n \ne 2$ (this is $0$ fo
 
 - Borodin et al., *Sequences of the Stable Matching Problem*, Journal of Integer Sequences 27 (2024), Article 24.2.2, Proposition 14 (`jis-2024-24.2.2-prop-14`).
 
-Stated but not proved: `MetaMathlibExt.StableMatchingSequences.outcast_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#outcast-profiles-card).
+Stated but not proved: `MetaMathlibExt.StableMatchingSequences.outcast_profiles_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StableMatchingSequencesWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html#outcast-profiles-card).
 
 ## Depends on
 
@@ -547,4 +547,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stable marriage problem](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/matchings-and-flows/stable-marriage-problem)

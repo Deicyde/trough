@@ -8,7 +8,7 @@ proof: formalized
 
 # TRIP-Stern sequences
 
-14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html).
+14 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html).
 
 ## TRIP-Stern tree
 
@@ -22,7 +22,7 @@ defined there.
 
 - Ilya Amburg, Krishna Dasaratha, Laure Flapan, Thomas Garrity, Chansoo Lee, Cornelia Mihaila, Nicholas Neumann-Chun, Sarah Peluse, and Matthew Stoffregen, *Stern Sequences for a Family of Multidimensional Continued Fractions: TRIP-Stern Sequences*, Journal of Integer Sequences 20 (2017), Article 17.1.7, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Garrity/garrity6.tex>. The tree abstracts Definition TRIPSternDef, lines 471-481 (seed (1,1,1), even/odd recursion by F_0/F_1, levels as index intervals), with F_0/F_1 from line 387; binary paths follow the triangle(v) definition, lines 485-488.
 
-Formalized by `MetaMathlibExt.TripSternTree`, a structure declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#trip-stern-tree).
+Formalized by `MetaMathlibExt.TripSternTree`, a structure declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#trip-stern-tree).
 
 ## Node selected by a binary path
 
@@ -36,7 +36,7 @@ right step.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.nodeAtPath`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-path).
+Formalized by `MetaMathlibExt.TripSternTree.nodeAtPath`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-path).
 
 ## The empty path selects the seed
 
@@ -47,7 +47,7 @@ by the empty binary path is the seed of $T$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.nodeAtEmptyPath`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-empty-path).
+Formalized by `MetaMathlibExt.TripSternTree.nodeAtEmptyPath`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-empty-path).
 
 ## Extending a path by a left step
 
@@ -59,7 +59,7 @@ applied to the node of $T$ selected by $p$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.nodeAtPathAppendLeft`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-path-append-left).
+Formalized by `MetaMathlibExt.TripSternTree.nodeAtPathAppendLeft`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-path-append-left).
 
 ## Extending a path by a right step
 
@@ -71,7 +71,7 @@ applied to the node of $T$ selected by $p$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.nodeAtPathAppendRight`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-path-append-right).
+Formalized by `MetaMathlibExt.TripSternTree.nodeAtPathAppendRight`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-at-path-append-right).
 
 ## Nodes at a given depth of a TRIP-Stern tree
 
@@ -83,7 +83,7 @@ binary path of length $n$ selects $y$ in $T$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.nodesAtDepth`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#nodes-at-depth).
+Formalized by `MetaMathlibExt.TripSternTree.nodesAtDepth`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#nodes-at-depth).
 
 ## Membership in a level of a TRIP-Stern tree
 
@@ -95,7 +95,7 @@ a binary path of length $n$ whose selected node in $T$ is $y$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.nodeMembershipAtDepth`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-membership-at-depth).
+Formalized by `MetaMathlibExt.TripSternTree.nodeMembershipAtDepth`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#node-membership-at-depth).
 
 ## Depth zero is the seed
 
@@ -106,7 +106,7 @@ in the set of nodes of $T$ at depth $0$ if and only if $y$ is the seed of $T$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.nodesAtDepthZero`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#nodes-at-depth-zero).
+Formalized by `MetaMathlibExt.TripSternTree.nodesAtDepthZero`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#nodes-at-depth-zero).
 
 ## Left-most node of a TRIP-Stern tree
 
@@ -119,7 +119,7 @@ left-most node at depth $n$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.leftmostNode`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#leftmost-node).
+Formalized by `MetaMathlibExt.TripSternTree.leftmostNode`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#leftmost-node).
 
 ## Rightmost node of a TRIP-Stern tree
 
@@ -132,7 +132,7 @@ image of the rightmost node at depth $n$ under the right transition.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.rightmostNode`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#rightmost-node).
+Formalized by `MetaMathlibExt.TripSternTree.rightmostNode`, a definition declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#rightmost-node).
 
 ## Left-most node at depth zero
 
@@ -143,7 +143,7 @@ depth $0$ is the seed of $T$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.leftmostNodeAtZero`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#leftmost-node-at-zero).
+Formalized by `MetaMathlibExt.TripSternTree.leftmostNodeAtZero`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#leftmost-node-at-zero).
 
 ## Recursion for the left-most node
 
@@ -155,7 +155,7 @@ to the left-most node of $T$ at depth $n$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.leftmostNodeAtSuccessor`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#leftmost-node-at-successor).
+Formalized by `MetaMathlibExt.TripSternTree.leftmostNodeAtSuccessor`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#leftmost-node-at-successor).
 
 ## Rightmost node at depth zero
 
@@ -166,7 +166,7 @@ depth $0$ is the seed of $T$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.rightmostNodeAtZero`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#rightmost-node-at-zero).
+Formalized by `MetaMathlibExt.TripSternTree.rightmostNodeAtZero`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#rightmost-node-at-zero).
 
 ## Successor step of the rightmost node
 
@@ -178,7 +178,7 @@ $T$ at depth $n$ under the right transition of $T$.
 
 - Amburg et al., *TRIP-Stern Sequences*, JIS 20 (2017), Article 17.1.7, Definition TRIPSternDef, lines 471-481.
 
-Formalized by `MetaMathlibExt.TripSternTree.rightmostNodeAtSuccessor`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TripSternTree.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#rightmost-node-at-successor).
+Formalized by `MetaMathlibExt.TripSternTree.rightmostNodeAtSuccessor`, a theorem declared in [MathlibExt/NumberTheory/TripSternTree.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TripSternTree.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html#rightmost-node-at-successor).
 
 ## Depends on
 
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: TRIP-Stern sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/trip-stern-sequences)

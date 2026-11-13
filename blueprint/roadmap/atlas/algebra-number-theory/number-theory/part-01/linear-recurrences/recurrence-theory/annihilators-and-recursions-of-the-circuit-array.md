@@ -7,7 +7,7 @@ statement: formalized
 
 # Annihilators and recursions of the circuit array
 
-32 results, 22 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html).
+32 results, 22 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html).
 
 ## Annihilator of a sequence
 
@@ -20,7 +20,7 @@ $s \ge 0$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Section 3 (definitions of the translation operator and of an annihilator).
 
-Formalized by `MetaMathlibExt.AnnihilatesSeq`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq).
+Formalized by `MetaMathlibExt.AnnihilatesSeq`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq).
 
 ## Every operator annihilates the zero sequence
 
@@ -32,7 +32,7 @@ operator $E(G_s) = G_{s+1}$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Section 3 (definition of an annihilator).
 
-Formalized by `MetaMathlibExt.annihilatesSeq_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-zero).
+Formalized by `MetaMathlibExt.annihilatesSeq_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-zero).
 
 ## The characteristic polynomial annihilates the solutions of its recurrence
 
@@ -45,7 +45,7 @@ polynomial $X^d - \sum_{i=0}^{d-1} a_i X^i$ of this recurrence annihilates $G$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Lemma 3.4.
 
-Stated but not proved: `MetaMathlibExt.annihilatesSeq_charPoly_of_isSolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-char-poly-of-is-solution).
+Stated but not proved: `MetaMathlibExt.annihilatesSeq_charPoly_of_isSolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-char-poly-of-is-solution).
 
 ## The operator $E - c$ annihilates the powers of $c$
 
@@ -58,7 +58,7 @@ sequence $s \mapsto c^s$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Lemma 3.7, part (i).
 
-Stated but not proved: `MetaMathlibExt.annihilatesSeq_X_sub_C_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-x-sub-c-pow).
+Stated but not proved: `MetaMathlibExt.annihilatesSeq_X_sub_C_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-x-sub-c-pow).
 
 ## The Addition-Multiplication Lemma for annihilators
 
@@ -77,7 +77,7 @@ $s \mapsto G_1(s) G_2(s)$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Lemma 3.8; part (ii) quoted from Jarden.
 
-Stated but not proved: `MetaMathlibExt.annihilatesSeq_sum_prod_and_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-sum-prod-and-mul).
+Stated but not proved: `MetaMathlibExt.annihilatesSeq_sum_prod_and_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#annihilates-seq-sum-prod-and-mul).
 
 ## Edges of an upright triangle
 
@@ -88,7 +88,7 @@ edge $L$, the right edge $R$ and the base $B$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Section 2 (edge labels `L`, `R`, `B`).
 
-Formalized by `MetaMathlibExt.CircuitEdge`, an inductive type declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-edge).
+Formalized by `MetaMathlibExt.CircuitEdge`, an inductive type declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-edge).
 
 ## Delta-wye resistance function
 
@@ -101,7 +101,7 @@ Division follows the convention $a / 0 = 0$, so $\Delta(x, y, z) = 0$ when $x + 
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, equation (2.1).
 
-Formalized by `MetaMathlibExt.circuitDelta`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-delta).
+Formalized by `MetaMathlibExt.circuitDelta`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-delta).
 
 ## The Y-Δ resistance function
 
@@ -114,7 +114,7 @@ When $a = 0$ the value is $0$, by the convention $x/0 = 0$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, equation (2.1).
 
-Formalized by `MetaMathlibExt.circuitY`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-y).
+Formalized by `MetaMathlibExt.circuitY`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-y).
 
 ## Top delta-wye arm
 
@@ -127,7 +127,7 @@ the triangle to its top vertex.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Figure 2 (`Y₁₂ = Δ(L, R, B)`).
 
-Formalized by `MetaMathlibExt.circuitTopArm`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-top-arm).
+Formalized by `MetaMathlibExt.circuitTopArm`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-top-arm).
 
 ## Bottom-right delta-wye arm
 
@@ -140,7 +140,7 @@ arm of the equivalent star from the centre of the triangle to its bottom-right v
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Figure 2 (`Y₄ = Δ(R, B, L)`).
 
-Formalized by `MetaMathlibExt.circuitRightArm`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-right-arm).
+Formalized by `MetaMathlibExt.circuitRightArm`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-right-arm).
 
 ## Bottom-left delta-wye arm
 
@@ -153,7 +153,7 @@ arm of the equivalent star from the centre of the triangle to its bottom-left ve
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Figure 2 (`Y₈ = Δ(B, L, R)`).
 
-Formalized by `MetaMathlibExt.circuitLeftArm`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-left-arm).
+Formalized by `MetaMathlibExt.circuitLeftArm`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-left-arm).
 
 ## Left-perimeter function
 
@@ -170,7 +170,7 @@ $T_{r,d}$ is the triangle in row $r$ and diagonal $d$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, equation (2.2).
 
-Formalized by `MetaMathlibExt.circuitPerimeter`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-perimeter).
+Formalized by `MetaMathlibExt.circuitPerimeter`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-perimeter).
 
 ## Left-edge function
 
@@ -189,7 +189,7 @@ $v = T_{r+1,d}$ for $d \ne 1$, where $T_{r,d}$ is the triangle in row $r$ and di
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, equation (2.5).
 
-Formalized by `MetaMathlibExt.circuitLeftEdge`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-left-edge).
+Formalized by `MetaMathlibExt.circuitLeftEdge`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-left-edge).
 
 ## Right-edge function
 
@@ -211,7 +211,7 @@ $13/12$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, equation (2.4) (corrected as above).
 
-Formalized by `MetaMathlibExt.circuitRightEdge`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-right-edge).
+Formalized by `MetaMathlibExt.circuitRightEdge`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-right-edge).
 
 ## Base-edge function
 
@@ -228,7 +228,7 @@ in row $r + 1$ and diagonal $d$, and in row $r + 1$ and diagonal $d + 1$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, equation (2.3).
 
-Formalized by `MetaMathlibExt.circuitBaseEdge`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-base-edge).
+Formalized by `MetaMathlibExt.circuitBaseEdge`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-base-edge).
 
 ## Row reduction of a labelled triangular grid
 
@@ -252,7 +252,7 @@ with $1 \le d \le r$ are meaningful.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Section 2 (row reduction, equations (2.2)-(2.5)).
 
-Formalized by `MetaMathlibExt.circuitReduce`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-reduce).
+Formalized by `MetaMathlibExt.circuitReduce`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-reduce).
 
 ## Reduced circuit grids
 
@@ -270,7 +270,7 @@ Definitions 2.4 and 2.5 the boundary values are variables.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Section 2 (reductions `T^m`, Definitions 2.4 and 2.5).
 
-Formalized by `MetaMathlibExt.circuitGrid`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-grid).
+Formalized by `MetaMathlibExt.circuitGrid`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-grid).
 
 ## Circuit array of a boundary assignment
 
@@ -287,7 +287,7 @@ subtraction truncated at $0$. The entries are meaningful for $j \ge 1$ and $0 \l
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.3.
 
-Formalized by `MetaMathlibExt.circuitArrayOf`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-of).
+Formalized by `MetaMathlibExt.circuitArrayOf`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-of).
 
 ## Circuit array
 
@@ -301,7 +301,7 @@ at $0$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.3 and Table 1.
 
-Formalized by `MetaMathlibExt.circuitArray`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array).
+Formalized by `MetaMathlibExt.circuitArray`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array).
 
 ## One-variable circuit array
 
@@ -317,7 +317,7 @@ subtraction truncated at $0$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.4 and Table 2.
 
-Formalized by `MetaMathlibExt.circuitArrayX`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x).
+Formalized by `MetaMathlibExt.circuitArrayX`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x).
 
 ## Variables of the multivariable circuit array
 
@@ -330,7 +330,7 @@ countably many variables.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.5 (the variables `X_i`).
 
-Formalized by `MetaMathlibExt.circuitVar`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-var).
+Formalized by `MetaMathlibExt.circuitVar`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-var).
 
 ## Multivariable circuit array
 
@@ -347,7 +347,7 @@ grid (other indices give junk values). In particular $C^M_{2(m-1),m} = X_m$ for 
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.5 and Table 3.
 
-Formalized by `MetaMathlibExt.circuitArrayM`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m).
+Formalized by `MetaMathlibExt.circuitArrayM`, a definition declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m).
 
 ## First entries of the circuit array
 
@@ -358,7 +358,7 @@ $C_{0,2} = 26/27$, $C_{1,2} = 13/12$ and $C_{2,2} = 1/2$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Table 1.
 
-Formalized by `MetaMathlibExt.circuitArray_small`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-small).
+Formalized by `MetaMathlibExt.circuitArray_small`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-small).
 
 ## First entry of the one-variable circuit array
 
@@ -370,7 +370,7 @@ $C^X_{0,1} = (X - 3)/X$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.4 and Proposition 4.1 (iv).
 
-Formalized by `MetaMathlibExt.circuitArrayX_zero_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-zero-one).
+Formalized by `MetaMathlibExt.circuitArrayX_zero_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-zero-one).
 
 ## First entries of the left diagonal of the multivariable circuit array
 
@@ -382,7 +382,7 @@ variables $X_0, X_1, \dots$, satisfies $C^M_{0,1} = X_1$ and $C^M_{2,2} = X_2$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Definition 2.5.
 
-Formalized by `MetaMathlibExt.circuitArrayM_diagonal`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-diagonal).
+Formalized by `MetaMathlibExt.circuitArrayM_diagonal`, a theorem declared in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-diagonal).
 
 ## Column recursion for the one-variable circuit array
 
@@ -407,7 +407,7 @@ display (2.4), and the printed $C_{2(c-1-4),j-1}$ in (iii) is read as $C_{2(c-1)
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Proposition 4.1.
 
-Stated but not proved: `MetaMathlibExt.circuitArrayX_inductive` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-inductive).
+Stated but not proved: `MetaMathlibExt.circuitArrayX_inductive` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-inductive).
 
 ## Row zero of the one-variable circuit array
 
@@ -421,7 +421,7 @@ $C_{0,s} = (9^s/3 - 1)/(9^s/3)$ in $\mathbb{Q}$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.4 with (2.6).
 
-Stated but not proved: `MetaMathlibExt.circuitArrayX_row_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-row-zero).
+Stated but not proved: `MetaMathlibExt.circuitArrayX_row_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-row-zero).
 
 ## Row one of the one-variable circuit array
 
@@ -436,7 +436,7 @@ $(3X - 1)/(3X - 3)$ at $s = 2$, which is $13/12$ at $X = 9$, not $26/27$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.5, denominator corrected from Table 2.
 
-Stated but not proved: `MetaMathlibExt.circuitArrayX_row_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-row-one).
+Stated but not proved: `MetaMathlibExt.circuitArrayX_row_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-row-one).
 
 ## Row two of the one-variable circuit array
 
@@ -454,7 +454,7 @@ The printed $c_{2,2}(X^2)$ is read as $c_{2,2}(s) X^2$, as in Remark 4.7.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.6.
 
-Stated but not proved: `MetaMathlibExt.circuitArrayX_row_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-row-two).
+Stated but not proved: `MetaMathlibExt.circuitArrayX_row_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-x-row-two).
 
 ## Row 0 of the multivariable circuit array
 
@@ -466,7 +466,7 @@ For every integer $s \ge 1$, $C^M_{0,s} = (9^{s-1} - 1 + X_1)/9^{s-1}$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.8.
 
-Stated but not proved: `MetaMathlibExt.circuitArrayM_row_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-row-zero).
+Stated but not proved: `MetaMathlibExt.circuitArrayM_row_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-row-zero).
 
 ## Row 1 of the multivariable circuit array
 
@@ -479,7 +479,7 @@ $C^M_{1,s} = (9^{s-1} - 1 + X_1)/\bigl(3(X_1 + 3 \cdot 9^{s-2} - 1)\bigr)$.
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.10.
 
-Stated but not proved: `MetaMathlibExt.circuitArrayM_row_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-row-one).
+Stated but not proved: `MetaMathlibExt.circuitArrayM_row_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-row-one).
 
 ## Row 2 of the multivariable circuit array
 
@@ -506,7 +506,7 @@ $-9G_{s-2}$).
 
 - Emily J. Evans and Russell Jay Hendel, *Recursions and Characteristic Polynomials of the Rows of the Circuit Array*, Fibonacci Quarterly 62 (2024), Article 62-4/hendel08232024rev2, Corollary 4.12 and Table 4.
 
-Stated but not proved: `MetaMathlibExt.circuitArrayM_row_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-row-two).
+Stated but not proved: `MetaMathlibExt.circuitArrayM_row_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/CircuitArrayRecursionsWanted.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html#circuit-array-m-row-two).
 
 ## Depends on
 
@@ -515,4 +515,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Annihilators and recursions of the circuit array](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrence-theory/annihilators-and-recursions-of-the-circuit-array)

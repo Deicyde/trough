@@ -8,7 +8,7 @@ proof: formalized
 
 # Laplace–Beltrami operator
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html).
 
 ## Laplace–Beltrami operator
 
@@ -32,7 +32,7 @@ product space. On the model space `𝓘(ℝ, F)`, under
 (same orthonormal-basis trace, same sign); see `laplacian_vectorSpace_eq_laplacian`
 for the proved agreement. What is new here is the manifold operator itself.
 
-Formalized by `Manifold.laplacian`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian).
+Formalized by `Manifold.laplacian`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian).
 
 ## Laplacian on a vector space as a sum of second directional derivatives
 
@@ -47,7 +47,7 @@ $f$ is assumed; a Fréchet derivative that does not exist is taken to be $0$.
 When $Df$ is differentiable at $x$, the right side is the flat Laplacian
 $\sum_i D^2 f(x)(e_i, e_i)$ of $f$ at $x$.
 
-Formalized by `Manifold.laplacian_vectorSpace`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-vector-space).
+Formalized by `Manifold.laplacian_vectorSpace`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-vector-space).
 
 ## The Laplacian on a vector space is the flat Laplacian at twice-differentiable points
 
@@ -63,7 +63,7 @@ differentiable at $x$, while $\Delta f(x)$ is the sum, over the vectors $v$ of t
 basis used in its definition, of the derivative at $x$ in direction $v$ of the function
 $y \mapsto Df(y)(v)$.
 
-Formalized by `Manifold.laplacian_vectorSpace_eq_laplacian`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-vector-space-eq-laplacian).
+Formalized by `Manifold.laplacian_vectorSpace_eq_laplacian`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-vector-space-eq-laplacian).
 
 ## Laplacian of the squared norm
 
@@ -74,7 +74,7 @@ function $y \mapsto \|y\|^2$ at $x$ is $2n$.
 The Hessian of $\|\cdot\|^2$ is $2\langle \cdot, \cdot \rangle$, so each of its diagonal entries
 in an orthonormal basis is $2$.
 
-Formalized by `Manifold.laplacian_norm_sq`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-norm-sq).
+Formalized by `Manifold.laplacian_norm_sq`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-norm-sq).
 
 ## Laplacian of the Gaussian potential
 
@@ -85,7 +85,7 @@ $x \in F$, the Laplacian of the function $y \mapsto \frac{a}{2}\|y\|^2$ at $x$ i
 This function is the potential of the Gaussian gradient Ricci soliton; each diagonal entry of
 its Hessian in an orthonormal basis is $a$.
 
-Formalized by `Manifold.laplacian_gaussian`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-gaussian).
+Formalized by `Manifold.laplacian_gaussian`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/Laplacian.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html#laplacian-gaussian).
 
 ## Depends on
 
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Laplace–Beltrami operator](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/riemannian-geometry/laplace-beltrami-operator)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Designs, Latin squares and combinatorial matrices: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/index.html).
 
 Block designs, Steiner systems, pairwise balanced designs and linear spaces, Latin squares and transversals, Hadamard and partial Hadamard matrices, magic squares, 0-1 matrices with prescribed margins (Gale–Ryser), binary matrices up to rotation, and sign tables from determinant-moment expansions; cyclic difference sets go to Sidon sets and difference sets.
 
@@ -34,7 +34,7 @@ lemma the division is exact (the Pólya enumeration formula).
 
 - S. N. Ethier, "Counting Toroidal Binary Arrays," Journal of Integer Sequences 16 (2013), Article 13.4.7, Theorem, lines 172–176, <https://cs.uwaterloo.ca/journals/JIS/VOL16/Ethier/ethier2.tex>.
 
-Formalized by `MetaMathlibExt.binaryMatrixRotationOrbitCount`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BinaryMatrixRotationOrbitCount.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/BinaryMatrixRotationOrbitCount.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/index.html#binary-matrix-rotation-orbit-count).
+Formalized by `MetaMathlibExt.binaryMatrixRotationOrbitCount`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/BinaryMatrixRotationOrbitCount.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/BinaryMatrixRotationOrbitCount.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/index.html#binary-matrix-rotation-orbit-count).
 
 ## Mann's product criterion for orthogonal Latin squares
 
@@ -51,7 +51,7 @@ The equivalence uses only the row conditions on $A$ and $B$; the column conditio
 that both inputs are Latin squares. The row condition on $C$ follows from the row conditions on
 $A$ and $B$, and is included so that the right side is the full Latin-square condition.
 
-Formalized by `MetaMathlibExt.mann_product_criterion_for_orthogonal_latin_squares`, a theorem declared in [MathlibExt/Combinatorics/LatinSquare/Mann.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/LatinSquare/Mann.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/index.html#mann-product-criterion-for-orthogonal-la).
+Formalized by `MetaMathlibExt.mann_product_criterion_for_orthogonal_latin_squares`, a theorem declared in [MathlibExt/Combinatorics/LatinSquare/Mann.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/LatinSquare/Mann.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/index.html#mann-product-criterion-for-orthogonal-la).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Designs, Latin squares and combinatorial matrices](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/designs-latin-squares)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/designs-latin-squares)

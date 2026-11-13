@@ -8,7 +8,7 @@ proof: formalized
 
 # Subset sum
 
-121 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/index.html).
+121 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/index.html).
 
 ## Bit-string encoding of SUBSET-SUM instances
 
@@ -17,7 +17,7 @@ and target $t$ is encoded as the block of $t$ followed by the blocks of $a_1, \d
 order. The block of a number is its binary expansion, least significant bit first and empty for
 the number $0$, made self-delimiting by writing each bit $c$ as $1c$ and appending a final $0$.
 
-Formalized by `Cslib.Complexity.Karp.encodeSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#encode-ss).
+Formalized by `Cslib.Complexity.Karp.encodeSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#encode-ss).
 
 ## The SUBSET-SUM problem
 
@@ -26,7 +26,7 @@ $x$ encodes a SUBSET-SUM instance with a list of numbers $a_1, \dots, a_r$ and a
 that some sublist of $a_1, \dots, a_r$ sums to $t$. A sublist keeps some of the entries in their
 order, so a number may be used as often as it occurs in the list.
 
-Formalized by `Cslib.Complexity.Karp.subsetSumDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#subset-sum-dec).
+Formalized by `Cslib.Complexity.Karp.subsetSumDec`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#subset-sum-dec).
 
 ## Place value of a vertex pair in the SUBSET-SUM reduction
 
@@ -34,7 +34,7 @@ The place value of pair number
 $q$ is $4^q$. The numbers of the reduction from VERTEX-COVER to SUBSET-SUM are written in base
 $4$, with the digit at position $q$ belonging to pair $q$.
 
-Formalized by `Cslib.Complexity.Karp.pairDigit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#pair-digit).
+Formalized by `Cslib.Complexity.Karp.pairDigit`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#pair-digit).
 
 ## Pairs touching a vertex
 
@@ -44,7 +44,7 @@ of pair bits, a vertex $v$ and an index $q$, the test is true when bit $b_q$ is 
 of the two entries of $p_q$. An index past the end of $b$ counts as an unset bit, and for
 $q \ge m$ the pair $p_q$ is taken to be $(0, 0)$.
 
-Formalized by `Cslib.Complexity.Karp.touches`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#touches).
+Formalized by `Cslib.Complexity.Karp.touches`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#touches).
 
 ## Vertex numbers of the SUBSET-SUM reduction
 
@@ -55,7 +55,7 @@ the indices $q < m$ such that bit $b_q$ is set and $v$ is an entry of $p_q$, whe
 the end of $b$ counts as unset. In base $4$ it has digit $1$ at position $m$ and at each such
 $q$, and $0$ elsewhere.
 
-Formalized by `Cslib.Complexity.Karp.vtxNum`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#vtx-num).
+Formalized by `Cslib.Complexity.Karp.vtxNum`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#vtx-num).
 
 ## Edge numbers of the SUBSET-SUM reduction
 
@@ -63,7 +63,7 @@ Given a list $b$ of pair bits and a pair index
 $q$, the number of pair $q$ is $4^q$ if bit $b_q$ is set and $0$ otherwise; an index past the end
 of $b$ counts as an unset bit.
 
-Formalized by `Cslib.Complexity.Karp.edgeNum`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#edge-num).
+Formalized by `Cslib.Complexity.Karp.edgeNum`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#edge-num).
 
 ## Target of the SUBSET-SUM reduction
 
@@ -73,7 +73,7 @@ is $k \cdot 4^m + \sum 2 \cdot 4^q$, the sum over the indices $q < m$ such that 
 (an index past the end of $b$ counts as unset). So the quotient of the target by $4^m$ is $k$, and
 its base-$4$ digit at position $q < m$ is $2$ when $b_q$ is set and $0$ otherwise.
 
-Formalized by `Cslib.Complexity.Karp.ssTarget`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#ss-target).
+Formalized by `Cslib.Complexity.Karp.ssTarget`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#ss-target).
 
 ## Numbers of the SUBSET-SUM reduction
 
@@ -82,14 +82,14 @@ $m = n(n-1)/2$ vertex pairs, the numbers of the instance are the vertex numbers 
 $v = 0, \dots, n - 1$, in this order, followed by the edge numbers of the pairs
 $q = 0, \dots, m - 1$, in this order.
 
-Formalized by `Cslib.Complexity.Karp.ssNums`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#ss-nums).
+Formalized by `Cslib.Complexity.Karp.ssNums`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#ss-nums).
 
 ## Fixed no-instance of SUBSET-SUM
 
 The encoding of the SUBSET-SUM instance with no numbers
 and target $1$. It is a no-instance, because the only sublist of the empty list sums to $0$.
 
-Formalized by `Cslib.Complexity.Karp.noSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#no-ss).
+Formalized by `Cslib.Complexity.Karp.noSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#no-ss).
 
 ## Reduction from VERTEX-COVER to SUBSET-SUM
 
@@ -100,14 +100,14 @@ instance whose numbers are the numbers of the reduction for $n$ and $b$ and whos
 target for $k$, $n$ and $b$. Otherwise $x$ is sent to the fixed no-instance with no numbers and
 target $1$.
 
-Formalized by `Cslib.Complexity.Karp.reduceSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#reduce-ss).
+Formalized by `Cslib.Complexity.Karp.reduceSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSum.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSum.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#reduce-ss).
 
 ## The fixed no-instance of SUBSET-SUM
 
 The encoded SUBSET-SUM instance with no numbers and
 target $1$ is a no-instance: the SUBSET-SUM decision problem returns false on it.
 
-Formalized by `Cslib.Complexity.Karp.subsetSumDec_noSS`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#subset-sum-dec-no-ss).
+Formalized by `Cslib.Complexity.Karp.subsetSumDec_noSS`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#subset-sum-dec-no-ss).
 
 ## Base-4 expansions with digits below $4$ are unique
 
@@ -116,7 +116,7 @@ $d, e : \mathbb{N} \to \mathbb{N}$ satisfy $d(q) < 4$ and $e(q) < 4$ for every $
 $A \cdot 4^m + \sum_{q < m} d(q) \, 4^q = B \cdot 4^m + \sum_{q < m} e(q) \, 4^q$ holds if and only
 if $A = B$ and $d(q) = e(q)$ for every $q < m$.
 
-Formalized by `Cslib.Complexity.Karp.add_sum_digits_eq_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#add-sum-digits-eq-iff).
+Formalized by `Cslib.Complexity.Karp.add_sum_digits_eq_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#add-sum-digits-eq-iff).
 
 ## Sublists of the reduction's numbers as vertex and pair sets
 
@@ -127,7 +127,7 @@ from $n$ and $b$. Some sublist (a subsequence, not necessarily contiguous) of th
 numbers for $n$ and $b$ sums to $t$ if and only if there are finite sets $S$ of vertices $v < n$
 and $F$ of pair indices $q < m$ with $\sum_{v \in S} x_v + \sum_{q \in F} y_q = t$.
 
-Formalized by `Cslib.Complexity.Karp.exists_sublist_ssNums_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#exists-sublist-ss-nums-iff).
+Formalized by `Cslib.Complexity.Karp.exists_sublist_ssNums_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#exists-sublist-ss-nums-iff).
 
 ## A vertex number in base 4
 
@@ -136,7 +136,7 @@ $m$ be the length of the list of vertex pairs $(i, j)$, $i < j < n$. The vertex 
 defined from $n$ and $b$ equals $4^m + \sum_{q < m} t_q 4^q$, where $t_q = 1$ if entry $q$ of $b$
 (counting from $0$) is true and $v$ is an endpoint of the $q$-th pair, and $t_q = 0$ otherwise.
 
-Formalized by `Cslib.Complexity.Karp.vtxNum_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#vtx-num-eq).
+Formalized by `Cslib.Complexity.Karp.vtxNum_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#vtx-num-eq).
 
 ## The target in base 4
 
@@ -145,7 +145,7 @@ be the length of the list of vertex pairs $(i, j)$, $i < j < n$. The reduction's
 $n$ and $b$ equals $k \cdot 4^m + \sum_{q < m} c_q 4^q$, where $c_q = 2$ if entry $q$ of $b$
 (counting from $0$) is true and $c_q = 0$ otherwise, in particular when $b$ has no entry $q$.
 
-Formalized by `Cslib.Complexity.Karp.ssTarget_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#ss-target-eq).
+Formalized by `Cslib.Complexity.Karp.ssTarget_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#ss-target-eq).
 
 ## A subset sum of the reduction's numbers in base 4
 
@@ -159,7 +159,7 @@ and $f_q = 0$ otherwise. An absent entry counts as false. Then
 $\sum_{v \in S} x_v + \sum_{q \in F} y_q = |S| \cdot 4^m +
 \sum_{q < m} \left(\sum_{v \in S} t_{v,q} + f_q\right) 4^q$.
 
-Formalized by `Cslib.Complexity.Karp.sum_vtxNum_add_sum_edgeNum`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#sum-vtx-num-add-sum-edge-num).
+Formalized by `Cslib.Complexity.Karp.sum_vtxNum_add_sum_edgeNum`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#sum-vtx-num-add-sum-edge-num).
 
 ## Vertices of a set touching a vertex pair
 
@@ -170,7 +170,7 @@ for $1$ if $P$ holds and $0$ otherwise. Then the number of $v \in S$ for which t
 pair $q$ touches $v$ under $b$ is true equals $[i \in S] + [j \in S]$ if the bit $b_q$ is set, and
 $0$ otherwise (an index past the end of $b$ counts as an unset bit).
 
-Formalized by `Cslib.Complexity.Karp.sum_touches_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#sum-touches-eq).
+Formalized by `Cslib.Complexity.Karp.sum_touches_eq`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#sum-touches-eq).
 
 ## Vertex covers in terms of the pair bits
 
@@ -182,7 +182,7 @@ lies in $s$ exactly when $i \in S$. Then $s$ is a vertex cover of $G$ if and onl
 index $q$ (counting from $0$) of the pair list whose entry in $b$ is true, the $q$-th pair
 $(i_q, j_q)$ satisfies $i_q \in S$ or $j_q \in S$.
 
-Formalized by `Cslib.Complexity.Karp.isVertexCover_toGraph_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#is-vertex-cover-to-graph-iff).
+Formalized by `Cslib.Complexity.Karp.isVertexCover_toGraph_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#is-vertex-cover-to-graph-iff).
 
 ## Vertex covers of size $k$ match subset sums hitting the target
 
@@ -193,14 +193,14 @@ bits $b$. Then $G$ has a vertex cover with exactly $k$ vertices if and only if s
 subsequence, not necessarily contiguous) of the reduction's numbers for $n$ and $b$ sums to the
 reduction's target for $k$, $n$ and $b$.
 
-Formalized by `Cslib.Complexity.Karp.exists_cover_iff_exists_sublist`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#exists-cover-iff-exists-sublist).
+Formalized by `Cslib.Complexity.Karp.exists_cover_iff_exists_sublist`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumCorrect.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#exists-cover-iff-exists-sublist).
 
 ## Value of the empty bit list
 
 The empty bit list, read as a binary number least significant
 bit first, has value $0$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.bitsVal_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#bits-val-nil).
+Formalized by `Cslib.Complexity.Karp.EmitSS.bitsVal_nil`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-01/index.html#bits-val-nil).
 
 ## Value of a bit list with a leading bit
 
@@ -209,7 +209,7 @@ $l$ read as a binary number least significant bit first, and for a bit $b$ write
 $b$ is true and $0$ if $b$ is false. For every bit $b$ and every bit list $l$, the list with first
 entry $b$ followed by $l$ has value $[b] + 2 \cdot \mathrm{val}(l)$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.bitsVal_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#bits-val-cons).
+Formalized by `Cslib.Complexity.Karp.EmitSS.bitsVal_cons`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#bits-val-cons).
 
 ## A bit list without trailing false is the binary code of its value
 
@@ -217,7 +217,7 @@ For every bit list $l$
 whose last entry is not false (the empty list included), the binary code, least significant bit
 first, of the value of $l$ read least significant bit first is $l$ itself.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.encodeNat_bitsVal`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#encode-nat-bits-val).
+Formalized by `Cslib.Complexity.Karp.EmitSS.encodeNat_bitsVal`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#encode-nat-bits-val).
 
 ## Value of a list of two-bit digits
 
@@ -226,7 +226,7 @@ read as a binary number least significant bit first. Let $f$ assign to each bit 
 two bits. Then for every bit list $b_0, b_1, \dots, b_{m-1}$, the concatenation
 $f(b_0) f(b_1) \cdots f(b_{m-1})$ has value $\sum_{q < m} 4^q \, \mathrm{val}(f(b_q))$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.bitsVal_flatMap2`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#bits-val-flat-map2).
+Formalized by `Cslib.Complexity.Karp.EmitSS.bitsVal_flatMap2`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#bits-val-flat-map2).
 
 ## Binary code of the value of a bit list
 
@@ -234,7 +234,7 @@ Read a bit list $l$ as a binary number, least
 significant bit first. The binary code of its value (least significant bit first, with no trailing
 false bits) is $l$ with all of its trailing false bits removed.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.encodeNat_bitsVal_rev`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#encode-nat-bits-val-rev).
+Formalized by `Cslib.Complexity.Karp.EmitSS.encodeNat_bitsVal_rev`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#encode-nat-bits-val-rev).
 
 ## Delimiting a bit list that ends in true
 
@@ -243,7 +243,7 @@ self-delimiting form of $u$ followed by the bit true is
 $(\mathrm{true}, u_1, \mathrm{true}, u_2, \dots, \mathrm{true}, u_k,
 \mathrm{true}, \mathrm{true}, \mathrm{false})$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.delimit_append_true`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#delimit-append-true).
+Formalized by `Cslib.Complexity.Karp.EmitSS.delimit_append_true`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#delimit-append-true).
 
 ## Output block of a vertex-number digit
 
@@ -254,7 +254,7 @@ In the reduction from VERTEX-COVER to SUBSET-SUM, the self-delimiting code of a 
 consists of one such block for each pair digit, followed by
 $(\mathrm{true}, \mathrm{true}, \mathrm{false})$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.blk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#blk).
+Formalized by `Cslib.Complexity.Karp.EmitSS.blk`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#blk).
 
 ## Output block of an edge number
 
@@ -265,7 +265,7 @@ $(\mathrm{false})$.
 
 This is the self-delimiting binary code of $4^q$ when $b$ is true and of $0$ when $b$ is false.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.edgeEnc`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#edge-enc).
+Formalized by `Cslib.Complexity.Karp.EmitSS.edgeEnc`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#edge-enc).
 
 ## Output of all edge numbers
 
@@ -273,7 +273,7 @@ Write $E(q, b)$ for the output block of the edge number of pair
 $q$ with bit $b$. For a bit list $(b_{m-1}, \dots, b_1, b_0)$, listing the bit of the last pair
 first, the output is the concatenation $E(0, b_0) \, E(1, b_1) \cdots E(m-1, b_{m-1})$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.edgeOut`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#edge-out).
+Formalized by `Cslib.Complexity.Karp.EmitSS.edgeOut`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#edge-out).
 
 ## The pair walk over lists of marks
 
@@ -283,7 +283,7 @@ $W(L, R)$ is empty. If $L$ has first entry $a$ and remaining entries $L'$, then 
 consists of the pairs $(a, r)$ for the entries $r$ of $R$ in order, followed by $W(L', R')$,
 where $R'$ is the list $R$ with $a$ put in front.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.walkM`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#walk-m).
+Formalized by `Cslib.Complexity.Karp.EmitSS.walkM`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#walk-m).
 
 ## Triangular numbers
 
@@ -291,7 +291,7 @@ For a natural number $n$, the triangular number $T(n)$ is the sum
 $0 + 1 + \cdots + (n - 1)$ of the natural numbers below $n$. It is defined by recursion:
 $T(0) = 0$ and $T(i + 1) = T(i) + i$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.tri`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#tri).
+Formalized by `Cslib.Complexity.Karp.EmitSS.tri`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#tri).
 
 ## The pair walk lists the vertex pairs in reverse
 
@@ -303,14 +303,14 @@ follows: list the pairs $(a, j)$ of natural numbers with $a < i$ and $a < j < n$
 ascending and, for each $a$, $j$ descending; reverse this list; and replace each pair $(a, j)$
 by $(f(a), f(j))$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.walkM_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#walk-m-pairs).
+Formalized by `Cslib.Complexity.Karp.EmitSS.walkM_pairs`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 271](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L271). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#walk-m-pairs).
 
 ## Vertex marks for a vertex
 
 For natural numbers $n$ and $v$, the list of $n$ bits whose
 entries, from first to last, record for $i = n-1, n-2, \dots, 0$ whether $i = v$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.mkL`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#mk-l).
+Formalized by `Cslib.Complexity.Karp.EmitSS.mkL`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#mk-l).
 
 ## Touch bits from the pair walk of a vertex
 
@@ -322,7 +322,7 @@ of the entries $c_l \wedge (y_l \vee x_l)$ for $l = 0, \dots, \min(k, m) - 1$, r
 list of the values at $q = 0, 1, \dots, m - 1$ of the test whether pair $q$ touches $v$ under
 $b$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.walk_touches`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#walk-touches).
+Formalized by `Cslib.Complexity.Karp.EmitSS.walk_touches`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumDigits.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#walk-touches).
 
 ## Stacks of the SUBSET-SUM reduction machine
 
@@ -332,14 +332,14 @@ holds the number $n$ of vertices, and $M$, the pair count; $C$, which counts the
 scratch stacks $S_1$ and $S_2$; $Y$ and $Z$, which hold the pair bits; $T$, which holds the
 target's bits; and $L$, $R$ and $R_t$, which hold the vertex marks.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#k).
+Formalized by `Cslib.Complexity.Karp.EmitSS.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#k).
 
 ## Stack alphabets of the subset-sum emitter
 
 In the VERTEX-COVER to SUBSET-SUM machine the
 output stack $\mathsf{O}$ holds Booleans, and every other stack holds token symbols.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#untitled).
+Formalized by `Cslib.Complexity.Karp.EmitSS.Γ`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#untitled).
 
 ## Labels of the subset-sum emitter
 
@@ -355,7 +355,7 @@ $\mathrm{hv0}$, $\mathrm{hv1}$ and $\mathrm{hvB}$ (the binary digits of $k$); $\
 $\mathrm{tsk}$ and $\mathrm{tem}$ (writing the target); $\mathrm{bad}$, which writes the fixed
 no-instance; and the halting label $\mathrm{done}$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.EmitSS.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#lab).
 
 ## Counter unit of the subset-sum emitter
 
@@ -363,7 +363,7 @@ The unit symbol of the counters of the
 VERTEX-COVER to SUBSET-SUM machine is the token symbol $\mathrm{cl}$; a counter with value $n$
 holds exactly $n$ copies of it.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.U`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#u).
+Formalized by `Cslib.Complexity.Karp.EmitSS.U`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#u).
 
 ## Test for the input bit true (SUBSET-SUM reduction machine)
 
@@ -371,7 +371,7 @@ On the result of a pop, which
 is either a symbol or nothing (when the stack was empty), the test returns true exactly when the
 result is the input-bit symbol $\mathrm{bit}(\mathrm{true})$, and false otherwise.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.isT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#is-t).
+Formalized by `Cslib.Complexity.Karp.EmitSS.isT`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#is-t).
 
 ## Test for the value symbol true (SUBSET-SUM reduction machine)
 
@@ -380,14 +380,14 @@ which is either a symbol or nothing (when the stack was empty), the test returns
 the result is the value symbol $\mathrm{val}(\mathrm{true})$, which this machine uses for a pair
 bit or vertex mark that is true, and false otherwise.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.isV`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#is-v).
+Formalized by `Cslib.Complexity.Karp.EmitSS.isV`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#is-v).
 
 ## Reading a pair bit or vertex mark
 
 The partial map from token symbols to bits that
 sends the symbol $\mathrm{val}(b)$ to $b$ and gives no value on every other symbol.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.valOf`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#val-of).
+Formalized by `Cslib.Complexity.Karp.EmitSS.valOf`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-02/index.html#val-of).
 
 ## Branch after the count comparison (SUBSET-SUM reduction machine)
 
@@ -397,7 +397,7 @@ label $\mathrm{eg}$, which starts the edge-number phase, and the results "less t
 "greater than" lead to the failure label $\mathrm{bad}$, which writes the fixed no-instance of
 SUBSET-SUM.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.cmpOut`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#cmp-out).
+Formalized by `Cslib.Complexity.Karp.EmitSS.cmpOut`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#cmp-out).
 
 ## The subset-sum emitter machine
 
@@ -467,35 +467,35 @@ $T$, let $s$ say whether the popped symbol is $\mathrm{bit}(\mathrm{true})$, pre
 $(\mathrm{true}, s)$ to $O$, and repeat. $\mathrm{bad}$: prepend the encoding of the subset-sum
 instance with no numbers and target $1$ to $O$ and go to $\mathrm{done}$. $\mathrm{done}$: halt.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.EmitSS.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#prog).
 
 ## Start label of the subset-sum emitter
 
 The VERTEX-COVER to SUBSET-SUM machine starts at
 the label $\mathsf{rdK}$, which begins parsing the input by reading its leading unary number.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#start).
+Formalized by `Cslib.Complexity.Karp.EmitSS.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#start).
 
 ## Testing a popped input bit
 
 For every bit $b$, the test for the input bit true of the
 SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, returns $b$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.isT_bit`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#is-t-bit).
+Formalized by `Cslib.Complexity.Karp.EmitSS.isT_bit`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#is-t-bit).
 
 ## Testing a popped input bit
 
 For every bit $b$, the test for the input bit true of the
 SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, returns $b$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.isV_val`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#is-v-val).
+Formalized by `Cslib.Complexity.Karp.EmitSS.isV_val`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#is-v-val).
 
 ## Testing a popped input bit
 
 For every bit $b$, the test for the input bit true of the
 SUBSET-SUM reduction machine, applied to the popped symbol $\mathrm{bit}(b)$, returns $b$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.isBitBlock_val`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#is-bit-block-val).
+Formalized by `Cslib.Complexity.Karp.EmitSS.isBitBlock_val`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#is-bit-block-val).
 
 ## Subset-sum emitter: reading the unary k
 
@@ -508,7 +508,7 @@ $\mathrm{rdK}$ with state $v$ and stacks $S$ to label $\mathrm{rdN}$ with some s
 stacks $S'$ such that $S'(X)$ is $\mathrm{bit}(r_1), \dots, \mathrm{bit}(r_m)$, $S'(A)$ holds
 exactly $i + k$ copies of $U$, and every stack other than $X$ and $A$ is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.rdK_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-k-some).
+Formalized by `Cslib.Complexity.Karp.EmitSS.rdK_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-k-some).
 
 ## Subset-sum emitter: unterminated unary prefix at rdK
 
@@ -520,7 +520,7 @@ emitter machine lead from label $\mathrm{rdK}$ with state $v$ and stacks $S$ to 
 $\mathrm{bad}$ with some state and some stacks that agree with $S$ on every stack other than $X$
 and $A$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.rdK_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-k-none).
+Formalized by `Cslib.Complexity.Karp.EmitSS.rdK_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-k-none).
 
 ## Subset-sum emitter: reading the unary n
 
@@ -535,7 +535,7 @@ $\mathrm{bit}(r_1), \dots, \mathrm{bit}(r_m)$, $S'(N)$ holds exactly $i + n$ cop
 $S'(L)$ holds exactly $i + n$ copies of $\mathrm{val}(\mathrm{false})$, and every stack other than
 $X$, $N$ and $L$ is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.rdN_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-n-some).
+Formalized by `Cslib.Complexity.Karp.EmitSS.rdN_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 383](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L383). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-n-some).
 
 ## Subset-sum emitter: unterminated unary prefix at rdN
 
@@ -547,7 +547,7 @@ emitter machine lead from label $\mathrm{rdN}$ with state $v$ and stacks $S$ to 
 $\mathrm{bad}$ with some state and some stacks that agree with $S$ on every stack other than $X$,
 $N$ and $L$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.rdN_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-n-none).
+Formalized by `Cslib.Complexity.Karp.EmitSS.rdN_none`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rd-n-none).
 
 ## Subset-sum emitter: moving the pair bits
 
@@ -561,7 +561,7 @@ stacks $S'$ such that: $S'(Y)$ is $S(Y)$ after pushing $\mathrm{val}(b_1), \dots
 $\mathrm{bit}(\mathrm{false})$ and then $\mathrm{bit}(b_i)$; $S'(C)$ holds exactly $c + m$ copies
 of $U$; and every stack other than $X$, $Y$, $T$ and $C$ is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.mv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#mv-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.mv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#mv-run).
 
 ## Run of the pair-counting loop of the subset-sum emitter
 
@@ -573,7 +573,7 @@ Then after exactly $(n + 1)^2$ steps the machine is at label $\mathsf{cmp}$ with
 and stacks $S'$ in which $\mathsf{M}$ holds exactly $p + T_n$ unit symbols and every stack other
 than $\mathsf{N}$ and $\mathsf{M}$ is as in $S$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.tri_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#tri-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.tri_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#tri-run).
 
 ## Edge-number phase (SUBSET-SUM reduction machine)
 
@@ -591,7 +591,7 @@ $S(O)$, and every stack other than $Y$, $Z$, $O$, $C$, $M$ holds the same conten
 For each pair $q$ the machine pops its bit onto $Z$ and writes its edge number, using
 $C = M = q$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.eg_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#eg-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.eg_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#eg-run).
 
 ## Subset-sum emitter: one row of the pair walk
 
@@ -609,7 +609,7 @@ is $\mathrm{val}(b_p), \dots, \mathrm{val}(b_1)$ followed by $S(Z)$; $S'(O)$ is 
 $\mathrm{blk}(d_p) \cdots \mathrm{blk}(d_1)$ followed by $S(O)$; and every stack other than $R$,
 $\mathrm{Rt}$, $Y$, $Z$ and $O$ is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.pr_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#pr-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.pr_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#pr-run).
 
 ## Run of the subset-sum emitter's pair walk
 
@@ -630,7 +630,7 @@ where $t_i = b_i \wedge (c_i \vee a_i)$ and $\mathrm{blk}(t) = [\mathrm{true}, t
 The rows of the walk come from the vertex marks on $L$ (top first) and the columns from the marks
 on $R$; after each row the column marks are restored from $Rt$ and the row mark moves onto $R$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.walk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 549](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L549). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#walk-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.walk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 549](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L549). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#walk-run).
 
 ## Subset-sum emitter: one vertex number
 
@@ -649,7 +649,7 @@ $\mathrm{val}(m_0), \dots, \mathrm{val}(m_{n-1})$; $S'(Y) = S(Y)$; $S'(O)$ is th
 encoding of the binary representation of $N_w$ (least significant bit first) followed by $S(O)$;
 and every stack other than $L$, $R$, $\mathrm{Rt}$, $Y$, $Z$ and $O$ is unchanged.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.round_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 617](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#round-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.round_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 617](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L617). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#round-run).
 
 ## Subset-sum emitter: moving unmarked vertices back to L
 
@@ -663,7 +663,7 @@ $\mathrm{val}(\rho_1), \dots, \mathrm{val}(\rho_k)$, $S'(L)$ is $c$ copies of
 $\mathrm{val}(\mathrm{false})$ followed by $S(L)$, and every stack other than $R$ and $L$ is
 unchanged.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.rsF_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 653](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rs-f-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.rsF_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 653](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rs-f-run).
 
 ## Run of the mark-return loop of the subset-sum emitter
 
@@ -677,7 +677,7 @@ symbols $\mathrm{val}(c_{n-1}), \dots, \mathrm{val}(c_0)$, where $c_i$ is true e
 $i = w$, and every stack other than $\mathsf{R}$ and $\mathsf{L}$ is as in $S$. So the vertex
 mark moves from vertex $w + 1$ to vertex $w$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.rs_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rs-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.rs_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#rs-run).
 
 ## Run of the vertex-number phase of the subset-sum emitter
 
@@ -699,7 +699,7 @@ $\mathsf{O}$ is as in $S$. Here the binary encoding lists the bits least signifi
 the self-delimiting encoding replaces each bit $b$ by $\mathrm{true}, b$ and appends
 $\mathrm{false}$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.vtx_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 691](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L691). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#vtx-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.vtx_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 691](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L691). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#vtx-run).
 
 ## One halving step of the binary conversion (SUBSET-SUM reduction machine)
 
@@ -712,7 +712,7 @@ steps, with some flag $v'$ and stacks $S'$ such that $S'(A)$ is empty, $S'(H)$ h
 copies of the unit symbol, $S'(T)$ is the input-bit symbol $\mathrm{bit}(r)$ on top of $S(T)$,
 and every stack other than $A$, $H$, $T$ holds the same contents as in $S$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.hv0_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#hv0-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.hv0_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 726](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L726). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-03/index.html#hv0-run).
 
 ## Binary conversion (SUBSET-SUM reduction machine)
 
@@ -727,7 +727,7 @@ $S(T)$, and every stack other than $A$, $H$, $T$ holds the same contents as in $
 
 The machine thus pushes the binary digits of $k$ onto $T$ least significant first.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.hv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 753](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L753). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#hv-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.hv_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 753](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L753). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#hv-run).
 
 ## Run of the target-bit loop of the subset-sum emitter
 
@@ -740,7 +740,7 @@ top first, $\mathrm{true}, b_m, \mathrm{true}, b_{m-1}, \dots, \mathrm{true}, b_
 contents of $\mathsf{O}$ in $S$, and every stack other than $\mathsf{T}$ and $\mathsf{O}$ is as in
 $S$. That is, each popped bit $b$ is written as $b$ and then $\mathrm{true}$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.tem_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#tem-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.tem_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#tem-run).
 
 ## Run of the target-output phase of the subset-sum emitter
 
@@ -754,7 +754,7 @@ $\mathsf{O}$ holds the self-delimiting encoding of the reverse of $l'$ followed 
 stack other than $\mathsf{T}$ and $\mathsf{O}$ is as in $S$. Here the self-delimiting encoding of
 a list replaces each bit $b$ by $\mathrm{true}, b$ and appends $\mathrm{false}$.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.tsk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 798](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#tsk-run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.tsk_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 798](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#tsk-run).
 
 ## Run of the VERTEX-COVER to SUBSET-SUM machine
 
@@ -765,7 +765,7 @@ stack is empty. Then within at most $40(|x| + 1)^4$ steps the machine reaches th
 $\mathsf{done}$ with some state bit and stacks in which the output stack $\mathsf{O}$ holds,
 top first, the image of $x$ under the bit-string reduction from VERTEX-COVER to SUBSET-SUM.
 
-Formalized by `Cslib.Complexity.Karp.EmitSS.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 830](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L830). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#run).
+Formalized by `Cslib.Complexity.Karp.EmitSS.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean, line 830](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumEmit.lean#L830). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#run).
 
 ## Whether a bit string ends in false
 
@@ -777,7 +777,7 @@ end in false.
 With $z$ false the value is true exactly when $p$ is non-empty and ends in false, that is, when
 $p$ is not the canonical binary code of a number, least significant bit first.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.lastF`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#last-f).
+Formalized by `Cslib.Complexity.Karp.SSVerify.lastF`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#last-f).
 
 ## Canonical binary strings are those not ending in zero
 
@@ -786,7 +786,7 @@ in binary (least significant bit first) the natural number that $p$ decodes to g
 and only if the trailing-zero test, started with no trailing zero, reports that $p$ does not end
 in $0$; that is, $p$ is empty or its last bit is $1$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.encodeNat_decodeNat_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#encode-nat-decode-nat-iff).
+Formalized by `Cslib.Complexity.Karp.SSVerify.encodeNat_decodeNat_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#encode-nat-decode-nat-iff).
 
 ## Parsing number blocks, with fuel
 
@@ -798,7 +798,7 @@ is $a$ followed by the result for $r'$ with fuel $m$ (failing if that fails), an
 parsing fails. Here the prefix code of $a$ is the canonical binary code of $a$, least significant
 bit first, with each bit $b$ written as the pair true, $b$, followed by a final false.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.numsAux`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#nums-aux).
+Formalized by `Cslib.Complexity.Karp.SSVerify.numsAux`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#nums-aux).
 
 ## Decoding a SUBSET-SUM instance
 
@@ -809,7 +809,7 @@ the end of $x$, where each block must hold the canonical binary representation o
 (least significant bit first, no trailing $0$). It returns the list $(a_1, \dots, a_n)$ together
 with $t$, and fails if $x$ does not split this way.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.decodeSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#decode-ss).
+Formalized by `Cslib.Complexity.Karp.SSVerify.decodeSS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#decode-ss).
 
 ## Decoding a SUBSET-SUM instance inverts its encoding
 
@@ -818,7 +818,7 @@ list $a$ of natural numbers and every natural number $t$, the SUBSET-SUM decoder
 instance $(a, t)$ on $x$ if and only if $x$ is the encoding of the SUBSET-SUM instance with
 numbers $a$ and target $t$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.decodeSS_eq_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#decode-ss-eq-some).
+Formalized by `Cslib.Complexity.Karp.SSVerify.decodeSS_eq_some`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#decode-ss-eq-some).
 
 ## Numbers chosen by a mask
 
@@ -826,7 +826,7 @@ For a list of numbers $a_0, \dots, a_{k-1}$ and a list of bits
 $w$, the list of those $a_i$ with $w_i$ true, in their original order, where positions $i$ beyond
 the end of $w$ count as false.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.pick`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#pick).
+Formalized by `Cslib.Complexity.Karp.SSVerify.pick`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#pick).
 
 ## The SUBSET-SUM verifier
 
@@ -836,7 +836,7 @@ $t$, and the sum of the $a_i$ for which bit $i$ of $w$ is true equals $t$; bits 
 $w$ count as false, and bits of $w$ past position $n - 1$ are ignored. If $x$ is not the encoding
 of an instance, the verifier rejects.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.ssCheck`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#ss-check).
+Formalized by `Cslib.Complexity.Karp.SSVerify.ssCheck`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#ss-check).
 
 ## Every sublist is selected by a mask
 
@@ -844,7 +844,7 @@ If $l$ is a sublist of a list $a$ of natural numbers,
 then there is a list $w$ of Booleans of the same length as $a$ such that the entries $a_i$ of $a$
 with $w_i$ true, taken in order, form exactly $l$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.exists_pick`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#exists-pick).
+Formalized by `Cslib.Complexity.Karp.SSVerify.exists_pick`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#exists-pick).
 
 ## SUBSET-SUM is characterized by its verifier
 
@@ -852,7 +852,7 @@ A bit string $x$ is a yes-instance of
 SUBSET-SUM if and only if there is a bit string $w$ with $|w| \le |x|$ such that the SUBSET-SUM
 verifier accepts $(x, w)$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.subsetSumDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#subset-sum-dec-iff).
+Formalized by `Cslib.Complexity.Karp.SSVerify.subsetSumDec_iff`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#subset-sum-dec-iff).
 
 ## Carry bit of a full adder
 
@@ -860,7 +860,7 @@ For bits $a$, $b$ and a carry-in $c$, the carry out of adding
 $a$, $b$ and $c$ is $(a \wedge b) \vee (c \wedge (a \oplus b))$, which is true iff at least two of
 $a$, $b$, $c$ are true.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.carry`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#carry).
+Formalized by `Cslib.Complexity.Karp.SSVerify.carry`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#carry).
 
 ## Adding a carry bit
 
@@ -869,7 +869,7 @@ first), $\mathrm{inc}(c, u)$ adds $c$ to $u$ by ripple carry: on the empty strin
 $c$ is true and empty otherwise, and on a string with first bit $a$ and rest $u'$ it is the bit
 $a \oplus c$ followed by $\mathrm{inc}(a \wedge c, u')$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.incB`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#inc-b).
+Formalized by `Cslib.Complexity.Karp.SSVerify.incB`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#inc-b).
 
 ## Ripple-carry addition of bit lists
 
@@ -880,7 +880,7 @@ the carry $c$ added (a final carry becomes a new last bit). Otherwise, with $a$ 
 $a \oplus b \oplus c$ followed by the ripple-carry sum of the rest of $u$ and the rest of $p$ with
 carry-in the carry out of $a$, $b$ and $c$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.addB`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#add-b).
+Formalized by `Cslib.Complexity.Karp.SSVerify.addB`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#add-b).
 
 ## Addition is correct on canonical numbers
 
@@ -890,7 +890,7 @@ $n$, the ripple-carry sum, with carry-in $c$, of the canonical binary expansions
 $m + n + c$, where $c$ counts as $1$ if true and $0$ if false. In particular the sum stays
 canonical.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.addB_encodeNat`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#add-b-encode-nat).
+Formalized by `Cslib.Complexity.Karp.SSVerify.addB_encodeNat`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#add-b-encode-nat).
 
 ## Stacks of the SUBSET-SUM verifier
 
@@ -899,7 +899,7 @@ witness $W$, the target $T$ (most significant bit on top), the running sum $A$ (
 bit on top), the new sum $B$ (most significant bit on top), and the scratch stacks $P$ and $Q$ of
 the final comparison.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#k).
+Formalized by `Cslib.Complexity.Karp.SSVerify.K`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#k).
 
 ## Labels of the SUBSET-SUM verifier
 
@@ -912,7 +912,7 @@ $\mathrm{yes}$, accepting; and $\mathrm{no}$, rejecting, for all bits $c$ and $z
 $\mathrm{tgt}(z)$, $\mathrm{add}(c, z)$ and $\mathrm{skip}(z)$ the flag $z$ records whether the
 bits of the current block read so far end in $0$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#lab).
+Formalized by `Cslib.Complexity.Karp.SSVerify.Lab`, an inductive type declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#lab).
 
 ## Statements of the SUBSET-SUM verifier
 
@@ -921,7 +921,7 @@ are the statements of a multi-stack Turing machine in Mathlib's TM2 model whose 
 seven stacks $X$, $W$, $T$, $A$, $B$, $P$, $Q$, each over the symbol alphabet of the SAT verifier,
 whose labels are the labels of the SUBSET-SUM verifier, and whose local state is a Boolean.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#stmt).
+Formalized by `Cslib.Complexity.Karp.SSVerify.Stmt`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-04/index.html#stmt).
 
 ## Reading one pair of a block
 
@@ -933,7 +933,7 @@ true and run $\mathit{done}$ otherwise. If it is true, go to $\mathsf{no}$ if $X
 and otherwise pop the next symbol of $X$ as a payload bit $b$ (again a non-bit counts as false)
 and run $\mathit{body}(b)$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.rdS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#rd-s).
+Formalized by `Cslib.Complexity.Karp.SSVerify.rdS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#rd-s).
 
 ## Adding one payload bit to the sum
 
@@ -943,7 +943,7 @@ empty or the symbol is not a bit), push the bit $a \oplus b \oplus c$ onto $B$, 
 that adds a chosen number with carry the carry out of $a$, $b$ and $c$ and flag $\lnot b$ (the flag
 records whether the bits of the block read so far end in false).
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.addS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-s).
+Formalized by `Cslib.Complexity.Karp.SSVerify.addS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-s).
 
 ## Carry step of the SUBSET-SUM verifier
 
@@ -954,7 +954,7 @@ it pops the top symbol of $A$, read as a bit $a$ (a symbol that is not a bit rea
 the local variable to $a$, pushes the bit $a \oplus c$ onto $B$ and goes to label
 $\mathrm{fin}(a \wedge c)$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.finS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#fin-s).
+Formalized by `Cslib.Complexity.Karp.SSVerify.finS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#fin-s).
 
 ## Starting the next number
 
@@ -965,7 +965,7 @@ when $W$ is empty or its top is not a bit; $c$ becomes the internal state. It th
 label $\mathsf{add}$ with carry false if $c$ is true, and to the label $\mathsf{skip}$ if $c$ is
 false, in both cases with the flag "the bits read so far end in false" unset.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.nextS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#next-s).
+Formalized by `Cslib.Complexity.Karp.SSVerify.nextS`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#next-s).
 
 ## The SUBSET-SUM verifier program
 
@@ -995,7 +995,7 @@ true it reads a payload bit $b$, going to $\mathsf{no}$ if $X$ has ended.
   go to $\mathsf{yes}$ if they are equal and to $\mathsf{no}$ otherwise.
 * $\mathsf{yes}$ and $\mathsf{no}$: halt.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#prog).
+Formalized by `Cslib.Complexity.Karp.SSVerify.prog`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#prog).
 
 ## Start state of the SUBSET-SUM verifier
 
@@ -1003,7 +1003,7 @@ The SUBSET-SUM verifier machine starts in its
 target-reading state, with the flag recording whether the bits read so far end in false set to
 false.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#start).
+Formalized by `Cslib.Complexity.Karp.SSVerify.start`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#start).
 
 ## Stack contents of the SUBSET-SUM verifier
 
@@ -1012,7 +1012,7 @@ this assigns contents to the seven stacks of the SUBSET-SUM verifier machine: th
 holds $x$, the witness stack $W$ holds $w$, the target stack $T$ holds $t$, the sum stacks $A$ and
 $B$ hold $a$ and $b$, and the scratch stacks $P$ and $Q$ are empty.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#st).
+Formalized by `Cslib.Complexity.Karp.SSVerify.st`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#st).
 
 ## Rejection by the SUBSET-SUM verifier within a step bound
 
@@ -1021,7 +1021,7 @@ configuration $c$ of the SUBSET-SUM verifier, $\mathrm{Rej}(n, c)$ holds when th
 internal state $v$ and stack contents $S$ such that the verifier runs from $c$ in at most $n$
 steps to the configuration with label $\mathsf{no}$, internal state $v$ and stacks $S$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.Rej`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#rej).
+Formalized by `Cslib.Complexity.Karp.SSVerify.Rej`, a definition declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#rej).
 
 ## Rejecting in one step
 
@@ -1030,7 +1030,7 @@ contents. If executing the verifier's statement at label $l$ from internal state
 $S$ yields the next label $\mathsf{no}$, then the verifier reaches a configuration with label
 $\mathsf{no}$ from the configuration $(l, v, S)$ within one step.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.rej_one`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#rej-one).
+Formalized by `Cslib.Complexity.Karp.SSVerify.rej_one`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#rej-one).
 
 ## Reading the target block
 
@@ -1047,7 +1047,7 @@ unchanged, the local variable is false, and the machine is in its rejecting stat
 is non-empty and ends in false or $p$ is empty and $z$ is true, and in the state that starts the
 next number otherwise.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.tgt_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#tgt-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.tgt_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#tgt-run).
 
 ## Skipping a number block
 
@@ -1062,7 +1062,7 @@ $s$, all other stacks are unchanged, the local variable is false, and the machin
 rejecting state if either $p$ is non-empty and ends in false or $p$ is empty and $z$ is true, and
 in the state that starts the next number otherwise.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.skip_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#skip-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.skip_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#skip-run).
 
 ## Carry phase of the SUBSET-SUM verifier
 
@@ -1075,7 +1075,7 @@ verifier takes exactly $|u| + 1$ steps to reach label $\mathrm{back}$ with varia
 $X$, $W$, $T$ are unchanged, $A$, $P$, $Q$ are empty, and $B$ holds the bits of
 $\mathrm{inc}(c, u)$ on top of $\mathit{acc}$, last bit on top.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.fin_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#fin-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.fin_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#fin-run).
 
 ## Adding a canonical chosen block
 
@@ -1092,7 +1092,7 @@ $\mathit{rest}$ on $X$, $w$ on $W$, $t$ on $T$, $A$, $P$ and $Q$ empty, and on $
 sum of $u$ and $p$ with carry-in $c$ (as bit symbols, most significant bit on top) above
 $\mathit{acc}$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.add_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.add_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-run).
 
 ## The verifier rejects a chosen block that ends in false
 
@@ -1105,7 +1105,7 @@ followed by $\mathit{rest}$ (as bit symbols) on the input stack $X$, any symbol 
 and $B$, $u$ (as bit symbols) on the sum stack $A$, and the scratch stacks $P$ and $Q$ empty. Then
 the machine reaches the rejecting label within $|p| + 1$ steps.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.add_rej`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-rej).
+Formalized by `Cslib.Complexity.Karp.SSVerify.add_rej`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 497](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L497). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-rej).
 
 ## The verifier rejects an unterminated target block
 
@@ -1117,7 +1117,7 @@ local Boolean variable, with the bits of $r$ on the input stack $X$, arbitrary c
 stacks $W$, $T$, $A$, $B$, and the scratch stacks $P$, $Q$ empty. Then the machine reaches its
 rejecting state within $|r| + 1$ steps.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.tgt_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#tgt-fail).
+Formalized by `Cslib.Complexity.Karp.SSVerify.tgt_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 511](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L511). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#tgt-fail).
 
 ## The verifier rejects an unterminated skipped block
 
@@ -1129,7 +1129,7 @@ false and either value of its local Boolean variable, with the bits of $r$ on th
 $X$, arbitrary contents on the stacks $W$, $T$, $A$, $B$, and the scratch stacks $P$, $Q$ empty.
 Then the machine reaches its rejecting state within $|r| + 1$ steps.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.skip_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#skip-fail).
+Formalized by `Cslib.Complexity.Karp.SSVerify.skip_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 526](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L526). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#skip-fail).
 
 ## The verifier rejects an unterminated chosen block
 
@@ -1141,7 +1141,7 @@ of the local variable, $r$ (as bit symbols) on the input stack $X$, any symbol l
 and $B$, $u$ (as bit symbols) on the sum stack $A$, and the scratch stacks $P$ and $Q$ empty. Then
 the machine reaches the rejecting label within $|r| + 1$ steps.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.add_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-fail).
+Formalized by `Cslib.Complexity.Karp.SSVerify.add_fail`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 540](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L540). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#add-fail).
 
 ## Moving the new sum back
 
@@ -1153,7 +1153,7 @@ $|\mathit{res}| + 1$ steps the machine is at the label that starts the next numb
 of the local variable, $x$, $w$, $t$ unchanged, $\mathit{res}$ (as bit symbols, first bit on top)
 on $A$, and $B$, $P$, $Q$ empty.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.back_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#back-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.back_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 558](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L558). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#back-run).
 
 ## Moving the final sum for the comparison
 
@@ -1164,7 +1164,7 @@ empty, the verifier takes exactly $|s| + 1$ steps to reach label $\mathrm{cmp}$,
 of the variable, where $X$, $W$, $T$ are unchanged, $A$, $P$, $Q$ are empty, and $B$ holds the
 bits of $s$, last bit on top.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.fmove_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#fmove-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.fmove_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#fmove-run).
 
 ## Comparing the sum with the target
 
@@ -1174,7 +1174,7 @@ and $w$ on $X$ and $W$, the target $\tau$ on $T$ and the sum $s$ on $B$ (both as
 bit on top), and the stacks $A$, $P$ and $Q$ empty. Then within $|s| + 1$ steps the machine reaches
 the accepting label if $s = \tau$ and the rejecting label otherwise.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.cmp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#cmp-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.cmp_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 592](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L592). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-05/index.html#cmp-run).
 
 ## The summing loop of the SUBSET-SUM verifier
 
@@ -1193,7 +1193,7 @@ $|\langle \sigma \rangle| \le N$, and for some list of symbols $w'$ the stacks $
 on $X$, $w'$ on $W$, $t$ on $T$, $\langle \sigma \rangle$ on $A$, and nothing on $B$, $P$ and
 $Q$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.loop_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#loop-run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.loop_run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#loop-run).
 
 ## Cubic bound on the verifier's phase costs
 
@@ -1201,7 +1201,7 @@ For natural numbers $X$, $W$, $P$, $R$ and $S$
 with $P + R \le X$ and $S \le X$,
 $P + 1 + (R(2X + 6) + 1) + (S + 1) + (S + 1) \le 16 (X + W + 1)^3$.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.cost_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 720](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L720). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#cost-le).
+Formalized by `Cslib.Complexity.Karp.SSVerify.cost_le`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 720](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L720). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#cost-le).
 
 ## The SUBSET-SUM verifier machine
 
@@ -1211,7 +1211,7 @@ stack empty. Started at the start label with internal state $v$ and stacks $S$, 
 program reaches, within $16(|x| + |w| + 1)^3$ steps, a configuration with label $\mathsf{yes}$
 if the SUBSET-SUM check accepts $(x, w)$, and with label $\mathsf{no}$ otherwise.
 
-Formalized by `Cslib.Complexity.Karp.SSVerify.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#run).
+Formalized by `Cslib.Complexity.Karp.SSVerify.run`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumVerify.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#run).
 
 ## The SUBSET-SUM verifier machine as a host component
 
@@ -1220,7 +1220,7 @@ that checks SUBSET-SUM certificates, packaged as a host component: it has seven 
 holding symbols of the SAT verifier alphabet, its labels and its program are those of the
 machine, and the list of its stacks names each of the seven stacks exactly once.
 
-Formalized by `Cslib.Complexity.Karp.ssVerifyComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#ss-verify-comp).
+Formalized by `Cslib.Complexity.Karp.ssVerifyComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#ss-verify-comp).
 
 ## SUBSET-SUM is in NP
 
@@ -1231,7 +1231,7 @@ $t$. This decision problem belongs to NP: there are a polynomial $p$ with natura
 coefficients and a polynomial-time computable verifier $R$ such that SUBSET-SUM accepts $x$
 exactly when $R(x, w)$ holds for some bit string $w$ with $|w| \le p(|x|)$.
 
-Formalized by `Cslib.Complexity.Karp.subsetSumDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#subset-sum-dec-mem-np).
+Formalized by `Cslib.Complexity.Karp.subsetSumDec_mem_NP`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#subset-sum-dec-mem-np).
 
 ## The VERTEX-COVER to SUBSET-SUM machine as a host component
 
@@ -1241,7 +1241,7 @@ host component: its fifteen stacks (the output stack holds booleans, every other
 symbols of the SAT verifier alphabet), its labels and its program are those of the machine, and
 the list of its stacks names each of the fifteen stacks exactly once.
 
-Formalized by `Cslib.Complexity.Karp.emitSSComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#emit-sscomp).
+Formalized by `Cslib.Complexity.Karp.emitSSComp`, an abbreviation declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#emit-sscomp).
 
 ## The VERTEX-COVER to SUBSET-SUM reduction is polynomial-time
 
@@ -1251,7 +1251,7 @@ SUBSET-SUM instance built from it (one base-4 number for each vertex and for eac
 vertices of $G$, and a target) and every other bit string to the instance with no numbers and
 target $1$, is computable in polynomial time.
 
-Formalized by `Cslib.Complexity.Karp.isPolyTime_reduceSS`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#is-poly-time-reduce-ss).
+Formalized by `Cslib.Complexity.Karp.isPolyTime_reduceSS`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#is-poly-time-reduce-ss).
 
 ## SUBSET-SUM is NP-hard
 
@@ -1262,7 +1262,7 @@ $a_1, \dots, a_n$ sums to $t$. Every decision problem $L$ in NP reduces to SUBSE
 polynomial-time many-one reduction: there is a polynomial-time computable map $f$ on bit strings
 such that, for every bit string $x$, $L$ accepts $x$ exactly when SUBSET-SUM accepts $f(x)$.
 
-Formalized by `Cslib.Complexity.Karp.subsetSumDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#subset-sum-dec-np-hard).
+Formalized by `Cslib.Complexity.Karp.subsetSumDec_npHard`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#subset-sum-dec-np-hard).
 
 ## SUBSET-SUM is NP-complete
 
@@ -1274,7 +1274,7 @@ NP reduces to SUBSET-SUM by a polynomial-time many-one reduction: there is a pol
 computable map $f$ on bit strings such that, for every bit string $x$, $L$ accepts $x$ exactly
 when SUBSET-SUM accepts $f(x)$.
 
-Formalized by `Cslib.Complexity.Karp.subsetSumDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#subset-sum-dec-np-complete).
+Formalized by `Cslib.Complexity.Karp.subsetSumDec_npComplete`, a theorem declared in [CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/Karp/SubsetSumComplete.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#subset-sum-dec-np-complete).
 
 ## SUBSET-SUM verifier computes the mask-selected sum
 
@@ -1284,13 +1284,13 @@ malformed blocks can instead reject early, leaving only a partial sum.
 The cost uses framed bit length, never numeric magnitudes. The mask is
 consumed; copy it before reuse in another component.
 
-Formalized by `Cslib.Complexity.SSVerifierSum.sum_component_run`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierSum.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierSum.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#sum-component-run).
+Formalized by `Cslib.Complexity.SSVerifierSum.sum_component_run`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierSum.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierSum.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#sum-component-run).
 
 ## A long enough all-true mask selects the whole list
 
 A mask long enough to select every item gives the original list.
 
-Formalized by `Cslib.Complexity.SSVerifierSum.pick_all`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierSum.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierSum.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#pick-all).
+Formalized by `Cslib.Complexity.SSVerifierSum.pick_all`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierSum.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierSum.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#pick-all).
 
 ## Embedded SUBSET-SUM summing component reaches the mapped label
 
@@ -1302,64 +1302,64 @@ fresh, distinct from mapped live labels, or a halt of the host. Callers
 must establish their intended label separation and the code run next.
 The embedded mask is consumed; each later sum needs its own saved copy.
 
-Formalized by `Cslib.Complexity.SSVerifierSum.sum_embed`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierSum.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierSum.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#sum-embed).
+Formalized by `Cslib.Complexity.SSVerifierSum.sum_embed`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierSum.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierSum.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#sum-embed).
 
 ## Framed input of two natural numbers
 
 Two canonical Nat blocks in the existing list framing.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.pairInput`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#pair-input).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.pairInput`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#pair-input).
 
 ## Labels of the binary addition machine
 
 Original verifier labels plus initialization, clear, reverse, and halt.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.Lab`, an abbreviation declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#lab).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.Lab`, an abbreviation declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#lab).
 
 ## Identity embedding of the verifier stacks
 
 Reuse all original verifier stacks without re-encoding symbols.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.identity`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#identity).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.identity`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#identity).
 
 ## Redirection of the verifier's halt labels
 
 Redirect the two halt labels, leaving every live label distinct.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.redirect`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#redirect).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.redirect`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#redirect).
 
 ## Only halt labels are redirected to the cleanup label
 
 The cleanup continuation cannot alias any live verifier label.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.redirect_eq_clear_iff`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#redirect-eq-clear-iff).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.redirect_eq_clear_iff`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#redirect-eq-clear-iff).
 
 ## Binary addition program built on the SUBSET-SUM machine
 
 Run the existing sum machine, then clear the mask and restore LSB order.
 Only the original halt labels are redirected to a continuation.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.prog`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#prog).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.prog`, a definition declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#prog).
 
 ## Bit length of the sum is at most the input length
 
 The canonical sum fits within the two framed operands' bit length.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.length_sum_le_input`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#length-sum-le-input).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.length_sum_le_input`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#length-sum-le-input).
 
 ## Binary addition of framed numbers in quadratic time
 
 Add two canonically framed numbers, leaving only the LSB-first result.
 The bound is quadratic in encoded input length; no loop enumerates values.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.run`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#run-2).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.run`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-06/index.html#run-2).
 
 ## Embedded run of the binary addition component
 
 The addition component runs in a host, with every external stack
 unchanged and all embedded workspace cleared.
 
-Formalized by `Cslib.Complexity.SSVerifierArithmetic.run_embedded`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-07/index.html#run-embedded).
+Formalized by `Cslib.Complexity.SSVerifierArithmetic.run_embedded`, a theorem declared in [CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Complexity/SSVerifierArithmetic.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/part-07/index.html#run-embedded).
 
 ## Depends on
 
@@ -1368,4 +1368,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Subset sum](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/subset-sum)

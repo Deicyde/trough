@@ -8,7 +8,7 @@ proof: formalized
 
 # Fractional coloring
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html).
 
 ## Fractional clique number
 
@@ -18,7 +18,7 @@ every vertex $v$, such that $\sum_{v \in S} f(v) \le 1$ for every independent se
 *weight* of $f$ is $\sum_{v \in V(X)} f(v)$. The *fractional clique number* $\omega^*(X)$ of $X$
 is the supremum of the weights of all fractional cliques of $X$.
 
-Formalized by `SimpleGraph.fracCliqueNumber`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalClique.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalClique.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html#frac-clique-number).
+Formalized by `SimpleGraph.fracCliqueNumber`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalClique.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalClique.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html#frac-clique-number).
 
 ## Fractional chromatic number
 
@@ -33,7 +33,7 @@ of $X$.
 Since $f$ vanishes off the independent sets, a fractional colouring is the same as a nonnegative
 function on the independent sets of $X$, and both sums run over independent sets only.
 
-Formalized by `SimpleGraph.fracChromaticNumber`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html#frac-chromatic-number).
+Formalized by `SimpleGraph.fracChromaticNumber`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html#frac-chromatic-number).
 
 ## Regular fractional colouring
 
@@ -44,7 +44,7 @@ running over all sets of vertices containing $x$. The fractional colouring $f$ i
 $\sum_{S \ni x} f(S) = 1$ for every vertex $x$ of $X$. Since $f$ vanishes off the independent
 sets, this is the sum of $f$ over the independent sets of $X$ containing $x$.
 
-Formalized by `MetaMathlibExt.FracColouring.IsRegular`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html#is-regular).
+Formalized by `MetaMathlibExt.FracColouring.IsRegular`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/AlgebraicGraphTheory/LPRelaxations/FractionalColouring.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html#is-regular).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fractional coloring](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/graph-coloring/part-01/fractional-coloring)

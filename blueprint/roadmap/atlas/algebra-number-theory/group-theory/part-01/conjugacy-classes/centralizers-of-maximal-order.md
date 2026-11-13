@@ -7,7 +7,7 @@ statement: formalized
 
 # Centralizers of maximal order
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order/index.html).
 
 ## Mukhamet'yanov–Fomin problem on centralizers of maximal order
 
@@ -19,7 +19,7 @@ normalizer of $H$) is contained in $C_G(a)$.
 
 This is Kourovka Notebook Problem 14.67 (I. T. Mukhamet'yanov, A. N. Fomin).
 
-Formalized by `MathlibExt.GroupTheory.MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.maximalCentralizerContainsNormalizedNilpotent`, a definition declared in [WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order/index.html#maximal-centralizer-contains-normalized).
+Formalized by `MathlibExt.GroupTheory.MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.maximalCentralizerContainsNormalizedNilpotent`, a definition declared in [WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order/index.html#maximal-centralizer-contains-normalized).
 
 ## Centralizers of maximal order need not contain normalized nilpotent subgroups
 
@@ -38,7 +38,7 @@ order $16384$ not contained in $C_G(a)$; the Kourovka Notebook (21st issue) answ
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 14.67 (I. T. Mukhamet'yanov, A. N. Fomin); resolution: A. Jayadevan, Centralizers of maximal order and nilpotent normal subgroups, preprint, Zenodo record 22861469 (2026), main theorem: a group of order 660602880 with an involution a and a nilpotent normal subgroup H of order 16384 such that |C_G(a)| = 41287680 ≥ |C_G(g)| for every g ≠ 1 but H is not contained in C_G(a); the Kourovka Notebook (21st issue) marks 14.67 solved (AI solution confirmed by K. Muliarchyk), https://zenodo.org/records/22861469.
 
-Stated but not proved: `MathlibExt.GroupTheory.MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.maximalCentralizerContainsNormalizedNilpotent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order/index.html#maximal-centralizer-contains-normalized-2).
+Stated but not proved: `MathlibExt.GroupTheory.MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.maximalCentralizerContainsNormalizedNilpotent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MaximalCentralizerNilpotentSubgroupKourovka14Problem67Wanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order/index.html#maximal-centralizer-contains-normalized-2).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Centralizers of maximal order](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/conjugacy-classes/centralizers-of-maximal-order)

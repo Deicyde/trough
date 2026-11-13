@@ -7,7 +7,7 @@ statement: formalized
 
 # Sum-free sets in abelian groups
 
-31 results, 16 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html).
+31 results, 16 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html).
 
 ## Sum-free set
 
@@ -19,7 +19,7 @@ triple $x + y = z$ with $x, y, z \in S$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction.
 
-Formalized by `MetaMathlibExt.IsSumFreeSet`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-sum-free-set).
+Formalized by `MetaMathlibExt.IsSumFreeSet`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-sum-free-set).
 
 ## Distinct sum-free sets
 
@@ -31,7 +31,7 @@ $S$ contains no distinct Schur triple.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction.
 
-Formalized by `MetaMathlibExt.IsDistinctSumFreeSet`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-sum-free-set).
+Formalized by `MetaMathlibExt.IsDistinctSumFreeSet`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-sum-free-set).
 
 ## Sum-free sets are distinct sum-free
 
@@ -42,7 +42,7 @@ subset of $G$ is distinct sum-free.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction.
 
-Formalized by `MetaMathlibExt.IsSumFreeSet.isDistinctSumFreeSet`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-sum-free-set-2).
+Formalized by `MetaMathlibExt.IsSumFreeSet.isDistinctSumFreeSet`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-sum-free-set-2).
 
 ## The empty set is sum-free
 
@@ -53,7 +53,7 @@ sum-free.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction.
 
-Formalized by `MetaMathlibExt.isSumFreeSet_empty`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-sum-free-set-empty).
+Formalized by `MetaMathlibExt.isSumFreeSet_empty`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-sum-free-set-empty).
 
 ## Size of a largest sum-free subset
 
@@ -67,7 +67,7 @@ the value for $S = G$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction (`μ(G)`) and Theorem 2.
 
-Formalized by `MetaMathlibExt.largestSumFreeCard`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#largest-sum-free-card).
+Formalized by `MetaMathlibExt.largestSumFreeCard`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#largest-sum-free-card).
 
 ## Trivial bound on sum-free subsets
 
@@ -78,7 +78,7 @@ subset $S \subseteq G$, the largest size of a sum-free subset of $S$ is at most 
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction.
 
-Formalized by `MetaMathlibExt.largestSumFreeCard_le`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#largest-sum-free-card-le).
+Formalized by `MetaMathlibExt.largestSumFreeCard_le`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#largest-sum-free-card-le).
 
 ## Number of maximal sum-free sets
 
@@ -91,7 +91,7 @@ it is $0$ if there are infinitely many.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction.
 
-Formalized by `MetaMathlibExt.maxSumFreeCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-sum-free-count).
+Formalized by `MetaMathlibExt.maxSumFreeCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-sum-free-count).
 
 ## Number of maximal distinct sum-free sets
 
@@ -105,7 +105,7 @@ $y$ and $x + y$ are pairwise distinct.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, section "Maximal distinct sum-free subsets".
 
-Formalized by `MetaMathlibExt.maxDistinctSumFreeCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-distinct-sum-free-count).
+Formalized by `MetaMathlibExt.maxDistinctSumFreeCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-distinct-sum-free-count).
 
 ## Number of distinct Schur triples
 
@@ -118,7 +118,7 @@ in $F$. If there are infinitely many such pairs, the value is $0$ by convention.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, introduction and Lemma 1.
 
-Formalized by `MetaMathlibExt.distinctSchurTripleCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#distinct-schur-triple-count).
+Formalized by `MetaMathlibExt.distinctSchurTripleCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#distinct-schur-triple-count).
 
 ## Groups of type I(p)
 
@@ -133,7 +133,7 @@ Only the order of $G$ is used; in the paper $G$ is a finite abelian group.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Definition 1.
 
-Formalized by `MetaMathlibExt.IsTypeOneGroup`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-type-one-group).
+Formalized by `MetaMathlibExt.IsTypeOneGroup`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-type-one-group).
 
 ## Characterization of type I(p)
 
@@ -145,7 +145,7 @@ and $p \le q$ for every prime $q$ with $q \equiv 2 \pmod 3$ that divides $|G|$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Definition 1.
 
-Formalized by `MetaMathlibExt.isTypeOneGroup_iff`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-type-one-group-iff).
+Formalized by `MetaMathlibExt.isTypeOneGroup_iff`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-type-one-group-iff).
 
 ## Diananda–Yap and Green–Ruzsa theorem
 
@@ -162,7 +162,7 @@ The paper quotes this result from Diananda–Yap and Green–Ruzsa.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 1, with Definition 1.
 
-Stated but not proved: `MetaMathlibExt.largestSumFreeCard_univ_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#largest-sum-free-card-univ-eq).
+Stated but not proved: `MetaMathlibExt.largestSumFreeCard_univ_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#largest-sum-free-card-univ-eq).
 
 ## Number of maximal independent sets
 
@@ -175,7 +175,7 @@ infinitely many.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, subsection "Maximal independent sets in graphs".
 
-Formalized by `MetaMathlibExt.maxIndepSetCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count).
+Formalized by `MetaMathlibExt.maxIndepSetCount`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count).
 
 ## Edges of the distinct link graph
 
@@ -190,7 +190,7 @@ distinct vertices; the relation itself does not depend on $B$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Definition 2 (i).
 
-Formalized by `MetaMathlibExt.DistinctLinkAdj`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#distinct-link-adj).
+Formalized by `MetaMathlibExt.DistinctLinkAdj`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#distinct-link-adj).
 
 ## Loops of the distinct link graph
 
@@ -204,7 +204,7 @@ $s, s' \in S$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Definition 2 (ii).
 
-Formalized by `MetaMathlibExt.DistinctLinkLoop`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#distinct-link-loop).
+Formalized by `MetaMathlibExt.DistinctLinkLoop`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#distinct-link-loop).
 
 ## Independent sets of the distinct link graph
 
@@ -217,7 +217,7 @@ $I \subseteq B$, no element of $I$ carries a loop, and no two elements of $I$ ar
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Definition 2.
 
-Formalized by `MetaMathlibExt.IsDistinctLinkIndep`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-link-indep).
+Formalized by `MetaMathlibExt.IsDistinctLinkIndep`, a definition declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-link-indep).
 
 ## The empty set is independent in the distinct link graph
 
@@ -229,7 +229,7 @@ graph $L^*_S[B]$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Definition 2.
 
-Formalized by `MetaMathlibExt.isDistinctLinkIndep_empty`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-link-indep-empty).
+Formalized by `MetaMathlibExt.isDistinctLinkIndep_empty`, a theorem declared in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#is-distinct-link-indep-empty).
 
 ## Container lemma
 
@@ -244,7 +244,7 @@ $F \in \mathcal{F}$ is of the form $A \cup B$ with $A$ sum-free and $|B| \le \de
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.exists_distinct_sumFree_containers` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#exists-distinct-sum-free-containers).
+Stated but not proved: `MetaMathlibExt.exists_distinct_sumFree_containers` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#exists-distinct-sum-free-containers).
 
 ## Green–Ruzsa structure lemma
 
@@ -258,7 +258,7 @@ where $\mathbb{Z}_p$ is identified with $\{0, 1, \dots, p - 1\}$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exists_addMonoidHom_zmod_of_large_sumFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#exists-add-monoid-hom-zmod-of-large-sum).
+Stated but not proved: `MetaMathlibExt.exists_addMonoidHom_zmod_of_large_sumFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#exists-add-monoid-hom-zmod-of-large-sum).
 
 ## Counting subgroups by order and by index
 
@@ -270,7 +270,7 @@ index $k$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.ncard_addSubgroup_card_eq_ncard_index_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#ncard-add-subgroup-card-eq-ncard-index-e).
+Stated but not proved: `MetaMathlibExt.ncard_addSubgroup_card_eq_ncard_index_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#ncard-add-subgroup-card-eq-ncard-index-e).
 
 ## Ranks of the index-two subgroups of a finite abelian 2-group
 
@@ -285,7 +285,7 @@ of a group is the minimal number of its generators.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.ncard_index_two_addSubgroup_rank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#ncard-index-two-add-subgroup-rank).
+Stated but not proved: `MetaMathlibExt.ncard_index_two_addSubgroup_rank` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#ncard-index-two-add-subgroup-rank).
 
 ## Balogh–Liu–Sharifzadeh–Treglown bound
 
@@ -301,7 +301,7 @@ when $\delta(\Gamma) = 0$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.maxIndepSetCount_le_of_maxDegree_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count-le-of-max-degree-le).
+Stated but not proved: `MetaMathlibExt.maxIndepSetCount_le_of_maxDegree_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count-le-of-max-degree-le).
 
 ## Almost triangle-free bound
 
@@ -316,7 +316,7 @@ $\Gamma$ satisfies $\mathrm{mis}(\Gamma) \le 2^{n/2 - k/(100D^2) + 2|T|}$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.maxIndepSetCount_le_of_almost_triangleFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count-le-of-almost-triangl).
+Stated but not proved: `MetaMathlibExt.maxIndepSetCount_le_of_almost_triangleFree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count-le-of-almost-triangl).
 
 ## Liu–Sharifzadeh stability bound
 
@@ -329,7 +329,7 @@ $\mathrm{mis}(\Gamma) \le 3^{\Delta/13} \cdot 3^{n/3 - k/(13\Delta)}$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.maxIndepSetCount_le_of_edge_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count-le-of-edge-count).
+Stated but not proved: `MetaMathlibExt.maxIndepSetCount_le_of_edge_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-indep-set-count-le-of-edge-count).
 
 ## Link-graph extension lemma
 
@@ -346,7 +346,7 @@ $I = \emptyset$ the conclusion fails.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.maximal_isDistinctLinkIndep_of_maximal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#maximal-is-distinct-link-indep-of-maxima).
+Stated but not proved: `MetaMathlibExt.maximal_isDistinctLinkIndep_of_maximal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#maximal-is-distinct-link-indep-of-maxima).
 
 ## Maximal distinct sum-free sets in groups of type $I(p)$
 
@@ -362,7 +362,7 @@ $f^*_{\max}(G) \ge 2^{\mu(G)/2}$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.two_rpow_le_maxDistinctSumFreeCount_of_typeOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#two-rpow-le-max-distinct-sum-free-count).
+Stated but not proved: `MetaMathlibExt.two_rpow_le_maxDistinctSumFreeCount_of_typeOne` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#two-rpow-le-max-distinct-sum-free-count).
 
 ## Random sum-free sets
 
@@ -380,7 +380,7 @@ $\sum_S p_n^{|S|} (1-p_n)^{|G_n|-|S|}$ over the subsets $S \subseteq G_n$ with t
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.tendsto_prob_largestSumFreeCard_random` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#tendsto-prob-largest-sum-free-card-rando).
+Stated but not proved: `MetaMathlibExt.tendsto_prob_largestSumFreeCard_random` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#tendsto-prob-largest-sum-free-card-rando).
 
 ## Counting maximal sum-free sets in elementary abelian 2- and 3-groups
 
@@ -395,7 +395,7 @@ $f_{\max}(\mathbb{Z}_3^k)/3^{n/9} - (n-3)(n-1)/3 \to 0$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.maxSumFreeCount_elementary_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-sum-free-count-elementary-two-three).
+Stated but not proved: `MetaMathlibExt.maxSumFreeCount_elementary_two_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-sum-free-count-elementary-two-three).
 
 ## Maximal distinct sum-free sets in groups of even order
 
@@ -411,7 +411,7 @@ $2^{(1/4 - \varepsilon) n} \le f^*_{\max}(G) \le 2^{(1/4 + \varepsilon) n}$.
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.maxDistinctSumFreeCount_even_order` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-distinct-sum-free-count-even-order).
+Stated but not proved: `MetaMathlibExt.maxDistinctSumFreeCount_even_order` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-distinct-sum-free-count-even-order).
 
 ## Sharp upper bound on maximal distinct sum-free sets
 
@@ -430,7 +430,7 @@ $$f^*_{\max}(G) \le (2^{2r-1} + 2^{r+r_1-1} - 2^{r+1} + 2^{r_1})\, 2^{n/4} +
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.maxDistinctSumFreeCount_le_sharp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-distinct-sum-free-count-le-sharp).
+Stated but not proved: `MetaMathlibExt.maxDistinctSumFreeCount_le_sharp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#max-distinct-sum-free-count-le-sharp).
 
 ## Sharp lower bound on maximal distinct sum-free sets
 
@@ -449,7 +449,7 @@ $$(2^{2r-1} + 2^{r+r_1-1} - 2^{r+1} + 2^{r_1})\, 2^{n/4} +
 
 - Nathanaël Hassler and Andrew Treglown, *Notes on Sum-Free Sets in Abelian Groups*, INTEGERS 26 (2026), Article A97, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.le_maxDistinctSumFreeCount_sharp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#le-max-distinct-sum-free-count-sharp).
+Stated but not proved: `MetaMathlibExt.le_maxDistinctSumFreeCount_sharp` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean, line 371](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SumFreeAbelianGroupsWanted.lean#L371). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html#le-max-distinct-sum-free-count-sharp).
 
 ## Depends on
 
@@ -458,4 +458,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sum-free sets in abelian groups](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sum-free-sets/sum-free-sets-in-abelian-groups)

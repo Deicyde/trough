@@ -7,7 +7,7 @@ statement: formalized
 
 # Ramanujan's continued fractions of order sixteen
 
-10 results, 4 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html).
+10 results, 4 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html).
 
 ## Weighted Lambert series for the continued fractions of order sixteen
 
@@ -29,7 +29,7 @@ $$\sum_{n \ge 1} n \frac{q^{3n} - q^{5n} - q^{11n} + q^{13n}}{1 - q^{16n}} =
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Theorem 3, Equations (62)-(63).
 
-Stated but not proved: `MetaMathlibExt.lambert_order_sixteen_weight_n` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-order-sixteen-weight-n).
+Stated but not proved: `MetaMathlibExt.lambert_order_sixteen_weight_n` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-order-sixteen-weight-n).
 
 ## Lambert series of order sixteen twisted by the Legendre symbol modulo $3$
 
@@ -53,7 +53,7 @@ $$\sum_{n \ge 1} \left(\frac{n}{3}\right) \frac{q^{3n} - q^{5n} - q^{11n} + q^{1
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Theorem 4, Equations (64)-(65).
 
-Stated but not proved: `MetaMathlibExt.lambert_order_sixteen_legendre_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-order-sixteen-legendre-three).
+Stated but not proved: `MetaMathlibExt.lambert_order_sixteen_legendre_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-order-sixteen-legendre-three).
 
 ## Product forms of Ramanujan's theta functions $\psi$, $f$ and $\chi$
 
@@ -72,7 +72,7 @@ $f(q) = f_2^3 / (f_1 f_4)$, $\chi(q) = f_2^2 / (f_1 f_4)$ and $\chi(-q) = f_1 / 
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.ramanujan_psi_f_chi_eq_qPochhammer` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#ramanujan-psi-f-chi-eq-q-pochhammer).
+Stated but not proved: `MetaMathlibExt.ramanujan_psi_f_chi_eq_qPochhammer` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#ramanujan-psi-f-chi-eq-q-pochhammer).
 
 ## Ramanujan's Entry 30 (i)–(iii) for the general theta function
 
@@ -86,7 +86,7 @@ moreover $a \ne 0$, then $f(a, b) - f(-a, -b) = 2a f(b/a, a^5 b^3)$.
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 1 record, quoting Berndt, Part III, Entry 30 (i)-(iii).
 
-Stated but not proved: `MetaMathlibExt.ramanujanTheta_entry30` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#ramanujan-theta-entry30).
+Stated but not proved: `MetaMathlibExt.ramanujanTheta_entry30` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#ramanujan-theta-entry30).
 
 ## Odd Lambert series for Ramanujan's continued fractions of order sixteen
 
@@ -112,7 +112,7 @@ $\eta(\tau) = q^{1/24} (q; q)_\infty$.
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Theorem 2, Equations (54)-(55).
 
-Stated but not proved: `MetaMathlibExt.lambert_odd_order_sixteen_eq_continuedFraction` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-odd-order-sixteen-eq-continued-f).
+Stated but not proved: `MetaMathlibExt.lambert_odd_order_sixteen_eq_continuedFraction` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-odd-order-sixteen-eq-continued-f).
 
 ## Raw Jacobi theta function $\theta_1$
 
@@ -132,7 +132,7 @@ $\operatorname{Im} \tau > 0$, where the series converges for every $z$.
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Section 3, Equation (11).
 
-Formalized by `MetaMathlibExt.jacobiThetaOneSineRaw`, a definition declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine-raw).
+Formalized by `MetaMathlibExt.jacobiThetaOneSineRaw`, a definition declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine-raw).
 
 ## Jacobi theta function $\theta_1$
 
@@ -149,7 +149,7 @@ On the upper half-plane $\operatorname{Im} \tau > 0$ the series converges for ev
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Section 3, Equation (11).
 
-Formalized by `MetaMathlibExt.jacobiThetaOneSine`, a definition declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine).
+Formalized by `MetaMathlibExt.jacobiThetaOneSine`, a definition declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine).
 
 ## The Jacobi theta function $\theta_1$ vanishes at $z = 0$
 
@@ -160,7 +160,7 @@ with $\operatorname{Im} \tau > 0$, the Jacobi theta function satisfies $\theta_1
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Section 3, Equation (11).
 
-Formalized by `MetaMathlibExt.jacobiThetaOneSine_zero`, a theorem declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine-zero).
+Formalized by `MetaMathlibExt.jacobiThetaOneSine_zero`, a theorem declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine-zero).
 
 ## Oddness of the Jacobi theta function $\theta_1$
 
@@ -172,7 +172,7 @@ $\theta_1(-z \mid \tau) = -\theta_1(z \mid \tau)$.
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Section 3, Equation (11).
 
-Formalized by `MetaMathlibExt.jacobiThetaOneSine_neg`, a theorem declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine-neg).
+Formalized by `MetaMathlibExt.jacobiThetaOneSine_neg`, a theorem declared in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#jacobi-theta-one-sine-neg).
 
 ## Sine Lambert series of order sixteen as quotients of theta functions
 
@@ -198,7 +198,7 @@ Under these hypotheses the series converge and the denominators do not vanish.
 
 - A. Vanitha, Nasser Abdo Saeed Bulkhali, and M. P. Chaudhary, *On a Ramanujan’s Continued Fraction of Order Sixteen and New Eisenstein Series Identities*, INTEGERS 25 (2025), Article A16, Lemma 2 of Section 5, Equations (59)-(60).
 
-Stated but not proved: `MetaMathlibExt.lambert_order_sixteen_sine_eq_jacobiThetaOne` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-order-sixteen-sine-eq-jacobi-the).
+Stated but not proved: `MetaMathlibExt.lambert_order_sixteen_sine_eq_jacobiThetaOne` is written with `theorem_wanted` in [WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RamanujanOrderSixteenWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html#lambert-order-sixteen-sine-eq-jacobi-the).
 
 ## Depends on
 
@@ -207,4 +207,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ramanujan's continued fractions of order sixteen](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/ramanujan-s-continued-fractions-of-order-sixteen)

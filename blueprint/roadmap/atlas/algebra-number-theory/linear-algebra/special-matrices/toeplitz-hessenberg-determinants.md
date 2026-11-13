@@ -8,7 +8,7 @@ proof: formalized
 
 # Toeplitz–Hessenberg determinants
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html).
 
 ## Trudi's formula for Toeplitz–Hessenberg determinants, general case
 
@@ -25,7 +25,7 @@ sequences of positive integers with sum $n$, and $\ell(c)$ is the number of part
 
 No hypothesis $n \ge 1$ or $a_0 \ne 0$ is needed.
 
-Formalized by `MetaMathlibExt.Matrix.det_toeplitzHessenberg_eq_sum_compositions_general`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#det-toeplitz-hessenberg-eq-sum-compositi).
+Formalized by `MetaMathlibExt.Matrix.det_toeplitzHessenberg_eq_sum_compositions_general`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#det-toeplitz-hessenberg-eq-sum-compositi).
 
 ## Trudi's formula for Toeplitz–Hessenberg determinants
 
@@ -43,7 +43,7 @@ sequences of positive integers with sum $n$, and $\ell(c)$ is the number of part
 
 - Taras Goy and Mark Shattuck, *Determinants of Some Hessenberg-Toeplitz Matrices with Motzkin Number Entries*, Journal of Integer Sequences 26 (2023), Article 23.3.4, matrix display `DetHess` lines 146–155, Lemma `lem1` lines 157–166 with equation `Trudi` at lines 159–161 and the equivalent composition sum at lines 163–165, <https://cs.uwaterloo.ca/journals/JIS/VOL26/Shattuck/sh36.tex>.
 
-Formalized by `MetaMathlibExt.Matrix.det_toeplitzHessenberg_eq_sum_compositions`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#det-toeplitz-hessenberg-eq-sum-compositi-2).
+Formalized by `MetaMathlibExt.Matrix.det_toeplitzHessenberg_eq_sum_compositions`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#det-toeplitz-hessenberg-eq-sum-compositi-2).
 
 ## Toeplitz–Hessenberg determinant
 
@@ -58,7 +58,7 @@ $n = 0$ the determinant is $1$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Section 2, display (1) and the notation `D_±`.
 
-Formalized by `MetaMathlibExt.toeplitzHessenbergDet`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det).
+Formalized by `MetaMathlibExt.toeplitzHessenbergDet`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det).
 
 ## The $1 \times 1$ Toeplitz–Hessenberg determinant
 
@@ -70,7 +70,7 @@ from $a$ is $\det A_1 = a_1$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Section 2, display (1).
 
-Formalized by `MetaMathlibExt.toeplitzHessenbergDet_one`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-one).
+Formalized by `MetaMathlibExt.toeplitzHessenbergDet_one`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 472](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L472). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-one).
 
 ## The $2 \times 2$ Toeplitz–Hessenberg determinant
 
@@ -82,7 +82,7 @@ from $a$ is $\det A_2 = a_1^2 - a_0 a_2$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Section 2, display (1).
 
-Formalized by `MetaMathlibExt.toeplitzHessenbergDet_two`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-two).
+Formalized by `MetaMathlibExt.toeplitzHessenbergDet_two`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-two).
 
 ## Trudi's formula in composition form
 
@@ -99,7 +99,7 @@ sequences of positive integers with sum $n$, and $\ell(c)$ is the number of part
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 1 and Section 3 (the composition form of the determinant).
 
-Formalized by `MetaMathlibExt.toeplitzHessenbergDet_eq_sum_compositions`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-eq-sum-compositi).
+Formalized by `MetaMathlibExt.toeplitzHessenbergDet_eq_sum_compositions`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-eq-sum-compositi).
 
 ## Trudi's partition sum
 
@@ -121,7 +121,7 @@ sum has the single empty term and equals $1$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 1 (notation `α̃`, `|α|`, `m_n(α)`).
 
-Formalized by `MetaMathlibExt.trudiPartitionSum`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#trudi-partition-sum).
+Formalized by `MetaMathlibExt.trudiPartitionSum`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#trudi-partition-sum).
 
 ## Trudi's partition sum as a sum over compositions
 
@@ -146,7 +146,7 @@ occurs $\alpha_i$ times.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 1 and the composition reading of `det(A_n)` in Section 3.
 
-Formalized by `MetaMathlibExt.trudiPartitionSum_eq_sum_compositions`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 603](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L603). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#trudi-partition-sum-eq-sum-compositions).
+Formalized by `MetaMathlibExt.trudiPartitionSum_eq_sum_compositions`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 603](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L603). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#trudi-partition-sum-eq-sum-compositions).
 
 ## Brioschi's formula: the case $a_0 = 1$ of Trudi's formula
 
@@ -165,7 +165,7 @@ $m_n(\alpha) = |\alpha|! / (\alpha_1! \cdots \alpha_n!)$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 1 with `a_0 = 1` (the sign `D_+`).
 
-Formalized by `MetaMathlibExt.toeplitzHessenbergDet_eq_neg_one_pow_mul_trudiPartitionSum`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-eq-neg-one-pow-m).
+Formalized by `MetaMathlibExt.toeplitzHessenbergDet_eq_neg_one_pow_mul_trudiPartitionSum`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 641](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L641). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-eq-neg-one-pow-m).
 
 ## Trudi's formula when $a_0 = -1$
 
@@ -184,7 +184,7 @@ $m_n(\alpha) = |\alpha|! / (\alpha_1! \cdots \alpha_n!)$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 1 with `a_0 = -1` (the sign `D_-`).
 
-Formalized by `MetaMathlibExt.toeplitzHessenbergDet_eq_trudiPartitionSum_one`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-eq-trudi-partiti).
+Formalized by `MetaMathlibExt.toeplitzHessenbergDet_eq_trudiPartitionSum_one`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#toeplitz-hessenberg-det-eq-trudi-partiti).
 
 ## Two values of Trudi's partition sum
 
@@ -202,7 +202,7 @@ for all $i$.
 
 - Taras Goy and Mark Shattuck, *Determinants of Toeplitz-Hessenberg Matrices with Fuss-Catalan Entries*, Journal of Integer Sequences 29 (2026), Article 26.1.2, Lemma 1.
 
-Formalized by `MetaMathlibExt.trudiPartitionSum_examples`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#trudi-partition-sum-examples).
+Formalized by `MetaMathlibExt.trudiPartitionSum_examples`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/TrudiBrioschiDeterminant.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html#trudi-partition-sum-examples).
 
 ## Depends on
 
@@ -211,4 +211,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Toeplitz–Hessenberg determinants](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/special-matrices/toeplitz-hessenberg-determinants)

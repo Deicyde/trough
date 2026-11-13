@@ -7,7 +7,7 @@ statement: formalized
 
 # Unbounded knapsack problem
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html).
 
 ## Unbounded knapsack instances
 
@@ -16,7 +16,7 @@ $(I, C, K)$ of a finite list $I = ((s_1, v_1), \dots, (s_m, v_m))$ of items, whe
 weight $s_j \in \mathbb{N}$ and value $v_j \in \mathbb{N}$, a capacity $C \in \mathbb{N}$ and a
 target value $K \in \mathbb{N}$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.UnboundedKnapsackInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.UnboundedKnapsackInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-instance).
 
 ## Feasible unbounded knapsack instances
 
@@ -25,7 +25,7 @@ $(s_1, v_1), \dots, (s_m, v_m)$, capacity $C$ and target value $K$ is feasible w
 multiplicities $c_1, \dots, c_m \in \mathbb{N}$ with $\sum_{j=1}^{m} c_j s_j \le C$ and
 $\sum_{j=1}^{m} c_j v_j \ge K$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.UnboundedKnapsackFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.UnboundedKnapsackFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-feasible).
 
 ## Unbounded knapsack as a decision problem
 
@@ -34,7 +34,7 @@ problem that accepts a bitstring $x$ exactly when $x$ decodes, under the canonic
 encoding of unbounded knapsack instances, to a feasible instance. Bitstrings that fail to decode
 are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.unboundedKnapsackDec`, a definition declared in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.unboundedKnapsackDec`, a definition declared in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-dec).
 
 ## UNBOUNDED KNAPSACK is NP-complete
 
@@ -45,7 +45,7 @@ and every decision problem in NP reduces to it by a polynomial-time many-one red
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), UNBOUNDED KNAPSACK.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.unboundedKnapsack_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.UnboundedKnapsack.unboundedKnapsack_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/UnboundedKnapsackWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html#unbounded-knapsack-np-complete).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Unbounded knapsack problem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/number-and-packing-problems/unbounded-knapsack-problem)

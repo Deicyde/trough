@@ -7,7 +7,7 @@ statement: formalized
 
 # Hardy–Littlewood maximal function
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function/index.html).
 
 ## Maximal functions of bounded a.e.-null sequences tend to zero a.e
 
@@ -27,7 +27,7 @@ every $x \in [0,1]$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_74`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.MaximalFunctionAeTendstoZeroWanted.ae_tendsto_maximal_zero_of_ae_tendsto_zero_of_bounded` is written with `theorem_wanted` in [WantedExt/MeasureTheory/MaximalFunctionAeTendstoZeroWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/MaximalFunctionAeTendstoZeroWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function/index.html#ae-tendsto-maximal-zero-of-ae-tendsto-ze).
+Stated but not proved: `MathlibExt.MeasureTheory.MaximalFunctionAeTendstoZeroWanted.ae_tendsto_maximal_zero_of_ae_tendsto_zero_of_bounded` is written with `theorem_wanted` in [WantedExt/MeasureTheory/MaximalFunctionAeTendstoZeroWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/MaximalFunctionAeTendstoZeroWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function/index.html#ae-tendsto-maximal-zero-of-ae-tendsto-ze).
 
 ## The maximal function of a singular measure is infinite almost everywhere for that measure
 
@@ -46,7 +46,7 @@ Then $\mu(\{x \in \mathbb{R}^n : M_\mu(x) < \infty\}) = 0$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Classical measure theory), problem `ma_proofbench_l2_44`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.SingularMeasureMaximalFunctionWanted.measure_setOf_maximalFunction_lt_top_eq_zero_of_mutuallySingular` is written with `theorem_wanted` in [WantedExt/MeasureTheory/SingularMeasureMaximalFunctionWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/SingularMeasureMaximalFunctionWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function/index.html#measure-set-of-maximal-function-lt-top-e).
+Stated but not proved: `MathlibExt.MeasureTheory.SingularMeasureMaximalFunctionWanted.measure_setOf_maximalFunction_lt_top_eq_zero_of_mutuallySingular` is written with `theorem_wanted` in [WantedExt/MeasureTheory/SingularMeasureMaximalFunctionWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/SingularMeasureMaximalFunctionWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function/index.html#measure-set-of-maximal-function-lt-top-e).
 
 ## Depends on
 
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hardy–Littlewood maximal function](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/real-functions/hardy-littlewood-maximal-function)

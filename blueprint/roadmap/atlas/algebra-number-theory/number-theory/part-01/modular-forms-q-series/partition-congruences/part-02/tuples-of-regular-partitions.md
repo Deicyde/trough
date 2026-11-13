@@ -7,7 +7,7 @@ statement: formalized
 
 # Tuples of ℓ-regular partitions
 
-38 results, 14 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html).
+38 results, 14 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html).
 
 ## Number of $\ell$-regular partitions
 
@@ -19,7 +19,7 @@ divisible by $\ell$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Introduction (definition of ℓ-regular partitions).
 
-Formalized by `MetaMathlibExt.lRegularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#l-regular-partition-count).
+Formalized by `MetaMathlibExt.lRegularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#l-regular-partition-count).
 
 ## Number of $k$-tuples of $\ell$-regular partitions
 
@@ -39,7 +39,7 @@ $n_1 + \dots + n_k = n$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Introduction (definition of `T_{ℓ,k}`).
 
-Formalized by `MetaMathlibExt.kTupleRegularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count).
+Formalized by `MetaMathlibExt.kTupleRegularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count).
 
 ## The empty tuple of $\ell$-regular partitions
 
@@ -51,7 +51,7 @@ $n$, we have $T_{\ell,0}(n) = 1$ if $n = 0$ and $T_{\ell,0}(n) = 0$ otherwise.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Introduction (definition of `T_{ℓ,k}`).
 
-Formalized by `MetaMathlibExt.kTupleRegularPartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count-zero).
+Formalized by `MetaMathlibExt.kTupleRegularPartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count-zero).
 
 ## Recurrence for tuples of $\ell$-regular partitions
 
@@ -65,7 +65,7 @@ $$T_{\ell,k+1}(n) = \sum_{i=0}^{n} r_\ell(i) \, T_{\ell,k}(n-i).$$
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Introduction (definition of `T_{ℓ,k}`).
 
-Formalized by `MetaMathlibExt.kTupleRegularPartitionCount_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count-succ).
+Formalized by `MetaMathlibExt.kTupleRegularPartitionCount_succ`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count-succ).
 
 ## Triples of $\ell$-regular partitions
 
@@ -78,7 +78,7 @@ $n$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Introduction (definition of `T_ℓ`).
 
-Formalized by `MetaMathlibExt.tripleRegularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-regular-partition-count).
+Formalized by `MetaMathlibExt.tripleRegularPartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-regular-partition-count).
 
 ## Zero has one $\ell$-regular partition
 
@@ -89,7 +89,7 @@ $\ell$-regular partitions of $0$ is $1$; the only one is the empty partition.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Introduction (definition of ℓ-regular partitions).
 
-Formalized by `MetaMathlibExt.lRegularPartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#l-regular-partition-count-zero).
+Formalized by `MetaMathlibExt.lRegularPartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#l-regular-partition-count-zero).
 
 ## One tuple of $\ell$-regular partitions of total zero
 
@@ -102,7 +102,7 @@ empty partitions.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Introduction (definition of `T_{ℓ,k}`).
 
-Formalized by `MetaMathlibExt.kTupleRegularPartitionCount_at_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count-at-zero).
+Formalized by `MetaMathlibExt.kTupleRegularPartitionCount_at_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-count-at-zero).
 
 ## Bounded bilateral series
 
@@ -120,7 +120,7 @@ the source; it is not intended for other exponents.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Encoding for Lemmas 1, 3, and 5.
 
-Formalized by `MetaMathlibExt.boundedBilateralSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#bounded-bilateral-series).
+Formalized by `MetaMathlibExt.boundedBilateralSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#bounded-bilateral-series).
 
 ## Coefficients of the bounded bilateral series
 
@@ -133,7 +133,7 @@ with $-n-1 \le m \le n+1$ and $e(m) = n$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Encoding for Lemmas 1, 3, and 5.
 
-Formalized by `MetaMathlibExt.coeff_boundedBilateralSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#coeff-bounded-bilateral-series).
+Formalized by `MetaMathlibExt.coeff_boundedBilateralSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#coeff-bounded-bilateral-series).
 
 ## Truncated one-sided series
 
@@ -148,7 +148,7 @@ Corollary 3, this series is $\sum_{m \ge 1} w(m) q^{e(m)}$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Encoding for Lemma 5 and Corollary 3.
 
-Formalized by `MetaMathlibExt.positiveUnilateralSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#positive-unilateral-series).
+Formalized by `MetaMathlibExt.positiveUnilateralSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#positive-unilateral-series).
 
 ## Coefficients of the positive unilateral series
 
@@ -161,7 +161,7 @@ of $w(m)$ over the natural numbers $m$ with $1 \le m \le n$ and $e(m) = n$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Encoding for Lemma 5 and Corollary 3.
 
-Formalized by `MetaMathlibExt.coeff_positiveUnilateralSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#coeff-positive-unilateral-series).
+Formalized by `MetaMathlibExt.coeff_positiveUnilateralSeries`, a theorem declared in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#coeff-positive-unilateral-series).
 
 ## Congruences modulo 24 for triples of 2-regular partitions
 
@@ -178,7 +178,7 @@ Here $N t^2 - 1$ is divisible by $8$, so the fraction is an integer.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Theorem 1, equation T29n24.
 
-Stated but not proved: `MetaMathlibExt.tripleTwo_mod_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-mod-twenty-four).
+Stated but not proved: `MetaMathlibExt.tripleTwo_mod_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-mod-twenty-four).
 
 ## The Nath–Saikia–Sarma conjecture
 
@@ -196,7 +196,7 @@ Both fractions are integers under these hypotheses.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Corollary 1 (Conjecture conj.nss).
 
-Stated but not proved: `MetaMathlibExt.nathSaikiaSarma_conjecture` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#nath-saikia-sarma-conjecture).
+Stated but not proved: `MetaMathlibExt.nathSaikiaSarma_conjecture` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#nath-saikia-sarma-conjecture).
 
 ## Congruences modulo 8 and 24 for triples of 2-regular partitions
 
@@ -215,7 +215,7 @@ The division by $8$ is exact because $p$ is odd.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Theorem 2, equations thm.p357mod8 and mod24.
 
-Stated but not proved: `MetaMathlibExt.tripleTwo_primePower_mod_eight_and_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-prime-power-mod-eight-and-twe).
+Stated but not proved: `MetaMathlibExt.tripleTwo_primePower_mod_eight_and_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-prime-power-mod-eight-and-twe).
 
 ## Prime-power congruences modulo 24 for triples of 2-regular partitions
 
@@ -232,7 +232,7 @@ Since $p$ is odd, the fraction is an integer.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Corollary 2, equation cor.9pmod24.
 
-Stated but not proved: `MetaMathlibExt.tripleTwo_nine_primePower_mod_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-nine-prime-power-mod-twenty-f).
+Stated but not proved: `MetaMathlibExt.tripleTwo_nine_primePower_mod_twentyFour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-nine-prime-power-mod-twenty-f).
 
 ## A fifth-power Euler product identity
 
@@ -249,7 +249,7 @@ $|m| \le n + 1$, which include every solution of $m(3m+1)/2 = n$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Lemma 3, equation f15/f22.
 
-Stated but not proved: `MetaMathlibExt.qEulerProduct_fifth_power_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-fifth-power-identity).
+Stated but not proved: `MetaMathlibExt.qEulerProduct_fifth_power_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-fifth-power-identity).
 
 ## A signed Euler product identity
 
@@ -265,7 +265,7 @@ This is the identity $(-q;-q)_\infty = f_2^3 / (f_1 f_4)$ with the denominator c
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Lemma 4, equation f1-q.
 
-Stated but not proved: `MetaMathlibExt.rescale_neg_one_qEulerProduct_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#rescale-neg-one-q-euler-product-identity).
+Stated but not proved: `MetaMathlibExt.rescale_neg_one_qEulerProduct_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#rescale-neg-one-q-euler-product-identity).
 
 ## Gauss's theta identity for the Euler products
 
@@ -281,7 +281,7 @@ The coefficient of $q^n$ in each sum is computed over the indices $m$ with $|m| 
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Lemma 5, equation f12/f2.
 
-Stated but not proved: `MetaMathlibExt.qEulerProduct_square_theta_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-square-theta-identity).
+Stated but not proved: `MetaMathlibExt.qEulerProduct_square_theta_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-square-theta-identity).
 
 ## The theta identity for the second Euler product
 
@@ -296,7 +296,7 @@ This is the identity for $f_2^2 / f_4$ with the denominator cleared.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Corollary 3, equation f22/f4.
 
-Stated but not proved: `MetaMathlibExt.qEulerProduct_two_square_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-two-square-identity).
+Stated but not proved: `MetaMathlibExt.qEulerProduct_two_square_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-two-square-identity).
 
 ## Iterated prime-power congruence for Euler products
 
@@ -310,7 +310,7 @@ $f_{l p^s}^{p^{k-s} m}$ are congruent modulo $p^{k-s+1}$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Lemma 7, equation cor.modp^k.
 
-Stated but not proved: `MetaMathlibExt.qEulerProduct_iterated_primePower_congruence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-iterated-prime-power-con).
+Stated but not proved: `MetaMathlibExt.qEulerProduct_iterated_primePower_congruence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-euler-product-iterated-prime-power-con).
 
 ## Parity of triples of 2-regular partitions
 
@@ -325,7 +325,7 @@ Allowing integer $m$ gives no new values, since $m$ and $-m-1$ give the same tri
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Lemma 8, equation mod2.
 
-Stated but not proved: `MetaMathlibExt.tripleTwo_odd_iff_triangular` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-odd-iff-triangular).
+Stated but not proved: `MetaMathlibExt.tripleTwo_odd_iff_triangular` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#triple-two-odd-iff-triangular).
 
 ## Prime-power congruences for $k$-tuples of $\ell$-regular partitions
 
@@ -342,7 +342,7 @@ Since $s$ is positive, the hypothesis $\alpha \ge s$ also gives $\alpha \ge 1$.
 
 - Bishnu Paudel, James A. Sellers, and Haiyang Wang, *Extending Recent Work of Nath, Saikia, and Sarma on k-Tuple ℓ-Regular Partitions*, INTEGERS 26 (2026), Article A4, Theorem 3, equation thm.gen1.1.
 
-Stated but not proved: `MetaMathlibExt.kTupleRegularPartition_primePower_congruent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-prime-power-co).
+Stated but not proved: `MetaMathlibExt.kTupleRegularPartition_primePower_congruent` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/KTupleRegularPartitionsWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#k-tuple-regular-partition-prime-power-co).
 
 ## Regular tripartition counts
 
@@ -355,7 +355,7 @@ $\ell$; these triples are the $\ell$-regular tripartitions of $n$.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Section 1, definition of `T_ℓ(n)` (with generating function `f_ℓ³ / f_1³`, Section 1, eq. (1)).
 
-Formalized by `MetaMathlibExt.regularTripartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count).
+Formalized by `MetaMathlibExt.regularTripartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count).
 
 ## The regular tripartition count at zero
 
@@ -367,7 +367,7 @@ $0$ is the triple of empty partitions.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86 (definition of `T_ℓ(n)`).
 
-Formalized by `MetaMathlibExt.regularTripartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-zero).
+Formalized by `MetaMathlibExt.regularTripartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-zero).
 
 ## The number of $\ell$-regular tripartitions of $1$
 
@@ -379,7 +379,7 @@ one of the three components.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86 (definition of `T_ℓ(n)`).
 
-Formalized by `MetaMathlibExt.regularTripartitionCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-one).
+Formalized by `MetaMathlibExt.regularTripartitionCount_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-one).
 
 ## Congruences modulo 3 and 6 for 2-regular tripartitions
 
@@ -391,7 +391,7 @@ $6 \mid T_2(3n + 2)$.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_mod_three_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-mod-three).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_mod_three_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-mod-three).
 
 ## Congruences modulo 3 and 9 for 3-regular tripartitions
 
@@ -403,7 +403,7 @@ $9 \mid T_3(3n + 2)$.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Corollary 2 (congruences (53), (54)).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_mod_three_nine` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-mod-thr).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_mod_three_nine` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-mod-thr).
 
 ## A congruence modulo 6 for 3-regular tripartitions
 
@@ -414,7 +414,7 @@ $3$-regular tripartitions of $m$. For every natural number $n$, $6 \mid T_3(6n +
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Corollary 3 (congruence (64)).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_six_mul_add_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-six-mul).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_six_mul_add_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-six-mul).
 
 ## Even 2-regular tripartition counts for primes at least 5
 
@@ -428,7 +428,7 @@ exact).
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Theorem 1 (congruence (13)).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_prime_ge_five_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-prime-ge).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_prime_ge_five_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-prime-ge).
 
 ## Even 2-regular tripartition counts for odd primes
 
@@ -442,7 +442,7 @@ exact).
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Theorem 2 (congruence (21)).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_odd_prime_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-odd-prime).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_odd_prime_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-odd-prime).
 
 ## A congruence modulo 3 for 3-regular tripartitions at primes $p \equiv 3 \pmod 4$
 
@@ -461,7 +461,7 @@ where the division by $4$ is exact.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Theorem 5 (congruence (55)).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_prime_three_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-prime-t).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_prime_three_mod_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-prime-t).
 
 ## Toh's 3-dissection of $f_2^3 / f_1^3$
 
@@ -481,7 +481,7 @@ $f_2^3/f_1^3 = f_6/f_3 + 3q f_6^4 f_9^5/(f_3^8 f_{18}) + 6q^2 f_6^3 f_9^2 f_{18}
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 1, eq. (3).
 
-Stated but not proved: `MetaMathlibExt.f2_cube_div_f1_cube_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#f2-cube-div-f1-cube-three-dissection).
+Stated but not proved: `MetaMathlibExt.f2_cube_div_f1_cube_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#f2-cube-div-f1-cube-three-dissection).
 
 ## The 3-dissection of $1/f_1^3$
 
@@ -511,7 +511,7 @@ $f_1^3 f_3^{12}$ and by $f_1^3 f_3^{14} f_6^4 f_9^3 f_{18}^6$ respectively.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 3, eq. (6).
 
-Stated but not proved: `MetaMathlibExt.one_div_f1_cube_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#one-div-f1-cube-three-dissection).
+Stated but not proved: `MetaMathlibExt.one_div_f1_cube_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#one-div-f1-cube-three-dissection).
 
 ## Cui–Gu $p$-dissection of $\psi(q)$
 
@@ -531,7 +531,7 @@ $0 \le m \le (p - 3)/2$. All the divisions are exact.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 4, eq. (7), quoting S. Cui and N. Gu, *Arithmetic Properties of ℓ-Regular Partitions*, Adv. Appl. Math. 51 (2013), 507–523, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.ramanujanPsi_prime_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#ramanujan-psi-prime-dissection).
+Stated but not proved: `MetaMathlibExt.ramanujanPsi_prime_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#ramanujan-psi-prime-dissection).
 
 ## Cui–Gu $p$-dissection of $f_1$
 
@@ -553,7 +553,7 @@ All the divisions are exact and all the exponents of $q$ are nonnegative integer
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 5, eq. (8), quoting S. Cui and N. Gu, *Arithmetic Properties of ℓ-Regular Partitions*, Adv. Appl. Math. 51 (2013), 507–523, Theorem 2.2. The same identity is Nayaka, Dharmendra and Mahesh Kumar, *Divisibility Properties for Overcubic Partition Triples*, INTEGERS 24 (2024), Article A80, Lemma 4, eq. (43).
 
-Stated but not proved: `MetaMathlibExt.qPochhammer_prime_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-pochhammer-prime-dissection).
+Stated but not proved: `MetaMathlibExt.qPochhammer_prime_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#q-pochhammer-prime-dissection).
 
 ## The 3-dissection of the 2-regular tripartition generating function
 
@@ -573,7 +573,7 @@ $\sum_{n \ge 0} T_2(3n + 2) q^n = 6 f_2^3 f_3^2 f_6^2 / f_1^7$.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Lemma 7, eqs. (10)–(12).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-three-dis).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-three-dis).
 
 ## Mod 12 congruences for 2-regular tripartitions
 
@@ -589,7 +589,7 @@ $T_2(3^{4\alpha+2} n + B_\alpha + 2 \cdot 3^{4\alpha+1})$.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Theorem 3, eqs. (31)–(34).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_mod_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-mod-twelv).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_two_mod_twelve` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-two-mod-twelv).
 
 ## The 3-dissection of the generating function of 3-regular tripartitions
 
@@ -624,7 +624,7 @@ $\sum T_3(3n + 2) q^n = 9 f_3^9/f_1^9$ with the denominators cleared.
 
 - Mohammed L. Nadji and Moussa Ahmia, *Congruences for l-Regular Tripartitions for l in {2,3}*, INTEGERS 24 (2024), Article A86, Theorem 4, eqs. (49)–(51).
 
-Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-three-d).
+Stated but not proved: `MetaMathlibExt.regularTripartitionCount_three_three_dissection` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/RegularTripartitionCongruencesWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html#regular-tripartition-count-three-three-d).
 
 ## Depends on
 
@@ -633,4 +633,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tuples of ℓ-regular partitions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/tuples-of-regular-partitions)

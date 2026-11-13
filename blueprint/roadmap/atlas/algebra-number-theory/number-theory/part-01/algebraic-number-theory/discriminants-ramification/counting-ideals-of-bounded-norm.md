@@ -8,7 +8,7 @@ proof: formalized
 
 # Counting ideals of bounded norm
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html).
 
 ## Bound on the number of ideals of bounded norm, integer threshold
 
@@ -22,7 +22,7 @@ $N(I) = |\mathcal{O}_K / I|$ satisfies $N(I) \le M$ is at most $(nM)^k$.
 
 - ATLAS `NumberTheoryI:295`, *Number Theory I*, Section 14.5, Lemma 14.21; this is a discrete strengthening with an integer threshold, valid also at $M = 0$ and $M = 1$, not the source's literal positive-real statement.
 
-Formalized by `NumberField.Ideal.card_nonzero_absNorm_le`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html#card-nonzero-abs-norm-le).
+Formalized by `NumberField.Ideal.card_nonzero_absNorm_le`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html#card-nonzero-abs-norm-le).
 
 ## Bound on the number of ideals of bounded norm, floor form
 
@@ -35,7 +35,7 @@ whose absolute norm $N(I) = |\mathcal{O}_K / I|$ satisfies $N(I) \le M$ is at mo
 For $M < 1$ there are no such ideals, since every nonzero ideal has norm at least $1$; for
 $M \ge 1$ the condition $N(I) \le M$ is equivalent to $N(I) \le m$.
 
-Formalized by `NumberField.Ideal.card_nonzero_absNorm_le_real`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html#card-nonzero-abs-norm-le-real).
+Formalized by `NumberField.Ideal.card_nonzero_absNorm_le_real`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html#card-nonzero-abs-norm-le-real).
 
 ## Bound on the number of ideals of bounded norm
 
@@ -49,7 +49,7 @@ exponent $\log_2 M$ is a real number.
 
 - ATLAS `NumberTheoryI:295`, *Number Theory I*, Section 14.5, Lemma 14.21. The proof derives this bound from the integer-threshold and floor variants.
 
-Formalized by `NumberField.Ideal.card_nonzero_absNorm_le_real_rpow`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html#card-nonzero-abs-norm-le-real-rpow).
+Formalized by `NumberField.Ideal.card_nonzero_absNorm_le_real_rpow`, a theorem declared in [MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/Ideal/Counting.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html#card-nonzero-abs-norm-le-real-rpow).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Counting ideals of bounded norm](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/discriminants-ramification/counting-ideals-of-bounded-norm)

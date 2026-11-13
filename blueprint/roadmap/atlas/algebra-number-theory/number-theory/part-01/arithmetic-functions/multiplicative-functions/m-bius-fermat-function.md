@@ -7,7 +7,7 @@ statement: formalized
 
 # Möbius–Fermat function
 
-11 results, 3 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html).
+11 results, 3 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html).
 
 ## Fermat unit function
 
@@ -20,7 +20,7 @@ $l + 1$ is a power of $2$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, equation (7).
 
-Formalized by `MetaMathlibExt.fermatUnitFunction`, a definition declared in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#fermat-unit-function).
+Formalized by `MetaMathlibExt.fermatUnitFunction`, a definition declared in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#fermat-unit-function).
 
 ## The Fermat unit function at $2^n - 1$
 
@@ -31,7 +31,7 @@ function $u_M$ satisfies $u_M(2^n - 1) = 1$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, equation (7).
 
-Formalized by `MetaMathlibExt.fermatUnitFunction_two_pow_sub_one`, a theorem declared in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#fermat-unit-function-two-pow-sub-one).
+Formalized by `MetaMathlibExt.fermatUnitFunction_two_pow_sub_one`, a theorem declared in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#fermat-unit-function-two-pow-sub-one).
 
 ## Small values of the Fermat unit function
 
@@ -42,7 +42,7 @@ $u_M(1) = u_M(3) = u_M(7) = u_M(63) = 1$ and $u_M(2) = u_M(9) = 0$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, equation (7).
 
-Formalized by `MetaMathlibExt.fermatUnitFunction_small_values`, a theorem declared in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#fermat-unit-function-small-values).
+Formalized by `MetaMathlibExt.fermatUnitFunction_small_values`, a theorem declared in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#fermat-unit-function-small-values).
 
 ## The Möbius–Fermat and von Mangoldt–Fermat functions at $1$ and off the Fermat semigroup
 
@@ -62,7 +62,7 @@ by the numbers $2^n - 1$ with $n \ge 2$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.mobiusFermat_one_and_vanishing` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-one-and-vanishing).
+Stated but not proved: `MetaMathlibExt.mobiusFermat_one_and_vanishing` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-one-and-vanishing).
 
 ## Multinomial formula for the Möbius–Fermat function
 
@@ -83,7 +83,7 @@ $\mu_M(l) = (-1)^r \, r! / (m_1! \cdots m_k!)$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.mobiusFermat_eq_multinomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-eq-multinomial).
+Stated but not proved: `MetaMathlibExt.mobiusFermat_eq_multinomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-eq-multinomial).
 
 ## Multinomial formula for the von Mangoldt–Fermat function
 
@@ -103,7 +103,7 @@ where $r - 1$ is read as $0$ when $r = 0$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.vonMangoldtFermat_eq_multinomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#von-mangoldt-fermat-eq-multinomial).
+Stated but not proved: `MetaMathlibExt.vonMangoldtFermat_eq_multinomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#von-mangoldt-fermat-eq-multinomial).
 
 ## Reduction of the Möbius–Fermat function to distinct factors
 
@@ -126,7 +126,7 @@ In particular the right-hand side does not depend on the choice of $T$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.mobiusFermat_mul_factorial_eq_squarefree_part` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-mul-factorial-eq-squarefre).
+Stated but not proved: `MetaMathlibExt.mobiusFermat_mul_factorial_eq_squarefree_part` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-mul-factorial-eq-squarefre).
 
 ## The Möbius–Fermat function at $3^m 7^n$
 
@@ -149,7 +149,7 @@ $$\mu_M(3^m 7^n) = (-1)^{m+n} \sum_{j=0}^{\min(\lfloor m/2 \rfloor, n)}
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.mobiusFermat_three_pow_mul_seven_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-three-pow-mul-seven-pow).
+Stated but not proved: `MetaMathlibExt.mobiusFermat_three_pow_mul_seven_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-three-pow-mul-seven-pow).
 
 ## The Möbius–Fermat function at $3^m 7^n q^k$
 
@@ -170,7 +170,7 @@ The conditions on $t$ exclude $q = 1, 3, 7, 63$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.mobiusFermat_three_pow_mul_seven_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-three-pow-mul-seven-pow-mu).
+Stated but not proved: `MetaMathlibExt.mobiusFermat_three_pow_mul_seven_pow_mul_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-three-pow-mul-seven-pow-mu).
 
 ## Closed form of the Möbius–Fermat function
 
@@ -191,7 +191,7 @@ $$\mu_M(l) = (-1)^r \sum_{j=0}^{\min(\lfloor m_1/2 \rfloor, m_2)}
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.mobiusFermat_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-closed-form).
+Stated but not proved: `MetaMathlibExt.mobiusFermat_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#mobius-fermat-closed-form).
 
 ## Closed form of the von Mangoldt–Fermat function
 
@@ -217,7 +217,7 @@ read as $0$ and $\log 1 = 0$.
 
 - J. L. Varona, *The Möbius and the von Mangoldt-type Functions of the Fermat Zeta Function*, INTEGERS 26 (2026), Article A106, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.vonMangoldtFermat_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/MobiusFermatWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#von-mangoldt-fermat-closed-form).
+Stated but not proved: `MetaMathlibExt.vonMangoldtFermat_closed_form` is written with `theorem_wanted` in [WantedExt/NumberTheory/MobiusFermatWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/MobiusFermatWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html#von-mangoldt-fermat-closed-form).
 
 ## Depends on
 
@@ -226,4 +226,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Möbius–Fermat function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/m-bius-fermat-function)

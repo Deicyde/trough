@@ -7,7 +7,7 @@ statement: formalized
 
 # Chu's constructions of sum-dominant sets
 
-20 results, 7 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html).
+20 results, 7 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html).
 
 ## Sets given by consecutive differences
 
@@ -23,7 +23,7 @@ sum, which the set records once.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 1 (Spohn's notation).
 
-Formalized by `MetaMathlibExt.setOfConsecutiveDifferences`, a definition declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#set-of-consecutive-differences).
+Formalized by `MetaMathlibExt.setOfConsecutiveDifferences`, a definition declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#set-of-consecutive-differences).
 
 ## Prepending a gap
 
@@ -38,7 +38,7 @@ When $g > 0$, the new element $a$ is smaller than every element of $(a + g \mid 
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 1 (Spohn's notation).
 
-Formalized by `MetaMathlibExt.setOfConsecutiveDifferences_cons`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#set-of-consecutive-differences-cons).
+Formalized by `MetaMathlibExt.setOfConsecutiveDifferences_cons`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#set-of-consecutive-differences-cons).
 
 ## An example of difference notation
 
@@ -49,7 +49,7 @@ differences $1, 5, 1, 1, 9, 7$ is $(0 \mid 1, 5, 1, 1, 9, 7) = \{0, 1, 6, 7, 8, 
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 1 (Spohn's notation).
 
-Formalized by `MetaMathlibExt.setOfConsecutiveDifferences_example`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#set-of-consecutive-differences-example).
+Formalized by `MetaMathlibExt.setOfConsecutiveDifferences_example`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#set-of-consecutive-differences-example).
 
 ## Chu difference block
 
@@ -60,7 +60,7 @@ natural numbers $1, 4, \ldots, 4, 3$ of length $k + 2$: a $1$, then $k$ copies o
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 1 (definition of `M^k`).
 
-Formalized by `MetaMathlibExt.chuBlock`, a definition declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-block).
+Formalized by `MetaMathlibExt.chuBlock`, a definition declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-block).
 
 ## The Chu difference blocks $M^1$ and $M^2$
 
@@ -71,7 +71,7 @@ $1, 4, 3$, and the Chu difference block $M^2$ is the list $1, 4, 4, 3$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 1 (definition of `M^k`).
 
-Formalized by `MetaMathlibExt.chuBlock_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-block-one-two).
+Formalized by `MetaMathlibExt.chuBlock_one_two`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-block-one-two).
 
 ## A balanced family of Chu et al
 
@@ -84,7 +84,7 @@ and $M^{k+1}$, and $1, 1$. Then $A$ is balanced: $|A + A| = |A - A|$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.chu_family_balanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-balanced).
+Stated but not proved: `MetaMathlibExt.chu_family_balanced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-balanced).
 
 ## A difference-dominated family of Chu et al
 
@@ -98,7 +98,7 @@ $|A + A| < |A - A|$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.chu_family_difference_dominated` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-difference-dominated).
+Stated but not proved: `MetaMathlibExt.chu_family_difference_dominated` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-difference-dominated).
 
 ## MSTD sets with $M^k$ before $M^{k+1}$ (Theorem 3)
 
@@ -112,7 +112,7 @@ Then $A$ is sum-dominated: $|A - A| < |A + A|$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.chu_family_mstd_increasing` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-mstd-increasing).
+Stated but not proved: `MetaMathlibExt.chu_family_mstd_increasing` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-mstd-increasing).
 
 ## MSTD sets with $M^{k+1}$ before $M^k$ (Theorem 4)
 
@@ -126,7 +126,7 @@ $1, 1, 2, M^{k+1}, M^k, M_1$. Then $A$ is sum-dominated: $|A - A| < |A + A|$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.chu_family_mstd_decreasing` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-mstd-decreasing).
+Stated but not proved: `MetaMathlibExt.chu_family_mstd_decreasing` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-mstd-decreasing).
 
 ## Kumar–Mohan–Pandey sets
 
@@ -142,7 +142,7 @@ $t(kl + l + 1)$ in Lemmas 1-7 of the paper.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 3 (the set of Lemmas 1-7 and Theorems 6-7).
 
-Formalized by `MetaMathlibExt.chuFamilyKLT`, a definition declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt).
+Formalized by `MetaMathlibExt.chuFamilyKLT`, a definition declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt).
 
 ## The Kumar–Mohan–Pandey set $A_{1,1,1}$
 
@@ -154,7 +154,7 @@ $1, 1, 2, 1, 4, 3, 1, 1, 2, 1$, is $\{0, 1, 2, 4, 5, 9, 12, 13, 14, 16, 17\}$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Section 3 (the set of Lemmas 1-7 and Theorems 6-7).
 
-Formalized by `MetaMathlibExt.chuFamilyKLT_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-one-one-one).
+Formalized by `MetaMathlibExt.chuFamilyKLT_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-one-one-one).
 
 ## Differences in the Kumar–Mohan–Pandey sets (Lemma 1)
 
@@ -167,7 +167,7 @@ $1 \le i \le 1 + T$, and contains $3 + 4i$ for every integer $i$ with $0 \le i \
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem-sub).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem-sub).
 
 ## Positive differences of the form 6 + 4m in the Chu family set
 
@@ -181,7 +181,7 @@ integer.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_card_sub_six_add_four_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-card-sub-six-add-four-mul).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_card_sub_six_add_four_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-card-sub-six-add-four-mul).
 
 ## Elements of the Kumar–Mohan–Pandey sets (Lemma 4)
 
@@ -194,7 +194,7 @@ $4 + 4T \in A$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem).
 
 ## Elements of the sumset of the Chu family set
 
@@ -207,7 +207,7 @@ $0 \le i \le 2 + 2T$, and $3 + 4i$ lies in $A + A$ for every integer $i$ with $0
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem-add).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem-add).
 
 ## Block starting points of the Chu family set
 
@@ -220,7 +220,7 @@ $0 \le j \le t - 1$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem_block_starts` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem-block-starts).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_mem_block_starts` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-mem-block-starts).
 
 ## Size of the difference set of the Chu family set
 
@@ -232,7 +232,7 @@ $|A - A| = 11 + 6klt + 8lt + 8t$.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_card_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-card-sub).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_card_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-card-sub).
 
 ## Lower bound for the sumset of the Chu family set
 
@@ -247,7 +247,7 @@ Together with $|A - A| = 11 + 6klt + 8lt + 8t$ (Theorem 6), this shows that $A$ 
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_card_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-card-add).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_card_add` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-card-add).
 
 ## Six disjoint families in the sumset of the Chu family set
 
@@ -264,7 +264,7 @@ $X_1, \ldots, X_6$, and the sets $X_1, \ldots, X_6$ are pairwise disjoint.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_add_supset_six_families` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-add-supset-six-families).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_add_supset_six_families` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-add-supset-six-families).
 
 ## Two families of runs with the same sums (Proposition 1)
 
@@ -283,7 +283,7 @@ not needed.
 
 - Manish Kumar, Mohan and Ram Krishna Pandey, *A Conjecture of Chu et al. and a New Family of MSTD Sets*, INTEGERS 24 (2024), Article A32, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.chuFamilyKLT_run_sums_R1_eq_R3` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-run-sums-r1-eq-r3).
+Stated but not proved: `MetaMathlibExt.chuFamilyKLT_run_sums_R1_eq_R3` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ChuMSTDFamiliesWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html#chu-family-klt-run-sums-r1-eq-r3).
 
 ## Depends on
 
@@ -292,4 +292,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Chu's constructions of sum-dominant sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/chu-s-constructions-of-sum-dominant-sets)

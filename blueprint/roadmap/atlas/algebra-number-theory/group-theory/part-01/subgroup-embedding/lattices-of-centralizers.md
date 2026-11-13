@@ -7,7 +7,7 @@ statement: formalized
 
 # Lattices of centralizers
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html).
 
 ## Centralizer subgroups
 
@@ -15,7 +15,7 @@ A subgroup $H$ of a group $G$ is a centralizer if $H = C_G(X)$ for
 some subset $X \subseteq G$, where $C_G(X)$ is the subgroup of elements of $G$ that commute with
 every element of $X$.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerLatticeModularKourovka11Problem4Wanted.IsCentralizer`, a definition declared in [WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html#is-centralizer).
+Formalized by `MathlibExt.GroupTheory.CentralizerLatticeModularKourovka11Problem4Wanted.IsCentralizer`, a definition declared in [WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html#is-centralizer).
 
 ## Modularity of centralizer sublattices (Kourovka 11.4)
 
@@ -29,7 +29,7 @@ in the subgroup lattice of $G$.
 Centralizers are always closed under intersection, so the hypothesis says that they form a
 sublattice of the subgroup lattice. The question is due to V. A. Antonov.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerLatticeModularKourovka11Problem4Wanted.centralizerSublatticeModular`, a definition declared in [WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html#centralizer-sublattice-modular).
+Formalized by `MathlibExt.GroupTheory.CentralizerLatticeModularKourovka11Problem4Wanted.centralizerSublatticeModular`, a definition declared in [WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html#centralizer-sublattice-modular).
 
 ## Lattices of centralizers need not be modular (Kourovka 11.4)
 
@@ -47,7 +47,7 @@ yes.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 11.4 (V. A. Antonov); resolution: V. N. Obraztsov, J. Algebra 199, no. 1 (1998), 337-343, Kourovka Archive, Problem 11.4: "No, not always", https://arxiv.org/abs/1401.0300v49.
 
-Stated but not proved: `MathlibExt.GroupTheory.CentralizerLatticeModularKourovka11Problem4Wanted.centralizerSublatticeModular_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html#centralizer-sublattice-modular-refuted).
+Stated but not proved: `MathlibExt.GroupTheory.CentralizerLatticeModularKourovka11Problem4Wanted.centralizerSublatticeModular_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerLatticeModularKourovka11Problem4Wanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html#centralizer-sublattice-modular-refuted).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lattices of centralizers](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/subgroup-embedding/lattices-of-centralizers)

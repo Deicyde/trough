@@ -7,7 +7,7 @@ statement: formalized
 
 # Linear chord diagrams
 
-15 results, 8 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html).
+15 results, 8 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html).
 
 ## Mean number of short chords in linear $k$-chord diagrams
 
@@ -33,7 +33,7 @@ short chords.
 
 - Donovan Young, "Linear k-Chord Diagrams," Journal of Integer Sequences 23 (2020), Article 20.9.1, Theorem, lines 208–214, https://cs.uwaterloo.ca/journals/JIS/VOL23/Young/young5.tex
 
-Formalized by `MetaMathlibExt.mean_short_chords_in_linear_k_chord_diagrams`, a theorem declared in [MathlibExt/Probability/MeanShortChords.lean, line 466](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/MeanShortChords.lean#L466). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#mean-short-chords-in-linear-k-chord-diag).
+Formalized by `MetaMathlibExt.mean_short_chords_in_linear_k_chord_diagrams`, a theorem declared in [MathlibExt/Probability/MeanShortChords.lean, line 459](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/MeanShortChords.lean#L459). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#mean-short-chords-in-linear-k-chord-diag).
 
 ## Asymptotic normality of short chords in non-crossing chord diagrams
 
@@ -44,7 +44,7 @@ asymptotically normal with the stated mean and variance.
 
 - Donovan Young, "Linear k-Chord Diagrams", Journal of Integer Sequences 23 (2020), Article 20.9.1, Theorem lines 1014-1024 (§6.1), <https://cs.uwaterloo.ca/journals/JIS/VOL23/Young/young5.tex>.
 
-Stated but not proved: `MetaMathlibExt.noncrossingLinearKChordDiagram_shortChords_asymptoticallyNormal` is written with `theorem_wanted` in [WantedExt/Analysis/Asymptotics/NoncrossingChordDiagramNormalLimitWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Asymptotics/NoncrossingChordDiagramNormalLimitWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#asymptotic-normality-of-short-chords-in).
+Stated but not proved: `MetaMathlibExt.noncrossingLinearKChordDiagram_shortChords_asymptoticallyNormal` is written with `theorem_wanted` in [WantedExt/Analysis/Asymptotics/NoncrossingChordDiagramNormalLimitWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Asymptotics/NoncrossingChordDiagramNormalLimitWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#asymptotic-normality-of-short-chords-in).
 
 ## Linear chord diagrams
 
@@ -57,7 +57,7 @@ Vertex $i$ is joined by a chord to $\sigma(i)$.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Section 1 (linear chord diagrams on `2n` vertices).
 
-Formalized by `MetaMathlibExt.IsLinearChordDiagram`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#is-linear-chord-diagram).
+Formalized by `MetaMathlibExt.IsLinearChordDiagram`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#is-linear-chord-diagram).
 
 ## Endpoints of short chords
 
@@ -70,7 +70,7 @@ when $i$ is joined to an adjacent vertex.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Abstract and Section 1 (short chords).
 
-Formalized by `MetaMathlibExt.IsShortChordVertex`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#is-short-chord-vertex).
+Formalized by `MetaMathlibExt.IsShortChordVertex`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#is-short-chord-vertex).
 
 ## Bubbles
 
@@ -87,7 +87,7 @@ So a bubble is a maximal run of consecutive vertices containing no endpoint of a
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Section 1 (definition of bubbles and their size).
 
-Formalized by `MetaMathlibExt.IsBubble`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#is-bubble).
+Formalized by `MetaMathlibExt.IsBubble`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#is-bubble).
 
 ## Bubble counts
 
@@ -100,7 +100,7 @@ $a, a+1, \dots, a+p-1$ form a bubble of size $p$ in $\sigma$. In particular $B_{
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Section 1 (definition of `B_{n,p}`, Table 1).
 
-Formalized by `MetaMathlibExt.bubbleCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count).
+Formalized by `MetaMathlibExt.bubbleCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count).
 
 ## No bubbles of size one on two vertices
 
@@ -111,7 +111,7 @@ vertices have no bubble of size $1$. The only such diagram is a single short cho
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Table 1 (row `n = 1`).
 
-Formalized by `MetaMathlibExt.bubbleCount_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-one-one).
+Formalized by `MetaMathlibExt.bubbleCount_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-one-one).
 
 ## Bubbles of size one on four vertices
 
@@ -122,7 +122,7 @@ vertices have $2$ bubbles of size $1$ in total.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Table 1 (row `n = 2`).
 
-Formalized by `MetaMathlibExt.bubbleCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-two-one).
+Formalized by `MetaMathlibExt.bubbleCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-two-one).
 
 ## Bubbles of size four on four vertices
 
@@ -134,7 +134,7 @@ crossing diagram (chords $\{0, 2\}$ and $\{1, 3\}$), which has no short chord.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Table 1 (row `n = 2`).
 
-Formalized by `MetaMathlibExt.bubbleCount_two_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-two-four).
+Formalized by `MetaMathlibExt.bubbleCount_two_four`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-two-four).
 
 ## Total number of bubbles in linear chord diagrams
 
@@ -150,7 +150,7 @@ The hypothesis $n \ge 2$ is needed: for $n = 1$ the left side is $0$ and the rig
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Lemma 3 (`jis-2024-24.4.2-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.sum_bubbleCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#sum-bubble-count).
+Stated but not proved: `MetaMathlibExt.sum_bubbleCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#sum-bubble-count).
 
 ## First moment of bubble sizes in linear chord diagrams
 
@@ -166,7 +166,7 @@ The hypothesis $n \ge 2$ is added because the right side involves $(n-2)!$.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Lemma 4 (`jis-2024-24.4.2-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.sum_mul_bubbleCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#sum-mul-bubble-count).
+Stated but not proved: `MetaMathlibExt.sum_mul_bubbleCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#sum-mul-bubble-count).
 
 ## Mean bubble size
 
@@ -181,7 +181,7 @@ The hypothesis $n \ge 2$ is added: for $n = 1$ there are no bubbles.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Theorem 5 (`jis-2024-24.4.2-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.mean_bubble_size` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#mean-bubble-size).
+Stated but not proved: `MetaMathlibExt.mean_bubble_size` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#mean-bubble-size).
 
 ## Formal contour-integral formula for bubble counts
 
@@ -207,7 +207,7 @@ integrals diverge.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Theorem 1 (`jis-2024-24.4.2-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.bubbleCount_formal_contour_integral` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-formal-contour-integral).
+Stated but not proved: `MetaMathlibExt.bubbleCount_formal_contour_integral` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-formal-contour-integral).
 
 ## Closed form of the bubble generating function
 
@@ -237,7 +237,7 @@ gives constant term $0$).
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Corollary 2 (`jis-2024-24.4.2-cor-2`).
 
-Stated but not proved: `MetaMathlibExt.bubbleCount_formal_laplace_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-formal-laplace-closed-form).
+Stated but not proved: `MetaMathlibExt.bubbleCount_formal_laplace_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#bubble-count-formal-laplace-closed-form).
 
 ## Limiting density of bubble sizes in linear chord diagrams
 
@@ -258,7 +258,7 @@ integer sizes $p_n$ with $p_n/(n-1) \to x$, the scaling the paper's proof uses.
 
 - Donovan Young, *Counting Bubbles in Linear Chord Diagrams*, Journal of Integer Sequences 27 (2024), Article 24.4.2, Theorem 6 (`jis-2024-24.4.2-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_bubbleCount_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#tendsto-bubble-count-density).
+Stated but not proved: `MetaMathlibExt.tendsto_bubbleCount_density` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LinearChordBubblesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html#tendsto-bubble-count-density).
 
 ## Depends on
 
@@ -267,4 +267,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Linear chord diagrams](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/linear-chord-diagrams/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/set-partitions/linear-chord-diagrams)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/set-partitions/linear-chord-diagrams)

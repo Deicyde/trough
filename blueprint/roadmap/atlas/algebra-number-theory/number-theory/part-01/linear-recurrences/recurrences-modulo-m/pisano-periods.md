@@ -7,7 +7,7 @@ statement: formalized
 
 # Pisano periods
 
-7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html).
+7 results, 2 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html).
 
 ## Fulton–Morris theorem on Pisano periods equal to the modulus
 
@@ -22,7 +22,7 @@ integer $\lambda \ge 1$.
 
 - Amirali Fatehizadeh and Daniel Yaqubi, "Average of the Fibonacci Numbers," Journal of Integer Sequences 25 (2022), Article 22.2.6, <https://cs.uwaterloo.ca/journals/JIS/VOL25/Yaqubi/yaq6.tex>, lines 177–189. The theorem is attributed there to John Fulton and William Morris, "On arithmetical functions related to the Fibonacci numbers," Acta Arithmetica 16 (1969), 105–110, DOI 10.4064/aa-16-2-105-110.
 
-Formalized by `MetaMathlibExt.fulton_morris_pisano_fixed_point`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/FultonMorrisPisanoFixedPoint.lean, line 1282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/FultonMorrisPisanoFixedPoint.lean#L1282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#fulton-morris-pisano-fixed-point).
+Formalized by `MetaMathlibExt.fulton_morris_pisano_fixed_point`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/FultonMorrisPisanoFixedPoint.lean, line 1282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/FultonMorrisPisanoFixedPoint.lean#L1282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#fulton-morris-pisano-fixed-point).
 
 ## Pisano period
 
@@ -32,7 +32,7 @@ $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$: the least $k \ge 1$ such
 applications of the step map $(0, 1)$ back to $(0, 1)$, or $0$ if there is no such $k$ (as for
 $n = 0$, where $\mathbb{Z}/0\mathbb{Z} = \mathbb{Z}$).
 
-Formalized by `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.pisanoPeriod`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#pisano-period).
+Formalized by `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.pisanoPeriod`, a definition declared in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#pisano-period).
 
 ## The Pisano period of $F_n$ divides $2n$ for even $n$
 
@@ -44,7 +44,7 @@ divides $2n$.
 
 - Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Proposition 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.pisanoPeriod_fib_dvd_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#pisano-period-fib-dvd-two-mul).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.pisanoPeriod_fib_dvd_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#pisano-period-fib-dvd-two-mul).
 
 ## The minimum of $\pi(n)/n$ over $1 \le n < N$ tends to zero
 
@@ -56,7 +56,7 @@ $1 \le n \le N - 1$ (defined for $N \ge 2$) tends to $0$.
 
 - Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Corollary 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.tendsto_iInf_pisanoPeriod_div_atTop` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#tendsto-i-inf-pisano-period-div-at-top).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.tendsto_iInf_pisanoPeriod_div_atTop` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#tendsto-i-inf-pisano-period-div-at-top).
 
 ## Sum of the first $p$ Fibonacci numbers modulo a prime $p$
 
@@ -70,7 +70,7 @@ by $p$; and in every case $p$ does not divide $S$.
 
 - Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.sum_fib_mod_prime_eq_and_not_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#sum-fib-mod-prime-eq-and-not-dvd).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.sum_fib_mod_prime_eq_and_not_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#sum-fib-mod-prime-eq-and-not-dvd).
 
 ## Odd Fibonacci numbers $F_n$ with $F_{F_n + 2} \equiv 1 \pmod{F_n}$
 
@@ -83,7 +83,7 @@ and $F_{F_n + 2}$ leaves remainder $1$ on division by $F_n$.
 
 - Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.fib_two_mul_prime_odd_and_fib_fib_add_two_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#fib-two-mul-prime-odd-and-fib-fib-add-tw).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.fib_two_mul_prime_odd_and_fib_fib_add_two_mod` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#fib-two-mul-prime-odd-and-fib-fib-add-tw).
 
 ## Infinitely many odd $k$ divide the sum of the first $k$ Fibonacci numbers
 
@@ -95,7 +95,7 @@ $k$ such that $k$ divides $F_1 + F_2 + \dots + F_k$.
 
 - Oisín Flynn-Connolly, "On the Divisibility of Sums of Fibonacci Numbers", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.infinite_setOf_odd_dvd_sum_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#infinite-set-of-odd-dvd-sum-fib).
+Stated but not proved: `MathlibExt.NumberTheory.Recurrences.FibonacciSumDivisibilityWanted.infinite_setOf_odd_dvd_sum_fib` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciSumDivisibilityWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html#infinite-set-of-odd-dvd-sum-fib).
 
 ## Depends on
 
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pisano periods](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/pisano-periods)

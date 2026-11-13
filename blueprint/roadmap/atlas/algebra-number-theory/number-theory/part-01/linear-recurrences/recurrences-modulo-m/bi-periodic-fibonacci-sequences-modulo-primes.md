@@ -8,7 +8,7 @@ proof: formalized
 
 # Bi-periodic Fibonacci sequences modulo primes
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html).
 
 ## Period of a generalized bi-periodic Fibonacci sequence modulo a prime, given the roots
 
@@ -25,7 +25,7 @@ $\mathbb{Z}/p\mathbb{Z}$, then $k$ divides $p - 1$.
 
 Since $\Delta = (\alpha - \beta)^2$, no hypothesis that $\Delta$ is a square is needed.
 
-Formalized by `MetaMathlibExt.generalizedBiPeriodicFibonacci_period_dvd_general`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-bi-periodic-fibonacci-period).
+Formalized by `MetaMathlibExt.generalizedBiPeriodicFibonacci_period_dvd_general`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-bi-periodic-fibonacci-period).
 
 ## Period of a generalized bi-periodic Fibonacci sequence modulo a prime
 
@@ -44,7 +44,7 @@ $\alpha$ and $\beta$ are nonzero squares in $\mathbb{Z}/p\mathbb{Z}$, then $k$ d
 
 - Hacène Belbachir and Celia Salhi, "The Generalized Bi-Periodic Fibonacci Sequence Modulo m," Journal of Integer Sequences 24 (2021), Article 21.9.4, Theorem, lines 225–226, <https://cs.uwaterloo.ca/journals/JIS/VOL24/Salhi/salhi4.tex>. It follows from `generalizedBiPeriodicFibonacci_period_dvd_general`, which drops the unused `IsSquare Δ`.
 
-Formalized by `MetaMathlibExt.generalizedBiPeriodicFibonacci_period_dvd`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-bi-periodic-fibonacci-period-2).
+Formalized by `MetaMathlibExt.generalizedBiPeriodicFibonacci_period_dvd`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciPeriod.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-bi-periodic-fibonacci-period-2).
 
 ## Zero indices of a generalized bi-periodic Fibonacci sequence with $c = d$
 
@@ -55,7 +55,7 @@ $F_{2n+2} = a F_{2n+1} + c F_{2n}$ and $F_{2n+3} = b F_{2n+2} + d F_{2n+1}$ for 
 Then there is an integer $l > 0$ such that, for every $n \ge 0$, $m$ divides $F_n$ if and only
 if $l$ divides $n$, and $l \le r$ for every $r > 0$ such that $m$ divides $F_r$.
 
-Formalized by `MetaMathlibExt.generalized_biperiodic_fibonacci_zero_indices_general`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-biperiodic-fibonacci-zero-in).
+Formalized by `MetaMathlibExt.generalized_biperiodic_fibonacci_zero_indices_general`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-biperiodic-fibonacci-zero-in).
 
 ## Belbachir–Salhi theorem on zero indices of generalized bi-periodic Fibonacci sequences
 
@@ -76,7 +76,7 @@ $m$ are not needed for the conclusion.
 
 - Hacène Belbachir and Celia Salhi, "The Generalized Bi-Periodic Fibonacci Sequence Modulo m," Journal of Integer Sequences 24 (2021), Article 21.9.4, Theorem, lines 445–448, https://cs.uwaterloo.ca/journals/JIS/VOL24/Salhi/salhi4.tex
 
-Formalized by `MetaMathlibExt.generalized_biperiodic_fibonacci_zero_indices`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-biperiodic-fibonacci-zero-in-2).
+Formalized by `MetaMathlibExt.generalized_biperiodic_fibonacci_zero_indices`, a theorem declared in [MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Recurrences/GeneralizedBiPeriodicFibonacciZeroIndices.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html#generalized-biperiodic-fibonacci-zero-in-2).
 
 ## Depends on
 
@@ -85,4 +85,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bi-periodic Fibonacci sequences modulo primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/recurrences-modulo-m/bi-periodic-fibonacci-sequences-modulo-primes)

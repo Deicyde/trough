@@ -7,7 +7,7 @@ statement: formalized
 
 # Connectivity of directed graphs
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html).
 
 ## Directed paths
 
@@ -15,13 +15,13 @@ A directed path in a digraph $D$ is a finite, possibly empty, sequence of
 vertices of $D$ with no vertex repeated in which each vertex is joined to the next by an arc of
 $D$.
 
-Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.IsDirectedPath`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#is-directed-path).
+Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.IsDirectedPath`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#is-directed-path).
 
 ## Internal vertices of a path
 
 The internal vertices of a path given as a vertex list (all but the first and the last).
 
-Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.internalVertices`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#internal-vertices).
+Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.internalVertices`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#internal-vertices).
 
 ## Internally disjoint directed paths
 
@@ -32,7 +32,7 @@ $x$ is a sequence of distinct vertices starting at $y$ and ending at $x$ in whic
 joined to the next by an arc of $D$, and its internal vertices are all its vertices except the
 first and the last.
 
-Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.HasInternallyDisjointPaths`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#has-internally-disjoint-paths).
+Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.HasInternallyDisjointPaths`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#has-internally-disjoint-paths).
 
 ## Hamidoune's reverse-connectivity conjecture for some $r \ge 3$
 
@@ -44,7 +44,7 @@ $r$ pairwise distinct directed paths from $y$ to $x$, no two of which share an i
 Here a directed path is a sequence of distinct vertices in which each vertex is joined to the
 next by an arc, and its internal vertices are all its vertices except the first and the last.
 
-Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.hamidouneSomeRAtLeastThree`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#hamidoune-some-rat-least-three).
+Formalized by `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.hamidouneSomeRAtLeastThree`, a definition declared in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#hamidoune-some-rat-least-three).
 
 ## Hamidoune's reverse-connectivity conjecture fails for every $r \ge 3$
 
@@ -64,7 +64,7 @@ the report notes after Conjecture 6.21 that this is a counterexample for all $r 
 
 - B. D. Sullivan, A Summary of Problems and Results related to the Caccetta-Haggkvist Conjecture, arXiv:math/0605646, Conjecture 6.21; resolution: C. Thomassen, Even cycles in directed graphs, European J. Combin. 6 (1985) 85-89, as stated in the report's Theorem 5.2 (part ii) and the note after Conjecture 6.21, https://doi.org/10.1016/S0195-6698(85)80025-1.
 
-Stated but not proved: `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.hamidouneSomeRAtLeastThree_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#hamidoune-some-rat-least-three-refuted).
+Stated but not proved: `MathlibExt.Combinatorics.HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.hamidouneSomeRAtLeastThree_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/HamidouneReverseConnectivityAIMCombinatoricsProblem191Wanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html#hamidoune-some-rat-least-three-refuted).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Connectivity of directed graphs](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/directed-graphs/connectivity-of-directed-graphs)

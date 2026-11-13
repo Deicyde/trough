@@ -7,7 +7,7 @@ statement: formalized
 
 # Total positivity of Riordan arrays
 
-8 results, 4 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html).
+8 results, 4 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html).
 
 ## Bell-type Riordan arrays with a Pólya frequency A-sequence are totally positive
 
@@ -29,7 +29,7 @@ The sum stops at $j = n$ because $d_{n,m} = 0$ for $m > n$.
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.bellRiordan_hasNonnegativeMinors_of_aSequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#bell-riordan-has-nonnegative-minors-of-a).
+Stated but not proved: `MetaMathlibExt.bellRiordan_hasNonnegativeMinors_of_aSequence` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#bell-riordan-has-nonnegative-minors-of-a).
 
 ## Riordan array with given A- and Z-sequences
 
@@ -46,7 +46,7 @@ The sums stop at $j = n$ because the recurrence forces $r_{n,m} = 0$ for $m > n$
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1, equation (1).
 
-Formalized by `MetaMathlibExt.IsRiordanArrayAZ`, a definition declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#is-riordan-array-az).
+Formalized by `MetaMathlibExt.IsRiordanArrayAZ`, a definition declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#is-riordan-array-az).
 
 ## Entries in row 1 of a Riordan array
 
@@ -58,7 +58,7 @@ $r_{1,0} = z_0$ and $r_{1,1} = a_0$.
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1, equation (1).
 
-Formalized by `MetaMathlibExt.IsRiordanArrayAZ.one_zero_and_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#one-zero-and-one-one).
+Formalized by `MetaMathlibExt.IsRiordanArrayAZ.one_zero_and_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#one-zero-and-one-one).
 
 ## Coefficient matrix of a Riordan array
 
@@ -72,7 +72,7 @@ $0$ if $k > n + 1$. Thus row $n$ reads $z_n, a_n, a_{n-1}, \ldots, a_0, 0, 0, \l
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1.
 
-Formalized by `MetaMathlibExt.riordanCoeffMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-coeff-matrix).
+Formalized by `MetaMathlibExt.riordanCoeffMatrix`, a definition declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-coeff-matrix).
 
 ## First two columns of the coefficient matrix of a Riordan array
 
@@ -85,7 +85,7 @@ row $n$, column $1$.
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Section 1.
 
-Formalized by `MetaMathlibExt.riordanCoeffMatrix_zero_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-coeff-matrix-zero-one).
+Formalized by `MetaMathlibExt.riordanCoeffMatrix_zero_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-coeff-matrix-zero-one).
 
 ## Total positivity of a Riordan array from its coefficient matrix
 
@@ -99,7 +99,7 @@ nonnegative.
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Proposition 1 (`jis-2025-25.7.5-prop-1`).
 
-Stated but not proved: `MetaMathlibExt.riordanArray_hasNonnegativeMinors_of_coeffMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-array-has-nonnegative-minors-of).
+Stated but not proved: `MetaMathlibExt.riordanArray_hasNonnegativeMinors_of_coeffMatrix` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-array-has-nonnegative-minors-of).
 
 ## A total positivity criterion for Riordan arrays
 
@@ -128,7 +128,7 @@ $Z = ((P^2 + sxP + tx^2)Q + (aP + bx)(P - xQ))/(P^2 - rxP)$.
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Theorem 2 (`jis-2025-25.7.5-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.riordanArray_hasNonnegativeMinors_of_params` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-array-has-nonnegative-minors-of-2).
+Stated but not proved: `MetaMathlibExt.riordanArray_hasNonnegativeMinors_of_params` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#riordan-array-has-nonnegative-minors-of-2).
 
 ## Total positivity of Bell-type Riordan arrays from a Pólya frequency series
 
@@ -152,7 +152,7 @@ $A = (P^2 + sxP + tx^2)/(P - rx)$.
 
 - Lili Mu, Yuanyuan Xing and Sai-Nan Zheng, *A New Criterion for the Total Positivity of Riordan Arrays*, Journal of Integer Sequences 28 (2025), Article 25.7.5, Corollary 6 (`jis-2025-25.7.5-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.bellRiordanArray_hasNonnegativeMinors_of_pf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#bell-riordan-array-has-nonnegative-minor).
+Stated but not proved: `MetaMathlibExt.bellRiordanArray_hasNonnegativeMinors_of_pf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/BellRiordanTotalPositivityWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html#bell-riordan-array-has-nonnegative-minor).
 
 ## Depends on
 
@@ -161,4 +161,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Total positivity of Riordan arrays](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/riordan-arrays/total-positivity-of-riordan-arrays)

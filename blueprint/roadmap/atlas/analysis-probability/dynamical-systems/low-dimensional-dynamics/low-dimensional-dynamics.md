@@ -8,7 +8,7 @@ proof: formalized
 
 # Low-dimensional dynamics: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/index.html).
 
 Low-dimensional dynamics covers maps of the interval and circle, continued-fraction-type maps, flows in the plane and homeomorphisms of surfaces.
 
@@ -22,7 +22,7 @@ positive integer $n$ some point of $[0, 1]$ has minimal period $n$ under $f$.
 
 - T.-Y. Li and J. A. Yorke, Period Three Implies Chaos, Amer. Math. Monthly 82 (1975), 985-992, DOI 10.2307/2318254.
 
-Formalized by `MathlibExt.Dynamics.Periodic.LiYorkeWanted.liYorke_period_three_implies_periods`, a theorem declared in [MathlibExt/Dynamics/Periodic/LiYorke.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Dynamics/Periodic/LiYorke.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/index.html#li-yorke-period-three-implies-periods).
+Formalized by `MathlibExt.Dynamics.Periodic.LiYorkeWanted.liYorke_period_three_implies_periods`, a theorem declared in [MathlibExt/Dynamics/Periodic/LiYorke.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Dynamics/Periodic/LiYorke.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/index.html#li-yorke-period-three-implies-periods).
 
 ## Depends on
 
@@ -31,4 +31,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Low-dimensional dynamics](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/low-dimensional-dynamics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/low-dimensional-dynamics)

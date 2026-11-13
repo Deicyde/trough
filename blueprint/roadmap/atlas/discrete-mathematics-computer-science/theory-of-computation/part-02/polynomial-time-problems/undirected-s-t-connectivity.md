@@ -7,7 +7,7 @@ statement: formalized
 
 # Undirected s-t connectivity
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity/index.html).
 
 ## Undirected s-t connectivity as a decision problem
 
@@ -18,7 +18,7 @@ $s < n$, $t < n$, and there are pairwise distinct natural numbers $v_0, \dots, v
 $n$, with $v_0 = s$, $v_k = t$ and, for every $i < k$, $(v_i, v_{i+1}) \in E$ or
 $(v_{i+1}, v_i) \in E$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.USTCONInL.ustconDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity/index.html#ustcon-dec).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.USTCONInL.ustconDec`, a definition declared in [WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity/index.html#ustcon-dec).
 
 ## Undirected ST-connectivity is in L (Reingold)
 
@@ -30,7 +30,7 @@ logarithmic space.
 
 - O. Reingold, "Undirected connectivity in log-space", Journal of the ACM 55 (2008), 1-24 (STOC 2005).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.USTCONInL.ustcon_in_l` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity/index.html#ustcon-in-l).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.USTCONInL.ustcon_in_l` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/USTCONInLWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity/index.html#ustcon-in-l).
 
 ## Depends on
 
@@ -39,4 +39,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Undirected s-t connectivity](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/polynomial-time-problems/undirected-s-t-connectivity)

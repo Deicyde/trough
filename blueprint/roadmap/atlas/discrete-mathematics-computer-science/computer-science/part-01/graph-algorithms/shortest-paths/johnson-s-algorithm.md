@@ -8,7 +8,7 @@ proof: formalized
 
 # Johnson's algorithm
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html).
 
 ## Johnson's algorithm
 
@@ -26,7 +26,7 @@ $d'(u, v) + h(v) - h(u)$ otherwise, where $d'(u, v)$ is the Dijkstra distance.
 The cost counts the selected construction, scan, relaxation and decoding actions, not full RAM
 or bit complexity.
 
-Formalized by `Cslib.Algorithms.Lean.Johnson.johnson`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Basic.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Basic.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson).
+Formalized by `Cslib.Algorithms.Lean.Johnson.johnson`, a definition declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Basic.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Basic.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson).
 
 ## Johnson's algorithm fails exactly on reachable negative cycles
 
@@ -35,7 +35,7 @@ directed edges on the vertices $\{0, \dots, n-1\}$ with integer weights, Johnson
 $E$ returns no table if and only if there is a vertex $s$ from which a negative cycle of $E$ is
 reachable.
 
-Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-eq-none-iff).
+Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_eq_none_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-eq-none-iff).
 
 ## Correctness of Johnson's algorithm
 
@@ -46,7 +46,7 @@ reachable from $s$ along edges of $E$. Moreover, if $d(s, t)$ is an integer $x$,
 weighted path in $E$ from $s$ to $t$ has weight $x$, and every weighted path in $E$ from $s$ to
 $t$ has weight at least $x$.
 
-Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_distance_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-distance-spec).
+Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_distance_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Correctness.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-distance-spec).
 
 ## Exact cost of a successful run of Johnson's algorithm
 
@@ -55,7 +55,7 @@ edges on the vertices $\{0, \dots, n-1\}$ with integer weights. If Johnson's alg
 returns a table, then its counted cost is exactly
 $n^3 + nm + (n+1)(m+n) + 2n^2 + 4m + 5n + 1$.
 
-Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_time_of_success`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-time-of-success).
+Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_time_of_success`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-time-of-success).
 
 ## Cost bound for Johnson's algorithm
 
@@ -64,7 +64,7 @@ vertices $\{0, \dots, n-1\}$ with integer weights, the counted cost of Johnson's
 $E$, including the case where it extracts a negative cycle, is at most
 $n^3 + nm + (n+1)(m+n) + 2n^2 + 4m + 5n + 1 + 3(n+1)$.
 
-Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-time-le).
+Formalized by `Cslib.Algorithms.Lean.Johnson.johnson_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Graph/ShortestPath/Johnson/Costs.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html#johnson-time-le).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Johnson's algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/graph-algorithms/shortest-paths/johnson-s-algorithm)

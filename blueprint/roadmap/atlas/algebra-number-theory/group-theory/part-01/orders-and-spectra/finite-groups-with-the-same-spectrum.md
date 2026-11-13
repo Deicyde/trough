@@ -7,14 +7,14 @@ statement: formalized
 
 # Finite groups with the same spectrum
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html).
 
 ## Element-order spectrum of a group
 
 The spectrum $\pi_e(G)$ of a group $G$ is the set of
 orders of the elements of $G$, where an element of infinite order counts as having order $0$.
 
-Formalized by `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.elementOrders`, a definition declared in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#element-orders).
+Formalized by `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.elementOrders`, a definition declared in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#element-orders).
 
 ## Subgroup or quotient of a normal subgroup
 
@@ -23,7 +23,7 @@ is isomorphic to a subgroup of $B$ or to a quotient of a normal subgroup of $B$:
 injective homomorphism $A \to B$, or there are a normal subgroup $N$ of $B$ and a surjective
 homomorphism $N \to A$.
 
-Formalized by `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.IsSubgroupOrNormalSectionOf`, a definition declared in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#is-subgroup-or-normal-section-of).
+Formalized by `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.IsSubgroupOrNormalSectionOf`, a definition declared in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#is-subgroup-or-normal-section-of).
 
 ## Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the other (problem)
 
@@ -37,7 +37,7 @@ This is Kourovka Notebook Problem 16.106 (W. J. Shi), which asks for $h(\pi_e(G_
 where $h(\Gamma)$ is the number of finite groups with spectrum $\Gamma$ up to isomorphism; the
 bound on orders is equivalent, since there are finitely many groups of each order.
 
-Formalized by `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.sameSpectrumIncomparableGroups`, a definition declared in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#same-spectrum-incomparable-groups).
+Formalized by `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.sameSpectrumIncomparableGroups`, a definition declared in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#same-spectrum-incomparable-groups).
 
 ## Finite groups with equal spectra, neither a subgroup or normal-subgroup quotient of the other (Kourovka 16.106)
 
@@ -59,7 +59,7 @@ $G_2 = L_{15}(2^{60}).5$ (Grechkoseeva).
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 16.106 (W. J. Shi); resolution: M. A. Grechkoseeva, Algebra and Logic 47 (2008), no. 4, 229-241, Kourovka Archive, Problem 16.106 (answer: Yes, there do, for example G₁ = L₁₅(2⁶⁰).3 and G₂ = L₁₅(2⁶⁰).5).
 
-Stated but not proved: `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.sameSpectrumIncomparableGroups_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#same-spectrum-incomparable-groups-holds).
+Stated but not proved: `MathlibExt.GroupTheory.SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.sameSpectrumIncomparableGroups_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/SameSpectrumIncomparableGroupsKourovka16Problem106Wanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html#same-spectrum-incomparable-groups-holds).
 
 ## Depends on
 
@@ -68,4 +68,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Finite groups with the same spectrum](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/orders-and-spectra/finite-groups-with-the-same-spectrum)

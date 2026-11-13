@@ -7,7 +7,7 @@ statement: formalized
 
 # Josephus problem
 
-39 results, 22 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html).
+39 results, 22 proved and 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html).
 
 ## Josephus survivor function
 
@@ -20,14 +20,14 @@ For $k \ge 2$ and $n \ge 1$, $J_k(n)$ is the one-based position of the sole surv
 $k$-th person is eliminated from a circle of $n$ people; the value $J_k(0) = 0$ only anchors the
 recursion.
 
-Formalized by `MetaMathlibExt.josephus`, a definition declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus).
+Formalized by `MetaMathlibExt.josephus`, a definition declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus).
 
 ## The Josephus function at one
 
 For every natural number $k \ge 2$, the Josephus function
 $J_k$ for elimination step $k$ satisfies $J_k(1) = 1$.
 
-Formalized by `MetaMathlibExt.josephus_one`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-one).
+Formalized by `MetaMathlibExt.josephus_one`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-one).
 
 ## Euler recurrence for the Josephus function
 
@@ -35,14 +35,14 @@ For all natural numbers $k \ge 2$ and
 $n \ge 1$, the Josephus function $J_k$ for elimination step $k$ satisfies
 $J_k(n+1) = ((J_k(n) + k - 1) \bmod (n+1)) + 1$.
 
-Formalized by `MetaMathlibExt.josephus_succ`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-succ).
+Formalized by `MetaMathlibExt.josephus_succ`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-succ).
 
 ## Range of the Josephus function
 
 For all natural numbers $k \ge 2$ and $n \ge 1$, the
 Josephus function $J_k$ for elimination step $k$ satisfies $1 \le J_k(n) \le n$.
 
-Formalized by `MetaMathlibExt.josephus_range`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-range).
+Formalized by `MetaMathlibExt.josephus_range`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/JosephusFunction.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-range).
 
 ## Enumeration of the positive fixed points of $J_3$
 
@@ -57,7 +57,7 @@ If this set has at most $\ell$ elements, then $n_\ell = 0$ by convention.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.josephusThreeFixedPoint`, a definition declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point).
+Formalized by `MetaMathlibExt.josephusThreeFixedPoint`, a definition declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point).
 
 ## Gaps between consecutive positive fixed points of $J_3$
 
@@ -72,7 +72,7 @@ $n_{\ell+1}$. Thus $g_\ell$ is the paper's $\bar m_{\ell+1}$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.josephusThreeGap`, a definition declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-gap).
+Formalized by `MetaMathlibExt.josephusThreeGap`, a definition declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-gap).
 
 ## Base-3/2 digits
 
@@ -84,7 +84,7 @@ the digit $d = 2N \bmod 3$ followed by the base-$3/2$ digit list of $(2N - d)/3$
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.baseThreeHalvesDigits`, a definition declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits).
+Formalized by `MetaMathlibExt.baseThreeHalvesDigits`, a definition declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits).
 
 ## Base-3/2 digits of four
 
@@ -96,7 +96,7 @@ $(212)_{3/2}$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.baseThreeHalvesDigits_four`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-four).
+Formalized by `MetaMathlibExt.baseThreeHalvesDigits_four`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-four).
 
 ## Base-3/2 digits of thirteen
 
@@ -108,7 +108,7 @@ is the paper's $(210112)_{3/2}$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.baseThreeHalvesDigits_thirteen`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-thirteen).
+Formalized by `MetaMathlibExt.baseThreeHalvesDigits_thirteen`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-thirteen).
 
 ## Value of the base-3/2 digits
 
@@ -124,7 +124,7 @@ Equivalently, the paper's expansion $\frac{1}{2} \sum_{i} d_i (3/2)^i$ has value
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.baseThreeHalvesDigits_value`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-value).
+Formalized by `MetaMathlibExt.baseThreeHalvesDigits_value`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-value).
 
 ## Base-3/2 digits are at most two
 
@@ -135,7 +135,7 @@ base-$3/2$ digit list of $N$ satisfies $d < 3$, that is, $d \in \{0, 1, 2\}$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.baseThreeHalvesDigits_lt_three`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-lt-three).
+Formalized by `MetaMathlibExt.baseThreeHalvesDigits_lt_three`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#base-three-halves-digits-lt-three).
 
 ## The first positive fixed point of $J_3$ is $1$
 
@@ -147,7 +147,7 @@ increasing order and counting from $\ell = 0$. Then $n_0 = 1$; this is the paper
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.josephusThreeFixedPoint_zero`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-zero).
+Formalized by `MetaMathlibExt.josephusThreeFixedPoint_zero`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-zero).
 
 ## Second positive fixed point of the Josephus function for step three
 
@@ -160,7 +160,7 @@ $n_1 = 2$, the paper's $n_p^{(2)}$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.josephusThreeFixedPoint_one`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-one).
+Formalized by `MetaMathlibExt.josephusThreeFixedPoint_one`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-one).
 
 ## The third positive fixed point of $J_3$ is $13$
 
@@ -172,7 +172,7 @@ increasing order and counting from $\ell = 0$. Then $n_2 = 13$; this is the pape
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.josephusThreeFixedPoint_two`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-two).
+Formalized by `MetaMathlibExt.josephusThreeFixedPoint_two`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-two).
 
 ## The second gap between positive fixed points of $J_3$ is $3$
 
@@ -188,7 +188,7 @@ Here $n_1 = 2$ and $n_2 = 13$, and the three pure high extremal points counted a
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Formalized by `MetaMathlibExt.josephusThreeGap_one`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-gap-one).
+Formalized by `MetaMathlibExt.josephusThreeGap_one`, a theorem declared in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-gap-one).
 
 ## Base-3/2 digits of the next Josephus fixed point, gap zero
 
@@ -205,7 +205,7 @@ This is part (i) of the cited Theorem 1.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_of_gap_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-of-gap).
+Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_of_gap_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-of-gap).
 
 ## Base-3/2 digits of the next Josephus fixed point, gap one
 
@@ -222,7 +222,7 @@ This is part (ii) of the cited Theorem 1.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_of_gap_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-of-gap-2).
+Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_of_gap_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-of-gap-2).
 
 ## Base-3/2 digits of the next Josephus fixed point, gap at least two
 
@@ -241,7 +241,7 @@ $m_\ell - 1$ ones, then a $2$. This is part (iii) of the cited Theorem 1.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_of_gap_at_least_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-of-gap-3).
+Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_of_gap_at_least_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-of-gap-3).
 
 ## Digit count of consecutive Josephus fixed points
 
@@ -258,7 +258,7 @@ This is part (iv) of the cited Theorem 1.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *Fixed Points of the Josephus Function via Fractional Base Expansions*, INTEGERS 26 (2026), Article A54, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-length).
+Stated but not proved: `MetaMathlibExt.josephusThreeFixedPoint_digits_length` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusBaseThreeHalvesWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-digits-length).
 
 ## High extremal points of the Josephus function $J_3$
 
@@ -270,7 +270,7 @@ $J_3(n) = n$ or $J_3(n) = n - 1$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Section 1, Definition (Extremal and Fixed points).
 
-Formalized by `MetaMathlibExt.IsJosephusThreeHighExtremal`, a definition declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-high-extremal).
+Formalized by `MetaMathlibExt.IsJosephusThreeHighExtremal`, a definition declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-high-extremal).
 
 ## Fixed points of the Josephus function $J_3$
 
@@ -281,7 +281,7 @@ Josephus function $J_3$ (elimination step $3$) when $n \ge 1$ and $J_3(n) = n$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Section 1, Definition (Extremal and Fixed points).
 
-Formalized by `MetaMathlibExt.IsJosephusThreeFixedPoint`, a definition declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-fixed-point).
+Formalized by `MetaMathlibExt.IsJosephusThreeFixedPoint`, a definition declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-fixed-point).
 
 ## $3$ is a high extremal point but not a fixed point of $J_3$
 
@@ -293,7 +293,7 @@ $J_3$; indeed $J_3(3) = 2$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Section 1, Definition (Extremal and Fixed points).
 
-Formalized by `MetaMathlibExt.isJosephusThreeHighExtremal_three`, a theorem declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-high-extremal-three).
+Formalized by `MetaMathlibExt.isJosephusThreeHighExtremal_three`, a theorem declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-high-extremal-three).
 
 ## $4$ is not a high extremal point of $J_3$
 
@@ -306,7 +306,7 @@ Indeed $J_3(4) = 1$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Section 1, Definition (Extremal and Fixed points).
 
-Formalized by `MetaMathlibExt.not_isJosephusThreeHighExtremal_four`, a theorem declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#not-is-josephus-three-high-extremal-four).
+Formalized by `MetaMathlibExt.not_isJosephusThreeHighExtremal_four`, a theorem declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#not-is-josephus-three-high-extremal-four).
 
 ## $13$ is a fixed point of $J_3$
 
@@ -320,7 +320,7 @@ a fixed point.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Section 2, Table 1.
 
-Formalized by `MetaMathlibExt.isJosephusThreeFixedPoint_thirteen`, a theorem declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-fixed-point-thirteen).
+Formalized by `MetaMathlibExt.isJosephusThreeFixedPoint_thirteen`, a theorem declared in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-josephus-three-fixed-point-thirteen).
 
 ## Successive high extremal points of $J_3$
 
@@ -335,7 +335,7 @@ $f' = 0$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.josephusThree_highExtremal_succ_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-high-extremal-succ-cases).
+Stated but not proved: `MetaMathlibExt.josephusThree_highExtremal_succ_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-high-extremal-succ-cases).
 
 ## Unified recurrences for consecutive high extremal points of $J_3$
 
@@ -354,7 +354,7 @@ $$b - J_3(b) = f - (1 - r)(2f - 1), \qquad b \bmod 2 = s - (1 - r)(1 - f)(2s - 1
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.josephusThree_highExtremal_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-high-extremal-recurrences).
+Stated but not proved: `MetaMathlibExt.josephusThree_highExtremal_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-high-extremal-recurrences).
 
 ## Recurrence for consecutive fixed points of $J_3$
 
@@ -369,7 +369,7 @@ $b = (3^m (3a + 2) - 2^m) / 2^{m+1}$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.josephusThree_fixedPoint_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-recurrence).
+Stated but not proved: `MetaMathlibExt.josephusThree_fixedPoint_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-fixed-point-recurrence).
 
 ## The Josephus function between consecutive fixed points
 
@@ -385,7 +385,7 @@ $$J_3(n) = 3n + 1 - \left(\tfrac{2}{3}\right)^{m - \mathfrak{m}} (2b + 1).$$
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, *On the Recurrence Formula for Fixed Points of the Josephus Function*, INTEGERS 24 (2024), Article A115, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.josephusThree_eq_of_mem_fixedPoint_interval` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-eq-of-mem-fixed-point-int).
+Stated but not proved: `MetaMathlibExt.josephusThree_eq_of_mem_fixedPoint_interval` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusFixedPointRecurrenceWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-three-eq-of-mem-fixed-point-int).
 
 ## Low extremal point of the Josephus function
 
@@ -393,7 +393,7 @@ For natural numbers $k$ and $m$, the point
 $m$ is a low extremal point of the Josephus function $J_k$ if $1 \le J_k(m) \le k - 1$, where
 $k - 1$ is truncated at $0$.
 
-Formalized by `MathlibExt.NumberTheory.JosephusWanted.IsLowExtremal`, a definition declared in [WantedExt/NumberTheory/JosephusWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-low-extremal).
+Formalized by `MathlibExt.NumberTheory.JosephusWanted.IsLowExtremal`, a definition declared in [WantedExt/NumberTheory/JosephusWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-low-extremal).
 
 ## High extremal point of the Josephus function
 
@@ -401,7 +401,7 @@ For natural numbers $k$ and $m$, the point
 $m$ is a high extremal point of the Josephus function $J_k$ if $m + 1$ is a low extremal point
 of $J_k$, that is, if $1 \le J_k(m + 1) \le k - 1$.
 
-Formalized by `MathlibExt.NumberTheory.JosephusWanted.IsHighExtremal`, a definition declared in [WantedExt/NumberTheory/JosephusWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-high-extremal).
+Formalized by `MathlibExt.NumberTheory.JosephusWanted.IsHighExtremal`, a definition declared in [WantedExt/NumberTheory/JosephusWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#is-high-extremal).
 
 ## Josephus recurrence by number of wrap-arounds
 
@@ -413,7 +413,7 @@ number with $\ell(n+1) + 1 \le p + k \le (\ell+1)(n+1)$, then $J_k(n+1) = p + k 
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_succ_eq_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-succ-eq-sub).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_succ_eq_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-succ-eq-sub).
 
 ## The Josephus function just after a fixed point
 
@@ -429,7 +429,7 @@ natural number $\ell \ge 1$, then $J_k(n_p + 1) = n_p$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Proposition 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_fixed_succ_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-fixed-succ-cases).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_fixed_succ_cases` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-fixed-succ-cases).
 
 ## Josephus fixed points detected by the next value
 
@@ -441,7 +441,7 @@ and only if $J_k(n_p + 1) = k - 1$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Proposition 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_eq_self_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-eq-self-iff).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_eq_self_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-eq-self-iff).
 
 ## Linear growth of the Josephus function before a wrap-around
 
@@ -453,7 +453,7 @@ $p + km \le n + m$, then $J_k(n + m) = p + km$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Lemma 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_add_eq_of_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-add-eq-of-le).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_add_eq_of_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-add-eq-of-le).
 
 ## The Josephus function at the first wrap-around
 
@@ -469,7 +469,7 @@ the statement fails at $k = 4$, $n = 1$, $m = 1$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Lemma 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_add_eq_sub_of_minimal` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-add-eq-sub-of-minimal).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_add_eq_sub_of_minimal` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-add-eq-sub-of-minimal).
 
 ## Extremal points of the Josephus function near $2k - 2$
 
@@ -483,7 +483,7 @@ and $2k - 1$ is low extremal. In particular, $2k - 2$ is always a low or a high 
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Corollary 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.extremal_two_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#extremal-two-mul-sub).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.extremal_two_mul_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#extremal-two-mul-sub).
 
 ## Linear-step bound at a low extremal point
 
@@ -500,7 +500,7 @@ low extremal point in the paper's sense, and none of the subtractions above is t
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Lemma 8.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.shift_le_iff_le_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#shift-le-iff-le-div).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.shift_le_iff_le_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#shift-le-iff-le-div).
 
 ## Linear growth of the Josephus function after a high extremal point
 
@@ -514,7 +514,7 @@ $m \le \lfloor (n_e - (j - 1)) / (k - 1) \rfloor$.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Theorem 9.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_add_eq_of_high` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-add-eq-of-high).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.josephus_add_eq_of_high` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#josephus-add-eq-of-high).
 
 ## The Josephus function has infinitely many fixed points
 
@@ -526,7 +526,7 @@ Josephus function.
 
 - Yunier Bello-Cruz and Roy Quintero-Contreras, "Analytical Study and Efficient Evaluation of the Josephus Function", Theorem 13.
 
-Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.infinite_fixedPoints` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JosephusWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#infinite-fixed-points).
+Stated but not proved: `MathlibExt.NumberTheory.JosephusWanted.infinite_fixedPoints` is written with `theorem_wanted` in [WantedExt/NumberTheory/JosephusWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JosephusWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html#infinite-fixed-points).
 
 ## Depends on
 
@@ -535,4 +535,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Josephus problem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/iterated-self-referential/josephus-problem)

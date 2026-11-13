@@ -7,7 +7,7 @@ statement: formalized
 
 # Time hierarchy theorem
 
-70 results, 68 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html).
+70 results, 68 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html).
 
 ## Deciding within a time bound
 
@@ -16,7 +16,7 @@ bound $t : \mathbb{N} \to \mathbb{N}$ when, on every bit list $x$, the machine o
 input word of $x$ halts within $t(|x|)$ steps, and its tape from the head rightwards, without
 trailing blanks, is the single symbol of the answer $L(x)$: $2$ for true and $1$ for false.
 
-Formalized by `Cslib.Turing.Universal.Code.DecidesWithin`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#decides-within).
+Formalized by `Cslib.Turing.Universal.Code.DecidesWithin`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#decides-within).
 
 ## Time classes on codes
 
@@ -24,7 +24,7 @@ For $t : \mathbb{N} \to \mathbb{N}$, $\mathrm{CodeTime}(t)$ is
 the class of decision problems $L$ such that some code decides $L$ within $t(|x|)$ steps on
 every input $x$.
 
-Formalized by `Cslib.Turing.Universal.CodeTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time).
+Formalized by `Cslib.Turing.Universal.CodeTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time).
 
 ## Deciding within a larger time bound
 
@@ -32,7 +32,7 @@ If a code $c$ decides a decision problem $L$
 within a time bound $t : \mathbb{N} \to \mathbb{N}$, and $t' : \mathbb{N} \to \mathbb{N}$
 satisfies $t(n) \le t'(n)$ for every $n$, then $c$ decides $L$ within $t'$.
 
-Formalized by `Cslib.Turing.Universal.Code.DecidesWithin.mono`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#mono).
+Formalized by `Cslib.Turing.Universal.Code.DecidesWithin.mono`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#mono).
 
 ## Monotonicity of time classes on codes
 
@@ -41,7 +41,7 @@ $t(n) \le t'(n)$ for every $n$. Then every decision problem that some code decid
 $t(|x|)$ steps on every input $x$ is decided by some code within $t'(|x|)$ steps on every
 input $x$: $\mathrm{CodeTime}(t) \subseteq \mathrm{CodeTime}(t')$.
 
-Formalized by `Cslib.Turing.Universal.codeTime_mono`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time-mono).
+Formalized by `Cslib.Turing.Universal.codeTime_mono`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time-mono).
 
 ## The constant-false code
 
@@ -50,7 +50,7 @@ blank $0$ it writes the symbol $1$, the symbol of the bit false, and enters stat
 symbols $1$ and $2$ it moves right and stays in state $0$; on every other symbol it halts. State $1$
 has no row, so the machine halts there. This code answers false on every input.
 
-Formalized by `Cslib.Turing.Universal.Code.constFalse`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#const-false).
+Formalized by `Cslib.Turing.Universal.Code.constFalse`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#const-false).
 
 ## The constant-false code decides the empty language
 
@@ -60,7 +60,7 @@ and on the blank $0$ it writes $1$, the symbol of the bit $\mathrm{false}$, and 
 $1$, which has no row, so that $c$ halts. Then $c$ decides the empty language within $n + 1$
 steps on every input of length $n$.
 
-Formalized by `Cslib.Turing.Universal.Code.constFalse_decidesWithin`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#const-false-decides-within).
+Formalized by `Cslib.Turing.Universal.Code.constFalse_decidesWithin`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#const-false-decides-within).
 
 ## Time classes are not empty once the bound exceeds the input length
 
@@ -69,7 +69,7 @@ $f : \mathbb{N} \to \mathbb{N}$ satisfy $n + 1 \le f(n)$ for every $n$. Then the
 decision problem that answers false on every bit list, belongs to the time class of $f$: some code
 decides it within $f(|x|)$ steps on every input $x$, where $|x|$ is the length of $x$.
 
-Formalized by `Cslib.Turing.Universal.const_false_mem_codeTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#const-false-mem-code-time).
+Formalized by `Cslib.Turing.Universal.const_false_mem_codeTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#const-false-mem-code-time).
 
 ## Some step is needed
 
@@ -78,7 +78,7 @@ decision problem is decided by a code within $f(|x|)$ steps on every input $x$: 
 $\mathrm{CodeTime}(f)$ is empty. With no step on the empty input, the tape stays blank and
 holds no answer bit.
 
-Formalized by `Cslib.Turing.Universal.codeTime_eq_empty`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time-eq-empty).
+Formalized by `Cslib.Turing.Universal.codeTime_eq_empty`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time-eq-empty).
 
 ## The code stack determines the table lookups
 
@@ -86,14 +86,14 @@ If two codes $c$ and $c'$ have the same
 code stack, then for every state $q$ and every symbol $a$, the table entry of $c$ at $(q, a)$
 equals the table entry of $c'$ at $(q, a)$.
 
-Formalized by `Cslib.Turing.Universal.Code.lookup_eq_of_codeCells_eq`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lookup-eq-of-code-cells-eq).
+Formalized by `Cslib.Turing.Universal.Code.lookup_eq_of_codeCells_eq`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lookup-eq-of-code-cells-eq).
 
 ## The code stack determines the clocked semantics
 
 Codes with the same code stack have the
 same clocked evaluator.
 
-Formalized by `Cslib.Turing.Universal.Code.evalSteps_eq_of_codeCells_eq`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#eval-steps-eq-of-code-cells-eq).
+Formalized by `Cslib.Turing.Universal.Code.evalSteps_eq_of_codeCells_eq`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 232](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L232). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#eval-steps-eq-of-code-cells-eq).
 
 ## Reading a unary length prefix reads one cell
 
@@ -102,7 +102,7 @@ number $n$, reading a unary length prefix of $x$ returns $n$ together with the r
 only if $x$ is the cell of $n$ (that is, $n$ copies of $\mathrm{true}$ followed by
 $\mathrm{false}$) followed by $r$.
 
-Formalized by `Cslib.Turing.Universal.Diag.readUnaryLength_eq_some_iff_cell`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#read-unary-length-eq-some-iff-cell).
+Formalized by `Cslib.Turing.Universal.Diag.readUnaryLength_eq_some_iff_cell`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#read-unary-length-eq-some-iff-cell).
 
 ## Decoding a list of cells
 
@@ -112,7 +112,7 @@ written in order, each number $n$ as $n$ copies of $\mathrm{true}$ followed by o
 $\mathrm{false}$; distinct lists have distinct cells. The decoder reads one cell at a time
 with the unary length reader.
 
-Formalized by `Cslib.Turing.Universal.Diag.cellsDecode`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#cells-decode).
+Formalized by `Cslib.Turing.Universal.Diag.cellsDecode`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#cells-decode).
 
 ## Reading entries from numbers
 
@@ -122,7 +122,7 @@ a list that starts with $q, a, q', s$ and continues with $l$ gives the entry $(q
 followed by the entries read from $l$, if that succeeds; and the reading fails when the length of
 the list is not a multiple of $4$.
 
-Formalized by `Cslib.Turing.Universal.Diag.entriesOfNums`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#entries-of-nums).
+Formalized by `Cslib.Turing.Universal.Diag.entriesOfNums`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#entries-of-nums).
 
 ## Ascending keys of a list of entries
 
@@ -131,7 +131,7 @@ entries $(q, a, q', s) \in \mathbb{N}^4$, this Boolean test is true exactly when
 $(q, a)$ of the entries strictly increase in lexicographic order and the first key, if there is
 one, is at least $(p_q, p_a)$ in that order.
 
-Formalized by `Cslib.Turing.Universal.Diag.keysAscendFrom`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#keys-ascend-from).
+Formalized by `Cslib.Turing.Universal.Diag.keysAscendFrom`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#keys-ascend-from).
 
 ## The code of a list of entries
 
@@ -142,7 +142,7 @@ columns, and for $q < Q$ and $a < M$ its position $(q, a)$ holds $(q', s)$ for t
 $(q, a, q', s)$ of $E$ with key $(q, a)$, and is empty (halting) if $E$ has no entry with that
 key.
 
-Formalized by `Cslib.Turing.Universal.Diag.codeOfEntries`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-of-entries).
+Formalized by `Cslib.Turing.Universal.Diag.codeOfEntries`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-of-entries).
 
 ## Decoding a code stack
 
@@ -158,7 +158,7 @@ The code stack of a code is the cells of the numbers $q, a, q', s$ of its entrie
 $(q, a, q', s)$, listed by increasing key $(q, a)$; codes with the same code stack have the same
 clocked evaluator.
 
-Formalized by `Cslib.Turing.Universal.decodeCodeCells`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#decode-code-cells).
+Formalized by `Cslib.Turing.Universal.decodeCodeCells`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#decode-code-cells).
 
 ## The diagonal language
 
@@ -169,21 +169,21 @@ either $c$ does not halt on $x$ within $f(|x|)$ steps, or it halts with another 
 that encode no code are not in the language. This is the diagonal language of the proof of
 Sipser's Theorem 9.10.
 
-Formalized by `Cslib.Turing.Universal.diag`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag).
+Formalized by `Cslib.Turing.Universal.diag`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag).
 
 ## Decoding inverts the code stack
 
 For every bit list $x$ and every code $c$, if $x$
 decodes to $c$, then the code stack of $c$ is $x$.
 
-Formalized by `Cslib.Turing.Universal.codeCells_of_decodeCodeCells_eq_some`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-cells-of-decode-code-cells-eq-some).
+Formalized by `Cslib.Turing.Universal.codeCells_of_decodeCodeCells_eq_some`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 521](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L521). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-cells-of-decode-code-cells-eq-some).
 
 ## Code stacks are recognized
 
 For every bit list $x$, the decoding of $x$ as a code
 succeeds iff $x$ is the code stack of some code.
 
-Formalized by `Cslib.Turing.Universal.isSome_decodeCodeCells_iff`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#is-some-decode-code-cells-iff).
+Formalized by `Cslib.Turing.Universal.isSome_decodeCodeCells_iff`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 531](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L531). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#is-some-decode-code-cells-iff).
 
 ## Code stacks, entry by entry
 
@@ -192,14 +192,14 @@ there is a list of entries $(q, a, q', s)$ of natural numbers whose keys $(q, a)
 increase in lexicographic order, such that $x$ is the list of cells of the numbers of these
 entries, four numbers per entry.
 
-Formalized by `Cslib.Turing.Universal.isSome_decodeCodeCells_iff_entries`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#is-some-decode-code-cells-iff-entries).
+Formalized by `Cslib.Turing.Universal.isSome_decodeCodeCells_iff_entries`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#is-some-decode-code-cells-iff-entries).
 
 ## Code stacks decode to codes with the same code stack
 
 For every code $c$, decoding the code
 stack of $c$ succeeds and returns a code $c'$ whose code stack equals the code stack of $c$.
 
-Formalized by `Cslib.Turing.Universal.decodeCodeCells_codeCells`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#decode-code-cells-code-cells).
+Formalized by `Cslib.Turing.Universal.decodeCodeCells_codeCells`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 565](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L565). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#decode-code-cells-code-cells).
 
 ## The diagonal language on a code stack
 
@@ -208,7 +208,7 @@ $f : \mathbb{N} \to \mathbb{N}$ and every code $c$ with code stack $x$, the bit 
 the diagonal language for $f$ iff it is not the case that $c$, run on $x$, halts within $f(|x|)$
 steps with output the single symbol $2$ of the bit true.
 
-Formalized by `Cslib.Turing.Universal.diag_codeCells`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-code-cells).
+Formalized by `Cslib.Turing.Universal.diag_codeCells`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 572](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L572). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-code-cells).
 
 ## Bit lists that encode no code are outside the diagonal language
 
@@ -216,7 +216,7 @@ For every
 $f : \mathbb{N} \to \mathbb{N}$ and every bit list $x$ that is the code stack of no code, $x$ is not
 in the diagonal language of $f$.
 
-Formalized by `Cslib.Turing.Universal.diag_eq_false`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-eq-false).
+Formalized by `Cslib.Turing.Universal.diag_eq_false`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-eq-false).
 
 ## The diagonal language through the universal machine
 
@@ -230,7 +230,7 @@ The clocked universal machine reads the input encoding of a code, an input and a
 writes the output encoding of the result of running the code on the input for at most $T$ steps,
 so the condition is read from its output on $c$, $x$ and $f(|x|)$.
 
-Formalized by `Cslib.Turing.Universal.diag_codeCells_eq_encOut`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 591](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L591). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-code-cells-eq-enc-out).
+Formalized by `Cslib.Turing.Universal.diag_codeCells_eq_encOut`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 591](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L591). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-code-cells-eq-enc-out).
 
 ## The diagonal argument
 
@@ -239,7 +239,7 @@ $f$ is not in the time class of $f$ on codes: no code decides it on every input 
 $f(|x|)$ steps. This is the argument from the proof of Sipser's Theorem 9.10: a code $c$ deciding
 it would, on its own code stack, answer the opposite of the diagonal language of $f$.
 
-Formalized by `Cslib.Turing.Universal.diag_not_mem_codeTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 601](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-not-mem-code-time).
+Formalized by `Cslib.Turing.Universal.diag_not_mem_codeTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 601](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L601). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-not-mem-code-time).
 
 ## A hierarchy within codes, given an upper bound
 
@@ -249,7 +249,7 @@ class of decision problems that some code decides within $t(|x|)$ steps on every
 If the diagonal language $\mathrm{diag}(f)$ belongs to $\mathrm{CodeTime}(g)$, then
 $\mathrm{CodeTime}(f)$ is a proper subclass of $\mathrm{CodeTime}(g)$.
 
-Formalized by `Cslib.Turing.Universal.codeTime_ssubset_of_diag_mem`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time-ssubset-of-diag-mem).
+Formalized by `Cslib.Turing.Universal.codeTime_ssubset_of_diag_mem`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#code-time-ssubset-of-diag-mem).
 
 ## The universal machine's argument for the diagonal language
 
@@ -259,7 +259,7 @@ a clock. If $x$ decodes to a code $c$, it is $(c, x, f(|x|))$. Otherwise it is t
 empty table, the input consisting of the single bit true, and the clock $0$; that code halts at
 once with the answer true, so that the diagonal answer is false there.
 
-Formalized by `Cslib.Turing.Universal.diagArg`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-arg).
+Formalized by `Cslib.Turing.Universal.diagArg`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 625](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L625). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-arg).
 
 ## The reformatting function in bits
 
@@ -269,7 +269,7 @@ on $x$ are, when $x$ encodes a code, the cell of $f(|x|)$, then the cells of the
 $x$, then the bit false, then $x$ reversed; when $x$ encodes no code, they are the fixed list
 $[\mathrm{false}, \mathrm{true}, \mathrm{true}, \mathrm{false}, \mathrm{false}]$.
 
-Formalized by `Cslib.Turing.Universal.encIn_diagArg`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#enc-in-diag-arg).
+Formalized by `Cslib.Turing.Universal.encIn_diagArg`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 633](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L633). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#enc-in-diag-arg).
 
 ## The diagonal answer
 
@@ -277,7 +277,7 @@ For a clocked result $o$, either a timeout or the output of a halted
 run, the diagonal answer of $o$ is false if $o$ is the output consisting of the single symbol $2$,
 the symbol of the bit true, and true otherwise, including on a timeout.
 
-Formalized by `Cslib.Turing.Universal.diagAnswer`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 646](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L646). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-answer).
+Formalized by `Cslib.Turing.Universal.diagAnswer`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 646](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L646). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-answer).
 
 ## The diagonal answer read from the encoded output
 
@@ -286,7 +286,7 @@ timeout or the output of a halted run, the diagonal answer of $o$ is true exactl
 encoding of $o$ differs from the output encoding of the result whose output is the single symbol
 $2$ of the bit true, which is the bit list true, true, true, false.
 
-Formalized by `Cslib.Turing.Universal.diagAnswer_eq_decide_encOut`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-answer-eq-decide-enc-out).
+Formalized by `Cslib.Turing.Universal.diagAnswer_eq_decide_encOut`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 650](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L650). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-answer-eq-decide-enc-out).
 
 ## The diagonal language through the clocked evaluator
 
@@ -296,7 +296,7 @@ argument for the diagonal language of $f$ on $x$. Then the diagonal language of 
 iff the clocked evaluator, running $c$ on $y$ for at most $T$ steps, does not return the output
 $[2]$, the symbol of the answer true.
 
-Formalized by `Cslib.Turing.Universal.diag_eq_comp`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 656](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L656). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-eq-comp).
+Formalized by `Cslib.Turing.Universal.diag_eq_comp`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 656](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L656). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-eq-comp).
 
 ## Stacks of the readout machine
 
@@ -304,7 +304,7 @@ The readout machine, which reads the answer of the
 diagonal language off the output of the clocked universal machine, has exactly two stacks: the
 input stack $X$ and the output stack $O$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.K`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#k-3).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.K`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#k-3).
 
 ## Labels of the readout machine
 
@@ -314,14 +314,14 @@ $r_2$ and $r_3$ read in turn the bits $\mathrm{true}, \mathrm{true}, \mathrm{tru
 output is the single symbol of the bit $\mathrm{true}$; $r_4$ checks that no bit follows;
 $\mathrm{hit}$ and $\mathrm{miss}$ write the answer; and $\mathrm{done}$ stops.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.Lab`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 678](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L678). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lab-3).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.Lab`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 678](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L678). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lab-3).
 
 ## Stack alphabet of the readout machine
 
 Every stack of the readout machine, namely
 the input stack $X$ and the output stack $O$, has the alphabet of bits.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.Γ`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#untitled-3).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.Γ`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 687](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L687). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#untitled-3).
 
 ## Expecting a bit in the readout machine
 
@@ -329,7 +329,7 @@ For a bit $b$ and a label $\ell$, the statement
 that pops the top of the input stack $X$ and goes to $\ell$ if the popped symbol is $b$, and to the
 label miss otherwise, including when $X$ is empty.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.expect`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 690](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L690). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#expect).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.expect`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 690](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L690). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#expect).
 
 ## Program of the readout machine
 
@@ -341,7 +341,7 @@ pushes $\mathrm{false}$ onto its output stack $O$; otherwise (at the first bit t
 when the input ends early, or when a fifth bit follows) it pushes $\mathrm{true}$. Then it
 halts.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.prog`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#prog-3).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.prog`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 695](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L695). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#prog-3).
 
 ## The readout machine as a host component
 
@@ -351,7 +351,7 @@ those of the readout machine, which checks whether $X$ holds exactly
 $(\mathrm{true}, \mathrm{true}, \mathrm{true}, \mathrm{false})$ and pushes $\mathrm{false}$ on
 $O$ if so and $\mathrm{true}$ otherwise, and whose list of stacks is $(X, O)$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.comp`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#comp-3).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.comp`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 706](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L706). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#comp-3).
 
 ## The readout run
 
@@ -363,7 +363,7 @@ $l \ne [\mathrm{true}, \mathrm{true}, \mathrm{true}, \mathrm{false}]$, the list 
 the output of the clocked universal machine, a halt whose output is the single symbol of the bit
 $\mathrm{true}$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 718](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L718). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#run-3).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 718](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L718). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#run-3).
 
 ## The readout on raw bits in polynomial time
 
@@ -374,7 +374,7 @@ $|l|$, with output the one-bit list $[b]$, where $b$ is true if and only if $l$ 
 output encoding of the result whose output is the single symbol $2$ of the bit true, that is,
 from the list true, true, true, false.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.bitsPolyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#bits-poly-time).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.bitsPolyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 730](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L730). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#bits-poly-time).
 
 ## The readout in polynomial time
 
@@ -385,7 +385,7 @@ of steps polynomial in the length of $\mathrm{encOut}(o)$. Here $\mathrm{diagAns
 $\mathrm{true}$ unless $o$ is a halt whose output is the single symbol of the bit
 $\mathrm{true}$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Readout.polyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#poly-time-3).
+Formalized by `Cslib.Turing.Universal.Diag.Readout.polyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 740](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L740). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#poly-time-3).
 
 ## The diagonal language in polynomial time, given the reformatting machine
 
@@ -401,7 +401,7 @@ one-bit list $[\mathrm{diag}_f(x)]$.
 The machine runs the reformatting machine, then the clocked universal machine, then the
 readout machine.
 
-Formalized by `Cslib.Turing.Universal.nonempty_diag_polyTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 754](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L754). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#nonempty-diag-poly-time).
+Formalized by `Cslib.Turing.Universal.nonempty_diag_polyTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean, line 754](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/Diagonalization.lean#L754). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#nonempty-diag-poly-time).
 
 ## Cell-by-cell check of a code stack
 
@@ -416,7 +416,7 @@ the key $(q, a + 1)$.
 
 The reformatting machine checks its input this way.
 
-Formalized by `Cslib.Turing.Universal.Diag.chkFrom`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#chk-from).
+Formalized by `Cslib.Turing.Universal.Diag.chkFrom`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#chk-from).
 
 ## The cell-by-cell check recognizes code stacks
 
@@ -428,14 +428,14 @@ $q_1, a_1, q'_1, s_1, \dots, q_m, a_m, q'_m, s_m$, in this order, and the keys $
 strictly increase in lexicographic order, starting at $(p_q, p_a)$ or above. Here the cell of a
 number $n$ is $n$ bits $\mathrm{true}$ followed by one bit $\mathrm{false}$.
 
-Formalized by `Cslib.Turing.Universal.Diag.chkFrom_iff`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#chk-from-iff).
+Formalized by `Cslib.Turing.Universal.Diag.chkFrom_iff`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#chk-from-iff).
 
 ## Stacks of the checking machine
 
 The checking machine has twelve stacks, named
 $X, Y, W, V, Q, A, P_Q, P_A, T_1, T_2, J, O$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.K`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#k).
+Formalized by `Cslib.Turing.Universal.Diag.Check.K`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#k).
 
 ## Labels of the checking machine
 
@@ -443,14 +443,14 @@ The labels of the checking machine: 23 labels without
 arguments and four families of labels indexed by the outcome of a comparison ($<$, $=$ or $>$),
 35 distinct labels in all.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.Lab`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lab).
+Formalized by `Cslib.Turing.Universal.Diag.Check.Lab`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lab).
 
 ## Stack alphabet of the layout machine
 
 Every stack of the layout machine holds bits: the
 alphabet of each stack is the type of Booleans.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.Γ`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#untitled).
+Formalized by `Cslib.Turing.Universal.Diag.Check.Γ`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#untitled).
 
 ## Branch after comparing states
 
@@ -460,7 +460,7 @@ state $q$ of the current key: if $p < q$, the label $\mathsf{sk0}$, where it sta
 rest of the entry; if $p = q$, the label $\mathsf{ca}$, where it compares the symbols; if
 $p > q$, the label $\mathsf{bad}$, where it rejects.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.outQ`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#out-q).
+Formalized by `Cslib.Turing.Universal.Diag.Check.outQ`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#out-q).
 
 ## Branch after comparing symbols
 
@@ -469,7 +469,7 @@ the bound $p$ for the symbol with the symbol $a$ of the current key: if $p > a$,
 $\mathsf{bad}$, where it rejects; if $p < a$ or $p = a$, the label $\mathsf{sk0}$, where it starts
 skipping the rest of the entry.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.outA`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#out-a).
+Formalized by `Cslib.Turing.Universal.Diag.Check.outA`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#out-a).
 
 ## Program of the checking machine
 
@@ -488,7 +488,7 @@ onto $J$, empties $P_Q$ and $P_A$, moves $Q$ onto $P_Q$ and $A$ onto $P_A$ (push
 each bit popped), pushes one more $1$ on $P_A$ and loops again. Rejecting pushes a single $0$ on
 $O$ and halts.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.prog`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#prog).
+Formalized by `Cslib.Turing.Universal.Diag.Check.prog`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 431](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L431). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#prog).
 
 ## Answer of the checking machine
 
@@ -496,7 +496,7 @@ For a bit list $x$, the answer is the list $x$ with
 the bit $\mathrm{true}$ put in front if the cell-by-cell check of $x$ from the key $(0, 0)$
 succeeds, and the one-bit list $[\mathrm{false}]$ otherwise.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.answer`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#answer).
+Formalized by `Cslib.Turing.Universal.Diag.Check.answer`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#answer).
 
 ## The checking run
 
@@ -505,7 +505,7 @@ $\mathsf{dupP}$ with internal state false, with $x$ on its input stack $X$ and e
 empty, reaches the label $\mathsf{done}$ within $33(|x| + 1)^2$ steps, with some internal state
 and stacks in which the output stack $O$ holds the answer of the checking machine on $x$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 689](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L689). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#run).
+Formalized by `Cslib.Turing.Universal.Diag.Check.run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 689](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L689). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#run).
 
 ## The checking machine as a host component
 
@@ -514,7 +514,7 @@ $X, Y, W, V, Q, A, P_Q, P_A, T_1, T_2, J, O$ of the checking machine, each holdi
 the labels and the program of the checking machine, and with its stacks listed in the order
 $X, Y, W, V, Q, A, P_Q, P_A, T_1, T_2, J, O$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.comp`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#comp).
+Formalized by `Cslib.Turing.Universal.Diag.Check.comp`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#comp).
 
 ## The checking machine in polynomial time
 
@@ -522,14 +522,14 @@ A finite multi-stack Turing machine with a
 polynomial time bound that computes the checking answer: given a bit list $x$ as its input, it
 halts within the bound, evaluated at $|x|$, with the checking answer on $x$ as its output.
 
-Formalized by `Cslib.Turing.Universal.Diag.Check.polyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#poly-time).
+Formalized by `Cslib.Turing.Universal.Diag.Check.polyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 742](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L742). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#poly-time).
 
 ## Stacks of the layout machine
 
 The layout machine has twelve stacks, named
 $X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.K`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 760](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L760). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#k-2).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.K`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 760](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L760). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#k-2).
 
 ## Labels of the layout machine
 
@@ -538,14 +538,14 @@ $\mathsf{mvZ}$, $\mathsf{cp0}$, $\mathsf{cp1}$, $\mathsf{lo0}$, $\mathsf{lo1}$, 
 $\mathsf{lo3}$, $\mathsf{lo4}$, $\mathsf{mh}$, $\mathsf{mb}$, $\mathsf{mk}$, $\mathsf{mr}$,
 $\mathsf{lo5}$, $\mathsf{lo6}$, $\mathsf{bad}$ and $\mathsf{done}$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.Lab`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 769](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lab-2).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.Lab`, an inductive type declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 769](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L769). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#lab-2).
 
 ## Stack symbols of the layout machine
 
 Every stack of the layout machine holds bits: the
 alphabet of each of its stacks is the type of Booleans.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.Γ`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 780](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L780). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#untitled-2).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.Γ`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 780](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L780). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#untitled-2).
 
 ## Program of the layout machine
 
@@ -563,7 +563,7 @@ loops: it pops $A_2$; if a bit was popped, it pushes a $1$ on $D$, transfers $B_
 $T$, transfers $T$ to $B_2$ and loops again; if $A_2$ was empty, it transfers $D$ to $A_2$.
 Finally it pushes $0, 1$ on $O$ in this order, transfers $C$ to $O$ and halts.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.prog`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 784](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L784). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#prog-2).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.prog`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 784](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L784). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#prog-2).
 
 ## The layout function
 
@@ -575,7 +575,7 @@ each bit $\mathrm{false}$), then the bit $\mathrm{false}$, then the reverse of $
 bit list, that is, the empty list or a list starting with $\mathrm{false}$, it returns the list
 $[\mathrm{false}, \mathrm{true}, \mathrm{true}, \mathrm{false}, \mathrm{false}]$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.layout`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 850](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L850). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#layout).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.layout`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 850](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L850). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#layout).
 
 ## The layout run
 
@@ -584,7 +584,7 @@ $\mathsf{s0}$ with internal state false, with $y$ on its input stack $X$ and eve
 empty, reaches the label $\mathsf{done}$ within $18(|y| + 1)^2$ steps, with some internal state
 and stacks in which the output stack $O$ holds the layout of $y$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 856](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L856). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#run-2).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.run`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 856](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L856). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#run-2).
 
 ## The cell-by-cell check agrees with code-stack decoding
 
@@ -592,7 +592,7 @@ For every bit list $x$, the
 cell-by-cell check of $x$ from the key $(0, 0)$ succeeds if and only if the decoding of $x$ as a
 code stack returns a code.
 
-Formalized by `Cslib.Turing.Universal.Diag.chkFrom_zero`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 962](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L962). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#chk-from-zero).
+Formalized by `Cslib.Turing.Universal.Diag.chkFrom_zero`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 962](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L962). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#chk-from-zero).
 
 ## The layout machine as a host component
 
@@ -601,7 +601,7 @@ $X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$ of the layout machine, each holding b
 labels and the program of the layout machine, and with its stacks listed in the order
 $X, Z, P, P_2, U, N, A_2, B_2, D, C, T, O$.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.comp`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 968](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L968). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#comp-2).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.comp`, an abbreviation declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 968](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L968). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#comp-2).
 
 ## The layout in polynomial time
 
@@ -610,7 +610,7 @@ output alphabets are identified with the bits, together with a polynomial time b
 computes the layout function: given a bit list $y$ as its input, it halts within the bound,
 evaluated at $|y|$, with the layout of $y$ as its output.
 
-Formalized by `Cslib.Turing.Universal.Diag.Layout.polyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#poly-time-2).
+Formalized by `Cslib.Turing.Universal.Diag.Layout.polyTime`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#poly-time-2).
 
 ## Layout after checking gives the universal machine's input
 
@@ -619,7 +619,7 @@ $(c, y, T)$ be the universal machine's argument for the diagonal language of $f(
 $x$. Then the layout function applied to the checking machine's answer on $x$ equals the input
 bit list of the clocked universal machine for the code $c$, the input $y$ and the clock $T$.
 
-Formalized by `Cslib.Turing.Universal.Diag.layout_answer`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 992](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L992). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#layout-answer).
+Formalized by `Cslib.Turing.Universal.Diag.layout_answer`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 992](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L992). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#layout-answer).
 
 ## The reformatting machine for $n \mapsto n^2 + 1$
 
@@ -631,7 +631,7 @@ the universal machine's argument $(c, w, T)$ for the diagonal language of $f$ at
 $T$ as a cell, the cells of the input symbols of $w$, a blank cell and the code stack of $c$
 reversed. It runs the checking machine and then the layout machine.
 
-Formalized by `Cslib.Turing.Universal.Diag.reformat`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1002](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1002). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#reformat).
+Formalized by `Cslib.Turing.Universal.Diag.reformat`, a definition declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1002](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1002). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#reformat).
 
 ## Deciding the diagonal language on raw bits in polynomial time
 
@@ -640,7 +640,7 @@ language for the time bound $f(n) = n^2 + 1$. There is a finite multi-stack Turi
 given a bit list $x$ as its input, halts within a number of steps polynomial in $|x|$ with the
 single bit $D(x)$ as its output.
 
-Formalized by `Cslib.Turing.Universal.nonempty_diag_sq_add_one_polyTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#nonempty-diag-sq-add-one-poly-time).
+Formalized by `Cslib.Turing.Universal.nonempty_diag_sq_add_one_polyTime`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1017](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1017). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#nonempty-diag-sq-add-one-poly-time).
 
 ## The quadratic diagonal language is in P
 
@@ -652,7 +652,7 @@ decidable in polynomial time.
 The decider decodes the canonical encoding of bit lists and then runs a polynomial-time decider
 on the raw bits.
 
-Formalized by `Cslib.Turing.Universal.diag_sq_add_one_mem_P`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1025](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1025). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-sq-add-one-mem-p).
+Formalized by `Cslib.Turing.Universal.diag_sq_add_one_mem_P`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1025](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1025). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#diag-sq-add-one-mem-p).
 
 ## Diagonalization across models
 
@@ -664,7 +664,7 @@ The diagonal language for the time bound $n \mapsto n^2 + 1$ is such a problem. 
 problems that codes decide within $n^2 + 1$ steps is not empty: it contains the problem whose
 answer is always $\mathrm{false}$.
 
-Formalized by `Cslib.Turing.Universal.exists_mem_P_not_mem_codeTime_sq_add_one`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1034](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1034). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#exists-mem-p-not-mem-code-time-sq-add-on).
+Formalized by `Cslib.Turing.Universal.exists_mem_P_not_mem_codeTime_sq_add_one`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1034](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1034). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#exists-mem-p-not-mem-code-time-sq-add-on).
 
 ## Polynomial time is not contained in code time $n^2 + 1$
 
@@ -672,7 +672,7 @@ Some decision problem in
 $\mathsf{P}$ is decided by no code within $n^2 + 1$ steps on every input of length $n$; that is,
 $\mathsf{P}$ is not a subset of the class $\mathrm{CodeTime}(n \mapsto n^2 + 1)$.
 
-Formalized by `Cslib.Turing.Universal.not_P_subset_codeTime_sq_add_one`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1039](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1039). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#not-p-subset-code-time-sq-add-one).
+Formalized by `Cslib.Turing.Universal.not_P_subset_codeTime_sq_add_one`, a theorem declared in [CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean, line 1039](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Machines/Turing/Universal/DiagonalDecider.lean#L1039). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#not-p-subset-code-time-sq-add-one).
 
 ## There is an EXP language outside P (time-hierarchy separation)
 
@@ -685,7 +685,7 @@ Only this separation is stated; the containment of P in EXP is not part of the s
 
 - J. Hartmanis and R. E. Stearns, "On the computational complexity of algorithms", Transactions of the American Mathematical Society 117 (1965), 285-306; S. Arora and B. Barak, Computational Complexity: A Modern Approach, 2009, Corollary 3.5.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.PneqEXP.p_ne_exp` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/PneqEXPWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/PneqEXPWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#p-ne-exp).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.PneqEXP.p_ne_exp` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/PneqEXPWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/PneqEXPWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#p-ne-exp).
 
 ## Deterministic time hierarchy: quadratic versus linear time
 
@@ -697,7 +697,7 @@ $\mathrm{DTIME}(n)$.
 
 - J. Hartmanis and R. E. Stearns, "On the computational complexity of algorithms", Transactions of the American Mathematical Society 117 (1965), 285-306.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.TimeHierarchy.time_hierarchy` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/TimeHierarchyWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/TimeHierarchyWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#time-hierarchy).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.TimeHierarchy.time_hierarchy` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/TimeHierarchyWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/TimeHierarchyWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html#time-hierarchy).
 
 ## Depends on
 
@@ -706,4 +706,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Time hierarchy theorem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/hierarchy-theorems-and-barriers/time-hierarchy-theorem)

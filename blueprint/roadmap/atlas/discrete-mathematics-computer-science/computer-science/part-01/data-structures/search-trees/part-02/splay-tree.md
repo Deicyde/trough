@@ -8,14 +8,14 @@ proof: formalized
 
 # Splay tree
 
-22 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html).
+22 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html).
 
 ## Root key of a splay tree
 
 The optional root key of a binary tree is undefined (none) for
 the empty tree, and is the key $k$ for a tree whose root node holds $k$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.root?`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.root?`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root).
 
 ## Splay operation
 
@@ -38,14 +38,14 @@ if $x$ is absent. Each recursive step consumes two edges of this path, starting 
 when the path has an odd number of edges the single rotation is performed on its last edge, the
 one farthest from the root.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.splay`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#splay).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.splay`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#splay).
 
 ## Splaying the empty tree
 
 For every key $x$ of a linearly ordered type, splaying $x$ in the
 empty binary tree gives the empty tree.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.splay_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#splay-nil).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.splay_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#splay-nil).
 
 ## Splaying preserves the inorder traversal
 
@@ -53,7 +53,7 @@ For every key $x$ and every binary tree $t$
 over a linearly ordered type, the inorder traversal of the tree obtained by splaying $x$ in $t$
 equals the inorder traversal of $t$. No search-tree ordering of $t$ is assumed.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.inorder_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#inorder-splay).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.inorder_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#inorder-splay).
 
 ## Splaying preserves membership
 
@@ -61,7 +61,7 @@ For keys $x$ and $y$ and a binary tree $t$ over a linearly
 ordered type, $y$ is a key of the tree obtained by splaying $x$ in $t$ if and only if $y$ is a
 key of $t$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-splay).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-splay).
 
 ## Splaying preserves the number of nodes
 
@@ -69,7 +69,7 @@ For every binary tree $t$ with keys in a linearly
 ordered type and every key $x$, the tree obtained by splaying $x$ in $t$ has the same number of
 nodes as $t$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.numNodes_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#num-nodes-splay).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.numNodes_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 397](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L397). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#num-nodes-splay).
 
 ## Splaying preserves the search-tree property
 
@@ -79,7 +79,7 @@ key of the left subtree is strictly smaller and every key of the right subtree s
 than the key of the node), then the tree obtained by splaying $x$ in $t$ is again a binary search
 tree.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.ordered_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#ordered-splay).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.ordered_splay`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 421](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L421). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#ordered-splay).
 
 ## Splaying a present key brings it to the root
 
@@ -89,7 +89,7 @@ every key of the right subtree strictly larger than the key of the node), and le
 that occurs in $t$. Then there are binary trees $l$ and $r$ such that splaying $x$ in $t$ gives
 the tree whose root holds $x$, with left subtree $l$ and right subtree $r$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.root_splay_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root-splay-of-mem).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.root_splay_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 545](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L545). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root-splay-of-mem).
 
 ## Root key after splaying a present key
 
@@ -98,7 +98,7 @@ linearly ordered type (at every node, every key of the left subtree is strictly 
 key of the right subtree strictly larger than the key of the node), and let $x$ be a key that
 occurs in $t$. Then the tree obtained by splaying $x$ in $t$ is nonempty and its root key is $x$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.root?_splay_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root-splay-of-mem-2).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.root?_splay_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root-splay-of-mem-2).
 
 ## Search-path split at a key
 
@@ -115,7 +115,7 @@ smaller and those of the right subtree strictly larger than the node's key), the
 holds the keys below $x$ and the second part the keys above $x$; the key $x$, if present, is
 dropped.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.split`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#split).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.split`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 563](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L563). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#split).
 
 ## Splay-tree split parts contain only original keys
 
@@ -123,7 +123,7 @@ For keys $x$ and $y$ and a binary
 tree $t$ over a linearly ordered type, if $y$ is a key of the left part or of the right part of
 the split of $t$ at $x$, then $y$ is a key of $t$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_of_mem_split`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-of-mem-split).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_of_mem_split`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-of-mem-split).
 
 ## Keys other than the split key survive a split
 
@@ -132,7 +132,7 @@ linearly ordered type, and let $x$ and $y$ be keys with $y \ne x$. If $y$ occurs
 then $y$ occurs as a key of the left part or of the right part of the split of $t$ at $x$.
 The tree $t$ need not be a binary search tree.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_split_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-split-of-mem).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_split_of_mem`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 654](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L654). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-split-of-mem).
 
 ## Splitting an ordered tree separates the keys around the split key
 
@@ -141,7 +141,7 @@ binary tree over a linearly ordered type and let $x$ be a key. When $t$ is split
 key of the left part is strictly less than $x$ and every key of the right part is strictly
 greater than $x$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.all_split`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#all-split).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.all_split`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#all-split).
 
 ## Both parts of a split search tree are search trees
 
@@ -151,7 +151,7 @@ key of the left subtree is strictly smaller and every key of the right subtree s
 than the key of the node), then the left part and the right part of the split of $t$ at $x$ are
 both binary search trees.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.ordered_split`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#ordered-split).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.ordered_split`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#ordered-split).
 
 ## Splay-tree insertion
 
@@ -163,7 +163,7 @@ and whose right subtree is the right part.
 In an ordered tree that already contains $x$, the key is splayed to the root and dropped by the
 split, so no duplicate is created.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.insert`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#insert).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.insert`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#insert).
 
 ## Splay-tree access
 
@@ -171,7 +171,7 @@ For a key $x$ and a binary tree $t$ over a linearly ordered type, the
 access of $x$ in $t$ is the pair $(b, t')$, where $t'$ is the tree obtained by splaying $x$ in
 $t$ and $b$ is true exactly when $t'$ is nonempty and its root key is $x$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.access`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#access).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.access`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 748](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L748). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#access).
 
 ## Splay-tree membership test
 
@@ -180,7 +180,7 @@ type, the membership test of $x$ in $t$ is the Boolean component of the access o
 it is true exactly when the tree obtained by splaying $x$ in $t$ is nonempty and its root key
 is $x$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.contains`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 754](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L754). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#contains).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.contains`, a definition declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 754](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L754). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#contains).
 
 ## The tree returned by a splay-tree access
 
@@ -188,7 +188,7 @@ For a key $x$ and a binary tree $t$ over a
 linearly ordered type, the tree component of the access of $x$ in $t$ is the tree obtained by
 splaying $x$ in $t$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.access_snd`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#access-snd).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.access_snd`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#access-snd).
 
 ## Keys after splay-tree insertion
 
@@ -196,7 +196,7 @@ For keys $x$ and $y$ and a binary tree $t$ over a
 linearly ordered type, $y$ is a key of the tree obtained by splay-tree insertion of $x$ into $t$
 if and only if $y = x$ or $y$ is a key of $t$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_insert`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-insert).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.mem_insert`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 764](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L764). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#mem-insert).
 
 ## Splay-tree insertion preserves the search-tree property
 
@@ -206,7 +206,7 @@ every key of the left subtree is strictly smaller and every key of the right sub
 larger than the key of the node), then the splay-tree insertion of $x$ into $t$ is again a binary
 search tree.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.ordered_insert`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#ordered-insert).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.ordered_insert`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#ordered-insert).
 
 ## Splay-tree insertion puts the inserted key at the root
 
@@ -214,7 +214,7 @@ For every binary tree $t$ with keys
 in a linearly ordered type and every key $x$, the splay-tree insertion of $x$ into $t$ is a
 nonempty tree whose root key is $x$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.root?_insert`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root-insert).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.root?_insert`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#root-insert).
 
 ## Correctness of the splay-tree membership test
 
@@ -222,7 +222,7 @@ For an ordered binary tree $t$ over a
 linearly ordered type and a key $x$, the splay-tree membership test of $x$ in $t$ returns true
 if and only if $x$ is a key of $t$.
 
-Formalized by `Cslib.Algorithms.Lean.SplayTree.contains_eq_true_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 798](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#contains-eq-true-iff).
+Formalized by `Cslib.Algorithms.Lean.SplayTree.contains_eq_true_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean, line 798](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/DataStructures/SplayTree.lean#L798). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html#contains-eq-true-iff).
 
 ## Depends on
 
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Splay tree](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/data-structures/search-trees/splay-tree/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/data-structures/search-trees/splay-tree)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/data-structures/search-trees/splay-tree)

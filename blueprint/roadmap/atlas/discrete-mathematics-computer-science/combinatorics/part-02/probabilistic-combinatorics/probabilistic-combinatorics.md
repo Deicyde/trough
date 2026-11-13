@@ -8,7 +8,7 @@ proof: formalized
 
 # Probabilistic combinatorics: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/index.html).
 
 Probabilistic methods and random discrete structures outside random graphs: the Lovász local lemma, Littlewood–Offord and Tomaszewski anti-concentration for signed sums, concentration of subset sums, the isolation lemma, thresholds and expectation thresholds, random k-SAT thresholds, perfect matchings in random hypergraphs, the Chvátal–Sankoff constant for longest common subsequences, and moment-based counting bounds.
 
@@ -26,7 +26,7 @@ minimum-weight member of $\mathcal{F}$ is unique with probability at least $1/2$
 
 - https://en.wikipedia.org/wiki/Isolation_lemma
 
-Formalized by `MetaMathlibExt.isolation_lemma`, a theorem declared in [MathlibExt/Combinatorics/IsolationLemma.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/IsolationLemma.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/index.html#isolation-lemma).
+Formalized by `MetaMathlibExt.isolation_lemma`, a theorem declared in [MathlibExt/Combinatorics/IsolationLemma.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/IsolationLemma.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/index.html#isolation-lemma).
 
 ## Symmetric Lovász Local Lemma
 
@@ -49,7 +49,7 @@ neighbour of $i$.
 
 - N. Alon and J. H. Spencer, The Probabilistic Method, third edition, Wiley, 2008, Corollary 5.1.2, for the criterion $e p (d + 1) \le 1$; the original local lemma of P. Erdős and L. Lovász (1975) gives the earlier weaker criterion $4 p d \le 1$.
 
-Formalized by `MathlibExt.Probability.Combinatorics.LovaszLocalLemma.lovasz_local_lemma_symmetric_finite`, a theorem declared in [MathlibExt/Probability/Combinatorics/LovaszLocalLemma.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Combinatorics/LovaszLocalLemma.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/index.html#lovasz-local-lemma-symmetric-finite).
+Formalized by `MathlibExt.Probability.Combinatorics.LovaszLocalLemma.lovasz_local_lemma_symmetric_finite`, a theorem declared in [MathlibExt/Probability/Combinatorics/LovaszLocalLemma.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Combinatorics/LovaszLocalLemma.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/index.html#lovasz-local-lemma-symmetric-finite).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Probabilistic combinatorics](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/probabilistic-combinatorics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/probabilistic-combinatorics)

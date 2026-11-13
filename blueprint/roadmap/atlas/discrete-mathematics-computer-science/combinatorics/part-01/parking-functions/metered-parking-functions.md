@@ -7,7 +7,7 @@ statement: formalized
 
 # Metered parking functions
 
-37 results, 13 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html).
+37 results, 13 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html).
 
 ## Outcome of the metered parking scheme
 
@@ -23,7 +23,7 @@ and only the cars among the last $t$ entries of the outcome so far occupy spots.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 1 (definition of the `t`-metered scheme) and Section 2 (definition of the outcome).
 
-Formalized by `MetaMathlibExt.meteredOutcome`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome).
+Formalized by `MetaMathlibExt.meteredOutcome`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome).
 
 ## A 1-metered example in which every car parks
 
@@ -37,7 +37,7 @@ In the source's one-based numbering: preferences $(1, 1, 1)$ give spots $1, 2, 1
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, example after the definition of `t`-metered parking functions (Section 1).
 
-Formalized by `MetaMathlibExt.meteredOutcome_one_two_ones`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-one-two-ones).
+Formalized by `MetaMathlibExt.meteredOutcome_one_two_ones`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-one-two-ones).
 
 ## A 1-metered example in which the third car fails
 
@@ -51,7 +51,7 @@ In the source's one-based numbering: with preferences $(1, 1, 2)$, car $3$ fails
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, example after the definition of `t`-metered parking functions (Section 1).
 
-Formalized by `MetaMathlibExt.meteredOutcome_one_two_fail`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-one-two-fail).
+Formalized by `MetaMathlibExt.meteredOutcome_one_two_fail`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-one-two-fail).
 
 ## Metered outcomes of a seven-car example on six spots
 
@@ -68,7 +68,7 @@ $O^1_6(3,3,3,3,4,5,6) = (3,4,3,4,5,6,X)$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, example after the definition of the outcome (Section 2).
 
-Formalized by `MetaMathlibExt.meteredOutcome_example_six`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-example-six).
+Formalized by `MetaMathlibExt.meteredOutcome_example_six`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-example-six).
 
 ## Metered parking function
 
@@ -83,7 +83,7 @@ Then $f$ is a $t$-metered parking function if every car parks.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 1 (definition of `t`-metered parking functions).
 
-Formalized by `MetaMathlibExt.IsMeteredParkingFunction`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function).
+Formalized by `MetaMathlibExt.IsMeteredParkingFunction`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function).
 
 ## Number of metered parking functions
 
@@ -96,7 +96,7 @@ car parks in the $t$-metered parking scheme.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 1 (definition and the notation `mpf_{m,n}(t)`).
 
-Formalized by `MetaMathlibExt.meteredParkingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count).
+Formalized by `MetaMathlibExt.meteredParkingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count).
 
 ## 1-metered parking functions with two cars and two spots
 
@@ -109,7 +109,7 @@ This is an entry of the source's Table 1.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Table 1.
 
-Formalized by `MetaMathlibExt.meteredParkingCount_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-two-two).
+Formalized by `MetaMathlibExt.meteredParkingCount_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-two-two).
 
 ## Lucky cars in the metered scheme
 
@@ -122,7 +122,7 @@ that park in their preferred spot $f(i)$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 2 (`lucky(α)`).
 
-Formalized by `MetaMathlibExt.meteredLuckyCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-lucky-count).
+Formalized by `MetaMathlibExt.meteredLuckyCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-lucky-count).
 
 ## One step of the lace decomposition
 
@@ -139,7 +139,7 @@ result is again a lace.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 3 (definitions of a lace and of the lace decomposition).
 
-Formalized by `MetaMathlibExt.laceStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#lace-step).
+Formalized by `MetaMathlibExt.laceStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#lace-step).
 
 ## Lace decomposition
 
@@ -154,7 +154,7 @@ starts a new block $(a_i)$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 3 (definitions of a lace and of the lace decomposition).
 
-Formalized by `MetaMathlibExt.laceDecomposition`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#lace-decomposition).
+Formalized by `MetaMathlibExt.laceDecomposition`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#lace-decomposition).
 
 ## Examples of lace decompositions
 
@@ -166,7 +166,7 @@ $((4), (1), (2, 2, 3, 4, 5), (5), (1), (2))$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 3, example after the definition of the lace decomposition.
 
-Formalized by `MetaMathlibExt.laceDecomposition_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#lace-decomposition-examples).
+Formalized by `MetaMathlibExt.laceDecomposition_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#lace-decomposition-examples).
 
 ## Window condition for metered parking functions
 
@@ -184,7 +184,7 @@ $1, \dots, i$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.metered_window_count_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-window-count-ge).
+Stated but not proved: `MetaMathlibExt.metered_window_count_ge` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-window-count-ge).
 
 ## Vanishing of metered parking counts
 
@@ -196,7 +196,7 @@ $\mathrm{mpf}_{m,n}(t) = 0$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-eq-zero).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-eq-zero).
 
 ## Metered parking functions with a long meter are classical
 
@@ -208,7 +208,7 @@ function if and only if it is a partial parking function with $m$ cars and $n$ s
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_iff_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-iff-of-le).
+Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_iff_of_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-iff-of-le).
 
 ## Classical parking functions are metered parking functions
 
@@ -220,7 +220,7 @@ $t \in \mathbb{N}$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.IsPartialParkingFunction.isMeteredParkingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-2).
+Stated but not proved: `MetaMathlibExt.IsPartialParkingFunction.isMeteredParkingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-2).
 
 ## Displacement bound in the metered scheme
 
@@ -237,7 +237,7 @@ has $a_i \ge n - t + 1$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.meteredOutcome_displacement_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-displacement-le).
+Stated but not proved: `MetaMathlibExt.meteredOutcome_displacement_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-outcome-displacement-le).
 
 ## Lower bound for the number of metered parking functions
 
@@ -249,7 +249,7 @@ $m$ and $n$, $\mathrm{mpf}_{m,n}(t) \ge (n - t)^m$, where $n - t$ is truncated s
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.pow_sub_le_meteredParkingCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#pow-sub-le-metered-parking-count).
+Stated but not proved: `MetaMathlibExt.pow_sub_le_meteredParkingCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#pow-sub-le-metered-parking-count).
 
 ## Metered parking functions with two cars
 
@@ -261,7 +261,7 @@ $\mathrm{mpf}_{2,n}(t) = \max(n^2 - 1, 0)$, that is, $n^2 - 1$ for $n \ge 1$ and
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-two).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-two).
 
 ## Lucky cars of 1-metered parking are the lace starts
 
@@ -275,7 +275,7 @@ laces of the lace decomposition $\mathrm{lace}(\alpha)$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.one_metered_lucky_iff_lace_start` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#one-metered-lucky-iff-lace-start).
+Stated but not proved: `MetaMathlibExt.one_metered_lucky_iff_lace_start` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#one-metered-lucky-iff-lace-start).
 
 ## One-metered parking functions and laces
 
@@ -288,7 +288,7 @@ no lace other than as its first entry.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_one_iff_lace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-one-iff-lace).
+Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_one_iff_lace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-one-iff-lace).
 
 ## One-metered parking functions with two spots
 
@@ -301,7 +301,7 @@ contains the value $1$ has length $1$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_one_two_iff_lace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-one-two-iff).
+Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_one_two_iff_lace` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-one-two-iff).
 
 ## Equal last-spot counts for 1-metered parking functions
 
@@ -313,7 +313,7 @@ last car parks in spot $j$ equals the number of those whose last car parks in sp
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.one_metered_last_spot_card_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#one-metered-last-spot-card-eq).
+Stated but not proved: `MetaMathlibExt.one_metered_last_spot_card_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#one-metered-last-spot-card-eq).
 
 ## 1-metered parking functions whose last car parks in the last spot
 
@@ -328,7 +328,7 @@ The source leaves $1 \le m$ implicit (there is a last car).
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.one_metered_last_spot_n_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#one-metered-last-spot-n-card).
+Stated but not proved: `MetaMathlibExt.one_metered_last_spot_n_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#one-metered-last-spot-n-card).
 
 ## Lucas-type recursion for 1-metered parking functions
 
@@ -345,7 +345,7 @@ where the subtraction is taken in the integers.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-recursion).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-recursion).
 
 ## 1-metered parking functions with as many cars as spots
 
@@ -358,7 +358,7 @@ $$\mathrm{mpf}_{n,n}(1) = \sum_{k=0}^{n} (n-2)^{n-k} \binom{2n+1-k}{k}.$$
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-diag).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_diag` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-diag).
 
 ## Binet formula for 1-metered parking functions
 
@@ -375,7 +375,7 @@ $$\mathrm{mpf}_{m,n}(1) = \frac{n(n + \sqrt{n^2-4}) - 2}{n(n + \sqrt{n^2-4}) - 4
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_binet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-binet).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_binet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-binet).
 
 ## 1-metered parking functions with three cars
 
@@ -386,7 +386,7 @@ number of $1$-metered $(3, n)$-parking functions is $\mathrm{mpf}_{3,n}(1) = n^3
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-three).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_one_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-one-three).
 
 ## Metered parking functions in which every car is lucky
 
@@ -403,7 +403,7 @@ $(t-1)!\,(n-m+1)\,t^{m-t}$ gives $-1$).
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Proposition 8, Equation (13).
 
-Stated but not proved: `MetaMathlibExt.metered_all_lucky_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-all-lucky-card).
+Stated but not proved: `MetaMathlibExt.metered_all_lucky_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-all-lucky-card).
 
 ## Closed form for (m-2)-metered parking functions
 
@@ -428,7 +428,7 @@ the same with exponents truncated at $0$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_sub_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-sub-two).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_sub_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 329](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L329). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-sub-two).
 
 ## Parking functions with a given first entry
 
@@ -452,7 +452,7 @@ exact counts.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.parkingFunction_first_entry_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#parking-function-first-entry-card).
+Stated but not proved: `MetaMathlibExt.parkingFunction_first_entry_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#parking-function-first-entry-card).
 
 ## Metered parking functions with one spot fewer than cars
 
@@ -470,7 +470,7 @@ formula is the same with exponents truncated at $0$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.meteredParkingCount_sub_two_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-sub-two-pred).
+Stated but not proved: `MetaMathlibExt.meteredParkingCount_sub_two_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#metered-parking-count-sub-two-pred).
 
 ## Parking-function shuffles
 
@@ -493,7 +493,7 @@ letters, and the last two conditions are the usual counting criterion for every 
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 4, Definition of `(m, n)`-parking function shuffles (`Sh_m(k - 1, n - k)`).
 
-Formalized by `MetaMathlibExt.IsParkingShuffle`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-parking-shuffle).
+Formalized by `MetaMathlibExt.IsParkingShuffle`, a definition declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 390](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L390). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-parking-shuffle).
 
 ## An example of a parking-function shuffle
 
@@ -507,7 +507,7 @@ $(3, 2, 1, 2)$ with $4$ cars and $5$ spots and of $(7, 7) = (1, 1) + (6, 6)$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Section 4, Example 5.
 
-Formalized by `MetaMathlibExt.isParkingShuffle_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-parking-shuffle-example).
+Formalized by `MetaMathlibExt.isParkingShuffle_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-parking-shuffle-example).
 
 ## Parking-function shuffles and the first entry
 
@@ -521,7 +521,7 @@ set $\mathrm{Sh}_m(k - 1, n - k)$ of $(m, n)$-parking-function shuffles with par
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 3, with Definition 6 (the sets `A^n`).
 
-Stated but not proved: `MetaMathlibExt.firstEntrySet_eq_iff_isParkingShuffle` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#first-entry-set-eq-iff-is-parking-shuffl).
+Stated but not proved: `MetaMathlibExt.firstEntrySet_eq_iff_isParkingShuffle` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#first-entry-set-eq-iff-is-parking-shuffl).
 
 ## Number of parking-function shuffles
 
@@ -536,7 +536,7 @@ The exponent $-1$ occurs only on the base $1$ (at $k = n$, and at $m = 1$), and 
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.isParkingShuffle_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-parking-shuffle-card).
+Stated but not proved: `MetaMathlibExt.isParkingShuffle_card` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 437](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L437). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-parking-shuffle-card).
 
 ## Characterization of $(m-2)$-metered parking functions
 
@@ -555,7 +555,7 @@ $j \le f(0) < k$ and $f(m-1) \le f(0)$.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_sub_two_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-sub-two-iff).
+Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_sub_two_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 457](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L457). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-sub-two-iff).
 
 ## Metered parking functions with meter $n - 1$ and more cars than spots
 
@@ -573,7 +573,7 @@ $\pi_0, \dots, \pi_{n-1}, \pi_0, \dots$ in turn.
 
 - Spencer Daugherty, Pamela E. Harris, Ian Klein, and Matt McClinton, *Metered Parking Functions*, INTEGERS 25 (2025), Article A73, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_pred_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-pred-iff).
+Stated but not proved: `MetaMathlibExt.isMeteredParkingFunction_pred_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MeteredParkingFunctionsWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html#is-metered-parking-function-pred-iff).
 
 ## Depends on
 
@@ -582,4 +582,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Metered parking functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/metered-parking-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/parking-functions/metered-parking-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/parking-functions/metered-parking-functions)

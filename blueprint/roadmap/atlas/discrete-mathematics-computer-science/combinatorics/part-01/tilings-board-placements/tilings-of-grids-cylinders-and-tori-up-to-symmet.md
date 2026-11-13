@@ -7,7 +7,7 @@ statement: formalized
 
 # Tilings of grids, cylinders and tori up to symmetry
 
-81 results, 24 proved and 57 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html).
+81 results, 24 proved and 57 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html).
 
 ## Cell map of the reflection f
 
@@ -20,7 +20,7 @@ coordinate taken modulo $n$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellF`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-f).
+Formalized by `MetaMathlibExt.cellF`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-f).
 
 ## Cell map of the half-turn r²
 
@@ -33,7 +33,7 @@ the coordinates taken modulo $n$ and $m$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellR2`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r2).
+Formalized by `MetaMathlibExt.cellR2`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r2).
 
 ## Cell map of the reflection r²f
 
@@ -46,7 +46,7 @@ the second coordinate taken modulo $m$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellR2F`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r2-f).
+Formalized by `MetaMathlibExt.cellR2F`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r2-f).
 
 ## Cell map of the quarter-turn r
 
@@ -58,7 +58,7 @@ $(x, y) \mapsto (-1 - y, x)$, that is, $(x, y) \mapsto (n - 1 - y, x)$ modulo $n
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellR`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r).
+Formalized by `MetaMathlibExt.cellR`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r).
 
 ## Cell map of the three-quarter turn r³
 
@@ -71,7 +71,7 @@ modulo $n$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellR3`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r3).
+Formalized by `MetaMathlibExt.cellR3`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r3).
 
 ## Cell map of the diagonal reflection rf
 
@@ -83,7 +83,7 @@ $n \times n$ grid by $(x, y) \mapsto (y, x)$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellRF`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-rf).
+Formalized by `MetaMathlibExt.cellRF`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-rf).
 
 ## Cell map of the antidiagonal reflection r³f
 
@@ -96,7 +96,7 @@ $(x, y) \mapsto (-1 - y, -1 - x)$, that is, $(x, y) \mapsto (n - 1 - y, n - 1 - 
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellR3F`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r3-f).
+Formalized by `MetaMathlibExt.cellR3F`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-r3-f).
 
 ## Number of fixed tilings
 
@@ -113,7 +113,7 @@ each fixed-point formula involves a single symmetry.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.fixedTilingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count).
+Formalized by `MetaMathlibExt.fixedTilingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count).
 
 ## Tile designs fixed by a power of a permutation
 
@@ -128,7 +128,7 @@ $k = 0$ it is $t_{\mathrm{id}} = |T|$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.tileFixedCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#tile-fixed-count).
+Formalized by `MetaMathlibExt.tileFixedCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#tile-fixed-count).
 
 ## Orbit of a cell under a permutation
 
@@ -143,7 +143,7 @@ A fixed point $c$ of $\varphi$ has the singleton orbit $\{c\}$; these one-cycles
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 20.
 
-Formalized by `MetaMathlibExt.permOrbit`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#perm-orbit).
+Formalized by `MetaMathlibExt.permOrbit`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#perm-orbit).
 
 ## Orbits of a permutation
 
@@ -158,7 +158,7 @@ Fixed points of $\varphi$ contribute singleton orbits, which the paper's Theorem
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 20.
 
-Formalized by `MetaMathlibExt.permOrbits`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#perm-orbits).
+Formalized by `MetaMathlibExt.permOrbits`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#perm-orbits).
 
 ## Cylinder shift sum
 
@@ -175,7 +175,7 @@ is the action of $g$ on tile designs.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cylinderShiftSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-shift-sum).
+Formalized by `MetaMathlibExt.cylinderShiftSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-shift-sum).
 
 ## Torus shift sum
 
@@ -193,7 +193,7 @@ source; shifts act trivially on tile designs.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.torusShiftSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#torus-shift-sum).
+Formalized by `MetaMathlibExt.torusShiftSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#torus-shift-sum).
 
 ## The reflection f of grid cells is an involution
 
@@ -205,7 +205,7 @@ map $(x, y) \mapsto (-1 - x, y)$ of the reflection $f$ twice returns $c$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Setting.
 
-Formalized by `MetaMathlibExt.cellF_involutive`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-f-involutive).
+Formalized by `MetaMathlibExt.cellF_involutive`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cell-f-involutive).
 
 ## Fixed tilings of two cells under the identity
 
@@ -222,7 +222,7 @@ theorems.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Encoding check.
 
-Formalized by `MetaMathlibExt.fixedTilingCount_fin_two_identity`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count-fin-two-identity).
+Formalized by `MetaMathlibExt.fixedTilingCount_fin_two_identity`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count-fin-two-identity).
 
 ## Fixed tilings of the $2 \times 1$ grid under reflection and a design swap
 
@@ -237,7 +237,7 @@ This is a check of the encoding, verified by computation.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Encoding check.
 
-Formalized by `MetaMathlibExt.fixedTilingCount_cellF_two_one_swap`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count-cell-f-two-one-swap).
+Formalized by `MetaMathlibExt.fixedTilingCount_cellF_two_one_swap`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count-cell-f-two-one-swap).
 
 ## Fixed tilings as a product over orbits
 
@@ -254,7 +254,7 @@ No order hypothesis on $\sigma$ is needed.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 20.
 
-Stated but not proved: `MetaMathlibExt.fixedTilingCount_eq_orbit_product` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count-eq-orbit-product).
+Stated but not proved: `MetaMathlibExt.fixedTilingCount_eq_orbit_product` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#fixed-tiling-count-eq-orbit-product).
 
 ## Rectangular-grid tilings fixed by the identity
 
@@ -269,7 +269,7 @@ The Burnside conclusion of Theorem 22 is not part of this single-element fixed-p
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.rectangularGrid_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-identity).
+Stated but not proved: `MetaMathlibExt.rectangularGrid_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-identity).
 
 ## Rectangular-grid tilings fixed by the half-turn, $nm$ even
 
@@ -284,7 +284,7 @@ equals $|T|^{nm/2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.rectangularGrid_r2_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2-even).
+Stated but not proved: `MetaMathlibExt.rectangularGrid_r2_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2-even).
 
 ## Rectangular-grid tilings fixed by the half-turn, $nm$ odd
 
@@ -299,7 +299,7 @@ $F(r^2(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{(nm-1)/2} \, t$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.rectangularGrid_r2_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2-odd).
+Stated but not proved: `MetaMathlibExt.rectangularGrid_r2_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2-odd).
 
 ## Rectangular-grid tilings fixed by the reflection $f$, $n$ even
 
@@ -314,7 +314,7 @@ equals $|T|^{nm/2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.rectangularGrid_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-f-even).
+Stated but not proved: `MetaMathlibExt.rectangularGrid_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-f-even).
 
 ## Rectangular-grid tilings fixed by the reflection $f$, $n$ odd
 
@@ -329,7 +329,7 @@ cell $c$ equals $|T|^{m(n-1)/2} \, t^m$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.rectangularGrid_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-f-odd).
+Stated but not proved: `MetaMathlibExt.rectangularGrid_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-f-odd).
 
 ## Rectangular-grid tilings fixed by the reflection $r^2 f$, $m$ even
 
@@ -344,7 +344,7 @@ equals $|T|^{nm/2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.rectangularGrid_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2f-even).
+Stated but not proved: `MetaMathlibExt.rectangularGrid_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2f-even).
 
 ## Rectangular-grid tilings fixed by the reflection $r^2 f$, $m$ odd
 
@@ -359,7 +359,7 @@ $F(g(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{n(m-1)/2} \, t^n$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 22.
 
-Stated but not proved: `MetaMathlibExt.rectangularGrid_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2f-odd).
+Stated but not proved: `MetaMathlibExt.rectangularGrid_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-grid-r2f-odd).
 
 ## Square-grid tilings fixed by the identity
 
@@ -372,7 +372,7 @@ $|T|^{n^2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-identity).
+Stated but not proved: `MetaMathlibExt.squareGrid_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-identity).
 
 ## Square-grid tilings fixed by the half-turn for even $n$
 
@@ -386,7 +386,7 @@ with $F(r^2(c)) = \sigma(F(c))$ for every cell $c$ is $|T|^{n^2/2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r2_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2-even).
+Stated but not proved: `MetaMathlibExt.squareGrid_r2_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2-even).
 
 ## Square-grid tilings fixed by the half-turn for odd $n$
 
@@ -401,7 +401,7 @@ for every cell $c$ is $|T|^{(n^2 - 1)/2} \cdot t_\sigma$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r2_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2-odd).
+Stated but not proved: `MetaMathlibExt.squareGrid_r2_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2-odd).
 
 ## Square-grid tilings fixed by the reflection $f$ for even $n$
 
@@ -415,7 +415,7 @@ $F(f(c)) = \sigma(F(c))$ for every cell $c$ is $|T|^{n^2/2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-f-even).
+Stated but not proved: `MetaMathlibExt.squareGrid_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 369](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L369). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-f-even).
 
 ## Square-grid tilings fixed by the reflection $f$ for odd $n$
 
@@ -430,7 +430,7 @@ cell $c$ is $|T|^{(n^2 - n)/2} \cdot t_\sigma^{\,n}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-f-odd).
+Stated but not proved: `MetaMathlibExt.squareGrid_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-f-odd).
 
 ## Square-grid tilings fixed by the reflection $r^2 f$ for even $n$
 
@@ -444,7 +444,7 @@ with $F((r^2 f)(c)) = \sigma(F(c))$ for every cell $c$ is $|T|^{n^2/2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2f-even).
+Stated but not proved: `MetaMathlibExt.squareGrid_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2f-even).
 
 ## Square-grid tilings fixed by the reflection $r^2f$, odd $n$
 
@@ -459,7 +459,7 @@ the number of designs in $T$ fixed by $\sigma$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2f-odd).
+Stated but not proved: `MetaMathlibExt.squareGrid_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r2f-odd).
 
 ## Square-grid tilings fixed by the quarter-turn for even $n$
 
@@ -473,7 +473,7 @@ $F(r(c)) = \sigma(F(c))$ for every cell $c$ is $|T|^{n^2/4}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r-even).
+Stated but not proved: `MetaMathlibExt.squareGrid_r_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r-even).
 
 ## Square-grid tilings fixed by the quarter-turn for odd $n$
 
@@ -488,7 +488,7 @@ cell $c$ is $|T|^{(n^2 - 1)/4} \cdot t_\sigma$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r-odd).
+Stated but not proved: `MetaMathlibExt.squareGrid_r_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r-odd).
 
 ## Square-grid tilings fixed by the rotation $r^3$, even $n$
 
@@ -502,7 +502,7 @@ with $F(r^3(c)) = \sigma(F(c))$ for every cell $c$ equals $|T|^{n^2/4}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r3_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r3-even).
+Stated but not proved: `MetaMathlibExt.squareGrid_r3_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r3-even).
 
 ## Square-grid tilings fixed by the rotation $r^3$, odd $n$
 
@@ -517,7 +517,7 @@ number of designs in $T$ fixed by $\sigma$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r3_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r3-odd).
+Stated but not proved: `MetaMathlibExt.squareGrid_r3_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r3-odd).
 
 ## Square-grid tilings fixed by the diagonal reflection $rf$
 
@@ -532,7 +532,7 @@ the number of designs in $T$ fixed by $\sigma$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_rf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-rf).
+Stated but not proved: `MetaMathlibExt.squareGrid_rf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-rf).
 
 ## Square-grid tilings fixed by the diagonal reflection $r^3f$
 
@@ -547,7 +547,7 @@ the number of designs in $T$ fixed by $\sigma$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 24.
 
-Stated but not proved: `MetaMathlibExt.squareGrid_r3f` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r3f).
+Stated but not proved: `MetaMathlibExt.squareGrid_r3f` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 475](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L475). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-grid-r3f).
 
 ## Solution of $x = -1-x-a$ modulo odd $n$
 
@@ -559,7 +559,7 @@ $\{k(-1-a)\}$, where $k$ is the residue mod $n$ of the integer $(n+1)/2$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Lemma 25.
 
-Stated but not proved: `MetaMathlibExt.reflection_shift_solutions_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#reflection-shift-solutions-odd).
+Stated but not proved: `MetaMathlibExt.reflection_shift_solutions_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#reflection-shift-solutions-odd).
 
 ## Solutions of $x = -1-x-a$ modulo even $n$ for odd $a$
 
@@ -574,7 +574,7 @@ The divisions by $2$ are exact divisions of integers, carried out before reducin
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Lemma 25.
 
-Stated but not proved: `MetaMathlibExt.reflection_shift_solutions_even_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#reflection-shift-solutions-even-odd).
+Stated but not proved: `MetaMathlibExt.reflection_shift_solutions_even_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 502](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L502). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#reflection-shift-solutions-even-odd).
 
 ## No solutions of $x = -1-x-a$ modulo $n$ when $n$ and $a$ are even
 
@@ -586,7 +586,7 @@ even. Then no $x \in \mathbb{Z}/n$ satisfies $x = -1-x-a$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Lemma 25.
 
-Stated but not proved: `MetaMathlibExt.reflection_shift_solutions_even_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 516](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L516). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#reflection-shift-solutions-even-even).
+Stated but not proved: `MetaMathlibExt.reflection_shift_solutions_even_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 516](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L516). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#reflection-shift-solutions-even-even).
 
 ## Cylinder fixed-tiling count for the identity
 
@@ -600,7 +600,7 @@ divisors of $n$ and $\varphi$ is Euler's totient function.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 28.
 
-Stated but not proved: `MetaMathlibExt.cylinder_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 528](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L528). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-identity).
+Stated but not proved: `MetaMathlibExt.cylinder_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 528](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L528). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-identity).
 
 ## Cylinder fixed-tiling count for the half-turn when $m$ is even
 
@@ -614,7 +614,7 @@ $n \cdot |T|^{nm/2}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 29.
 
-Stated but not proved: `MetaMathlibExt.cylinder_r2_m_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 541](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L541). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2-m-even).
+Stated but not proved: `MetaMathlibExt.cylinder_r2_m_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 541](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L541). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2-m-even).
 
 ## Cylinder fixed-tiling count for the half-turn when $m$ is odd and $n$ is even
 
@@ -631,7 +631,7 @@ The identity is stated after multiplying by $2$, so that it involves no fraction
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 29.
 
-Stated but not proved: `MetaMathlibExt.cylinder_r2_m_odd_n_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 554](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L554). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2-m-odd-n-even).
+Stated but not proved: `MetaMathlibExt.cylinder_r2_m_odd_n_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 554](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L554). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2-m-odd-n-even).
 
 ## Cylinder fixed-tiling count for the half-turn when $m$ and $n$ are odd
 
@@ -645,7 +645,7 @@ the cylinder shift sum of $r^2$ and $\sigma$ equals $n \cdot |T|^{(nm - 1)/2} \c
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 29.
 
-Stated but not proved: `MetaMathlibExt.cylinder_r2_odd_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2-odd-odd).
+Stated but not proved: `MetaMathlibExt.cylinder_r2_odd_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 569](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L569). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2-odd-odd).
 
 ## Fixed cylinder tilings of the reflection f, n even
 
@@ -663,7 +663,7 @@ $$2N = n\left(|T|^{nm/2} + |T|^{(nm - 2m)/2} t_f^{2m}\right).$$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 30.
 
-Stated but not proved: `MetaMathlibExt.cylinder_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 583](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L583). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-f-even).
+Stated but not proved: `MetaMathlibExt.cylinder_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 583](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L583). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-f-even).
 
 ## Cylinder fixed-tiling count for the reflection $f$ when $n$ is odd
 
@@ -677,7 +677,7 @@ the cylinder shift sum of $f$ and $\sigma$ equals $n \cdot |T|^{(nm - m)/2} \cdo
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 30.
 
-Stated but not proved: `MetaMathlibExt.cylinder_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-f-odd).
+Stated but not proved: `MetaMathlibExt.cylinder_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 598](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L598). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-f-odd).
 
 ## Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is even
 
@@ -692,7 +692,7 @@ positive divisors of $n$ and $\varphi$ is Euler's totient function.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 31.
 
-Stated but not proved: `MetaMathlibExt.cylinder_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2f-even).
+Stated but not proved: `MetaMathlibExt.cylinder_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 612](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L612). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2f-even).
 
 ## Cylinder fixed-tiling count for the reflection $r^2 f$ when $m$ is odd
 
@@ -708,7 +708,7 @@ $d$ runs over the positive divisors of $n$ and $\varphi$ is Euler's totient func
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 31.
 
-Stated but not proved: `MetaMathlibExt.cylinder_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2f-odd).
+Stated but not proved: `MetaMathlibExt.cylinder_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-r2f-odd).
 
 ## Torus fixed-tiling sum for the identity
 
@@ -725,7 +725,7 @@ $$\sum_{a \in \mathbb{Z}/n} \sum_{b \in \mathbb{Z}/m} N(a, b) =
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 34.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 643](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L643). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-identity).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 643](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L643). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-identity).
 
 ## Half-turn fixed points on the rectangular torus, both sides even
 
@@ -744,7 +744,7 @@ nm\left(3\,t_{\mathrm{id}}^{nm/2} + t_{\mathrm{id}}^{nm/2-2}\,t_{r^2}^4\right).$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 35.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_even_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 658](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L658). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-even-even).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_even_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 658](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L658). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-even-even).
 
 ## Half-turn fixed points on the rectangular torus, both sides odd
 
@@ -762,7 +762,7 @@ $$\mathrm{fxpt} = nm\,t_{\mathrm{id}}^{(nm-1)/2}\,t_{r^2}.$$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 35.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_odd_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-odd-odd).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_odd_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 672](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L672). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-odd-odd).
 
 ## Half-turn fixed points on the rectangular torus, $n$ even and $m$ odd
 
@@ -781,7 +781,7 @@ $$2\,\mathrm{fxpt} = nm\left(t_{\mathrm{id}}^{nm/2} + t_{\mathrm{id}}^{nm/2-1}\,
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 35.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_even_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-even-odd).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_even_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 685](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L685). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-even-odd).
 
 ## Half-turn fixed points on the rectangular torus, $n$ odd and $m$ even
 
@@ -800,7 +800,7 @@ $$2\,\mathrm{fxpt} = nm\left(t_{\mathrm{id}}^{nm/2} + t_{\mathrm{id}}^{nm/2-1}\,
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 35.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_odd_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 700](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L700). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-odd-even).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_r2_odd_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 700](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L700). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2-odd-even).
 
 ## Torus fixed-tiling sum for the reflection $f$, $n$ even
 
@@ -820,7 +820,7 @@ t_c^{2m/c} \, |T|^{(n-2)m / \operatorname{lcm}(2, c)}\right).$$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 715](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L715). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-f-even).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 715](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L715). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-f-even).
 
 ## Torus fixed-tiling sum for the reflection $f$, $n$ odd
 
@@ -839,7 +839,7 @@ n \sum_{c \mid m} \varphi(c) \, |T|^{(n-1)m / \operatorname{lcm}(2, c)} \, t_c^{
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-f-odd).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 731](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L731). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-f-odd).
 
 ## Fixed points of $r^2 f$ on the rectangular torus, $m$ even
 
@@ -860,7 +860,7 @@ t_{\mathrm{id}}^{n(m-2)/\operatorname{lcm}(d,2)}\,t_{(r^2f)^d}^{2n/d}\right).$$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2f-even).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 746](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L746). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2f-even).
 
 ## Fixed points of $r^2 f$ on the rectangular torus, $m$ odd
 
@@ -880,7 +880,7 @@ t_{\mathrm{id}}^{n(m-1)/\operatorname{lcm}(d,2)}\,t_{(r^2f)^d}^{n/d}.$$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 36.
 
-Stated but not proved: `MetaMathlibExt.rectangularTorus_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 762](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L762). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2f-odd).
+Stated but not proved: `MetaMathlibExt.rectangularTorus_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 762](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L762). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rectangular-torus-r2f-odd).
 
 ## Square-torus fixed points of the identity
 
@@ -896,7 +896,7 @@ $n$ and $\varphi$ is Euler's totient function.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-identity).
+Stated but not proved: `MetaMathlibExt.squareTorus_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-identity).
 
 ## Fixed tilings of the odd square torus under a half-turn
 
@@ -912,7 +912,7 @@ $c$. Then $S = n^2 \, |T|^{(n^2-1)/2} \, t_1$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r2_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2-odd).
+Stated but not proved: `MetaMathlibExt.squareTorus_r2_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2-odd).
 
 ## Fixed tilings of the even square torus under a half-turn
 
@@ -930,7 +930,7 @@ Multiplying by four replaces the paper's coefficients $3/4$ and $1/4$ by integer
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r2_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2-even).
+Stated but not proved: `MetaMathlibExt.squareTorus_r2_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2-even).
 
 ## Square-torus fixed points of the reflection $f$, even $n$
 
@@ -948,7 +948,7 @@ $a_d = |T|^{n^2/\ell_d}$ and $b_d = |T|^{(n^2-2n)/\ell_d} \, t_d^{2n/d}$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 818](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L818). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-f-even).
+Stated but not proved: `MetaMathlibExt.squareTorus_f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 818](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L818). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-f-even).
 
 ## Square-torus fixed points of the reflection $f$, odd $n$
 
@@ -968,7 +968,7 @@ where $d$ runs over the positive divisors of $n$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-f-odd).
+Stated but not proved: `MetaMathlibExt.squareTorus_f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 833](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L833). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-f-odd).
 
 ## Fixed tilings of the even square torus under the reflection $r^2 f$
 
@@ -986,7 +986,7 @@ Then $2S = n \sum_{d \mid n} \varphi(d) \left(|T|^{n^2/\operatorname{lcm}(2, d)}
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 847](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L847). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2f-even).
+Stated but not proved: `MetaMathlibExt.squareTorus_r2f_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 847](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L847). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2f-even).
 
 ## Fixed tilings of the odd square torus under the reflection $r^2 f$
 
@@ -1003,7 +1003,7 @@ Then $S = n \sum_{d \mid n} \varphi(d) \, |T|^{(n^2-n)/\operatorname{lcm}(2, d)}
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 38.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 862](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L862). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2f-odd).
+Stated but not proved: `MetaMathlibExt.squareTorus_r2f_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 862](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L862). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r2f-odd).
 
 ## Fixed tilings of the odd square torus under a quarter-turn
 
@@ -1019,7 +1019,7 @@ Then $S = n^2 \, |T|^{(n^2-1)/4} \, t_1$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 39.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 877](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L877). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r-odd).
+Stated but not proved: `MetaMathlibExt.squareTorus_r_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 877](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L877). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r-odd).
 
 ## Square-torus fixed points of the rotation $r$, even $n$
 
@@ -1036,7 +1036,7 @@ $$2S = n^2 \left( |T|^{n^2/4} + |T|^{(n^2-4)/4} \, t_1^2 \, t_2 \right).$$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 39.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 890](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r-even).
+Stated but not proved: `MetaMathlibExt.squareTorus_r_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 890](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L890). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r-even).
 
 ## Fixed tilings of the odd square torus under a three-quarter turn
 
@@ -1053,7 +1053,7 @@ $c$. Then $S = n^2 \, |T|^{(n^2-1)/4} \, t_1$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 39.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r3_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 905](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L905). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r3-odd).
+Stated but not proved: `MetaMathlibExt.squareTorus_r3_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 905](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L905). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r3-odd).
 
 ## Fixed tilings of the even square torus under a three-quarter turn
 
@@ -1070,7 +1070,7 @@ $c$. Then $2S = n^2 \left(|T|^{n^2/4} + |T|^{(n^2-4)/4} \, t_1^2 \, t_2\right)$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 39.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r3_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 918](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L918). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r3-even).
+Stated but not proved: `MetaMathlibExt.squareTorus_r3_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 918](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L918). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r3-even).
 
 ## Fixed tilings of the square torus under the diagonal reflection
 
@@ -1090,7 +1090,7 @@ The paper writes this as a single divisor sum with a summand depending on the pa
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 40.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_rf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 933](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L933). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-rf).
+Stated but not proved: `MetaMathlibExt.squareTorus_rf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 933](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L933). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-rf).
 
 ## Fixed tilings of the square torus under the anti-diagonal reflection
 
@@ -1108,7 +1108,7 @@ Then $S = n \left(\sum_{d \mid n,\ d \text{ odd}} \varphi(d) \, |T|^{(n^2-n)/(2d
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 40.
 
-Stated but not proved: `MetaMathlibExt.squareTorus_r3f` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 950](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L950). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r3f).
+Stated but not proved: `MetaMathlibExt.squareTorus_r3f` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 950](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L950). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-r3f).
 
 ## Action of the rectangle group on grid cells
 
@@ -1129,7 +1129,7 @@ $sr_1$ and $sr_3$ are never used.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definitions 1.4.1 and 1.4.2 (the dihedral action on cells).
 
-Formalized by `MetaMathlibExt.rectCellAction`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 969](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L969). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action).
+Formalized by `MetaMathlibExt.rectCellAction`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 969](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L969). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action).
 
 ## Rectangle-group cell action of the identity
 
@@ -1142,7 +1142,7 @@ $n \times m$ grid, the identity element $r_0$ acts as the identity map.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definition 1.4.1.
 
-Formalized by `MetaMathlibExt.rectCellAction_r_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-r-zero).
+Formalized by `MetaMathlibExt.rectCellAction_r_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 977](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L977). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-r-zero).
 
 ## Rectangle-group cell action of the half-turn
 
@@ -1155,7 +1155,7 @@ $n \times m$ grid, $r_2$ acts as the half-turn $(x, y) \mapsto (-1 - x, -1 - y)$
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definition 1.4.1.
 
-Formalized by `MetaMathlibExt.rectCellAction_r_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 983](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L983). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-r-two).
+Formalized by `MetaMathlibExt.rectCellAction_r_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 983](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L983). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-r-two).
 
 ## Rectangle-group cell action of the reflection f
 
@@ -1168,7 +1168,7 @@ the $n \times m$ grid, $sr_0$ (the paper's $f$) acts as the reflection $(x, y) \
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definition 1.4.1.
 
-Formalized by `MetaMathlibExt.rectCellAction_sr_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 990](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L990). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-sr-zero).
+Formalized by `MetaMathlibExt.rectCellAction_sr_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 990](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L990). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-sr-zero).
 
 ## Rectangle-group cell action of the reflection r²f
 
@@ -1182,7 +1182,7 @@ $(x, y) \mapsto (x, -1 - y)$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definition 1.4.1.
 
-Formalized by `MetaMathlibExt.rectCellAction_sr_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 996](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L996). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-sr-two).
+Formalized by `MetaMathlibExt.rectCellAction_sr_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 996](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L996). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-cell-action-sr-two).
 
 ## The dihedral action on the cells of the square grid
 
@@ -1200,7 +1200,7 @@ dihedral group into composition of maps.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definition 1.4.2 (the dihedral action on cells).
 
-Formalized by `MetaMathlibExt.squareCellAction`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1007](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1007). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-cell-action).
+Formalized by `MetaMathlibExt.squareCellAction`, a definition declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1007](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1007). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-cell-action).
 
 ## The rotation $r$ acts on the square grid as the quarter-turn
 
@@ -1213,7 +1213,7 @@ $(x, y) \mapsto (-1-y, x)$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definition 1.4.2.
 
-Formalized by `MetaMathlibExt.squareCellAction_r_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1015](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1015). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-cell-action-r-one).
+Formalized by `MetaMathlibExt.squareCellAction_r_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1015](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1015). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-cell-action-r-one).
 
 ## The reflection $sr_0$ acts on the square grid as $f$
 
@@ -1227,7 +1227,7 @@ reflection $sr_0$ to the reflection $f$, $(x, y) \mapsto (-1 - x, y)$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Definition 1.4.2.
 
-Formalized by `MetaMathlibExt.squareCellAction_sr_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1021](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1021). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-cell-action-sr-zero).
+Formalized by `MetaMathlibExt.squareCellAction_sr_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1021](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1021). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-cell-action-sr-zero).
 
 ## Burnside count of cylinder tilings under rectangle symmetries
 
@@ -1251,7 +1251,7 @@ As in the paper, the tile designs form an $R$-set: only the subgroup $R$ acts on
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 32 (`jis-2024-24.6.1-thm-32`).
 
-Stated but not proved: `MetaMathlibExt.cylinder_distinctTilings_burnside` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1036](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1036). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-distinct-tilings-burnside).
+Stated but not proved: `MetaMathlibExt.cylinder_distinctTilings_burnside` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1036](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1036). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#cylinder-distinct-tilings-burnside).
 
 ## Burnside count of torus tilings under the rectangle group
 
@@ -1276,7 +1276,7 @@ $F(g \cdot (c + v)) = g \cdot F(c)$ for every cell $c$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 37 (`jis-2024-24.6.1-thm-37`).
 
-Stated but not proved: `MetaMathlibExt.rectTorus_distinctTilings_burnside` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1056](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1056). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-torus-distinct-tilings-burnside).
+Stated but not proved: `MetaMathlibExt.rectTorus_distinctTilings_burnside` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1056](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1056). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#rect-torus-distinct-tilings-burnside).
 
 ## Burnside count of tilings of the square torus
 
@@ -1300,7 +1300,7 @@ cell $c$; the inner sum is the torus shift sum of $g$.
 
 - Peter Kagey, William Keehn, *Counting Tilings of the n × m Grid, Cylinder, and Torus*, Journal of Integer Sequences 27 (2024), Article 24.6.1, Theorem 41 (`jis-2024-24.6.1-thm-41`).
 
-Stated but not proved: `MetaMathlibExt.squareTorus_distinctTilings_burnside` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1076](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1076). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-distinct-tilings-burnside).
+Stated but not proved: `MetaMathlibExt.squareTorus_distinctTilings_burnside` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean, line 1076](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/GridCylinderTorusTilingsWanted.lean#L1076). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html#square-torus-distinct-tilings-burnside).
 
 ## Depends on
 
@@ -1309,4 +1309,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tilings of grids, cylinders and tori up to symmetry](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/tilings-board-placements/tilings-of-grids-cylinders-and-tori-up-to-symmet)

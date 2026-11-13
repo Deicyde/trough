@@ -8,7 +8,7 @@ proof: formalized
 
 # Greibach normal form
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form/index.html).
 
 ## Greibach normal form
 
@@ -23,7 +23,7 @@ empty outputs at all.
 
 - Hopcroft and Ullman, Introduction to Automata Theory, Languages, and Computation, Addison-Wesley, 1979, Chapter 7 (Greibach normal form); Harrison, Introduction to Formal Language Theory, Addison-Wesley, 1978, Chapter 4.
 
-Formalized by `Cslib.Language.IsGreibachNormalForm`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form/index.html#is-greibach-normal-form).
+Formalized by `Cslib.Language.IsGreibachNormalForm`, a definition declared in [CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form/index.html#is-greibach-normal-form).
 
 ## Nonempty Greibach productions begin with a terminal
 
@@ -34,7 +34,7 @@ with a terminal followed by nonterminals.
 
 - Hopcroft and Ullman, Introduction to Automata Theory, Languages, and Computation, Addison-Wesley, 1979, Chapter 7 (Greibach normal form); Harrison, Introduction to Formal Language Theory, Addison-Wesley, 1978, Chapter 4.
 
-Formalized by `Cslib.Language.exists_terminal_head_of_output_ne_nil`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form/index.html#exists-terminal-head-of-output-ne-nil).
+Formalized by `Cslib.Language.exists_terminal_head_of_output_ne_nil`, a theorem declared in [CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Languages/ContextFree/GreibachNormalForm.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form/index.html#exists-terminal-head-of-output-ne-nil).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Greibach normal form](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/context-free-languages/grammars-and-pushdown-automata/greibach-normal-form)

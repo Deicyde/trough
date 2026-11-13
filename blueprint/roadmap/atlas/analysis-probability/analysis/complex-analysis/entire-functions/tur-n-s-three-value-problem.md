@@ -7,7 +7,7 @@ statement: formalized
 
 # Turán's three-value problem
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html).
 
 ## Multiplicity of a root of $f = w$
 
@@ -25,7 +25,7 @@ with $f(z) \neq w$.
 
 - Hayman - Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], <https://arxiv.org/abs/1809.07200>.
 
-Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.rootMult`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#root-mult).
+Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.rootMult`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#root-mult).
 
 ## Multiplicity of a pole
 
@@ -38,7 +38,7 @@ $0$ unless $f$ has a pole at $z$.
 
 - Hayman - Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], <https://arxiv.org/abs/1809.07200>.
 
-Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.poleMult`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#pole-mult).
+Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.poleMult`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#pole-mult).
 
 ## Multiplicity of a value on the Riemann sphere
 
@@ -51,7 +51,7 @@ $f = w$ when $w$ is finite, and the multiplicity of $z$ as a pole of $f$ when $w
 
 - Hayman - Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], <https://arxiv.org/abs/1809.07200>.
 
-Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.rootMultSph`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#root-mult-sph).
+Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.rootMultSph`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#root-mult-sph).
 
 ## Bounded value distribution
 
@@ -68,7 +68,7 @@ assume meromorphy.
 
 - Hayman - Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], <https://arxiv.org/abs/1809.07200>.
 
-Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.IsBoundedValueDistribution`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#is-bounded-value-distribution).
+Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.IsBoundedValueDistribution`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#is-bounded-value-distribution).
 
 ## Turán's three-value question
 
@@ -85,7 +85,7 @@ up to at most $C$.
 
 - Hayman - Research Problems in Function Theory (2018), Problem 2.28 [AMR-022-2028], <https://arxiv.org/abs/1809.07200>, question by P. Turán.
 
-Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.conjecture`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.conjecture`, a definition declared in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#conjecture).
 
 ## Turán's three-value question has a negative answer
 
@@ -106,7 +106,7 @@ order $2$, so it does not have bounded value distribution.
 
 - W. K. Hayman and E. F. Lingham, Research Problems in Function Theory (2018), arXiv:1809.07200, https://arxiv.org/abs/1809.07200.
 
-Stated but not proved: `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#conjecture-refuted).
+Stated but not proved: `MathlibExt.Analysis.TuranThreeValueBoundedDistributionWanted.conjecture_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/TuranThreeValueBoundedDistributionWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html#conjecture-refuted).
 
 ## Depends on
 
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Turán's three-value problem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/entire-functions/tur-n-s-three-value-problem)

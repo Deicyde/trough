@@ -7,7 +7,7 @@ statement: formalized
 
 # Lorentzian polynomials
 
-10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html).
+10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html).
 
 ## Homogeneous polynomials of degree $d$
 
@@ -15,7 +15,7 @@ For natural numbers $n$ and $d$, $H^d_n$ denotes
 the space of homogeneous polynomials of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$, including the
 zero polynomial.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.H`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#h).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.H`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#h).
 
 ## Homogeneous polynomials with positive coefficients
 
@@ -23,7 +23,7 @@ $P^d_n$ is the set of homogeneous
 polynomials $f$ of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ such that the coefficient in $f$ of
 every monomial of degree $d$ is strictly positive.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.P`, an abbreviation declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#p).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.P`, an abbreviation declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#p).
 
 ## Hessian of a quadratic form
 
@@ -32,7 +32,7 @@ $\mathbb{R}[w_1, \dots, w_n]$, its Hessian is the real $n \times n$ matrix $\mat
 partial derivatives of $f$: the diagonal entry $(i, i)$ is twice the coefficient of $w_i^2$ in $f$,
 and for $i \ne j$ the entry $(i, j)$ is the coefficient of $w_i w_j$ in $f$.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.H.hessian`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#hessian).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.H.hessian`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#hessian).
 
 ## Strictly Lorentzian polynomials
 
@@ -46,7 +46,7 @@ $(\partial_i \partial_j f)_{i,j}$ is invertible and has exactly one positive eig
 with multiplicity; and for $d \ge 3$, $\mathring{L}^d_n$ is the set of $f \in P^d_n$ such that
 $\partial_i f \in \mathring{L}^{d-1}_n$ for every $i$.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.Ŀ`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#untitled).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.Ŀ`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#untitled).
 
 ## M-convex sets
 
@@ -55,7 +55,7 @@ $\alpha, \beta \in J$ and every index $i$ with $\alpha_i > \beta_i$ there is an 
 $\alpha_j < \beta_j$ and $\alpha - e_i + e_j \in J$, where $e_1, \dots, e_n$ are the standard unit
 vectors of $\mathbb{N}^n$.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.IsMConvex`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#is-mconvex).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.IsMConvex`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#is-mconvex).
 
 ## Homogeneous polynomials with M-convex support
 
@@ -64,7 +64,7 @@ polynomials $f$ of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ whose coefficient
 nonnegative and whose support, the set of exponent vectors $\alpha \in \mathbb{N}^n$ of the
 monomials with nonzero coefficient in $f$, is M-convex.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.M`, an abbreviation declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#m).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.M`, an abbreviation declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#m).
 
 ## Stable polynomials
 
@@ -72,7 +72,7 @@ A polynomial $f \in \mathbb{R}[w_1, \dots, w_n]$ is stable if either
 $f$ is the zero polynomial or $f(z_1, \dots, z_n) \ne 0$ for all $z_1, \dots, z_n$ in the open upper
 half plane $\mathbb{H} = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.IsStable`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#is-stable).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.IsStable`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#is-stable).
 
 ## Stable homogeneous polynomials with nonnegative coefficients
 
@@ -81,7 +81,7 @@ homogeneous polynomials $f$ of degree $d$ in $\mathbb{R}[w_1, \dots, w_n]$ whose
 all nonnegative and that are stable: either $f$ is the zero polynomial or $f$ has no zero in
 $\mathbb{H}^n$, where $\mathbb{H}$ is the open upper half plane in $\mathbb{C}$.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.S`, an abbreviation declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#s).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.S`, an abbreviation declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#s).
 
 ## The set of Lorentzian polynomials
 
@@ -93,7 +93,7 @@ $L^d_n$ is the set of $f \in M^d_n$ (the homogeneous polynomials of degree $d$ w
 coefficients and M-convex support) such that $\partial_i f \in L^{d-1}_n$ for every
 $i \in \{1, \dots, n\}$, where $\partial_i$ is the partial derivative with respect to $w_i$.
 
-Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.L`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#l).
+Formalized by `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.L`, a definition declared in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#l).
 
 ## Lorentzian polynomials as the closure of strictly Lorentzian polynomials
 
@@ -111,7 +111,7 @@ empty, while $L^2_0 = S^2_0$ contains the zero polynomial, which is homogeneous 
 
 - P. Brändén and J. Huh, `Lorentzian polynomials`, Annals of Math, 192 (3) 2020. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_lorentzian_polynomials` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.theorem_2_25` is written with `theorem_wanted` in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#theorem-2-25).
+Stated but not proved: `MathlibExt.Combinatorics.LorentzianPolynomialsWanted.LorentzianPolynomials.theorem_2_25` is written with `theorem_wanted` in [WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/LorentzianPolynomialsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html#theorem-2-25).
 
 ## Depends on
 
@@ -120,4 +120,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lorentzian polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/matroid-theory/lorentzian-polynomials)

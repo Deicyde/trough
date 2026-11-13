@@ -8,7 +8,7 @@ proof: formalized
 
 # Conjugate priors
 
-31 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html).
+31 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html).
 
 ## Binomial likelihood kernel
 
@@ -17,7 +17,7 @@ $\theta$ to the binomial distribution $\mathrm{Bin}(n, p)$ on $\mathbb{N}$, the 
 successes in $n$ independent coin flips with success probability $p$, where $p$ is $\theta$
 clipped to $[0, 1]$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.binomialKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#binomial-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.binomialKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#binomial-kernel).
 
 ## Recurrence for the beta function in the first argument
 
@@ -25,7 +25,7 @@ For real $a > 0$ and $b > 0$, the
 beta function $B(a, b) = \Gamma(a)\Gamma(b)/\Gamma(a + b)$ satisfies
 $B(a + 1, b) = B(a, b) \cdot \frac{a}{a + b}$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.beta_add_one_left`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#beta-add-one-left).
+Formalized by `Cslib.MachineLearning.Bayesian.beta_add_one_left`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#beta-add-one-left).
 
 ## Conjugacy of the beta density
 
@@ -35,7 +35,7 @@ $B(a, b) = \Gamma(a)\Gamma(b)/\Gamma(a + b)$ for the beta function. Then
 $f_{a,b}(\theta) \, \theta^k (1 - \theta)^m =
 \frac{B(a + k, b + m)}{B(a, b)} f_{a + k, b + m}(\theta)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.betaPDFReal_mul_pow`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#beta-pdfreal-mul-pow).
+Formalized by `Cslib.MachineLearning.Bayesian.betaPDFReal_mul_pow`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#beta-pdfreal-mul-pow).
 
 ## Beta prior times binomial likelihood
 
@@ -47,7 +47,7 @@ $k$ successes in $n$ trials equals
 $\binom{n}{k} \frac{B(a + k, b + m)}{B(a, b)} f_{a + k, b + m}(\theta)$, as an identity in
 $[0, \infty]$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.betaPDF_mul_binomialKernel`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#beta-pdf-mul-binomial-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.betaPDF_mul_binomialKernel`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#beta-pdf-mul-binomial-kernel).
 
 ## The beta-binomial distribution
 
@@ -57,7 +57,7 @@ prior on the success probability, the marginal probability (the evidence) that t
 gives exactly $k$ successes in $n$ trials is $\binom{n}{k} \frac{B(a + k, b + n - k)}{B(a, b)}$,
 where $n - k$ is truncated at $0$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.binomialKernel_comp_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#binomial-kernel-comp-beta-measure).
+Formalized by `Cslib.MachineLearning.Bayesian.binomialKernel_comp_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#binomial-kernel-comp-beta-measure).
 
 ## Beta–binomial conjugacy
 
@@ -65,7 +65,7 @@ Let $a, b > 0$ be real and $k \le n$ natural numbers. For the
 binomial kernel and a $\mathrm{Beta}(a, b)$ prior, the posterior distribution (Mathlib's posterior
 kernel) after observing $k$ successes in $n$ trials is $\mathrm{Beta}(a + k, b + n - k)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_binomialKernel_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-binomial-kernel-beta-measure).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_binomialKernel_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-binomial-kernel-beta-measure).
 
 ## Prior predictive probability of a success
 
@@ -73,7 +73,7 @@ Let $a, b > 0$ be real. Under a
 $\mathrm{Beta}(a, b)$ prior on the success probability, the probability that a single trial of the
 binomial kernel succeeds is the prior mean $a / (a + b)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.binomialKernel_one_comp_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#binomial-kernel-one-comp-beta-measure).
+Formalized by `Cslib.MachineLearning.Bayesian.binomialKernel_one_comp_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#binomial-kernel-one-comp-beta-measure).
 
 ## Posterior predictive of the beta-binomial model
 
@@ -84,7 +84,7 @@ further trial succeeds is $(a + k) / (a + b + n)$.
 
 For $a = b = 1$ this is Laplace's rule of succession, $(k + 1) / (n + 2)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_predictive_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-predictive-beta-measure).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_predictive_betaMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/BetaBinomial.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-predictive-beta-measure).
 
 ## Probability vectors
 
@@ -92,7 +92,7 @@ For $n \in \mathbb{N}$, the probability vectors are the
 $\theta \in \mathbb{R}^{n+1}$ with $\theta_i \ge 0$ for every $i$ and $\sum_i \theta_i = 1$; they
 form the parameter space of the categorical model.
 
-Formalized by `Cslib.MachineLearning.Bayesian.probVectors`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#prob-vectors).
+Formalized by `Cslib.MachineLearning.Bayesian.probVectors`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#prob-vectors).
 
 ## The categorical likelihood
 
@@ -104,7 +104,7 @@ point mass at label $0$.
 
 Parameters outside the probability vectors form a null set under a Dirichlet prior.
 
-Formalized by `Cslib.MachineLearning.Bayesian.categoricalKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#categorical-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.categoricalKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#categorical-kernel).
 
 ## Likelihood of a label sequence
 
@@ -112,7 +112,7 @@ For $\theta \in \mathbb{R}^{n+1}$ and a sequence
 $s = (s_0, \dots, s_{N-1})$ of labels in $\{0, \dots, n\}$, the likelihood of $s$ is the
 extended nonnegative real $\prod_{m < N} \theta_{s_m}^+$, where $x^+ = \max(x, 0)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.seqLikelihood`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#seq-likelihood).
+Formalized by `Cslib.MachineLearning.Bayesian.seqLikelihood`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#seq-likelihood).
 
 ## The multinomial sampling model
 
@@ -123,14 +123,14 @@ $\theta$ (all $\theta_i \ge 0$ and $\sum_i \theta_i = 1$) to the law of $N$ inde
 from $\theta$, which gives $s$ probability $\prod_{m < N} \theta_{s_m}$, and sends every other
 $\theta$ to the point mass at the all-zero sequence.
 
-Formalized by `Cslib.MachineLearning.Bayesian.categoricalSeqKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#categorical-seq-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.categoricalSeqKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#categorical-seq-kernel).
 
 ## Label counts
 
 For a sequence $s = (s_0, \dots, s_{N-1})$ of labels in $\{0, \dots, n\}$
 and a label $i$, the count $n_i(s)$ is the number of positions $m < N$ with $s_m = i$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.counts`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#counts).
+Formalized by `Cslib.MachineLearning.Bayesian.counts`, a definition declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#counts).
 
 ## The sequence likelihood depends only on the label counts
 
@@ -140,7 +140,7 @@ label counts $n_i(s)$, the likelihood $\prod_{m < N} \theta_{s_m}^+$ of $s$ equa
 $\prod_{i = 0}^{n} (\theta_i^+)^{n_i(s)}$ as extended nonnegative reals, where
 $x^+ = \max(x, 0)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.seqLikelihood_eq_prod_pow`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#seq-likelihood-eq-prod-pow).
+Formalized by `Cslib.MachineLearning.Bayesian.seqLikelihood_eq_prod_pow`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#seq-likelihood-eq-prod-pow).
 
 ## Evidence-weighted Dirichlet prior
 
@@ -151,7 +151,7 @@ $\theta \mapsto P_\theta(s)$, the probability of $s$ under the multinomial sampl
 parameter $\theta$, equals $B(\alpha + n(s)) / B(\alpha)$ times $\mathrm{Dir}(\alpha + n(s))$,
 where $B$ is the multivariate Beta function and $\alpha + n(s)$ has entries $\alpha_i + n_i(s)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.withDensity_categoricalSeqKernel`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#with-density-categorical-seq-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.withDensity_categoricalSeqKernel`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#with-density-categorical-seq-kernel).
 
 ## Dirichlet–multinomial conjugacy
 
@@ -161,7 +161,7 @@ $n_i(s)$. Under the multinomial sampling model with the Dirichlet prior $\mathrm
 the posterior distribution of the parameter after observing $s$ is the Dirichlet distribution
 with parameters $\alpha_i + n_i(s)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_categoricalSeqKernel_dirichletMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-categorical-seq-kernel-dirichl).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_categoricalSeqKernel_dirichletMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-categorical-seq-kernel-dirichl).
 
 ## Prior predictive of the Dirichlet–categorical model
 
@@ -171,7 +171,7 @@ distribution $\mathrm{Dir}(\alpha)$ and then one label from the categorical like
 parameter $\theta$ gives the label $i \in \{0, \dots, n\}$ with probability
 $\alpha_i / \sum_j \alpha_j$, which is the mean of $\theta_i$ under $\mathrm{Dir}(\alpha)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.categoricalKernel_comp_dirichletMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#categorical-kernel-comp-dirichlet-measur).
+Formalized by `Cslib.MachineLearning.Bayesian.categoricalKernel_comp_dirichletMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#categorical-kernel-comp-dirichlet-measur).
 
 ## Posterior predictive of the Dirichlet–multinomial model
 
@@ -184,7 +184,7 @@ $(\alpha_i + n_i(s)) / (\sum_j \alpha_j + N)$.
 
 This is the Dirichlet–multinomial analogue of Laplace's rule of succession.
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_predictive_dirichletMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-predictive-dirichlet-measure).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_predictive_dirichletMeasure`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/DirichletMultinomial.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-predictive-dirichlet-measure).
 
 ## Posterior variance of the normal–normal model
 
@@ -193,7 +193,7 @@ variance is $\frac{v_0 v}{v_0 + v}$, taken to be $0$ when $v_0 = v = 0$. In the 
 with prior variance $v_0$ and known noise variance $v$, this is the variance of the posterior of the
 mean after one observation.
 
-Formalized by `Cslib.MachineLearning.Bayesian.normalPostVar`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-post-var).
+Formalized by `Cslib.MachineLearning.Bayesian.normalPostVar`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-post-var).
 
 ## Posterior mean of the Normal–Normal model
 
@@ -202,7 +202,7 @@ variance $v_0 \ge 0$, a noise variance $v \ge 0$ and an observation $x \in \math
 posterior mean is $(v m_0 + v_0 x)/(v_0 + v)$, taken to be $0$ when $v_0 = v = 0$. When
 $v_0 + v > 0$ it is the precision-weighted average of $m_0$ and $x$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.normalPostMean`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-post-mean).
+Formalized by `Cslib.MachineLearning.Bayesian.normalPostMean`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-post-mean).
 
 ## Posterior mean as a gain update
 
@@ -210,14 +210,14 @@ Let $m_0, x \in \mathbb{R}$, $v_0 > 0$ and $v \ge 0$. The
 posterior mean $(v m_0 + v_0 x)/(v_0 + v)$ equals $m_0 + \frac{v_0}{v_0 + v}(x - m_0)$: it moves
 from the prior mean $m_0$ toward the observation $x$ by the gain $v_0/(v_0 + v)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.normalPostMean_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-post-mean-eq).
+Formalized by `Cslib.MachineLearning.Bayesian.normalPostMean_eq`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-post-mean-eq).
 
 ## Precisions add
 
 For variances $v_0, v > 0$, the posterior variance $s = v_0 v/(v_0 + v)$
 satisfies $s^{-1} = v_0^{-1} + v^{-1}$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.inv_normalPostVar`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#inv-normal-post-var).
+Formalized by `Cslib.MachineLearning.Bayesian.inv_normalPostVar`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#inv-normal-post-var).
 
 ## Completing the square
 
@@ -234,7 +234,7 @@ $$
 the prior density at $\theta$ times the likelihood of $x$ is the marginal density of $x$ times the
 posterior density at $\theta$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.gaussianPDFReal_mul_gaussianPDFReal`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-pdfreal-mul-gaussian-pdfreal).
+Formalized by `Cslib.MachineLearning.Bayesian.gaussianPDFReal_mul_gaussianPDFReal`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-pdfreal-mul-gaussian-pdfreal).
 
 ## Measurability of the Gaussian density in its mean and argument
 
@@ -244,7 +244,7 @@ at $x$ of the Gaussian with mean $\theta$ and variance $v$, read as $0$ when $v 
 in $[0, \infty]$. Then $(\theta, x) \mapsto \varphi_{\theta, v}(x)$ is a measurable map on
 $\mathbb{R} \times \mathbb{R}$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.measurable_gaussianPDF_mean`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#measurable-gaussian-pdf-mean).
+Formalized by `Cslib.MachineLearning.Bayesian.measurable_gaussianPDF_mean`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#measurable-gaussian-pdf-mean).
 
 ## Gaussian likelihood with known variance
 
@@ -254,7 +254,7 @@ law of the observation $x \sim N(\theta, v)$, the Gaussian with mean $\theta$ an
 $v > 0$ it is the measure with the $N(\theta, v)$ density with respect to Lebesgue measure, and for
 $v = 0$ it is the point mass at $\theta$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood).
+Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood).
 
 ## Noiseless Gaussian likelihood
 
@@ -262,7 +262,7 @@ With noise variance $0$, the Gaussian likelihood sends each
 $\theta \in \mathbb{R}$ to the Gaussian law with mean $\theta$ and variance $0$, which is the point
 mass at $\theta$: the observation is the parameter.
 
-Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood_zero_apply`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood-zero-apply).
+Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood_zero_apply`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood-zero-apply).
 
 ## The marginal of the data
 
@@ -273,7 +273,7 @@ likelihood with noise variance $v$), then the marginal law of the observation is
 
 Applied with the posterior in place of the prior, this also gives the posterior predictive law.
 
-Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood_comp_gaussianReal`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood-comp-gaussian-real).
+Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood_comp_gaussianReal`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood-comp-gaussian-real).
 
 ## Candidate posterior kernel of the normal–normal model
 
@@ -285,7 +285,7 @@ $\theta \mapsto \frac{1}{\sqrt{2 \pi s}} e^{-(\theta - \mu(x))^2 / (2 s)}$ with 
 measure. For $v_0, v > 0$ this is the normal law $N(\mu(x), s)$. If $v_0 = 0$ or $v = 0$, then
 $s = 0$, the density is taken to be $0$, and the kernel is the zero measure at every $x$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.normalPosteriorKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-posterior-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.normalPosteriorKernel`, a definition declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#normal-posterior-kernel).
 
 ## Disintegration of the Normal–Normal joint law
 
@@ -299,7 +299,7 @@ the law of $(y, z)$ when $y \sim \rho$ and $z \sim L(y)$. Then $(K \circ \pi) \o
 image of $\pi \otimes K$ under $(\theta, x) \mapsto (x, \theta)$: the joint law of $(x, \theta)$ is
 the marginal law $K \circ \pi$ of $x$ followed by the posterior kernel.
 
-Formalized by `Cslib.MachineLearning.Bayesian.compProd_normalPosteriorKernel`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#comp-prod-normal-posterior-kernel).
+Formalized by `Cslib.MachineLearning.Bayesian.compProd_normalPosteriorKernel`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#comp-prod-normal-posterior-kernel).
 
 ## Normal–Normal conjugacy with known variance
 
@@ -309,7 +309,7 @@ law $N(\theta, v)$. Then for Lebesgue-almost every $x \in \mathbb{R}$, the poste
 $\theta$ given $x$ is the normal law with mean $\frac{v m_0 + v_0 x}{v_0 + v}$ and variance
 $\frac{v_0 v}{v_0 + v}$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.posterior_gaussianLikelihood_gaussianReal`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-gaussian-likelihood-gaussian-r).
+Formalized by `Cslib.MachineLearning.Bayesian.posterior_gaussianLikelihood_gaussianReal`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#posterior-gaussian-likelihood-gaussian-r).
 
 ## Normal–Normal posterior predictive
 
@@ -320,7 +320,7 @@ $\mu(x) = (v m_0 + v_0 x)/(v_0 + v)$ and $s = v_0 v/(v_0 + v)$. For Lebesgue-alm
 observation $x$, a new observation drawn from the likelihood, with $\theta$ distributed according
 to the posterior given $x$, has law $N(\mu(x), s + v)$.
 
-Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood_comp_posterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood-comp-posterior).
+Formalized by `Cslib.MachineLearning.Bayesian.gaussianLikelihood_comp_posterior`, a theorem declared in [CSLibExt/MachineLearning/Bayesian/NormalNormal.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/MachineLearning/Bayesian/NormalNormal.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html#gaussian-likelihood-comp-posterior).
 
 ## Depends on
 
@@ -329,4 +329,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Conjugate priors](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/machine-learning/bayesian-inference-and-sampling/conjugate-priors)

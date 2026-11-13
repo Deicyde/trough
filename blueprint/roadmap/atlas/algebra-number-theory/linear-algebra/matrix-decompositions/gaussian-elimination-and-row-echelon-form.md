@@ -8,7 +8,7 @@ proof: formalized
 
 # Gaussian elimination and row echelon form
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html).
 
 ## Row echelon form via a row permutation and a unit lower-triangular matrix
 
@@ -21,7 +21,7 @@ $(A_\sigma)_{ic} = A_{\sigma(i) c}$, and a matrix $B$ is in row echelon form whe
 $i_1 < i_2$ and every column $c$, if $B_{i_1 c'} = 0$ for every column $c' < c$, then
 $B_{i_2 c} = 0$.
 
-Formalized by `Matrix.exists_unitLowerTriangular_mul_submatrix_isRowEchelon`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#exists-unit-lower-triangular-mul-submatr).
+Formalized by `Matrix.exists_unitLowerTriangular_mul_submatrix_isRowEchelon`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#exists-unit-lower-triangular-mul-submatr).
 
 ## One pivot step of Gaussian elimination
 
@@ -44,7 +44,7 @@ https://en.wikipedia.org/wiki/Gaussian_elimination).
 
 - L. N. Trefethen and D. Bau, Numerical Linear Algebra, SIAM (1997), Lectures 20-21.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.GaussPivotWanted.gauss_pivot_elim_step`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#gauss-pivot-elim-step).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.GaussPivotWanted.gauss_pivot_elim_step`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean, line 326](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean#L326). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#gauss-pivot-elim-step).
 
 ## Gaussian elimination as a product of row operations
 
@@ -69,7 +69,7 @@ elimination to row echelon form, https://en.wikipedia.org/wiki/Gaussian_eliminat
 
 - L. N. Trefethen and D. Bau, Numerical Linear Algebra, SIAM (1997), Lectures 20-21.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.GaussPivotWanted.exists_gauss_elimination_opList`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#exists-gauss-elimination-op-list).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.GaussPivotWanted.exists_gauss_elimination_opList`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/GaussPivot.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#exists-gauss-elimination-op-list).
 
 ## Pivot columns of a reduced row echelon matrix
 
@@ -80,7 +80,7 @@ leading entry of row $i$ of $A$ is in column $c$, that is, $A_{ic} \neq 0$ and $
 every column $j < c$. Then column $c$ of $A$ is the standard basis vector $e_i$: $A_{ic} = 1$ and
 $A_{kc} = 0$ for every row $k \neq i$.
 
-Formalized by `Matrix.IsReducedRowEchelon.col_eq_single_of_isLeadingEntry`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#col-eq-single-of-is-leading-entry).
+Formalized by `Matrix.IsReducedRowEchelon.col_eq_single_of_isLeadingEntry`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#col-eq-single-of-is-leading-entry).
 
 ## Order-preserving reindexing of columns preserves reduced row echelon form
 
@@ -91,7 +91,7 @@ set $N$. Let $e : O \to N$ be an order isomorphism from a linearly ordered set $
 matrix $B$ with columns indexed by $O$ and entries $B_{ik} = A_{i\,e(k)}$ is in reduced row
 echelon form.
 
-Formalized by `Matrix.IsReducedRowEchelon.submatrix_orderIso`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#submatrix-order-iso).
+Formalized by `Matrix.IsReducedRowEchelon.submatrix_orderIso`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#submatrix-order-iso).
 
 ## Existence of the reduced row echelon form
 
@@ -109,7 +109,7 @@ matrix of the columns of $A$ in that basis and $P$ the matrix of the coordinate 
 
 - G. Strang, Introduction to Linear Algebra, 6th ed., Wellesley-Cambridge Press (2023), Section 2.2.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelonWanted.exists_isReducedRowEchelon_rowEquivalent`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#exists-is-reduced-row-echelon-row-equiva).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelonWanted.exists_isReducedRowEchelon_rowEquivalent`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 571](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L571). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#exists-is-reduced-row-echelon-row-equiva).
 
 ## Uniqueness of the reduced row echelon form
 
@@ -128,7 +128,7 @@ columns to agree.
 
 - G. Strang, Introduction to Linear Algebra, 6th ed., Wellesley-Cambridge Press (2023), Section 2.2.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelonWanted.isReducedRowEchelon_unique_of_rowEquivalent`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#is-reduced-row-echelon-unique-of-row-equ).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelonWanted.isReducedRowEchelon_unique_of_rowEquivalent`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 605](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L605). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#is-reduced-row-echelon-unique-of-row-equ).
 
 ## Invertible row operations preserve the null space
 
@@ -145,7 +145,7 @@ because $P$ is invertible, so $(PA)x = 0$ if and only if $Ax = 0$.
 
 - G. Strang, Introduction to Linear Algebra, 6th ed., Wellesley-Cambridge Press (2023), Section 2.2.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelonWanted.ker_mulVecLin_mul_left_isUnit`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#ker-mul-vec-lin-mul-left-is-unit).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.ReducedRowEchelonWanted.ker_mulVecLin_mul_left_isUnit`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean, line 642](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/ReducedRowEchelon.lean#L642). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html#ker-mul-vec-lin-mul-left-is-unit).
 
 ## Depends on
 
@@ -154,4 +154,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gaussian elimination and row echelon form](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/matrix-decompositions/gaussian-elimination-and-row-echelon-form)

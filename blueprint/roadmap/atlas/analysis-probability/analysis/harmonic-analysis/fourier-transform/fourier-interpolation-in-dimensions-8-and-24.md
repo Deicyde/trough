@@ -7,13 +7,13 @@ statement: formalized
 
 # Fourier interpolation in dimensions 8 and 24
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html).
 
 ## Radial function
 
 A function is radial if it takes the same value at points with the same norm.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.Radial`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#radial).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.Radial`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#radial).
 
 ## Embedding of the first coordinate axis
 
@@ -21,7 +21,7 @@ For a positive integer $n$, this is the map
 $\mathbb{R} \to \mathbb{R}^n$ sending $r$ to $(r, 0, \dots, 0)$, whose image is the first
 coordinate axis.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.realIncl`, an abbreviation declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#real-incl).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.realIncl`, an abbreviation declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#real-incl).
 
 ## Fourier sample sequences
 
@@ -33,7 +33,7 @@ sequences indexed by the integers $k \ge k_0$ whose $k$-th terms are, in this or
 $f(r_k e_1)$, $\hat f(r_k e_1)$, the derivative at $r = r_k$ of $r \mapsto f(r e_1)$, and the
 derivative at $r = r_k$ of $r \mapsto \hat f(r e_1)$.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.coeffs`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#coeffs).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.coeffs`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#coeffs).
 
 ## Rapidly decreasing sequences
 
@@ -41,7 +41,7 @@ For a natural number $k_0$, a complex sequence
 $(a_k)_{k \ge k_0}$ indexed by the integers $k \ge k_0$ is rapidly decreasing if
 $k^m |a_k| \to 0$ as $k \to \infty$ for every natural number $m$.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RapidlyDecreasing`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#rapidly-decreasing).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RapidlyDecreasing`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#rapidly-decreasing).
 
 ## Rapidly decreasing sample quadruples
 
@@ -51,14 +51,14 @@ decreasing quadruple if each of its four sequences $(a_{k,j})_{k \ge k_0}$ is ra
 decreasing, that is, $k^m |a_{k,j}| \to 0$ as $k \to \infty$ for every $j$ and every natural
 number $m$.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RapidlyDecreasingSamples`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#rapidly-decreasing-samples).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RapidlyDecreasingSamples`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#rapidly-decreasing-samples).
 
 ## Radial Schwartz functions
 
 For a natural number $n$, this is the set of complex-valued
 Schwartz functions $f$ on $\mathbb{R}^n$ that are radial: $f(x) = f(y)$ whenever $|x| = |y|$.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RadialSchwartz`, an abbreviation declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#radial-schwartz).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RadialSchwartz`, an abbreviation declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#radial-schwartz).
 
 ## Rapidly decreasing sample data
 
@@ -67,7 +67,7 @@ $(a_{k,j})$ of complex numbers indexed by the integers $k \ge k_0$ and $j \in \{
 whose four sequences $(a_{k,j})_{k \ge k_0}$ are all rapidly decreasing: $k^m |a_{k,j}| \to 0$
 as $k \to \infty$ for every $j$ and every natural number $m$.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RapidSampleData`, an abbreviation declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#rapid-sample-data).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.RapidSampleData`, an abbreviation declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#rapid-sample-data).
 
 ## Radial Fourier interpolation property
 
@@ -86,7 +86,7 @@ $\mathbb{R}^n$ onto the quadruples of rapidly decreasing sequences indexed by $k
 The bijection is required to be the sampling map itself, so no interpolation basis is hidden
 in the definition.
 
-Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.CKMRV`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#ckmrv).
+Formalized by `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.CKMRV`, a definition declared in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#ckmrv).
 
 ## Cohn–Kumar–Miller–Radchenko–Viazovska Fourier interpolation theorem
 
@@ -107,7 +107,7 @@ dimension $8$ and at radius $2$ in dimension $24$.
 
 - H. Cohn, A. Kumar, S. D. Miller, D. Radchenko, and M. Viazovska, 'Universal optimality of the E8 and Leech lattices and interpolation formulas', Ann. of Math. 196 (2022), 983-1082, Theorem 1.9, https://doi.org/10.4007/annals.2022.196.3.3. Problem `ckmrv_fourier_interpolation` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.ckmrv_fourier_interpolation` is written with `theorem_wanted` in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#ckmrv-fourier-interpolation).
+Stated but not proved: `MathlibExt.Analysis.CKMRVInterpolationWanted.Analysis.CKMRVInterpolation.ckmrv_fourier_interpolation` is written with `theorem_wanted` in [WantedExt/Analysis/CKMRVInterpolationWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/CKMRVInterpolationWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html#ckmrv-fourier-interpolation).
 
 ## Depends on
 
@@ -116,4 +116,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fourier interpolation in dimensions 8 and 24](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/fourier-transform/fourier-interpolation-in-dimensions-8-and-24)

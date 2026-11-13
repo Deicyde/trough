@@ -7,7 +7,7 @@ statement: formalized
 
 # Natural duals of Möbius maps
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html).
 
 ## Fixed points of a Moebius dual branch
 
@@ -22,7 +22,7 @@ The paper's further side conditions on $\beta$ and $\gamma$ are not used.
 
 - Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.moebius_fixedPoint_eq_iff` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-fixed-point-eq-iff).
+Stated but not proved: `MetaMathlibExt.moebius_fixedPoint_eq_iff` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-fixed-point-eq-iff).
 
 ## Moebius dual branches disagree at −1
 
@@ -38,7 +38,7 @@ Equality would force $\delta = -1$.
 
 - Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.moebius_dual_endpoint_ne_neg_one` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-dual-endpoint-ne-neg-one).
+Stated but not proved: `MetaMathlibExt.moebius_dual_endpoint_ne_neg_one` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-dual-endpoint-ne-neg-one).
 
 ## Central equations for natural duals of Moebius maps
 
@@ -64,7 +64,7 @@ $\alpha^2\gamma + \alpha^2\gamma\delta + 2\alpha + \beta + \beta\gamma + 2\alpha
 
 - Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.moebius_dual_central_equations` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-dual-central-equations).
+Stated but not proved: `MetaMathlibExt.moebius_dual_central_equations` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-dual-central-equations).
 
 ## Singularity of natural duals of Moebius maps (algebraic form)
 
@@ -89,7 +89,7 @@ $[\eta, \xi]$ reduces to a single point.
 
 - Fritz Schweiger, *A Remark on Singular Duals of Moebius Maps*, INTEGERS 24 (2024), Article A17, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.moebius_naturalDual_singular` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-natural-dual-singular).
+Stated but not proved: `MetaMathlibExt.moebius_naturalDual_singular` is written with `theorem_wanted` in [WantedExt/Dynamics/MoebiusSingularDualWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/MoebiusSingularDualWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html#moebius-natural-dual-singular).
 
 ## Depends on
 
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Natural duals of Möbius maps](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/low-dimensional-dynamics/natural-duals-of-m-bius-maps)

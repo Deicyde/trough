@@ -7,7 +7,7 @@ statement: formalized
 
 # Multiple zeta values in positive characteristic
 
-13 results, 10 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html).
+13 results, 10 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html).
 
 ## Tuples of monic polynomials with strictly decreasing degrees
 
@@ -15,7 +15,7 @@ Let $F$ be a finite field
 and $r$ a natural number. This is the set of $r$-tuples $(a_1, \dots, a_r)$ of monic polynomials
 in $F[t]$ such that $\deg a_1 > \deg a_2 > \dots > \deg a_r$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.monicStrictAntiNatDegree`, an abbreviation declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#monic-strict-anti-nat-degree).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.monicStrictAntiNatDegree`, an abbreviation declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#monic-strict-anti-nat-degree).
 
 ## Multiple zeta values in positive characteristic
 
@@ -29,14 +29,14 @@ $$\zeta_A(s_1, \dots, s_r) = \sum \frac{1}{a_1^{s_1} \cdots a_r^{s_r}} \in K_\in
 where the sum runs over all $r$-tuples $(a_1, \dots, a_r)$ of monic polynomials in $A$ with
 $\deg a_1 > \deg a_2 > \dots > \deg a_r$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.ζ_A`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#a).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.ζ_A`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#a).
 
 ## Compositions of $w$ into $r$ parts
 
 For natural numbers $w$ and $r$, $\mathfrak{S}_w$
 is the set of $r$-tuples $(s_1, \dots, s_r)$ of positive integers with $s_1 + \dots + s_r = w$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝔖_w`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#w).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝔖_w`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#w).
 
 ## Multiple zeta values of given depth and weight
 
@@ -46,7 +46,7 @@ $F$, with $s_1, \dots, s_r$ positive integers, is $s_1 + \dots + s_r$. This is t
 zeta values $\zeta_A(s_1, \dots, s_r)$ over $F$ of weight $w$, that is, with $s_1, \dots, s_r$
 positive integers and $s_1 + \dots + s_r = w$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.ζ_A_weight`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#a-weight).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.ζ_A_weight`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#a-weight).
 
 ## The space $\mathcal{Z}_w$ of multiple zeta values of weight $w$
 
@@ -56,7 +56,7 @@ infinity. For $w \in \mathbb{N}$, $\mathcal{Z}_w$ is the $K$-linear subspace of 
 by the multiple zeta values $\zeta_A(s_1, \dots, s_r)$ for all $r \ge 0$ and all positive integers
 $s_1, \dots, s_r$ with $s_1 + \dots + s_r = w$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒵`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#untitled).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒵`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#untitled).
 
 ## Restricted multiple zeta values of given depth
 
@@ -65,7 +65,7 @@ elements, $w$ a natural number and $r$ a positive integer. This is the set of mu
 values $\zeta_A(s_1, \dots, s_r)$ over $F$ with positive integers $s_1, \dots, s_r$ such that
 $s_1 + \dots + s_r = w$, $s_i \le q$ for $1 \le i \le r - 1$, and $s_r < q$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯_aux`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#aux).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯_aux`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#aux).
 
 ## The set $\mathcal{T}_w$ of restricted multiple zeta values
 
@@ -75,7 +75,7 @@ zeta values $\zeta_A(s_1, \dots, s_r)$, over all $r \ge 1$ and all positive inte
 $s_1, \dots, s_r$ with $s_1 + \dots + s_r = w$, $s_i \le q$ for $1 \le i \le r - 1$,
 and $s_r < q$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#untitled-2).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#untitled-2).
 
 ## Multiple zeta values of given depth with small entries
 
@@ -84,7 +84,7 @@ $q$ elements, $w$ a natural number and $r$ a positive integer. This is the set o
 zeta values $\zeta_A(s_1, \dots, s_r)$ over $F$ with positive integers $s_1, \dots, s_r$ such
 that $s_1 + \dots + s_r = w$ and $s_i < q$ for all $i$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯0_aux`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#0-aux).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯0_aux`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#0-aux).
 
 ## Multiple zeta values with small entries
 
@@ -93,7 +93,7 @@ $w$ a natural number. The set $\mathcal{T}^0_w$ consists of the multiple zeta va
 $\zeta_A(s_1, \dots, s_r)$ over $F$, for all positive integers $r$ and $s_1, \dots, s_r$ such
 that $s_1 + \dots + s_r = w$ and $s_i < q$ for all $i$.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯0`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#0).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.𝒯0`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#0).
 
 ## Dimension sequence for multiple zeta values
 
@@ -105,7 +105,7 @@ $d(w) = d(w - 1) + d(w - 2) + \dots + d(w - q)$ for $w > q$.
 This is the sequence of Conjecture 1.5 and Theorems A and D of T. N. Dac, On Zagier-Hoffman's
 conjectures in positive characteristic.
 
-Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.d`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#d).
+Formalized by `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.d`, a definition declared in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#d).
 
 ## Brown's theorem in positive characteristic
 
@@ -122,7 +122,7 @@ the dimension sequence for multiple zeta values.
 
 - T. N. Dac, `On Zagier-Hoffman's conjectures in positive characteristic`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_zagier_hoffman_positive_char` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_A` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#theorem-a).
+Stated but not proved: `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_A` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#theorem-a).
 
 ## Linear independence of multiple zeta values with small entries
 
@@ -138,7 +138,7 @@ $\dim_K \mathcal{Z}_w \ge |\mathcal{T}^0_w|$.
 
 - T. N. Dac, `On Zagier-Hoffman's conjectures in positive characteristic`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_zagier_hoffman_positive_char` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_B` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#theorem-b).
+Stated but not proved: `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_B` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#theorem-b).
 
 ## Dimension of multiple zeta values in low weight
 
@@ -158,7 +158,7 @@ $\mathcal{Z}_w$.
 
 - T. N. Dac, `On Zagier-Hoffman's conjectures in positive characteristic`, Annals of Math, 194 (1) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_zagier_hoffman_positive_char` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_D` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#theorem-d).
+Stated but not proved: `MathlibExt.NumberTheory.ZagierHoffmanPositiveCharWanted.ZagierHoffmanPositiveChar.theorem_D` is written with `theorem_wanted` in [WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ZagierHoffmanPositiveCharWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html#theorem-d).
 
 ## Depends on
 
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multiple zeta values in positive characteristic](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/function-fields/multiple-zeta-values-in-positive-characteristic)

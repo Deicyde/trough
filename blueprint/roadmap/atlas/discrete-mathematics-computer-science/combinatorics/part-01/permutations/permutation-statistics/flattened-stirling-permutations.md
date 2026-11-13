@@ -7,7 +7,7 @@ statement: formalized
 
 # Flattened Stirling permutations
 
-36 results, 23 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html).
+36 results, 23 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html).
 
 ## Start of a run
 
@@ -20,7 +20,7 @@ begins.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1 (runs).
 
-Formalized by `MetaMathlibExt.wordRunStart`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#word-run-start).
+Formalized by `MetaMathlibExt.wordRunStart`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#word-run-start).
 
 ## Number of runs of a word
 
@@ -33,7 +33,7 @@ no runs.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1 (runs).
 
-Formalized by `MetaMathlibExt.wordRunCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#word-run-count).
+Formalized by `MetaMathlibExt.wordRunCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#word-run-count).
 
 ## Flattened words
 
@@ -47,7 +47,7 @@ start runs.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1 (flattened).
 
-Formalized by `MetaMathlibExt.IsFlattenedWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-flattened-word).
+Formalized by `MetaMathlibExt.IsFlattenedWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-flattened-word).
 
 ## Number of flattened Stirling permutations
 
@@ -61,7 +61,7 @@ read from left to right.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1.
 
-Formalized by `MetaMathlibExt.flattenedStirlingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-count).
+Formalized by `MetaMathlibExt.flattenedStirlingCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-count).
 
 ## Counting flattened Stirling permutations by runs
 
@@ -73,7 +73,7 @@ exactly $k$ runs, where a run is a maximal contiguous weakly increasing subword.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1.
 
-Formalized by `MetaMathlibExt.flattenedStirlingRunCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count).
+Formalized by `MetaMathlibExt.flattenedStirlingRunCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count).
 
 ## Flattened partitions counted by runs
 
@@ -89,7 +89,7 @@ $1, \dots, n$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1 (flattened partitions, after Nabawanda, Rakotondrajao, and Bamunoba).
 
-Formalized by `MetaMathlibExt.flattenedPermRunCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-perm-run-count).
+Formalized by `MetaMathlibExt.flattenedPermRunCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-perm-run-count).
 
 ## Type $B$ set partitions
 
@@ -102,7 +102,7 @@ satisfies $-\beta = \beta$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Definition 1.
 
-Formalized by `MetaMathlibExt.IsTypeBSetPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-type-bset-partition).
+Formalized by `MetaMathlibExt.IsTypeBSetPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-type-bset-partition).
 
 ## A flattened word with four runs
 
@@ -115,7 +115,7 @@ $4$ runs, where a run is a maximal contiguous weakly increasing subword.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1 (example).
 
-Formalized by `MetaMathlibExt.isFlattenedWord_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-flattened-word-example).
+Formalized by `MetaMathlibExt.isFlattenedWord_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-flattened-word-example).
 
 ## A word that is not flattened
 
@@ -128,7 +128,7 @@ leading letters $1, 2, 1$, which do not weakly increase.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Section 1 (example).
 
-Formalized by `MetaMathlibExt.not_isFlattenedWord_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#not-is-flattened-word-example).
+Formalized by `MetaMathlibExt.not_isFlattenedWord_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#not-is-flattened-word-example).
 
 ## The one-block partition is of type B
 
@@ -141,7 +141,7 @@ negative (the zero-block).
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Definition 1; characteristic check of `IsTypeBSetPartition`.
 
-Formalized by `MetaMathlibExt.isTypeBSetPartition_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-type-bset-partition-indiscrete).
+Formalized by `MetaMathlibExt.isTypeBSetPartition_indiscrete`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-type-bset-partition-indiscrete).
 
 ## Recursion for flattened partitions by number of runs
 
@@ -161,7 +161,7 @@ This is the recursion of Nabawanda, Rakotondrajao, and Bamunoba as quoted in the
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 1 (quoting Nabawanda et al., Theorem 1).
 
-Stated but not proved: `MetaMathlibExt.flattenedPermRunCount_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-perm-run-count-recursion).
+Stated but not proved: `MetaMathlibExt.flattenedPermRunCount_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-perm-run-count-recursion).
 
 ## Flattened Stirling permutations and type $B$ set partitions
 
@@ -173,7 +173,7 @@ set of type $B$ set partitions of $[-n, n] = \{-n, \dots, n\}$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.nonempty_flattenedStirling_equiv_typeBSetPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#nonempty-flattened-stirling-equiv-type-b).
+Stated but not proved: `MetaMathlibExt.nonempty_flattenedStirling_equiv_typeBSetPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#nonempty-flattened-stirling-equiv-type-b).
 
 ## Flattened Stirling permutations are counted by Dowling numbers
 
@@ -186,7 +186,7 @@ $(q, r)$-Whitney numbers of the second kind with $m = 2$, $r = 1$ and $q = 1$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.flattenedStirlingCount_succ_eq_dowling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-count-succ-eq-dowling).
+Stated but not proved: `MetaMathlibExt.flattenedStirlingCount_succ_eq_dowling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-count-succ-eq-dowling).
 
 ## Maximum number of runs of a flattened Stirling permutation
 
@@ -198,7 +198,7 @@ $\lceil 2n/3 \rceil$ runs, and no flattened Stirling permutation of order $n$ ha
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.isGreatest_flattenedStirling_runCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-greatest-flattened-stirling-run-count).
+Stated but not proved: `MetaMathlibExt.isGreatest_flattenedStirling_runCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#is-greatest-flattened-stirling-run-count).
 
 ## Exactly one flattened Stirling permutation has one run
 
@@ -209,7 +209,7 @@ $n \ge 1$, exactly one flattened Stirling permutation of order $n$ has exactly o
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 2, part 1.
 
-Stated but not proved: `MetaMathlibExt.flattenedStirlingRunCount_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count-one).
+Stated but not proved: `MetaMathlibExt.flattenedStirlingRunCount_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count-one).
 
 ## Recursion for flattened Stirling permutations with two runs
 
@@ -222,7 +222,7 @@ $|\mathrm{flat}_2(Q_{n+1})| = 2\,|\mathrm{flat}_2(Q_n)| + 2n - 1$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 2, part 2.
 
-Stated but not proved: `MetaMathlibExt.flattenedStirlingRunCount_two_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count-two-recursi).
+Stated but not proved: `MetaMathlibExt.flattenedStirlingRunCount_two_recursion` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count-two-recursi).
 
 ## Closed form for flattened Stirling permutations with two runs
 
@@ -234,7 +234,7 @@ $n + 1$ with exactly two runs equals $3(2^n - 1) - 2n$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.flattenedStirlingRunCount_two_closed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count-two-closed).
+Stated but not proved: `MetaMathlibExt.flattenedStirlingRunCount_two_closed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-run-count-two-closed).
 
 ## A binomial–Stirling formula for flattened Stirling permutations
 
@@ -251,7 +251,7 @@ where $S(a, k)$ are the Stirling numbers of the second kind, with $S(0, 0) = 1$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.flattenedStirlingCount_succ_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-count-succ-eq-sum).
+Stated but not proved: `MetaMathlibExt.flattenedStirlingCount_succ_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#flattened-stirling-count-succ-eq-sum).
 
 ## A binomial–Stirling formula for the Dowling numbers
 
@@ -269,7 +269,7 @@ where $S(a, k)$ are the Stirling numbers of the second kind, with $S(0, 0) = 1$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Corollary 3, formula.
 
-Stated but not proved: `MetaMathlibExt.dowling_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#dowling-eq-sum).
+Stated but not proved: `MetaMathlibExt.dowling_eq_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#dowling-eq-sum).
 
 ## Exponential generating function of the Dowling numbers
 
@@ -283,7 +283,7 @@ $\sum_{n \ge 0} D_n x^n / n!$ is summable with sum $\exp\bigl(x + (e^{2x} - 1)/2
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Corollary 3, generating function.
 
-Stated but not proved: `MetaMathlibExt.hasSum_dowling_egf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#has-sum-dowling-egf).
+Stated but not proved: `MetaMathlibExt.hasSum_dowling_egf` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#has-sum-dowling-egf).
 
 ## The shift map
 
@@ -297,7 +297,7 @@ $\{1, \dots, n + 1\}$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 2 (the map `h`).
 
-Formalized by `MetaMathlibExt.typeBShift`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bshift).
+Formalized by `MetaMathlibExt.typeBShift`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bshift).
 
 ## Doubled word
 
@@ -309,7 +309,7 @@ in increasing order with each one written twice; $f(\emptyset)$ is the empty wor
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 3 (the map `f`).
 
-Formalized by `MetaMathlibExt.doubledWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#doubled-word).
+Formalized by `MetaMathlibExt.doubledWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#doubled-word).
 
 ## Wrapped word of a finite set
 
@@ -322,7 +322,7 @@ $S = \emptyset$, $g(S)$ is the empty word.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 3 (the map `g`).
 
-Formalized by `MetaMathlibExt.wrappedWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#wrapped-word).
+Formalized by `MetaMathlibExt.wrappedWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 277](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L277). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#wrapped-word).
 
 ## An example of the shift map
 
@@ -333,7 +333,7 @@ of integers, $h(\{-2, 0, 1\}) = \{1, 2, 3\}$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 2 (the map `h`).
 
-Formalized by `MetaMathlibExt.typeBShift_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bshift-example).
+Formalized by `MetaMathlibExt.typeBShift_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bshift-example).
 
 ## The doubled word of a singleton
 
@@ -344,7 +344,7 @@ singleton $\{s\}$ is $f(\{s\}) = s\,s$, the word of length two whose letters are
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 3 (the map `f`).
 
-Formalized by `MetaMathlibExt.doubledWord_singleton`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#doubled-word-singleton).
+Formalized by `MetaMathlibExt.doubledWord_singleton`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#doubled-word-singleton).
 
 ## Length of the doubled word
 
@@ -355,7 +355,7 @@ $s_1 < \dots < s_k$, the doubled word $f(S) = s_1 s_1 s_2 s_2 \cdots s_k s_k$ ha
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 3 (the map `f`).
 
-Formalized by `MetaMathlibExt.length_doubledWord`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#length-doubled-word).
+Formalized by `MetaMathlibExt.length_doubledWord`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 300](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L300). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#length-doubled-word).
 
 ## Wrapped word of the empty set
 
@@ -366,7 +366,7 @@ empty word.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 3 (the map `g`).
 
-Formalized by `MetaMathlibExt.wrappedWord_empty`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#wrapped-word-empty).
+Formalized by `MetaMathlibExt.wrappedWord_empty`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#wrapped-word-empty).
 
 ## Wrapped word of a singleton
 
@@ -377,7 +377,7 @@ singleton $\{s\}$ is $g(\{s\}) = s\,s$, the word of length two both of whose let
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 3 (the map `g`).
 
-Formalized by `MetaMathlibExt.wrappedWord_singleton`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#wrapped-word-singleton).
+Formalized by `MetaMathlibExt.wrappedWord_singleton`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 314](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L314). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#wrapped-word-singleton).
 
 ## Length of the wrapped word
 
@@ -389,7 +389,7 @@ $S = \emptyset$) has length $2|S|$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 3 (the map `g`).
 
-Formalized by `MetaMathlibExt.length_wrappedWord`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#length-wrapped-word).
+Formalized by `MetaMathlibExt.length_wrappedWord`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#length-wrapped-word).
 
 ## Adler block labels
 
@@ -409,7 +409,7 @@ kept blocks as $\beta_1, \dots, \beta_m$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Notation 2.3 (arXiv:2306.13034).
 
-Formalized by `MetaMathlibExt.adlerBlockLabels`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#adler-block-labels).
+Formalized by `MetaMathlibExt.adlerBlockLabels`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 336](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L336). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#adler-block-labels).
 
 ## Adler labels lie in $\{1, \dots, n\}$
 
@@ -421,7 +421,7 @@ $1 \le p \le n$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Notation 2.3.
 
-Formalized by `MetaMathlibExt.adlerBlockLabels_subset`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#adler-block-labels-subset).
+Formalized by `MetaMathlibExt.adlerBlockLabels_subset`, a theorem declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#adler-block-labels-subset).
 
 ## The word of a set partition of $(-n, n)$, as a list
 
@@ -442,7 +442,7 @@ $$g(h(P_0))\, f(h(N_1))\, g(h(P_1)) \cdots f(h(N_m))\, g(h(P_m)).$$
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 1 (map `φ`), with Definition 2.
 
-Formalized by `MetaMathlibExt.typeBFlattenedWordList`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bflattened-word-list).
+Formalized by `MetaMathlibExt.typeBFlattenedWordList`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bflattened-word-list).
 
 ## The word of a set partition of $(-n, n)$
 
@@ -458,7 +458,7 @@ Restricted to type $B$ set partitions, this is the map $\varphi$ of Proposition 
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 1 (map `φ`).
 
-Formalized by `MetaMathlibExt.typeBFlattenedWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bflattened-word).
+Formalized by `MetaMathlibExt.typeBFlattenedWord`, a definition declared in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bflattened-word).
 
 ## The word of a type $B$ set partition is a flattened Stirling permutation
 
@@ -472,7 +472,7 @@ flattened.
 - arXiv:2306.13034, Proposition 3.6; the INTEGERS record is truncated after "let `π_i = N_i P_i` be as in", and the statement is completed from the arXiv text.
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.typeBFlattenedWord_mem_flattenedStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bflattened-word-mem-flattened-stirl).
+Stated but not proved: `MetaMathlibExt.typeBFlattenedWord_mem_flattenedStirling` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#type-bflattened-word-mem-flattened-stirl).
 
 ## The map $\varphi$ is a bijection from type $B$ set partitions onto flattened Stirling permutations
 
@@ -491,7 +491,7 @@ $\{-n, \dots, n\}$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.bijOn_typeBFlattenedWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#bij-on-type-bflattened-word).
+Stated but not proved: `MetaMathlibExt.bijOn_typeBFlattenedWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#bij-on-type-bflattened-word).
 
 ## Number of runs of the word of a type $B$ set partition
 
@@ -515,7 +515,7 @@ $w = \varphi(\pi)$ over all $\pi$.
 
 - Buck, Elder, Figueroa, Harris, Harry, Simpson, *Flattened Stirling Permutations*, INTEGERS 24 (2024), Article A104, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.wordRunCount_typeBFlattenedWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#word-run-count-type-bflattened-word).
+Stated but not proved: `MetaMathlibExt.wordRunCount_typeBFlattenedWord` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean, line 402](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/FlattenedStirlingPermutationsWanted.lean#L402). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html#word-run-count-type-bflattened-word).
 
 ## Depends on
 
@@ -524,4 +524,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Flattened Stirling permutations](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/permutations/permutation-statistics/flattened-stirling-permutations)

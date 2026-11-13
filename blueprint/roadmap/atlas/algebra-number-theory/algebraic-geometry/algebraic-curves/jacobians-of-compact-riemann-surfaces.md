@@ -7,7 +7,7 @@ statement: formalized
 
 # Jacobians of compact Riemann surfaces
 
-17 results, 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html).
+17 results, 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html).
 
 ## Jacobian Challenge
 
@@ -21,7 +21,7 @@ is a natural number.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.genus` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#genus).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.genus` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#genus).
 
 ## A compact Riemann surface has genus zero iff it is a sphere
 
@@ -34,7 +34,7 @@ sphere in Euclidean space $\mathbb{R}^3$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.genus_eq_zero_iff_homeo` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#genus-eq-zero-iff-homeo).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.genus_eq_zero_iff_homeo` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#genus-eq-zero-iff-homeo).
 
 ## Jacobian of a compact Riemann surface
 
@@ -49,7 +49,7 @@ on $\mathbb{C}^g$, where $g$ is the genus of $X$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#jacobian).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#jacobian).
 
 ## Abel–Jacobi map
 
@@ -60,7 +60,7 @@ $P \in X$ gives a map $X \to J(X)$, the Abel–Jacobi map based at $P$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve).
 
 ## The Abel–Jacobi map is holomorphic
 
@@ -72,7 +72,7 @@ $P \in X$, the Abel–Jacobi map $X \to J(X)$ based at $P$ is holomorphic.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve_contMDiff` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve-cont-mdiff).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve_contMDiff` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve-cont-mdiff).
 
 ## The Abel–Jacobi map sends the base point to zero
 
@@ -84,7 +84,7 @@ $X \to J(X)$ based at $P$ sends $P$ to $0$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve_self` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve-self).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve_self` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve-self).
 
 ## The Abel–Jacobi map is injective in positive genus
 
@@ -96,7 +96,7 @@ $X \to J(X)$ based at $P$ is injective.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve_inj` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve-inj).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.ofCurve_inj` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#of-curve-inj).
 
 ## Pushforward on Jacobians
 
@@ -110,7 +110,7 @@ the homomorphism induced by $f$; its properties are stated separately.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward).
 
 ## The pushforward on Jacobians is holomorphic
 
@@ -124,7 +124,7 @@ $f : X \to Y$, the pushforward $f_* : J(X) \to J(Y)$ is holomorphic.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_contMDiff` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-cont-mdiff).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_contMDiff` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-cont-mdiff).
 
 ## Pushforward along the identity
 
@@ -137,7 +137,7 @@ $(\mathrm{id}_X)_*(P) = P$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_id_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-id-apply).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_id_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-id-apply).
 
 ## Pushforward respects composition
 
@@ -150,7 +150,7 @@ $P \in J(X)$, the pushforwards satisfy $(g \circ f)_*(P) = g_*(f_*(P))$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_comp_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-comp-apply).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_comp_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-comp-apply).
 
 ## Pullback on Jacobians
 
@@ -165,7 +165,7 @@ stated separately.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback).
 
 ## The pullback map on Jacobians is holomorphic
 
@@ -178,7 +178,7 @@ pullback map $f^* : J(Y) \to J(X)$ is holomorphic.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback_contMDiff` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback-cont-mdiff).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback_contMDiff` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback-cont-mdiff).
 
 ## Pullback along the identity
 
@@ -191,7 +191,7 @@ $(\mathrm{id}_X)^*(P) = P$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback_id_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback-id-apply).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback_id_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback-id-apply).
 
 ## Pullback on Jacobians is compatible with composition
 
@@ -204,7 +204,7 @@ and every point $P$ of the Jacobian $J(Z)$, we have $(g \circ f)^*(P) = f^*(g^*(
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback_comp_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback-comp-apply).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pullback_comp_apply` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pullback-comp-apply).
 
 ## Degree of a holomorphic map
 
@@ -218,7 +218,7 @@ The intended value is $0$ when $f$ is constant and the usual degree of $f$ other
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.degree` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#degree).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.degree` is written with `def_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#degree).
 
 ## Pushforward of a pullback is multiplication by the degree
 
@@ -233,7 +233,7 @@ $f_*(f^*(P)) = \deg(f) \cdot P$.
 
 - https://leanprover.zulipchat.com/#narrow/stream/583336-Autoformalization/topic/Jacobian%20challenge. Problem `jacobian_challenge_diffgeo` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_pullback` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/JacobianChallengeWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-pullback).
+Stated but not proved: `MathlibExt.Geometry.JacobianChallengeWanted.JacobianChallenge.Jacobian.pushforward_pullback` is written with `theorem_wanted` in [WantedExt/Geometry/JacobianChallengeWanted.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/JacobianChallengeWanted.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html#pushforward-pullback).
 
 ## Depends on
 
@@ -242,4 +242,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Jacobians of compact Riemann surfaces](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/algebraic-curves/jacobians-of-compact-riemann-surfaces)

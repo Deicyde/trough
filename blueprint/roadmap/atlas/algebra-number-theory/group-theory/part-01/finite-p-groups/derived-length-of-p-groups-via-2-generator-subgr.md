@@ -7,7 +7,7 @@ statement: formalized
 
 # Derived length of p-groups via 2-generator subgroups
 
-5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html).
+5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html).
 
 ## Kourovka Problem 17.46, with the bound $4$
 
@@ -16,7 +16,7 @@ every finite $p$-group $G$ such that for all $x, y \in G$ the derived subgroup $
 $H = \langle x, y \rangle$ is cyclic, $G$ has derived length at most $4$, that is, the fourth
 term $G^{(4)}$ of the derived series of $G$ is trivial.
 
-Formalized by `MathlibExt.GroupTheory.TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.twoGeneratorCyclicDerivedLengthAtMostFour`, a definition declared in [WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-cyclic-derived-length-at-m).
+Formalized by `MathlibExt.GroupTheory.TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.twoGeneratorCyclicDerivedLengthAtMostFour`, a definition declared in [WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-cyclic-derived-length-at-m).
 
 ## Derived length of $p$-groups whose $2$-generator subgroups have cyclic derived subgroups (Kourovka Problem 17.46)
 
@@ -30,14 +30,14 @@ trivial.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 17.46 (B. M. Veretennikov); resolution: B. Wilkens, J. Group Theory 17 (2014), 151-174, Kourovka Archive, Problem 17.46 (Yes, it is at most 4).
 
-Stated but not proved: `MathlibExt.GroupTheory.TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.twoGeneratorCyclicDerivedLengthAtMostFour_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-cyclic-derived-length-at-m-2).
+Stated but not proved: `MathlibExt.GroupTheory.TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.twoGeneratorCyclicDerivedLengthAtMostFour_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TwoGeneratorCyclicDerivedLengthKourovka17Problem46Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-cyclic-derived-length-at-m-2).
 
 ## Metacyclic group
 
 A group $G$ is metacyclic if it has a cyclic normal subgroup $N$ such
 that the quotient $G/N$ is cyclic.
 
-Formalized by `MathlibExt.GroupTheory.TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.IsMetacyclic`, a definition declared in [WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#is-metacyclic).
+Formalized by `MathlibExt.GroupTheory.TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.IsMetacyclic`, a definition declared in [WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#is-metacyclic).
 
 ## Kourovka Problem 15.33, with the bound $2$
 
@@ -46,7 +46,7 @@ such that for all $x, y \in G$ the subgroup $\langle x, y \rangle$ generated by 
 metacyclic has derived length at most $2$, that is, its second derived subgroup $G''$ is
 trivial.
 
-Formalized by `MathlibExt.GroupTheory.TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.twoGeneratorMetacyclicMetabelian`, a definition declared in [WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-metacyclic-metabelian).
+Formalized by `MathlibExt.GroupTheory.TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.twoGeneratorMetacyclicMetabelian`, a definition declared in [WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-metacyclic-metabelian).
 
 ## Finite $2$-groups with metacyclic $2$-generator subgroups are metabelian (Kourovka Problem 15.33)
 
@@ -60,7 +60,7 @@ trivial.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 15.33 (Ya. G. Berkovich); resolution: E. Crestani and F. Menegazzo, J. Group Theory 15 (2012), no. 3, 359-383, Kourovka Archive, Problem 15.33 (answer: Yes, it is at most 2).
 
-Stated but not proved: `MathlibExt.GroupTheory.TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.twoGeneratorMetacyclicMetabelian_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-metacyclic-metabelian-hold).
+Stated but not proved: `MathlibExt.GroupTheory.TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.twoGeneratorMetacyclicMetabelian_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TwoGeneratorMetacyclicDerivedLengthKourovka15Problem33Wanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html#two-generator-metacyclic-metabelian-hold).
 
 ## Depends on
 
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Derived length of p-groups via 2-generator subgroups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/finite-p-groups/derived-length-of-p-groups-via-2-generator-subgr)

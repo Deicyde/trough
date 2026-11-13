@@ -7,7 +7,7 @@ statement: formalized
 
 # Fourier transform and uncertainty principles: its own results
 
-3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html).
+3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html).
 
 The Fourier transform on R^n and Schwartz functions: convolution, Bochner, Hausdorff–Young, Heisenberg and fractal uncertainty, band-limited functions and Bernstein inequalities, sampling and Fourier interpolation, Kakeya sets, Beurling–Ahlfors and other singular integrals.
 
@@ -21,7 +21,7 @@ function of $x \in \mathbb{R}^n$, and $(f \ast g)(x) \to 0$ as $|x| \to \infty$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_17`.
 
-Stated but not proved: `MathlibExt.Analysis.Fourier.L2ConvolutionContinuousVanishingWanted.continuous_and_tendsto_cocompact_convolution_of_memLp_two` is written with `theorem_wanted` in [WantedExt/Analysis/Fourier/L2ConvolutionContinuousVanishingWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Fourier/L2ConvolutionContinuousVanishingWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html#continuous-and-tendsto-cocompact-convolu).
+Stated but not proved: `MathlibExt.Analysis.Fourier.L2ConvolutionContinuousVanishingWanted.continuous_and_tendsto_cocompact_convolution_of_memLp_two` is written with `theorem_wanted` in [WantedExt/Analysis/Fourier/L2ConvolutionContinuousVanishingWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Fourier/L2ConvolutionContinuousVanishingWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html#continuous-and-tendsto-cocompact-convolu).
 
 ## Convolution theorem
 
@@ -40,7 +40,7 @@ $\mu$ and multiplicativity of $e$, following Stein--Shakarchi, Ch. 5, Prop. 1.11
 
 - https://en.wikipedia.org/wiki/Convolution_theorem.
 
-Formalized by `MetaMathlibExt.convolution_theorem`, a theorem declared in [MathlibExt/Analysis/Fourier/ConvolutionTheorem.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/ConvolutionTheorem.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html#convolution-theorem).
+Formalized by `MetaMathlibExt.convolution_theorem`, a theorem declared in [MathlibExt/Analysis/Fourier/ConvolutionTheorem.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/ConvolutionTheorem.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html#convolution-theorem).
 
 ## Hausdorff–Young inequality for Schwartz functions
 
@@ -56,7 +56,7 @@ $L^p$ norms are taken with respect to Lebesgue measure on $\mathbb{R}^n$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Operator theory; General theory of linear operators), problem `ma_proofbench_l2_84`.
 
-Stated but not proved: `MathlibExt.Analysis.Fourier.HausdorffYoungSchwartzWanted.exists_norm_fourier_toLp_le_norm_toLp_of_holderConjugate` is written with `theorem_wanted` in [WantedExt/Analysis/Fourier/HausdorffYoungSchwartzWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Fourier/HausdorffYoungSchwartzWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html#exists-norm-fourier-to-lp-le-norm-to-lp).
+Stated but not proved: `MathlibExt.Analysis.Fourier.HausdorffYoungSchwartzWanted.exists_norm_fourier_toLp_le_norm_toLp_of_holderConjugate` is written with `theorem_wanted` in [WantedExt/Analysis/Fourier/HausdorffYoungSchwartzWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Fourier/HausdorffYoungSchwartzWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html#exists-norm-fourier-to-lp-le-norm-to-lp).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fourier transform and uncertainty principles](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-transform/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/fourier-transform)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/fourier-transform)

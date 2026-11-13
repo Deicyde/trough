@@ -8,7 +8,7 @@ proof: formalized
 
 # Argument principle
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle/index.html).
 
 ## Argument principle on a closed disc
 
@@ -20,7 +20,7 @@ $|z - c| = R$, traversed once counterclockwise, equals $2\pi i$ times the sum of
 at the points of the open disc $|z - c| < R$ (zeros counted positively and poles negatively, with
 multiplicity).
 
-Formalized by `MathlibExt.Analysis.Complex.ArgumentPrinciple.argumentPrinciple_closedBall_general`, a theorem declared in [MathlibExt/Analysis/Complex/ArgumentPrinciple.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/ArgumentPrinciple.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle/index.html#argument-principle-closed-ball-general).
+Formalized by `MathlibExt.Analysis.Complex.ArgumentPrinciple.argumentPrinciple_closedBall_general`, a theorem declared in [MathlibExt/Analysis/Complex/ArgumentPrinciple.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/ArgumentPrinciple.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle/index.html#argument-principle-closed-ball-general).
 
 ## Argument principle on a closed disc, with an integrability hypothesis
 
@@ -36,7 +36,7 @@ multiplicity).
 
 - L. V. Ahlfors, Complex Analysis, 3rd ed., §5.2. It follows from `argumentPrinciple_closedBall_general`; the hypothesis `hint` is unused and keeps the source's shape.
 
-Formalized by `MathlibExt.Analysis.Complex.ArgumentPrinciple.argumentPrinciple_closedBall`, a theorem declared in [MathlibExt/Analysis/Complex/ArgumentPrinciple.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/ArgumentPrinciple.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle/index.html#argument-principle-closed-ball).
+Formalized by `MathlibExt.Analysis.Complex.ArgumentPrinciple.argumentPrinciple_closedBall`, a theorem declared in [MathlibExt/Analysis/Complex/ArgumentPrinciple.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/ArgumentPrinciple.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle/index.html#argument-principle-closed-ball).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Argument principle](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory/argument-principle)

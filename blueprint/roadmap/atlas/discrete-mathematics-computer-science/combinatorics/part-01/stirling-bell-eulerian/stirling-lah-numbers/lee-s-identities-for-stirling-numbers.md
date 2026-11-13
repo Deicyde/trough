@@ -7,7 +7,7 @@ statement: formalized
 
 # Lee's identities for Stirling numbers
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html).
 
 ## Lee's expansion of shifted Stirling numbers of the first kind
 
@@ -21,7 +21,7 @@ $$c(n + 1, m + 1) = \sum_{k=m}^{n} (-1)^{n-k} \binom{k}{m}\, n^{k-m}\, c(n, k).$
 
 - Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 1.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingFirst_succ_eq_sum_choose_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-first-succ-eq-sum-choose-pow).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingFirst_succ_eq_sum_choose_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-first-succ-eq-sum-choose-pow).
 
 ## Lee's alternating expansion of Stirling numbers of the second kind
 
@@ -35,7 +35,7 @@ $$S(n, m) = \sum_{k=m}^{n} (-1)^{k-m} \binom{n}{k}\, m^{n-k}\, S(k, m).$$
 
 - Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 2.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_eq_sum_choose_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-second-eq-sum-choose-pow).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_eq_sum_choose_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-second-eq-sum-choose-pow).
 
 ## Lee's identity for Stirling numbers of the second kind from smaller rows
 
@@ -52,7 +52,7 @@ This is Lee's Theorem 4 with the denominator $n - k$ cleared.
 
 - Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 4.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_mul_sub_eq_sum_choose_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-second-mul-sub-eq-sum-choose-al).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_mul_sub_eq_sum_choose_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-second-mul-sub-eq-sum-choose-al).
 
 ## Lee's factorial-weighted alternating row sum of Stirling numbers of the second kind
 
@@ -67,7 +67,7 @@ $$\sum_{j=2}^{a} (-1)^j\, (j-2)!\, S(a, j) = a - 1.$$
 
 - Kwankyu Lee, "Some New Identities for Stirling Numbers", Lemma 6.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.sum_stirlingSecond_factorial_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#sum-stirling-second-factorial-alternatin).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.sum_stirlingSecond_factorial_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#sum-stirling-second-factorial-alternatin).
 
 ## Lee's identity for Stirling numbers of the second kind from higher columns
 
@@ -85,7 +85,7 @@ coefficient written as $\binom{-k}{j} = (-1)^j \binom{k+j-1}{j}$.
 
 - Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 8.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_mul_sub_eq_sum_factorial_negChoose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-second-mul-sub-eq-sum-factorial).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingSecond_mul_sub_eq_sum_factorial_negChoose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-second-mul-sub-eq-sum-factorial).
 
 ## Lee's identity for Stirling numbers of the first kind from smaller rows
 
@@ -102,7 +102,7 @@ This is Lee's Theorem 11 with the denominator $n - k$ cleared.
 
 - Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 11.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingFirst_mul_sub_eq_sum_choose_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-first-mul-sub-eq-sum-choose-fac).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingFirst_mul_sub_eq_sum_choose_factorial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-first-mul-sub-eq-sum-choose-fac).
 
 ## Lee's identity for Stirling numbers of the first kind from higher columns
 
@@ -119,7 +119,7 @@ This is Lee's Theorem 14 with the denominator $n - k$ cleared.
 
 - Kwankyu Lee, "Some New Identities for Stirling Numbers", Theorem 14.
 
-Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingFirst_mul_sub_eq_sum_stirlingFirst_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-first-mul-sub-eq-sum-stirling-f).
+Stated but not proved: `MathlibExt.Combinatorics.Enumerative.StirlingIdentitiesWanted.stirlingFirst_mul_sub_eq_sum_stirlingFirst_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/StirlingIdentitiesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html#stirling-first-mul-sub-eq-sum-stirling-f).
 
 ## Depends on
 
@@ -128,4 +128,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lee's identities for Stirling numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/stirling-lah-numbers/lee-s-identities-for-stirling-numbers)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Constructions of thick B_h-sets
 
-27 results, 11 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html).
+27 results, 11 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html).
 
 ## Generalized Bose set
 
@@ -25,7 +25,7 @@ not need these assumptions.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Definition 1.
 
-Formalized by `MetaMathlibExt.boseSet`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bose-set).
+Formalized by `MetaMathlibExt.boseSet`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bose-set).
 
 ## Membership in a Bose set
 
@@ -40,7 +40,7 @@ when $h = 0$, since then $\mathbb{Z}/(q^h - 1)\mathbb{Z} = \mathbb{Z}$).
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Definition 1.
 
-Formalized by `MetaMathlibExt.mem_boseSet`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#mem-bose-set).
+Formalized by `MetaMathlibExt.mem_boseSet`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#mem-bose-set).
 
 ## Generalized Singer set
 
@@ -58,7 +58,7 @@ definition itself does not assume either.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Definition 2.
 
-Formalized by `MetaMathlibExt.singerSet`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#singer-set).
+Formalized by `MetaMathlibExt.singerSet`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#singer-set).
 
 ## Membership in a Singer set
 
@@ -73,7 +73,7 @@ least nonnegative representative of $a$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Definition 2.
 
-Formalized by `MetaMathlibExt.mem_singerSet`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#mem-singer-set).
+Formalized by `MetaMathlibExt.mem_singerSet`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#mem-singer-set).
 
 ## Affine equivalence of sets of residues
 
@@ -86,7 +86,7 @@ such that $A_2 = \{d a + s : a \in A_1\}$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition before Theorem 4.
 
-Formalized by `MetaMathlibExt.ZModAffinelyEquivalent`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#zmod-affinely-equivalent).
+Formalized by `MetaMathlibExt.ZModAffinelyEquivalent`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#zmod-affinely-equivalent).
 
 ## Affine equivalence is reflexive
 
@@ -97,7 +97,7 @@ $\mathbb{Z}/M\mathbb{Z}$ is affinely equivalent to itself (take $d = 1$ and $s =
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition before Theorem 4.
 
-Formalized by `MetaMathlibExt.zModAffinelyEquivalent_refl`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#z-mod-affinely-equivalent-refl).
+Formalized by `MetaMathlibExt.zModAffinelyEquivalent_refl`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#z-mod-affinely-equivalent-refl).
 
 ## Maximum size of a $B_h$-set in $\{1, \dots, n\}$
 
@@ -110,7 +110,7 @@ then $R_h(n) = 0$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the paragraph before Theorem 5.
 
-Formalized by `MetaMathlibExt.bhMaxCard`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card).
+Formalized by `MetaMathlibExt.bhMaxCard`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card).
 
 ## Shortest interval containing a $B_h$-set of given size
 
@@ -123,7 +123,7 @@ example when $k = 0$, since a $B_h$-set is nonempty.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the paragraph before Theorem 5.
 
-Formalized by `MetaMathlibExt.bhMinLength`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length).
+Formalized by `MetaMathlibExt.bhMinLength`, a definition declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length).
 
 ## $R_h(n)$ is at most $n$
 
@@ -135,7 +135,7 @@ when $h = 0$ or $n = 0$). Then $R_h(n) \le n$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition of `R_h(n)` before Theorem 5.
 
-Formalized by `MetaMathlibExt.bhMaxCard_le`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-le).
+Formalized by `MetaMathlibExt.bhMaxCard_le`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-le).
 
 ## $R_h(1) = 1$
 
@@ -146,7 +146,7 @@ contained in $\{1\}$ equals $1$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the definition of `R_h(n)` before Theorem 5.
 
-Formalized by `MetaMathlibExt.bhMaxCard_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-one).
+Formalized by `MetaMathlibExt.bhMaxCard_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-one).
 
 ## The shortest interval holding a one-element $B_h$-set
 
@@ -158,7 +158,7 @@ exactly one element is $1$; that is, $R_h^{-1}(1) = 1$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, the paragraph before Theorem 7 ("Clearly, `R_h⁻¹(1) = 1`").
 
-Formalized by `MetaMathlibExt.bhMinLength_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-one).
+Formalized by `MetaMathlibExt.bhMinLength_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-one).
 
 ## Bose's construction of $B_h$-sets
 
@@ -172,7 +172,7 @@ $\mathbb{Z}/(q^h - 1)\mathbb{Z}$, is a $B_h$-set with exactly $q$ elements.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 3 (first sentence) (`jis-2024-24.1.2-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.isBhSet_boseSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#is-bh-set-bose-set).
+Stated but not proved: `MetaMathlibExt.isBhSet_boseSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#is-bh-set-bose-set).
 
 ## Singer's construction of $B_h$-sets
 
@@ -187,7 +187,7 @@ elements.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 3 (second sentence) (`jis-2024-24.1.2-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.isBhSet_singerSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#is-bh-set-singer-set).
+Stated but not proved: `MetaMathlibExt.isBhSet_singerSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#is-bh-set-singer-set).
 
 ## Affine equivalences between Bose sets
 
@@ -204,7 +204,7 @@ $F$, $K$ and $\theta$ are affinely equivalent.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 4 (items (i)–(iii)) (`jis-2024-24.1.2-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.zModAffinelyEquivalent_boseSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#z-mod-affinely-equivalent-bose-set).
+Stated but not proved: `MetaMathlibExt.zModAffinelyEquivalent_boseSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#z-mod-affinely-equivalent-bose-set).
 
 ## Affine equivalences between Singer sets
 
@@ -223,7 +223,7 @@ affinely equivalent.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 4 (items (iv)–(vii)) (`jis-2024-24.1.2-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.zModAffinelyEquivalent_singerSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#z-mod-affinely-equivalent-singer-set).
+Stated but not proved: `MetaMathlibExt.zModAffinelyEquivalent_singerSet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#z-mod-affinely-equivalent-singer-set).
 
 ## Unconditional bounds for $R_h(n)$ and $R_h^{-1}(k)$
 
@@ -238,7 +238,7 @@ $R_h^{-1}(k) \le k^h + 3^{155h} k^{h - 1/155}$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(a) (`jis-2024-24.1.2-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_unconditional` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-uncondi).
+Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_unconditional` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-uncondi).
 
 ## Bounds for $R_h(n)$ and $R_h^{-1}(k)$ beyond $e^{e^{34}}$
 
@@ -252,7 +252,7 @@ $k \ge e^{e^{34}}$ satisfies $R_h^{-1}(k) \le k^h + (3k)^{h - 1/3}$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(b) (`jis-2024-24.1.2-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-large).
+Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-large).
 
 ## Eventual bounds for $R_h(n)$ and $R_h^{-1}(k)$
 
@@ -266,7 +266,7 @@ $R_h^{-1}(k) \le k^h + 2^h k^{h - 19/40}$ for all sufficiently large natural num
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(c) (`jis-2024-24.1.2-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_eventually` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-eventua).
+Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_eventually` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-eventua).
 
 ## Riemann Hypothesis bounds for $R_h(n)$ and $R_h^{-1}(k)$
 
@@ -282,7 +282,7 @@ every natural number $n$ satisfies $R_h(n) \ge n^{1/h} - (7 + (\log n)/h)\, n^{1
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 5(d) (`jis-2024-24.1.2-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_of_RH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-of-rh).
+Stated but not proved: `MetaMathlibExt.bhMaxCard_bhMinLength_bounds_of_RH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-max-card-bh-min-length-bounds-of-rh).
 
 ## Cully-Hugill's theorem for 155th powers
 
@@ -293,7 +293,7 @@ prime $p$ with $n^{155} < p < (n + 1)^{155}$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 6 (Cully-Hugill) (`jis-2024-24.1.2-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.exists_prime_between_pow_155` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#exists-prime-between-pow-155).
+Stated but not proved: `MetaMathlibExt.exists_prime_between_pow_155` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#exists-prime-between-pow-155).
 
 ## Unconditional bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$
 
@@ -308,7 +308,7 @@ $R_h(n) \ge n^{1/h} - 2^{44} n^{154/(155h)}$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 7 (`jis-2024-24.1.2-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_explicit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-ge-expl).
+Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_explicit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-ge-expl).
 
 ## Cully-Hugill's theorem for cubes
 
@@ -319,7 +319,7 @@ is a prime $p$ with $n^3 < p < (n + 1)^3$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 8 (Cully-Hugill) (`jis-2024-24.1.2-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.exists_prime_between_cubes_of_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#exists-prime-between-cubes-of-large).
+Stated but not proved: `MetaMathlibExt.exists_prime_between_cubes_of_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#exists-prime-between-cubes-of-large).
 
 ## Strict bounds for thick $B_h$-sets beyond $e^{e^{34}}$
 
@@ -336,7 +336,7 @@ The printed theorem leaves $n$ unquantified; the hypothesis on $n$ is taken from
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 9 (`jis-2024-24.1.2-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_gt_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-gt-larg).
+Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_gt_large` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-gt-larg).
 
 ## Baker–Harman–Pintz theorem
 
@@ -351,7 +351,7 @@ with $n$ undefined; the right endpoint is read as $x$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 10 (Baker, Harman and Pintz) (`jis-2024-24.1.2-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.eventually_exists_prime_short_intervals` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#eventually-exists-prime-short-intervals).
+Stated but not proved: `MetaMathlibExt.eventually_exists_prime_short_intervals` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#eventually-exists-prime-short-intervals).
 
 ## Eventual strict upper bound for $R_h^{-1}(k)$ and lower bound for $R_h(n)$
 
@@ -366,7 +366,7 @@ numbers $n$.
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 11 (`jis-2024-24.1.2-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_eventually` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-ge-even).
+Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_eventually` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-ge-even).
 
 ## Dudek–Grenié–Molteni theorem
 
@@ -378,7 +378,7 @@ $n^2 < p < \bigl(n + (1 + 1/\log n)^2 \log n\bigr)^2$, where $\log$ is the natur
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 12 (`jis-2024-24.1.2-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.exists_prime_between_sq_of_RH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#exists-prime-between-sq-of-rh).
+Stated but not proved: `MetaMathlibExt.exists_prime_between_sq_of_RH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#exists-prime-between-sq-of-rh).
 
 ## Riemann Hypothesis bounds for $R_h^{-1}(k)$, $k \ge 4$, and $R_h(n)$, $n \ge h + 3$
 
@@ -394,7 +394,7 @@ number $n \ge h + 3$ satisfies $R_h(n) \ge n^{1/h} - (7 + (\log n)/h)\, n^{1/(2h
 
 - Kevin O'Bryant, *Constructing Thick `B_h`-Sets*, Journal of Integer Sequences 27 (2024), Article 24.1.2, Theorem 13 (`jis-2024-24.1.2-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_of_RH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-ge-of-r).
+Stated but not proved: `MetaMathlibExt.bhMinLength_lt_and_bhMaxCard_ge_of_RH` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ThickBhSetsWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html#bh-min-length-lt-and-bh-max-card-ge-of-r).
 
 ## Depends on
 
@@ -403,4 +403,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Constructions of thick B_h-sets](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/constructions-of-thick-b-h-sets)

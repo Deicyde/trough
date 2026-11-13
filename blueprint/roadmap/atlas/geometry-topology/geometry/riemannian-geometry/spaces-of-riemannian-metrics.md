@@ -8,7 +8,7 @@ proof: formalized
 
 # Spaces of Riemannian metrics
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html).
 
 ## Coordinate expression of a Riemannian metric
 
@@ -20,7 +20,7 @@ of $\psi$ at $x$ within $T$. The coordinate expression of $g$ in $e$ is the fiel
 bilinear forms on $E$ that assigns to each $x \in E$ the pullback form
 $(v, w) \mapsto g_{\psi(x)}(D\psi(x)\,v, D\psi(x)\,w)$.
 
-Formalized by `Manifold.metricInCoordinates`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-in-coordinates).
+Formalized by `Manifold.metricInCoordinates`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-in-coordinates).
 
 ## Pointwise formula for a metric in coordinates
 
@@ -32,7 +32,7 @@ $T$ for the target of $I \circ e$, and $D\psi(x)$ for the derivative of $\psi$ a
 $T$. Then for all $x, v, w \in E$ we have
 $g^e(x)(v, w) = g_{\psi(x)}(D\psi(x)\,v, D\psi(x)\,w)$.
 
-Formalized by `Manifold.metricInCoordinates_apply`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-in-coordinates-apply).
+Formalized by `Manifold.metricInCoordinates_apply`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-in-coordinates-apply).
 
 ## Conformal scaling of a metric in coordinates
 
@@ -44,7 +44,7 @@ $g$ in $e$ and $\psi$ for the inverse of the extended chart $I \circ e$. Then fo
 the coordinate expression of the conformally scaled metric $u g$ satisfies
 $(u g)^e(x) = u(\psi(x))\, g^e(x)$.
 
-Formalized by `Manifold.metricInCoordinates_conformalScale`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-in-coordinates-conformal-scale).
+Formalized by `Manifold.metricInCoordinates_conformalScale`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-in-coordinates-conformal-scale).
 
 ## Smoothness of a metric in coordinates
 
@@ -54,7 +54,7 @@ $g$ be a smooth Riemannian metric on the tangent bundle of $M$. For every chart 
 smooth atlas of $M$, the coordinate expression of $g$ in $e$, viewed as a map from $E$ to the
 continuous bilinear forms on $E$, is $C^\infty$ on the target of the extended chart $I \circ e$.
 
-Formalized by `Manifold.contDiffOn_metricInCoordinates`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#cont-diff-on-metric-in-coordinates).
+Formalized by `Manifold.contDiffOn_metricInCoordinates`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricInCoordinates.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#cont-diff-on-metric-in-coordinates).
 
 ## The $C^k$ topology on smooth Riemannian metrics
 
@@ -75,7 +75,7 @@ whatever $k$ is; $k$ only indexes the topology.
 
 - Burns-Matveev v2 §8.4 finite-atlas `ε`-balls, v3 §8.3 weak `C^k` topology after Hirsch Ch. II. `k = ⊤` is the `C^∞` topology (smooth, not analytic). The space carries smooth metrics for every `k`, and no chart is chosen. Equality with the finite-atlas `ε`-ball topology on a closed manifold follows by the standard argument (relatively compact chart domains and chain rule).
 
-Formalized by `Manifold.metricCkTopology`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-ck-topology).
+Formalized by `Manifold.metricCkTopology`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-ck-topology).
 
 ## The space $\mathcal{G}^k(M)$ of smooth metrics with the $C^k$ topology
 
@@ -84,7 +84,7 @@ manifold $M$ and $k \in \mathbb{N} \cup \{\infty\}$, $\mathcal{G}^k(M)$ is the s
 smooth Riemannian metrics on $M$, equipped with the $C^k$ topology. It is not the space of
 $C^k$ metrics: every element is smooth, and $k$ only indexes the topology.
 
-Formalized by `Manifold.RiemannianMetricWithCk`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#riemannian-metric-with-ck).
+Formalized by `Manifold.RiemannianMetricWithCk`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#riemannian-metric-with-ck).
 
 ## Smooth metrics as elements of $\mathcal{G}^k(M)$
 
@@ -93,7 +93,7 @@ $k \in \mathbb{N} \cup \{\infty\}$, the identity map is a bijection from the spa
 Riemannian metrics on $M$ to $\mathcal{G}^k(M)$, the same space of metrics equipped with the
 $C^k$ topology.
 
-Formalized by `Manifold.RiemannianMetricWithCk.ofMetric`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#of-metric).
+Formalized by `Manifold.RiemannianMetricWithCk.ofMetric`, a definition declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#of-metric).
 
 ## Convergence in the $C^k$ topology on smooth metrics
 
@@ -112,7 +112,7 @@ derivative within $T_\varphi$ of the coordinate expression of $g_0$ in $\varphi$
 
 - Burns-Matveev v3 §8.3.
 
-Formalized by `Manifold.tendsto_metricCkTopology_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#tendsto-metric-ck-topology-iff).
+Formalized by `Manifold.tendsto_metricCkTopology_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#tendsto-metric-ck-topology-iff).
 
 ## Convergence in $\mathcal{G}^k(M)$
 
@@ -128,7 +128,7 @@ iterated derivatives within $T_\varphi$ of the coordinate expressions of $g_a$ i
 converge uniformly on $K$ along $l$ to the $i$-th iterated derivative within $T_\varphi$ of the
 coordinate expression of $g_0$ in $\varphi$.
 
-Formalized by `Manifold.RiemannianMetricWithCk.tendsto_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#tendsto-iff).
+Formalized by `Manifold.RiemannianMetricWithCk.tendsto_iff`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#tendsto-iff).
 
 ## The $C^k$ topologies on smooth metrics get finer as $k$ grows
 
@@ -136,7 +136,7 @@ Let $M$ be a smooth
 manifold and let $k \le k'$ be elements of $\mathbb{N} \cup \{\infty\}$. On the space of
 smooth Riemannian metrics on $M$, the $C^{k'}$ topology is finer than the $C^k$ topology.
 
-Formalized by `Manifold.metricCkTopology_anti`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-ck-topology-anti).
+Formalized by `Manifold.metricCkTopology_anti`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#metric-ck-topology-anti).
 
 ## Constant rescalings converge in every $C^k$ topology
 
@@ -150,7 +150,7 @@ In every chart the coordinate expression of $c_a g$ is $c_a$ times that of $g$, 
 each iterated derivative within the chart target, while those derivatives of $g$ are bounded on
 each compact subset of the target.
 
-Formalized by `Manifold.tendsto_conformalScale_const_metricCkTopology`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#tendsto-conformal-scale-const-metric-ck).
+Formalized by `Manifold.tendsto_conformalScale_const_metricCkTopology`, a theorem declared in [MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Manifold/Riemannian/MetricCkTopology.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html#tendsto-conformal-scale-const-metric-ck).
 
 ## Depends on
 
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spaces of Riemannian metrics](https://deicyde.github.io/atlas-lean/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/riemannian-geometry/spaces-of-riemannian-metrics)

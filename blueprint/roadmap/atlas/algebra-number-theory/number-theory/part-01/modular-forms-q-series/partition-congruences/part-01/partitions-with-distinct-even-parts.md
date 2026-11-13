@@ -7,7 +7,7 @@ statement: formalized
 
 # Partitions with distinct even parts
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts/index.html).
 
 ## Congruences modulo 24 for partitions with distinct even parts
 
@@ -20,7 +20,7 @@ $\mathrm{ped}(225n+133)$ and $\mathrm{ped}(225n+223)$ is congruent to $0$ modulo
 
 - Hemjyoti Nath, *New Congruences for Partitions Where the Even Parts Are Distinct*, INTEGERS 24 (2024), Article A79, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.partitionsEvenPartsDistinct_mod24_progressions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts/index.html#partitions-even-parts-distinct-mod24-pro).
+Stated but not proved: `MetaMathlibExt.partitionsEvenPartsDistinct_mod24_progressions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts/index.html#partitions-even-parts-distinct-mod24-pro).
 
 ## Power-of-five congruence modulo 24 for partitions with distinct even parts
 
@@ -39,7 +39,7 @@ The quotient is exact, since $57 \cdot 5^{2k} - 1$ is divisible by $8$.
 
 - Hemjyoti Nath, *New Congruences for Partitions Where the Even Parts Are Distinct*, INTEGERS 24 (2024), Article A79, Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.partitionsEvenPartsDistinct_mod24_five_power` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts/index.html#partitions-even-parts-distinct-mod24-fiv).
+Stated but not proved: `MetaMathlibExt.partitionsEvenPartsDistinct_mod24_five_power` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/PartitionsEvenPartsDistinctWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts/index.html#partitions-even-parts-distinct-mod24-fiv).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Partitions with distinct even parts](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/partitions-with-distinct-even-parts)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Sufficient statistics and the factorization theorem
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html).
 
 ## Sufficient sub-σ-algebra
 
@@ -19,7 +19,7 @@ itself represents a sufficient sub-σ-algebra for statistical laws: the conditio
 expectations it mentions are genuine, not Mathlib's totalized fallback on unrelated
 σ-algebras or infinite measures.
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficient`, a definition declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficient`, a definition declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient).
 
 ## Common conditional expectation under a sufficient σ-algebra
 
@@ -28,7 +28,7 @@ function `W` that is integrable under all the measures has one `m`-measurable ve
 conditional expectation `P_θ[W | m]` for every `θ`. (Measurability of `W` itself, not only
 under each `P θ`, is what lets one approximating sequence serve every parameter.)
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficient.exists_common_condExp`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#exists-common-cond-exp).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficient.exists_common_condExp`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#exists-common-cond-exp).
 
 ## Factorization implies sufficiency
 
@@ -36,7 +36,7 @@ Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficient.exists
 `P θ` has a density `g θ` with respect to one measure `ν` that is σ-finite on `m`, and each
 `g θ` is `m`-measurable, then `m` is sufficient for `P`.
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficient_of_withDensity`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-of-with-density).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficient_of_withDensity`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-of-with-density).
 
 ## Factorization criterion, sufficiency direction, for a statistic, under an extra σ-finiteness hypothesis
 
@@ -55,7 +55,7 @@ stated. Removing the hypothesis would require a different proof.
 
 - Halmos and Savage (1949); Lehmann–Romano, Chapter 2.
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficient_comap_of_factorization_of_sigmaFinite_trim`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-comap-of-factorization-of).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficient_comap_of_factorization_of_sigmaFinite_trim`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Basic.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Basic.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-comap-of-factorization-of).
 
 ## Sufficient statistic for a discrete family
 
@@ -64,7 +64,7 @@ conditional probability `P θ x / P_θ(T = T x)` of `x` given `T = T x` is the s
 two parameters `θ, θ'` for which `{T = T x}` has positive probability. Here
 `P_θ(T = t) = (P θ).map T t`.
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficientPMF`, a definition declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-pmf).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficientPMF`, a definition declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-pmf).
 
 ## Factorization, necessity
 
@@ -72,14 +72,14 @@ If `T` is sufficient for `P`, then
 `P θ x = g θ (T x) * h x` with `g θ t = P_θ(T = t)` and a parameter-free `h` with values in
 `[0, 1]`.
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficientPMF.factorization`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#factorization).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.IsSufficientPMF.factorization`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#factorization).
 
 ## Factorization, sufficiency
 
 If `P θ x = g θ (T x) * h x` for nonnegative real `g`, `h`
 with `h` free of `θ`, then `T` is sufficient for `P`.
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficientPMF_of_factorization`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-pmf-of-factorization).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficientPMF_of_factorization`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-pmf-of-factorization).
 
 ## The Fisher–Neyman factorization theorem
 
@@ -91,7 +91,7 @@ for the family of mass functions `P` if and only if there are nonnegative functi
 
 - Neyman (1935); Casella–Berger, Theorem 6.2.6.
 
-Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficientPMF_iff_exists_factorization`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-pmf-iff-exists-factorizati).
+Formalized by `MathlibExt.Probability.Statistics.Sufficiency.isSufficientPMF_iff_exists_factorization`, a theorem declared in [MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/Sufficiency/Discrete.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#is-sufficient-pmf-iff-exists-factorizati).
 
 ## Halmos–Savage factorization, necessity
 
@@ -103,7 +103,7 @@ densities factor as `dP_θ/dμ = g_θ(T) · h` with measurable `g_θ` and `h`, `
 
 - P. R. Halmos and L. J. Savage, *Application of the Radon–Nikodym theorem to the theory of sufficient statistics*, Ann. Math. Statist. 20 (1949), 225–241.
 
-Stated but not proved: `MathlibExt.Probability.Statistics.Sufficiency.exists_factorization_of_isSufficient_comap` is written with `theorem_wanted` in [WantedExt/Probability/Statistics/HalmosSavageFactorizationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/Statistics/HalmosSavageFactorizationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#exists-factorization-of-is-sufficient-co).
+Stated but not proved: `MathlibExt.Probability.Statistics.Sufficiency.exists_factorization_of_isSufficient_comap` is written with `theorem_wanted` in [WantedExt/Probability/Statistics/HalmosSavageFactorizationWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/Statistics/HalmosSavageFactorizationWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html#exists-factorization-of-is-sufficient-co).
 
 ## Depends on
 
@@ -112,4 +112,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sufficient statistics and the factorization theorem](https://deicyde.github.io/atlas-lean/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/statistical-estimation/sufficient-statistics-and-the-factorization-theo)

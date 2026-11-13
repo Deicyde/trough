@@ -7,7 +7,7 @@ statement: formalized
 
 # Extended continuants and bi-infinite continued fractions
 
-21 results, 8 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html).
+21 results, 8 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html).
 
 ## Forward branch of the extended continuant
 
@@ -20,7 +20,7 @@ $F_{n+2} = x_{b+n} F_{n+1} + F_n$. Its value $F_n$ is the extended continuant $K
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Definition 3 (right-adjusting recurrence).
 
-Formalized by `MetaMathlibExt.extendedContinuantFwd`, a definition declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-fwd).
+Formalized by `MetaMathlibExt.extendedContinuantFwd`, a definition declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-fwd).
 
 ## Backward branch of the extended continuant
 
@@ -34,7 +34,7 @@ $K_{-1-m}(x)_b$ of negative order $-1-m$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Definition 4 (right-adjusting recurrence).
 
-Formalized by `MetaMathlibExt.extendedContinuantBwd`, a definition declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-bwd).
+Formalized by `MetaMathlibExt.extendedContinuantBwd`, a definition declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-bwd).
 
 ## Extended continuants
 
@@ -48,7 +48,7 @@ backward recurrence $K_a(x)_b = K_{a+2}(x)_b - x_{b+a+2} K_{a+1}(x)_b$ for $a \l
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Definitions 3 and 4.
 
-Formalized by `MetaMathlibExt.extendedContinuant`, a definition declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant).
+Formalized by `MetaMathlibExt.extendedContinuant`, a definition declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant).
 
 ## Extended continuants of order $-2$ vanish
 
@@ -60,7 +60,7 @@ start index $b$ is zero: $K_{-2}(x)_b = 0$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Definitions 3 and 4.
 
-Formalized by `MetaMathlibExt.extendedContinuant_neg_two`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-two).
+Formalized by `MetaMathlibExt.extendedContinuant_neg_two`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-two).
 
 ## Extended continuant of order $-1$
 
@@ -72,7 +72,7 @@ $-1$ with start index $b$ equals $1$, that is, $K_{-1}(x)_b = 1$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Definitions 3 and 4.
 
-Formalized by `MetaMathlibExt.extendedContinuant_neg_one`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-one).
+Formalized by `MetaMathlibExt.extendedContinuant_neg_one`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-one).
 
 ## The extended continuant of order $0$ is a single term
 
@@ -84,7 +84,7 @@ with start index $b$ is $K_0(x)_b = x_b$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Section 3.4 and Equation (13).
 
-Formalized by `MetaMathlibExt.extendedContinuant_zero`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-zero).
+Formalized by `MetaMathlibExt.extendedContinuant_zero`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-zero).
 
 ## Recurrence for extended continuants
 
@@ -99,7 +99,7 @@ For $a \le -1$ this is the paper's backward recurrence of Definition 4.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Definitions 3 and 4 (RA versions).
 
-Formalized by `MetaMathlibExt.extendedContinuant_recurrence`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-recurrence).
+Formalized by `MetaMathlibExt.extendedContinuant_recurrence`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-recurrence).
 
 ## Extended continuants of orders $-3$ to $-6$
 
@@ -113,7 +113,7 @@ $K_{-6}(x)_h = -(x_{h-4} + x_{h-2} + x_{h-4} x_{h-3} x_{h-2})$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Lemma 1.
 
-Formalized by `MetaMathlibExt.extendedContinuant_neg_three_to_six`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-three-to-six).
+Formalized by `MetaMathlibExt.extendedContinuant_neg_three_to_six`, a theorem declared in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-three-to-six).
 
 ## Westbound matrix product of extended continuants
 
@@ -131,7 +131,7 @@ $$
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.extendedContinuant_westbound_matrix_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-westbound-matrix-pro).
+Stated but not proved: `MetaMathlibExt.extendedContinuant_westbound_matrix_prod` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-westbound-matrix-pro).
 
 ## Reflection formula for the order of extended continuants
 
@@ -145,7 +145,7 @@ $$K_{-n}(x)_h = (-1)^{n+1} K_{n-4}(x)_{h-n+2}.$$
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.extendedContinuant_neg_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-order).
+Stated but not proved: `MetaMathlibExt.extendedContinuant_neg_order` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-neg-order).
 
 ## Bennett's continuant identity for nonnegative indices
 
@@ -161,7 +161,7 @@ $$(-1)^{k+\ell} K_{n-k-2}(x)_k K_{m-\ell-2}(x)_\ell +
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Theorem 2 (after G. T. Bennett, 1939).
 
-Stated but not proved: `MetaMathlibExt.extendedContinuant_bennett_nat` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-bennett-nat).
+Stated but not proved: `MetaMathlibExt.extendedContinuant_bennett_nat` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-bennett-nat).
 
 ## Bennett's continuant identity for all integer indices
 
@@ -179,7 +179,7 @@ This extends Bennett's identity from nonnegative to arbitrary integer indices.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.extendedContinuant_bennett` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-bennett).
+Stated but not proved: `MetaMathlibExt.extendedContinuant_bennett` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-bennett).
 
 ## Euler's continuant identity for extended continuants
 
@@ -194,7 +194,7 @@ $$K_{\ell+m}(x)_h K_{k-1}(x)_{\ell+h+1} - K_{m-1}(x)_{\ell+h+1} K_{k+\ell}(x)_h 
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.extendedContinuant_euler` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-euler).
+Stated but not proved: `MetaMathlibExt.extendedContinuant_euler` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-euler).
 
 ## Determinant identity for extended continuants
 
@@ -208,7 +208,7 @@ $$K_n(x)_0 K_{n-2}(x)_1 - K_{n-1}(x)_1 K_{n-1}(x)_0 = (-1)^{n+1}.$$
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.extendedContinuant_det` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-det).
+Stated but not proved: `MetaMathlibExt.extendedContinuant_det` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#extended-continuant-det).
 
 ## No silent sequences of even order
 
@@ -228,7 +228,7 @@ of $z$. The BpCF conditions are not needed.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.not_silent_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#not-silent-of-even).
+Stated but not proved: `MetaMathlibExt.not_silent_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#not-silent-of-even).
 
 ## Terms of a $1$-silent sequence
 
@@ -248,7 +248,7 @@ irrational $\bar\alpha$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.oneSilent_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#one-silent-terms).
+Stated but not proved: `MetaMathlibExt.oneSilent_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#one-silent-terms).
 
 ## Terms of 3-silent sequences
 
@@ -269,7 +269,7 @@ bi-infinite periodic continued fraction are not assumed.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Theorem 6 and its proof (option 2, `x_{-1} = 0`).
 
-Stated but not proved: `MetaMathlibExt.threeSilent_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#three-silent-terms).
+Stated but not proved: `MetaMathlibExt.threeSilent_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#three-silent-terms).
 
 ## Terms of a $\sigma$-silent sequence for odd $\sigma \ge 5$
 
@@ -290,7 +290,7 @@ The paper states the second formula as a quotient for $x_{-\sigma+2}$; here it i
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.oddSilent_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#odd-silent-terms).
+Stated but not proved: `MetaMathlibExt.oddSilent_terms` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 284](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L284). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#odd-silent-terms).
 
 ## Silent-term formulas on table (33), case $\sigma \equiv 1 \pmod 6$
 
@@ -310,7 +310,7 @@ $x_{-\sigma+2} = 1$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Proposition 3 (case `σ ≡ 1 mod 6`).
 
-Stated but not proved: `MetaMathlibExt.silentTerms_table_one_mod_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#silent-terms-table-one-mod-six).
+Stated but not proved: `MetaMathlibExt.silentTerms_table_one_mod_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#silent-terms-table-one-mod-six).
 
 ## Silent-term formulas on table (33), case $\sigma \equiv 5 \pmod 6$
 
@@ -330,7 +330,7 @@ $x_{-\sigma+2} = 1 + c_2 - c_1$.
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Proposition 3 (case `σ ≡ 5 mod 6`).
 
-Stated but not proved: `MetaMathlibExt.silentTerms_table_five_mod_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#silent-terms-table-five-mod-six).
+Stated but not proved: `MetaMathlibExt.silentTerms_table_five_mod_six` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#silent-terms-table-five-mod-six).
 
 ## The conjugate continued fraction is not purely periodic
 
@@ -344,7 +344,7 @@ $a_{n+s} = a_n$ for all $n \ge 0$. Here $a_0 = \lfloor \bar\alpha \rfloor$ is in
 
 - Dixon J. Jones, *Extended Continuants and Bi-infinite Periodic Continued Fractions*, INTEGERS 26 (2026), Article A73, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.conjugate_continuedFraction_not_purelyPeriodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#conjugate-continued-fraction-not-purely).
+Stated but not proved: `MetaMathlibExt.conjugate_continuedFraction_not_purelyPeriodic` is written with `theorem_wanted` in [WantedExt/NumberTheory/ExtendedContinuantWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ExtendedContinuantWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html#conjugate-continued-fraction-not-purely).
 
 ## Depends on
 
@@ -353,4 +353,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Extended continuants and bi-infinite continued fractions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/extended-continuants-and-bi-infinite-continued-f)

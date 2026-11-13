@@ -8,7 +8,7 @@ proof: formalized
 
 # Normal families
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html).
 
 ## Locally uniformly bounded sequence of functions
 
@@ -17,7 +17,7 @@ $(F_n)_{n \in \mathbb{N}}$ be a sequence of functions $\mathbb{C} \to \mathbb{C}
 locally uniformly bounded on $U$ when every $x \in U$ has an open neighbourhood $V \subseteq U$
 and a real $C \ge 0$ such that $|F_n(y)| \le C$ for all $n \in \mathbb{N}$ and all $y \in V$.
 
-Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.IsLocallyUniformlyBoundedOn`, a definition declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/NormalFamilies.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#is-locally-uniformly-bounded-on).
+Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.IsLocallyUniformlyBoundedOn`, a definition declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/NormalFamilies.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#is-locally-uniformly-bounded-on).
 
 ## A uniformly bounded sequence on an open set is locally uniformly bounded
 
@@ -26,7 +26,7 @@ $U \subseteq \mathbb{C}$ be open, let $(F_n)_{n \in \mathbb{N}}$ be a sequence o
 $\mathbb{C} \to \mathbb{C}$ and let $C \ge 0$ be real. If $|F_n(y)| \le C$ for all
 $n \in \mathbb{N}$ and all $y \in U$, then $(F_n)$ is locally uniformly bounded on $U$.
 
-Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.isLocallyUniformlyBoundedOn_of_forall_norm_le`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/NormalFamilies.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#is-locally-uniformly-bounded-on-of-foral).
+Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.isLocallyUniformlyBoundedOn_of_forall_norm_le`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/NormalFamilies.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#is-locally-uniformly-bounded-on-of-foral).
 
 ## Locally uniformly bounded sequences are uniformly bounded on compact subsets
 
@@ -35,7 +35,7 @@ $(F_n)_{n \in \mathbb{N}}$ be a sequence of functions $\mathbb{C} \to \mathbb{C}
 uniformly bounded on $U \subseteq \mathbb{C}$. Then for every compact set $K \subseteq U$ there is
 a real $C \ge 0$ with $|F_n(y)| \le C$ for all $n \in \mathbb{N}$ and all $y \in K$.
 
-Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.IsLocallyUniformlyBoundedOn.exists_bound_of_isCompact`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/NormalFamilies.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#exists-bound-of-is-compact).
+Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.IsLocallyUniformlyBoundedOn.exists_bound_of_isCompact`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/NormalFamilies.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#exists-bound-of-is-compact).
 
 ## Montel's theorem
 
@@ -49,7 +49,7 @@ on $U$, such that $F_{\varphi(n)} \to f$ locally uniformly on $U$ as $n \to \inf
 
 - Montel's theorem on normal families, P. Montel 1912/1927; see Ahlfors, Functions of One Complex Variable II; Lean is locally uniformly bounded holomorphic family with strictly monotone subsequence locally uniform convergent to holomorphic limit, open U form.
 
-Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.montel`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/NormalFamilies.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#montel).
+Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.montel`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/NormalFamilies.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#montel).
 
 ## Vitali's convergence theorem
 
@@ -64,7 +64,7 @@ with $f(z) = g(z)$ for all $z \in S$, such that $F_n \to f$ locally uniformly on
 
 - Vitali convergence theorem, G. Vitali 1903; see Hille, Analytic Function Theory Vol II and Conway II; Lean is open preconnected U locally uniformly bounded with AccPt accumulation and pointwise limit on S extends to locally uniform holomorphic convergence, Montel-related strengthening.
 
-Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.vitali`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/NormalFamilies.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#vitali).
+Formalized by `MathlibExt.Analysis.Complex.NormalFamilies.vitali`, a theorem declared in [MathlibExt/Analysis/Complex/NormalFamilies.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/NormalFamilies.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html#vitali).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Normal families](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory/normal-families)

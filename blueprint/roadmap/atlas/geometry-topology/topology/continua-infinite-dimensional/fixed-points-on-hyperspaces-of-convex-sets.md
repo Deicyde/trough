@@ -7,7 +7,7 @@ statement: formalized
 
 # Fixed points on hyperspaces of convex sets
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets/index.html).
 
 ## Hausdorff continuity on compact convex sets
 
@@ -22,7 +22,7 @@ Here $d_H$ is taken to be $0$ where the Hausdorff distance is infinite, in parti
 one of the two sets is empty. The values $f(X)$ are not required to be compact, convex or
 nonempty.
 
-Formalized by `MathlibExt.Topology.ScottishBook42Wanted.HausdorffContinuousOnConvexCompacts`, a definition declared in [WantedExt/Topology/ScottishBook42Wanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ScottishBook42Wanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets/index.html#hausdorff-continuous-on-convex-compacts).
+Formalized by `MathlibExt.Topology.ScottishBook42Wanted.HausdorffContinuousOnConvexCompacts`, a definition declared in [WantedExt/Topology/ScottishBook42Wanted.lean, line 23](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ScottishBook42Wanted.lean#L23). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets/index.html#hausdorff-continuous-on-convex-compacts).
 
 ## Fixed point theorem for maps of compact convex sets
 
@@ -45,7 +45,7 @@ and Brouwer's theorem applies.
 
 - S. Ulam, Problem 42 of the Scottish Book; S. B. Nadler, J. Quinn and N. Stavrokas, Pacific J. Math. 83 (1979), 441-462; the fixed-point theorem for the Hilbert cube; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Topology.ScottishBook42Wanted.fixed_point_for_convex_hyperspace_map` is written with `theorem_wanted` in [WantedExt/Topology/ScottishBook42Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ScottishBook42Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets/index.html#fixed-point-for-convex-hyperspace-map).
+Stated but not proved: `MathlibExt.Topology.ScottishBook42Wanted.fixed_point_for_convex_hyperspace_map` is written with `theorem_wanted` in [WantedExt/Topology/ScottishBook42Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ScottishBook42Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets/index.html#fixed-point-for-convex-hyperspace-map).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fixed points on hyperspaces of convex sets](https://deicyde.github.io/atlas-lean/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/continua-infinite-dimensional/fixed-points-on-hyperspaces-of-convex-sets)

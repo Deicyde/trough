@@ -7,7 +7,7 @@ statement: formalized
 
 # Radius of convexity of starlike functions
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions/index.html).
 
 ## Conjecture: a sharp radius of convexity for starlike functions of order 1/2
 
@@ -32,7 +32,7 @@ AMR-022-6022.
 
 - https://arxiv.org/abs/1809.07200
 
-Formalized by `MathlibExt.Analysis.HaymanProblem622Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanProblem622Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanProblem622Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.HaymanProblem622Wanted.conjecture`, a definition declared in [WantedExt/Analysis/HaymanProblem622Wanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanProblem622Wanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions/index.html#conjecture).
 
 ## A sharp radius of convexity for starlike functions of order 1/2 exists
 
@@ -57,7 +57,7 @@ such a radius $r$. The statement above does not assert the value of $r$.
 
 - B. Bhowmik and S. Biswas, Radius of convexity of certain classes of functions defined by convolution, preprint (2026), arXiv:2606.20872, https://arxiv.org/abs/2606.20872.
 
-Stated but not proved: `MathlibExt.Analysis.HaymanProblem622Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanProblem622Wanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/HaymanProblem622Wanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Analysis.HaymanProblem622Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/HaymanProblem622Wanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/HaymanProblem622Wanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Radius of convexity of starlike functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/radius-of-convexity-of-starlike-functions)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Liouville-type theorems
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html).
 
 ## Bounded holomorphic functions on the punctured plane are constant
 
@@ -20,7 +20,7 @@ $c \in \mathbb{C}$ with $f(z) = c$ for every $z \ne 0$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Entire and meromorphic functions of one complex variable, and related topics), problem `ma_proofbench_l1_84`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.BoundedPuncturedPlaneConstWanted.eqOn_const_of_differentiableOn_compl_zero_of_bounded` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/BoundedPuncturedPlaneConstWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/BoundedPuncturedPlaneConstWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html#eq-on-const-of-differentiable-on-compl-z).
+Stated but not proved: `MathlibExt.Analysis.Complex.BoundedPuncturedPlaneConstWanted.eqOn_const_of_differentiableOn_compl_zero_of_bounded` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/BoundedPuncturedPlaneConstWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/BoundedPuncturedPlaneConstWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html#eq-on-const-of-differentiable-on-compl-z).
 
 ## An entire function with a polynomial derivative is a polynomial
 
@@ -34,7 +34,7 @@ $z \in \mathbb{C}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Entire and meromorphic functions of one complex variable, and related topics), problem `ma_proofbench_l1_90`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.EntireIteratedDerivPolyWanted.exists_polynomial_of_iteratedDeriv_eq_polynomial` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireIteratedDerivPolyWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/EntireIteratedDerivPolyWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html#exists-polynomial-of-iterated-deriv-eq-p).
+Stated but not proved: `MathlibExt.Analysis.Complex.EntireIteratedDerivPolyWanted.exists_polynomial_of_iteratedDeriv_eq_polynomial` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireIteratedDerivPolyWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/EntireIteratedDerivPolyWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html#exists-polynomial-of-iterated-deriv-eq-p).
 
 ## An entire function of sublinear growth is constant
 
@@ -46,7 +46,7 @@ is $c \in \mathbb{C}$ with $f(z) = c$ for all $z \in \mathbb{C}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Entire and meromorphic functions of one complex variable, and related topics), problem `ma_proofbench_l2_28`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.EntireSublinearGrowthConstantWanted.exists_const_of_differentiable_of_tendsto_div_self_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireSublinearGrowthConstantWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/EntireSublinearGrowthConstantWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html#exists-const-of-differentiable-of-tendst).
+Stated but not proved: `MathlibExt.Analysis.Complex.EntireSublinearGrowthConstantWanted.exists_const_of_differentiable_of_tendsto_div_self_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireSublinearGrowthConstantWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/EntireSublinearGrowthConstantWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html#exists-const-of-differentiable-of-tendst).
 
 ## Depends on
 
@@ -55,4 +55,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Liouville-type theorems](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/entire-functions/liouville-type-theorems)

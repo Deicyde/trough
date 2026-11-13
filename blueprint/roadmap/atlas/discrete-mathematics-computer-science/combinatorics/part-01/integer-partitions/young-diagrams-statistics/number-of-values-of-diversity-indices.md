@@ -7,7 +7,7 @@ statement: formalized
 
 # Number of values of diversity indices
 
-8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html).
+8 results, 2 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html).
 
 ## Number of values of the Gini–Simpson index
 
@@ -19,7 +19,7 @@ For $N \ge 1$, the Gini–Simpson index of a sample of size $N$ with type counts
 $1 - \sum_i (a_i / N)^2$, so $\gamma(N)$ is the number of possible values of the Gini–Simpson index
 across all samples of size $N$.
 
-Formalized by `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount`, a definition declared in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count).
+Formalized by `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount`, a definition declared in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count).
 
 ## Number of values of the Shannon index
 
@@ -31,7 +31,7 @@ $0$ (the convention $0 \log 0 = 0$).
 For $N \ge 1$, this is the number of possible values of the Shannon index across all samples of size
 $N$.
 
-Formalized by `MathlibExt.Probability.DiversityStatisticsWanted.shannonCount`, a definition declared in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#shannon-count).
+Formalized by `MathlibExt.Probability.DiversityStatisticsWanted.shannonCount`, a definition declared in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#shannon-count).
 
 ## Upper bound on the number of Gini–Simpson values
 
@@ -46,7 +46,7 @@ $$\gamma(N) \le \tfrac{1}{2} N^2 - \tfrac{1}{2} N + 1.$$
 
 - Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 4.
 
-Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_le` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-le).
+Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_le` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-le).
 
 ## Triangular-number lower bound on the number of Gini–Simpson values
 
@@ -62,7 +62,7 @@ $$\tfrac{1}{3} m (m^2 + 3r - 1) + 1 \le \gamma(N).$$
 
 - Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 5.
 
-Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_ge_triangular` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-ge-triangular).
+Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_ge_triangular` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-ge-triangular).
 
 ## Quadratic lower bound on the number of Gini–Simpson values
 
@@ -77,7 +77,7 @@ $$\tfrac{1}{2} \left( \lfloor N^2 / 5 \rfloor - N \right) \le \gamma(N).$$
 
 - Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 6.
 
-Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_ge` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-ge).
+Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_ge` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-ge).
 
 ## Asymptotics of the number of Gini–Simpson values
 
@@ -91,7 +91,7 @@ across samples of size $N$). Then $\gamma(N) / N^2 \to 1/2$ as $N \to \infty$, t
 
 - Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 7.
 
-Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_asymp` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-asymp).
+Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.giniSimpsonCount_asymp` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#gini-simpson-count-asymp).
 
 ## Upper bound on the number of Shannon values
 
@@ -107,7 +107,7 @@ $$\sigma(N) \le \exp\left(\pi \sqrt{2/3} \sqrt{N}\right).$$
 
 - Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Proposition 8.
 
-Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.shannonCount_le` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#shannon-count-le).
+Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.shannonCount_le` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#shannon-count-le).
 
 ## The number of Shannon values grows faster than every polynomial
 
@@ -122,7 +122,7 @@ size $N$). Then for every nonzero polynomial $q$ with real coefficients, $\sigma
 
 - Bradley K. Moon and Noah A. Rosenberg, "Integer Sequences for Diversity Statistics", Theorem 9.
 
-Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.shannonCount_superpolynomial` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/DiversityStatisticsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#shannon-count-superpolynomial).
+Stated but not proved: `MathlibExt.Probability.DiversityStatisticsWanted.shannonCount_superpolynomial` is written with `theorem_wanted` in [WantedExt/Probability/DiversityStatisticsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/DiversityStatisticsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html#shannon-count-superpolynomial).
 
 ## Depends on
 
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Number of values of diversity indices](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/number-of-values-of-diversity-indices)

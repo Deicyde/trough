@@ -7,7 +7,7 @@ statement: formalized
 
 # Infinite cyclotomic products
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products/index.html).
 
 ## Constancy of an infinite cyclotomic product
 
@@ -28,7 +28,7 @@ claim is $P(z) \equiv 1$.
 
 - Hartosh Singh Bal, *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums*, INTEGERS 25 (2025), Article A96, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_prod_cyclotomicHat_inv_root_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products/index.html#tendsto-prod-cyclotomic-hat-inv-root-one).
+Stated but not proved: `MetaMathlibExt.tendsto_prod_cyclotomicHat_inv_root_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products/index.html#tendsto-prod-cyclotomic-hat-inv-root-one).
 
 ## A zeta-twisted cyclotomic product identity
 
@@ -54,7 +54,7 @@ $\prod_{n \ge 1} \hat\Phi_n(z)^{-1/n}$, while the left side does not.
 
 - Hartosh Singh Bal, *Constancy of an Infinite Cyclotomic Product via Ramanujan Sums*, INTEGERS 25 (2025), Article A96, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exists_tendsto_prod_one_sub_pow_and_cyclotomicHat_zeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products/index.html#exists-tendsto-prod-one-sub-pow-and-cycl).
+Stated but not proved: `MetaMathlibExt.exists_tendsto_prod_one_sub_pow_and_cyclotomicHat_zeta` is written with `theorem_wanted` in [WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CyclotomicProductRamanujanSumsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products/index.html#exists-tendsto-prod-one-sub-pow-and-cycl).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Infinite cyclotomic products](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/infinite-cyclotomic-products)

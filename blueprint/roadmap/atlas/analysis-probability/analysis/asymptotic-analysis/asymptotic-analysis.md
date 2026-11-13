@@ -7,7 +7,7 @@ statement: formalized
 
 # Asymptotic analysis: its own results
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html).
 
 Asymptotic expansions and methods: Euler–Maclaurin and Watson's lemma, Laplace-type integrals, coefficient asymptotics of power series (Bender's lemma), Stirling-type and inverse-factorial expansions, and asymptotic expansions of power sums, Lambert series and log sums; complex-analytic saddle-point results on entire functions go to Complex analysis.
 
@@ -27,7 +27,7 @@ and $R = \frac{(-1)^{p+1}}{p!} \int_a^b P_p(x) f^{(p)}(x)\,dx$.
 
 - https://en.wikipedia.org/wiki/Euler%E2%80%93Maclaurin_formula.
 
-Formalized by `MetaMathlibExt.eulerMaclaurinFormula`, a theorem declared in [MathlibExt/Analysis/Calculus/EulerMaclaurinFormula.lean, line 809](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/EulerMaclaurinFormula.lean#L809). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html#euler-maclaurin-formula).
+Formalized by `MetaMathlibExt.eulerMaclaurinFormula`, a theorem declared in [MathlibExt/Analysis/Calculus/EulerMaclaurinFormula.lean, line 809](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/EulerMaclaurinFormula.lean#L809). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html#euler-maclaurin-formula).
 
 ## Watson's inverse factorial expansion
 
@@ -56,7 +56,7 @@ converges absolutely and its sum is $f(z)-b_0$.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL25/Schumacher/schu9.tex, lines 370-417. Scope exclusion: excludes the `M = 1, w = 0` specialization and the later Stirling-coefficient theorem.
 
-Stated but not proved: `MetaMathlibExt.watson_inverse_factorial_series` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/WatsonInverseFactorial.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/WatsonInverseFactorial.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html#watson-inverse-factorial-series).
+Stated but not proved: `MetaMathlibExt.watson_inverse_factorial_series` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/WatsonInverseFactorial.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/WatsonInverseFactorial.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html#watson-inverse-factorial-series).
 
 ## Watson's lemma for Laplace integrals
 
@@ -75,7 +75,7 @@ constant term.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL14/Nemes/nemes4.tex>, lines 142-151.
 
-Formalized by `MetaMathlibExt.watson_laplace_integral_asymptotic`, a theorem declared in [MathlibExt/Analysis/Asymptotics/WatsonLaplaceLemma.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Asymptotics/WatsonLaplaceLemma.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html#watson-laplace-integral-asymptotic).
+Formalized by `MetaMathlibExt.watson_laplace_integral_asymptotic`, a theorem declared in [MathlibExt/Analysis/Asymptotics/WatsonLaplaceLemma.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Asymptotics/WatsonLaplaceLemma.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html#watson-laplace-integral-asymptotic).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Asymptotic analysis](https://deicyde.github.io/atlas-lean/roadmap/Analysis/asymptotic-analysis/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/asymptotic-analysis)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/asymptotic-analysis)

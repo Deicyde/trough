@@ -8,7 +8,7 @@ proof: formalized
 
 # Condorcet's jury theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem/index.html).
 
 ## Condorcet's jury theorem
 
@@ -26,7 +26,7 @@ $\mu(M_n) \to 1$ as $n \to \infty$, and $\mu(M_n) > p$ for every odd $n > 1$.
 
 - https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem.
 
-Formalized by `MetaMathlibExt.condorcet_jury_theorem`, a theorem declared in [MathlibExt/Probability/Condorcet.lean, line 824](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Condorcet.lean#L824). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem/index.html#condorcet-jury-theorem).
+Formalized by `MetaMathlibExt.condorcet_jury_theorem`, a theorem declared in [MathlibExt/Probability/Condorcet.lean, line 812](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Condorcet.lean#L812). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem/index.html#condorcet-jury-theorem).
 
 ## Condorcet's jury theorem for mutually independent votes
 
@@ -39,7 +39,7 @@ $n \in \mathbb{N}$ let $M_n$ be the event that more than $\lfloor n/2 \rfloor$ o
 votes $X_0, \dots, X_{n-1}$ are correct. Then $\mu(M_n) \to 1$ as $n \to \infty$, and
 $\mu(M_n) > p$ for every odd $n > 1$.
 
-Formalized by `MetaMathlibExt.condorcet_jury_theorem_of_iIndepFun`, a theorem declared in [MathlibExt/Probability/Condorcet.lean, line 1030](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Condorcet.lean#L1030). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem/index.html#condorcet-jury-theorem-of-i-indep-fun).
+Formalized by `MetaMathlibExt.condorcet_jury_theorem_of_iIndepFun`, a theorem declared in [MathlibExt/Probability/Condorcet.lean, line 1018](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Condorcet.lean#L1018). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem/index.html#condorcet-jury-theorem-of-i-indep-fun).
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Condorcet's jury theorem](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/social-choice/condorcet-s-jury-theorem)

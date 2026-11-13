@@ -8,7 +8,7 @@ proof: formalized
 
 # Proper forcing and the proper forcing axiom
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html).
 
 ## Conditions in a model
 
@@ -17,7 +17,7 @@ $\mathbb{P} \sqcup \mathcal{P}(\mathbb{P})$. The conditions in $M$ form the set 
 $p \in \mathbb{P}$ whose copy in the disjoint union belongs to $M$; informally,
 $M_c = M \cap \mathbb{P}$.
 
-Formalized by `MetaMathlibExt.modelConds`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#model-conds).
+Formalized by `MetaMathlibExt.modelConds`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#model-conds).
 
 ## Sets of conditions in a model
 
@@ -26,14 +26,14 @@ union $\mathbb{P} \sqcup \mathcal{P}(\mathbb{P})$. The sets of conditions in $M$
 $M_s$ of those $D \subseteq \mathbb{P}$ whose copy in the disjoint union belongs to $M$;
 informally, $M_s = M \cap \mathcal{P}(\mathbb{P})$.
 
-Formalized by `MetaMathlibExt.modelSets`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#model-sets).
+Formalized by `MetaMathlibExt.modelSets`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#model-sets).
 
 ## Compatible conditions
 
 Two elements $p$ and $q$ of a partial order $\mathbb{P}$ are
 compatible if there is $r \in \mathbb{P}$ with $r \le p$ and $r \le q$.
 
-Formalized by `MetaMathlibExt.IsCompatible`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-compatible).
+Formalized by `MetaMathlibExt.IsCompatible`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-compatible).
 
 ## Predense below a condition
 
@@ -41,7 +41,7 @@ A set $A \subseteq \mathbb{P}$ of elements of a partial order
 $\mathbb{P}$ is predense below $q \in \mathbb{P}$ if for every $r \le q$ there is $a \in A$ such
 that $r$ and $a$ are compatible.
 
-Formalized by `MetaMathlibExt.IsPredenseBelow`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-predense-below).
+Formalized by `MetaMathlibExt.IsPredenseBelow`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-predense-below).
 
 ## (M, ℙ)-generic conditions
 
@@ -58,7 +58,7 @@ elementary submodel of $H(\theta)$, for a sufficiently large regular cardinal $\
 contains $\mathbb{P}$; genericity depends only on $M_c$ and $M_s$, and the elementarity is
 supplied by the club in the definition of proper partial orders.
 
-Formalized by `MetaMathlibExt.IsGenericFor`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-generic-for).
+Formalized by `MetaMathlibExt.IsGenericFor`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-generic-for).
 
 ## Proper partial orders
 
@@ -74,7 +74,7 @@ members of the family is again a member.
 The usual requirement $\mathbb{P} \in M$ is not imposed: $\mathbb{P}$ is an element of $X$ (as a
 subset of itself), and since $C$ is cofinal it has members containing it.
 
-Formalized by `MetaMathlibExt.IsProperForcing`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-proper-forcing).
+Formalized by `MetaMathlibExt.IsProperForcing`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Forcing/ForcingAxioms/Proper.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#is-proper-forcing).
 
 ## Proper Forcing Axiom
 
@@ -87,7 +87,7 @@ Here a set $D \subseteq \mathbb{P}$ is dense if for every $q \in \mathbb{P}$ the
 with $d \le q$, and a filter is a nonempty, upward closed subset $G$ of $\mathbb{P}$ such that
 any two elements of $G$ have a common lower bound in $G$.
 
-Formalized by `MetaMathlibExt.ProperForcingAxiom`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/ProperForcingAxiom.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Forcing/ForcingAxioms/ProperForcingAxiom.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#proper-forcing-axiom).
+Formalized by `MetaMathlibExt.ProperForcingAxiom`, a definition declared in [MathlibExt/SetTheory/Forcing/ForcingAxioms/ProperForcingAxiom.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Forcing/ForcingAxioms/ProperForcingAxiom.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html#proper-forcing-axiom).
 
 ## Depends on
 
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Proper forcing and the proper forcing axiom](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/SetTheory/forcing/proper-forcing-and-the-proper-forcing-axiom)

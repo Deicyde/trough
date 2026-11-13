@@ -7,7 +7,7 @@ statement: formalized
 
 # Simplicity conjecture
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture/index.html).
 
 ## Area-preserving homeomorphisms of the disc supported in the interior
 
@@ -18,7 +18,7 @@ homeomorphisms of $\mathbb{D}$ consisting of the homeomorphisms $\phi$ that pres
 whose support, the closure of $\{x \in \mathbb{D} : \phi(x) \neq x\}$, is contained in the open
 unit disc.
 
-Formalized by `MathlibExt.Dynamics.SimplicityConjectureWanted.SimplicityConjecture.Homeo`, a definition declared in [WantedExt/Dynamics/SimplicityConjectureWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/SimplicityConjectureWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture/index.html#homeo).
+Formalized by `MathlibExt.Dynamics.SimplicityConjectureWanted.SimplicityConjecture.Homeo`, a definition declared in [WantedExt/Dynamics/SimplicityConjectureWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/SimplicityConjectureWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture/index.html#homeo).
 
 ## Simplicity conjecture
 
@@ -33,7 +33,7 @@ group.
 
 - D. Cristofaro-Gardiner, V. Humilière, and S. Seyfaddini, `Proof of the simplicity conjecture`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_simplicity_conjecture` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Dynamics.SimplicityConjectureWanted.SimplicityConjecture.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Dynamics/SimplicityConjectureWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/SimplicityConjectureWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture/index.html#theorem-1-2).
+Stated but not proved: `MathlibExt.Dynamics.SimplicityConjectureWanted.SimplicityConjecture.theorem_1_2` is written with `theorem_wanted` in [WantedExt/Dynamics/SimplicityConjectureWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/SimplicityConjectureWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture/index.html#theorem-1-2).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Simplicity conjecture](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/low-dimensional-dynamics/simplicity-conjecture)

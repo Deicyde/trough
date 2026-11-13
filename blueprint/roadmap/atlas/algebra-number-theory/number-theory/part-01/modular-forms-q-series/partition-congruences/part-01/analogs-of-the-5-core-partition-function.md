@@ -7,7 +7,7 @@ statement: formalized
 
 # Analogs of the 5-core partition function
 
-20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html).
+20 results, 8 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html).
 
 ## Ramanujan's general theta function at powers of q
 
@@ -23,7 +23,7 @@ each coefficient is a finite count.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1 (definition of `f(a, b)`).
 
-Formalized by `MetaMathlibExt.ramanujanThetaPow`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#ramanujan-theta-pow).
+Formalized by `MetaMathlibExt.ramanujanThetaPow`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#ramanujan-theta-pow).
 
 ## The 5-core counts
 
@@ -35,7 +35,7 @@ product. The series $f_5^5 / f_1$ is the generating function of 5-core partition
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1, equation for `∑ c_t(n) q^n` with `t = 5` (OEIS A053723).
 
-Formalized by `MetaMathlibExt.fiveCoreCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#five-core-count).
+Formalized by `MetaMathlibExt.fiveCoreCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#five-core-count).
 
 ## The φ-analog of the 5-core partition function
 
@@ -49,7 +49,7 @@ series).
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1, equation (at) (OEIS A368490).
 
-Formalized by `MetaMathlibExt.phiFiveCoreAnalog`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog).
+Formalized by `MetaMathlibExt.phiFiveCoreAnalog`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog).
 
 ## The ψ-analog of the 5-core partition function
 
@@ -63,7 +63,7 @@ a power series).
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1, equation (bt) (OEIS A368495).
 
-Formalized by `MetaMathlibExt.psiFiveCoreAnalog`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog).
+Formalized by `MetaMathlibExt.psiFiveCoreAnalog`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog).
 
 ## Constant term of Ramanujan's theta function
 
@@ -75,7 +75,7 @@ constant term $1$: only $n = 0$ contributes to $q^0$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1.
 
-Formalized by `MetaMathlibExt.constantCoeff_ramanujanThetaPow`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#constant-coeff-ramanujan-theta-pow).
+Formalized by `MetaMathlibExt.constantCoeff_ramanujanThetaPow`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#constant-coeff-ramanujan-theta-pow).
 
 ## Generating function of the 5-core counts
 
@@ -88,7 +88,7 @@ series $\sum_{j \in \mathbb{Z}} (-1)^j q^{j(3j-1)/2}$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1.
 
-Formalized by `MetaMathlibExt.mk_fiveCoreCount_mul`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#mk-five-core-count-mul).
+Formalized by `MetaMathlibExt.mk_fiveCoreCount_mul`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#mk-five-core-count-mul).
 
 ## Generating function of the $\varphi$-analog of the 5-core counts
 
@@ -101,7 +101,7 @@ $\left(\sum_{n \ge 0} \bar a_5(n) q^n\right) \varphi(-q) = \varphi(-q^5)^5$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1, equation (at).
 
-Formalized by `MetaMathlibExt.mk_phiFiveCoreAnalog_mul`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#mk-phi-five-core-analog-mul).
+Formalized by `MetaMathlibExt.mk_phiFiveCoreAnalog_mul`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#mk-phi-five-core-analog-mul).
 
 ## Generating function of the $\psi$-analog of the 5-core counts
 
@@ -114,7 +114,7 @@ $\left(\sum_{n \ge 0} \bar b_5(n) q^n\right) \psi(-q) = \psi(-q^5)^5$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Section 1, equation (bt).
 
-Formalized by `MetaMathlibExt.mk_psiFiveCoreAnalog_mul`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#mk-psi-five-core-analog-mul).
+Formalized by `MetaMathlibExt.mk_psiFiveCoreAnalog_mul`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#mk-psi-five-core-analog-mul).
 
 ## The $\varphi$-analog of the 5-core counts in terms of the 5-core counts
 
@@ -130,7 +130,7 @@ $\bar a_5(20n+6) = 10\, c_5(10n+2)$ and $\bar a_5(20n+14) = 10\, c_5(10n+6)$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Theorem 2 (`jis-2024-24.4.5-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_eq_fiveCoreCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-eq-five-core-count).
+Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_eq_fiveCoreCount` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-eq-five-core-count).
 
 ## Recurrence for the $\varphi$-analog of the 5-core counts along powers of 5
 
@@ -144,7 +144,7 @@ Both quotients are integers.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Theorem 2 (`jis-2024-24.4.5-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_five_pow_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-five-pow-mul).
+Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_five_pow_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-five-pow-mul).
 
 ## Congruences for the $\varphi$-analog of the 5-core counts
 
@@ -158,7 +158,7 @@ $4\, \bar a_5(5^k n) \equiv 5\, \bar a_5(n) - \bar a_5(5n) \pmod{5^k}$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Corollary 3 (`jis-2024-24.4.5-cor-3`).
 
-Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_congruences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-congruences).
+Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_congruences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-congruences).
 
 ## A doubling identity for the ψ-analog of the 5-core partition function
 
@@ -171,7 +171,7 @@ $\bar b_5(4n+3) = 2 \bar b_5(2n)$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Theorem 4 (`jis-2024-24.4.5-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_four_mul_add_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-four-mul-add-three).
+Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_four_mul_add_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-four-mul-add-three).
 
 ## A recurrence for the ψ-analog of the 5-core partition function along powers of 5
 
@@ -185,7 +185,7 @@ both quotients are integers.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Theorem 4 (`jis-2024-24.4.5-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_five_pow_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-five-pow-mul).
+Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_five_pow_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-five-pow-mul).
 
 ## Identities relating the ψ-analog to the 5-core counts and the φ-analog
 
@@ -205,7 +205,7 @@ $\bar b_5(20n+9) = -c_5(5n+2)$; and $\bar b_5(20n+15) = \bar b_5(20n+19) = 0$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Theorem 5 (`jis-2024-24.4.5-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_identities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-identities).
+Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_identities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-identities).
 
 ## Sign densities of the ψ-analog of the 5-core partition function
 
@@ -221,7 +221,7 @@ $\bar b_5(n) < 0$ has lower density at least $1/10$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Corollary 6 (`jis-2024-24.4.5-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_sign_densities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-sign-densities).
+Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_sign_densities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-sign-densities).
 
 ## The $\varphi$-analog in terms of the $\psi$-analog of the 5-core counts
 
@@ -236,7 +236,7 @@ $\bar a_5(20n+14) = 20\, \bar b_5(10n+4)$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Corollary 7 (`jis-2024-24.4.5-cor-7`).
 
-Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_eq_twenty_mul_psiFiveCoreAnalog` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-eq-twenty-mul-psi-f).
+Stated but not proved: `MetaMathlibExt.phiFiveCoreAnalog_eq_twenty_mul_psiFiveCoreAnalog` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#phi-five-core-analog-eq-twenty-mul-psi-f).
 
 ## Congruences for the ψ-analog of the 5-core partition function
 
@@ -250,7 +250,7 @@ $\bar b_5(5^k(20n+18) - 3)$ and $\bar b_5(5^k(20n+22) - 3)$ are divisible by $(5
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Corollary 8 (`jis-2024-24.4.5-cor-8`).
 
-Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_congruences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-congruences).
+Stated but not proved: `MetaMathlibExt.psiFiveCoreAnalog_congruences` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#psi-five-core-analog-congruences).
 
 ## Theta-function identities of level 5
 
@@ -271,7 +271,7 @@ $f_2^2/f_1^4 = f_{10}^2/f_5^4 + 4q f_2 f_{10}^5/(f_1^3 f_5^5)$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Lemma 9 (`jis-2024-24.4.5-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.theta_level_five_identities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#theta-level-five-identities).
+Stated but not proved: `MetaMathlibExt.theta_level_five_identities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#theta-level-five-identities).
 
 ## 5-dissections of Ramanujan's theta functions φ and ψ
 
@@ -288,7 +288,7 @@ Rogers–Ramanujan continued fraction; that part is not included.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Lemma 10 (`jis-2024-24.4.5-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.theta_five_dissections` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#theta-five-dissections).
+Stated but not proved: `MetaMathlibExt.theta_five_dissections` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#theta-five-dissections).
 
 ## Two identities for the 5-core counts
 
@@ -300,7 +300,7 @@ $c_5(4n+1) = c_5(2n)$ and $c_5(5n+4) = 5\, c_5(n)$.
 
 - Subhajit Bandyopadhyay and Nayandeep Deka Baruah, *Arithmetic Identities for Some Analogs of the 5-Core Partition Function*, Journal of Integer Sequences 27 (2024), Article 24.4.5, Lemma 11 (`jis-2024-24.4.5-lem-11`).
 
-Stated but not proved: `MetaMathlibExt.fiveCoreCount_identities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#five-core-count-identities).
+Stated but not proved: `MetaMathlibExt.fiveCoreCount_identities` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/FiveCoreAnalogsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html#five-core-count-identities).
 
 ## Depends on
 
@@ -309,4 +309,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Analogs of the 5-core partition function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/analogs-of-the-5-core-partition-function)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Heights of rational points on elliptic curves
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html).
 
 ## Height lower bounds on $y^2 = x^3 + ax + b$ when $a = \pm 1$ or $b = \pm 1$
 
@@ -24,7 +24,7 @@ $(0, 1)$ or $(0, -1)$.
 
 - Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.naiveHeight_lower_bound_of_unit_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-lower-bound-of-unit-coeff).
+Stated but not proved: `MetaMathlibExt.naiveHeight_lower_bound_of_unit_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-lower-bound-of-unit-coeff).
 
 ## Height lower bounds on $y^2 = x^3 + ax + b$ when $b = \pm a$, $b = 0$ or $a = 0$
 
@@ -44,7 +44,7 @@ three: for $a = 5$, doubling $(1, 1)$ gives $(14, -53)$.
 
 - Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.naiveHeight_lower_bound_of_special_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-lower-bound-of-special-coef).
+Stated but not proved: `MetaMathlibExt.naiveHeight_lower_bound_of_special_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-lower-bound-of-special-coef).
 
 ## Height of a point on $y^2 = x^3 + ax - b$ versus the height of its $x$-coordinate
 
@@ -59,7 +59,7 @@ $v^2 = u^3 + au - b$ satisfies $H(u, v) < \sqrt{1 + |a|}\, H(u)^{3/2}$.
 
 - Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.naiveHeight_lt_sqrt_mul_naiveHeight_x_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-lt-sqrt-mul-naive-height-x).
+Stated but not proved: `MetaMathlibExt.naiveHeight_lt_sqrt_mul_naiveHeight_x_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-lt-sqrt-mul-naive-height-x).
 
 ## Height lower bound on $y^2 = x^3 + ax + b$ when $|a|$ is small
 
@@ -74,7 +74,7 @@ $uv \ne 0$ satisfies $H(u, v) > \lVert p \rVert^{1/6}/1.634$.
 
 - Dimitrios Poulakis, *Lower Bounds for the Height of Rational Points of Elliptic Curves*, INTEGERS 25 (2025), Article A66, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.naiveHeight_gt_of_small_linear_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-gt-of-small-linear-coeff).
+Stated but not proved: `MetaMathlibExt.naiveHeight_gt_of_small_linear_coeff` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveNaiveHeightLowerBoundsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html#naive-height-gt-of-small-linear-coeff).
 
 ## Depends on
 
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Heights of rational points on elliptic curves](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-geometry/heights-of-rational-points-on-elliptic-curves)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Frobenius numbers of compound sequences
 
-9 results, 3 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html).
+9 results, 3 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html).
 
 ## Compound sequence
 
@@ -24,7 +24,7 @@ interest; for $j > n$ the second product is empty and $c_j = b_1 \cdots b_j$.
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Section 2, eq. (1) (after Kiers, O'Neill, and Ponomarenko).
 
-Formalized by `MetaMathlibExt.compoundSequence`, a definition declared in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence).
+Formalized by `MetaMathlibExt.compoundSequence`, a definition declared in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence).
 
 ## First term of a compound sequence
 
@@ -35,7 +35,7 @@ of natural numbers, the compound sequence $c$ of $a$ and $b$ satisfies $c_0 = a_
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Section 2, eq. (1).
 
-Formalized by `MetaMathlibExt.compoundSequence_zero`, a theorem declared in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-zero).
+Formalized by `MetaMathlibExt.compoundSequence_zero`, a theorem declared in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-zero).
 
 ## Last term of a compound sequence
 
@@ -46,7 +46,7 @@ of natural numbers, the compound sequence $c$ of $a$ and $b$ satisfies $c_n = b_
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Section 2, eq. (1).
 
-Formalized by `MetaMathlibExt.compoundSequence_self`, a theorem declared in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-self).
+Formalized by `MetaMathlibExt.compoundSequence_self`, a theorem declared in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-self).
 
 ## Brauer–Shockley formula for the Frobenius number
 
@@ -62,7 +62,7 @@ The case $a = 1$, where the maximum would be over an empty set, is excluded.
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Lemma 1, quoting Brauer and Shockley.
 
-Stated but not proved: `MetaMathlibExt.frobenius_eq_max_apery_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#frobenius-eq-max-apery-sub).
+Stated but not proved: `MetaMathlibExt.frobenius_eq_max_apery_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#frobenius-eq-max-apery-sub).
 
 ## Apéry set and Frobenius number of a compound sequence
 
@@ -83,7 +83,7 @@ $$F(S) = \sum_{i=1}^{n} (a_i - 1) c_i - c_0.$$
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 2, eq. (2), quoting Kiers, O'Neill, and Ponomarenko.
 
-Stated but not proved: `MetaMathlibExt.compoundSequence_apery_and_frobenius` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-apery-and-frobenius).
+Stated but not proved: `MetaMathlibExt.compoundSequence_apery_and_frobenius` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-apery-and-frobenius).
 
 ## When deleting a term of a compound sequence leaves a numerical semigroup
 
@@ -99,7 +99,7 @@ $\gcd(a_j, b_{j+1}) = 1$, or $j = n$ and $a_n = 1$.
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.compoundSequence_erase_cofinite_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-erase-cofinite-iff).
+Stated but not proved: `MetaMathlibExt.compoundSequence_erase_cofinite_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-erase-cofinite-iff).
 
 ## Deletions from a compound sequence that keep the Frobenius number
 
@@ -117,7 +117,7 @@ same Frobenius number, if and only if $a_j = 1$.
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.compoundSequence_erase_frobenius_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-erase-frobenius-eq-iff).
+Stated but not proved: `MetaMathlibExt.compoundSequence_erase_frobenius_eq_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-erase-frobenius-eq-iff).
 
 ## Embedding dimension of the semigroup of a compound sequence
 
@@ -134,7 +134,7 @@ $S$ is $n - k + 1$.
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.compoundSequence_embeddingDimension` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-embedding-dimension).
+Stated but not proved: `MetaMathlibExt.compoundSequence_embeddingDimension` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-embedding-dimension).
 
 ## The minimal generating set as the least Frobenius-preserving subset
 
@@ -154,7 +154,7 @@ of elements only if $C' = M$.
 
 - Edgar Federico Elizeche and Amitabha Tripathi, *A Note on Deletions from Compound Sequences That Leave the Frobenius Number Invariant*, INTEGERS 25 (2025), Article A6, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.compoundSequence_minimal_generating_set_least` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-minimal-generating-set).
+Stated but not proved: `MetaMathlibExt.compoundSequence_minimal_generating_set_least` is written with `theorem_wanted` in [WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CompoundSequenceFrobeniusWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html#compound-sequence-minimal-generating-set).
 
 ## Depends on
 
@@ -163,4 +163,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Frobenius numbers of compound sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/numerical-semigroups/frobenius-numbers-of-compound-sequences)

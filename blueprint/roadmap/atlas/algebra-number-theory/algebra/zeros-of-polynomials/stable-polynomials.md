@@ -8,7 +8,7 @@ proof: formalized
 
 # Stable polynomials
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html).
 
 ## Mv Polynomial
 
@@ -17,14 +17,14 @@ proof: formalized
 A complex multivariate polynomial is stable if it has no zero when
 every variable lies in the open upper half-plane.
 
-Formalized by `MvPolynomial.IsStable`, a definition declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#is-stable).
+Formalized by `MvPolynomial.IsStable`, a definition declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#is-stable).
 
 ## Real stable polynomials
 
 A complex multivariate polynomial is real stable if it is stable
 and has real coefficients.
 
-Formalized by `MvPolynomial.IsRealStable`, a definition declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#is-real-stable).
+Formalized by `MvPolynomial.IsRealStable`, a definition declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#is-real-stable).
 
 ## Univariate specialization
 
@@ -34,7 +34,7 @@ $x : \sigma \to R$. The univariate specialization of $p$ at $i$ and $x$ is the p
 $R[X]$ obtained from $p$ by substituting $X$ for $X_i$ and the constant $x_j$ for every $X_j$ with
 $j \ne i$; the value $x_i$ is not used.
 
-Formalized by `MvPolynomial.univariateSpecialization`, a definition declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#univariate-specialization).
+Formalized by `MvPolynomial.univariateSpecialization`, a definition declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#univariate-specialization).
 
 ## Partial derivatives under univariate specialization
 
@@ -44,7 +44,7 @@ $i \in \sigma$ and $x : \sigma \to R$, and for a polynomial $q$ write $q_{i,x} \
 univariate specialization that keeps $X_i$ as the variable $X$ and sets every other $X_j$ to
 $x_j$. Then $(\partial p / \partial X_i)_{i,x} = (p_{i,x})'$, the derivative of $p_{i,x}$.
 
-Formalized by `MvPolynomial.derivative_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#derivative-univariate-specialization).
+Formalized by `MvPolynomial.derivative_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#derivative-univariate-specialization).
 
 ## Evaluating a univariate specialization
 
@@ -54,7 +54,7 @@ $i \in \sigma$, $x : \sigma \to R$ and $t \in R$. Evaluating at $t$ the univaria
 of $p$ that keeps $X_i$ as the variable and sets every other $X_j$ to $x_j$ gives $p(y)$, where
 $y_i = t$ and $y_j = x_j$ for $j \ne i$.
 
-Formalized by `MvPolynomial.eval_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#eval-univariate-specialization).
+Formalized by `MvPolynomial.eval_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#eval-univariate-specialization).
 
 ## Univariate specialization at real values preserves real coefficients
 
@@ -64,7 +64,7 @@ $j \in \sigma$, let $i \in \sigma$, and let $a : \sigma \to \mathbb{C}$ with $a_
 $j \ne i$. Then the univariate specialization of $p$ that keeps $X_i$ as the variable and sets
 every other $X_j$ to $a_j$ has real coefficients.
 
-Formalized by `MvPolynomial.map_star_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#map-star-univariate-specialization).
+Formalized by `MvPolynomial.map_star_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#map-star-univariate-specialization).
 
 ## Roots of specializations of stable polynomials lie in the closed lower half-plane
 
@@ -74,7 +74,7 @@ $i \in \sigma$, and let $a : \sigma \to \mathbb{C}$ with $\operatorname{Im} a_j 
 $j \ne i$. If the univariate specialization of $p$ that keeps $X_i$ as the variable and sets every
 other $X_j$ to $a_j$ is nonzero, then every root $w$ of it satisfies $\operatorname{Im} w \le 0$.
 
-Formalized by `MvPolynomial.IsStable.roots_im_nonpos_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#roots-im-nonpos-univariate-specializatio).
+Formalized by `MvPolynomial.IsStable.roots_im_nonpos_univariateSpecialization`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 464](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L464). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#roots-im-nonpos-univariate-specializatio).
 
 ## Real-rootedness of univariate specializations of real stable polynomials
 
@@ -86,7 +86,7 @@ to $x_j$. Suppose there is a natural number $d$ such that for every $x : \sigma 
 the polynomial $p_{i,x}$ is monic of degree $d$. Then for every $a : \sigma \to \mathbb{C}$ with
 $a_j$ real for all $j \ne i$, the polynomial $p_{i,a}$ is real-rooted.
 
-Formalized by `MvPolynomial.isRealRooted_univariateSpecialization_of_isRealStable`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#is-real-rooted-univariate-specialization).
+Formalized by `MvPolynomial.isRealRooted_univariateSpecialization_of_isRealStable`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 576](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#is-real-rooted-univariate-specialization).
 
 ## Subtracting a partial derivative preserves stability
 
@@ -95,7 +95,7 @@ multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, let $i \in
 write $\partial_i p$ for the partial derivative of $p$ with respect to $X_i$. Then
 $p - \partial_i p$ is stable.
 
-Formalized by `MvPolynomial.IsStable.sub_pderiv`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 645](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L645). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#sub-pderiv).
+Formalized by `MvPolynomial.IsStable.sub_pderiv`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 645](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L645). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#sub-pderiv).
 
 ## Subtracting a partial derivative preserves real stability
 
@@ -104,7 +104,7 @@ complex multivariate polynomial in variables $X_j$ indexed by $j \in \sigma$, le
 and write $\partial_i p$ for the partial derivative of $p$ with respect to $X_i$. Then
 $p - \partial_i p$ is real stable.
 
-Formalized by `MvPolynomial.IsRealStable.sub_pderiv`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#sub-pderiv-2).
+Formalized by `MvPolynomial.IsRealStable.sub_pderiv`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#sub-pderiv-2).
 
 ## The mixed differential preserves stability
 
@@ -114,7 +114,7 @@ derivative with respect to $X_s$. For every finite list $(i_1, \dots, i_k)$ of i
 $\sigma$ (repetitions allowed, possibly empty), the mixed differential of $p$ along the list,
 $(1 - \partial_{i_k}) \cdots (1 - \partial_{i_1})\, p$, is stable.
 
-Formalized by `MvPolynomial.IsStable.mixedDifferential`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#mixed-differential).
+Formalized by `MvPolynomial.IsStable.mixedDifferential`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 694](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L694). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#mixed-differential).
 
 ## The mixed differential preserves real stability
 
@@ -124,7 +124,7 @@ the partial derivative with respect to $X_s$. For every finite list $(i_1, \dots
 in $\sigma$ (repetitions allowed, possibly empty), the mixed differential of $p$ along the list,
 $(1 - \partial_{i_k}) \cdots (1 - \partial_{i_1})\, p$, is real stable.
 
-Formalized by `MvPolynomial.IsRealStable.mixedDifferential`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 704](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/MvPolynomial/Stable.lean#L704). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#mixed-differential-2).
+Formalized by `MvPolynomial.IsRealStable.mixedDifferential`, a theorem declared in [MathlibExt/Algebra/MvPolynomial/Stable.lean, line 704](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/MvPolynomial/Stable.lean#L704). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html#mixed-differential-2).
 
 ## Depends on
 
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stable polynomials](https://deicyde.github.io/atlas-lean/roadmap/Algebra/zeros-of-polynomials/stable-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/zeros-of-polynomials/stable-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/zeros-of-polynomials/stable-polynomials)

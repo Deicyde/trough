@@ -8,7 +8,7 @@ proof: formalized
 
 # Basic hypergeometric series
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html).
 
 ## Coefficients of the basic hypergeometric series
 
@@ -28,7 +28,7 @@ No condition on the parameters is imposed: division by zero gives $0$, and so do
 power of $0$. Analytic applications must separately establish that the denominator does not
 vanish.
 
-Formalized by `MetaMathlibExt.BasicHypergeometric.basicHypergeometricCoefficient`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html#basic-hypergeometric-coefficient).
+Formalized by `MetaMathlibExt.BasicHypergeometric.basicHypergeometricCoefficient`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html#basic-hypergeometric-coefficient).
 
 ## Basic hypergeometric series
 
@@ -38,7 +38,7 @@ ${}_r\phi_s(a_1, \dots, a_r; b_1, \dots, b_s; q, z)$ is the formal power series 
 $\mathbb{C}$ whose coefficient of $z^n$, for each natural number $n$, is the $n$-th basic
 hypergeometric coefficient of these parameters.
 
-Formalized by `MetaMathlibExt.BasicHypergeometric.basicHypergeometricSeries`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html#basic-hypergeometric-series).
+Formalized by `MetaMathlibExt.BasicHypergeometric.basicHypergeometricSeries`, a definition declared in [MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html#basic-hypergeometric-series).
 
 ## Coefficients of the series ${}_{s+1}\phi_s$
 
@@ -54,7 +54,7 @@ With $r = s + 1$ upper parameters, the exponent $1 + s - r$ of the normalization
 $\left((-1)^n q^{\binom{n}{2}}\right)^{1+s-r}$ is $0$, so the factor disappears. As in the
 definition of the coefficient, division by zero gives $0$.
 
-Formalized by `MetaMathlibExt.BasicHypergeometric.basicHypergeometricCoefficient_phi_succ`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html#basic-hypergeometric-coefficient-phi-suc).
+Formalized by `MetaMathlibExt.BasicHypergeometric.basicHypergeometricCoefficient_phi_succ`, a theorem declared in [MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/SpecialFunctions/BasicHypergeometric.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html#basic-hypergeometric-coefficient-phi-suc).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Basic hypergeometric series](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/hypergeometric-functions/basic-hypergeometric-series)

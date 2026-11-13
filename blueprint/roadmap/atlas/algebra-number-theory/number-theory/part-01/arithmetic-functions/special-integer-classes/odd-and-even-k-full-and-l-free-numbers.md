@@ -7,7 +7,7 @@ statement: formalized
 
 # Odd and even k-full and l-free numbers
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html).
 
 ## Odd-to-even ratio of $k$-full numbers
 
@@ -22,7 +22,7 @@ as $x \to \infty$ through the reals.
 
 - Sunanta Srisopha and Teerapat Srichan, *The Odd/Even Dichotomy for the Set of Numbers That Are Both k-Full and l-Free*, INTEGERS 24 (2024), Article A106, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.tendsto_card_odd_kFull_div_card_even_kFull` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFullOddEvenWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFullOddEvenWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html#tendsto-card-odd-k-full-div-card-even-k).
+Stated but not proved: `MetaMathlibExt.tendsto_card_odd_kFull_div_card_even_kFull` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFullOddEvenWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFullOddEvenWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html#tendsto-card-odd-k-full-div-card-even-k).
 
 ## Odd-to-even ratio of $k$-full, $l$-free numbers
 
@@ -39,7 +39,7 @@ as $x \to \infty$ through the reals.
 
 - Sunanta Srisopha and Teerapat Srichan, *The Odd/Even Dichotomy for the Set of Numbers That Are Both k-Full and l-Free*, INTEGERS 24 (2024), Article A106, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_card_odd_kFull_lFree_div_card_even_kFull_lFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFullOddEvenWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFullOddEvenWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html#tendsto-card-odd-k-full-l-free-div-card).
+Stated but not proved: `MetaMathlibExt.tendsto_card_odd_kFull_lFree_div_card_even_kFull_lFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFullOddEvenWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFullOddEvenWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html#tendsto-card-odd-k-full-l-free-div-card).
 
 ## Odd-to-even ratio of $l$-free numbers
 
@@ -54,7 +54,7 @@ positive integer is $1$-full.
 
 - Sunanta Srisopha and Teerapat Srichan, *The Odd/Even Dichotomy for the Set of Numbers That Are Both k-Full and l-Free*, INTEGERS 24 (2024), Article A106, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_card_odd_lFree_div_card_even_lFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFullOddEvenWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/KFullOddEvenWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html#tendsto-card-odd-l-free-div-card-even-l).
+Stated but not proved: `MetaMathlibExt.tendsto_card_odd_lFree_div_card_even_lFree` is written with `theorem_wanted` in [WantedExt/NumberTheory/KFullOddEvenWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/KFullOddEvenWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html#tendsto-card-odd-l-free-div-card-even-l).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Odd and even k-full and l-free numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/special-integer-classes/odd-and-even-k-full-and-l-free-numbers)

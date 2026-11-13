@@ -8,7 +8,7 @@ proof: formalized
 
 # Polygons and quadrilaterals: its own results
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html).
 
 Theorems about quadrilaterals, cyclic polygons and squares erected on polygon sides.
 
@@ -30,7 +30,7 @@ Then $A = \sqrt{(s - a)(s - b)(s - c)(s - d)}$.
 
 - https://en.wikipedia.org/wiki/Brahmagupta%27s_formula
 
-Formalized by `MetaMathlibExt.brahmagupta_area`, a theorem declared in [MathlibExt/Geometry/Euclidean/BrahmaguptaArea.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/BrahmaguptaArea.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#brahmagupta-area).
+Formalized by `MetaMathlibExt.brahmagupta_area`, a theorem declared in [MathlibExt/Geometry/Euclidean/BrahmaguptaArea.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/BrahmaguptaArea.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#brahmagupta-area).
 
 ## Euler's quadrilateral theorem
 
@@ -44,7 +44,7 @@ $$AB^2 + BC^2 + CD^2 + DA^2 = AC^2 + BD^2 + 4 MN^2.$$
 
 - https://en.wikipedia.org/wiki/Euler%27s_quadrilateral_theorem
 
-Formalized by `MetaMathlibExt.euler_quadrilateral`, a theorem declared in [MathlibExt/Geometry/Euclidean/EulerQuadrilateral.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/EulerQuadrilateral.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#euler-quadrilateral).
+Formalized by `MetaMathlibExt.euler_quadrilateral`, a theorem declared in [MathlibExt/Geometry/Euclidean/EulerQuadrilateral.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/EulerQuadrilateral.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#euler-quadrilateral).
 
 ## Japanese theorem for concyclic quadrilaterals
 
@@ -62,7 +62,7 @@ Then $r_1 + r_2 = r_3 + r_4$.
 
 - https://en.wikipedia.org/wiki/Japanese_theorem_for_concyclic_quadrilaterals.
 
-Formalized by `MetaMathlibExt.japanese_theorem_concyclic_quadrilaterals`, a theorem declared in [MathlibExt/Geometry/Euclidean/JapaneseQuads.lean, line 944](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/JapaneseQuads.lean#L944). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#japanese-theorem-concyclic-quadrilateral).
+Formalized by `MetaMathlibExt.japanese_theorem_concyclic_quadrilaterals`, a theorem declared in [MathlibExt/Geometry/Euclidean/JapaneseQuads.lean, line 944](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/JapaneseQuads.lean#L944). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#japanese-theorem-concyclic-quadrilateral).
 
 ## Varignon's theorem
 
@@ -81,7 +81,7 @@ that is, the signed area of $PQRS$ is half the signed area of $ABCD$.
 
 - https://en.wikipedia.org/wiki/Varignon%27s_theorem. `A B C D` are arbitrary points in the Euclidean plane, including degenerate or self-crossing configurations. `P Q R S` are the midpoints of sides AB, BC, CD, DA (`2 • P = A + B`, etc.). Conclusion: `P + R = Q + S` (the diagonals of PQRS bisect each other, i.e. PQRS is a parallelogram via parallel opposite sides / bisecting diagonals), and twice the signed area of PQRS, expressed through `EuclideanGeometry.orientedTriangleArea`, equals the signed area of ABCD.
 
-Formalized by `MetaMathlibExt.varignon`, a theorem declared in [MathlibExt/Geometry/Euclidean/Varignon.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Varignon.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#varignon).
+Formalized by `MetaMathlibExt.varignon`, a theorem declared in [MathlibExt/Geometry/Euclidean/Varignon.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Varignon.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html#varignon).
 
 ## Depends on
 
@@ -90,4 +90,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Polygons and quadrilaterals](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/polygons/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/polygons)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/polygons)

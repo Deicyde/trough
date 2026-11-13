@@ -7,7 +7,7 @@ statement: formalized
 
 # Hahn–Banach theorem
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html).
 
 ## One-step Hahn–Banach extension
 
@@ -19,7 +19,7 @@ contained in $M' = M + \mathbb{K} x_0$, and there is a continuous linear functio
 $g \colon M' \to \mathbb{K}$ that agrees with $f$ on $M$ and satisfies $\|g(v)\| \le C\|v\|$ for all
 $v \in M'$.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.HahnBanachOneStepExtension.hahn_banach_one_step_extension_bound`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/HahnBanachOneStepExtension.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/FunctionalAnalysis/HahnBanachOneStepExtension.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#hahn-banach-one-step-extension-bound).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.HahnBanachOneStepExtension.hahn_banach_one_step_extension_bound`, a theorem declared in [MathlibExt/Analysis/FunctionalAnalysis/HahnBanachOneStepExtension.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/FunctionalAnalysis/HahnBanachOneStepExtension.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#hahn-banach-one-step-extension-bound).
 
 ## Quotient seminorm equals distance to the subspace
 
@@ -29,7 +29,7 @@ $E$, and give $E/S$ the quotient seminorm. Then for every $x \in E$ the class $q
 the quotient map $q \colon E \to E/S$ satisfies $\|q(x)\| = d(x, S)$, where
 $d(x, S) = \inf_{s \in S} \|x - s\|$ is the distance from $x$ to $S$.
 
-Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.norm_mkQL_apply`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#norm-mk-ql-apply).
+Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.norm_mkQL_apply`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#norm-mk-ql-apply).
 
 ## The quotient map has norm at most one
 
@@ -38,7 +38,7 @@ where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, let $S$ be a linear subspace
 $E/S$ the quotient seminorm. Then the quotient map $q \colon E \to E/S$, a continuous linear map,
 has operator norm $\|q\| \le 1$.
 
-Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.norm_mkQL_le`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#norm-mk-ql-le).
+Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.norm_mkQL_le`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#norm-mk-ql-le).
 
 ## Hahn–Banach distance formula, attainment form
 
@@ -48,7 +48,7 @@ $E$, not necessarily closed, and let $x \in E$. Then there is a continuous linea
 $f \colon E \to \mathbb{K}$ with $\|f\| \le 1$ that vanishes on $S$ and satisfies
 $f(x) = d(x, S)$, where $d(x, S) = \inf_{s \in S} \|x - s\|$ is the distance from $x$ to $S$.
 
-Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_apply_eq_infDist`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#exists-annihilating-apply-eq-inf-dist).
+Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_apply_eq_infDist`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#exists-annihilating-apply-eq-inf-dist).
 
 ## Norm-one annihilating functional at positive distance
 
@@ -62,7 +62,7 @@ A functional with $\|f\| \le 1$ that vanishes on $S$ and satisfies $f(x) = d(x, 
 exactly $1$: for $s \in S$ we have $d(x, S) = |f(x - s)| \le \|f\| \, \|x - s\|$, and $s$ can be
 chosen with $\|x - s\|$ arbitrarily close to $d(x, S) > 0$.
 
-Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_norm_one`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#exists-annihilating-norm-one).
+Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_norm_one`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#exists-annihilating-norm-one).
 
 ## Norm-one annihilating functional outside a closed subspace
 
@@ -74,7 +74,7 @@ $f(x) = d(x, S)$, where $d(x, S) = \inf_{s \in S} \|x - s\|$ is the distance fro
 
 Since $S$ is closed and $x \notin S$, the distance $d(x, S)$ is positive.
 
-Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_of_notMem`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#exists-annihilating-of-not-mem).
+Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.exists_annihilating_of_notMem`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#exists-annihilating-of-not-mem).
 
 ## Hahn–Banach distance formula
 
@@ -86,7 +86,7 @@ $f \colon E \to \mathbb{K}$ with $\|f\| \le 1$ that vanish on $S$.
 
 The supremum is attained, by the attainment form of the distance formula.
 
-Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.infDist_eq_sSup_norm_apply`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#inf-dist-eq-s-sup-norm-apply).
+Formalized by `MathlibExt.Analysis.Normed.Module.DualDistanceFormula.infDist_eq_sSup_norm_apply`, a theorem declared in [MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/DualDistanceFormula.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#inf-dist-eq-s-sup-norm-apply).
 
 ## Separation of convex bodies at positive distance
 
@@ -101,7 +101,7 @@ and $c \le F(b)$ for all $b \in B$.
 
 - S. Mazur, Problem 64 of the Scottish Book; the theorem is true, as recorded in the typescript Ad 64 (Eidelheit, January 11, 1936), which gives the stronger statement that separation holds even for non-disjoint bodies with no common interior points. The positive-distance case follows from standard Hahn–Banach separation.
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook64Wanted.convexBodiesSeparatedByHyperplane` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook64Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook64Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#convex-bodies-separated-by-hyperplane).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook64Wanted.convexBodiesSeparatedByHyperplane` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook64Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook64Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html#convex-bodies-separated-by-hyperplane).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hahn–Banach theorem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/hahn-banach-theorem)

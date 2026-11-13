@@ -8,7 +8,7 @@ proof: formalized
 
 # Cycle covers
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html).
 
 ## Cycles in a graph
 
@@ -20,7 +20,7 @@ pairwise distinct. In a simple graph this forces $n \ge 3$.
 The base vertex and the direction of traversal are part of the data, so a single cycle subgraph
 of $G$ arises from several such cycles.
 
-Formalized by `SimpleGraph.Cycle`, a structure declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#cycle).
+Formalized by `SimpleGraph.Cycle`, a structure declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#cycle).
 
 ## Edges of a cycle
 
@@ -28,28 +28,28 @@ The edges of a cycle $c$ in a simple graph form the list of the edges of
 its closed walk, in the order in which $c$ traverses them starting from its base vertex; each edge
 is the unordered pair of its two endpoints.
 
-Formalized by `SimpleGraph.Cycle.edges`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#edges).
+Formalized by `SimpleGraph.Cycle.edges`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#edges).
 
 ## Length of a cycle
 
 The length of a cycle in a simple graph is the number of edges of its
 closed walk.
 
-Formalized by `SimpleGraph.Cycle.length`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#length).
+Formalized by `SimpleGraph.Cycle.length`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#length).
 
 ## Cycle covers
 
 Let $G$ be a finite simple graph. A finite multiset $C$ of cycles in $G$ is a
 cycle cover of $G$ when every edge of $G$ is an edge of at least one cycle in $C$.
 
-Formalized by `SimpleGraph.IsCycleCover`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#is-cycle-cover).
+Formalized by `SimpleGraph.IsCycleCover`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#is-cycle-cover).
 
 ## Total length of a multiset of cycles
 
 The total length of a finite multiset $C$ of cycles in
 a simple graph is the sum of the lengths of the cycles in $C$, each counted with its multiplicity.
 
-Formalized by `SimpleGraph.totalLength`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#total-length).
+Formalized by `SimpleGraph.totalLength`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/CycleCover.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html#total-length).
 
 ## Depends on
 
@@ -58,4 +58,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cycle covers](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/paths-cycles-connectivity/cycle-covers)

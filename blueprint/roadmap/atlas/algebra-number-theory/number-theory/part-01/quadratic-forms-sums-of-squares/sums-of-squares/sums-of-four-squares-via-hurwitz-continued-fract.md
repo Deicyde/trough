@@ -7,7 +7,7 @@ statement: formalized
 
 # Sums of four squares via Hurwitz continued fractions
 
-13 results, 9 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html).
+13 results, 9 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html).
 
 ## Hurwitz rounding to the nearest Gaussian integer
 
@@ -21,7 +21,7 @@ to $z$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2 (notation `[z]`).
 
-Formalized by `MetaMathlibExt.hurwitzRound`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-round).
+Formalized by `MetaMathlibExt.hurwitzRound`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-round).
 
 ## Iterates of the Hurwitz algorithm
 
@@ -34,7 +34,7 @@ with halves rounded up, and where the inverse of $0$ is taken to be $0$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2.
 
-Formalized by `MetaMathlibExt.hurwitzIter`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-iter).
+Formalized by `MetaMathlibExt.hurwitzIter`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-iter).
 
 ## Partial quotients of the Hurwitz expansion
 
@@ -47,7 +47,7 @@ $z_n$ to the nearest integer with halves rounded up.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2.
 
-Formalized by `MetaMathlibExt.hurwitzDigit`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-digit).
+Formalized by `MetaMathlibExt.hurwitzDigit`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-digit).
 
 ## Consecutive pairs of Hurwitz convergents
 
@@ -61,7 +61,7 @@ $Q_{n+1} = a_{n+1} Q_n + Q_{n-1}$ for $n \ge 0$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2.
 
-Formalized by `MetaMathlibExt.hurwitzPQ`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-pq).
+Formalized by `MetaMathlibExt.hurwitzPQ`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-pq).
 
 ## Convergent numerators of the Hurwitz expansion
 
@@ -73,7 +73,7 @@ $P_{-1} = 1$, $P_0 = a_0$ and $P_{n+1} = a_{n+1} P_n + P_{n-1}$ for $n \ge 0$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2.
 
-Formalized by `MetaMathlibExt.hurwitzP`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-p).
+Formalized by `MetaMathlibExt.hurwitzP`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-p).
 
 ## Convergent denominators of the Hurwitz expansion
 
@@ -85,7 +85,7 @@ are given by $Q_{-1} = 0$, $Q_0 = 1$ and $Q_{n+1} = a_{n+1} Q_n + Q_{n-1}$ for $
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2.
 
-Formalized by `MetaMathlibExt.hurwitzQ`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-q).
+Formalized by `MetaMathlibExt.hurwitzQ`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-q).
 
 ## Legal indices of the Hurwitz expansion
 
@@ -98,7 +98,7 @@ before step $n$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2 (remark after Proposition 1).
 
-Formalized by `MetaMathlibExt.HurwitzLegal`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-legal).
+Formalized by `MetaMathlibExt.HurwitzLegal`, a definition declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-legal).
 
 ## Rounding error of the nearest Gaussian integer
 
@@ -111,7 +111,7 @@ $|\operatorname{Im}(z - [z])| \le 1/2$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2 (the set `Φ`).
 
-Formalized by `MetaMathlibExt.abs_re_sub_hurwitzRound_le`, a theorem declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#abs-re-sub-hurwitz-round-le).
+Formalized by `MetaMathlibExt.abs_re_sub_hurwitzRound_le`, a theorem declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#abs-re-sub-hurwitz-round-le).
 
 ## Recursion for the Hurwitz convergents
 
@@ -124,7 +124,7 @@ $P_{n+2} = a_{n+2} P_{n+1} + P_n$ and $Q_{n+2} = a_{n+2} Q_{n+1} + Q_n$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Section 2.
 
-Formalized by `MetaMathlibExt.hurwitzPQ_recursion`, a theorem declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-pq-recursion).
+Formalized by `MetaMathlibExt.hurwitzPQ_recursion`, a theorem declared in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-pq-recursion).
 
 ## Error of the Hurwitz convergents
 
@@ -144,7 +144,7 @@ quotient (and $Q_{-1} = 0$, $P_{-1} = 1$), is the definition of the iterates.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.hurwitzQ_mul_sub_hurwitzP` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-q-mul-sub-hurwitz-p).
+Stated but not proved: `MetaMathlibExt.hurwitzQ_mul_sub_hurwitzP` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-q-mul-sub-hurwitz-p).
 
 ## Hurwitz's theorem: the convergent denominators grow in absolute value
 
@@ -159,7 +159,7 @@ Since $Q_0 = 1$, this gives $1 = |Q_0| < |Q_1| < \cdots < |Q_m|$ for every legal
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.norm_hurwitzQ_lt_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#norm-hurwitz-q-lt-succ).
+Stated but not proved: `MetaMathlibExt.norm_hurwitzQ_lt_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#norm-hurwitz-q-lt-succ).
 
 ## Lakein's first theorem on Hurwitz convergents
 
@@ -172,7 +172,7 @@ $|z - P_k / Q_k| \le 1 / |Q_k|^2$.
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.norm_sub_hurwitz_convergent_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#norm-sub-hurwitz-convergent-le).
+Stated but not proved: `MetaMathlibExt.norm_sub_hurwitz_convergent_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#norm-sub-hurwitz-convergent-le).
 
 ## Sums of four squares via Hurwitz continued fractions
 
@@ -189,7 +189,7 @@ When it holds, the last identity is a representation of $w$ as a sum of four squ
 
 - Zhaonan Wang and Yingpu Deng, *Finding Sums of Four Squares via Complex Continued Fractions*, INTEGERS 24 (2024), Article A25, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.hurwitz_four_squares` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-four-squares).
+Stated but not proved: `MetaMathlibExt.hurwitz_four_squares` is written with `theorem_wanted` in [WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HurwitzContinuedFractionFourSquaresWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html#hurwitz-four-squares).
 
 ## Depends on
 
@@ -198,4 +198,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of four squares via Hurwitz continued fractions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/sums-of-squares/sums-of-four-squares-via-hurwitz-continued-fract)

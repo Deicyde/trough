@@ -8,7 +8,7 @@ proof: formalized
 
 # Set partitions: its own results
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html).
 
 Partitions of a finite set into blocks: finite partition API, ordered and cyclic set partitions, restricted-growth words, peaks and rises, noncrossing partitions, merging-free and marriageable-singles partitions, genus of a partition, and linear chord diagrams and hypermonopoles.
 
@@ -19,7 +19,7 @@ A partition $P$ of $\{1, \dots, n\}$ is basic when its blocks can
  so that $B_1 \cup \dots \cup B_i = \{1, \dots, |B_1| + \dots + |B_i|\}$ for every $i$ with
  $1 \le i \le k$.
 
-Formalized by `MetaMathlibExt.IsBasicSetPartition`, a definition declared in [MathlibExt/Combinatorics/Finpartition/BasicSetPartition.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Finpartition/BasicSetPartition.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#is-basic-set-partition).
+Formalized by `MetaMathlibExt.IsBasicSetPartition`, a definition declared in [MathlibExt/Combinatorics/Finpartition/BasicSetPartition.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Finpartition/BasicSetPartition.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#is-basic-set-partition).
 
 ## Callan sequences
 
@@ -33,7 +33,7 @@ set lies in exactly one of them, the red blocks $R_0, \dots, R_m$ are nonempty s
 red base set and every element of the red base set lies in exactly one of them, and the last
 pair contains both stars: $\star_B \in B_m$ and $\star_R \in R_m$.
 
-Formalized by `MetaMathlibExt.CallanSequence`, a structure declared in [MathlibExt/Combinatorics/Enumerative/CallanSequence.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/CallanSequence.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#callan-sequence).
+Formalized by `MetaMathlibExt.CallanSequence`, a structure declared in [MathlibExt/Combinatorics/Enumerative/CallanSequence.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/CallanSequence.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#callan-sequence).
 
 ## Generating function for set partitions by rises
 
@@ -52,7 +52,7 @@ $$\sum_{n, r \ge 0} a_{n,r}\, x^n y^r =
 
 - Toufik Mansour and Augustine O. Munagi, “Enumeration of Partitions by Long Rises, Levels, and Descents”, Journal of Integer Sequences 12 (2009), Article 09.1.8, Theorem `thrise2`, lines 505-510, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Munagi/munagi15.tex>.
 
-Formalized by `MetaMathlibExt.setPartition_twoRise_ordinaryGeneratingFunction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SetPartitionsByTwoRises.lean, line 2653](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/SetPartitionsByTwoRises.lean#L2653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#set-partition-two-rise-ordinary-generati).
+Formalized by `MetaMathlibExt.setPartition_twoRise_ordinaryGeneratingFunction`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SetPartitionsByTwoRises.lean, line 2653](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/SetPartitionsByTwoRises.lean#L2653). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#set-partition-two-rise-ordinary-generati).
 
 ## Merging-free partitions
 
@@ -62,7 +62,7 @@ sets $B_i$ are nonempty, pairwise disjoint and cover $\{0, 1, \dots, n-1\}$; the
 strictly, $\min B_1 < \min B_2 < \dots < \min B_m$; and $\max B_i > \min B_{i+1}$ for every
 $i < m$.
 
-Formalized by `MetaMathlibExt.IsMergingFreePartition`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MergingFreePartition.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MergingFreePartition.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#is-merging-free-partition).
+Formalized by `MetaMathlibExt.IsMergingFreePartition`, a definition declared in [MathlibExt/Combinatorics/Enumerative/MergingFreePartition.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MergingFreePartition.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#is-merging-free-partition).
 
 ## Ordered set partitions of a finite set
 
@@ -74,7 +74,7 @@ $B_1 \cup \dots \cup B_k = V$.
 Equivalently, an ordered set partition of $V$ is a structure of the composite species of lists
 of nonempty sets on $V$.
 
-Formalized by `MetaMathlibExt.IsOrderedSetPartition`, a definition declared in [MathlibExt/Combinatorics/Enumerative/OrderedSetPartition.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/OrderedSetPartition.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#is-ordered-set-partition).
+Formalized by `MetaMathlibExt.IsOrderedSetPartition`, a definition declared in [MathlibExt/Combinatorics/Enumerative/OrderedSetPartition.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/OrderedSetPartition.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#is-ordered-set-partition).
 
 ## Restricted-growth word generating function
 
@@ -95,7 +95,7 @@ cancellation. The combinatorial route follows Ehrenborg, Hedmark, and Hettle, Th
 
 - Richard Ehrenborg, Dustin Hedmark, and Cyrus Hettle, "A Restricted Growth Word Approach to Partitions with Odd/Even Size Blocks," Journal of Integer Sequences 20 (2017), Article 17.5.5, Theorem 1, lines 190-200, <https://cs.uwaterloo.ca/journals/JIS/VOL20/Ehrenborg/ehren4.tex>.
 
-Formalized by `MetaMathlibExt.restricted_growth_word_monomial_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/RestrictedGrowthWordGeneratingFunction.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/Partition/RestrictedGrowthWordGeneratingFunction.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#restricted-growth-word-monomial-generati).
+Formalized by `MetaMathlibExt.restricted_growth_word_monomial_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/Partition/RestrictedGrowthWordGeneratingFunction.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/Partition/RestrictedGrowthWordGeneratingFunction.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html#restricted-growth-word-monomial-generati).
 
 ## Depends on
 
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Set partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/set-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/set-partitions)

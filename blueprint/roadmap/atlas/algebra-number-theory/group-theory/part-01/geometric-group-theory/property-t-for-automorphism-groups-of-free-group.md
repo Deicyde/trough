@@ -7,7 +7,7 @@ statement: formalized
 
 # Property (T) for automorphism groups of free groups
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html).
 
 ## Laplacian of a finite subset of a group
 
@@ -18,7 +18,7 @@ the identity element of $\mathbb{R}G$. When $S$ is a symmetric generating set of
 Laplacian of Equation (1) in the paper of Kaluba, Kielak and Nowak on property (T) for
 $\operatorname{Aut}(F_n)$ and $\operatorname{SL}_n(\mathbb{Z})$.
 
-Formalized by `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.Laplacian`, a definition declared in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OnPropertyTWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#laplacian).
+Formalized by `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.Laplacian`, a definition declared in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OnPropertyTWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#laplacian).
 
 ## Involution of the real group ring
 
@@ -27,7 +27,7 @@ $\mathbb{R}G$ is the $\mathbb{R}$-linear map $\mathbb{R}G \to \mathbb{R}G$ that 
 $\sum_{g \in G} a_g g$ to $\sum_{g \in G} a_g g^{-1}$, that is, the linear extension of inversion
 on $G$.
 
-Formalized by `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.groupRingInvolution`, a definition declared in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OnPropertyTWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#group-ring-involution).
+Formalized by `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.groupRingInvolution`, a definition declared in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OnPropertyTWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#group-ring-involution).
 
 ## Property (T)
 
@@ -42,7 +42,7 @@ $\Delta_S^2 - \lambda \Delta_S = \sum_{\xi \in \Xi} \xi^{\star} \xi$.
 This is Ozawa's characterization of property (T) for finitely generated groups, used as the
 definition in Equation (2) of Kaluba, Kielak and Nowak.
 
-Formalized by `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.PropertyT`, a definition declared in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OnPropertyTWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#property-t).
+Formalized by `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.PropertyT`, a definition declared in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OnPropertyTWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#property-t).
 
 ## Property (T) for automorphism groups of free groups of rank at least 6
 
@@ -54,7 +54,7 @@ generators has property (T).
 
 - M. Kaluba, D. Kielak, and P. W. Nowak, `On property (T) for Aut(F_n) and SL_n(Z)`, Annals of Math, 193 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_on_property_t` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.theorem_1` is written with `theorem_wanted` in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/OnPropertyTWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#theorem-1).
+Stated but not proved: `MathlibExt.GroupTheory.OnPropertyTWanted.OnPropertyT.theorem_1` is written with `theorem_wanted` in [WantedExt/GroupTheory/OnPropertyTWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/OnPropertyTWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html#theorem-1).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Property (T) for automorphism groups of free groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/geometric-group-theory/property-t-for-automorphism-groups-of-free-group)

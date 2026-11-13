@@ -8,7 +8,7 @@ proof: formalized
 
 # Zsigmondy's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem/index.html).
 
 ## Exceptional cases of Zsigmondy's theorem
 
@@ -16,7 +16,7 @@ A triple $(a, b, n)$ of natural numbers is a
 Bang–Zsigmondy exceptional case when either $(a, b, n) = (2, 1, 6)$, or $n = 2$ and $a + b = 2^k$
 for some natural number $k$.
 
-Formalized by `MetaMathlibExt.IsBangZsigmondyExceptional`, a definition declared in [MathlibExt/NumberTheory/BangZsigmondy.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BangZsigmondy.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem/index.html#is-bang-zsigmondy-exceptional).
+Formalized by `MetaMathlibExt.IsBangZsigmondyExceptional`, a definition declared in [MathlibExt/NumberTheory/BangZsigmondy.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BangZsigmondy.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem/index.html#is-bang-zsigmondy-exceptional).
 
 ## Zsigmondy's theorem
 
@@ -30,7 +30,7 @@ with $1 \le m < n$.
 
 - Bayarmagnai lines 133–137 invoke the general theorem, with the explicit exception families per Jones Theorem `Bang` lines 211–215.
 
-Formalized by `MetaMathlibExt.bangZsigmondy_exists_primitivePrimeDivisor`, a theorem declared in [MathlibExt/NumberTheory/BangZsigmondy.lean, line 1203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/BangZsigmondy.lean#L1203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem/index.html#bang-zsigmondy-exists-primitive-prime-di).
+Formalized by `MetaMathlibExt.bangZsigmondy_exists_primitivePrimeDivisor`, a theorem declared in [MathlibExt/NumberTheory/BangZsigmondy.lean, line 1203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/BangZsigmondy.lean#L1203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem/index.html#bang-zsigmondy-exists-primitive-prime-di).
 
 ## Depends on
 
@@ -39,4 +39,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Zsigmondy's theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/lucas-sequences-primitive-divisors/zsigmondy-s-theorem)

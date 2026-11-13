@@ -8,7 +8,7 @@ proof: formalized
 
 # Tetranacci and pentanacci numbers
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers/index.html).
 
 ## Pentanacci numbers
 
@@ -20,14 +20,14 @@ $5$ on is the sum of the five terms before it.
 Their ordinary generating function is $1/(1 - t - t^2 - t^3 - t^4 - t^5)$; up to a shift of index
 they form OEIS A001591.
 
-Formalized by `MetaMathlibExt.pentanacciNumber`, a definition declared in [MathlibExt/NumberTheory/PentanacciNumber.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PentanacciNumber.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers/index.html#pentanacci-number).
+Formalized by `MetaMathlibExt.pentanacciNumber`, a definition declared in [MathlibExt/NumberTheory/PentanacciNumber.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PentanacciNumber.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers/index.html#pentanacci-number).
 
 ## Tetranacci sequence
 
 The Tetranacci sequence `0, 0, 0, 1, 1, 2, 4, 8, …` (OEIS A000078), in which
 each term after the first four is the sum of its four predecessors.
 
-Formalized by `MetaMathlibExt.tetranacci`, a definition declared in [MathlibExt/NumberTheory/TetranacciSequence.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TetranacciSequence.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers/index.html#tetranacci).
+Formalized by `MetaMathlibExt.tetranacci`, a definition declared in [MathlibExt/NumberTheory/TetranacciSequence.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TetranacciSequence.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers/index.html#tetranacci).
 
 ## Depends on
 
@@ -36,4 +36,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tetranacci and pentanacci numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/tetranacci-and-pentanacci-numbers)

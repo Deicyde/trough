@@ -7,7 +7,7 @@ statement: formalized
 
 # Arithmetic progressions represented by binary forms
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html).
 
 ## Rational representations of an arithmetic progression scale to integral ones
 
@@ -24,7 +24,7 @@ trivial zero scaling.
 
 - Ajai Choudhry, "Arithmetic Progressions Represented by Binary Quadratic Forms", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.QuadraticForms.BinaryQuadraticArithmeticProgressionsWanted.exists_int_representations_of_rat_arithmetic_progression` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html#exists-int-representations-of-rat-arithm).
+Stated but not proved: `MathlibExt.NumberTheory.QuadraticForms.BinaryQuadraticArithmeticProgressionsWanted.exists_int_representations_of_rat_arithmetic_progression` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html#exists-int-representations-of-rat-arithm).
 
 ## Nine-term arithmetic progressions represented by $px^2 + qy^2$
 
@@ -48,7 +48,7 @@ Then for every natural number $i < 9$ there are integers $x, y$ with $u_1 + id =
 
 - Ajai Choudhry, "Arithmetic Progressions Represented by Binary Quadratic Forms", Theorem 1, relations (3.1).
 
-Stated but not proved: `MathlibExt.NumberTheory.QuadraticForms.BinaryQuadraticArithmeticProgressionsWanted.exists_representation_nine_term_diagonal_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html#exists-representation-nine-term-diagonal).
+Stated but not proved: `MathlibExt.NumberTheory.QuadraticForms.BinaryQuadraticArithmeticProgressionsWanted.exists_representation_nine_term_diagonal_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html#exists-representation-nine-term-diagonal).
 
 ## Binary quadratic forms with non-square discriminant represent nine-term progressions
 
@@ -62,7 +62,7 @@ The condition $d \ne 0$ excludes constant progressions.
 
 - Ajai Choudhry, "Arithmetic Progressions Represented by Binary Quadratic Forms", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.QuadraticForms.BinaryQuadraticArithmeticProgressionsWanted.exists_nine_term_arithmetic_progression_binary_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html#exists-nine-term-arithmetic-progression).
+Stated but not proved: `MathlibExt.NumberTheory.QuadraticForms.BinaryQuadraticArithmeticProgressionsWanted.exists_nine_term_arithmetic_progression_binary_quadratic` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/BinaryQuadraticArithmeticProgressionsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html#exists-nine-term-arithmetic-progression).
 
 ## Depends on
 
@@ -71,4 +71,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetic progressions represented by binary forms](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/arithmetic-progressions-represented-by-binary-fo)

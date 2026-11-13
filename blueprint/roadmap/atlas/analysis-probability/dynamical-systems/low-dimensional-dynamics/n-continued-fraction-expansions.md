@@ -7,7 +7,7 @@ statement: formalized
 
 # N-continued fraction expansions
 
-13 results, 8 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html).
+13 results, 8 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html).
 
 ## Digit of the N-expansion map
 
@@ -24,7 +24,7 @@ cylinder is a single point.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.
 
-Formalized by `MetaMathlibExt.nExpansionDigit`, a definition declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-digit).
+Formalized by `MetaMathlibExt.nExpansionDigit`, a definition declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-digit).
 
 ## The $N$-expansion map
 
@@ -39,7 +39,7 @@ every real $x$, with the convention $N/0 = 0$.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.
 
-Formalized by `MetaMathlibExt.nExpansionMap`, a definition declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-map).
+Formalized by `MetaMathlibExt.nExpansionMap`, a definition declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-map).
 
 ## The digit away from the left endpoint
 
@@ -51,7 +51,7 @@ $[\alpha, \alpha + 1]$ is $\lfloor N/x - \alpha \rfloor$.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.
 
-Formalized by `MetaMathlibExt.nExpansionDigit_of_ne`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-digit-of-ne).
+Formalized by `MetaMathlibExt.nExpansionDigit_of_ne`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-digit-of-ne).
 
 ## The N-expansion map away from the left endpoint
 
@@ -65,7 +65,7 @@ Indeed $T_\alpha(x) = \alpha + \{N/x - \alpha\}$, where $\{\cdot\}$ denotes the 
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.
 
-Formalized by `MetaMathlibExt.nExpansionMap_mem_Ico_of_ne`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-map-mem-ico-of-ne).
+Formalized by `MetaMathlibExt.nExpansionMap_mem_Ico_of_ne`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-map-mem-ico-of-ne).
 
 ## The left endpoint goes to the right endpoint when $N/\alpha - \alpha$ is an integer
 
@@ -78,7 +78,7 @@ $T_\alpha(\alpha) = \alpha + 1$.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 1.
 
-Formalized by `MetaMathlibExt.nExpansionMap_self_of_int`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-map-self-of-int).
+Formalized by `MetaMathlibExt.nExpansionMap_self_of_int`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-map-self-of-int).
 
 ## Ideal period words
 
@@ -94,7 +94,7 @@ placeholder.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7.
 
-Formalized by `MetaMathlibExt.idealPeriodWord`, a definition declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word).
+Formalized by `MetaMathlibExt.idealPeriodWord`, a definition declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word).
 
 ## The fifth ideal period word
 
@@ -108,7 +108,7 @@ This is the second recursion rule applied to $d_4 = [j, abb]$ with $j = [abb, ab
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7.
 
-Formalized by `MetaMathlibExt.idealPeriodWord_five`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-five).
+Formalized by `MetaMathlibExt.idealPeriodWord_five`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-five).
 
 ## Lengths of the first ideal period words
 
@@ -119,7 +119,7 @@ $d_1, d_2, d_3, d_4, d_5$ have lengths $5, 7, 17, 31, 65$ respectively.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Definition 7.
 
-Formalized by `MetaMathlibExt.idealPeriodWord_flatten_length_small`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-flatten-length-small).
+Formalized by `MetaMathlibExt.idealPeriodWord_flatten_length_small`, a theorem declared in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-flatten-length-small).
 
 ## Orbits with the same digits alternate in order
 
@@ -142,7 +142,7 @@ $N > 0$. For $N = 0$ the claim fails ($\alpha = 1/5$, $\alpha' = 3/10$, $m = 1$)
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.nExpansion_orbit_gt_iff_odd` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-orbit-gt-iff-odd).
+Stated but not proved: `MetaMathlibExt.nExpansion_orbit_gt_iff_odd` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#n-expansion-orbit-gt-iff-odd).
 
 ## The ideal periodic points decrease
 
@@ -162,7 +162,7 @@ makes $T_\alpha$ expanding, so that a digit sequence determines its point.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.idealPeriodWord_point_lt_iff` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-point-lt-iff).
+Stated but not proved: `MetaMathlibExt.idealPeriodWord_point_lt_iff` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-point-lt-iff).
 
 ## The ideal periodic point is the least point of its orbit
 
@@ -180,7 +180,7 @@ The source assumes Phase I; only the assumption $0 < \alpha \le \sqrt N - 1$ is 
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.idealPeriodWord_point_le_orbit` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-point-le-orbit).
+Stated but not proved: `MetaMathlibExt.idealPeriodWord_point_le_orbit` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-point-le-orbit).
 
 ## Length of the ideal period words
 
@@ -194,7 +194,7 @@ The source derives this from the recursion $|d_n| = 2|d_{n-1}| - 3(-1)^n$.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.idealPeriodWord_flatten_length` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-flatten-length).
+Stated but not proved: `MetaMathlibExt.idealPeriodWord_flatten_length` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-flatten-length).
 
 ## Block counts of the ideal period words
 
@@ -210,7 +210,7 @@ Definition 7; the counts are stated by block, so the naming does not matter.
 
 - Jaap de Jonge, *Intervals of N-Expansions with Many Gaps*, INTEGERS 26 (2026), Article A75, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.idealPeriodWord_count_blocks` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Dynamics/NExpansionGapsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-count-blocks).
+Stated but not proved: `MetaMathlibExt.idealPeriodWord_count_blocks` is written with `theorem_wanted` in [WantedExt/Dynamics/NExpansionGapsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Dynamics/NExpansionGapsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html#ideal-period-word-count-blocks).
 
 ## Depends on
 
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: N-continued fraction expansions](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/low-dimensional-dynamics/n-continued-fraction-expansions)

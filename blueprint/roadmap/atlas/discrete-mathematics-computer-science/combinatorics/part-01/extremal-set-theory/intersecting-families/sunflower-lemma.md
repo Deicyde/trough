@@ -7,7 +7,7 @@ statement: formalized
 
 # Sunflower lemma
 
-9 results, 6 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html).
+9 results, 6 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html).
 
 ## Families containing a sunflower
 
@@ -16,14 +16,14 @@ subsets of $\{0, \dots, n-1\}$ contains a $k$-sunflower if some subfamily $T \su
 exactly $k$ members satisfies $A \cap B = C \cap D$ for all $A, B, C, D \in T$ with $A \ne B$ and
 $C \ne D$, that is, all pairwise intersections of distinct members of $T$ are equal.
 
-Formalized by `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.ContainsKSunflower`, a definition declared in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#contains-ksunflower).
+Formalized by `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.ContainsKSunflower`, a definition declared in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#contains-ksunflower).
 
 ## Sunflower-free families
 
 Let $n$ and $k$ be natural numbers. A family $F$ of subsets of
 $\{0, \dots, n-1\}$ is $k$-sunflower-free if it does not contain a $k$-sunflower.
 
-Formalized by `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.IsKSunflowerFree`, a definition declared in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#is-ksunflower-free).
+Formalized by `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.IsKSunflowerFree`, a definition declared in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#is-ksunflower-free).
 
 ## Erdős–Szemerédi sunflower conjecture for $k \ge 4$
 
@@ -36,7 +36,7 @@ The bound is required only for large $n$ because for $2^n < k$ the family of all
 $\{0, \dots, n-1\}$ is $k$-sunflower-free. The case $k = 3$, proved by Naslund and Sawin, is
 omitted.
 
-Formalized by `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#conjecture).
 
 ## The Erdős–Szemerédi sunflower bound for $k \ge 4$
 
@@ -56,7 +56,7 @@ Erdős-Szemerédi sunflower conjecture, arXiv:2610.26686 (2026), https://arxiv.o
 T. F. Bloom, Erdős Problem #857, erdosproblems.com, https://www.erdosproblems.com/857. Moved
 from `OpenConjectures/Combinatorics/ErdosProblem857WeakSunflower`.
 
-Stated but not proved: `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.ErdosProblem857WeakSunflowerWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ErdosProblem857WeakSunflowerWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#conjecture-holds).
 
 ## Sunflower
 
@@ -69,7 +69,7 @@ the intersection of all members of $S$.
 
 - R. Alweiss, S. Lovett, K. Wu, and J. Zhang, *Improved bounds for the sunflower lemma*, Annals of Math 194 (3), 2021, Definition 1.1.
 
-Formalized by `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.Set.IsSunflower`, a definition declared in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#is-sunflower).
+Formalized by `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.Set.IsSunflower`, a definition declared in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#is-sunflower).
 
 ## Bounded-size set systems
 
@@ -81,7 +81,7 @@ has at most $w$ elements, where the size of an infinite set is taken to be $0$.
 
 - R. Alweiss, S. Lovett, K. Wu, and J. Zhang, *Improved bounds for the sunflower lemma*, Annals of Math 194 (3), 2021, second sentence of the introduction.
 
-Formalized by `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.Set.IsSystem`, a definition declared in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#is-system).
+Formalized by `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.Set.IsSystem`, a definition declared in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#is-system).
 
 ## Sunflower lower bound
 
@@ -95,7 +95,7 @@ where $\log_{1.9} x = \ln x / \ln 1.9$, with the convention $\ln 0 = 0$.
 Following the authors, logarithms are taken to base $1.9$; see the paragraph directly after
 Theorem 1.4 of Alweiss, Lovett, Wu, and Zhang, *Improved bounds for the sunflower lemma*.
 
-Formalized by `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.ImprovedBoundsSunflowerLemma.lowerBound`, a definition declared in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#lower-bound).
+Formalized by `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.ImprovedBoundsSunflowerLemma.lowerBound`, a definition declared in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#lower-bound).
 
 ## Sunflower constant
 
@@ -106,7 +106,7 @@ Alweiss–Lovett–Wu–Zhang sunflower bound (Theorem 1.4); it does not depend 
 
 - R. Alweiss, S. Lovett, K. Wu, and J. Zhang, `Improved bounds for the sunflower lemma`, Annals of Math, 194 (3) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_improved_bounds_sunflower_lemma` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.ImprovedBoundsSunflowerLemma.C` is written with `def_wanted` in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#c).
+Stated but not proved: `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.ImprovedBoundsSunflowerLemma.C` is written with `def_wanted` in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#c).
 
 ## Alweiss–Lovett–Wu–Zhang sunflower bound
 
@@ -127,7 +127,7 @@ We require $w \ge 2$, as the paper assumes $\log \log w > 0$.
 
 - R. Alweiss, S. Lovett, K. Wu, and J. Zhang, `Improved bounds for the sunflower lemma`, Annals of Math, 194 (3) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_improved_bounds_sunflower_lemma` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.ImprovedBoundsSunflowerLemma.theorem_1_4` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#theorem-1-4).
+Stated but not proved: `MathlibExt.Combinatorics.ImprovedBoundsSunflowerLemmaWanted.ImprovedBoundsSunflowerLemma.theorem_1_4` is written with `theorem_wanted` in [WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ImprovedBoundsSunflowerLemmaWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html#theorem-1-4).
 
 ## Depends on
 
@@ -136,4 +136,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sunflower lemma](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families/sunflower-lemma)

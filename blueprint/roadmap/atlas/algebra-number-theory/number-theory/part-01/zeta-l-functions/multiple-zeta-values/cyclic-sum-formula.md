@@ -8,7 +8,7 @@ proof: formalized
 
 # Cyclic sum formula
 
-8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html).
+8 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html).
 
 ## The index of a list of positive integers
 
@@ -16,7 +16,7 @@ A list $(l_1, \dots, l_r)$ of positive
 integers determines the multiple-zeta index whose entries are $l_1, \dots, l_r$ in this order;
 its weight is $l_1 + \cdots + l_r$.
 
-Formalized by `MetaMathlibExt.CyclicSumFormula.toIndex`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#to-index).
+Formalized by `MetaMathlibExt.CyclicSumFormula.toIndex`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#to-index).
 
 ## Left-hand indices of the cyclic sum formula
 
@@ -26,7 +26,7 @@ $i$, the left-hand index of $k$ at $(j, i)$ is the index
 $(k_j - i + 1, k_{j+1}, \dots, k_{j+l-1}, i)$ when $1 \le i \le k_j - 1$, and the index $(2)$
 otherwise. The run $k_{j+1}, \dots, k_{j+l-1}$ is empty when $l = 1$.
 
-Formalized by `MetaMathlibExt.CyclicSumFormula.leftIndex`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#left-index).
+Formalized by `MetaMathlibExt.CyclicSumFormula.leftIndex`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#left-index).
 
 ## Right-hand indices of the cyclic sum formula
 
@@ -35,7 +35,7 @@ positive integers, with subscripts read modulo $l$. For $1 \le j \le l$, the rig
 $k$ at $j$ is the index $(k_j + 1, k_{j+1}, \dots, k_{j+l-1})$, where the run
 $k_{j+1}, \dots, k_{j+l-1}$ is empty when $l = 1$.
 
-Formalized by `MetaMathlibExt.CyclicSumFormula.rightIndex`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#right-index).
+Formalized by `MetaMathlibExt.CyclicSumFormula.rightIndex`, a definition declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#right-index).
 
 ## Left-hand indices of the cyclic sum formula are admissible or empty
 
@@ -43,7 +43,7 @@ For every list
 $k = (k_1, \dots, k_l)$ of positive integers, every $1 \le j \le l$ and every natural number $i$,
 the left-hand index of the cyclic sum formula of $k$ at $(j, i)$ is admissible or empty.
 
-Formalized by `MetaMathlibExt.CyclicSumFormula.leftIndex_isAdmissibleOrEmpty`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#left-index-is-admissible-or-empty).
+Formalized by `MetaMathlibExt.CyclicSumFormula.leftIndex_isAdmissibleOrEmpty`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#left-index-is-admissible-or-empty).
 
 ## Right-hand indices of the cyclic sum formula are admissible or empty
 
@@ -51,7 +51,7 @@ For every list
 $k = (k_1, \dots, k_l)$ of positive integers and every $1 \le j \le l$, the right-hand index of
 the cyclic sum formula of $k$ at $j$ is admissible or empty.
 
-Formalized by `MetaMathlibExt.CyclicSumFormula.rightIndex_isAdmissibleOrEmpty`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#right-index-is-admissible-or-empty).
+Formalized by `MetaMathlibExt.CyclicSumFormula.rightIndex_isAdmissibleOrEmpty`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#right-index-is-admissible-or-empty).
 
 ## Cyclic sum formula for strict multiple zeta values of indices
 
@@ -70,7 +70,7 @@ $$
 
 where the inner sum is empty when $k_j = 1$.
 
-Formalized by `MetaMathlibExt.hoffman_ohno_cyclic_sum_formula_strict`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 1555](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L1555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#hoffman-ohno-cyclic-sum-formula-strict).
+Formalized by `MetaMathlibExt.hoffman_ohno_cyclic_sum_formula_strict`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 1555](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L1555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#hoffman-ohno-cyclic-sum-formula-strict).
 
 ## Cyclic sum formula (Hoffman–Ohno)
 
@@ -92,7 +92,7 @@ when $l = 1$.
 
 - Shingo Saito, Tatsushi Tanaka, and Noriko Wakabayashi, "Combinatorial Remarks on the Cyclic Sum Formula for Multiple Zeta Values," Journal of Integer Sequences 14 (2011), Article 11.2.4, Theorem `thm:CSF` ("Cyclic sum formula," first proved by Hoffman-Ohno), lines 242–248; index set `check{I}^1` at lines 150–166, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex>.
 
-Formalized by `MetaMathlibExt.hoffman_ohno_cyclic_sum_formula`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 1725](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L1725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#hoffman-ohno-cyclic-sum-formula).
+Formalized by `MetaMathlibExt.hoffman_ohno_cyclic_sum_formula`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean, line 1725](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumFormula.lean#L1725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#hoffman-ohno-cyclic-sum-formula).
 
 ## Cyclic sum formula for multiple zeta-star values
 
@@ -113,7 +113,7 @@ $$
 
 - S. Saito, T. Tanaka, and N. Wakabayashi, "Combinatorial Remarks on the Cyclic Sum Formula for Multiple Zeta Values", Journal of Integer Sequences 14 (2011), Article 11.2.4, Theorem `thm:CSF_MZSVs`, line 869, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Saito/saito22.tex>.
 
-Formalized by `MetaMathlibExt.cyclic_sum_formula_multiple_zeta_star_values`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumMultipleZetaStar.lean, line 2085](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleZeta/CyclicSumMultipleZetaStar.lean#L2085). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#cyclic-sum-formula-multiple-zeta-star-va).
+Formalized by `MetaMathlibExt.cyclic_sum_formula_multiple_zeta_star_values`, a theorem declared in [MathlibExt/NumberTheory/MultipleZeta/CyclicSumMultipleZetaStar.lean, line 2085](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleZeta/CyclicSumMultipleZetaStar.lean#L2085). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html#cyclic-sum-formula-multiple-zeta-star-va).
 
 ## Depends on
 
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cyclic sum formula](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/cyclic-sum-formula)

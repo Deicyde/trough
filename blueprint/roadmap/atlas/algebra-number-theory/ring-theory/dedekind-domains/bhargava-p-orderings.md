@@ -8,7 +8,7 @@ proof: formalized
 
 # Bhargava p-orderings
 
-10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html).
+10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html).
 
 ## Prefix-product valuation
 
@@ -22,7 +22,7 @@ $\mathfrak p^m$ divides this ideal, or $\infty$ if every power of $\mathfrak p$ 
 
 - Takeda, Introduction, lines 52-60.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.pOrderingValuation`, a definition declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#p-ordering-valuation).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.pOrderingValuation`, a definition declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#p-ordering-valuation).
 
 ## Bhargava p-ordering
 
@@ -37,7 +37,7 @@ $v_n(a_n) \le v_n(x)$ for every $n$ and every $x \in S$.
 
 - Takeda, Introduction, lines 52-60.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering`, a definition declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-pordering).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering`, a definition declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-pordering).
 
 ## Unfolding the definition of a p-ordering
 
@@ -47,7 +47,7 @@ write $v_n$ for the stage-$n$ prefix-product valuation with respect to $\mathfra
 $(a_n)$. Then $(a_n)$ is a $\mathfrak p$-ordering of $S$ if and only if $S$ is infinite,
 $a_n \in S$ for every $n$, and $v_n(a_n) \le v_n(x)$ for every $n$ and every $x \in S$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.isPOrdering_unfold`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-pordering-unfold).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.isPOrdering_unfold`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-pordering-unfold).
 
 ## A set with a p-ordering is infinite
 
@@ -55,7 +55,7 @@ Let $R$ be a Dedekind domain, $\mathfrak p$ a
 nonzero prime ideal of $R$ and $S \subseteq R$. If some sequence in $R$ is a
 $\mathfrak p$-ordering of $S$, then $S$ is infinite.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.infinite`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#infinite).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.infinite`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#infinite).
 
 ## Terms of a p-ordering lie in the set
 
@@ -63,7 +63,7 @@ Let $R$ be a Dedekind domain, $\mathfrak p$ a
 nonzero prime ideal of $R$, $S \subseteq R$ and $(a_n)_{n \ge 0}$ a $\mathfrak p$-ordering of
 $S$. Then $a_n \in S$ for every $n$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.mem`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#mem).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.mem`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#mem).
 
 ## Minimality of a p-ordering
 
@@ -72,7 +72,7 @@ ideal of $R$, $S \subseteq R$ and $(a_n)_{n \ge 0}$ a $\mathfrak p$-ordering of 
 $v_n$ for the stage-$n$ prefix-product valuation with respect to $\mathfrak p$ and $(a_n)$.
 Then $v_n(a_n) \le v_n(x)$ for every $n$ and every $x \in S$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.min_le`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#min-le).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.min_le`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#min-le).
 
 ## Each term of a p-ordering attains the least valuation
 
@@ -82,7 +82,7 @@ $\mathfrak p$-ordering of $S$, and write $v_n$ for the stage-$n$ prefix-product 
 respect to $\mathfrak p$ and $(a_n)$. Then for every $n$, $v_n(a_n)$ is the least element of
 $\{v_n(x) : x \in S\}$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.isLeast`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-least).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.isLeast`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-least).
 
 ## Building a p-ordering
 
@@ -92,7 +92,7 @@ stage-$n$ prefix-product valuation with respect to $\mathfrak p$ and $(a_n)$. If
 infinite, $a_n \in S$ for every $n$, and $v_n(a_n) \le v_n(x)$ for every $n$ and every
 $x \in S$, then $(a_n)$ is a $\mathfrak p$-ordering of $S$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.intro`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#intro).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.IsPOrdering.intro`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#intro).
 
 ## The stage-zero valuation vanishes
 
@@ -101,7 +101,7 @@ nonzero prime ideal of $R$ and $(a_n)_{n \ge 0}$ a sequence in $R$. For every $x
 stage-$0$ prefix-product valuation of $x$ with respect to $\mathfrak p$ and $(a_n)$ is $0$: the
 product is empty, so the ideal is all of $R$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.pOrderingValuation_zero`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#p-ordering-valuation-zero).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.pOrderingValuation_zero`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#p-ordering-valuation-zero).
 
 ## The stage-zero condition of a p-ordering is automatic
 
@@ -113,7 +113,7 @@ $a_n \in S$ for every $n$, and $v_n(a_n) \le v_n(x)$ for every $n \ge 1$ and eve
 
 Since every stage-zero valuation is $0$, the term $a_0$ may be any element of $S$.
 
-Formalized by `IsDedekindDomain.HeightOneSpectrum.isPOrdering_iff_pos`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-pordering-iff-pos).
+Formalized by `IsDedekindDomain.HeightOneSpectrum.isPOrdering_iff_pos`, a theorem declared in [MathlibExt/RingTheory/DedekindDomain/POrdering.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DedekindDomain/POrdering.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html#is-pordering-iff-pos).
 
 ## Depends on
 
@@ -122,4 +122,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bhargava p-orderings](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/dedekind-domains/bhargava-p-orderings)

@@ -7,14 +7,14 @@ statement: formalized
 
 # Trinomial coefficients and the 2-Pascal triangle
 
-35 results, 4 proved and 31 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html).
+35 results, 4 proved and 31 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html).
 
 ## Trinomial coefficient
 
 For natural numbers $n$ and $k$, the trinomial coefficient in row
 $n$ and column $k$ is the coefficient of $X^k$ in the polynomial $(1 + X + X^2)^n$.
 
-Formalized by `MetaMathlibExt.trinomialCoefficient`, a definition declared in [MathlibExt/NumberTheory/TrinomialCoefficient.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TrinomialCoefficient.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient).
+Formalized by `MetaMathlibExt.trinomialCoefficient`, a definition declared in [MathlibExt/NumberTheory/TrinomialCoefficient.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TrinomialCoefficient.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient).
 
 ## Trinomial transform
 
@@ -30,14 +30,14 @@ regarded as an element of $R$.
 
 - László Németh, *The Trinomial Transform Triangle*, Journal of Integer Sequences 21 (2018), Article 18.7.3.
 
-Formalized by `MetaMathlibExt.trinomialTransformSequence`, a definition declared in [MathlibExt/NumberTheory/TrinomialTransformSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TrinomialTransformSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-transform-sequence).
+Formalized by `MetaMathlibExt.trinomialTransformSequence`, a definition declared in [MathlibExt/NumberTheory/TrinomialTransformSequence.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TrinomialTransformSequence.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-transform-sequence).
 
 ## Zeroth term of the trinomial transform
 
 For every semiring $R$ and every sequence
 $a \colon \mathbb{N} \to R$, the zeroth term of the trinomial transform of $a$ equals $a_0$.
 
-Formalized by `MetaMathlibExt.trinomialTransformSequence_zero`, a theorem declared in [MathlibExt/NumberTheory/TrinomialTransformSequence.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TrinomialTransformSequence.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-transform-sequence-zero).
+Formalized by `MetaMathlibExt.trinomialTransformSequence_zero`, a theorem declared in [MathlibExt/NumberTheory/TrinomialTransformSequence.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TrinomialTransformSequence.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-transform-sequence-zero).
 
 ## Trinomial transform of the zero sequence
 
@@ -45,7 +45,7 @@ For every semiring $R$ and every
 $n \in \mathbb{N}$, the $n$th term of the trinomial transform of the zero sequence
 $\mathbb{N} \to R$ is $0$.
 
-Formalized by `MetaMathlibExt.trinomialTransformSequence_zero_apply`, a theorem declared in [MathlibExt/NumberTheory/TrinomialTransformSequence.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/TrinomialTransformSequence.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-transform-sequence-zero-apply).
+Formalized by `MetaMathlibExt.trinomialTransformSequence_zero_apply`, a theorem declared in [MathlibExt/NumberTheory/TrinomialTransformSequence.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/TrinomialTransformSequence.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-transform-sequence-zero-apply).
 
 ## Fundamental theorem of Riordan arrays
 
@@ -59,7 +59,7 @@ $$\sum_{k=0}^{n} \left([t^n]\,d(t)\,h(t)^k\right) [t^k]\,f = [t^n]\,d(t)\,f(h(t)
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 1 (`jis-2025-25.3.5-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.riordan_array_sum_eq_coeff_subst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#riordan-array-sum-eq-coeff-subst).
+Stated but not proved: `MetaMathlibExt.riordan_array_sum_eq_coeff_subst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#riordan-array-sum-eq-coeff-subst).
 
 ## Trinomial coefficients as coefficients of a rational series
 
@@ -74,7 +74,7 @@ The paper also allows negative integers $k$; that case is not included here.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 3 (`jis-2025-25.3.5-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.trinomialCoefficient_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-eq-coeff).
+Stated but not proved: `MetaMathlibExt.trinomialCoefficient_eq_coeff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-eq-coeff).
 
 ## Roots-of-unity filter for trinomial coefficients
 
@@ -92,7 +92,7 @@ paper's $(z w^j)^{-1}$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 9 (`jis-2025-25.3.5-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_arith_prog` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-arith-prog).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_arith_prog` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-arith-prog).
 
 ## Alternating trinomial sums over residue classes modulo 3 and 5
 
@@ -115,7 +115,7 @@ The paper does not bound $x$; the last case excludes $n = 0$, where it would nee
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 10 (`jis-2025-25.3.5-cor-10`).
 
-Stated but not proved: `MetaMathlibExt.trinomialCoefficient_alternating_sums_mod_three_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-alternating-sums-m).
+Stated but not proved: `MetaMathlibExt.trinomialCoefficient_alternating_sums_mod_three_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-alternating-sums-m).
 
 ## Alternating sums of trinomial coefficients in an arithmetic progression
 
@@ -134,7 +134,7 @@ the right side is $0$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 11 (`jis-2025-25.3.5-cor-11`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_arith_prog_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-arith-prog-alt).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_arith_prog_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-arith-prog-alt).
 
 ## Generating polynomial of trinomial coefficients with even index
 
@@ -150,7 +150,7 @@ The paper states this for an indeterminate $z$, with $\sqrt{z}$ in place of $s$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 13 (`jis-2025-25.3.5-cor-13`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-even).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_even` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-even).
 
 ## Generating polynomial of trinomial coefficients with odd index
 
@@ -167,7 +167,7 @@ left side $q_n(z)$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 15 (`jis-2025-25.3.5-cor-15`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-odd).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_odd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-odd).
 
 ## Alternating binomial transform of a row of trinomial coefficients
 
@@ -181,7 +181,7 @@ $$\sum_{k=m}^{2n} \binom{n}{k}_2 \binom{k}{m} (-1)^k = \binom{n}{m}_2.$$
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 16 (`jis-2025-25.3.5-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_mul_choose_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-mul-choose-alt).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_mul_choose_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-mul-choose-alt).
 
 ## Two binomial transforms of a row of trinomial coefficients agree
 
@@ -196,7 +196,7 @@ $$\sum_{k=0}^{m} \binom{n}{k}_2 \binom{m}{k} =
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 17 (`jis-2025-25.3.5-thm-17`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-mul-choose-eq).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_mul_choose_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-mul-choose-eq).
 
 ## Alternating binomial sum down a trinomial column
 
@@ -208,7 +208,7 @@ $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{n-k}{m}_2 = \binom{n}{m-n}$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 18 (`jis-2025-25.3.5-thm-18`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_sub_mul_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-sub-mul-choose).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_sub_mul_choose` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-sub-mul-choose).
 
 ## Alternating binomial sum of trinomial coefficients over even rows
 
@@ -220,7 +220,7 @@ every natural number $n$, $\sum_{k=0}^{n} (-1)^k \binom{n}{k} \binom{2n-2k}{n}_2
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 19 (`jis-2025-25.3.5-thm-19`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_two_mul_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-two-mul-sub).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_two_mul_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-two-mul-sub).
 
 ## Vandermonde convolution for trinomial coefficients
 
@@ -234,7 +234,7 @@ $$\sum_{k=0}^{2m} \binom{n}{l + k}_2 \binom{m}{k}_2 = \binom{n + m}{2m + l}_2.$$
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 20 (`jis-2025-25.3.5-thm-20`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_convolution` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-convolution).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_convolution` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-convolution).
 
 ## Alternating sum of squared trinomial coefficients
 
@@ -246,7 +246,7 @@ $\sum_{k=0}^{2n} (-1)^k \binom{n}{k}_2^2 = \binom{n}{n}_2$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 24 (`jis-2025-25.3.5-thm-24`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_sq_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-sq-alternating).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_sq_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-sq-alternating).
 
 ## Sums of squares and products of trinomial coefficients with even index
 
@@ -269,7 +269,7 @@ $n = 1$ the left side is $1$ while $\frac{1}{2}\binom{2}{1}_2 + \frac{1}{2}\bino
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 26 (`jis-2025-25.3.5-thm-26`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_even_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-even-sq).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_even_sq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-even-sq).
 
 ## Absorption identity for trinomial coefficients
 
@@ -282,7 +282,7 @@ whose lower index is negative is read as $0$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Lemma 31 (`jis-2025-25.3.5-lem-31`).
 
-Stated but not proved: `MetaMathlibExt.trinomialCoefficient_absorption` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-absorption).
+Stated but not proved: `MetaMathlibExt.trinomialCoefficient_absorption` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-absorption).
 
 ## Weighted diagonal sums of trinomial coefficients by coefficient extraction
 
@@ -299,7 +299,7 @@ f\!\left(\frac{t^3}{(1-t+t^2)(1-t)}\right).$$
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 32 (`jis-2025-25.3.5-thm-32`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_weighted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-weigh).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_weighted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-weigh).
 
 ## Alternating weighted diagonal sum of trinomial coefficients
 
@@ -313,7 +313,7 @@ $n \equiv 2 \pmod 4$, and $S_n = 3$ if $n \equiv 0 \pmod 4$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 35 (`jis-2025-25.3.5-cor-35`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-alter).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_alternating` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-alter).
 
 ## Generating sum of the upper half of a trinomial row
 
@@ -328,7 +328,7 @@ $$\sum_{k=0}^{n} \binom{n}{n-k}_2 w^{n+k} = \frac{(1+w+w^2)^n}{2} + \frac{\binom
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 40 (`jis-2025-25.3.5-cor-40`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_upper_half` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-upper-half).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_upper_half` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-upper-half).
 
 ## Trinomial coefficients along lines from a square-root series
 
@@ -347,7 +347,7 @@ $a$ and $b$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 38 (`jis-2025-25.3.5-thm-38`).
 
-Stated but not proved: `MetaMathlibExt.trinomialCoefficient_eq_coeff_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-eq-coeff-sqrt).
+Stated but not proved: `MetaMathlibExt.trinomialCoefficient_eq_coeff_sqrt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-eq-coeff-sqrt).
 
 ## Inversion of an implicit Riordan array sum
 
@@ -367,7 +367,7 @@ hypothesis $f(0) \ne 0$, which $1/f$ needs.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 47 (`jis-2025-25.3.5-thm-47`).
 
-Stated but not proved: `MetaMathlibExt.implicit_riordan_sum_inverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#implicit-riordan-sum-inverse).
+Stated but not proved: `MetaMathlibExt.implicit_riordan_sum_inverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#implicit-riordan-sum-inverse).
 
 ## Sprugnoli's binomial sum theorem
 
@@ -393,7 +393,7 @@ identity and writes the second with $b = -c < 0$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 2 (`jis-2025-25.3.5-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_mul_coeff_eq_coeff_subst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-choose-mul-coeff-eq-coeff-subst).
+Stated but not proved: `MetaMathlibExt.sum_choose_mul_coeff_eq_coeff_subst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-choose-mul-coeff-eq-coeff-subst).
 
 ## Trinomial coefficients from an algebraic Riordan array
 
@@ -415,7 +415,7 @@ $\sqrt{8 - 6t^2} = \sqrt{2}\,S$, the factors $\sqrt{2}$ in its formula for $\alp
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 6 (`jis-2025-25.3.5-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.trinomialCoefficient_eq_coeff_alpha_mul_beta_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-eq-coeff-alpha-mul).
+Stated but not proved: `MetaMathlibExt.trinomialCoefficient_eq_coeff_alpha_mul_beta_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#trinomial-coefficient-eq-coeff-alpha-mul).
 
 ## Sums of trinomial coefficients along lines by coefficient extraction
 
@@ -443,7 +443,7 @@ $b = -c < 0$; $\binom{u}{j}_2$ for complex $u$ is Comtet's extension (the paper'
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 7 (`jis-2025-25.3.5-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_mul_coeff_eq_coeff_subst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-mul-coeff-eq-c).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_mul_coeff_eq_coeff_subst` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-mul-coeff-eq-c).
 
 ## Gould-type identities for binomial and extended trinomial coefficients
 
@@ -469,7 +469,7 @@ first identity equal $-17/3$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 21 (`jis-2025-25.3.5-thm-21`).
 
-Stated but not proved: `MetaMathlibExt.sum_choose_gould_and_extended_trinomial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-choose-gould-and-extended-trinomial).
+Stated but not proved: `MetaMathlibExt.sum_choose_gould_and_extended_trinomial` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-choose-gould-and-extended-trinomial).
 
 ## An alternating convolution of extended trinomial coefficients
 
@@ -486,7 +486,7 @@ $$\sum_{k=0}^{n} \binom{2n - x}{n - k}_2 \binom{x}{k}_2 (-1)^k =
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 23 (`jis-2025-25.3.5-thm-23`).
 
-Stated but not proved: `MetaMathlibExt.sum_extended_trinomial_alternating_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-extended-trinomial-alternating-eq).
+Stated but not proved: `MetaMathlibExt.sum_extended_trinomial_alternating_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-extended-trinomial-alternating-eq).
 
 ## Tribonacci numbers from every third term of A077943
 
@@ -500,7 +500,7 @@ every $n \ge 0$, $2^{n+1} T_{n+2} = y_{3(n+1)}$.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 27 (`jis-2025-25.3.5-thm-27`).
 
-Stated but not proved: `MetaMathlibExt.two_pow_mul_tribonacci_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#two-pow-mul-tribonacci-eq).
+Stated but not proved: `MetaMathlibExt.two_pow_mul_tribonacci_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#two-pow-mul-tribonacci-eq).
 
 ## Binet-type formula for diagonal sums of trinomial coefficients
 
@@ -521,7 +521,7 @@ right side is symmetric, so they are given here by Vieta's relations.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Theorem 28 (`jis-2025-25.3.5-thm-28`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_binet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-binet).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_binet` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 377](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L377). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-binet).
 
 ## Weighted diagonal sums of trinomial coefficients and the sequence A075115
 
@@ -536,7 +536,7 @@ $2^n \sum_{k=0}^{\lfloor 2n/3 \rfloor} \binom{n-k}{k}_2 \frac{n}{n-k} = \lambda_
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 33 (`jis-2025-25.3.5-cor-33`).
 
-Stated but not proved: `MetaMathlibExt.two_pow_mul_sum_trinomialCoefficient_diagonal_weighted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#two-pow-mul-sum-trinomial-coefficient-di).
+Stated but not proved: `MetaMathlibExt.two_pow_mul_sum_trinomialCoefficient_diagonal_weighted` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#two-pow-mul-sum-trinomial-coefficient-di).
 
 ## Power-sum formula for weighted diagonal sums of trinomial coefficients
 
@@ -557,7 +557,7 @@ Vieta's relations.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 36 (`jis-2025-25.3.5-cor-36`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_weighted_power_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-weigh-2).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_diagonal_weighted_power_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-diagonal-weigh-2).
 
 ## Tribonacci formula for a diagonal sum of trinomial coefficients
 
@@ -574,7 +574,7 @@ The sequence $(T_{2n})$ is the bisection A099463.
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 42 (`jis-2025-25.3.5-cor-42`).
 
-Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_add_sub_eq_tribonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-add-sub-eq-tri).
+Stated but not proved: `MetaMathlibExt.sum_trinomialCoefficient_add_sub_eq_tribonacci` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#sum-trinomial-coefficient-add-sub-eq-tri).
 
 ## Recovering even coefficients from the 2-Pascal transform
 
@@ -598,7 +598,7 @@ $\sqrt{1 - t + t^2}$, and $\alpha$, $\beta$ are the series of the paper's Theore
 
 - Yassine Otmani, *The 2-Pascal Triangle and a Related Riordan Array*, Journal of Integer Sequences 28 (2025), Article 25.3.5, Corollary 49 (`jis-2025-25.3.5-cor-49`).
 
-Stated but not proved: `MetaMathlibExt.coeff_two_mul_eq_inverse_trinomial_transform` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#coeff-two-mul-eq-inverse-trinomial-trans).
+Stated but not proved: `MetaMathlibExt.coeff_two_mul_eq_inverse_trinomial_transform` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean, line 432](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TwoPascalTriangleWanted.lean#L432). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html#coeff-two-mul-eq-inverse-trinomial-trans).
 
 ## Depends on
 
@@ -607,4 +607,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Trinomial coefficients and the 2-Pascal triangle](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/trinomial-coefficients-and-the-2-pascal-triangle)

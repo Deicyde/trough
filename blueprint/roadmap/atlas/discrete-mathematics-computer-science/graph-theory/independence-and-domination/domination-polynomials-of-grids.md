@@ -7,7 +7,7 @@ statement: formalized
 
 # Domination polynomials of grids
 
-20 results, 15 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html).
+20 results, 15 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html).
 
 ## Domination states
 
@@ -21,7 +21,7 @@ it lies outside $S$ but is adjacent to a vertex of $S$, and uncovered otherwise.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 1.
 
-Formalized by `MetaMathlibExt.DominationState`, an inductive type declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-state).
+Formalized by `MetaMathlibExt.DominationState`, an inductive type declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-state).
 
 ## Domination polynomial
 
@@ -33,7 +33,7 @@ $S$ of $G$.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Section 1.
 
-Formalized by `MetaMathlibExt.dominationPolynomial`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial).
+Formalized by `MetaMathlibExt.dominationPolynomial`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial).
 
 ## Domination state of a vertex
 
@@ -46,7 +46,7 @@ uncovered otherwise.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 1.
 
-Formalized by `MetaMathlibExt.vertexDominationState`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#vertex-domination-state).
+Formalized by `MetaMathlibExt.vertexDominationState`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#vertex-domination-state).
 
 ## Domination signature
 
@@ -64,7 +64,7 @@ also applies to the first and last entries (the paper's cyclic signatures).
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 3.
 
-Formalized by `MetaMathlibExt.IsDominationSignature`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#is-domination-signature).
+Formalized by `MetaMathlibExt.IsDominationSignature`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#is-domination-signature).
 
 ## Signatures of a row graph
 
@@ -78,7 +78,7 @@ $R$ is a cycle they are the paper's cyclic signatures.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 3.
 
-Formalized by `MetaMathlibExt.DominationSignature`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-signature).
+Formalized by `MetaMathlibExt.DominationSignature`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-signature).
 
 ## All-covered signature
 
@@ -90,7 +90,7 @@ is a signature because it has no uncovered vertex.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Theorem 7.
 
-Formalized by `MetaMathlibExt.allCoveredSignature`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#all-covered-signature).
+Formalized by `MetaMathlibExt.allCoveredSignature`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#all-covered-signature).
 
 ## Compatible row signatures
 
@@ -105,7 +105,7 @@ of $i$ in $R$ has $\tau(j)$ occupied.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 5.
 
-Formalized by `MetaMathlibExt.DominationCompatible`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-compatible).
+Formalized by `MetaMathlibExt.DominationCompatible`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-compatible).
 
 ## Number of occupied vertices
 
@@ -117,7 +117,7 @@ $\operatorname{occ}(\sigma)$ is the number of elements $i \in V$ such that $\sig
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 6.
 
-Formalized by `MetaMathlibExt.occupiedCount`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#occupied-count).
+Formalized by `MetaMathlibExt.occupiedCount`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#occupied-count).
 
 ## Domination transfer matrix
 
@@ -132,7 +132,7 @@ vertices of $\tau$. When $R$ is the cycle on $m$ vertices this is Mertens' matri
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 6.
 
-Formalized by `MetaMathlibExt.dominationTransferMatrix`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-transfer-matrix).
+Formalized by `MetaMathlibExt.dominationTransferMatrix`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-transfer-matrix).
 
 ## Almost dominating polynomial
 
@@ -149,7 +149,7 @@ the last row is uncovered and every vertex $(i, n)$ of the last row has state $\
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 2.
 
-Formalized by `MetaMathlibExt.almostDominatingPolynomial`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#almost-dominating-polynomial).
+Formalized by `MetaMathlibExt.almostDominatingPolynomial`, a definition declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#almost-dominating-polynomial).
 
 ## A vertex is occupied exactly when it lies in the set
 
@@ -161,7 +161,7 @@ to $S$ in $G$ is occupied if and only if $v \in S$.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 1.
 
-Formalized by `MetaMathlibExt.vertexDominationState_eq_occupied_iff`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#vertex-domination-state-eq-occupied-iff).
+Formalized by `MetaMathlibExt.vertexDominationState_eq_occupied_iff`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#vertex-domination-state-eq-occupied-iff).
 
 ## Dominating sets have no uncovered vertex
 
@@ -173,7 +173,7 @@ uncovered relative to $S$ in $G$.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Definition 1.
 
-Formalized by `MetaMathlibExt.isDominating_iff_forall_vertexDominationState_ne_uncovered`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#is-dominating-iff-forall-vertex-dominati).
+Formalized by `MetaMathlibExt.isDominating_iff_forall_vertexDominationState_ne_uncovered`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#is-dominating-iff-forall-vertex-dominati).
 
 ## The domination polynomial at one counts dominating sets
 
@@ -184,7 +184,7 @@ value at $1$ of the domination polynomial of $G$ equals the number of dominating
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Section 1.
 
-Formalized by `MetaMathlibExt.dominationPolynomial_eval_one`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-eval-one).
+Formalized by `MetaMathlibExt.dominationPolynomial_eval_one`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-eval-one).
 
 ## The all-covered signature has no occupied vertex
 
@@ -195,7 +195,7 @@ vertex set, the number of occupied vertices of the all-covered signature of $R$ 
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Theorem 7.
 
-Formalized by `MetaMathlibExt.occupiedCount_allCoveredSignature`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#occupied-count-all-covered-signature).
+Formalized by `MetaMathlibExt.occupiedCount_allCoveredSignature`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#occupied-count-all-covered-signature).
 
 ## Transfer matrix column of the all-covered signature
 
@@ -210,7 +210,7 @@ $\tau$ is adjacent in $R$ to an occupied vertex of $\tau$, and equals $0$ otherw
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Theorem 7.
 
-Formalized by `MetaMathlibExt.dominationTransferMatrix_apply_allCoveredSignature`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-transfer-matrix-apply-all-cov).
+Formalized by `MetaMathlibExt.dominationTransferMatrix_apply_allCoveredSignature`, a theorem declared in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-transfer-matrix-apply-all-cov).
 
 ## Grid domination polynomial as a sum of almost dominating polynomials
 
@@ -227,7 +227,7 @@ The grid is taken with at least one row, so that the last row carrying $\sigma$ 
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Lemma 4 (`jis-2024-24.7.6-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.dominationPolynomial_grid_eq_sum_almostDominatingPolynomial` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-grid-eq-sum-almost).
+Stated but not proved: `MetaMathlibExt.dominationPolynomial_grid_eq_sum_almostDominatingPolynomial` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-grid-eq-sum-almost).
 
 ## Cylinder domination polynomial as a sum of almost dominating polynomials
 
@@ -243,7 +243,7 @@ almost dominating polynomial of $C_m$ with $n + 1$ rows and last-row state $\sig
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Lemma 4 (`jis-2024-24.7.6-lem-4`).
 
-Stated but not proved: `MetaMathlibExt.dominationPolynomial_cylinder_eq_sum_almostDominatingPolynomial` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-cylinder-eq-sum-al).
+Stated but not proved: `MetaMathlibExt.dominationPolynomial_cylinder_eq_sum_almostDominatingPolynomial` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-cylinder-eq-sum-al).
 
 ## Transfer-matrix formula for the domination polynomial of the grid
 
@@ -261,7 +261,7 @@ the sum running over the signatures $\sigma$ of $P_m$ with no uncovered vertex.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Theorem 7 (`jis-2024-24.7.6-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.dominationPolynomial_grid_eq_sum_transferMatrix_pow` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-grid-eq-sum-transf).
+Stated but not proved: `MetaMathlibExt.dominationPolynomial_grid_eq_sum_transferMatrix_pow` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-grid-eq-sum-transf).
 
 ## Transfer-matrix formula for the domination polynomial of the cylinder
 
@@ -280,7 +280,7 @@ the sum running over the signatures $\sigma$ of $C_m$ with no uncovered vertex.
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Theorem 7 (`jis-2024-24.7.6-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.dominationPolynomial_cylinder_eq_sum_transferMatrix_pow` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-cylinder-eq-sum-tr).
+Stated but not proved: `MetaMathlibExt.dominationPolynomial_cylinder_eq_sum_transferMatrix_pow` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-cylinder-eq-sum-tr).
 
 ## Transfer-matrix formula for the domination polynomial of the torus
 
@@ -298,7 +298,7 @@ $n = 1$ and $n = 2$ the cycle $C_n$ is a single vertex and a single edge respect
 
 - Stephan Mertens, *Domination Polynomials of the Grid, the Cylinder, the Torus, and the King Graph*, Journal of Integer Sequences 27 (2024), Article 24.7.6, Theorem 8 (`jis-2024-24.7.6-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.dominationPolynomial_torus_eq_trace_transferMatrix_pow` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-torus-eq-trace-tra).
+Stated but not proved: `MetaMathlibExt.dominationPolynomial_torus_eq_trace_transferMatrix_pow` is written with `theorem_wanted` in [WantedExt/GraphTheory/GridDominationTransferWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/GridDominationTransferWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html#domination-polynomial-torus-eq-trace-tra).
 
 ## Depends on
 
@@ -307,4 +307,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Domination polynomials of grids](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/independence-and-domination/domination-polynomials-of-grids)

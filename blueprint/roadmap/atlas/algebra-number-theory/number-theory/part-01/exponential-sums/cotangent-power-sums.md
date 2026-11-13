@@ -7,7 +7,7 @@ statement: formalized
 
 # Cotangent power sums
 
-8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html).
+8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html).
 
 ## Girstmair's cotangent power coefficients
 
@@ -27,7 +27,7 @@ These coefficients express $(i \cot)^r$ in terms of the derivatives $i^j \cot^{(
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Equation (8). The equation is not in the journal record; it is read from the arXiv version, arXiv:2504.08330, Section 3, where it also follows from the displayed derivation.
 
-Formalized by `MetaMathlibExt.cotangentPowerCoeff`, a definition declared in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff).
+Formalized by `MetaMathlibExt.cotangentPowerCoeff`, a definition declared in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff).
 
 ## Girstmair's coefficient at index (1, 1)
 
@@ -38,7 +38,7 @@ $c_{1,1}$ equals $1$, matching the identity $i \cot = i \cot$.
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, characteristic value of Equation (8).
 
-Formalized by `MetaMathlibExt.cotangentPowerCoeff_one_one`, a theorem declared in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-one-one).
+Formalized by `MetaMathlibExt.cotangentPowerCoeff_one_one`, a theorem declared in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-one-one).
 
 ## Girstmair's coefficient at index (2, 2)
 
@@ -50,7 +50,7 @@ $\cot' = -1 - \cot^2$.
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, characteristic value of Equation (8).
 
-Formalized by `MetaMathlibExt.cotangentPowerCoeff_two_two`, a theorem declared in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-two-two).
+Formalized by `MetaMathlibExt.cotangentPowerCoeff_two_two`, a theorem declared in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-two-two).
 
 ## Cotangent powers through cotangent derivatives
 
@@ -64,7 +64,7 @@ $$(i \cot x)^r = \frac{(-1)^r + 1}{2} + \sum_{j=1}^{r} c_{r,j} \, i^j \cot^{(j-1
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.I_mul_cot_pow_eq_sum_iteratedDeriv_cot` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#i-mul-cot-pow-eq-sum-iterated-deriv-cot).
+Stated but not proved: `MetaMathlibExt.I_mul_cot_pow_eq_sum_iteratedDeriv_cot` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#i-mul-cot-pow-eq-sum-iterated-deriv-cot).
 
 ## Parity of Girstmair's cotangent power coefficients
 
@@ -79,7 +79,7 @@ $i^j \cot^{(j-1)}$.
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Proposition 1, the sentence that follows it.
 
-Stated but not proved: `MetaMathlibExt.cotangentPowerCoeff_eq_zero_of_mod_two_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-eq-zero-of-mod-two).
+Stated but not proved: `MetaMathlibExt.cotangentPowerCoeff_eq_zero_of_mod_two_ne` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-eq-zero-of-mod-two).
 
 ## Girstmair's cotangent power sums, odd case
 
@@ -106,7 +106,7 @@ $\sigma_k(i^r \cot^r(\pi/n)) = i^r \cot^r(\pi k/n)$ (Equation (4)).
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Theorem 1, first case.
 
-Stated but not proved: `MetaMathlibExt.sum_conj_dirichletCharacter_mul_I_mul_cot_pow_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#sum-conj-dirichlet-character-mul-i-mul-c).
+Stated but not proved: `MetaMathlibExt.sum_conj_dirichletCharacter_mul_I_mul_cot_pow_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#sum-conj-dirichlet-character-mul-i-mul-c).
 
 ## Girstmair's cotangent power sums, even case
 
@@ -134,7 +134,7 @@ $y(\chi \mid 1)$ (Equation (11)).
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Theorem 1, second case.
 
-Stated but not proved: `MetaMathlibExt.sum_conj_dirichletCharacter_mul_I_mul_cot_pow_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#sum-conj-dirichlet-character-mul-i-mul-c-2).
+Stated but not proved: `MetaMathlibExt.sum_conj_dirichletCharacter_mul_I_mul_cot_pow_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#sum-conj-dirichlet-character-mul-i-mul-c-2).
 
 ## Cotangent power coefficients through even Bernoulli numbers
 
@@ -156,7 +156,7 @@ coefficients $d_{r,j}$ of the earlier literature (Equations (13) and (15)).
 
 - Kurt Girstmair, *Cotangent Power Sums and Character Coordinates*, INTEGERS 25 (2025), Article A63, Theorem 2 with Equations (13) and (15).
 
-Stated but not proved: `MetaMathlibExt.cotangentPowerCoeff_eq_bernoulli_tuple_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-eq-bernoulli-tuple).
+Stated but not proved: `MetaMathlibExt.cotangentPowerCoeff_eq_bernoulli_tuple_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/CotangentPowerSumsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/CotangentPowerSumsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html#cotangent-power-coeff-eq-bernoulli-tuple).
 
 ## Depends on
 
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cotangent power sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/cotangent-power-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/exponential-sums/cotangent-power-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/exponential-sums/cotangent-power-sums)

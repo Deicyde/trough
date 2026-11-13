@@ -8,7 +8,7 @@ proof: formalized
 
 # Spherical law of cosines
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines/index.html).
 
 ## Spherical law of cosines, general form
 
@@ -29,7 +29,7 @@ Only $a$ and $b$ need to lie in $(0, \pi)$: $c$ and $C$ enter only through their
 quotient above is the cosine of the angle at $w$ between the great-circle arcs from $w$ to $u$
 and from $w$ to $v$.
 
-Formalized by `MetaMathlibExt.spherical_law_of_cosines_general`, a theorem declared in [MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines/index.html#spherical-law-of-cosines-general).
+Formalized by `MetaMathlibExt.spherical_law_of_cosines_general`, a theorem declared in [MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean, line 22](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean#L22). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines/index.html#spherical-law-of-cosines-general).
 
 ## Spherical law of cosines
 
@@ -54,7 +54,7 @@ opposite the side $c$.
 
 - https://en.wikipedia.org/wiki/Spherical_law_of_cosines. It follows from `spherical_law_of_cosines_general`; the hypotheses `hc` and `hC` are unused and keep the source's shape.
 
-Formalized by `MetaMathlibExt.spherical_law_of_cosines`, a theorem declared in [MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines/index.html#spherical-law-of-cosines).
+Formalized by `MetaMathlibExt.spherical_law_of_cosines`, a theorem declared in [MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Spherical/SphericalLawOfCosines.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines/index.html#spherical-law-of-cosines).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spherical law of cosines](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/solid-and-spherical/spherical-law-of-cosines)

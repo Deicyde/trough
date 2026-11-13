@@ -8,7 +8,7 @@ proof: formalized
 
 # Wintner's mean-value theorem
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html).
 
 ## Wintner's mean-value theorem
 
@@ -28,7 +28,7 @@ concluded.
 
 - László Tóth, *On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components*, Journal of Integer Sequences 27 (2024), Article 24.8.5, mean-value definition and Theorem `Th_Wintner_gen`, lines 292–310 (the `k = 1` case identified at lines 297–298 as Wintner's classical theorem; the source theorem itself is Ushiroya's multivariable generalization), <https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex>.
 
-Formalized by `MetaMathlibExt.wintner_mean_value`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValue.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValue.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html#wintner-mean-value).
+Formalized by `MetaMathlibExt.wintner_mean_value`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValue.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValue.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html#wintner-mean-value).
 
 ## Euler product for mean values of coordinatewise multiplicative functions
 
@@ -72,7 +72,7 @@ are the diagonal of the source's multi-parameter limit, so they converge to the 
 
 - László Tóth, "On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components," Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem (unlabeled; multiplicative-function form), equation, lines 314–326, https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex
 
-Formalized by `MetaMathlibExt.euler_product_mean_value`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/EulerProductMeanValue.lean, line 894](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/EulerProductMeanValue.lean#L894). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html#euler-product-mean-value).
+Formalized by `MetaMathlibExt.euler_product_mean_value`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/EulerProductMeanValue.lean, line 894](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/EulerProductMeanValue.lean#L894). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html#euler-product-mean-value).
 
 ## Wintner's mean-value theorem in several variables
 
@@ -102,7 +102,7 @@ as the integers $x_1, \dots, x_k$ all tend to infinity.
 
 - László Tóth, "On the Asymptotic Density of k-tuples of Positive Integers with Pairwise Non-Coprime Components," Journal of Integer Sequences 27 (2024), Article 24.8.5, Theorem `Th_Wintner_gen`, lines 300–311, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Toth/toth27.tex>. Proved by H. Ushiroya (2012) as a generalization of Wintner's classical one-variable theorem.
 
-Formalized by `MetaMathlibExt.wintner_mean_value_multivariable`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValueMultivariable.lean, line 849](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValueMultivariable.lean#L849). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html#wintner-mean-value-multivariable).
+Formalized by `MetaMathlibExt.wintner_mean_value_multivariable`, a theorem declared in [MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValueMultivariable.lean, line 849](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ArithmeticFunction/WintnerMeanValueMultivariable.lean#L849). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html#wintner-mean-value-multivariable).
 
 ## Depends on
 
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Wintner's mean-value theorem](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/wintner-s-mean-value-theorem)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Series transformations via Taylor shifts
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html).
 
 ## Ramanujan's binomial series transformation without the radius hypothesis
 
@@ -29,7 +29,7 @@ $$\sum_{k=0}^{\infty} Q_k\, (n)_k\, x^k\, (1 + x)^{n-k}$$
 converge unconditionally to the same sum, where $(1 + x)^{n-k} = e^{(n-k) \log(1+x)}$ with the
 principal branch of the logarithm.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1Corollary1BinomialSeries.ramanujan_part1_ch3_entry1_corollary1_binomial_series_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-corollary1-bi).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1Corollary1BinomialSeries.ramanujan_part1_ch3_entry1_corollary1_binomial_series_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-corollary1-bi).
 
 ## Ramanujan's binomial series transformation (Chapter 3, Entry 1, Corollary 1)
 
@@ -56,7 +56,7 @@ principal branch of the logarithm.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 1, Corollary 1, printed p. 45 / PDF p. 55.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1Corollary1BinomialSeries.ramanujan_part1_ch3_entry1_corollary1_binomial_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-corollary1-bi-2).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1Corollary1BinomialSeries.ramanujan_part1_ch3_entry1_corollary1_binomial_series`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean, line 223](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1Corollary1BinomialSeries.lean#L223). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-corollary1-bi-2).
 
 ## Ramanujan's series transformation without the radius hypothesis
 
@@ -76,7 +76,7 @@ $$\sum_{n=0}^{\infty} Q_n\, f^{(n)}(1)$$
 
 converge unconditionally to the same sum.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1SeriesTransformation.ramanujan_part1_ch3_entry1_series_transformation_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-series-transf).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1SeriesTransformation.ramanujan_part1_ch3_entry1_series_transformation_general`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-series-transf).
 
 ## Ramanujan's series transformation (Chapter 3, Entry 1)
 
@@ -102,7 +102,7 @@ converge unconditionally to the same sum.
 
 - Berndt, Ramanujan's Notebooks Part I, Chapter 3, Entry 1, printed p. 45 / PDF p. 55.
 
-Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1SeriesTransformation.ramanujan_part1_ch3_entry1_series_transformation`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-series-transf-2).
+Formalized by `MathlibExt.NumberTheory.Ramanujan.Part1Ch3.Entry1SeriesTransformation.ramanujan_part1_ch3_entry1_series_transformation`, a theorem declared in [MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Ramanujan/Part1Ch3Entry1SeriesTransformation.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html#ramanujan-part1-ch3-entry1-series-transf-2).
 
 ## Depends on
 
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Series transformations via Taylor shifts](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/power-series/series-transformations-via-taylor-shifts)

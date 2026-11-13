@@ -7,7 +7,7 @@ statement: formalized
 
 # Catalan-type polynomials
 
-11 results, 6 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html).
+11 results, 6 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html).
 
 ## Negative real power of a trinomial as a power series
 
@@ -30,7 +30,7 @@ and Usman's paper; Section 2 takes $c = 1$, $\alpha = m$ and $\beta = x$.
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Equations (6), (12) and (15).
 
-Formalized by `MetaMathlibExt.trinomialNegPowSeries`, a definition declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#trinomial-neg-pow-series).
+Formalized by `MetaMathlibExt.trinomialNegPowSeries`, a definition declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#trinomial-neg-pow-series).
 
 ## Constant term of the trinomial series
 
@@ -45,7 +45,7 @@ $c^{-\lambda}$.
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Equation (6).
 
-Formalized by `MetaMathlibExt.constantCoeff_trinomialNegPowSeries`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#constant-coeff-trinomial-neg-pow-series).
+Formalized by `MetaMathlibExt.constantCoeff_trinomialNegPowSeries`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#constant-coeff-trinomial-neg-pow-series).
 
 ## The trinomial series at exponent one
 
@@ -57,7 +57,7 @@ powers of $t$ at $\lambda = -1$ is the polynomial $1 - \alpha t + \beta t^m$ its
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Equation (6).
 
-Formalized by `MetaMathlibExt.trinomialNegPowSeries_neg_one`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#trinomial-neg-pow-series-neg-one).
+Formalized by `MetaMathlibExt.trinomialNegPowSeries_neg_one`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#trinomial-neg-pow-series-neg-one).
 
 ## Kampé de Fériet polynomials
 
@@ -74,7 +74,7 @@ power series in $t$.
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Equation (2).
 
-Formalized by `MetaMathlibExt.kampeDeFerietHermite`, a definition declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#kampe-de-feriet-hermite).
+Formalized by `MetaMathlibExt.kampeDeFerietHermite`, a definition declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#kampe-de-feriet-hermite).
 
 ## The zeroth Kampé de Fériet polynomial
 
@@ -85,7 +85,7 @@ $x, y$ of a commutative $\mathbb{R}$-algebra, $H^m_0(x, y) = 1$.
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Equation (2).
 
-Formalized by `MetaMathlibExt.kampeDeFerietHermite_zero`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#kampe-de-feriet-hermite-zero).
+Formalized by `MetaMathlibExt.kampeDeFerietHermite_zero`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#kampe-de-feriet-hermite-zero).
 
 ## The second Kampé de Fériet polynomial
 
@@ -96,7 +96,7 @@ $H^2_2(x, y) = x^2 + 2y$.
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Equation (2).
 
-Formalized by `MetaMathlibExt.kampeDeFerietHermite_two_two`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#kampe-de-feriet-hermite-two-two).
+Formalized by `MetaMathlibExt.kampeDeFerietHermite_two_two`, a theorem declared in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#kampe-de-feriet-hermite-two-two).
 
 ## Hermite-shifted Catalan-type polynomials as convolutions
 
@@ -120,7 +120,7 @@ $h^{k;\lambda}_{n,m}(x, y, z)$ (Definition 3, Equations (8) and (9)).
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.coeff_hermiteShift_mul_trinomialNegPowSeries` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#coeff-hermite-shift-mul-trinomial-neg-po).
+Stated but not proved: `MetaMathlibExt.coeff_hermiteShift_mul_trinomialNegPowSeries` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#coeff-hermite-shift-mul-trinomial-neg-po).
 
 ## Nieto–Hermite Catalan-type polynomials as convolutions
 
@@ -147,7 +147,7 @@ These are the paper's $F^{j.k;\lambda}_{r,m}(x, y)$ and $f^{j.k;\lambda}_{r,m}(x
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.coeff_nietoHermiteSeries_mul_trinomialNegPowSeries` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#coeff-nieto-hermite-series-mul-trinomial).
+Stated but not proved: `MetaMathlibExt.coeff_nietoHermiteSeries_mul_trinomialNegPowSeries` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#coeff-nieto-hermite-series-mul-trinomial).
 
 ## Splitting the numerator of a unified Catalan-type generating function
 
@@ -170,7 +170,7 @@ P^{1.0;\lambda,0}_{n,m}(x)$; the kernel is the paper's for $c > 0$.
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.coeff_catalanTypeKernel_decomposition` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#coeff-catalan-type-kernel-decomposition).
+Stated but not proved: `MetaMathlibExt.coeff_catalanTypeKernel_decomposition` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#coeff-catalan-type-kernel-decomposition).
 
 ## Determinant of the lower-triangular Catalan-type matrix
 
@@ -189,7 +189,7 @@ is $P_N^{(m,\lambda,A)}(x)$ of Equation (18). The paper's proviso $P_0 \ne 0$ is
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.det_catalanTypeLowerTriangular` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#det-catalan-type-lower-triangular).
+Stated but not proved: `MetaMathlibExt.det_catalanTypeLowerTriangular` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#det-catalan-type-lower-triangular).
 
 ## Hankel determinants of recurrent Catalan-type sequences vanish
 
@@ -211,7 +211,7 @@ dropped.
 
 - M. A. Pathan and T. Usman, *Unified Catalan-Type Polynomials with Matrix Formulations and Applications*, INTEGERS 26 (2026), Article A105, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.det_catalanTypeHankel_eq_zero` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#det-catalan-type-hankel-eq-zero).
+Stated but not proved: `MetaMathlibExt.det_catalanTypeHankel_eq_zero` is written with `theorem_wanted` in [WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/PowerSeries/UnifiedCatalanTypePolynomialsWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html#det-catalan-type-hankel-eq-zero).
 
 ## Depends on
 
@@ -220,4 +220,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Catalan-type polynomials](https://deicyde.github.io/atlas-lean/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/orthogonal-polynomials/catalan-type-polynomials)

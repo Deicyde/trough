@@ -7,7 +7,7 @@ statement: formalized
 
 # Rational approximation of linear subspaces
 
-10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html).
+10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html).
 
 ## Distance between lines
 
@@ -16,7 +16,7 @@ distance $\operatorname{dist}(x, y)$ is $\sin \theta$, where $\theta \in [0, \pi
 between nonzero vectors spanning $x$ and $y$. This is the usual distance on the projective
 space.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distLines`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#dist-lines).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distLines`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#dist-lines).
 
 ## Distance from a line to a subspace
 
@@ -25,7 +25,7 @@ and a subspace $y$ of $\mathbb{R}^d$, the distance $\operatorname{dist}(x, y)$ i
 over all lines $y'$ contained in $y$, of the distance $\operatorname{dist}(x, y')$ between the
 lines $x$ and $y'$. When $y = 0$ there is no such line and the value is $0$.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distLineSubspace`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#dist-line-subspace).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distLineSubspace`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#dist-line-subspace).
 
 ## Distance between subspaces
 
@@ -36,21 +36,21 @@ $y'$ to the subspace $x$. If $\dim y > \dim x$, it is the supremum, over all lin
 in $x$, of the distance $\operatorname{dist}(x', y)$ from the line $x'$ to the subspace $y$. A
 supremum over no lines is $0$.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distSubspaces`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#dist-subspaces).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.distSubspaces`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#dist-subspaces).
 
 ## The integer lattice
 
 $\mathbb{Z}^d$ is the $\mathbb{Z}$-submodule of $\mathbb{R}^d$
 spanned by the standard basis vectors, that is, the lattice of points with integer coordinates.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.intPoints`, an abbreviation declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#int-points).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.intPoints`, an abbreviation declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#int-points).
 
 ## Integer points of a subspace
 
 For a subspace $V$ of $\mathbb{R}^d$, this is the set
 $V \cap \mathbb{Z}^d$ of integer points of $V$, as a $\mathbb{Z}$-submodule of $V$.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.intPointsSubspace`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#int-points-subspace).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.intPointsSubspace`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#int-points-subspace).
 
 ## Rational subspace
 
@@ -61,7 +61,7 @@ $\mathbb{R}$.
 The paper does not state which definition of rational subspace it uses; this one is common
 and is the most convenient for defining heights of rational subspaces.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.IsRational`, an abbreviation declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#is-rational).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.IsRational`, an abbreviation declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#is-rational).
 
 ## Chosen basis of a rational subspace
 
@@ -69,7 +69,7 @@ For a rational subspace $V$ of $\mathbb{R}^d$, this
 is a fixed choice of a $\mathbb{Z}$-basis of the lattice $V \cap \mathbb{Z}^d$, indexed by
 $\{0, \dots, \dim V - 1\}$ and viewed as an $\mathbb{R}$-basis of $V$.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.chosenBasis`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#chosen-basis).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.chosenBasis`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#chosen-basis).
 
 ## Height of a rational subspace
 
@@ -80,7 +80,7 @@ $\bigwedge^k \mathbb{R}^d$ carries the inner product whose value on decomposable
 $u_1 \wedge \dots \wedge u_k$ and $w_1 \wedge \dots \wedge w_k$ is the Gram determinant
 $\det(\langle u_i, w_j \rangle)_{i,j}$.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.height`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#height).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.height`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#height).
 
 ## Diophantine exponent
 
@@ -93,7 +93,7 @@ which there is a real number $c > 0$ such that $\operatorname{dist}(v, x) \ge c 
 for every $k$-dimensional rational subspace $v$ of $\mathbb{R}^d$. In particular
 $\beta_k(x) = \infty$ when there is no such $\beta$.
 
-Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.diophantineExponent`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#diophantine-exponent).
+Formalized by `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.diophantineExponent`, a definition declared in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#diophantine-exponent).
 
 ## Dirichlet's principle in Grassmann varieties
 
@@ -108,7 +108,7 @@ $\mathbb{R}^d$ satisfies $\beta_k(x) = \frac{d}{k(d - l)}$.
 
 - N. de Saxcé, `Rational approximations to linear subspaces`, Annals of Math, 203 (3) 2026. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_linear_subspaces` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.theorem_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#theorem-1).
+Stated but not proved: `MathlibExt.NumberTheory.LinearSubspacesWanted.LinearSubspaces.theorem_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/LinearSubspacesWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LinearSubspacesWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html#theorem-1).
 
 ## Depends on
 
@@ -117,4 +117,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rational approximation of linear subspaces](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/rational-approximation-of-linear-subspaces)

@@ -8,7 +8,7 @@ proof: formalized
 
 # McDiarmid's inequality
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html).
 
 ## McDiarmid's inequality when the sensitivities are not all zero
 
@@ -24,7 +24,7 @@ $$
 \sum_{x \in \alpha^n,\ f(x) - \mu \ge t} P(x) \le \exp\Big(-\frac{2t^2}{\sum_{i\lt n} c_i^2}\Big).
 $$
 
-Formalized by `MathlibExt.Probability.McDiarmid.mcdiarmid_one_sided_finite_iid_general`, a theorem declared in [MathlibExt/Probability/McDiarmid.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/McDiarmid.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html#mcdiarmid-one-sided-finite-iid-general).
+Formalized by `MathlibExt.Probability.McDiarmid.mcdiarmid_one_sided_finite_iid_general`, a theorem declared in [MathlibExt/Probability/McDiarmid.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/McDiarmid.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html#mcdiarmid-one-sided-finite-iid-general).
 
 ## The upper tail vanishes when every sensitivity is zero
 
@@ -42,7 +42,7 @@ $$
 
 Indeed, changing one coordinate never changes $f$, so the upper tail is empty.
 
-Formalized by `MathlibExt.Probability.McDiarmid.mcdiarmid_one_sided_finite_iid_of_sum_sq_eq_zero`, a theorem declared in [MathlibExt/Probability/McDiarmid.lean, line 389](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/McDiarmid.lean#L389). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html#mcdiarmid-one-sided-finite-iid-of-sum-sq).
+Formalized by `MathlibExt.Probability.McDiarmid.mcdiarmid_one_sided_finite_iid_of_sum_sq_eq_zero`, a theorem declared in [MathlibExt/Probability/McDiarmid.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/McDiarmid.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html#mcdiarmid-one-sided-finite-iid-of-sum-sq).
 
 ## McDiarmid's bounded-differences inequality, finite i.i.d. case
 
@@ -64,7 +64,7 @@ where a quotient by $0$ is read as $0$, so the bound is $1$ when every $c_i$ is 
 
 - C. McDiarmid, Surveys in Combinatorics 1989, 148-188, DOI 10.1017/CBO9781107359949.008. When every `c i` is `0` (including `n = 0`), the right-hand side is `Real.exp 0 = 1` by Lean's convention `x / 0 = 0`; `mcdiarmid_one_sided_finite_iid_of_sum_sq_eq_zero` gives the sharp value `prob = 0` there, and `mcdiarmid_one_sided_finite_iid_general` covers `0 < ∑ i, c i ^ 2`. The instance `[DecidableEq α]` is unused and keeps the source's shape.
 
-Formalized by `MathlibExt.Probability.McDiarmid.mcdiarmid_one_sided_finite_iid`, a theorem declared in [MathlibExt/Probability/McDiarmid.lean, line 429](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/McDiarmid.lean#L429). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html#mcdiarmid-one-sided-finite-iid).
+Formalized by `MathlibExt.Probability.McDiarmid.mcdiarmid_one_sided_finite_iid`, a theorem declared in [MathlibExt/Probability/McDiarmid.lean, line 419](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/McDiarmid.lean#L419). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html#mcdiarmid-one-sided-finite-iid).
 
 ## Depends on
 
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: McDiarmid's inequality](https://deicyde.github.io/atlas-lean/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/concentration-inequalities/mcdiarmid-s-inequality)

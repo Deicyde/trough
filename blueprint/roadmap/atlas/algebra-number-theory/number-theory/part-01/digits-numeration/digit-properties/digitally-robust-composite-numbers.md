@@ -7,7 +7,7 @@ statement: formalized
 
 # Digitally robust composite numbers
 
-12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html).
+12 results, 10 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html).
 
 ## Replacing a base-ten digit
 
@@ -24,7 +24,7 @@ one at position $i$ and puts $d$ there.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.replaceDigit`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#replace-digit).
+Formalized by `MetaMathlibExt.replaceDigit`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#replace-digit).
 
 ## Deleting a digit
 
@@ -40,7 +40,7 @@ where they are.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.deleteDigit`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#delete-digit).
+Formalized by `MetaMathlibExt.deleteDigit`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#delete-digit).
 
 ## Inserting a digit
 
@@ -61,7 +61,7 @@ the first leading zero by $d$.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.insertDigit`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#insert-digit).
+Formalized by `MetaMathlibExt.insertDigit`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#insert-digit).
 
 ## Digitally robust composite numbers
 
@@ -78,7 +78,7 @@ leading zeros.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.IsDigitallyRobustComposite`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#is-digitally-robust-composite).
+Formalized by `MetaMathlibExt.IsDigitallyRobustComposite`, a definition declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#is-digitally-robust-composite).
 
 ## Infinitely many digitally robust composites
 
@@ -91,7 +91,7 @@ any one of their digits, and after inserting any digit in any position.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.infinitelyMany_digitallyRobustComposites` is written with `theorem_wanted` in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#infinitely-many-digitally-robust-composi).
+Stated but not proved: `MetaMathlibExt.infinitelyMany_digitallyRobustComposites` is written with `theorem_wanted` in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#infinitely-many-digitally-robust-composi).
 
 ## Prime divisors of cyclotomic values at 10
 
@@ -105,7 +105,7 @@ $q \le p$ (so $p$ is the largest prime divisor of $b$), and $p^2$ does not divid
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.cyclotomicPrimeDivisor_order_and_largestPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#cyclotomic-prime-divisor-order-and-large).
+Stated but not proved: `MetaMathlibExt.cyclotomicPrimeDivisor_order_and_largestPrime` is written with `theorem_wanted` in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#cyclotomic-prime-divisor-order-and-large).
 
 ## Replacing the units digit of 25011 by 3
 
@@ -119,7 +119,7 @@ from the theorem.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.replaceDigit_25011_units`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#replace-digit-25011-units).
+Formalized by `MetaMathlibExt.replaceDigit_25011_units`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#replace-digit-25011-units).
 
 ## Deleting the ten-thousands digit of 25011
 
@@ -131,7 +131,7 @@ ten-thousands digit $2$), gives $5011$.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.deleteDigit_25011_tenThousands`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#delete-digit-25011-ten-thousands).
+Formalized by `MetaMathlibExt.deleteDigit_25011_tenThousands`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#delete-digit-25011-ten-thousands).
 
 ## Inserting a digit among the leading zeros of 25011
 
@@ -143,7 +143,7 @@ between the second and third leading zeros), gives $10025011$.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.insertDigit_25011_leadingZeros`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#insert-digit-25011-leading-zeros).
+Formalized by `MetaMathlibExt.insertDigit_25011_leadingZeros`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#insert-digit-25011-leading-zeros).
 
 ## Replacing a leading zero of 25011 by zero
 
@@ -155,7 +155,7 @@ zero), by $0$ gives $25011$ again.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.replaceDigit_25011_leadingZero`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#replace-digit-25011-leading-zero).
+Formalized by `MetaMathlibExt.replaceDigit_25011_leadingZero`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#replace-digit-25011-leading-zero).
 
 ## Base-ten digits are less than ten
 
@@ -167,7 +167,7 @@ $\lfloor N / 10^{i} \rfloor \bmod 10$, is less than $10$.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.digitValue_lt_ten`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#digit-value-lt-ten).
+Formalized by `MetaMathlibExt.digitValue_lt_ten`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#digit-value-lt-ten).
 
 ## 25011 is not a digitally robust composite
 
@@ -178,7 +178,7 @@ composite: replacing its units digit $1$ by $3$ gives the prime $25013$.
 
 - Ian Fultz, Jacob Juillerat, and Aidan Kuster, *Composite Numbers That Remain Composite When Inserting, Replacing, or Deleting a Digit*, INTEGERS 26 (2026), Article A119, Theorem 1.
 
-Formalized by `MetaMathlibExt.not_isDigitallyRobustComposite_25011`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#not-is-digitally-robust-composite-25011).
+Formalized by `MetaMathlibExt.not_isDigitallyRobustComposite_25011`, a theorem declared in [WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DigitallyRobustCompositesWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html#not-is-digitally-robust-composite-25011).
 
 ## Depends on
 
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Digitally robust composite numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/digit-properties/digitally-robust-composite-numbers)

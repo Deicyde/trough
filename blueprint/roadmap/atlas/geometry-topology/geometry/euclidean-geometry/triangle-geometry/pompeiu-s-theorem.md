@@ -8,7 +8,7 @@ proof: formalized
 
 # Pompeiu's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem/index.html).
 
 ## Pompeiu's theorem
 
@@ -18,7 +18,7 @@ $AB > 0$, so that $ABC$ is an equilateral triangle, and let $P$ be any point of 
 $PA \le PB + PC$, $PB \le PC + PA$ and $PC \le PA + PB$; that is, $PA$, $PB$, $PC$ are the side
 lengths of a (possibly degenerate) triangle.
 
-Formalized by `MetaMathlibExt.pompeiu_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/Pompeiu.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Pompeiu.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem/index.html#pompeiu-general).
+Formalized by `MetaMathlibExt.pompeiu_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/Pompeiu.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Pompeiu.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem/index.html#pompeiu-general).
 
 ## Pompeiu's theorem for a point other than a vertex
 
@@ -36,7 +36,7 @@ of the plane.
 
 - https://en.wikipedia.org/wiki/Pompeiu%27s_theorem.
 
-Formalized by `MetaMathlibExt.pompeiu`, a theorem declared in [MathlibExt/Geometry/Euclidean/Pompeiu.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Pompeiu.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem/index.html#pompeiu).
+Formalized by `MetaMathlibExt.pompeiu`, a theorem declared in [MathlibExt/Geometry/Euclidean/Pompeiu.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Pompeiu.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem/index.html#pompeiu).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pompeiu's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/pompeiu-s-theorem)

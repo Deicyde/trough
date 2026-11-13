@@ -8,7 +8,7 @@ proof: formalized
 
 # Z algorithm
 
-9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html).
+9 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html).
 
 ## Z-algorithm
 
@@ -23,7 +23,7 @@ of the longest common prefix of $s$ and its suffix $s_i \dots s_{n-1}$. The cost
 for each visited position $i \ge 1$ and one unit for each symbol comparison; on the empty word the
 result is empty with cost $0$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ`, a definition declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z).
 
 ## The first Z-value is the word length
 
@@ -33,7 +33,7 @@ Z-algorithm has $Z_0 = n$.
 
 Gusfield leaves this entry undefined; this convention completes it.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-zero).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_zero`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-zero).
 
 ## Z-values are longest common prefix lengths
 
@@ -43,7 +43,7 @@ computed by the Z-algorithm on $s$. For every position $i < n$ and every natural
 $q \le Z_i$ holds if and only if $q \le n - i$ and $s_k = s_{i+k}$ for all $k < q$. Hence $Z_i$ is
 the length of the longest common prefix of $s$ and its suffix $s_i \dots s_{n-1}$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_prefix_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-prefix-iff).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_prefix_iff`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 440](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L440). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-prefix-iff).
 
 ## Z-values are at most the suffix length
 
@@ -51,7 +51,7 @@ Let $\alpha$ be a type with a Boolean equality
 test, not necessarily lawful, and let $s$ be a word of length $n$ over $\alpha$. For every position
 $i < n$, the entry at $i$ of the Z-array computed by the Z-algorithm on $s$ is at most $n - i$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_getElem_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-get-elem-le).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_getElem_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 488](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L488). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-get-elem-le).
 
 ## Linear upper bound for the Z-algorithm
 
@@ -60,7 +60,7 @@ test, not necessarily lawful. On every word of length $n$ over $\alpha$, the Z-a
 at most $3(n - 1)$, read as $0$ when $n = 0$, where the cost counts one unit for each visited
 position $i \ge 1$ and one unit for each symbol comparison.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-time-le).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 627](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L627). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-time-le).
 
 ## Linear lower bound for the Z-algorithm
 
@@ -69,7 +69,7 @@ test, not necessarily lawful. On every word of length $n$ over $\alpha$, the Z-a
 at least $n - 1$, where the cost counts one unit for each visited position $i \ge 1$ and one unit
 for each symbol comparison.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_time_ge`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-time-ge).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_time_ge`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 661](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L661). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-time-ge).
 
 ## Z-array of a repeated symbol
 
@@ -77,7 +77,7 @@ Let $\alpha$ be a type with a lawful Boolean equality
 test, let $a \in \alpha$ and $n \in \mathbb{N}$. The Z-array computed by the Z-algorithm on the word
 $a^n$ has entry $n - i$ at every position $i < n$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 680](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L680). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-replicate).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_replicate`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 680](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L680). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-replicate).
 
 ## Z-algorithm cost on a repeated symbol
 
@@ -87,7 +87,7 @@ cost exactly $2(n - 1)$, read as $0$ when $n = 0$, where the cost counts one uni
 position $i \ge 1$ and one unit for each symbol comparison. Thus it makes $n - 1$ visits and
 $n - 1$ comparisons.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_replicate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 763](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-replicate-time).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_replicate_time`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 763](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L763). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-replicate-time).
 
 ## Z-algorithm cost on a repeated symbol followed by a distinct one
 
@@ -97,7 +97,7 @@ the Z-algorithm run on the word $a^n b$ has cost exactly $3n - 1$, where the cos
 for each visited position $i \ge 1$ and one unit for each symbol comparison. In terms of the
 input length $N = n + 1$, this is $3N - 4$.
 
-Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_replicate_push_time`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 927](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L927). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-replicate-push-time).
+Formalized by `Cslib.Algorithms.Lean.StringMatching.computeZ_replicate_push_time`, a theorem declared in [CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean, line 927](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/StringMatching/ZAlgorithm.lean#L927). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html#compute-z-replicate-push-time).
 
 ## Depends on
 
@@ -106,4 +106,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Z algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/string-algorithms/z-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/string-algorithms/z-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/string-algorithms/z-algorithm)

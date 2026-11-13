@@ -7,7 +7,7 @@ statement: formalized
 
 # q-analogues of multiple zeta values
 
-132 results, 93 proved and 39 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/index.html).
+132 results, 93 proved and 39 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/index.html).
 
 ## Partial sums of Schlesinger–Zudilin qMZVs
 
@@ -24,7 +24,7 @@ $\mathbb{Q}[[q]]$. For the empty index it equals $1$ for every $M$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Schlesinger–Zudilin qMZVs (defining sum truncated at `m₁ < M`).
 
-Formalized by `MetaMathlibExt.szQMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzvpartial).
+Formalized by `MetaMathlibExt.szQMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzvpartial).
 
 ## Schlesinger–Zudilin qMZVs
 
@@ -45,7 +45,7 @@ define the value when $k_1 = 0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Schlesinger–Zudilin qMZVs (extended version of Ebrahimi-Fard, Manchon and Singer, allowing `kⱼ = 0` for `j ≥ 2`).
 
-Formalized by `MetaMathlibExt.szQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzv).
+Formalized by `MetaMathlibExt.szQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzv).
 
 ## The empty Schlesinger–Zudilin qMZV
 
@@ -56,7 +56,7 @@ $1$: $\zeta_q^{SZ}(\emptyset) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Schlesinger–Zudilin qMZVs.
 
-Formalized by `MetaMathlibExt.szQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzv-nil).
+Formalized by `MetaMathlibExt.szQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzv-nil).
 
 ## Recursion for partial sums of Schlesinger–Zudilin qMZVs
 
@@ -70,7 +70,7 @@ $$Z_M(k_1, \kappa) = \sum_{0 < m < M} \left(\frac{q^m}{1 - q^m}\right)^{k_1} Z_m
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Schlesinger–Zudilin qMZVs.
 
-Formalized by `MetaMathlibExt.szQMZVPartial_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzvpartial-cons).
+Formalized by `MetaMathlibExt.szQMZVPartial_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzvpartial-cons).
 
 ## Nonempty Schlesinger–Zudilin qMZVs have no constant term
 
@@ -82,7 +82,7 @@ $\zeta_q^{\mathrm{SZ}}(k_1, \dots, k_r)$ is $0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Schlesinger–Zudilin qMZVs.
 
-Formalized by `MetaMathlibExt.coeff_zero_szQMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-zero-sz-qmzv-cons).
+Formalized by `MetaMathlibExt.coeff_zero_szQMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-zero-sz-qmzv-cons).
 
 ## The coefficient of $q$ in $\zeta_q^{\mathrm{SZ}}(1)$
 
@@ -93,7 +93,7 @@ Schlesinger–Zudilin qMZV $\zeta_q^{\mathrm{SZ}}(1) = \sum_{m > 0} q^m / (1 - q
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Schlesinger–Zudilin qMZVs.
 
-Formalized by `MetaMathlibExt.coeff_one_szQMZV_singleton_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-one-sz-qmzv-singleton-one).
+Formalized by `MetaMathlibExt.coeff_one_szQMZV_singleton_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-one-sz-qmzv-singleton-one).
 
 ## Block indices for Schlesinger–Zudilin qMZVs
 
@@ -106,7 +106,7 @@ $j = 1, \dots, r$, the entry $k_j$ followed by $d_j - 1$ zeros (no zeros when $d
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 4 and Theorem 5 (SZ duality), index notation.
 
-Formalized by `MetaMathlibExt.szBlockIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-block-index).
+Formalized by `MetaMathlibExt.szBlockIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-block-index).
 
 ## Block index of the empty list
 
@@ -117,7 +117,7 @@ index.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5, index notation.
 
-Formalized by `MetaMathlibExt.szBlockIndex_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-block-index-nil).
+Formalized by `MetaMathlibExt.szBlockIndex_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-block-index-nil).
 
 ## Recursion for block indices
 
@@ -129,7 +129,7 @@ followed by $d - 1$ zeros (none when $d = 0$), followed by the block index of $L
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5, index notation.
 
-Formalized by `MetaMathlibExt.szBlockIndex_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-block-index-cons).
+Formalized by `MetaMathlibExt.szBlockIndex_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-block-index-cons).
 
 ## Partial Ohno–Okuda–Zudilin sums
 
@@ -145,7 +145,7 @@ truncated to $m_1 < M$. For the empty index it is $1$, for every $M$ (including 
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of OOZ-qMZVs (inner sums of the defining series).
 
-Formalized by `MetaMathlibExt.oozQMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#ooz-qmzvpartial).
+Formalized by `MetaMathlibExt.oozQMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#ooz-qmzvpartial).
 
 ## Ohno–Okuda–Zudilin q-multiple zeta values
 
@@ -164,7 +164,7 @@ many summands with $m_1 \le N$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of OOZ-qMZVs (extended version, `k₁ ≥ 1`, `kᵢ ≥ 0`).
 
-Formalized by `MetaMathlibExt.oozQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#ooz-qmzv).
+Formalized by `MetaMathlibExt.oozQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#ooz-qmzv).
 
 ## The OOZ-qMZV of the empty index
 
@@ -175,7 +175,7 @@ $\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of OOZ-qMZVs.
 
-Formalized by `MetaMathlibExt.oozQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#ooz-qmzv-nil).
+Formalized by `MetaMathlibExt.oozQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#ooz-qmzv-nil).
 
 ## Nonempty Ohno–Okuda–Zudilin qMZVs have no constant term
 
@@ -187,7 +187,7 @@ $\zeta_q^{\mathrm{OOZ}}(k_1, \dots, k_r)$ is $0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of OOZ-qMZVs.
 
-Formalized by `MetaMathlibExt.coeff_zero_oozQMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-zero-ooz-qmzv-cons).
+Formalized by `MetaMathlibExt.coeff_zero_oozQMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-zero-ooz-qmzv-cons).
 
 ## Coefficients of Schlesinger–Zudilin qMZVs as sums of binomial products
 
@@ -211,7 +211,7 @@ $\sum \prod_j (1 + X_j)^{n_j - 1} (1 + Y_j)^{m_j - m_{j+1} - 1} q^{m_j n_j}$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.coeff_szQMZV_szBlockIndex_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-sz-qmzv-sz-block-index-eq-sum-choo).
+Stated but not proved: `MetaMathlibExt.coeff_szQMZV_szBlockIndex_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#coeff-sz-qmzv-sz-block-index-eq-sum-choo).
 
 ## Schlesinger–Zudilin duality
 
@@ -229,7 +229,7 @@ the block index of the reversed list with each pair swapped.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5 (SZ duality, Zhao).
 
-Stated but not proved: `MetaMathlibExt.szQMZV_szBlockIndex_dual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzv-sz-block-index-dual).
+Stated but not proved: `MetaMathlibExt.szQMZV_szBlockIndex_dual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sz-qmzv-sz-block-index-dual).
 
 ## Partitions from Schlesinger–Zudilin qMZVs
 
@@ -245,7 +245,7 @@ $\sum_{r \ge 1} \zeta_q^{SZ}(\{1\}^r) = \sum_{N \ge 1} p(N) q^N$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.sum_coeff_szQMZV_replicate_one_eq_card_partition` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sum-coeff-sz-qmzv-replicate-one-eq-card).
+Stated but not proved: `MetaMathlibExt.sum_coeff_szQMZV_replicate_one_eq_card_partition` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#sum-coeff-sz-qmzv-replicate-one-eq-card).
 
 ## Cycle type classifies conjugacy classes of permutations
 
@@ -259,7 +259,7 @@ counting as cycles of length $1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.exists_conjClasses_perm_equiv_partition` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#exists-conj-classes-perm-equiv-partition).
+Stated but not proved: `MetaMathlibExt.exists_conjClasses_perm_equiv_partition` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#exists-conj-classes-perm-equiv-partition).
 
 ## Number of conjugacy classes of the symmetric group
 
@@ -271,7 +271,7 @@ of $n$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.card_conjClasses_perm_eq_card_partition` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#card-conj-classes-perm-eq-card-partition).
+Stated but not proved: `MetaMathlibExt.card_conjClasses_perm_eq_card_partition` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#card-conj-classes-perm-eq-card-partition).
 
 ## Class numbers of finite general linear groups via OOZ-qMZVs
 
@@ -289,7 +289,7 @@ $\sum_{n \ge 0} a_{n,K} q^n = \sum_{r \ge 0} (c - 1)^r \zeta_q^{\mathrm{OOZ}}(\{
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 20.
 
-Stated but not proved: `MetaMathlibExt.card_conjClasses_GL_eq_coeff_sum_oozQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#card-conj-classes-gl-eq-coeff-sum-ooz-qm).
+Stated but not proved: `MetaMathlibExt.card_conjClasses_GL_eq_coeff_sum_oozQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#card-conj-classes-gl-eq-coeff-sum-ooz-qm).
 
 ## Partial sums of general qMZVs
 
@@ -306,7 +306,7 @@ $\mathbb{Q}[[q]]$. For $r = 0$ it equals $1$ for every $M$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of qMZVs (after Bachmann–Kühn), defining sum truncated at `m₁ < M`.
 
-Formalized by `MetaMathlibExt.qMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#q-mzvpartial).
+Formalized by `MetaMathlibExt.qMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-01/index.html#q-mzvpartial).
 
 ## General q-multiple zeta values
 
@@ -326,7 +326,7 @@ the value is a junk value.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of qMZVs (after Bachmann–Kühn).
 
-Formalized by `MetaMathlibExt.qMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzv).
+Formalized by `MetaMathlibExt.qMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 258](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L258). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzv).
 
 ## General qMZV of the empty index
 
@@ -337,7 +337,7 @@ $\zeta_q(\varnothing; \varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of qMZVs.
 
-Formalized by `MetaMathlibExt.qMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzv-nil).
+Formalized by `MetaMathlibExt.qMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzv-nil).
 
 ## Nonempty general qMZVs have no constant term
 
@@ -350,7 +350,7 @@ $\zeta_q(k_1, \dots, k_r; Q_1, \dots, Q_r)$ is $0$. No condition on $Q_1(0)$ is 
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of qMZVs.
 
-Formalized by `MetaMathlibExt.coeff_zero_qMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#coeff-zero-q-mzv-cons).
+Formalized by `MetaMathlibExt.coeff_zero_qMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 273](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L273). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#coeff-zero-q-mzv-cons).
 
 ## Spaces of general qMZVs
 
@@ -367,7 +367,7 @@ $d = 1$ the degree condition forces $k_j \ge 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of qMZVs (ii) and Definition of `𝒵_{q,d}` (after Bachmann–Kühn).
 
-Formalized by `MetaMathlibExt.qMZVSpace`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace).
+Formalized by `MetaMathlibExt.qMZVSpace`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace).
 
 ## The constant series one lies in every space of qMZVs
 
@@ -381,7 +381,7 @@ qMZV of the empty index.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of qMZVs (ii).
 
-Formalized by `MetaMathlibExt.one_mem_qMZVSpace`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#one-mem-q-mzvspace).
+Formalized by `MetaMathlibExt.one_mem_qMZVSpace`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#one-mem-q-mzvspace).
 
 ## Bradley–Zhao q-multiple zeta values
 
@@ -400,7 +400,7 @@ for other indices the value has no intended meaning.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Bradley–Zhao qMZVs.
 
-Formalized by `MetaMathlibExt.bzQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-qmzv).
+Formalized by `MetaMathlibExt.bzQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-qmzv).
 
 ## Bradley–Zhao qMZV of the empty index
 
@@ -411,7 +411,7 @@ empty index is $\zeta_q^{BZ}(\varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Bradley–Zhao qMZVs.
 
-Formalized by `MetaMathlibExt.bzQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-qmzv-nil).
+Formalized by `MetaMathlibExt.bzQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-qmzv-nil).
 
 ## Nonempty Bradley–Zhao qMZVs have no constant term
 
@@ -423,7 +423,7 @@ q-multiple zeta value $\zeta_q^{BZ}(k_1, \dots, k_r)$ is $0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Bradley–Zhao qMZVs.
 
-Formalized by `MetaMathlibExt.coeff_zero_bzQMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#coeff-zero-bz-qmzv-cons).
+Formalized by `MetaMathlibExt.coeff_zero_bzQMZV_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#coeff-zero-bz-qmzv-cons).
 
 ## Block index of a list of pairs
 
@@ -442,7 +442,7 @@ index of $[(b_r, a_r), \dots, (b_1, a_1)]$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 6 and Theorem 7 (BZ duality), index notation.
 
-Formalized by `MetaMathlibExt.bzBlockIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-block-index).
+Formalized by `MetaMathlibExt.bzBlockIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-block-index).
 
 ## Block index of a prepended pair
 
@@ -455,7 +455,7 @@ block index of $L$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 7, index notation.
 
-Formalized by `MetaMathlibExt.bzBlockIndex_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-block-index-cons).
+Formalized by `MetaMathlibExt.bzBlockIndex_cons`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-block-index-cons).
 
 ## Spanning set of Schlesinger–Zudilin qMZVs
 
@@ -471,7 +471,7 @@ $f'$ is the formal derivative of $f$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.qMZVSpace_zero_eq_span_szQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace-zero-eq-span-sz-qmzv).
+Stated but not proved: `MetaMathlibExt.qMZVSpace_zero_eq_span_szQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace-zero-eq-span-sz-qmzv).
 
 ## Spanning set of Bradley–Zhao qMZVs
 
@@ -486,7 +486,7 @@ $\zeta_q^{\mathrm{BZ}}(\varnothing) = 1$).
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.qMZVSpace_one_eq_span_bzQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace-one-eq-span-bz-qmzv).
+Stated but not proved: `MetaMathlibExt.qMZVSpace_one_eq_span_bzQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace-one-eq-span-bz-qmzv).
 
 ## Spanning sets of Ohno–Okuda–Zudilin qMZVs
 
@@ -503,7 +503,7 @@ $\zeta_q^{\mathrm{OOZ}}(\varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.qMZVSpace_eq_span_oozQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace-eq-span-ooz-qmzv).
+Stated but not proved: `MetaMathlibExt.qMZVSpace_eq_span_oozQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#q-mzvspace-eq-span-ooz-qmzv).
 
 ## Bradley–Zhao duality for q-multiple zeta values
 
@@ -523,7 +523,7 @@ exchanging $x$ and $y$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 7 (BZ duality, Bradley; Seki–Yamamoto).
 
-Stated but not proved: `MetaMathlibExt.bzQMZV_bzBlockIndex_dual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-qmzv-bz-block-index-dual).
+Stated but not proved: `MetaMathlibExt.bzQMZV_bzBlockIndex_dual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#bz-qmzv-bz-block-index-dual).
 
 ## q-Ohno relations for Bradley–Zhao qMZVs
 
@@ -542,7 +542,7 @@ whose entries sum to $c$, and indices are added componentwise.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 8 (q-Ohno relations, Okuda–Takeyama).
 
-Stated but not proved: `MetaMathlibExt.sum_bzQMZV_add_eq_sum_bzQMZV_dual_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#sum-bz-qmzv-add-eq-sum-bz-qmzv-dual-add).
+Stated but not proved: `MetaMathlibExt.sum_bzQMZV_add_eq_sum_bzQMZV_dual_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#sum-bz-qmzv-add-eq-sum-bz-qmzv-dual-add).
 
 ## Partitions in Stanley coordinates
 
@@ -557,7 +557,7 @@ All coordinates of such a pair are then at most $N$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Stanley coordinates and of `𝒫_r(N)` (Section 4).
 
-Formalized by `MetaMathlibExt.stanleyPartitions`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#stanley-partitions).
+Formalized by `MetaMathlibExt.stanleyPartitions`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#stanley-partitions).
 
 ## Membership criterion for partitions in Stanley coordinates
 
@@ -571,7 +571,7 @@ $m_1 n_1 + \dots + m_r n_r = N$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of `𝒫_r(N)` (Section 4).
 
-Formalized by `MetaMathlibExt.mem_stanleyPartitions`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#mem-stanley-partitions).
+Formalized by `MetaMathlibExt.mem_stanleyPartitions`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#mem-stanley-partitions).
 
 ## Transposed partition in Stanley coordinates
 
@@ -589,7 +589,7 @@ On a partition with $m_1 > \dots > m_r$ this reflects its Young diagram in the m
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Section 4, transposed partition in Stanley coordinates.
 
-Formalized by `MetaMathlibExt.stanleyTranspose`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#stanley-transpose).
+Formalized by `MetaMathlibExt.stanleyTranspose`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 433](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L433). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#stanley-transpose).
 
 ## Transpose of a one-part partition
 
@@ -600,7 +600,7 @@ $\rho$ in Stanley coordinates sends the pair of one-entry tuples $((m), (n))$ to
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Section 4, transposed partition in Stanley coordinates.
 
-Formalized by `MetaMathlibExt.stanleyTranspose_fin_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#stanley-transpose-fin-one).
+Formalized by `MetaMathlibExt.stanleyTranspose_fin_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#stanley-transpose-fin-one).
 
 ## Sums over partitions are invariant under transposition
 
@@ -614,7 +614,7 @@ is the transpose map.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sum_stanleyPartitions_comp_stanleyTranspose` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#sum-stanley-partitions-comp-stanley-tran).
+Stated but not proved: `MetaMathlibExt.sum_stanleyPartitions_comp_stanleyTranspose` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-02/index.html#sum-stanley-partitions-comp-stanley-tran).
 
 ## Coefficients of qMZVs as polynomial functions on partitions
 
@@ -637,7 +637,7 @@ where $f_s(\mathbf{m}, \mathbf{n})$ is the value of $f_s$ at $X_i = m_i$, $Y_i =
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 18.
 
-Stated but not proved: `MetaMathlibExt.exists_mvPolynomial_coeff_qMZV_eq_sum_stanleyPartitions` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#exists-mv-polynomial-coeff-q-mzv-eq-sum).
+Stated but not proved: `MetaMathlibExt.exists_mvPolynomial_coeff_qMZV_eq_sum_stanleyPartitions` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 463](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L463). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#exists-mv-polynomial-coeff-q-mzv-eq-sum).
 
 ## Polynomial functions on partitions characterize $\mathcal{Z}_q$
 
@@ -661,7 +661,7 @@ $r > N$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.mem_qMZVSpace_zero_iff_exists_mvPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 477](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L477). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#mem-q-mzvspace-zero-iff-exists-mv-polyno).
+Stated but not proved: `MetaMathlibExt.mem_qMZVSpace_zero_iff_exists_mvPolynomial` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 477](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L477). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#mem-q-mzvspace-zero-iff-exists-mv-polyno).
 
 ## Quasi-shuffle product
 
@@ -679,7 +679,7 @@ the order of the formula.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, quasi-shuffle products of Section 2 (the induced quasi-shuffle products on `M`, `𝔎`, `𝔥¹`).
 
-Formalized by `MetaMathlibExt.quasiShuffle`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#quasi-shuffle).
+Formalized by `MetaMathlibExt.quasiShuffle`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#quasi-shuffle).
 
 ## The empty word is a left unit for the quasi-shuffle product
 
@@ -691,7 +691,7 @@ with $w$ is $\mathbf{1} \ast w = w$, the formal sum consisting of the single wor
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, quasi-shuffle products of Section 2.
 
-Formalized by `MetaMathlibExt.quasiShuffle_nil_left`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 504](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#quasi-shuffle-nil-left).
+Formalized by `MetaMathlibExt.quasiShuffle_nil_left`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 504](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L504). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#quasi-shuffle-nil-left).
 
 ## The stuffle product of two letters
 
@@ -704,7 +704,7 @@ $(a + b)$, listed in this order.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the SZ-stuffle product.
 
-Formalized by `MetaMathlibExt.quasiShuffle_singleton_singleton`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#quasi-shuffle-singleton-singleton).
+Formalized by `MetaMathlibExt.quasiShuffle_singleton_singleton`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#quasi-shuffle-singleton-singleton).
 
 ## SZ-qshuffle product
 
@@ -722,7 +722,7 @@ where a letter in front of a formal sum is prepended to each of its words.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the SZ-qshuffle product.
 
-Formalized by `MetaMathlibExt.szShuffle`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-shuffle).
+Formalized by `MetaMathlibExt.szShuffle`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-shuffle).
 
 ## SZ-qshuffle of $y$ with itself
 
@@ -733,7 +733,7 @@ itself is the single word $yy$: $y \mathbin{\text{ш}} y = yy$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the SZ-qshuffle product.
 
-Formalized by `MetaMathlibExt.szShuffle_y_y`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-shuffle-y-y).
+Formalized by `MetaMathlibExt.szShuffle_y_y`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 536](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L536). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-shuffle-y-y).
 
 ## Word of an index
 
@@ -744,7 +744,7 @@ $p^{k_1} y \cdots p^{k_r} y$ in the letters $p$ and $y$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, identification of SZ-admissible indices with words of `𝔎¹`.
 
-Formalized by `MetaMathlibExt.szWord`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 543](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L543). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-word).
+Formalized by `MetaMathlibExt.szWord`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 543](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L543). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-word).
 
 ## Word of the empty index
 
@@ -754,7 +754,7 @@ The word of the empty index is the empty word.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, identification of SZ-admissible indices with words of `𝔎¹`.
 
-Formalized by `MetaMathlibExt.szWord_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-word-nil).
+Formalized by `MetaMathlibExt.szWord_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 550](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L550). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-word-nil).
 
 ## Reading an index off a word in $p$ and $y$
 
@@ -770,7 +770,7 @@ each $y$, with $c$ added to the first, and trailing $p$s are dropped.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, identification of SZ-admissible indices with words of `𝔎¹`.
 
-Formalized by `MetaMathlibExt.szIndexOfWordAux`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-index-of-word-aux).
+Formalized by `MetaMathlibExt.szIndexOfWordAux`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 557](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L557). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-index-of-word-aux).
 
 ## Reading off a leading block of $p$s
 
@@ -783,7 +783,7 @@ entries are those of $R_0(w)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, identification of SZ-admissible indices with words of `𝔎¹`.
 
-Formalized by `MetaMathlibExt.szIndexOfWordAux_replicate_append`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 566](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L566). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-index-of-word-aux-replicate-append).
+Formalized by `MetaMathlibExt.szIndexOfWordAux_replicate_append`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 566](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L566). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-index-of-word-aux-replicate-append).
 
 ## Schlesinger–Zudilin qMZVs of words
 
@@ -798,7 +798,7 @@ $p^{k_1} y \cdots p^{k_r} y$ is sent to $\zeta_q^{SZ}(k_1, \dots, k_r)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the SZ-qshuffle product (ii).
 
-Formalized by `MetaMathlibExt.szQMZVWord`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzvword).
+Formalized by `MetaMathlibExt.szQMZVWord`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 579](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L579). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzvword).
 
 ## SZ-qMZV of the word of a one-entry index
 
@@ -812,7 +812,7 @@ $\zeta_q^{SZ}$ on the word $p^k y$ of the one-entry index $(k)$ is $\zeta_q^{SZ}
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the SZ-qshuffle product (ii).
 
-Formalized by `MetaMathlibExt.szQMZVWord_szWord_singleton`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzvword-sz-word-singleton).
+Formalized by `MetaMathlibExt.szQMZVWord_szWord_singleton`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzvword-sz-word-singleton).
 
 ## Quasi-shuffle relations for general qMZVs
 
@@ -829,7 +829,7 @@ and is extended linearly to formal sums of words.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.qMZV_mul_eq_sum_quasiShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 600](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L600). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#q-mzv-mul-eq-sum-quasi-shuffle).
+Stated but not proved: `MetaMathlibExt.qMZV_mul_eq_sum_quasiShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 600](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L600). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#q-mzv-mul-eq-sum-quasi-shuffle).
 
 ## Stuffle product formula for Schlesinger–Zudilin qMZVs
 
@@ -847,7 +847,7 @@ letters $a \diamond b = a + b$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.szQMZV_mul_eq_sum_stuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 611](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L611). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzv-mul-eq-sum-stuffle).
+Stated but not proved: `MetaMathlibExt.szQMZV_mul_eq_sum_stuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 611](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L611). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzv-mul-eq-sum-stuffle).
 
 ## Shuffle product formula for Schlesinger–Zudilin qMZVs (Singer)
 
@@ -868,7 +868,7 @@ after the last $y$ dropped.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 3 (Singer).
 
-Stated but not proved: `MetaMathlibExt.szQMZV_mul_eq_sum_szShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzv-mul-eq-sum-sz-shuffle).
+Stated but not proved: `MetaMathlibExt.szQMZV_mul_eq_sum_szShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 620](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L620). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#sz-qmzv-mul-eq-sum-sz-shuffle).
 
 ## Quasi-shuffle relations for Bradley–Zhao qMZVs
 
@@ -884,7 +884,7 @@ $\zeta_q^{BZ}$ is extended linearly to formal sums of indices.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.bzQMZV_mul_eq_sum_quasiShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#bz-qmzv-mul-eq-sum-quasi-shuffle).
+Stated but not proved: `MetaMathlibExt.bzQMZV_mul_eq_sum_quasiShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 630](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L630). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#bz-qmzv-mul-eq-sum-quasi-shuffle).
 
 ## Analytic properties of general qMZVs
 
@@ -904,7 +904,7 @@ multiple zeta value.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.qMZV_summable_differentiableOn_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#q-mzv-summable-differentiable-on-tendsto).
+Stated but not proved: `MetaMathlibExt.qMZV_summable_differentiableOn_tendsto` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 647](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L647). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#q-mzv-summable-differentiable-on-tendsto).
 
 ## Letters of the Takeyama–Bradley–Zhao model as qMZV data
 
@@ -920,7 +920,7 @@ model, is sent to $(0, 1)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the Takeyama–Bradley–Zhao model (`f(1̄, m)`, `f(k, m)`).
 
-Formalized by `MetaMathlibExt.tbzLetter`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#tbz-letter).
+Formalized by `MetaMathlibExt.tbzLetter`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 668](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L668). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#tbz-letter).
 
 ## Takeyama–Bradley–Zhao qMZVs
 
@@ -938,7 +938,7 @@ gives $1$. For $k_1 = 1$, or when some entry is $0$, the value is a junk value.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the Takeyama–Bradley–Zhao model.
 
-Formalized by `MetaMathlibExt.tbzQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#tbz-qmzv).
+Formalized by `MetaMathlibExt.tbzQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 679](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L679). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-03/index.html#tbz-qmzv).
 
 ## TBZ-qMZV of the empty index
 
@@ -949,7 +949,7 @@ $\zeta_q^{\mathrm{TBZ}}(\varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the Takeyama–Bradley–Zhao model.
 
-Formalized by `MetaMathlibExt.tbzQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#tbz-qmzv-nil).
+Formalized by `MetaMathlibExt.tbzQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 686](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L686). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#tbz-qmzv-nil).
 
 ## The TBZ model extends the BZ model
 
@@ -961,7 +961,7 @@ qMZV: $\zeta_q^{\mathrm{TBZ}}(k_1, \dots, k_r) = \zeta_q^{\mathrm{BZ}}(k_1, \dot
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the Takeyama–Bradley–Zhao model.
 
-Formalized by `MetaMathlibExt.tbzQMZV_map_some`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 692](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L692). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#tbz-qmzv-map-some).
+Formalized by `MetaMathlibExt.tbzQMZV_map_some`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 692](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L692). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#tbz-qmzv-map-some).
 
 ## The Takeyama–Bradley–Zhao model spans $\mathcal{Z}_q$
 
@@ -975,7 +975,7 @@ $k_1, \dots, k_r \in \overline{\mathbb{N}}$ with $k_1 \ne 1$ when $r \ge 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.qMZVSpace_zero_eq_span_tbzQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-zero-eq-span-tbz-qmzv).
+Stated but not proved: `MetaMathlibExt.qMZVSpace_zero_eq_span_tbzQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 701](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L701). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-zero-eq-span-tbz-qmzv).
 
 ## The spaces $\mathcal{Z}^\circ_{q,d}$
 
@@ -990,7 +990,7 @@ zero polynomial has degree $0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of `𝒵_{q,d}` and `𝒵°_{q,d}` (after Bachmann–Kühn).
 
-Formalized by `MetaMathlibExt.qMZVSpaceCirc`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 710](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L710). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-circ).
+Formalized by `MetaMathlibExt.qMZVSpaceCirc`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 710](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L710). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-circ).
 
 ## The constant $1$ lies in $\mathcal{Z}^\circ_{q,d}$
 
@@ -1002,7 +1002,7 @@ the space $\mathcal{Z}^\circ_{q,d}$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of `𝒵°_{q,d}`.
 
-Formalized by `MetaMathlibExt.one_mem_qMZVSpaceCirc`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 718](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L718). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#one-mem-q-mzvspace-circ).
+Formalized by `MetaMathlibExt.one_mem_qMZVSpaceCirc`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 718](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L718). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#one-mem-q-mzvspace-circ).
 
 ## $\mathcal{Z}^\circ_{q,d}$ is contained in $\mathcal{Z}_{q,d}$
 
@@ -1013,7 +1013,7 @@ $d$, the space $\mathcal{Z}^\circ_{q,d}$ is a subspace of $\mathcal{Z}_{q,d}$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of `𝒵°_{q,d}` (a subspace of `𝒵_{q,d}`).
 
-Formalized by `MetaMathlibExt.qMZVSpaceCirc_le_qMZVSpace`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 725](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-circ-le-q-mzvspace).
+Formalized by `MetaMathlibExt.qMZVSpaceCirc_le_qMZVSpace`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 725](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L725). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-circ-le-q-mzvspace).
 
 ## Okounkov polynomials
 
@@ -1025,7 +1025,7 @@ $k$ is odd.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Okounkov qMZVs.
 
-Formalized by `MetaMathlibExt.okounkovPoly`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-poly).
+Formalized by `MetaMathlibExt.okounkovPoly`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 736](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L736). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-poly).
 
 ## The Okounkov polynomials $p_2$ and $p_3$
 
@@ -1036,7 +1036,7 @@ are $p_2(X) = X$ and $p_3(X) = X(1 + X)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Okounkov qMZVs.
 
-Formalized by `MetaMathlibExt.okounkovPoly_two_three`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 743](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-poly-two-three).
+Formalized by `MetaMathlibExt.okounkovPoly_two_three`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 743](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-poly-two-three).
 
 ## Okounkov $q$-multiple zeta values
 
@@ -1053,7 +1053,7 @@ placeholder.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Okounkov qMZVs.
 
-Formalized by `MetaMathlibExt.okounkovQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 752](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L752). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-qmzv).
+Formalized by `MetaMathlibExt.okounkovQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 752](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L752). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-qmzv).
 
 ## Okounkov qMZV of the empty index
 
@@ -1064,7 +1064,7 @@ index is $1$: $\zeta_q^{\mathrm{Oko}}(\varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of Okounkov qMZVs.
 
-Formalized by `MetaMathlibExt.okounkovQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-qmzv-nil).
+Formalized by `MetaMathlibExt.okounkovQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 759](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L759). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#okounkov-qmzv-nil).
 
 ## Okounkov qMZVs span $\mathcal{Z}^\circ_{q,1}$
 
@@ -1076,7 +1076,7 @@ all indices of length $r \ge 0$ with every $k_i \ge 2$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 13 (after Bachmann–Kühn).
 
-Stated but not proved: `MetaMathlibExt.qMZVSpaceCirc_one_eq_span_okounkovQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 766](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-circ-one-eq-span-okounkov-qmz).
+Stated but not proved: `MetaMathlibExt.qMZVSpaceCirc_one_eq_span_okounkovQMZV` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 766](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L766). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#q-mzvspace-circ-one-eq-span-okounkov-qmz).
 
 ## Eulerian q-series
 
@@ -1095,7 +1095,7 @@ For $k, m \ge 1$ it equals $P_k(q^m)/(1 - q^m)^k$, where $P_k$ is the $k$-th Eul
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition-Proposition of bi-brackets (Eulerian polynomials).
 
-Formalized by `MetaMathlibExt.eulerianQSeries`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#eulerian-qseries).
+Formalized by `MetaMathlibExt.eulerianQSeries`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 775](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L775). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#eulerian-qseries).
 
 ## Coefficients of the Eulerian q-series
 
@@ -1108,7 +1108,7 @@ is read as $0$ when $k = 0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition-Proposition of bi-brackets.
 
-Formalized by `MetaMathlibExt.coeff_mul_eulerianQSeries`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#coeff-mul-eulerian-qseries).
+Formalized by `MetaMathlibExt.coeff_mul_eulerianQSeries`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 783](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L783). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#coeff-mul-eulerian-qseries).
 
 ## Partial sums of bi-brackets
 
@@ -1126,7 +1126,7 @@ $k - 1$ read as $0$ when $k = 0$). For $r = 0$ it is $1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition-Proposition of bi-brackets (defining sum truncated at `m₁ < M`).
 
-Formalized by `MetaMathlibExt.biBracketPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket-partial).
+Formalized by `MetaMathlibExt.biBracketPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 792](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L792). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket-partial).
 
 ## Bi-brackets
 
@@ -1149,7 +1149,7 @@ The same formula, with $k_j - 1$ read as $0$, defines a value when some $k_j = 0
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition-Proposition of bi-brackets (after Bachmann).
 
-Formalized by `MetaMathlibExt.biBracket`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket).
+Formalized by `MetaMathlibExt.biBracket`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 805](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L805). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket).
 
 ## Empty bi-bracket
 
@@ -1160,7 +1160,7 @@ $g(\varnothing; \varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition-Proposition of bi-brackets.
 
-Formalized by `MetaMathlibExt.biBracket_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 812](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L812). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket-nil).
+Formalized by `MetaMathlibExt.biBracket_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 812](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L812). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket-nil).
 
 ## Generating series of bi-brackets
 
@@ -1181,7 +1181,7 @@ $\prod_{j=1}^{r} X_j^{a_j} Y_j^{b_j}$ is $g(a_1 + 1, \dots, a_r + 1; b_1, \dots,
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 11 (definition of the generating series).
 
-Formalized by `MetaMathlibExt.biBracketGen`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 822](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L822). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket-gen).
+Formalized by `MetaMathlibExt.biBracketGen`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 822](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L822). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#bi-bracket-gen).
 
 ## Coefficients of the bi-bracket generating series
 
@@ -1194,7 +1194,7 @@ the bi-bracket $g(a_1 + 1, \dots, a_r + 1; b_1, \dots, b_r)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 11.
 
-Formalized by `MetaMathlibExt.coeff_biBracketGen`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 829](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L829). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#coeff-bi-bracket-gen).
+Formalized by `MetaMathlibExt.coeff_biBracketGen`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 829](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L829). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#coeff-bi-bracket-gen).
 
 ## Generating series of Schlesinger–Zudilin qMZVs
 
@@ -1214,7 +1214,7 @@ where $\{0\}^{d}$ stands for $d$ consecutive zeros.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 4 (definition of the generating series).
 
-Formalized by `MetaMathlibExt.szGen`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 840](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L840). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#sz-gen).
+Formalized by `MetaMathlibExt.szGen`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 840](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L840). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#sz-gen).
 
 ## Coefficients of the SZ generating series
 
@@ -1229,7 +1229,7 @@ stands for $b$ consecutive zeros.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 4.
 
-Formalized by `MetaMathlibExt.coeff_szGen`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 848](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L848). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#coeff-sz-gen).
+Formalized by `MetaMathlibExt.coeff_szGen`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 848](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L848). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-04/index.html#coeff-sz-gen).
 
 ## The logarithm series $\ln(1 + T)$
 
@@ -1240,7 +1240,7 @@ $\mathbb{Q}$ is $\sum_{n \ge 1} (-1)^{n+1} T^n / n$; its constant term is $0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 13 (ii) (the substitution `Xⱼ ↦ ln(Xⱼ + 1)`).
 
-Formalized by `MetaMathlibExt.logOneAddSeries`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 857](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L857). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#log-one-add-series).
+Formalized by `MetaMathlibExt.logOneAddSeries`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 857](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L857). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#log-one-add-series).
 
 ## Low-order coefficients of the logarithm series
 
@@ -1252,7 +1252,7 @@ and coefficient $1$ at $T$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 13 (ii).
 
-Formalized by `MetaMathlibExt.coeff_logOneAddSeries_zero_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 864](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L864). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#coeff-log-one-add-series-zero-one).
+Formalized by `MetaMathlibExt.coeff_logOneAddSeries_zero_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 864](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L864). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#coeff-log-one-add-series-zero-one).
 
 ## Bi-bracket generating series as a sum of exponentials
 
@@ -1273,7 +1273,7 @@ $g(X; Y) = \sum \prod_j e^{m_j Y_j} e^{n_j X_j} q^{m_j n_j}$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 11 (after Bachmann).
 
-Stated but not proved: `MetaMathlibExt.coeff_biBracketGen_eq_sum_exp` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 876](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L876). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#coeff-bi-bracket-gen-eq-sum-exp).
+Stated but not proved: `MetaMathlibExt.coeff_biBracketGen_eq_sum_exp` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 876](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L876). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#coeff-bi-bracket-gen-eq-sum-exp).
 
 ## Partition relation for bi-brackets
 
@@ -1291,7 +1291,7 @@ $X_{r+1-i} - X_{r+2-i}$, with $X_{r+1} := 0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 12 (partition relation, after Bachmann).
 
-Stated but not proved: `MetaMathlibExt.biBracketGen_partition_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 895](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L895). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-gen-partition-relation).
+Stated but not proved: `MetaMathlibExt.biBracketGen_partition_relation` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 895](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L895). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-gen-partition-relation).
 
 ## Translation between bi-brackets and the Schlesinger–Zudilin model
 
@@ -1316,7 +1316,7 @@ Part (ii) is stated with the unit $\prod_j (1 + X_j)(1 + Y_j)$ multiplied out in
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 13 (translation bi-brackets/SZ model).
 
-Stated but not proved: `MetaMathlibExt.biBracketGen_eq_szGen_subst` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 915](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L915). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-gen-eq-sz-gen-subst).
+Stated but not proved: `MetaMathlibExt.biBracketGen_eq_szGen_subst` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 915](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L915). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-gen-eq-sz-gen-subst).
 
 ## Generating series of OOZ-qMZVs, coefficientwise
 
@@ -1342,7 +1342,7 @@ $\mathfrak{oz}(X; Y) = \sum q^{m_1} \prod_j (1 + Y_j)^{m_j - m_{j+1} - 1}
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.coeff_oozQMZV_szBlockIndex_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 950](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L950). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#coeff-ooz-qmzv-sz-block-index-eq-sum-cho).
+Stated but not proved: `MetaMathlibExt.coeff_oozQMZV_szBlockIndex_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 950](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L950). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#coeff-ooz-qmzv-sz-block-index-eq-sum-cho).
 
 ## Brackets, Okounkov qMZVs and Bradley–Zhao qMZVs span $\mathcal{Z}^\circ_{q,1}$
 
@@ -1359,7 +1359,7 @@ over all indices of length $r \ge 0$ with every $k_i \ge 2$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 16.
 
-Stated but not proved: `MetaMathlibExt.qMZVSpaceCirc_one_eq_span_bracket_okounkov_bz` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 965](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L965). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#q-mzvspace-circ-one-eq-span-bracket-okou).
+Stated but not proved: `MetaMathlibExt.qMZVSpaceCirc_one_eq_span_bracket_okounkov_bz` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 965](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L965). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#q-mzvspace-circ-one-eq-span-bracket-okou).
 
 ## Weighted quasi-shuffle product
 
@@ -1376,7 +1376,7 @@ prefixing a letter is extended linearly to combinations of words.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, quasi-shuffle products of Section 2 (with `ℚ`-valued letter product, as for bi-brackets).
 
-Formalized by `MetaMathlibExt.weightedQuasiShuffle`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#weighted-quasi-shuffle).
+Formalized by `MetaMathlibExt.weightedQuasiShuffle`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 979](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L979). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#weighted-quasi-shuffle).
 
 ## The empty word is a left unit for the weighted quasi-shuffle
 
@@ -1389,7 +1389,7 @@ quasi-shuffle product of the empty word $\mathbf{1}$ with $v$ is $v$: $\mathbf{1
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, quasi-shuffle products of Section 2.
 
-Formalized by `MetaMathlibExt.weightedQuasiShuffle_nil_left`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 993](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L993). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#weighted-quasi-shuffle-nil-left).
+Formalized by `MetaMathlibExt.weightedQuasiShuffle_nil_left`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 993](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L993). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#weighted-quasi-shuffle-nil-left).
 
 ## Bachmann's coefficients
 
@@ -1404,7 +1404,7 @@ numbers is truncated at $0$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the bi-bracket product `⊠` (after Bachmann).
 
-Formalized by `MetaMathlibExt.biBracketLambda`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1003](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1003). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-lambda).
+Formalized by `MetaMathlibExt.biBracketLambda`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1003](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1003). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-lambda).
 
 ## Bachmann's coefficient $\lambda_{1,1}^1$
 
@@ -1415,7 +1415,7 @@ $-1/2$, the Bernoulli number $B_1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the bi-bracket product `⊠`.
 
-Formalized by `MetaMathlibExt.biBracketLambda_one_one_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1011](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1011). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-lambda-one-one-one).
+Formalized by `MetaMathlibExt.biBracketLambda_one_one_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1011](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1011). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-lambda-one-one-one).
 
 ## Bachmann's product of bi-bracket letters
 
@@ -1431,7 +1431,7 @@ z_{k_1+k_2,d_1+d_2} \Big).$$
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the bi-bracket product `⊠` (after Bachmann).
 
-Formalized by `MetaMathlibExt.biBracketDiamond`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1020](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1020). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-diamond).
+Formalized by `MetaMathlibExt.biBracketDiamond`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1020](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1020). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-diamond).
 
 ## Bi-brackets form a quasi-shuffle algebra
 
@@ -1445,7 +1445,7 @@ word $w$. Then $g(u) g(v) = \sum_w c_w g(w)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 10 (i).
 
-Stated but not proved: `MetaMathlibExt.biBracket_mul_eq_sum_weightedQuasiShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1033](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1033). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-mul-eq-sum-weighted-quasi-shu).
+Stated but not proved: `MetaMathlibExt.biBracket_mul_eq_sum_weightedQuasiShuffle` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1033](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1033). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bi-bracket-mul-eq-sum-weighted-quasi-shu).
 
 ## The map $T$ of the OOZ quasi-shuffle product
 
@@ -1462,7 +1462,7 @@ on all words.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the OOZ quasi-shuffle product.
 
-Formalized by `MetaMathlibExt.oozT`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1043](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1043). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-t).
+Formalized by `MetaMathlibExt.oozT`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1043](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1043). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-t).
 
 ## The OOZ map fixes the empty word
 
@@ -1475,7 +1475,7 @@ $T(\mathbf{1}) = \mathbf{1}$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the OOZ quasi-shuffle product.
 
-Formalized by `MetaMathlibExt.oozT_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1051](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1051). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-t-nil).
+Formalized by `MetaMathlibExt.oozT_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1051](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1051). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-t-nil).
 
 ## The OOZ map on a one-letter word
 
@@ -1488,7 +1488,7 @@ $T(z_2) = z_2 - z_1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the OOZ quasi-shuffle product.
 
-Formalized by `MetaMathlibExt.oozT_singleton_two`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1057](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1057). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-t-singleton-two).
+Formalized by `MetaMathlibExt.oozT_singleton_two`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1057](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1057). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-t-singleton-two).
 
 ## Stuffle product of formal linear combinations of words
 
@@ -1504,7 +1504,7 @@ where $A_a$ is the coefficient of the word $a$ in $A$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the stuffle product `∗` on `𝔥¹`.
 
-Formalized by `MetaMathlibExt.stuffleComb`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1064](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1064). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#stuffle-comb).
+Formalized by `MetaMathlibExt.stuffleComb`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1064](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1064). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#stuffle-comb).
 
 ## The empty word is a left unit for the stuffle product
 
@@ -1516,7 +1516,7 @@ $b$: $\mathbf{1} \ast b = b$, as formal $\mathbb{Q}$-linear combinations of word
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Definition of the stuffle product `∗` on `𝔥¹`.
 
-Formalized by `MetaMathlibExt.stuffleComb_single_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1072](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1072). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#stuffle-comb-single-nil).
+Formalized by `MetaMathlibExt.stuffleComb_single_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1072](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1072). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#stuffle-comb-single-nil).
 
 ## OOZ qMZVs respect the OOZ quasi-shuffle product
 
@@ -1540,7 +1540,7 @@ is well defined, and $\zeta_q^{\mathrm{OOZ}}$ is multiplicative for it.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 16 (after Castillo Medina, Ebrahimi-Fard and Manchon).
 
-Stated but not proved: `MetaMathlibExt.oozQMZV_mul_eq_of_oozT_eq_stuffleComb` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1085](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1085). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-qmzv-mul-eq-of-ooz-t-eq-stuffle-comb).
+Stated but not proved: `MetaMathlibExt.oozQMZV_mul_eq_of_oozT_eq_stuffleComb` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1085](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1085). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#ooz-qmzv-mul-eq-of-ooz-t-eq-stuffle-comb).
 
 ## Weighted chain sums
 
@@ -1560,7 +1560,7 @@ and $0$ otherwise, whatever $M$ is.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 1 (the sums over `m₁ > n₁ > ⋯ > m_r > ⋯ > 0` with multiplicities `j, i ≥ 0`).
 
-Formalized by `MetaMathlibExt.bzChainSum`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bz-chain-sum).
+Formalized by `MetaMathlibExt.bzChainSum`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-05/index.html#bz-chain-sum).
 
 ## Marker word of a list of blocks
 
@@ -1573,7 +1573,7 @@ consisting of the weight $k_t$ followed by $s_t - 1$ blanks (no blanks when $s_t
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 1 (block `t` of the chain is `m_t > n > ⋯ > n` with `d_t - 1` entries `n`).
 
-Formalized by `MetaMathlibExt.bzChainWord`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-chain-word).
+Formalized by `MetaMathlibExt.bzChainWord`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-chain-word).
 
 ## Chain sum of the single block $(1, 1)$
 
@@ -1586,7 +1586,7 @@ $2 + 1 = 3$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 1 (case `r = 1`, `k₁ = d₁ = 1`, `N = 2`).
 
-Formalized by `MetaMathlibExt.bzChainSum_bzChainWord_one_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-chain-sum-bz-chain-word-one-one).
+Formalized by `MetaMathlibExt.bzChainSum_bzChainWord_one_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-chain-sum-bz-chain-word-one-one).
 
 ## Combinatorial form of Bradley–Zhao duality
 
@@ -1609,7 +1609,7 @@ $a_1 \le N$.
 - arXiv:2111.00051, Theorem 4.18; the record's formula is garbled and is read from there, and the paper's closing remark (equivalence with BZ duality) is not part of this statement.
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.bzChainSum_dual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-chain-sum-dual).
+Stated but not proved: `MetaMathlibExt.bzChainSum_dual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-chain-sum-dual).
 
 ## The SZ dual index
 
@@ -1628,7 +1628,7 @@ $k^\dagger = (d_r, \{0\}^{k_r - 1}, \dots, d_1, \{0\}^{k_1 - 1})$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5 (SZ duality, the map `τ̃` and the SZ dual index).
 
-Formalized by `MetaMathlibExt.szDualIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sz-dual-index).
+Formalized by `MetaMathlibExt.szDualIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sz-dual-index).
 
 ## The SZ dual of $(2)$
 
@@ -1639,7 +1639,7 @@ is, $(2)^\dagger = (1, 0)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 5 (SZ dual index).
 
-Formalized by `MetaMathlibExt.szDualIndex_two`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sz-dual-index-two).
+Formalized by `MetaMathlibExt.szDualIndex_two`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sz-dual-index-two).
 
 ## Bradley–Zhao dual index
 
@@ -1659,7 +1659,7 @@ by one.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 7 (BZ duality, the map `τ`).
 
-Formalized by `MetaMathlibExt.bzDualIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-dual-index).
+Formalized by `MetaMathlibExt.bzDualIndex`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-dual-index).
 
 ## Bradley–Zhao dual of $(3)$
 
@@ -1671,7 +1671,7 @@ that reverses a word and swaps $x$ and $y$, this says $\tau(z_3) = \tau(x x y) =
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 7 (BZ duality).
 
-Formalized by `MetaMathlibExt.bzDualIndex_three`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-dual-index-three).
+Formalized by `MetaMathlibExt.bzDualIndex_three`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bz-dual-index-three).
 
 ## The tail part of the map $U$
 
@@ -1688,7 +1688,7 @@ words applies it to the letters after the first.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i) (after Ebrahimi-Fard, Manchon and Singer, the map `U`).
 
-Formalized by `MetaMathlibExt.oozToBZTail`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bztail).
+Formalized by `MetaMathlibExt.oozToBZTail`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bztail).
 
 ## The map $U$ from OOZ to BZ words
 
@@ -1707,7 +1707,7 @@ sum is $0$).
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i) (after Ebrahimi-Fard, Manchon and Singer, the map `U`).
 
-Formalized by `MetaMathlibExt.oozToBZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1187](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bz).
+Formalized by `MetaMathlibExt.oozToBZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1187](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1187). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bz).
 
 ## $U$ fixes the empty index
 
@@ -1719,7 +1719,7 @@ $\mathbf{1}$ with coefficient $1$; that is, $U(\mathbf{1}) = \mathbf{1}$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i).
 
-Formalized by `MetaMathlibExt.oozToBZ_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bz-nil).
+Formalized by `MetaMathlibExt.oozToBZ_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bz-nil).
 
 ## The map $U$ fixes $z_2$
 
@@ -1730,7 +1730,7 @@ to itself with coefficient $1$: $U(z_2) = z_2$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i).
 
-Formalized by `MetaMathlibExt.oozToBZ_two`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bz-two).
+Formalized by `MetaMathlibExt.oozToBZ_two`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-bz-two).
 
 ## The tail part of the map $V$
 
@@ -1748,7 +1748,7 @@ blocks $p^{k_j} y$ after the first.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (ii) (after Ebrahimi-Fard, Manchon and Singer, the map `V`).
 
-Formalized by `MetaMathlibExt.oozToSZTail`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-sztail).
+Formalized by `MetaMathlibExt.oozToSZTail`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-sztail).
 
 ## The map $V$ from OOZ to SZ words
 
@@ -1767,7 +1767,7 @@ sum is $0$).
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (ii) (after Ebrahimi-Fard, Manchon and Singer, the map `V`).
 
-Formalized by `MetaMathlibExt.oozToSZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-sz).
+Formalized by `MetaMathlibExt.oozToSZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-sz).
 
 ## The map $V$ fixes $py$
 
@@ -1778,7 +1778,7 @@ $(1)$) to itself with coefficient $1$: $V(py) = py$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (ii).
 
-Formalized by `MetaMathlibExt.oozToSZ_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-sz-one).
+Formalized by `MetaMathlibExt.oozToSZ_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-to-sz-one).
 
 ## OOZ-qMZVs of admissible indices via BZ-qMZVs
 
@@ -1796,7 +1796,7 @@ $\zeta_q^{\mathrm{OBZ}}$ of the source.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i).
 
-Stated but not proved: `MetaMathlibExt.oozQMZV_eq_sum_bzQMZV_oozToBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-qmzv-eq-sum-bz-qmzv-ooz-to-bz).
+Stated but not proved: `MetaMathlibExt.oozQMZV_eq_sum_bzQMZV_oozToBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-qmzv-eq-sum-bz-qmzv-ooz-to-bz).
 
 ## The map $U$ is a bijection on combinations of admissible indices
 
@@ -1810,7 +1810,7 @@ the set of $\mathbb{Q}$-linear combinations of admissible indices bijectively on
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (i).
 
-Stated but not proved: `MetaMathlibExt.bijOn_linearCombination_oozToBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bij-on-linear-combination-ooz-to-bz).
+Stated but not proved: `MetaMathlibExt.bijOn_linearCombination_oozToBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bij-on-linear-combination-ooz-to-bz).
 
 ## OOZ-qMZVs via SZ-qMZVs
 
@@ -1825,7 +1825,7 @@ $\zeta_q^{\mathrm{OOZ}}(k) = \sum_w c_w \, \zeta_q^{\mathrm{SZ}}(w)$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (ii).
 
-Stated but not proved: `MetaMathlibExt.oozQMZV_eq_sum_szQMZV_oozToSZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1257](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-qmzv-eq-sum-sz-qmzv-ooz-to-sz).
+Stated but not proved: `MetaMathlibExt.oozQMZV_eq_sum_szQMZV_oozToSZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1257](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1257). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#ooz-qmzv-eq-sum-sz-qmzv-ooz-to-sz).
 
 ## The map $V$ is a bijection on combinations of SZ-admissible indices
 
@@ -1839,7 +1839,7 @@ $\mathbb{Q}$-linear combinations of SZ-admissible indices bijectively onto itsel
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 12 (ii).
 
-Stated but not proved: `MetaMathlibExt.bijOn_linearCombination_oozToSZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bij-on-linear-combination-ooz-to-sz).
+Stated but not proved: `MetaMathlibExt.bijOn_linearCombination_oozToSZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#bij-on-linear-combination-ooz-to-sz).
 
 ## Duality for restricted OOZ-qMZVs
 
@@ -1859,7 +1859,7 @@ admissible indices.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (i) (after Ebrahimi-Fard, Manchon and Singer).
 
-Stated but not proved: `MetaMathlibExt.sum_oozQMZV_eq_of_oozToBZ_eq_bzDual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sum-ooz-qmzv-eq-of-ooz-to-bz-eq-bz-dual).
+Stated but not proved: `MetaMathlibExt.sum_oozQMZV_eq_of_oozToBZ_eq_bzDual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sum-ooz-qmzv-eq-of-ooz-to-bz-eq-bz-dual).
 
 ## Duality for OOZ-qMZVs
 
@@ -1879,7 +1879,7 @@ SZ-admissible indices.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (ii) (after Ebrahimi-Fard, Manchon and Singer).
 
-Stated but not proved: `MetaMathlibExt.sum_oozQMZV_eq_of_oozToSZ_eq_szDual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sum-ooz-qmzv-eq-of-ooz-to-sz-eq-sz-dual).
+Stated but not proved: `MetaMathlibExt.sum_oozQMZV_eq_of_oozToSZ_eq_szDual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-06/index.html#sum-ooz-qmzv-eq-of-ooz-to-sz-eq-sz-dual).
 
 ## Partial sums of SZ-star qMZVs
 
@@ -1896,7 +1896,7 @@ for the empty index it is $1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (iii) (SZ-star qMZVs, defining sum truncated at `m₁ ≤ M`).
 
-Formalized by `MetaMathlibExt.szStarQMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-star-qmzvpartial).
+Formalized by `MetaMathlibExt.szStarQMZVPartial`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-star-qmzvpartial).
 
 ## SZ-star qMZVs
 
@@ -1917,7 +1917,7 @@ sum; for $k_1 = 0$ the full sum is not a formal power series and the value is a 
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (iii) (the map `ζ_q^{SZ,⋆}` of SZ-star qMZVs).
 
-Formalized by `MetaMathlibExt.szStarQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-star-qmzv).
+Formalized by `MetaMathlibExt.szStarQMZV`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-star-qmzv).
 
 ## The empty SZ-star qMZV
 
@@ -1928,7 +1928,7 @@ $\zeta_q^{SZ,\star}(\varnothing) = 1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (iii).
 
-Formalized by `MetaMathlibExt.szStarQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-star-qmzv-nil).
+Formalized by `MetaMathlibExt.szStarQMZV_nil`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-star-qmzv-nil).
 
 ## The coefficient of $q$ in $\zeta_q^{SZ,\star}(1)$
 
@@ -1939,7 +1939,7 @@ qMZV $\zeta_q^{SZ,\star}(1) = \sum_{m > 0} q^m / (1 - q^m)$ is $1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (iii).
 
-Formalized by `MetaMathlibExt.coeff_one_szStarQMZV_singleton_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#coeff-one-sz-star-qmzv-singleton-one).
+Formalized by `MetaMathlibExt.coeff_one_szStarQMZV_singleton_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#coeff-one-sz-star-qmzv-singleton-one).
 
 ## OOZ-qMZVs are SZ-star qMZVs of the dual index
 
@@ -1951,7 +1951,7 @@ SZ-star qMZV of the SZ dual index $k^\dagger$: $\zeta_q^{OOZ}(k) = \zeta_q^{SZ,\
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Theorem 17 (iii) (after Ebrahimi-Fard, Manchon and Singer).
 
-Stated but not proved: `MetaMathlibExt.oozQMZV_eq_szStarQMZV_szDualIndex` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1333](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#ooz-qmzv-eq-sz-star-qmzv-sz-dual-index).
+Stated but not proved: `MetaMathlibExt.oozQMZV_eq_szStarQMZV_szDualIndex` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1333](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#ooz-qmzv-eq-sz-star-qmzv-sz-dual-index).
 
 ## The map from TBZ words to SZ indices
 
@@ -1967,7 +1967,7 @@ gives the entry $0$ with coefficient doubled). This is the map $U_{\mathrm{TBZ}}
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (i) (the map `U_TBZ`).
 
-Formalized by `MetaMathlibExt.tbzToSZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-to-sz).
+Formalized by `MetaMathlibExt.tbzToSZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-to-sz).
 
 ## The TBZ-to-SZ map on the letter $\bar{1}$
 
@@ -1978,7 +1978,7 @@ word $\bar{1}$ to the index $(1)$ with coefficient $1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (i).
 
-Formalized by `MetaMathlibExt.tbzToSZ_bar`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-to-sz-bar).
+Formalized by `MetaMathlibExt.tbzToSZ_bar`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-to-sz-bar).
 
 ## The map $V_{TBZ}$ from SZ indices to TBZ words
 
@@ -1994,7 +1994,7 @@ coefficient $1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (ii) (the map `V_TBZ`).
 
-Formalized by `MetaMathlibExt.szToTBZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1361](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-to-tbz).
+Formalized by `MetaMathlibExt.szToTBZ`, a definition declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1361](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1361). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-to-tbz).
 
 ## The map $V_{TBZ}$ on the index $(1)$
 
@@ -2005,7 +2005,7 @@ one-letter TBZ word $\bar 1$ with coefficient $1$.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (ii).
 
-Formalized by `MetaMathlibExt.szToTBZ_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-to-tbz-one).
+Formalized by `MetaMathlibExt.szToTBZ_one`, a theorem declared in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-to-tbz-one).
 
 ## TBZ-qMZVs in the SZ model
 
@@ -2029,7 +2029,7 @@ $$
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (i).
 
-Stated but not proved: `MetaMathlibExt.tbzQMZV_eq_sum_szQMZV_tbzToSZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-qmzv-eq-sum-sz-qmzv-tbz-to-sz).
+Stated but not proved: `MetaMathlibExt.tbzQMZV_eq_sum_szQMZV_tbzToSZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-qmzv-eq-sum-sz-qmzv-tbz-to-sz).
 
 ## SZ-qMZVs in the TBZ model
 
@@ -2048,7 +2048,7 @@ $\mathbb{Q}$-linearly.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 9 (ii).
 
-Stated but not proved: `MetaMathlibExt.szQMZV_eq_sum_tbzQMZV_szToTBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz).
+Stated but not proved: `MetaMathlibExt.szQMZV_eq_sum_tbzQMZV_szToTBZ` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#sz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz).
 
 ## Duality for TBZ-qMZVs
 
@@ -2075,7 +2075,7 @@ $\mathbb{Q}$-linearly.
 
 - Benjamin Brindle, *A Unified Approach to qMZVs*, INTEGERS 24 (2024), Article A6, Proposition 8 (after Takeyama).
 
-Stated but not proved: `MetaMathlibExt.tbzQMZV_eq_sum_tbzQMZV_szToTBZ_szDual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz-sz-du).
+Stated but not proved: `MetaMathlibExt.tbzQMZV_eq_sum_tbzQMZV_szToTBZ_szDual` is written with `theorem_wanted` in [WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean, line 1401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QMultipleZetaValuesWanted.lean#L1401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/part-07/index.html#tbz-qmzv-eq-sum-tbz-qmzv-sz-to-tbz-sz-du).
 
 ## Depends on
 
@@ -2084,4 +2084,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: q-analogues of multiple zeta values](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/multiple-zeta-values/q-analogues-of-multiple-zeta-values)

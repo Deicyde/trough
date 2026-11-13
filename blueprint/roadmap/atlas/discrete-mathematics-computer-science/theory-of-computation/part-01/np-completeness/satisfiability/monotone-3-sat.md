@@ -7,14 +7,14 @@ statement: formalized
 
 # Monotone 3-SAT
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html).
 
 ## Monotone 3-SAT instances
 
 A monotone 3-SAT instance is a pair $(n, \varphi)$ of a
 natural number $n$, the number of variables, and a CNF formula $\varphi$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.MonotoneThreeSatInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.MonotoneThreeSatInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-instance).
 
 ## Well-formed monotone 3-SAT instances
 
@@ -23,7 +23,7 @@ formed when every clause of the CNF formula $\varphi$ is a list of exactly three
 (repetitions allowed), each with a variable below $n$, and the literals of each clause are all
 positive or all negative.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#well-formed).
 
 ## Satisfiable monotone 3-SAT instances
 
@@ -32,7 +32,7 @@ feasible when there is a list of $n$ truth values $a_0, \dots, a_{n-1}$ such tha
 sending each variable $x < n$ to $a_x$ and every variable $x \ge n$ to false satisfies the CNF
 formula $\varphi$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.MonotoneThreeSatFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.MonotoneThreeSatFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-feasible).
 
 ## MONOTONE 3-SAT as a decision problem
 
@@ -44,7 +44,7 @@ has a variable below $n$, the literals of each clause are all positive or all ne
 some assignment of truth values to the variables $0, \dots, n-1$, with every other variable
 false, satisfies $\varphi$. Bitstrings that do not decode are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.monotoneThreeSatDec`, a definition declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.monotoneThreeSatDec`, a definition declared in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-dec).
 
 ## MONOTONE 3-SAT is NP-complete
 
@@ -55,7 +55,7 @@ every decision problem in NP has a polynomial-time many-one reduction to MONOTON
 
 - T. J. Schaefer, "The complexity of satisfiability problems", Proceedings of the Tenth Annual ACM Symposium on Theory of Computing (STOC 1978), ACM, 1978, 216-226 (dichotomy theorem).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.monotoneThreeSat_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.MonotoneThreeSat.monotoneThreeSat_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/MonotoneThreeSatWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html#monotone-three-sat-np-complete).
 
 ## Depends on
 
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monotone 3-SAT](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/satisfiability/monotone-3-sat)

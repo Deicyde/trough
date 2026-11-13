@@ -1,6 +1,6 @@
 # Probability
 
-2,690 results of ATLAS's vault, 2,601 proved and 89 stated but not proved, in this subject's topics.
+2,690 results of ATLAS's vault, 2,604 proved and 86 stated but not proved, in this subject's topics.
 
 Probability studies random phenomena through distributions, expectation, independence, concentration, and stochastic processes.
 

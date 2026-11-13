@@ -7,7 +7,7 @@ statement: formalized
 
 # Genus of a set partition
 
-10 results, 7 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html).
+10 results, 7 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html).
 
 ## Increasing-cycle permutation
 
@@ -26,7 +26,7 @@ through this encoding.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4 (the permutation `τ` whose cycles are the parts, with their elements in increasing order).
 
-Formalized by `MetaMathlibExt.IsIncreasingCyclePerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#is-increasing-cycle-perm).
+Formalized by `MetaMathlibExt.IsIncreasingCyclePerm`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#is-increasing-cycle-perm).
 
 ## Genus of a set partition
 
@@ -43,7 +43,7 @@ number $g$ with $-2g = |\alpha| - 1 - n + c$; for $n = 0$ the genus is $0$.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4, equation (genus).
 
-Formalized by `MetaMathlibExt.setPartitionGenus`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#set-partition-genus).
+Formalized by `MetaMathlibExt.setPartitionGenus`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#set-partition-genus).
 
 ## Number of set partitions of given type and genus
 
@@ -60,7 +60,7 @@ genus $g$.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4 (the numbers `C_{n,[α]}^{(g)}`).
 
-Formalized by `MetaMathlibExt.partitionGenusCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#partition-genus-count).
+Formalized by `MetaMathlibExt.partitionGenusCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#partition-genus-count).
 
 ## The identity is an increasing-cycle permutation
 
@@ -74,7 +74,7 @@ singletons.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4.
 
-Formalized by `MetaMathlibExt.isIncreasingCyclePerm_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#is-increasing-cycle-perm-one).
+Formalized by `MetaMathlibExt.isIncreasingCyclePerm_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#is-increasing-cycle-perm-one).
 
 ## The partition into singletons has genus zero
 
@@ -86,7 +86,7 @@ $\{0, \dots, n-1\}$ into singletons.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4.
 
-Formalized by `MetaMathlibExt.setPartitionGenus_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#set-partition-genus-one).
+Formalized by `MetaMathlibExt.setPartitionGenus_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#set-partition-genus-one).
 
 ## The cyclic rotation is an increasing-cycle permutation
 
@@ -101,7 +101,7 @@ single block.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4.
 
-Formalized by `MetaMathlibExt.isIncreasingCyclePerm_finRotate`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#is-increasing-cycle-perm-fin-rotate).
+Formalized by `MetaMathlibExt.isIncreasingCyclePerm_finRotate`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#is-increasing-cycle-perm-fin-rotate).
 
 ## The one-block partition has genus zero
 
@@ -115,7 +115,7 @@ single block has genus $0$.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Section 2.4 ("one-part partitions (`k = 1`) necessarily have genus 0").
 
-Formalized by `MetaMathlibExt.setPartitionGenus_finRotate`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#set-partition-genus-fin-rotate).
+Formalized by `MetaMathlibExt.setPartitionGenus_finRotate`, a theorem declared in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#set-partition-genus-fin-rotate).
 
 ## Genus generating function of pairings
 
@@ -134,7 +134,7 @@ with $r = -(6g-1)/2$, evaluated at $X = -4u$.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Proposition 11 (`jis-2024-24.2.6-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.pairing_genus_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#pairing-genus-generating-function).
+Stated but not proved: `MetaMathlibExt.pairing_genus_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#pairing-genus-generating-function).
 
 ## Genus of two-block partitions
 
@@ -153,7 +153,7 @@ the corresponding values of $s$, gives $g = p - s_1 - 1 = (n - p) - s_2 - 1$.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Lemma 13 (`jis-2024-24.2.6-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.twoBlock_oneFace_and_genus` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#two-block-one-face-and-genus).
+Stated but not proved: `MetaMathlibExt.twoBlock_oneFace_and_genus` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#two-block-one-face-and-genus).
 
 ## Genus count of two-block partitions
 
@@ -169,7 +169,7 @@ when $n \ne 2p$, and half of this number when $n = 2p$.
 
 - Coquereaux and Zuber, *Counting Partitions by Genus: a Compendium of Results*, Journal of Integer Sequences 27 (2024), Article 24.2.6, Proposition 14 (`jis-2024-24.2.6-prop-14`).
 
-Stated but not proved: `MetaMathlibExt.partitionGenusCount_twoBlocks` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#partition-genus-count-two-blocks).
+Stated but not proved: `MetaMathlibExt.partitionGenusCount_twoBlocks` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/PartitionGenusWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html#partition-genus-count-two-blocks).
 
 ## Depends on
 
@@ -178,4 +178,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Genus of a set partition](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/set-partitions/genus-of-a-set-partition)

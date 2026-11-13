@@ -7,7 +7,7 @@ statement: formalized
 
 # Stationary random functions
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html).
 
 ## Stationary random functions (Slutsky–Khinchin)
 
@@ -20,7 +20,7 @@ $\int v_t \, v_{t+h} \, d\mu = R(h)$.
 The integrals are Bochner integrals, which are $0$ for non-integrable functions, so integrability
 of $v_t$, $v_t^2$ and $v_t v_{t+h}$ is not required.
 
-Formalized by `MathlibExt.Probability.ScottishBook180Wanted.IsStationary`, a definition declared in [WantedExt/Probability/ScottishBook180Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/ScottishBook180Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html#is-stationary).
+Formalized by `MathlibExt.Probability.ScottishBook180Wanted.IsStationary`, a definition declared in [WantedExt/Probability/ScottishBook180Wanted.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/ScottishBook180Wanted.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html#is-stationary).
 
 ## Scottish Book Problem 180 (Kampé de Fériet's claim)
 
@@ -39,7 +39,7 @@ to $[0, 1]$. The equation $A(\varphi(\alpha)) = \alpha$ is condition (1) of the 
 independence, in the sense of Steinhaus, is condition (2). The existence of $U$ is an added
 hypothesis; it rules out refutations that only exploit a space carrying no uniform variable.
 
-Formalized by `MathlibExt.Probability.ScottishBook180Wanted.ScottishBookProblem180Claim`, a definition declared in [WantedExt/Probability/ScottishBook180Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/ScottishBook180Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html#scottish-book-problem180-claim).
+Formalized by `MathlibExt.Probability.ScottishBook180Wanted.ScottishBookProblem180Claim`, a definition declared in [WantedExt/Probability/ScottishBook180Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/ScottishBook180Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html#scottish-book-problem180-claim).
 
 ## Scottish Book Problem 180 fails
 
@@ -63,7 +63,7 @@ $[0, 1]$ is not. No non-degeneracy hypothesis is added, since the source asks fo
 
 - J. Kampe de Feriet, Problem 180 of the Scottish Book, typescript PDF pp. 82-83, printed pp. 79-80; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Probability.ScottishBook180Wanted.scottishBook180_refuted` is written with `theorem_wanted` in [WantedExt/Probability/ScottishBook180Wanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/ScottishBook180Wanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html#scottish-book180-refuted).
+Stated but not proved: `MathlibExt.Probability.ScottishBook180Wanted.scottishBook180_refuted` is written with `theorem_wanted` in [WantedExt/Probability/ScottishBook180Wanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/ScottishBook180Wanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html#scottish-book180-refuted).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stationary random functions](https://deicyde.github.io/atlas-lean/roadmap/Probability/point-processes/stationary-random-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/point-processes/stationary-random-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/point-processes/stationary-random-functions)

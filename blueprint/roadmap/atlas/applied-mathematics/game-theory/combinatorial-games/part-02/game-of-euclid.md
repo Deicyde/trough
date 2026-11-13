@@ -7,7 +7,7 @@ statement: formalized
 
 # Game of Euclid
 
-25 results, 10 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html).
+25 results, 10 proved and 15 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html).
 
 ## Fuel-bounded Euclid classifier
 
@@ -26,7 +26,7 @@ loses. With fuel at least $a + b$ the value is exact.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidPPositionAux`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-aux).
+Formalized by `MetaMathlibExt.euclidPPositionAux`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-aux).
 
 ## Euclid P-position test
 
@@ -41,7 +41,7 @@ position that is not a P-position: each move lowers $a + b$, so fuel $a + b$ suf
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidPPosition`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition).
+Formalized by `MetaMathlibExt.euclidPPosition`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition).
 
 ## Euclid moves
 
@@ -54,7 +54,7 @@ pairs $(a - jb, b)$ for every integer $j \ge 1$ with $jb < a$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidMoves`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-moves).
+Formalized by `MetaMathlibExt.euclidMoves`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-moves).
 
 ## Euclid moves lower the sum
 
@@ -65,7 +65,7 @@ $a' + b' < a + b$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidMoves_rank_lt`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-moves-rank-lt).
+Formalized by `MetaMathlibExt.euclidMoves_rank_lt`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-moves-rank-lt).
 
 ## The game Euclid
 
@@ -77,7 +77,7 @@ and its starting position is $(1, 1)$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidGame`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-game).
+Formalized by `MetaMathlibExt.euclidGame`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-game).
 
 ## Correctness of the fuel-bounded Euclid classifier
 
@@ -89,7 +89,7 @@ true at $(a, b)$ if and only if $(a, b)$ is a normal-play P-position of the Eucl
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidPPositionAux_eq_true_iff`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-aux-eq-true-iff).
+Formalized by `MetaMathlibExt.euclidPPositionAux_eq_true_iff`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-aux-eq-true-iff).
 
 ## The Euclid P-position test is correct
 
@@ -101,7 +101,7 @@ the Euclid game.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidPPosition_eq_true_iff`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-eq-true-iff).
+Formalized by `MetaMathlibExt.euclidPPosition_eq_true_iff`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-eq-true-iff).
 
 ## Small P-positions of Euclid
 
@@ -112,7 +112,7 @@ and $(3, 2)$ and false at the pairs $(2, 1)$ and $(1, 2)$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 4.
 
-Formalized by `MetaMathlibExt.euclidPPosition_small`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-small).
+Formalized by `MetaMathlibExt.euclidPPosition_small`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-small).
 
 ## Rows of the Calkin–Wilf tree
 
@@ -125,7 +125,7 @@ its two children $(a, a + b)$ and $(a + b, b)$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 2.
 
-Formalized by `MetaMathlibExt.calkinWilfRow`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#calkin-wilf-row).
+Formalized by `MetaMathlibExt.calkinWilfRow`, a definition declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#calkin-wilf-row).
 
 ## The first rows of the Calkin–Wilf tree
 
@@ -137,7 +137,7 @@ this order.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Section 2.
 
-Formalized by `MetaMathlibExt.calkinWilfRow_one_two`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#calkin-wilf-row-one-two).
+Formalized by `MetaMathlibExt.calkinWilfRow_one_two`, a theorem declared in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#calkin-wilf-row-one-two).
 
 ## Number of P-positions of Euclid in a row of the Calkin–Wilf tree
 
@@ -150,7 +150,7 @@ $L_k = 2^k/3 + 2(-1)^k/3$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Corollary 4.6.
 
-Stated but not proved: `MetaMathlibExt.count_euclidPPosition_calkinWilfRow` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#count-euclid-pposition-calkin-wilf-row).
+Stated but not proved: `MetaMathlibExt.count_euclidPPosition_calkinWilfRow` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#count-euclid-pposition-calkin-wilf-row).
 
 ## Distinguishing the tops of arches
 
@@ -166,7 +166,7 @@ The statement covers all positive pairs; the tree vertices are the coprime ones.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 4.1.
 
-Stated but not proved: `MetaMathlibExt.euclidPPosition_tops_of_arch` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-tops-of-arch).
+Stated but not proved: `MetaMathlibExt.euclidPPosition_tops_of_arch` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-tops-of-arch).
 
 ## Establishing branches: nieces and nephews of P-positions
 
@@ -181,7 +181,7 @@ P-position, then so is its nephew $(x+y)/(x+2y)$, the son of its sibling $(x+y)/
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 4.2.
 
-Stated but not proved: `MetaMathlibExt.euclidPPosition_branch_step` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-branch-step).
+Stated but not proved: `MetaMathlibExt.euclidPPosition_branch_step` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-branch-step).
 
 ## Aunt or cousin of a P-position
 
@@ -197,7 +197,7 @@ $q'$ and its female cousin $d(q')$ is a P-position.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 4.3.
 
-Stated but not proved: `MetaMathlibExt.euclidPPosition_aunt_xor_cousin` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-aunt-xor-cousin).
+Stated but not proved: `MetaMathlibExt.euclidPPosition_aunt_xor_cousin` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-aunt-xor-cousin).
 
 ## Self-similarity of the P-positions of Euclid
 
@@ -214,7 +214,7 @@ In other words, below every P-position the P-positions sit exactly where they si
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Theorem 4.5.
 
-Stated but not proved: `MetaMathlibExt.euclidPPosition_self_similar` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-self-similar).
+Stated but not proved: `MetaMathlibExt.euclidPPosition_self_similar` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#euclid-pposition-self-similar).
 
 ## Number of arch tops in a row of the Calkin–Wilf tree
 
@@ -231,7 +231,7 @@ row $k$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Corollary 4.7.
 
-Stated but not proved: `MetaMathlibExt.count_arch_tops_calkinWilfRow` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#count-arch-tops-calkin-wilf-row).
+Stated but not proved: `MetaMathlibExt.count_arch_tops_calkinWilfRow` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 246](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L246). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#count-arch-tops-calkin-wilf-row).
 
 ## Levels of the branches of an arch
 
@@ -251,7 +251,7 @@ nephews; the formulas hold without the arch-top hypothesis.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Lemma 5.1.
 
-Stated but not proved: `MetaMathlibExt.arch_branch_levels` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#arch-branch-levels).
+Stated but not proved: `MetaMathlibExt.arch_branch_levels` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#arch-branch-levels).
 
 ## The Fibonacci arches
 
@@ -273,7 +273,7 @@ topped by $d(s(V))$ and $s(d(V))$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 5.2.
 
-Stated but not proved: `MetaMathlibExt.fibonacci_arch_positions` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#fibonacci-arch-positions).
+Stated but not proved: `MetaMathlibExt.fibonacci_arch_positions` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#fibonacci-arch-positions).
 
 ## Fibonacci arch tops
 
@@ -292,7 +292,7 @@ $(2F_{2n} + (2k+1)F_{2n-2})/(3F_{2n} + (3k+2)F_{2n-2})$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Corollary 5.3.
 
-Stated but not proved: `MetaMathlibExt.fibonacci_arch_tops` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#fibonacci-arch-tops).
+Stated but not proved: `MetaMathlibExt.fibonacci_arch_tops` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#fibonacci-arch-tops).
 
 ## Positions of a Calkin–Wilf row with maximal optimal play in Euclid
 
@@ -306,7 +306,7 @@ Smith remoteness is the length of optimal play when the winner hurries and the l
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 6.1.
 
-Stated but not proved: `MetaMathlibExt.count_max_remoteness_calkinWilfRow` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#count-max-remoteness-calkin-wilf-row).
+Stated but not proved: `MetaMathlibExt.count_max_remoteness_calkinWilfRow` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#count-max-remoteness-calkin-wilf-row).
 
 ## Maximal-remoteness paths alternate in pairs
 
@@ -321,7 +321,7 @@ one son step and one daughter step, in either order.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 6.2.
 
-Stated but not proved: `MetaMathlibExt.max_remoteness_path_alternates` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#max-remoteness-path-alternates).
+Stated but not proved: `MetaMathlibExt.max_remoteness_path_alternates` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#max-remoteness-path-alternates).
 
 ## Golden-ratio bounds for N-positions of maximal remoteness above 1
 
@@ -334,7 +334,7 @@ Euclid equals $k$, then $\varphi < m/n < \varphi + 1$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 6.3.
 
-Stated but not proved: `MetaMathlibExt.golden_bounds_of_max_remoteness_N` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#golden-bounds-of-max-remoteness-n).
+Stated but not proved: `MetaMathlibExt.golden_bounds_of_max_remoteness_N` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 350](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L350). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#golden-bounds-of-max-remoteness-n).
 
 ## Golden-ratio bounds for N-positions of maximal remoteness below 1
 
@@ -347,7 +347,7 @@ Euclid equals $k$, then $1/(\varphi + 1) < m/n < 1/\varphi$.
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Corollary 6.4.
 
-Stated but not proved: `MetaMathlibExt.golden_bounds_of_max_remoteness_N_symm` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#golden-bounds-of-max-remoteness-n-symm).
+Stated but not proved: `MetaMathlibExt.golden_bounds_of_max_remoteness_N_symm` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#golden-bounds-of-max-remoteness-n-symm).
 
 ## Golden-ratio bounds for P-positions of maximal remoteness
 
@@ -364,7 +364,7 @@ P-position with $0$ moves in row $0$, and $1$ lies in neither interval).
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 6.5.
 
-Stated but not proved: `MetaMathlibExt.golden_bounds_of_max_remoteness_P` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#golden-bounds-of-max-remoteness-p).
+Stated but not proved: `MetaMathlibExt.golden_bounds_of_max_remoteness_P` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#golden-bounds-of-max-remoteness-p).
 
 ## Continued fractions with maximal optimal play in Euclid
 
@@ -385,7 +385,7 @@ algorithm, a result of Hopkins and Tangboonduangjit; that half is not part of th
 
 - Michael A. Jones and Brittany C. Ohlinger, *Self-Similar Structure of P-Positions of the Game Euclid*, The Fibonacci Quarterly 62.1 (2024), Proposition 6.6.
 
-Stated but not proved: `MetaMathlibExt.continued_fraction_max_remoteness` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#continued-fraction-max-remoteness).
+Stated but not proved: `MetaMathlibExt.continued_fraction_max_remoteness` is written with `theorem_wanted` in [WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean, line 391](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/EuclidGameCalkinWilfWanted.lean#L391). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html#continued-fraction-max-remoteness).
 
 ## Depends on
 
@@ -394,4 +394,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Game of Euclid](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/game-of-euclid/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/game-of-euclid)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/game-of-euclid)

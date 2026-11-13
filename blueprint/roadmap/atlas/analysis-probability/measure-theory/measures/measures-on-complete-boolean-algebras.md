@@ -7,7 +7,7 @@ statement: formalized
 
 # Measures on complete Boolean algebras
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html).
 
 ## Von Neumann measures on a complete Boolean algebra
 
@@ -20,7 +20,7 @@ $\mu(\bigvee_i a_i) = \sum_i \mu(a_i)$.
 
 Von Neumann's conditions (1)-(4) are the axioms of a complete Boolean algebra.
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.IsVonNeumannMeasure`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#is-von-neumann-measure).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.IsVonNeumannMeasure`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#is-von-neumann-measure).
 
 ## The countable chain condition for complete Boolean algebras
 
@@ -29,7 +29,7 @@ $B$ satisfies the countable chain condition (von Neumann's condition (5)) when e
 $S \subseteq B$ whose distinct elements are pairwise disjoint (that is, $a \wedge b = \bot$ for
 all distinct $a, b \in S$) is at most countable.
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.SatisfiesCountableChainCondition`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#satisfies-countable-chain-condition).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.SatisfiesCountableChainCondition`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#satisfies-countable-chain-condition).
 
 ## Von Neumann's generalized distributivity law
 
@@ -42,7 +42,7 @@ $$\bigwedge_{i} \bigvee_{j} a_{i,j} = \bigvee_{f} \bigwedge_{i} a_{i,f(i)},$$
 
 where $f$ ranges over all functions $\mathbb{N} \to \mathbb{N}$.
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.SatisfiesGeneralizedDistributivity`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#satisfies-generalized-distributivity).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.SatisfiesGeneralizedDistributivity`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#satisfies-generalized-distributivity).
 
 ## Von Neumann's sufficiency claim
 
@@ -50,7 +50,7 @@ The statement that every complete Boolean algebra
 satisfying the countable chain condition and the generalized distributivity law carries a
 measure in von Neumann's sense.
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.VonNeumannSufficiencyClaim`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#von-neumann-sufficiency-claim).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook163Wanted.VonNeumannSufficiencyClaim`, a definition declared in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#von-neumann-sufficiency-claim).
 
 ## Von Neumann's conditions do not guarantee a measure
 
@@ -66,7 +66,7 @@ elsewhere; it is read here as the standard complement laws, with bottom $\bot$ a
 
 - J. von Neumann, Problem 163 of the Scottish Book; refuted by M. Talagrand, "Maharam's problem", arXiv:math/0601689 (2006), who constructed an exhaustive submeasure not equivalent to a measure, solving the problems of J. von Neumann (1937) and D. Maharam (1947).
 
-Stated but not proved: `MathlibExt.MeasureTheory.ScottishBook163Wanted.vonNeumannConditionsNotSufficient` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#von-neumann-conditions-not-sufficient).
+Stated but not proved: `MathlibExt.MeasureTheory.ScottishBook163Wanted.vonNeumannConditionsNotSufficient` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ScottishBook163Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook163Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html#von-neumann-conditions-not-sufficient).
 
 ## Depends on
 
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Measures on complete Boolean algebras](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/measures/measures-on-complete-boolean-algebras)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Congruences and modular arithmetic: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/index.html).
 
 Congruences for factorials, quotients and power sums (Wilson, Wolstenholme, Fermat quotients), lifting the exponent, multiplicative order, primitive roots, residue systems.
 
@@ -24,7 +24,7 @@ hypothesis forces $e = 0$.
 
 - Christian Ballot, "On a Congruence of Kimball and Webb Involving Lucas Sequences," Journal of Integer Sequences 17 (2014), Article 14.1.3, Lemma, lines 223–225, https://cs.uwaterloo.ca/journals/JIS/VOL17/Ballot/ballot7.tex
 
-Formalized by `MetaMathlibExt.powerSum_vanishing_mod_prime`, a theorem declared in [MathlibExt/NumberTheory/PowerSumVanishing.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/PowerSumVanishing.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/index.html#power-sum-vanishing-mod-prime).
+Formalized by `MetaMathlibExt.powerSum_vanishing_mod_prime`, a theorem declared in [MathlibExt/NumberTheory/PowerSumVanishing.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/PowerSumVanishing.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/index.html#power-sum-vanishing-mod-prime).
 
 ## Depends on
 
@@ -33,4 +33,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Congruences and modular arithmetic](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic)

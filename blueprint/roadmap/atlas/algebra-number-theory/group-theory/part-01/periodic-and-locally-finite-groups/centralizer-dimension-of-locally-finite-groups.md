@@ -7,21 +7,21 @@ statement: formalized
 
 # Centralizer dimension of locally finite groups
 
-8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html).
+8 results, 7 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html).
 
 ## Locally finite groups
 
 A group $G$ is locally finite if every finitely generated subgroup
 of $G$ is finite.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.IsLocallyFinite`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#is-locally-finite).
+Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.IsLocallyFinite`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#is-locally-finite).
 
 ## Locally soluble subgroups
 
 A subgroup $H$ of a group $G$ is locally soluble if every
 finitely generated subgroup of $H$ is soluble.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.IsLocallySoluble`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#is-locally-soluble).
+Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.IsLocallySoluble`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#is-locally-soluble).
 
 ## Centralizer dimension at most $k$
 
@@ -29,7 +29,7 @@ A group $G$ has $c$-dimension at most $k$ if every
 strictly decreasing chain $C_G(X_0) > C_G(X_1) > \cdots > C_G(X_m)$ of centralizers of subsets
 $X_0, \dots, X_m$ of $G$ has length $m \le k$.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.CDimLE`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#cdim-le).
+Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.CDimLE`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#cdim-le).
 
 ## Minimal normal subgroups
 
@@ -37,21 +37,21 @@ A subgroup $M$ of a group $Q$ is a minimal normal subgroup if $M$
 is normal in $Q$, $M \ne \{1\}$, and every normal subgroup $N$ of $Q$ with $N \le M$ is either
 $\{1\}$ or $M$.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.IsMinimalNormal`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#is-minimal-normal).
+Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.IsMinimalNormal`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#is-minimal-normal).
 
 ## Socle
 
 The socle of a group $Q$ is the subgroup of $Q$ generated by all minimal normal
 subgroups of $Q$; it is the trivial subgroup when $Q$ has no minimal normal subgroup.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.socle`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#socle).
+Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.socle`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#socle).
 
 ## Preimage of the socle of a quotient
 
 For a normal subgroup $R$ of a group $G$, the preimage
 in $G$ of the socle of $G/R$ under the quotient map $G \to G/R$.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.socleLift`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#socle-lift).
+Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.socleLift`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#socle-lift).
 
 ## Vasil'ev's abelian section bound (Kourovka 19.101)
 
@@ -63,7 +63,7 @@ radical) and $S$ is the preimage in $G$ of the socle of $G/R$, then there is a s
 with $S \le A$ such that $xyx^{-1}y^{-1} \in S$ for all $x, y \in A$ (so $A/S$ is an abelian
 subgroup of $G/S$), and the index $|G : A|$ is finite and at most $f(k)$.
 
-Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.centralizerDimensionAbelianSectionBound`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#centralizer-dimension-abelian-section-bo).
+Formalized by `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.centralizerDimensionAbelianSectionBound`, a definition declared in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#centralizer-dimension-abelian-section-bo).
 
 ## Buturlakin's theorem on locally finite groups of finite $c$-dimension
 
@@ -79,7 +79,7 @@ subgroup of $G/S$), and the index $|G : A|$ is finite and at most $f(k)$.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 19.101 (A. V. Vasil'ev); resolution: A. A. Buturlakin, J. Algebra Appl. 18 (2019), no. 12, 1950223, 12 pp, Kourovka Archive, Problem 19.101: Yes, it is true, https://arxiv.org/abs/1401.0300v49.
 
-Stated but not proved: `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.centralizerDimensionAbelianSectionBound_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#centralizer-dimension-abelian-section-bo-2).
+Stated but not proved: `MathlibExt.GroupTheory.CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.centralizerDimensionAbelianSectionBound_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/CentralizerDimensionSocleQuotientKourovka19Problem101Wanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html#centralizer-dimension-abelian-section-bo-2).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Centralizer dimension of locally finite groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/periodic-and-locally-finite-groups/centralizer-dimension-of-locally-finite-groups)

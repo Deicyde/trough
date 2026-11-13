@@ -8,7 +8,7 @@ proof: formalized
 
 # Weighted means and scatter matrices
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html).
 
 ## Weighted mean
 
@@ -17,7 +17,7 @@ $x_i \in \mathbb{R}^J$ ($i \in I$) be points with real weights $w_i$. Their weig
 point $\big(\sum_{i \in I} w_i\big)^{-1} \sum_{i \in I} w_i x_i$ of $\mathbb{R}^J$, that is
 $\sum_i w_i x_i / \sum_i w_i$, with the convention $0^{-1} = 0$ when the weights sum to $0$.
 
-Formalized by `MetaMathlibExt.weightedMean`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#weighted-mean).
+Formalized by `MetaMathlibExt.weightedMean`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#weighted-mean).
 
 ## Weighted scatter matrix
 
@@ -33,7 +33,7 @@ $$
 with the convention $0^{-1} = 0$ when the weights sum to $0$. When $\mu$ is the weighted mean of
 the $x_i$, it is the weighted sample covariance.
 
-Formalized by `MetaMathlibExt.weightedScatter`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#weighted-scatter).
+Formalized by `MetaMathlibExt.weightedScatter`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#weighted-scatter).
 
 ## Weighted residuals sum to zero
 
@@ -41,7 +41,7 @@ Let $I$ be a finite set and $J$ any index set, let
 $x_i \in \mathbb{R}^J$ ($i \in I$) be points with real weights $w_i$ such that $\sum_i w_i \ne 0$,
 and let $m$ be their weighted mean. Then $\sum_{i \in I} w_i (x_i - m) = 0$.
 
-Formalized by `MetaMathlibExt.sum_smul_sub_weightedMean`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#sum-smul-sub-weighted-mean).
+Formalized by `MetaMathlibExt.sum_smul_sub_weightedMean`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#sum-smul-sub-weighted-mean).
 
 ## The bias-variance split of a weighted quadratic form
 
@@ -56,7 +56,7 @@ $$
 \Big(\sum_{i \in I} w_i\Big) (m - \mu)^{\mathsf T} A \, (m - \mu).
 $$
 
-Formalized by `MetaMathlibExt.sum_mul_quad_sub_eq`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#sum-mul-quad-sub-eq).
+Formalized by `MetaMathlibExt.sum_mul_quad_sub_eq`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#sum-mul-quad-sub-eq).
 
 ## Weighted quadratic forms as traces against the scatter matrix
 
@@ -70,7 +70,7 @@ $$
 \Big(\sum_{i \in I} w_i\Big) \operatorname{tr}(A C).
 $$
 
-Formalized by `MetaMathlibExt.sum_mul_quad_eq_trace`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#sum-mul-quad-eq-trace).
+Formalized by `MetaMathlibExt.sum_mul_quad_eq_trace`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#sum-mul-quad-eq-trace).
 
 ## Quadratic form of a weighted scatter matrix
 
@@ -86,7 +86,7 @@ $$
 
 with the convention $0^{-1} = 0$.
 
-Formalized by `MetaMathlibExt.dotProduct_weightedScatter_mulVec`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#dot-product-weighted-scatter-mul-vec).
+Formalized by `MetaMathlibExt.dotProduct_weightedScatter_mulVec`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#dot-product-weighted-scatter-mul-vec).
 
 ## Weighted scatter matrices of points in general position are positive definite
 
@@ -96,7 +96,7 @@ $w_i > 0$ that do not all lie in an affine hyperplane: for every nonzero $v \in 
 there are $i, j \in I$ with $\langle v, x_i \rangle \ne \langle v, x_j \rangle$. Then for every
 $\mu \in \mathbb{R}^J$ the weighted scatter matrix of the $x_i$ about $\mu$ is positive definite.
 
-Formalized by `MetaMathlibExt.weightedScatter_posDef`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#weighted-scatter-pos-def).
+Formalized by `MetaMathlibExt.weightedScatter_posDef`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/WeightedScatter.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html#weighted-scatter-pos-def).
 
 ## Depends on
 
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weighted means and scatter matrices](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/linear-models-multivariate/weighted-means-and-scatter-matrices)

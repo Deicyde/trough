@@ -7,7 +7,7 @@ statement: formalized
 
 # Maximum Nim
 
-41 results, 19 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html).
+41 results, 19 proved and 22 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html).
 
 ## Minimum excludant of a finite set
 
@@ -18,7 +18,7 @@ $\operatorname{mex}(s)$ is the least natural number that does not belong to $s$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 2.
 
-Formalized by `MetaMathlibExt.maximumNimMex`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-mex).
+Formalized by `MetaMathlibExt.maximumNimMex`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-mex).
 
 ## Characterization of the minimum excludant
 
@@ -30,7 +30,7 @@ if and only if $m \notin s$ and every natural number $n < m$ lies in $s$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 2.
 
-Formalized by `MetaMathlibExt.maximumNimMex_eq_iff`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-mex-eq-iff).
+Formalized by `MetaMathlibExt.maximumNimMex_eq_iff`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-mex-eq-iff).
 
 ## Grundy numbers of Maximum Nim
 
@@ -46,7 +46,7 @@ include $f(0) = 0$, it does not change the legal moves.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 2.
 
-Formalized by `MetaMathlibExt.maximumNimGrundy`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy).
+Formalized by `MetaMathlibExt.maximumNimGrundy`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy).
 
 ## Recursive formula for Maximum Nim Grundy numbers
 
@@ -59,7 +59,7 @@ not in the set) of $\{G_f(x - u) : 1 \le u \le \min(f(x), x)\}$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 2.
 
-Formalized by `MetaMathlibExt.maximumNimGrundy_eq`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq).
+Formalized by `MetaMathlibExt.maximumNimGrundy_eq`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq).
 
 ## Grundy number of a pile of five in halving Maximum Nim
 
@@ -70,7 +70,7 @@ function $f(x) = \lfloor x/2 \rfloor$, a pile of $5$ stones has Grundy number $1
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (characteristic values).
 
-Formalized by `MetaMathlibExt.maximumNimGrundy_div_two_five`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-two-five).
+Formalized by `MetaMathlibExt.maximumNimGrundy_div_two_five`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-two-five).
 
 ## Grundy number of a pile of four in halving Maximum Nim
 
@@ -81,7 +81,7 @@ function $f(x) = \lfloor x/2 \rfloor$, a pile of $4$ stones has Grundy number $2
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (characteristic values).
 
-Formalized by `MetaMathlibExt.maximumNimGrundy_div_two_four`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-two-four).
+Formalized by `MetaMathlibExt.maximumNimGrundy_div_two_four`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-two-four).
 
 ## Grundy number of a pile of three in halving Maximum Nim
 
@@ -92,7 +92,7 @@ function $f(x) = \lfloor x/2 \rfloor$, a pile of $3$ stones has Grundy number $0
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (characteristic values).
 
-Formalized by `MetaMathlibExt.maximumNimGrundy_div_two_three`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-two-three).
+Formalized by `MetaMathlibExt.maximumNimGrundy_div_two_three`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-two-three).
 
 ## The Maximum Nim game
 
@@ -105,7 +105,7 @@ a position is the pile size itself, and the starting position is the empty pile 
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 2.
 
-Formalized by `MetaMathlibExt.maximumNimGame`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-game).
+Formalized by `MetaMathlibExt.maximumNimGame`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-game).
 
 ## P-positions of Maximum Nim
 
@@ -118,7 +118,7 @@ a P-position.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 2.
 
-Formalized by `MetaMathlibExt.maximumNimGame_isP_iff`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-game-is-p-iff).
+Formalized by `MetaMathlibExt.maximumNimGame_isP_iff`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-game-is-p-iff).
 
 ## The Maximum Nim map $h_k$
 
@@ -131,7 +131,7 @@ be $0$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Definition 3.1.
 
-Formalized by `MetaMathlibExt.maximumNimH`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h).
+Formalized by `MetaMathlibExt.maximumNimH`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h).
 
 ## The value $h_3(0) = 1$ of the Maximum Nim map
 
@@ -142,7 +142,7 @@ $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ on the natural numbers, we have $h_3(
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Definition 3.1.
 
-Formalized by `MetaMathlibExt.maximumNimH_three_zero`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-three-zero).
+Formalized by `MetaMathlibExt.maximumNimH_three_zero`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-three-zero).
 
 ## The value $h_3(2) = 4$ of the Maximum Nim map
 
@@ -153,7 +153,7 @@ $h_k(x) = x + \lfloor x/(k-1) \rfloor + 1$ on the natural numbers, we have $h_3(
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Definition 3.1.
 
-Formalized by `MetaMathlibExt.maximumNimH_three_two`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-three-two).
+Formalized by `MetaMathlibExt.maximumNimH_three_two`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-three-two).
 
 ## Fuel-bounded Josephus simulation
 
@@ -169,7 +169,7 @@ position $i$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (Josephus problem).
 
-Formalized by `MetaMathlibExt.josephusEliminationOrderAux`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-aux).
+Formalized by `MetaMathlibExt.josephusEliminationOrderAux`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-aux).
 
 ## Josephus elimination order
 
@@ -188,7 +188,7 @@ entry of the list is the survivor.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (Josephus problem).
 
-Formalized by `MetaMathlibExt.josephusEliminationOrder`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order).
+Formalized by `MetaMathlibExt.josephusEliminationOrder`, a definition declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order).
 
 ## Josephus elimination order for ten people and step three
 
@@ -200,7 +200,7 @@ removed in the order $3, 6, 9, 2, 7, 1, 8, 5, 10$, and the survivor $4$ comes la
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (Josephus problem example).
 
-Formalized by `MetaMathlibExt.josephusEliminationOrder_three_ten`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-three-ten).
+Formalized by `MetaMathlibExt.josephusEliminationOrder_three_ten`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-three-ten).
 
 ## Josephus elimination order for three people and step two
 
@@ -212,7 +212,7 @@ the entry $1$, and the survivor $3$ comes last.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (characteristic values).
 
-Formalized by `MetaMathlibExt.josephusEliminationOrder_two_three`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-two-three).
+Formalized by `MetaMathlibExt.josephusEliminationOrder_two_three`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-two-three).
 
 ## Length of the Josephus elimination order
 
@@ -223,7 +223,7 @@ Josephus elimination order with step $k$ on the circle $1, \dots, n$ has exactly
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (Josephus problem).
 
-Formalized by `MetaMathlibExt.josephusEliminationOrder_length`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-length).
+Formalized by `MetaMathlibExt.josephusEliminationOrder_length`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-length).
 
 ## The Josephus elimination order is a permutation of the circle
 
@@ -236,7 +236,7 @@ exactly once.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (Josephus problem).
 
-Formalized by `MetaMathlibExt.josephusEliminationOrder_perm`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-perm).
+Formalized by `MetaMathlibExt.josephusEliminationOrder_perm`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-perm).
 
 ## The survivor is the last entry of the Josephus elimination order
 
@@ -249,7 +249,7 @@ function for elimination step $k$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Section 3 (Josephus problem).
 
-Formalized by `MetaMathlibExt.josephusEliminationOrder_getLast?`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-get-last).
+Formalized by `MetaMathlibExt.josephusEliminationOrder_getLast?`, a theorem declared in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-elimination-order-get-last).
 
 ## Grundy value zero characterizes P-positions in Maximum Nim
 
@@ -262,7 +262,7 @@ is $0$ if and only if $x$ is a P-position (a previous-player win under normal pl
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_zero_iff_isP` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-zero-iff-is-p).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_zero_iff_isP` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 407](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L407). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-zero-iff-is-p).
 
 ## Grundy number where the rule function increases
 
@@ -275,7 +275,7 @@ $G(x) = f(x)$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 1(i).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_rule_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-rule-of-lt).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_rule_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 416](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L416). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-rule-of-lt).
 
 ## Grundy number where the rule function is flat
 
@@ -290,7 +290,7 @@ Here $x - f(x) - 1 \ge 0$, since the hypotheses give $f(x) = f(x-1) \le x - 1$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 1(ii).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_sub_rule_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-sub-rule-succ).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_sub_rule_succ` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-sub-rule-succ).
 
 ## Floor identity for non-multiples in Maximum Nim
 
@@ -302,7 +302,7 @@ $x - \lfloor x/k \rfloor - 1 = \lfloor (k-1)x/k \rfloor$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.maximumNim_sub_div_sub_one_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-sub-div-sub-one-eq).
+Stated but not proved: `MetaMathlibExt.maximumNim_sub_div_sub_one_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-sub-div-sub-one-eq).
 
 ## Maximum Nim Grundy numbers at multiples of the divisor
 
@@ -314,7 +314,7 @@ multiple $x$ of $k$ satisfies $G(x) = x/k$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 3(i).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_div_eq_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-eq-of-dvd).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_div_eq_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 445](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L445). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-div-eq-of-dvd).
 
 ## Maximum Nim Grundy numbers at non-multiples of the divisor
 
@@ -326,7 +326,7 @@ natural number not divisible by $k$, then $G(x) = G(\lfloor (k-1)x/k \rfloor)$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 3(ii).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_F_of_not_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-f-of-not-dvd).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_eq_F_of_not_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-eq-f-of-not-dvd).
 
 ## Floor-rule Maximum Nim: positions below k have Grundy number zero
 
@@ -338,7 +338,7 @@ Grundy number $0$ in Maximum Nim with rule function $f(y) = \lfloor y/k \rfloor$
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 3(iii).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_sub_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-sub-eq-zero).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_sub_eq_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 462](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L462). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-sub-eq-zero).
 
 ## A Maximum Nim non-divisibility lemma for $s < t$
 
@@ -353,7 +353,7 @@ differences of natural numbers.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 4(i).
 
-Stated but not proved: `MetaMathlibExt.maximumNim_not_dvd_mul_sub_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-not-dvd-mul-sub-of-lt).
+Stated but not proved: `MetaMathlibExt.maximumNim_not_dvd_mul_sub_of_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 471](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L471). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-not-dvd-mul-sub-of-lt).
 
 ## A Maximum Nim non-divisibility lemma for $i \ne h$
 
@@ -368,7 +368,7 @@ differences of natural numbers.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 4(ii).
 
-Stated but not proved: `MetaMathlibExt.maximumNim_not_dvd_mul_sub_of_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-not-dvd-mul-sub-of-ne).
+Stated but not proved: `MetaMathlibExt.maximumNim_not_dvd_mul_sub_of_ne` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-not-dvd-mul-sub-of-ne).
 
 ## Floor-rule Maximum Nim: Grundy reduction when $n = kt + u$
 
@@ -388,7 +388,7 @@ parentheses shown; read without them, as in the extracted statement, the equalit
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 5(i).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-decomposit).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-decomposit).
 
 ## Floor-rule Maximum Nim: one-step Grundy reduction when k = nt + h
 
@@ -404,7 +404,7 @@ $$G(nk - i) = G(F(nk - i)) = G(n(k - 1) - i).$$
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 5(ii.1).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_F_eq_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 506](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L506). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-f-eq-pred).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_F_eq_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 506](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L506). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-f-eq-pred).
 
 ## Floor-rule Maximum Nim: t-step Grundy reduction when k = nt + h
 
@@ -420,7 +420,7 @@ $$G(nk - i) = G(F^t(nk - i)) = G(n(k - t) - i).$$
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 5(ii.2).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_iterate_F` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 519](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L519). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-iterate-f).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_iterate_F` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 519](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L519). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-iterate-f).
 
 ## Floor-rule Maximum Nim: (t+1)-step Grundy reduction when k = nt + h
 
@@ -436,7 +436,7 @@ $$G(nk - i) = G(F^{t+1}(nk - i)) = G((n - 1)k - (n - h + i)).$$
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 5(ii.3).
 
-Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_succ_iterate_F` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-succ-itera).
+Stated but not proved: `MetaMathlibExt.maximumNimGrundy_mul_sub_eq_succ_iterate_F` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-grundy-mul-sub-eq-succ-itera).
 
 ## The Maximum Nim map $h_k$ is strictly increasing
 
@@ -448,7 +448,7 @@ natural numbers $x$ and $x'$ with $x < x'$, we have $h_k(x) < h_k(x')$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 6(i).
 
-Stated but not proved: `MetaMathlibExt.maximumNimH_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-strict-mono).
+Stated but not proved: `MetaMathlibExt.maximumNimH_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-strict-mono).
 
 ## The Maximum Nim map $h_k$ exceeds its argument
 
@@ -460,7 +460,7 @@ number $x$ satisfies $x < x + 1 \le h_k(x)$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 6(ii).
 
-Stated but not proved: `MetaMathlibExt.maximumNimH_succ_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 553](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L553). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-succ-le).
+Stated but not proved: `MetaMathlibExt.maximumNimH_succ_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 553](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L553). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-succ-le).
 
 ## Iterates of the Maximum Nim map $h_k$ tend to infinity
 
@@ -472,7 +472,7 @@ For every natural number $x_0$, the iterates $h_k^p(x_0)$ tend to infinity as $p
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 6(iii).
 
-Stated but not proved: `MetaMathlibExt.maximumNimH_iterate_tendsto_atTop` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 561](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L561). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-iterate-tendsto-at-top).
+Stated but not proved: `MetaMathlibExt.maximumNimH_iterate_tendsto_atTop` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 561](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L561). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-iterate-tendsto-at-top).
 
 ## Linear bounds on h_k and their iterates
 
@@ -488,7 +488,7 @@ $h_k^-(x) \le h_k(x) \le h_k^+(x)$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.maximumNimH_iterate_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 574](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L574). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-iterate-bounds).
+Stated but not proved: `MetaMathlibExt.maximumNimH_iterate_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 574](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L574). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-iterate-bounds).
 
 ## Josephus elimination positions as Maximum Nim Grundy numbers
 
@@ -502,7 +502,7 @@ function $f(y) = \lfloor y/k \rfloor$. Then $n - o_n(m) = G(nk - m)$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.josephus_position_complement_eq_maximumNimGrundy` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-position-complement-eq-maximum).
+Stated but not proved: `MetaMathlibExt.josephus_position_complement_eq_maximumNimGrundy` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 586](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L586). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-position-complement-eq-maximum).
 
 ## Josephus survivor via iteration from zero
 
@@ -516,7 +516,7 @@ function for elimination step $k$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-eq-mul-sub-iterate-maximum-nim).
+Stated but not proved: `MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 596](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L596). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-eq-mul-sub-iterate-maximum-nim).
 
 ## Josephus survivor via the shifted iteration
 
@@ -533,7 +533,7 @@ $h_k^{p-1}(k-1) \ge k - 1 = n(k-1)$, so no such $p$ exists.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-eq-mul-sub-iterate-maximum-nim-2).
+Stated but not proved: `MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_pred` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 609](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L609). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-eq-mul-sub-iterate-maximum-nim-2).
 
 ## Logarithmic bounds on the iterates of h_k
 
@@ -551,7 +551,7 @@ $$h_k^{\lfloor w \rfloor}(k-1) \le n(k-1) \le h_k^{\lceil v \rceil}(k-1).$$
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.maximumNimH_iterate_floor_le_mul_le_iterate_ceil` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 622](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L622). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-iterate-floor-le-mul-le-it).
+Stated but not proved: `MetaMathlibExt.maximumNimH_iterate_floor_le_mul_le_iterate_ceil` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 622](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L622). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#maximum-nim-h-iterate-floor-le-mul-le-it).
 
 ## Logarithmic bounds for the Josephus iteration count
 
@@ -570,7 +570,7 @@ $p \ge 1$ satisfies $p \le \lceil v \rceil$.
 
 - Shoei Takahashi, Hikaru Manabe, Ryohei Miyadera, *Maximum Nim and the Josephus Problem*, INTEGERS 24 (2024), Article G5, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_between_log_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 635](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L635). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-eq-mul-sub-iterate-maximum-nim-3).
+Stated but not proved: `MetaMathlibExt.josephus_eq_mul_sub_iterate_maximumNimH_between_log_bounds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MaximumNimJosephusWanted.lean, line 635](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MaximumNimJosephusWanted.lean#L635). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html#josephus-eq-mul-sub-iterate-maximum-nim-3).
 
 ## Depends on
 
@@ -579,4 +579,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Maximum Nim](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/maximum-nim/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/maximum-nim)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/maximum-nim)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Jacobian matrix
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html).
 
 ## Jacobian matrix
 
@@ -22,7 +22,7 @@ vector of $\mathbb{R}^m$. A partial derivative that does not exist is taken to b
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9; stable ref https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant.
 
-Formalized by `MetaMathlibExt.jacobianMatrix`, a definition declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Jacobian.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix).
+Formalized by `MetaMathlibExt.jacobianMatrix`, a definition declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Jacobian.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix).
 
 ## Entries of the Jacobian matrix are partial derivatives
 
@@ -37,7 +37,7 @@ not exist.
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
 
-Formalized by `MetaMathlibExt.jacobianMatrix_apply`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Jacobian.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-apply).
+Formalized by `MetaMathlibExt.jacobianMatrix_apply`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Jacobian.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-apply).
 
 ## Jacobian entries at a point of differentiability
 
@@ -47,7 +47,7 @@ $(i, j)$ entry of the Jacobian matrix of $f$ at $x$ is the $i$-th coordinate of 
 where $Df(x)$ is the Fréchet derivative of $f$ at $x$ and $e_j$ is the $j$-th standard basis
 vector of $\mathbb{R}^m$.
 
-Formalized by `MetaMathlibExt.jacobianMatrix_apply_of_differentiableAt`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Jacobian.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-apply-of-differentiable).
+Formalized by `MetaMathlibExt.jacobianMatrix_apply_of_differentiableAt`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Jacobian.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-apply-of-differentiable).
 
 ## The Jacobian is the matrix of the derivative
 
@@ -56,7 +56,7 @@ differentiable at $x \in \mathbb{R}^m$. Then the Jacobian matrix of $f$ at $x$ i
 the standard bases of $\mathbb{R}^m$ and $\mathbb{R}^n$, of the Fréchet derivative of $f$ at $x$,
 viewed as a linear map $\mathbb{R}^m \to \mathbb{R}^n$.
 
-Formalized by `MetaMathlibExt.jacobianMatrix_eq_toMatrix'_fderiv`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Jacobian.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-eq-to-matrix-fderiv).
+Formalized by `MetaMathlibExt.jacobianMatrix_eq_toMatrix'_fderiv`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Jacobian.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-eq-to-matrix-fderiv).
 
 ## Jacobian of a linear map given by a matrix
 
@@ -64,7 +64,7 @@ Let $M$ be a real $n \times m$ matrix. At every
 point $x \in \mathbb{R}^m$, the Jacobian matrix of the map $y \mapsto M y$ from $\mathbb{R}^m$ to
 $\mathbb{R}^n$ is $M$.
 
-Formalized by `MetaMathlibExt.jacobianMatrix_fun_mulVec`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Jacobian.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-fun-mul-vec).
+Formalized by `MetaMathlibExt.jacobianMatrix_fun_mulVec`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Jacobian.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-fun-mul-vec).
 
 ## The Jacobian matrix computes the derivative
 
@@ -81,7 +81,7 @@ linear map applies the map to that vector.
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Ch. 9.
 
-Formalized by `MetaMathlibExt.jacobianMatrix_mulVec_eq_fderiv`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Jacobian.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-mul-vec-eq-fderiv).
+Formalized by `MetaMathlibExt.jacobianMatrix_mulVec_eq_fderiv`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Jacobian.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-mul-vec-eq-fderiv).
 
 ## Chain rule for Jacobian matrices
 
@@ -98,7 +98,7 @@ fact that the matrix of a composition of linear maps is the product of their mat
 
 - W. Rudin, Principles of Mathematical Analysis, 3rd ed., Theorem 9.15.
 
-Formalized by `MetaMathlibExt.jacobianMatrix_comp`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Calculus/Jacobian.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-comp).
+Formalized by `MetaMathlibExt.jacobianMatrix_comp`, a theorem declared in [MathlibExt/Analysis/Calculus/Jacobian.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Calculus/Jacobian.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html#jacobian-matrix-comp).
 
 ## Depends on
 
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Jacobian matrix](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/real-functions/multivariable-calculus/jacobian-matrix)

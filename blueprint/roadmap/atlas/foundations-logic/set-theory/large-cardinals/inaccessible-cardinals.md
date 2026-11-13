@@ -8,26 +8,26 @@ proof: formalized
 
 # Inaccessible cardinals
 
-20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html).
+20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html).
 
 ## Weakly inaccessible cardinal
 
 A cardinal κ is *weakly inaccessible* if it is an uncountable, regular limit cardinal.
 
-Formalized by `MetaMathlibExt.IsWeaklyInaccessible`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#weakly-inaccessible-cardinal).
+Formalized by `MetaMathlibExt.IsWeaklyInaccessible`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#weakly-inaccessible-cardinal).
 
 ## Set of inaccessible cardinals below a cardinal
 
 InAccBelow κ is the set of all inaccessible cardinals below κ.
 
-Formalized by `MetaMathlibExt.inaccessibleBelow`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#set-of-inaccessible-cardinals-below-a-ca).
+Formalized by `MetaMathlibExt.inaccessibleBelow`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#set-of-inaccessible-cardinals-below-a-ca).
 
 ## Inaccessible fixed point
 
 A cardinal κ is an *inaccessible fixed point* if κ is inaccessible and the inaccessibles below κ
 have order type κ (i.e. κ is the κ-th inaccessible).
 
-Formalized by `MetaMathlibExt.IsInaccessibleFixedPoint`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#inaccessible-fixed-point).
+Formalized by `MetaMathlibExt.IsInaccessibleFixedPoint`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#inaccessible-fixed-point).
 
 ## The beth hierarchy stays below an inaccessible cardinal
 
@@ -38,7 +38,7 @@ fixed point (`IsInaccessible.beth_ord`) and `beth` is strictly monotone.
 
 - Below an inaccessible κ, each ℶ_o with o < κ.ord lies below κ.
 
-Formalized by `Cardinal.IsInaccessible.beth_lt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#the-beth-hierarchy-stays-below-an-inacce).
+Formalized by `Cardinal.IsInaccessible.beth_lt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#the-beth-hierarchy-stays-below-an-inacce).
 
 ## The aleph hierarchy stays below an inaccessible cardinal
 
@@ -49,7 +49,7 @@ via `IsInaccessible.aleph_ord`.
 
 - Below an inaccessible κ, each ℵ_o with o < κ.ord lies below κ.
 
-Formalized by `MetaMathlibExt.Cardinal.IsInaccessible.aleph_lt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#the-aleph-hierarchy-stays-below-an-inacc).
+Formalized by `MetaMathlibExt.Cardinal.IsInaccessible.aleph_lt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#the-aleph-hierarchy-stays-below-an-inacc).
 
 ## At most $\kappa$ inaccessible cardinals lie below $\kappa$
 
@@ -64,7 +64,7 @@ the `lift` in `IsInaccessibleFixedPoint`.
 
 - There are at most κ inaccessible cardinals below κ.
 
-Formalized by `MetaMathlibExt.mk_inaccessibleBelow_le`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#at-most-kappa-inaccessible-cardinals-lie).
+Formalized by `MetaMathlibExt.mk_inaccessibleBelow_le`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#at-most-kappa-inaccessible-cardinals-lie).
 
 ## Regular cardinals are unbounded below an uncountable limit cardinal
 
@@ -77,7 +77,7 @@ limit.
 
 - Regular cardinals are unbounded below any uncountable limit cardinal.
 
-Formalized by `MetaMathlibExt.exists_regular_between`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#regular-cardinals-are-unbounded-below-an).
+Formalized by `MetaMathlibExt.exists_regular_between`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#regular-cardinals-are-unbounded-below-an).
 
 ## Under GCH, weakly inaccessible cardinals are inaccessible
 
@@ -93,7 +93,7 @@ the `ℵ₀ ≤ μ` restriction is load-bearing for the same reason as there.
 
 - Under GCH below κ, a weakly inaccessible κ is inaccessible.
 
-Formalized by `MetaMathlibExt.IsWeaklyInaccessible.isInaccessible_of_gch`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#under-gch-weakly-inaccessible-cardinals).
+Formalized by `MetaMathlibExt.IsWeaklyInaccessible.isInaccessible_of_gch`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#under-gch-weakly-inaccessible-cardinals).
 
 ## Strong limit cardinals are closed under exponentiation
 
@@ -105,7 +105,7 @@ infiniteness hypothesis is needed — it is automatic by `IsStrongLimit.aleph0_l
 
 - Below a strong limit κ, x < κ and y < κ imply x ^ y < κ.
 
-Formalized by `Cardinal.IsStrongLimit.power_lt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#strong-limit-cardinals-are-closed-under).
+Formalized by `Cardinal.IsStrongLimit.power_lt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#strong-limit-cardinals-are-closed-under).
 
 ## Existence of an inaccessible with no inaccessibles below it
 
@@ -122,7 +122,7 @@ point (`not_isInaccessibleFixedPoint_of_inaccessibleBelow_eq_empty` above).
 
 - If any inaccessible cardinal exists, some inaccessible has no inaccessibles below it.
 
-Formalized by `MetaMathlibExt.exists_isInaccessible_inaccessibleBelow_eq_empty`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#existence-of-an-inaccessible-with-no-ina).
+Formalized by `MetaMathlibExt.exists_isInaccessible_inaccessibleBelow_eq_empty`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#existence-of-an-inaccessible-with-no-ina).
 
 ## Weak power below a strong limit cardinal equals the cardinal
 
@@ -135,7 +135,7 @@ below `κ` (`IsStrongLimit.power_lt`), while every `y < κ` sits below
 
 - For 2 ≤ x < κ with κ a strong limit, x ^< κ = κ.
 
-Formalized by `MetaMathlibExt.Cardinal.IsStrongLimit.powerlt_eq_self`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#weak-power-below-a-strong-limit-cardinal).
+Formalized by `MetaMathlibExt.Cardinal.IsStrongLimit.powerlt_eq_self`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#weak-power-below-a-strong-limit-cardinal).
 
 ## Strong limits are unbounded below an inaccessible cardinal
 
@@ -148,7 +148,7 @@ limit ordinal (`isSuccLimit_add`), and below `κ` since
 
 - Above any a < κ with κ inaccessible sits a strong limit cardinal below κ.
 
-Formalized by `MetaMathlibExt.Cardinal.IsInaccessible.exists_isStrongLimit_between`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#strong-limits-are-unbounded-below-an-ina).
+Formalized by `MetaMathlibExt.Cardinal.IsInaccessible.exists_isStrongLimit_between`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#strong-limits-are-unbounded-below-an-ina).
 
 ## Set of regular cardinals below a cardinal
 
@@ -160,7 +160,7 @@ Spelled with Mathlib's `Ordinal.IsInitial`.
 
 - regularBelow κ is the set of initial ordinals below κ whose cardinals are regular.
 
-Formalized by `MetaMathlibExt.regularBelow`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#set-of-regular-cardinals-below-a-cardina).
+Formalized by `MetaMathlibExt.regularBelow`, a definition declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 274](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L274). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#set-of-regular-cardinals-below-a-cardina).
 
 ## A regular beth fixed point is uncountable
 
@@ -171,7 +171,7 @@ A regular beth fixed point is uncountable: regularity gives `ℵ₀ ≤ κ`, and
 
 - A regular beth fixed point is uncountable.
 
-Formalized by `MetaMathlibExt.aleph0_lt_of_isRegular_beth_ord`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#a-regular-beth-fixed-point-is-uncountabl).
+Formalized by `MetaMathlibExt.aleph0_lt_of_isRegular_beth_ord`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#a-regular-beth-fixed-point-is-uncountabl).
 
 ## A regular beth fixed point is inaccessible
 
@@ -188,7 +188,7 @@ this does not promote a bare fixed point.
 
 - A regular beth fixed point is inaccessible.
 
-Formalized by `MetaMathlibExt.Cardinal.IsInaccessible.of_isRegular_beth_ord`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#a-regular-beth-fixed-point-is-inaccessib).
+Formalized by `MetaMathlibExt.Cardinal.IsInaccessible.of_isRegular_beth_ord`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#a-regular-beth-fixed-point-is-inaccessib).
 
 ## Inaccessible cardinals are the regular beth fixed points
 
@@ -200,7 +200,7 @@ is automatic by `aleph0_lt_of_isRegular_beth_ord`): this packages
 
 - κ is inaccessible if and only if κ is regular and a beth fixed point.
 
-Formalized by `MetaMathlibExt.Cardinal.isInaccessible_iff_isRegular_beth_ord`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#inaccessible-cardinals-are-the-regular-b).
+Formalized by `MetaMathlibExt.Cardinal.isInaccessible_iff_isRegular_beth_ord`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 325](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L325). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#inaccessible-cardinals-are-the-regular-b).
 
 ## Exactly $\kappa$ inaccessibles lie below an inaccessible fixed point
 
@@ -211,7 +211,7 @@ The fixed-point equation forces `#(inaccessibleBelow κ) = lift κ`
 
 - Below an inaccessible fixed point κ there are exactly κ inaccessible cardinals.
 
-Formalized by `MetaMathlibExt.IsInaccessibleFixedPoint.mk_inaccessibleBelow`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#exactly-kappa-inaccessibles-lie-below-an).
+Formalized by `MetaMathlibExt.IsInaccessibleFixedPoint.mk_inaccessibleBelow`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#exactly-kappa-inaccessibles-lie-below-an).
 
 ## Inaccessibles are unbounded below an inaccessible fixed point
 
@@ -223,7 +223,7 @@ bounded by `a`, the set would inject into `Iic a.val`, hence have size at most
 
 - Inaccessibles below an inaccessible fixed point are unbounded.
 
-Formalized by `MetaMathlibExt.IsInaccessibleFixedPoint.exists_gt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#inaccessibles-are-unbounded-below-an-ina).
+Formalized by `MetaMathlibExt.IsInaccessibleFixedPoint.exists_gt`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#inaccessibles-are-unbounded-below-an-ina).
 
 ## Limit cardinals are unbounded below a weakly inaccessible cardinal
 
@@ -236,7 +236,7 @@ lies below some `μ n` (`exists_lt_of_lt_ciSup`).
 
 - Above any a < κ with κ weakly inaccessible sits a limit cardinal below κ.
 
-Formalized by `MetaMathlibExt.IsWeaklyInaccessible.exists_isSuccLimit_between`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#limit-cardinals-are-unbounded-below-a-we).
+Formalized by `MetaMathlibExt.IsWeaklyInaccessible.exists_isSuccLimit_between`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#limit-cardinals-are-unbounded-below-a-we).
 
 ## Supremum of a bounded set of initial ordinals is initial
 
@@ -248,7 +248,7 @@ between itself and its own initial ordinal.
 
 - The supremum of a bounded set of initial ordinals is initial.
 
-Formalized by `MetaMathlibExt.sSup_initial_of_forall_initial`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#supremum-of-a-bounded-set-of-initial-ord).
+Formalized by `MetaMathlibExt.sSup_initial_of_forall_initial`, a theorem declared in [MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean, line 444](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/SetTheory/Cardinal/LargeCardinal/Inaccessible.lean#L444). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html#supremum-of-a-bounded-set-of-initial-ord).
 
 ## Depends on
 
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Inaccessible cardinals](https://deicyde.github.io/atlas-lean/roadmap/SetTheory/large-cardinals/inaccessible-cardinals/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/SetTheory/large-cardinals/inaccessible-cardinals)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/SetTheory/large-cardinals/inaccessible-cardinals)

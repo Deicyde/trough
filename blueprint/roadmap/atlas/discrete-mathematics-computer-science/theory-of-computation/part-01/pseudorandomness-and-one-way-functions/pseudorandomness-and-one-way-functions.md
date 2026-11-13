@@ -7,7 +7,7 @@ statement: formalized
 
 # Pseudorandomness and one-way functions: its own results
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/index.html).
 
 Complexity-theoretic foundations of cryptography and derandomization: one-way functions, hardcore predicates (Goldreich–Levin), hardness amplification (Yao's XOR lemma), hardness-versus-randomness generators (Nisan–Wigderson), and Impagliazzo's five worlds.
 
@@ -24,7 +24,7 @@ gates. Then BPP equals P.
 
 - N. Nisan and A. Wigderson, "Hardness vs randomness", Journal of Computer and System Sciences 49 (1994), 149-167 (FOCS 1988).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.NisanWigderson.nisan_wigderson` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/NisanWigdersonWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/NisanWigdersonWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/index.html#nisan-wigderson).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.NisanWigderson.nisan_wigderson` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/NisanWigdersonWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/NisanWigdersonWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/index.html#nisan-wigderson).
 
 ## One-way functions imply P ≠ NP
 
@@ -36,7 +36,7 @@ $\mathrm{P} \neq \mathrm{NP}$.
 
 - O. Goldreich, Foundations of Cryptography, Vol. 1, Cambridge University Press, 2001, Section 2.2 (one-way functions imply P ≠ NP); R. Impagliazzo, "A personal view of average-case complexity", Proceedings of the Tenth Annual Structure in Complexities Theory Conference (1995), 134-147 (five worlds).
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.OWFImpliesPNeNP.owf_implies_p_ne_np` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/OWFImpliesPNeNPWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/OWFImpliesPNeNPWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/index.html#owf-implies-p-ne-np).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.OWFImpliesPNeNP.owf_implies_p_ne_np` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/OWFImpliesPNeNPWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/OWFImpliesPNeNPWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/index.html#owf-implies-p-ne-np).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Pseudorandomness and one-way functions](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/pseudorandomness-and-one-way-functions)

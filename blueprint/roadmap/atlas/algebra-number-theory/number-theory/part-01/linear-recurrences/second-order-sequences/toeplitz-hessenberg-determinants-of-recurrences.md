@@ -7,7 +7,7 @@ statement: formalized
 
 # Toeplitz–Hessenberg determinants of recurrences
 
-16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html).
+16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html).
 
 ## Trudi's formula as a generating function
 
@@ -22,7 +22,7 @@ that is, $f(x) = -h(x)/(1 + h(x))$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.toeplitzHessenberg_det_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#toeplitz-hessenberg-det-generating-funct).
+Stated but not proved: `MetaMathlibExt.toeplitzHessenberg_det_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#toeplitz-hessenberg-det-generating-funct).
 
 ## Generating function of Toeplitz–Hessenberg determinants with entries $(bk + c)d^k$
 
@@ -41,7 +41,7 @@ $u(x) = dx(b + c + acdx)/(1 + d(2a - b - c)x + ad^2(a - c)x^2)$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.toeplitzHessenberg_det_linear_mul_pow_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#toeplitz-hessenberg-det-linear-mul-pow-g).
+Stated but not proved: `MetaMathlibExt.toeplitzHessenberg_det_linear_mul_pow_generatingFunction` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#toeplitz-hessenberg-det-linear-mul-pow-g).
 
 ## Composition-sum formulas for $F_{2n}$, $F_{3n-1}$ and $P_{n-1}$
 
@@ -60,7 +60,7 @@ a multinomial sum over $2s_1 + 3s_2 + \dots + n s_{n-1} = n$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.fib_pell_composition_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-pell-composition-sums).
+Stated but not proved: `MetaMathlibExt.fib_pell_composition_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-pell-composition-sums).
 
 ## A composition sum with weights $(c_i + 1) 2^{c_i - 2}$ in terms of Fibonacci and Lucas numbers
 
@@ -74,7 +74,7 @@ is odd and $5^{(n-2)/2} L_{n+1}$ if $n$ is even.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 1, equation (8).
 
-Stated but not proved: `MetaMathlibExt.composition_sum_succ_mul_two_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#composition-sum-succ-mul-two-zpow).
+Stated but not proved: `MetaMathlibExt.composition_sum_succ_mul_two_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#composition-sum-succ-mul-two-zpow).
 
 ## Composition-sum formulas for $F_{n+3}$, $F_{3n+1}$ and Jacobsthal and Pell numbers
 
@@ -95,7 +95,7 @@ Identity (14) of the source is not included.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 3, equations (13) and (15)-(18).
 
-Stated but not proved: `MetaMathlibExt.fib_jacobsthal_pell_composition_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-jacobsthal-pell-composition-sums).
+Stated but not proved: `MetaMathlibExt.fib_jacobsthal_pell_composition_sums` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-jacobsthal-pell-composition-sums).
 
 ## Fibonacci subsequences $F_{\ell n + m}$ that are Toeplitz–Hessenberg determinants
 
@@ -115,7 +115,7 @@ $F_{\ell n + m}$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.fib_mul_add_eq_toeplitzHessenberg_det_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-mul-add-eq-toeplitz-hessenberg-det-i).
+Stated but not proved: `MetaMathlibExt.fib_mul_add_eq_toeplitzHessenberg_det_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-mul-add-eq-toeplitz-hessenberg-det-i).
 
 ## Pell and Pell–Lucas numbers as composition sums with $\sqrt 2$ weights
 
@@ -139,7 +139,7 @@ sum runs over the compositions of $n$ without parts $1$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.pell_pellLucas_composition_sums_sqrt_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#pell-pell-lucas-composition-sums-sqrt-tw).
+Stated but not proved: `MetaMathlibExt.pell_pellLucas_composition_sums_sqrt_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#pell-pell-lucas-composition-sums-sqrt-tw).
 
 ## Toeplitz–Hessenberg determinants with Oresme entries
 
@@ -171,7 +171,7 @@ determinant is rational (for $n = 3$ the determinant is $8 = 2^2 P_2$).
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.oresme_toeplitzHessenberg_det_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#oresme-toeplitz-hessenberg-det-formulas).
+Stated but not proved: `MetaMathlibExt.oresme_toeplitzHessenberg_det_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#oresme-toeplitz-hessenberg-det-formulas).
 
 ## Horadam sequences as composition sums
 
@@ -193,7 +193,7 @@ same number.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.horadam_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#horadam-eq-composition-sum).
+Stated but not proved: `MetaMathlibExt.horadam_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#horadam-eq-composition-sum).
 
 ## Horadam composition sums satisfy the Horadam recurrence
 
@@ -211,7 +211,7 @@ $w_n = r w_{n-1} + s w_{n-2}$ for every $n \ge 3$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.horadam_composition_sum_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#horadam-composition-sum-recurrence).
+Stated but not proved: `MetaMathlibExt.horadam_composition_sum_recurrence` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#horadam-composition-sum-recurrence).
 
 ## Translates of a Gibonacci sequence as composition sums
 
@@ -232,7 +232,7 @@ The two square roots $D$ give the two sign choices of identity (28) of the sourc
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.gibonacci_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-add-eq-composition-sum).
+Stated but not proved: `MetaMathlibExt.gibonacci_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-add-eq-composition-sum).
 
 ## Multiples of a shifted Gibonacci sequence that are Toeplitz–Hessenberg determinants
 
@@ -253,7 +253,7 @@ $a, b, c$ with $d = 0$ work trivially, since $u_n(a, b, c, 0) = 0$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.gibonacci_mul_add_eq_toeplitzHessenberg_det_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-mul-add-eq-toeplitz-hessenberg).
+Stated but not proved: `MetaMathlibExt.gibonacci_mul_add_eq_toeplitzHessenberg_det_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-mul-add-eq-toeplitz-hessenberg).
 
 ## Subsequences $G_{\ell n + m}$ of a Gibonacci sequence as composition sums
 
@@ -278,7 +278,7 @@ is the source's sufficient condition.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.gibonacci_mul_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-mul-add-eq-composition-sum).
+Stated but not proved: `MetaMathlibExt.gibonacci_mul_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-mul-add-eq-composition-sum).
 
 ## Fibonacci and Lucas translates as composition sums
 
@@ -304,7 +304,7 @@ These are identities (30) and (31) of the source.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.fib_lucas_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-lucas-add-eq-composition-sum).
+Stated but not proved: `MetaMathlibExt.fib_lucas_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-lucas-add-eq-composition-sum).
 
 ## Companion composition-sum formula for $F_{n+3}$
 
@@ -323,7 +323,7 @@ root $\lambda = -1$.
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.fib_add_three_companion_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-add-three-companion-composition-sum).
+Stated but not proved: `MetaMathlibExt.fib_add_three_companion_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 379](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L379). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#fib-add-three-companion-composition-sum).
 
 ## Gibonacci subsequences $G_{2n+m}$ as composition sums
 
@@ -346,7 +346,7 @@ the source's cases (i) $m = 0$, $z = 2y$, (ii) $m = 1$, $y = z$, (iii) $m = 2$, 
 
 - Taras Goy and Mark Shattuck, *Determinantal Representations of Some Classical Recurrent Sequences*, INTEGERS 25 (2025), Article A97, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.gibonacci_two_mul_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-two-mul-add-eq-composition-sum).
+Stated but not proved: `MetaMathlibExt.gibonacci_two_mul_add_eq_composition_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean, line 394](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DeterminantalRecurrentSequencesWanted.lean#L394). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html#gibonacci-two-mul-add-eq-composition-sum).
 
 ## Depends on
 
@@ -355,4 +355,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Toeplitz–Hessenberg determinants of recurrences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/toeplitz-hessenberg-determinants-of-recurrences)

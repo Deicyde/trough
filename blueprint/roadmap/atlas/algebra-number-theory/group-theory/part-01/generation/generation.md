@@ -8,7 +8,7 @@ proof: formalized
 
 # Generation of groups: its own results
 
-1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/generation/index.html).
+1 result, proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/generation/index.html).
 
 Minimal and special generating sets: generator numbers of almost simple and soluble groups, (2,3)-generation, generation by elements of prime-power order, spread, coprime generation, two-generated direct powers, Eulerian functions and probabilistic generation.
 
@@ -23,7 +23,7 @@ $X^{n+1} = X^n X = \{yx : y \in X^n,\ x \in X\}$.
 
 - 2310.10246 D01 (main.tex:146).
 
-Formalized by `Subgroup.closure_eq_iUnion_pow`, a theorem declared in [MathlibExt/Algebra/Group/Subgroup/Pointwise.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Group/Subgroup/Pointwise.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/generation/index.html#closure-eq-i-union-pow).
+Formalized by `Subgroup.closure_eq_iUnion_pow`, a theorem declared in [MathlibExt/Algebra/Group/Subgroup/Pointwise.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Group/Subgroup/Pointwise.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/generation/index.html#closure-eq-i-union-pow).
 
 ## Depends on
 
@@ -32,4 +32,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generation of groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/generation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/generation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/generation)

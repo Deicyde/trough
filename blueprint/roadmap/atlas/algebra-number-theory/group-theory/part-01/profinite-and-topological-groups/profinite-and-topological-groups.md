@@ -7,7 +7,7 @@ statement: formalized
 
 # Profinite and topological groups: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/index.html).
 
 Groups with topology or approximated by finite quotients: profinite and pro-p groups, residual finiteness and separability, profinite rigidity, Golod–Shafarevich inequality, just-infinite groups, totally disconnected locally compact groups, group topologies, Lie groups and their dense subgroups.
 
@@ -23,7 +23,7 @@ subgroup) can be lowered to 2.
 
 - S. Ulam and H. Auerbach, Problem 90 of the Scottish Book (every semi-simple Lie group contains four elements generating a dense subgroup; can the number 4 be lowered?); Mauldin commentary: every connected semi-simple Lie group has a free subgroup with two generators, and such a free subgroup can be chosen dense.
 
-Stated but not proved: `MathlibExt.GroupTheory.ScottishBook90Wanted.semisimpleLieGroup_twoGeneratorsDense` is written with `theorem_wanted` in [WantedExt/GroupTheory/ScottishBook90Wanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ScottishBook90Wanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/index.html#semisimple-lie-group-two-generators-dens).
+Stated but not proved: `MathlibExt.GroupTheory.ScottishBook90Wanted.semisimpleLieGroup_twoGeneratorsDense` is written with `theorem_wanted` in [WantedExt/GroupTheory/ScottishBook90Wanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ScottishBook90Wanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/index.html#semisimple-lie-group-two-generators-dens).
 
 ## Depends on
 
@@ -32,4 +32,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Profinite and topological groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/profinite-and-topological-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/profinite-and-topological-groups)

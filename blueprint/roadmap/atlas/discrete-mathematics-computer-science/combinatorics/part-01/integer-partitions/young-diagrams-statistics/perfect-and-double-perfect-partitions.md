@@ -7,7 +7,7 @@ statement: formalized
 
 # Perfect and double-perfect partitions
 
-28 results, 14 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html).
+28 results, 14 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html).
 
 ## Partitions with unique subsums except one
 
@@ -24,7 +24,7 @@ $m = 1$, since it contains no partition of $1$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.exists_partition_unique_subsums_but_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#exists-partition-unique-subsums-but-one).
+Stated but not proved: `MetaMathlibExt.exists_partition_unique_subsums_but_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#exists-partition-unique-subsums-but-one).
 
 ## Number of subpartitions with a given sum
 
@@ -39,7 +39,7 @@ counts $(1)$ once in $(1^5, 2)$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Section 1 (Definitions 1, 3 and the example `(1^5, 2) ⊢ 7` after Definition 3).
 
-Formalized by `MetaMathlibExt.subpartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#subpartition-count).
+Formalized by `MetaMathlibExt.subpartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#subpartition-count).
 
 ## Perfect partition
 
@@ -52,7 +52,7 @@ exactly one sub-multiset of $\lambda$ has sum $m$ (equal sub-multisets are count
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Definition 1.
 
-Formalized by `MetaMathlibExt.IsPerfectPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-perfect-partition).
+Formalized by `MetaMathlibExt.IsPerfectPartition`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-perfect-partition).
 
 ## Double-perfect partitions of higher order
 
@@ -66,7 +66,7 @@ double-perfect partitions.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Definition 4 and display (11).
 
-Formalized by `MetaMathlibExt.IsDoublePerfectOfOrder`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-of-order).
+Formalized by `MetaMathlibExt.IsDoublePerfectOfOrder`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-of-order).
 
 ## Type-A double-perfect partition
 
@@ -81,7 +81,7 @@ partitions is denoted $D_r(N)$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Section 3 (definition of `D_r(N)` after display (12)).
 
-Formalized by `MetaMathlibExt.IsTypeADoublePerfect`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect).
+Formalized by `MetaMathlibExt.IsTypeADoublePerfect`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect).
 
 ## MacMahon's partition of an ordered factorization
 
@@ -99,7 +99,7 @@ factorizations of $n + 1$ into such factors onto the perfect partitions of $n$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, display (1).
 
-Formalized by `MetaMathlibExt.perfectPartitionOfFactorization`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#perfect-partition-of-factorization).
+Formalized by `MetaMathlibExt.perfectPartitionOfFactorization`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#perfect-partition-of-factorization).
 
 ## MacMahon's partition of the factorization 2 · 3
 
@@ -110,7 +110,7 @@ factorization $6 = 2 \cdot 3$ to the partition $(1, 2^2) = (1, 2, 2)$ of $5$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Table 1.
 
-Formalized by `MetaMathlibExt.perfectPartitionOfFactorization_two_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#perfect-partition-of-factorization-two-t).
+Formalized by `MetaMathlibExt.perfectPartitionOfFactorization_two_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#perfect-partition-of-factorization-two-t).
 
 ## The partition of a factorization sums to the product minus one
 
@@ -124,7 +124,7 @@ parts equal to $x$, sum to $a_1 a_2 \cdots a_k - 1$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, display (1) (perfect partitions of `n` correspond to factorizations of `n + 1`).
 
-Formalized by `MetaMathlibExt.perfectPartitionOfFactorization_sum_add_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#perfect-partition-of-factorization-sum-a).
+Formalized by `MetaMathlibExt.perfectPartitionOfFactorization_sum_add_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#perfect-partition-of-factorization-sum-a).
 
 ## Truncated recursion for ordered factorizations
 
@@ -137,7 +137,7 @@ $1 \le d < n$ (there are none when $n = 0$).
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Section 1 (definition of `f(n)`; summing over the first factor `n / d` of an ordered factorization gives the recursion).
 
-Formalized by `MetaMathlibExt.orderedFactorizationCountAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-aux).
+Formalized by `MetaMathlibExt.orderedFactorizationCountAux`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-aux).
 
 ## Number of ordered factorizations
 
@@ -149,7 +149,7 @@ $f(0) = 0$ and $f(1) = 1$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Section 1 (`f(n) := Σ_k f(n, k)`, `f(0) = 0`, `f(1) = 1`).
 
-Formalized by `MetaMathlibExt.orderedFactorizationCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count).
+Formalized by `MetaMathlibExt.orderedFactorizationCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count).
 
 ## The truncated ordered-factorization recursion stabilizes
 
@@ -163,7 +163,7 @@ greater than $1$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Section 1 (definition of `f(n)`).
 
-Formalized by `MetaMathlibExt.orderedFactorizationCountAux_eq`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-aux-eq).
+Formalized by `MetaMathlibExt.orderedFactorizationCountAux_eq`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-aux-eq).
 
 ## Recursion for the number of ordered factorizations
 
@@ -177,7 +177,7 @@ The recursion comes from splitting off the first factor of an ordered factorizat
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Section 1 (definition of `f(n)`).
 
-Formalized by `MetaMathlibExt.orderedFactorizationCount_eq_sum`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-eq-sum).
+Formalized by `MetaMathlibExt.orderedFactorizationCount_eq_sum`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-eq-sum).
 
 ## Small values of the ordered factorization count
 
@@ -189,7 +189,7 @@ $f(6) = 3$ and $f(12) = 8$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Section 1 (the eight ordered factorizations of `12`, Table 1 for `6`).
 
-Formalized by `MetaMathlibExt.orderedFactorizationCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-small).
+Formalized by `MetaMathlibExt.orderedFactorizationCount_small`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#ordered-factorization-count-small).
 
 ## A perfect partition of seven
 
@@ -200,7 +200,7 @@ to $1$ and one part equal to $4$, is a perfect partition of $7$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, example after Definition 1.
 
-Formalized by `MetaMathlibExt.isPerfectPartition_seven`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-perfect-partition-seven).
+Formalized by `MetaMathlibExt.isPerfectPartition_seven`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-perfect-partition-seven).
 
 ## A Type-A double-perfect partition of seven
 
@@ -214,7 +214,7 @@ It arises from the perfect partition $(1^5)$ of $5$ by adding the part $2$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, example after Definition 3 and Table 3.
 
-Formalized by `MetaMathlibExt.isTypeADoublePerfect_one_seven`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect-one-seven).
+Formalized by `MetaMathlibExt.isTypeADoublePerfect_one_seven`, a theorem declared in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect-one-seven).
 
 ## Lee's form of double-perfect partitions
 
@@ -235,7 +235,7 @@ but has no part $2$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Proposition 1 (Lee), display (3).
 
-Stated but not proved: `MetaMathlibExt.doublePerfect_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-form).
+Stated but not proved: `MetaMathlibExt.doublePerfect_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-form).
 
 ## Lee's count of double-perfect partitions
 
@@ -252,7 +252,7 @@ double-perfect of order $1$ while $f(0) = 0$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 1 (Lee), display (4).
 
-Stated but not proved: `MetaMathlibExt.doublePerfect_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-ncard).
+Stated but not proved: `MetaMathlibExt.doublePerfect_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-ncard).
 
 ## Double-perfect partitions from perfect partitions
 
@@ -266,7 +266,7 @@ $\lambda$ is $\beta$ with one more part equal to $2$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.isDoublePerfect_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-one-iff).
+Stated but not proved: `MetaMathlibExt.isDoublePerfect_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-one-iff).
 
 ## Lee's two forms of double-perfect partitions
 
@@ -285,7 +285,7 @@ double-perfect partition of $3$ of order $1$ of neither form.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 1 with displays (5), (6).
 
-Stated but not proved: `MetaMathlibExt.doublePerfect_lee_forms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-lee-forms).
+Stated but not proved: `MetaMathlibExt.doublePerfect_lee_forms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-lee-forms).
 
 ## Characterization of Type-A double-perfect partitions
 
@@ -306,7 +306,7 @@ part (ia), and it matches the set $W(2)$ of Proposition 2.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 2, display (13).
 
-Stated but not proved: `MetaMathlibExt.isTypeADoublePerfect_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect-iff).
+Stated but not proved: `MetaMathlibExt.isTypeADoublePerfect_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect-iff).
 
 ## Shapes of Type-A double-perfect partitions
 
@@ -326,7 +326,7 @@ $\lambda = P(a_1, \dots, a_k) \cup (r+1)$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 2 with displays (14)-(17).
 
-Stated but not proved: `MetaMathlibExt.typeADoublePerfect_forms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#type-adouble-perfect-forms).
+Stated but not proved: `MetaMathlibExt.typeADoublePerfect_forms` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#type-adouble-perfect-forms).
 
 ## Number of Type-A double-perfect partitions
 
@@ -341,7 +341,7 @@ $f(N-r) - (f(r+1) - 1) f((N-r)/(r+1))$ if $N \equiv -1 \pmod M$, and $f(N-r)$ ot
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 3, display (18).
 
-Stated but not proved: `MetaMathlibExt.typeADoublePerfect_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#type-adouble-perfect-ncard).
+Stated but not proved: `MetaMathlibExt.typeADoublePerfect_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#type-adouble-perfect-ncard).
 
 ## Adding equal parts to a Type-A double-perfect partition
 
@@ -359,7 +359,7 @@ order $1$ because it contains only one partition of $2$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.isTypeADoublePerfect_add_replicate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect-add-replicate).
+Stated but not proved: `MetaMathlibExt.isTypeADoublePerfect_add_replicate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-type-adouble-perfect-add-replicate).
 
 ## Inserting copies of a part into a double-perfect partition
 
@@ -376,7 +376,7 @@ order $1$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.isDoublePerfectOfOrder_add_replicate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-of-order-add-replicate).
+Stated but not proved: `MetaMathlibExt.isDoublePerfectOfOrder_add_replicate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-of-order-add-replicate).
 
 ## Adding a copy of the largest part to a double-perfect partition
 
@@ -394,7 +394,7 @@ $3$ of order $1$, but $(1^4)$ is not a double-perfect partition of $4$ of order 
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.isDoublePerfectOfOrder_add_largest` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-of-order-add-largest).
+Stated but not proved: `MetaMathlibExt.isDoublePerfectOfOrder_add_largest` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#is-double-perfect-of-order-add-largest).
 
 ## Halved perfect partitions are double-perfect but not of Type A
 
@@ -414,7 +414,7 @@ of order $r$.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 5 with conditions (23)-(25) and display (26).
 
-Stated but not proved: `MetaMathlibExt.halvedPerfect_isDoublePerfect_not_typeA` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#halved-perfect-is-double-perfect-not-typ).
+Stated but not proved: `MetaMathlibExt.halvedPerfect_isDoublePerfect_not_typeA` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 349](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L349). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#halved-perfect-is-double-perfect-not-typ).
 
 ## Number of Type-B double-perfect partitions
 
@@ -430,7 +430,7 @@ $N \equiv -1 \pmod M$, and $0$ otherwise.
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 6, display (27).
 
-Stated but not proved: `MetaMathlibExt.typeBDoublePerfect_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#type-bdouble-perfect-ncard).
+Stated but not proved: `MetaMathlibExt.typeBDoublePerfect_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 368](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L368). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#type-bdouble-perfect-ncard).
 
 ## Number of double-perfect partitions of higher order
 
@@ -445,7 +445,7 @@ $f(N-r) + (f(M) - 2f(r+1)) f((N-r)/(r+1))$ if $N \equiv -1 \pmod M$, and $f(N-r)
 
 - Augustine O. Munagi, *Double Perfect Partitions of Higher Order*, INTEGERS 25 (2025), Article A109, Theorem 7, display (28).
 
-Stated but not proved: `MetaMathlibExt.doublePerfectOfOrder_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-of-order-ncard).
+Stated but not proved: `MetaMathlibExt.doublePerfectOfOrder_ncard` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/DoublePerfectPartitionsWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html#double-perfect-of-order-ncard).
 
 ## Depends on
 
@@ -454,4 +454,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Perfect and double-perfect partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-partitions/young-diagrams-statistics/perfect-and-double-perfect-partitions)

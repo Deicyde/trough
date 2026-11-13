@@ -7,7 +7,7 @@ statement: formalized
 
 # Sums of powers of consecutive primes
 
-9 results, 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html).
+9 results, 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html).
 
 ## Counting sums of a fixed number of consecutive prime powers
 
@@ -20,7 +20,7 @@ most $\pi(\lfloor (x/m)^{1/k} \rfloor)$, the number of primes up to $(x/m)^{1/k}
 
 - Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Lemma 1 (quoted from [6]).
 
-Stated but not proved: `MetaMathlibExt.card_consecutivePrimePowerSums_length_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#card-consecutive-prime-power-sums-length).
+Stated but not proved: `MetaMathlibExt.card_consecutivePrimePowerSums_length_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#card-consecutive-prime-power-sums-length).
 
 ## Length of the longest sum of consecutive prime powers
 
@@ -34,7 +34,7 @@ through the natural numbers.
 
 - Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.maxConsecutivePrimePowerSumLength_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#max-consecutive-prime-power-sum-length-i).
+Stated but not proved: `MetaMathlibExt.maxConsecutivePrimePowerSumLength_isEquivalent` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#max-consecutive-prime-power-sum-length-i).
 
 ## Upper bound for the number of sums of consecutive prime powers
 
@@ -50,7 +50,7 @@ $c_k = \frac{k^2}{k-1} (k + 1)^{1 - 1/k}$.
 
 - Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_consecutivePrimePowerSums_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#card-consecutive-prime-power-sums-le).
+Stated but not proved: `MetaMathlibExt.card_consecutivePrimePowerSums_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#card-consecutive-prime-power-sums-le).
 
 ## Lower bound for the number of sums of consecutive prime powers
 
@@ -66,7 +66,7 @@ $(1 - \varepsilon) (k + 1)^2 x^{2/(k+1)} / \bigl(2 (\log x)^{2k/(k+1)}\bigr) \le
 
 - Cathal O'Sullivan, Jonathan P. Sorenson, and Aryn Stahl, *Algorithms and Bounds on the Sums of Powers of Consecutive Primes*, INTEGERS 24 (2024), Article A4, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_consecutivePrimePowerSums_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#card-consecutive-prime-power-sums-ge).
+Stated but not proved: `MetaMathlibExt.card_consecutivePrimePowerSums_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ConsecutivePrimePowerSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#card-consecutive-prime-power-sums-ge).
 
 ## Upper bound for the maximal gleeful chain length
 
@@ -84,7 +84,7 @@ $$M < 4^{1/(k+1)} \cdot \frac{(k+1)\, x^{1/(k+1)}}{(\log x)^{k/(k+1)}} \cdot C.$
 
 - Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Lemma 1, with `B`, `C` from Section 2.
 
-Stated but not proved: `MetaMathlibExt.maxChainLength_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#max-chain-length-lt).
+Stated but not proved: `MetaMathlibExt.maxChainLength_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#max-chain-length-lt).
 
 ## Lower bound for the maximal gleeful chain length
 
@@ -102,7 +102,7 @@ $$\frac{(k+1)\, x^{1/(k+1)}}{(\log x)^{k/(k+1)}} \cdot D \le M.$$
 
 - Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Lemma 2, with `D` from Section 2.
 
-Stated but not proved: `MetaMathlibExt.le_maxChainLength` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#le-max-chain-length).
+Stated but not proved: `MetaMathlibExt.le_maxChainLength` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#le-max-chain-length).
 
 ## Bounds for the logarithm of the maximal gleeful chain length
 
@@ -125,7 +125,7 @@ $$\frac{\log x}{k+1} \cdot \frac{1}{B} \le \log M < \frac{\log x}{k+1} \cdot \fr
 
 - Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Lemma 3, with `A`, `B` from Section 2.
 
-Stated but not proved: `MetaMathlibExt.log_maxChainLength_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#log-max-chain-length-bounds).
+Stated but not proved: `MetaMathlibExt.log_maxChainLength_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#log-max-chain-length-bounds).
 
 ## Upper bound for the number of gleeful representations
 
@@ -160,7 +160,7 @@ is stated here and implies the printed bound because $\log x \ge 1$.
 
 - Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Theorem 1 and its proof, with `c_k, A, B, C, E, F, U` from Section 2.
 
-Stated but not proved: `MetaMathlibExt.gleefulRepCount_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#gleeful-rep-count-le).
+Stated but not proved: `MetaMathlibExt.gleefulRepCount_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#gleeful-rep-count-le).
 
 ## Lower bound for the number of gleeful representations
 
@@ -183,7 +183,7 @@ stated here. The printed form contradicts the upper bound for $s_k(x)$ for large
 
 - Sara Moore and Jonathan P. Sorenson, *Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful Numbers*, INTEGERS 26 (2026), Article A84, Theorem 2 and its proof, with `D`, `L` from Section 2.
 
-Stated but not proved: `MetaMathlibExt.le_gleefulRepCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#le-gleeful-rep-count).
+Stated but not proved: `MetaMathlibExt.le_gleefulRepCount` is written with `theorem_wanted` in [WantedExt/NumberTheory/GleefulNumbersWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GleefulNumbersWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html#le-gleeful-rep-count).
 
 ## Depends on
 
@@ -192,4 +192,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sums of powers of consecutive primes](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/additive-number-theory/sums-of-powers-of-consecutive-primes)

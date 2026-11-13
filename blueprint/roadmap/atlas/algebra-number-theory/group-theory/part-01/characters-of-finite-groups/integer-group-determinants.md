@@ -7,7 +7,7 @@ statement: formalized
 
 # Integer group determinants
 
-41 results, 15 proved and 26 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html).
+41 results, 15 proved and 26 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html).
 
 ## Integer group determinants
 
@@ -19,7 +19,7 @@ ranges over all functions $G \to \mathbb{Z}$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 1 (definition of `S(G)`).
 
-Formalized by `MetaMathlibExt.integerGroupDeterminants`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#integer-group-determinants).
+Formalized by `MetaMathlibExt.integerGroupDeterminants`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#integer-group-determinants).
 
 ## $1$ is an integer group determinant
 
@@ -31,7 +31,7 @@ function of the identity element gives the identity matrix.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 1 (definition of `S(G)`).
 
-Formalized by `MetaMathlibExt.one_mem_integerGroupDeterminants`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#one-mem-integer-group-determinants).
+Formalized by `MetaMathlibExt.one_mem_integerGroupDeterminants`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#one-mem-integer-group-determinants).
 
 ## The group determinant of $C_4$
 
@@ -43,7 +43,7 @@ $4 \times 4$ circulant matrix whose $(i, j)$ entry is $x_{i - j}$, indices taken
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (definition of `D_n`).
 
-Formalized by `MetaMathlibExt.circulantDetFour`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four).
+Formalized by `MetaMathlibExt.circulantDetFour`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four).
 
 ## The 4 × 4 circulant determinant of (1, 0, 0, 0)
 
@@ -54,7 +54,7 @@ $4 \times 4$ circulant determinant satisfies $D_4(1, 0, 0, 0) = 1$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (definition of `D_n`).
 
-Formalized by `MetaMathlibExt.circulantDetFour_single_one`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-single-one).
+Formalized by `MetaMathlibExt.circulantDetFour_single_one`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-single-one).
 
 ## The sums $b_i$
 
@@ -67,7 +67,7 @@ for $0 \le i \le 3$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (notation after Corollary 2).
 
-Formalized by `MetaMathlibExt.c4SqB`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-b).
+Formalized by `MetaMathlibExt.c4SqB`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-b).
 
 ## The alternating sums $c_i$
 
@@ -80,7 +80,7 @@ for $0 \le i \le 3$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (notation after Corollary 2).
 
-Formalized by `MetaMathlibExt.c4SqC`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-c).
+Formalized by `MetaMathlibExt.c4SqC`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-c).
 
 ## The differences $d_i$ of a function on $C_4^2$
 
@@ -93,7 +93,7 @@ $a_{r + 4s}$ for $a(r, s)$, this is the paper's $d_i = a_i - a_{i+8}$ for $0 \le
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (notation after Corollary 2).
 
-Formalized by `MetaMathlibExt.c4SqD`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-d).
+Formalized by `MetaMathlibExt.c4SqD`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-d).
 
 ## The Gaussian integers $\alpha_i$
 
@@ -107,7 +107,7 @@ $\alpha_i = d_i + d_{i+4} \sqrt{-1}$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (notation after Corollary 2).
 
-Formalized by `MetaMathlibExt.c4SqAlpha`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-alpha).
+Formalized by `MetaMathlibExt.c4SqAlpha`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-alpha).
 
 ## The Gaussian integer $\beta$
 
@@ -119,7 +119,7 @@ $\beta = (\alpha_0 + \alpha_2)^2 - (\alpha_1 + \alpha_3)^2 \in \mathbb{Z}[\sqrt{
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (definition before Lemma 1).
 
-Formalized by `MetaMathlibExt.c4SqBeta`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-beta).
+Formalized by `MetaMathlibExt.c4SqBeta`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-beta).
 
 ## The Gaussian integer $\gamma$ of a function on $C_4^2$
 
@@ -133,7 +133,7 @@ $\gamma = (\alpha_0 - \alpha_2)^2 + (\alpha_1 - \alpha_3)^2 \in \mathbb{Z}[\sqrt
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (definition before Lemma 1).
 
-Formalized by `MetaMathlibExt.c4SqGamma`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-gamma).
+Formalized by `MetaMathlibExt.c4SqGamma`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-gamma).
 
 ## The C₄² notation at the indicator of the identity
 
@@ -146,7 +146,7 @@ $d = (1, 0, 0, 0, 0, 0, 0, 0)$, and the associated Gaussian integers are $\beta 
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Section 2 (notation after Corollary 2).
 
-Formalized by `MetaMathlibExt.c4Sq_notation_single`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-notation-single).
+Formalized by `MetaMathlibExt.c4Sq_notation_single`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-notation-single).
 
 ## Primes congruent to $-3$ modulo $8$
 
@@ -157,7 +157,7 @@ with $p \equiv -3 \pmod 8$, that is, $p \equiv 5 \pmod 8$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Theorem 1 (definition of `P`).
 
-Formalized by `MetaMathlibExt.primesFiveModEight`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#primes-five-mod-eight).
+Formalized by `MetaMathlibExt.primesFiveModEight`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#primes-five-mod-eight).
 
 ## $5$ and $13$ lie in $P$
 
@@ -168,7 +168,7 @@ positive primes $p \equiv -3 \pmod 8$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Theorem 1 (definition of `P`).
 
-Formalized by `MetaMathlibExt.five_thirteen_mem_primesFiveModEight`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#five-thirteen-mem-primes-five-mod-eight).
+Formalized by `MetaMathlibExt.five_thirteen_mem_primesFiveModEight`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#five-thirteen-mem-primes-five-mod-eight).
 
 ## The exceptional set $A$ for $C_4^2$
 
@@ -181,7 +181,7 @@ $8m - 3$ and $8n - 3$ lie in $P$ and $k + l \not\equiv m + n \pmod 2$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Theorem 1 (definition of `A`).
 
-Formalized by `MetaMathlibExt.c4SqExceptionalSet`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-exceptional-set).
+Formalized by `MetaMathlibExt.c4SqExceptionalSet`, a definition declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-exceptional-set).
 
 ## The exceptional set $A$ contains $1625$
 
@@ -194,7 +194,7 @@ Then $1625 \in A$: take $k = l = m = 1$ and $n = 2$, so that $1625 = 5 \cdot 5 \
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Theorem 1 (definition of `A`).
 
-Formalized by `MetaMathlibExt.mem_c4SqExceptionalSet_1625`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#mem-c4-sq-exceptional-set-1625).
+Formalized by `MetaMathlibExt.mem_c4SqExceptionalSet_1625`, a theorem declared in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#mem-c4-sq-exceptional-set-1625).
 
 ## Factorization of the 4 × 4 circulant determinant
 
@@ -208,7 +208,7 @@ $$D_4(x_0, x_1, x_2, x_3) =
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.circulantDetFour_eq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-eq).
+Stated but not proved: `MetaMathlibExt.circulantDetFour_eq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-eq).
 
 ## Factorization of the complex group determinant of $C_4^2$
 
@@ -228,7 +228,7 @@ circulant matrix with first row $(x_0, x_1, x_2, x_3)$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_groupDet_eq_prod_circulantDetFour` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-group-det-eq-prod-circulant-det-fo).
+Stated but not proved: `MetaMathlibExt.c4Sq_groupDet_eq_prod_circulantDetFour` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-group-det-eq-prod-circulant-det-fo).
 
 ## Sums of two squares congruent to −3 modulo 8
 
@@ -240,7 +240,7 @@ the set $P$ of positive primes congruent to $5$ modulo $8$, and $a^2 + b^2 = (8k
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.sq_add_sq_eq_mul_of_mod_eight` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#sq-add-sq-eq-mul-of-mod-eight).
+Stated but not proved: `MetaMathlibExt.sq_add_sq_eq_mul_of_mod_eight` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#sq-add-sq-eq-mul-of-mod-eight).
 
 ## Norms of β and γ as products of sums of two squares (C₄²)
 
@@ -261,7 +261,7 @@ $$\gamma\bar\gamma = \bigl((d_0 - d_2 - d_5 + d_7)^2 + (d_4 - d_6 + d_1 - d_3)^2
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_eq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-eq).
+Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_eq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-eq).
 
 ## The group determinant of $C_4^2$ modulo $2$
 
@@ -281,7 +281,7 @@ $D_{4 \times 4}(a) \equiv D_4(b) \equiv D_4(c) \equiv \beta\bar\beta \equiv \gam
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_groupDet_congr_mod_two` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-group-det-congr-mod-two).
+Stated but not proved: `MetaMathlibExt.c4Sq_groupDet_congr_mod_two` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-group-det-congr-mod-two).
 
 ## Norms of β and γ as differences of squares (C₄²)
 
@@ -302,7 +302,7 @@ $$\gamma\bar\gamma = \bigl((d_0 - d_2)^2 + (d_4 - d_6)^2 + (d_1 - d_3)^2 + (d_5 
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_eq_sq_sub` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-eq-sq-sub).
+Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_eq_sq_sub` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-eq-sq-sub).
 
 ## Difference of the squared sums of squares of the $d_i$
 
@@ -320,7 +320,7 @@ $$
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.c4SqD_sum_sq_sq_sub_sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-d-sum-sq-sq-sub-sq).
+Stated but not proved: `MetaMathlibExt.c4SqD_sum_sq_sq_sub_sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-d-sum-sq-sq-sub-sq).
 
 ## Cross terms of the $d_i$ modulo $4$
 
@@ -337,7 +337,7 @@ $2(d_0 d_1 + d_2 d_3 + d_4 d_5 + d_6 d_7) \equiv b_0 b_1 + b_2 b_3 + c_0 c_1 + c
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.c4SqD_cross_terms_mod_four` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-d-cross-terms-mod-four).
+Stated but not proved: `MetaMathlibExt.c4SqD_cross_terms_mod_four` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-d-cross-terms-mod-four).
 
 ## The 4 × 4 circulant determinant modulo 16 at two parity patterns
 
@@ -350,7 +350,7 @@ $D_4(2k, 2l + 1, 2m + 1, 2n + 1) \equiv 8(k + l + n) - 3 \pmod{16}$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.circulantDetFour_mod_sixteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-mod-sixteen).
+Stated but not proved: `MetaMathlibExt.circulantDetFour_mod_sixteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-mod-sixteen).
 
 ## Powers of $2$ dividing the $C_4$ group determinant at four parity patterns
 
@@ -377,7 +377,7 @@ for the set of integers $2^e(2t+1)$ with $t \in \mathbb{Z}$. Then:
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.circulantDetFour_two_power_cases` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-two-power-cases).
+Stated but not proved: `MetaMathlibExt.circulantDetFour_two_power_cases` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#circulant-det-four-two-power-cases).
 
 ## Odd integer group determinants of $C_4 \times C_4$
 
@@ -392,7 +392,7 @@ integer $m$ or lies in $A$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.odd_mem_integerGroupDeterminants_c4Sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#odd-mem-integer-group-determinants-c4-sq).
+Stated but not proved: `MetaMathlibExt.odd_mem_integerGroupDeterminants_c4Sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#odd-mem-integer-group-determinants-c4-sq).
 
 ## Factorization shapes of $D_4(b) D_4(c)$
 
@@ -412,7 +412,7 @@ $k \not\equiv l \pmod 2$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_classes` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-classes).
+Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_classes` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-classes).
 
 ## $D_4(b) D_4(c)$ modulo $16$
 
@@ -426,7 +426,7 @@ $D_4(b) D_4(c) \equiv 1 - 4(b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3) \pmod{16}$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_mod_sixteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-mod-six).
+Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_mod_sixteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 334](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L334). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-mod-six).
 
 ## A prime factor $8l - 3$ of $D_4(b) D_4(c)$
 
@@ -444,7 +444,7 @@ integers $k \equiv l \pmod 2$ with $8l - 3 \in P$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_prime_factor` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-prime-f).
+Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_prime_factor` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-prime-f).
 
 ## The difference of the norms of β and γ modulo 16 (C₄²)
 
@@ -459,7 +459,7 @@ $\beta\bar\beta - \gamma\bar\gamma \equiv 4(b_0b_2 + b_1b_3 + c_0c_2 + c_1c_3) \
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 12.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_sub_norm_gamma_mod_sixteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-sub-norm-gamma-mod-sixte).
+Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_sub_norm_gamma_mod_sixteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 362](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L362). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-sub-norm-gamma-mod-sixte).
 
 ## Two prime factors ≡ −3 mod 8 of ββ̄γγ̄ (C₄²)
 
@@ -477,7 +477,7 @@ with $j \not\equiv m + n \pmod 2$ in place of $j \equiv m + n \pmod 2$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 13.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_prime_factors` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-prime-factors).
+Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_prime_factors` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-prime-factors).
 
 ## Even integer group determinants of $C_4 \times C_4$
 
@@ -491,7 +491,7 @@ some $p \in P$ and some integer $m$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 14.
 
-Stated but not proved: `MetaMathlibExt.even_mem_integerGroupDeterminants_c4Sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#even-mem-integer-group-determinants-c4-s).
+Stated but not proved: `MetaMathlibExt.even_mem_integerGroupDeterminants_c4Sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 392](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L392). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#even-mem-integer-group-determinants-c4-s).
 
 ## The power of $2$ in $D_4(b) D_4(c)$
 
@@ -514,7 +514,7 @@ $2^9 \mid D$ otherwise.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 15.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_two_power` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-two-pow).
+Stated but not proved: `MetaMathlibExt.c4Sq_circulantDetFour_product_two_power` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 403](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L403). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-circulant-det-four-product-two-pow).
 
 ## The power of $2$ in $\beta\bar\beta\gamma\bar\gamma$
 
@@ -534,7 +534,7 @@ some integer $t$ when $d \equiv 2 \pmod 4$, and $2^8 \mid N$ when $d \equiv 0 \p
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 16.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_two_power` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-two-power).
+Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_two_power` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 436](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L436). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-two-power).
 
 ## Two conditions forcing $b_0 b_2 + b_1 b_3 + c_0 c_2 + c_1 c_3 \equiv 2 \pmod 4$
 
@@ -551,7 +551,7 @@ integers $t$ and $s$, then $Q \equiv 2 \pmod 4$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 17.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_cross_sum_mod_four_of_two_power` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-cross-sum-mod-four-of-two-power).
+Stated but not proved: `MetaMathlibExt.c4Sq_cross_sum_mod_four_of_two_power` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 454](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L454). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-cross-sum-mod-four-of-two-power).
 
 ## A prime factor p ≡ −3 mod 8 of ββ̄γγ̄ in the even case (C₄²)
 
@@ -568,7 +568,7 @@ $\beta\bar\beta\gamma\bar\gamma = 2^4 p(2m + 1)$ for some $p \in P$ and some int
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 18.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_prime_factor` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-prime-factor).
+Stated but not proved: `MetaMathlibExt.c4Sq_norm_beta_gamma_prime_factor` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 469](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L469). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-norm-beta-gamma-prime-factor).
 
 ## A prime factor $p \equiv 5 \pmod 8$ of $D_4(b) D_4(c) \beta\bar\beta \gamma\bar\gamma$
 
@@ -588,7 +588,7 @@ and $m \in \mathbb{Z}$ with $D_4(b) D_4(c) \beta\bar\beta \gamma\bar\gamma = 2^{
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 19.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_groupDet_factors_prime_factor` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-group-det-factors-prime-factor).
+Stated but not proved: `MetaMathlibExt.c4Sq_groupDet_factors_prime_factor` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 482](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L482). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-group-det-factors-prime-factor).
 
 ## Basic integer group determinants of $C_4^2$
 
@@ -600,7 +600,7 @@ $S(C_4^2)$ of integer group determinants of $C_4^2 = \mathbb{Z}/4 \times \mathbb
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 20.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_integerGroupDeterminants_basic_members` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-integer-group-determinants-basic-m).
+Stated but not proved: `MetaMathlibExt.c4Sq_integerGroupDeterminants_basic_members` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 495](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L495). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-integer-group-determinants-basic-m).
 
 ## Four-factor integer group determinants of $C_4^2$
 
@@ -619,7 +619,7 @@ shared hypothesis list.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 21.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_integerGroupDeterminants_four_factor_members` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-integer-group-determinants-four-fa).
+Stated but not proved: `MetaMathlibExt.c4Sq_integerGroupDeterminants_four_factor_members` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 507](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L507). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-integer-group-determinants-four-fa).
 
 ## Integer group determinants of $C_4^2$ of the form $2^{15} p (2m + 1)$
 
@@ -632,7 +632,7 @@ $C_4^2 = \mathbb{Z}/4 \times \mathbb{Z}/4$.
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Lemma 22.
 
-Stated but not proved: `MetaMathlibExt.c4Sq_integerGroupDeterminants_two_pow_fifteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-integer-group-determinants-two-pow).
+Stated but not proved: `MetaMathlibExt.c4Sq_integerGroupDeterminants_two_pow_fifteen` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#c4-sq-integer-group-determinants-two-pow).
 
 ## Integer group determinants of $C_4 \times C_4$
 
@@ -651,7 +651,7 @@ $$S(C_4^2) = \{16m + 1 \mid m \in \mathbb{Z}\} \cup
 
 - Yuka Yamaguchi and Naoya Yamaguchi, *Integer Group Determinants for C_4^2*, INTEGERS 24 (2024), Article A30, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.integerGroupDeterminants_c4Sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#integer-group-determinants-c4-sq).
+Stated but not proved: `MetaMathlibExt.integerGroupDeterminants_c4Sq` is written with `theorem_wanted` in [WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean, line 533](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/IntegerGroupDeterminantsC4SqWanted.lean#L533). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html#integer-group-determinants-c4-sq).
 
 ## Depends on
 
@@ -660,4 +660,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Integer group determinants](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/characters-of-finite-groups/integer-group-determinants)

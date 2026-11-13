@@ -7,7 +7,7 @@ statement: formalized
 
 # Humps and peaks in Motzkin paths
 
-40 results, 33 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html).
+40 results, 33 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html).
 
 ## Humps and peaks at a given height in Motzkin paths
 
@@ -32,7 +32,7 @@ where both sums run over the integers $0 \le j \le n - 2k$ with $j \equiv n \pmo
 
 - Xiaomei Chen, "Humps in Motzkin Paths and Standard Young Tableaux in a $(2,1)$-Hook", Journal of Integer Sequences 28 (2025), Article 25.8.1, Theorem `thm:22`, lines 147-156, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Chen/chen36.tex>.
 
-Formalized by `MetaMathlibExt.motzkin_hump_peak_height_distribution`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MotzkinHumpPeakHeight.lean, line 1583](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/MotzkinHumpPeakHeight.lean#L1583). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-peak-height-distribution).
+Formalized by `MetaMathlibExt.motzkin_hump_peak_height_distribution`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/MotzkinHumpPeakHeight.lean, line 1583](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/MotzkinHumpPeakHeight.lean#L1583). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-peak-height-distribution).
 
 ## Height change of a Motzkin step
 
@@ -44,7 +44,7 @@ is the integer $s - 1$; thus $D$ changes the height by $-1$, $F$ by $0$ and $U$ 
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.motzkinStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-step).
+Formalized by `MetaMathlibExt.motzkinStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-step).
 
 ## Motzkin prefix
 
@@ -58,7 +58,7 @@ sum of the displacements of all $n$ steps is $h$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.IsMotzkinPrefix`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix).
+Formalized by `MetaMathlibExt.IsMotzkinPrefix`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix).
 
 ## Motzkin hump
 
@@ -72,7 +72,7 @@ height after step $i$, that is, the sum of the displacements of $p_0, \dots, p_i
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.IsMotzkinHump`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-hump).
+Formalized by `MetaMathlibExt.IsMotzkinHump`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-hump).
 
 ## Unfolding the Motzkin prefix condition
 
@@ -86,7 +86,7 @@ and the sum of the displacements of all $n$ steps is $h$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.isMotzkinPrefix_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix-iff).
+Formalized by `MetaMathlibExt.isMotzkinPrefix_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix-iff).
 
 ## Bounded Motzkin prefix condition
 
@@ -100,7 +100,7 @@ $p_0, \dots, p_{m-1}$ is nonnegative, and the sum of the displacements of all $n
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.IsMotzkinPrefixFinite`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix-finite).
+Formalized by `MetaMathlibExt.IsMotzkinPrefixFinite`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix-finite).
 
 ## Bounded form of the Motzkin prefix condition
 
@@ -114,7 +114,7 @@ $m \le n$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.isMotzkinPrefixFinite_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix-finite-iff).
+Formalized by `MetaMathlibExt.isMotzkinPrefixFinite_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-prefix-finite-iff).
 
 ## Characterization of Motzkin humps
 
@@ -128,7 +128,7 @@ $s(p_r) = 0$ for every $r$ with $i < r < j$, and $\sum_{r \le i} s(p_r) = k$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.isMotzkinHump_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-hump-iff).
+Formalized by `MetaMathlibExt.isMotzkinHump_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-hump-iff).
 
 ## Motzkin peak
 
@@ -141,7 +141,7 @@ $p_j$ immediately follows the up step $p_i$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.IsMotzkinPeak`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-peak).
+Formalized by `MetaMathlibExt.IsMotzkinPeak`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-peak).
 
 ## Peaks are humps with adjacent endpoints
 
@@ -153,7 +153,7 @@ height $k$ in $p$ if and only if $(i, j)$ is a hump of height $k$ in $p$ and $j 
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.isMotzkinPeak_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-peak-iff).
+Formalized by `MetaMathlibExt.isMotzkinPeak_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-motzkin-peak-iff).
 
 ## Paths whose last non-flat step is up
 
@@ -169,7 +169,7 @@ $0$ and end at height $h$), these words form the paper's set $\mathcal{M}^{*U}_{
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.LastNonflatStepUp`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#last-nonflat-step-up).
+Formalized by `MetaMathlibExt.LastNonflatStepUp`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#last-nonflat-step-up).
 
 ## Characterization of words whose last non-flat step is up
 
@@ -181,7 +181,7 @@ and only if there is a position $i$ with $p_i = U$ such that $p_j = F$ for every
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.lastNonflatStepUp_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#last-nonflat-step-up-iff).
+Formalized by `MetaMathlibExt.lastNonflatStepUp_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#last-nonflat-step-up-iff).
 
 ## Paths whose first non-up step is down
 
@@ -198,7 +198,7 @@ $\mathcal{M}^{D*}_{n,h}$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.FirstNonupStepDown`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#first-nonup-step-down).
+Formalized by `MetaMathlibExt.FirstNonupStepDown`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#first-nonup-step-down).
 
 ## Characterization of paths whose first non-up step is down
 
@@ -211,7 +211,7 @@ $p_i = D$ and $p_j = U$ for every $j < i$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.firstNonupStepDown_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#first-nonup-step-down-iff).
+Formalized by `MetaMathlibExt.firstNonupStepDown_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#first-nonup-step-down-iff).
 
 ## Paths ending with an up step
 
@@ -224,7 +224,7 @@ and $p_i = U$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 3 (`jis-2025-25.8.1-lem-3`).
 
-Formalized by `MetaMathlibExt.EndsWithUp`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#ends-with-up).
+Formalized by `MetaMathlibExt.EndsWithUp`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#ends-with-up).
 
 ## Characterization of paths ending with an up step
 
@@ -237,7 +237,7 @@ $i + 1 = n$ and $p_i = U$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 3 (`jis-2025-25.8.1-lem-3`).
 
-Formalized by `MetaMathlibExt.endsWithUp_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#ends-with-up-iff).
+Formalized by `MetaMathlibExt.endsWithUp_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#ends-with-up-iff).
 
 ## Number of humps of a given height in Motzkin paths
 
@@ -253,7 +253,7 @@ length $n$ with one distinguished hump of height $k$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.motzkinHumpCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-count).
+Formalized by `MetaMathlibExt.motzkinHumpCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-count).
 
 ## Motzkin generating function
 
@@ -264,7 +264,7 @@ $M(x) = \sum_{n \ge 0} m_n x^n$ in $\mathbb{Z}[[x]]$, where $m_n$ is the $n$-th 
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.motzkinSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-series).
+Formalized by `MetaMathlibExt.motzkinSeries`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-series).
 
 ## Standard Young tableau
 
@@ -281,7 +281,7 @@ diagram, and that entries increase strictly along rows and down columns.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.IsStandardYoungTableau`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-standard-young-tableau).
+Formalized by `MetaMathlibExt.IsStandardYoungTableau`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-standard-young-tableau).
 
 ## Unfolding the standard Young tableau condition
 
@@ -295,7 +295,7 @@ there is an entry $j \le i$ with $T(j) = (r, c)$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.isStandardYoungTableau_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-standard-young-tableau-iff).
+Formalized by `MetaMathlibExt.isStandardYoungTableau_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-standard-young-tableau-iff).
 
 ## Tableaux in the $(2,1)$-hook
 
@@ -308,7 +308,7 @@ no $i$ has both $r_i \ge 2$ and $c_i \ge 1$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.IsInTwoOneHook`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-in-two-one-hook).
+Formalized by `MetaMathlibExt.IsInTwoOneHook`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-in-two-one-hook).
 
 ## Characterization of tableaux in the $(2,1)$-hook
 
@@ -320,7 +320,7 @@ $(2,1)$-hook if and only if for no entry $i$ do both $r_i \ge 2$ and $c_i \ge 1$
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.isInTwoOneHook_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-in-two-one-hook-iff).
+Formalized by `MetaMathlibExt.isInTwoOneHook_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#is-in-two-one-hook-iff).
 
 ## Row length of a tableau
 
@@ -333,7 +333,7 @@ of entries $i$ whose cell $T(i)$ lies in row $r$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.tableauRowLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#tableau-row-length).
+Formalized by `MetaMathlibExt.tableauRowLength`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 283](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L283). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#tableau-row-length).
 
 ## First-two-row difference of a tableau
 
@@ -347,7 +347,7 @@ is, when $\lambda_1 - \lambda_2 = k$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.HasFirstTwoRowDifference`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#has-first-two-row-difference).
+Formalized by `MetaMathlibExt.HasFirstTwoRowDifference`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#has-first-two-row-difference).
 
 ## Characterization of the first-two-row difference
 
@@ -361,7 +361,7 @@ $\lambda_1 = \lambda_2 + k$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.hasFirstTwoRowDifference_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#has-first-two-row-difference-iff).
+Formalized by `MetaMathlibExt.hasFirstTwoRowDifference_iff`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#has-first-two-row-difference-iff).
 
 ## Standard Young tableaux in the $(2,1)$-hook with given row difference
 
@@ -374,7 +374,7 @@ lengths satisfy $\lambda_1 = \lambda_2 + k$ (a missing row has length $0$).
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Section 1 (definitions).
 
-Formalized by `MetaMathlibExt.sytHookCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count).
+Formalized by `MetaMathlibExt.sytHookCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count).
 
 ## Motzkin paths with a marked hump, over all heights
 
@@ -393,7 +393,7 @@ keeping the height index $k$ with each marked path.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 3 (`jis-2025-25.8.1-lem-3`).
 
-Formalized by `MetaMathlibExt.MotzkinHumpFamily`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-family).
+Formalized by `MetaMathlibExt.MotzkinHumpFamily`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-family).
 
 ## Motzkin prefixes of even height whose last non-flat step is up
 
@@ -412,7 +412,7 @@ each path.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 3 (`jis-2025-25.8.1-lem-3`).
 
-Formalized by `MetaMathlibExt.MotzkinLastUpEvenFamily`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-last-up-even-family).
+Formalized by `MetaMathlibExt.MotzkinLastUpEvenFamily`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-last-up-even-family).
 
 ## Motzkin prefixes whose first non-up step is down
 
@@ -429,7 +429,7 @@ the index $k$ with each path.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 6 (`jis-2025-25.8.1-lem-6`).
 
-Formalized by `MetaMathlibExt.MotzkinFirstDownFamily`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-first-down-family).
+Formalized by `MetaMathlibExt.MotzkinFirstDownFamily`, a definition declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-first-down-family).
 
 ## Hook tableaux of order 3 with row difference 1
 
@@ -441,7 +441,7 @@ second row by exactly $1$ equals $2$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Initial-values table.
 
-Formalized by `MetaMathlibExt.sytHookCount_three_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-three-one).
+Formalized by `MetaMathlibExt.sytHookCount_three_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-three-one).
 
 ## Hook tableaux of order 3 with row difference 0
 
@@ -453,7 +453,7 @@ length equals $1$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Initial-values table.
 
-Formalized by `MetaMathlibExt.sytHookCount_three_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-three-zero).
+Formalized by `MetaMathlibExt.sytHookCount_three_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 422](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L422). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-three-zero).
 
 ## Hook tableaux of order 2 with row difference 1
 
@@ -465,7 +465,7 @@ second row by exactly $1$ equals $0$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Initial-values table.
 
-Formalized by `MetaMathlibExt.sytHookCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-two-one).
+Formalized by `MetaMathlibExt.sytHookCount_two_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 430](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L430). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-two-one).
 
 ## Humps of height one in Motzkin paths of length four
 
@@ -478,7 +478,7 @@ ends at height $k$. Then $H_{4,1} = 8$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Hump-count table.
 
-Formalized by `MetaMathlibExt.motzkinHumpCount_four_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-count-four-one).
+Formalized by `MetaMathlibExt.motzkinHumpCount_four_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-count-four-one).
 
 ## Closed formula for hook tableau counts
 
@@ -500,7 +500,7 @@ so the only term of that inner sum, $j = 0$, has binomial factor $\binom{0}{0} =
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Theorem 2 (`jis-2025-25.8.1-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.sytHookCount_closedForm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-closed-form).
+Stated but not proved: `MetaMathlibExt.sytHookCount_closedForm` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 451](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L451). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-closed-form).
 
 ## Humps correspond to last-up prefixes of twice the height
 
@@ -520,7 +520,7 @@ the hump $h$ is a peak exactly when the image path $p$ ends with an up step.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 3 (`jis-2025-25.8.1-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.motzkinHumpFamily_equiv_lastUpEvenFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-family-equiv-last-up-even-f).
+Stated but not proved: `MetaMathlibExt.motzkinHumpFamily_equiv_lastUpEvenFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-family-equiv-last-up-even-f).
 
 ## Generating function for humps of a fixed height
 
@@ -538,7 +538,7 @@ The source also states this result in Riordan-array form.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Corollary 5 (`jis-2025-25.8.1-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.motzkinHumpCount_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-count-generating-function).
+Stated but not proved: `MetaMathlibExt.motzkinHumpCount_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-hump-count-generating-function).
 
 ## A bijection between first-down and even-height last-up Motzkin prefixes
 
@@ -555,7 +555,7 @@ that contains a $U$ after which every step is $F$.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 6 (`jis-2025-25.8.1-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.motzkinFirstDownFamily_equiv_lastUpEvenFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-first-down-family-equiv-last-up).
+Stated but not proved: `MetaMathlibExt.motzkinFirstDownFamily_equiv_lastUpEvenFamily` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 492](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L492). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#motzkin-first-down-family-equiv-last-up).
 
 ## Generating function for the adjusted $(2,1)$-hook tableau counts
 
@@ -575,7 +575,7 @@ stated without division.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Lemma 7 (`jis-2025-25.8.1-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.adjustedSytHookCount_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#adjusted-syt-hook-count-generating-funct).
+Stated but not proved: `MetaMathlibExt.adjustedSytHookCount_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#adjusted-syt-hook-count-generating-funct).
 
 ## Generating function for hook tableau counts
 
@@ -595,7 +595,7 @@ The factor $1 + x$ is cleared, so the identity involves no division.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Corollary 9 (`jis-2025-25.8.1-cor-9`).
 
-Stated but not proved: `MetaMathlibExt.sytHookCount_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-generating-function).
+Stated but not proved: `MetaMathlibExt.sytHookCount_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-generating-function).
 
 ## Hook tableau counts as differences of hump counts
 
@@ -616,7 +616,7 @@ where the subtraction is taken in the integers.
 
 - Xiaomei Chen, *Humps in Motzkin Paths and Standard Young Tableaux in a (2,1)-Hook*, Journal of Integer Sequences 28 (2025), Article 25.8.1, Corollary 10 (`jis-2025-25.8.1-cor-10`).
 
-Stated but not proved: `MetaMathlibExt.sytHookCount_add_eq_humpCount_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-add-eq-hump-count-sub).
+Stated but not proved: `MetaMathlibExt.sytHookCount_add_eq_humpCount_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/MotzkinHumpsYoungTableauxWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html#syt-hook-count-add-eq-hump-count-sub).
 
 ## Depends on
 
@@ -625,4 +625,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Humps and peaks in Motzkin paths](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/catalan-numbers-lattice-paths/motzkin-numbers/humps-and-peaks-in-motzkin-paths)

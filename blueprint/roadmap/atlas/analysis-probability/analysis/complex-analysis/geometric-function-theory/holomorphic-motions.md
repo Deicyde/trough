@@ -7,14 +7,14 @@ statement: formalized
 
 # Holomorphic motions
 
-7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html).
+7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html).
 
 ## Open unit disc
 
 The open unit disc $\mathbb{D}$ is the set of complex numbers $z$ with
 $|z| < 1$, the open ball of radius $1$ about $0$ in $\mathbb{C}$.
 
-Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.UnitDisc`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#unit-disc).
+Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.UnitDisc`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#unit-disc).
 
 ## Injectivity at each parameter of the disc
 
@@ -25,7 +25,7 @@ the map $w \mapsto F(w, z)$ is injective on $E$.
 
 This is condition (a) of Problem 7.82 in AMR-022-7082.
 
-Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.IsInjectiveInParam`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#is-injective-in-param).
+Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.IsInjectiveInParam`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#is-injective-in-param).
 
 ## Holomorphic dependence of a motion on the parameter
 
@@ -36,7 +36,7 @@ $w \in E$, the map $z \mapsto F(w, z)$ is analytic on $\mathbb{D}$.
 
 This is condition (b) of Problem 7.82 in AMR-022-7082.
 
-Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.IsAnalyticInDisc`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#is-analytic-in-disc).
+Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.IsAnalyticInDisc`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#is-analytic-in-disc).
 
 ## Motion equal to the identity at parameter zero
 
@@ -46,7 +46,7 @@ Condition (c) holds for $E$ and $F$ when $F(w, 0) = w$ for every $w \in E$.
 
 This is condition (c) of Problem 7.82 in AMR-022-7082.
 
-Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.IsNormalizedAtZero`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#is-normalized-at-zero).
+Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.IsNormalizedAtZero`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#is-normalized-at-zero).
 
 ## Agreement of two motions on a set
 
@@ -55,7 +55,7 @@ complex numbers, and $F$ and $G$ functions assigning complex numbers $F(w, z)$ a
 each pair of complex numbers $w, z$. Then $G$ agrees with $F$ on $E$ when $G(w, z) = F(w, z)$
 for every $w \in E$ and every $z \in \mathbb{D}$.
 
-Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.AgreesOnDisc`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#agrees-on-disc).
+Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.AgreesOnDisc`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#agrees-on-disc).
 
 ## Extension problem for holomorphic motions
 
@@ -76,7 +76,7 @@ holomorphic motion of the whole plane.
 
 - AMR-022-7082, Problem 7.82.
 
-Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.conjecture`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#conjecture).
+Formalized by `MathlibExt.Analysis.AMR22Problem7082Wanted.conjecture`, a definition declared in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#conjecture).
 
 ## Holomorphic motions of planar sets extend to the plane
 
@@ -96,7 +96,7 @@ holomorphic motion of the Riemann sphere.
 
 - Zbigniew Słodkowski, Holomorphic motions and polynomial hulls, Proceedings of the American Mathematical Society 111 (1991), 347–355, https://doi.org/10.2307/2048323.
 
-Stated but not proved: `MathlibExt.Analysis.AMR22Problem7082Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Analysis.AMR22Problem7082Wanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Analysis/AMR22Problem7082Wanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/AMR22Problem7082Wanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Holomorphic motions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/geometric-function-theory/holomorphic-motions)

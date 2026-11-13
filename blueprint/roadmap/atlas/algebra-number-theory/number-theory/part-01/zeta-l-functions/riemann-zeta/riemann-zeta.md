@@ -7,7 +7,7 @@ statement: formalized
 
 # Riemann zeta function: its own results
 
-5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html).
+5 results, 3 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html).
 
 Continuation and zeros of ζ, zero-free regions, moments and subconvexity, RH criteria (Robin, Lagarias), de Bruijn–Newman constant, zeta values.
 
@@ -23,7 +23,7 @@ $\sum_{k=0}^{L_N - 1} \delta_{N,k}^2 = O(N^{-1+\varepsilon})$ as $N \to \infty$.
 
 - https://en.wikipedia.org/wiki/Farey_sequence.
 
-Stated but not proved: `MetaMathlibExt.franel_landau` is written with `theorem_wanted` in [WantedExt/NumberTheory/FranelLandauTheoremWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FranelLandauTheoremWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#franel-landau).
+Stated but not proved: `MetaMathlibExt.franel_landau` is written with `theorem_wanted` in [WantedExt/NumberTheory/FranelLandauTheoremWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FranelLandauTheoremWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#franel-landau).
 
 ## Kachi–Tzermias infinite products for $\zeta(3)$
 
@@ -43,7 +43,7 @@ $$\left(\prod_{n=1}^{m} \frac{(2n)^{(2n)^2}}{(2n-1)^{(2n-1)^2}}\right)^4
 
 - Yasuyuki Kachi and Pavlos Tzermias, "Infinite Products Involving zeta(3) and Catalan's Constant," Journal of Integer Sequences 15 (2012), Article 12.9.4, Proposition `zeta3`, equations `zeta3i`–`zeta3iii`, lines 124–144, <https://cs.uwaterloo.ca/journals/JIS/VOL15/Tzermias/tzermias2.tex>.
 
-Formalized by `MetaMathlibExt.zeta_three_infinite_product_formulas`, a theorem declared in [MathlibExt/NumberTheory/ZetaThreeProductFormulas.lean, line 1364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/ZetaThreeProductFormulas.lean#L1364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#zeta-three-infinite-product-formulas).
+Formalized by `MetaMathlibExt.zeta_three_infinite_product_formulas`, a theorem declared in [MathlibExt/NumberTheory/ZetaThreeProductFormulas.lean, line 1364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/ZetaThreeProductFormulas.lean#L1364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#zeta-three-infinite-product-formulas).
 
 ## Lagarias' elementary criterion for the Riemann hypothesis
 
@@ -60,14 +60,14 @@ the $n$-th harmonic number.
 
 - https://arxiv.org/abs/math/0008177. Problem `riemann_hypothesis_iff_lagarias_elementary_criterion` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.LagariasWanted.NumberTheory.riemann_hypothesis_iff_lagarias_elementary_criterion` is written with `theorem_wanted` in [WantedExt/NumberTheory/LagariasWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LagariasWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#riemann-hypothesis-iff-lagarias-elementa).
+Stated but not proved: `MathlibExt.NumberTheory.LagariasWanted.NumberTheory.riemann_hypothesis_iff_lagarias_elementary_criterion` is written with `theorem_wanted` in [WantedExt/NumberTheory/LagariasWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LagariasWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#riemann-hypothesis-iff-lagarias-elementa).
 
 ## Meromorphy of the Riemann zeta function
 
 The Riemann zeta function $\zeta$ is
 meromorphic on all of $\mathbb{C}$.
 
-Formalized by `meromorphicOn_riemannZeta`, a theorem declared in [MathlibExt/NumberTheory/LSeries/RiemannZeta.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LSeries/RiemannZeta.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#meromorphic-on-riemann-zeta).
+Formalized by `meromorphicOn_riemannZeta`, a theorem declared in [MathlibExt/NumberTheory/LSeries/RiemannZeta.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LSeries/RiemannZeta.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#meromorphic-on-riemann-zeta).
 
 ## Ramanujan's formula for the alternating zeta function at $-r$
 
@@ -83,7 +83,7 @@ and these two functions agree outside a closed discrete subset of $\mathbb{C}$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 7.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry2Faulhaber.ramanujan_part1_ch7_entry2_faulhaber`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry2Faulhaber.lean, line 1080](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry2Faulhaber.lean#L1080). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#ramanujan-part1-ch7-entry2-faulhaber).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry2Faulhaber.ramanujan_part1_ch7_entry2_faulhaber`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch7Entry2Faulhaber.lean, line 1080](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch7Entry2Faulhaber.lean#L1080). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html#ramanujan-part1-ch7-entry2-faulhaber).
 
 ## Depends on
 
@@ -92,4 +92,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Riemann zeta function](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta)

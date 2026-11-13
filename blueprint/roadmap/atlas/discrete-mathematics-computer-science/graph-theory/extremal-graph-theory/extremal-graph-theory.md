@@ -7,7 +7,7 @@ statement: formalized
 
 # Extremal graph theory: its own results
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/index.html).
 
 How many edges or copies of a subgraph a graph can have while avoiding a forbidden structure: Turán and Zarankiewicz problems, saturation, and extremal graphs of given girth.
 
@@ -27,7 +27,7 @@ $t$-th root, following Kővári–Sós–Turán (1954) and Jukna, Theorem 2.10.
 
 - https://en.wikipedia.org/wiki/Zarankiewicz_problem.
 
-Formalized by `MetaMathlibExt.kovari_sos_turan`, a theorem declared in [MathlibExt/Combinatorics/Graph/KovariSosTuran.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/KovariSosTuran.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/index.html#kovari-sos-turan).
+Formalized by `MetaMathlibExt.kovari_sos_turan`, a theorem declared in [MathlibExt/Combinatorics/Graph/KovariSosTuran.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/KovariSosTuran.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/index.html#kovari-sos-turan).
 
 ## Monomial graphs of girth eight
 
@@ -45,7 +45,7 @@ exactly $8$.
 
 - V. Dmytrenko, F. Lazebnik, and J. Williford, "On monomial graphs of girth eight", Finite Fields Appl. 13 (2007), 828–842, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.monomialGraph_girth_eight_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/SimpleGraph/MonomialGraphClassificationWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SimpleGraph/MonomialGraphClassificationWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/index.html#monomial-graph-girth-eight-classificatio).
+Stated but not proved: `MetaMathlibExt.monomialGraph_girth_eight_classification` is written with `theorem_wanted` in [WantedExt/Combinatorics/SimpleGraph/MonomialGraphClassificationWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SimpleGraph/MonomialGraphClassificationWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/index.html#monomial-graph-girth-eight-classificatio).
 
 ## Depends on
 
@@ -54,4 +54,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Extremal graph theory](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/extremal-graph-theory)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/extremal-graph-theory)

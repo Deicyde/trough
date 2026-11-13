@@ -7,7 +7,7 @@ statement: formalized
 
 # A question of Erdős and Graham on covering systems
 
-2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste/index.html).
+2 results, 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste/index.html).
 
 ## Non-intersecting integers admit no covering system of divisor form
 
@@ -26,7 +26,7 @@ $a_d \pmod d$ for $d \in D$ with the coprime-overlap property covers the integer
 
 - Sarosh Adenwalla, "A Question of Erdős and Graham on Covering Systems", Theorem 3.2.
 
-Stated but not proved: `MathlibExt.NumberTheory.ErdosGrahamCoveringWanted.not_covering_of_nonintersecting` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste/index.html#not-covering-of-nonintersecting).
+Stated but not proved: `MathlibExt.NumberTheory.ErdosGrahamCoveringWanted.not_covering_of_nonintersecting` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste/index.html#not-covering-of-nonintersecting).
 
 ## Covering systems have reciprocal-moduli sum at least one
 
@@ -38,7 +38,7 @@ $z \equiv a_i \pmod{d_i}$ for some $i$. Then $\sum_{i=1}^t 1/d_i \ge 1$.
 
 - Sarosh Adenwalla, "A Question of Erdős and Graham on Covering Systems", Lemma 2.2.
 
-Stated but not proved: `MathlibExt.NumberTheory.ErdosGrahamCoveringWanted.one_le_sum_inv_moduli` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste/index.html#one-le-sum-inv-moduli).
+Stated but not proved: `MathlibExt.NumberTheory.ErdosGrahamCoveringWanted.one_le_sum_inv_moduli` is written with `theorem_wanted` in [WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ErdosGrahamCoveringWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste/index.html#one-le-sum-inv-moduli).
 
 ## Depends on
 
@@ -47,4 +47,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: A question of Erdős and Graham on covering systems](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/covering-systems/a-question-of-erd-s-and-graham-on-covering-syste)

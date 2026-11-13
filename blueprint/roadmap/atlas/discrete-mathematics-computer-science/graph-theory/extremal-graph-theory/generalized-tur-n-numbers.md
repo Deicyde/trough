@@ -8,7 +8,7 @@ proof: formalized
 
 # Generalized Turán numbers
 
-5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html).
+5 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html).
 
 ## Generalized Turán number
 
@@ -21,7 +21,7 @@ vertex set $\{0, 1, \dots, n-1\}$, and is $0$ if there is no such graph.
 The source considers graphs $T$ and $H$ without isolated vertices; the definition does not require
 this.
 
-Formalized by `SimpleGraph.generalizedExtremalNumber`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#generalized-extremal-number).
+Formalized by `SimpleGraph.generalizedExtremalNumber`, a definition declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#generalized-extremal-number).
 
 ## The generalized Turán number as a supremum
 
@@ -31,7 +31,7 @@ $\mathrm{ex}(n, T, H)$ is the supremum in $\mathbb{N}$, with the supremum of the
 to be $0$, of the number of copies of $T$ in $G$ over all simple graphs $G$ on the vertex set
 $\{0, 1, \dots, n-1\}$ that contain no copy of $H$ (a subgraph isomorphic to $H$).
 
-Formalized by `SimpleGraph.generalizedExtremalNumber_eq_sup`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#generalized-extremal-number-eq-sup).
+Formalized by `SimpleGraph.generalizedExtremalNumber_eq_sup`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#generalized-extremal-number-eq-sup).
 
 ## The generalized Turán number is an upper bound
 
@@ -40,7 +40,7 @@ $H$ be simple graphs, where $T$ has finitely many vertices. If $G$ is a simple g
 set $\{0, 1, \dots, n-1\}$ that contains no copy of $H$ (a subgraph isomorphic to $H$), then the
 number of copies of $T$ in $G$ is at most the generalized Turán number $\mathrm{ex}(n, T, H)$.
 
-Formalized by `SimpleGraph.copyCount_le_generalizedExtremalNumber`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#copy-count-le-generalized-extremal-numbe).
+Formalized by `SimpleGraph.copyCount_le_generalizedExtremalNumber`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#copy-count-le-generalized-extremal-numbe).
 
 ## Upper bounds for the generalized Turán number
 
@@ -50,7 +50,7 @@ number $\mathrm{ex}(n, T, H)$ is at most $m$ if and only if every simple graph o
 $\{0, 1, \dots, n-1\}$ that contains no copy of $H$ (a subgraph isomorphic to $H$) has at most $m$
 copies of $T$.
 
-Formalized by `SimpleGraph.generalizedExtremalNumber_le_iff`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#generalized-extremal-number-le-iff).
+Formalized by `SimpleGraph.generalizedExtremalNumber_le_iff`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#generalized-extremal-number-le-iff).
 
 ## The generalized Turán number is attained
 
@@ -60,7 +60,7 @@ $\{0, 1, \dots, n-1\}$ contains no copy of $H$ (a subgraph isomorphic to $H$), t
 $G$ has exactly $\mathrm{ex}(n, T, H)$ copies of $T$, where $\mathrm{ex}(n, T, H)$ is the
 generalized Turán number.
 
-Formalized by `SimpleGraph.exists_free_copyCount_eq_generalizedExtremalNumber`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#exists-free-copy-count-eq-generalized-ex).
+Formalized by `SimpleGraph.exists_free_copyCount_eq_generalizedExtremalNumber`, a theorem declared in [MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SimpleGraph/GeneralizedExtremal.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html#exists-free-copy-count-eq-generalized-ex).
 
 ## Depends on
 
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Turán numbers](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/extremal-graph-theory/generalized-tur-n-numbers)

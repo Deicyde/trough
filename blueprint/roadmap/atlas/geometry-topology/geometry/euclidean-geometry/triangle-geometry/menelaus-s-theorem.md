@@ -8,7 +8,7 @@ proof: formalized
 
 # Menelaus's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem/index.html).
 
 ## Menelaus's theorem, general form
 
@@ -24,7 +24,7 @@ The numbers $\alpha, \alpha', \beta, \beta', \gamma, \gamma'$ are the signed rat
 $FB/AB$, $BD/BC$, $DC/BC$, $CE/CA$, $EA/CA$, so the product is the classical signed ratio
 product $\frac{AF}{FB} \cdot \frac{BD}{DC} \cdot \frac{CE}{EA}$.
 
-Formalized by `MetaMathlibExt.menelaus_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/Menelaus.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Menelaus.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem/index.html#menelaus-general).
+Formalized by `MetaMathlibExt.menelaus_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/Menelaus.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Menelaus.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem/index.html#menelaus-general).
 
 ## Menelaus's theorem
 
@@ -47,7 +47,7 @@ other hypotheses or are not needed; they keep the shape of the classical stateme
 
 - https://en.wikipedia.org/wiki/Menelaus%27s_theorem.
 
-Formalized by `MetaMathlibExt.menelaus`, a theorem declared in [MathlibExt/Geometry/Euclidean/Menelaus.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Menelaus.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem/index.html#menelaus).
+Formalized by `MetaMathlibExt.menelaus`, a theorem declared in [MathlibExt/Geometry/Euclidean/Menelaus.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Menelaus.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem/index.html#menelaus).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Menelaus's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/menelaus-s-theorem)

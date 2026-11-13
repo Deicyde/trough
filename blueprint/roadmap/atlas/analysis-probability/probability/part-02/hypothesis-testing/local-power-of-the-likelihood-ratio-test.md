@@ -8,7 +8,7 @@ proof: formalized
 
 # Local power of the likelihood-ratio test
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html).
 
 ## Reweighting an infinite product measure by a product density
 
@@ -16,7 +16,7 @@ If `μ.withDensity r` is a
 probability measure, then reweighting the product measure `μ^ℕ` by `∏_{i<n} r (xᵢ)` and
 projecting onto the first `n` coordinates gives the product measure `(μ.withDensity r)^n`.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.map_withDensity_infinitePi_prod`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#map-with-density-infinite-pi-prod).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.map_withDensity_infinitePi_prod`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#map-with-density-infinite-pi-prod).
 
 ## Local asymptotic normality of the log-likelihood ratio
 
@@ -33,7 +33,7 @@ converges to `-h² I / 2` in probability.
 
 - van der Vaart (1998), Theorem 7.2 (local asymptotic normality), here under Cramér's third-derivative envelope instead of differentiability in quadratic mean.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.tendstoInMeasure_logLikelihoodRatio_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#tendsto-in-measure-log-likelihood-ratio).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.tendstoInMeasure_logLikelihoodRatio_sub`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#tendsto-in-measure-log-likelihood-ratio).
 
 ## Wilks' expansion for a triangular array
 
@@ -57,7 +57,7 @@ theorem; under local alternatives it gives the local power
 
 - Wilks (1938); van der Vaart (1998), Theorem 5.41 and ch. 16.
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.tendstoInDistribution_two_mul_logLikelihood_sub_of_triangular`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#tendsto-in-distribution-two-mul-log-like).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.tendstoInDistribution_two_mul_logLikelihood_sub_of_triangular`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#tendsto-in-distribution-two-mul-log-like).
 
 ## Local power of the likelihood-ratio test
 
@@ -78,7 +78,7 @@ the laws `p θₙ ν` are probability measures because they are laws of random v
 
 - van der Vaart (1998), ch. 16 (local power), via local asymptotic normality (ch. 7) and Le Cam's first and third lemmas (ch. 6).
 
-Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.tendstoInDistribution_two_mul_logLikelihood_sub_local`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 691](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L691). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#tendsto-in-distribution-two-mul-log-like-2).
+Formalized by `MathlibExt.Probability.Statistics.LikelihoodRatioLocalPower.tendstoInDistribution_two_mul_logLikelihood_sub_local`, a theorem declared in [MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean, line 691](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LikelihoodRatioLocalPower.lean#L691). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html#tendsto-in-distribution-two-mul-log-like-2).
 
 ## Depends on
 
@@ -87,4 +87,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Local power of the likelihood-ratio test](https://deicyde.github.io/atlas-lean/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/hypothesis-testing/local-power-of-the-likelihood-ratio-test)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Birational maps and the Cremona group
 
-19 results, 13 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html).
+19 results, 13 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html).
 
 ## Scheme
 
@@ -18,14 +18,14 @@ consists of dominant rational maps $f \colon X \dashrightarrow Y$ and
 $g \colon Y \dashrightarrow X$ that are mutually inverse: $g \circ f$ is the identity rational
 map of $X$ and $f \circ g$ is the identity rational map of $Y$.
 
-Formalized by `AlgebraicGeometry.Scheme.BirationalMap`, a structure declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#birational-map).
+Formalized by `AlgebraicGeometry.Scheme.BirationalMap`, a structure declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#birational-map).
 
 ## Identity birational map
 
 For an irreducible scheme $X$, the identity birational map of
 $X$ has the identity rational map of $X$ as both its forward and its inverse map.
 
-Formalized by `AlgebraicGeometry.Scheme.BirationalMap.refl`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#refl).
+Formalized by `AlgebraicGeometry.Scheme.BirationalMap.refl`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#refl).
 
 ## Inverse birational map
 
@@ -33,7 +33,7 @@ Let $X$ and $Y$ be irreducible schemes. The inverse of a
 birational map from $X$ to $Y$ is the birational map from $Y$ to $X$ whose forward map is the
 inverse rational map of the original and whose inverse map is its forward rational map.
 
-Formalized by `AlgebraicGeometry.Scheme.BirationalMap.symm`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#symm).
+Formalized by `AlgebraicGeometry.Scheme.BirationalMap.symm`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#symm).
 
 ## Composition of birational maps
 
@@ -43,7 +43,7 @@ $f$ and $g$ is the birational map from $X$ to $Z$ whose forward rational map is 
 $f$ followed by the forward map of $g$, and whose inverse rational map is the inverse of $g$
 followed by the inverse of $f$.
 
-Formalized by `AlgebraicGeometry.Scheme.BirationalMap.trans`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#trans).
+Formalized by `AlgebraicGeometry.Scheme.BirationalMap.trans`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#trans).
 
 ## Birational maps over a base
 
@@ -53,7 +53,7 @@ $X \dashrightarrow Y$ is compatible with the structure maps to $S$.
 
 Its inverse rational map is then compatible with the structure maps to $S$ as well.
 
-Formalized by `AlgebraicGeometry.Scheme.BirationalMap.IsOver`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#is-over).
+Formalized by `AlgebraicGeometry.Scheme.BirationalMap.IsOver`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#is-over).
 
 ## Birational automorphisms over a base
 
@@ -62,7 +62,7 @@ $S$. The birational automorphisms of $X$ over $S$ form the subgroup of the group
 self-maps of $X$ consisting of those birational maps whose forward rational map
 $X \dashrightarrow X$ is compatible with the structure maps to $S$.
 
-Formalized by `AlgebraicGeometry.Scheme.birationalAutOver`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#birational-aut-over).
+Formalized by `AlgebraicGeometry.Scheme.birationalAutOver`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#birational-aut-over).
 
 ## Birational map of a partial isomorphism
 
@@ -72,7 +72,7 @@ of $X$ onto a dense open subscheme of $Y$. The birational map from $X$ to $Y$ gi
 forward map the rational map $X \dashrightarrow Y$ represented by $f$, and as inverse the rational
 map $Y \dashrightarrow X$ represented by the inverse of $f$.
 
-Formalized by `AlgebraicGeometry.Scheme.PartialIso.toBirationalMap`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#to-birational-map).
+Formalized by `AlgebraicGeometry.Scheme.PartialIso.toBirationalMap`, a definition declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#to-birational-map).
 
 ## Integral variety over a field
 
@@ -81,7 +81,7 @@ scheme $X$ together with a morphism $X \to \operatorname{Spec} k$ such that $X$ 
 (irreducible and reduced) and the morphism is separated and of finite type (locally of finite type
 and quasi-compact).
 
-Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.Variety`, a class declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#variety).
+Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.Variety`, a class declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 247](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L247). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#variety).
 
 ## Pseudo-isomorphism
 
@@ -91,7 +91,7 @@ $V \subseteq Y$, is a pseudo-isomorphism if it is an isomorphism in codimension 
 point of $X$ outside $U$ and every point of $Y$ outside $V$ has coheight at least $2$ in the
 specialization order of points.
 
-Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.IsPseudoIso`, a structure declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#is-pseudo-iso).
+Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.IsPseudoIso`, a structure declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#is-pseudo-iso).
 
 ## Pseudo-regularization of a birational automorphism
 
@@ -102,7 +102,7 @@ $k$, and a partial isomorphism $\gamma$ from $X'$ to itself over $k$ that is a
 pseudo-isomorphism, such that $\varphi = \alpha^{-1} \circ \gamma \circ \alpha$, where $\gamma$
 is viewed as a birational map.
 
-Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.PseudoRegularization`, a structure declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#pseudo-regularization).
+Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.PseudoRegularization`, a structure declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#pseudo-regularization).
 
 ## Pseudo-regularizable birational automorphism
 
@@ -117,7 +117,7 @@ is viewed as a birational map. The variety $X'$ need not be smooth or projective
 
 - H.-Y. Lin and E. Shinder, Motivic invariants of birational maps, Definition 4.1.
 
-Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.IsPseudoRegularizable`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#is-pseudo-regularizable).
+Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.IsPseudoRegularizable`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#is-pseudo-regularizable).
 
 ## Cremona group
 
@@ -125,7 +125,7 @@ For a field $k$ and $n \in \mathbb{N}$, the Cremona group
 $\mathrm{Cr}_n(k)$ is the group of birational automorphisms of affine $n$-space
 $\mathbb{A}^n_k$ over $\operatorname{Spec} k$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.Cr`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#cr).
+Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.Cr`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#cr).
 
 ## Cremona group generated by pseudo-regularizable elements
 
@@ -133,7 +133,7 @@ For a field $k$ and
 $n \in \mathbb{N}$, this is the proposition that the Cremona group $\mathrm{Cr}_n(k)$ is
 generated, as a group, by its pseudo-regularizable elements.
 
-Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.GenByPseudoRegularizable`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#gen-by-pseudo-regularizable).
+Formalized by `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.GenByPseudoRegularizable`, an abbreviation declared in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#gen-by-pseudo-regularizable).
 
 ## $\mathrm{Cr}_3$ of a number field is not generated by pseudo-regularizable elements
 
@@ -147,7 +147,7 @@ This is Theorem 1.2 (1) (a) of Lin and Shinder.
 
 - H.-Y. Lin and E. Shinder, `Motivic invariants of birational maps`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_a` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-a).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_a` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-a).
 
 ## $\mathrm{Cr}_3$ of a function field over a number field is not generated by pseudo-regularizable elements
 
@@ -163,7 +163,7 @@ This is Theorem 1.2 (1) (b) of Lin and Shinder.
 
 - H.-Y. Lin and E. Shinder, `Motivic invariants of birational maps`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_b` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-b).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_b` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-b).
 
 ## $\mathrm{Cr}_3$ of a function field over a finite field is not generated by pseudo-regularizable elements
 
@@ -179,7 +179,7 @@ This is Theorem 1.2 (1) (c) of Lin and Shinder.
 
 - H.-Y. Lin and E. Shinder, `Motivic invariants of birational maps`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_c` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-c).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_c` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 328](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L328). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-c).
 
 ## $\mathrm{Cr}_3$ of a function field over an algebraically closed field is not generated by pseudo-regularizable elements
 
@@ -195,7 +195,7 @@ This is Theorem 1.2 (1) (d) of Lin and Shinder.
 
 - H.-Y. Lin and E. Shinder, `Motivic invariants of birational maps`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_d` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-d).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_1_d` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 341](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L341). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-1-d).
 
 ## $\mathrm{Cr}_n$ of a subfield of $\mathbb{C}$ is not generated by pseudo-regularizable elements for $n \ge 4$
 
@@ -210,7 +210,7 @@ This is Theorem 1.2 (2) of Lin and Shinder.
 
 - H.-Y. Lin and E. Shinder, `Motivic invariants of birational maps`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_2` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-2).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_2` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-2).
 
 ## $\mathrm{Cr}_n$ of an infinite field is not generated by pseudo-regularizable elements for $n \ge 5$
 
@@ -225,7 +225,7 @@ This is Theorem 1.2 (3) of Lin and Shinder.
 
 - H.-Y. Lin and E. Shinder, `Motivic invariants of birational maps`, Annals of Math, 199 (1) 2024. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_motivic_invariants` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_3` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-3).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.MotivicInvariantsWanted.MotivicInvariants.theorem_1_2_3` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean, line 360](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/MotivicInvariantsWanted.lean#L360). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html#theorem-1-2-3).
 
 ## Depends on
 
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Birational maps and the Cremona group](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/birational-maps-and-the-cremona-group)

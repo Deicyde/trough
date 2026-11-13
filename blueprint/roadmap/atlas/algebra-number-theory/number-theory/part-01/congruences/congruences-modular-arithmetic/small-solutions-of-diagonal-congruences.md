@@ -7,7 +7,7 @@ statement: formalized
 
 # Small solutions of diagonal congruences
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html).
 
 ## Sum-product sets cover the integers modulo a prime
 
@@ -20,7 +20,7 @@ $d \in D$, $a_2 \in A_2$ and $a_3 \in A_3$; that is, $A_1 D + A_2 + A_3 = \mathb
 
 - Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 3, quoting Lemma 8.3 of their reference [5] (a consequence of Sárközy's Corollary A).
 
-Stated but not proved: `MetaMathlibExt.product_add_add_eq_univ_of_card_mul_gt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#product-add-add-eq-univ-of-card-mul-gt).
+Stated but not proved: `MetaMathlibExt.product_add_add_eq_univ_of_card_mul_gt` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#product-add-add-eq-univ-of-card-mul-gt).
 
 ## Diagonal congruences in $k$ variables are solvable
 
@@ -35,7 +35,7 @@ congruence in $n$ variables is solvable; extra variables can be set to $0$.
 
 - Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.diagonal_congruence_solvable_of_card_eq_exponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#diagonal-congruence-solvable-of-card-eq).
+Stated but not proved: `MetaMathlibExt.diagonal_congruence_solvable_of_card_eq_exponent` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#diagonal-congruence-solvable-of-card-eq).
 
 ## Smooth solutions of diagonal equations (Chow–Lindqvist–Prendiville)
 
@@ -54,7 +54,7 @@ $c_1 x_1^k + \dots + c_s x_s^k = 0$ is at least $C_1 N^{s-k}$ and at most $C_2 N
 
 - Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Theorem 2, quoting Chow, Lindqvist and Prendiville, *Rado's criterion over squares and higher powers*, J. Eur. Math. Soc. 23 (2021), Theorem B.1.
 
-Stated but not proved: `MetaMathlibExt.smooth_diagonal_solution_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#smooth-diagonal-solution-count-asymp).
+Stated but not proved: `MetaMathlibExt.smooth_diagonal_solution_count_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#smooth-diagonal-solution-count-asymp).
 
 ## Many values of a smooth diagonal form modulo a prime
 
@@ -73,7 +73,7 @@ elements.
 
 - Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.card_smooth_diagonal_values_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#card-smooth-diagonal-values-ge).
+Stated but not proved: `MetaMathlibExt.card_smooth_diagonal_values_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#card-smooth-diagonal-values-ge).
 
 ## Small solutions of diagonal congruences
 
@@ -89,7 +89,7 @@ numbers $x_1, \dots, x_n$ with $1 \le x_i \le C p^{1/k}$ for every $i$.
 
 - Todd Cochrane, Misty Ostergaard, Craig Spencer, and Kathryn Wilson, *A Note on Small Solutions to Diagonal Congruences*, INTEGERS 26 (2026), Article A14, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_small_solution_diagonal_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#exists-small-solution-diagonal-congruenc).
+Stated but not proved: `MetaMathlibExt.exists_small_solution_diagonal_congruence` is written with `theorem_wanted` in [WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DiagonalCongruenceSmallSolutionsWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html#exists-small-solution-diagonal-congruenc).
 
 ## Depends on
 
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Small solutions of diagonal congruences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/small-solutions-of-diagonal-congruences)

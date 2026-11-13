@@ -8,7 +8,7 @@ proof: formalized
 
 # Inverting shift and difference operators
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html).
 
 ## Ramanujan's operator identity for the Bernoulli numbers
 
@@ -26,7 +26,7 @@ and every real $h$, then $a_n = b_n$ for every $n$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5. The source's shift `p(x) ↦ p(x + h)` is `Polynomial.taylor h`, and the operator `∑ aₙ hⁿ Dⁿ` is `Entry1Euleriangf.chapter5DerivativeExpansion`.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry1.ramanujan_part1_ch5_entry1`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1.lean, line 623](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1.lean#L623). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry1).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry1.ramanujan_part1_ch5_entry1`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1.lean, line 585](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1.lean#L585). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry1).
 
 ## Polynomial shift
 
@@ -34,7 +34,7 @@ For a semiring $R$, an element $h \in R$ and a polynomial
 $p \in R[x]$, the shift of $p$ by $h$ is the polynomial $p(x + h)$, the composition of $p$ with
 $x + h$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry1Euleriangf.chapter5PolynomialShift`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#chapter5-polynomial-shift).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry1Euleriangf.chapter5PolynomialShift`, a definition declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#chapter5-polynomial-shift).
 
 ## Ramanujan's operator identity for $(1 - 2^n) B_n / n!$
 
@@ -52,7 +52,7 @@ and every real $h$, then $a_n = c_n$ for every $n$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry1Euleriangf.ramanujan_part1_ch5_entry1_euleriangf`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean, line 872](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean#L872). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry1-euleriangf).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry1Euleriangf.ramanujan_part1_ch5_entry1_euleriangf`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean, line 851](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry1Euleriangf.lean#L851). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry1-euleriangf).
 
 ## The polynomial shift is the Taylor shift
 
@@ -61,7 +61,7 @@ polynomial $p \in R[x]$, the shift $p(x + h)$ (the composition of $p$ with $x + 
 Taylor expansion of $p$ at $h$, the polynomial whose coefficient of $x^k$ is the $k$-th Hasse
 derivative of $p$ evaluated at $h$.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry2iEuleriangf.chapter5PolynomialShift_eq_taylor`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#chapter5-polynomial-shift-eq-taylor).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry2iEuleriangf.chapter5PolynomialShift_eq_taylor`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#chapter5-polynomial-shift-eq-taylor).
 
 ## Ramanujan's solutions of two central difference equations
 
@@ -78,7 +78,7 @@ polynomials in $x$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5, Entry 2(i), pp. 111–112.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry2iEuleriangf.ramanujan_part1_ch5_entry2i_euleriangf`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean, line 1010](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean#L1010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry2i-euleriangf).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry2iEuleriangf.ramanujan_part1_ch5_entry2i_euleriangf`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean, line 1010](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry2iEuleriangf.lean#L1010). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry2i-euleriangf).
 
 ## Eulerian-polynomial inverse of a shift-plus-multiple operator
 
@@ -101,7 +101,7 @@ then $a_n = c_n$ for every $n \ge 0$.
 
 - Bruce C. Berndt, Ramanujan's Notebooks, Part I, Chapter 5.
 
-Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry3.ramanujan_part1_ch5_entry3`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry3.lean, line 1163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry3.lean#L1163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry3).
+Formalized by `MathlibExt.Analysis.Ramanujan.Part1Ch5.Entry3.ramanujan_part1_ch5_entry3`, a theorem declared in [MathlibExt/Analysis/Ramanujan/Part1Ch5Entry3.lean, line 1158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Ramanujan/Part1Ch5Entry3.lean#L1158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html#ramanujan-part1-ch5-entry3).
 
 ## Depends on
 
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Inverting shift and difference operators](https://deicyde.github.io/atlas-lean/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/special-functions/bernoulli-polylog-clausen/inverting-shift-and-difference-operators)

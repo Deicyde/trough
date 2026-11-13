@@ -7,7 +7,7 @@ statement: formalized
 
 # Modular inverses from the Euclidean algorithm
 
-12 results, 2 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html).
+12 results, 2 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html).
 
 ## Least absolute inverse
 
@@ -18,7 +18,7 @@ when $x$ is an inverse of $a$ modulo $n$ in the half-open interval $-n/2 < x \le
 For even $n$ the endpoint $n/2$ is included and $-n/2$ is excluded; this is also the choice the
 Euclidean recurrence produces.
 
-Formalized by `MathlibExt.NumberTheory.ModInverseSwitchingWanted.IsLeastAbsInverse`, a definition declared in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-least-abs-inverse).
+Formalized by `MathlibExt.NumberTheory.ModInverseSwitchingWanted.IsLeastAbsInverse`, a definition declared in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-least-abs-inverse).
 
 ## Euclidean switching data
 
@@ -32,7 +32,7 @@ These are the remainders $r_i$ of the Euclidean algorithm on $(r_0, r_1)$ and th
 of $r_i$ modulo $r_{i-1}$ in §3 of Konstantogiannis, "The Euclidean Algorithm as a Sequence of
 Modular Inverse Switching Formulas" (Equations (4), (5) and (6)).
 
-Formalized by `MathlibExt.NumberTheory.ModInverseSwitchingWanted.IsEuclidSwitchSeq`, a definition declared in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-euclid-switch-seq).
+Formalized by `MathlibExt.NumberTheory.ModInverseSwitchingWanted.IsEuclidSwitchSeq`, a definition declared in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-euclid-switch-seq).
 
 ## Bézout coefficients are modular inverses
 
@@ -45,7 +45,7 @@ $n$ modulo $m$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.bezout_coeffs_are_inverses` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#bezout-coeffs-are-inverses).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.bezout_coeffs_are_inverses` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#bezout-coeffs-are-inverses).
 
 ## Modular inverse switching
 
@@ -58,7 +58,7 @@ and $xm + yn = 1$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.exists_eq_mul_add_iff_switching` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#exists-eq-mul-add-iff-switching).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.exists_eq_mul_add_iff_switching` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#exists-eq-mul-add-iff-switching).
 
 ## Least absolute inverses propagate down the Euclidean sequence
 
@@ -73,7 +73,7 @@ is the least absolute inverse of $r_j$ modulo $r_{j-1}$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.isLeastAbsInverse_succ_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-least-abs-inverse-succ-imp).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.isLeastAbsInverse_succ_imp` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-least-abs-inverse-succ-imp).
 
 ## Every switching inverse is a least absolute inverse
 
@@ -85,7 +85,7 @@ absolute inverse of $r_i$ modulo $r_{i-1}$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Corollary 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.isLeastAbsInverse_all` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-least-abs-inverse-all).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.isLeastAbsInverse_all` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#is-least-abs-inverse-all).
 
 ## The Euclidean Bézout coefficients are least absolute inverses
 
@@ -98,7 +98,7 @@ of $m/g$ modulo $n/g$, and $s_1$ is the least absolute inverse of $n/g$ modulo $
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_leastAbsInverse` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#euclid-bezout-coeffs-least-abs-inverse).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_leastAbsInverse` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#euclid-bezout-coeffs-least-abs-inverse).
 
 ## The Euclidean Bézout coefficients are smallest in absolute value
 
@@ -111,7 +111,7 @@ $|s_2| \le |x|$ and $|s_1| \le |y|$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 5.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_abs_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#euclid-bezout-coeffs-abs-le).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_abs_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#euclid-bezout-coeffs-abs-le).
 
 ## Rankin's minimality of the Euclidean Bézout pair
 
@@ -124,7 +124,7 @@ $s_2^2 + s_1^2 \le x^2 + y^2$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Corollary 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_sq_add_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#euclid-bezout-coeffs-sq-add-le).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.euclid_bezout_coeffs_sq_add_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#euclid-bezout-coeffs-sq-add-le).
 
 ## Both first inverses extremal, odd–odd case
 
@@ -136,7 +136,7 @@ hold simultaneously if and only if $r_0 = r_1 + 2$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 6.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_eq_halves_iff_sub_eq_two_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#abs-eq-halves-iff-sub-eq-two-of-odd).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_eq_halves_iff_sub_eq_two_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#abs-eq-halves-iff-sub-eq-two-of-odd).
 
 ## Both first inverses extremal, odd–even case
 
@@ -148,7 +148,7 @@ simultaneously if and only if $r_1 = 2$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 7.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_eq_halves_iff_eq_two_of_odd_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#abs-eq-halves-iff-eq-two-of-odd-even).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_eq_halves_iff_eq_two_of_odd_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#abs-eq-halves-iff-eq-two-of-odd-even).
 
 ## First inverses not both extremal, even–odd case
 
@@ -160,7 +160,7 @@ $2|s_2| < r_1 - 1$; that is, $|s_1| < r_0/2$ or $|s_2| < (r_1 - 1)/2$.
 
 - Spiros Konstantogiannis, "The Euclidean Algorithm as a Sequence of Modular Inverse Switching Formulas", Lemma 8.
 
-Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_lt_of_even_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#abs-lt-of-even-odd).
+Stated but not proved: `MathlibExt.NumberTheory.ModInverseSwitchingWanted.abs_lt_of_even_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/ModInverseSwitchingWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ModInverseSwitchingWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html#abs-lt-of-even-odd).
 
 ## Depends on
 
@@ -169,4 +169,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Modular inverses from the Euclidean algorithm](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/congruences/congruences-modular-arithmetic/modular-inverses-from-the-euclidean-algorithm)

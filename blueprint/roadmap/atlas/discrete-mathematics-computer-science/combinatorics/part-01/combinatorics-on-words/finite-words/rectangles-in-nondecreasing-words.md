@@ -7,7 +7,7 @@ statement: formalized
 
 # Rectangles in nondecreasing words
 
-6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html).
+6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html).
 
 ## Number of $r \times s$ rectangles in a bargraph
 
@@ -25,7 +25,7 @@ others; for $s = 0$ the count is $m(w_0 + \cdots + w_{m-1} + 1)$.
 
 - Sela Fried and Toufik Mansour, *Counting Rectangles of Size r × s in Nondecreasing and Smirnov Words*, Journal of Integer Sequences 27 (2024), Article 24.8.4, Introduction and Figure 2.
 
-Formalized by `MetaMathlibExt.rectangleCapacity`, a definition declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#rectangle-capacity).
+Formalized by `MetaMathlibExt.rectangleCapacity`, a definition declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#rectangle-capacity).
 
 ## Example: $3 \times 2$ rectangles in the word $345134$
 
@@ -36,7 +36,7 @@ contains exactly four rectangles of height $3$ and width $2$.
 
 - Sela Fried and Toufik Mansour, *Counting Rectangles of Size r × s in Nondecreasing and Smirnov Words*, Journal of Integer Sequences 27 (2024), Article 24.8.4, Figure 2.
 
-Formalized by `MetaMathlibExt.rectangleCapacity_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#rectangle-capacity-example).
+Formalized by `MetaMathlibExt.rectangleCapacity_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#rectangle-capacity-example).
 
 ## Total number of $r \times s$ rectangles in nondecreasing words
 
@@ -49,7 +49,7 @@ of $r \times s$ rectangles in the bargraph of $w$.
 
 - Sela Fried and Toufik Mansour, *Counting Rectangles of Size r × s in Nondecreasing and Smirnov Words*, Journal of Integer Sequences 27 (2024), Article 24.8.4, Corollaries 2 and 6.
 
-Formalized by `MetaMathlibExt.nondecreasingRectangleTotal`, a definition declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total).
+Formalized by `MetaMathlibExt.nondecreasingRectangleTotal`, a definition declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total).
 
 ## Example: $1 \times 2$ rectangles in nondecreasing words of length $2$
 
@@ -62,7 +62,7 @@ all nondecreasing words of length $2$ over $[2]$ is $4$.
 
 - Sela Fried and Toufik Mansour, *Counting Rectangles of Size r × s in Nondecreasing and Smirnov Words*, Journal of Integer Sequences 27 (2024), Article 24.8.4, Corollary 2.
 
-Formalized by `MetaMathlibExt.nondecreasingRectangleTotal_two_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total-two-one-tw).
+Formalized by `MetaMathlibExt.nondecreasingRectangleTotal_two_one_two_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total-two-one-tw).
 
 ## Generating function for $1 \times s$ rectangles in nondecreasing words
 
@@ -88,7 +88,7 @@ For $s = 1$ the factor $\binom{i+s-2}{i} = \binom{i-1}{i}$ is $1$ at $i = 0$ and
 
 - Sela Fried and Toufik Mansour, *Counting Rectangles of Size r × s in Nondecreasing and Smirnov Words*, Journal of Integer Sequences 27 (2024), Article 24.8.4, Corollary 2 (`jis-2024-24.8.4-cor-2`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingRectangleTotal_one_by_s` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total-one-by-s).
+Stated but not proved: `MetaMathlibExt.nondecreasingRectangleTotal_one_by_s` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total-one-by-s).
 
 ## Generating function for $r \times s$ rectangles in nondecreasing words
 
@@ -115,7 +115,7 @@ For $s = 1$ the factor $\binom{i+s-2}{i} = \binom{i-1}{i}$ is $1$ at $i = 0$ and
 
 - Sela Fried and Toufik Mansour, *Counting Rectangles of Size r × s in Nondecreasing and Smirnov Words*, Journal of Integer Sequences 27 (2024), Article 24.8.4, Corollary 6 (`jis-2024-24.8.4-cor-6`).
 
-Stated but not proved: `MetaMathlibExt.nondecreasingRectangleTotal_r_by_s` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total-r-by-s).
+Stated but not proved: `MetaMathlibExt.nondecreasingRectangleTotal_r_by_s` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/RectangleCapacityNondecreasingWordsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html#nondecreasing-rectangle-total-r-by-s).
 
 ## Depends on
 
@@ -124,4 +124,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Rectangles in nondecreasing words](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/finite-words/rectangles-in-nondecreasing-words)

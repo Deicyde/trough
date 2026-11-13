@@ -7,7 +7,7 @@ statement: formalized
 
 # Graph homomorphism
 
-6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html).
+6 results, 5 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html).
 
 ## Graph-homomorphism instances
 
@@ -16,7 +16,7 @@ where $n$ is a natural number (the number of source vertices), $E$ is a list of 
 numbers (the source edges), $m$ is a natural number (the number of target vertices) and $F$ is a
 list of pairs of natural numbers (the target edges).
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.GraphHomomorphismInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.GraphHomomorphismInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-instance).
 
 ## Target graph of a graph-homomorphism instance
 
@@ -25,7 +25,7 @@ instance $(n, E, m, F)$ is the simple graph on $\{0, \dots, m - 1\}$ in which di
 $i$ and $j$ are adjacent when $(i, j)$ or $(j, i)$ belongs to $F$. Pairs of $F$ with an endpoint
 at least $m$ contribute no edge.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.GraphTarget`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-target).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.GraphTarget`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-target).
 
 ## Well-formed graph-homomorphism instances
 
@@ -34,7 +34,7 @@ well formed when $E$ has no repeated entries, every pair $(u, v)$ in $E$ satisfi
 $v < n$, $u \ne v$ and $(v, u) \notin E$, $F$ has no repeated entries, and every pair $(u, v)$
 in $F$ satisfies $u < m$, $v < m$, $u \ne v$ and $(v, u) \notin F$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#well-formed).
 
 ## Feasible graph-homomorphism instances
 
@@ -44,7 +44,7 @@ every pair $(u, v)$ in $E$ with $u < n$ and $v < n$, the vertices $f(u)$ and $f(
 in the target graph of the instance, that is, $f(u) \ne f(v)$ and $(f(u), f(v))$ or
 $(f(v), f(u))$ belongs to $F$. Pairs of $E$ with an endpoint at least $n$ impose no condition.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.GraphHomomorphismFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.GraphHomomorphismFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-feasible).
 
 ## GRAPH HOMOMORPHISM as a decision problem
 
@@ -57,7 +57,7 @@ there is a map $f : \{0, \dots, n - 1\} \to \{0, \dots, m - 1\}$ such that, for 
 $(u, v)$ in $E$, $f(u) \ne f(v)$ and $(f(u), f(v))$ or $(f(v), f(u))$ belongs to $F$. Bitstrings
 that do not decode are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.graphHomomorphismDec`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.graphHomomorphismDec`, a definition declared in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-dec).
 
 ## GRAPH HOMOMORPHISM is NP-complete
 
@@ -68,7 +68,7 @@ and every decision problem in NP reduces to it by a polynomial-time many-one red
 
 - M. R. Garey and D. S. Johnson, *Computers and Intractability* (1979), GRAPH HOMOMORPHISM; P. Hell and J. Nesetril, "On the complexity of H-coloring" (1990).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.graphHomomorphism_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.GraphHomomorphism.graphHomomorphism_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/GraphHomomorphismWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html#graph-homomorphism-np-complete).
 
 ## Depends on
 
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Graph homomorphism](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/graph-coloring-and-partitioning/graph-homomorphism)

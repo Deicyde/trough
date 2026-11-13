@@ -8,7 +8,7 @@ proof: formalized
 
 # Hartogs extension theorem
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html).
 
 ## Holomorphic functions on open subsets of ℂⁿ have continuous derivative
 
@@ -18,7 +18,7 @@ be complex differentiable at every point of $s$. Then the complex derivative $x 
 with values in the complex linear maps $\mathbb{C}^n \to \mathbb{C}$, is continuous on $s$. Here
 $\mathbb{C}^n$ carries the Euclidean norm.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.continuousOn_fderiv_of_differentiableOn`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsExtension.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#continuous-on-fderiv-of-differentiable-o).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.continuousOn_fderiv_of_differentiableOn`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsExtension.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#continuous-on-fderiv-of-differentiable-o).
 
 ## The Wirtinger derivative with respect to z̄
 
@@ -29,7 +29,7 @@ $Df(z)$ is the real derivative of $f$ at $z$, taken to be $0$ when $f$ is not re
 at $z$. When $f$ is real differentiable at $z$, this equals
 $\frac{1}{2}\bigl(\frac{\partial f}{\partial x}(z) + i\,\frac{\partial f}{\partial y}(z)\bigr)$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.barDeriv`, a definition declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsExtension.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#bar-deriv).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.barDeriv`, a definition declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 298](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsExtension.lean#L298). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#bar-deriv).
 
 ## Vanishing of the Wirtinger derivative at points of complex differentiability
 
@@ -37,7 +37,7 @@ Let
 $f : \mathbb{C} \to \mathbb{C}$ and $z \in \mathbb{C}$. If $f$ is complex differentiable at $z$,
 then the Wirtinger derivative $\partial f / \partial \bar z$ of $f$ vanishes at $z$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.barDeriv_eq_zero_of_differentiableAt`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 887](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsExtension.lean#L887). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#bar-deriv-eq-zero-of-differentiable-at).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.barDeriv_eq_zero_of_differentiableAt`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 887](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsExtension.lean#L887). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#bar-deriv-eq-zero-of-differentiable-at).
 
 ## Cauchy–Riemann criterion for complex differentiability
 
@@ -46,7 +46,7 @@ Let $f : \mathbb{C} \to
 derivative $\partial f / \partial \bar z$ vanishes at $z$, then $f$ is complex differentiable at
 $z$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_of_barDeriv_eq_zero`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 898](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsExtension.lean#L898). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#differentiable-at-of-bar-deriv-eq-zero).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.differentiableAt_of_barDeriv_eq_zero`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 898](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsExtension.lean#L898). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#differentiable-at-of-bar-deriv-eq-zero).
 
 ## Solving the ∂̄-equation for compactly supported C¹ data
 
@@ -56,7 +56,7 @@ compact support. Then there is a function $u : \mathbb{C} \to \mathbb{C}$, real 
 all of $\mathbb{C}$, whose Wirtinger derivative satisfies
 $\frac{\partial u}{\partial \bar z}(z) = g(z)$ for every $z \in \mathbb{C}$.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.exists_differentiable_barDeriv_eq_of_hasCompactSupport`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 1417](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsExtension.lean#L1417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#exists-differentiable-bar-deriv-eq-of-ha).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.exists_differentiable_barDeriv_eq_of_hasCompactSupport`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 1417](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsExtension.lean#L1417). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#exists-differentiable-bar-deriv-eq-of-ha).
 
 ## Hartogs extension theorem
 
@@ -73,7 +73,7 @@ cutoff and one-variable identity continuation.
 
 - Hartogs extension phenomenon, F. Hartogs, Math. Ann. 62 (1906); see Hörmander, An Introduction to Complex Analysis in Several Variables; Lean is ℂⁿ n ≥ 2 finite-dimensional form via EuclideanSpace ℂ (Fin n) with U open connected K compact U\K connected.
 
-Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_extension`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 1743](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HartogsExtension.lean#L1743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#hartogs-extension).
+Formalized by `MathlibExt.Analysis.Complex.HartogsWanted.hartogs_extension`, a theorem declared in [MathlibExt/Analysis/Complex/HartogsExtension.lean, line 1743](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HartogsExtension.lean#L1743). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html#hartogs-extension).
 
 ## Depends on
 
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hartogs extension theorem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/several-complex-variables/hartogs-extension-theorem)

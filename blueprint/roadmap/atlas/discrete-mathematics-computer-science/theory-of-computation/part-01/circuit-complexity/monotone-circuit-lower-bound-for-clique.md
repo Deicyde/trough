@@ -7,7 +7,7 @@ statement: formalized
 
 # Monotone circuit lower bound for clique
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique/index.html).
 
 ## The clique function on adjacency-matrix bits
 
@@ -18,7 +18,7 @@ false. The clique predicate holds for $n$ and $x$ when there is a set $S$ of exa
 $\lfloor n/3 \rfloor$ vertices among $0, \dots, n - 1$ such that the entry for $(a, b)$ is true
 for all distinct $a, b \in S$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique.cliqueHolds`, a definition declared in [WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique/index.html#clique-holds).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique.cliqueHolds`, a definition declared in [WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique/index.html#clique-holds).
 
 ## Razborov: monotone circuits for clique need superpolynomial size
 
@@ -36,7 +36,7 @@ true for all distinct $a, b \in S$. Then $C$ has more than $p(n^2)$ gates.
 
 - A. A. Razborov, "Lower bounds on the monotone complexity of some Boolean functions", Soviet Mathematics Doklady 31 (1985), 354-357.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique.razborov_monotone_clique` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique/index.html#razborov-monotone-clique).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.RazborovMonotoneClique.razborov_monotone_clique` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/RazborovMonotoneCliqueWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique/index.html#razborov-monotone-clique).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monotone circuit lower bound for clique](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/circuit-complexity/monotone-circuit-lower-bound-for-clique)

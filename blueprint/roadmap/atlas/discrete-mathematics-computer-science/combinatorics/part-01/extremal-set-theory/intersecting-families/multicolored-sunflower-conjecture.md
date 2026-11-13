@@ -7,14 +7,14 @@ statement: formalized
 
 # Multicolored sunflower conjecture
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html).
 
 ## Ternary vectors
 
 For a natural number $n$, the vectors of length $n$ over $\mathbb{Z}/3$,
 that is, the functions from $\{0, 1, \dots, n - 1\}$ to $\mathbb{Z}/3$.
 
-Formalized by `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.TernaryVec`, an abbreviation declared in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#ternary-vec).
+Formalized by `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.TernaryVec`, an abbreviation declared in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#ternary-vec).
 
 ## Multicolored sunflower
 
@@ -23,7 +23,7 @@ $(x, y, z)$ of vectors in $(\mathbb{Z}/3)^n$. Then $S$ contains a multicolored s
 are triples $(x_1, y_1, z_1), (x_2, y_2, z_2), (x_3, y_3, z_3) \in S$, not all three equal, with
 $x_1 + y_2 + z_3 = 0$.
 
-Formalized by `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.HasMulticoloredSunflower`, a definition declared in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#has-multicolored-sunflower).
+Formalized by `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.HasMulticoloredSunflower`, a definition declared in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#has-multicolored-sunflower).
 
 ## Multicolored sunflower conjecture
 
@@ -36,7 +36,7 @@ $x_1 + y_2 + z_3 = 0$.
 
 The conjecture is due to Alon, Shpilka and Umans (Oberwolfach Report 54/2012, Conjecture 7).
 
-Formalized by `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.multicoloredSunflowerConjecture`, a definition declared in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#multicolored-sunflower-conjecture).
+Formalized by `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.multicoloredSunflowerConjecture`, a definition declared in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#multicolored-sunflower-conjecture).
 
 ## The multicolored sunflower conjecture holds
 
@@ -57,7 +57,7 @@ had shown that this tricolored version of the cap set bound disproves the strong
 
 - C. Umans, in Complexity Theory, Oberwolfach Reports 9 (2012), no. 54, p. 3292, Conjecture 7, DOI 10.4171/OWR/2012/54; resolution: J. Blasiak, T. Church, H. Cohn, J. A. Grochow, E. Naslund, W. F. Sawin and C. Umans, On cap sets and the group-theoretic approach to matrix multiplication, Discrete Anal. 2017:3, arXiv:1605.06702, Theorem A′: for H ≅ (ℤ/q)ⁿ, q a prime power, every tricolored sum-free set in H (Definition 3.1) has at most 3 |H|^{1 - δ/log q} elements, δ = 0.0566...; Section 1: Alon, Shpilka and Umans showed that a tricolored version of the cap set bounds would disprove the strong USP conjecture (the source's Theorem 8), and Theorem A disproves it via their result; Kleinberg, Sawin and Speyer, arXiv:1607.00047, abstract, restate the bound as 3 θⁿ, θ ≈ 2.755, https://arxiv.org/abs/1605.06702.
 
-Stated but not proved: `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.multicoloredSunflowerConjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#multicolored-sunflower-conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.MulticoloredSunflowerTernaryOWR12177Problem010Wanted.multicoloredSunflowerConjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/MulticoloredSunflowerTernaryOWR12177Problem010Wanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html#multicolored-sunflower-conjecture-holds).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multicolored sunflower conjecture](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/extremal-set-theory/intersecting-families/multicolored-sunflower-conjecture)

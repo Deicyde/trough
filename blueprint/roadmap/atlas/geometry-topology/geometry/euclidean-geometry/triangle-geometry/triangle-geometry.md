@@ -8,7 +8,7 @@ proof: formalized
 
 # Triangle geometry: its own results
 
-6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html).
+6 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html).
 
 Theorems about triangles, their centers, cevians, inscribed and circumscribed circles, and triangle inequalities.
 
@@ -32,7 +32,7 @@ from $O$.
 
 - https://en.wikipedia.org/wiki/Conway_circle_theorem
 
-Formalized by `MetaMathlibExt.conway_circle_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/ConwayCircle.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/ConwayCircle.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#conway-circle-theorem).
+Formalized by `MetaMathlibExt.conway_circle_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/ConwayCircle.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/ConwayCircle.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#conway-circle-theorem).
 
 ## Euler's theorem on the circumcenter–incenter distance
 
@@ -52,7 +52,7 @@ $d(O, I)^2 = R(R - 2r)$ and $R \ge 2r$.
 
 - https://en.wikipedia.org/wiki/Euler%27s_theorem_in_geometry
 
-Formalized by `MetaMathlibExt.euler_oi`, a theorem declared in [MathlibExt/Geometry/Euclidean/EulerOI.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/EulerOI.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#euler-oi).
+Formalized by `MetaMathlibExt.euler_oi`, a theorem declared in [MathlibExt/Geometry/Euclidean/EulerOI.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/EulerOI.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#euler-oi).
 
 ## Feuerbach's theorem
 
@@ -67,7 +67,7 @@ triangle $T$ and every $i$, the nine-point circle $N$ is externally tangent to $
 
 - K. W. Feuerbach, 1822; https://en.wikipedia.org/wiki/Feuerbach_point
 
-Formalized by `MetaMathlibExt.Feuerbach_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/FeuerbachTheorem.lean, line 566](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/FeuerbachTheorem.lean#L566). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#feuerbach-theorem).
+Formalized by `MetaMathlibExt.Feuerbach_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/FeuerbachTheorem.lean, line 566](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/FeuerbachTheorem.lean#L566). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#feuerbach-theorem).
 
 ## Intercept theorem
 
@@ -82,7 +82,7 @@ to $BC$. Then $AD / DB = AE / EC$.
 
 - https://en.wikipedia.org/wiki/Intercept_theorem.
 
-Formalized by `MetaMathlibExt.intercept_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/InterceptTheorem.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/InterceptTheorem.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#intercept-theorem).
+Formalized by `MetaMathlibExt.intercept_theorem`, a theorem declared in [MathlibExt/Geometry/Euclidean/InterceptTheorem.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/InterceptTheorem.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#intercept-theorem).
 
 ## Marden's theorem
 
@@ -110,7 +110,7 @@ property expressed by a strict triangle inequality.
 
 - https://en.wikipedia.org/wiki/Marden%27s_theorem.
 
-Formalized by `MetaMathlibExt.marden`, a theorem declared in [MathlibExt/Geometry/Euclidean/Marden.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Marden.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#marden).
+Formalized by `MetaMathlibExt.marden`, a theorem declared in [MathlibExt/Geometry/Euclidean/Marden.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Marden.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#marden).
 
 ## Routh's theorem
 
@@ -131,7 +131,7 @@ times the area of $ABC$. Areas are Lebesgue measures.
 
 - https://en.wikipedia.org/wiki/Routh%27s_theorem
 
-Formalized by `MetaMathlibExt.routh`, a theorem declared in [MathlibExt/Geometry/Euclidean/Routh.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/Routh.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#routh).
+Formalized by `MetaMathlibExt.routh`, a theorem declared in [MathlibExt/Geometry/Euclidean/Routh.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/Routh.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html#routh).
 
 ## Depends on
 
@@ -140,4 +140,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Triangle geometry](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Hankel determinants of Eulerian polynomials
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials/index.html).
 
 ## Hankel determinants of the Eulerian polynomials
 
@@ -26,7 +26,7 @@ determinant theorem.
 
 - Paul Barry, "Eulerian Polynomials as Moments, via Exponential Riordan Arrays," Journal of Integer Sequences 14 (2011), Article 11.9.5, corollary lines 240–243, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry7/barry172.tex>. Eulerian closed form `W_{n,k}` at lines 93–94.
 
-Formalized by `MetaMathlibExt.eulerianPolynomial_hankelDeterminant`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/EulerianPolynomialHankel.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/EulerianPolynomialHankel.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials/index.html#eulerian-polynomial-hankel-determinant).
+Formalized by `MetaMathlibExt.eulerianPolynomial_hankelDeterminant`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/EulerianPolynomialHankel.lean, line 452](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/EulerianPolynomialHankel.lean#L452). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials/index.html#eulerian-polynomial-hankel-determinant).
 
 ## Hankel determinants of the shifted Eulerian polynomials
 
@@ -43,7 +43,7 @@ $$\det\bigl(P_{i+j+1}(x)\bigr)_{0 \le i, j \le n} =
 
 - Paul Barry, "Eulerian Polynomials as Moments, via Exponential Riordan Arrays," Journal of Integer Sequences 14 (2011), Article 11.9.5, corollary lines 312–315, <https://cs.uwaterloo.ca/journals/JIS/VOL14/Barry7/barry172.tex>. Eulerian closed form `W_{n,k}` at lines 93–94.
 
-Formalized by `MetaMathlibExt.hankel_transform_shifted_eulerian_polynomials`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ShiftedEulerianHankel.lean, line 733](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/ShiftedEulerianHankel.lean#L733). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials/index.html#hankel-transform-shifted-eulerian-polyno).
+Formalized by `MetaMathlibExt.hankel_transform_shifted_eulerian_polynomials`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ShiftedEulerianHankel.lean, line 733](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/ShiftedEulerianHankel.lean#L733). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials/index.html#hankel-transform-shifted-eulerian-polyno).
 
 ## Depends on
 
@@ -52,4 +52,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hankel determinants of Eulerian polynomials](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/eulerian-numbers/hankel-determinants-of-eulerian-polynomials)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Square-splitting convolution
 
-23 results, 9 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html).
+23 results, 9 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html).
 
 ## Squarefree part
 
@@ -19,7 +19,7 @@ primes dividing $n$ to an odd power. By convention $u(0) = 1$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Section 2 (`n = u(n) v(n)²`, Theorems 2 and 3).
 
-Formalized by `MetaMathlibExt.squareSplitU`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-u).
+Formalized by `MetaMathlibExt.squareSplitU`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 30](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L30). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-u).
 
 ## The square-root part of a natural number
 
@@ -32,7 +32,7 @@ $n = u(n)\, v(n)^2$ where $u(n) = n / v(n)^2$ is squarefree.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Section 2.
 
-Formalized by `MetaMathlibExt.squareSplitV`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-v).
+Formalized by `MetaMathlibExt.squareSplitV`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-v).
 
 ## Squarefree part of one
 
@@ -43,7 +43,7 @@ dividing $n$ to an odd power.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Section 2.
 
-Formalized by `MetaMathlibExt.squareSplitU_one`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-u-one).
+Formalized by `MetaMathlibExt.squareSplitU_one`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-u-one).
 
 ## The square-root part of $1$ is $1$
 
@@ -55,7 +55,7 @@ exactly dividing $n$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Section 2.
 
-Formalized by `MetaMathlibExt.squareSplitV_one`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-v-one).
+Formalized by `MetaMathlibExt.squareSplitV_one`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-v-one).
 
 ## Square-splitting decomposition
 
@@ -67,7 +67,7 @@ $u(n) = \prod_p p^{e_p \bmod 2}$ and $v(n) = \prod_p p^{\lfloor e_p/2 \rfloor}$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Section 2.
 
-Formalized by `MetaMathlibExt.squareSplitU_mul_squareSplitV_sq`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-u-mul-square-split-v-sq).
+Formalized by `MetaMathlibExt.squareSplitU_mul_squareSplitV_sq`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-u-mul-square-split-v-sq).
 
 ## Square-splitting divisors
 
@@ -81,7 +81,7 @@ $u_1$ and $v_1$ range over the positive divisors of $u(n)$ and $v(n)$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 1.
 
-Formalized by `MetaMathlibExt.squareSplitDivisors`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisors).
+Formalized by `MetaMathlibExt.squareSplitDivisors`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisors).
 
 ## The square-splitting divisor set of $1$
 
@@ -94,7 +94,7 @@ $n = u(n) v(n)^2$. Then $A(1) = \{1\}$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 1.
 
-Formalized by `MetaMathlibExt.squareSplitDivisors_one`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisors-one).
+Formalized by `MetaMathlibExt.squareSplitDivisors_one`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisors-one).
 
 ## Square-splitting convolution
 
@@ -108,7 +108,7 @@ where $u(n)$ is the squarefree part of $n$ and $n = u(n) v(n)^2$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Section 2 and Theorem 4 (`F = 1 ⋆ f` means `F(n) = ∑_{d ∈ A(n)} f(d)`).
 
-Formalized by `MetaMathlibExt.squareSplitConv`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv).
+Formalized by `MetaMathlibExt.squareSplitConv`, a definition declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv).
 
 ## Value of the square-splitting convolution at a positive integer
 
@@ -121,7 +121,7 @@ the square-splitting divisor set of $n$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Section 2.
 
-Formalized by `MetaMathlibExt.squareSplitConv_apply`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-apply).
+Formalized by `MetaMathlibExt.squareSplitConv_apply`, a theorem declared in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-apply).
 
 ## The square-splitting convolution preserves multiplicativity
 
@@ -134,7 +134,7 @@ $h(mn) = h(m)\, h(n)$ for all coprime $m$ and $n$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.squareSplitConv_isMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-is-multiplicative).
+Stated but not proved: `MetaMathlibExt.squareSplitConv_isMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-is-multiplicative).
 
 ## Basic properties of the square-splitting divisor sets
 
@@ -151,7 +151,7 @@ factors of $k$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.squareSplitDivisors_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisors-properties).
+Stated but not proved: `MetaMathlibExt.squareSplitDivisors_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisors-properties).
 
 ## Ring axioms for the square-splitting convolution
 
@@ -168,7 +168,7 @@ under $\star$ with identity $\varepsilon$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.squareSplitConv_commRing_axioms` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-comm-ring-axioms).
+Stated but not proved: `MetaMathlibExt.squareSplitConv_commRing_axioms` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-comm-ring-axioms).
 
 ## Square-splitting convolution as a bivariate Dirichlet convolution
 
@@ -191,7 +191,7 @@ $(\Phi \odot \Psi)(u, v) = \sum_{u_1 \mid u} \sum_{v_1 \mid v} \Phi(u_1, v_1)\, 
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.squareSplitConv_bivariate_iso` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-bivariate-iso).
+Stated but not proved: `MetaMathlibExt.squareSplitConv_bivariate_iso` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-bivariate-iso).
 
 ## Möbius function of the square-splitting convolution
 
@@ -212,7 +212,7 @@ $$\sum_{n \ge 1} \frac{\mu_\star(n)}{n^s} = \prod_p \left(1 - p^{-s} - p^{-2s} +
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.squareSplitMoebius_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-moebius-formula).
+Stated but not proved: `MetaMathlibExt.squareSplitMoebius_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-moebius-formula).
 
 ## Möbius inversion for the square-splitting convolution
 
@@ -230,7 +230,7 @@ square-splitting divisors of $n$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.squareSplit_moebius_inversion` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-moebius-inversion).
+Stated but not proved: `MetaMathlibExt.squareSplit_moebius_inversion` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-moebius-inversion).
 
 ## Inverse of a multiplicative function under the square-splitting convolution
 
@@ -252,7 +252,7 @@ Multiplicativity includes $f(1) = 1$, so the source's hypothesis $f(1) \ne 0$ ho
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.squareSplitConv_inverse_of_isMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-inverse-of-is-multipli).
+Stated but not proved: `MetaMathlibExt.squareSplitConv_inverse_of_isMultiplicative` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-conv-inverse-of-is-multipli).
 
 ## The square-splitting totient function
 
@@ -272,7 +272,7 @@ an odd power and $v(n)$ is the positive integer with $n = u(n)\,v(n)^2$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.squareSplitTotient_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-totient-formula).
+Stated but not proved: `MetaMathlibExt.squareSplitTotient_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-totient-formula).
 
 ## Average order of the square-splitting totient function
 
@@ -290,7 +290,7 @@ $$\sum_{1 \le n \le x} \varphi_\star(n) = \frac{M}{2}\,x^2 + O(x^{1+\varepsilon}
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.squareSplitTotient_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-totient-sum-asymptotic).
+Stated but not proved: `MetaMathlibExt.squareSplitTotient_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-totient-sum-asymptotic).
 
 ## Dirichlet series of the square-splitting divisor function
 
@@ -308,7 +308,7 @@ $H$ is holomorphic on the half-plane $\operatorname{Re} s > 1/2$, and $H(1) \ne 
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.squareSplitDivisorCount_LSeries` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisor-count-lseries).
+Stated but not proved: `MetaMathlibExt.squareSplitDivisorCount_LSeries` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisor-count-lseries).
 
 ## Partial-sum asymptotics for a Riemann zeta quotient times a Dirichlet series
 
@@ -334,7 +334,7 @@ The hypothesis $G(1) \ne 0$ is added so that the quotient $G'(1)/G(1)$ is meanin
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sum_asymptotic_of_LSeries_eq_zeta_sq_div_zeta_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#sum-asymptotic-of-lseries-eq-zeta-sq-div).
+Stated but not proved: `MetaMathlibExt.sum_asymptotic_of_LSeries_eq_zeta_sq_div_zeta_two_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#sum-asymptotic-of-lseries-eq-zeta-sq-div).
 
 ## Average order of the square-splitting divisor function
 
@@ -354,7 +354,7 @@ $-B_\tau - 2\zeta'(2)/\zeta(2) = 4\zeta'(2)/\zeta(2) + H'(1)/H(1)$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.squareSplitDivisorCount_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisor-count-sum-asymptoti).
+Stated but not proved: `MetaMathlibExt.squareSplitDivisorCount_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-divisor-count-sum-asymptoti).
 
 ## Support and density of the square-splitting Möbius function
 
@@ -372,7 +372,7 @@ $\sum_{1 \le n \le x} |\mu_\star(n)|^2 \sim x/\zeta(4)$ as $x \to \infty$.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 11.
 
-Stated but not proved: `MetaMathlibExt.squareSplitMoebius_support_density` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-moebius-support-density).
+Stated but not proved: `MetaMathlibExt.squareSplitMoebius_support_density` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-moebius-support-density).
 
 ## A square-splitting divisor function and its Euler product
 
@@ -400,7 +400,7 @@ not part of this statement.
 
 - Champak Talukdar and Helen K. Saikia, *A Square-Splitting A-Convolution of Narkiewicz Type*, INTEGERS 26 (2026), Article A56, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.squareSplitSigma_multiplicative_eulerProduct` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-sigma-multiplicative-euler).
+Stated but not proved: `MetaMathlibExt.squareSplitSigma_multiplicative_eulerProduct` is written with `theorem_wanted` in [WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/SquareSplittingConvolutionWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html#square-split-sigma-multiplicative-euler).
 
 ## Depends on
 
@@ -409,4 +409,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Square-splitting convolution](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/square-splitting-convolution)

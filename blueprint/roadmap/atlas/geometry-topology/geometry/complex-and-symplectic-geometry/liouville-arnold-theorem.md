@@ -7,7 +7,7 @@ statement: formalized
 
 # Liouville–Arnold theorem
 
-7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html).
+7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html).
 
 ## The model space $\mathbb{R}^{2n}$ of the Liouville–Arnold theorem
 
@@ -15,7 +15,7 @@ For a natural number
 $n$, $E_n$ is the Euclidean space $\mathbb{R}^{2n}$, with coordinates indexed by
 $0, \dots, 2n-1$ and the standard inner product.
 
-Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.E`, an abbreviation declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#e).
+Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.E`, an abbreviation declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#e).
 
 ## Liouville–Arnold coordinates: index of $p_i$
 
@@ -23,7 +23,7 @@ For $i \in \{0, \dots, n-1\}$, the
 coordinate $p_i$ of $\mathbb{R}^{2n}$ is coordinate number $i$: this map sends $i$ to the same
 number $i$, regarded as an index in $\{0, \dots, 2n-1\}$.
 
-Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.idxP`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#idx-p).
+Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.idxP`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#idx-p).
 
 ## Liouville–Arnold coordinates: index of $q_i$
 
@@ -31,7 +31,7 @@ For $i \in \{0, \dots, n-1\}$, the
 coordinate $q_i$ of $\mathbb{R}^{2n}$ is coordinate number $n + i$: this map sends $i$ to
 $n + i \in \{0, \dots, 2n-1\}$.
 
-Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.idxQ`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#idx-q).
+Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.idxQ`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#idx-q).
 
 ## Standard Poisson bracket on $\mathbb{R}^{2n}$
 
@@ -49,7 +49,7 @@ $$
 Partial derivatives are read off the Fréchet derivative, which is taken to be zero at points
 where the function is not differentiable.
 
-Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.poissonBracket`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#poisson-bracket).
+Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.poissonBracket`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#poisson-bracket).
 
 ## Liouville integrable system on a subset of $\mathbb{R}^{2n}$
 
@@ -61,7 +61,7 @@ Fréchet derivatives $dF_0(x), \dots, dF_{n-1}(x)$ are linearly independent over
 
 The set $U$ is not required to be open; the Liouville–Arnold theorem assumes this separately.
 
-Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.IsLiouvilleIntegrable`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#is-liouville-integrable).
+Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.IsLiouvilleIntegrable`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#is-liouville-integrable).
 
 ## Common level set of $n$ functions on $\mathbb{R}^{2n}$
 
@@ -70,7 +70,7 @@ $F_0, \dots, F_{n-1} \colon \mathbb{R}^{2n} \to \mathbb{R}$ and values
 $c_0, \dots, c_{n-1} \in \mathbb{R}$, the common level set is
 $\{x \in \mathbb{R}^{2n} : F_i(x) = c_i \text{ for all } i\}$.
 
-Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.levelSet`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#level-set).
+Formalized by `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.levelSet`, a definition declared in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#level-set).
 
 ## Liouville–Arnold theorem
 
@@ -90,7 +90,7 @@ the conclusion fails.
 
 - V. I. Arnold, *Mathematical Methods of Classical Mechanics* (2nd ed., 1989), Theorem 49.A.1 (the standard modern reference). The result is due to Liouville (1855) for the local existence of action-angle coordinates and Arnold (1963) for the compact-connected-component topology. Listed as §45 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `liouville_arnold` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.liouville_arnold` is written with `theorem_wanted` in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#liouville-arnold).
+Stated but not proved: `MathlibExt.Geometry.LiouvilleArnoldWanted.Geometry.LiouvilleArnold.liouville_arnold` is written with `theorem_wanted` in [WantedExt/Geometry/LiouvilleArnoldWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LiouvilleArnoldWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html#liouville-arnold).
 
 ## Depends on
 
@@ -99,4 +99,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Liouville–Arnold theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/complex-and-symplectic-geometry/liouville-arnold-theorem)

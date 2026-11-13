@@ -7,7 +7,7 @@ statement: formalized
 
 # Immerman–Vardi theorem
 
-13 results, 12 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html).
+13 results, 12 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html).
 
 ## Finite ordered graphs
 
@@ -15,7 +15,7 @@ A finite ordered graph is a pair $(n, t)$ of a natural number $n$
 and a finite list $t$ of booleans of any length. Here $n$ is the size of the domain
 $\{0, \dots, n - 1\}$, ordered numerically, and $t$ is read as a row-major edge table.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.OrderedGraph`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#ordered-graph).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.OrderedGraph`, an abbreviation declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#ordered-graph).
 
 ## Edge relation of an ordered graph
 
@@ -23,7 +23,7 @@ Let $G$ be an ordered graph with vertices
 $0, \dots, n - 1$ and edge table $t$, a list of booleans. There is an edge from $a$ to $b$ when
 the entry of $t$ at position $a n + b$ is true; positions beyond the end of $t$ count as false.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogEdge`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-edge).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogEdge`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-edge).
 
 ## Formulas of first-order logic with least fixed points
 
@@ -34,7 +34,7 @@ and least-fixed-point formulas $\mathrm{lfp}(R, k, \varphi, (a_1, \dots, a_m))$,
 point of the operator defined by $\varphi$ (with $R$ as the recursive relation, of arity $k$)
 applied to the tuple of variables $(a_1, \dots, a_m)$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.OGFO`, an inductive type declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#ogfo).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.OGFO`, an inductive type declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#ogfo).
 
 ## Positive occurrence of a relation symbol
 
@@ -43,7 +43,7 @@ a first-order formula with least fixed points over ordered graphs when every ato
 relation symbol $R$ in it, including those inside least-fixed-point subformulas whatever symbol
 they bind, lies under an even number of negations.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.PositiveIn`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#positive-in).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.PositiveIn`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#positive-in).
 
 ## Negative occurrence of a relation symbol
 
@@ -52,7 +52,7 @@ in a formula $\varphi$ of first-order logic with least fixed points when every a
 $R(x_{a_1}, \dots, x_{a_k})$ in $\varphi$, including those inside least-fixed-point subformulas,
 lies under an odd number of negations.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.NegativeIn`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#negative-in).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.NegativeIn`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#negative-in).
 
 ## Formulas whose fixed points are all positive
 
@@ -62,7 +62,7 @@ $\varphi$ are positive when every least-fixed-point subformula of $\varphi$, nes
 binds a relation symbol $R \ge 2$ (so neither the order symbol $0$ nor the edge symbol $1$) and
 $R$ occurs only positively in the body of that subformula.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.AllLFPPositive`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#all-lfppositive).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.AllLFPPositive`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#all-lfppositive).
 
 ## Interpretation of relation symbols in an ordered graph
 
@@ -72,7 +72,7 @@ Relation symbol $0$ holds of a list exactly when it is a pair $(a, b)$ with $a <
 symbol $1$ holds of a list exactly when it is a pair $(a, b)$ with an edge from $a$ to $b$ in $G$,
 and relation symbol $i + 2$ is interpreted as $E_i$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogBase`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-base).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogBase`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-base).
 
 ## Well-formed FO + LFP formulas
 
@@ -87,7 +87,7 @@ formula that binds the symbol $R$ with arity $a$, has body $\varphi$ and is appl
 variables $y_1, \dots, y_k$ is well-formed when $R \ge 2$, $k = a$, and $\varphi$ is well-formed
 relative to the assignment that agrees with $e$ except that it gives $R$ the arity $a$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.OGWellFormed`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#ogwell-formed).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.OGWellFormed`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#ogwell-formed).
 
 ## Evaluation of FO + LFP formulas in an ordered graph
 
@@ -105,7 +105,7 @@ $X_{s+1}$ when $\varphi$ holds with $R$ reinterpreted as $X_s$ (the other symbol
 interpretation under $S$) and with variable $j$ assigned the $j$-th entry of $t$ (or $\rho(0)$
 if $t$ has no such entry) for $j < k$ and $\rho(j - k)$ for $j \ge k$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-eval).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogEval`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-eval).
 
 ## Satisfaction of an FO + LFP formula by an ordered graph
 
@@ -116,7 +116,7 @@ $\varphi$ are positive, and $\varphi$ is true in $G$ with every variable assigne
 relation symbol $0$ interpreted as the order $<$, relation symbol $1$ as the edge relation, and
 every other relation symbol as the empty relation.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogLFPSat`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-lfpsat).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogLFPSat`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-lfpsat).
 
 ## Encodings of a class of ordered graphs
 
@@ -125,7 +125,7 @@ decision problem that accepts a bitstring $x$ exactly when $x$ decodes, under th
 bitstring encoding of pairs of a natural number and a list of booleans, to some $G \in K$ whose
 edge table has length exactly $n^2$, where $n$ is the number of vertices of $G$.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogEncodings`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-encodings).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogEncodings`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-encodings).
 
 ## Definability in FO + LFP
 
@@ -134,7 +134,7 @@ with least fixed points when there are a formula $\varphi$ and a boolean $b$ suc
 ordered graph $G$ with $n$ vertices whose edge table has length $n^2$ lies in $K$ exactly when
 either $n > 0$ and $G$ satisfies $\varphi$, or $n = 0$ and $b$ is true.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogLFPDefinable`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-lfpdefinable).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.ogLFPDefinable`, a definition declared in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#og-lfpdefinable).
 
 ## Immerman-Vardi: FO + least fixed point is P on ordered structures
 
@@ -144,7 +144,7 @@ Immerman, "Relational queries definable in polynomial time", Information and Con
 Proceedings of the Fourteenth Annual ACM Symposium on Theory of Computing (STOC 1982),
 137-146.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.immerman_vardi` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#immerman-vardi).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.ImmermanVardi.immerman_vardi` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ImmermanVardiWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html#immerman-vardi).
 
 ## Depends on
 
@@ -153,4 +153,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Immerman–Vardi theorem](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/descriptive-complexity/immerman-vardi-theorem)

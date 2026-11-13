@@ -8,7 +8,7 @@ proof: formalized
 
 # Continuation-passing style translation
 
-42 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html).
+42 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html).
 
 ## Call-by-name CPS translation of types
 
@@ -17,7 +17,7 @@ calculus. The call-by-name CPS translation $A^\ast$ of a simple type $A$ is defi
 on $A$: a base type is translated to itself, $b^\ast = b$, and a function type is translated by
 $(A \to B)^\ast = ((A^\ast \to R) \to R) \to ((B^\ast \to R) \to R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnTy`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-ty).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnTy`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-ty).
 
 ## Computation types of the call-by-name CPS translation
 
@@ -25,7 +25,7 @@ For an answer type $R$ and a simple
 type $A$, the type of call-by-name computations of type $A$ is $C(A) = (A^\ast \to R) \to R$,
 where $A^\ast$ is the call-by-name CPS translation of $A$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnComp`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-comp).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnComp`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-comp).
 
 ## Call-by-name CPS translation of variables
 
@@ -34,7 +34,7 @@ $C(A) = (A^\ast \to R) \to R$, where $A^\ast$ is the call-by-name CPS translatio
 type $A$. A variable of type $A$ in a context $A_1, \dots, A_n$ is translated to the variable at
 the same position in the translated context $C(A_1), \dots, C(A_n)$, where it has type $C(A)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnVar`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-var).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnVar`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-var).
 
 ## Call-by-name CPS translation of terms
 
@@ -47,7 +47,7 @@ $\overline{\lambda x.\, M} = \lambda k.\, k\,(\lambda x.\, \overline{M})$; and a
 $\overline{M\,N} = \lambda k.\, \overline{M}\,(\lambda m.\, m\,\overline{N}\,k)$, where $k$ and
 $m$ are fresh variables.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn).
 
 ## Logical relation for the call-by-name CPS translation
 
@@ -62,7 +62,7 @@ $c \in D(C(A))$: if there is $v$ with $a \sim_A v$ and $c\,k = k\,v$ for every
 $k \in D(A^\ast \to R)$, then there is $w$ with $f\,a \sim_B w$ and $g\,c\,k = k\,w$ for every
 $k \in D(B^\ast \to R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.CbnRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-rel).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.CbnRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-rel).
 
 ## Related computations in the call-by-name CPS translation
 
@@ -73,7 +73,7 @@ the call-by-name logical relation between $D(A)$ and $D(A^\ast)$. A computation 
 is related to a value $a \in D(A)$ when there is $v \in D(A^\ast)$ with $a \sim_A v$ such that
 $c\,k = k\,v$ for every continuation $k \in D(A^\ast \to R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.CbnCompRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-comp-rel).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.CbnCompRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-comp-rel).
 
 ## Related environments for the call-by-name CPS translation
 
@@ -86,7 +86,7 @@ $\eta$ and $\eta'$ are related when for every variable $x$ of $\Gamma$, of type 
 value that $\eta'$ assigns to the variable at the same position as $x$ in the translated context
 is a computation of type $C(A)$ related to $\eta(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.CbnEnvRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-env-rel).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.CbnEnvRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-env-rel).
 
 ## Denotational correctness of the call-by-name CPS translation
 
@@ -100,7 +100,7 @@ in $\eta'$ of the call-by-name CPS translation $\overline{t}$ of $t$. Then there
 $v \in D(A^\ast)$ with $a \sim_A v$ such that $c\,k = k\,v$ for every continuation
 $k \in D(A^\ast \to R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_correct`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-correct).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_correct`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-correct).
 
 ## The call-by-name CPS translation at base types
 
@@ -111,7 +111,7 @@ context related to $\eta$. Then for every continuation $k$ from the values of ty
 values of type $R$, the denotation in $\eta'$ of the call-by-name CPS translation $\overline{t}$
 of $t$, applied to $k$, equals $k$ applied to the denotation of $t$ in $\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_denote_base`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-denote-base).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_denote_base`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-denote-base).
 
 ## Running the call-by-name CPS translation with the identity continuation
 
@@ -122,7 +122,7 @@ environment for the translated context related to $\eta$. Then the denotation in
 call-by-name CPS translation $\overline{t}$ of $t$, applied to the identity function on the values
 of type $b$, equals the denotation of $t$ in $\eta$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_denote_base_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-denote-base-id).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_denote_base_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByName.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-denote-base-id).
 
 ## Call-by-value CPS translation of types
 
@@ -130,7 +130,7 @@ For a fixed answer type $R$, the translation
 $\overline{A}$ of a simple type $A$ is defined by recursion on $A$: $\overline{b} = b$ for a base
 type $b$, and $\overline{A \to B} = \overline{A} \to ((\overline{B} \to R) \to R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsTy`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-ty).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsTy`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-ty).
 
 ## CPS computation type
 
@@ -138,7 +138,7 @@ For an answer type $R$ and a simple type $A$, the type of CPS
 computations returning a value of type $A$ is $(\overline{A} \to R) \to R$, where $\overline{A}$
 is the call-by-value CPS translation of $A$ for answer type $R$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.compTy`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#comp-ty).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.compTy`, an abbreviation declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#comp-ty).
 
 ## CPS translation of variables
 
@@ -147,7 +147,7 @@ call-by-value CPS translation of a type $A$. A de Bruijn variable of type $A$ in
 $A_1, \ldots, A_n$ is sent to the variable at the same position in the translated context
 $\overline{A_1}, \ldots, \overline{A_n}$, which has type $\overline{A}$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsVar`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-var).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsVar`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-var).
 
 ## Call-by-value CPS translation of terms
 
@@ -160,7 +160,7 @@ $\overline{\lambda x.\,M} = \lambda k.\,k\,(\lambda x.\,\overline{M})$ and
 $\overline{M\,N} = \lambda k.\,\overline{M}\,(\lambda m.\,\overline{N}\,(\lambda n.\,m\,n\,k))$,
 where $k$, $m$ and $n$ are fresh variables.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps).
 
 ## Logical relation for the CPS translation
 
@@ -172,7 +172,7 @@ $a \sim_b a'$ means $a = a'$; at a function type, $f \sim_{A \to B} f'$ means th
 $a \sim_A a'$ there is a $b' \in D(\overline{B})$ with $f(a) \sim_B b'$ and $f'(a')(k) = k(b')$
 for every continuation $k \in D(\overline{B} \to R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.Rel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#rel).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.Rel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#rel).
 
 ## Related environments
 
@@ -183,7 +183,7 @@ environment $\eta'$ for $\overline{\Gamma}$ are related when, for every variable
 in $\Gamma$, the value $\eta(x)$ is related at type $A$, by the CPS logical relation, to the value
 that $\eta'$ assigns to the variable at the same position in $\overline{\Gamma}$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.EnvRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#env-rel).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.EnvRel`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#env-rel).
 
 ## Denotational correctness of the CPS translation (Meyer–Wand)
 
@@ -196,7 +196,7 @@ environments for $\Gamma$ and $\overline{\Gamma}$. Then there is a value $v' \in
 related to $[t]_\eta$ by the CPS logical relation at $A$, such that $[\overline{t}]_{\eta'}(k) =
 k(v')$ for every continuation $k \colon D(\overline{A}) \to D(R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_correct`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-correct).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_correct`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-correct).
 
 ## CPS translation at a base type
 
@@ -208,7 +208,7 @@ context $\Gamma$, and let $\eta$ and $\eta'$ be related environments for $\Gamma
 $\overline{\Gamma}$. Then $[\overline{t}]_{\eta'}(k) = k([t]_\eta)$ for every continuation
 $k \colon I(b) \to D(R)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_denote_base`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-denote-base).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_denote_base`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-denote-base).
 
 ## CPS translation at a base type with the identity continuation
 
@@ -219,7 +219,7 @@ translations of $\Gamma$ and $t$, and $[t]_\eta$ for the denotation of $t$ in an
 $\eta$. If $\eta$ and $\eta'$ are related environments for $\Gamma$ and $\overline{\Gamma}$, then
 $[\overline{t}]_{\eta'}(\mathrm{id}) = [t]_\eta$, where $\mathrm{id}$ is the identity on $I(b)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_denote_base_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-denote-base-id).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_denote_base_id`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Translation.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-denote-base-id).
 
 ## Translated renaming
 
@@ -229,7 +229,7 @@ renaming $\rho$ from $\Gamma$ to $\Delta$ induces the renaming from $\llbracket 
 to $\llbracket \Delta \rrbracket$ that sends the translation of each variable $x$ of $\Gamma$ (the
 variable at the same position) to the translation of $\rho(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsRen`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-ren).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cpsRen`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-ren).
 
 ## The call-by-value CPS translation commutes with renaming
 
@@ -241,7 +241,7 @@ renaming of $\llbracket t \rrbracket$ along the translated renaming from
 $\llbracket \Gamma \rrbracket$ to $\llbracket \Delta \rrbracket$, which sends the translation of
 each variable $x$ of $\Gamma$ to the translation of $\rho(x)$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-rename).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-rename).
 
 ## The CPS translation commutes with weakening
 
@@ -251,7 +251,7 @@ and terms. For every term $t$ of type $A$ in a context $\Gamma$ and every type $
 of the weakening of $t$ to the context $B, \Gamma$ is the weakening of $\llbracket t \rrbracket$ to
 the context $\llbracket B \rrbracket, \llbracket \Gamma \rrbracket$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-weaken).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-weaken).
 
 ## Plotkin's value translation $\Psi$
 
@@ -263,7 +263,7 @@ $\Gamma^*$ holds in exactly two cases: a variable $x$ of $\Gamma$ is related to 
 the same position in $\Gamma^*$, and an abstraction $\lambda x.\, N$ is related to
 $\lambda x.\, \overline{N}$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.PsiRel`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#psi-rel).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.PsiRel`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#psi-rel).
 
 ## The CPS translation commutes with substitution of values and variables
 
@@ -279,7 +279,7 @@ $\lambda y. \llbracket N \rrbracket$). Then for every term $M$ in $\Gamma$, writ
 for the result of applying $\sigma$ to $M$, we have
 $\llbracket M[\sigma] \rrbracket = \llbracket M \rrbracket[\tau]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-subst).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-subst).
 
 ## The CPS translation commutes with instantiation by a value or variable
 
@@ -292,7 +292,7 @@ to the corresponding variable, $\lambda x. M$ to $\lambda x. \llbracket M \rrbra
 $N[u]$ for $N$ with its newest free variable replaced by $u$, we have
 $\llbracket N[v] \rrbracket = \llbracket N \rrbracket[p]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-instantiate).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-instantiate).
 
 ## The value translation preserves values
 
@@ -301,7 +301,7 @@ in context $\Gamma$ is related by Plotkin's value translation $\Psi$ to a term $
 translated type in the translated context), and $v$ is a value, that is, a $\lambda$-abstraction,
 then $p$ is a value.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.PsiRel.value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#value).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.PsiRel.value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#value).
 
 ## A β-redex with a value argument evaluates as its contractum
 
@@ -311,7 +311,7 @@ newest free variable replaced by $v$, for every term $w$ of type $D$ the applica
 $(\lambda x. N)\, v$ evaluates to $w$ under call-by-value big-step evaluation if and only if $N[v]$
 evaluates to $w$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.eval_app_lam_iff`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-app-lam-iff).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.eval_app_lam_iff`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-app-lam-iff).
 
 ## Evaluation of an application depends on the function only through its results
 
@@ -321,7 +321,7 @@ to $u$ under call-by-value big-step evaluation if and only if $F'$ does. Then fo
 type $C$ and every term $w$ of type $D$ in $\Xi$, the application $F\, a$ evaluates to $w$ if and
 only if $F'\, a$ evaluates to $w$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.eval_app_congr_fun`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-app-congr-fun).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.eval_app_congr_fun`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-app-congr-fun).
 
 ## Instantiating a return to the continuation
 
@@ -330,7 +330,7 @@ of type $X \to Z$ in a context $\Xi$. In the context $X \to Z, \Xi$, let $k$ be 
 variable (of type $X \to Z$) and $V'$ the weakening of $V$. Replacing $k$ by $K$ in the term
 $k\, V'$ gives $K\, V$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.instantiate_ret`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#instantiate-ret).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.instantiate_ret`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#instantiate-ret).
 
 ## Plotkin's simulation theorem, big-step form
 
@@ -344,7 +344,7 @@ $\llbracket A \rrbracket \to R$ in $\llbracket \Gamma \rrbracket$ and every term
 application $\llbracket M \rrbracket\, K$ evaluates to $w$ if and only if $K\, p$ evaluates
 to $w$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_simulation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-simulation).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_simulation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-simulation).
 
 ## Simulation for terms evaluating to an abstraction
 
@@ -356,7 +356,7 @@ $\llbracket A \to B \rrbracket \to R$ in $\llbracket \Gamma \rrbracket$ and ever
 $R$, the application $\llbracket M \rrbracket\, K$ evaluates to $w$ if and only if
 $K\, (\lambda x. \llbracket N \rrbracket)$ evaluates to $w$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_simulation_lam`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-simulation-lam).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cps_simulation_lam`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/Simulation.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cps-simulation-lam).
 
 ## Call-by-name big-step evaluation
 
@@ -366,7 +366,7 @@ $\Gamma$. It is the least relation closed under two rules: every abstraction $\l
 evaluates to itself, and if $f \Downarrow_n \lambda x.\,N$ and $N[a/x] \Downarrow_n v$, then
 $f\,a \Downarrow_n v$. The argument $a$ is substituted for $x$ without being evaluated.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.EvalN`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-n).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.EvalN`, an inductive type declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-n).
 
 ## The call-by-name CPS translation of a renaming
 
@@ -378,7 +378,7 @@ $\Gamma$ to $\Delta$, a type-preserving map from the variables of $\Gamma$ to th
 is transported to the renaming $\overline{\rho}$ of the translated contexts with
 $\overline{\rho}(\overline{x}) = \overline{\rho(x)}$ for every variable $x$ of $\Gamma$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnRen`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-ren).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbnRen`, a definition declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-ren).
 
 ## The call-by-name CPS translation commutes with renaming
 
@@ -390,7 +390,7 @@ $\rho(x)$. Then for every term $t$ in context $\Gamma$, the translation of the r
 $t[\rho]$ is the renaming of $\overline{t}$ by $\overline{\rho}$:
 $\overline{t[\rho]} = \overline{t}[\overline{\rho}]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-rename).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_rename`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-rename).
 
 ## The call-by-name CPS translation commutes with weakening
 
@@ -401,7 +401,7 @@ adds a fresh newest variable of type $B$) gives the weakening of $\overline{t}$ 
 context, which adds a fresh newest variable of the translated type
 $(B^* \to R) \to R$, where $B^*$ is the call-by-name translation of $B$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-weaken).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_weaken`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-weaken).
 
 ## The call-by-name CPS translation commutes with substitution
 
@@ -414,7 +414,7 @@ substitution from the translated context of $\Gamma$ to that of $\Delta$ such th
 $\tau(\overline{x}) = \overline{\sigma(x)}$ for every variable $x$ of $\Gamma$. Then for every
 term $t$ in context $\Gamma$, $\overline{t[\sigma]} = \overline{t}[\tau]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-subst).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_subst`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-subst).
 
 ## The call-by-name CPS translation commutes with instantiation
 
@@ -425,14 +425,14 @@ $A$ in context $\Gamma$. Then translating the instantiation $N[a/x]$ of $x$ by $
 instantiation of the newest variable of $\overline{N}$ by $\overline{a}$:
 $\overline{N[a/x]} = \overline{N}[\overline{a}/x]$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-instantiate).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_instantiate`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-instantiate).
 
 ## The translation of a closed term is a value
 
 Fix an answer type $R$. For every closed term
 $t$, the call-by-name CPS translation of $t$ is a value, that is, a $\lambda$-abstraction.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-value).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_value`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-value).
 
 ## Administrative step of the call-by-name translation of an application
 
@@ -447,7 +447,7 @@ $W \Rightarrow ((V \Rightarrow Z) \Rightarrow Z)$, with de Bruijn index $0$, and
 under the binder. Instantiating $k$ with $K$ in this term gives
 $F\,(\lambda p.\; p\; N^{\uparrow}\; K^{\uparrow})$.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.instantiate_cbnApp₁`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#instantiate-cbn-app).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.instantiate_cbnApp₁`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#instantiate-cbn-app).
 
 ## The translation of an abstraction passes the translated function to its continuation
 
@@ -459,7 +459,7 @@ let $w$ be a term of type $R$ in context $\Gamma^*$. Then $\overline{\lambda x.\
 evaluates to $w$ under call-by-value big-step evaluation if and only if
 $K\,(\lambda x.\,\overline{N})$ does.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.eval_cbn_lam_iff`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-cbn-lam-iff).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.eval_cbn_lam_iff`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#eval-cbn-lam-iff).
 
 ## Call-by-name evaluation is preserved by the CPS translation
 
@@ -470,7 +470,7 @@ to $V$ under call-by-name big-step evaluation. Then for every closed value $K$ o
 $T^* \to R$ and every closed term $w$ of type $R$, the application $\overline{M}\,K$ evaluates to
 $w$ under call-by-value big-step evaluation if and only if $\overline{V}\,K$ does.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_evalN`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-eval-n).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_evalN`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-eval-n).
 
 ## Plotkin's simulation theorem for the call-by-name CPS translation
 
@@ -484,7 +484,7 @@ $K\,(\lambda x.\,\overline{N})$ does.
 
 This is the big-step form of the theorem, for the simply typed calculus.
 
-Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_simulation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-simulation).
+Formalized by `Cslib.Languages.LambdaCalculus.Stlc.CPS.cbn_simulation`, a theorem declared in [CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Languages/LambdaCalculus/CPS/CallByNameSimulation.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html#cbn-simulation).
 
 ## Depends on
 
@@ -493,4 +493,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continuation-passing style translation](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/programming-language-semantics/continuation-passing-style-translation)

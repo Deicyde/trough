@@ -7,7 +7,7 @@ statement: formalized
 
 # Series from Nörlund's digamma identity
 
-23 results, 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html).
+23 results, 23 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html).
 
 ## A product series for $\pi \cot(\pi/k)$
 
@@ -20,7 +20,7 @@ $$(k - 2)\Bigl(1 + \sum_{n=1}^{\infty} \frac{1}{n + 1}
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.sub_two_mul_one_add_tsum_prod_eq_pi_mul_cot` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#sub-two-mul-one-add-tsum-prod-eq-pi-mul).
+Stated but not proved: `MetaMathlibExt.sub_two_mul_one_add_tsum_prod_eq_pi_mul_cot` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#sub-two-mul-one-add-tsum-prod-eq-pi-mul).
 
 ## Adegoke–Frontczak series for the tangent
 
@@ -35,7 +35,7 @@ $$
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.tsum_two_pow_prod_eq_neg_pi_mul_tan` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-two-pow-prod-eq-neg-pi-mul-tan).
+Stated but not proved: `MetaMathlibExt.tsum_two_pow_prod_eq_neg_pi_mul_tan` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-two-pow-prod-eq-neg-pi-mul-tan).
 
 ## Harmonic numbers of half-integer index
 
@@ -69,7 +69,7 @@ $H^{(3)}_{-1/2} = -6\zeta(3)$ and $H^{(m+1)}_{k-1/2} - H^{(m+1)}_{-1/2} = 2^{m+1
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.harmonic_nat_sub_half_values` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#harmonic-nat-sub-half-values).
+Stated but not proved: `MetaMathlibExt.harmonic_nat_sub_half_values` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#harmonic-nat-sub-half-values).
 
 ## The Gamma function at $r + \tfrac12$ and at $\tfrac12 - r$
 
@@ -90,7 +90,7 @@ $r = -\tfrac12, -\tfrac32, \dots$ both sides are $0$.
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.Gamma_add_half_and_Gamma_half_sub_nat` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#gamma-add-half-and-gamma-half-sub-nat).
+Stated but not proved: `MetaMathlibExt.Gamma_add_half_and_Gamma_half_sub_nat` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#gamma-add-half-and-gamma-half-sub-nat).
 
 ## A Catalan series in terms of the digamma function
 
@@ -105,7 +105,7 @@ $$\sum_{n=0}^{\infty} \frac{C_n}{4^n \binom{n+z}{n}} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 3, identity (7).
 
-Stated but not proved: `MetaMathlibExt.tsum_catalan_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-div-four-pow-mul-binom).
+Stated but not proved: `MetaMathlibExt.tsum_catalan_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-div-four-pow-mul-binom).
 
 ## Catalan series summing to $4(1 - \log 2)$ and $\frac{10}{3} - 4 \log 2$
 
@@ -122,7 +122,7 @@ $$\sum_{n=0}^{\infty} \frac{C_n}{4^n (n + 1)(n + 2)} = \frac{10}{3} - 4 \log 2.$
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 3, first two identities.
 
-Stated but not proved: `MetaMathlibExt.tsum_catalan_div_four_pow_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-div-four-pow-special).
+Stated but not proved: `MetaMathlibExt.tsum_catalan_div_four_pow_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-div-four-pow-special).
 
 ## An odd harmonic series for $\pi^2/6$ and a Catalan–harmonic series for $8 - 2\pi^2/3$
 
@@ -139,7 +139,7 @@ $$\sum_{n=0}^{\infty} \frac{C_n H_{n+1}}{4^n (n+1)} = 8 - \frac{2\pi^2}{3}.$$
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 4, identities (8) and (9).
 
-Stated but not proved: `MetaMathlibExt.tsum_odd_harmonic_div_and_catalan_mul_harmonic_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-harmonic-div-and-catalan-mul-ha).
+Stated but not proved: `MetaMathlibExt.tsum_odd_harmonic_div_and_catalan_mul_harmonic_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-harmonic-div-and-catalan-mul-ha).
 
 ## A Catalan series weighted by harmonic numbers of complex argument
 
@@ -159,7 +159,7 @@ $C_n H_{n+z} / (4^n \binom{n+z}{n})$.
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 4, identity (10).
 
-Stated but not proved: `MetaMathlibExt.tsum_catalan_mul_harmonic_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-mul-harmonic-div-four-pow-m).
+Stated but not proved: `MetaMathlibExt.tsum_catalan_mul_harmonic_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-mul-harmonic-div-four-pow-m).
 
 ## Digamma evaluation of the $(2n+1)$-weighted Catalan series with binomial denominators
 
@@ -174,7 +174,7 @@ $$\sum_{n=0}^{\infty} \frac{(2n+1)\,C_n}{4^n \binom{n+z}{n}} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 5, identity (11).
 
-Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-div-four-pow-mul-bi).
+Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-div-four-pow-mul-bi).
 
 ## Catalan series over powers of $4$ equal to $4\ln 2$ and $4\ln 2 - 2$
 
@@ -191,7 +191,7 @@ $$\sum_{n=0}^{\infty} \frac{2n+1}{(n+1)(n+2)} \cdot \frac{C_n}{4^n} = 4\ln 2 - 2
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 5, first two identities.
 
-Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_div_four_pow_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-div-four-pow-specia).
+Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_div_four_pow_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-div-four-pow-specia).
 
 ## Digamma evaluation of the $n$-weighted Catalan series with binomial denominators
 
@@ -207,7 +207,7 @@ $$\sum_{n=0}^{\infty} \frac{n\,C_n}{4^n \binom{n+z}{n}} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.tsum_nat_mul_catalan_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-nat-mul-catalan-div-four-pow-mul-bi).
+Stated but not proved: `MetaMathlibExt.tsum_nat_mul_catalan_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-nat-mul-catalan-div-four-pow-mul-bi).
 
 ## Adegoke–Frontczak series with odd weights, Catalan numbers and harmonic numbers
 
@@ -227,7 +227,7 @@ $$
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 6, identity (13).
 
-Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_mul_harmonic_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-mul-harmonic-div-fo).
+Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_mul_harmonic_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-mul-harmonic-div-fo).
 
 ## Special values of the odd-weighted Catalan–harmonic series
 
@@ -251,7 +251,7 @@ $$
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 6, particular cases and identity (14).
 
-Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_mul_harmonic_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-mul-harmonic-specia).
+Stated but not proved: `MetaMathlibExt.tsum_odd_mul_catalan_mul_harmonic_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-odd-mul-catalan-mul-harmonic-specia).
 
 ## Digamma evaluation of the $n$-weighted Catalan–harmonic series with binomial denominators
 
@@ -270,7 +270,7 @@ z \sum_{j=0}^{\infty} \Bigl(\frac{1}{(j + z + \frac12)^2} + \frac{1}{(j + z - \f
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 7, identity (15).
 
-Stated but not proved: `MetaMathlibExt.tsum_nat_mul_catalan_mul_harmonic_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-nat-mul-catalan-mul-harmonic-div-fo).
+Stated but not proved: `MetaMathlibExt.tsum_nat_mul_catalan_mul_harmonic_div_four_pow_mul_binom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-nat-mul-catalan-mul-harmonic-div-fo).
 
 ## Special values of the $n$-weighted Catalan–harmonic series
 
@@ -289,7 +289,7 @@ $$\sum_{n=0}^{\infty} \frac{n\,O_{n+2}}{(n+1)(2n+1)(2n+3)} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 7, particular cases and identity (16).
 
-Stated but not proved: `MetaMathlibExt.tsum_nat_mul_catalan_mul_harmonic_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-nat-mul-catalan-mul-harmonic-specia).
+Stated but not proved: `MetaMathlibExt.tsum_nat_mul_catalan_mul_harmonic_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-nat-mul-catalan-mul-harmonic-specia).
 
 ## Central binomial series for $\pi^2/8$ and a series for $2\ln 2$
 
@@ -305,7 +305,7 @@ $$\sum_{n=0}^{\infty} \frac{1}{(2n+1)(n+1)} = 2\ln 2.$$
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 8, identities (17) and (18).
 
-Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_centralBinom_mul_sq_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-div-central-binom-mul-sq-s).
+Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_centralBinom_mul_sq_special` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-div-central-binom-mul-sq-s).
 
 ## Digamma evaluation of a central binomial series with a complex binomial parameter
 
@@ -321,7 +321,7 @@ $$\sum_{n=0}^{\infty} \frac{4^n}{\binom{n}{h} \binom{2(n+1)}{n+1} (n+1)^2} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 8, identity (19).
 
-Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_binom_mul_centralBinom_mul_sq` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-div-binom-mul-central-bino).
+Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_binom_mul_centralBinom_mul_sq` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-div-binom-mul-central-bino).
 
 ## A shifted central binomial series
 
@@ -339,7 +339,7 @@ $\sum_{n \ge h} \binom{2(n-h)}{n-h} / \bigl(\binom{n}{h} \binom{2(n+1)}{n+1} (n 
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Corollary 2, identity (20).
 
-Stated but not proved: `MetaMathlibExt.tsum_centralBinom_div_choose_mul_centralBinom_mul_sq` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-central-binom-div-choose-mul-centra).
+Stated but not proved: `MetaMathlibExt.tsum_centralBinom_div_choose_mul_centralBinom_mul_sq` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-central-binom-div-choose-mul-centra).
 
 ## A shifted central binomial series with odd harmonic numbers
 
@@ -361,7 +361,7 @@ $\sum_{n \ge h} \binom{2(n-h)}{n-h} O_{n-h} /
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 9, identity (22).
 
-Stated but not proved: `MetaMathlibExt.tsum_centralBinom_mul_odd_harmonic_div_choose_mul_centralBinom_mul_sq` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-central-binom-mul-odd-harmonic-div).
+Stated but not proved: `MetaMathlibExt.tsum_centralBinom_mul_odd_harmonic_div_choose_mul_centralBinom_mul_sq` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-central-binom-mul-odd-harmonic-div).
 
 ## Series over $4^n$ with binomial and central binomial denominators
 
@@ -375,7 +375,7 @@ $$\sum_{n=0}^{\infty} \frac{4^n}{(n+1) \binom{n+m}{m} \binom{2(n+m)}{n+m}} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 10, identity (23).
 
-Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_succ_mul_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-div-succ-mul-choose-mul-ce).
+Stated but not proved: `MetaMathlibExt.tsum_four_pow_div_succ_mul_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-div-succ-mul-choose-mul-ce).
 
 ## An odd harmonic series with binomial and central binomial denominators
 
@@ -391,7 +391,7 @@ O_{m-1} \bigl(3\zeta(2) - 4 O^{(2)}_{m-1}\bigr)\Bigr).$$
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 11, identity (27).
 
-Stated but not proved: `MetaMathlibExt.tsum_four_pow_mul_odd_harmonic_div_succ_mul_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-mul-odd-harmonic-div-succ).
+Stated but not proved: `MetaMathlibExt.tsum_four_pow_mul_odd_harmonic_div_succ_mul_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-four-pow-mul-odd-harmonic-div-succ).
 
 ## Catalan numbers over binomial and central binomial coefficients
 
@@ -406,7 +406,7 @@ $$\sum_{n=0}^{\infty} \frac{C_n}{\binom{n+m}{n} \binom{2(n+m)}{n+m}} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 12, identity (28).
 
-Stated but not proved: `MetaMathlibExt.tsum_catalan_div_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-div-choose-mul-central-bino).
+Stated but not proved: `MetaMathlibExt.tsum_catalan_div_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-div-choose-mul-central-bino).
 
 ## An odd harmonic Catalan series over central binomial coefficients
 
@@ -423,7 +423,7 @@ $$\sum_{n=0}^{\infty} \frac{C_n O_{n+m}}{\binom{n+m}{m} \binom{2(n+m)}{n+m}} =
 
 - Kunle Adegoke and Robert Frontczak, *Series Associated with a Forgotten Identity of Nörlund*, INTEGERS 25 (2025), Article A18, Theorem 13, identity (30).
 
-Stated but not proved: `MetaMathlibExt.tsum_catalan_mul_odd_harmonic_div_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/NorlundSeriesWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-mul-odd-harmonic-div-choose).
+Stated but not proved: `MetaMathlibExt.tsum_catalan_mul_odd_harmonic_div_choose_mul_centralBinom` is written with `theorem_wanted` in [WantedExt/Analysis/NorlundSeriesWanted.lean, line 352](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/NorlundSeriesWanted.lean#L352). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html#tsum-catalan-mul-odd-harmonic-div-choose).
 
 ## Depends on
 
@@ -432,4 +432,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Series from Nörlund's digamma identity](https://deicyde.github.io/atlas-lean/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/sequences-and-series/trigonometric-and-harmonic-series/series-from-n-rlund-s-digamma-identity)

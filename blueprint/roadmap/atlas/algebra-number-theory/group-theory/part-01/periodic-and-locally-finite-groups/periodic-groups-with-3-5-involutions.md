@@ -7,14 +7,14 @@ statement: formalized
 
 # Periodic groups with {3, 5}-involutions
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html).
 
 ## Involution
 
 An element $x$ of a group $G$ is an involution when $x^2 = 1$ and
 $x \ne 1$.
 
-Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.IsInvolution`, a definition declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#is-involution).
+Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.IsInvolution`, a definition declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#is-involution).
 
 ## The special unitary group $\mathrm{SU}_3(4)$
 
@@ -28,7 +28,7 @@ $x_1 \bar{y}_1 + x_2 \bar{y}_2 + x_3 \bar{y}_3$.
 
 These matrices already form a subgroup, so $\mathrm{SU}_3(4)$ consists exactly of them.
 
-Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.specialUnitaryGroupThreeFour`, a definition declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#special-unitary-group-three-four).
+Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.specialUnitaryGroupThreeFour`, a definition declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#special-unitary-group-three-four).
 
 ## The projective special unitary group $\mathrm{PSU}_3(4)$
 
@@ -36,7 +36,7 @@ It is the quotient
 $\mathrm{PSU}_3(4) = \mathrm{SU}_3(4) / Z(\mathrm{SU}_3(4))$ of the special unitary group
 $\mathrm{SU}_3(4)$ by its centre $Z(\mathrm{SU}_3(4))$.
 
-Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.PSUThreeFour`, an abbreviation declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#psuthree-four).
+Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.PSUThreeFour`, an abbreviation declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#psuthree-four).
 
 ## Jabara's conjecture on groups with $\{3, 5\}$-involutions
 
@@ -47,7 +47,7 @@ all involutions $x, y$ of $G$, and that each of these four values is the order o
 involutions $x, y$ of $G$. Then $G$ is isomorphic to the alternating group $A_5$ or to the
 projective special unitary group $\mathrm{PSU}_3(4)$.
 
-Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.threeFiveInvolutionsClassification`, a definition declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#three-five-involutions-classification).
+Formalized by `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.threeFiveInvolutionsClassification`, a definition declared in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#three-five-involutions-classification).
 
 ## Jabara's conjecture on groups with $\{3, 5\}$-involutions holds
 
@@ -65,7 +65,7 @@ the proof.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 19.36 (E. Jabara); resolution: E. Bettio, A proof of a conjecture by Jabara on groups in which all involutions are odd transpositions, J. Group Theory 24 (2021), no. 5, 1055-1067, abstract: a group generated by elements of order two in which the product of any two such elements has order 1, 2, 3 or 5, with all possibilities occurring, is isomorphic to A₅ or to PSU(3, 4), answering Problem 19.36; Kourovka Archive, Problem 19.36: the conjecture is proved, even without using the hypothesis that G is periodic, https://doi.org/10.1515/jgth-2020-0129.
 
-Stated but not proved: `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.threeFiveInvolutionsClassification_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#three-five-involutions-classification-ho).
+Stated but not proved: `MathlibExt.GroupTheory.ThreeFiveInvolutionsKourovka19Problem36Wanted.threeFiveInvolutionsClassification_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ThreeFiveInvolutionsKourovka19Problem36Wanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html#three-five-involutions-classification-ho).
 
 ## Depends on
 
@@ -74,4 +74,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Periodic groups with {3, 5}-involutions](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/periodic-and-locally-finite-groups/periodic-groups-with-3-5-involutions)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Thresholds and expectation thresholds
 
-6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html).
+6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html).
 
 ## Weakly $p$-small families
 
@@ -16,7 +16,7 @@ family of subsets of $X$. Then $\mathcal F$ is weakly $p$-small if there is a fu
 subsets of $X$ to the nonnegative reals such that $\sum_{S \subseteq T} g(S) \ge 1$ for every
 $T \in \mathcal F$ and $\sum_{S \subseteq X} g(S)\, p^{|S|} \le 1/2$.
 
-Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.IsWeaklySmall`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#is-weakly-small).
+Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.IsWeaklySmall`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#is-weakly-small).
 
 ## The threshold $p_c(\mathcal F)$
 
@@ -29,7 +29,7 @@ and $0$ otherwise.
 When $X$ is finite and $\mathcal F$ is increasing, nonempty and not the family of all subsets
 of $X$, such a $p$ exists and is unique; it is the threshold of $\mathcal F$.
 
-Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.p_c`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#p-c).
+Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.p_c`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#p-c).
 
 ## The fractional expectation-threshold $q_f(\mathcal F)$
 
@@ -37,7 +37,7 @@ For a family $\mathcal F$ of
 subsets of a finite set $X$, $q_f(\mathcal F)$ is the supremum, in $[0, 1]$, of the set of all
 $p \in [0, 1]$ such that $\mathcal F$ is weakly $p$-small; it is $0$ if there is no such $p$.
 
-Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.q_f`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#q-f).
+Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.q_f`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#q-f).
 
 ## Size of a largest minimal element, $\ell(\mathcal F)$
 
@@ -49,7 +49,7 @@ By convention $\ell(\mathcal F) = 0$ when $\mathcal F$ has no minimal element or
 cardinalities of its minimal elements are unbounded, and an infinite set counts as having
 cardinality $0$.
 
-Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.l`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#l).
+Formalized by `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.l`, a definition declared in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#l).
 
 ## The constant of the Frankston–Kahn–Narayanan–Park theorem
 
@@ -62,7 +62,7 @@ size of its largest minimal element.
 
 - K. Frankston, J. Kahn, B. Narayanan, and J. Park, `Thresholds versus fractional expectation-thresholds`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_fractional_expectation_thresholds` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.K` is written with `def_wanted` in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#k).
+Stated but not proved: `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.K` is written with `def_wanted` in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#k).
 
 ## Thresholds versus fractional expectation-thresholds
 
@@ -84,7 +84,7 @@ so the inequality cannot hold.
 
 - K. Frankston, J. Kahn, B. Narayanan, and J. Park, `Thresholds versus fractional expectation-thresholds`, Annals of Math, 194 (2) 2021. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_fractional_expectation_thresholds` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#theorem-1-1).
+Stated but not proved: `MathlibExt.Combinatorics.FractionalExpectationThresholdsWanted.FractionalExpectationThresholds.theorem_1_1` is written with `theorem_wanted` in [WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/FractionalExpectationThresholdsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html#theorem-1-1).
 
 ## Depends on
 
@@ -93,4 +93,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Thresholds and expectation thresholds](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/probabilistic-combinatorics/thresholds-and-expectation-thresholds)

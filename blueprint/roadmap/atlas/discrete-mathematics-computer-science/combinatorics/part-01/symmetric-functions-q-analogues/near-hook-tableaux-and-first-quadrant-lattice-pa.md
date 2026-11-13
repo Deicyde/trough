@@ -7,7 +7,7 @@ statement: formalized
 
 # Near-hook tableaux and first-quadrant lattice paths
 
-10 results, 8 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html).
+10 results, 8 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html).
 
 ## The near-hook diagram $\theta^{(n)}$
 
@@ -19,7 +19,7 @@ and $2$, followed by $n$ rows of length $1$.
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 2.
 
-Formalized by `MetaMathlibExt.nearHookTheta`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-theta).
+Formalized by `MetaMathlibExt.nearHookTheta`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-theta).
 
 ## Row lengths of $\theta^{(n)}$
 
@@ -30,7 +30,7 @@ diagram $\theta^{(n)}$, from the top row down, are $n + 2$, $2$, and then $1$ re
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 2.
 
-Formalized by `MetaMathlibExt.nearHookTheta_rowLens`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-theta-row-lens).
+Formalized by `MetaMathlibExt.nearHookTheta_rowLens`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-theta-row-lens).
 
 ## First-quadrant paths $\mathcal{P}_n$
 
@@ -46,7 +46,7 @@ These are the walks of Guy, Krattenthaler and Sagan.
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 1.
 
-Formalized by `MetaMathlibExt.firstQuadrantPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#first-quadrant-paths).
+Formalized by `MetaMathlibExt.firstQuadrantPaths`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#first-quadrant-paths).
 
 ## The path $NS$ lies in $\mathcal{P}_0$
 
@@ -58,7 +58,7 @@ paths.
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 1.
 
-Formalized by `MetaMathlibExt.north_south_mem_firstQuadrantPaths_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#north-south-mem-first-quadrant-paths-zer).
+Formalized by `MetaMathlibExt.north_south_mem_firstQuadrantPaths_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#north-south-mem-first-quadrant-paths-zer).
 
 ## The map $\psi$ from near-hook tableaux to lattice paths
 
@@ -76,7 +76,7 @@ heart, the cell in row $1$ and column $1$, and $2$ is then an entry of the arm o
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 3, equation (eq:psi).
 
-Formalized by `MetaMathlibExt.nearHookTableauToPathPsi`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-tableau-to-path-psi).
+Formalized by `MetaMathlibExt.nearHookTableauToPathPsi`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-tableau-to-path-psi).
 
 ## The path $\psi(T)$ has $2n + 2$ steps
 
@@ -87,7 +87,7 @@ semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\psi(T)$ has l
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 3, equation (eq:psi).
 
-Formalized by `MetaMathlibExt.length_nearHookTableauToPathPsi`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#length-near-hook-tableau-to-path-psi).
+Formalized by `MetaMathlibExt.length_nearHookTableauToPathPsi`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#length-near-hook-tableau-to-path-psi).
 
 ## The map $\xi$ from near-hook tableaux to lattice paths
 
@@ -108,7 +108,7 @@ of the arm and the leg, column $0$; "otherwise" then means that it lies in the l
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 4.1, equation (eq:xi).
 
-Formalized by `MetaMathlibExt.nearHookTableauToPathXi`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-tableau-to-path-xi).
+Formalized by `MetaMathlibExt.nearHookTableauToPathXi`, a definition declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#near-hook-tableau-to-path-xi).
 
 ## The path $\xi(T)$ has $2n + 2$ steps
 
@@ -119,7 +119,7 @@ semistandard Young tableau $T$ of shape $\theta^{(n)}$, the word $\xi(T)$ has le
 
 - L. Ayres et al., *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Section 4.1, equation (eq:xi).
 
-Formalized by `MetaMathlibExt.length_nearHookTableauToPathXi`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#length-near-hook-tableau-to-path-xi).
+Formalized by `MetaMathlibExt.length_nearHookTableauToPathXi`, a theorem declared in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#length-near-hook-tableau-to-path-xi).
 
 ## The map $\psi$ is a bijection from near-hook tableaux to first-quadrant paths
 
@@ -133,7 +133,7 @@ the $2n + 4$ cells of $\theta^{(n)}$ bijectively onto $\{1, \dots, 2n + 4\}$.
 
 - Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Theorem 2 (`jis-2025-25.5.2-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.bijOn_nearHookTableauToPathPsi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#bij-on-near-hook-tableau-to-path-psi).
+Stated but not proved: `MetaMathlibExt.bijOn_nearHookTableauToPathPsi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#bij-on-near-hook-tableau-to-path-psi).
 
 ## The map $\xi$ is a bijection from near-hook tableaux to first-quadrant paths
 
@@ -147,7 +147,7 @@ the $2n + 4$ cells of $\theta^{(n)}$ bijectively onto $\{1, \dots, 2n + 4\}$.
 
 - Liam Ayres, Evan Bialo, Alwin Chen, Aidan Cook, Matteus Froese, Erica Liu, Maryam Mohammadi Yekta, Oliver Pechenik and Benjamin Wong, *An Exceptional Equinumerosity of Lattice Paths and Young Tableaux*, Journal of Integer Sequences 28 (2025), Article 25.5.2, Proposition 3 (`jis-2025-25.5.2-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.bijOn_nearHookTableauToPathXi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#bij-on-near-hook-tableau-to-path-xi).
+Stated but not proved: `MetaMathlibExt.bijOn_nearHookTableauToPathXi` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/NearHookTableauxLatticePathsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html#bij-on-near-hook-tableau-to-path-xi).
 
 ## Depends on
 
@@ -156,4 +156,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Near-hook tableaux and first-quadrant lattice paths](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/symmetric-functions-q-analogues/near-hook-tableaux-and-first-quadrant-lattice-pa)

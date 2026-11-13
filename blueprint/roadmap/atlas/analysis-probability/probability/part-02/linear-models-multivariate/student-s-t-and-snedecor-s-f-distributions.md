@@ -1,13 +1,13 @@
 ---
 declaration: section
 origin: cited
-lean: ProbabilityTheory.NormalTheoryWanted.map_div_sqrt_chiSquare_eq_studentT, ProbabilityTheory.NormalTheoryWanted.map_div_chiSquare_eq_snedecorF, ProbabilityTheory.NormalTheoryWanted.map_tStatistic_pi_gaussianReal, ProbabilityTheory.NormalTheoryWanted.tendstoInDistribution_uStatistic
+lean: ProbabilityTheory.map_div_sqrt_chiSquare_eq_studentT, ProbabilityTheory.map_div_chiSquare_eq_snedecorF, ProbabilityTheory.map_tStatistic_pi_gaussianReal, ProbabilityTheory.NormalTheoryWanted.tendstoInDistribution_uStatistic
 statement: formalized
 ---
 
 # Student's t and Snedecor's F distributions
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html).
 
 ## Student's `t` law
 
@@ -15,7 +15,7 @@ statement: formalized
 `V ~ χ²_k` with `k ≥ 1`, `Z / √(V / k)` has density
 `Γ((k + 1)/2) / (√(k π) Γ(k/2)) · (1 + t²/k)^{-(k+1)/2}`.
 
-Stated but not proved: `ProbabilityTheory.NormalTheoryWanted.map_div_sqrt_chiSquare_eq_studentT` is written with `theorem_wanted` in [WantedExt/Probability/Statistics/NormalTheoryWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/Statistics/NormalTheoryWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#map-div-sqrt-chi-square-eq-student-t).
+Formalized by `ProbabilityTheory.map_div_sqrt_chiSquare_eq_studentT`, a theorem declared in [MathlibExt/Probability/Distributions/StudentT.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Distributions/StudentT.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#map-div-sqrt-chi-square-eq-student-t).
 
 ## Snedecor's `F` law
 
@@ -24,7 +24,7 @@ Stated but not proved: `ProbabilityTheory.NormalTheoryWanted.map_div_sqrt_chiSqu
 `Γ((d₁ + d₂)/2) / (Γ(d₁/2) Γ(d₂/2)) · (d₁/d₂)^{d₁/2} x^{d₁/2 - 1} (1 + d₁ x / d₂)^{-(d₁+d₂)/2}`
 on `x > 0`.
 
-Stated but not proved: `ProbabilityTheory.NormalTheoryWanted.map_div_chiSquare_eq_snedecorF` is written with `theorem_wanted` in [WantedExt/Probability/Statistics/NormalTheoryWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/Statistics/NormalTheoryWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#map-div-chi-square-eq-snedecor-f).
+Formalized by `ProbabilityTheory.map_div_chiSquare_eq_snedecorF`, a theorem declared in [MathlibExt/Probability/Distributions/SnedecorF.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Distributions/SnedecorF.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#map-div-chi-square-eq-snedecor-f).
 
 ## One-sample `t` statistic
 
@@ -32,7 +32,7 @@ For an i.i.d. sample `X₁, …, Xₙ ~ N(μ, v)` with `n ≥ 2` and
 `v > 0`, `√n (X̄ - μ) / S` with `S² = ∑ (Xᵢ - X̄)² / (n - 1)` has the Student `t` law with
 `n - 1` degrees of freedom.
 
-Stated but not proved: `ProbabilityTheory.NormalTheoryWanted.map_tStatistic_pi_gaussianReal` is written with `theorem_wanted` in [WantedExt/Probability/Statistics/NormalTheoryWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/Statistics/NormalTheoryWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#map-t-statistic-pi-gaussian-real).
+Formalized by `ProbabilityTheory.map_tStatistic_pi_gaussianReal`, a theorem declared in [MathlibExt/Probability/Statistics/LinearModel/Inference.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/Statistics/LinearModel/Inference.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#map-t-statistic-pi-gaussian-real).
 
 ## Hoeffding's central limit theorem
 
@@ -40,7 +40,7 @@ Stated but not proved: `ProbabilityTheory.NormalTheoryWanted.map_tStatistic_pi_g
 symmetric square-integrable kernel `h` of degree `m`, `√n (U_n - θ)` converges in distribution
 to `N(0, m² σ₁²)`, where `θ = E h` and `σ₁² = Var h₁`.
 
-Stated but not proved: `ProbabilityTheory.NormalTheoryWanted.tendstoInDistribution_uStatistic` is written with `theorem_wanted` in [WantedExt/Probability/Statistics/NormalTheoryWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Probability/Statistics/NormalTheoryWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#tendsto-in-distribution-u-statistic).
+Stated but not proved: `ProbabilityTheory.NormalTheoryWanted.tendstoInDistribution_uStatistic` is written with `theorem_wanted` in [WantedExt/Probability/Statistics/NormalTheoryWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Probability/Statistics/NormalTheoryWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html#tendsto-in-distribution-u-statistic).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Student's t and Snedecor's F distributions](https://deicyde.github.io/atlas-lean/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/linear-models-multivariate/student-s-t-and-snedecor-s-f-distributions)

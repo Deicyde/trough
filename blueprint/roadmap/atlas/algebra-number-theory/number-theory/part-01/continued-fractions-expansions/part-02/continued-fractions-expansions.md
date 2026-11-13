@@ -8,7 +8,7 @@ proof: formalized
 
 # Continued fractions and expansions of reals: its own results
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/index.html).
 
 Continued fractions, Farey sequences, Stern–Brocot tree, Engel, Pierce, Lüroth and similar series expansions of real numbers.
 
@@ -26,7 +26,7 @@ where $Q_{k-1}'$ denotes the formal derivative of $Q_{k-1}$.
 
 - https://cs.uwaterloo.ca/journals/JIS/VOL19/Kreinin/kreinin4.tex, lines 306-315.
 
-Formalized by `MetaMathlibExt.IsLaplaceQFamily`, a definition declared in [MathlibExt/NumberTheory/LaplaceQPolynomial.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LaplaceQPolynomial.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/index.html#is-laplace-qfamily).
+Formalized by `MetaMathlibExt.IsLaplaceQFamily`, a definition declared in [MathlibExt/NumberTheory/LaplaceQPolynomial.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LaplaceQPolynomial.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/index.html#is-laplace-qfamily).
 
 ## Solutions of $P u^2 + Q u y + R y^2 = 1$ give convergents of $-Q/(2P)$
 
@@ -49,7 +49,7 @@ occurred earlier.
 
 - Keith R. Matthews, "Lagrange's Algorithm Revisited: Solving at^2 + btu + cu^2 = n in the Case of Negative Discriminant," Journal of Integer Sequences 17 (2014), Article 14.11.1, Theorem, lines 167–169, equation, lines 109–111, Lemma, lines 120–122, https://cs.uwaterloo.ca/journals/JIS/VOL17/Matthews/matt10.tex
 
-Formalized by `MetaMathlibExt.lagrange_quadratic_convergent`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/LagrangeQuadraticConvergent.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/QuadraticForms/LagrangeQuadraticConvergent.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/index.html#lagrange-quadratic-convergent).
+Formalized by `MetaMathlibExt.lagrange_quadratic_convergent`, a theorem declared in [MathlibExt/NumberTheory/QuadraticForms/LagrangeQuadraticConvergent.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/QuadraticForms/LagrangeQuadraticConvergent.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/index.html#lagrange-quadratic-convergent).
 
 ## Strict growth of continued-fraction denominators
 
@@ -66,7 +66,7 @@ The comparison starts at $q_1$ because $q_0 = 1$ while $q_1 = a_1$ can also equa
 
 - arXiv:2607.23662, item D07, which uses the adjacent inequality $q_{k-1} < q_k$.
 
-Formalized by `GenContFract.of_den_succ_lt_succ_succ`, a theorem declared in [MathlibExt/Algebra/ContinuedFractions/Computation/Approximations.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/ContinuedFractions/Computation/Approximations.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-02/index.html#of-den-succ-lt-succ-succ).
+Formalized by `GenContFract.of_den_succ_lt_succ_succ`, a theorem declared in [MathlibExt/Algebra/ContinuedFractions/Computation/Approximations.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/ContinuedFractions/Computation/Approximations.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-02/index.html#of-den-succ-lt-succ-succ).
 
 ## Depends on
 
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Continued fractions and expansions of reals](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions)

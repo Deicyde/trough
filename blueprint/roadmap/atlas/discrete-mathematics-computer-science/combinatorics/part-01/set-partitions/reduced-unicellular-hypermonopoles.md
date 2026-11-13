@@ -7,7 +7,7 @@ statement: formalized
 
 # Reduced unicellular hypermonopoles
 
-12 results, 4 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html).
+12 results, 4 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html).
 
 ## Cyclic product numbers
 
@@ -24,7 +24,7 @@ Hultman numbers (OEIS A164652).
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Theorem 5.
 
-Formalized by `MetaMathlibExt.cyclicProductNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number).
+Formalized by `MetaMathlibExt.cyclicProductNumber`, a definition declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number).
 
 ## Vanishing of the cyclic product numbers for odd $n - k$
 
@@ -36,7 +36,7 @@ $0$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Theorem 5.
 
-Formalized by `MetaMathlibExt.cyclicProductNumber_of_odd`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number-of-odd).
+Formalized by `MetaMathlibExt.cyclicProductNumber_of_odd`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number-of-odd).
 
 ## Cyclic product numbers with second argument zero
 
@@ -48,7 +48,7 @@ $c(n + 1, 0)$ is $0$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Theorem 5.
 
-Formalized by `MetaMathlibExt.cyclicProductNumber_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number-zero-right).
+Formalized by `MetaMathlibExt.cyclicProductNumber_zero_right`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number-zero-right).
 
 ## Small cyclic product numbers
 
@@ -59,7 +59,7 @@ $H(4, 2) = 5$, $H(5, 1) = 8$ and $H(7, 1) = 180$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Table 1 (values of `H(n, k)`).
 
-Formalized by `MetaMathlibExt.cyclicProductNumber_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number-small-values).
+Formalized by `MetaMathlibExt.cyclicProductNumber_small_values`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cyclic-product-number-small-values).
 
 ## Genus bounds for reduced unicellular hypermonopoles
 
@@ -77,7 +77,7 @@ points and $g$ is its genus, given by Jacques' formula.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Lemma 2 (`jis-2025-25.3.3-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.genus_bounds_of_reduced_unicellular_hypermonopole` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#genus-bounds-of-reduced-unicellular-hype).
+Stated but not proved: `MetaMathlibExt.genus_bounds_of_reduced_unicellular_hypermonopole` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#genus-bounds-of-reduced-unicellular-hype).
 
 ## Generating polynomial of the cyclic product numbers
 
@@ -93,7 +93,7 @@ where $c_n = \frac{1}{(n + 1) n}$ for $n \ge 1$ and $c_0 = 0$; for $n = 0$ both 
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Lemma 6 (`jis-2025-25.3.3-lem-6`), quoting S. Grusea and A. Labarre.
 
-Stated but not proved: `MetaMathlibExt.sum_cyclicProductNumber_mul_X_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#sum-cyclic-product-number-mul-x-pow).
+Stated but not proved: `MetaMathlibExt.sum_cyclicProductNumber_mul_X_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#sum-cyclic-product-number-mul-x-pow).
 
 ## Unicellular hypermonopoles with a cyclic vertex permutation
 
@@ -110,7 +110,7 @@ with $\sigma = (1, \dots, n)$ and $z(\alpha) = k$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Corollary 8 (`jis-2025-25.3.3-cor-8`).
 
-Stated but not proved: `MetaMathlibExt.card_unicellular_hypermonopoles_finRotate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#card-unicellular-hypermonopoles-fin-rota).
+Stated but not proved: `MetaMathlibExt.card_unicellular_hypermonopoles_finRotate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#card-unicellular-hypermonopoles-fin-rota).
 
 ## Criterion for a hypermap with a cyclic vertex permutation to have no bud
 
@@ -127,7 +127,7 @@ assumption, so it is stated for every $\alpha$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Lemma 10 (`jis-2025-25.3.3-lem-10`).
 
-Stated but not proved: `MetaMathlibExt.reduced_iff_forall_face_ne_finRotate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#reduced-iff-forall-face-ne-fin-rotate).
+Stated but not proved: `MetaMathlibExt.reduced_iff_forall_face_ne_finRotate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#reduced-iff-forall-face-ne-fin-rotate).
 
 ## Cycle count of a fixed-point-free permutation
 
@@ -143,7 +143,7 @@ the absence of buds (fixed points of $\alpha$) are used.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Corollary 11 (`jis-2025-25.3.3-cor-11`).
 
-Stated but not proved: `MetaMathlibExt.cycleCount_bounds_of_reduced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cycle-count-bounds-of-reduced).
+Stated but not proved: `MetaMathlibExt.cycleCount_bounds_of_reduced` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#cycle-count-bounds-of-reduced).
 
 ## Counting reduced unicellular hypermonopoles with a cyclic vertex permutation
 
@@ -164,7 +164,7 @@ $(\sigma, \alpha)$ with $\sigma = (1, \dots, n)$ and $z(\alpha) = k$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Proposition 12 (`jis-2025-25.3.3-prop-12`).
 
-Stated but not proved: `MetaMathlibExt.card_reduced_unicellular_hypermonopoles_finRotate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#card-reduced-unicellular-hypermonopoles).
+Stated but not proved: `MetaMathlibExt.card_reduced_unicellular_hypermonopoles_finRotate` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#card-reduced-unicellular-hypermonopoles).
 
 ## Vanishing of the reduced unicellular hypermonopole counts
 
@@ -184,7 +184,7 @@ $\sigma_n = (1, \dots, n)$ and $z(\alpha) = k$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Corollary 13 (`jis-2025-25.3.3-cor-13`).
 
-Stated but not proved: `MetaMathlibExt.reduced_unicellular_hypermonopoles_finRotate_vanishing` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#reduced-unicellular-hypermonopoles-fin-r).
+Stated but not proved: `MetaMathlibExt.reduced_unicellular_hypermonopoles_finRotate_vanishing` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#reduced-unicellular-hypermonopoles-fin-r).
 
 ## Counting reduced unicellular hypermonopoles by genus
 
@@ -208,7 +208,7 @@ $u(1) = 2$.
 
 - Robert Cori and Gábor Hetyei, *On Reduced Unicellular Hypermonopoles*, Journal of Integer Sequences 28 (2025), Article 25.3.3, Proposition 15 (`jis-2025-25.3.3-prop-15`).
 
-Stated but not proved: `MetaMathlibExt.reduced_unicellular_hypermonopoles_of_genus_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#reduced-unicellular-hypermonopoles-of-ge).
+Stated but not proved: `MetaMathlibExt.reduced_unicellular_hypermonopoles_of_genus_count` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ReducedUnicellularHypermonopolesWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html#reduced-unicellular-hypermonopoles-of-ge).
 
 ## Depends on
 
@@ -217,4 +217,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Reduced unicellular hypermonopoles](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/set-partitions/reduced-unicellular-hypermonopoles)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Watson's cosecant and cosine sums
 
-15 results, 7 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html).
+15 results, 7 proved and 8 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html).
 
 ## Generalized Watson trigonometric sum
 
@@ -24,7 +24,7 @@ For $n \le 1$ the sum is empty and $C_n(\nu) = 0$.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, definition of `C_n(ν)`.
 
-Formalized by `MetaMathlibExt.watsonCosSum`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum).
+Formalized by `MetaMathlibExt.watsonCosSum`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum).
 
 ## Watson's alternating cosecant sum
 
@@ -41,7 +41,7 @@ For $n \le 1$ the sum is empty and $C_n = 0$.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, definition of `C_n`.
 
-Formalized by `MetaMathlibExt.watsonAlternatingCosecantSum`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-cosecant-sum).
+Formalized by `MetaMathlibExt.watsonAlternatingCosecantSum`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-cosecant-sum).
 
 ## Watson's cosine sum at $n = 2$, $\nu = 1$
 
@@ -52,7 +52,7 @@ $C_n(\nu) = \sum_{l=1}^{n-1} \cos(2 \pi \nu l / n) / \sin(\pi l / n)$ satisfies 
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, definition of `C_n(ν)`.
 
-Formalized by `MetaMathlibExt.watsonCosSum_two_one`, a theorem declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum-two-one).
+Formalized by `MetaMathlibExt.watsonCosSum_two_one`, a theorem declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum-two-one).
 
 ## Watson's alternating cosecant sum at $n = 2$
 
@@ -63,7 +63,7 @@ $C_2 = \sum_{l=1}^{1} (-1)^{l+1} / \sin(\pi l / 2)$ equals $1$.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, definition of `C_n`.
 
-Formalized by `MetaMathlibExt.watsonAlternatingCosecantSum_two`, a theorem declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-cosecant-sum-two).
+Formalized by `MetaMathlibExt.watsonAlternatingCosecantSum_two`, a theorem declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-cosecant-sum-two).
 
 ## Odd cotangent derivatives
 
@@ -79,7 +79,7 @@ classical one whenever $\pi\nu/n$ is not a multiple of $\pi$.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, definition of `ℋ_{2r-1}`.
 
-Formalized by `MetaMathlibExt.watsonOddCotangentDeriv`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-odd-cotangent-deriv).
+Formalized by `MetaMathlibExt.watsonOddCotangentDeriv`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-odd-cotangent-deriv).
 
 ## Digamma evaluation of a hyperbolic Laplace integral
 
@@ -104,7 +104,7 @@ $\operatorname{Re}(\alpha + b + \beta) > 0$ is also needed, since the integrand 
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.watson_cosh_integral_digamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cosh-integral-digamma).
+Stated but not proved: `MetaMathlibExt.watson_cosh_integral_digamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cosh-integral-digamma).
 
 ## Watson expansion terms
 
@@ -125,7 +125,7 @@ and the term vanishes.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Theorem 3 (printed as Theorem 4).
 
-Formalized by `MetaMathlibExt.watsonExpansionTerm`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-expansion-term).
+Formalized by `MetaMathlibExt.watsonExpansionTerm`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-expansion-term).
 
 ## Almost-asymptotic expansion of Watson's cosine sum
 
@@ -155,7 +155,7 @@ $$
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Theorem 3 (printed as Theorem 4).
 
-Stated but not proved: `MetaMathlibExt.watson_cos_sum_almost_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum-almost-asymptotic).
+Stated but not proved: `MetaMathlibExt.watson_cos_sum_almost_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum-almost-asymptotic).
 
 ## The odd cotangent derivatives in Watson's expansion are negative
 
@@ -168,7 +168,7 @@ evaluated at $\pi\nu/n$, is strictly negative.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Theorem 3 (printed as Theorem 4).
 
-Stated but not proved: `MetaMathlibExt.watson_odd_cotangent_deriv_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-odd-cotangent-deriv-neg).
+Stated but not proved: `MetaMathlibExt.watson_odd_cotangent_deriv_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-odd-cotangent-deriv-neg).
 
 ## Main part of the asymptotic expansion of Watson's alternating cosecant sum
 
@@ -186,7 +186,7 @@ where $B_{2r}$ is the $2r$-th Bernoulli number. For $N \le 1$ the sum is empty.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Corollary 2.
 
-Formalized by `MetaMathlibExt.watsonAlternatingMain`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-main).
+Formalized by `MetaMathlibExt.watsonAlternatingMain`, a definition declared in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-main).
 
 ## Complete asymptotic expansion of Watson's alternating cosecant sum
 
@@ -211,7 +211,7 @@ In other words, $C_n = M_N(n) + O(n^{1-2N})$ as $n \to \infty$ through even valu
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.watson_alternating_complete_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-complete-asymptotic).
+Stated but not proved: `MetaMathlibExt.watson_alternating_complete_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-complete-asymptotic).
 
 ## Watson's alternating cosecant sum vanishes for odd $n$
 
@@ -225,7 +225,7 @@ $$
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Corollary 2 and Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.watson_alternating_odd_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-odd-zero).
+Stated but not proved: `MetaMathlibExt.watson_alternating_odd_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-odd-zero).
 
 ## Two-sided bounds for Watson's alternating cosecant sum
 
@@ -245,7 +245,7 @@ upper bound of the first two.
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Theorem 6 and Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.watson_alternating_sharp_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-sharp-bounds).
+Stated but not proved: `MetaMathlibExt.watson_alternating_sharp_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-sharp-bounds).
 
 ## Decimal bounds for Watson's alternating cosecant sum
 
@@ -261,7 +261,7 @@ $$
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.watson_alternating_simple_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-simple-bounds).
+Stated but not proved: `MetaMathlibExt.watson_alternating_simple_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-alternating-simple-bounds).
 
 ## Vanishing limits of Watson's cosine sum at one sixth and five sixths
 
@@ -273,7 +273,7 @@ $m \to \infty$ through the natural numbers, $C_{6m}(m) \to 0$ and $C_{6m}(5m) \t
 
 - Iaroslav V. Blagouchine, *On a Generalization of Watson’s Trigonometric Sum (On Dowker’s Sum of Order One Half)*, INTEGERS 25 (2025), Article A30, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.watson_cos_sum_sixth_limits` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum-sixth-limits).
+Stated but not proved: `MetaMathlibExt.watson_cos_sum_sixth_limits` is written with `theorem_wanted` in [WantedExt/NumberTheory/DowkerHalfSumWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/DowkerHalfSumWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html#watson-cos-sum-sixth-limits).
 
 ## Depends on
 
@@ -282,4 +282,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Watson's cosecant and cosine sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/exponential-sums/watson-s-cosecant-and-cosine-sums)

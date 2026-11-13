@@ -8,7 +8,7 @@ proof: formalized
 
 # Gradient descent
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html).
 
 ## Sublinear rate of gradient descent for smooth convex functions
 
@@ -28,7 +28,7 @@ monotonicity of $f(x_k)$ in $k$ give the rate, as in L. Vandenberghe, ECE236C le
 
 - Y. Nesterov, Introductory Lectures on Convex Optimization, Section 2.1; https://en.wikipedia.org/wiki/Gradient_descent.
 
-Formalized by `MetaMathlibExt.gradient_descent_convex_sublinear_rate`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescent.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescent.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-convex-sublinear-rate).
+Formalized by `MetaMathlibExt.gradient_descent_convex_sublinear_rate`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescent.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescent.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-convex-sublinear-rate).
 
 ## Gradient descent with a step schedule
 
@@ -39,7 +39,7 @@ $(x_k)_{k \in \mathbb{N}}$ in $E$ starting at $x_0$ with $x_{k+1} = x_k - s_k \n
 
 Here $\nabla f(x)$ is taken to be $0$ at points $x$ where $f$ is not differentiable.
 
-Formalized by `gradientDescentTrajectory`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-trajectory).
+Formalized by `gradientDescentTrajectory`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-trajectory).
 
 ## Convex functions with $1$-Lipschitz gradient
 
@@ -48,7 +48,7 @@ Hilbert space $E$ is unit-smooth convex if it is convex, differentiable, and its
 $1$-Lipschitz: $\lVert \nabla f(x) - \nabla f(y) \rVert \le \lVert x - y \rVert$ for all
 $x, y \in E$.
 
-Formalized by `IsUnitSmoothConvex`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#is-unit-smooth-convex).
+Formalized by `IsUnitSmoothConvex`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#is-unit-smooth-convex).
 
 ## Uniform last-iterate rate of a step schedule
 
@@ -66,7 +66,7 @@ $$f(x_k) - f(x^\star) \le \frac{C \lVert x_0 - x^\star \rVert^2}{k^c}.$$
 The constants $C$ and $K$ are chosen before, and do not depend on, $d$, $f$, $x^\star$, $x_0$
 and $k$.
 
-Formalized by `GradientDescentUniformRate`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-uniform-rate).
+Formalized by `GradientDescentUniformRate`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-uniform-rate).
 
 ## The gradient descent exponent
 
@@ -80,7 +80,7 @@ unbounded above.
 
 - OptimizationProblems, `constants/35a.md` (constant C35).
 
-Formalized by `gradientDescentExponent`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-exponent).
+Formalized by `gradientDescentExponent`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-exponent).
 
 ## Silver ratio
 
@@ -88,7 +88,7 @@ The silver ratio is the real number $\rho = 1 + \sqrt{2}$.
 
 It is the ratio used by the stepsize-hedging (silver) step schedule.
 
-Formalized by `gradientDescentSilverRatio`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-silver-ratio).
+Formalized by `gradientDescentSilverRatio`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-silver-ratio).
 
 ## Silver exponent
 
@@ -97,7 +97,7 @@ $\rho = 1 + \sqrt{2}$ is the silver ratio.
 
 It is the catalogue's proposed optimal value of the gradient descent exponent.
 
-Formalized by `silverGradientDescentExponent`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#silver-gradient-descent-exponent).
+Formalized by `silverGradientDescentExponent`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#silver-gradient-descent-exponent).
 
 ## Silver step schedule
 
@@ -108,7 +108,7 @@ silver ratio and $\nu_2(n)$ is the exponent of $2$ in the prime factorization of
 The exponent $\nu_2(t + 1) - 1$ is an integer and equals $-1$ for even $t$, where
 $s_t = 1 + \rho^{-1} = \sqrt{2}$.
 
-Formalized by `silverGradientDescentSchedule`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#silver-gradient-descent-schedule).
+Formalized by `silverGradientDescentSchedule`, a definition declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#silver-gradient-descent-schedule).
 
 ## Constant unit steps achieve exponent one
 
@@ -118,14 +118,14 @@ $1$ achieves a uniform last-iterate rate with exponent $1$.
 This follows from the fixed-step descent theorem; it is a lower bound for the gradient descent
 exponent, not its conjectured optimal value.
 
-Formalized by `gradientDescentUniformRate_one`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-uniform-rate-one).
+Formalized by `gradientDescentUniformRate_one`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-uniform-rate-one).
 
 ## The gradient descent exponent is at least one
 
 The gradient descent exponent is at
 least $1$.
 
-Formalized by `one_le_gradientDescentExponent`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#one-le-gradient-descent-exponent).
+Formalized by `one_le_gradientDescentExponent`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#one-le-gradient-descent-exponent).
 
 ## Gradient descent with zero step sizes stays put
 
@@ -133,7 +133,7 @@ Let $E$ be a real Hilbert space,
 $f : E \to \mathbb{R}$ and $x_0 \in E$. If every step size is $0$, then for every $k \in \mathbb{N}$
 the $k$-th gradient descent iterate of $f$ from $x_0$ equals $x_0$.
 
-Formalized by `gradientDescentTrajectory_zeroSchedule`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-trajectory-zero-schedul).
+Formalized by `gradientDescentTrajectory_zeroSchedule`, a theorem declared in [MathlibExt/Analysis/Convex/GradientDescentExponent.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/GradientDescentExponent.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html#gradient-descent-trajectory-zero-schedul).
 
 ## Depends on
 
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Gradient descent](https://deicyde.github.io/atlas-lean/roadmap/Analysis/convex-analysis-and-variations/gradient-descent/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/convex-analysis-and-variations/gradient-descent)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/convex-analysis-and-variations/gradient-descent)

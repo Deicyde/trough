@@ -8,7 +8,7 @@ proof: formalized
 
 # Mestre's square decomposition
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/mestre-s-square-decomposition/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/mestre-s-square-decomposition/index.html).
 
 ## Mestre's square decomposition, including the quadratic case
 
@@ -22,7 +22,7 @@ unique.
 
 - `mestre_monic_square_decomposition` is the source-shaped form, which assumes $d \ge 1$.
 
-Formalized by `MetaMathlibExt.mestre_monic_square_decomposition_general`, a theorem declared in [MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/mestre-s-square-decomposition/index.html#mestre-monic-square-decomposition-genera).
+Formalized by `MetaMathlibExt.mestre_monic_square_decomposition_general`, a theorem declared in [MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/mestre-s-square-decomposition/index.html#mestre-monic-square-decomposition-genera).
 
 ## Mestre's square decomposition
 
@@ -35,7 +35,7 @@ most $d$ (possibly $R = 0$), and the pair $(Q, R)$ is unique.
 
 - Arvind Suresh, "Constructing curves of high rank via composite polynomials", arXiv:2102.02113v2, <https://arxiv.org/abs/2102.02113>, TeX lines 1158-1179, Lemma `lem:sqroot`; there coefficient comparison induces a `k`-algebra isomorphism. Follows from `mestre_monic_square_decomposition_general`; the hypothesis `hd` is unused and keeps the source's shape.
 
-Formalized by `MetaMathlibExt.mestre_monic_square_decomposition`, a theorem declared in [MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/mestre-s-square-decomposition/index.html#mestre-monic-square-decomposition).
+Formalized by `MetaMathlibExt.mestre_monic_square_decomposition`, a theorem declared in [MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Algebra/Polynomial/MestreSquareDecomposition.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/mestre-s-square-decomposition/index.html#mestre-monic-square-decomposition).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Mestre's square decomposition](https://deicyde.github.io/atlas-lean/roadmap/Algebra/polynomials/mestre-s-square-decomposition/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Algebra/polynomials/mestre-s-square-decomposition)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Algebra/polynomials/mestre-s-square-decomposition)

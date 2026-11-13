@@ -7,7 +7,7 @@ statement: formalized
 
 # Robin's inequality
 
-31 results, 4 proved and 27 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html).
+31 results, 4 proved and 27 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html).
 
 ## Robin's criterion for the Riemann hypothesis
 
@@ -20,7 +20,7 @@ $\log$ is the natural logarithm.
 
 - Sadegh Nazardonyavi and Semyon Yakubovich, "Extremely Abundant Numbers and the Riemann Hypothesis", Journal of Integer Sequences 17 (2014), Article 14.2.8, abstract, lines 77–80, attributed there to Robin, <https://cs.uwaterloo.ca/journals/JIS/VOL17/Nazar/nazar4.tex>.
 
-Stated but not proved: `MetaMathlibExt.robin_criterion_for_riemann_hypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinCriterionWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinCriterionWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-criterion-for-riemann-hypothesis).
+Stated but not proved: `MetaMathlibExt.robin_criterion_for_riemann_hypothesis` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinCriterionWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinCriterionWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-criterion-for-riemann-hypothesis).
 
 ## Robin exceptional set
 
@@ -33,7 +33,7 @@ and $\gamma$ is the Euler–Mascheroni constant. Its cardinality is the counting
 
 - Florian Luca and Patrick Solé, *On Robin's Inequality*, INTEGERS 25 (2025), Article A8, Section 1.
 
-Formalized by `MetaMathlibExt.robinExceptionalSet`, a definition declared in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-exceptional-set).
+Formalized by `MetaMathlibExt.robinExceptionalSet`, a definition declared in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-exceptional-set).
 
 ## The Robin exceptional set is empty up to $7!$
 
@@ -44,7 +44,7 @@ Robin exceptional set up to $x$ is empty; that is, its cardinality $N_R(x)$ is $
 
 - Florian Luca and Patrick Solé, *On Robin's Inequality*, INTEGERS 25 (2025), Article A8, Section 1 (definition of `N_R(x)`).
 
-Formalized by `MetaMathlibExt.robinExceptionalSet_eq_empty_of_le`, a theorem declared in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-exceptional-set-eq-empty-of-le).
+Formalized by `MetaMathlibExt.robinExceptionalSet_eq_empty_of_le`, a theorem declared in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-exceptional-set-eq-empty-of-le).
 
 ## Failures of Robin's inequality number $O(x/\log\log x)$
 
@@ -56,7 +56,7 @@ number $x$ tends to infinity.
 
 - Florian Luca and Patrick Solé, *On Robin's Inequality*, INTEGERS 25 (2025), Article A8, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.card_robinExceptionalSet_isBigO_div_log_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#card-robin-exceptional-set-is-big-o-div).
+Stated but not proved: `MetaMathlibExt.card_robinExceptionalSet_isBigO_div_log_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#card-robin-exceptional-set-is-big-o-div).
 
 ## Failures of Robin's inequality number $O(x/\sqrt{\log x})$
 
@@ -68,7 +68,7 @@ real number $x$ tends to infinity.
 
 - Florian Luca and Patrick Solé, *On Robin's Inequality*, INTEGERS 25 (2025), Article A8, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.card_robinExceptionalSet_isBigO_div_sqrt_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#card-robin-exceptional-set-is-big-o-div-2).
+Stated but not proved: `MetaMathlibExt.card_robinExceptionalSet_isBigO_div_sqrt_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#card-robin-exceptional-set-is-big-o-div-2).
 
 ## Failures of Robin's inequality number $O(x^\varepsilon)$
 
@@ -80,7 +80,7 @@ $N_R(x) = O(x^\varepsilon)$ as the real number $x$ tends to infinity.
 
 - Florian Luca and Patrick Solé, *On Robin's Inequality*, INTEGERS 25 (2025), Article A8, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.card_robinExceptionalSet_isBigO_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#card-robin-exceptional-set-is-big-o-rpow).
+Stated but not proved: `MetaMathlibExt.card_robinExceptionalSet_isBigO_rpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinExceptionalCountWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinExceptionalCountWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#card-robin-exceptional-set-is-big-o-rpow).
 
 ## The real extension of the harmonic numbers
 
@@ -98,7 +98,7 @@ natural number $n$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Section 3.1 (definition of `H(x)`).
 
-Formalized by `MetaMathlibExt.harmonicExtension`, a definition declared in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension).
+Formalized by `MetaMathlibExt.harmonicExtension`, a definition declared in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension).
 
 ## The real extension of the harmonic numbers vanishes at zero
 
@@ -109,7 +109,7 @@ $H(x) = \int_0^1 \frac{t^x - 1}{t - 1}\,dt$ of the harmonic numbers satisfies $H
 
 - Assani, Chester, and Paschal, INTEGERS 26 (2026), Article A86, Section 3.1 (definition of `H(x)`).
 
-Formalized by `MetaMathlibExt.harmonicExtension_zero`, a theorem declared in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-zero).
+Formalized by `MetaMathlibExt.harmonicExtension_zero`, a theorem declared in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-zero).
 
 ## The real extension agrees with the harmonic numbers
 
@@ -122,7 +122,7 @@ $n$-th harmonic number.
 
 - Assani, Chester, and Paschal, INTEGERS 26 (2026), Article A86, Section 3.1 ("`H(n) = H_n` for all `n ∈ ℕ`").
 
-Stated but not proved: `MetaMathlibExt.harmonicExtension_natCast` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-nat-cast).
+Stated but not proved: `MetaMathlibExt.harmonicExtension_natCast` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-nat-cast).
 
 ## Rosser–Schoenfeld and Dusart bounds for the $k$-th prime
 
@@ -135,7 +135,7 @@ $$k(\log k + \log \log k - 1) < p_k < k(\log k + \log \log k).$$
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 1, equation (3).
 
-Stated but not proved: `MetaMathlibExt.nth_prime_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#nth-prime-bounds).
+Stated but not proved: `MetaMathlibExt.nth_prime_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#nth-prime-bounds).
 
 ## Lower bound for the double logarithm of a primorial divided by one of its primes
 
@@ -149,7 +149,7 @@ $$\log \log m > \log\bigl((k+1)(\log(k+1) + \log \log(k+1) - 1) \log 2.51 - \log
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.log_log_primorial_div_prime_gt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#log-log-primorial-div-prime-gt).
+Stated but not proved: `MetaMathlibExt.log_log_primorial_div_prime_gt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#log-log-primorial-div-prime-gt).
 
 ## Robin's inequality for $n > 5040$ when one of $2, 3, 5$ does not divide $n$
 
@@ -165,7 +165,7 @@ $n$; the standard form, which the paper uses in Section 2, is formalized.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.robin_inequality_of_not_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-of-not-dvd).
+Stated but not proved: `MetaMathlibExt.robin_inequality_of_not_dvd` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-of-not-dvd).
 
 ## Robin's inequality for $2^k n$ with $n$ odd and large
 
@@ -178,7 +178,7 @@ Robin's inequality $\sigma(2^k n) < e^{\gamma} 2^k n \log \log (2^k n)$ holds.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 5, equation (12).
 
-Stated but not proved: `MetaMathlibExt.robin_inequality_two_pow_mul_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-two-pow-mul-odd).
+Stated but not proved: `MetaMathlibExt.robin_inequality_two_pow_mul_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-two-pow-mul-odd).
 
 ## Robin's inequality for $2n$ with $n \ge 620$ odd and for primorials above $30$
 
@@ -193,7 +193,7 @@ $\sigma(m\#) < e^{\gamma} \, m\# \log \log (m\#)$ holds.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.robin_inequality_two_mul_odd_and_primorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-two-mul-odd-and-primori).
+Stated but not proved: `MetaMathlibExt.robin_inequality_two_mul_odd_and_primorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-two-mul-odd-and-primori).
 
 ## Robin's inequality for $2^k n > 5040$ with $n$ odd under a bound on $k$, and for $21$-free $n > 5040$
 
@@ -213,7 +213,7 @@ $n = 12$, and its proof treats exactly the range $2^k n > 5041$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.robin_inequality_two_pow_mul_odd_and_twentyOne_free` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-two-pow-mul-odd-and-twe).
+Stated but not proved: `MetaMathlibExt.robin_inequality_two_pow_mul_odd_and_twentyOne_free` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-two-pow-mul-odd-and-twe).
 
 ## Robin's inequality holds on a set of natural density one
 
@@ -226,7 +226,7 @@ $\sigma(n) < e^{\gamma} n \log \log n$ tends to $1$ as $N \to \infty$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.robin_inequality_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-density-one).
+Stated but not proved: `MetaMathlibExt.robin_inequality_density_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#robin-inequality-density-one).
 
 ## Upper bound $H(x) < \log x + \gamma + 1/(2x)$
 
@@ -238,7 +238,7 @@ $x \ge 1$ satisfies $H(x) < \log x + \gamma + \frac{1}{2x}$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.harmonicExtension_lt_log_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-lt-log-add).
+Stated but not proved: `MetaMathlibExt.harmonicExtension_lt_log_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-lt-log-add).
 
 ## Logarithmic upper bound for $H(x)$ with a $\pi^2$ correction
 
@@ -251,7 +251,7 @@ $$H(x) < \frac{2 \log x}{1 + 6/(\pi^2 x)}.$$
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.harmonicExtension_lt_two_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-lt-two-log).
+Stated but not proved: `MetaMathlibExt.harmonicExtension_lt_two_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-lt-two-log).
 
 ## Upper bounds for harmonic numbers and for the logarithm of their real extension
 
@@ -265,7 +265,7 @@ $\log H(x) \le x / (2 \log x)$ for every real number $x \ge 4$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.harmonic_succ_le_and_log_harmonicExtension_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-succ-le-and-log-harmonic-extens).
+Stated but not proved: `MetaMathlibExt.harmonic_succ_le_and_log_harmonicExtension_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 160](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L160). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-succ-le-and-log-harmonic-extens).
 
 ## Upper bound for $H(x) \log H(x)$
 
@@ -278,7 +278,7 @@ $$H(x) \log H(x) < \frac{x^2}{x + 6/\pi^2}.$$
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.harmonicExtension_mul_log_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-mul-log-lt).
+Stated but not proved: `MetaMathlibExt.harmonicExtension_mul_log_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-mul-log-lt).
 
 ## Lower bound for the derivative $H'(x)$
 
@@ -291,7 +291,7 @@ $$H'(x) > \frac{H(x) \log H(x)}{x^2}.$$
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.harmonicExtension_mul_log_div_sq_lt_deriv` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-mul-log-div-sq-lt-der).
+Stated but not proved: `MetaMathlibExt.harmonicExtension_mul_log_div_sq_lt_deriv` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#harmonic-extension-mul-log-div-sq-lt-der).
 
 ## Monotonicity of $e^{H(x)} \log H(x) / x$
 
@@ -303,7 +303,7 @@ non-decreasing on $[4, \infty)$: $g(x) \le g(y)$ whenever $4 \le x \le y$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.exp_harmonicExtension_mul_log_div_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exp-harmonic-extension-mul-log-div-monot).
+Stated but not proved: `MetaMathlibExt.exp_harmonicExtension_mul_log_div_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exp-harmonic-extension-mul-log-div-monot).
 
 ## Monotonicity of $e^{H_n} \log H_n / n$
 
@@ -315,7 +315,7 @@ for $n \ge 1$: its value at $m$ is at most its value at $n$ whenever $1 \le m \l
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.exp_harmonic_mul_log_div_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exp-harmonic-mul-log-div-monotone-on).
+Stated but not proved: `MetaMathlibExt.exp_harmonic_mul_log_div_monotoneOn` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exp-harmonic-mul-log-div-monotone-on).
 
 ## A least counterexample to the Kaneko–Lagarias inequality is superabundant
 
@@ -330,7 +330,7 @@ is superabundant: $\sigma(m)/m < \sigma(n_0)/n_0$ for every natural number $m$ w
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.least_kaneko_lagarias_counterexample_superabundant` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#least-kaneko-lagarias-counterexample-sup).
+Stated but not proved: `MetaMathlibExt.least_kaneko_lagarias_counterexample_superabundant` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#least-kaneko-lagarias-counterexample-sup).
 
 ## Robin's inequality implies the Kaneko–Lagarias inequality
 
@@ -344,7 +344,7 @@ Kaneko–Lagarias inequality $\sigma(n) < e^{H_n} \log H_n$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.kaneko_lagarias_of_robin` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#kaneko-lagarias-of-robin).
+Stated but not proved: `MetaMathlibExt.kaneko_lagarias_of_robin` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#kaneko-lagarias-of-robin).
 
 ## Mertens-type bound for a product over the first primes with one prime omitted
 
@@ -361,7 +361,7 @@ In the source this constant is called $c_1$, cited there from Tenenbaum's Theore
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.prod_succ_div_prime_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#prod-succ-div-prime-le).
+Stated but not proved: `MetaMathlibExt.prod_succ_div_prime_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#prod-succ-div-prime-le).
 
 ## Explicit bound for a product over the first primes with one prime omitted
 
@@ -377,7 +377,7 @@ $$\prod_{1 \le \ell \le k+1,\ \ell \ne j} \frac{p_\ell + 1}{p_\ell} <
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.prod_succ_div_prime_lt_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#prod-succ-div-prime-lt-bound).
+Stated but not proved: `MetaMathlibExt.prod_succ_div_prime_lt_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#prod-succ-div-prime-lt-bound).
 
 ## Eventual bound for $C(k)B(k)$ by an explicit logarithm
 
@@ -397,7 +397,7 @@ $$C(k)\,B(k) < e^{\gamma} \log\bigl(L^-(k) \log 2.51 - \log p_j\bigr).$$
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.exists_bound_mul_prod_sq_lt_exp_eulerMascheroni_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exists-bound-mul-prod-sq-lt-exp-euler-ma).
+Stated but not proved: `MetaMathlibExt.exists_bound_mul_prod_sq_lt_exp_eulerMascheroni_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exists-bound-mul-prod-sq-lt-exp-euler-ma).
 
 ## Eventual bound for $C(k)B(k)$ by $e^\gamma \log\log$ of a primorial quotient
 
@@ -418,7 +418,7 @@ $$C(k)\,B(k) < e^{\gamma} \log\log\frac{p_{k+1}\#}{p_j}.$$
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exists_bound_mul_prod_sq_lt_exp_eulerMascheroni_mul_log_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exists-bound-mul-prod-sq-lt-exp-euler-ma-2).
+Stated but not proved: `MetaMathlibExt.exists_bound_mul_prod_sq_lt_exp_eulerMascheroni_mul_log_log` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exists-bound-mul-prod-sq-lt-exp-euler-ma-2).
 
 ## The factor $\hat C(k)$ is below $1.525$
 
@@ -431,7 +431,7 @@ $$\hat C(k) = \exp\Bigl(\frac{5}{\log L^-(k)}\Bigr) < 1.525.$$
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.exp_five_div_log_bound_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exp-five-div-log-bound-lt).
+Stated but not proved: `MetaMathlibExt.exp_five_div_log_bound_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#exp-five-div-log-bound-lt).
 
 ## Bounds for $\sigma(n)/n$ over primes avoiding $p_j$
 
@@ -454,7 +454,7 @@ $3/2$), and the proof ($p_i \le q_i$) gives $\le$.
 
 - Idris Assani, Aiden Chester, and Alex Paschal, *On Robin's Inequality and the Kaneko-Lagarias Inequality*, INTEGERS 26 (2026), Article A86, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.sigma_div_lt_totient_ratio_le_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#sigma-div-lt-totient-ratio-le-prod-prime).
+Stated but not proved: `MetaMathlibExt.sigma_div_lt_totient_ratio_le_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean, line 309](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/RobinKanekoLagariasWanted.lean#L309). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html#sigma-div-lt-totient-ratio-le-prod-prime).
 
 ## Depends on
 
@@ -463,4 +463,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Robin's inequality](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/robin-s-inequality)

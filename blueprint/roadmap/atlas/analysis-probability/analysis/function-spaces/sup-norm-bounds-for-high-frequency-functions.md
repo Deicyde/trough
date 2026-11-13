@@ -7,7 +7,7 @@ statement: formalized
 
 # Sup-norm bounds for high-frequency functions
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions/index.html).
 
 ## Homogeneous Sobolev seminorm for the high-frequency sup-norm bound
 
@@ -22,7 +22,7 @@ $$
 
 where the integral is taken to be $0$ when the integrand is not integrable.
 
-Formalized by `MathlibExt.Analysis.Fourier.HighFrequencySupNormSobolevBoundWanted.dotHSeminorm`, a definition declared in [WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions/index.html#dot-hseminorm).
+Formalized by `MathlibExt.Analysis.Fourier.HighFrequencySupNormSobolevBoundWanted.dotHSeminorm`, a definition declared in [WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions/index.html#dot-hseminorm).
 
 ## Sup bound for Schwartz functions with high-frequency Fourier support
 
@@ -42,7 +42,7 @@ $$
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functional analysis; Linear function spaces and their duals), problem `ma_proofbench_l2_05`.
 
-Stated but not proved: `MathlibExt.Analysis.Fourier.HighFrequencySupNormSobolevBoundWanted.sSup_norm_le_rpow_mul_dotHSeminorm_of_tsupport_fourier_compl_Icc` is written with `theorem_wanted` in [WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions/index.html#s-sup-norm-le-rpow-mul-dot-hseminorm-of).
+Stated but not proved: `MathlibExt.Analysis.Fourier.HighFrequencySupNormSobolevBoundWanted.sSup_norm_le_rpow_mul_dotHSeminorm_of_tsupport_fourier_compl_Icc` is written with `theorem_wanted` in [WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Fourier/HighFrequencySupNormSobolevBoundWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions/index.html#s-sup-norm-le-rpow-mul-dot-hseminorm-of).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sup-norm bounds for high-frequency functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/function-spaces/sup-norm-bounds-for-high-frequency-functions)

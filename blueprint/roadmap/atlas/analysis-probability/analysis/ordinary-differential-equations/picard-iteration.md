@@ -8,7 +8,7 @@ proof: formalized
 
 # Picard iteration
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html).
 
 ## Picard iterates converge
 
@@ -29,7 +29,7 @@ for the Picard iterates (2.13) of Section 2.2, with a constant global Lipschitz 
 
 - G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.3; stable ref https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem.
 
-Formalized by `MathlibExt.Analysis.ODE.PicardIterationWanted.picard_iterates_converge`, a theorem declared in [MathlibExt/Analysis/ODE/PicardIteration.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/PicardIteration.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html#picard-iterates-converge).
+Formalized by `MathlibExt.Analysis.ODE.PicardIterationWanted.picard_iterates_converge`, a theorem declared in [MathlibExt/Analysis/ODE/PicardIteration.lean, line 259](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/PicardIteration.lean#L259). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html#picard-iterates-converge).
 
 ## Picard iterates converge to every global solution of the initial value problem
 
@@ -44,7 +44,7 @@ $u_n(t) \to y(t)$ as $n \to \infty$ for every $t \in \mathbb{R}$.
 Proof: By the convergence of Picard iterates, the iterates converge pointwise to a global solution
 through $x_0$ at $t_0$; by uniqueness of solutions for a Lipschitz right-hand side, it equals $y$.
 
-Formalized by `MathlibExt.Analysis.ODE.PicardIterationWanted.picard_iterates_tendsto_of_hasDerivAt`, a theorem declared in [MathlibExt/Analysis/ODE/PicardIteration.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/PicardIteration.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html#picard-iterates-tendsto-of-has-deriv-at).
+Formalized by `MathlibExt.Analysis.ODE.PicardIterationWanted.picard_iterates_tendsto_of_hasDerivAt`, a theorem declared in [MathlibExt/Analysis/ODE/PicardIteration.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/PicardIteration.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html#picard-iterates-tendsto-of-has-deriv-at).
 
 ## Step estimate for Picard iterates
 
@@ -66,7 +66,7 @@ of Teschl, Theorem 2.5 (Section 2.3).
 
 - G. Teschl, Ordinary Differential Equations and Dynamical Systems, Section 2.3.
 
-Formalized by `MathlibExt.Analysis.ODE.PicardIterationWanted.picard_iterates_step_estimate`, a theorem declared in [MathlibExt/Analysis/ODE/PicardIteration.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/ODE/PicardIteration.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html#picard-iterates-step-estimate).
+Formalized by `MathlibExt.Analysis.ODE.PicardIterationWanted.picard_iterates_step_estimate`, a theorem declared in [MathlibExt/Analysis/ODE/PicardIteration.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/ODE/PicardIteration.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html#picard-iterates-step-estimate).
 
 ## Depends on
 
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Picard iteration](https://deicyde.github.io/atlas-lean/roadmap/Analysis/ordinary-differential-equations/picard-iteration/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/ordinary-differential-equations/picard-iteration)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/ordinary-differential-equations/picard-iteration)

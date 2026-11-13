@@ -7,7 +7,7 @@ statement: formalized
 
 # Marriageable and lonely singles partitions
 
-27 results, 16 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html).
+27 results, 16 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html).
 
 ## Same block after merging two blocks
 
@@ -21,7 +21,7 @@ joins them into the block $\{i, j\}$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definition 3 (the partition `π'` obtained by joining `{i}` and `{j}`).
 
-Formalized by `MetaMathlibExt.mergedSameBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#merged-same-block).
+Formalized by `MetaMathlibExt.mergedSameBlock`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#merged-same-block).
 
 ## Crossing after merging two blocks
 
@@ -34,7 +34,7 @@ in one of its blocks and $b$ and $d$ lie in a different one of its blocks.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definitions 2 and 3 (crossing partitions, the partition `π'`).
 
-Formalized by `MetaMathlibExt.mergedHasCrossing`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#merged-has-crossing).
+Formalized by `MetaMathlibExt.mergedHasCrossing`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#merged-has-crossing).
 
 ## Marriageable singles partition
 
@@ -46,7 +46,7 @@ that the partition obtained from $P$ by joining them into the block $\{i, j\}$ h
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definition 3.
 
-Formalized by `MetaMathlibExt.IsMarriageableSingles`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#is-marriageable-singles).
+Formalized by `MetaMathlibExt.IsMarriageableSingles`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#is-marriageable-singles).
 
 ## Number of marriageable singles partitions
 
@@ -57,7 +57,7 @@ noncrossing partitions of $\{0, \dots, n-1\}$ that are marriageable singles part
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definition 3.
 
-Formalized by `MetaMathlibExt.marriageableSinglesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#marriageable-singles-count).
+Formalized by `MetaMathlibExt.marriageableSinglesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#marriageable-singles-count).
 
 ## Number of lonely singles partitions
 
@@ -69,7 +69,7 @@ are not marriageable singles partitions.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definition 3.
 
-Formalized by `MetaMathlibExt.lonelySinglesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-singles-count).
+Formalized by `MetaMathlibExt.lonelySinglesCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-singles-count).
 
 ## Small values of the marriageable singles count
 
@@ -81,7 +81,7 @@ partition needs two distinct points.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Table 1.
 
-Formalized by `MetaMathlibExt.marriageableSinglesCount_of_le_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#marriageable-singles-count-of-le-one).
+Formalized by `MetaMathlibExt.marriageableSinglesCount_of_le_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#marriageable-singles-count-of-le-one).
 
 ## Small values of the lonely singles count
 
@@ -92,7 +92,7 @@ $\{0, \dots, n-1\}$ for $n = 0$ and $n = 1$ are $L_0 = 1$ and $L_1 = 1$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Table 1.
 
-Formalized by `MetaMathlibExt.lonelySinglesCount_zero_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-singles-count-zero-one).
+Formalized by `MetaMathlibExt.lonelySinglesCount_zero_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-singles-count-zero-one).
 
 ## Noncrossing partitions by number of blocks and of singleton blocks
 
@@ -104,7 +104,7 @@ that have exactly $m$ blocks, exactly $k$ of which are singletons.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definition 23.
 
-Formalized by `MetaMathlibExt.noncrossingBlockSingletonCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#noncrossing-block-singleton-count).
+Formalized by `MetaMathlibExt.noncrossingBlockSingletonCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#noncrossing-block-singleton-count).
 
 ## Base value of the noncrossing block and singleton count
 
@@ -117,7 +117,7 @@ $\{0, \dots, n-1\}$ with $m$ blocks of which $k$ are singletons.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Remark 25.
 
-Formalized by `MetaMathlibExt.noncrossingBlockSingletonCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#noncrossing-block-singleton-count-zero).
+Formalized by `MetaMathlibExt.noncrossingBlockSingletonCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#noncrossing-block-singleton-count-zero).
 
 ## Zero-extended binomial coefficient
 
@@ -133,7 +133,7 @@ one block and no singleton block).
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, proof of Proposition 24 (degenerate cases giving `0`).
 
-Formalized by `MetaMathlibExt.zeroExtendedChoose`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#zero-extended-choose).
+Formalized by `MetaMathlibExt.zeroExtendedChoose`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#zero-extended-choose).
 
 ## The zero-extended binomial coefficient on natural numbers
 
@@ -146,7 +146,7 @@ equals the usual binomial coefficient $\binom{a}{b}$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, proof of Proposition 24 (degenerate cases giving `0`).
 
-Formalized by `MetaMathlibExt.zeroExtendedChoose_natCast`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#zero-extended-choose-nat-cast).
+Formalized by `MetaMathlibExt.zeroExtendedChoose_natCast`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#zero-extended-choose-nat-cast).
 
 ## The zero-extended binomial coefficient vanishes at $(-1, 0)$
 
@@ -158,7 +158,7 @@ Under this convention $\binom{-1}{0} = 0$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, proof of Proposition 24 (degenerate cases giving `0`).
 
-Formalized by `MetaMathlibExt.zeroExtendedChoose_neg_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#zero-extended-choose-neg-one-zero).
+Formalized by `MetaMathlibExt.zeroExtendedChoose_neg_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#zero-extended-choose-neg-one-zero).
 
 ## Lanes with a common point
 
@@ -172,7 +172,7 @@ positions $2i'$ and $2j' + 1$ lies strictly between $2i$ and $2j + 1$ (that is, 
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definitions 10 and 13 (lanes, noncrossing lanes).
 
-Formalized by `MetaMathlibExt.lanesMeet`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lanes-meet).
+Formalized by `MetaMathlibExt.lanesMeet`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lanes-meet).
 
 ## Maximal set of lanes
 
@@ -187,7 +187,7 @@ forbids the U-turns $E_iX_i$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definitions 12 and 13 (restricted standard road intersection, MSL).
 
-Formalized by `MetaMathlibExt.IsMaximalSetOfLanes`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#is-maximal-set-of-lanes).
+Formalized by `MetaMathlibExt.IsMaximalSetOfLanes`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#is-maximal-set-of-lanes).
 
 ## Absolute maximal set of lanes
 
@@ -201,7 +201,7 @@ $E_iX_j$ and $E_jX_i$ gives again a maximal set of lanes among all lanes.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definition 15.
 
-Formalized by `MetaMathlibExt.IsAbsoluteMaximalSetOfLanes`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#is-absolute-maximal-set-of-lanes).
+Formalized by `MetaMathlibExt.IsAbsoluteMaximalSetOfLanes`, a definition declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#is-absolute-maximal-set-of-lanes).
 
 ## Maximal sets of lanes for an intersection of size two
 
@@ -213,7 +213,7 @@ is allowed, the maximal sets of lanes are exactly $\{E_1X_1, E_2X_2\}$ and $\{E_
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Definition 13 (MSL).
 
-Formalized by `MetaMathlibExt.maximalSetsOfLanes_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#maximal-sets-of-lanes-two).
+Formalized by `MetaMathlibExt.maximalSetsOfLanes_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#maximal-sets-of-lanes-two).
 
 ## Noncrossing partitions split into lonely and marriageable singles partitions
 
@@ -226,7 +226,7 @@ number of those that are not.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Lemma 6 (`jis-2025-25.1.1-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.card_noncrossingPartition_eq_lonely_add_marriageable` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-noncrossing-partition-eq-lonely-add).
+Stated but not proved: `MetaMathlibExt.card_noncrossingPartition_eq_lonely_add_marriageable` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 234](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L234). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-noncrossing-partition-eq-lonely-add).
 
 ## Maximal sets of lanes and noncrossing partitions
 
@@ -239,7 +239,7 @@ number $C_n$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Lemma 16 (`jis-2025-25.1.1-lem-16`).
 
-Stated but not proved: `MetaMathlibExt.maximalSetsOfLanes_equiv_noncrossingPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#maximal-sets-of-lanes-equiv-noncrossing).
+Stated but not proved: `MetaMathlibExt.maximalSetsOfLanes_equiv_noncrossingPartition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 244](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L244). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#maximal-sets-of-lanes-equiv-noncrossing).
 
 ## Nonabsolute maximal sets of lanes are counted by marriageable singles partitions
 
@@ -252,7 +252,7 @@ that are marriageable singles partitions.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Corollary 17 (`jis-2025-25.1.1-cor-17`).
 
-Stated but not proved: `MetaMathlibExt.card_nonabsolute_maximalSetsOfLanes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-nonabsolute-maximal-sets-of-lanes).
+Stated but not proved: `MetaMathlibExt.card_nonabsolute_maximalSetsOfLanes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-nonabsolute-maximal-sets-of-lanes).
 
 ## Absolute maximal sets of lanes are counted by lonely singles partitions
 
@@ -265,7 +265,7 @@ marriageable singles partitions.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Corollary 18 (`jis-2025-25.1.1-cor-18`).
 
-Stated but not proved: `MetaMathlibExt.card_absolute_maximalSetsOfLanes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-absolute-maximal-sets-of-lanes).
+Stated but not proved: `MetaMathlibExt.card_absolute_maximalSetsOfLanes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-absolute-maximal-sets-of-lanes).
 
 ## Maximal sets of lanes without U-turns are counted by lonely singles partitions
 
@@ -280,7 +280,7 @@ $\{0, \dots, n-1\}$ that are not marriageable singles partitions.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Corollary 19 (`jis-2025-25.1.1-cor-19`).
 
-Stated but not proved: `MetaMathlibExt.card_restricted_maximalSetsOfLanes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-restricted-maximal-sets-of-lanes).
+Stated but not proved: `MetaMathlibExt.card_restricted_maximalSetsOfLanes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-restricted-maximal-sets-of-lanes).
 
 ## Strict growth of the lonely and marriageable singles counts
 
@@ -293,7 +293,7 @@ number of those that are not.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 20 (`jis-2025-25.1.1-prop-20`).
 
-Stated but not proved: `MetaMathlibExt.lonely_marriageable_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-marriageable-strict-mono).
+Stated but not proved: `MetaMathlibExt.lonely_marriageable_strictMono` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-marriageable-strict-mono).
 
 ## The marriageable and lonely singles counts tend to infinity
 
@@ -306,7 +306,7 @@ $n \to \infty$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Corollary 21 (`jis-2025-25.1.1-cor-21`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_marriageable_lonely_atTop` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#tendsto-marriageable-lonely-at-top).
+Stated but not proved: `MetaMathlibExt.tendsto_marriageable_lonely_atTop` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#tendsto-marriageable-lonely-at-top).
 
 ## Recursive lower bound for marriageable singles partitions
 
@@ -318,7 +318,7 @@ $\{0, \dots, n-1\}$ and $M_n$ is the number of those that are marriageable singl
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 22 (`jis-2025-25.1.1-prop-22`).
 
-Stated but not proved: `MetaMathlibExt.card_add_three_mul_marriageable_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-add-three-mul-marriageable-le).
+Stated but not proved: `MetaMathlibExt.card_add_three_mul_marriageable_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#card-add-three-mul-marriageable-le).
 
 ## Counting noncrossing partitions with no or one singleton block
 
@@ -339,7 +339,7 @@ $$NC_{n,m,1} = \binom{n}{m-1} \binom{n-m-1}{m-2}.$$
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 24 (`jis-2025-25.1.1-prop-24`).
 
-Stated but not proved: `MetaMathlibExt.noncrossingBlockSingletonCount_formulas` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#noncrossing-block-singleton-count-formul).
+Stated but not proved: `MetaMathlibExt.noncrossingBlockSingletonCount_formulas` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 316](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L316). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#noncrossing-block-singleton-count-formul).
 
 ## Lower bound for the number of lonely singles partitions
 
@@ -357,7 +357,7 @@ where a binomial coefficient $\binom{a}{b}$ with $a < 0$ or $b < 0$ is taken to 
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 26 (`jis-2025-25.1.1-prop-26`).
 
-Stated but not proved: `MetaMathlibExt.lonelySinglesCount_ge_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-singles-count-ge-sum).
+Stated but not proved: `MetaMathlibExt.lonelySinglesCount_ge_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#lonely-singles-count-ge-sum).
 
 ## Lower bound for the number of marriageable singles partitions
 
@@ -379,7 +379,7 @@ singleton block; with the convention above, $S(0) = 0$.
 
 - Julien Rouyer and Alain Ninet, *Two New Integer Sequences Related to Crossroads and Catalan Numbers*, Journal of Integer Sequences 28 (2025), Article 25.1.1, Proposition 27 (`jis-2025-25.1.1-prop-27`).
 
-Stated but not proved: `MetaMathlibExt.marriageableSinglesCount_ge_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#marriageable-singles-count-ge-sum).
+Stated but not proved: `MetaMathlibExt.marriageableSinglesCount_ge_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/LonelyMarriageableSinglesWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html#marriageable-singles-count-ge-sum).
 
 ## Depends on
 
@@ -388,4 +388,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Marriageable and lonely singles partitions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/set-partitions/marriageable-and-lonely-singles-partitions)

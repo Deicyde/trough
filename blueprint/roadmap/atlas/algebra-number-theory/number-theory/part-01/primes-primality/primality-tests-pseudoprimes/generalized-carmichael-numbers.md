@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized Carmichael numbers
 
-6 results, 2 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html).
+6 results, 2 proved and 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html).
 
 ## $(a, a)$-Carmichael numbers
 
@@ -19,7 +19,7 @@ every prime $p$ dividing $n$.
 
 - Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, abstract and Section 1 (definition read from the arXiv version, arXiv:2607.02738; the journal display could not be checked).
 
-Formalized by `MetaMathlibExt.IsAACarmichael`, a definition declared in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#is-aacarmichael).
+Formalized by `MetaMathlibExt.IsAACarmichael`, a definition declared in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#is-aacarmichael).
 
 ## Primes are $(a, a)$-Carmichael numbers
 
@@ -30,7 +30,7 @@ $(a, a)$-Carmichael number.
 
 - Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, characteristic lemma of the definition in Section 1.
 
-Formalized by `MetaMathlibExt.isAACarmichael_of_prime`, a theorem declared in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#is-aacarmichael-of-prime).
+Formalized by `MetaMathlibExt.isAACarmichael_of_prime`, a theorem declared in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#is-aacarmichael-of-prime).
 
 ## Conditional lower bound for $(a, a)$-Carmichael numbers with prescribed gcd
 
@@ -53,7 +53,7 @@ with $2 + \varepsilon$ in place of $2 + o(1)$.
 - definitions of $C_\nu(X, a)$ and Conjecture 2 read from the arXiv version (arXiv:2607.02738); the theorem's journal wording matches it.
 - Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.aaCarmichael_count_ge_of_least_prime_in_progression_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#aa-carmichael-count-ge-of-least-prime-in).
+Stated but not proved: `MetaMathlibExt.aaCarmichael_count_ge_of_least_prime_in_progression_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#aa-carmichael-count-ge-of-least-prime-in).
 
 ## Size of the auxiliary primes in the construction
 
@@ -73,7 +73,7 @@ every such $j$ and $q$, and every real $A$.
 
 - Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Section 3 (definitions of `J`, `𝓡_j`, `𝒬ᵢ`) and Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.rpow_log_le_prime_of_eq_mul_add_one_of_dvd_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#rpow-log-le-prime-of-eq-mul-add-one-of-d).
+Stated but not proved: `MetaMathlibExt.rpow_log_le_prime_of_eq_mul_add_one_of_dvd_prod_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#rpow-log-le-prime-of-eq-mul-add-one-of-d).
 
 ## The Carmichael function of a product of auxiliary primes is small
 
@@ -93,7 +93,7 @@ for every such $j$ and every real $A$.
 
 - Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Section 3 and Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.carmichael_prod_primes_eq_mul_add_one_le_exp` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#carmichael-prod-primes-eq-mul-add-one-le).
+Stated but not proved: `MetaMathlibExt.carmichael_prod_primes_eq_mul_add_one_le_exp` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#carmichael-prod-primes-eq-mul-add-one-le).
 
 ## Exact gcd of two shifted values in the construction
 
@@ -111,7 +111,7 @@ $L_1, L_2$ are the products of two disjoint sets of primes, and $k_1, k_2$ come 
 
 - Thomas Wright, *(a,a)-Carmichael Numbers and Greatest Common Divisors of p-a*, INTEGERS 26 (2026), Article A123, Section 5 (definition of `𝒫^i_k`) and Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.int_gcd_sub_eq_of_eq_mul_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#int-gcd-sub-eq-of-eq-mul-mul-add).
+Stated but not proved: `MetaMathlibExt.int_gcd_sub_eq_of_eq_mul_mul_add` is written with `theorem_wanted` in [WantedExt/NumberTheory/AACarmichaelGcdWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/AACarmichaelGcdWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html#int-gcd-sub-eq-of-eq-mul-mul-add).
 
 ## Depends on
 
@@ -120,4 +120,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Carmichael numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/generalized-carmichael-numbers)

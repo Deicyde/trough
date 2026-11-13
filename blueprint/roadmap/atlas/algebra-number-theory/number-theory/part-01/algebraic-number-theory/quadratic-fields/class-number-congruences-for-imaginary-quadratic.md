@@ -7,7 +7,7 @@ statement: formalized
 
 # Class number congruences for imaginary quadratic fields
 
-19 results, 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html).
+19 results, 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html).
 
 ## Class number congruences for $\mathbb{Q}(\sqrt{-p})$
 
@@ -26,7 +26,7 @@ $h \equiv E_{(p-1)/2}/2 \pmod p$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Theorem 1, quoting [5].
 
-Stated but not proved: `MetaMathlibExt.classNumber_sqrt_neg_prime_congr_bernoulli_euler` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#class-number-sqrt-neg-prime-congr-bernou).
+Stated but not proved: `MetaMathlibExt.classNumber_sqrt_neg_prime_congr_bernoulli_euler` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#class-number-sqrt-neg-prime-congr-bernou).
 
 ## Beta and Gamma values of the real Eisenstein period
 
@@ -39,7 +39,7 @@ $\varpi_1 = \frac13 B(\frac13, \frac13) = \frac{\Gamma(1/3)^3}{2\pi\sqrt3}
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.eisensteinRealPeriod_eq_beta_gamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-real-period-eq-beta-gamma).
+Stated but not proved: `MetaMathlibExt.eisensteinRealPeriod_eq_beta_gamma` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-real-period-eq-beta-gamma).
 
 ## The Weierstrass function of the Eisenstein lattice
 
@@ -60,7 +60,7 @@ By (b), $\wp$ and $\wp'$ take real values at real points off $\Lambda$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.weierstrassP_eisenstein_lattice` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#weierstrass-p-eisenstein-lattice).
+Stated but not proved: `MetaMathlibExt.weierstrassP_eisenstein_lattice` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#weierstrass-p-eisenstein-lattice).
 
 ## Addition formula for the Eisenstein function Sl
 
@@ -88,7 +88,7 @@ degree $\equiv 1 \pmod 3$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.sl_add_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#sl-add-formula).
+Stated but not proved: `MetaMathlibExt.sl_add_formula` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#sl-add-formula).
 
 ## Sl(ru) as a power series in Sl(u)
 
@@ -110,7 +110,7 @@ they are the Taylor series at $0$ of the Eisenstein elliptic functions of the so
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.sl_rescale_int_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#sl-rescale-int-expansion).
+Stated but not proved: `MetaMathlibExt.sl_rescale_int_expansion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#sl-rescale-int-expansion).
 
 ## Power series inverse of $\mathrm{Sl}$
 
@@ -131,7 +131,7 @@ $\mathrm{Sl}$ near $0$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.arcSl_subst_sl` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#arc-sl-subst-sl).
+Stated but not proved: `MetaMathlibExt.arcSl_subst_sl` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#arc-sl-subst-sl).
 
 ## The Hurwitz-normalized coefficients of Sl are integers
 
@@ -148,7 +148,7 @@ at $0$ of the Eisenstein elliptic functions of the source.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.factorial_mul_coeff_sl_isInt` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#factorial-mul-coeff-sl-is-int).
+Stated but not proved: `MetaMathlibExt.factorial_mul_coeff_sl_isInt` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#factorial-mul-coeff-sl-is-int).
 
 ## The Hurwitz-normalized coefficients of 1/Sl
 
@@ -167,7 +167,7 @@ at $0$ of the Eisenstein elliptic functions of the source.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 8.
 
-Stated but not proved: `MetaMathlibExt.two_mul_factorial_coeff_inv_sl_mem_int_inv_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#two-mul-factorial-coeff-inv-sl-mem-int-i).
+Stated but not proved: `MetaMathlibExt.two_mul_factorial_coeff_inv_sl_mem_int_inv_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#two-mul-factorial-coeff-inv-sl-mem-int-i).
 
 ## Denominators of the Hurwitz-type numbers of Sl
 
@@ -188,7 +188,7 @@ at $0$ of the Eisenstein elliptic functions of the source.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Theorem 3, first sentence.
 
-Stated but not proved: `MetaMathlibExt.sl_hurwitz_numbers_den_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#sl-hurwitz-numbers-den-coprime).
+Stated but not proved: `MetaMathlibExt.sl_hurwitz_numbers_den_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#sl-hurwitz-numbers-den-coprime).
 
 ## Identities for the Eisenstein elliptic functions $\varphi$ and $\psi$
 
@@ -210,7 +210,7 @@ $\wp(\varpi_1 u) \ne 0$, then $\varphi(u)^{-1} + \varphi(-u)^{-1} = 3/\wp(\varpi
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 3, parts (d)-(g).
 
-Stated but not proved: `MetaMathlibExt.eisensteinPhiPsi_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-phi-psi-properties).
+Stated but not proved: `MetaMathlibExt.eisensteinPhiPsi_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-phi-psi-properties).
 
 ## $\mathrm{Sl}$ and $\mathrm{ArcSl}$ are inverse on the real segment
 
@@ -233,7 +233,7 @@ $\mathrm{Sl}(0) = 0$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.eisensteinSl_inverse_arcSl` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-sl-inverse-arc-sl).
+Stated but not proved: `MetaMathlibExt.eisensteinSl_inverse_arcSl` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-sl-inverse-arc-sl).
 
 ## Jacobi sums of the quadratic and the cubic residue character
 
@@ -256,7 +256,7 @@ characters of the lemma it cites (Ireland-Rosen, Chap. 18, §3 and Chap. 9, §4)
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 13, part (a).
 
-Stated but not proved: `MetaMathlibExt.jacobiSum_quadraticChar_cubicResidueChar` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#jacobi-sum-quadratic-char-cubic-residue).
+Stated but not proved: `MetaMathlibExt.jacobiSum_quadraticChar_cubicResidueChar` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#jacobi-sum-quadratic-char-cubic-residue).
 
 ## The Jacobi sum of the quadratic and a cubic character of a field with $q^2$ elements
 
@@ -273,7 +273,7 @@ holds for the quadratic $\phi$ and a $\chi$ of order $3$, the characters of the 
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 13, part (b).
 
-Stated but not proved: `MetaMathlibExt.jacobiSum_quadraticChar_cubicChar_card_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#jacobi-sum-quadratic-char-cubic-char-car).
+Stated but not proved: `MetaMathlibExt.jacobiSum_quadraticChar_cubicChar_card_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 338](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L338). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#jacobi-sum-quadratic-char-cubic-char-car).
 
 ## Cubic reciprocity
 
@@ -294,7 +294,7 @@ $\omega_1$ exists and the statement is empty.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 13, part (c).
 
-Stated but not proved: `MetaMathlibExt.cubicResidueSymbol_reciprocity` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#cubic-residue-symbol-reciprocity).
+Stated but not proved: `MetaMathlibExt.cubicResidueSymbol_reciprocity` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 355](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L355). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#cubic-residue-symbol-reciprocity).
 
 ## Point counts of $y^2 + \lambda y = x^3$ modulo primes of $\mathbb{Z}(\zeta_3)$
 
@@ -324,7 +324,7 @@ $q^2 + 1 + q(\chi_\lambda(q) + \overline{\chi_\lambda(q)})$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 14, parts (d), (e).
 
-Stated but not proved: `MetaMathlibExt.eisensteinTwist_card_points` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-twist-card-points).
+Stated but not proved: `MetaMathlibExt.eisensteinTwist_card_points` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 382](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L382). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-twist-card-points).
 
 ## Torsion of $y^2 = x^3 + \lambda^2/4$ over $\mathbb{Q}(\zeta_3)$
 
@@ -340,7 +340,7 @@ $3$ points of finite order.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 14, part (f).
 
-Stated but not proved: `MetaMathlibExt.eisensteinTwist_torsion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-twist-torsion).
+Stated but not proved: `MetaMathlibExt.eisensteinTwist_torsion` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 406](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L406). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-twist-torsion).
 
 ## Congruence for the square of $\tilde\lambda$
 
@@ -366,7 +366,7 @@ in the ring of integers of $\mathbb{Q}(\rho, \Lambda)$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.eisensteinLambdaTilde_sq_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-lambda-tilde-sq-congr).
+Stated but not proved: `MetaMathlibExt.eisensteinLambdaTilde_sq_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#eisenstein-lambda-tilde-sq-congr).
 
 ## Integrality of the elliptic Gauss sum
 
@@ -397,7 +397,7 @@ elliptic Gauss sum $G_\lambda(\chi_\lambda, f)$ of the source.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.ellipticGaussSum_mem_integers_eq_sum_ker` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#elliptic-gauss-sum-mem-integers-eq-sum-k).
+Stated but not proved: `MetaMathlibExt.ellipticGaussSum_mem_integers_eq_sum_ker` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#elliptic-gauss-sum-mem-integers-eq-sum-k).
 
 ## Congruences for $|\alpha_\lambda|^2$
 
@@ -432,7 +432,7 @@ derivatives at $0$ divided by $k!$.
 
 - Akihiro Goto, *Congruence Relations Connecting Tate-Shafarevich Groups with Bernoulli-Hurwitz Numbers by Elliptic Gauss Sums in the Eisenstein Integers Case*, INTEGERS 26 (2026), Article A112, Lemma 12.
 
-Stated but not proved: `MetaMathlibExt.ellipticGaussSum_coeff_normSq_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#elliptic-gauss-sum-coeff-norm-sq-congr).
+Stated but not proved: `MetaMathlibExt.ellipticGaussSum_coeff_normSq_congr` is written with `theorem_wanted` in [WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean, line 486](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/ClassNumberBernoulliEulerCongruenceWanted.lean#L486). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html#elliptic-gauss-sum-coeff-norm-sq-congr).
 
 ## Depends on
 
@@ -441,4 +441,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Class number congruences for imaginary quadratic fields](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/quadratic-fields/class-number-congruences-for-imaginary-quadratic)

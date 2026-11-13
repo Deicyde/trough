@@ -8,7 +8,7 @@ proof: formalized
 
 # Schur's lemma and multiplicities
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/index.html).
 
 ## Schur's lemma, dimension form
 
@@ -18,7 +18,7 @@ spaces. Then the space $\operatorname{Hom}_G(\rho, \sigma)$ of intertwining maps
 $\sigma$ has dimension $1$ over $k$ if $\sigma$ and $\rho$ are equivalent, and dimension $0$
 otherwise.
 
-Formalized by `CharacterTheory.finrank_intertwiningMap_eq_one_or_zero`, a theorem declared in [MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/index.html#finrank-intertwining-map-eq-one-or-zero).
+Formalized by `CharacterTheory.finrank_intertwiningMap_eq_one_or_zero`, a theorem declared in [MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/index.html#finrank-intertwining-map-eq-one-or-zero).
 
 ## Multiplicity equals the dimension of the intertwining space
 
@@ -31,7 +31,7 @@ natural numbers such that $\sigma$ is equivalent to the direct sum of $d_i$ copi
 all $i \in I$. Then for every $i \in I$, $d_i$ equals the dimension over $k$ of the space
 $\operatorname{Hom}_G(\rho_i, \sigma)$ of intertwining maps from $\rho_i$ to $\sigma$.
 
-Formalized by `CharacterTheory.multiplicity_eq_finrank_intertwiningMap`, a theorem declared in [MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/index.html#multiplicity-eq-finrank-intertwining-map).
+Formalized by `CharacterTheory.multiplicity_eq_finrank_intertwiningMap`, a theorem declared in [MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RepresentationTheory/RepresentationMultiplicity.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/index.html#multiplicity-eq-finrank-intertwining-map).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Schur's lemma and multiplicities](https://deicyde.github.io/atlas-lean/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RepresentationTheory/finite-group-representations/schur-s-lemma-and-multiplicities)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Carnot's theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem/index.html).
 
 ## Carnot's theorem (inradius and circumradius), general form
 
@@ -29,7 +29,7 @@ This form does not assume $r > 0$ or that $O$ lies in the affine span of $A, B, 
 
 - https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius). Statement ID: carnot-inradius-s1.
 
-Formalized by `MetaMathlibExt.carnot_inradius_circumradius_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/CarnotInradius.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/CarnotInradius.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem/index.html#carnot-inradius-circumradius-general).
+Formalized by `MetaMathlibExt.carnot_inradius_circumradius_general`, a theorem declared in [MathlibExt/Geometry/Euclidean/CarnotInradius.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/CarnotInradius.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem/index.html#carnot-inradius-circumradius-general).
 
 ## Carnot's theorem (inradius and circumradius)
 
@@ -51,7 +51,7 @@ general form of the theorem drops them.
 
 - https://en.wikipedia.org/wiki/Carnot%27s_theorem_(inradius,_circumradius). Statement ID: carnot-inradius-s1.
 
-Formalized by `MetaMathlibExt.carnot_inradius_circumradius`, a theorem declared in [MathlibExt/Geometry/Euclidean/CarnotInradius.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/Euclidean/CarnotInradius.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem/index.html#carnot-inradius-circumradius).
+Formalized by `MetaMathlibExt.carnot_inradius_circumradius`, a theorem declared in [MathlibExt/Geometry/Euclidean/CarnotInradius.lean, line 671](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Euclidean/CarnotInradius.lean#L671). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem/index.html#carnot-inradius-circumradius).
 
 ## Depends on
 
@@ -60,4 +60,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Carnot's theorem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/euclidean-geometry/triangle-geometry/carnot-s-theorem)

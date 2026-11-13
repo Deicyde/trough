@@ -7,7 +7,7 @@ statement: formalized
 
 # Block-compatible sequences of pairwise balanced designs
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html).
 
 ## Pairwise balanced design
 
@@ -16,7 +16,7 @@ $B_1, \ldots, B_m \subseteq \{0, \ldots, n - 1\}$ is a pairwise balanced design 
 when the blocks are pairwise distinct, every block has at least two points, and every two distinct
 points lie in exactly one common block.
 
-Formalized by `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.IsPBD`, a definition declared in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#is-pbd).
+Formalized by `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.IsPBD`, a definition declared in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#is-pbd).
 
 ## Block-compatible sequences
 
@@ -26,7 +26,7 @@ $x_1 \ge x_2 \ge \cdots \ge x_m$, every $x_k$ satisfies $2 \le x_k \le n$, and t
 balanced design on the point set $\{0, \ldots, n - 1\}$ whose blocks, listed in order as
 $B_1, \ldots, B_m$, have sizes $|B_k| = x_k$ for every $k$.
 
-Formalized by `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.BlockCompatible`, a definition declared in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#block-compatible).
+Formalized by `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.BlockCompatible`, a definition declared in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#block-compatible).
 
 ## Many block-compatible sequences
 
@@ -39,7 +39,7 @@ block-compatible for $n$. Here $\log$ is the natural logarithm.
 
 - OWR-14299518-002, question (2).
 
-Formalized by `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#conjecture).
+Formalized by `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.conjecture`, a definition declared in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#conjecture).
 
 ## Many block-compatible sequences (Erdős Problem 732)
 
@@ -56,7 +56,7 @@ block-compatible for $n$ (Oberwolfach Report 42/2025, Theorem 4; also Theorem 2.
 
 - N. Alon, On designs and partial designs, extended abstract in Oberwolfach Report 42/2025 (Combinatorics, Probability and Computing), pp. 2249-2250, Theorem 4, https://doi.org/10.4171/owr/2025/42; N. Alon, Blocking partial designs and block-compatible sequences, note, Theorem 2.3, https://web.math.princeton.edu/~nalon/PDFS/remark191.pdf; T. F. Bloom, Erdős Problem #732, erdosproblems.com (status PROVED), https://www.erdosproblems.com/732.
 
-Stated but not proved: `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.Combinatorics.BlockCompatibleSequenceCountWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/BlockCompatibleSequenceCountWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Block-compatible sequences of pairwise balanced designs](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/designs-latin-squares/block-compatible-sequences-of-pairwise-balanced)

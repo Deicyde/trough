@@ -7,7 +7,7 @@ statement: formalized
 
 # Two-color partitions modulo powers of 7
 
-23 results, 14 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html).
+23 results, 14 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html).
 
 ## Two-color partitions with one color restricted to multiples
 
@@ -28,7 +28,7 @@ source uses $\ell = 7^k$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.twoColorMultiplePartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count).
+Formalized by `MetaMathlibExt.twoColorMultiplePartitionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count).
 
 ## Two-color partitions below the modulus
 
@@ -41,7 +41,7 @@ color is unavailable and $p_{1,\ell}(n) = p(n)$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.twoColorMultiplePartitionCount_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-of-lt).
+Formalized by `MetaMathlibExt.twoColorMultiplePartitionCount_of_lt`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-of-lt).
 
 ## The two-color partition count at zero
 
@@ -52,7 +52,7 @@ $\ell = 0$, the two-color partition count $p_{1,\ell}$ satisfies $p_{1,\ell}(0) 
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.twoColorMultiplePartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-zero).
+Formalized by `MetaMathlibExt.twoColorMultiplePartitionCount_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-zero).
 
 ## Congruences for two-color partitions modulo powers of 7
 
@@ -91,7 +91,7 @@ Each numerator is divisible by $24$, so every division above is exact.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Theorem 1, congruences (6)-(9).
 
-Stated but not proved: `MetaMathlibExt.twoColorMultiplePartitionCount_seven_pow_congr` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-seven).
+Stated but not proved: `MetaMathlibExt.twoColorMultiplePartitionCount_seven_pow_congr` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-seven).
 
 ## Tabulated rows of Garvan's matrix
 
@@ -119,7 +119,7 @@ These are rows $1$ to $7$ of Garvan's matrix as printed in Tables 1 and 2 of the
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1, Tables 1 and 2.
 
-Formalized by `MetaMathlibExt.garvanMTable`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-mtable).
+Formalized by `MetaMathlibExt.garvanMTable`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-mtable).
 
 ## Garvan's matrix
 
@@ -140,7 +140,7 @@ expansion; that identity is a separate statement and is not part of this definit
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.garvanM`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m).
+Formalized by `MetaMathlibExt.garvanM`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m).
 
 ## Initial entries of the first row of Garvan's matrix
 
@@ -151,7 +151,7 @@ row of Garvan's matrix $(m_{i,j})$ are $m_{1,1} = 7$ and $m_{1,2} = 7^2 = 49$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1, Table 1.
 
-Formalized by `MetaMathlibExt.garvanM_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m-one).
+Formalized by `MetaMathlibExt.garvanM_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m-one).
 
 ## The first recurrence value of Garvan's matrix
 
@@ -163,7 +163,7 @@ read from the tables, is $m_{8,3} = 2464$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.garvanM_eight_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m-eight-three).
+Formalized by `MetaMathlibExt.garvanM_eight_three`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m-eight-three).
 
 ## Recurrence for Garvan's matrix
 
@@ -177,7 +177,7 @@ $$m_{i,j} = 7m_{i-3,j-1} + 35m_{i-2,j-1} + 49m_{i-1,j-1} + m_{i-7,j-2} + 7m_{i-6
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.garvanM_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m-rec).
+Formalized by `MetaMathlibExt.garvanM_rec`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-m-rec).
 
 ## Garvan's coefficient vectors
 
@@ -201,7 +201,7 @@ $x_k$ plus $2$, which stays below $7^{k+1}$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.garvanX`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-x).
+Formalized by `MetaMathlibExt.garvanX`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-x).
 
 ## Initial entries of Garvan's first coefficient vector
 
@@ -212,7 +212,7 @@ vectors, $x_1$, has entries $x_{1,1} = 7$, $x_{1,2} = 7^2 = 49$ and $x_{1,3} = 0
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Section 1.
 
-Formalized by `MetaMathlibExt.garvanX_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-x-one).
+Formalized by `MetaMathlibExt.garvanX_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-x-one).
 
 ## Coefficient vectors for odd powers of 7
 
@@ -231,7 +231,7 @@ maps support $s$ into $7s + 2$).
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Theorem 2.
 
-Formalized by `MetaMathlibExt.garvanYOdd`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yodd).
+Formalized by `MetaMathlibExt.garvanYOdd`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yodd).
 
 ## Initial coefficient vector for odd powers of 7
 
@@ -243,7 +243,7 @@ $y^{(2k-1)}_{1,j} = x_{2k-1,j}$. For $k = 0$ the index $2k - 1$ is read as $0$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Theorem 2.
 
-Formalized by `MetaMathlibExt.garvanYOdd_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yodd-one).
+Formalized by `MetaMathlibExt.garvanYOdd_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yodd-one).
 
 ## Coefficient vectors for even powers of 7
 
@@ -269,7 +269,7 @@ $7s + 4$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Theorem 3.
 
-Formalized by `MetaMathlibExt.garvanYEven`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yeven).
+Formalized by `MetaMathlibExt.garvanYEven`, a definition declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yeven).
 
 ## Initial coefficient vector for even powers of 7
 
@@ -281,7 +281,7 @@ $y^{(2k)}_{1,j} = x_{2k-1,j}$. For $k = 0$ the index $2k - 1$ is read as $0$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Theorem 3.
 
-Formalized by `MetaMathlibExt.garvanYEven_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yeven-one).
+Formalized by `MetaMathlibExt.garvanYEven_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#garvan-yeven-one).
 
 ## Garvan's huffing identities for powers of $\xi$
 
@@ -305,7 +305,7 @@ resp. $j = 7i$, beyond which the coefficients $m$ vanish.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.huffing_xi_inv_pow_eq_sum_garvanM` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#huffing-xi-inv-pow-eq-sum-garvan-m).
+Stated but not proved: `MetaMathlibExt.huffing_xi_inv_pow_eq_sum_garvanM` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#huffing-xi-inv-pow-eq-sum-garvan-m).
 
 ## Huffing identities for three eta quotients
 
@@ -334,7 +334,7 @@ beyond which the coefficients $m$ vanish.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.huffing_eta_quotients_eq_sum_garvanM` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#huffing-eta-quotients-eq-sum-garvan-m).
+Stated but not proved: `MetaMathlibExt.huffing_eta_quotients_eq_sum_garvanM` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#huffing-eta-quotients-eq-sum-garvan-m).
 
 ## Garvan's 7-adic bounds for the matrix $m_{i,j}$
 
@@ -352,7 +352,7 @@ ceiling reading fails, since $m_{2,1} = 10$ is not divisible by $7^{\lceil 2/4 \
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanM` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-m).
+Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanM` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 266](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L266). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-m).
 
 ## Garvan's 7-adic bounds for the vectors $x_k$
 
@@ -365,7 +365,7 @@ $x_{2k+1,j}$ and $7^{k + 1 + \lfloor (7j-6)/4 \rfloor}$ divides $x_{2k,j}$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanX` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-x).
+Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanX` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-x).
 
 ## 7-adic bounds for the vectors $y^{(2k)}_\beta$
 
@@ -378,7 +378,7 @@ $7^{k + \beta + 1 + \lfloor (7j-7)/4 \rfloor}$ divides $y^{(2k)}_{2\beta+2,j}$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanYEven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-yeven).
+Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanYEven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-yeven).
 
 ## 7-adic bounds for the vectors $y^{(2k-1)}_\beta$
 
@@ -390,7 +390,7 @@ $k, j \ge 1$ and $\beta \ge 0$, $7^{k + \lfloor (7j-7)/4 \rfloor}$ divides $y^{(
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanYOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-yodd).
+Stated but not proved: `MetaMathlibExt.seven_pow_dvd_garvanYOdd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 301](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L301). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#seven-pow-dvd-garvan-yodd).
 
 ## Generating functions for $p_{1,7^{2k-1}}$ on progressions
 
@@ -412,7 +412,7 @@ the support of $y^{(2k-1)}_{\beta+1}$.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.twoColorMultiplePartitionCount_seven_pow_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-seven-2).
+Stated but not proved: `MetaMathlibExt.twoColorMultiplePartitionCount_seven_pow_odd_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-seven-2).
 
 ## Generating functions for $p_{1,7^{2k}}$ on progressions
 
@@ -439,7 +439,7 @@ the vectors.
 
 - D. S. Gireesh, C. Shivashankar, and B. Hemanthkumar, *On 2-Color Partitions in Which the Parts of One Color Are Restricted to Multiples of 7^k*, INTEGERS 26 (2026), Article A94, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.twoColorMultiplePartitionCount_seven_pow_even_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-seven-3).
+Stated but not proved: `MetaMathlibExt.twoColorMultiplePartitionCount_seven_pow_even_generatingFunction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/Partition/TwoColorSevenPowerPartitionWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html#two-color-multiple-partition-count-seven-3).
 
 ## Depends on
 
@@ -448,4 +448,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Two-color partitions modulo powers of 7](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/partition-congruences/two-color-partitions-modulo-powers-of-7)

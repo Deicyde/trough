@@ -8,32 +8,32 @@ proof: formalized
 
 # Stochastic domination of measures on configuration space
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html).
 
 ## Stochastic domination of measures on configurations
 
 `μ` is stochastically dominated by `ν` if their actual `ENNReal` masses satisfy
 `μ(A) ≤ ν(A)` for every measurable increasing event `A ⊆ ConfigSpace E`.
 
-Formalized by `StatMech.StochasticallyDominated`, a definition declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#stochastically-dominated).
+Formalized by `StatMech.StochasticallyDominated`, a definition declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#stochastically-dominated).
 
 ## Stochastic domination is reflexive
 
 Stochastic domination is reflexive.
 
-Formalized by `StatMech.StochasticallyDominated.refl`, a theorem declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#refl).
+Formalized by `StatMech.StochasticallyDominated.refl`, a theorem declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#refl).
 
 ## Stochastic domination is transitive
 
 Stochastic domination is transitive.
 
-Formalized by `StatMech.StochasticallyDominated.trans`, a theorem declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#trans).
+Formalized by `StatMech.StochasticallyDominated.trans`, a theorem declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#trans).
 
 ## Stochastic domination compares real-valued masses
 
 For a finite upper measure, stochastic domination also compares real-valued masses.
 
-Formalized by `StatMech.StochasticallyDominated.real`, a theorem declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#real).
+Formalized by `StatMech.StochasticallyDominated.real`, a theorem declared in [MathlibExt/Probability/StochasticOrder/StochasticDomination.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Probability/StochasticOrder/StochasticDomination.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html#real).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Stochastic domination of measures on configuration space](https://deicyde.github.io/atlas-lean/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Probability/correlation-inequalities/stochastic-domination-and-strassen-s-theorem/stochastic-domination-of-measures-on-configurati)

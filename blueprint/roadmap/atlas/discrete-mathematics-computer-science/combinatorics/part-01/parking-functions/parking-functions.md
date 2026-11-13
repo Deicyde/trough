@@ -8,7 +8,7 @@ proof: formalized
 
 # Parking functions: its own results
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html).
 
 Parking functions and their variants (partial, weakly increasing, k-Naples, metered) and statistics on them: lucky cars, descents, displacement, and lucky statistics of Stirling permutations read as parking preferences.
 
@@ -19,7 +19,7 @@ $0, \dots, t-1$. A map $f : \{0, \dots, s-1\} \to \{0, \dots, t-1\}$, giving the
 of each of $s$ cars, is a partial parking function if for every spot $k \in \{0, \dots, t-1\}$,
 at most $t - k$ cars $i$ satisfy $f(i) \ge k$.
 
-Formalized by `MetaMathlibExt.IsPartialParkingFunction`, a definition declared in [MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#is-partial-parking-function).
+Formalized by `MetaMathlibExt.IsPartialParkingFunction`, a definition declared in [MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#is-partial-parking-function).
 
 ## Parking function
 
@@ -28,7 +28,7 @@ A map $f : \{0, \dots, n-1\} \to \{0, \dots, n-1\}$, giving the preferred spot o
 $n$ cars, is a parking function if it is a partial parking function with $n$ cars and $n$
 spots, that is, if for every spot $k$, at most $n - k$ cars $i$ satisfy $f(i) \ge k$.
 
-Formalized by `MetaMathlibExt.IsParkingFunction`, a definition declared in [MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#is-parking-function).
+Formalized by `MetaMathlibExt.IsParkingFunction`, a definition declared in [MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#is-parking-function).
 
 ## Lower-tail characterization of parking functions
 
@@ -37,7 +37,7 @@ the $n$ spots $0, \dots, n-1$, and let $f : \{0, \dots, n-1\} \to \{0, \dots, n-
 preferred spot of each of $n$ cars. Then $f$ is a parking function if and only if, for every
 spot $k \in \{0, \dots, n-1\}$, at least $k + 1$ cars $i$ satisfy $f(i) \le k$.
 
-Formalized by `MetaMathlibExt.isParkingFunction_iff_card_filter_le`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#is-parking-function-iff-card-filter-le).
+Formalized by `MetaMathlibExt.isParkingFunction_iff_card_filter_le`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/ParkingFunction.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#is-parking-function-iff-card-filter-le).
 
 ## Number of partial parking functions
 
@@ -53,7 +53,7 @@ The proof is Pollak's circle argument.
 
 - Steve Butler, Kimberly Hadaway, Victoria Lenius, Preston Martens, and Marshall Moats, “Lucky Cars and Lucky Spots in Parking Functions”, Journal of Integer Sequences 29 (2026), Article 26.1.1, proposition at lines 330–332 of https://cs.uwaterloo.ca/journals/JIS/VOL29/Hadaway/had3.tex.
 
-Formalized by `MetaMathlibExt.PollakPartialParking.pollak_partial_parking_functions_card`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PollakPartialParkingFunctions.lean, line 1308](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/PollakPartialParkingFunctions.lean#L1308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#pollak-partial-parking-functions-card).
+Formalized by `MetaMathlibExt.PollakPartialParking.pollak_partial_parking_functions_card`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/PollakPartialParkingFunctions.lean, line 1308](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/PollakPartialParkingFunctions.lean#L1308). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html#pollak-partial-parking-functions-card).
 
 ## Depends on
 
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Parking functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/parking-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/parking-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/parking-functions)

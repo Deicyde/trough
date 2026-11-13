@@ -8,7 +8,7 @@ proof: formalized
 
 # Robbins' theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/robbins-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/robbins-theorem/index.html).
 
 ## Robbins' theorem
 
@@ -23,7 +23,7 @@ $v$ can be reached from every vertex $u$ by a finite, possibly empty, sequence o
 
 - H. E. Robbins, "A Theorem on Graphs, with an Application to a Problem of Traffic Control," American Mathematical Monthly 46 (1939), 281–283; https://en.wikipedia.org/wiki/Robbins%27_theorem
 
-Formalized by `MetaMathlibExt.robbins_theorem_connected`, a theorem declared in [MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/robbins-theorem/index.html#robbins-theorem-connected).
+Formalized by `MetaMathlibExt.robbins_theorem_connected`, a theorem declared in [MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/robbins-theorem/index.html#robbins-theorem-connected).
 
 ## Robbins' theorem, allowing the empty graph
 
@@ -42,7 +42,7 @@ sides hold.
 
 - https://en.wikipedia.org/wiki/Robbins%27_theorem
 
-Formalized by `MetaMathlibExt.robbins_theorem`, a theorem declared in [MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/robbins-theorem/index.html#robbins-theorem).
+Formalized by `MetaMathlibExt.robbins_theorem`, a theorem declared in [MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean, line 529](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/RobbinsTheorem.lean#L529). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/robbins-theorem/index.html#robbins-theorem).
 
 ## Depends on
 
@@ -51,4 +51,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Robbins' theorem](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/directed-graphs/robbins-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/directed-graphs/robbins-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/directed-graphs/robbins-theorem)

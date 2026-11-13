@@ -7,7 +7,7 @@ statement: formalized
 
 # Symmetric peaks and valleys in compositions
 
-17 results, 6 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html).
+17 results, 6 proved and 11 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html).
 
 ## Number of symmetric peaks
 
@@ -21,7 +21,7 @@ is $0$ when $m < 3$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Section 1 (symmetric peaks).
 
-Formalized by `MetaMathlibExt.symmetricPeakCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-count).
+Formalized by `MetaMathlibExt.symmetricPeakCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-count).
 
 ## Sum of the heights of symmetric peaks
 
@@ -35,7 +35,7 @@ with $1 \le i \le m - 2$ at which one occurs; it is $0$ when $m < 3$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Section 1 (heights of symmetric peaks).
 
-Formalized by `MetaMathlibExt.symmetricPeakHeightSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum).
+Formalized by `MetaMathlibExt.symmetricPeakHeightSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum).
 
 ## Number of symmetric valleys of a word
 
@@ -48,7 +48,7 @@ is the number of such positions; in particular it is $0$ when $\ell < 3$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Section 1 (symmetric valleys).
 
-Formalized by `MetaMathlibExt.symmetricValleyCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-count).
+Formalized by `MetaMathlibExt.symmetricValleyCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-count).
 
 ## Total depth of the symmetric valleys of a word
 
@@ -62,7 +62,7 @@ $\ell < 3$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Section 1 (depths of symmetric valleys).
 
-Formalized by `MetaMathlibExt.symmetricValleyDepthSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum).
+Formalized by `MetaMathlibExt.symmetricValleyDepthSum`, a definition declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum).
 
 ## Symmetric peak examples among the compositions of 5
 
@@ -74,7 +74,7 @@ respectively, and the word $1\,3\,1$ has exactly one symmetric peak.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, example after Corollary 1.
 
-Formalized by `MetaMathlibExt.symmetricPeakHeightSum_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-examples).
+Formalized by `MetaMathlibExt.symmetricPeakHeightSum_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-examples).
 
 ## Symmetric valleys in three compositions of eight
 
@@ -86,7 +86,7 @@ valley depth $2$, and the word $3\,2\,3$ has total symmetric valley depth $1$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, example after Corollary 2.
 
-Formalized by `MetaMathlibExt.symmetricValleyDepthSum_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-examples).
+Formalized by `MetaMathlibExt.symmetricValleyDepthSum_examples`, a theorem declared in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 109](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L109). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-examples).
 
 ## Generating function of the total symmetric peak height over compositions
 
@@ -104,7 +104,7 @@ that is, $\sum_{n \ge 0} \mathrm{hsp}(n)\, x^n = x^4 / ((1 - 2x)^2 (1 - x^3))$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Lemma 1, (5).
 
-Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-g).
+Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-g).
 
 ## Bivariate generating function of the total symmetric peak height over compositions
 
@@ -123,7 +123,7 @@ that is, $\sum_{n, k \ge 0} \mathrm{hsp}(n, k)\, x^n y^k = y^3 x^4 / ((1 - x^3)(
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_bivariate_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-b).
+Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_bivariate_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-b).
 
 ## Generating function for the total depth of symmetric valleys over compositions
 
@@ -141,7 +141,7 @@ $(x^5 - 2x^6 + x^7)/((1-2x)^2(1-x^3)(1-x^2)^2)$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Lemma 2, (11).
 
-Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions).
+Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions).
 
 ## Closed form for the total symmetric peak height over compositions
 
@@ -160,7 +160,7 @@ $$
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Corollary 1, (6).
 
-Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-c).
+Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-c).
 
 ## Closed form for the total depth of symmetric valleys over compositions
 
@@ -177,7 +177,7 @@ $$\operatorname{dsv}(n) = \frac{(-6n+7)(-1)^n}{108} + \frac{2^n(21n-79)}{1323} +
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Corollary 2, (12).
 
-Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions-2).
+Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_closed_form` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions-2).
 
 ## Total symmetric peak height over compositions with a fixed number of parts
 
@@ -198,7 +198,7 @@ where an empty sum is $0$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 2(a).
 
-Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_length` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-l).
+Stated but not proved: `MetaMathlibExt.symmetricPeakHeightSum_compositions_length` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-height-sum-compositions-l).
 
 ## Total depth of symmetric valleys over compositions with $k > 3$ parts
 
@@ -215,7 +215,7 @@ where a difference of natural numbers that would be negative is read as $0$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 4(a).
 
-Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_length` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions-3).
+Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_length` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions-3).
 
 ## Total depth of symmetric valleys over compositions with three parts
 
@@ -229,7 +229,7 @@ $d_m = 0$ otherwise.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 4(b).
 
-Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_length_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions-4).
+Stated but not proved: `MetaMathlibExt.symmetricValleyDepthSum_compositions_length_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 212](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L212). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-depth-sum-compositions-4).
 
 ## Expected symmetric peaks and valleys in geometric words
 
@@ -246,7 +246,7 @@ of its symmetric valleys is $q \left(\frac{p}{1 - q^3} - \frac{1}{(1 + q)^2}\rig
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.integral_symmetricPeakValley_geometric` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#integral-symmetric-peak-valley-geometric).
+Stated but not proved: `MetaMathlibExt.integral_symmetricPeakValley_geometric` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#integral-symmetric-peak-valley-geometric).
 
 ## Trivariate generating function for symmetric peaks in compositions
 
@@ -271,7 +271,7 @@ over $a$ is restricted to $1 \le a \le n$ (the terms with $a > n$ do not contrib
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.symmetricPeak_compositions_trivariate_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-compositions-trivariate-g).
+Stated but not proved: `MetaMathlibExt.symmetricPeak_compositions_trivariate_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-peak-compositions-trivariate-g).
 
 ## Trivariate generating function for symmetric valleys in compositions
 
@@ -302,7 +302,7 @@ specialization $d = 1$, $(x^{a-1} - 1)(p - 1)/(x - 1)$.
 
 - Walaa Asakly and Noor Kezil, *The Heights of Symmetric Peaks and the Depths of Symmetric Valleys over Compositions of an Integer*, INTEGERS 26 (2026), Article A65, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.symmetricValley_compositions_trivariate_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-compositions-trivariate).
+Stated but not proved: `MetaMathlibExt.symmetricValley_compositions_trivariate_genFun` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/SymmetricPeaksCompositionsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html#symmetric-valley-compositions-trivariate).
 
 ## Depends on
 
@@ -311,4 +311,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Symmetric peaks and valleys in compositions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-compositions/symmetric-peaks-and-valleys-in-compositions)

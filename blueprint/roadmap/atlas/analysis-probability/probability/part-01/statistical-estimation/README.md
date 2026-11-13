@@ -1,6 +1,6 @@
 # Statistical estimation
 
-79 results of ATLAS's vault, 78 proved and 1 stated but not proved, in this branch's topics.
+78 results of ATLAS's vault, 77 proved and 1 stated but not proved, in this branch's topics.
 
 Point estimation theory: bias, risk and mean squared error, likelihood and maximum likelihood (consistency and asymptotic normality), Fisher information and Cramér–Rao, sufficiency, factorization (Fisher–Neyman, Halmos–Savage) and Rao–Blackwell, Stein's lemma and James–Stein shrinkage, and contiguity and local asymptotic normality.
 

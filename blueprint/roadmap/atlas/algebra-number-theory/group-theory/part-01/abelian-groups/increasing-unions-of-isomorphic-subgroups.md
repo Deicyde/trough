@@ -7,7 +7,7 @@ statement: formalized
 
 # Increasing unions of isomorphic subgroups
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups/index.html).
 
 ## Claim of Scottish Book Problem 62
 
@@ -18,7 +18,7 @@ each of which is isomorphic to $H_1$, the group $G$ is itself isomorphic to $H_1
 The problem is posed for groups; the claim here is restricted to abelian groups, which loses
 nothing for its refutation since Baer's counterexample is abelian.
 
-Formalized by `MathlibExt.GroupTheory.ScottishBook62Wanted.ScottishBookProblem62Claim`, a definition declared in [WantedExt/GroupTheory/ScottishBook62Wanted.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ScottishBook62Wanted.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups/index.html#scottish-book-problem62-claim).
+Formalized by `MathlibExt.GroupTheory.ScottishBook62Wanted.ScottishBookProblem62Claim`, a definition declared in [WantedExt/GroupTheory/ScottishBook62Wanted.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ScottishBook62Wanted.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups/index.html#scottish-book-problem62-claim).
 
 ## Refutation of Scottish Book Problem 62
 
@@ -34,7 +34,7 @@ isomorphic to $\mathbb{Z}$.
 
 - S. Mazur and S. Ulam, Problem 62 of the Scottish Book; the typescript Ad 62 records R. Baer's remark giving the counterexample, with `G` the group of rational numbers and `G 1` the integers: the rationals are the union of an increasing chain of subgroups each isomorphic to the integers (for example the subgroups `(1 / n !) ℤ`), but the rationals are not isomorphic to the integers.
 
-Stated but not proved: `MathlibExt.GroupTheory.ScottishBook62Wanted.mazurUlam62_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ScottishBook62Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ScottishBook62Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups/index.html#mazur-ulam62-refuted).
+Stated but not proved: `MathlibExt.GroupTheory.ScottishBook62Wanted.mazurUlam62_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ScottishBook62Wanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ScottishBook62Wanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups/index.html#mazur-ulam62-refuted).
 
 ## Depends on
 
@@ -43,4 +43,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Increasing unions of isomorphic subgroups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/abelian-groups/increasing-unions-of-isomorphic-subgroups)

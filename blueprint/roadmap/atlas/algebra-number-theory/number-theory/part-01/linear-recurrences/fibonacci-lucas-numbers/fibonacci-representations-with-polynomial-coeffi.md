@@ -7,7 +7,7 @@ statement: formalized
 
 # Fibonacci representations with polynomial coefficients
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html).
 
 ## Integer sequences with linear Fibonacci coefficients
 
@@ -24,7 +24,7 @@ $z_3 = w_3 - d$.
 
 - Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.fib_linear_coeff_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-linear-coeff-is-int-iff).
+Stated but not proved: `MetaMathlibExt.fib_linear_coeff_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-linear-coeff-is-int-iff).
 
 ## Integer sequences with quadratic Fibonacci coefficients
 
@@ -46,7 +46,7 @@ $z_3 = w_3 - f$, $z_4 = w_4 - 2f$ and $z_5 = w_5 - 3f$.
 
 - Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 2.2.
 
-Stated but not proved: `MetaMathlibExt.fib_quadratic_coeff_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-quadratic-coeff-is-int-iff).
+Stated but not proved: `MetaMathlibExt.fib_quadratic_coeff_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-quadratic-coeff-is-int-iff).
 
 ## Integer sequences with quadratic and linear Fibonacci coefficients
 
@@ -65,7 +65,7 @@ $z_3 = w_3 - e$ and $z_4 = w_4 - 2e$.
 
 - Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 2.3.
 
-Stated but not proved: `MetaMathlibExt.fib_quadratic_linear_coeff_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-quadratic-linear-coeff-is-int-iff).
+Stated but not proved: `MetaMathlibExt.fib_quadratic_linear_coeff_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-quadratic-linear-coeff-is-int-iff).
 
 ## Integer sequences with linear Fibonacci coefficients and an alternating term
 
@@ -87,7 +87,7 @@ These integers are then the initial values of the sequence: $v_i = w_i$ for $0 \
 
 - Kálmán Liptai, László Németh, Tamás Szakács and László Szalay, *On Certain Fibonacci Representations*, Fibonacci Quarterly 62 (2024), no. 4, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.fib_linear_coeff_add_alternating_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-linear-coeff-add-alternating-is-int).
+Stated but not proved: `MetaMathlibExt.fib_linear_coeff_add_alternating_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialCoefficientsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html#fib-linear-coeff-add-alternating-is-int).
 
 ## Depends on
 
@@ -96,4 +96,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fibonacci representations with polynomial coefficients](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-lucas-numbers/fibonacci-representations-with-polynomial-coeffi)

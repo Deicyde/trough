@@ -7,7 +7,7 @@ statement: formalized
 
 # Arithmetical structures on graphs
 
-44 results, 24 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html).
+44 results, 24 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html).
 
 ## Arithmetical structure
 
@@ -24,7 +24,7 @@ structure exists on a graph with a vertex of infinite degree.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.1 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.IsArithmeticalStructure`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-arithmetical-structure).
+Formalized by `MetaMathlibExt.IsArithmeticalStructure`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-arithmetical-structure).
 
 ## The all-ones structure on a single edge
 
@@ -35,7 +35,7 @@ the labelings $d = (1, 1)$ and $r = (1, 1)$ form an arithmetical structure.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.1 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.isArithmeticalStructure_top_fin_two`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-arithmetical-structure-top-fin-two).
+Formalized by `MetaMathlibExt.isArithmeticalStructure_top_fin_two`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-arithmetical-structure-top-fin-two).
 
 ## Coconut tree
 
@@ -49,7 +49,7 @@ vertices.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.2 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutTree`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree).
+Formalized by `MetaMathlibExt.coconutTree`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree).
 
 ## Adjacent path vertices of a coconut tree
 
@@ -61,7 +61,7 @@ $|a - b| = 1$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.2 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutTree_adj_inl_inl`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree-adj-inl-inl).
+Formalized by `MetaMathlibExt.coconutTree_adj_inl_inl`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree-adj-inl-inl).
 
 ## Adjacency of leaves and path vertices in a coconut tree
 
@@ -73,7 +73,7 @@ is adjacent to a path vertex $v_k$ if and only if $k = p$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.2 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutTree_adj_inl_inr`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree-adj-inl-inr).
+Formalized by `MetaMathlibExt.coconutTree_adj_inl_inr`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree-adj-inl-inr).
 
 ## Leaves of a coconut tree are pairwise nonadjacent
 
@@ -84,7 +84,7 @@ is adjacent to a leaf.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.2 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutTree_not_adj_inr_inr`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree-not-adj-inr-inr).
+Formalized by `MetaMathlibExt.coconutTree_not_adj_inr_inr`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tree-not-adj-inr-inr).
 
 ## Smooth arithmetical structure on a coconut tree
 
@@ -97,7 +97,7 @@ and $d(\ell_j) \ge 2$ for $1 \le j \le s$; there is no condition on $d(v_p)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.3 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.IsSmoothCoconut`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-smooth-coconut).
+Formalized by `MetaMathlibExt.IsSmoothCoconut`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-smooth-coconut).
 
 ## Leaves of a smooth coconut structure have label at least 2
 
@@ -109,7 +109,7 @@ leaf $\ell_j$, $1 \le j \le s$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 2.3 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.IsSmoothCoconut.two_le_leaf`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#two-le-leaf).
+Formalized by `MetaMathlibExt.IsSmoothCoconut.two_le_leaf`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#two-le-leaf).
 
 ## Ballot numbers
 
@@ -122,7 +122,7 @@ $B(n, k) = 0$ for $k > n + 1$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Section 1.
 
-Formalized by `MetaMathlibExt.ballotNumber`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ballot-number).
+Formalized by `MetaMathlibExt.ballotNumber`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ballot-number).
 
 ## Ballot numbers with second index zero
 
@@ -133,7 +133,7 @@ $B(n, 0)$ equals $1$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Section 1.
 
-Formalized by `MetaMathlibExt.ballotNumber_zero_right`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ballot-number-zero-right).
+Formalized by `MetaMathlibExt.ballotNumber_zero_right`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ballot-number-zero-right).
 
 ## Diagonal ballot numbers are Catalan numbers
 
@@ -144,7 +144,7 @@ number $B(n, n)$ equals the $n$-th Catalan number $C_n$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Section 1.
 
-Formalized by `MetaMathlibExt.ballotNumber_self`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ballot-number-self).
+Formalized by `MetaMathlibExt.ballotNumber_self`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ballot-number-self).
 
 ## Terms of the coconut tree count
 
@@ -161,7 +161,7 @@ $(d, r)$ on the coconut tree $CT(m, y)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Theorem 1.
 
-Formalized by `MetaMathlibExt.coconutCountTerm`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-count-term).
+Formalized by `MetaMathlibExt.coconutCountTerm`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-count-term).
 
 ## The coconut count term with second argument zero
 
@@ -173,7 +173,7 @@ when $x = 0$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Theorem 1.
 
-Formalized by `MetaMathlibExt.coconutCountTerm_zero`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-count-term-zero).
+Formalized by `MetaMathlibExt.coconutCountTerm_zero`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-count-term-zero).
 
 ## Euclidean chain function
 
@@ -190,7 +190,7 @@ although the chains $0, 0$ and $0, 1, 0$ have $0$ and $1$ positive terms.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 4.12 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.euclideanChainLength`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length).
+Formalized by `MetaMathlibExt.euclideanChainLength`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length).
 
 ## Euclidean chain function with second argument zero
 
@@ -204,7 +204,7 @@ terms.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 4.12 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.euclideanChainLength_zero`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-zero).
+Formalized by `MetaMathlibExt.euclideanChainLength_zero`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-zero).
 
 ## Recursion for the Euclidean chain function
 
@@ -216,7 +216,7 @@ $(-x) \bmod y$ is the least nonnegative residue of $-x$ modulo $y$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 4.12 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.euclideanChainLength_of_ne_zero`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-of-ne-zero).
+Formalized by `MetaMathlibExt.euclideanChainLength_of_ne_zero`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-of-ne-zero).
 
 ## Euclidean chain function of 13 and 60
 
@@ -227,7 +227,7 @@ $F(13, 60) = 8$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Example 4.13 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.euclideanChainLength_thirteen_sixty`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-thirteen-sixty).
+Formalized by `MetaMathlibExt.euclideanChainLength_thirteen_sixty`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 217](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L217). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-thirteen-sixty).
 
 ## Monotonicity criteria for arithmetical structures on coconut trees
 
@@ -241,7 +241,7 @@ $r_1 < r_2 < \cdots < r_p$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconut_tfae` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tfae).
+Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconut_tfae` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-tfae).
 
 ## Characterization of smooth coconut structures
 
@@ -254,7 +254,7 @@ $r(\ell_j) < r(v_p)$ for every $j$ and $r(v_1) < r(v_2) < \dots < r(v_p)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.isSmoothCoconut_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-smooth-coconut-iff).
+Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.isSmoothCoconut_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#is-smooth-coconut-iff).
 
 ## The leaf labels of a smooth arithmetical structure on a coconut tree are coprime
 
@@ -267,7 +267,7 @@ $j = 1, \dots, s$, then $g = 1$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.eq_one_of_dvd_leaves` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#eq-one-of-dvd-leaves).
+Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.eq_one_of_dvd_leaves` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#eq-one-of-dvd-leaves).
 
 ## Arithmetical structures on a one-leaf coconut tree with a non-smoothable leaf
 
@@ -281,7 +281,7 @@ denotes the $n$-th Catalan number.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_one_leaf_ne_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre).
+Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_one_leaf_ne_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 265](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L265). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre).
 
 ## Number of arithmetical structures on coconut trees
 
@@ -296,7 +296,7 @@ where $A(x, y)$ is the coconut count term.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-2).
+Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-2).
 
 ## Number of arithmetical structures on coconut trees with two leaves
 
@@ -312,7 +312,7 @@ of smooth arithmetical structures on $CT(q, 2)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-3).
+Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-3).
 
 ## Number of arithmetical structures on stars
 
@@ -327,7 +327,7 @@ where $N(t)$ is the number of smooth arithmetical structures on the star $CT(1, 
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_star` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-4).
+Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_star` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-4).
 
 ## Euclidean chain function under adding multiples
 
@@ -341,7 +341,7 @@ The source quotes this result from Archer et al.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.euclideanChainLength_add_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-add-mul).
+Stated but not proved: `MetaMathlibExt.euclideanChainLength_add_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-add-mul).
 
 ## Euclidean chain function when the first argument divides the second
 
@@ -352,7 +352,7 @@ $x, y \ge 1$ with $x \mid y$, the Euclidean chain function $F$ satisfies $F(x, y
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.euclideanChainLength_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-of-dvd).
+Stated but not proved: `MetaMathlibExt.euclideanChainLength_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-of-dvd).
 
 ## Euclidean chain function at one
 
@@ -364,7 +364,7 @@ $F(x, 1) = 2$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.euclideanChainLength_one_left_and_one_right` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-one-left-and-one).
+Stated but not proved: `MetaMathlibExt.euclideanChainLength_one_left_and_one_right` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#euclidean-chain-length-one-left-and-one).
 
 ## Smooth coconut structures with prescribed labels
 
@@ -381,7 +381,7 @@ $r(\ell_i) = r'(\ell_i) = a_i$ for every $i$ and $r(v_p) = r'(v_p) = c$ are equa
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.existsUnique_isSmoothCoconut` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#exists-unique-is-smooth-coconut).
+Stated but not proved: `MetaMathlibExt.existsUnique_isSmoothCoconut` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#exists-unique-is-smooth-coconut).
 
 ## Path length of a smooth arithmetical structure on a coconut tree
 
@@ -398,7 +398,7 @@ its own labels $a_j = r(v_{\ell_j})$ and $c = r(v_p)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.eq_euclideanChainLength_sub_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#eq-euclidean-chain-length-sub-one).
+Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.eq_euclideanChainLength_sub_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#eq-euclidean-chain-length-sub-one).
 
 ## Smooth coconut structures with central label above one
 
@@ -411,7 +411,7 @@ $r_{v_p} < \sum_{j=1}^{s} r_{\ell_j}$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.one_lt_center_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#one-lt-center-iff).
+Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.one_lt_center_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#one-lt-center-iff).
 
 ## Smooth structures on coconut trees with two leaves
 
@@ -424,7 +424,7 @@ $d(v_p) \le 1$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.center_le_one_of_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#center-le-one-of-two).
+Stated but not proved: `MetaMathlibExt.IsSmoothCoconut.center_le_one_of_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#center-le-one-of-two).
 
 ## Smoothing at a path vertex of a coconut tree
 
@@ -445,7 +445,7 @@ Definition 3.4.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definitions 3.1 and 3.4 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutSmoothPath`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-path).
+Formalized by `MetaMathlibExt.coconutSmoothPath`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-path).
 
 ## Smoothing at a leaf of a coconut tree
 
@@ -462,7 +462,7 @@ when $p \ge 1$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 3.4 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutSmoothLeaf`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-leaf).
+Formalized by `MetaMathlibExt.coconutSmoothLeaf`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-leaf).
 
 ## Subdivision at a path vertex of a coconut tree
 
@@ -480,7 +480,7 @@ its value of $r$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 3.9 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutSubdivide`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-subdivide).
+Formalized by `MetaMathlibExt.coconutSubdivide`, a definition declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 428](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L428). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-subdivide).
 
 ## Example of smoothing a coconut tree at a path vertex
 
@@ -494,7 +494,7 @@ $r' = (1, 2, 3, 4 \mid 2, 2, 1)$ of $CT(4, 3)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Example 3.2 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutSmoothPath_example`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-path-example).
+Formalized by `MetaMathlibExt.coconutSmoothPath_example`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 453](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L453). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-path-example).
 
 ## An example of smoothing at a path vertex and at a leaf
 
@@ -508,7 +508,7 @@ and $r' = (2, 4, 6 \mid 3, 3, 2)$ on $CT(3, 3)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Example 3.5 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutSmoothLeaf_example`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-leaf-example).
+Formalized by `MetaMathlibExt.coconutSmoothLeaf_example`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 467](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L467). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-leaf-example).
 
 ## Example of subdividing a coconut tree
 
@@ -523,7 +523,7 @@ smoothing at $v_2$ is $(d, r)$, so here subdivision undoes that smoothing.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 3.9 and Example 3.2 (arXiv numbering).
 
-Formalized by `MetaMathlibExt.coconutSubdivide_example`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-subdivide-example).
+Formalized by `MetaMathlibExt.coconutSubdivide_example`, a theorem declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 480](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L480). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-subdivide-example).
 
 ## Ancestors of labelings of coconut trees
 
@@ -537,7 +537,7 @@ $d$-label equals $1$: either at a path vertex other than the central vertex, or 
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Definition 3.7 (ancestors and descendants; arXiv numbering).
 
-Formalized by `MetaMathlibExt.CoconutAncestor`, an inductive type declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-ancestor).
+Formalized by `MetaMathlibExt.CoconutAncestor`, an inductive type declared in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-ancestor).
 
 ## Path smoothing preserves arithmetical structures on coconut trees
 
@@ -551,7 +551,7 @@ structure on $CT(p, s)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 3.3 and Proposition 3.6 for `i = 1`.
 
-Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconutSmoothPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-path-2).
+Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconutSmoothPath` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-path-2).
 
 ## Smoothing a leaf preserves arithmetical structures
 
@@ -568,7 +568,7 @@ structure.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 3.6.
 
-Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconutSmoothLeaf` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-leaf-2).
+Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconutSmoothLeaf` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 527](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L527). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-smooth-leaf-2).
 
 ## Subdivision preserves arithmetical structures on coconut trees
 
@@ -581,7 +581,7 @@ just before $v_k$) gives an arithmetical structure on $CT(p + 1, s)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 3.11.
 
-Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconutSubdivide` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-subdivide-2).
+Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.coconutSubdivide` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 539](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L539). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#coconut-subdivide-2).
 
 ## Unique smooth ancestor
 
@@ -597,7 +597,7 @@ the leaves).
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Lemma 3.8.
 
-Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.existsUnique_smooth_coconutAncestor` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#exists-unique-smooth-coconut-ancestor).
+Stated but not proved: `MetaMathlibExt.IsArithmeticalStructure.existsUnique_smooth_coconutAncestor` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 551](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L551). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#exists-unique-smooth-coconut-ancestor).
 
 ## Number of descendants of a smooth coconut structure
 
@@ -610,7 +610,7 @@ $(d, r)$, where $B(n, k)$ is the ballot number.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Proposition 4.5.
 
-Stated but not proved: `MetaMathlibExt.ncard_coconutDescendants` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 564](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L564). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-coconut-descendants).
+Stated but not proved: `MetaMathlibExt.ncard_coconutDescendants` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 564](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L564). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-coconut-descendants).
 
 ## Counting coconut structures whose leaves cannot be smoothed
 
@@ -627,7 +627,7 @@ $CT(i, s)$.
 
 - Diaz-Lopez, Ha, Harris, Rogers, Koss and Smith, *Arithmetical Structures on Coconut Trees*, INTEGERS 25 (2025), Article A82, Corollary 4.6.
 
-Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_leaves_ge_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-5).
+Stated but not proved: `MetaMathlibExt.ncard_arithmeticalStructure_coconutTree_leaves_ge_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean, line 578](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ArithmeticalStructureCoconutTreeWanted.lean#L578). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html#ncard-arithmetical-structure-coconut-tre-5).
 
 ## Depends on
 
@@ -636,4 +636,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetical structures on graphs](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/algebraic-graph-theory/part-01/arithmetical-structures-on-graphs)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Moser's worm problem
 
-76 results, 56 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html).
+76 results, 56 proved and 20 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html).
 
 ## Parameter interval of unit arcs
 
@@ -18,7 +18,7 @@ $[0, 1]$ of real numbers.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.ArcParameter`, an abbreviation declared in [MathlibExt/Geometry/MoserWormCover.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#arc-parameter).
+Formalized by `MoserConvexWormCoverConstant.ArcParameter`, an abbreviation declared in [MathlibExt/Geometry/MoserWormCover.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#arc-parameter).
 
 ## Unit arc
 
@@ -29,7 +29,7 @@ the complex plane whose length, the total variation of $\gamma$ on $[0, 1]$, equ
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.UnitArc`, a structure declared in [MathlibExt/Geometry/MoserWormCover.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#unit-arc).
+Formalized by `MoserConvexWormCoverConstant.UnitArc`, a structure declared in [MathlibExt/Geometry/MoserWormCover.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#unit-arc).
 
 ## Direct rigid motion of the plane
 
@@ -42,7 +42,7 @@ $\tau$, with neither reflection nor rescaling.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.move`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#move).
+Formalized by `MoserConvexWormCoverConstant.move`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#move).
 
 ## Direct rigid motions of the plane are isometries
 
@@ -54,7 +54,7 @@ isometry: it preserves the distance $|z - w|$ between any two points $z, w \in \
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.move_isometry`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#move-isometry).
+Formalized by `MoserConvexWormCoverConstant.move_isometry`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#move-isometry).
 
 ## Straight path
 
@@ -66,7 +66,7 @@ the segment from $0$ to $1$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.straightPath`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#straight-path).
+Formalized by `MoserConvexWormCoverConstant.straightPath`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#straight-path).
 
 ## The identity on the unit interval has total variation one
 
@@ -77,7 +77,7 @@ inclusion $[0, 1] \to \mathbb{R}$, $t \mapsto t$, over the whole interval $[0, 1
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.parameter_variation`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#parameter-variation).
+Formalized by `MoserConvexWormCoverConstant.parameter_variation`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#parameter-variation).
 
 ## The straight segment has length one
 
@@ -89,7 +89,7 @@ $1$ over $[0, 1]$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.straightPath_length`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#straight-path-length).
+Formalized by `MoserConvexWormCoverConstant.straightPath_length`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#straight-path-length).
 
 ## Straight unit arc
 
@@ -101,7 +101,7 @@ and has length $1$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.straightUnitArc`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#straight-unit-arc).
+Formalized by `MoserConvexWormCoverConstant.straightUnitArc`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#straight-unit-arc).
 
 ## Sets that cover every unit arc
 
@@ -117,7 +117,7 @@ Only rotations followed by translations are allowed; reflections and rescalings 
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.CoversEveryUnitArc`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#covers-every-unit-arc).
+Formalized by `MoserConvexWormCoverConstant.CoversEveryUnitArc`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#covers-every-unit-arc).
 
 ## Sets covering every unit arc are nonempty
 
@@ -129,7 +129,7 @@ $[0, 1] \to \mathbb{C}$ of length exactly one, then $\Omega$ is nonempty.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.CoversEveryUnitArc.nonempty`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonempty).
+Formalized by `MoserConvexWormCoverConstant.CoversEveryUnitArc.nonempty`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonempty).
 
 ## The empty set does not cover every unit arc
 
@@ -142,7 +142,7 @@ rotation followed by a translation.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.empty_not_covers`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#empty-not-covers).
+Formalized by `MoserConvexWormCoverConstant.empty_not_covers`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#empty-not-covers).
 
 ## Convex universal covers
 
@@ -156,7 +156,7 @@ $e^{i\theta} \gamma(t) + \tau \in \Omega$ for all $t \in [0, 1]$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.IsConvexUniversalCover`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#is-convex-universal-cover).
+Formalized by `MoserConvexWormCoverConstant.IsConvexUniversalCover`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#is-convex-universal-cover).
 
 ## Universal covers
 
@@ -170,7 +170,7 @@ measurability of $\Omega$ is required.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.IsUniversalCover`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#is-universal-cover).
+Formalized by `MoserConvexWormCoverConstant.IsUniversalCover`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#is-universal-cover).
 
 ## Convex universal covers are null-measurable
 
@@ -182,7 +182,7 @@ on $\mathbb{C}$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.IsConvexUniversalCover.nullMeasurableSet`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#null-measurable-set).
+Formalized by `MoserConvexWormCoverConstant.IsConvexUniversalCover.nullMeasurableSet`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#null-measurable-set).
 
 ## Convex universal covers are universal covers
 
@@ -193,7 +193,7 @@ $\Omega \subseteq \mathbb{C}$ is a universal cover.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.IsConvexUniversalCover.isUniversalCover`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#is-universal-cover-2).
+Formalized by `MoserConvexWormCoverConstant.IsConvexUniversalCover.isUniversalCover`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#is-universal-cover-2).
 
 ## Areas of convex universal covers
 
@@ -206,7 +206,7 @@ $\mathbb{C} \cong \mathbb{R}^2$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.convexCoverAreas`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-areas).
+Formalized by `MoserConvexWormCoverConstant.convexCoverAreas`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-areas).
 
 ## Areas of universal covers
 
@@ -219,7 +219,7 @@ measurable.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.coverAreas`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-areas).
+Formalized by `MoserConvexWormCoverConstant.coverAreas`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-areas).
 
 ## Infimal area of convex universal covers
 
@@ -231,7 +231,7 @@ convex universal covers $\Omega \subseteq \mathbb{C}$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.convexCoverAreaInfimum`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-area-infimum).
+Formalized by `MoserConvexWormCoverConstant.convexCoverAreaInfimum`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-area-infimum).
 
 ## Infimal area of a universal cover
 
@@ -244,7 +244,7 @@ need not be measurable.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.coverAreaInfimum`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-area-infimum).
+Formalized by `MoserConvexWormCoverConstant.coverAreaInfimum`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-area-infimum).
 
 ## The closed unit disk covers every unit arc
 
@@ -257,7 +257,7 @@ $t \in [0, 1]$; that is, the closed disk of radius $1$ centred at $0$ covers eve
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.closedBall_one_covers`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#closed-ball-one-covers).
+Formalized by `MoserConvexWormCoverConstant.closedBall_one_covers`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 186](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L186). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#closed-ball-one-covers).
 
 ## The closed unit disk is a convex universal cover
 
@@ -269,7 +269,7 @@ every unit arc.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.closedBall_one_isConvexUniversalCover`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#closed-ball-one-is-convex-universal-cove).
+Formalized by `MoserConvexWormCoverConstant.closedBall_one_isConvexUniversalCover`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#closed-ball-one-is-convex-universal-cove).
 
 ## The set of convex cover areas is nonempty
 
@@ -281,7 +281,7 @@ cover exists.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.convexCoverAreas_nonempty`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-areas-nonempty).
+Formalized by `MoserConvexWormCoverConstant.convexCoverAreas_nonempty`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-areas-nonempty).
 
 ## The set of universal cover areas is nonempty
 
@@ -293,7 +293,7 @@ covers and $\lambda$ is Lebesgue outer measure on $\mathbb{C} \cong \mathbb{R}^2
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.coverAreas_nonempty`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-areas-nonempty).
+Formalized by `MoserConvexWormCoverConstant.coverAreas_nonempty`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-areas-nonempty).
 
 ## The infimal area of convex universal covers is finite
 
@@ -305,7 +305,7 @@ not $\infty$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.convexCoverAreaInfimum_ne_top`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-area-infimum-ne-top).
+Formalized by `MoserConvexWormCoverConstant.convexCoverAreaInfimum_ne_top`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-cover-area-infimum-ne-top).
 
 ## The infimal area of universal covers is finite
 
@@ -317,7 +317,7 @@ cover every unit arc, not necessarily convex), is not $\infty$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.coverAreaInfimum_ne_top`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-area-infimum-ne-top).
+Formalized by `MoserConvexWormCoverConstant.coverAreaInfimum_ne_top`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#cover-area-infimum-ne-top).
 
 ## Moser's convex worm cover constant
 
@@ -332,7 +332,7 @@ That infimum is finite, so the constant equals the infimal area itself.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.convexWormCoverConstant`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-worm-cover-constant).
+Formalized by `MoserConvexWormCoverConstant.convexWormCoverConstant`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-worm-cover-constant).
 
 ## Nonconvex worm cover constant
 
@@ -346,7 +346,7 @@ real number. The conversion would send $\infty$ to $0$, but this infimum is fini
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexWormCoverConstant`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-worm-cover-constant).
+Formalized by `MoserConvexWormCoverConstant.nonconvexWormCoverConstant`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-worm-cover-constant).
 
 ## The convex worm cover constant is nonnegative
 
@@ -357,7 +357,7 @@ least $0$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.convexWormCoverConstant_nonneg`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-worm-cover-constant-nonneg).
+Formalized by `MoserConvexWormCoverConstant.convexWormCoverConstant_nonneg`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#convex-worm-cover-constant-nonneg).
 
 ## Nonnegativity of the nonconvex worm cover constant
 
@@ -368,7 +368,7 @@ is greater than or equal to $0$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexWormCoverConstant_nonneg`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-worm-cover-constant-nonneg).
+Formalized by `MoserConvexWormCoverConstant.nonconvexWormCoverConstant_nonneg`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 254](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L254). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-worm-cover-constant-nonneg).
 
 ## The nonconvex worm cover constant is at most the convex one
 
@@ -380,7 +380,7 @@ worm cover constant (the infimal area of convex universal covers of unit arcs).
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvex_le_convex`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-le-convex).
+Formalized by `MoserConvexWormCoverConstant.nonconvex_le_convex`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 260](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L260). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-le-convex).
 
 ## Disk of radius one half
 
@@ -391,7 +391,7 @@ radius $1/2$ centred at $0$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.halfDisk`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-disk).
+Formalized by `MoserConvexWormCoverConstant.halfDisk`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 269](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L269). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-disk).
 
 ## Semidisk of radius one half
 
@@ -402,7 +402,7 @@ $\{z \in \mathbb{C} : |z| \le 1/2,\ \operatorname{Im} z \ge 0\}$ of radius $1/2$
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.halfSemidisk`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-semidisk).
+Formalized by `MoserConvexWormCoverConstant.halfSemidisk`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-semidisk).
 
 ## Wetzel's sector
 
@@ -415,7 +415,7 @@ $|\operatorname{Im} z| \le \tan(\pi/12) \operatorname{Re} z$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.wetzelSector`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#wetzel-sector).
+Formalized by `MoserConvexWormCoverConstant.wetzelSector`, a definition declared in [MathlibExt/Geometry/MoserWormCover.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#wetzel-sector).
 
 ## Covers give upper bounds on the nonconvex worm cover constant
 
@@ -427,7 +427,7 @@ Lebesgue outer measure is at most $r$, then the nonconvex worm cover constant is
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBound_of_cover`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Geometry/MoserWormCover.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-of-cover).
+Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBound_of_cover`, a theorem declared in [MathlibExt/Geometry/MoserWormCover.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/MoserWormCover.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-of-cover).
 
 ## Proposition: the convex worm cover constant is at most π/4
 
@@ -441,7 +441,7 @@ a translation. This proposition states that the convex worm cover constant is at
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundPiOverFour`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-four).
+Formalized by `MoserConvexWormCoverConstant.upperBoundPiOverFour`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-four).
 
 ## Proposition: the convex worm cover constant is at most π/8
 
@@ -455,7 +455,7 @@ a translation. This proposition states that the convex worm cover constant is at
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundPiOverEight`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-eight).
+Formalized by `MoserConvexWormCoverConstant.upperBoundPiOverEight`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-eight).
 
 ## Proposition: the convex worm cover constant is at most 0.34501
 
@@ -469,7 +469,7 @@ a translation. This proposition states that the convex worm cover constant is at
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundWetzel1973`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wetzel1973).
+Formalized by `MoserConvexWormCoverConstant.upperBoundWetzel1973`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wetzel1973).
 
 ## Statement of Gerriets' upper bound $0.3214$ for convex worm covers
 
@@ -481,7 +481,7 @@ rotated and translated copy of every planar curve of length $1$, is at most $0.3
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundGerriets1972`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets1972).
+Formalized by `MoserConvexWormCoverConstant.upperBoundGerriets1972`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets1972).
 
 ## Statement of the Gerriets–Poole upper bound $0.2861$ for convex worm covers
 
@@ -494,7 +494,7 @@ $0.2861$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundGerrietsPoole1974`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets-poole1974).
+Formalized by `MoserConvexWormCoverConstant.upperBoundGerrietsPoole1974`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets-poole1974).
 
 ## Statement of the Norwood–Poole–Laidacker upper bound $0.27524$ for convex worm covers
 
@@ -507,7 +507,7 @@ $0.27524$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundNorwoodPooleLaidacker1992`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-norwood-poole-laidacker1992).
+Formalized by `MoserConvexWormCoverConstant.upperBoundNorwoodPooleLaidacker1992`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-norwood-poole-laidacker1992).
 
 ## Proposition: the convex worm cover constant is at most 0.270911861
 
@@ -522,7 +522,7 @@ $0.270911861$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundWang2006`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wang2006).
+Formalized by `MoserConvexWormCoverConstant.upperBoundWang2006`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wang2006).
 
 ## Proposition: the convex worm cover constant is at most π/12
 
@@ -536,7 +536,7 @@ a translation. This proposition states that the convex worm cover constant is at
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.upperBoundPiOverTwelve`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-twelve).
+Formalized by `MoserConvexWormCoverConstant.upperBoundPiOverTwelve`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-twelve).
 
 ## Wetzel's 1973 lower bound for the convex worm cover constant (claim)
 
@@ -550,7 +550,7 @@ followed by a translation.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.lowerBoundWetzel1973`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-wetzel1973).
+Formalized by `MoserConvexWormCoverConstant.lowerBoundWetzel1973`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-wetzel1973).
 
 ## Khandhawit–Sriswasdi 2009 lower bound for the convex worm cover constant (claim)
 
@@ -564,7 +564,7 @@ by a rotation followed by a translation.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.lowerBoundKhandhawitSriswasdi2009`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-sriswasdi2009).
+Formalized by `MoserConvexWormCoverConstant.lowerBoundKhandhawitSriswasdi2009`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-sriswasdi2009).
 
 ## Khandhawit–Pagonakis–Sriswasdi 2013 lower bound on the convex worm cover constant (claim)
 
@@ -577,7 +577,7 @@ by a rotation followed by a translation.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.lowerBoundKhandhawitPagonakisSriswasdi2013`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-pagonakis-sriswas).
+Formalized by `MoserConvexWormCoverConstant.lowerBoundKhandhawitPagonakisSriswasdi2013`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-pagonakis-sriswas).
 
 ## The minimal-convex-cover claim
 
@@ -595,7 +595,7 @@ constant.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.minimalConvexCoverExists`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#minimal-convex-cover-exists).
+Formalized by `MoserConvexWormCoverConstant.minimalConvexCoverExists`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#minimal-convex-cover-exists).
 
 ## The Norwood–Poole cover claim
 
@@ -608,7 +608,7 @@ that some universal cover has area (Lebesgue outer measure) at most $0.260437$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexCoverNorwoodPoole2003`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-norwood-poole2003).
+Formalized by `MoserConvexWormCoverConstant.nonconvexCoverNorwoodPoole2003`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-norwood-poole2003).
 
 ## The Ploymaklam–Wichiramala cover claim
 
@@ -621,7 +621,7 @@ proposition that some universal cover has area (Lebesgue outer measure) at most 
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexCoverPloymaklamWichiramala2018`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-ploymaklam-wichiramala20).
+Formalized by `MoserConvexWormCoverConstant.nonconvexCoverPloymaklamWichiramala2018`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-ploymaklam-wichiramala20).
 
 ## Statement of the Norwood–Poole upper bound $0.260437$ for worm covers
 
@@ -634,7 +634,7 @@ most $0.260437$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundNorwoodPoole2003`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-norwood-poole2003).
+Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundNorwoodPoole2003`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-norwood-poole2003).
 
 ## Statement of the Ploymaklam–Wichiramala upper bound $0.26007$ for worm covers
 
@@ -647,7 +647,7 @@ $1$, is at most $0.26007$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-ploymaklam-wichira).
+Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 120](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L120). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-ploymaklam-wichira).
 
 ## The positivity claim for the nonconvex worm cover constant
 
@@ -662,7 +662,7 @@ proposition that the nonconvex worm cover constant is strictly positive.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexStrictPositivity`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-strict-positivity).
+Formalized by `MoserConvexWormCoverConstant.nonconvexStrictPositivity`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-strict-positivity).
 
 ## The disk of diameter one covers every unit arc (claim)
 
@@ -676,7 +676,7 @@ $e^{i\theta}\gamma(t) + c \in D$ for every $t \in [0, 1]$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.halfDiskCovers`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-disk-covers).
+Formalized by `MoserConvexWormCoverConstant.halfDiskCovers`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-disk-covers).
 
 ## The half-disk of diameter one covers every unit arc (claim)
 
@@ -690,7 +690,7 @@ that $e^{i\theta}\gamma(t) + c \in H$ for every $t \in [0, 1]$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.halfSemidiskCovers`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-semidisk-covers).
+Formalized by `MoserConvexWormCoverConstant.halfSemidiskCovers`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-semidisk-covers).
 
 ## Wetzel's sector covering claim
 
@@ -706,7 +706,7 @@ $e^{i\theta}\gamma(t) + c \in S$ for all $t \in [0,1]$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.wetzelSectorCovers`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#wetzel-sector-covers).
+Formalized by `MoserConvexWormCoverConstant.wetzelSectorCovers`, a definition declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#wetzel-sector-covers).
 
 ## A Norwood–Poole cover bounds the nonconvex worm cover constant
 
@@ -722,7 +722,7 @@ $0.260437$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundNorwoodPoole2003_of_cover`, a theorem declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-norwood-poole2003-2).
+Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundNorwoodPoole2003_of_cover`, a theorem declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-norwood-poole2003-2).
 
 ## Covers of area at most $0.26007$ bound the nonconvex worm cover constant
 
@@ -735,7 +735,7 @@ most $0.26007$.
 
 - Optimization Problems, constant 13a; source-specific interval-arc adaptation.
 
-Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018_of_cover`, a theorem declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-ploymaklam-wichira-2).
+Formalized by `MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018_of_cover`, a theorem declared in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-ploymaklam-wichira-2).
 
 ## The convex worm cover constant is at most π/4
 
@@ -749,7 +749,7 @@ is at most $\pi/4$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundPiOverFour`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundPiOverFour_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-four-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundPiOverFour_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-four-holds).
 
 ## The convex worm cover constant is at most π/8
 
@@ -763,7 +763,7 @@ is at most $\pi/8$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundPiOverEight`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundPiOverEight_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-eight-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundPiOverEight_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-eight-holds).
 
 ## The convex worm cover constant is at most 0.34501
 
@@ -777,7 +777,7 @@ is at most $0.34501$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundWetzel1973`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundWetzel1973_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wetzel1973-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundWetzel1973_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wetzel1973-holds).
 
 ## Gerriets' upper bound for the convex worm cover constant
 
@@ -789,7 +789,7 @@ of every planar curve of length $1$, is at most $0.3214$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundGerriets1972`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundGerriets1972_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets1972-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundGerriets1972_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets1972-holds).
 
 ## Gerriets–Poole upper bound for the convex worm cover constant
 
@@ -801,7 +801,7 @@ of every planar curve of length $1$, is at most $0.2861$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundGerrietsPoole1974`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundGerrietsPoole1974_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets-poole1974-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundGerrietsPoole1974_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-gerriets-poole1974-holds).
 
 ## Norwood–Poole–Laidacker upper bound for the convex worm cover constant
 
@@ -813,7 +813,7 @@ translated copy of every planar curve of length $1$, is at most $0.27524$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundNorwoodPooleLaidacker1992`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundNorwoodPooleLaidacker1992_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-norwood-poole-laidacker1992-2).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundNorwoodPooleLaidacker1992_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-norwood-poole-laidacker1992-2).
 
 ## The convex worm cover constant is at most 0.270911861
 
@@ -827,7 +827,7 @@ is at most $0.270911861$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundWang2006`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundWang2006_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wang2006-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundWang2006_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-wang2006-holds).
 
 ## The convex worm cover constant is at most π/12
 
@@ -841,7 +841,7 @@ is at most $\pi/12$.
 
 - Optimization Problems, constant 13a, closed claim `upperBoundPiOverTwelve`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.upperBoundPiOverTwelve_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-twelve-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.upperBoundPiOverTwelve_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#upper-bound-pi-over-twelve-holds).
 
 ## Wetzel's 1973 lower bound for the convex worm cover constant
 
@@ -855,7 +855,7 @@ $0.2194 \le \mu$.
 
 - Optimization Problems, constant 13a, closed claim `lowerBoundWetzel1973`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.lowerBoundWetzel1973_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-wetzel1973-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.lowerBoundWetzel1973_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-wetzel1973-holds).
 
 ## Khandhawit–Sriswasdi 2009 lower bound for the convex worm cover constant
 
@@ -869,7 +869,7 @@ $0.227498 \le \mu$.
 
 - Optimization Problems, constant 13a, closed claim `lowerBoundKhandhawitSriswasdi2009`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.lowerBoundKhandhawitSriswasdi2009_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-sriswasdi2009-hol).
+Stated but not proved: `MoserConvexWormCoverConstant.lowerBoundKhandhawitSriswasdi2009_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 190](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L190). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-sriswasdi2009-hol).
 
 ## Khandhawit–Pagonakis–Sriswasdi 2013 lower bound on the convex worm cover constant
 
@@ -883,7 +883,7 @@ $0.232239 \le \mu$.
 
 - Optimization Problems, constant 13a, closed claim `lowerBoundKhandhawitPagonakisSriswasdi2013`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.lowerBoundKhandhawitPagonakisSriswasdi2013_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-pagonakis-sriswas-2).
+Stated but not proved: `MoserConvexWormCoverConstant.lowerBoundKhandhawitPagonakisSriswasdi2013_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#lower-bound-khandhawit-pagonakis-sriswas-2).
 
 ## A minimal convex cover for unit arcs exists
 
@@ -898,7 +898,7 @@ convex universal cover has area equal to the convex worm cover constant.
 
 - Optimization Problems, constant 13a, closed claim `minimalConvexCoverExists`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.minimalConvexCoverExists_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#minimal-convex-cover-exists-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.minimalConvexCoverExists_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 199](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L199). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#minimal-convex-cover-exists-holds).
 
 ## Norwood–Poole universal cover for unit arcs
 
@@ -911,7 +911,7 @@ by some rotation followed by a translation.
 
 - Optimization Problems, constant 13a, closed claim `nonconvexCoverNorwoodPoole2003`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.nonconvexCoverNorwoodPoole2003_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-norwood-poole2003-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.nonconvexCoverNorwoodPoole2003_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-norwood-poole2003-holds).
 
 ## Ploymaklam–Wichiramala universal cover for unit arcs
 
@@ -924,7 +924,7 @@ by some rotation followed by a translation.
 
 - Optimization Problems, constant 13a, closed claim `nonconvexCoverPloymaklamWichiramala2018`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.nonconvexCoverPloymaklamWichiramala2018_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-ploymaklam-wichiramala20-2).
+Stated but not proved: `MoserConvexWormCoverConstant.nonconvexCoverPloymaklamWichiramala2018_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-cover-ploymaklam-wichiramala20-2).
 
 ## Norwood–Poole upper bound for the nonconvex worm cover constant
 
@@ -939,7 +939,7 @@ nonconvex worm cover constant is at most $0.260437$.
 
 - Optimization Problems, constant 13a, closed claim `nonconvexUpperBoundNorwoodPoole2003`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.nonconvexUpperBoundNorwoodPoole2003_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-norwood-poole2003-3).
+Stated but not proved: `MoserConvexWormCoverConstant.nonconvexUpperBoundNorwoodPoole2003_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-norwood-poole2003-3).
 
 ## Ploymaklam–Wichiramala upper bound for the nonconvex worm cover constant
 
@@ -951,7 +951,7 @@ a rotated and translated copy of every planar curve of length $1$, is at most $0
 
 - Optimization Problems, constant 13a, closed claim `nonconvexUpperBoundPloymaklamWichiramala2018`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-ploymaklam-wichira-3).
+Stated but not proved: `MoserConvexWormCoverConstant.nonconvexUpperBoundPloymaklamWichiramala2018_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-upper-bound-ploymaklam-wichira-3).
 
 ## The nonconvex worm cover constant is positive
 
@@ -966,7 +966,7 @@ nonconvex worm cover constant is strictly positive.
 
 - Optimization Problems, constant 13a, closed claim `nonconvexStrictPositivity`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.nonconvexStrictPositivity_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-strict-positivity-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.nonconvexStrictPositivity_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#nonconvex-strict-positivity-holds).
 
 ## The disk of diameter one covers every unit arc
 
@@ -979,7 +979,7 @@ $t \in [0, 1]$.
 
 - Optimization Problems, constant 13a, closed claim `halfDiskCovers`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.halfDiskCovers_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-disk-covers-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.halfDiskCovers_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-disk-covers-holds).
 
 ## The half-disk of diameter one covers every unit arc
 
@@ -993,7 +993,7 @@ $t \in [0, 1]$.
 
 - Optimization Problems, constant 13a, closed claim `halfSemidiskCovers`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.halfSemidiskCovers_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-semidisk-covers-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.halfSemidiskCovers_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#half-semidisk-covers-holds).
 
 ## Wetzel's sector covers every unit arc
 
@@ -1009,7 +1009,7 @@ for all $t \in [0,1]$.
 
 - Optimization Problems, constant 13a, closed claim `wetzelSectorCovers`.
 
-Stated but not proved: `MoserConvexWormCoverConstant.wetzelSectorCovers_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#wetzel-sector-covers-holds).
+Stated but not proved: `MoserConvexWormCoverConstant.wetzelSectorCovers_holds` is written with `theorem_wanted` in [WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean, line 231](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/MoserConvexWormCoverConstantWanted.lean#L231). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html#wetzel-sector-covers-holds).
 
 ## Depends on
 
@@ -1018,4 +1018,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Moser's worm problem](https://deicyde.github.io/atlas-lean/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/packings-and-coverings/moser-s-worm-problem)

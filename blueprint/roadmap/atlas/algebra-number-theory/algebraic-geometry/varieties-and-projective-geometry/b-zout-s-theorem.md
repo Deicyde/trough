@@ -7,7 +7,7 @@ statement: formalized
 
 # Bézout's theorem
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html).
 
 ## Projective space
 
@@ -15,7 +15,7 @@ For a division ring $K$ and $n \in \mathbb{N}$, the projective space
 $\mathbb{P}^n(K)$ is the projectivization of $K^{n+1}$: the set of nonzero vectors of $K^{n+1}$
 modulo multiplication by nonzero scalars, equivalently the lines through the origin.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.ProjSpace`, an abbreviation declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#proj-space).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.ProjSpace`, an abbreviation declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#proj-space).
 
 ## Projective vanishing set
 
@@ -26,7 +26,7 @@ $v \in K^{n+1} \setminus \{0\}$ is the chosen representative of $p$.
 When $f$ is homogeneous of degree $d$, $f(\lambda v) = \lambda^d f(v)$, so this set does not depend
 on the choice of representatives.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.vanishingSet`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#vanishing-set).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.vanishingSet`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#vanishing-set).
 
 ## Chart index of a projective point
 
@@ -34,7 +34,7 @@ For a field $K$ and a point $p \in \mathbb{P}^n(K)$
 with chosen representative $v = (v_0, \dots, v_n) \in K^{n+1} \setminus \{0\}$, the chart index of
 $p$ is a fixed choice of an index $i \in \{0, \dots, n\}$ with $v_i \neq 0$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.chartIndex`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#chart-index).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.chartIndex`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#chart-index).
 
 ## Affine coordinates of a projective point
 
@@ -44,7 +44,7 @@ representative of $p$ and $i$ its chart index (a chosen index with $v_i \neq 0$)
 coordinates of $p$ are the vector $q \in K^{n+1}$ with $q_j = v_j / v_i$ for every $j$; in
 particular $q_i = 1$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.affineConeCoord`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#affine-cone-coord).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.affineConeCoord`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#affine-cone-coord).
 
 ## Evaluation at an affine point
 
@@ -52,7 +52,7 @@ For a field $K$ and a point
 $q = (q_0, \dots, q_n) \in K^{n+1}$, this is the ring homomorphism $K[X_0, \dots, X_n] \to K$
 sending each polynomial $g$ to its value $g(q)$; it fixes $K$ and sends $X_j$ to $q_j$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.evalAt`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#eval-at).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.evalAt`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#eval-at).
 
 ## Maximal ideal of an affine point
 
@@ -62,7 +62,7 @@ kernel of evaluation at $q$.
 
 It is a maximal ideal, since evaluation at $q$ is surjective onto $K$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.maxIdealAt`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#max-ideal-at).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.maxIdealAt`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#max-ideal-at).
 
 ## Local ring of affine space at a point
 
@@ -70,7 +70,7 @@ For a field $K$ and a point $q \in K^{n+1}$, this is
 the localization of $K[X_0, \dots, X_n]$ at the maximal ideal of $q$ (the ideal of polynomials
 vanishing at $q$), that is, the local ring of affine space $\mathbb{A}^{n+1}$ at $q$.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.localRingAt`, an abbreviation declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#local-ring-at).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.localRingAt`, an abbreviation declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#local-ring-at).
 
 ## Intersection multiplicity at a projective point
 
@@ -85,7 +85,7 @@ $\mathbb{N} \cup \{\infty\}$.
 The value is $\infty$ exactly when this quotient does not have finite length, for example along
 a positive-dimensional component of the common zero set.
 
-Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.intersectionMultiplicity`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#intersection-multiplicity).
+Formalized by `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.intersectionMultiplicity`, a definition declared in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#intersection-multiplicity).
 
 ## Bézout's theorem (with multiplicity)
 
@@ -104,7 +104,7 @@ total degree $0$.
 
 - É. Bézout, *Théorie générale des équations algébriques*, Paris, 1779. Modern projective formulation: see Eisenbud, *Commutative Algebra*, Chapter 12, or Hartshorne, *Algebraic Geometry*, Ch. I §7. Listed as §50 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `bezout_projective_multiplicity` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.bezout_multiplicity` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#bezout-multiplicity).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.BezoutWanted.AlgebraicGeometry.bezout_multiplicity` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/BezoutWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/BezoutWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html#bezout-multiplicity).
 
 ## Depends on
 
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bézout's theorem](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/varieties-and-projective-geometry/b-zout-s-theorem)

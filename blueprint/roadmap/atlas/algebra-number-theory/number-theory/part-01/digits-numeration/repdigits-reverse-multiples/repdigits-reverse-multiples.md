@@ -7,7 +7,7 @@ statement: formalized
 
 # Repdigits, palindromes and reverse multiples: its own results
 
-4 results, 1 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html).
+4 results, 1 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html).
 
 Repdigits, palindromes, reverse multiples and Young graphs, permutiples, digit reversal, special squares by digits.
 
@@ -21,7 +21,7 @@ the bases $b = 0$ and $b = 1$ the reversal of $n$ is $n$ itself.
 Trailing zeros of $n$ become leading zeros and are lost: in base $10$ the reversal of $120$ is
 $21$.
 
-Formalized by `Nat.reverseDigits`, a definition declared in [MathlibExt/Data/Nat/Digits/Reverse.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Data/Nat/Digits/Reverse.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#reverse-digits).
+Formalized by `Nat.reverseDigits`, a definition declared in [MathlibExt/Data/Nat/Digits/Reverse.lean, line 21](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Data/Nat/Digits/Reverse.lean#L21). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#reverse-digits).
 
 ## Perfect powers with all decimal digits equal but one (Kihel–Luca)
 
@@ -36,7 +36,7 @@ from the powers $10^{ln}$ ($n \in \mathbb{N}$) and, when $l = 3$, the cubes $8 \
 
 - Omar Kihel and Florian Luca, "Perfect Powers with All Equal Digits but One," Journal of Integer Sequences 8 (2005), Article 05.5.7, Theorem 1, lines 134–140, https://cs.uwaterloo.ca/journals/JIS/VOL8/Kihel/kihel7.tex.
 
-Stated but not proved: `MetaMathlibExt.finite_near_repdigit_perfect_powers` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NearRepdigitPerfectPowersWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/NearRepdigitPerfectPowersWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#finite-near-repdigit-perfect-powers).
+Stated but not proved: `MetaMathlibExt.finite_near_repdigit_perfect_powers` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/NearRepdigitPerfectPowersWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/NearRepdigitPerfectPowersWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#finite-near-repdigit-perfect-powers).
 
 ## Squares with two blocks of repeated digits
 
@@ -51,7 +51,7 @@ $n = 9 \cdot 10^{2i}$.
 
 - Omar Kihel and Florian Luca, "Perfect Powers With All Equal Digits But One," Journal of Integer Sequences 8 (2005), Article 05.5.7, Theorem, lines 273–279, https://cs.uwaterloo.ca/journals/JIS/VOL8/Kihel/kihel7.tex
 
-Stated but not proved: `MetaMathlibExt.squares_aaabb_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SquaresAaabbClassificationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/SquaresAaabbClassificationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#squares-aaabb-classification).
+Stated but not proved: `MetaMathlibExt.squares_aaabb_classification` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/SquaresAaabbClassificationWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/SquaresAaabbClassificationWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#squares-aaabb-classification).
 
 ## Triangular repdigits
 
@@ -63,7 +63,7 @@ and $666$.
 
 - Christian Hercher and Karl Fegert, "Triangular Numbers With a Single Repeated Digit", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.Digits.TriangularRepdigitsWanted.triangular_numbers_single_repeated_digit` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/TriangularRepdigitsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Digits/TriangularRepdigitsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#triangular-numbers-single-repeated-digit).
+Stated but not proved: `MathlibExt.NumberTheory.Digits.TriangularRepdigitsWanted.triangular_numbers_single_repeated_digit` is written with `theorem_wanted` in [WantedExt/NumberTheory/Digits/TriangularRepdigitsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Digits/TriangularRepdigitsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html#triangular-numbers-single-repeated-digit).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Repdigits, palindromes and reverse multiples](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/digits-numeration/repdigits-reverse-multiples)

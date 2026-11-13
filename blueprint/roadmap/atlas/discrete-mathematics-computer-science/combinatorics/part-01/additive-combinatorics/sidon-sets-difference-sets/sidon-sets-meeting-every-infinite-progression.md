@@ -7,7 +7,7 @@ statement: formalized
 
 # Sidon sets meeting every infinite progression
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression/index.html).
 
 ## Erdős Problem 198
 
@@ -16,7 +16,7 @@ $A \subseteq \mathbb{N}$ contains an infinite arithmetic progression: for every 
 $A \subseteq \mathbb{N}$ there are natural numbers $a$ and $d \ge 1$ such that $a + kd \notin A$
 for every natural number $k$.
 
-Formalized by `MathlibExt.Combinatorics.SidonSetComplementProgressionErdosProblem198Wanted.sidonComplementContainsProgression`, a definition declared in [WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression/index.html#sidon-complement-contains-progression).
+Formalized by `MathlibExt.Combinatorics.SidonSetComplementProgressionErdosProblem198Wanted.sidonComplementContainsProgression`, a definition declared in [WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression/index.html#sidon-complement-contains-progression).
 
 ## Erdős Problem 198 is false
 
@@ -35,7 +35,7 @@ the explicit example $\{(n + 1)! + n : n \ge 0\}$.
 
 - T. F. Bloom, Erdős Problems, Problem #198, https://www.erdosproblems.com/198 (status DISPROVED (LEAN)); resolution: J. E. Baumgartner, Partitioning vector spaces, J. Combin. Theory Ser. A 18 (1975), 231-233; construction recorded on erdosproblems.com/198, erdosproblems.com/198: answered no; a lacunary set with one element in each infinite progression (implicit in [Ba75]), or explicitly A = {(n + 1)! + n : n ≥ 0}, https://www.erdosproblems.com/198.
 
-Stated but not proved: `MathlibExt.Combinatorics.SidonSetComplementProgressionErdosProblem198Wanted.sidonComplementContainsProgression_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression/index.html#sidon-complement-contains-progression-re).
+Stated but not proved: `MathlibExt.Combinatorics.SidonSetComplementProgressionErdosProblem198Wanted.sidonComplementContainsProgression_refuted` is written with `theorem_wanted` in [WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SidonSetComplementProgressionErdosProblem198Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression/index.html#sidon-complement-contains-progression-re).
 
 ## Depends on
 
@@ -44,4 +44,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sidon sets meeting every infinite progression](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/sidon-sets-difference-sets/sidon-sets-meeting-every-infinite-progression)

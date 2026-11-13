@@ -7,7 +7,7 @@ statement: formalized
 
 # Two-regular minors
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html).
 
 ## Minor via branch sets
 
@@ -17,7 +17,7 @@ $B_w$ is nonempty and induces a connected subgraph of $G$, the sets $B_u$ and $B
 whenever $u \ne v$, and for every edge $uv$ of $H$ some vertex of $B_u$ is adjacent in $G$ to
 some vertex of $B_v$.
 
-Formalized by `MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.HasMinor`, a definition declared in [WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html#has-minor).
+Formalized by `MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.HasMinor`, a definition declared in [WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html#has-minor).
 
 ## Average-degree conjecture for 2-regular minors
 
@@ -26,7 +26,7 @@ finite simple graph whose average degree is at least $4t/3 - 2$ (the average deg
 with no vertices being taken as $0$) contains every 2-regular simple graph on $t$ vertices as a
 minor.
 
-Formalized by `MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.conjecture`, a definition declared in [WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html#conjecture).
+Formalized by `MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.conjecture`, a definition declared in [WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html#conjecture).
 
 ## Csóka–Lo–Norin–Wu–Yepremyan theorem on 2-regular minors
 
@@ -44,7 +44,7 @@ non-strict threshold follows from the form of their bound in Corollary 8 and Lem
 
 - Endre Csoka, Irene Lo, Sergey Norin, Hehui Wu and Liana Yepremyan, The extremal function for disconnected minors, Journal of Combinatorial Theory Series B (2017), arXiv:1509.01185, https://arxiv.org/abs/1509.01185.
 
-Stated but not proved: `MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html#conjecture-holds).
+Stated but not proved: `MathlibExt.GraphTheory.TwoRegularMinorForcingWanted.conjecture_holds` is written with `theorem_wanted` in [WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GraphTheory/TwoRegularMinorForcingWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html#conjecture-holds).
 
 ## Depends on
 
@@ -53,4 +53,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Two-regular minors](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/planar-graphs-and-minors/two-regular-minors)

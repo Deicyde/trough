@@ -8,7 +8,7 @@ proof: formalized
 
 # Frobenius elements: its own results
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/index.html).
 
 ## In an abelian group the Frobenius element depends only on the prime below
 
@@ -22,7 +22,7 @@ modulo the preimage of $Q$ in $R$, chosen so that the elements chosen at primes 
 preimage in $R$ are conjugate. If $Q$ and $Q'$ are primes of $S$ with $S/Q$ and $S/Q'$ finite
 that have the same preimage in $R$, then $\mathrm{Frob}_Q = \mathrm{Frob}_{Q'}$.
 
-Formalized by `arithFrobAt_eq_of_under_eq`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Abelian.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Frobenius/Abelian.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/index.html#arith-frob-at-eq-of-under-eq).
+Formalized by `arithFrobAt_eq_of_under_eq`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Abelian.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Frobenius/Abelian.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/index.html#arith-frob-at-eq-of-under-eq).
 
 ## Restricting a Frobenius element to an intermediate field
 
@@ -41,7 +41,7 @@ $y \in \mathcal{O}_L$, then the restriction of $\sigma_M$ to $L$ equals $\sigma_
 
 - ATLAS Proposition 7.13, generalized from the chosen Frobenius elements at chosen primes to arbitrary Frobenius elements at explicit primes.
 
-Formalized by `restrictNormalHom_eq_of_isArithFrobAt`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Restriction.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/Frobenius/Restriction.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/index.html#restrict-normal-hom-eq-of-is-arith-frob).
+Formalized by `restrictNormalHom_eq_of_isArithFrobAt`, a theorem declared in [MathlibExt/RingTheory/Frobenius/Restriction.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/Frobenius/Restriction.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/index.html#restrict-normal-hom-eq-of-is-arith-frob).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Frobenius elements](https://deicyde.github.io/atlas-lean/roadmap/RingTheory/ramification/frobenius-elements/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/RingTheory/ramification/frobenius-elements)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/RingTheory/ramification/frobenius-elements)

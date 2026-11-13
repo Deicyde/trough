@@ -7,7 +7,7 @@ statement: formalized
 
 # Entire and meromorphic functions: its own results
 
-5 results, 2 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html).
+5 results, 2 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html).
 
 Growth and value distribution of entire and meromorphic functions: Wiman–Valiron theory and maximum term, Hayman admissibility, Weierstrass factorization, Mittag-Leffler, Liouville-type rigidity, preimages and zeros/ones on lines.
 
@@ -26,7 +26,7 @@ $\operatorname{Im} s \ge 0$, and is not constant.
 
 - ATLAS `NumberTheoryI`, Lemma 17.14, corrected; the book prints the one-sided bound, under which the lemma is false.
 
-Formalized by `PeriodicEntire.eq_const_of_periodic_one_of_norm_le_exp_abs_im`, a theorem declared in [MathlibExt/Analysis/Complex/PeriodicEntire.lean, line 496](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/PeriodicEntire.lean#L496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#eq-const-of-periodic-one-of-norm-le-exp).
+Formalized by `PeriodicEntire.eq_const_of_periodic_one_of_norm_le_exp_abs_im`, a theorem declared in [MathlibExt/Analysis/Complex/PeriodicEntire.lean, line 496](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/PeriodicEntire.lean#L496). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#eq-const-of-periodic-one-of-norm-le-exp).
 
 ## A nonzero entire power series with infinitely many zeros
 
@@ -39,7 +39,7 @@ vanishes at infinitely many points $z \in \mathbb{C}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Entire and meromorphic functions of one complex variable, and related topics), problem `ma_proofbench_l1_14`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.EntireSeriesInfiniteZerosWanted.exists_entire_powerSeries_infinite_zeros` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireSeriesInfiniteZerosWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/EntireSeriesInfiniteZerosWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#exists-entire-power-series-infinite-zero).
+Stated but not proved: `MathlibExt.Analysis.Complex.EntireSeriesInfiniteZerosWanted.exists_entire_powerSeries_infinite_zeros` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireSeriesInfiniteZerosWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/EntireSeriesInfiniteZerosWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#exists-entire-power-series-infinite-zero).
 
 ## Entire solutions of the Fermat cubic are constant
 
@@ -50,7 +50,7 @@ with $f(z)^3 + g(z)^3 = 1$ for every $z \in \mathbb{C}$. Then $f$ and $g$ are co
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Entire and meromorphic functions of one complex variable, and related topics), problem `ma_proofbench_l2_61`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.EntireFermatCubicConstantWanted.entire_cube_add_cube_eq_one_const` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireFermatCubicConstantWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/EntireFermatCubicConstantWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#entire-cube-add-cube-eq-one-const).
+Stated but not proved: `MathlibExt.Analysis.Complex.EntireFermatCubicConstantWanted.entire_cube_add_cube_eq_one_const` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/EntireFermatCubicConstantWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/EntireFermatCubicConstantWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#entire-cube-add-cube-eq-one-const).
 
 ## Injective entire functions are affine
 
@@ -62,7 +62,7 @@ $z \in \mathbb{C}$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l1_37`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.InjectiveEntireIsAffineWanted.exists_affine_of_differentiable_injective` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/InjectiveEntireIsAffineWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/InjectiveEntireIsAffineWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#exists-affine-of-differentiable-injectiv).
+Stated but not proved: `MathlibExt.Analysis.Complex.InjectiveEntireIsAffineWanted.exists_affine_of_differentiable_injective` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/InjectiveEntireIsAffineWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/InjectiveEntireIsAffineWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#exists-affine-of-differentiable-injectiv).
 
 ## Weierstrass theorem on prescribed simple zeros
 
@@ -75,7 +75,7 @@ are exactly the points of $S$, all of them simple: $f'(z) \ne 0$ for every $z \i
 
 - Weierstrass factorization theorem 1876; see Rudin; Lean is simple-zero corollary with closed discrete prescribed zero set S and entire f with exact zeros S and nonvanishing derivative on S.
 
-Formalized by `MathlibExt.Analysis.Complex.WeierstrassFactorizationWanted.weierstrass_factorization`, a theorem declared in [MathlibExt/Analysis/Complex/WeierstrassFactorization.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/WeierstrassFactorization.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#weierstrass-factorization).
+Formalized by `MathlibExt.Analysis.Complex.WeierstrassFactorizationWanted.weierstrass_factorization`, a theorem declared in [MathlibExt/Analysis/Complex/WeierstrassFactorization.lean, line 503](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/WeierstrassFactorization.lean#L503). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html#weierstrass-factorization).
 
 ## Depends on
 
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Entire and meromorphic functions](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/entire-functions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/entire-functions)

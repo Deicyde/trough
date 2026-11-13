@@ -7,7 +7,7 @@ statement: formalized
 
 # Weighted Davenport constant
 
-124 results, 21 proved and 103 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/index.html).
+124 results, 21 proved and 103 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/index.html).
 
 ## Weighted zero-sum free sequences
 
@@ -22,7 +22,7 @@ Terms are indexed by position, so repeated terms count separately.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (weighted zero-sum subsequences, as used in Lemmas 2 and 3).
 
-Formalized by `MetaMathlibExt.IsWeightedZeroSumFree`, a definition declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#is-weighted-zero-sum-free).
+Formalized by `MetaMathlibExt.IsWeightedZeroSumFree`, a definition declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#is-weighted-zero-sum-free).
 
 ## Weighted Davenport constant
 
@@ -40,7 +40,7 @@ $G$ is $D_{\{1\}}(G)$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (definition of `D_A(G)`).
 
-Formalized by `MetaMathlibExt.weightedDavenport`, a definition declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport).
+Formalized by `MetaMathlibExt.weightedDavenport`, a definition declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport).
 
 ## The weighted Davenport constant as a least length
 
@@ -53,7 +53,7 @@ $\ell$ is $A$-weighted zero-sum free, then $D_A(G)$ is finite and equals the lea
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (definition of `D_A(G)`).
 
-Formalized by `MetaMathlibExt.weightedDavenport_eq_natCast_sInf`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-eq-nat-cast-s-inf).
+Formalized by `MetaMathlibExt.weightedDavenport_eq_natCast_sInf`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-eq-nat-cast-s-inf).
 
 ## Prefixes of weighted zero-sum free sequences
 
@@ -66,7 +66,7 @@ free, then for every $\ell \in \mathbb{N}$ the prefix of $s$ formed by its first
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (definition of `D_A(G)`).
 
-Formalized by `MetaMathlibExt.IsWeightedZeroSumFree.take`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#take).
+Formalized by `MetaMathlibExt.IsWeightedZeroSumFree.take`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#take).
 
 ## Upper bound for the weighted Davenport constant
 
@@ -80,7 +80,7 @@ zero-sum subsequence, then $D_A(G) \le \ell$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (definition of `D_A(G)`).
 
-Formalized by `MetaMathlibExt.weightedDavenport_le`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-le).
+Formalized by `MetaMathlibExt.weightedDavenport_le`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-le).
 
 ## Lower bound for the weighted Davenport constant
 
@@ -92,7 +92,7 @@ of $G$. If a sequence over $G$ of length $L$ is $A$-weighted zero-sum free, then
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (definition of `D_A(G)`).
 
-Formalized by `MetaMathlibExt.lt_weightedDavenport`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#lt-weighted-davenport).
+Formalized by `MetaMathlibExt.lt_weightedDavenport`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#lt-weighted-davenport).
 
 ## When the weighted Davenport constant is infinite
 
@@ -105,7 +105,7 @@ $A$-weighted zero-sum free sequence over $G$ of length $\ell$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (definition of `D_A(G)`).
 
-Formalized by `MetaMathlibExt.weightedDavenport_eq_top_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-eq-top-iff).
+Formalized by `MetaMathlibExt.weightedDavenport_eq_top_iff`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-eq-top-iff).
 
 ## Weighted Davenport constant of the trivial group
 
@@ -117,7 +117,7 @@ is $D_A(\mathbb{Z}/1\mathbb{Z}) = 1$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (characteristic value of `D_A`).
 
-Formalized by `MetaMathlibExt.weightedDavenport_zmod_one`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-zmod-one).
+Formalized by `MetaMathlibExt.weightedDavenport_zmod_one`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-zmod-one).
 
 ## Davenport constant of the group of order two
 
@@ -129,7 +129,7 @@ $D_{\{1\}}(\mathbb{Z}/2\mathbb{Z}) = 2$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Section 2 (characteristic value of `D_A`).
 
-Formalized by `MetaMathlibExt.weightedDavenport_singleton_one_zmod_two`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-singleton-one-zmod-tw).
+Formalized by `MetaMathlibExt.weightedDavenport_singleton_one_zmod_two`, a theorem declared in [MathlibExt/Combinatorics/Additive/WeightedDavenport.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Additive/WeightedDavenport.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-davenport-singleton-one-zmod-tw).
 
 ## Units modulo n
 
@@ -140,7 +140,7 @@ $\mathbb{Z}/n\mathbb{Z}$ of integers modulo $n$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.unitSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#unit-set).
+Formalized by `MetaMathlibExt.unitSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#unit-set).
 
 ## Squares of units modulo n
 
@@ -151,7 +151,7 @@ $\mathbb{Z}/n\mathbb{Z}$ of the form $u^2$ with $u$ a unit of $\mathbb{Z}/n\math
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.unitSquareSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#unit-square-set).
+Formalized by `MetaMathlibExt.unitSquareSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#unit-square-set).
 
 ## Nonzero squares modulo $n$
 
@@ -163,7 +163,7 @@ $y \in \mathbb{Z}_n$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.squareSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#square-set).
+Formalized by `MetaMathlibExt.squareSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#square-set).
 
 ## Weighted zero-sum sequences
 
@@ -176,7 +176,7 @@ $a_1 x_1 + a_2 x_2 + \dots + a_k x_k = 0$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.HasWeightedZeroSum`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#has-weighted-zero-sum).
+Formalized by `MetaMathlibExt.HasWeightedZeroSum`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#has-weighted-zero-sum).
 
 ## Weighted zero-sum subsequences
 
@@ -189,7 +189,7 @@ weights $a_i \in A$ for $i \in J$ with $\sum_{i \in J} a_i x_i = 0$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.HasWeightedZeroSumSubseq`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#has-weighted-zero-sum-subseq).
+Formalized by `MetaMathlibExt.HasWeightedZeroSumSubseq`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#has-weighted-zero-sum-subseq).
 
 ## Consecutive weighted zero-sum subsequences
 
@@ -202,7 +202,7 @@ $a_l, \dots, a_h \in A$ with $\sum_{i=l}^{h} a_i x_i = 0$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.HasConsecutiveWeightedZeroSumSubseq`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#has-consecutive-weighted-zero-sum-subseq).
+Formalized by `MetaMathlibExt.HasConsecutiveWeightedZeroSumSubseq`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#has-consecutive-weighted-zero-sum-subseq).
 
 ## Representatives of a set of residues
 
@@ -218,7 +218,7 @@ the representatives of $A$ as weights is the paper's $D_A$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.zmodWeightReps`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#zmod-weight-reps).
+Formalized by `MetaMathlibExt.zmodWeightReps`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#zmod-weight-reps).
 
 ## Membership in the weight representatives
 
@@ -230,7 +230,7 @@ the residue of $a$ modulo $n$ lies in $A$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.mem_zmodWeightReps`, a theorem declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#mem-zmod-weight-reps).
+Formalized by `MetaMathlibExt.mem_zmodWeightReps`, a theorem declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#mem-zmod-weight-reps).
 
 ## Lengths forcing a consecutive weighted zero sum
 
@@ -245,7 +245,7 @@ consecutive constant $C_A$ of $\mathbb{Z}_n$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.weightedConsecutiveDefiningSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-consecutive-defining-set).
+Formalized by `MetaMathlibExt.weightedConsecutiveDefiningSet`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-consecutive-defining-set).
 
 ## Weighted consecutive zero-sum constant
 
@@ -260,7 +260,7 @@ such $k$ exists.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.weightedConsecutiveConstant`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-consecutive-constant).
+Formalized by `MetaMathlibExt.weightedConsecutiveConstant`, a definition declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#weighted-consecutive-constant).
 
 ## Weighted zero-sum subsequences are monotone in the weight set
 
@@ -273,7 +273,7 @@ $B$-weighted zero-sum subsequence.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.HasWeightedZeroSumSubseq.mono`, a theorem declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#mono).
+Formalized by `MetaMathlibExt.HasWeightedZeroSumSubseq.mono`, a theorem declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-01/index.html#mono).
 
 ## The one-term zero sequence has a square-weighted zero sum
 
@@ -287,7 +287,7 @@ The weight $a = 1$ works; it lies in $S(n)$ because $1 \ne 0$ in $\mathbb{Z}_n$ 
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Introduction.
 
-Formalized by `MetaMathlibExt.zeroSingleton_hasWeightedZeroSum`, a theorem declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#zero-singleton-has-weighted-zero-sum).
+Formalized by `MetaMathlibExt.zeroSingleton_hasWeightedZeroSum`, a theorem declared in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#zero-singleton-has-weighted-zero-sum).
 
 ## Decomposition of the nonzero squares modulo a prime power
 
@@ -304,7 +304,7 @@ and the sets $p^{2k} U(p^r)^2$ for $k = 0, \dots, l$ are pairwise disjoint.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.squareSet_primePower_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-prime-power-decomposition).
+Stated but not proved: `MetaMathlibExt.squareSet_primePower_decomposition` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-prime-power-decomposition).
 
 ## Scaled unit squares modulo a prime power
 
@@ -317,7 +317,7 @@ $\mathbb{Z}/p^r\mathbb{Z}$ has the same number of elements as $U(p^{r-2k})^2$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.ncard_scale_unitSquares_primePower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#ncard-scale-unit-squares-prime-power).
+Stated but not proved: `MetaMathlibExt.ncard_scale_unitSquares_primePower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#ncard-scale-unit-squares-prime-power).
 
 ## Number of nonzero squares modulo a prime power
 
@@ -331,7 +331,7 @@ $|S(p^r)| = \sum_{k=0}^{(r-1)/2} |U(p^{r-2k})^2|$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.ncard_squareSet_primePower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#ncard-square-set-prime-power).
+Stated but not proved: `MetaMathlibExt.ncard_squareSet_primePower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#ncard-square-set-prime-power).
 
 ## Square-weighted zero sums lift from a prime-power component
 
@@ -346,7 +346,7 @@ $a_1, \dots, a_k \in S(n)$ with $\sum_i a_i x_i = 0$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.squareWeightedZeroSum_of_primePower_reduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-weighted-zero-sum-of-prime-power).
+Stated but not proved: `MetaMathlibExt.squareWeightedZeroSum_of_primePower_reduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 189](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L189). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-weighted-zero-sum-of-prime-power).
 
 ## Prime-power bound for the square-weighted consecutive constant
 
@@ -360,7 +360,7 @@ $C_{S(n)} \le C_{S(p^r)}$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_le_primePower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-consecutive-constant-square-set).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_le_primePower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-consecutive-constant-square-set).
 
 ## Square-weighted zero sums lift from $p$ to odd powers $p^r$
 
@@ -378,7 +378,7 @@ $\mathbb{Z}_p$, because $U(p)^2 \subseteq S(p)$; the two agree for prime $p$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.squareWeightedZeroSum_of_reduction_oddPower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-weighted-zero-sum-of-reduction-od).
+Stated but not proved: `MetaMathlibExt.squareWeightedZeroSum_of_reduction_oddPower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-weighted-zero-sum-of-reduction-od).
 
 ## Square-weighted zero-sum free unit triples modulo even powers of two
 
@@ -392,7 +392,7 @@ $J$ of indices and weights $a_j \in S(2^r)$ for $j \in J$ with $\sum_{j \in J} a
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_three_units_twoPower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#no-square-weighted-subseq-three-units-tw).
+Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_three_units_twoPower` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#no-square-weighted-subseq-three-units-tw).
 
 ## Three-term sequences without square-weighted zero-sum subsequences
 
@@ -411,7 +411,7 @@ taken in $\mathbb{Z}/p^r\mathbb{Z}$. Then $x_1, x_2$ are automatically units, si
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 11.
 
-Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_pair_and_prime_of_reduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#no-square-weighted-subseq-pair-and-prime).
+Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_pair_and_prime_of_reduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#no-square-weighted-subseq-pair-and-prime).
 
 ## Square-weighted Davenport constant of even squares is at least four
 
@@ -425,7 +425,7 @@ multiplication. Then $D_{S(n)} \ge 4$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 12.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_evenSquare_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-davenport-square-set-even-squar).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_evenSquare_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-davenport-square-set-even-squar).
 
 ## Lifting weighted zero sums from p² to an even power of p
 
@@ -444,7 +444,7 @@ The paper states the lemma for $p > 0$; the stronger hypothesis $p \ge 2$ is del
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 13.
 
-Stated but not proved: `MetaMathlibExt.squareWeightedZeroSum_of_reduction_square` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-weighted-zero-sum-of-reduction-sq).
+Stated but not proved: `MetaMathlibExt.squareWeightedZeroSum_of_reduction_square` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-weighted-zero-sum-of-reduction-sq).
 
 ## Square-weighted constants modulo $p^r$, for $p \ge 2$ and nonzero even $r$, are at most unit-square constants modulo $p^2$
 
@@ -469,7 +469,7 @@ $D_{U(1)^2}(\mathbb{Z}_1) = 1$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 14.
 
-Stated but not proved: `MetaMathlibExt.squareSet_constants_le_unitSquares_modSquare` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-constants-le-unit-squares-mod).
+Stated but not proved: `MetaMathlibExt.squareSet_constants_le_unitSquares_modSquare` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-constants-le-unit-squares-mod).
 
 ## Consecutive square-weighted constant of an even power of two is at most four
 
@@ -481,7 +481,7 @@ $C_{S(2^r)} \le 4$, where $S(2^r)$ is the set of nonzero squares of $\mathbb{Z}/
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_twoPower_le_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-consecutive-constant-square-set-2).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_twoPower_le_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-consecutive-constant-square-set-2).
 
 ## Square-weighted constants of even squares
 
@@ -499,7 +499,7 @@ equality $C_{S(n)} = 4$ nonvacuous.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 16.
 
-Stated but not proved: `MetaMathlibExt.squareSet_constants_evenSquare` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-constants-even-square).
+Stated but not proved: `MetaMathlibExt.squareSet_constants_evenSquare` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-constants-even-square).
 
 ## Two units without square-weighted zero sums modulo any prime divisor
 
@@ -512,7 +512,7 @@ $(u \bmod p, v \bmod p)$ in $\mathbb{Z}/p\mathbb{Z}$ has no $S(p)$-weighted zero
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Proposition 17.
 
-Stated but not proved: `MetaMathlibExt.exists_pair_units_avoiding_prime_squareWeights` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#exists-pair-units-avoiding-prime-square).
+Stated but not proved: `MetaMathlibExt.exists_pair_units_avoiding_prime_squareWeights` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 317](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L317). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#exists-pair-units-avoiding-prime-square).
 
 ## Square-weighted zero-sum free unit pairs lift to odd prime powers
 
@@ -531,7 +531,7 @@ which equals $S(p)$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 18.
 
-Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_pair_of_reduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#no-square-weighted-subseq-pair-of-reduct).
+Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_pair_of_reduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 331](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L331). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#no-square-weighted-subseq-pair-of-reduct).
 
 ## The square-weighted Davenport constant of an odd modulus is at least three
 
@@ -544,7 +544,7 @@ Davenport constant $D_{S(n)}$ of $\mathbb{Z}_n$ is at least $3$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 19.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_odd_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-davenport-square-set-odd-lower).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_odd_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-davenport-square-set-odd-lower).
 
 ## Square-weighted Davenport constant for an even 2-adic valuation of at least two
 
@@ -558,7 +558,7 @@ with weight set $S(n)$, a weight acting by multiplication. Then $D_{S(n)} \ge 3$
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 20.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_even_twoValuation_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-davenport-square-set-even-two-v).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_even_twoValuation_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-davenport-square-set-even-two-v).
 
 ## Consecutive square-weighted constant of an odd prime to an odd power is at most three
 
@@ -570,7 +570,7 @@ $\mathbb{Z}/p^r\mathbb{Z}$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 21.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddPrimePower_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-consecutive-constant-square-set-3).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddPrimePower_le_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#weighted-consecutive-constant-square-set-3).
 
 ## Square-weighted constants of nonsquares with even $2$-adic valuation
 
@@ -587,7 +587,7 @@ $C_{S(n)}$, equals $3$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 22.
 
-Stated but not proved: `MetaMathlibExt.squareSet_constants_nonsquare_even_twoValuation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-constants-nonsquare-even-two).
+Stated but not proved: `MetaMathlibExt.squareSet_constants_nonsquare_even_twoValuation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 374](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L374). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-02/index.html#square-set-constants-nonsquare-even-two).
 
 ## Consecutive square-weighted constant of an odd power of two is at most two
 
@@ -599,7 +599,7 @@ $C_{S(2^r)} \le 2$, where $S(2^r)$ is the set of nonzero squares of $\mathbb{Z}/
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 23.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_odd_twoPower_le_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_odd_twoPower_le_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 386](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L386). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set).
 
 ## Square-weighted constants of numbers with odd $2$-adic valuation
 
@@ -615,7 +615,7 @@ least such length, the consecutive constant $C_{S(n)}$, equals $2$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 24.
 
-Stated but not proved: `MetaMathlibExt.squareSet_constants_odd_twoValuation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#square-set-constants-odd-two-valuation).
+Stated but not proved: `MetaMathlibExt.squareSet_constants_odd_twoValuation` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 396](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L396). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#square-set-constants-odd-two-valuation).
 
 ## Four-term sequences without square-weighted zero-sum subsequences
 
@@ -630,7 +630,7 @@ zero-sum subsequence.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 25.
 
-Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_fourTerm_pattern` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#no-square-weighted-subseq-four-term-patt).
+Stated but not proved: `MetaMathlibExt.no_squareWeightedSubseq_fourTerm_pattern` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 410](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L410). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#no-square-weighted-subseq-four-term-patt).
 
 ## The square-weighted Davenport constant of an odd square is at least five
 
@@ -643,7 +643,7 @@ $A$-weighted Davenport constant $D_{S(n)}$ of $\mathbb{Z}_n$ is at least $5$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 26.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_oddSquare_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-square-set-odd-square).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_oddSquare_lowerBound` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 424](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L424). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-square-set-odd-square).
 
 ## Three unit-square cosets sum to every residue modulo an odd prime power
 
@@ -658,7 +658,7 @@ $x_2 \in Ay_2 \cup \{0\}$ and $x_3 \in Ay_3 \cup \{0\}$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 27.
 
-Stated but not proved: `MetaMathlibExt.three_unitSquare_cosets_cover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#three-unit-square-cosets-cover).
+Stated but not proved: `MetaMathlibExt.three_unitSquare_cosets_cover` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 435](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L435). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#three-unit-square-cosets-cover).
 
 ## The square-weighted Davenport constant of an even power of an odd prime is at most five
 
@@ -671,7 +671,7 @@ $D_{S(p^r)}$ of $\mathbb{Z}_{p^r}$ is at most $5$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 28.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_oddPrimePower_le_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-square-set-odd-prime).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_oddPrimePower_le_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 447](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L447). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-square-set-odd-prime).
 
 ## The square-weighted Davenport constant of an odd square is five
 
@@ -684,7 +684,7 @@ Davenport constant $D_{S(n)}$ of $\mathbb{Z}_n$ equals $5$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 29.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_oddSquare` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-square-set-odd-square-2).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_squareSet_oddSquare` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-square-set-odd-square-2).
 
 ## Unit-square-weighted consecutive constant modulo 25 equals nine
 
@@ -698,7 +698,7 @@ $U(25)^2$-weighted consecutive constant $C_{U(25)^2}$ of $\mathbb{Z}_{25}$, equa
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 30.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_unitSquares_twentyFive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 465](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L465). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-unit-squar).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_unitSquares_twentyFive` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 465](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L465). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-unit-squar).
 
 ## Consecutive square-weighted constant of an odd square is at most nine
 
@@ -713,7 +713,7 @@ The hypothesis $n \ge 2$ is the paper's standing convention.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 31.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddSquare_le_nine` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-2).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddSquare_le_nine` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 474](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L474). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-2).
 
 ## Square-weighted consecutive constant of $p^r$ for prime $p \ge 7$ and even $r \ge 4$ is at most five
 
@@ -726,7 +726,7 @@ $S(p^r)$-weighted consecutive constant of $\mathbb{Z}_{p^r}$. Then $C_{S(p^r)} \
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 34.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_largePrimePower_le_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-3).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_largePrimePower_le_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 483](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L483). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-3).
 
 ## Square-weighted consecutive constant five for odd squares with a large prime fourth power
 
@@ -740,7 +740,7 @@ $S(n)$-weighted consecutive constant $C_{S(n)}$ of $\mathbb{Z}_n$, equals $5$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 35.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddSquare_largePrime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-4).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_oddSquare_largePrime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 493](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L493). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-4).
 
 ## Four unit terms force a unit-square-weighted zero sum modulo a power of 5
 
@@ -754,7 +754,7 @@ $a_1 s_1 + \dots + a_k s_k = 0$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Lemma 36.
 
-Stated but not proved: `MetaMathlibExt.unitSquareWeightedZeroSum_modFivePower_of_four_units` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 506](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L506). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#unit-square-weighted-zero-sum-mod-five-p).
+Stated but not proved: `MetaMathlibExt.unitSquareWeightedZeroSum_modFivePower_of_four_units` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 506](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L506). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#unit-square-weighted-zero-sum-mod-five-p).
 
 ## Square-weighted consecutive constant of $5^r$ for even $r \ge 4$ is at most seven
 
@@ -767,7 +767,7 @@ constant of $\mathbb{Z}_{5^r}$. Then $C_{S(5^r)} \le 7$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 37.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_fivePower_le_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-5).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_fivePower_le_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 515](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L515). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-5).
 
 ## Square-weighted consecutive constant of squares divisible by 625 is at most seven
 
@@ -780,7 +780,7 @@ of $\mathbb{Z}_n$. Then $C_{S(n)} \le 7$.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Corollary 38.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_square_divisible_fiveFourth` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-6).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_square_divisible_fiveFourth` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 524](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L524). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-6).
 
 ## Consecutive square-weighted constant of the square of an odd squarefree number
 
@@ -798,7 +798,7 @@ The hypothesis $n \ge 2$ is the paper's standing convention.
 
 - Krishnendu Paul and Shameek Paul, *Square-Weighted Zero-Sum Constants*, Journal of Integer Sequences 27 (2024), Article 24.6.6, Theorem 39.
 
-Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_square_oddSquarefree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-7).
+Stated but not proved: `MetaMathlibExt.weightedConsecutiveConstant_squareSet_square_oddSquarefree` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/SquareWeightedZeroSumWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-consecutive-constant-square-set-7).
 
 ## Xia's theorem on arithmetic progressions of weights
 
@@ -812,7 +812,7 @@ constant of $\mathbb{Z}/n\mathbb{Z}$ is $D_A(\mathbb{Z}/n\mathbb{Z}) = 2$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-zmod-arithmetic-progr).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_arithmeticProgression` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-zmod-arithmetic-progr).
 
 ## Weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ for the weights prime to $p$
 
@@ -828,7 +828,7 @@ $p = 3$ one has $v_3(10) = 0$ but $D_A(\mathbb{Z}/10\mathbb{Z}) = 2$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_not_dvd_prime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-zmod-not-dvd-prime).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_not_dvd_prime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-zmod-not-dvd-prime).
 
 ## Olson's theorem for groups of rank at most two
 
@@ -840,7 +840,7 @@ $G = \mathbb{Z}/h\mathbb{Z} \oplus \mathbb{Z}/k\mathbb{Z}$ is $D(G) = h + k - 1$
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_one_zmod_prod_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-one-zmod-prod-of-dvd).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_one_zmod_prod_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-one-zmod-prod-of-dvd).
 
 ## Olson's theorem for abelian $p$-groups
 
@@ -854,7 +854,7 @@ $D(G) = 1$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_one_pi_zmod_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-one-pi-zmod-prime-pow).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_one_pi_zmod_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#weighted-davenport-one-pi-zmod-prime-pow).
 
 ## A nested ceiling identity for divisors
 
@@ -865,7 +865,7 @@ $m \mid n$, we have $\lceil n / (\lceil n/(m-1) \rceil - 1) \rceil = m$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.ceilDiv_ceilDiv_sub_one_sub_one_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#ceil-div-ceil-div-sub-one-sub-one-of-dvd).
+Stated but not proved: `MetaMathlibExt.ceilDiv_ceilDiv_sub_one_sub_one_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-03/index.html#ceil-div-ceil-div-sub-one-sub-one-of-dvd).
 
 ## Weight sets with weighted Davenport constant $m$ on $\mathbb{Z}/n\mathbb{Z}$
 
@@ -878,7 +878,7 @@ Davenport constant $D_A(\mathbb{Z}/n\mathbb{Z}) = m$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-of-dvd).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-of-dvd).
 
 ## Weighted Davenport constant of $\mathbb{Z}/n\mathbb{Z}$ for the weights $\{1, \dots, r\}$
 
@@ -890,7 +890,7 @@ $D_A(\mathbb{Z}/n\mathbb{Z}) = \lceil n/r \rceil$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 1, first part.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_Icc` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-icc).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_Icc` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-icc).
 
 ## Initial-interval weights with weighted Davenport constant $m$
 
@@ -903,7 +903,7 @@ $D_{\{1, \dots, r\}}(\mathbb{Z}/n\mathbb{Z}) = m$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 1, second part.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_Icc_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-icc-of-dvd).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_Icc_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-icc-of-dvd).
 
 ## Long weighted zero-sum free sequences in groups of rank two
 
@@ -922,7 +922,7 @@ $m + \lceil kn/\alpha \rceil - 1$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exists_weightedZeroSumFree_zmod_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#exists-weighted-zero-sum-free-zmod-prod).
+Stated but not proved: `MetaMathlibExt.exists_weightedZeroSumFree_zmod_prod` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#exists-weighted-zero-sum-free-zmod-prod).
 
 ## Weight sets with prescribed weighted Davenport constant on $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, divisible case
 
@@ -938,7 +938,7 @@ $D_A(\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}) = m + \lceil kn/\alp
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 6(i).
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_prod_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-prod-of-dvd).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_prod_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-prod-of-dvd).
 
 ## Weight sets with prescribed weighted Davenport constant on $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}$, non-divisible case
 
@@ -956,7 +956,7 @@ $D_A(\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/kn\mathbb{Z}) = m + \lceil kn/\alp
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 6(ii).
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_prod_of_not_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-prod-of-not-dvd).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_prod_of_not_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-prod-of-not-dvd).
 
 ## Weight sets with weighted Davenport constant $2m - 1$ on $\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$
 
@@ -970,7 +970,7 @@ $D_A(\mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}) = 2m - 1$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_prod_self_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-prod-self-of-dvd).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_zmod_prod_self_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-zmod-prod-self-of-dvd).
 
 ## Long weighted zero-sum free sequences in abelian $p$-groups
 
@@ -989,7 +989,7 @@ $1 + \sum_{i=1}^{r} (\lceil p^{e_i}/\beta \rceil - 1)$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.exists_weightedZeroSumFree_pi_zmod_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#exists-weighted-zero-sum-free-pi-zmod-pr).
+Stated but not proved: `MetaMathlibExt.exists_weightedZeroSumFree_pi_zmod_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#exists-weighted-zero-sum-free-pi-zmod-pr).
 
 ## Weighted Davenport constant of abelian $p$-groups, divisible case
 
@@ -1005,7 +1005,7 @@ $D_A(G) = 1 + \sum_{i=1}^{r} (\lceil p^{e_i}/\beta \rceil - 1)$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 7(i).
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-pi-zmod-prime-pow-of).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_of_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 169](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L169). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-pi-zmod-prime-pow-of).
 
 ## Weighted Davenport constant of abelian $p$-groups, non-divisible case
 
@@ -1023,7 +1023,7 @@ $D_A(G) = 1 + \sum_{i=1}^{r} (\lceil p^{e_i}/\beta \rceil - 1)$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Theorem 7(ii).
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_of_not_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-pi-zmod-prime-pow-of-2).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_of_not_dvd` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-pi-zmod-prime-pow-of-2).
 
 ## Weighted Davenport constant of $(\mathbb{Z}/p^e\mathbb{Z})^r$
 
@@ -1037,7 +1037,7 @@ $D_A((\mathbb{Z}/p^e\mathbb{Z})^r) = 1 + r(p^a - 1)$.
 
 - Md Ibrahim Molla, *New Families of Weight Sets Yielding Prescribed Weighted Zero-Sum Constants*, INTEGERS 26 (2026), Article A89, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_const` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-pi-zmod-prime-pow-con).
+Stated but not proved: `MetaMathlibExt.weightedDavenport_pi_zmod_prime_pow_const` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean, line 201](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/WeightedDavenportWanted.lean#L201). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-davenport-pi-zmod-prime-pow-con).
 
 ## Unit-weighted zero-sum constants of $\mathbb{Z}_n$
 
@@ -1053,7 +1053,7 @@ the same way with $I$ restricted to a block $\{s, s+1, \dots, t\}$ of consecutiv
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 4 (`jis-2024-24.1.7-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.unit_weighted_zero_sum_constants` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#unit-weighted-zero-sum-constants).
+Stated but not proved: `MetaMathlibExt.unit_weighted_zero_sum_constants` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#unit-weighted-zero-sum-constants).
 
 ## Quadratic-residue-weighted zero-sum constants modulo a prime
 
@@ -1068,7 +1068,7 @@ same way with $I$ restricted to a block $\{s, s+1, \dots, t\}$ of consecutive in
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 5 (`jis-2024-24.1.7-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.quadratic_residue_weighted_zero_sum_constants` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#quadratic-residue-weighted-zero-sum-cons).
+Stated but not proved: `MetaMathlibExt.quadratic_residue_weighted_zero_sum_constants` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#quadratic-residue-weighted-zero-sum-cons).
 
 ## Product lower bound for the consecutive weighted zero-sum constant
 
@@ -1087,7 +1087,7 @@ and $C_C(q)$ exist, then $C_A(mq) \ge C_B(m)\,C_C(q)$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 8 (`jis-2024-24.1.7-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.consecutive_constant_mul_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#consecutive-constant-mul-le).
+Stated but not proved: `MetaMathlibExt.consecutive_constant_mul_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#consecutive-constant-mul-le).
 
 ## Lower bound for the weighted Davenport constant of a product modulus
 
@@ -1106,7 +1106,7 @@ and $D_C(q)$ exist, then $D_A(mq) \ge D_B(m) + D_C(q) - 1$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 9 (`jis-2024-24.1.7-lem-9`).
 
-Stated but not proved: `MetaMathlibExt.davenport_constant_add_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#davenport-constant-add-le).
+Stated but not proved: `MetaMathlibExt.davenport_constant_add_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#davenport-constant-add-le).
 
 ## The index of the Jacobi symbol kernel
 
@@ -1120,7 +1120,7 @@ $U(n)$ of index $2$. If $n$ is a perfect square, then $S(n) = U(n)$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Proposition 11 (`jis-2024-24.1.7-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_kernel_index_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#jacobi-kernel-index-two).
+Stated but not proved: `MetaMathlibExt.jacobi_kernel_index_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 136](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L136). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#jacobi-kernel-index-two).
 
 ## Units lift to the kernel of the Jacobi symbol across a non-square coprime factor
 
@@ -1134,7 +1134,7 @@ $\left(\frac{v}{n}\right) = 1$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 14 (`jis-2024-24.1.7-lem-14`).
 
-Stated but not proved: `MetaMathlibExt.units_subset_image_jacobi_kernel` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#units-subset-image-jacobi-kernel).
+Stated but not proved: `MetaMathlibExt.units_subset_image_jacobi_kernel` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#units-subset-image-jacobi-kernel).
 
 ## Lifting weighted zero sums along a coprime factor
 
@@ -1150,7 +1150,7 @@ are $a_1, \dots, a_k \in A$ with $a_1 x_1 + \dots + a_k x_k = 0$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 15 (`jis-2024-24.1.7-lem-15`).
 
-Stated but not proved: `MetaMathlibExt.weighted_zero_sum_of_image` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-zero-sum-of-image).
+Stated but not proved: `MetaMathlibExt.weighted_zero_sum_of_image` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#weighted-zero-sum-of-image).
 
 ## Unit-weighted zero sums modulo an odd prime power
 
@@ -1164,7 +1164,7 @@ $a_1 x_1 + \dots + a_k x_k = 0$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 16 (`jis-2024-24.1.7-lem-16`).
 
-Stated but not proved: `MetaMathlibExt.unit_weighted_zero_sum_prime_power` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#unit-weighted-zero-sum-prime-power).
+Stated but not proved: `MetaMathlibExt.unit_weighted_zero_sum_prime_power` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#unit-weighted-zero-sum-prime-power).
 
 ## Three-term sums of square-weighted units cover $\mathbb{Z}_{p^r}$
 
@@ -1178,7 +1178,7 @@ $a_1 x_1 + a_2 x_2 + a_3 x_3$ for some $a_1, a_2, a_3 \in A$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 17 (`jis-2024-24.1.7-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.unit_square_three_sumset_eq_univ` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#unit-square-three-sumset-eq-univ).
+Stated but not proved: `MetaMathlibExt.unit_square_three_sumset_eq_univ` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-04/index.html#unit-square-three-sumset-eq-univ).
 
 ## Three-term sums with prescribed square classes cover $\mathbb{Z}_{p^r}$
 
@@ -1196,7 +1196,7 @@ unit, so $A_2$ is empty.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 18 (`jis-2024-24.1.7-lem-18`).
 
-Stated but not proved: `MetaMathlibExt.unit_square_class_three_sumset_eq_univ` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#unit-square-class-three-sumset-eq-univ).
+Stated but not proved: `MetaMathlibExt.unit_square_class_three_sumset_eq_univ` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#unit-square-class-three-sumset-eq-univ).
 
 ## Three unit terms force a square-weighted zero sum modulo $p^r$
 
@@ -1210,7 +1210,7 @@ $a_1 x_1 + \dots + a_k x_k = 0$, that is, the sequence is a $U(n)^2$-weighted ze
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Corollary 19 (`jis-2024-24.1.7-cor-19`).
 
-Stated but not proved: `MetaMathlibExt.unit_square_weighted_zero_sum_prime_power` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#unit-square-weighted-zero-sum-prime-powe).
+Stated but not proved: `MetaMathlibExt.unit_square_weighted_zero_sum_prime_power` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#unit-square-weighted-zero-sum-prime-powe).
 
 ## Few unit terms force a Jacobi-weighted zero sum
 
@@ -1227,7 +1227,7 @@ is an $S(n)$-weighted zero-sum sequence.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 21 (`jis-2024-24.1.7-lem-21`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_weighted_zero_sum_of_few_units` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-weighted-zero-sum-of-few-units).
+Stated but not proved: `MetaMathlibExt.jacobi_weighted_zero_sum_of_few_units` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-weighted-zero-sum-of-few-units).
 
 ## Three terms coprime to one prime force a Jacobi-weighted zero sum
 
@@ -1245,7 +1245,7 @@ $a_1 x_1 + \dots + a_k x_k = 0$, that is, the sequence is an $S(n)$-weighted zer
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 22 (`jis-2024-24.1.7-lem-22`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_weighted_zero_sum_of_three_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-weighted-zero-sum-of-three-coprim).
+Stated but not proved: `MetaMathlibExt.jacobi_weighted_zero_sum_of_three_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-weighted-zero-sum-of-three-coprim).
 
 ## Davenport constant for the weights of Jacobi symbol one
 
@@ -1263,7 +1263,7 @@ the number of prime factors of $n$ counted with multiplicity.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 23 (`jis-2024-24.1.7-thm-23`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_davenport_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-davenport-constant).
+Stated but not proved: `MetaMathlibExt.jacobi_davenport_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 245](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L245). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-davenport-constant).
 
 ## Consecutive constant for the weights of Jacobi symbol one
 
@@ -1281,7 +1281,7 @@ the number of prime factors of $n$ counted with multiplicity.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 24 (`jis-2024-24.1.7-thm-24`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_consecutive_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-consecutive-constant).
+Stated but not proved: `MetaMathlibExt.jacobi_consecutive_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-consecutive-constant).
 
 ## Units with equal Jacobi and Legendre symbols form a subgroup of index two
 
@@ -1297,7 +1297,7 @@ $\mathbb{Z}/n\mathbb{Z}$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Proposition 26 (`jis-2024-24.1.7-prop-26`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_index_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-index-two).
+Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_index_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-index-two).
 
 ## Lifting the Jacobi kernel into the Jacobi agreement set
 
@@ -1314,7 +1314,7 @@ $x \in L(n;p')$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 28 (`jis-2024-24.1.7-lem-28`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_kernel_subset_image_jacobi_eq_legendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-kernel-subset-image-jacobi-eq-leg).
+Stated but not proved: `MetaMathlibExt.jacobi_kernel_subset_image_jacobi_eq_legendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-kernel-subset-image-jacobi-eq-leg).
 
 ## Units modulo a prime divisor lift to units where the Jacobi and Legendre symbols agree
 
@@ -1328,7 +1328,7 @@ of some element of $L(n;p')$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 29 (`jis-2024-24.1.7-lem-29`).
 
-Stated but not proved: `MetaMathlibExt.units_prime_subset_image_jacobi_eq_legendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#units-prime-subset-image-jacobi-eq-legen).
+Stated but not proved: `MetaMathlibExt.units_prime_subset_image_jacobi_eq_legendre` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 293](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L293). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#units-prime-subset-image-jacobi-eq-legen).
 
 ## Chinese remainder lifts into the Jacobi agreement set
 
@@ -1347,7 +1347,7 @@ $S(n') \times U(p') \subseteq \psi(L(n;p'))$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 31 (`jis-2024-24.1.7-lem-31`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_kernel_prod_units_subset_crt_image` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-kernel-prod-units-subset-crt-imag).
+Stated but not proved: `MetaMathlibExt.jacobi_kernel_prod_units_subset_crt_image` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-kernel-prod-units-subset-crt-imag).
 
 ## Weighted zero-sum criterion for the Jacobi–Legendre weights
 
@@ -1365,7 +1365,7 @@ there are weights $a_1, \dots, a_k \in L(n;p')$ with $a_1 x_1 + \dots + a_k x_k 
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Lemma 32 (`jis-2024-24.1.7-lem-32`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_weighted_zero_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-weighted-zero-sum).
+Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_weighted_zero_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 321](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L321). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-weighted-zero-sum).
 
 ## Davenport constant of the Jacobi–Legendre weights
 
@@ -1383,7 +1383,7 @@ symbol $\left(\frac{x}{p'}\right)$. Then $D_{L(n;p')}(n) = \Omega(n) + 1$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 33 (`jis-2024-24.1.7-thm-33`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_davenport_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-davenport-constant).
+Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_davenport_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-davenport-constant).
 
 ## Davenport constant of the Jacobi–Legendre weights modulo a product of two primes
 
@@ -1400,7 +1400,7 @@ $D_{L(n;p')}(n) = 4$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 34 (`jis-2024-24.1.7-thm-34`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_davenport_constant_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-davenport-constant-tw).
+Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_davenport_constant_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 346](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L346). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-davenport-constant-tw).
 
 ## Consecutive constant of the Jacobi–Legendre weights
 
@@ -1418,7 +1418,7 @@ the Legendre symbol $\left(\frac{x}{p'}\right)$. Then $C_{L(n;p')}(n) = 2^{\Omeg
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 35 (`jis-2024-24.1.7-thm-35`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_consecutive_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-consecutive-constant).
+Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_consecutive_constant` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-consecutive-constant).
 
 ## Consecutive constant of the Jacobi–Legendre weights modulo a product of two primes
 
@@ -1435,7 +1435,7 @@ $\left(\frac{x}{p'}\right)$. Then $C_{L(n;p')}(n) = 6$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *Zero-Sum Constants Related to the Jacobi Symbol*, Journal of Integer Sequences 27 (2024), Article 24.1.7, Theorem 36 (`jis-2024-24.1.7-thm-36`).
 
-Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_consecutive_constant_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-consecutive-constant-2).
+Stated but not proved: `MetaMathlibExt.jacobi_eq_legendre_consecutive_constant_two_primes` is written with `theorem_wanted` in [WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/JacobiZeroSumConstantsWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#jacobi-eq-legendre-consecutive-constant-2).
 
 ## Weighted Davenport constant of a product with product weights
 
@@ -1453,7 +1453,7 @@ three constants exist, then $D_{A \times B}(M \times N) \ge D_A(M) + D_B(N) - 1$
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.1.
 
-Stated but not proved: `MetaMathlibExt.davenport_prod_ring_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#davenport-prod-ring-ge).
+Stated but not proved: `MetaMathlibExt.davenport_prod_ring_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#davenport-prod-ring-ge).
 
 ## Weighted Davenport constant of a product of modules
 
@@ -1468,7 +1468,7 @@ $D_A(M \times N) \ge D_A(M) + D_A(N) - 1$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.2.
 
-Stated but not proved: `MetaMathlibExt.davenport_prod_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#davenport-prod-ge).
+Stated but not proved: `MetaMathlibExt.davenport_prod_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 95](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L95). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#davenport-prod-ge).
 
 ## Consecutive weighted zero-sum constant of a product with product weights
 
@@ -1486,7 +1486,7 @@ all three constants exist, then $C_{A \times B}(M \times N) \ge C_A(M) \, C_B(N)
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.3.
 
-Stated but not proved: `MetaMathlibExt.consecutive_prod_ring_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#consecutive-prod-ring-ge).
+Stated but not proved: `MetaMathlibExt.consecutive_prod_ring_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#consecutive-prod-ring-ge).
 
 ## Consecutive weighted zero-sum constant of a product of modules
 
@@ -1501,7 +1501,7 @@ $C_A(M \times N) \ge C_A(M) \, C_A(N)$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 2.4.
 
-Stated but not proved: `MetaMathlibExt.consecutive_prod_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#consecutive-prod-ge).
+Stated but not proved: `MetaMathlibExt.consecutive_prod_ge` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#consecutive-prod-ge).
 
 ## Consecutive zero-sum constant of a finite abelian group
 
@@ -1514,7 +1514,7 @@ $x_s + \dots + x_t = 0$. Then $C(G) = |G|$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 3.1.
 
-Stated but not proved: `MetaMathlibExt.consecutive_constant_eq_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#consecutive-constant-eq-card).
+Stated but not proved: `MetaMathlibExt.consecutive_constant_eq_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-05/index.html#consecutive-constant-eq-card).
 
 ## A block of consecutive coordinates orthogonal to $a$ vectors of $\mathbb{Z}_2^m$
 
@@ -1529,7 +1529,7 @@ $s, \dots, t$ is orthogonal to every $v_i$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 3.2.
 
-Stated but not proved: `MetaMathlibExt.exists_consecutive_orthogonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-consecutive-orthogonal).
+Stated but not proved: `MetaMathlibExt.exists_consecutive_orthogonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-consecutive-orthogonal).
 
 ## A block of consecutive integers meeting $a$ given sets evenly
 
@@ -1541,7 +1541,7 @@ $1 \le s \le t \le m$ such that $|\{s, s + 1, \dots, t\} \cap X_i|$ is even for 
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 3.3.
 
-Stated but not proved: `MetaMathlibExt.exists_consecutive_even_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-consecutive-even-inter).
+Stated but not proved: `MetaMathlibExt.exists_consecutive_even_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-consecutive-even-inter).
 
 ## Griffiths' criterion for unit-weighted zero sums modulo a prime power
 
@@ -1555,7 +1555,7 @@ $a_1, \dots, a_k$ of $\mathbb{Z}/n\mathbb{Z}$ with $a_1 x_1 + \dots + a_k x_k = 
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 3.5.
 
-Stated but not proved: `MetaMathlibExt.unitWeightedZeroSum_of_even_nonDivisible` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-weighted-zero-sum-of-even-non-divis).
+Stated but not proved: `MetaMathlibExt.unitWeightedZeroSum_of_even_nonDivisible` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-weighted-zero-sum-of-even-non-divis).
 
 ## Davenport constant of $\mathbb{Z}_2^a$
 
@@ -1570,7 +1570,7 @@ The paper states this for positive $a$; for $a = 0$ both sides equal $1$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 4.1.
 
-Stated but not proved: `MetaMathlibExt.davenport_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#davenport-zmod-two-pow).
+Stated but not proved: `MetaMathlibExt.davenport_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 165](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L165). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#davenport-zmod-two-pow).
 
 ## A nonzero vector of $\mathbb{Z}_2^m$ orthogonal to $a$ vectors when $a < m$
 
@@ -1583,7 +1583,7 @@ $w \cdot v_i = \sum_j w_j (v_i)_j = 0$ in $\mathbb{Z}_2$ for every $i$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 4.2.
 
-Stated but not proved: `MetaMathlibExt.exists_ne_zero_orthogonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-ne-zero-orthogonal).
+Stated but not proved: `MetaMathlibExt.exists_ne_zero_orthogonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-ne-zero-orthogonal).
 
 ## A nonempty subset of $\{1, \dots, m\}$ meeting $a$ given sets evenly
 
@@ -1595,7 +1595,7 @@ $Y \subseteq \{1, \dots, m\}$ such that $|Y \cap X_i|$ is even for every $i$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 4.3.
 
-Stated but not proved: `MetaMathlibExt.exists_nonempty_even_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-nonempty-even-inter).
+Stated but not proved: `MetaMathlibExt.exists_nonempty_even_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-nonempty-even-inter).
 
 ## Zero-sum subsequences of length $m$ in $\mathbb{Z}_2^a$
 
@@ -1608,7 +1608,7 @@ $m$: there is a set $I$ of exactly $m$ indices with $\sum_{i \in I} x_i = 0$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 5.2.
 
-Stated but not proved: `MetaMathlibExt.exists_zeroSum_card_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-zero-sum-card-zmod-two-pow).
+Stated but not proved: `MetaMathlibExt.exists_zeroSum_card_zmod_two_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-zero-sum-card-zmod-two-pow).
 
 ## A weight-$m$ vector orthogonal to given vectors of $\mathbb{Z}_2^{m+a}$
 
@@ -1622,7 +1622,7 @@ $w \cdot v_i = \sum_j w_j (v_i)_j = 0$ for every $i$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 5.3.
 
-Stated but not proved: `MetaMathlibExt.exists_weight_orthogonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-weight-orthogonal).
+Stated but not proved: `MetaMathlibExt.exists_weight_orthogonal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-weight-orthogonal).
 
 ## An $m$-subset of $\{1, \dots, m + a\}$ meeting $a$ given sets evenly
 
@@ -1634,7 +1634,7 @@ $Y \subseteq \{1, \dots, m + a\}$ with $|Y| = m$ such that $|Y \cap X_i|$ is eve
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 5.4.
 
-Stated but not proved: `MetaMathlibExt.exists_card_even_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-card-even-inter).
+Stated but not proved: `MetaMathlibExt.exists_card_even_inter` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-card-even-inter).
 
 ## Unit-weighted zero sums of even length in $\mathbb{Z}_n$
 
@@ -1649,7 +1649,7 @@ $\mathbb{Z}_n$ for $i \in I$ such that $\sum_{i \in I} a_i x_i = 0$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 5.5.
 
-Stated but not proved: `MetaMathlibExt.exists_unitWeightedZeroSum_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-unit-weighted-zero-sum-card).
+Stated but not proved: `MetaMathlibExt.exists_unitWeightedZeroSum_card` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-unit-weighted-zero-sum-card).
 
 ## Every $m$-dimensional subspace of $\mathbb{Z}_2^{m+a}$ has a vector of weight $m$
 
@@ -1662,7 +1662,7 @@ to $1$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Corollary 5.7.
 
-Stated but not proved: `MetaMathlibExt.exists_weight_mem_subspace` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-weight-mem-subspace).
+Stated but not proved: `MetaMathlibExt.exists_weight_mem_subspace` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#exists-weight-mem-subspace).
 
 ## Largest subspaces of $\mathbb{Z}_2^{m+a}$ with no vector of weight $m$
 
@@ -1675,7 +1675,7 @@ coordinates equal to $1$ is $m - 1$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Corollary 5.9.
 
-Stated but not proved: `MetaMathlibExt.max_finrank_avoiding_weight` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#max-finrank-avoiding-weight).
+Stated but not proved: `MetaMathlibExt.max_finrank_avoiding_weight` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#max-finrank-avoiding-weight).
 
 ## Unit-weighted Erdős–Ginzburg–Ziv constant of $\mathbb{Z}_n$ for even $n$
 
@@ -1690,7 +1690,7 @@ indices and units $a_i \in U(n)$ for $i \in I$ with $\sum_{i \in I} a_i x_i = 0$
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 6.3.
 
-Stated but not proved: `MetaMathlibExt.gao_unit_constant_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#gao-unit-constant-of-even).
+Stated but not proved: `MetaMathlibExt.gao_unit_constant_of_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#gao-unit-constant-of-even).
 
 ## Sequences equivalent to the extremal profile have no unit-weighted zero sum of length $2^r$
 
@@ -1709,7 +1709,7 @@ $a_i \in U(n)$ for $i \in I$ such that $\sum_{i \in I} a_i x_i = 0$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 6.4.
 
-Stated but not proved: `MetaMathlibExt.eExtremal_of_unitEquiv_profile` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#e-extremal-of-unit-equiv-profile).
+Stated but not proved: `MetaMathlibExt.eExtremal_of_unitEquiv_profile` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#e-extremal-of-unit-equiv-profile).
 
 ## Structure of extremal sequences for unit-weighted zero sums of length $2^r$
 
@@ -1727,7 +1727,7 @@ $c \, y_{\sigma(i)} = b_i x_i$ for every $i$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 6.6.
 
-Stated but not proved: `MetaMathlibExt.unitEquiv_profile_of_eExtremal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-equiv-profile-of-e-extremal).
+Stated but not proved: `MetaMathlibExt.unitEquiv_profile_of_eExtremal` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-equiv-profile-of-e-extremal).
 
 ## Luca's lemma on unit-weighted zero sums modulo $2^r$
 
@@ -1740,7 +1740,7 @@ $\mathbb{Z}/2^r\mathbb{Z}$ with $a_1 x_1 + \dots + a_k x_k = 0$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 6.5.
 
-Stated but not proved: `MetaMathlibExt.unitWeightedZeroSum_of_even_units` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-weighted-zero-sum-of-even-units).
+Stated but not proved: `MetaMathlibExt.unitWeightedZeroSum_of_even_units` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-weighted-zero-sum-of-even-units).
 
 ## Unit-weighted zero sums of multiples of a prime
 
@@ -1757,7 +1757,7 @@ hypothesis does not depend on the choice of the $z_i$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 6.7.
 
-Stated but not proved: `MetaMathlibExt.unitWeightedZeroSum_of_div_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-weighted-zero-sum-of-div-prime).
+Stated but not proved: `MetaMathlibExt.unitWeightedZeroSum_of_div_prime` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#unit-weighted-zero-sum-of-div-prime).
 
 ## Halving consecutive unit-weighted zero-sum free sequences modulo a power of two
 
@@ -1781,7 +1781,7 @@ length $C_{U(n)}(n) - 1$ with no consecutive unit-weighted zero-sum.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 6.8.
 
-Stated but not proved: `MetaMathlibExt.cExtremal_iff_halves` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#c-extremal-iff-halves).
+Stated but not proved: `MetaMathlibExt.cExtremal_iff_halves` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#c-extremal-iff-halves).
 
 ## Consecutive weighted zero-sum constant for interval weights
 
@@ -1795,7 +1795,7 @@ with $a_s x_s + \dots + a_t x_t = 0$. Then $C_A(n) = \lceil n / r \rceil$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 7.1.
 
-Stated but not proved: `MetaMathlibExt.consecutive_interval_weights` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#consecutive-interval-weights).
+Stated but not proved: `MetaMathlibExt.consecutive_interval_weights` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#consecutive-interval-weights).
 
 ## Consecutive weighted zero-sum constant for odd weights
 
@@ -1810,7 +1810,7 @@ $a_s, \dots, a_t \in A$ with $a_s x_s + \dots + a_t x_t = 0$. Then $C_A(n) = 2^r
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 7.2.
 
-Stated but not proved: `MetaMathlibExt.consecutive_odd_weights` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#consecutive-odd-weights).
+Stated but not proved: `MetaMathlibExt.consecutive_odd_weights` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-06/index.html#consecutive-odd-weights).
 
 ## Davenport constant of $\mathbb{Z}_p$ with $k$-th power unit weights is at most $k$
 
@@ -1827,7 +1827,7 @@ $\ell$ elements of $\mathbb{Z}_p$ has an $A$-weighted zero-sum subsequence.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Theorem 7.5.
 
-Stated but not proved: `MetaMathlibExt.davenport_unit_pow_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#davenport-unit-pow-le).
+Stated but not proved: `MetaMathlibExt.davenport_unit_pow_le` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 353](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L353). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#davenport-unit-pow-le).
 
 ## Weighted zero-sum free pairs in a field
 
@@ -1843,7 +1843,7 @@ A zero term is by itself a zero-sum subsequence, so the cosets are taken for non
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Lemma 7.6.
 
-Stated but not proved: `MetaMathlibExt.pair_no_weightedZeroSum_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#pair-no-weighted-zero-sum-iff).
+Stated but not proved: `MetaMathlibExt.pair_no_weightedZeroSum_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 364](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L364). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#pair-no-weighted-zero-sum-iff).
 
 ## Weighted zero-sum free pairs for a proper subgroup of $F^\times$
 
@@ -1859,7 +1859,7 @@ of length $k$ in $F$ has an $A$-weighted zero-sum subsequence, is at least $3$ w
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Corollary 7.7.
 
-Stated but not proved: `MetaMathlibExt.davenport_proper_subgroup_ge_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#davenport-proper-subgroup-ge-three).
+Stated but not proved: `MetaMathlibExt.davenport_proper_subgroup_ge_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#davenport-proper-subgroup-ge-three).
 
 ## Weighted zero-sum free pairs for $k$-th power weights modulo a prime
 
@@ -1877,7 +1877,7 @@ least $3$.
 
 - Santanu Mondal, Krishnendu Paul and Shameek Paul, *On Unit-Weighted Zero-Sum Constants of `ℤ_n`*, INTEGERS 24 (2024), Article A38, Corollary 7.8.
 
-Stated but not proved: `MetaMathlibExt.davenport_unit_pow_ge_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#davenport-unit-pow-ge-three).
+Stated but not proved: `MetaMathlibExt.davenport_unit_pow_ge_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/UnitWeightedZeroSumConstantsWanted.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/part-07/index.html#davenport-unit-pow-ge-three).
 
 ## Depends on
 
@@ -1886,4 +1886,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weighted Davenport constant](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/zero-sum-subset-sums/weighted-davenport-constant)

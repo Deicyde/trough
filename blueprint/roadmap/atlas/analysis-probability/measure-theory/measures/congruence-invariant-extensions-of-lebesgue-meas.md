@@ -7,14 +7,14 @@ statement: formalized
 
 # Congruence-invariant extensions of Lebesgue measure
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html).
 
 ## Congruent plane sets
 
 Two sets $E$ and $F$ in the Euclidean plane $\mathbb{R}^2$ are
 congruent when some isometry of the plane onto itself maps $E$ onto $F$.
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.AreCongruent`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#are-congruent).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.AreCongruent`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#are-congruent).
 
 ## Congruence-invariant set functions on the plane
 
@@ -22,7 +22,7 @@ A function $\mu$ that assigns to every
 subset of the Euclidean plane $\mathbb{R}^2$ a value in $[0, \infty]$ is congruence invariant when
 $\mu(E) = \mu(F)$ for all congruent plane sets $E$ and $F$.
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCongruenceInvariant`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#is-congruence-invariant).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCongruenceInvariant`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#is-congruence-invariant).
 
 ## Countably additive set function
 
@@ -30,7 +30,7 @@ Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCongruenceInvari
 countably-additive reading of "additive" in Problem 169; the typescript
 does not say whether finite or countable additivity is meant.
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCountablyAdditive`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#is-countably-additive).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.IsCountablyAdditive`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#is-countably-additive).
 
 ## Problem of a congruence-invariant countably additive plane measure
 
@@ -40,7 +40,7 @@ additive, extending the Caratheodory linear measure (read as Lebesgue
 volume on measurable sets), with values in `[0, +∞]` (automatic for
 `ENNReal`).
 
-Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.CountablyAdditiveCongruenceClaim`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#countably-additive-congruence-claim).
+Formalized by `MathlibExt.MeasureTheory.ScottishBook169Wanted.CountablyAdditiveCongruenceClaim`, a definition declared in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#countably-additive-congruence-claim).
 
 ## No countably additive congruence-invariant measure on all plane sets
 
@@ -63,7 +63,7 @@ extending Lebesgue measure), not this claim, and is not asserted here.
 
 - E. Szpilrajn, Problem 169 of the Scottish Book; typescript PDF p.78, printed p.75. Banach, Fund. Math. 4 (1923), 7-33.
 
-Stated but not proved: `MathlibExt.MeasureTheory.ScottishBook169Wanted.no_countably_additive_congruence_measure` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#no-countably-additive-congruence-measure).
+Stated but not proved: `MathlibExt.MeasureTheory.ScottishBook169Wanted.no_countably_additive_congruence_measure` is written with `theorem_wanted` in [WantedExt/MeasureTheory/ScottishBook169Wanted.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/ScottishBook169Wanted.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html#no-countably-additive-congruence-measure).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Congruence-invariant extensions of Lebesgue measure](https://deicyde.github.io/atlas-lean/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/MeasureTheory/measures/congruence-invariant-extensions-of-lebesgue-meas)

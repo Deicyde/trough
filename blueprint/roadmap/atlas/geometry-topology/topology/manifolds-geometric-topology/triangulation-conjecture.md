@@ -7,7 +7,7 @@ statement: formalized
 
 # Triangulation conjecture
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html).
 
 ## Closed topological manifold
 
@@ -17,7 +17,7 @@ with an atlas of charts, homeomorphisms from open subsets of $M$ onto open subse
 $\mathbb{R}^n$, whose domains cover $M$. Since the charts land in $\mathbb{R}^n$ itself rather
 than in a half-space, $M$ has no boundary.
 
-Formalized by `MathlibExt.Topology.ManolescuTriangulationWanted.Topology.ClosedTopManifold`, a structure declared in [WantedExt/Topology/ManolescuTriangulationWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ManolescuTriangulationWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html#closed-top-manifold).
+Formalized by `MathlibExt.Topology.ManolescuTriangulationWanted.Topology.ClosedTopManifold`, a structure declared in [WantedExt/Topology/ManolescuTriangulationWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ManolescuTriangulationWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html#closed-top-manifold).
 
 ## Triangulable closed manifold
 
@@ -30,7 +30,7 @@ For a compact manifold this is the usual notion of triangulability. Requiring fi
 is essential: otherwise any copy of $M$ embedded in $\mathbb{R}^N$ would be the realization of the
 complex whose faces are its points.
 
-Formalized by `MathlibExt.Topology.ManolescuTriangulationWanted.Topology.Triangulable`, a definition declared in [WantedExt/Topology/ManolescuTriangulationWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ManolescuTriangulationWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html#triangulable).
+Formalized by `MathlibExt.Topology.ManolescuTriangulationWanted.Topology.Triangulable`, a definition declared in [WantedExt/Topology/ManolescuTriangulationWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ManolescuTriangulationWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html#triangulable).
 
 ## Manolescu's disproof of the triangulation conjecture
 
@@ -41,7 +41,7 @@ there is a closed connected topological $n$-manifold that is not triangulable.
 
 - C. Manolescu, *Pin(2)-equivariant Seiberg–Witten Floer homology and the triangulation conjecture*, J. Amer. Math. Soc. 29 (2016), via the Galewski–Stern and Matumoto reduction. Earlier, the triangulation conjecture was known false in dimension 4 (Casson). Problem `manolescu_triangulation_disproof` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.ManolescuTriangulationWanted.Topology.manolescu_triangulation_disproof` is written with `theorem_wanted` in [WantedExt/Topology/ManolescuTriangulationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/ManolescuTriangulationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html#manolescu-triangulation-disproof).
+Stated but not proved: `MathlibExt.Topology.ManolescuTriangulationWanted.Topology.manolescu_triangulation_disproof` is written with `theorem_wanted` in [WantedExt/Topology/ManolescuTriangulationWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/ManolescuTriangulationWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html#manolescu-triangulation-disproof).
 
 ## Depends on
 
@@ -50,4 +50,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Triangulation conjecture](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/manifolds-geometric-topology/triangulation-conjecture)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Euler's evaluations of odd zeta and Dirichlet beta series
 
-4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html).
+4 results, 4 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html).
 
 ## Zeta series over odd denominators
 
@@ -23,7 +23,7 @@ $k > 1$.
 
 - Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Proposition 2, Equation (11), citing its reference [20].
 
-Stated but not proved: `MetaMathlibExt.hasSum_one_div_odd_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#has-sum-one-div-odd-pow).
+Stated but not proved: `MetaMathlibExt.hasSum_one_div_odd_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#has-sum-one-div-odd-pow).
 
 ## Dirichlet beta at odd positive integers
 
@@ -43,7 +43,7 @@ converges only conditionally, and its sum is the value of the $L$-function there
 
 - Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Proposition 3, Equation (12), citing its references [3], [6].
 
-Stated but not proved: `MetaMathlibExt.dirichletBeta_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#dirichlet-beta-two-mul-add-one).
+Stated but not proved: `MetaMathlibExt.dirichletBeta_two_mul_add_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#dirichlet-beta-two-mul-add-one).
 
 ## Integrals of powers of $\sin x / x$
 
@@ -61,7 +61,7 @@ For $k = 1$ the integral converges only conditionally, hence the limit over $R$.
 
 - Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_integral_sinc_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#tendsto-integral-sinc-pow).
+Stated but not proved: `MetaMathlibExt.tendsto_integral_sinc_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#tendsto-integral-sinc-pow).
 
 ## Sums of powers of $\sin(nt)/n$
 
@@ -79,7 +79,7 @@ $k = 1$ the series converges only conditionally.
 
 - Jan W. H. Swanepoel, *A Short Simple Probabilistic Proof of a Well Known Identity and the Derivation of Related New Identities Involving the Bernoulli Numbers and the Euler Numbers*, INTEGERS 25 (2025), Article A50, Proposition 4, quoting its reference [18].
 
-Stated but not proved: `MetaMathlibExt.tendsto_sum_sin_pow_div_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#tendsto-sum-sin-pow-div-pow).
+Stated but not proved: `MetaMathlibExt.tendsto_sum_sin_pow_div_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/OddZetaDirichletBetaEulerWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html#tendsto-sum-sin-pow-div-pow).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Euler's evaluations of odd zeta and Dirichlet beta series](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/zeta-l-functions/riemann-zeta/euler-s-evaluations-of-odd-zeta-and-dirichlet-be)

@@ -8,7 +8,7 @@ proof: formalized
 
 # Large sets in semigroups
 
-10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html).
+10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html).
 
 ## Piecewise syndetic subsets of a semigroup
 
@@ -21,7 +21,7 @@ $Fx = \{fx : f \in F\}$ and $t^{-1} D = \{s \in S : ts \in D\}$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Section 2 (piecewise syndetic sets, after Hindman--Strauss).
 
-Formalized by `MetaMathlibExt.IsMulPiecewiseSyndetic`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-piecewise-syndetic).
+Formalized by `MetaMathlibExt.IsMulPiecewiseSyndetic`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-piecewise-syndetic).
 
 ## J-sets in a semigroup
 
@@ -35,7 +35,7 @@ $a_1 f(t_1) a_2 f(t_2) \cdots a_m f(t_m) a_{m+1} \in D$ for every $f \in F$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Definition 2.4(3).
 
-Formalized by `MetaMathlibExt.IsMulJSet`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-jset).
+Formalized by `MetaMathlibExt.IsMulJSet`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-jset).
 
 ## Central sets in a semigroup
 
@@ -53,7 +53,7 @@ two-sided ideal $K(\beta S)$, which is itself a nonempty two-sided ideal lying i
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Section 2.1 (central sets).
 
-Formalized by `MetaMathlibExt.IsCentralSet`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-central-set).
+Formalized by `MetaMathlibExt.IsCentralSet`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-central-set).
 
 ## C-sets in a semigroup
 
@@ -67,7 +67,7 @@ $p \in J(S)$ with $pp = p$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Definition 2.4(3) (C-sets).
 
-Formalized by `MetaMathlibExt.IsCSet`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-cset).
+Formalized by `MetaMathlibExt.IsCSet`, a definition declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-cset).
 
 ## A nonempty semigroup is piecewise syndetic in itself
 
@@ -78,7 +78,7 @@ then $S$ is a piecewise syndetic subset of $S$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Section 2 (piecewise syndetic sets).
 
-Formalized by `MetaMathlibExt.isMulPiecewiseSyndetic_univ`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-piecewise-syndetic-univ).
+Formalized by `MetaMathlibExt.isMulPiecewiseSyndetic_univ`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-piecewise-syndetic-univ).
 
 ## The empty set is not piecewise syndetic in a semigroup
 
@@ -89,7 +89,7 @@ subset of $S$ is not piecewise syndetic.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Section 2 (piecewise syndetic sets).
 
-Formalized by `MetaMathlibExt.not_isMulPiecewiseSyndetic_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-mul-piecewise-syndetic-empty).
+Formalized by `MetaMathlibExt.not_isMulPiecewiseSyndetic_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-mul-piecewise-syndetic-empty).
 
 ## A nonempty semigroup is a J-set in itself
 
@@ -100,7 +100,7 @@ $J$-set in $S$.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Definition 2.4(3).
 
-Formalized by `MetaMathlibExt.isMulJSet_univ`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-jset-univ).
+Formalized by `MetaMathlibExt.isMulJSet_univ`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#is-mul-jset-univ).
 
 ## The empty set is not a J-set in a nonempty semigroup
 
@@ -111,7 +111,7 @@ the empty subset of $S$ is not a $J$-set.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Definition 2.4(3).
 
-Formalized by `MetaMathlibExt.not_isMulJSet_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-mul-jset-empty).
+Formalized by `MetaMathlibExt.not_isMulJSet_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-mul-jset-empty).
 
 ## The empty set is not central in a semigroup
 
@@ -122,7 +122,7 @@ $S$ is not central.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Section 2.1 (central sets).
 
-Formalized by `MetaMathlibExt.not_isCentralSet_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-central-set-empty).
+Formalized by `MetaMathlibExt.not_isCentralSet_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-central-set-empty).
 
 ## The empty set is not a C-set in a semigroup
 
@@ -133,7 +133,7 @@ $S$ is not a $C$-set.
 
 - Aninda Chakraborty and Sayan Goswami, *An Analogue to the Infinitary Hales–Jewett Theorem*, INTEGERS 24 (2024), Article A74, Definition 2.4(3) (C-sets).
 
-Formalized by `MetaMathlibExt.not_isCSet_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/SemigroupLargeness.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-cset-empty).
+Formalized by `MetaMathlibExt.not_isCSet_empty`, a theorem declared in [MathlibExt/Combinatorics/SemigroupLargeness.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/SemigroupLargeness.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html#not-is-cset-empty).
 
 ## Depends on
 
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Large sets in semigroups](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/structural-ramsey/large-sets-in-semigroups)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Graph minors
 
-10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html).
+10 results, 9 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html).
 
 ## Finite simple graph
 
@@ -16,14 +16,14 @@ simple graph on $V$, that is, a symmetric and irreflexive adjacency relation on 
 
 Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
-Formalized by `MetaMathlibExt.FinGraph`, a structure declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#fin-graph).
+Formalized by `MetaMathlibExt.FinGraph`, a structure declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 26](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L26). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#fin-graph).
 
 ## Complete graph as a finite graph
 
 For a natural number $n$, $K_n$ is the finite graph whose
 vertices are the natural numbers less than $n$, in which any two distinct vertices are adjacent.
 
-Formalized by `MetaMathlibExt.cliqueFinGraph`, an abbreviation declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#clique-fin-graph).
+Formalized by `MetaMathlibExt.cliqueFinGraph`, an abbreviation declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#clique-fin-graph).
 
 ## Adjacency in the complete graph
 
@@ -31,7 +31,7 @@ For every natural number $n$ and all vertices $x$ and $y$
 of the complete graph $K_n$, whose vertices are the natural numbers less than $n$, $x$ and $y$ are
 adjacent if and only if $x \ne y$.
 
-Formalized by `MetaMathlibExt.cliqueFinGraph_adj`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#clique-fin-graph-adj).
+Formalized by `MetaMathlibExt.cliqueFinGraph_adj`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#clique-fin-graph-adj).
 
 ## One-step graph minor
 
@@ -52,7 +52,7 @@ $f(v') = v$.
 
 Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
-Formalized by `MetaMathlibExt.MinorStep`, an inductive type declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#minor-step).
+Formalized by `MetaMathlibExt.MinorStep`, an inductive type declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#minor-step).
 
 ## Graph minor relation
 
@@ -63,34 +63,34 @@ vertex, the deletion of one edge, or the contraction of one edge.
 
 Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
-Formalized by `MetaMathlibExt.IsMinor`, a definition declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#is-minor).
+Formalized by `MetaMathlibExt.IsMinor`, a definition declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#is-minor).
 
 ## Reflexivity of the graph minor relation
 
 Every finite graph $G$ is a minor of itself.
 
-Formalized by `MetaMathlibExt.IsMinor.refl`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#refl).
+Formalized by `MetaMathlibExt.IsMinor.refl`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#refl).
 
 ## Transitivity of the graph minor relation
 
 For finite graphs $H$, $K$ and $G$, if $H$ is a
 minor of $K$ and $K$ is a minor of $G$, then $H$ is a minor of $G$.
 
-Formalized by `MetaMathlibExt.IsMinor.trans`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#trans).
+Formalized by `MetaMathlibExt.IsMinor.trans`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#trans).
 
 ## A single minor step gives a minor
 
 For finite graphs $H$ and $G$, if $H$ arises from $G$ by
 one minor step, then $H$ is a minor of $G$.
 
-Formalized by `MetaMathlibExt.IsMinor.of_step`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#of-step).
+Formalized by `MetaMathlibExt.IsMinor.of_step`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#of-step).
 
 ## An isomorphic copy is a minor
 
 For finite graphs $H$ and $G$, if $H$ is isomorphic to $G$,
 then $H$ is a minor of $G$.
 
-Formalized by `MetaMathlibExt.IsMinor.of_iso`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#of-iso).
+Formalized by `MetaMathlibExt.IsMinor.of_iso`, a theorem declared in [MathlibExt/Combinatorics/Graph/GraphMinor.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Graph/GraphMinor.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#of-iso).
 
 ## Robertson–Seymour theorem
 
@@ -102,7 +102,7 @@ minor of $G$.
 
 Stable source: https://en.wikipedia.org/wiki/Robertson%E2%80%93Seymour_theorem.
 
-Stated but not proved: `MetaMathlibExt.robertson_seymour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Graph/RobertsonSeymourWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Graph/RobertsonSeymourWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#robertson-seymour).
+Stated but not proved: `MetaMathlibExt.robertson_seymour` is written with `theorem_wanted` in [WantedExt/Combinatorics/Graph/RobertsonSeymourWanted.lean, line 25](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Graph/RobertsonSeymourWanted.lean#L25). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html#robertson-seymour).
 
 ## Depends on
 
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Graph minors](https://deicyde.github.io/atlas-lean/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GraphTheory/planar-graphs-and-minors/graph-minors)

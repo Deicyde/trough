@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized hyperbolic Pascal triangle
 
-6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html).
+6 results, 3 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html).
 
 ## Interior step of the generalized hyperbolic Pascal triangle
 
@@ -24,7 +24,7 @@ truncated at $0$). A list with fewer than two entries gives the empty list.
 
 - Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Section 1 (construction of the triangle linked to `{4, q}`).
 
-Formalized by `MetaMathlibExt.ghptInterior`, a definition declared in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-interior).
+Formalized by `MetaMathlibExt.ghptInterior`, a definition declared in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-interior).
 
 ## Rows of the generalized hyperbolic Pascal triangle
 
@@ -40,7 +40,7 @@ $(0, \beta_{n+1})$. Row $0$ (the indeterminate root $\Omega$) is represented by 
 
 - Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Section 1 (construction of the triangle linked to `{4, q}`, Figure 1).
 
-Formalized by `MetaMathlibExt.ghptRow`, a definition declared in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-row).
+Formalized by `MetaMathlibExt.ghptRow`, a definition declared in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-row).
 
 ## Rows 3 and 4 of an example generalized hyperbolic Pascal triangle
 
@@ -53,7 +53,7 @@ $9, 12, 6, 15, 27$, and those of row $4$ are $12, 21, 12, 18, 6, 6, 21, 15, 42, 
 
 - Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Figure 1.
 
-Formalized by `MetaMathlibExt.ghptRow_figure_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-row-figure-one).
+Formalized by `MetaMathlibExt.ghptRow_figure_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-row-figure-one).
 
 ## Convolution identity for an inhomogeneous linear recurrence
 
@@ -73,7 +73,7 @@ $k \ge 1$ are not needed.
 
 - Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.linearRecurrence_inhomogeneous_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#linear-recurrence-inhomogeneous-identity).
+Stated but not proved: `MetaMathlibExt.linearRecurrence_inhomogeneous_identity` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#linear-recurrence-inhomogeneous-identity).
 
 ## Explicit formula for an inhomogeneous linear recurrence
 
@@ -92,7 +92,7 @@ states the formula for $n \ge k$, as a consequence of its Theorem 1.
 
 - Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.linearRecurrence_inhomogeneous_explicit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#linear-recurrence-inhomogeneous-explicit).
+Stated but not proved: `MetaMathlibExt.linearRecurrence_inhomogeneous_explicit` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#linear-recurrence-inhomogeneous-explicit).
 
 ## Weighted alternating row sums of the generalized hyperbolic Pascal triangle
 
@@ -111,7 +111,7 @@ The identities do not use the structure of the rows; they hold for every $q$ and
 
 - Hacène Belbachir, Fella Rami, and László Szalay, *Alternating Sums in the Generalized Hyperbolic Pascal Triangle*, INTEGERS 24 (2024), Article A84, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.ghptRow_weighted_alternating_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-row-weighted-alternating-sum).
+Stated but not proved: `MetaMathlibExt.ghptRow_weighted_alternating_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/HyperbolicPascalAlternatingSumsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html#ghpt-row-weighted-alternating-sum).
 
 ## Depends on
 
@@ -120,4 +120,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized hyperbolic Pascal triangle](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/generalized-binomial-coefficients/generalized-hyperbolic-pascal-triangle)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Brousseau sums of k-Fibonacci numbers
 
-13 results, 7 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html).
+13 results, 7 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html).
 
 ## The numbers $A_k^{(p)}$ for $k$-Fibonacci Brousseau sums
 
@@ -24,7 +24,7 @@ where $2/k$ is read as $0$ when $k = 0$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 1.
 
-Formalized by `MetaMathlibExt.brousseauA`, a definition declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a).
+Formalized by `MetaMathlibExt.brousseauA`, a definition declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a).
 
 ## The initial value $A_k^{(0)} = 1$
 
@@ -35,7 +35,7 @@ for $k$-Fibonacci Brousseau sums equals $1$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 1.
 
-Formalized by `MetaMathlibExt.brousseauA_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a-zero).
+Formalized by `MetaMathlibExt.brousseauA_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a-zero).
 
 ## The value $A_k^{(1)} = 2/k$
 
@@ -46,7 +46,7 @@ $k$-Fibonacci Brousseau sums equals $2/k$, where $2/0$ is read as $0$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 1.
 
-Formalized by `MetaMathlibExt.brousseauA_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a-one).
+Formalized by `MetaMathlibExt.brousseauA_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a-one).
 
 ## The value $A_k^{(2)} = 8/k^2$
 
@@ -57,7 +57,7 @@ $k$-Fibonacci Brousseau sums equals $8/k^2$, where $8/0$ is read as $0$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 1.
 
-Formalized by `MetaMathlibExt.brousseauA_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a-two).
+Formalized by `MetaMathlibExt.brousseauA_two`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-a-two).
 
 ## The coefficient polynomials $C_k^{(p)}$ for $k$-Fibonacci Brousseau sums
 
@@ -75,7 +75,7 @@ where $0^0 = 1$; in particular $C_k^{(p)}(0) = (-1)^p A_k^{(p)}$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 5.
 
-Formalized by `MetaMathlibExt.brousseauCoeff`, a definition declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-coeff).
+Formalized by `MetaMathlibExt.brousseauCoeff`, a definition declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-coeff).
 
 ## The polynomial $C_k^{(0)}$ is constant $1$
 
@@ -86,7 +86,7 @@ coefficient polynomial $C_k^{(0)}$ for $k$-Fibonacci Brousseau sums satisfies $C
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 5.
 
-Formalized by `MetaMathlibExt.brousseauCoeff_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-coeff-zero).
+Formalized by `MetaMathlibExt.brousseauCoeff_zero`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-coeff-zero).
 
 ## The polynomial $C_k^{(1)}(n) = n - 2/k$
 
@@ -98,7 +98,7 @@ $C_k^{(1)}(n) = n - 2/k$, where $2/0$ is read as $0$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Definition 5.
 
-Formalized by `MetaMathlibExt.brousseauCoeff_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-coeff-one).
+Formalized by `MetaMathlibExt.brousseauCoeff_one`, a theorem declared in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#brousseau-coeff-one).
 
 ## $k$-Fibonacci numbers as a power-weighted convolution
 
@@ -117,7 +117,7 @@ The paper assumes $k \ge 1$ and $n \ge 1$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Theorem 1 (`jis-2024-24.6.4-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_eq_pow_add_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-eq-pow-add-convolution).
+Stated but not proved: `MetaMathlibExt.kFibonacci_eq_pow_add_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-eq-pow-add-convolution).
 
 ## Power-weighted convolution of k-Fibonacci numbers
 
@@ -138,7 +138,7 @@ The source takes $k$ to be a positive integer.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Theorem 4 (`jis-2024-24.6.4-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_power_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-power-convolution).
+Stated but not proved: `MetaMathlibExt.kFibonacci_power_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-power-convolution).
 
 ## Brousseau sums of $k$-Fibonacci numbers
 
@@ -159,7 +159,7 @@ The paper assumes $k \ge 1$.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Theorem 6 (`jis-2024-24.6.4-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_brousseau_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-brousseau-sum).
+Stated but not proved: `MetaMathlibExt.kFibonacci_brousseau_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-brousseau-sum).
 
 ## Brousseau sums of Fibonacci numbers along an odd step
 
@@ -176,7 +176,7 @@ $$
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Corollary 9 (`jis-2024-24.6.4-cor-9`).
 
-Stated but not proved: `MetaMathlibExt.fibonacci_brousseau_sum_mul_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#fibonacci-brousseau-sum-mul-odd).
+Stated but not proved: `MetaMathlibExt.fibonacci_brousseau_sum_mul_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#fibonacci-brousseau-sum-mul-odd).
 
 ## Power-weighted Pell sums along odd multiples
 
@@ -197,7 +197,7 @@ $$
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Corollary 10 (`jis-2024-24.6.4-cor-10`).
 
-Stated but not proved: `MetaMathlibExt.pell_brousseau_sum_mul_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#pell-brousseau-sum-mul-odd).
+Stated but not proved: `MetaMathlibExt.pell_brousseau_sum_mul_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#pell-brousseau-sum-mul-odd).
 
 ## Shifted power-weighted sums of k-Fibonacci numbers
 
@@ -219,7 +219,7 @@ The source takes $k$ to be a positive integer.
 
 - Prabha Sivaraman Nair and Rejikumar Karunakaran, *On k-Fibonacci Brousseau Sums*, Journal of Integer Sequences 27 (2024), Article 24.6.4, Theorem 11 (`jis-2024-24.6.4-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.kFibonacci_shifted_brousseau_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-shifted-brousseau-sum).
+Stated but not proved: `MetaMathlibExt.kFibonacci_shifted_brousseau_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/KFibonacciBrousseauSumsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html#k-fibonacci-shifted-brousseau-sum).
 
 ## Depends on
 
@@ -228,4 +228,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Brousseau sums of k-Fibonacci numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/second-order-sequences/brousseau-sums-of-k-fibonacci-numbers)

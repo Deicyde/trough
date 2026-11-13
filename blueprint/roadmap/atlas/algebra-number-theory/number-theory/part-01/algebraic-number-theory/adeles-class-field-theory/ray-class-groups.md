@@ -8,7 +8,7 @@ proof: formalized
 
 # Ray class groups
 
-97 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html).
+97 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html).
 
 ## Finite part of the modulus of a real place
 
@@ -16,7 +16,7 @@ For a real place $v$ of a number field $K$,
 let $\mathfrak m_v$ be the modulus of $K$ with finite part the unit ideal $\mathcal O_K$ and
 infinite part $\{v\}$. The finite part of $\mathfrak m_v$ is the unit ideal $\mathcal O_K$.
 
-Formalized by `NumberField.Modulus.infinite_finitePart`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-finite-part).
+Formalized by `NumberField.Modulus.infinite_finitePart`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-finite-part).
 
 ## Infinite part of the modulus of a real place
 
@@ -24,7 +24,7 @@ For a real place $v$ of a number field $K$,
 let $\mathfrak m_v$ be the modulus of $K$ with finite part the unit ideal $\mathcal O_K$ and
 infinite part $\{v\}$. The infinite part of $\mathfrak m_v$ is the singleton $\{v\}$.
 
-Formalized by `NumberField.Modulus.infinite_infinitePart`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-infinite-part).
+Formalized by `NumberField.Modulus.infinite_infinitePart`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/Modulus.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-infinite-part).
 
 ## Primes dividing a modulus
 
@@ -33,7 +33,7 @@ part the nonzero ideal $\mathfrak m_0$ of $\mathcal O_K$. A nonzero prime ideal 
 $\mathcal O_K$ lies in the finite support of $\mathfrak m$ when
 $\mathfrak m_0 \subseteq \mathfrak p$, that is, when $\mathfrak p$ divides $\mathfrak m_0$.
 
-Formalized by `NumberField.Modulus.finiteSupported`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-supported).
+Formalized by `NumberField.Modulus.finiteSupported`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-supported).
 
 ## Exponent of a modulus at a prime
 
@@ -43,7 +43,7 @@ $\mathfrak p$ of $\mathcal O_K$, the finite exponent of $\mathfrak m$ at $\mathf
 integer $v_{\mathfrak p}(\mathfrak m_0)$, the exponent of $\mathfrak p$ in the prime factorization
 of $\mathfrak m_0$.
 
-Formalized by `NumberField.Modulus.finiteExponent`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-exponent).
+Formalized by `NumberField.Modulus.finiteExponent`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-exponent).
 
 ## Fractional ideals coprime to a modulus
 
@@ -55,7 +55,7 @@ ideals coprime to $\mathfrak m$ form the subgroup of the group of invertible fra
 $\mathcal O_K$ consisting of those $I$ with $v_{\mathfrak p}(I) = 0$ for every nonzero prime ideal
 $\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$.
 
-Formalized by `NumberField.Modulus.coprimeFractionalIdeals`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-fractional-ideals).
+Formalized by `NumberField.Modulus.coprimeFractionalIdeals`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-fractional-ideals).
 
 ## Elements coprime to a modulus
 
@@ -65,7 +65,7 @@ $\mathfrak m$ form the subgroup of $K^\times$ consisting of those $x$ whose prin
 ideal $(x)$ is coprime to $\mathfrak m$, that is, has exponent $0$ at every nonzero prime ideal
 $\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$.
 
-Formalized by `NumberField.Modulus.rayElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-elements).
+Formalized by `NumberField.Modulus.rayElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-elements).
 
 ## Multiplicative congruence to one at the finite part
 
@@ -78,7 +78,7 @@ element $x \in K^\times$ is congruent to $1$ at the finite part of $\mathfrak m$
 nonzero prime ideal $\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$, either $x = 1$ or
 $v_{\mathfrak p}(\mathfrak m_0) \le v_{\mathfrak p}(x - 1)$.
 
-Formalized by `NumberField.Modulus.CongruentOneAtFinitePart`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#congruent-one-at-finite-part).
+Formalized by `NumberField.Modulus.CongruentOneAtFinitePart`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#congruent-one-at-finite-part).
 
 ## Positivity at the infinite part of a modulus
 
@@ -88,7 +88,7 @@ $x \in K^\times$ is positive at the infinite part of $\mathfrak m$ when $\sigma_
 real place $w \in \mathfrak m_\infty$, where $\sigma_w \colon K \to \mathbb R$ is the real
 embedding corresponding to $w$.
 
-Formalized by `NumberField.Modulus.PositiveAtInfinitePart`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#positive-at-infinite-part).
+Formalized by `NumberField.Modulus.PositiveAtInfinitePart`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#positive-at-infinite-part).
 
 ## Elements congruent to one modulo a modulus
 
@@ -104,7 +104,7 @@ $\mathfrak p$ of $\mathcal O_K$ containing $\mathfrak m_0$, $v_{\mathfrak p}(x) 
 $x = 1$ or $v_{\mathfrak p}(\mathfrak m_0) \le v_{\mathfrak p}(x - 1)$, and $\sigma_w(x) > 0$ for
 every real place $w \in \mathfrak m_\infty$.
 
-Formalized by `NumberField.Modulus.IsRayElementOne`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#is-ray-element-one).
+Formalized by `NumberField.Modulus.IsRayElementOne`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#is-ray-element-one).
 
 ## Generators of the ray group
 
@@ -113,7 +113,7 @@ generators of $\mathfrak m$ are the fractional ideals coprime to $\mathfrak m$ o
 the principal fractional ideal of an element $x \in K^\times$ that is congruent to $1$ modulo
 $\mathfrak m$.
 
-Formalized by `NumberField.Modulus.rayGenerators`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-generators).
+Formalized by `NumberField.Modulus.rayGenerators`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-generators).
 
 ## The ray group of a modulus
 
@@ -122,7 +122,7 @@ group of $\mathfrak m$ is the subgroup of the group of fractional ideals coprime
 generated by the principal ideals $(x)$ of the elements $x \in K^\times$ congruent to $1$ modulo
 $\mathfrak m$.
 
-Formalized by `NumberField.Modulus.rayGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-group).
+Formalized by `NumberField.Modulus.rayGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayGroup.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-group).
 
 ## Lower bound for the exponent of a sum
 
@@ -134,7 +134,7 @@ $n \le c_{\mathfrak p}(x)$ and $n \le c_{\mathfrak p}(y)$, then $n \le c_{\mathf
 
 Only $x + y \neq 0$ is assumed: $x$ or $y$ may be zero.
 
-Formalized by `NumberField.Modulus.count_spanSingleton_add_ge_of_ne_zero`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#count-span-singleton-add-ge-of-ne-zero).
+Formalized by `NumberField.Modulus.count_spanSingleton_add_ge_of_ne_zero`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#count-span-singleton-add-ge-of-ne-zero).
 
 ## Ray elements have order zero at the primes dividing the modulus
 
@@ -143,7 +143,7 @@ modulus of a number field $K$ and let $x \in K^\times$ be a ray element of $m$. 
 every finite prime $\mathfrak p$ of $K$ dividing the finite part of $m$, the exponent of
 $\mathfrak p$ in the principal fractional ideal $x \mathcal O_K$ is $0$.
 
-Formalized by `NumberField.Modulus.rayElement_count_spanSingleton_eq_zero`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-count-span-singleton-eq-zero).
+Formalized by `NumberField.Modulus.rayElement_count_spanSingleton_eq_zero`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-count-span-singleton-eq-zero).
 
 ## Ray elements have valuation one at the primes dividing the modulus
 
@@ -156,7 +156,7 @@ $\mathfrak p$-adic valuation of $x$ equals $1$.
 
 - N406 §21.3, the supported-finite-place fact; compare [`valuation_eq_one_of_spanSingleton_coprime'`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1206-L1248) and `hx_coprime`.
 
-Formalized by `NumberField.Modulus.rayElement_valuation_eq_one`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-valuation-eq-one).
+Formalized by `NumberField.Modulus.rayElement_valuation_eq_one`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-valuation-eq-one).
 
 ## Elements of valuation one at the primes dividing a modulus are ray elements
 
@@ -171,7 +171,7 @@ $(a)$ has exponent $0$ at every such $\mathfrak p$.
 
 - N406 Section 21.3. This is the converse of `rayElement_valuation_eq_one`, the converse valuation criterion used to turn the controlled approximation witness into a ray element; it is a reusable bridge toward N406, not itself the full source theorem.
 
-Formalized by `NumberField.Modulus.mem_rayElements_of_valuation_eq_one`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-ray-elements-of-valuation-eq-one).
+Formalized by `NumberField.Modulus.mem_rayElements_of_valuation_eq_one`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-ray-elements-of-valuation-eq-one).
 
 ## Product of two elements congruent to one at the finite part
 
@@ -180,7 +180,7 @@ of a number field $K$ and let $x, y \in K^\times$ both be congruent to $1$ at th
 part of $m$. If moreover $x$ is a ray element of $m$, then $xy$ is congruent to $1$ at the
 finite part of $m$.
 
-Formalized by `NumberField.Modulus.CongruentOneAtFinitePart.mul`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mul).
+Formalized by `NumberField.Modulus.CongruentOneAtFinitePart.mul`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mul).
 
 ## Inverses preserve congruence to one at the finite part
 
@@ -188,7 +188,7 @@ Let $K$ be a number field and
 $\mathfrak m$ a modulus of $K$. If a ray element $x$ of $\mathfrak m$ is congruent to $1$ at the
 finite part of $\mathfrak m$, then so is $x^{-1}$.
 
-Formalized by `NumberField.Modulus.CongruentOneAtFinitePart.inv`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#inv).
+Formalized by `NumberField.Modulus.CongruentOneAtFinitePart.inv`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#inv).
 
 ## The finite ray-one subgroup
 
@@ -199,7 +199,7 @@ finite part of $\mathfrak m$: for every nonzero prime $\mathfrak p$ of $\mathcal
 $\mathfrak m_0$, either $x = 1$ or the exponent of $\mathfrak p$ in $(x - 1) \mathcal O_K$ is at
 least the exponent of $\mathfrak p$ in $\mathfrak m_0$.
 
-Formalized by `NumberField.Modulus.finiteRayOneElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-ray-one-elements).
+Formalized by `NumberField.Modulus.finiteRayOneElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 343](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L343). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-ray-one-elements).
 
 ## Coprime representation of ray elements
 
@@ -212,7 +212,7 @@ Source (N406 §21.3): the
 [`coprime_rep_exists`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1553-L1747)
 admissible integral numerator/denominator representation with both residues units.
 
-Formalized by `NumberField.Modulus.exists_isUnit_mod_finitePart_div_eq`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#exists-is-unit-mod-finite-part-div-eq).
+Formalized by `NumberField.Modulus.exists_isUnit_mod_finitePart_div_eq`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#exists-is-unit-mod-finite-part-div-eq).
 
 ## Equal fractions give equal residues modulo the finite part
 
@@ -223,7 +223,7 @@ Let $a, b, c, d \in \mathcal O_K$ be such that $\bar a$, $\bar b$, $\bar c$ and 
 are units. If $a / b = c / d$ in $K$, then $\bar a \bar b^{-1} = \bar c \bar d^{-1}$ in
 the unit group $(\mathcal O_K / \mathfrak m_0)^\times$.
 
-Formalized by `NumberField.Modulus.quotientUnits_div_eq_of_div_eq`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#quotient-units-div-eq-of-div-eq).
+Formalized by `NumberField.Modulus.quotientUnits_div_eq_of_div_eq`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 555](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L555). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#quotient-units-div-eq-of-div-eq).
 
 ## Finite residue map
 
@@ -239,7 +239,7 @@ Source (N406 §21.3): the
 [`finitePartMapHom`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1812-L1864)
 finite component of the quotient isomorphism.
 
-Formalized by `NumberField.Modulus.finiteResidueMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 622](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L622). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map).
+Formalized by `NumberField.Modulus.finiteResidueMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 622](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L622). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map).
 
 ## Computing the finite residue map from a representation
 
@@ -253,7 +253,7 @@ Source (N406 §21.3): the representation-independence computation
 [`coprime_rep_well_def`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1757-L1810)
 for the finite component.
 
-Formalized by `NumberField.Modulus.finiteResidueMap_apply_of_div_eq`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-apply-of-div-eq).
+Formalized by `NumberField.Modulus.finiteResidueMap_apply_of_div_eq`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 663](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L663). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-apply-of-div-eq).
 
 ## Kernel criterion for the finite residue map
 
@@ -264,7 +264,7 @@ $\mathfrak m$ if and only if $x$ is congruent to $1$ at the finite part of $\mat
 Source (N406 §21.3): helper
 [`finitePartMapHom_ker_iff`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1996-L2011).
 
-Formalized by `NumberField.Modulus.finiteResidueMap_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 845](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L845). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-eq-one-iff).
+Formalized by `NumberField.Modulus.finiteResidueMap_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 845](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L845). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-eq-one-iff).
 
 ## Kernel of the finite residue map
 
@@ -275,7 +275,7 @@ $\mathfrak m$.
 Source (N406 §21.3): the finite kernel component used in the
 [`theorem_21_8_quotient_iso`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L2600-L2647).
 
-Formalized by `NumberField.Modulus.finiteResidueMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-ker).
+Formalized by `NumberField.Modulus.finiteResidueMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 854](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L854). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-ker).
 
 ## Valuation criterion for the finite residue map to be trivial
 
@@ -292,7 +292,7 @@ $(\mathcal O_K / \mathfrak m_0)^\times$.
 
 - N406, Theorem 21.8, Section 21.3 (ATLAS NumberTheoryI item N406): the native-API finite-congruence step corresponding to [`finitePartMapHom_ker_iff`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L1996-L2011), used by the weak-approximation argument before residue/sign surjectivity and by [`theorem_21_8_quotient_iso`](https://github.com/facebookresearch/atlas-lean/blob/e8b31c5cb0bec89b487ce33fe525a2c0b0f8b9c6/v1/Atlas/NumberTheoryI/code/RayClassFields.lean#L2607-L2647). It is not the generalized weak-approximation theorem and not the final N406 result.
 
-Formalized by `NumberField.Modulus.finiteResidueMap_eq_one_of_valuation_le`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-eq-one-of-valuation-l).
+Formalized by `NumberField.Modulus.finiteResidueMap_eq_one_of_valuation_le`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean, line 870](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/FiniteCongruence.lean#L870). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#finite-residue-map-eq-one-of-valuation-l).
 
 ## Ray class group
 
@@ -300,7 +300,7 @@ The ray class group of a modulus $\mathfrak m$ of a number field $K$ is
 the quotient of the group of nonzero fractional ideals of $K$ coprime to the finite part of
 $\mathfrak m$ by the ray group of $\mathfrak m$.
 
-Formalized by `NumberField.Modulus.RayClassGroup`, an abbreviation declared in [MathlibExt/NumberTheory/NumberField/RayClass/Group.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/Group.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-group).
+Formalized by `NumberField.Modulus.RayClassGroup`, an abbreviation declared in [MathlibExt/NumberTheory/NumberField/RayClass/Group.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/Group.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-group).
 
 ## Ray class map
 
@@ -309,7 +309,7 @@ canonical quotient homomorphism from the group of nonzero fractional ideals of $
 finite part of $\mathfrak m$ onto the ray class group of $\mathfrak m$, sending each such ideal to
 its class modulo the ray group of $\mathfrak m$.
 
-Formalized by `NumberField.Modulus.rayClassMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/Group.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/Group.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-map).
+Formalized by `NumberField.Modulus.rayClassMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/Group.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/Group.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-map).
 
 ## Sign of a unit at a real place
 
@@ -319,7 +319,7 @@ group homomorphism from $K^\times$ to $\mathbb{Z}/2\mathbb{Z}$, written multipli
 sends $x$ to the class of $0$ (the identity) if $\sigma_w(x) > 0$ and to the class of $1$
 otherwise.
 
-Formalized by `NumberField.Modulus.signAtRealPlace`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#sign-at-real-place).
+Formalized by `NumberField.Modulus.signAtRealPlace`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#sign-at-real-place).
 
 ## Trivial sign at a real place means positivity
 
@@ -328,7 +328,7 @@ $K$ with real embedding $\sigma_w \colon K \to \mathbb{R}$. For every $x \in K^\
 $x$ at $w$, an element of $\mathbb{Z}/2\mathbb{Z}$ written multiplicatively, is the identity if
 and only if $\sigma_w(x) > 0$.
 
-Formalized by `NumberField.Modulus.signAtRealPlace_apply_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#sign-at-real-place-apply-eq-one-iff).
+Formalized by `NumberField.Modulus.signAtRealPlace_apply_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#sign-at-real-place-apply-eq-one-iff).
 
 ## Infinite sign map of a modulus
 
@@ -339,7 +339,7 @@ $m_\infty \to \mathbb{Z}/2\mathbb{Z}$, with $\mathbb{Z}/2\mathbb{Z}$ written mul
 the pointwise product, that sends $x$ to the function whose value at $w \in m_\infty$ is the
 sign of $x$ at the real place $w$.
 
-Formalized by `NumberField.Modulus.infiniteSignMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-sign-map).
+Formalized by `NumberField.Modulus.infiniteSignMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-sign-map).
 
 ## Coordinates of the infinite sign map
 
@@ -348,7 +348,7 @@ finite set of real places $m_\infty$. For every ray element $x$ of $m$ and every
 the value at $w$ of the infinite sign map of $m$ applied to $x$ is the sign of $x$ at the real
 place $w$.
 
-Formalized by `NumberField.Modulus.infiniteSignMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-sign-map-apply).
+Formalized by `NumberField.Modulus.infiniteSignMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-sign-map-apply).
 
 ## Trivial infinite sign means positivity at the modulus
 
@@ -358,7 +358,7 @@ the corresponding real embedding of $K$. For every ray element $x$ of $m$, the i
 of $m$ sends $x$ to the identity if and only if $x$ is positive at the infinite part of $m$,
 that is, $\sigma_w(x) > 0$ for every $w \in m_\infty$.
 
-Formalized by `NumberField.Modulus.infiniteSignMap_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-sign-map-eq-one-iff).
+Formalized by `NumberField.Modulus.infiniteSignMap_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#infinite-sign-map-eq-one-iff).
 
 ## Ray elements positive at the infinite part
 
@@ -368,7 +368,7 @@ embedding of $K$ at $w$. The positive ray elements of $m$ form the subgroup of t
 of $m$ defined as the kernel of the infinite sign map of $m$; equivalently, they are the ray
 elements $x$ with $\sigma_w(x) > 0$ for every $w \in m_\infty$.
 
-Formalized by `NumberField.Modulus.positiveRayElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#positive-ray-elements).
+Formalized by `NumberField.Modulus.positiveRayElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#positive-ray-elements).
 
 ## Membership in the positive ray elements
 
@@ -377,7 +377,7 @@ finite set of real places $m_\infty$, and for a real place $w$ let $\sigma_w$ be
 of $K$ at $w$. A ray element $x$ of $m$ is a positive ray element of $m$ if and only if $x$ is
 positive at the infinite part of $m$, that is, $\sigma_w(x) > 0$ for every $w \in m_\infty$.
 
-Formalized by `NumberField.Modulus.mem_positiveRayElements_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-positive-ray-elements-iff).
+Formalized by `NumberField.Modulus.mem_positiveRayElements_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/InfiniteSign.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-positive-ray-elements-iff).
 
 ## Weak approximation with a finite target and prescribed signs
 
@@ -398,7 +398,7 @@ $\sigma_w(x) > 0$ if $w \in P$ and $\sigma_w(x) < 0$ if $w \notin P$.
 
 - mapping toward ATLAS N406, Theorem 21.8, Section 21.3 (`weak_approx_coprime_sign_finitePart`, lines 2255--2568): the finite target `a` is lifted at source lines 2267--2275 with supported valuation-one hypothesis at 2277--2292; the finite/infinite index family below is at 2314--2385; modulus-dependent tolerances at 2388--2404; nonzero witness at 2406--2412; valuation preservation at 2414--2451; sign control at 2458--2477; and the strict absolute-value-to-discrete-valuation residue comparison at 2480--2568.
 
-Formalized by `NumberField.Modulus.exists_ne_zero_with_target_and_sign`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#exists-ne-zero-with-target-and-sign).
+Formalized by `NumberField.Modulus.exists_ne_zero_with_target_and_sign`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#exists-ne-zero-with-target-and-sign).
 
 ## Weak approximation with prescribed signs at a modulus
 
@@ -414,7 +414,7 @@ if $w \notin P$.
 This is the special case of weak approximation with a finite target and prescribed signs in
 which the target is $1$.
 
-Formalized by `NumberField.Modulus.exists_ne_zero_with_valuation_one_and_sign`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#exists-ne-zero-with-valuation-one-and-si).
+Formalized by `NumberField.Modulus.exists_ne_zero_with_valuation_one_and_sign`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/WeakApproximation.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#exists-ne-zero-with-valuation-one-and-si).
 
 ## Residue-sign target
 
@@ -426,7 +426,7 @@ in $S$), and let $(\mathcal{O}_K/\mathfrak{m}_0)^\times$ denote the unit group o
 $\mathcal{O}_K/\mathfrak{m}_0$. The residue-sign target of $m$ is the product group
 $G^S \times (\mathcal{O}_K/\mathfrak{m}_0)^\times$.
 
-Formalized by `NumberField.Modulus.ResidueSignTarget`, an abbreviation declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-target).
+Formalized by `NumberField.Modulus.ResidueSignTarget`, an abbreviation declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-target).
 
 ## Residue-sign map
 
@@ -435,7 +435,7 @@ is the group homomorphism from the ray elements of $m$ to the residue-sign targe
 sends a ray element $x$ to the pair formed by the image of $x$ under the infinite sign map of $m$
 and the image of $x$ under the finite residue map of $m$.
 
-Formalized by `NumberField.Modulus.residueSignMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map).
+Formalized by `NumberField.Modulus.residueSignMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map).
 
 ## Components of the residue-sign map
 
@@ -444,7 +444,7 @@ ray element $x$ of $m$, the image of $x$ under the residue-sign map of $m$ is th
 component is the image of $x$ under the infinite sign map of $m$ and whose second component is the
 image of $x$ under the finite residue map of $m$.
 
-Formalized by `NumberField.Modulus.residueSignMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-apply).
+Formalized by `NumberField.Modulus.residueSignMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-apply).
 
 ## Ray-one subgroup
 
@@ -453,7 +453,7 @@ the subgroup of the ray elements of $m$ consisting of the ray elements $x$ that 
 ray-one subgroup of $m$ (those congruent to $1$ at the finite part of $m$) and in the subgroup of
 ray elements positive at every real place in the infinite part of $m$.
 
-Formalized by `NumberField.Modulus.rayOneElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-one-elements).
+Formalized by `NumberField.Modulus.rayOneElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 66](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L66). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-one-elements).
 
 ## Membership in the ray-one subgroup
 
@@ -461,7 +461,7 @@ Let $m$ be a modulus of a number field $K$. A ray
 element $x$ of $m$ lies in the ray-one subgroup of $m$ if and only if $x$ is congruent to $1$ at
 the finite part of $m$ and $x$ is positive at every real place in the infinite part of $m$.
 
-Formalized by `NumberField.Modulus.mem_rayOneElements_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-ray-one-elements-iff).
+Formalized by `NumberField.Modulus.mem_rayOneElements_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-ray-one-elements-iff).
 
 ## Surjectivity of the residue-sign map
 
@@ -469,14 +469,14 @@ Let $m$ be a modulus of a number field $K$. Every
 element of the residue-sign target of $m$ is the image of some ray element of $m$ under the
 residue-sign map of $m$.
 
-Formalized by `NumberField.Modulus.residueSignMap_surjective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-surjective).
+Formalized by `NumberField.Modulus.residueSignMap_surjective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-surjective).
 
 ## Kernel of the residue-sign map
 
 Let $m$ be a modulus of a number field $K$. The kernel of
 the residue-sign map of $m$ is the ray-one subgroup of $m$.
 
-Formalized by `NumberField.Modulus.residueSignMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-ker).
+Formalized by `NumberField.Modulus.residueSignMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-ker).
 
 ## Kernel criterion for the residue-sign map
 
@@ -485,7 +485,7 @@ ray element $x$ of $m$ is sent to $1$ by the residue-sign map of $m$ if and only
 element congruent to $1$ modulo $m$: $x$ is a ray element of $m$, $x$ is congruent to $1$ at the
 finite part of $m$, and $x$ is positive at every real place in the infinite part of $m$.
 
-Formalized by `NumberField.Modulus.residueSignMap_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-eq-one-iff).
+Formalized by `NumberField.Modulus.residueSignMap_eq_one_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 230](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L230). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-map-eq-one-iff).
 
 ## The residue-sign isomorphism
 
@@ -495,7 +495,7 @@ ray-one subgroup of $m$ onto the residue-sign target of $m$ induced by the resid
 is surjective with kernel the ray-one subgroup; it sends the class of a ray element $x$ to the
 image of $x$ under the residue-sign map.
 
-Formalized by `NumberField.Modulus.rayElementsQuotientEquivResidueSign`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-elements-quotient-equiv-residue-sign).
+Formalized by `NumberField.Modulus.rayElementsQuotientEquivResidueSign`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 241](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L241). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-elements-quotient-equiv-residue-sign).
 
 ## The residue-sign isomorphism on classes
 
@@ -504,7 +504,7 @@ every ray element $x$ of $m$, the residue-sign isomorphism of $m$ sends the clas
 quotient of the ray elements of $m$ by the ray-one subgroup to the image of $x$ under the
 residue-sign map of $m$.
 
-Formalized by `NumberField.Modulus.rayElementsQuotientEquivResidueSign_mk`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-elements-quotient-equiv-residue-sign-2).
+Formalized by `NumberField.Modulus.rayElementsQuotientEquivResidueSign_mk`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ResidueSign.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-elements-quotient-equiv-residue-sign-2).
 
 ## Embedding of integral units into field units
 
@@ -517,7 +517,7 @@ a unit of $\mathcal{O}_K$ to the same element regarded as a unit of $K$.
 
 - ATLAS `okUnitsToKUnits`.
 
-Formalized by `NumberField.Modulus.integralUnitsToFieldUnits`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-field-units).
+Formalized by `NumberField.Modulus.integralUnitsToFieldUnits`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-field-units).
 
 ## Integral units embed injectively into field units
 
@@ -526,7 +526,7 @@ its ring of integers, the integral closure of $\mathbb{Z}$ in $K$. The group hom
 $\mathcal{O}_K^\times \to K^\times$ induced by the inclusion $\mathcal{O}_K \subseteq K$ is
 injective.
 
-Formalized by `NumberField.Modulus.integralUnitsToFieldUnits_injective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-field-units-injective).
+Formalized by `NumberField.Modulus.integralUnitsToFieldUnits_injective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-field-units-injective).
 
 ## Integral units as ray elements
 
@@ -541,7 +541,7 @@ $\mathcal{O}_K^\times \to K_{\mathfrak{m}}$ sending a unit $u$ to its image in $
 
 - ATLAS `okUnitsToUnitsCoprime`; ATLAS `valuation_algebraMap_unit_eq_one` is discharged inline in the definition.
 
-Formalized by `NumberField.Modulus.integralUnitsToRayElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-elements).
+Formalized by `NumberField.Modulus.integralUnitsToRayElements`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-elements).
 
 ## Ray-element image of an integral unit as a field unit
 
@@ -551,7 +551,7 @@ $u \in \mathcal{O}_K^\times$. The image of $u$ in the group of ray elements for 
 regarded as an element of $K^\times$, equals the image of $u$ under the embedding
 $\mathcal{O}_K^\times \to K^\times$.
 
-Formalized by `NumberField.Modulus.integralUnitsToRayElements_coe`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-elements-coe).
+Formalized by `NumberField.Modulus.integralUnitsToRayElements_coe`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-elements-coe).
 
 ## Integral units embed injectively into the ray elements
 
@@ -560,7 +560,7 @@ ring of integers $\mathcal{O}_K$ and let $\mathfrak{m}$ be a modulus of $K$. The
 from $\mathcal{O}_K^\times$ to the group of ray elements for $\mathfrak{m}$ that sends a unit to
 its image in $K^\times$ is injective.
 
-Formalized by `NumberField.Modulus.integralUnitsToRayElements_injective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-elements-injective).
+Formalized by `NumberField.Modulus.integralUnitsToRayElements_injective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-elements-injective).
 
 ## Ray-one integral units
 
@@ -578,7 +578,7 @@ real embedding of every real place in the infinite part of $\mathfrak{m}$.
 
 - ATLAS `UnitsInCongruenceSubgroup`.
 
-Formalized by `NumberField.Modulus.integralRayOneUnits`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-ray-one-units).
+Formalized by `NumberField.Modulus.integralRayOneUnits`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-ray-one-units).
 
 ## Membership in the ray-one integral units
 
@@ -593,7 +593,7 @@ prime $\mathfrak p$ dividing $\mathfrak m_0$ either $u = 1$ or
 $v_{\mathfrak p}(u - 1) \ge v_{\mathfrak p}(\mathfrak m_0)$, and $u$ is positive under the real
 embedding of every place in $\mathfrak m_\infty$.
 
-Formalized by `NumberField.Modulus.mem_integralRayOneUnits_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-integral-ray-one-units-iff).
+Formalized by `NumberField.Modulus.mem_integralRayOneUnits_iff`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#mem-integral-ray-one-units-iff).
 
 ## Inclusion of the ray-one integral units
 
@@ -606,7 +606,7 @@ $\mathfrak{m}$ to $\mathcal{O}_K^\times$ that sends each such unit to itself.
 
 - ATLAS `exactSeq_map1`.
 
-Formalized by `NumberField.Modulus.integralRayOneUnitsInclusion`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-ray-one-units-inclusion).
+Formalized by `NumberField.Modulus.integralRayOneUnitsInclusion`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-ray-one-units-inclusion).
 
 ## Map from integral units to the ray quotient
 
@@ -621,7 +621,7 @@ integers $\mathcal O_K$ to the coset of $u$, viewed as an element of $K_{\mathfr
 
 - ATLAS `exactSeq_map2`.
 
-Formalized by `NumberField.Modulus.integralUnitsToRayQuotient`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient).
+Formalized by `NumberField.Modulus.integralUnitsToRayQuotient`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient).
 
 ## Value of the ray-quotient map on integral units
 
@@ -632,7 +632,7 @@ $K_{\mathfrak m,1} \le K_{\mathfrak m}$ be the ray-one subgroup. For every unit 
 integers $\mathcal O_K$, the map $\mathcal O_K^\times \to K_{\mathfrak m}/K_{\mathfrak m,1}$ sends
 $u$ to the coset of $u$, viewed as an element of $K_{\mathfrak m}$.
 
-Formalized by `NumberField.Modulus.integralUnitsToRayQuotient_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient-apply).
+Formalized by `NumberField.Modulus.integralUnitsToRayQuotient_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient-apply).
 
 ## Residue-sign map on integral units
 
@@ -647,7 +647,7 @@ $\mathcal O_K^\times \to K_{\mathfrak m}/K_{\mathfrak m,1}$ sending a unit to it
 isomorphism from $K_{\mathfrak m}/K_{\mathfrak m,1}$ onto this group induced by the residue-sign
 homomorphism on $K_{\mathfrak m}$.
 
-Formalized by `NumberField.Modulus.integralUnitsToResidueSign`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign).
+Formalized by `NumberField.Modulus.integralUnitsToResidueSign`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign).
 
 ## Value of the residue-sign map on integral units
 
@@ -657,7 +657,7 @@ $u$ of the ring of integers $\mathcal O_K$, the residue-sign map on integral uni
 image of $u$, viewed as an element of $K_{\mathfrak m}$, under the residue-sign homomorphism on
 $K_{\mathfrak m}$.
 
-Formalized by `NumberField.Modulus.integralUnitsToResidueSign_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign-apply).
+Formalized by `NumberField.Modulus.integralUnitsToResidueSign_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign-apply).
 
 ## Kernel of the ray-quotient map on integral units
 
@@ -668,7 +668,7 @@ $\mathcal O_K^\times \to K_{\mathfrak m}/K_{\mathfrak m,1}$ sending a unit of th
 $\mathcal O_K$ to its coset is the subgroup of ray-one integral units, the units of $\mathcal O_K$
 that lie in $K_{\mathfrak m,1}$.
 
-Formalized by `NumberField.Modulus.integralUnitsToRayQuotient_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient-ker).
+Formalized by `NumberField.Modulus.integralUnitsToRayQuotient_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient-ker).
 
 ## Kernel of the residue-sign map on integral units
 
@@ -677,7 +677,7 @@ number field $K$. The kernel of the residue-sign map on the unit group $\mathcal
 ring of integers is the subgroup of ray-one integral units, the units of $\mathcal O_K$ whose image
 in the group of ray elements modulo $\mathfrak m$ lies in its ray-one subgroup.
 
-Formalized by `NumberField.Modulus.integralUnitsToResidueSign_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign-ker).
+Formalized by `NumberField.Modulus.integralUnitsToResidueSign_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign-ker).
 
 ## The inclusion of the ray-one integral units is injective
 
@@ -686,7 +686,7 @@ with ring of integers $\mathcal{O}_K$ and let $\mathfrak{m}$ be a modulus of $K$
 homomorphism from the subgroup of ray-one integral units for $\mathfrak{m}$ into the unit group
 $\mathcal{O}_K^\times$ is injective.
 
-Formalized by `NumberField.Modulus.integralRayOneUnitsInclusion_injective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-ray-one-units-inclusion-injecti).
+Formalized by `NumberField.Modulus.integralRayOneUnitsInclusion_injective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-ray-one-units-inclusion-injecti).
 
 ## Exactness of the ray sequence at the integral units
 
@@ -707,7 +707,7 @@ $\mathcal{O}_K^\times$.
 
 - ATLAS `exactSeq_exact_at_units`.
 
-Formalized by `NumberField.Modulus.integralUnits_mulExact_quotient`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-mul-exact-quotient).
+Formalized by `NumberField.Modulus.integralUnits_mulExact_quotient`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-mul-exact-quotient).
 
 ## Exactness at the integral units, residue-sign form
 
@@ -722,7 +722,7 @@ the canonical isomorphism of that quotient with $T_{\mathfrak{m}}$ induced by th
 map. Then for every $u \in \mathcal{O}_K^\times$, $\rho(u) = 1$ if and only if $u$ is in the image
 of the inclusion of the ray-one integral units for $\mathfrak{m}$ into $\mathcal{O}_K^\times$.
 
-Formalized by `NumberField.Modulus.integralUnits_mulExact_residueSign`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-mul-exact-residue-sign).
+Formalized by `NumberField.Modulus.integralUnits_mulExact_residueSign`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/IntegralUnits.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-mul-exact-residue-sign).
 
 ## Principal ray ideal map
 
@@ -732,7 +732,7 @@ ray elements for $\mathfrak m$ (the $x \in K^\times$ whose principal ideal is co
 $\mathfrak m$) to the group of fractional ideals coprime to $\mathfrak m$ that sends $x$ to the
 principal fractional ideal $x\mathcal O_K$.
 
-Formalized by `NumberField.Modulus.principalRayIdealMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#principal-ray-ideal-map).
+Formalized by `NumberField.Modulus.principalRayIdealMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#principal-ray-ideal-map).
 
 ## Value of the principal ray ideal map
 
@@ -741,7 +741,7 @@ $K$ with ring of integers $\mathcal O_K$. For every ray element $x \in K^\times$
 $\mathfrak m$, the image of $x$ under the principal ray ideal map, viewed as an invertible
 fractional ideal of $K$, is the principal fractional ideal $x\mathcal O_K$.
 
-Formalized by `NumberField.Modulus.principalRayIdealMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#principal-ray-ideal-map-apply).
+Formalized by `NumberField.Modulus.principalRayIdealMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#principal-ray-ideal-map-apply).
 
 ## Principal ideals agree exactly up to an integral unit
 
@@ -750,7 +750,7 @@ of integers $\mathcal O_K$. For all $x, y \in K^\times$, the principal fractiona
 $x\mathcal O_K$ and $y\mathcal O_K$ are equal if and only if $x = uy$ for some unit
 $u \in \mathcal O_K^\times$.
 
-Formalized by `NumberField.Modulus.toPrincipalIdeal_eq_iff_exists_integralUnit_mul`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#to-principal-ideal-eq-iff-exists-integra).
+Formalized by `NumberField.Modulus.toPrincipalIdeal_eq_iff_exists_integralUnit_mul`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#to-principal-ideal-eq-iff-exists-integra).
 
 ## The ray group is the image of the ray-one elements
 
@@ -760,7 +760,7 @@ map of the subgroup of ray-one elements, that is, of the ray elements for $\math
 congruent to $1$ modulo the finite part of $\mathfrak m$ and positive at every real place in
 its infinite part.
 
-Formalized by `NumberField.Modulus.rayGroup_eq_map_rayOneElements`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-group-eq-map-ray-one-elements).
+Formalized by `NumberField.Modulus.rayGroup_eq_map_rayOneElements`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/PrincipalIdeal.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-group-eq-map-ray-one-elements).
 
 ## Ray-element class map
 
@@ -774,7 +774,7 @@ followed by the projection onto the ray class group.
 
 - ATLAS `exactSeq_map3`, before the quotient lift.
 
-Formalized by `NumberField.Modulus.rayElementClassMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-class-map).
+Formalized by `NumberField.Modulus.rayElementClassMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-class-map).
 
 ## Value of the ray-element class map
 
@@ -783,7 +783,7 @@ and let $\mathrm{Cl}_{\mathfrak m}$ be its ray class group. For every ray elemen
 $\mathfrak m$, the ray-element class map sends $x$ to the ray class in $\mathrm{Cl}_{\mathfrak m}$
 of the principal fractional ideal $(x)$, viewed as a fractional ideal coprime to $\mathfrak m$.
 
-Formalized by `NumberField.Modulus.rayElementClassMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-class-map-apply).
+Formalized by `NumberField.Modulus.rayElementClassMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-element-class-map-apply).
 
 ## Ray-one elements have trivial ray class
 
@@ -792,7 +792,7 @@ $K$. Every ray-one element of $\mathfrak m$ lies in the kernel of the ray-elemen
 is, its principal fractional ideal has trivial class in the ray class group
 $\mathrm{Cl}_{\mathfrak m}$.
 
-Formalized by `NumberField.Modulus.rayOneElements_le_rayElementClassMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-one-elements-le-ray-element-class-ma).
+Formalized by `NumberField.Modulus.rayOneElements_le_rayElementClassMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-one-elements-le-ray-element-class-ma).
 
 ## Quotient-to-ray-class map
 
@@ -807,7 +807,7 @@ ray-one elements lie in the kernel of the ray-element class map.
 
 - ATLAS `exactSeq_map3`.
 
-Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group).
+Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group).
 
 ## Quotient-to-ray-class map on representatives
 
@@ -815,7 +815,7 @@ Let $\mathfrak m$ be a modulus of a number
 field $K$. For every ray element $x$ of $\mathfrak m$, the quotient-to-ray-class map sends the
 class of $x$ modulo the ray-one elements to the image of $x$ under the ray-element class map.
 
-Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup_mk`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group-mk).
+Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup_mk`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group-mk).
 
 ## Integral units generate the unit ideal
 
@@ -828,7 +828,7 @@ $\mathfrak m$, is the identity element $\mathcal O_K$.
 
 - ATLAS lines 1160--1175, an input to exactness at the quotient.
 
-Formalized by `NumberField.Modulus.principalRayIdealMap_integralUnitsToRayElements`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#principal-ray-ideal-map-integral-units-t).
+Formalized by `NumberField.Modulus.principalRayIdealMap_integralUnitsToRayElements`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#principal-ray-ideal-map-integral-units-t).
 
 ## Exactness at the ray-element quotient (kernel form)
 
@@ -842,7 +842,7 @@ $u \in \mathcal O_K^\times$ to the class of $u$ in that quotient.
 
 - ATLAS `exactSeq_exact_at_quotient`.
 
-Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group-ker).
+Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group-ker).
 
 ## Exactness at the ray-element quotient
 
@@ -861,7 +861,7 @@ only if it is the image of an integral unit.
 
 - ATLAS `exactSeq_exact_at_quotient`.
 
-Formalized by `NumberField.Modulus.integralUnitsToRayQuotient_mulExact_rayQuotientToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient-mul-exact).
+Formalized by `NumberField.Modulus.integralUnitsToRayQuotient_mulExact_rayQuotientToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-ray-quotient-mul-exact).
 
 ## Ray class map on residues and signs
 
@@ -878,7 +878,7 @@ be the homomorphism induced by sending $x \in K_{\mathfrak m}$ to the ray class 
 ideal $(x)$. The residue-sign-to-ray-class map is the group homomorphism
 $\phi \circ \psi^{-1} : T_{\mathfrak m} \to \mathrm{Cl}_{\mathfrak m}$.
 
-Formalized by `NumberField.Modulus.residueSignToRayClassGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group).
+Formalized by `NumberField.Modulus.residueSignToRayClassGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group).
 
 ## Residue-sign-to-ray-class map through the quotient isomorphism
 
@@ -895,7 +895,7 @@ be the homomorphism induced by sending $x$ to the ray class of its principal ide
 for every $q \in K_{\mathfrak m}/K_{\mathfrak m,1}$, the residue-sign-to-ray-class map
 $T_{\mathfrak m} \to \mathrm{Cl}_{\mathfrak m}$ sends $\psi(q)$ to $\phi(q)$.
 
-Formalized by `NumberField.Modulus.residueSignToRayClassGroup_equiv`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-equiv).
+Formalized by `NumberField.Modulus.residueSignToRayClassGroup_equiv`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 176](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L176). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-equiv).
 
 ## Ray class map on residue-sign values
 
@@ -905,7 +905,7 @@ coprime to the finite part of $\mathfrak m$. Then the residue-sign-to-ray-class 
 residue-sign value of $x$ (its signs at the real places of $\mathfrak m$ together with its
 residue modulo the finite part) to the ray class of the principal ideal $(x)$.
 
-Formalized by `NumberField.Modulus.residueSignToRayClassGroup_residueSignMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-residue).
+Formalized by `NumberField.Modulus.residueSignToRayClassGroup_residueSignMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-residue).
 
 ## The residue-sign transport square commutes
 
@@ -913,7 +913,7 @@ Let $\mathfrak m$ be a modulus of a number
 field $K$. The residue-sign map from the ray elements of $\mathfrak m$ to the residue-sign target,
 followed by the transported residue-sign-to-ray-class map, equals the ray-element class map.
 
-Formalized by `NumberField.Modulus.residueSignToRayClassGroup_comp_residueSignMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-comp-res).
+Formalized by `NumberField.Modulus.residueSignToRayClassGroup_comp_residueSignMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 197](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L197). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-comp-res).
 
 ## Kernel of the ray class map on residue-sign values
 
@@ -924,7 +924,7 @@ $\mathcal O_K^\times \to$ (residue-sign target) that sends a unit $u$ to its res
 namely its signs at the real places of $\mathfrak m$ together with its residue modulo the finite
 part of $\mathfrak m$.
 
-Formalized by `NumberField.Modulus.residueSignToRayClassGroup_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-ker).
+Formalized by `NumberField.Modulus.residueSignToRayClassGroup_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-ker).
 
 ## Exactness at the residue-sign group
 
@@ -940,7 +940,7 @@ onto $R_{\mathfrak m}$, so it sends the image in $R_{\mathfrak m}$ of a ray elem
 ray class of the principal fractional ideal $(x)$. An element of $R_{\mathfrak m}$ maps to the
 identity of $\mathrm{Cl}_{\mathfrak m}$ if and only if it is the image of an integral unit.
 
-Formalized by `NumberField.Modulus.integralUnitsToResidueSign_mulExact_residueSignToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign-mul-exact).
+Formalized by `NumberField.Modulus.integralUnitsToResidueSign_mulExact_residueSignToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/QuotientToRayClass.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#integral-units-to-residue-sign-mul-exact).
 
 ## Ideal-class map on coprime fractional ideals
 
@@ -955,7 +955,7 @@ map.
 
 - ATLAS `exactSeq_map4`, before the quotient lift.
 
-Formalized by `NumberField.Modulus.coprimeIdealClassMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-ideal-class-map).
+Formalized by `NumberField.Modulus.coprimeIdealClassMap`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-ideal-class-map).
 
 ## Value of the ideal-class map on a coprime ideal
 
@@ -965,7 +965,7 @@ coprime to the finite part of $\mathfrak m$. For every $I \in I_{\mathfrak m}$, 
 ideal-class map sends $I$ to the class $[I]$ in the class group $\mathrm{Cl}(\mathcal O_K)$ of $I$
 viewed as a nonzero fractional ideal.
 
-Formalized by `NumberField.Modulus.coprimeIdealClassMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-ideal-class-map-apply).
+Formalized by `NumberField.Modulus.coprimeIdealClassMap_apply`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-ideal-class-map-apply).
 
 ## The ray group lies in the kernel of the ideal-class map
 
@@ -976,7 +976,7 @@ I_{\mathfrak m}$ the ray group. Then $P_{\mathfrak m}$ is contained in the kerne
 ideal-class map $I_{\mathfrak m} \to \mathrm{Cl}(\mathcal O_K)$, $I \mapsto [I]$: every ideal in
 $P_{\mathfrak m}$ has trivial class in $\mathrm{Cl}(\mathcal O_K)$.
 
-Formalized by `NumberField.Modulus.rayGroup_le_coprimeIdealClassMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-group-le-coprime-ideal-class-map-ker).
+Formalized by `NumberField.Modulus.rayGroup_le_coprimeIdealClassMap_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-group-le-coprime-ideal-class-map-ker).
 
 ## Projection from the ray class group to the class group
 
@@ -992,7 +992,7 @@ trivial on $P_{\mathfrak m}$; it sends the ray class of $I$ to $[I]$.
 
 - ATLAS `exactSeq_map4`.
 
-Formalized by `NumberField.Modulus.rayClassToClassGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group).
+Formalized by `NumberField.Modulus.rayClassToClassGroup`, a definition declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group).
 
 ## Projection to the class group on ray class representatives
 
@@ -1003,7 +1003,7 @@ class group. For every $I \in I_{\mathfrak m}$, the projection $\mathrm{Cl}_{\ma
 \mathrm{Cl}(\mathcal O_K)$ sends the ray class of $I$ to $[I]$, the value of the coprime
 ideal-class map at $I$.
 
-Formalized by `NumberField.Modulus.rayClassToClassGroup_rayClassMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-ray-class-map).
+Formalized by `NumberField.Modulus.rayClassToClassGroup_rayClassMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 100](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L100). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-ray-class-map).
 
 ## The ideal-class map factors through the ray class group
 
@@ -1016,7 +1016,7 @@ the ray class group. As group homomorphisms, the quotient map $I_{\mathfrak m} \
 \mathrm{Cl}(\mathcal O_K)$ equals the coprime ideal-class map $I_{\mathfrak m} \to
 \mathrm{Cl}(\mathcal O_K)$, $I \mapsto [I]$.
 
-Formalized by `NumberField.Modulus.rayClassToClassGroup_comp_rayClassMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-comp-ray-class).
+Formalized by `NumberField.Modulus.rayClassToClassGroup_comp_rayClassMap`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-comp-ray-class).
 
 ## Projecting the image of a ray element to the class group
 
@@ -1032,7 +1032,7 @@ the ray class of $y\mathcal O_K$, and then through the projection $\mathrm{Cl}_{
 \mathrm{Cl}(\mathcal O_K)$, gives $[x\mathcal O_K]$, the value of the coprime ideal-class map at
 $x\mathcal O_K \in I_{\mathfrak m}$.
 
-Formalized by `NumberField.Modulus.rayClassToClassGroup_rayQuotientToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-ray-quotient-to).
+Formalized by `NumberField.Modulus.rayClassToClassGroup_rayQuotientToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-ray-quotient-to).
 
 ## Projecting the image of a residue-sign value to the class group
 
@@ -1048,7 +1048,7 @@ $x \in K_{\mathfrak m}$, sending $\rho(x)$ through this map and then through the
 $\mathrm{Cl}_{\mathfrak m} \to \mathrm{Cl}(\mathcal O_K)$ gives $[x\mathcal O_K]$, the value of
 the coprime ideal-class map at $x\mathcal O_K \in I_{\mathfrak m}$.
 
-Formalized by `NumberField.Modulus.rayClassToClassGroup_residueSignToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-residue-sign-to).
+Formalized by `NumberField.Modulus.rayClassToClassGroup_residueSignToRayClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-residue-sign-to).
 
 ## Kernel of the projection from the ray class group to the class group
 
@@ -1067,7 +1067,7 @@ the ray class of $x\mathcal O_K$.
 
 - ATLAS `exactSeq_exact_at_ray_class`.
 
-Formalized by `NumberField.Modulus.rayClassToClassGroup_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-ker).
+Formalized by `NumberField.Modulus.rayClassToClassGroup_ker`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-ker).
 
 ## Exactness at the ray class group
 
@@ -1087,7 +1087,7 @@ first map.
 
 - ATLAS `exactSeq_exact_at_ray_class`.
 
-Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup_mulExact_rayClassToClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group-mul-exac).
+Formalized by `NumberField.Modulus.rayQuotientToRayClassGroup_mulExact_rayClassToClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-quotient-to-ray-class-group-mul-exac).
 
 ## Exactness at the ray class group, residue-sign form
 
@@ -1102,7 +1102,7 @@ $(x)$, and let $\pi \colon \mathrm{Cl}_{\mathfrak m}(K) \to \mathrm{Cl}(K)$ be t
 the ideal class group. Then a ray class $c$ satisfies $\pi(c) = 1$ if and only if $c$ lies in the
 image of $\varphi$; that is, the sequence is exact at $\mathrm{Cl}_{\mathfrak m}(K)$.
 
-Formalized by `NumberField.Modulus.residueSignToRayClassGroup_mulExact_rayClassToClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-mul-exac).
+Formalized by `NumberField.Modulus.residueSignToRayClassGroup_mulExact_rayClassToClassGroup`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean, line 198](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/RayClassToClassGroup.lean#L198). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#residue-sign-to-ray-class-group-mul-exac).
 
 ## Nonzero integral ideals coprime to the modulus are coprime fractional ideals
 
@@ -1117,7 +1117,7 @@ dividing $\mathfrak m_0$ is $0$.
 
 - E5 `mk0` membership/count bridge for ATLAS lines 1431--1465.
 
-Formalized by `NumberField.Modulus.fractionalIdealMk0_mem_coprimeFractionalIdeals`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#fractional-ideal-mk0-mem-coprime-fractio).
+Formalized by `NumberField.Modulus.fractionalIdealMk0_mem_coprimeFractionalIdeals`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#fractional-ideal-mk0-mem-coprime-fractio).
 
 ## Every ideal class contains a fractional ideal coprime to the modulus
 
@@ -1131,7 +1131,7 @@ such fractional ideal to its ideal class, is surjective.
 
 - ATLAS lines 1466--1476; Lemma 21.7 at lines 958--1010 is reused via the stronger `ClassGroup.exists_mk0_eq_and_isCoprime`.
 
-Formalized by `NumberField.Modulus.coprimeIdealClassMap_surjective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-ideal-class-map-surjective).
+Formalized by `NumberField.Modulus.coprimeIdealClassMap_surjective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#coprime-ideal-class-map-surjective).
 
 ## The ray class group surjects onto the class group
 
@@ -1144,7 +1144,7 @@ part of $\mathfrak m$ to its ideal class, is surjective.
 
 - ATLAS lines 1478--1480.
 
-Formalized by `NumberField.Modulus.rayClassToClassGroup_surjective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-surjective).
+Formalized by `NumberField.Modulus.rayClassToClassGroup_surjective`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-to-class-group-surjective).
 
 ## The ray class exact sequence
 
@@ -1177,7 +1177,7 @@ sending the ray class of a fractional ideal to its ideal class.
 
 - ATLAS lines 1012--1480; this theorem aggregates the separately source-backed map, exactness and surjectivity declarations and is not a direct declaration port.
 
-Formalized by `NumberField.Modulus.rayClass_six_term_exact`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-six-term-exact).
+Formalized by `NumberField.Modulus.rayClass_six_term_exact`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-six-term-exact).
 
 ## The ray class exact sequence, sign and residue form
 
@@ -1216,7 +1216,7 @@ its ideal class.
 
 - ATLAS lines 1012--1480, aggregated from the separately source-backed map, exactness and surjectivity declarations (not a direct declaration port), and transported through the quotient equivalence backed by lines 2607--2647.
 
-Formalized by `NumberField.Modulus.rayClass_residueSign_six_term_exact`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-residue-sign-six-term-exact).
+Formalized by `NumberField.Modulus.rayClass_residueSign_six_term_exact`, a theorem declared in [MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/NumberField/RayClass/ExactSequence.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html#ray-class-residue-sign-six-term-exact).
 
 ## Depends on
 
@@ -1225,4 +1225,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ray class groups](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/adeles-class-field-theory/ray-class-groups)

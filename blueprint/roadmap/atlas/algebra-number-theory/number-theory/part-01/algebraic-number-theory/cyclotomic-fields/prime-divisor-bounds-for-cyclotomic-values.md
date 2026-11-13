@@ -7,7 +7,7 @@ statement: formalized
 
 # Prime divisor bounds for cyclotomic values
 
-21 results, 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html).
+21 results, 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html).
 
 ## A common prime divisor of $x - 1$ and $\Phi_p(x)$ is $p$
 
@@ -19,7 +19,7 @@ coefficients. If $\rho \mid x - 1$ and $\rho \mid \Phi_p(x)$, then $\rho = p$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.prime_eq_of_dvd_sub_one_of_dvd_cyclotomic_eval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-eq-of-dvd-sub-one-of-dvd-cyclotomi).
+Stated but not proved: `MetaMathlibExt.prime_eq_of_dvd_sub_one_of_dvd_cyclotomic_eval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-eq-of-dvd-sub-one-of-dvd-cyclotomi).
 
 ## Divisibility of $x^p - 1$ by $p$
 
@@ -31,7 +31,7 @@ $p \mid x^p - 1$ if and only if $p \mid x - 1$ and $p \mid \Phi_p(x)$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_pow_self_sub_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-dvd-pow-self-sub-one-iff).
+Stated but not proved: `MetaMathlibExt.prime_dvd_pow_self_sub_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-dvd-pow-self-sub-one-iff).
 
 ## A common prime divisor of $y - 1$ and $\Phi_p(y^{p^{a-1}})$ is $p$
 
@@ -44,7 +44,7 @@ $\rho \mid \Phi_p(y^{p^{a-1}})$, then $\rho = p$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.prime_eq_of_dvd_sub_one_of_dvd_cyclotomic_eval_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-eq-of-dvd-sub-one-of-dvd-cyclotomi-2).
+Stated but not proved: `MetaMathlibExt.prime_eq_of_dvd_sub_one_of_dvd_cyclotomic_eval_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-eq-of-dvd-sub-one-of-dvd-cyclotomi-2).
 
 ## Divisibility of $x^{rp^a} - 1$ by $p$
 
@@ -57,7 +57,7 @@ $p \mid x^r - 1$ and $p \mid \Phi_p(x^{rp^{i-1}})$ for every $i \in \{1, \dots, 
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.prime_dvd_pow_sub_one_iff_cyclotomic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-dvd-pow-sub-one-iff-cyclotomic).
+Stated but not proved: `MetaMathlibExt.prime_dvd_pow_sub_one_iff_cyclotomic` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-dvd-pow-sub-one-iff-cyclotomic).
 
 ## Prime divisors of $\Phi_p(x)$ other than $p$ are $1$ modulo $p$
 
@@ -69,7 +69,7 @@ polynomial with integer coefficients. If $\rho \mid \Phi_p(x)$, then $\rho \equi
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.prime_modEq_one_of_dvd_cyclotomic_eval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-mod-eq-one-of-dvd-cyclotomic-eval).
+Stated but not proved: `MetaMathlibExt.prime_modEq_one_of_dvd_cyclotomic_eval` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-mod-eq-one-of-dvd-cyclotomic-eval).
 
 ## Hybrid bound for prime divisors of $x^n - 1$
 
@@ -88,7 +88,7 @@ parts).
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.hybrid_bound_prime_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#hybrid-bound-prime-divisors).
+Stated but not proved: `MetaMathlibExt.hybrid_bound_prime_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#hybrid-bound-prime-divisors).
 
 ## Hybrid bound for prime divisors of $x^p - 1$
 
@@ -103,7 +103,7 @@ raising to the `p`-th power.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.prime_hybrid_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-hybrid-bound).
+Stated but not proved: `MetaMathlibExt.prime_hybrid_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-hybrid-bound).
 
 ## The ramified bound for $n = 2^a$
 
@@ -122,7 +122,7 @@ $2 \le 1$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.two_pow_ramified_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#two-pow-ramified-bound).
+Stated but not proved: `MetaMathlibExt.two_pow_ramified_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#two-pow-ramified-bound).
 
 ## A weaker ramified bound for $n = 2^a$
 
@@ -141,7 +141,7 @@ integer $x$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.two_pow_trivial_ramified_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#two-pow-trivial-ramified-bound).
+Stated but not proved: `MetaMathlibExt.two_pow_trivial_ramified_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#two-pow-trivial-ramified-bound).
 
 ## Primorials below powers of sixteen
 
@@ -152,7 +152,7 @@ only if the product $p_1 p_2 \cdots p_w$ of the first $w$ primes is less than $1
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.lt_sixteen_iff_prod_first_primes_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#lt-sixteen-iff-prod-first-primes-lt).
+Stated but not proved: `MetaMathlibExt.lt_sixteen_iff_prod_first_primes_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#lt-sixteen-iff-prod-first-primes-lt).
 
 ## Ramified bound on the number of prime divisors of $x^n - 1$
 
@@ -176,7 +176,7 @@ the divisible case the composition also has `k_τ > 0` (the source's `δ_α(τ)`
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.ramified_bound_prime_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#ramified-bound-prime-divisors).
+Stated but not proved: `MetaMathlibExt.ramified_bound_prime_divisors` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#ramified-bound-prime-divisors).
 
 ## Ramified bound on prime divisors of $x^p - 1$ for prime $p$
 
@@ -198,7 +198,7 @@ admitted `k = 0` fails under any reading (with `R^0_{-1} := 1` the second bound 
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 3.
 
-Stated but not proved: `MetaMathlibExt.prime_ramified_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-ramified-bound).
+Stated but not proved: `MetaMathlibExt.prime_ramified_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#prime-ramified-bound).
 
 ## Factorization into composed cyclotomic polynomials
 
@@ -221,7 +221,7 @@ which the journal statement refers to as "$x_k$ as above".
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.X_pow_sub_one_eq_mul_prod_cyclotomic_comp` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#x-pow-sub-one-eq-mul-prod-cyclotomic-com).
+Stated but not proved: `MetaMathlibExt.X_pow_sub_one_eq_mul_prod_cyclotomic_comp` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#x-pow-sub-one-eq-mul-prod-cyclotomic-com).
 
 ## Cohen's prime sieve for the line problem
 
@@ -237,7 +237,7 @@ $a\gamma_2 + \gamma_1$ generates the multiplicative group $L^\times$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 5, quoting S. D. Cohen, Proposition 4.3.
 
-Stated but not proved: `MetaMathlibExt.mem_lineProblem_of_prime_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-of-prime-sieve).
+Stated but not proved: `MetaMathlibExt.mem_lineProblem_of_prime_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-of-prime-sieve).
 
 ## Cohen's modified prime sieve for the line problem
 
@@ -261,7 +261,7 @@ such that $a\gamma_2 + \gamma_1$ generates the multiplicative group $L^\times$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 6, quoting S. D. Cohen, Proposition 6.3.
 
-Stated but not proved: `MetaMathlibExt.mem_lineProblem_of_modified_prime_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-of-modified-prime-sieve).
+Stated but not proved: `MetaMathlibExt.mem_lineProblem_of_modified_prime_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-of-modified-prime-sieve).
 
 ## General prime sieve for the line problem
 
@@ -285,7 +285,7 @@ such that $a\gamma_2 + \gamma_1$ generates the multiplicative group $L^\times$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 7, quoting Bailey, Cohen, Sutherland and Trudgian, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.mem_lineProblem_of_general_prime_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-of-general-prime-sieve).
+Stated but not proved: `MetaMathlibExt.mem_lineProblem_of_general_prime_sieve` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 289](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L289). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-of-general-prime-sieve).
 
 ## The line problem for quintic extensions
 
@@ -300,7 +300,7 @@ multiplicative group $L^\times$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.mem_lineProblem_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-five).
+Stated but not proved: `MetaMathlibExt.mem_lineProblem_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-line-problem-five).
 
 ## Liao–Li–Pu criterion for primitive element sums
 
@@ -317,7 +317,7 @@ $16^0 < 2$ holds, but the only generator of $\mathbb{F}_2^\times$ is $1$, and $1
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 9, quoting Liao, Li and Pu, Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.mem_primitiveSum_of_sixteen_pow_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-primitive-sum-of-sixteen-pow-lt).
+Stated but not proved: `MetaMathlibExt.mem_primitiveSum_of_sixteen_pow_lt` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 380](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L380). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-primitive-sum-of-sixteen-pow-lt).
 
 ## Finite fields with a primitive element sum
 
@@ -330,7 +330,7 @@ the multiplicative group $L^\times$.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 11, quoting Cohen, Oliveira e Silva, Sutherland and Trudgian, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.mem_primitiveSum_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-primitive-sum-one-iff).
+Stated but not proved: `MetaMathlibExt.mem_primitiveSum_one_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 393](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L393). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-primitive-sum-one-iff).
 
 ## Primitive element sums away from exceptional pairs
 
@@ -350,7 +350,7 @@ the Liao–Li–Pu criterion, which assumes coprimality.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Proposition 12.
 
-Stated but not proved: `MetaMathlibExt.mem_primitiveSum_of_not_mem_exceptional` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-primitive-sum-of-not-mem-exceptional).
+Stated but not proved: `MetaMathlibExt.mem_primitiveSum_of_not_mem_exceptional` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 409](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L409). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#mem-primitive-sum-of-not-mem-exceptional).
 
 ## Fields without primitive element sums have few prime factors
 
@@ -366,7 +366,7 @@ criterion, which assumes it.
 
 - Gustav Kjærbye Bagger, *Hybrid Bounds for Prime Divisors*, INTEGERS 26 (2026), Article A95, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.card_primeFactors_le_fifteen_of_not_mem_primitiveSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#card-prime-factors-le-fifteen-of-not-mem).
+Stated but not proved: `MetaMathlibExt.card_primeFactors_le_fifteen_of_not_mem_primitiveSum` is written with `theorem_wanted` in [WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean, line 425](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/HybridPrimeDivisorBoundsWanted.lean#L425). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html#card-prime-factors-le-fifteen-of-not-mem).
 
 ## Depends on
 
@@ -375,4 +375,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Prime divisor bounds for cyclotomic values](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/algebraic-number-theory/cyclotomic-fields/prime-divisor-bounds-for-cyclotomic-values)

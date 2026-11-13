@@ -7,14 +7,14 @@ statement: formalized
 
 # Relatively convex subgroups
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html).
 
 ## Right-invariant linear order
 
 A linear order $\le$ on a group $G$ is right-invariant (a
 right order) when $a \le b$ implies $ac \le bc$ for all $a, b, c \in G$.
 
-Formalized by `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.IsRightInvariantOrder`, a definition declared in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#is-right-invariant-order).
+Formalized by `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.IsRightInvariantOrder`, a definition declared in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#is-right-invariant-order).
 
 ## Right-relatively convex subgroup
 
@@ -22,7 +22,7 @@ A subgroup $H$ of a group $G$ is right-relatively convex
 when there is a right-invariant linear order $\le$ on $G$ for which $H$ is convex: whenever
 $h_1 \le g \le h_2$ with $h_1, h_2 \in H$ and $g \in G$, also $g \in H$.
 
-Formalized by `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.IsRightRelativelyConvex`, a definition declared in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#is-right-relatively-convex).
+Formalized by `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.IsRightRelativelyConvex`, a definition declared in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#is-right-relatively-convex).
 
 ## Sublattice question for right-relatively convex subgroups (Kourovka Problem 21.147, non-abelian case)
 
@@ -34,7 +34,7 @@ right-relatively convex subgroups of $G$ form a sublattice of the lattice of sub
 
 The question is restricted to non-abelian groups, as the proposers meant.
 
-Formalized by `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.rightRelativelyConvexSublattice`, a definition declared in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#right-relatively-convex-sublattice).
+Formalized by `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.rightRelativelyConvexSublattice`, a definition declared in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#right-relatively-convex-sublattice).
 
 ## Negative answer to Kourovka Problem 21.147 for non-abelian groups
 
@@ -54,7 +54,7 @@ solved ("No, not always"; AI solution confirmed by A. V. Zenkov).
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 21.147 (V. M. Kopytov, N. Ya. Medvedev; A. V. Zenkov); resolution: P. Monticone, Kourovka Notebook Problem 21.147, solution note (14 May 2026), Kourovka Notebook site; W. van Doorn, E. Judin, P. Monticone and D. Morrison, On some problems from the Kourovka Notebook, preprint, arXiv:2607.17477 (2026), van Doorn-Judin-Monticone-Morrison, Theorem 8.1: in the integer Heisenberg group the subgroups ⟨(1, 0, 1)⟩ and ⟨(1, 0, -1)⟩ are right-relatively convex, while their join contains 2e but not e = (1, 0, 0) and so is not convex for any right order; an AI solution (Aristotle) confirmed by A. V. Zenkov, Kourovka Notebook (21st issue), Problem 21.147: No, not always, https://arxiv.org/abs/2607.17477.
 
-Stated but not proved: `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.rightRelativelyConvexSublattice_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#right-relatively-convex-sublattice-refut).
+Stated but not proved: `MathlibExt.GroupTheory.RightRelativelyConvexSublatticeKourovka21Problem147Wanted.rightRelativelyConvexSublattice_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/RightRelativelyConvexSublatticeKourovka21Problem147Wanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html#right-relatively-convex-sublattice-refut).
 
 ## Depends on
 
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Relatively convex subgroups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/orderable-groups/relatively-convex-subgroups)

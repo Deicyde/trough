@@ -7,7 +7,7 @@ statement: formalized
 
 # Three-machine flow shop scheduling
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html).
 
 ## Flow-shop instances
 
@@ -16,14 +16,14 @@ each a finite list of natural numbers (its processing times on machines 1, 2 and
 order), and a natural number $D$, the deadline. The type does not force a job to have exactly
 three entries; that is part of well-formedness.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.FlowShopInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.FlowShopInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-instance).
 
 ## Well-formed flow-shop instances
 
 A flow-shop instance is well formed when every job in
 it is a list of exactly three natural numbers.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#well-formed).
 
 ## Feasible flow-shop schedules
 
@@ -39,7 +39,7 @@ $s_{b,k} + p_{b,k} \le s_{a,k}$.
 Here $s_{j,k}$ is the start time of job $j$ on machine $k$: each job visits machines 1, 2, 3 in
 that order, no machine processes two jobs at once, and every job finishes by $D$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.FlowShopFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.FlowShopFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-feasible).
 
 ## The 3-machine flow shop scheduling decision problem
 
@@ -48,7 +48,7 @@ The decision problem
 canonical bitstring encoding of flow-shop instances, to an instance that is well formed and
 feasible. Bitstrings that do not decode to an instance are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.flowShopDec`, a definition declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.FlowShop.flowShopDec`, a definition declared in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-dec).
 
 ## 3-MACHINE FLOW SHOP SCHEDULING is NP-complete
 
@@ -60,7 +60,7 @@ polynomial-time many-one reduction.
 
 - M. R. Garey, D. S. Johnson, and R. Sethi, "The complexity of flowshop and jobshop scheduling", Mathematics of Operations Research 1 (1976), 117-129; T. F. Gonzalez and S. Sahni, "Flowshop and jobshop schedules: complexity and approximation", Operations Research 26 (1978), 36-52.
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.FlowShop.flowShop_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.FlowShop.flowShop_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/FlowShopWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/FlowShopWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html#flow-shop-np-complete).
 
 ## Depends on
 
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Three-machine flow shop scheduling](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/scheduling/three-machine-flow-shop-scheduling)

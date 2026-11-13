@@ -8,7 +8,7 @@ proof: formalized
 
 # Counter machines
 
-11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html).
+11 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html).
 
 ## Counter-machine instructions
 
@@ -22,7 +22,7 @@ Decrementing a register that holds $0$ leaves it at $0$.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.CounterInstr`, an inductive type declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-instr).
+Formalized by `Cslib.Decidability.CounterInstr`, an inductive type declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-instr).
 
 ## Counter-machine states
 
@@ -34,7 +34,7 @@ register index $i \in \mathbb{N}$.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.CounterState`, a structure declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-state).
+Formalized by `Cslib.Decidability.CounterState`, a structure declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-state).
 
 ## One step of a counter machine
 
@@ -53,7 +53,7 @@ Because halted states are fixed, the step can be iterated any number of times.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.counterStep`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-step).
+Formalized by `Cslib.Decidability.counterStep`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-step).
 
 ## Initial state of a counter machine
 
@@ -65,7 +65,7 @@ every other register holding $0$.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.counterInit`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-init).
+Formalized by `Cslib.Decidability.counterInit`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-init).
 
 ## Bounded execution of a counter machine
 
@@ -77,7 +77,7 @@ $s$ by applying $t$ single steps of $p$.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.counterExecN`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-exec-n).
+Formalized by `Cslib.Decidability.counterExecN`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-exec-n).
 
 ## Output of a counter machine
 
@@ -91,7 +91,7 @@ such $t$ exists, the output is undefined.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.counterEval`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-eval).
+Formalized by `Cslib.Decidability.counterEval`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-eval).
 
 ## A counter step is sticky at halting states
 
@@ -102,7 +102,7 @@ program the state does not change.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.counterStep_sticky`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-step-sticky).
+Formalized by `Cslib.Decidability.counterStep_sticky`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-step-sticky).
 
 ## Counter-machine execution is stable once halted
 
@@ -115,7 +115,7 @@ equals the state reached after $t$ steps.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.counterExecN_stable`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-exec-n-stable).
+Formalized by `Cslib.Decidability.counterExecN_stable`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-exec-n-stable).
 
 ## Counter-machine execution is constant after halting
 
@@ -128,7 +128,7 @@ after $t_2$ steps equals the state reached after $t_1$ steps.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.counterExecN_eq_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-exec-n-eq-of-halted).
+Formalized by `Cslib.Decidability.counterExecN_eq_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-exec-n-eq-of-halted).
 
 ## Output membership for counter machines
 
@@ -142,7 +142,7 @@ of $P$ on $x$ is defined and equals $y$.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.mem_counterEval_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#mem-counter-eval-of-halted).
+Formalized by `Cslib.Decidability.mem_counterEval_of_halted`, a theorem declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#mem-counter-eval-of-halted).
 
 ## Counter-machine decidable predicates
 
@@ -155,7 +155,7 @@ defined and equals $1$ if $P(n)$ holds and $0$ otherwise.
 
 - Minsky, *Computation: Finite and Infinite Machines*, 1967, §11.
 
-Formalized by `Cslib.Decidability.CounterDecidable`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Computability/Decidability/CounterMachines.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-decidable).
+Formalized by `Cslib.Decidability.CounterDecidable`, a definition declared in [CSLibExt/Computability/Decidability/CounterMachines.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Computability/Decidability/CounterMachines.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html#counter-decidable).
 
 ## Depends on
 
@@ -164,4 +164,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Counter machines](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/equivalence-of-models/counter-machines)

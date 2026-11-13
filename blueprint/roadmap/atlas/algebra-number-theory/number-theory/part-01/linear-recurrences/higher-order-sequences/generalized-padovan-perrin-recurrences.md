@@ -7,7 +7,7 @@ statement: formalized
 
 # Generalized Padovan–Perrin recurrences
 
-26 results, 10 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html).
+26 results, 10 proved and 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html).
 
 ## Simple roots of the Padovan–Perrin characteristic polynomial
 
@@ -22,7 +22,7 @@ The hypotheses force $k_2 > 0$ and $s > 0$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_charPoly_separable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-char-poly-separable).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_charPoly_separable` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-char-poly-separable).
 
 ## Generalized Padovan–Perrin recurrence
 
@@ -38,7 +38,7 @@ $v_n = k_1 v_{n-s} + k_2 v_{n-s-p}$ for $n \ge s + p$ (equation (1)).
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (1).
 
-Formalized by `MetaMathlibExt.padovanPerrinRecurrence`, a definition declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-recurrence).
+Formalized by `MetaMathlibExt.padovanPerrinRecurrence`, a definition declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-recurrence).
 
 ## Characterization of solutions of the generalized Padovan–Perrin recurrence
 
@@ -51,7 +51,7 @@ only if $v_{n+s+p} = k_1 v_{n+p} + k_2 v_n$ for every $n \ge 0$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (1).
 
-Formalized by `MetaMathlibExt.padovanPerrinRecurrence_isSolution_iff`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-recurrence-is-solution-if).
+Formalized by `MetaMathlibExt.padovanPerrinRecurrence_isSolution_iff`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-recurrence-is-solution-if).
 
 ## Fibonacci fundamental system of the generalized Padovan–Perrin recurrence
 
@@ -65,7 +65,7 @@ $v^{(j)}_n = 0$ otherwise, for $0 \le n < s + p$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (2) and Definition 1.
 
-Formalized by `MetaMathlibExt.padovanPerrinFundamental`, a definition declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental).
+Formalized by `MetaMathlibExt.padovanPerrinFundamental`, a definition declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental).
 
 ## Initial values of the generalized Padovan–Perrin fundamental system
 
@@ -78,7 +78,7 @@ $n + 1 = j$ and $v^{(j)}_n = 0$ otherwise.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (2).
 
-Formalized by `MetaMathlibExt.padovanPerrinFundamental_of_lt`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-of-lt).
+Formalized by `MetaMathlibExt.padovanPerrinFundamental_of_lt`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-of-lt).
 
 ## The generalized Padovan–Perrin fundamental sequences solve the recurrence
 
@@ -91,7 +91,7 @@ $([k]; p; s)$-Padovan–Perrin recurrence.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (2).
 
-Formalized by `MetaMathlibExt.padovanPerrinFundamental_isSolution`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-is-solution).
+Formalized by `MetaMathlibExt.padovanPerrinFundamental_isSolution`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-is-solution).
 
 ## Padovan–Perrin coefficients
 
@@ -110,7 +110,7 @@ $\rho(s + p, s + p) = 1$ for $s \ge 2$; the constraint used here is the one of f
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (12) and Proposition 4.
 
-Formalized by `MetaMathlibExt.padovanPerrinRho`, a definition declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho).
+Formalized by `MetaMathlibExt.padovanPerrinRho`, a definition declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho).
 
 ## The Padovan–Perrin coefficients vanish below the order
 
@@ -122,7 +122,7 @@ Padovan–Perrin coefficient $\rho(n, s + p)$ attached to $k_1, k_2, p, s$ equal
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 4.
 
-Formalized by `MetaMathlibExt.padovanPerrinRho_of_lt`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-of-lt).
+Formalized by `MetaMathlibExt.padovanPerrinRho_of_lt`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-of-lt).
 
 ## Normalization of the Padovan–Perrin coefficients
 
@@ -134,7 +134,7 @@ coefficient $\rho(s + p, s + p)$ attached to $k_1, k_2, p, s$ equals $1$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 4.
 
-Formalized by `MetaMathlibExt.padovanPerrinRho_self`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-self).
+Formalized by `MetaMathlibExt.padovanPerrinRho_self`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-self).
 
 ## Recurrence for the generalized Padovan–Perrin coefficients ρ
 
@@ -152,7 +152,7 @@ Together with $\rho(m, s+p) = 0$ for $m < s + p$ and $\rho(s+p, s+p) = 1$, this 
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (12) and Proposition 4.
 
-Formalized by `MetaMathlibExt.padovanPerrinRho_add_succ`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-add-succ).
+Formalized by `MetaMathlibExt.padovanPerrinRho_add_succ`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-add-succ).
 
 ## The Padovan–Perrin coefficient $\rho(12, 3)$ equals $5$
 
@@ -164,7 +164,7 @@ the coefficient $\rho(12, 3)$ equals $5$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, equation (14) and Table 1.
 
-Formalized by `MetaMathlibExt.padovanPerrinRho_one_one_one_two_twelve`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-one-one-one-two-twelv).
+Formalized by `MetaMathlibExt.padovanPerrinRho_one_one_one_two_twelve`, a theorem declared in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-one-one-one-two-twelv).
 
 ## Expansion in the Fibonacci fundamental system
 
@@ -180,7 +180,7 @@ $$v(n) = \sum_{j=0}^{s+p-1} v(j)\, v^{(j+1)}(n).$$
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_eq_sum_fundamental` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-eq-sum-fundamental).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_eq_sum_fundamental` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-eq-sum-fundamental).
 
 ## Solutions agreeing on a window agree afterwards
 
@@ -194,7 +194,7 @@ $v(n + n_0) = w(n + m_0)$ for every $n \ge N$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_shift_eq_of_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-shift-eq-of-window).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_shift_eq_of_window` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 318](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L318). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-shift-eq-of-window).
 
 ## The Fibonacci fundamental system spans the solutions
 
@@ -209,7 +209,7 @@ by $v^{(1)}, \dots, v^{(s+p)}$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_solSpace_eq_span_fundamental` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-sol-space-eq-span-fundame).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_solSpace_eq_span_fundamental` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 332](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L332). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-sol-space-eq-span-fundame).
 
 ## Shift property of the generalized Padovan–Perrin fundamental system
 
@@ -228,7 +228,7 @@ $v^{(3)}_1 = 0$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 2.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_eq_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-eq-shift).
+Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_eq_shift` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 348](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L348). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-eq-shift).
 
 ## Powers of the Padovan–Perrin companion matrix
 
@@ -247,7 +247,7 @@ $$(A^n)_{ij} = v^{(r - j)}(n + r - 1 - i).$$
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Theorem 1, equations (5) and (9).
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_companion_pow_apply` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-companion-pow-apply).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_companion_pow_apply` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-companion-pow-apply).
 
 ## Product identity for the generalized Padovan–Perrin fundamental system
 
@@ -262,7 +262,7 @@ $$v^{(r-j+1)}_{n+m+r-i} = \sum_{k=1}^{r} v^{(r-k+1)}_{m+r-i} \, v^{(r-j+1)}_{n+r
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 3, equation (10).
 
-Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_mul_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-mul-sum).
+Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_mul_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 381](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L381). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-mul-sum).
 
 ## Combinatorial expression of the Padovan–Perrin sequences
 
@@ -284,7 +284,7 @@ $0$); the constraint used here is the one of the paper's general formula (12).
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_eq_sum_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-eq-sum-rho).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_eq_sum_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 400](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L400). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-eq-sum-rho).
 
 ## The last generalized Padovan–Perrin fundamental sequence is a shifted ρ
 
@@ -303,7 +303,7 @@ $\rho(4, 3)$ is $1$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 4.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_last_eq_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-last-eq-rho).
+Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_last_eq_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 414](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L414). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-last-eq-rho).
 
 ## Fundamental Padovan–Perrin solutions as shifted coefficients $\rho$
 
@@ -325,7 +325,7 @@ $v^{(1)}(0) = 1$ but $2\rho(2, 3) = 0$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 5.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_eq_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-eq-rho).
+Stated but not proved: `MetaMathlibExt.padovanPerrinFundamental_eq_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 427](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L427). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-fundamental-eq-rho).
 
 ## Simple roots of the Padovan–Perrin polynomial for $p = 1$
 
@@ -338,7 +338,7 @@ simple roots.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_charPoly_separable_of_p_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-char-poly-separable-of-p).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_charPoly_separable_of_p_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-char-poly-separable-of-p).
 
 ## Root formula for the generalized Padovan–Perrin coefficients ρ
 
@@ -357,7 +357,7 @@ the $([k]; p; s)$-Padovan–Perrin coefficients, the case the paper applies.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrinRho_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-eq-sum-roots).
+Stated but not proved: `MetaMathlibExt.padovanPerrinRho_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 455](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L455). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-rho-eq-sum-roots).
 
 ## Analytic expression of the Padovan–Perrin sequences
 
@@ -379,7 +379,7 @@ The paper assumes that the roots of $P$ are distinct; this follows from the othe
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 6.
 
-Stated but not proved: `MetaMathlibExt.padovanPerrin_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-eq-sum-roots).
+Stated but not proved: `MetaMathlibExt.padovanPerrin_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 473](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L473). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#padovan-perrin-eq-sum-roots).
 
 ## Combinatorial formula for the $k$-Padovan–Perrin numbers
 
@@ -400,7 +400,7 @@ $n = 4$, where $v(4) = 1$ but the printed right side is $0$. The paper takes $k 
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 8.
 
-Stated but not proved: `MetaMathlibExt.kPadovanPerrin_eq_sum_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#k-padovan-perrin-eq-sum-rho).
+Stated but not proved: `MetaMathlibExt.kPadovanPerrin_eq_sum_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 494](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L494). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#k-padovan-perrin-eq-sum-rho).
 
 ## Fundamental $k$-Padovan–Perrin solutions as coefficients $\rho$
 
@@ -421,7 +421,7 @@ The paper takes $k \ge 2$ an integer.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 9.
 
-Stated but not proved: `MetaMathlibExt.kPadovanPerrinFundamental_eq_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#k-padovan-perrin-fundamental-eq-rho).
+Stated but not proved: `MetaMathlibExt.kPadovanPerrinFundamental_eq_rho` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 508](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L508). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#k-padovan-perrin-fundamental-eq-rho).
 
 ## Root formula for the $k$-Padovan–Perrin numbers
 
@@ -444,7 +444,7 @@ $v(4) = 1$.
 
 - Elen Viviani Pereira Spreafico, Mustapha Rachidi, and Paula Maria Machado Cruz Catarino, *On a Model of (k;p;s)-Generalized Padovan-Perrin and Fibonacci Fundamental System*, INTEGERS 24 (2024), Article A49, Proposition 10.
 
-Stated but not proved: `MetaMathlibExt.kPadovanPerrin_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#k-padovan-perrin-eq-sum-roots).
+Stated but not proved: `MetaMathlibExt.kPadovanPerrin_eq_sum_roots` is written with `theorem_wanted` in [WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean, line 522](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GeneralizedPadovanPerrinModelWanted.lean#L522). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html#k-padovan-perrin-eq-sum-roots).
 
 ## Depends on
 
@@ -453,4 +453,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Generalized Padovan–Perrin recurrences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/higher-order-sequences/generalized-padovan-perrin-recurrences)

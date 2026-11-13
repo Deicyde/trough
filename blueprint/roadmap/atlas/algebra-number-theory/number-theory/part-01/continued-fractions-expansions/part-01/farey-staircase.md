@@ -7,7 +7,7 @@ statement: formalized
 
 # Farey staircase
 
-16 results, 6 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html).
+16 results, 6 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html).
 
 ## Farey staircase
 
@@ -20,7 +20,7 @@ empty and $A_0(x) = 0$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Section 1, equation (2).
 
-Formalized by `MetaMathlibExt.fareyStaircase`, a definition declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase).
+Formalized by `MetaMathlibExt.fareyStaircase`, a definition declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 34](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L34). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase).
 
 ## The Farey staircase of order zero vanishes
 
@@ -31,7 +31,7 @@ $A_0$ of order $0$ satisfies $A_0(x) = 0$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Section 1, equation (2).
 
-Formalized by `MetaMathlibExt.fareyStaircase_zero`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-zero).
+Formalized by `MetaMathlibExt.fareyStaircase_zero`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-zero).
 
 ## The Farey staircase of order one is the floor function
 
@@ -42,7 +42,7 @@ Farey staircase $A_1$ of order $1$ satisfies $A_1(x) = \lfloor x \rfloor$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Section 1, equation (2).
 
-Formalized by `MetaMathlibExt.fareyStaircase_one`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-one).
+Formalized by `MetaMathlibExt.fareyStaircase_one`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-one).
 
 ## Zoomed Farey staircase
 
@@ -55,7 +55,7 @@ $\sum_{k=1}^{n} \lfloor (k/n) x \rfloor / k$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Section 1.1, equation (4).
 
-Formalized by `MetaMathlibExt.fareyZoom`, a definition declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-zoom).
+Formalized by `MetaMathlibExt.fareyZoom`, a definition declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-zoom).
 
 ## The zoomed Farey staircase as a sum
 
@@ -67,7 +67,7 @@ $B_n(x) = \sum_{k=1}^{n} \lfloor (k/n) x \rfloor / k$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Section 1.1, equation (4).
 
-Formalized by `MetaMathlibExt.fareyZoom_eq_sum`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-zoom-eq-sum).
+Formalized by `MetaMathlibExt.fareyZoom_eq_sum`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-zoom-eq-sum).
 
 ## The zoomed Farey staircase of order one is the floor function
 
@@ -78,7 +78,7 @@ the zoomed Farey staircase $B_1$ of order $1$ satisfies $B_1(x) = \lfloor x \rfl
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Section 1.1, equation (4).
 
-Formalized by `MetaMathlibExt.fareyZoom_one`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-zoom-one).
+Formalized by `MetaMathlibExt.fareyZoom_one`, a theorem declared in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-zoom-one).
 
 ## Limit of the Farey staircase zoomed at the origin
 
@@ -90,7 +90,7 @@ $n \to \infty$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.tendsto_fareyZoom` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-farey-zoom).
+Stated but not proved: `MetaMathlibExt.tendsto_fareyZoom` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-farey-zoom).
 
 ## Limit of the Farey staircase zoomed at a rational point
 
@@ -103,7 +103,7 @@ $n \to \infty$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.tendsto_fareyZoom_sub_at_rational` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-farey-zoom-sub-at-rational).
+Stated but not proved: `MetaMathlibExt.tendsto_fareyZoom_sub_at_rational` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-farey-zoom-sub-at-rational).
 
 ## Limit of the rescaled Farey staircase increment
 
@@ -115,7 +115,7 @@ $n^2 D_n(x/n) \to \sum_{k=1}^{\lfloor x \rfloor} (1 - \log(x/k))$ as $n \to \inf
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.tendsto_sq_mul_fareyStaircase_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-sq-mul-farey-staircase-sub).
+Stated but not proved: `MetaMathlibExt.tendsto_sq_mul_fareyStaircase_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-sq-mul-farey-staircase-sub).
 
 ## Floor gaps of Farey staircases are dense above $1 - \log 2$
 
@@ -129,7 +129,7 @@ $S = \{f_n(x) : n \ge 1,\ x \in \mathbb{R}\}$, that is, $S$ is dense in $[1 - \l
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 5 (i), also Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.Ici_one_sub_log_two_subset_closure_floor_gaps` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#ici-one-sub-log-two-subset-closure-floor).
+Stated but not proved: `MetaMathlibExt.Ici_one_sub_log_two_subset_closure_floor_gaps` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#ici-one-sub-log-two-subset-closure-floor).
 
 ## Finiteness of small floor gaps of the Farey staircase
 
@@ -143,7 +143,7 @@ $x$ real; here $\log$ is the natural logarithm.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Theorem 5 (ii).
 
-Stated but not proved: `MetaMathlibExt.floor_gaps_inter_Iic_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#floor-gaps-inter-iic-finite).
+Stated but not proved: `MetaMathlibExt.floor_gaps_inter_Iic_finite` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#floor-gaps-inter-iic-finite).
 
 ## Recursion between consecutive Farey staircases
 
@@ -157,7 +157,7 @@ $D_n(x) = \frac{1}{n-1} \left( \lfloor nx \rfloor / n - A_n(x) \right)$.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.fareyStaircase_sub_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-sub-eq).
+Stated but not proved: `MetaMathlibExt.fareyStaircase_sub_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-sub-eq).
 
 ## Bounds comparing the Farey staircase with $\lfloor nx \rfloor / n$
 
@@ -170,7 +170,7 @@ logarithm.
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 8 (a).
 
-Stated but not proved: `MetaMathlibExt.fareyStaircase_le_floor_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-le-floor-div).
+Stated but not proved: `MetaMathlibExt.fareyStaircase_le_floor_div` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-le-floor-div).
 
 ## Bounds on the increment of the Farey staircase
 
@@ -182,7 +182,7 @@ $0 \le A_n(x) - A_{n-1}(x) \le \frac{\log n}{n(n-1)}$, where $\log$ is the natur
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 8 (b).
 
-Stated but not proved: `MetaMathlibExt.fareyStaircase_sub_mem_Icc` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-sub-mem-icc).
+Stated but not proved: `MetaMathlibExt.fareyStaircase_sub_mem_Icc` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#farey-staircase-sub-mem-icc).
 
 ## Harmonic blocks versus the logarithmic integral
 
@@ -198,7 +198,7 @@ assumed: they follow from the hypotheses (positivity for all large $n$).
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.tendsto_harmonic_block_sub_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-harmonic-block-sub-integral).
+Stated but not proved: `MetaMathlibExt.tendsto_harmonic_block_sub_integral` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-harmonic-block-sub-integral).
 
 ## Dilation derivative of a differentiable function
 
@@ -211,7 +211,7 @@ $\lambda \ne 1$; that is, the dilation derivative of $f$ at $x$ exists and equal
 
 - David Harry Richman, *Lower Rational Approximations and Farey Staircases*, INTEGERS 24 (2024), Article A37, Proposition 12; dilation derivative as defined before it.
 
-Stated but not proved: `MetaMathlibExt.tendsto_dilation_quotient` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-dilation-quotient).
+Stated but not proved: `MetaMathlibExt.tendsto_dilation_quotient` is written with `theorem_wanted` in [WantedExt/NumberTheory/FareyStaircaseWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/FareyStaircaseWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html#tendsto-dilation-quotient).
 
 ## Depends on
 
@@ -220,4 +220,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Farey staircase](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/farey-staircase)

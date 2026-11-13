@@ -7,7 +7,7 @@ statement: formalized
 
 # Sum-difference exponent of a single set
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html).
 
 ## Admissible exponents for sums and differences
 
@@ -16,7 +16,7 @@ exponent when every nonempty finite set $A$ of integers satisfies
 $|A+A|/|A| \le (|A-A|/|A|)^{\theta}$, where $A+A$ and $A-A$ are the sumset and the difference
 set of $A$.
 
-Formalized by `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.IsAdmissibleExponent`, a definition declared in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#is-admissible-exponent).
+Formalized by `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.IsAdmissibleExponent`, a definition declared in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#is-admissible-exponent).
 
 ## The single-set sum-difference exponent
 
@@ -28,14 +28,14 @@ and $A-A$ are the sumset and the difference set of $A$.
 This is the source's equivalent formulation of $C_{3d}$ as a least admissible exponent, over
 finite sets of integers.
 
-Formalized by `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.singleSetSumDifferenceExponent`, a definition declared in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#single-set-sum-difference-exponent).
+Formalized by `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.singleSetSumDifferenceExponent`, a definition declared in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#single-set-sum-difference-exponent).
 
 ## The proposition that the single-set sum-difference exponent equals 2
 
 This is the
 statement that the single-set sum-difference exponent $C_{3d}$ is equal to $2$.
 
-Formalized by `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.singleSetSumDifferenceExponent_eq_two`, a definition declared in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#single-set-sum-difference-exponent-eq-tw).
+Formalized by `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.singleSetSumDifferenceExponent_eq_two`, a definition declared in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#single-set-sum-difference-exponent-eq-tw).
 
 ## The single-set sum-difference exponent equals 2
 
@@ -48,7 +48,7 @@ Known constructions approach this value but do not attain it.
 
 - Haowei Lin and Shanda Li, Settling the optimal exponent relating sumsets and difference sets, arXiv:2607.27199v1 (2026), https://arxiv.org/abs/2607.27199v1.
 
-Stated but not proved: `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.singleSetSumDifferenceExponent_eq_two_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#single-set-sum-difference-exponent-eq-tw-2).
+Stated but not proved: `MathlibExt.Combinatorics.SingleSetSumDifferenceExponentWanted.singleSetSumDifferenceExponent_eq_two_holds` is written with `theorem_wanted` in [WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SingleSetSumDifferenceExponentWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html#single-set-sum-difference-exponent-eq-tw-2).
 
 ## Depends on
 
@@ -57,4 +57,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sum-difference exponent of a single set](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/additive-combinatorics/more-sums-than-differences/sum-difference-exponent-of-a-single-set)

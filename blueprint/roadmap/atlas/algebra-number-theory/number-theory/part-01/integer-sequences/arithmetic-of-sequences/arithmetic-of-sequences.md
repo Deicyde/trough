@@ -8,7 +8,7 @@ proof: formalized
 
 # Arithmetic properties of sequences: its own results
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html).
 
 Dold, Newton and realizable sequences, Sylvester, Euclid and Göbel sequences, gcd and divisibility sequences, OEIS-specific sequences.
 
@@ -26,7 +26,7 @@ restrictions.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL19/Cilasun/cila5.tex>.
 
-Formalized by `MetaMathlibExt.multipleCountingJacobsthalSequence`, a definition declared in [MathlibExt/NumberTheory/MultipleCountingJacobsthalSequence.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/MultipleCountingJacobsthalSequence.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html#multiple-counting-jacobsthal-sequence).
+Formalized by `MetaMathlibExt.multipleCountingJacobsthalSequence`, a definition declared in [MathlibExt/NumberTheory/MultipleCountingJacobsthalSequence.lean, line 24](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/MultipleCountingJacobsthalSequence.lean#L24). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html#multiple-counting-jacobsthal-sequence).
 
 ## Odd Lichtenberg numbers
 
@@ -41,7 +41,7 @@ $k \mapsto 4k + 1$.
 
 - <https://cs.uwaterloo.ca/journals/JIS/VOL25/Hinz/hinz5.tex>.
 
-Formalized by `MetaMathlibExt.oddLichtenberg`, a definition declared in [MathlibExt/NumberTheory/OddLichtenbergNumbers.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/OddLichtenbergNumbers.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html#odd-lichtenberg).
+Formalized by `MetaMathlibExt.oddLichtenberg`, a definition declared in [MathlibExt/NumberTheory/OddLichtenbergNumbers.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/OddLichtenbergNumbers.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html#odd-lichtenberg).
 
 ## Some generalized Euclid sequence contains every prime
 
@@ -66,7 +66,7 @@ density bound and Jacobi-sum character-sum bounds in place of the Hasse and Weil
 
 - Andrew R. Booker, "A Variant of the Euclid-Mullin Sequence Containing Every Prime," Journal of Integer Sequences 19 (2016), Article 16.6.4, Theorem, lines 132–136, https://cs.uwaterloo.ca/journals/JIS/VOL19/Booker/book3.tex
 
-Formalized by `MetaMathlibExt.generalized_euclid_sequence_contains_every_prime`, a theorem declared in [MathlibExt/NumberTheory/Sequences/GeneralizedEuclidSequence.lean, line 2576](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Sequences/GeneralizedEuclidSequence.lean#L2576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html#generalized-euclid-sequence-contains-eve).
+Formalized by `MetaMathlibExt.generalized_euclid_sequence_contains_every_prime`, a theorem declared in [MathlibExt/NumberTheory/Sequences/GeneralizedEuclidSequence.lean, line 2576](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Sequences/GeneralizedEuclidSequence.lean#L2576). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html#generalized-euclid-sequence-contains-eve).
 
 ## Depends on
 
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetic properties of sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/integer-sequences/arithmetic-of-sequences)

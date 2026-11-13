@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "NumberTheory/additive-number-theory/conjecture-refuted.md",
@@ -18525,144 +18525,84 @@
    "title": "Gauss's theorem on primitive roots modulo prime powers",
    "statement": "Let $p$ be an odd prime\nand let $g$ be a natural number that is a primitive root modulo $p$, where a primitive\nroot modulo $n$ is a residue class modulo $n$ of multiplicative order $\\varphi(n)$. Then\nthere is a natural number $k$ such that $g + kp$ is a primitive root modulo $p^\\ell$ for\nevery $\\ell \\ge 2$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Theorem 1.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.exists_primitiveRoot_add_mul_prime_pow",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 101,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/exists-unique-mem-lift-fiber-order-eq-su.md",
    "title": "The lift of order $p - 1$ of a primitive root",
    "statement": "Let $p$ be an odd prime and let\n$g$ be a natural number that is a primitive root modulo $p$, that is, a residue class\nmodulo $p$ of multiplicative order $\\varphi(p) = p - 1$. Let $P_g$ be the set of units\n$x$ modulo $p^2$ with $x \\equiv g \\pmod p$. Then exactly one $x \\in P_g$ has\nmultiplicative order $p - 1$ modulo $p^2$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Corollary 1.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_mem_liftFiber_order_eq_sub_one",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 131,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/exists-unique-mem-lift-fiber-order-eq.md",
    "title": "Unique order-preserving element of a fiber modulo $p^2$",
    "statement": "Let $p$ be an odd prime,\nlet $x_0$ be a unit modulo $p^2$, and let $P_{x_0}$ be the set of units $x$ modulo $p^2$\nwith $x \\equiv x_0 \\pmod p$. There is exactly one $x \\in P_{x_0}$ whose multiplicative\norder modulo $p^2$ equals the multiplicative order of its reduction modulo $p$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Theorem 2.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_mem_liftFiber_order_eq",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 91,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/exists-unique-not-primitive-root-add-mul.md",
    "title": "Exactly one lift of a primitive root fails modulo $p^2$",
    "statement": "Let $p$ be an odd prime\nand let $g$ be a natural number that is a primitive root modulo $p$, where a primitive\nroot modulo $n$ is a residue class modulo $n$ of multiplicative order $\\varphi(n)$. Then\nthere is exactly one $m \\in \\{0, 1, \\dots, p - 1\\}$ such that $g + mp$ is not a primitive\nroot modulo $p^2$, and $g + kp$ is a primitive root modulo $p^2$ for every other\n$k \\in \\{0, 1, \\dots, p - 1\\}$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Corollary 1.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_not_primitiveRoot_add_mul_prime",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 115,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/exists-unique-order-add-mul-prime-eq.md",
    "title": "Unique order-preserving lift modulo $p^2$",
    "statement": "Let $p$ be an odd prime and let $a$ be\na natural number coprime to $p$. Writing $\\operatorname{ord}_n(b)$ for the multiplicative\norder of $b$ modulo $n$, there is exactly one $m \\in \\{0, 1, \\dots, p - 1\\}$ such that\n$\\operatorname{ord}_{p^2}(a + mp) = \\operatorname{ord}_p(a)$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Theorem 2.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.existsUnique_order_add_mul_prime_eq",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 81,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/lift-fiber.md",
    "title": "Fibers of reduction modulo $p$ on units modulo $p^2$",
    "statement": "For a natural number $p$ and a unit\n$a$ of $\\mathbb{Z}/p^2\\mathbb{Z}$, the fiber $P_a$ is the set of units $x$ of\n$\\mathbb{Z}/p^2\\mathbb{Z}$ with $x \\equiv a \\pmod p$, that is, the units whose image under the\nreduction map $(\\mathbb{Z}/p^2\\mathbb{Z})^\\times \\to (\\mathbb{Z}/p\\mathbb{Z})^\\times$ equals the\nimage of $a$.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.liftFiber",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 61,
-    "kind": "def",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/monoid-hom-image-lift-fiber-subset.md",
    "title": "Endomorphisms of the units modulo $p^2$ respect the fibers",
    "statement": "Let $p$ be an odd\nprime, let $f$ be a group endomorphism of $(\\mathbb{Z}/p^2\\mathbb{Z})^\\times$, and let\n$a$ be a unit modulo $p^2$. Writing $P_b$ for the set of units $x$ modulo $p^2$ with\n$x \\equiv b \\pmod p$, the image of $P_a$ under $f$ is contained in $P_{f(a)}$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Lemma 3.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.monoidHom_image_liftFiber_subset",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 158,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/mul-ord-mod.md",
    "title": "Multiplicative order modulo $n$",
    "statement": "For natural numbers $n$ and $a$,\n$\\operatorname{ord}_n(a)$ is the multiplicative order of the residue class of $a$ in the\nunit group $(\\mathbb{Z}/n\\mathbb{Z})^\\times$ when $a$ is coprime to $n$, and $0$\notherwise.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.mulOrdMod",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 52,
-    "kind": "def",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/order-add-mul-prime-eq-or-mul.md",
    "title": "The order of $a + kp$ modulo $p^2$",
    "statement": "Let $p$ be an odd prime and let $a$ and $k$ be\nnatural numbers with $a$ coprime to $p$. Writing $\\operatorname{ord}_n(b)$ for the\nmultiplicative order of $b$ modulo $n$, the order $\\operatorname{ord}_{p^2}(a + kp)$ is\neither $\\operatorname{ord}_p(a)$ or $p \\cdot \\operatorname{ord}_p(a)$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Lemma 1.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.order_add_mul_prime_eq_or_mul",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 69,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/pow-injective-on-lift-fiber-and-order-eq.md",
    "title": "Power maps on the fibers modulo $p^2$",
    "statement": "Let $p$ be an odd prime, let $a$ be a unit\nmodulo $p^2$, and let $n$ be a natural number coprime to $p$ and to the multiplicative\norder of $a$. Writing $P_b$ for the set of units $x$ modulo $p^2$ with\n$x \\equiv b \\pmod p$, the map $x \\mapsto x^n$ is injective on $P_a$, maps $P_a$ onto\n$P_{a^n}$, and preserves the multiplicative order of every element of $P_a$.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Lemma 4.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.pow_injectiveOn_liftFiber_and_order_eq",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 170,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/primitive-root-pow-add-mul-prime-pow.md",
    "title": "Primitive roots modulo $p^\\ell$ of the form $g^p + kp$",
    "statement": "Let $p$ be an odd prime and let\n$g$ be a natural number that is a primitive root modulo $p$. If $k$ is a natural number not\ndivisible by $p$, then $g^p + kp$ is a primitive root modulo $p^\\ell$ for every natural number\n$\\ell > 1$.\n\nHere a natural number $a$ is a primitive root modulo $n$ when its residue class in\n$\\mathbb{Z}/n\\mathbb{Z}$ is a primitive $\\varphi(n)$-th root of unity, where $\\varphi$ is Euler's\ntotient function.\n\n## Sources\n\n- V. P. Ramesh and S. Sivakumar, \"A Note on Gauss's Theorem on the Primitive Roots Modulo `p^ℓ`\", Theorem 3.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.primitiveRoot_pow_add_mul_prime_pow",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 145,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots-modulo-prime-powers/unit-reduce-sq.md",
    "title": "Reduction of units modulo $p^2$ to units modulo $p$",
    "statement": "For a natural number $p$, this is\nthe group homomorphism $(\\mathbb{Z}/p^2\\mathbb{Z})^\\times \\to (\\mathbb{Z}/p\\mathbb{Z})^\\times$\ninduced on units by the reduction ring homomorphism\n$\\mathbb{Z}/p^2\\mathbb{Z} \\to \\mathbb{Z}/p\\mathbb{Z}$, which sends the class of $x$ modulo $p^2$ to\nthe class of $x$ modulo $p$.",
    "declaration": "MathlibExt.NumberTheory.GaussPrimitiveRootsWanted.unitReduceSq",
-   "lean": {
-    "file": "WantedExt/NumberTheory/GaussPrimitiveRootsWanted.lean",
-    "line": 57,
-    "kind": "def",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/congruences/congruences-modular-arithmetic/primitive-roots/carmichael-mul-eq-lcm.md",
@@ -35519,7 +35459,7 @@
    "declaration": "MetaMathlibExt.dvd_gcd_sub_div_gcd",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 116,
+    "line": 111,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35531,7 +35471,7 @@
    "declaration": "MetaMathlibExt.isSDiophantineTuple_two_one_three",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 48,
+    "line": 52,
     "kind": "theorem",
     "sorry": false
    }
@@ -35543,7 +35483,7 @@
    "declaration": "MetaMathlibExt.isSDiophantineTuple_two_three_five_one_three_eight",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 63,
+    "line": 67,
     "kind": "theorem",
     "sorry": false
    }
@@ -35555,7 +35495,7 @@
    "declaration": "MetaMathlibExt.IsSDiophantineTuple",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 41,
+    "line": 45,
     "kind": "def",
     "sorry": false
    }
@@ -35567,7 +35507,7 @@
    "declaration": "MetaMathlibExt.not_exists_sDiophantine_quadruple_of_mod_four_eq_three",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 179,
+    "line": 174,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35579,7 +35519,7 @@
    "declaration": "MetaMathlibExt.not_exists_sDiophantine_quintuple",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 187,
+    "line": 182,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35591,7 +35531,7 @@
    "declaration": "MetaMathlibExt.not_exists_sDiophantine_system_four",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 133,
+    "line": 128,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35602,9 +35542,9 @@
    "statement": "If $a < b < c$ are positive integers, then $ac + 1$\ndoes not divide $bc + 1$.\n\nThe source states this for $S$-Diophantine triples; that hypothesis is not needed.\n\n## Sources\n\n- Volker Ziegler, *On the Existence of `{p, q}`-Diophantine Quadruples and Quintuples*, INTEGERS 25 (2025), Article A92, Lemma 1, quoting Szalay and Ziegler (2013), Lemma 2.1.",
    "declaration": "MetaMathlibExt.not_mul_add_one_dvd_mul_add_one",
    "lean": {
-    "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 87,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/PQDiophantineTuples.lean",
+    "line": 38,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -35615,7 +35555,7 @@
    "declaration": "MetaMathlibExt.padicValNat_two_smallest_eq",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 99,
+    "line": 94,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35627,7 +35567,7 @@
    "declaration": "MetaMathlibExt.sDiophantine_quadruple_caseIII_bounds",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 200,
+    "line": 195,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35639,7 +35579,7 @@
    "declaration": "MetaMathlibExt.sDiophantine_quadruple_caseIV_bound",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 224,
+    "line": 219,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35651,7 +35591,7 @@
    "declaration": "MetaMathlibExt.sDiophantine_quadruple_exponent_cases",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 150,
+    "line": 145,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35663,7 +35603,7 @@
    "declaration": "MetaMathlibExt.sDiophantine_quadruple_fourteen_cases",
    "lean": {
     "file": "WantedExt/NumberTheory/PQDiophantineTuplesWanted.lean",
-    "line": 248,
+    "line": 243,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -35987,7 +35927,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.even_of_pos_exp",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 78,
+    "line": 74,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36011,7 +35951,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.no_solution_mod_four_one",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 101,
+    "line": 97,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36023,7 +35963,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.one_add_pow_eq_sq",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 68,
+    "line": 64,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36047,7 +35987,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.opposite_parity",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 90,
+    "line": 86,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36057,12 +35997,7 @@
    "title": "$19^x + 151^y$ is never a perfect square",
    "statement": "For all natural numbers $x$, $y$ and $z$,\n$19^x + 151^y \\ne z^2$.\n\n## Sources\n\n- Shalini Choudhury and Naba Kanta Sarma, \"On the Diophantine Equations `(p+a)^x + p^y = z^2` and `(p+a)^x - p^y = z^2` where `p` and `p+a` Are Odd Primes\", Corollary 1.",
    "declaration": "MathlibExt.NumberTheory.ExponentialDiophantineWanted.pow19_add_pow151_ne_sq",
-   "lean": {
-    "file": "WantedExt/NumberTheory/ExponentialDiophantineWanted.lean",
-    "line": 68,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/diophantine-equations/exponential-diophantine/squares-as-sums-or-differences-of-powers/pow-add-one-eq-sq.md",
@@ -36071,7 +36006,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.pow_add_one_eq_sq",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 58,
+    "line": 54,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36083,7 +36018,7 @@
    "declaration": "MathlibExt.NumberTheory.ExponentialDiophantineWanted.pow_add_pow_eq_sq",
    "lean": {
     "file": "WantedExt/NumberTheory/ExponentialDiophantineWanted.lean",
-    "line": 55,
+    "line": 59,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36191,7 +36126,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.solutions_mod_sixty",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 129,
+    "line": 125,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36215,7 +36150,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.three_pow_add_thirtyfive_pow",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 154,
+    "line": 150,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36263,7 +36198,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.two_pow_add_fifteen_pow",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 143,
+    "line": 139,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36273,12 +36208,7 @@
    "title": "Solutions of $2^x + 1 = z^2$",
    "statement": "For natural numbers $x$ and $z$, $2^x + 1 = z^2$ holds if\nand only if $x = 3$ and $z = 3$.\n\n## Sources\n\n- Suton Tadee, \"On the Diophantine Equation `n^x + (5p)^y = z^2`\", Lemma 1.",
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.two_pow_add_one_eq_sq",
-   "lean": {
-    "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 49,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/diophantine-equations/exponential-diophantine/squares-as-sums-or-differences-of-powers/two-pow-solutions.md",
@@ -36287,7 +36217,7 @@
    "declaration": "MathlibExt.NumberTheory.PowAddPowEqSqWanted.two_pow_solutions",
    "lean": {
     "file": "WantedExt/NumberTheory/PowAddPowEqSqWanted.lean",
-    "line": 113,
+    "line": 109,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36503,7 +36433,7 @@
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.exists_int_point_elliptic_of_exists_int_point_quartic",
    "lean": {
     "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 76,
+    "line": 52,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36525,12 +36455,7 @@
    "title": "Two is not a difference of two squares",
    "statement": "For all integers $a$ and $b$,\n$a^2 - b^2 \\neq 2$.\n\n## Sources\n\n- Tsz Ho Chan, \"A Note on Three Consecutive Powerful Numbers\", Lemma 1.",
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.int_sq_sub_int_sq_ne_two",
-   "lean": {
-    "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 46,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/diophantine-equations/higher-degree-equations/consecutive-powerful-numbers/not-cube-sub-one-eq-prime-sq-mul-cube-an.md",
@@ -36551,7 +36476,7 @@
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.not_exists_prime_cube_square_neighbors_of_cube",
    "lean": {
     "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 134,
+    "line": 110,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36563,7 +36488,7 @@
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.not_exists_sixty_four_mul_pow_six_sub_one_eq",
    "lean": {
     "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 146,
+    "line": 122,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36575,7 +36500,7 @@
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.pell_three_eq_neg_two_positive_solutions_iff_and_recurrence",
    "lean": {
     "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 112,
+    "line": 88,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36587,7 +36512,7 @@
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.pell_three_eq_one_positive_solutions_iff_and_recurrence",
    "lean": {
     "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 89,
+    "line": 65,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -36633,24 +36558,14 @@
    "title": "Exact divisibility of $x^2 + x + 1$ by $3$",
    "statement": "If $x$ is an integer with\n$x \\equiv 1 \\pmod 3$, then $3$ divides $x^2 + x + 1$ but $9$ does not.\n\n## Sources\n\n- Tsz Ho Chan, \"A Note on Three Consecutive Powerful Numbers\", Lemma 2.",
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.three_exact_dvd_sq_add_self_add_one",
-   "lean": {
-    "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 56,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/diophantine-equations/higher-degree-equations/consecutive-powerful-numbers/three-exact-dvd-sq-sub-self-add-one.md",
    "title": "Exact divisibility of $x^2 - x + 1$ by $3$",
    "statement": "If $x$ is an integer with\n$x \\equiv 2 \\pmod 3$, then $3$ divides $x^2 - x + 1$ but $9$ does not.\n\n## Sources\n\n- Tsz Ho Chan, \"A Note on Three Consecutive Powerful Numbers\", Lemma 3.",
    "declaration": "MathlibExt.NumberTheory.PowerfulNumbersWanted.three_exact_dvd_sq_sub_self_add_one",
-   "lean": {
-    "file": "WantedExt/NumberTheory/PowerfulNumbersWanted.lean",
-    "line": 66,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/diophantine-equations/higher-degree-equations/generalized-fermat-equation/generalized-fermat-mul-exponent.md",
@@ -38386,9 +38301,9 @@
    "statement": "Let $d$ and $z$ be integers\nwith $d \\equiv 1 \\pmod 4$ and $z \\equiv 2 \\pmod 4$. Then $|x^2 - d y^2| \\ne z$ for all integers $x$\nand $y$.\n\n## Sources\n\n- the source's hypothesis $z > 1$ is not needed. The second sentence of part (a) (on $S(d)$ and $l_2$) is not stated here.\n- Takashi Hirotsu, *General Pell's Equations and Angle Bisectors between Planar Lines with Rational Slopes*, INTEGERS 24 (2024), Article A111, Lemma 1(a), first sentence.",
    "declaration": "MetaMathlibExt.abs_sq_sub_mul_sq_ne_of_two_mod_four",
    "lean": {
-    "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 384,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/GeneralPellBisectors.lean",
+    "line": 39,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -38399,7 +38314,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_form_nine",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 217,
+    "line": 218,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38411,7 +38326,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_form_ten",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 231,
+    "line": 232,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38423,7 +38338,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_form_three",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 549,
+    "line": 539,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38435,7 +38350,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_form_two",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 512,
+    "line": 502,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38447,7 +38362,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_int_solution",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 194,
+    "line": 195,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38459,7 +38374,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_int_zero",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 181,
+    "line": 182,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38471,7 +38386,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_rat_solution_negPell",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 532,
+    "line": 522,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38483,7 +38398,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_rat_solution_pythagorean",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 499,
+    "line": 489,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38495,7 +38410,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_rat_solution",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 155,
+    "line": 156,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38507,7 +38422,7 @@
    "declaration": "MetaMathlibExt.bisector_equation_symm",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 169,
+    "line": 170,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38519,7 +38434,7 @@
    "declaration": "MetaMathlibExt.bisector_slope_equation",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 142,
+    "line": 143,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38531,7 +38446,7 @@
    "declaration": "MetaMathlibExt.even_of_abs_sq_sub_mul_sq_four_mod_eight",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 395,
+    "line": 385,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38543,7 +38458,7 @@
    "declaration": "MetaMathlibExt.even_of_abs_sq_sub_mul_sq_zero_mod_eight",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 405,
+    "line": 395,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38555,7 +38470,7 @@
    "declaration": "MetaMathlibExt.exists_strictlyPrimitive_dvd_iff_split",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 610,
+    "line": 600,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38567,7 +38482,7 @@
    "declaration": "MetaMathlibExt.generalPell_finitely_many_classes",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 248,
+    "line": 249,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38579,7 +38494,7 @@
    "declaration": "MetaMathlibExt.negPell_addition_formulas",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 292,
+    "line": 293,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38591,7 +38506,7 @@
    "declaration": "MetaMathlibExt.negPellF_dvd_iff",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 363,
+    "line": 364,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38603,7 +38518,7 @@
    "declaration": "MetaMathlibExt.negPellF_gcd_of_even_quotient",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 353,
+    "line": 354,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38615,7 +38530,7 @@
    "declaration": "MetaMathlibExt.negPellF_two_one",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 130,
+    "line": 131,
     "kind": "theorem",
     "sorry": false
    }
@@ -38627,7 +38542,7 @@
    "declaration": "MetaMathlibExt.negPellF_zero_negPellG_zero",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 111,
+    "line": 112,
     "kind": "theorem",
     "sorry": false
    }
@@ -38639,7 +38554,7 @@
    "declaration": "MetaMathlibExt.negPellF",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 93,
+    "line": 94,
     "kind": "def",
     "sorry": false
    }
@@ -38651,7 +38566,7 @@
    "declaration": "MetaMathlibExt.negPellFund_spec",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 48,
+    "line": 49,
     "kind": "theorem",
     "sorry": false
    }
@@ -38663,7 +38578,7 @@
    "declaration": "MetaMathlibExt.negPellFund_two",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 78,
+    "line": 79,
     "kind": "theorem",
     "sorry": false
    }
@@ -38675,7 +38590,7 @@
    "declaration": "MetaMathlibExt.negPellFundX",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 38,
+    "line": 39,
     "kind": "def",
     "sorry": false
    }
@@ -38687,7 +38602,7 @@
    "declaration": "MetaMathlibExt.negPellFundY_le",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 65,
+    "line": 66,
     "kind": "theorem",
     "sorry": false
    }
@@ -38699,7 +38614,7 @@
    "declaration": "MetaMathlibExt.negPellFundY",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 29,
+    "line": 30,
     "kind": "def",
     "sorry": false
    }
@@ -38711,7 +38626,7 @@
    "declaration": "MetaMathlibExt.negPellG_dvd_iff",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 372,
+    "line": 373,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38723,7 +38638,7 @@
    "declaration": "MetaMathlibExt.negPellG_le_negPellF",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 335,
+    "line": 336,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38735,7 +38650,7 @@
    "declaration": "MetaMathlibExt.negPellG",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 102,
+    "line": 103,
     "kind": "def",
     "sorry": false
    }
@@ -38747,7 +38662,7 @@
    "declaration": "MetaMathlibExt.negPell_gcd_eq_one",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 344,
+    "line": 345,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38759,7 +38674,7 @@
    "declaration": "MetaMathlibExt.negPell_rat_solvable_iff",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 260,
+    "line": 261,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38771,7 +38686,7 @@
    "declaration": "MetaMathlibExt.negPell_sequences_basic",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 273,
+    "line": 274,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38783,7 +38698,7 @@
    "declaration": "MetaMathlibExt.negPell_succ",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 120,
+    "line": 121,
     "kind": "theorem",
     "sorry": false
    }
@@ -38795,7 +38710,7 @@
    "declaration": "MetaMathlibExt.negPell_sum_difference_formulas",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 311,
+    "line": 312,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38807,7 +38722,7 @@
    "declaration": "MetaMathlibExt.seven_mem_strictPrimitivePrimes_two",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 471,
+    "line": 461,
     "kind": "theorem",
     "sorry": false
    }
@@ -38819,7 +38734,7 @@
    "declaration": "MetaMathlibExt.strictPrimitiveExponent_le_classNumber",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 660,
+    "line": 650,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38831,7 +38746,7 @@
    "declaration": "MetaMathlibExt.strictPrimitiveExponent_le",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 459,
+    "line": 449,
     "kind": "theorem",
     "sorry": false
    }
@@ -38843,7 +38758,7 @@
    "declaration": "MetaMathlibExt.strictPrimitiveExponent_of_not_mem",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 434,
+    "line": 424,
     "kind": "theorem",
     "sorry": false
    }
@@ -38855,7 +38770,7 @@
    "declaration": "MetaMathlibExt.strictPrimitiveExponent_spec",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 445,
+    "line": 435,
     "kind": "theorem",
     "sorry": false
    }
@@ -38867,7 +38782,7 @@
    "declaration": "MetaMathlibExt.strictPrimitiveExponent_two_seven",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 480,
+    "line": 470,
     "kind": "theorem",
     "sorry": false
    }
@@ -38879,7 +38794,7 @@
    "declaration": "MetaMathlibExt.strictPrimitiveExponent",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 425,
+    "line": 415,
     "kind": "def",
     "sorry": false
    }
@@ -38891,7 +38806,7 @@
    "declaration": "MetaMathlibExt.strictPrimitivePrimes_eq_split_insert_two",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 641,
+    "line": 631,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38903,7 +38818,7 @@
    "declaration": "MetaMathlibExt.strictPrimitivePrimes_eq_split",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 626,
+    "line": 616,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38915,7 +38830,7 @@
    "declaration": "MetaMathlibExt.strictPrimitivePrimes",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 415,
+    "line": 405,
     "kind": "def",
     "sorry": false
    }
@@ -38927,7 +38842,7 @@
    "declaration": "MetaMathlibExt.strictlyPrimitive_neg",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 593,
+    "line": 583,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38939,7 +38854,7 @@
    "declaration": "MetaMathlibExt.strictlyPrimitive_pow",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 582,
+    "line": 572,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -38951,7 +38866,7 @@
    "declaration": "MetaMathlibExt.strictlyPrimitive_prod",
    "lean": {
     "file": "WantedExt/NumberTheory/GeneralPellBisectorsWanted.lean",
-    "line": 565,
+    "line": 555,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -41999,7 +41914,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.analytic_at_X",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 196,
+    "line": 200,
     "kind": "theorem",
     "sorry": false
    }
@@ -42011,7 +41926,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.bracket",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 86,
+    "line": 90,
     "kind": "lemma",
     "sorry": false
    }
@@ -42023,7 +41938,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.chain_cover",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 142,
+    "line": 146,
     "kind": "theorem",
     "sorry": false
    }
@@ -42035,7 +41950,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.chain_getLast",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 81,
+    "line": 85,
     "kind": "theorem",
     "sorry": false
    }
@@ -42047,7 +41962,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.chain_prime",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 69,
+    "line": 73,
     "kind": "theorem",
     "sorry": false
    }
@@ -42059,7 +41974,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.chain_ratio",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 77,
+    "line": 81,
     "kind": "theorem",
     "sorry": false
    }
@@ -42071,7 +41986,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.chain_sorted",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 74,
+    "line": 78,
     "kind": "theorem",
     "sorry": false
    }
@@ -42083,7 +41998,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.chain",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 47,
+    "line": 51,
     "kind": "def",
     "sorry": false
    }
@@ -42107,7 +42022,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.main_contra",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 179,
+    "line": 183,
     "kind": "lemma",
     "sorry": false
    }
@@ -42119,7 +42034,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.overlap",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 164,
+    "line": 168,
     "kind": "lemma",
     "sorry": false
    }
@@ -42200,7 +42115,7 @@
    "path": "NumberTheory/distribution-of-primes/prime-gaps-short-intervals/breusch-s-theorem-on-primes-between-x-and-9x-8/part-09/upper-ineq.md",
    "title": "Breusch's endgame upper-bound inequality",
    "statement": "For a natural number $n$ write\n$L(n) = \\sum_{d \\mid 210} \\mu(d) \\log \\binom{2100n/d}{210n/d}$, where $\\mu$ is the Möbius function;\nthis is the logarithm of Breusch's product $F_9(n)$. The endgame upper-bound inequality at $n$ is\nthe statement\n\n$$L(n) \\le \\left(\\frac{18900}{279} + \\frac{18900}{657} + \\frac{18900}{963}\\right)\nn \\log 3.4 + \\sqrt{2100n}\\,\\log(2100n).$$",
-   "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.upper_ineq",
+   "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.UpperIneq",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
     "line": 42,
@@ -42215,7 +42130,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.zip_cons_mem",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 113,
+    "line": 117,
     "kind": "lemma",
     "sorry": false
    }
@@ -42227,7 +42142,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.zip_mem_of_consec",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 126,
+    "line": 130,
     "kind": "lemma",
     "sorry": false
    }
@@ -42239,7 +42154,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.Internal.breusch_prime_interval_of_upper",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 231,
+    "line": 235,
     "kind": "theorem",
     "sorry": false
    }
@@ -42251,7 +42166,7 @@
    "declaration": "MathlibExt.NumberTheory.BreuschWanted.breusch_prime_interval",
    "lean": {
     "file": "MathlibExt/NumberTheory/PrimeInterval/Breusch.lean",
-    "line": 252,
+    "line": 256,
     "kind": "theorem",
     "sorry": false
    }
@@ -42347,7 +42262,7 @@
    "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.disprovedVardi",
    "lean": {
     "file": "WantedExt/NumberTheory/ErdosProblem1138Wanted.lean",
-    "line": 61,
+    "line": 73,
     "kind": "def",
     "sorry": false
    }
@@ -42380,10 +42295,10 @@
    "path": "NumberTheory/distribution-of-primes/prime-gaps-short-intervals/prime-gaps/prime-count-ioc-mul-const.md",
    "title": "Primes in a window of $C$ maximal prime gaps",
    "statement": "Let $p_0 = 2 < p_1 = 3 < p_2 = 5 < \\dots$\nbe the primes in increasing order, let $\\pi$ be the prime-counting function, and for real $x$\nlet $d(x)$ be the largest prime gap $p_{n+1} - p_n$ over all $n$ with $p_n < x$, with\n$d(x) = 0$ when no prime is less than $x$. For a real number $C$, this is the function on pairs\n$(x, y)$ of real numbers given by $\\pi(\\lfloor y + C\\,d(x) \\rfloor) - \\pi(\\lfloor y \\rfloor)$,\nwhere the floors are taken in $\\mathbb{N}$ (so negative numbers have floor $0$) and the\ndifference is taken in $\\mathbb{R}$.\n\nWhen $C \\ge 0$ this is the number of primes in the interval $(y, y + C\\,d(x)]$.",
-   "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.primeCount_Ioc_mul_const",
+   "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.primeCountIocMulConst",
    "lean": {
     "file": "WantedExt/NumberTheory/ErdosProblem1138Wanted.lean",
-    "line": 51,
+    "line": 59,
     "kind": "def",
     "sorry": false
    }
@@ -42476,10 +42391,10 @@
    "path": "NumberTheory/distribution-of-primes/prime-gaps-short-intervals/prime-gaps/snd-gt-half-fst.md",
    "title": "The regime $x \\to \\infty$ with $x/2 < y < x$",
    "statement": "The filter on pairs $(x, y)$ of real\nnumbers along which $x \\to \\infty$ while $x/2 < y < x$: a set of pairs belongs to it exactly\nwhen it contains every pair $(x, y)$ with $x/2 < y < x$ and $x$ sufficiently large.",
-   "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.snd_gt_half_fst",
+   "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.sndGtHalfFst",
    "lean": {
     "file": "WantedExt/NumberTheory/ErdosProblem1138Wanted.lean",
-    "line": 47,
+    "line": 51,
     "kind": "abbrev",
     "sorry": false
    }
@@ -42488,7 +42403,7 @@
    "path": "NumberTheory/distribution-of-primes/prime-gaps-short-intervals/prime-gaps/sup-prime-gap.md",
    "title": "Largest prime gap below $x$",
    "statement": "Let $p_0 = 2 < p_1 = 3 < p_2 = 5 < \\dots$ be the primes in\nincreasing order. For a real number $x$, $d(x)$ is the largest prime gap $p_{n+1} - p_n$ over all\n$n$ with $p_n < x$ (the next prime $p_{n+1}$ may exceed $x$), and $d(x) = 0$ when no prime is\nless than $x$.",
-   "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.sup_primeGap",
+   "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.supPrimeGap",
    "lean": {
     "file": "WantedExt/NumberTheory/ErdosProblem1138Wanted.lean",
     "line": 43,
@@ -42527,7 +42442,7 @@
    "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.vardiAsymptotic_refuted",
    "lean": {
     "file": "WantedExt/NumberTheory/ErdosProblem1138Wanted.lean",
-    "line": 74,
+    "line": 86,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -42539,7 +42454,7 @@
    "declaration": "MathlibExt.NumberTheory.ErdosProblem1138Wanted.vardiAsymptotic",
    "lean": {
     "file": "WantedExt/NumberTheory/ErdosProblem1138Wanted.lean",
-    "line": 55,
+    "line": 67,
     "kind": "def",
     "sorry": false
    }
@@ -75781,7 +75696,7 @@
    "declaration": "MetaMathlibExt.Analysis.SpecialFunctions.JacobiTripleProduct.jacobi_triple_product",
    "lean": {
     "file": "MathlibExt/Analysis/SpecialFunctions/JacobiTripleProduct.lean",
-    "line": 1267,
+    "line": 1227,
     "kind": "theorem",
     "sorry": false
    }
@@ -76669,7 +76584,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_le_nine",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 75,
+    "line": 68,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -76681,7 +76596,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.exists_isPFrobeniusNumber_star_of_ten_le",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 88,
+    "line": 81,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -76691,12 +76606,7 @@
    "title": "Three consecutive star numbers are relatively prime",
    "statement": "Write $S_m$ for the $m$-th star\nnumber $6m(m-1)+1$. For every natural number $n \\ge 1$, $\\gcd(S_n, S_{n+1}, S_{n+2}) = 1$.\n\n## Sources\n\n- \"On p-Frobenius Numbers for the Numerical Semigroups Generated by Three Consecutive Star Numbers\", Lemma 2.",
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.gcd_star_succ_succ",
-   "lean": {
-    "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 65,
-    "kind": "theorem_wanted",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/numerical-semigroups/frobenius-numbers-of-consecutive-star-numbers/is-pfrobenius-star-number.md",
@@ -76705,7 +76615,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.IsPFrobeniusStarNumber",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 50,
+    "line": 52,
     "kind": "def",
     "sorry": false
    }
@@ -76717,7 +76627,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_one_star",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 109,
+    "line": 102,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -76729,7 +76639,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_two_star",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 119,
+    "line": 112,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -76741,7 +76651,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterCount_zero_star",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 99,
+    "line": 92,
     "kind": "theorem_wanted",
     "sorry": false
    }
@@ -76753,7 +76663,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.pSylvesterStarCount",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 57,
+    "line": 59,
     "kind": "def",
     "sorry": false
    }
@@ -76765,7 +76675,7 @@
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.starRepCount",
    "lean": {
     "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 41,
+    "line": 43,
     "kind": "def",
     "sorry": false
    }
@@ -76775,12 +76685,7 @@
    "title": "Star numbers",
    "statement": "For a natural number $n$, the $n$-th star number is $S_n = 6n(n-1)+1$.",
    "declaration": "MathlibExt.NumberTheory.PFrobeniusStarNumbersWanted.star",
-   "lean": {
-    "file": "WantedExt/NumberTheory/PFrobeniusStarNumbersWanted.lean",
-    "line": 34,
-    "kind": "def",
-    "sorry": false
-   }
+   "lean": null
   },
   {
    "path": "NumberTheory/numerical-semigroups/generalized-frobenius-numbers-of-triangular-numb/frobenius-rep-count-pair-eq-iff.md",
@@ -80544,9 +80449,9 @@
    "statement": "Let $\\alpha$, $\\beta$ and $\\gamma$ be natural\nnumbers with $\\gamma > 0$ and $\\gcd(\\alpha, \\beta) = 1$. Then there is a natural number $c > 0$\nwith $\\gcd(c, \\gamma) = 1$ and $c \\equiv \\beta \\pmod{\\alpha}$.\n\nThe numbers $\\alpha$ and $\\beta$ need not be positive.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 10 (`jis-2025-25.8.7-lem-10`).",
    "declaration": "MetaMathlibExt.exists_coprime_modEq_of_coprime",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 90,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 309,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80556,9 +80461,9 @@
    "statement": "Write\n$F_n = 2^{2^n} + 1$ for the $n$-th Fermat number. Let $p$ be an odd prime, let $h$ be a natural\nnumber and let $k$ be a positive integer such that the sequence $n \\mapsto F_{h+n} \\bmod p$ is\nperiodic with period $k$ and every positive period of it is a multiple of $k$. Then $p$ divides\n$F_n$ for some natural number $n$ if and only if $k = 1$.\n\nAny such $h$ is at least the preperiod of $n \\mapsto F_n \\bmod p$, and $k$ is then the primitive\nperiod of $n \\mapsto F_n \\bmod p$, which does not depend on $h$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Proposition 18 (`jis-2025-25.8.7-prop-18`).",
    "declaration": "MetaMathlibExt.exists_prime_dvd_fermatNumber_iff_period_eq_one",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 160,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 512,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80568,9 +80473,9 @@
    "statement": "Write\n$F_n = 2^{2^n} + 1$. For every natural number $v$ there is a prime $p \\equiv 1 \\pmod 8$ such that\nthe sequence $n \\mapsto F_n \\bmod p$ has preperiod exactly $v$: the sequence\n$n \\mapsto F_{v+n} \\bmod p$ is periodic with some positive period, and for no $h < v$ is the\nsequence $n \\mapsto F_{h+n} \\bmod p$ periodic with a positive period.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Theorem 23 (`jis-2025-25.8.7-thm-23`).",
    "declaration": "MetaMathlibExt.exists_prime_one_mod_eight_fermat_preperiod",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 183,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 615,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80580,9 +80485,9 @@
    "statement": "Let $p$ be\na prime and let $a$ be a nonzero residue modulo $p$, of multiplicative order\n$\\operatorname{ord}_p(a)$. Then there is a primitive root $g$ modulo $p$ (an element of order\n$p - 1$ in $\\mathbb{Z}/p\\mathbb{Z}$) with $g^{(p-1)/\\operatorname{ord}_p(a)} = a$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Proposition 11 (`jis-2025-25.8.7-prop-11`).",
    "declaration": "MetaMathlibExt.exists_primitiveRoot_pow_card_sub_one_div_orderOf",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 99,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 347,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80592,9 +80497,9 @@
    "statement": "Let $p$ be an odd prime and\nwrite $p - 1 = 2^r u$ with $u$ odd. Then there is exactly one pair $(s, t)$ of natural numbers\nwith $s \\le r$ and $t \\mid u$ such that $g^{2^s t} = 2$ for some primitive root $g$ modulo $p$\n(an element of order $p - 1$ in $\\mathbb{Z}/p\\mathbb{Z}$).\n\nSince $2^s t$ divides $p - 1$, it lies in $\\{1, \\dots, p - 1\\}$, so it is the index\n$\\operatorname{ind}_g(2)$ of $2$ with respect to $g$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Corollary 14 (`jis-2025-25.8.7-cor-14`); also Theorem 15 (i).",
    "declaration": "MetaMathlibExt.existsUnique_twoAdic_index_of_two",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 119,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 404,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80604,9 +80509,9 @@
    "statement": "Let $p$ be a prime, let $g$ be a primitive root modulo $p$ (an\nelement of order $p - 1$ in $\\mathbb{Z}/p\\mathbb{Z}$), let $a \\in \\mathbb{Z}/p\\mathbb{Z}$ and let\n$i$ be a natural number with $g^i = a$. Then $i$ divides $p - 1$ if and only if\n$i = (p - 1)/\\operatorname{ord}_p(a)$, where $\\operatorname{ord}_p(a)$ is the multiplicative order\nof $a$.\n\nFor $i$ outside $\\{1, \\dots, p - 1\\}$ both sides are false, so the statement concerns the index\n$\\operatorname{ind}_g(a)$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Proposition 13 (`jis-2025-25.8.7-prop-13`).",
    "declaration": "MetaMathlibExt.exponent_dvd_card_sub_one_iff",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 109,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 386,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80616,9 +80521,9 @@
    "statement": "Write $F_n = 2^{2^n} + 1$. Let $m$, $i$ and\n$j$ be natural numbers with $F_i \\equiv F_j \\pmod m$. Then $F_{i+t} \\equiv F_{j+t} \\pmod m$ for\nevery natural number $t$.\n\nNo condition on $m$, $i$ or $j$ is needed.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 4 (i) (`jis-2025-25.8.7-lem-4`).",
    "declaration": "MetaMathlibExt.fermatNumber_modEq_add",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 44,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 213,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80628,9 +80533,9 @@
    "statement": "Write $F_n = 2^{2^n} + 1$. For every\npositive integer $p$ there are natural numbers $i < j \\le p$ with $F_i \\equiv F_j \\pmod p$.\n\nThis is the pigeonhole principle; $p$ need not be prime.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 2 (`jis-2025-25.8.7-lem-2`).",
    "declaration": "MetaMathlibExt.fermatNumber_modEq_exists_repeat",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 36,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 193,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80640,9 +80545,9 @@
    "statement": "Write $F_n = 2^{2^n} + 1$. Let $p$ be a prime, and let\n$h$ and $k$ be the preperiod and the period of $n \\mapsto F_n \\bmod p$ in the following sense:\n$k > 0$, the sequence $n \\mapsto F_{h+n} \\bmod p$ is periodic with period $k$, every positive\nperiod of it is a multiple of $k$, and for no $h' < h$ is the sequence $n \\mapsto F_{h'+n} \\bmod p$\nperiodic with a positive period. Then for all natural numbers $i < j$, $F_i \\equiv F_j \\pmod p$\nif and only if $i \\ge h$ and $i \\equiv j \\pmod k$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 6 (`jis-2025-25.8.7-lem-6`).",
    "declaration": "MetaMathlibExt.fermatNumber_modEq_iff_preperiod_period",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 65,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 249,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80664,9 +80569,9 @@
    "statement": "Write $F_n = 2^{2^n} + 1$.\nLet $p$ be an odd prime, write $p - 1 = 2^r u$ with $u$ odd, and let $s \\le r$ and $t \\mid u$ be\nnatural numbers such that $g^{2^s t} = 2$ for some primitive root $g$ modulo $p$ (an element of\norder $p - 1$ in $\\mathbb{Z}/p\\mathbb{Z}$). Let $k$ be the multiplicative order of $2$ modulo\n$u/t$, with $k = 1$ when $t = u$. Then the sequence $n \\mapsto F_{r-s+n} \\bmod p$ is periodic\nwith period $k$, every positive period of it is a multiple of $k$, and for no $h < r - s$ is the\nsequence $n \\mapsto F_{h+n} \\bmod p$ periodic with a positive period. Thus $n \\mapsto F_n \\bmod p$\nhas preperiod $r - s$ and primitive period $k$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Theorem 15 (ii) and (iii) (`jis-2025-25.8.7-thm-15`).",
    "declaration": "MetaMathlibExt.fermatNumber_mod_prime_preperiod_period_of_index",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 131,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 437,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80676,9 +80581,9 @@
    "statement": "Write $F_n = 2^{2^n} + 1$ for\nthe $n$-th Fermat number. Let $m$ be a natural number and let $i \\le j$. If\n$F_j \\not\\equiv F_{j+t} \\pmod{m}$ for every $t \\ge 1$, then $F_i \\not\\equiv F_{i+t} \\pmod{m}$\nfor every $t \\ge 1$.\n\nThe statement holds for every modulus $m$ and allows $i = j$; the paper takes $m = p$ prime and\n$i < j$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 4 (ii) (`jis-2025-25.8.7-lem-4`).",
    "declaration": "MetaMathlibExt.fermatNumber_not_modEq_add_of_le",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 54,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 230,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80688,9 +80593,9 @@
    "statement": "Let $p$ be a prime, let $g$ be a\nprimitive root modulo $p$ (an element of $\\mathbb{Z}/p\\mathbb{Z}$ of multiplicative order\n$p - 1$), and let $a \\in \\mathbb{Z}/p\\mathbb{Z}$. If $g^i = a$ for a natural number $i$, then\n$\\gcd(p - 1, i) = (p - 1)/\\operatorname{ord}_p(a)$, where $\\operatorname{ord}_p(a)$ is the\nmultiplicative order of $a$ modulo $p$.\n\nThis holds for every natural number $i$ with $g^i = a$; the paper's index\n$\\operatorname{ind}_g(a)$, which lies between $1$ and $p - 1$, is one of them.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 8 (iv) (`jis-2025-25.8.7-lem-8`).",
    "declaration": "MetaMathlibExt.gcd_card_sub_one_exponent_eq_div_orderOf",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 81,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 295,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80712,9 +80617,9 @@
    "statement": "Let $p$ be a prime and let\n$\\operatorname{ord}_p(2)$ be the multiplicative order of $2$ modulo $p$. If $p \\equiv 7 \\pmod 8$,\nthen $\\operatorname{ord}_p(2)$ is odd. If $p \\equiv 3 \\pmod 8$, then $\\operatorname{ord}_p(2)$ is\ndivisible by $2$ but not by $4$. If $p \\equiv 5 \\pmod 8$, then $\\operatorname{ord}_p(2)$ is\ndivisible by $4$ but not by $8$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Theorem 22, order statements (`jis-2025-25.8.7-thm-22`).",
    "declaration": "MetaMathlibExt.orderOf_two_twoAdic_of_mod_eight",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 172,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 560,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -80724,9 +80629,9 @@
    "statement": "Write $F_n = 2^{2^n} + 1$ for the\n$n$-th Fermat number. An odd prime $p$ divides $F_n$ if and only if the multiplicative order of\n$2$ modulo $p$ equals $2^{n+1}$.\n\n## Sources\n\n- Jiří Klaška, *Fermat Numbers Modulo a Prime*, Journal of Integer Sequences 28 (2025), Article 25.8.7, Lemma 17 (`jis-2025-25.8.7-lem-17`).",
    "declaration": "MetaMathlibExt.prime_dvd_fermatNumber_iff_orderOf_two",
    "lean": {
-    "file": "WantedExt/NumberTheory/FermatNumbersModPrimeWanted.lean",
-    "line": 147,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/FermatNumbersModPrime.lean",
+    "line": 478,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89052,9 +88957,9 @@
    "statement": "Let $H_k = \\sum_{j=1}^{k} 1/j$ be\nthe $k$-th harmonic number (so $H_0 = 0$) and let $\\nu_2$ denote the $2$-adic valuation on the\nrational numbers. Let $n$ and $a$ be natural numbers such that the binary digit of $n$ in\nposition $a$ is $1$, that is, $2^a$ occurs in the binary expansion of $n$. Then exactly $2^a$ of\nthe natural numbers $m < n$ satisfy $\\nu_2(H_n - H_m) = -a$.\n\nThe source theorem also locates these values of $m$ in intervals determined by the partial sums\nof the binary expansion of $n$; that refinement is not part of this statement.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 3: writing `n = ∑_{i=1}^{t} 2^{aᵢ}` in binary, among the values `ν₂(H_n - H_m)` for `m = 0, 1, …, n - 1` exactly `2^{aᵢ}` are equal to `-aᵢ`, for each exponent `aᵢ` occurring in the expansion.",
    "declaration": "MetaMathlibExt.card_filter_padicValRat_two_harmonic_sub",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 63,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 340,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89064,9 +88969,9 @@
    "statement": "Let $H_k = \\sum_{j=1}^{k} 1/j$ be the $k$-th\nharmonic number (so $H_0 = 0$) and let $\\nu_2$ denote the $2$-adic valuation on the rational\nnumbers. For all natural numbers $a$ and $m$ with $1 \\le m \\le 2^a$,\n$\\nu_2(H_{2^a} - H_{2^a - m}) = -a$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 1: if `n = 2^a` is a power of `2` then `ν₂(H_n - H_{n-m}) = -a` for every `1 ≤ m ≤ n`.",
    "declaration": "MetaMathlibExt.padicValRat_two_harmonic_pow_sub",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 81,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 379,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89076,9 +88981,9 @@
    "statement": "Let $H_k = \\sum_{j=1}^{k} 1/j$ be the\n$k$-th harmonic number (so $H_0 = 0$) and let $\\nu_2$ denote the $2$-adic valuation on the\nrational numbers. For all natural numbers $m$ and $n$ with $m + 2 \\le n$, the $2$-adic valuation\n$\\nu_2(H_n - H_m)$ is negative; that is, $H_n - H_m$ is not a $2$-adic integer.\n\nIn particular $H_n - H_m$ is not an integer.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 2. for `0 ≤ m ≤ n - 2` the difference `H_n - H_m` does not lie in the ring of `2`-adic integers.",
    "declaration": "MetaMathlibExt.padicValRat_two_harmonic_sub_neg",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 48,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 318,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89088,9 +88993,9 @@
    "statement": "Let\n$H_k = \\sum_{j=1}^{k} 1/j$ be the $k$-th harmonic number and let $\\nu_2$ denote the $2$-adic\nvaluation on the rational numbers (for a positive integer it is the exponent of $2$ in its\nfactorization). Let $m$ and $n$ be natural numbers with $1 \\le m \\le n$, and put\n$M = \\lceil \\log_2(m + 1) \\rceil$ and $j = \\lfloor (n - m) / 2^M \\rfloor$. If\n$2^M j + m \\le n \\le 2^M (j + 1) - 1$, then $\\nu_2(H_n - H_{n-m}) = 1 - M$. If\n$2^M (j + 1) \\le n \\le 2^M (j + 1) + m - 1$, then $\\nu_2(H_n - H_{n-m}) = -M - \\nu_2(j + 1)$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 6, formula (3.1): let `M = ⌈log₂(m + 1)⌉` and `j = ⌊(n - m) / 2^M⌋`, where `1 ≤ m ≤ n`. Then `ν₂(H_n - H_{n-m}) = -M + 1` when `2^M * j + m ≤ n ≤ 2^M * (j + 1) - 1`, and `ν₂(H_n - H_{n-m}) = -M - ν₂(j + 1)` when `2^M * (j + 1) ≤ n ≤ 2^M * (j + 1) + m - 1`.",
    "declaration": "MetaMathlibExt.padicValRat_two_harmonic_sub_piecewise",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 129,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 481,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89100,9 +89005,9 @@
    "statement": "Let $H_k = \\sum_{j=1}^{k} 1/j$ be the $k$-th\nharmonic number and let $\\nu_2$ denote the $2$-adic valuation on the rational numbers. For all\nnatural numbers $r$ and $n$ with $2^r \\le n$,\n$\\nu_2(H_n - H_{n-2^r}) = -r - \\nu_2(\\lfloor n / 2^r \\rfloor)$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 5: for `m = 2^r` with `1 ≤ m ≤ n`, `ν₂(H_n - H_{n-m}) = -r - ν₂(⌊n / m⌋)`.",
    "declaration": "MetaMathlibExt.padicValRat_two_harmonic_sub_pow",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 113,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 452,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89112,9 +89017,9 @@
    "statement": "Let $H_k = \\sum_{j=1}^{k} 1/j$ be the $k$-th harmonic\nnumber and let $\\nu_2$ denote the $2$-adic valuation on the rational numbers. For every natural\nnumber $n \\ge 1$, $\\nu_2(H_{2n} - H_n) = -\\lfloor \\log_2(2n) \\rfloor$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Lemma 1: for `n ≥ 1`, `ν₂(H_{2n} - H_n) = -⌊log₂(2n)⌋`.",
    "declaration": "MetaMathlibExt.padicValRat_two_harmonic_two_mul_sub",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 73,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 359,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89124,9 +89029,9 @@
    "statement": "Let $H_k = \\sum_{j=1}^{k} 1/j$ be the $k$-th\nharmonic number (so $H_0 = 0$), let $\\nu_2$ denote the $2$-adic valuation on the rational\nnumbers, and let $a(n)$ be the weighted binary digit sum of $n$. For every natural number $n$,\n$\\sum_{m=0}^{n-1} \\nu_2(H_n - H_m) = -a(n)$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 2: `∑_{m=0}^{n-1} ν₂(H_n - H_m) = -a(n)`, where `a(n) = weightedBinaryDigitSum n`.",
    "declaration": "MetaMathlibExt.sum_padicValRat_two_harmonic_sub",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 93,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 399,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89136,8 +89041,8 @@
    "statement": "The weighted binary digit sum of $4$ is $a(4) = 8$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 4 (displayed values).",
    "declaration": "MetaMathlibExt.weightedBinaryDigitSum_four",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 38,
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 91,
     "kind": "theorem",
     "sorry": false
    }
@@ -89148,9 +89053,9 @@
    "statement": "Let $a(n)$ denote the weighted binary digit\nsum of $n$. For every natural number $n$, $a(2n) = 2a(n) + 2n$ and $a(2n + 1) = a(2n)$.\n\nThe source theorem also gives a two-variable generating function, which is not part of this\nstatement.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 4: the weighted binary digit sum satisfies `a(2n) = 2a(n) + 2n` and `a(2n + 1) = a(2n)`, with `a(0) = a(1) = 0`.",
    "declaration": "MetaMathlibExt.weightedBinaryDigitSum_recurrence",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 105,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 417,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -89160,8 +89065,8 @@
    "statement": "The weighted binary digit sum of $2$ is $a(2) = 2$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Theorem 4 (displayed values).",
    "declaration": "MetaMathlibExt.weightedBinaryDigitSum_two",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 32,
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 84,
     "kind": "theorem",
     "sorry": false
    }
@@ -89172,8 +89077,8 @@
    "statement": "For a natural number $n$, the weighted binary digit sum of $n$\nis $a(n) = \\sum_i i \\cdot 2^i$, where $i$ runs over the indices of the $1$ bits in the binary\nexpansion of $n$. Equivalently, if $n = 2^{a_1} + \\dots + 2^{a_t}$ with distinct exponents\n$a_1, \\dots, a_t$, then $a(n) = a_1 2^{a_1} + \\dots + a_t 2^{a_t}$; in particular $a(0) = 0$.\n\n## Sources\n\n- Lengyel, *On the 2-Adic Valuation of Differences of Harmonic Numbers*, INTEGERS 24 (2024), Article A27, Corollary 2 and Theorem 4; the first values `0, 0, 2, 2, 8, 8, 10, 10, 24, ...` are displayed there.",
    "declaration": "MetaMathlibExt.weightedBinaryDigitSum",
    "lean": {
-    "file": "WantedExt/NumberTheory/HarmonicValuationWanted.lean",
-    "line": 26,
+    "file": "MathlibExt/NumberTheory/HarmonicValuation.lean",
+    "line": 77,
     "kind": "def",
     "sorry": false
    }
@@ -92041,7 +91946,7 @@
    "declaration": "MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry18Bernoullidiff.ramanujan_part1_ch7_entry18_bernoullidiff",
    "lean": {
     "file": "MathlibExt/Analysis/Ramanujan/Part1Ch7Entry18Bernoullidiff.lean",
-    "line": 358,
+    "line": 357,
     "kind": "theorem",
     "sorry": false
    }
@@ -95689,7 +95594,7 @@
    "declaration": "MathlibExt.Analysis.Ramanujan.Part1Ch7.Entry14Bernoullipolymult.ramanujan_part1_ch7_entry14_bernoullipolymult",
    "lean": {
     "file": "MathlibExt/Analysis/Ramanujan/Part1Ch7Entry14Bernoullipolymult.lean",
-    "line": 1021,
+    "line": 1015,
     "kind": "theorem",
     "sorry": false
    }

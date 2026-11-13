@@ -7,7 +7,7 @@ statement: formalized
 
 # Squares among Pell–Lucas numbers
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html).
 
 ## Square Pell–Lucas numbers
 
@@ -19,7 +19,7 @@ $Q_0 = Q_1 = 1$.
 
 - Sérgio Mendes, "The Diophantine Equation `Q_n^x + Q_{n+1}^x = y^2`", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.pellLucasSequence_isSquare_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#pell-lucas-sequence-is-square-iff).
+Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.pellLucasSequence_isSquare_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#pell-lucas-sequence-is-square-iff).
 
 ## Pell and Pell–Lucas numbers are coprime
 
@@ -30,7 +30,7 @@ $P_n$ and the Pell–Lucas number $Q_n$ satisfy $\gcd(P_n, Q_n) = 1$.
 
 - Sérgio Mendes, "The Diophantine Equation `Q_n^x + Q_{n+1}^x = y^2`", Lemma 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.gcd_pellNumber_pellLucasSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#gcd-pell-number-pell-lucas-sequence).
+Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.gcd_pellNumber_pellLucasSequence` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#gcd-pell-number-pell-lucas-sequence).
 
 ## Consecutive Pell–Lucas numbers are coprime
 
@@ -41,7 +41,7 @@ numbers $Q_n$ and $Q_{n+1}$ satisfy $\gcd(Q_n, Q_{n+1}) = 1$.
 
 - Sérgio Mendes, "The Diophantine Equation `Q_n^x + Q_{n+1}^x = y^2`", Lemma 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.gcd_pellLucasSequence_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#gcd-pell-lucas-sequence-succ).
+Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.gcd_pellLucasSequence_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#gcd-pell-lucas-sequence-succ).
 
 ## Sums of two coprime positive $n$-th powers are not squares for $n \ge 4$
 
@@ -53,7 +53,7 @@ perfect square: there is no natural number $z$ with $x^n + y^n = z^2$.
 
 - Sérgio Mendes, "The Diophantine Equation `Q_n^x + Q_{n+1}^x = y^2`", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.pow_add_pow_ne_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#pow-add-pow-ne-sq).
+Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.pow_add_pow_ne_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#pow-add-pow-ne-sq).
 
 ## Sums of powers of consecutive Pell–Lucas numbers that are squares
 
@@ -66,7 +66,7 @@ is $Q_1 + Q_2 = 1 + 3 = 2^2$.
 
 - Sérgio Mendes, "The Diophantine Equation `Q_n^x + Q_{n+1}^x = y^2`", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.pellLucasSequence_pow_add_pow_eq_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#pell-lucas-sequence-pow-add-pow-eq-sq).
+Stated but not proved: `MathlibExt.NumberTheory.PellLucasDiophantineWanted.pellLucasSequence_pow_add_pow_eq_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/PellLucasDiophantineWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/PellLucasDiophantineWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html#pell-lucas-sequence-pow-add-pow-eq-sq).
 
 ## Depends on
 
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Squares among Pell–Lucas numbers](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/squares-among-pell-lucas-numbers)

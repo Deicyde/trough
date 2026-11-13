@@ -8,7 +8,7 @@ proof: formalized
 
 # Hayman admissibility
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html).
 
 ## Hayman auxiliary function $A$
 
@@ -16,7 +16,7 @@ For a function $G : \mathbb{C} \to \mathbb{C}$ and a real
 number $r$, $A(r)$ is the real part of $r\,G'(r)/G(r)$, where $G'$ is the complex derivative of
 $G$.
 
-Formalized by `MetaMathlibExt.haymanAuxiliaryA`, a definition declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#hayman-auxiliary-a).
+Formalized by `MetaMathlibExt.haymanAuxiliaryA`, a definition declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#hayman-auxiliary-a).
 
 ## Hayman auxiliary function $B$
 
@@ -24,7 +24,7 @@ For a function $G : \mathbb{C} \to \mathbb{C}$ and a real
 number $r$, $B(r) = r\,A'(r)$, where $A$ is the Hayman auxiliary function of $G$, viewed as a
 real function of $r$, and $A'$ is its derivative.
 
-Formalized by `MetaMathlibExt.haymanAuxiliaryB`, a definition declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#hayman-auxiliary-b).
+Formalized by `MetaMathlibExt.haymanAuxiliaryB`, a definition declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#hayman-auxiliary-b).
 
 ## Hayman-admissible function (finite radius)
 
@@ -50,7 +50,7 @@ the abbreviated maximum-modulus restatement (Jiyou Li, "Asymptotic Estimate for 
 Coefficients", Journal of Integer Sequences 23 (2020), Article 20.1.3, Lemma [Hayman] `lem2`),
 whose maximum-modulus condition is insufficient as stated and is not used.
 
-Formalized by `MetaMathlibExt.IsHaymanAdmissible`, a definition declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#is-hayman-admissible).
+Formalized by `MetaMathlibExt.IsHaymanAdmissible`, a definition declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#is-hayman-admissible).
 
 ## Hayman's coefficient asymptotic (finite radius)
 
@@ -70,7 +70,7 @@ admissibility cutoff, and the central Gaussian term and decaying tails are norma
 
 - arXiv:1906.07169v2, tex lines 495-506.
 
-Formalized by `MetaMathlibExt.hayman_coefficient_asymptotic`, a theorem declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 877](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L877). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#hayman-coefficient-asymptotic).
+Formalized by `MetaMathlibExt.hayman_coefficient_asymptotic`, a theorem declared in [MathlibExt/Analysis/Complex/HaymanAdmissibility.lean, line 877](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/HaymanAdmissibility.lean#L877). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html#hayman-coefficient-asymptotic).
 
 ## Depends on
 
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Hayman admissibility](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/entire-functions/hayman-admissibility)

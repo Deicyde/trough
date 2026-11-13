@@ -7,7 +7,7 @@ statement: formalized
 
 # Linear programming
 
-6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html).
+6 results, 4 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html).
 
 ## Strong linear programming duality
 
@@ -24,7 +24,7 @@ subject to $y \ge 0$, $A^{\mathsf{T}} y \ge c$.
 Informal source: George B. Dantzig, *Linear Programming and Extensions*,
 Princeton University Press, 1963, strong duality theorem.
 
-Formalized by `MathlibExt.Analysis.Convex.LPDuality.strong_linear_programming_duality`, a theorem declared in [MathlibExt/Analysis/Convex/LinearProgrammingDuality.lean, line 929](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Convex/LinearProgrammingDuality.lean#L929). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#strong-linear-programming-duality).
+Formalized by `MathlibExt.Analysis.Convex.LPDuality.strong_linear_programming_duality`, a theorem declared in [MathlibExt/Analysis/Convex/LinearProgrammingDuality.lean, line 930](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Convex/LinearProgrammingDuality.lean#L930). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#strong-linear-programming-duality).
 
 ## Linear program
 
@@ -33,7 +33,7 @@ $n$ constraints is given by an objective vector $c \in \mathbb{R}^m$, a right-ha
 $b \in \mathbb{R}^n$ and an $n \times m$ real constraint matrix $A$; it stands for the problem
 of maximising $c \cdot x$ over $x \in \mathbb{R}^m$ subject to $A x \le b$ and $x \ge 0$.
 
-Formalized by `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.LinearProgram`, a structure declared in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LinearProgrammingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#linear-program).
+Formalized by `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.LinearProgram`, a structure declared in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LinearProgrammingWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#linear-program).
 
 ## Feasible region of a linear program
 
@@ -42,7 +42,7 @@ $m$ variables, constraint matrix $A$ and right-hand side $b$ is the set of vecto
 $x \in \mathbb{R}^m$ with $A x \le b$ and $x \ge 0$, both inequalities holding componentwise.
 It is a convex polyhedron in $\mathbb{R}^m$.
 
-Formalized by `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.LinearProgram.feasible`, a definition declared in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LinearProgrammingWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#feasible).
+Formalized by `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.LinearProgram.feasible`, a definition declared in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LinearProgrammingWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#feasible).
 
 ## Objective function of a linear program
 
@@ -50,7 +50,7 @@ The objective function of a linear program
 with $m$ variables and objective vector $c \in \mathbb{R}^m$ is the map
 $f \colon \mathbb{R}^m \to \mathbb{R}$ given by $f(x) = c \cdot x = \sum_i c_i x_i$.
 
-Formalized by `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.LinearProgram.objective`, a definition declared in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LinearProgrammingWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#objective).
+Formalized by `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.LinearProgram.objective`, a definition declared in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LinearProgrammingWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#objective).
 
 ## Maximum principle for linear programming
 
@@ -65,7 +65,7 @@ $P$ in $\mathbb{R}^m$.
 
 - G. B. Dantzig (1947), simplex algorithm. Listed as §101 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `lp_maximum_principle` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.lp_maximum_principle` is written with `theorem_wanted` in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LinearProgrammingWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#lp-maximum-principle).
+Stated but not proved: `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.lp_maximum_principle` is written with `theorem_wanted` in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LinearProgrammingWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#lp-maximum-principle).
 
 ## Optimal vertices of linear programs
 
@@ -79,7 +79,7 @@ open segment between two distinct points of $P$.
 
 - G. B. Dantzig (1947), simplex algorithm. Listed as §101 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `lp_maximum_principle` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.simplex_algorithm` is written with `theorem_wanted` in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/LinearProgrammingWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#simplex-algorithm).
+Stated but not proved: `MathlibExt.Geometry.LinearProgrammingWanted.ConvexGeometry.simplex_algorithm` is written with `theorem_wanted` in [WantedExt/Geometry/LinearProgrammingWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/LinearProgrammingWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html#simplex-algorithm).
 
 ## Depends on
 
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Linear programming](https://deicyde.github.io/atlas-lean/roadmap/Geometry/convex-geometry/linear-programming/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/convex-geometry/linear-programming)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/convex-geometry/linear-programming)

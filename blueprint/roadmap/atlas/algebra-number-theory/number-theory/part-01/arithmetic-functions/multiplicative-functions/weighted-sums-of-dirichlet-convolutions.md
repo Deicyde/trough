@@ -7,7 +7,7 @@ statement: formalized
 
 # Weighted sums of Dirichlet convolutions
 
-14 results, 4 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html).
+14 results, 4 proved and 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html).
 
 ## Indicator of $B_\kappa$-free integers
 
@@ -26,7 +26,7 @@ $k$-free integers.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Equations (2), (11), (12).
 
-Formalized by `MetaMathlibExt.bFreeIndicator`, a definition declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator).
+Formalized by `MetaMathlibExt.bFreeIndicator`, a definition declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator).
 
 ## Values of the $B_\kappa$-free indicator
 
@@ -39,7 +39,7 @@ $p$ prime divides $n$, and $q_{B_\kappa}(n) = 0$ otherwise.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Equations (11), (12).
 
-Formalized by `MetaMathlibExt.bFreeIndicator_apply`, a theorem declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-apply).
+Formalized by `MetaMathlibExt.bFreeIndicator_apply`, a theorem declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-apply).
 
 ## The integer $1$ is $B_\kappa$-free
 
@@ -51,7 +51,7 @@ $q_{B_\kappa}$ of $B_\kappa$-free integers satisfies $q_{B_\kappa}(1) = 1$.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Equation (12).
 
-Formalized by `MetaMathlibExt.bFreeIndicator_one`, a theorem declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-one).
+Formalized by `MetaMathlibExt.bFreeIndicator_one`, a theorem declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-one).
 
 ## The prime power $p^{\kappa(p)}$ is not $B_\kappa$-free
 
@@ -66,7 +66,7 @@ $q_{B_\kappa}(1) = 0$.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Equation (12).
 
-Formalized by `MetaMathlibExt.bFreeIndicator_prime_pow`, a theorem declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-prime-pow).
+Formalized by `MetaMathlibExt.bFreeIndicator_prime_pow`, a theorem declared in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-prime-pow).
 
 ## Product formula for homogeneous sums of powers
 
@@ -88,7 +88,7 @@ In the source, $a$ and $b$ are the values $u(n)$ and $v(n)$ of complex arithmeti
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 1, Equation (16).
 
-Stated but not proved: `MetaMathlibExt.sum_pow_mul_pow_add_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#sum-pow-mul-pow-add-eq).
+Stated but not proved: `MetaMathlibExt.sum_pow_mul_pow_add_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#sum-pow-mul-pow-add-eq).
 
 ## Gcd expansion of a convolution of completely multiplicative functions at a product
 
@@ -109,7 +109,7 @@ is $0$, so no positivity hypothesis is imposed.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 2, Equation (17).
 
-Stated but not proved: `MetaMathlibExt.dirichletConvolution_mul_eq_sum_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#dirichlet-convolution-mul-eq-sum-gcd).
+Stated but not proved: `MetaMathlibExt.dirichletConvolution_mul_eq_sum_gcd` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#dirichlet-convolution-mul-eq-sum-gcd).
 
 ## Sums of a Dirichlet convolution over multiples of $r$
 
@@ -131,7 +131,7 @@ Both sides also vanish for $x < 1$; the source assumes $r \ge 1$ and $x \ge 1$.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 3, Equation (20).
 
-Stated but not proved: `MetaMathlibExt.sum_dirichletConvolution_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#sum-dirichlet-convolution-mul-eq).
+Stated but not proved: `MetaMathlibExt.sum_dirichletConvolution_mul_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#sum-dirichlet-convolution-mul-eq).
 
 ## Möbius expansion of weighted sums of a Dirichlet convolution
 
@@ -152,7 +152,7 @@ Both sides vanish for $x < 1$; the source assumes $x \ge 1$.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.sum_mul_dirichletConvolution_eq_sum_moebius` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#sum-mul-dirichlet-convolution-eq-sum-moe).
+Stated but not proved: `MetaMathlibExt.sum_mul_dirichletConvolution_eq_sum_moebius` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#sum-mul-dirichlet-convolution-eq-sum-moe).
 
 ## Weighted summation of Dirichlet convolutions
 
@@ -176,7 +176,7 @@ Both sides vanish for $x < 1$; the source assumes $x \ge 1$.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Theorem 1, Equation (8).
 
-Stated but not proved: `MetaMathlibExt.weighted_sum_dirichletConvolution_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#weighted-sum-dirichlet-convolution-eq).
+Stated but not proved: `MetaMathlibExt.weighted_sum_dirichletConvolution_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#weighted-sum-dirichlet-convolution-eq).
 
 ## The $B_\kappa$-free indicator convolved with the Möbius function
 
@@ -195,7 +195,7 @@ $p_i$) and requires $b_i = p_i^{\kappa_i} > 1$, which is the hypothesis $\kappa(
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 5, Equation (22).
 
-Stated but not proved: `MetaMathlibExt.bFreeIndicator_mul_moebius_apply` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-mul-moebius-apply).
+Stated but not proved: `MetaMathlibExt.bFreeIndicator_mul_moebius_apply` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-indicator-mul-moebius-apply).
 
 ## The $B_\kappa$-free indicator twisted by the principal character, convolved with $\mu$
 
@@ -218,7 +218,7 @@ positivity of $\xi$ is assumed.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Lemma 6, Equation (23).
 
-Stated but not proved: `MetaMathlibExt.bFreeCoprimeIndicator_mul_moebius` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-coprime-indicator-mul-moebius).
+Stated but not proved: `MetaMathlibExt.bFreeCoprimeIndicator_mul_moebius` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-coprime-indicator-mul-moebius).
 
 ## Asymptotic for the divisor function summed over $k$-free integers
 
@@ -241,7 +241,7 @@ $E(x) = O(x^{\eta + \varepsilon})$ for every $\varepsilon > 0$.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.kFree_divisor_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#k-free-divisor-sum-asymptotic).
+Stated but not proved: `MetaMathlibExt.kFree_divisor_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#k-free-divisor-sum-asymptotic).
 
 ## Asymptotic for the divisor function summed over $B_\kappa$-free integers
 
@@ -266,7 +266,7 @@ $\Delta(x) = O(x^\eta)$, $E(x) = O(x^{\eta + \varepsilon})$ for every $\varepsil
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.bFree_divisor_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-divisor-sum-asymptotic).
+Stated but not proved: `MetaMathlibExt.bFree_divisor_sum_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 236](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L236). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-divisor-sum-asymptotic).
 
 ## Asymptotic for the divisor function summed over $B_\kappa$-free integers in a progression
 
@@ -293,7 +293,7 @@ The case $K = 3$ is not covered by the paper's statement and is excluded.
 
 - André Pierro de Camargo, *Weighted Summation of Dirichlet Convolutions and Applications to Some Divisor Problems over k-Free and B-Free Integers*, INTEGERS 24 (2024), Article A75, Corollary 3, Equation (15).
 
-Stated but not proved: `MetaMathlibExt.bFree_divisor_sum_progression_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-divisor-sum-progression-asymptoti).
+Stated but not proved: `MetaMathlibExt.bFree_divisor_sum_progression_asymptotic` is written with `theorem_wanted` in [WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/WeightedDirichletConvolutionWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html#b-free-divisor-sum-progression-asymptoti).
 
 ## Depends on
 
@@ -302,4 +302,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weighted sums of Dirichlet convolutions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/weighted-sums-of-dirichlet-convolutions)

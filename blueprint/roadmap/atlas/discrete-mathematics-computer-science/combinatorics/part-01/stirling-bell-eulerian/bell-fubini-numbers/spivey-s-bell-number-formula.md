@@ -8,7 +8,7 @@ proof: formalized
 
 # Spivey's Bell number formula
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html).
 
 ## Spivey's Bell number formula
 
@@ -23,7 +23,7 @@ $0^0 = 1$.
 
 - Michael Z. Spivey, *A Generalized Recurrence for Bell Numbers*, Journal of Integer Sequences 11 (2008), Article 08.2.5, equation `Bell_Gen`, lines 113–117, <https://cs.uwaterloo.ca/journals/JIS/VOL11/Spivey/spivey25.tex>.
 
-Formalized by `MetaMathlibExt.spivey_bell_number_add`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html#spivey-bell-number-add).
+Formalized by `MetaMathlibExt.spivey_bell_number_add`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean, line 214](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean#L214). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html#spivey-bell-number-add).
 
 ## Spivey's recurrence for Bell numbers
 
@@ -38,7 +38,7 @@ $0^0 = 1$. This is Spivey's Bell number formula with the two finite sums interch
 
 - Jacob Katriel, "On a Generalized Recurrence for Bell Numbers", Journal of Integer Sequences 11 (2008), Article 08.3.8, equation (Spivey), lines 77–81, https://cs.uwaterloo.ca/journals/JIS/VOL11/Katriel/katriel6.tex (quoting Michael Z. Spivey, "A generalized recurrence for Bell numbers", Journal of Integer Sequences 11 (2008), Article 08.2.5).
 
-Formalized by `MetaMathlibExt.spivey_bell_recurrence`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html#spivey-bell-recurrence).
+Formalized by `MetaMathlibExt.spivey_bell_recurrence`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean, line 296](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/SpiveyBellNumberAddition.lean#L296). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html#spivey-bell-recurrence).
 
 ## The (p, q)-deformed Spivey formula
 
@@ -63,7 +63,7 @@ Proof: We formalize the operator proof around equations `eq1`, `eq2'`, `eq4`, `m
 
 - L. Oussi, *A (p,q)-Deformed Recurrence for the Bell Numbers*, Journal of Integer Sequences 23 (2020), Article 20.5.2, main theorem equation `lasteq`, lines 214-220, <https://cs.uwaterloo.ca/journals/JIS/VOL23/Oussi/oussi5.tex>.
 
-Formalized by `MetaMathlibExt.spivey_pq_bell`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SpiveyPQBell.lean, line 1053](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/SpiveyPQBell.lean#L1053). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html#spivey-pq-bell).
+Formalized by `MetaMathlibExt.spivey_pq_bell`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/SpiveyPQBell.lean, line 1053](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/SpiveyPQBell.lean#L1053). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html#spivey-pq-bell).
 
 ## Depends on
 
@@ -72,4 +72,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spivey's Bell number formula](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/stirling-bell-eulerian/bell-fubini-numbers/spivey-s-bell-number-formula)

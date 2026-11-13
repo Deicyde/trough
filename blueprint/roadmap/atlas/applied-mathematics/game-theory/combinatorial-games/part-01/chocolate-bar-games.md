@@ -7,7 +7,7 @@ statement: formalized
 
 # Chocolate bar games
 
-33 results, 12 proved and 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html).
+33 results, 12 proved and 21 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html).
 
 ## NS property
 
@@ -20,7 +20,7 @@ $\lfloor h(z) / 2^{i-1} \rfloor = \lfloor h(z') / 2^{i-1} \rfloor$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definition 11 (text of arXiv:2207.09134v1, NS property in Section 2).
 
-Formalized by `MetaMathlibExt.HasNSProperty`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty).
+Formalized by `MetaMathlibExt.HasNSProperty`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty).
 
 ## Constant functions have the NS property
 
@@ -31,7 +31,7 @@ function $\mathbb{N} \to \mathbb{N}$ with value $c$ has the NS property.
 
 - characteristic lemma for the NS property of Miyadera, Manabe and Singh, INTEGERS 25 (2025), Article G3, Definition 11.
 
-Formalized by `MetaMathlibExt.hasNSProperty_const`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-const).
+Formalized by `MetaMathlibExt.hasNSProperty_const`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-const).
 
 ## The identity function lacks the NS property
 
@@ -43,7 +43,7 @@ $0 \ne 1$.
 
 - characteristic lemma for the NS property of Miyadera, Manabe and Singh, INTEGERS 25 (2025), Article G3, Definition 11.
 
-Formalized by `MetaMathlibExt.not_hasNSProperty_id`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#not-has-nsproperty-id).
+Formalized by `MetaMathlibExt.not_hasNSProperty_id`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#not-has-nsproperty-id).
 
 ## Constant extension preserves the NS property
 
@@ -57,7 +57,7 @@ $x$ to $h(x)$ for $x \le z$ and to $h(z)$ for $x > z$ has the NS property.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.hasNSProperty_extend_const` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-extend-const).
+Stated but not proved: `MetaMathlibExt.hasNSProperty_extend_const` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-extend-const).
 
 ## Taking a minimum preserves quotients by powers of two
 
@@ -69,7 +69,7 @@ $\lfloor \min(a, c) / 2^k \rfloor = \lfloor \min(b, c) / 2^k \rfloor$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 2 (i).
 
-Stated but not proved: `MetaMathlibExt.min_div_two_pow_eq_of_div_two_pow_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#min-div-two-pow-eq-of-div-two-pow-eq).
+Stated but not proved: `MetaMathlibExt.min_div_two_pow_eq_of_div_two_pow_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#min-div-two-pow-eq-of-div-two-pow-eq).
 
 ## Quotients of a truncated NS function by powers of two
 
@@ -82,7 +82,7 @@ $\lfloor \min(h(z'), y) / 2^{k-1} \rfloor = \lfloor \min(h(z), y) / 2^{k-1} \rfl
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 2 (ii).
 
-Stated but not proved: `MetaMathlibExt.HasNSProperty.min_div_two_pow_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#min-div-two-pow-eq).
+Stated but not proved: `MetaMathlibExt.HasNSProperty.min_div_two_pow_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#min-div-two-pow-eq).
 
 ## Mex step for chocolate bars with one function
 
@@ -95,7 +95,7 @@ $c = \min(g(w), x) \oplus w$ for some $w < z$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 3 (a).
 
-Stated but not proved: `MetaMathlibExt.HasNSProperty.exists_of_lt_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-of-lt-xor).
+Stated but not proved: `MetaMathlibExt.HasNSProperty.exists_of_lt_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-of-lt-xor).
 
 ## Mex step for chocolate bars with two functions
 
@@ -109,7 +109,7 @@ $c = \min(g(w), x) \oplus \min(h(w), y) \oplus w$ for some $w < z$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 3 (b).
 
-Stated but not proved: `MetaMathlibExt.HasNSProperty.exists_of_lt_xor_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-of-lt-xor-xor).
+Stated but not proved: `MetaMathlibExt.HasNSProperty.exists_of_lt_xor_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-of-lt-xor-xor).
 
 ## Mex step for chocolate bars with many functions
 
@@ -125,7 +125,7 @@ with $c = \min(x_1, f_1(w)) \oplus \cdots \oplus \min(x_m, f_m(w)) \oplus w$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.exists_of_lt_foldl_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-of-lt-foldl-xor).
+Stated but not proved: `MetaMathlibExt.exists_of_lt_foldl_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 128](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L128). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-of-lt-foldl-xor).
 
 ## Nim-sum image identity for two NS functions
 
@@ -139,7 +139,7 @@ are equal, where $w$ ranges over the natural numbers.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 5, equation (19).
 
-Stated but not proved: `MetaMathlibExt.HasNSProperty.image_xor_xor_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#image-xor-xor-eq).
+Stated but not proved: `MetaMathlibExt.HasNSProperty.image_xor_xor_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#image-xor-xor-eq).
 
 ## Nim-sum image identity for one NS function
 
@@ -152,7 +152,7 @@ $\{\min(g(w), x) \oplus w : w < z\}$ are equal, where $w$ ranges over the natura
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 5, equation (20).
 
-Stated but not proved: `MetaMathlibExt.HasNSProperty.image_xor_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#image-xor-eq).
+Stated but not proved: `MetaMathlibExt.HasNSProperty.image_xor_eq` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#image-xor-eq).
 
 ## Halving functions have the NS property
 
@@ -163,7 +163,7 @@ $x \mapsto \lfloor x / 2^m \rfloor$ on $\mathbb{N}$ has the NS property.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.hasNSProperty_div_two_pow` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-div-two-pow).
+Stated but not proved: `MetaMathlibExt.hasNSProperty_div_two_pow` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-div-two-pow).
 
 ## Equal quotients by a power of two lie in one dyadic block
 
@@ -175,7 +175,7 @@ and only if there is a natural number $d$ with $d \cdot 2^i \le z$ and $z' < (d 
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 8 (a).
 
-Stated but not proved: `MetaMathlibExt.div_two_pow_eq_iff_exists_block` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#div-two-pow-eq-iff-exists-block).
+Stated but not proved: `MetaMathlibExt.div_two_pow_eq_iff_exists_block` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#div-two-pow-eq-iff-exists-block).
 
 ## Dyadic splitting of two numbers with different quotients
 
@@ -188,7 +188,7 @@ $c \cdot 2^{s+1} + 2^s \le z'$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 8 (b).
 
-Stated but not proved: `MetaMathlibExt.exists_split_of_div_two_pow_lt` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-split-of-div-two-pow-lt).
+Stated but not proved: `MetaMathlibExt.exists_split_of_div_two_pow_lt` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#exists-split-of-div-two-pow-lt).
 
 ## Indicator functions with the NS property
 
@@ -201,7 +201,7 @@ $\{n \in \mathbb{N} : n \ge m\}$, that is, $f(n) = 1$ for $n \ge m$ and $f(n) = 
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 9.
 
-Stated but not proved: `MetaMathlibExt.indicator_Ici_even_iff_hasNSProperty` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#indicator-ici-even-iff-has-nsproperty).
+Stated but not proved: `MetaMathlibExt.indicator_Ici_even_iff_hasNSProperty` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#indicator-ici-even-iff-has-nsproperty).
 
 ## Grundy number of a chocolate bar
 
@@ -219,7 +219,7 @@ $x_t \le f_t(z)$ for all $t$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definitions 2, 8, 9 and 10 (two functions) and Section 4, before Theorem 5 (four functions).
 
-Formalized by `MetaMathlibExt.chocolateBarGrundy`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#chocolate-bar-grundy).
+Formalized by `MetaMathlibExt.chocolateBarGrundy`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#chocolate-bar-grundy).
 
 ## Mex recursion for the Grundy number of a chocolate bar
 
@@ -234,7 +234,7 @@ $m \ne G(x^{(w)}, w)$ for every $w < z$, where $x^{(w)}_t = \min(x_t, f_t(w))$ f
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definitions 9 and 10.
 
-Formalized by `MetaMathlibExt.chocolateBarGrundy_eq`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#chocolate-bar-grundy-eq).
+Formalized by `MetaMathlibExt.chocolateBarGrundy_eq`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 224](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L224). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#chocolate-bar-grundy-eq).
 
 ## The single bitter square has Grundy number zero
 
@@ -247,7 +247,7 @@ Grundy number $0$: it is a single bitter square and has no move.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definitions 9 and 10.
 
-Formalized by `MetaMathlibExt.chocolateBarGrundy_zero`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#chocolate-bar-grundy-zero).
+Formalized by `MetaMathlibExt.chocolateBarGrundy_zero`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#chocolate-bar-grundy-zero).
 
 ## Grundy number of a chocolate bar with a height function
 
@@ -265,7 +265,7 @@ the positions with $y \le F(x)$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definitions 15, 16 and 17 (and Definition 13 with second function `0`).
 
-Formalized by `MetaMathlibExt.heightChocolateBarGrundy`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy).
+Formalized by `MetaMathlibExt.heightChocolateBarGrundy`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 251](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L251). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy).
 
 ## Mex recursion for chocolate bars with a height function
 
@@ -280,7 +280,7 @@ every $v < y$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definition 17.
 
-Formalized by `MetaMathlibExt.heightChocolateBarGrundy_eq`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy-eq).
+Formalized by `MetaMathlibExt.heightChocolateBarGrundy_eq`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy-eq).
 
 ## The single bitter cube has Grundy number zero
 
@@ -292,7 +292,7 @@ so its Grundy number is $0$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Definition 17.
 
-Formalized by `MetaMathlibExt.heightChocolateBarGrundy_zero`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy-zero).
+Formalized by `MetaMathlibExt.heightChocolateBarGrundy_zero`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 285](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L285). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy-zero).
 
 ## Pass indicator of Nim with a restricted pass
 
@@ -305,7 +305,7 @@ $x_j < m_j$ for every pile $j$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 10 and Corollary 2 (the function `F`).
 
-Formalized by `MetaMathlibExt.nimPassIndicator`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator).
+Formalized by `MetaMathlibExt.nimPassIndicator`, a definition declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator).
 
 ## The Nim pass indicator is at most one
 
@@ -317,7 +317,7 @@ in $\{0, 1\}$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 10 (the function `F`).
 
-Formalized by `MetaMathlibExt.nimPassIndicator_le_one`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator-le-one).
+Formalized by `MetaMathlibExt.nimPassIndicator_le_one`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 305](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L305). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator-le-one).
 
 ## The pass is unavailable from the empty position
 
@@ -329,7 +329,7 @@ value $0$ at the zero tuple $(0, \dots, 0)$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 10 (the function `F`).
 
-Formalized by `MetaMathlibExt.nimPassIndicator_zero`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator-zero).
+Formalized by `MetaMathlibExt.nimPassIndicator_zero`, a theorem declared in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 313](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L313). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator-zero).
 
 ## Nim-sum sets under clamping by functions with the NS property
 
@@ -351,7 +351,7 @@ full nim-sum, as in Lemma 5 (the case of two functions), which the proof general
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.image_foldl_xor_eq_image_min` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#image-foldl-xor-eq-image-min).
+Stated but not proved: `MetaMathlibExt.image_foldl_xor_eq_image_min` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 327](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L327). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#image-foldl-xor-eq-image-min).
 
 ## The NS property characterises nim-sum Grundy numbers of two-dimensional chocolate bars
 
@@ -365,7 +365,7 @@ or).
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.hasNSProperty_iff_chocolateBarGrundy_depth_zero` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-iff-chocolate-bar-grundy).
+Stated but not proved: `MetaMathlibExt.hasNSProperty_iff_chocolateBarGrundy_depth_zero` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-iff-chocolate-bar-grundy).
 
 ## NS property of sections and the three-dimensional chocolate bar
 
@@ -381,7 +381,7 @@ $w \oplus x \oplus y$ (bitwise exclusive or).
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.sections_hasNSProperty_iff_heightChocolateBarGrundy_eq_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#sections-has-nsproperty-iff-height-choco).
+Stated but not proved: `MetaMathlibExt.sections_hasNSProperty_iff_heightChocolateBarGrundy_eq_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 351](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L351). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#sections-has-nsproperty-iff-height-choco).
 
 ## Nim-sum Grundy numbers of chocolate bars with two functions
 
@@ -395,7 +395,7 @@ nim-sum (bitwise exclusive or).
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.hasNSProperty_and_iff_chocolateBarGrundy_eq_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-and-iff-chocolate-bar-gru).
+Stated but not proved: `MetaMathlibExt.hasNSProperty_and_iff_chocolateBarGrundy_eq_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 363](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L363). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#has-nsproperty-and-iff-chocolate-bar-gru).
 
 ## Nim-sum Grundy numbers of chocolate bars with four functions
 
@@ -410,7 +410,7 @@ exclusive or).
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.forall_hasNSProperty_iff_chocolateBarGrundy_eq_xor_four` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#forall-has-nsproperty-iff-chocolate-bar).
+Stated but not proved: `MetaMathlibExt.forall_hasNSProperty_iff_chocolateBarGrundy_eq_xor_four` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 375](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L375). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#forall-has-nsproperty-iff-chocolate-bar).
 
 ## P-positions of a three-dimensional chocolate bar with floor-quotient height
 
@@ -424,7 +424,7 @@ $w \oplus x \oplus y = 0$, where $\oplus$ denotes nim-sum (bitwise exclusive or)
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.heightChocolateBarGrundy_add_div_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy-add-div-eq-z).
+Stated but not proved: `MetaMathlibExt.heightChocolateBarGrundy_add_div_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 387](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L387). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#height-chocolate-bar-grundy-add-div-eq-z).
 
 ## Height-one chocolate bars with nim-sum Grundy numbers
 
@@ -446,7 +446,7 @@ corollary is derived.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.indicator_sections_iff_heightChocolateBarGrundy_eq_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#indicator-sections-iff-height-chocolate).
+Stated but not proved: `MetaMathlibExt.indicator_sections_iff_heightChocolateBarGrundy_eq_xor` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#indicator-sections-iff-height-chocolate).
 
 ## Sections of the Nim pass indicator with the NS property
 
@@ -462,7 +462,7 @@ $x \in \mathbb{N}^s$ and $i < s$, the function $t \mapsto F(x[i \mapsto t])$ has
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Lemma 10.
 
-Stated but not proved: `MetaMathlibExt.nimPassIndicator_sections_hasNSProperty_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator-sections-has-nsproper).
+Stated but not proved: `MetaMathlibExt.nimPassIndicator_sections_hasNSProperty_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 412](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L412). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-indicator-sections-has-nsproper).
 
 ## Nim with a restricted pass
 
@@ -481,7 +481,7 @@ to $0$.
 
 - Ryohei Miyadera, Hikaru Manabe and Aditi Singh, *Generalizations of Two-Dimensional and Three-Dimensional Chocolate Bar Games*, INTEGERS 25 (2025), Article G3, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.nimPassGrundy_eq_xor_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-grundy-eq-xor-iff).
+Stated but not proved: `MetaMathlibExt.nimPassGrundy_eq_xor_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean, line 426](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ChocolateBarNSPropertyWanted.lean#L426). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html#nim-pass-grundy-eq-xor-iff).
 
 ## Depends on
 
@@ -490,4 +490,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Chocolate bar games](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/chocolate-bar-games/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/chocolate-bar-games)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/chocolate-bar-games)

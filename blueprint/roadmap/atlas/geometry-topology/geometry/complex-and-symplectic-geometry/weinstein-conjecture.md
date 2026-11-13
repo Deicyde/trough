@@ -7,7 +7,7 @@ statement: formalized
 
 # Weinstein conjecture
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html).
 
 ## Smooth one-forms
 
@@ -15,7 +15,7 @@ Let $M$ be a smooth manifold (possibly with boundary or corners).
 A smooth one-form on $M$ is a smooth section of the cotangent bundle of $M$: a smooth choice of
 a linear map $\alpha_x : T_xM \to \mathbb{R}$ at each point $x \in M$.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.OneForm`, an abbreviation declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#one-form).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.OneForm`, an abbreviation declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#one-form).
 
 ## Two-forms as fields of bilinear forms
 
@@ -24,7 +24,7 @@ boundary or corners). A two-form on $M$ is here a smooth section of the bundle w
 $x \in M$ is the space of bilinear maps $T_xM \times T_xM \to \mathbb{R}$; antisymmetry is not
 required.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.TwoForm`, an abbreviation declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#two-form).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.TwoForm`, an abbreviation declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#two-form).
 
 ## Smooth vector fields
 
@@ -32,7 +32,7 @@ Let $M$ be a smooth manifold (possibly with boundary or
 corners). A smooth vector field on $M$ is a smooth section of the tangent bundle of $M$: a smooth
 choice of a tangent vector $X_x \in T_xM$ at each point $x \in M$.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.SmoothVectorField`, an abbreviation declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#smooth-vector-field).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.SmoothVectorField`, an abbreviation declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#smooth-vector-field).
 
 ## Exterior derivative of a one-form
 
@@ -49,7 +49,7 @@ function $f$ at $x$ in the direction $X_x$, and $[X, Y]$ is the Lie bracket of $
 
 This coordinate-free identity determines $d\alpha$ uniquely.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsExteriorDerivative`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-exterior-derivative).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsExteriorDerivative`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-exterior-derivative).
 
 ## Contact condition for a one-form
 
@@ -62,7 +62,7 @@ When $M$ has dimension $3$, this says that $\alpha$ vanishes nowhere and $d\alph
 nondegenerate on the plane $\ker \alpha_x$, which is equivalent to $\alpha \wedge d\alpha$
 vanishing nowhere.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsContactForm3`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-contact-form3).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsContactForm3`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-contact-form3).
 
 ## Reeb vector fields
 
@@ -71,7 +71,7 @@ assignment $R$ of a tangent vector $R(x) \in T_xM$ to each point $x \in M$ is a 
 for $(\alpha, d\alpha)$ when, at every point $x \in M$, $\alpha_x(R(x)) = 1$ and
 $d\alpha_x(R(x), v) = 0$ for all $v \in T_xM$.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsReebVectorField`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-reeb-vector-field).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsReebVectorField`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-reeb-vector-field).
 
 ## Integral curves
 
@@ -80,7 +80,7 @@ $R$ assign to each point $x \in M$ a tangent vector $R(x) \in T_xM$. A curve
 $\gamma : \mathbb{R} \to M$ is an integral curve of $R$ when $\gamma$ is smooth and
 $\gamma'(t) = R(\gamma(t))$ for every $t \in \mathbb{R}$.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsIntegralCurve`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-integral-curve).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.IsIntegralCurve`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#is-integral-curve).
 
 ## Vector fields with a closed orbit
 
@@ -92,7 +92,7 @@ $\gamma$ is not constant.
 
 The main theorem applies this to a Reeb vector field, whence the name closed Reeb orbit.
 
-Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.HasClosedReebOrbit`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#has-closed-reeb-orbit).
+Formalized by `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.HasClosedReebOrbit`, a definition declared in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#has-closed-reeb-orbit).
 
 ## Weinstein conjecture in dimension three (Taubes)
 
@@ -108,7 +108,7 @@ that is periodic with some positive period.
 
 - C.H. Taubes, 'The Seiberg–Witten equations and the Weinstein conjecture', Geom. Topol. 11 (2007) 2117–2202; arXiv:math/0611007. Conjecture: A. Weinstein, 'On the hypotheses of Rabinowitz' periodic orbit theorems', J. Differential Equations 33 (1979) 353–358. §141 in O. Knill, *Some Fundamental Theorems in Mathematics* (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `weinstein_conjecture_dim3` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.weinstein_conjecture_dim_three` is written with `theorem_wanted` in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#weinstein-conjecture-dim-three).
+Stated but not proved: `MathlibExt.Geometry.WeinsteinConjecture3DWanted.Geometry.WeinsteinConjecture3DProblem.weinstein_conjecture_dim_three` is written with `theorem_wanted` in [WantedExt/Geometry/WeinsteinConjecture3DWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Geometry/WeinsteinConjecture3DWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html#weinstein-conjecture-dim-three).
 
 ## Depends on
 
@@ -117,4 +117,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weinstein conjecture](https://deicyde.github.io/atlas-lean/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Geometry/complex-and-symplectic-geometry/weinstein-conjecture)

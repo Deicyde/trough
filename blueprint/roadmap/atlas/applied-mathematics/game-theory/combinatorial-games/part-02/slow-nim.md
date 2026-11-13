@@ -7,7 +7,7 @@ statement: formalized
 
 # Slow Nim
 
-61 results, 33 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html).
+61 results, 33 proved and 28 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html).
 
 ## Playing on a set of stacks
 
@@ -20,7 +20,7 @@ $i \in S$ and $p_i$ otherwise, where an empty stack of $S$ stays empty.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 1.
 
-Formalized by `MetaMathlibExt.slowANimAfter`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-after).
+Formalized by `MetaMathlibExt.slowANimAfter`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-after).
 
 ## Options in Slow A-Nim
 
@@ -33,7 +33,7 @@ token from each stack of $S$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 1.
 
-Formalized by `MetaMathlibExt.slowANimMoves`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-moves).
+Formalized by `MetaMathlibExt.slowANimMoves`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-moves).
 
 ## Moves in Slow$A$-Nim decrease the token count
 
@@ -45,7 +45,7 @@ then the total number of tokens strictly decreases: $\sum_i q_i < \sum_i p_i$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 1.
 
-Formalized by `MetaMathlibExt.sum_lt_of_mem_slowANimMoves`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#sum-lt-of-mem-slow-anim-moves).
+Formalized by `MetaMathlibExt.sum_lt_of_mem_slowANimMoves`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#sum-lt-of-mem-slow-anim-moves).
 
 ## Slow$A$-Nim
 
@@ -60,7 +60,7 @@ and its start position is the empty position.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 1.
 
-Formalized by `MetaMathlibExt.slowANimGame`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-game).
+Formalized by `MetaMathlibExt.slowANimGame`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-game).
 
 ## The empty position has no options
 
@@ -71,7 +71,7 @@ position of Slow$A$-Nim on $n$ stacks in which every stack is empty has no optio
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Section 2.
 
-Formalized by `MetaMathlibExt.slowANimMoves_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-moves-zero).
+Formalized by `MetaMathlibExt.slowANimMoves_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-moves-zero).
 
 ## The empty position is a P-position
 
@@ -83,7 +83,7 @@ P-position, since it has no options.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Section 2.
 
-Formalized by `MetaMathlibExt.slowANim_isP_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-is-p-zero).
+Formalized by `MetaMathlibExt.slowANim_isP_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-is-p-zero).
 
 ## Reduced positions of Slow $A$-Nim
 
@@ -99,7 +99,7 @@ reduced exactly when $u_i(p) = 0$ for every $i$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 3.1.
 
-Formalized by `MetaMathlibExt.SlowANimReduced`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced).
+Formalized by `MetaMathlibExt.SlowANimReduced`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced).
 
 ## Reduction of a Slow$A$-Nim position
 
@@ -113,7 +113,7 @@ for every stack $i$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 3.1.
 
-Formalized by `MetaMathlibExt.slowANimReduction`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduction).
+Formalized by `MetaMathlibExt.slowANimReduction`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduction).
 
 ## The empty position is reduced
 
@@ -124,7 +124,7 @@ $n$, the position of Slow $A$-Nim on $n$ stacks in which every stack is empty is
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 3.1.
 
-Formalized by `MetaMathlibExt.slowANimReduced_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-zero).
+Formalized by `MetaMathlibExt.slowANimReduced_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-zero).
 
 ## The reduction never adds tokens
 
@@ -136,7 +136,7 @@ satisfies $r(p)_i \le p_i$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition in Section 3.1.
 
-Formalized by `MetaMathlibExt.slowANimReduction_le`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduction-le).
+Formalized by `MetaMathlibExt.slowANimReduction_le`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 149](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L149). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduction-le).
 
 ## Legal move sequences in Slow A-Nim
 
@@ -150,7 +150,7 @@ $p$ by removing one token from each stack of $S_1$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 1 and its proof.
 
-Formalized by `MetaMathlibExt.SlowANimLegalSeq`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-legal-seq).
+Formalized by `MetaMathlibExt.SlowANimLegalSeq`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-legal-seq).
 
 ## The empty move sequence is legal
 
@@ -161,7 +161,7 @@ position $p$ of Slow$A$-Nim on $n$ stacks, the empty sequence of moves is legal 
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 1 and its proof.
 
-Formalized by `MetaMathlibExt.slowANimLegalSeq_nil`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-legal-seq-nil).
+Formalized by `MetaMathlibExt.slowANimLegalSeq_nil`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-legal-seq-nil).
 
 ## Set of P-positions
 
@@ -175,7 +175,7 @@ When there is no infinite sequence of moves, there is at most one such set.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Section 1 (characterization of P-positions).
 
-Formalized by `MetaMathlibExt.IsPPositionSet`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-pposition-set).
+Formalized by `MetaMathlibExt.IsPPositionSet`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-pposition-set).
 
 ## Uniqueness of the set of P-positions
 
@@ -188,7 +188,7 @@ both sets of P-positions for $R$, then $P = Q$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Section 1 (characterization of P-positions).
 
-Formalized by `MetaMathlibExt.IsPPositionSet.eq`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#eq).
+Formalized by `MetaMathlibExt.IsPPositionSet.eq`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#eq).
 
 ## Partial structure of the P-positions of Slow $A$-Nim
 
@@ -201,7 +201,7 @@ is not a P-position.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.slowANim_partialStructure` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-partial-structure).
+Stated but not proved: `MetaMathlibExt.slowANim_partialStructure` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 195](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L195). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-partial-structure).
 
 ## P-positions of Slow A-Nim with A = \{1, k}, k odd
 
@@ -213,7 +213,7 @@ P-position if and only if its total number of tokens $p_1 + \dots + p_n$ is even
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.slowANim_one_odd_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-odd-is-p-iff).
+Stated but not proved: `MetaMathlibExt.slowANim_one_odd_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-odd-is-p-iff).
 
 ## P-positions of Slow A-Nim with A = \{1, n}, n even
 
@@ -226,7 +226,7 @@ $\min_i p_i$ are both even.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.slowANim_one_n_even_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-n-even-is-p-iff).
+Stated but not proved: `MetaMathlibExt.slowANim_one_n_even_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-n-even-is-p-iff).
 
 ## P-positions of Slow $\{1,2\}$-Nim on three stacks
 
@@ -238,7 +238,7 @@ is a P-position if and only if its three stack heights are all even or all odd.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.slowANim_one_two_three_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-two-three-is-p-iff).
+Stated but not proved: `MetaMathlibExt.slowANim_one_two_three_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 225](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L225). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-two-three-is-p-iff).
 
 ## P-positions of Slow $\{1,2\}$-Nim on four stacks
 
@@ -251,7 +251,7 @@ heights are even, or $p_0$ is even and $p_1$, $p_2$, $p_3$ are odd.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.slowANim_one_two_four_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-two-four-is-p-iff).
+Stated but not proved: `MetaMathlibExt.slowANim_one_two_four_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-two-four-is-p-iff).
 
 ## P-positions of Slow A-Nim with A = \{1, 2} on five stacks
 
@@ -265,7 +265,7 @@ $p_3, p_4$ are even, or $p_1, p_2, p_3, p_4$ are odd and $p_5$ is even.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.slowANim_one_two_five_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-two-five-is-p-iff).
+Stated but not proved: `MetaMathlibExt.slowANim_one_two_five_isP_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 243](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L243). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-one-two-five-is-p-iff).
 
 ## NIRB criterion for reduced positions
 
@@ -280,7 +280,7 @@ The source assumes $n \ge 3$; the statement here is made for every $n$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.slowANimReduced_iff_nirb` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-iff-nirb).
+Stated but not proved: `MetaMathlibExt.slowANimReduced_iff_nirb` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 256](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L256). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-iff-nirb).
 
 ## Legal move sequences depend only on the reduction
 
@@ -292,7 +292,7 @@ moves, each given by its set of stacks, is legal from $r(p)$ if and only if it i
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.slowANimLegalSeq_reduction_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-legal-seq-reduction-iff).
+Stated but not proved: `MetaMathlibExt.slowANimLegalSeq_reduction_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 264](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L264). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-legal-seq-reduction-iff).
 
 ## Positions with the same reduction have the same outcome
 
@@ -305,7 +305,7 @@ P-position.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.slowANim_isP_iff_of_reduction_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-is-p-iff-of-reduction-eq).
+Stated but not proved: `MetaMathlibExt.slowANim_isP_iff_of_reduction_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-is-p-iff-of-reduction-eq).
 
 ## Chopping a reduced position keeps it reduced
 
@@ -318,7 +318,7 @@ reduced.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.slowANimReduced_min` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-min).
+Stated but not proved: `MetaMathlibExt.slowANimReduced_min` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 282](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L282). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-min).
 
 ## The reduction chops at the largest reduced height
 
@@ -333,7 +333,7 @@ $p$ is $r(p) = \mathrm{ctt}(p, m)$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.slowANimReduction_eq_min` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduction-eq-min).
+Stated but not proved: `MetaMathlibExt.slowANimReduction_eq_min` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 290](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L290). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduction-eq-min).
 
 ## General reduction lemma
 
@@ -351,7 +351,7 @@ The hypothesis that $p$ is reduced is implicit in the source, whose proof uses $
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.slowANim_generalReduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-general-reduction).
+Stated but not proved: `MetaMathlibExt.slowANim_generalReduction` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-general-reduction).
 
 ## P-positions after adding moves
 
@@ -368,7 +368,7 @@ The relations $M$ and $E$ need not be disjoint.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Proposition 7.
 
-Stated but not proved: `MetaMathlibExt.isPPositionSet_extend` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-pposition-set-extend).
+Stated but not proved: `MetaMathlibExt.isPPositionSet_extend` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-pposition-set-extend).
 
 ## Moves of the playable game graph of Slow $A$-Nim
 
@@ -381,7 +381,7 @@ $q$ of $x$ in Slow $A$-Nim, that is, of some position reached from $x$ by one le
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition 3.
 
-Formalized by `MetaMathlibExt.SlowANimReducedGraphMove`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-graph-move).
+Formalized by `MetaMathlibExt.SlowANimReducedGraphMove`, a definition declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 337](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L337). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-graph-move).
 
 ## The empty position is terminal in the playable game graph
 
@@ -393,7 +393,7 @@ empty has no move to any position in the playable game graph of $\mathrm{SN}(n, 
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Definition 3.
 
-Formalized by `MetaMathlibExt.not_slowANimReducedGraphMove_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#not-slow-anim-reduced-graph-move-zero).
+Formalized by `MetaMathlibExt.not_slowANimReducedGraphMove_zero`, a theorem declared in [WantedExt/Combinatorics/SlowANimWanted.lean, line 345](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L345). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#not-slow-anim-reduced-graph-move-zero).
 
 ## P-positions of Slow $A$-Nim via the playable game graph
 
@@ -410,7 +410,7 @@ This combines the source's two statements, one for P-positions and one for N-pos
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.slowANim_isP_iff_reduction_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-is-p-iff-reduction-mem).
+Stated but not proved: `MetaMathlibExt.slowANim_isP_iff_reduction_mem` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-is-p-iff-reduction-mem).
 
 ## Options without reduction in Slow \{n - 1}-Nim
 
@@ -430,7 +430,7 @@ fails for $n = 3$ at $p = (0, 1, 1)$, whose only move omits the empty stack.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.slowANim_n_sub_one_option_of_reduced` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-n-sub-one-option-of-reduced).
+Stated but not proved: `MetaMathlibExt.slowANim_n_sub_one_option_of_reduced` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-n-sub-one-option-of-reduced).
 
 ## Options with reduction in Slow \{n - 1}-Nim
 
@@ -453,7 +453,7 @@ Stacks are labelled, so the paper's canonical-form display of $r(p')$ is written
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.slowANim_n_sub_one_option_of_not_reduced` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-n-sub-one-option-of-not-reduce).
+Stated but not proved: `MetaMathlibExt.slowANim_n_sub_one_option_of_not_reduced` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 395](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L395). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-n-sub-one-option-of-not-reduce).
 
 ## P-positions of the reduced game of Slow $\{n-1\}$-Nim
 
@@ -470,7 +470,7 @@ $o \le 2(n - 2) - s$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.slowANimReduced_mem_pPositions_n_sub_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-mem-p-positions-n-sub).
+Stated but not proved: `MetaMathlibExt.slowANimReduced_mem_pPositions_n_sub_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 423](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L423). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-mem-p-positions-n-sub).
 
 ## P-positions of the reduced game of Slow $\{n-1, n\}$-Nim
 
@@ -487,7 +487,7 @@ $n - 2 < s < 2n - 3$ and $o \le 2(n - 2) - s$.
 
 - Matthieu Dufour and Silvia Heubach, *On the 𝒫-Positions of Some Infinite Families of Slow`A`-Nim*, INTEGERS 26 (2026), Article G3, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.slowANimReduced_mem_pPositions_n_sub_one_n_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/SlowANimWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-mem-p-positions-n-sub-2).
+Stated but not proved: `MetaMathlibExt.slowANimReduced_mem_pPositions_n_sub_one_n_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/SlowANimWanted.lean, line 441](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/SlowANimWanted.lean#L441). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-reduced-mem-p-positions-n-sub-2).
 
 ## $m$-critical positions of exact slow $k$-NIM
 
@@ -502,7 +502,7 @@ every $i$ and $y \ne x$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Theorem 1.
 
-Formalized by `MetaMathlibExt.IsExactSlowNimCritical`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-critical).
+Formalized by `MetaMathlibExt.IsExactSlowNimCritical`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-critical).
 
 ## The empty position is $0$-critical
 
@@ -517,7 +517,7 @@ has remoteness $0$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Theorem 1.
 
-Formalized by `MetaMathlibExt.isExactSlowNimCritical_zero`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-critical-zero).
+Formalized by `MetaMathlibExt.isExactSlowNimCritical_zero`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-critical-zero).
 
 ## Pile kept by the M-rule
 
@@ -530,7 +530,7 @@ such that $x_j \le x_i$ for every $j$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2 (the index `e(x)`). Such a pile always exists, so the default `0` of `getD` is never used.
 
-Formalized by `MetaMathlibExt.exactSlowNimMRuleKept`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-kept).
+Formalized by `MetaMathlibExt.exactSlowNimMRuleKept`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-kept).
 
 ## The M-move
 
@@ -543,7 +543,7 @@ where an empty pile stays empty.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Sections 1.2 and 2 (the M-rule).
 
-Formalized by `MetaMathlibExt.exactSlowNimMRuleMove`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-move).
+Formalized by `MetaMathlibExt.exactSlowNimMRuleMove`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 78](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L78). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-move).
 
 ## Terminal positions of exact slow $k$-NIM
 
@@ -557,7 +557,7 @@ When $k = 0$ there is no move, since a move uses a nonempty set of exactly $k$ p
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.1 (the moves of `NIM(n, k)`).
 
-Formalized by `MetaMathlibExt.slowANimMoves_singleton_eq_empty_iff`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-moves-singleton-eq-empty-iff).
+Formalized by `MetaMathlibExt.slowANimMoves_singleton_eq_empty_iff`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#slow-anim-moves-singleton-eq-empty-iff).
 
 ## Fuel-bounded length of M-rule play
 
@@ -571,7 +571,7 @@ M-moves played from $x$, stopping at a terminal position or after $f$ moves.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.2 (the function `M`).
 
-Formalized by `MetaMathlibExt.exactSlowNimMRuleLengthAux`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-aux).
+Formalized by `MetaMathlibExt.exactSlowNimMRuleLengthAux`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 115](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L115). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-aux).
 
 ## Successor step of the truncated M-rule length
 
@@ -585,7 +585,7 @@ from $x$ by the M-move.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.2 (the function `M`).
 
-Formalized by `MetaMathlibExt.exactSlowNimMRuleLengthAux_succ`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-aux-succ).
+Formalized by `MetaMathlibExt.exactSlowNimMRuleLengthAux_succ`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-aux-succ).
 
 ## M-rule length
 
@@ -601,7 +601,7 @@ suffices and $M(x)$ is the full length of the M-rule play from $x$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.2 (the function `M`).
 
-Formalized by `MetaMathlibExt.exactSlowNimMRuleLength`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length).
+Formalized by `MetaMathlibExt.exactSlowNimMRuleLength`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length).
 
 ## M-rule length of the position (3, 3, 3)
 
@@ -613,7 +613,7 @@ M-rule length of the position $(3, 3, 3)$ is $M(3, 3, 3) = 4$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.6 (example after Theorem 1).
 
-Formalized by `MetaMathlibExt.exactSlowNimMRuleLength_three_three_three`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-three-three).
+Formalized by `MetaMathlibExt.exactSlowNimMRuleLength_three_three_three`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 148](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L148). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-three-three).
 
 ## M-rule length of the position (3, 5, 5)
 
@@ -625,7 +625,7 @@ M-rule length of the position $(3, 5, 5)$ is $M(3, 5, 5) = 6$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 1.6 (example after Theorem 1).
 
-Formalized by `MetaMathlibExt.exactSlowNimMRuleLength_three_five_five`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-three-five-f).
+Formalized by `MetaMathlibExt.exactSlowNimMRuleLength_three_five_five`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-three-five-f).
 
 ## Basic vectors of type (A0)
 
@@ -637,7 +637,7 @@ $z_0 + \dots + z_k = kb$, $z_i \le b$ for every $i$, $b$ is even, and every $z_i
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2 (basic vectors).
 
-Formalized by `MetaMathlibExt.IsExactSlowNimBasicA0`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-basic-a0).
+Formalized by `MetaMathlibExt.IsExactSlowNimBasicA0`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-basic-a0).
 
 ## Basic vectors of type (A1)
 
@@ -649,7 +649,7 @@ $z_0 + \dots + z_k = kb$, $z_i \le b$ for every $i$, $b$ is odd, and exactly one
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2 (basic vectors).
 
-Formalized by `MetaMathlibExt.IsExactSlowNimBasicA1`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-basic-a1).
+Formalized by `MetaMathlibExt.IsExactSlowNimBasicA1`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-basic-a1).
 
 ## Basic vectors of type (B)
 
@@ -662,7 +662,7 @@ Here $kb + k - 1$ is computed in the natural numbers, so it is $0$ when $k = 0$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2 (basic vectors).
 
-Formalized by `MetaMathlibExt.IsExactSlowNimBasicB`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-basic-b).
+Formalized by `MetaMathlibExt.IsExactSlowNimBasicB`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-basic-b).
 
 ## Basic-vector value
 
@@ -680,7 +680,7 @@ the bound $b \le \sum_i x_i$ totalizes this degenerate case.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2, equation (1).
 
-Formalized by `MetaMathlibExt.exactSlowNimBasicValue`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value).
+Formalized by `MetaMathlibExt.exactSlowNimBasicValue`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value).
 
 ## The basic value is attained
 
@@ -696,7 +696,7 @@ is even and every $z_i$ is odd.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Section 2, equation (1).
 
-Formalized by `MetaMathlibExt.exists_supports_exactSlowNimBasicValue`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exists-supports-exact-slow-nim-basic-val).
+Formalized by `MetaMathlibExt.exists_supports_exactSlowNimBasicValue`, a theorem declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exists-supports-exact-slow-nim-basic-val).
 
 ## $m$-critical positions of exact slow $k$-NIM with $k + 1$ piles (Theorem 1)
 
@@ -715,7 +715,7 @@ odd.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.isExactSlowNimCritical_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-critical-iff).
+Stated but not proved: `MetaMathlibExt.isExactSlowNimCritical_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 222](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L222). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#is-exact-slow-nim-critical-iff).
 
 ## Moves from critical positions with even parameter (Corollary 1 (i))
 
@@ -733,7 +733,7 @@ the source.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Corollary 1 (i).
 
-Stated but not proved: `MetaMathlibExt.exactSlowNim_critical_of_even` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-critical-of-even).
+Stated but not proved: `MetaMathlibExt.exactSlowNim_critical_of_even` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 238](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L238). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-critical-of-even).
 
 ## Unique critical-lowering move for odd parameter (Corollary 1 (ii))
 
@@ -747,7 +747,7 @@ $x$ that is $(m - 1)$-critical, and it is the position reached from $x$ by the M
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Corollary 1 (ii).
 
-Stated but not proved: `MetaMathlibExt.exactSlowNim_critical_of_odd` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-critical-of-odd).
+Stated but not proved: `MetaMathlibExt.exactSlowNim_critical_of_odd` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-critical-of-odd).
 
 ## Proposition 1 (odd P-positions of exact slow k-NIM)
 
@@ -761,7 +761,7 @@ for every $i$, and $m$ is even.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Proposition 1.
 
-Stated but not proved: `MetaMathlibExt.exactSlowNim_odd_isP_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-odd-is-p-iff).
+Stated but not proved: `MetaMathlibExt.exactSlowNim_odd_isP_iff` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-odd-is-p-iff).
 
 ## Theorem 2 (the M-rule realizes Smith's remoteness)
 
@@ -775,7 +775,7 @@ remoteness $R(x)$ of $x$ in $\mathrm{NIM}(k + 1, k)$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.exactSlowNimMRuleLength_eq_smithRemoteness` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-eq-smith-rem).
+Stated but not proved: `MetaMathlibExt.exactSlowNimMRuleLength_eq_smithRemoteness` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-mrule-length-eq-smith-rem).
 
 ## Positions supported by a (B) basic vector (Lemma 1)
 
@@ -790,7 +790,7 @@ truncated at $0$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicB` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-of-supports-b).
+Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicB` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-of-supports-b).
 
 ## Moves at a position supported by an (A0) basic vector (Lemma 2)
 
@@ -806,7 +806,7 @@ $B(x') = B(x) - 1$. Here $B(x) - 1$ is truncated subtraction in $\mathbb{N}$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicA0` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-of-supports-b-2).
+Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicA0` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 304](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L304). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-of-supports-b-2).
 
 ## Moves at a position supported by an (A1) basic vector (Lemma 3)
 
@@ -822,7 +822,7 @@ at $0$.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Lemma 3.
 
-Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicA1` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-of-supports-b-3).
+Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_of_supports_basicA1` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-of-supports-b-3).
 
 ## Basic-vector value equals Smith's remoteness (Lemma 4)
 
@@ -835,7 +835,7 @@ equals Smith's remoteness of $x$ in this game.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_eq_smithRemoteness` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-eq-smith-remo).
+Stated but not proved: `MetaMathlibExt.exactSlowNimBasicValue_eq_smithRemoteness` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 335](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L335). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-basic-value-eq-smith-remo).
 
 ## Binary encoding of natural numbers
 
@@ -849,7 +849,7 @@ self-delimiting binary blocks.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Theorem 3 ("integers are presented in binary").
 
-Formalized by `MetaMathlibExt.exactSlowNimBinaryNatEncoding`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-binary-nat-encoding).
+Formalized by `MetaMathlibExt.exactSlowNimBinaryNatEncoding`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 347](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L347). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-binary-nat-encoding).
 
 ## Remoteness of exact slow k-NIM from a list of piles
 
@@ -863,7 +863,7 @@ the empty list gives the game on no stacks.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Theorem 3.
 
-Formalized by `MetaMathlibExt.exactSlowNimRemotenessOfList`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-remoteness-of-list).
+Formalized by `MetaMathlibExt.exactSlowNimRemotenessOfList`, a definition declared in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 356](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L356). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-remoteness-of-list).
 
 ## Theorem 3 (Smith's remoteness of exact slow k-NIM is polynomial-time computable)
 
@@ -879,7 +879,7 @@ is part of the input.
 
 - Vladimir Gurvich, Denis Martynov, Vladislav Maximchuk, and Michael Vyalyi, *On Remoteness Functions of Exact Slow k-NIM with k+1 Piles*, INTEGERS 24 (2024), Article G1, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.exactSlowNimRemoteness_isPolyTime` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-remoteness-is-poly-time).
+Stated but not proved: `MetaMathlibExt.exactSlowNimRemoteness_isPolyTime` is written with `theorem_wanted` in [WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean, line 367](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GameTheory/ExactSlowNimRemotenessWanted.lean#L367). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html#exact-slow-nim-remoteness-is-poly-time).
 
 ## Depends on
 
@@ -888,4 +888,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Slow Nim](https://deicyde.github.io/atlas-lean/roadmap/GameTheory/combinatorial-games/slow-nim/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GameTheory/combinatorial-games/slow-nim)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GameTheory/combinatorial-games/slow-nim)

@@ -8,7 +8,7 @@ proof: formalized
 
 # List scheduling on identical machines
 
-20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html).
+20 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html).
 
 ## Schedule of a list of jobs
 
@@ -18,7 +18,7 @@ schedule of a list $J$ of natural numbers when the sum over all machines $i$ of 
 entries of $\sigma(i)$ equals the multiset of entries of $J$, that is, every number occurs in
 the lists $\sigma(i)$ together exactly as often as it occurs in $J$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.IsScheduleOf`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#is-schedule-of).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.IsScheduleOf`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#is-schedule-of).
 
 ## Makespan
 
@@ -26,7 +26,7 @@ For a schedule $\sigma$ that gives each of $m$ machines a list of processing
 times, the load of a machine is the sum of its list, and the makespan of $\sigma$ is the largest
 machine load ($0$ when $m = 0$).
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.makespan`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#makespan).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.makespan`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#makespan).
 
 ## Least-loaded machine
 
@@ -34,7 +34,7 @@ Let $m \ge 1$ and let $L$ assign a load $L(i) \in \mathbb{N}$ to
 each machine $i \in \{0, \dots, m - 1\}$. The least-loaded machine for $L$ is the smallest index
 $i$ at which $L(i)$ is minimal.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.leastLoaded`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#least-loaded).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.leastLoaded`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#least-loaded).
 
 ## List scheduling from an intermediate state
 
@@ -45,7 +45,7 @@ the first remaining job $p$, appends $p$ to $\sigma(k)$ and adds $p$ to $L(k)$ f
 least-loaded machine $k$ for $L$, and continues in the same way with the other remaining jobs.
 The loads $L$ are not required to be the sums of the lists $\sigma(i)$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.listScheduleScan`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-scan).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.listScheduleScan`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-scan).
 
 ## Graham's list scheduling
 
@@ -56,7 +56,7 @@ index order), where the load of a machine is the sum of its jobs. The result ass
 machine its list of jobs. The cost counted is $m$ per job, one unit for each machine load
 inspected.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 101](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L101). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule).
 
 ## Longest processing time first (LPT)
 
@@ -65,21 +65,21 @@ processing times (natural numbers), LPT sorts the jobs into nonincreasing order 
 then applies Graham's list scheduling on $m$ machines to the sorted list. The cost counted is the
 number of comparisons made by merge sort plus the cost of list scheduling, $m$ per job.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt).
 
 ## The empty schedule
 
 For every number $m$ of machines, the assignment of the empty list
 to each of the $m$ machines is a schedule of the empty list of jobs.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.isScheduleOf_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#is-schedule-of-nil).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.isScheduleOf_nil`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 111](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L111). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#is-schedule-of-nil).
 
 ## Every job is at most the makespan
 
 Let $\sigma$ be a schedule on $m$ machines of a list
 $J$ of processing times. Then every entry $x$ of $J$ is at most the makespan of $\sigma$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.IsScheduleOf.le_makespan`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#le-makespan).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.IsScheduleOf.le_makespan`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#le-makespan).
 
 ## Total work is at most $m$ times the makespan
 
@@ -87,7 +87,7 @@ If $\sigma$ is a schedule of a list $P$ of
 jobs on $m$ machines, then the total processing time of $P$ is at most $m$ times the makespan of
 $\sigma$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.IsScheduleOf.sum_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#sum-le).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.IsScheduleOf.sum_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#sum-le).
 
 ## List-scheduling state invariant
 
@@ -96,7 +96,7 @@ for $i < m$, and a schedule $\sigma$ on $m$ machines satisfy the invariant when 
 schedule of $P$ and, for every machine $i$, $\ell_i$ is the load of machine $i$ in $\sigma$, the
 sum of the processing times assigned to it.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.ScanInv`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#scan-inv).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.ScanInv`, a definition declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#scan-inv).
 
 ## Invariant bound for list scheduling
 
@@ -110,7 +110,7 @@ $\sigma'(i)$, we have $a(L'(k) + p) \le bM$, where $k$ is the least-loaded machi
 Then list scheduling of $R$ started from the loads $L$ and machine lists $\sigma$ produces a
 schedule whose makespan $C$ satisfies $aC \le bM$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.listScheduleScan_bound`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-scan-bound).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.listScheduleScan_bound`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 213](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L213). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-scan-bound).
 
 ## A least-loaded machine carries at most the average load
 
@@ -119,7 +119,7 @@ list $P$ of jobs on $m \ge 1$ machines, with load $\ell_i$ on machine $i$. Then 
 of a least-loaded machine is at most the total processing time $T$ of the jobs in $P$, counted
 with multiplicity: $m \min_i \ell_i \le T$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.mul_leastLoaded_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#mul-least-loaded-le).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.mul_leastLoaded_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 237](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L237). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#mul-least-loaded-le).
 
 ## Graham's bound for list scheduling
 
@@ -132,7 +132,7 @@ on $m$ machines. Then $mC \le (2m - 1)M$, that is, $C \le (2 - 1/m)M$.
 
 - Graham, "Bounds for certain multiprocessing anomalies", Bell System Technical Journal 45 (1966).
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule_approx`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-approx).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule_approx`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 249](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L249). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-approx).
 
 ## Counting jobs when every machine is heavily loaded
 
@@ -144,7 +144,7 @@ $x$ in $P$ with $p \le x$ and $x > d$, both counted with multiplicity.
 
 The reason is that each machine then holds two jobs or one job longer than $d$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.two_mul_le_of_loads_gt`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#two-mul-le-of-loads-gt).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.two_mul_le_of_loads_gt`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 276](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L276). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#two-mul-le-of-loads-gt).
 
 ## At most two long jobs per machine
 
@@ -155,7 +155,7 @@ at least $p$ and greater than $M - p$, is at most $2$. Here $M - p$ is truncated
 equal to $0$ when $M < p$. So $\ell$ has at most two entries that are at least $p$, and at most
 one if one of them is greater than $M - p$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.countP_add_countP_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#count-p-add-count-p-le).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.countP_add_countP_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 303](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L303). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#count-p-add-count-p-le).
 
 ## The LPT placement step
 
@@ -165,7 +165,7 @@ be a schedule of the jobs $P$ on $m$ machines, with load $\ell_i$ on machine $i$
 $L = \min_i \ell_i$ be the load of a least-loaded machine. Then for every schedule $\tau$ of all
 the jobs on the $m$ machines, with makespan $M$, we have $3m(L + p) \le (4m - 1)M$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt_step_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt-step-le).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt_step_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 342](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L342). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt-step-le).
 
 ## Graham's bound for LPT scheduling
 
@@ -178,7 +178,7 @@ Then $3mC \le (4m - 1)M$, that is, $C \le (4/3 - 1/(3m))M$.
 
 - Graham, "Bounds on multiprocessing timing anomalies", SIAM J. Appl. Math. 17 (1969).
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt_approx`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt-approx).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt_approx`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 401](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L401). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt-approx).
 
 ## List scheduling schedules every job
 
@@ -186,7 +186,7 @@ For $m \ge 1$ and every list $J$ of processing
 times, the assignment that list scheduling on $m$ machines produces from $J$ is a schedule of
 $J$.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule_isScheduleOf`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-is-schedule-of).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule_isScheduleOf`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 418](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L418). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-is-schedule-of).
 
 ## Running time of list scheduling
 
@@ -194,14 +194,14 @@ For $m \ge 1$ and every list of $n$ jobs, list
 scheduling on $m$ machines has cost exactly $nm$, in the cost model that charges $m$ for each job
 placed (one unit per machine load inspected).
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-time).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.listSchedule_time`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 438](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L438). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#list-schedule-time).
 
 ## Running time of LPT
 
 On $m \ge 1$ machines and a list of $n$ jobs, LPT costs at most
 $n \lceil \log_2 n \rceil + nm$, counting merge-sort comparisons and machine load inspections.
 
-Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt-time-le).
+Formalized by `Cslib.Algorithms.Lean.Scheduling.lpt_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean, line 443](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Approximation/ListScheduling.lean#L443). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html#lpt-time-le).
 
 ## Depends on
 
@@ -210,4 +210,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: List scheduling on identical machines](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/approximation-algorithms/list-scheduling-on-identical-machines)

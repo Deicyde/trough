@@ -7,7 +7,7 @@ statement: formalized
 
 # Elementary theory of torsion-free hyperbolic groups
 
-9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html).
+9 results, 8 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html).
 
 ## Group words in countably many variables
 
@@ -17,7 +17,7 @@ letter $(i, \mathrm{true})$ stands for $x_i$ and the letter $(i, \mathrm{false})
 The word is read as the product of its letters in order, an element of the free group on
 $x_0, x_1, \dots$.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.Word`, an abbreviation declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#word).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.Word`, an abbreviation declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#word).
 
 ## Value of a group word
 
@@ -27,7 +27,7 @@ $G$, in the order of the letters of $w$, of $a(i)$ for each letter $x_i$ and of 
 each letter $x_i^{-1}$; equivalently, it is the image of $w$ under the homomorphism from the free
 group on $x_0, x_1, \dots$ to $G$ that sends $x_i$ to $a(i)$.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.evalWord`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#eval-word).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.evalWord`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#eval-word).
 
 ## Quantifier-free formulas in conjunctive normal form
 
@@ -38,7 +38,7 @@ stands for the equation $w = 1$ when $b$ is true and for the inequation $w \ne 1
 false. The formula is the conjunction of its clauses, and each clause is the disjunction of its
 literals.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.CNF`, an abbreviation declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#cnf).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.CNF`, an abbreviation declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#cnf).
 
 ## Truth of a formula in conjunctive normal form
 
@@ -49,7 +49,7 @@ every clause of $\varphi$ contains a literal $(b, w)$ such that the value of $w$
 $1$ if and only if $b$ is true, that is, a literal $w = 1$ whose word has value $1$ or a literal
 $w \ne 1$ whose word does not.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.CNF.HoldsAt`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#holds-at).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.CNF.HoldsAt`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#holds-at).
 
 ## Truth of a prenex formula
 
@@ -65,7 +65,7 @@ the value $g$; for a prefix $\exists$ followed by $q'$, the same holds for some 
 quantifiers of $q$ bind $x_i, x_{i+1}, \dots$ in order, and the other variables keep their values
 under $a$.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.realizePrenex`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#realize-prenex).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.realizePrenex`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#realize-prenex).
 
 ## Prenex sentences of the language of groups
 
@@ -79,7 +79,7 @@ as $1$.
 Every first-order sentence of the language of groups is effectively equivalent to such a code, and
 conversely.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.PrenexSentence`, an abbreviation declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#prenex-sentence).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.PrenexSentence`, an abbreviation declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#prenex-sentence).
 
 ## Truth of a prenex sentence in a group
 
@@ -88,7 +88,7 @@ when the formula with quantifier prefix $q$ and matrix $\varphi$, whose quantifi
 variables $x_0, x_1, \dots$ in order, is true in $G$ under the assignment that gives every variable
 the value $1$; thus the variables not bound by $q$ are read as $1$.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.PrenexSentence.HoldsIn`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#holds-in).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.PrenexSentence.HoldsIn`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#holds-in).
 
 ## Decidability of the elementary theory of torsion-free hyperbolic groups
 
@@ -98,7 +98,7 @@ word-hyperbolic group $G$ (every element $g \ne 1$ of $G$ has infinite order), t
 sentences of the language of groups that hold in $G$ is computable, that is, some algorithm
 decides for each prenex sentence whether it holds in $G$.
 
-Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.torsionFreeHyperbolicTheoryDecidable`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#torsion-free-hyperbolic-theory-decidable).
+Formalized by `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.torsionFreeHyperbolicTheoryDecidable`, a definition declared in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#torsion-free-hyperbolic-theory-decidable).
 
 ## Torsion-free hyperbolic groups have decidable elementary theory
 
@@ -114,7 +114,7 @@ is Theorem 3 of Kharlampovich and Myasnikov.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 16.71 (A. G. Myasnikov, O. G. Kharlampovich); resolution: O. Kharlampovich and A. Myasnikov, Decidability of the elementary theory of a torsion-free hyperbolic group, arXiv:1303.0760, Theorem 3 (the elementary theory of a torsion-free hyperbolic group is decidable); Kourovka Archive, Problem 16.71 (Yes, it is), https://arxiv.org/abs/1303.0760.
 
-Stated but not proved: `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.torsionFreeHyperbolicTheoryDecidable_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#torsion-free-hyperbolic-theory-decidable-2).
+Stated but not proved: `MathlibExt.GroupTheory.TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.torsionFreeHyperbolicTheoryDecidable_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/TorsionFreeHyperbolicElementaryTheoryKourovka16Problem71Wanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html#torsion-free-hyperbolic-theory-decidable-2).
 
 ## Depends on
 
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Elementary theory of torsion-free hyperbolic groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/varieties-and-equations/elementary-theory-of-torsion-free-hyperbolic-gro)

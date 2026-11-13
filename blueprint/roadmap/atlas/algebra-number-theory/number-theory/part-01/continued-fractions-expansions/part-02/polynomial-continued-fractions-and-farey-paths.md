@@ -7,7 +7,7 @@ statement: formalized
 
 # Polynomial continued fractions and Farey paths
 
-23 results, 14 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html).
+23 results, 14 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html).
 
 ## Finite continued fraction with polynomial partial quotients
 
@@ -24,7 +24,7 @@ and $B_{i+1} = a_{i+1} B_i + B_{i-1}$ for $0 \le i < n$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.polyContFract`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract).
+Formalized by `MetaMathlibExt.polyContFract`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract).
 
 ## Integral part of a polynomial continued fraction
 
@@ -36,7 +36,7 @@ $[a_0, a_1, \dots, a_n]$ over $F(X)$ is $a_0$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.polyContFract_h`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-h).
+Formalized by `MetaMathlibExt.polyContFract_h`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-h).
 
 ## Terms of a polynomial continued fraction
 
@@ -50,7 +50,7 @@ if $i \ge n$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.polyContFract_s_get?`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-s-get).
+Formalized by `MetaMathlibExt.polyContFract_s_get?`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 57](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L57). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-s-get).
 
 ## Zeroth convergent numerator of a polynomial continued fraction
 
@@ -63,7 +63,7 @@ $a_0$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.polyContFract_nums_zero`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-nums-zero).
+Formalized by `MetaMathlibExt.polyContFract_nums_zero`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-nums-zero).
 
 ## Zeroth convergent denominator of a polynomial continued fraction
 
@@ -75,7 +75,7 @@ of the zeroth convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ ove
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.polyContFract_dens_zero`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-dens-zero).
+Formalized by `MetaMathlibExt.polyContFract_dens_zero`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-dens-zero).
 
 ## First convergent numerator of a polynomial continued fraction
 
@@ -88,7 +88,7 @@ $a_1 a_0 + 1$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.polyContFract_nums_one`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-nums-one).
+Formalized by `MetaMathlibExt.polyContFract_nums_one`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-nums-one).
 
 ## First convergent denominator of a polynomial continued fraction
 
@@ -100,7 +100,7 @@ first convergent of the continued fraction $[a_0; a_1, \ldots, a_n]$ over $F(X)$
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Section 1.
 
-Formalized by `MetaMathlibExt.polyContFract_dens_one`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-dens-one).
+Formalized by `MetaMathlibExt.polyContFract_dens_one`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-dens-one).
 
 ## Convergents of a polynomial continued fraction form a Farey path
 
@@ -119,7 +119,7 @@ and consecutive convergents are adjacent in it.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.polyContFract_convergents_farey_path` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-convergents-farey-path).
+Stated but not proved: `MetaMathlibExt.polyContFract_convergents_farey_path` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-convergents-farey-path).
 
 ## Extending a Farey path extends the continued fraction
 
@@ -144,7 +144,7 @@ are coprime is omitted, since adjacency implies it.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.polyContFract_extend_farey_path` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-extend-farey-path).
+Stated but not proved: `MetaMathlibExt.polyContFract_extend_farey_path` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 134](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L134). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-extend-farey-path).
 
 ## Continued fraction along a Farey path of polynomials
 
@@ -171,7 +171,7 @@ condition.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path).
+Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 163](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L163). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path).
 
 ## Farey paths of polynomials with alternating determinants starting at 1
 
@@ -191,7 +191,7 @@ verbatim over any field.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_neg_one_pow_pred` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-neg-on).
+Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_neg_one_pow_pred` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-neg-on).
 
 ## Farey paths of polynomials with alternating determinants starting at −1
 
@@ -208,7 +208,7 @@ are $A_i = (-1)^i u_i$ and $B_i = (-1)^i v_i$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_neg_one_pow` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-neg-on-2).
+Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_neg_one_pow` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 210](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L210). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-neg-on-2).
 
 ## Farey paths of polynomials with all determinants 1
 
@@ -226,7 +226,7 @@ $i \equiv 0, 1 \pmod 4$ and $\varepsilon_i = -1$ if $i \equiv 2, 3 \pmod 4$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_one` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-one).
+Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_one` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-one).
 
 ## Farey paths of polynomials with all determinants −1
 
@@ -244,7 +244,7 @@ $i \equiv 0, 3 \pmod 4$ and $\varepsilon_i = -1$ if $i \equiv 1, 2 \pmod 4$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_neg_one` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-neg-on-3).
+Stated but not proved: `MetaMathlibExt.polyContFract_of_farey_path_det_neg_one` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-cont-fract-of-farey-path-det-neg-on-3).
 
 ## Farey series over a field
 
@@ -259,7 +259,7 @@ Each fraction is thus represented by exactly one such pair.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Definition 1 (quoted from [6], there over `𝔽_{p^r}`).
 
-Formalized by `MetaMathlibExt.polyFareySeries`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-farey-series).
+Formalized by `MetaMathlibExt.polyFareySeries`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 272](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L272). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-farey-series).
 
 ## The fraction of a pair of polynomials
 
@@ -271,7 +271,7 @@ over $F$ (it is $0$ when $v = 0$).
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Definition 1.
 
-Formalized by `MetaMathlibExt.polyFrac`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-frac).
+Formalized by `MetaMathlibExt.polyFrac`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 280](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L280). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-frac).
 
 ## The fraction $0/1$ lies in every Farey series
 
@@ -283,7 +283,7 @@ of order $n$ over $F$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Definition 1.
 
-Formalized by `MetaMathlibExt.zero_one_mem_polyFareySeries`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#zero-one-mem-poly-farey-series).
+Formalized by `MetaMathlibExt.zero_one_mem_polyFareySeries`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 288](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L288). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#zero-one-mem-poly-farey-series).
 
 ## The fraction 1/X in the polynomial Farey series
 
@@ -295,7 +295,7 @@ $\mathcal F_n$ of order $n$ over $F$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Definition 1.
 
-Formalized by `MetaMathlibExt.one_X_mem_polyFareySeries`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#one-x-mem-poly-farey-series).
+Formalized by `MetaMathlibExt.one_X_mem_polyFareySeries`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 297](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L297). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#one-x-mem-poly-farey-series).
 
 ## Degree neighbours in the polynomial Farey series
 
@@ -315,7 +315,7 @@ $t = 0$, Figure 1) require.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Definition 2 (quoted from [6]).
 
-Formalized by `MetaMathlibExt.IsPolyFareyDegNeighbor`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#is-poly-farey-deg-neighbor).
+Formalized by `MetaMathlibExt.IsPolyFareyDegNeighbor`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 311](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L311). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#is-poly-farey-deg-neighbor).
 
 ## No fraction is its own degree neighbour
 
@@ -327,7 +327,7 @@ itself in the Farey series $\mathcal F_n$ of order $n$ over $F$.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Definition 2.
 
-Formalized by `MetaMathlibExt.not_isPolyFareyDegNeighbor_self`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#not-is-poly-farey-deg-neighbor-self).
+Formalized by `MetaMathlibExt.not_isPolyFareyDegNeighbor_self`, a theorem declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 323](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L323). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#not-is-poly-farey-deg-neighbor-self).
 
 ## Neighbouring fractions in the polynomial Farey series
 
@@ -341,7 +341,7 @@ $u/v$ in $\mathcal F_n$. In particular, both fractions then lie in $\mathcal F_n
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Definition 3 (quoted from [6]).
 
-Formalized by `MetaMathlibExt.ArePolyFareyNeighbors`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#are-poly-farey-neighbors).
+Formalized by `MetaMathlibExt.ArePolyFareyNeighbors`, a definition declared in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 333](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L333). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#are-poly-farey-neighbors).
 
 ## Neighbour criterion for the polynomial Farey series
 
@@ -357,7 +357,7 @@ The paper, quoting [6], works over $\mathbb F_{p^r}$; here the field $F$ is arbi
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.arePolyFareyNeighbors_iff` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#are-poly-farey-neighbors-iff).
+Stated but not proved: `MetaMathlibExt.arePolyFareyNeighbors_iff` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 344](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L344). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#are-poly-farey-neighbors-iff).
 
 ## Number of neighbours of a polynomial Farey fraction
 
@@ -377,7 +377,7 @@ paper's count $(p - 1) p^t$ and of its Example 2.
 
 - Tuangrat Chaichana, Arlisa Janjing and Teeraphong Phongpattanacharoen, *An Interpretation of Continued Fractions and Farey Graphs in the Field of Rational Functions*, INTEGERS 26 (2026), Article A3, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.polyFarey_neighbor_count` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-farey-neighbor-count).
+Stated but not proved: `MetaMathlibExt.polyFarey_neighbor_count` is written with `theorem_wanted` in [WantedExt/Algebra/RationalFunctionFareyPathWanted.lean, line 358](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Algebra/RationalFunctionFareyPathWanted.lean#L358). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html#poly-farey-neighbor-count).
 
 ## Depends on
 
@@ -386,4 +386,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Polynomial continued fractions and Farey paths](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/continued-fractions-expansions/part-01/polynomial-continued-fractions-and-farey-paths)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Følner sets and polynomial growth
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html).
 
 ## Ball in the word metric
 
@@ -15,7 +15,7 @@ For a finite subset $S$ of a group $\Gamma$ and a natural number
 $n$, the ball $B_S(n)$ of radius $n$ is the set of products of at most $n$ elements of
 $S \cup S^{-1}$, the empty product $1$ included.
 
-Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.wordBall`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#word-ball).
+Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.wordBall`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#word-ball).
 
 ## Polynomial growth with respect to a finite subset
 
@@ -25,7 +25,7 @@ elements of $S \cup S^{-1}$. Then $\Gamma$ has polynomial growth with respect to
 natural numbers $C$ and $d$ such that for every natural number $n$ the ball $B_S(n)$ has at most
 $C\,(n + 1)^d$ elements.
 
-Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.HasPolynomialGrowth`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#has-polynomial-growth).
+Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.HasPolynomialGrowth`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#has-polynomial-growth).
 
 ## Boundary of a finite subset of a group
 
@@ -33,7 +33,7 @@ For a group $\Gamma$ and finite subsets $S$ and $F$
 of $\Gamma$, the boundary of $F$ with respect to $S$ is the set
 $\partial F = \{\gamma \in \Gamma \setminus F : \gamma s \in F \text{ for some } s \in S\}$.
 
-Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.boundary`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#boundary).
+Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.boundary`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#boundary).
 
 ## Vaillant's question on Følner exhaustions of polynomial size (Kourovka 14.27)
 
@@ -48,7 +48,7 @@ growth with respect to $S$.
 The Kourovka Notebook indexes the sets from $F_1$, so its size condition $|F_k| \le c\,k^d$ reads
 $|F_k| \le c\,(k + 1)^d$ here.
 
-Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.polynomialFolnerExhaustionImpliesPolynomialGrowth`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#polynomial-folner-exhaustion-implies-pol).
+Formalized by `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.polynomialFolnerExhaustionImpliesPolynomialGrowth`, a definition declared in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#polynomial-folner-exhaustion-implies-pol).
 
 ## Følner exhaustions of polynomial size need not give polynomial growth
 
@@ -67,7 +67,7 @@ Grigorchuk) has such a sequence of subsets.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 14.27 (A. G. Vaillant); resolution: V. G. Bardakov, Algebra and Logic 40 (2001), no. 1, 12-16, Kourovka Archive, Problem 14.27: every group of intermediate growth has such a sequence (answer: No, not always).
 
-Stated but not proved: `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.polynomialFolnerExhaustionImpliesPolynomialGrowth_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#polynomial-folner-exhaustion-implies-pol-2).
+Stated but not proved: `MathlibExt.GroupTheory.FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.polynomialFolnerExhaustionImpliesPolynomialGrowth_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/FolnerPolynomialSequencePolynomialGrowthKourovka14Problem27Wanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html#polynomial-folner-exhaustion-implies-pol-2).
 
 ## Depends on
 
@@ -76,4 +76,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Følner sets and polynomial growth](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/geometric-group-theory/f-lner-sets-and-polynomial-growth)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Multivariable calculus: its own results
 
-7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html).
+7 results, 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html).
 
 Functions on R^n: partial derivatives, gradients, Jacobians, Hessians, implicit functions, regular level sets and tangent spaces, curve length, Green's theorem, multivariable Taylor expansions and counterexamples about mixed partials or continuity at the origin.
 
@@ -22,7 +22,7 @@ real $t$, where $\langle \cdot, \cdot \rangle$ is the standard inner product on 
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of one variable), problem `ma_proofbench_l1_49`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.UnitNormCurveDerivOrthogonalWanted.inner_deriv_self_eq_zero_of_norm_eq_one` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/UnitNormCurveDerivOrthogonalWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/UnitNormCurveDerivOrthogonalWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#inner-deriv-self-eq-zero-of-norm-eq-one).
+Stated but not proved: `MathlibExt.Analysis.Calculus.UnitNormCurveDerivOrthogonalWanted.inner_deriv_self_eq_zero_of_norm_eq_one` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/UnitNormCurveDerivOrthogonalWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/UnitNormCurveDerivOrthogonalWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#inner-deriv-self-eq-zero-of-norm-eq-one).
 
 ## An implicit function for $x^2y_1+e^x+y_2=0$ near $(1,-1)$
 
@@ -35,7 +35,7 @@ differentiable on $U$, with $g(1,-1)=0$ and $f(g(y_1,y_2),y_1,y_2)=0$ for all $(
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), problem `ma_proofbench_l1_43`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.ImplicitFunctionExpExampleWanted.exists_implicit_function_sq_mul_add_exp_add` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ImplicitFunctionExpExampleWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/ImplicitFunctionExpExampleWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#exists-implicit-function-sq-mul-add-exp).
+Stated but not proved: `MathlibExt.Analysis.Calculus.ImplicitFunctionExpExampleWanted.exists_implicit_function_sq_mul_add_exp_add` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/ImplicitFunctionExpExampleWanted.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/ImplicitFunctionExpExampleWanted.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#exists-implicit-function-sq-mul-add-exp).
 
 ## Change of variables to spherical coordinates
 
@@ -55,7 +55,7 @@ change of variables.
 - W. Rudin, *Real and Complex Analysis*, 3rd ed., Ch. 8, Exercise 4 (spherical coordinates in `ℝ³`).
 - https://en.wikipedia.org/wiki/Spherical_coordinate_system#Integration_and_differentiation_in_spherical_coordinates
 
-Stated but not proved: `MathlibExt.MeasureTheory.Geometry.SphericalCoordinatesWanted.integral_comp_spherical_symm` is written with `theorem_wanted` in [WantedExt/MeasureTheory/Geometry/SphericalCoordinatesWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/Geometry/SphericalCoordinatesWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#integral-comp-spherical-symm).
+Stated but not proved: `MathlibExt.MeasureTheory.Geometry.SphericalCoordinatesWanted.integral_comp_spherical_symm` is written with `theorem_wanted` in [WantedExt/MeasureTheory/Geometry/SphericalCoordinatesWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/Geometry/SphericalCoordinatesWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#integral-comp-spherical-symm).
 
 ## Equal partial derivatives give a factor $x+y$
 
@@ -68,7 +68,7 @@ $(x,y)\in\mathbb{R}^2$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Real functions; Functions of several variables), problem `ma_proofbench_l1_02`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.EqualPartialsFactorSumWanted.exists_continuous_mul_add_of_fderiv_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/EqualPartialsFactorSumWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/EqualPartialsFactorSumWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#exists-continuous-mul-add-of-fderiv-eq).
+Stated but not proved: `MathlibExt.Analysis.Calculus.EqualPartialsFactorSumWanted.exists_continuous_mul_add_of_fderiv_eq` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/EqualPartialsFactorSumWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/EqualPartialsFactorSumWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#exists-continuous-mul-add-of-fderiv-eq).
 
 ## Green's theorem
 
@@ -92,7 +92,7 @@ $$
 
 - https://en.wikipedia.org/wiki/Green%27s_theorem.
 
-Stated but not proved: `MetaMathlibExt.greens_theorem` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/GreensTheoremWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/GreensTheoremWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#greens-theorem).
+Stated but not proved: `MetaMathlibExt.greens_theorem` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/GreensTheoremWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/GreensTheoremWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#greens-theorem).
 
 ## Smooth functions vanishing on the axes are $O(|x|\,|y|)$ near the origin
 
@@ -105,7 +105,7 @@ $|x| < 1$ and $|y| < 1$, that is, on the open unit ball of $\mathbb{R}^2$ for th
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Real functions; Functions of several variables), problem `ma_proofbench_l2_01`.
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.SmoothVanishingOnAxesBoundWanted.exists_abs_le_mul_abs_mul_abs_of_contDiff_of_eq_zero_on_axes` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/SmoothVanishingOnAxesBoundWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/SmoothVanishingOnAxesBoundWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#exists-abs-le-mul-abs-mul-abs-of-cont-di).
+Stated but not proved: `MathlibExt.Analysis.Calculus.SmoothVanishingOnAxesBoundWanted.exists_abs_le_mul_abs_mul_abs_of_contDiff_of_eq_zero_on_axes` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/SmoothVanishingOnAxesBoundWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/SmoothVanishingOnAxesBoundWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#exists-abs-le-mul-abs-mul-abs-of-cont-di).
 
 ## Taylor's theorem with little-o remainder in several variables
 
@@ -124,7 +124,7 @@ o\bigl(\|x - x_0\|^n\bigr).$$
 - H. Cartan, *Differential Calculus*, Ch. III, Taylor's formula with remainder.
 - https://en.wikipedia.org/wiki/Taylor%27s_theorem#Taylor's_theorem_in_several_variables
 
-Stated but not proved: `MathlibExt.Analysis.Calculus.TaylorLittleoRemainderWanted.taylor_isLittleO_multivariable` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorLittleoRemainderWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Calculus/TaylorLittleoRemainderWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#taylor-is-little-o-multivariable).
+Stated but not proved: `MathlibExt.Analysis.Calculus.TaylorLittleoRemainderWanted.taylor_isLittleO_multivariable` is written with `theorem_wanted` in [WantedExt/Analysis/Calculus/TaylorLittleoRemainderWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Calculus/TaylorLittleoRemainderWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html#taylor-is-little-o-multivariable).
 
 ## Depends on
 
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multivariable calculus](https://deicyde.github.io/atlas-lean/roadmap/Analysis/real-functions/multivariable-calculus/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/real-functions/multivariable-calculus)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/real-functions/multivariable-calculus)

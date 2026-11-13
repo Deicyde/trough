@@ -7,7 +7,7 @@ statement: formalized
 
 # Glaisher's divisor functions and infinite products
 
-16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html).
+16 results, 16 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html).
 
 ## Series-divisors add under multiplication
 
@@ -23,7 +23,7 @@ is a series-divisor of $AB$.
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Lemma 2 (`jis-2024-24.1.6-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.series_divisor_add_of_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-add-of-mul).
+Stated but not proved: `MetaMathlibExt.series_divisor_add_of_mul` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 90](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L90). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-add-of-mul).
 
 ## Calculus of series-divisors
 
@@ -42,7 +42,7 @@ where $t_m(i) = m\,s(i/m)$ if $m \mid i$ and $t_m(i) = 0$ otherwise;
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Proposition 3 (`jis-2024-24.1.6-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.series_divisor_calculus` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-calculus).
+Stated but not proved: `MetaMathlibExt.series_divisor_calculus` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-calculus).
 
 ## Coefficient recursion for powers of a power series
 
@@ -58,7 +58,7 @@ $n\,a_m(n) = m \sum_{j=1}^{n} s(j)\,a_m(n-j)$.
 - in Corollary 4 the printed summand `σ^A(i)` is read as `σ^A(j)` (the summation index).
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Corollary 4 (`jis-2024-24.1.6-cor-4`).
 
-Stated but not proved: `MetaMathlibExt.series_divisor_pow_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-pow-recursion).
+Stated but not proved: `MetaMathlibExt.series_divisor_pow_recursion` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-pow-recursion).
 
 ## Glaisher's divisor functions as series-divisors
 
@@ -86,7 +86,7 @@ $\psi(q) = \sum_{k \ge 0} q^{k(k+1)/2}$ and $p_d$ respectively.
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 9 (`jis-2024-24.1.6-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.glaisher_divisors_series_divisor_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-divisors-series-divisor-recurre).
+Stated but not proved: `MetaMathlibExt.glaisher_divisors_series_divisor_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-divisors-series-divisor-recurre).
 
 ## Recurrences for partitions into even or distinct parts and for overpartitions
 
@@ -107,7 +107,7 @@ $n\,\bar p(n) = 2\sum_i d_D(i)\,\bar p(n-i) = 2\sum_i (\sigma(i) - \sigma(i/2))\
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 10 (`jis-2024-24.1.6-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.glaisher_partition_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-partition-recurrences).
+Stated but not proved: `MetaMathlibExt.glaisher_partition_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-partition-recurrences).
 
 ## Recurrences for sums of squares and sums of triangular numbers
 
@@ -127,7 +127,7 @@ $$n\,t_m(n) = m \sum_{j=1}^{n} \bigl(\sigma(j) - 4\sigma(j/2)\bigr)\,t_m(n-j).$$
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 11 (`jis-2024-24.1.6-thm-11`).
 
-Stated but not proved: `MetaMathlibExt.sum_squares_triangular_power_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#sum-squares-triangular-power-recurrences).
+Stated but not proved: `MetaMathlibExt.sum_squares_triangular_power_recurrences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#sum-squares-triangular-power-recurrences).
 
 ## Six recursions for Glaisher's divisor functions from the theta functions
 
@@ -151,7 +151,7 @@ $\psi(q) = \sum_{k \ge 0} q^{k(k+1)/2}$.
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 14 (`jis-2024-24.1.6-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.glaisher_theta_divisor_recursions` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-theta-divisor-recursions).
+Stated but not proved: `MetaMathlibExt.glaisher_theta_divisor_recursions` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-theta-divisor-recursions).
 
 ## Power recursion lemma for nonzero integer exponents
 
@@ -168,7 +168,7 @@ Invertibility of $A$ is assumed so that the negative powers $A^u$, $A^v$ make se
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Lemma 17 (`jis-2024-24.1.6-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.power_coeff_convolution_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#power-coeff-convolution-zpow).
+Stated but not proved: `MetaMathlibExt.power_coeff_convolution_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 207](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L207). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#power-coeff-convolution-zpow).
 
 ## Power recursion lemma for positive exponents
 
@@ -183,7 +183,7 @@ $$\sum_{k=0}^{n} \left(n - \left(\frac{u}{v} + 1\right) k\right) a_u(n-k)\, a_v(
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Lemma 17 (`jis-2024-24.1.6-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.power_coeff_convolution_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#power-coeff-convolution-pow).
+Stated but not proved: `MetaMathlibExt.power_coeff_convolution_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 219](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L219). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#power-coeff-convolution-pow).
 
 ## Six divisor-function identities from the power recursion lemma
 
@@ -206,7 +206,7 @@ $n\,(\tilde\sigma_3(n) + (-1)^n S(n)) =
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 19 (`jis-2024-24.1.6-thm-19`).
 
-Stated but not proved: `MetaMathlibExt.glaisher_power_recursion_divisor_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-power-recursion-divisor-identit).
+Stated but not proved: `MetaMathlibExt.glaisher_power_recursion_divisor_identities` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-power-recursion-divisor-identit).
 
 ## Glaisher's congruences for divisor sums over squares and triangular numbers
 
@@ -224,7 +224,7 @@ $\sum_{j=0}^{n+1} \bar\sigma_3(n+1-j(j+1)/2) \equiv 0 \pmod 9$.
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 20 (`jis-2024-24.1.6-thm-20`).
 
-Stated but not proved: `MetaMathlibExt.glaisher_divisor_sum_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-divisor-sum-congruences).
+Stated but not proved: `MetaMathlibExt.glaisher_divisor_sum_congruences` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#glaisher-divisor-sum-congruences).
 
 ## A congruence modulo 5 for divisor sums over triangular shifts
 
@@ -237,7 +237,7 @@ $n = 5k(k+1)/2$ for some integer $k \ge 0$, and to $0$ modulo $5$ otherwise.
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 23 (`jis-2024-24.1.6-thm-23`).
 
-Stated but not proved: `MetaMathlibExt.sigma_triangular_shift_sum_mod_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#sigma-triangular-shift-sum-mod-five).
+Stated but not proved: `MetaMathlibExt.sigma_triangular_shift_sum_mod_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 268](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L268). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#sigma-triangular-shift-sum-mod-five).
 
 ## Convolution identities for the series-divisor of an invertible series
 
@@ -257,7 +257,7 @@ $$\sum_{i=1}^{n} s(n-i)\,s(i) = -\sum_{i=1}^{n} i\,(n-i)\,a(n-i)\,b(i).$$
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Lemma 25 (`jis-2024-24.1.6-lem-25`).
 
-Stated but not proved: `MetaMathlibExt.series_divisor_inverse_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-inverse-convolution).
+Stated but not proved: `MetaMathlibExt.series_divisor_inverse_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 279](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L279). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#series-divisor-inverse-convolution).
 
 ## Overpartition formulas for a divisor sum with odd cofactors
 
@@ -274,7 +274,7 @@ $2\sum_{i=1}^{n} d_D(n-i)\,d_D(i) =
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 26 (`jis-2024-24.1.6-thm-26`).
 
-Stated but not proved: `MetaMathlibExt.overpartition_glaisher_dD_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#overpartition-glaisher-d-d-formulas).
+Stated but not proved: `MetaMathlibExt.overpartition_glaisher_dD_formulas` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#overpartition-glaisher-d-d-formulas).
 
 ## Ramanujan's congruence modulo $5$ and a convolution of divisor sums
 
@@ -287,7 +287,7 @@ $\sum_{i=1}^{5m} \sigma(i)\,\sigma(5m+1-i) \equiv 0 \pmod 5$ for every natural n
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 28 (`jis-2024-24.1.6-thm-28`).
 
-Stated but not proved: `MetaMathlibExt.partition_mod_five_iff_sigma_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#partition-mod-five-iff-sigma-convolution).
+Stated but not proved: `MetaMathlibExt.partition_mod_five_iff_sigma_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 310](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L310). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#partition-mod-five-iff-sigma-convolution).
 
 ## Overpartitions modulo $8$ and a convolution of divisor sums
 
@@ -300,7 +300,7 @@ $\sum_{i=1}^{4m-1} d_D(i)\,d_D(4m-i) \equiv 0 \pmod 4$ for every natural number 
 
 - Hartosh Singh Bal and Gaurav Bhatnagar, *Glaisher's Divisors and Infinite Products*, Journal of Integer Sequences 27 (2024), Article 24.1.6, Theorem 30 (`jis-2024-24.1.6-thm-30`).
 
-Stated but not proved: `MetaMathlibExt.overpartition_mod_eight_iff_dD_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#overpartition-mod-eight-iff-d-d-convolut).
+Stated but not proved: `MetaMathlibExt.overpartition_mod_eight_iff_dD_convolution` is written with `theorem_wanted` in [WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean, line 320](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/GlaisherDivisorsInfiniteProductsWanted.lean#L320). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html#overpartition-mod-eight-iff-d-d-convolut).
 
 ## Depends on
 
@@ -309,4 +309,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Glaisher's divisor functions and infinite products](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/modular-forms-q-series/theta-q-series-partitions/glaisher-s-divisor-functions-and-infinite-produc)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Arithmetic geometry: its own results
 
-1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/index.html).
+1 result, 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/index.html).
 
 Rational points and point counts of varieties over number fields and finite fields, including the Mordell conjecture and the Weil conjectures.
 
@@ -28,7 +28,7 @@ the inner sums count multiplicities.
 
 - P. Deligne, 'La conjecture de Weil. I', Publications Mathématiques de l'Institut des Hautes Études Scientifiques, Volume 43, pages 273–307 (1974), https://www.numdam.org/item/PMIHES_1974__43__273_0.pdf. See also references in the Lean file. Problem `weil_conjectures` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.WeilConjecturesWanted.AlgebraicGeometry.WeilConjectures.weil_conjectures` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/WeilConjecturesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/WeilConjecturesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/index.html#weil-conjectures).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.WeilConjecturesWanted.AlgebraicGeometry.WeilConjectures.weil_conjectures` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/WeilConjecturesWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/WeilConjecturesWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/index.html#weil-conjectures).
 
 ## Depends on
 
@@ -37,4 +37,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Arithmetic geometry](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/arithmetic-geometry)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/arithmetic-geometry)

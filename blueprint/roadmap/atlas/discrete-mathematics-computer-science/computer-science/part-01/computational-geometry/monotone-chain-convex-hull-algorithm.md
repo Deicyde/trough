@@ -8,7 +8,7 @@ proof: formalized
 
 # Monotone chain convex hull algorithm
 
-25 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html).
+25 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html).
 
 ## Pop step of the monotone-chain scan
 
@@ -21,7 +21,7 @@ points or whose top two points $a, b$ satisfy $(a - b) \times (p - b) > 0$; that
 returned unchanged. Each test of the sign of $(a - b) \times (p - b)$ costs one unit, and
 nothing else is charged.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.popNonLeft`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#pop-non-left).
+Formalized by `Cslib.Algorithms.Lean.Geometry.popNonLeft`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#pop-non-left).
 
 ## Monotone chain scan
 
@@ -33,7 +33,7 @@ $(a_x - b_x)(p_y - b_y) - (p_x - b_x)(a_y - b_y) \le 0$, and then pushes $p$. St
 the result is the final stack, top first. Each evaluation of this inequality costs one unit;
 nothing else is counted.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.chainScan`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#chain-scan).
+Formalized by `Cslib.Algorithms.Lean.Geometry.chainScan`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#chain-scan).
 
 ## Lower chain
 
@@ -48,7 +48,7 @@ else is counted.
 The scan is meant for points sorted strictly in lexicographic $(x, y)$ order; the chain then runs
 from left to right.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 86](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L86). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull).
 
 ## Lower chain of unsorted points
 
@@ -57,7 +57,7 @@ $P$ of points of $\Bbbk^2$, sort $P$ by merge sort into nondecreasing lexicograp
 order and return the lower chain of the sorted list. Only the orientation tests of the lower
 chain are counted; sorting costs nothing.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHullOfPoints`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-of-points).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHullOfPoints`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-of-points).
 
 ## The lower chain is a sublist of the input
 
@@ -66,7 +66,7 @@ let $p_1, \dots, p_n$ be points of $\Bbbk^2$ that are strictly increasing in lex
 $(x, y)$ order. Then the lower chain of $p_1, \dots, p_n$ is a sublist of $p_1, \dots, p_n$: it
 is $p_{i_1}, \dots, p_{i_m}$ for some indices $i_1 < \dots < i_m$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_sublist`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-sublist).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_sublist`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 513](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L513). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-sublist).
 
 ## The lower chain starts at the first point
 
@@ -75,7 +75,7 @@ let $p_1, \dots, p_n$ be points of $\Bbbk^2$ that are strictly increasing in lex
 $(x, y)$ order. If $n \ge 1$, the lower chain of $p_1, \dots, p_n$ starts at $p_1$; if $n = 0$,
 the lower chain is empty.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_head?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-head).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_head?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 518](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L518). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-head).
 
 ## The lower chain ends at the last point
 
@@ -84,7 +84,7 @@ $p_1, \dots, p_n$ be points of $\Bbbk^2$ that are strictly increasing in lexicog
 $(x, y)$ order. If $n \ge 1$, the lower chain of $p_1, \dots, p_n$ ends at $p_n$; if $n = 0$,
 the lower chain is empty.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_getLast?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-get-last).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_getLast?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-get-last).
 
 ## The lower chain turns strictly left
 
@@ -94,7 +94,7 @@ order, with lower chain $c_0, \dots, c_{m-1}$. Writing
 $\operatorname{cross}(u, v) = u_x v_y - v_x u_y$, for every $i$ with $i + 2 < m$ we have
 $\operatorname{cross}(c_{i+1} - c_i, c_{i+2} - c_i) > 0$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_turn_left`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 528](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L528). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-turn-left).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_turn_left`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 528](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L528). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-turn-left).
 
 ## Every input point lies on or left of each lower-chain edge
 
@@ -105,7 +105,7 @@ every $s \in \{p_1, \dots, p_n\}$ and every pair of consecutive vertices $a, b$ 
 of $p_1, \dots, p_n$ we have $\operatorname{cross}(b - a, s - a) \ge 0$: the point $s$ lies on or
 to the left of the directed edge from $a$ to $b$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_left_of_edges`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 548](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L548). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-left-of-edges).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_left_of_edges`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 548](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L548). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-left-of-edges).
 
 ## The lower-chain scan makes linearly many tests
 
@@ -113,7 +113,7 @@ Let $\Bbbk$ be a field with a linear
 order. For every list of $n$ points of $\Bbbk^2$, computing its lower chain makes at most $2n$
 orientation tests (cross-product evaluations).
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-time-le).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHull_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 584](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L584). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-time-le).
 
 ## Correctness of the lower chain for unsorted input
 
@@ -127,7 +127,7 @@ for every $i$ with $i + 2 < m$ we have $\operatorname{cross}(c_{i+1} - c_i, c_{i
 and for every $s \in P$ and every pair of consecutive vertices $a, b$ of $C$ we have
 $\operatorname{cross}(b - a, s - a) \ge 0$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHullOfPoints_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-of-points-spec).
+Formalized by `Cslib.Algorithms.Lean.Geometry.lowerHullOfPoints_spec`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean, line 604](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHull.lean#L604). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#lower-hull-of-points-spec).
 
 ## Upper chain
 
@@ -136,7 +136,7 @@ $p_1, \dots, p_n \in K^2$ is the lower chain of the reversed list $p_n, \dots, p
 its cost: the same scan, counting the same orientation tests. For points sorted by $(x, y)$ it
 runs from the last point back to the first.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 59](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L59). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull).
 
 ## Convex hull by the monotone chain algorithm
 
@@ -148,7 +148,7 @@ computing the lower chain plus the cost of computing the upper chain.
 For points sorted strictly in lexicographic $(x, y)$ order, the result runs counterclockwise from
 the first point.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull).
+Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull).
 
 ## The upper chain is a reflected lower chain
 
@@ -157,7 +157,7 @@ For every list $p_1, \dots, p_n$ of points of $\Bbbk^2$, the upper chain of the 
 under $p \mapsto -p$ of the lower chain of $-p_n, \dots, -p_1$, and the two computations have the
 same cost.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-eq).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_eq`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 110](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L110). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-eq).
 
 ## The upper chain is a subsequence of the reversed input
 
@@ -166,7 +166,7 @@ let $p_1, \dots, p_n \in K^2$ be strictly increasing in the lexicographic $(x, y
 upper chain of $p_1, \dots, p_n$ is a sublist of the reversed list $p_n, \dots, p_1$: it is
 obtained from $p_n, \dots, p_1$ by deleting some of the entries.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_sublist`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-sublist).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_sublist`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 129](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L129). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-sublist).
 
 ## The upper chain starts at the last point
 
@@ -174,7 +174,7 @@ Let $p_1, \dots, p_n$ be points of $\Bbbk^2$,
 for an ordered field $\Bbbk$, strictly increasing in the lexicographic order on $(x, y)$. If
 $n = 0$ the upper chain is empty; otherwise its first vertex is $p_n$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_head?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-head).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_head?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-head).
 
 ## The upper chain ends at the first point
 
@@ -182,7 +182,7 @@ Let $p_1, \dots, p_n$ be points of $\Bbbk^2$, for
 an ordered field $\Bbbk$, strictly increasing in the lexicographic order on $(x, y)$. If $n = 0$
 the upper chain is empty; otherwise its last vertex is $p_1$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_getLast?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-get-last).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_getLast?`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-get-last).
 
 ## The upper chain turns strictly left
 
@@ -193,7 +193,7 @@ $i + 2 < m$, we have $(c_{i+1} - c_i) \times (c_{i+2} - c_i) > 0$, where
 $(u_1, u_2) \times (v_1, v_2) = u_1 v_2 - v_1 u_2$ is the cross product: the vertices $c_i$,
 $c_{i+1}$, $c_{i+2}$ make a strict left turn.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_turn_left`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-turn-left).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_turn_left`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-turn-left).
 
 ## Every input point lies left of the upper chain
 
@@ -203,7 +203,7 @@ $(x, y)$. Then for every input point $s$ and every two consecutive vertices $a, 
 chain, the cross product $(b - a) \times (s - a)$ is nonnegative: $s$ lies on or to the left of
 the edge from $a$ to $b$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_left_of_edges`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-left-of-edges).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_left_of_edges`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-left-of-edges).
 
 ## Running time of the upper chain scan
 
@@ -212,7 +212,7 @@ $p_1, \dots, p_n \in K^2$ be any $n$ points, sorted or not. Computing the upper 
 $p_1, \dots, p_n$ costs at most $2n$, where the cost counts one unit per orientation test (one
 cross-product comparison) and nothing else.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-time-le).
+Formalized by `Cslib.Algorithms.Lean.Geometry.upperHull_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#upper-hull-time-le).
 
 ## The hull's vertices are input points
 
@@ -220,7 +220,7 @@ Let $p_1, \dots, p_n$ be points of $\Bbbk^2$, for an
 ordered field $\Bbbk$, strictly increasing in the lexicographic order on $(x, y)$. Then every
 vertex of their convex hull computed by the monotone chain algorithm is one of the $p_i$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_subset`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-subset).
+Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_subset`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 191](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L191). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-subset).
 
 ## The hull polygon contains every input point
 
@@ -231,7 +231,7 @@ algorithm. Then for every input point $s$ and every edge $(a, b)$ of the closed 
 $v_1, \dots, v_m, v_1$ (that is, $a, b$ consecutive in this sequence), the cross product
 $(b - a) \times (s - a)$ is nonnegative: $s$ lies on or to the left of the edge from $a$ to $b$.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_left_of_edges`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-left-of-edges).
+Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_left_of_edges`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 202](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L202). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-left-of-edges).
 
 ## The monotone chain hull makes at most $4n$ orientation tests
 
@@ -239,7 +239,7 @@ Let $\Bbbk$ be a field with
 a linear order. For every list of $n$ points of $\Bbbk^2$, computing their convex hull by the
 monotone chain algorithm costs at most $4n$, where each orientation test costs one unit.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-time-le).
+Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_time_le`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 261](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L261). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-time-le).
 
 ## Lists of points turning strictly left
 
@@ -249,7 +249,7 @@ $q_1, \dots, q_k$ of points of $\Bbbk^2$ turns strictly left when every three co
 do: $(q_{i+1} - q_i) \times (q_{i+2} - q_i) > 0$ for every $i$ with $1 \le i \le k - 2$. In
 particular, every list of fewer than three points turns strictly left.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.TurnsLeft`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#turns-left).
+Formalized by `Cslib.Algorithms.Lean.Geometry.TurnsLeft`, a definition declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 270](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L270). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#turns-left).
 
 ## The monotone chain hull of non-collinear points turns strictly left at every vertex
 
@@ -266,7 +266,7 @@ $(r - q) \times (s - q) > 0$.
 Read cyclically, this says the hull polygon turns strictly left at every vertex, including the
 two vertices where the lower and upper chains meet.
 
-Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_turnsLeft`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-turns-left).
+Formalized by `Cslib.Algorithms.Lean.Geometry.convexHull_turnsLeft`, a theorem declared in [CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean, line 470](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/CSLibExt/Algorithms/Lean/Geometry/ConvexHullPolygon.lean#L470). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html#convex-hull-turns-left).
 
 ## Depends on
 
@@ -275,4 +275,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Monotone chain convex hull algorithm](https://deicyde.github.io/atlas-lean/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/ComputerScience/computational-geometry/monotone-chain-convex-hull-algorithm)

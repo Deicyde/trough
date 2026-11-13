@@ -8,7 +8,7 @@ proof: formalized
 
 # Spectral theorem for compact self-adjoint operators
 
-12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html).
+12 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html).
 
 ## Eigenvalues are bounded by the operator norm
 
@@ -18,7 +18,7 @@ $|\mu| \le \|T\|$.
 
 Indeed, if $Tx = \mu x$ with $x \neq 0$, then $|\mu| \, \|x\| = \|Tx\| \le \|T\| \, \|x\|$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues.norm_hasEigenvalue_le`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#norm-has-eigenvalue-le).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues.norm_hasEigenvalue_le`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#norm-has-eigenvalue-le).
 
 ## Finiteness of large eigenvalues of a compact self-adjoint operator
 
@@ -26,7 +26,7 @@ Let $T$ be a compact
 self-adjoint operator on a Hilbert space over $\mathbb{R}$ or $\mathbb{C}$. For every
 $\varepsilon > 0$, the set of eigenvalues $\mu$ of $T$ with $\varepsilon \le |\mu|$ is finite.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues.finite_eigenvalues_of_ge`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#finite-eigenvalues-of-ge).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteEigenvalues.finite_eigenvalues_of_ge`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteEigenvalues.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#finite-eigenvalues-of-ge).
 
 ## A nonzero compact self-adjoint operator has an eigenvalue of modulus equal to its norm
 
@@ -34,7 +34,7 @@ Let $T \neq 0$ be a compact self-adjoint operator on a Hilbert space $H$ over
 $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$. Then $T$ has an eigenvalue $\mu \in \mathbb{K}$ with
 $\mu \neq 0$ and $|\mu| = \|T\|$, where $\|T\|$ is the operator norm of $T$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointNormEigenvalue.exists_hasEigenvalue_norm_eq`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-has-eigenvalue-norm-eq).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointNormEigenvalue.exists_hasEigenvalue_norm_eq`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean, line 72](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean#L72). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-has-eigenvalue-norm-eq).
 
 ## A nonzero compact self-adjoint operator has a real eigenvalue of modulus equal to its norm, with a unit eigenvector
 
@@ -43,7 +43,7 @@ with a unit eigenvector.** Let $T \neq 0$ be a compact self-adjoint operator on 
 $H$ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$. Then there are a real number $r$ and a unit
 vector $u \in H$ with $T u = r u$ and $|r| = \|T\|$, where $\|T\|$ is the operator norm of $T$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointNormEigenvalue.exists_unit_eigenvector_real_eigenvalue`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-unit-eigenvector-real-eigenvalue).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointNormEigenvalue.exists_unit_eigenvector_real_eigenvalue`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointNormEigenvalue.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-unit-eigenvector-real-eigenvalue).
 
 ## Deflation step
 
@@ -53,7 +53,7 @@ projection $P : H \to H$ onto $S$ and satisfies $T(S) \subseteq S$, and let $T_1
 compression of $T$ to $S$. If $T_1 \neq 0$, then there are a real number $r$ and a unit vector
 $v \in S$ with $Tv = rv$, $|r| = \|T_1\|$ and $|r| \le \|T\|$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointDeflation.exists_next_eigenvector_of_invariant`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-next-eigenvector-of-invariant).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointDeflation.exists_next_eigenvector_of_invariant`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-next-eigenvector-of-invariant).
 
 ## Next eigenvalue after a finite family of eigenvectors
 
@@ -68,7 +68,7 @@ $|\langle Tx, x \rangle|$ over unit vectors $x \in S$.
 
 The vectors $u_i$ need not be orthonormal, or even nonzero.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointDeflation.exists_next_eigenvector_of_finite_eigenvectors`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-next-eigenvector-of-finite-eigenv).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointDeflation.exists_next_eigenvector_of_finite_eigenvectors`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointDeflation.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-next-eigenvector-of-finite-eigenv).
 
 ## Finite-rank approximation of compact self-adjoint operators
 
@@ -77,7 +77,7 @@ self-adjoint operator on a Hilbert space $H$ over $\mathbb{R}$ or $\mathbb{C}$. 
 $\varepsilon > 0$ there is a bounded self-adjoint operator $F$ on $H$ with finite-dimensional
 range such that $\|T - F\| \le \varepsilon$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteRankApprox.exists_finiteRank_approx`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteRankApprox.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteRankApprox.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-finite-rank-approx).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointFiniteRankApprox.exists_finiteRank_approx`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteRankApprox.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointFiniteRankApprox.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-finite-rank-approx).
 
 ## Maximum principle for compact self-adjoint operators
 
@@ -99,7 +99,7 @@ orthogonal to $u_0, \dots, u_{n-1}$ satisfies $|\langle T x, x \rangle| \le |s_n
 $|\langle T u_n, u_n \rangle| = |s_n|$, and $T x = 0$ for every $x \in H$ orthogonal to every
 $u_n$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointMaximumPrinciple.exists_nonzero_eigenvalue_enumeration`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-nonzero-eigenvalue-enumeration).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointMaximumPrinciple.exists_nonzero_eigenvalue_enumeration`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-nonzero-eigenvalue-enumeration).
 
 ## Maximum principle for compact self-adjoint operators in finite dimension
 
@@ -112,7 +112,7 @@ $i < N$ every unit vector $x \in H$ orthogonal to $u_0, \dots, u_{i-1}$ satisfie
 $|\langle T x, x \rangle| \le |s_i|$, while $|\langle T u_i, u_i \rangle| = |s_i|$. Moreover
 $T x = 0$ for every $x \in H$ orthogonal to all of $u_0, \dots, u_{N-1}$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointMaximumPrinciple.exists_finite_eigenvalue_enumeration`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean, line 599](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean#L599). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-finite-eigenvalue-enumeration).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointMaximumPrinciple.exists_finite_eigenvalue_enumeration`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean, line 599](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean#L599). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-finite-eigenvalue-enumeration).
 
 ## Maximum principle as a sequence in infinite dimension
 
@@ -127,7 +127,7 @@ $|\langle T u_n, u_n \rangle| = |s_n|$.
 Unlike the maximum principle for compact self-adjoint operators, the $s_n$ are not required to be
 nonzero, and no claim is made that $T$ vanishes on the vectors orthogonal to every $u_n$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointMaximumPrinciple.exists_ordered_eigenvalue_sequence`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-ordered-eigenvalue-sequence).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointMaximumPrinciple.exists_ordered_eigenvalue_sequence`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean, line 616](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointMaximumPrinciple.lean#L616). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#exists-ordered-eigenvalue-sequence).
 
 ## Orthogonal complement of the nonzero-eigenvalue eigenspaces
 
@@ -136,7 +136,7 @@ over $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ and let $T : H \to H$ be a compac
 bounded linear operator. Then the orthogonal complement of the subspace spanned by the
 eigenspaces $\ker(T - \mu I)$ for all nonzero $\mu \in \mathbb{K}$ equals the kernel of $T$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointRangeDecomposition.orthogonal_iSup_eigenspaces_ne_zero_eq_ker`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#orthogonal-i-sup-eigenspaces-ne-zero-eq).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointRangeDecomposition.orthogonal_iSup_eigenspaces_ne_zero_eq_ker`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#orthogonal-i-sup-eigenspaces-ne-zero-eq).
 
 ## Spectral theorem for compact self-adjoint operators (range decomposition form)
 
@@ -150,7 +150,7 @@ intersection is $\{0\}$ and their sum is $H$; and
 (3) the eigenspaces $\ker(T - \mu I)$, $\mu \in \mathbb{K}$, are pairwise orthogonal for distinct
 values of $\mu$.
 
-Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointRangeDecomposition.spectral_theorem_range_decomposition`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#spectral-theorem-range-decomposition).
+Formalized by `MathlibExt.Analysis.InnerProductSpace.CompactSelfAdjointRangeDecomposition.spectral_theorem_range_decomposition`, a theorem declared in [MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/InnerProductSpace/CompactSelfAdjointRangeDecomposition.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html#spectral-theorem-range-decomposition).
 
 ## Depends on
 
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Spectral theorem for compact self-adjoint operators](https://deicyde.github.io/atlas-lean/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/operator-theory/spectral-theory/spectral-theorem-for-compact-self-adjoint-operat)

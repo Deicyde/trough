@@ -7,7 +7,7 @@ statement: formalized
 
 # Colored compositions, Dyck paths and polygon dissections
 
-16 results, 10 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html).
+16 results, 10 proved and 6 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html).
 
 ## Number of colored compositions
 
@@ -22,7 +22,7 @@ $\gamma_{a_1} \cdots \gamma_{a_k}$.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Compositions).
 
-Formalized by `MetaMathlibExt.coloredCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-composition-count).
+Formalized by `MetaMathlibExt.coloredCompositionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-composition-count).
 
 ## Compositions of 3 into two parts
 
@@ -34,7 +34,7 @@ compositions $(1,2)$ and $(2,1)$.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2.
 
-Formalized by `MetaMathlibExt.coloredCompositionCount_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-composition-count-one-three-two).
+Formalized by `MetaMathlibExt.coloredCompositionCount_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-composition-count-one-three-two).
 
 ## Number of colored Dyck paths
 
@@ -49,7 +49,7 @@ semilength $n$ with $k$ peaks, of the product of $\gamma_j$ over their primitive
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Dyck paths).
 
-Formalized by `MetaMathlibExt.coloredDyckPathCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-dyck-path-count).
+Formalized by `MetaMathlibExt.coloredDyckPathCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-dyck-path-count).
 
 ## Dyck paths of semilength 3 with two peaks
 
@@ -61,7 +61,7 @@ $d_{3,2}(\gamma) = 3$, a Narayana number.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2.
 
-Formalized by `MetaMathlibExt.coloredDyckPathCount_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-dyck-path-count-one-three-two).
+Formalized by `MetaMathlibExt.coloredDyckPathCount_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-dyck-path-count-one-three-two).
 
 ## Diagonals of a convex polygon
 
@@ -74,7 +74,7 @@ joining the vertices $0$ and $n+1$.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Polygon partitions).
 
-Formalized by `MetaMathlibExt.polygonDiagonals`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#polygon-diagonals).
+Formalized by `MetaMathlibExt.polygonDiagonals`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 87](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L87). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#polygon-diagonals).
 
 ## Noncrossing sets of diagonals
 
@@ -87,7 +87,7 @@ in cyclic order, this says that no two diagonals of $D$ cross in the interior of
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Polygon partitions).
 
-Formalized by `MetaMathlibExt.IsNoncrossingDiagonalSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#is-noncrossing-diagonal-set).
+Formalized by `MetaMathlibExt.IsNoncrossingDiagonalSet`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#is-noncrossing-diagonal-set).
 
 ## Size of the polygon under a chord
 
@@ -105,7 +105,7 @@ dissection lies directly under exactly one such chord.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Polygon partitions).
 
-Formalized by `MetaMathlibExt.dissectionFaceSize`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#dissection-face-size).
+Formalized by `MetaMathlibExt.dissectionFaceSize`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 118](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L118). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#dissection-face-size).
 
 ## Colored polygon dissection count
 
@@ -125,7 +125,7 @@ never enters.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2 (Polygon partitions).
 
-Formalized by `MetaMathlibExt.coloredPolygonDissectionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count).
+Formalized by `MetaMathlibExt.coloredPolygonDissectionCount`, a definition declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count).
 
 ## Dissections of a pentagon into two polygons
 
@@ -137,7 +137,7 @@ a convex pentagon has five diagonals, and each one cuts it into two polygons.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2.
 
-Formalized by `MetaMathlibExt.coloredPolygonDissectionCount_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count-one-thr).
+Formalized by `MetaMathlibExt.coloredPolygonDissectionCount_one_three_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count-one-thr).
 
 ## Colored dissections of a hexagon by one diagonal
 
@@ -151,7 +151,7 @@ cut it into a triangle and a pentagon, giving $3 \cdot 3^2 + 6 \cdot 2 \cdot 5 =
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Section 2.
 
-Formalized by `MetaMathlibExt.coloredPolygonDissectionCount_hexagon_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count-hexagon).
+Formalized by `MetaMathlibExt.coloredPolygonDissectionCount_hexagon_two`, a theorem declared in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count-hexagon).
 
 ## Hoggatt–Lind formula for colored compositions
 
@@ -168,7 +168,7 @@ where $B_{n,k}$ is the partial Bell polynomial.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Proposition 1 (`jis-2024-24.5.2-prop-1`), citing Hoggatt and Lind.
 
-Stated but not proved: `MetaMathlibExt.coloredCompositionCount_eq_partialBell` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-composition-count-eq-partial-bel).
+Stated but not proved: `MetaMathlibExt.coloredCompositionCount_eq_partialBell` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-composition-count-eq-partial-bel).
 
 ## Mansour–Sun formula for colored Dyck paths
 
@@ -190,7 +190,7 @@ $B_{n,k} = 0$.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Proposition 2 (`jis-2024-24.5.2-prop-2`), citing Mansour and Sun.
 
-Stated but not proved: `MetaMathlibExt.coloredDyckPathCount_eq_partialBell` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-dyck-path-count-eq-partial-bell).
+Stated but not proved: `MetaMathlibExt.coloredDyckPathCount_eq_partialBell` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 178](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L178). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-dyck-path-count-eq-partial-bell).
 
 ## Birmajer–Gil–Weiner formula for colored polygon partitions
 
@@ -208,7 +208,7 @@ where $B_{n,k}$ is the partial Bell polynomial.
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Proposition 3 (`jis-2024-24.5.2-prop-3`), citing Birmajer, Gil, and Weiner.
 
-Stated but not proved: `MetaMathlibExt.coloredPolygonDissectionCount_eq_partialBell` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count-eq-part).
+Stated but not proved: `MetaMathlibExt.coloredPolygonDissectionCount_eq_partialBell` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#colored-polygon-dissection-count-eq-part).
 
 ## Colored compositions and colored Dyck paths
 
@@ -225,7 +225,7 @@ $$\binom{n}{k-1} c_{n,k}(\gamma) = k \, d_{n,k}(\gamma).$$
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Theorem 4 (`jis-2024-24.5.2-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.choose_mul_coloredCompositionCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#choose-mul-colored-composition-count-eq).
+Stated but not proved: `MetaMathlibExt.choose_mul_coloredCompositionCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 204](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L204). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#choose-mul-colored-composition-count-eq).
 
 ## Colored Dyck paths and colored polygon partitions
 
@@ -243,7 +243,7 @@ $$\binom{n+k}{k} d_{n,k}(\gamma) = \binom{n+1}{k} p_{n,k}(\gamma).$$
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Theorem 6 (`jis-2024-24.5.2-thm-6`).
 
-Stated but not proved: `MetaMathlibExt.choose_mul_coloredDyckPathCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#choose-mul-colored-dyck-path-count-eq).
+Stated but not proved: `MetaMathlibExt.choose_mul_coloredDyckPathCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#choose-mul-colored-dyck-path-count-eq).
 
 ## Polygon partitions and colored compositions
 
@@ -258,7 +258,7 @@ $$(n+1)\, p_{n,k}(\gamma) = \binom{n+k}{k}\, c_{n,k}(\gamma).$$
 
 - Gil, Hoover, and Shearer, *Bijections Between Colored Compositions, Dyck Paths, and Polygon Partitions*, Journal of Integer Sequences 27 (2024), Article 24.5.2, Theorem 8 (`jis-2024-24.5.2-thm-8`).
 
-Stated but not proved: `MetaMathlibExt.succ_mul_coloredPolygonDissectionCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#succ-mul-colored-polygon-dissection-coun).
+Stated but not proved: `MetaMathlibExt.succ_mul_coloredPolygonDissectionCount_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean, line 227](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/ColoredCompositionsDyckPolygonsWanted.lean#L227). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html#succ-mul-colored-polygon-dissection-coun).
 
 ## Depends on
 
@@ -267,4 +267,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Colored compositions, Dyck paths and polygon dissections](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/integer-compositions/colored-compositions-dyck-paths-and-polygon-diss)

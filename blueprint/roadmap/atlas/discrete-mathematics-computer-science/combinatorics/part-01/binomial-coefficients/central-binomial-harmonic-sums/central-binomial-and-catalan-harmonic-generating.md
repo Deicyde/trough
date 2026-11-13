@@ -8,7 +8,7 @@ proof: formalized
 
 # Central binomial and Catalan–harmonic generating functions
 
-3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html).
+3 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html).
 
 ## Generating function of Catalan–harmonic products
 
@@ -21,7 +21,7 @@ $$
 \bigl(1 + \sqrt{1-4x}\bigr)\log\bigl(1 + \sqrt{1-4x}\bigr).
 $$
 
-Formalized by `MetaMathlibExt.catalan_harmonic_generating_function_canonical`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean, line 964](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean#L964). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html#catalan-harmonic-generating-function-can).
+Formalized by `MetaMathlibExt.catalan_harmonic_generating_function_canonical`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean, line 964](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean#L964). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html#catalan-harmonic-generating-function-can).
 
 ## Catalan–harmonic generating function with explicit coefficients
 
@@ -41,7 +41,7 @@ $\sum_{k=1}^{n} 1/k$ is the $n$th harmonic number.
 
 - Hongwei Chen, "Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers," Journal of Integer Sequences 19 (2016), Article 16.1.5, Corollary, lines 156–160, https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex; obtained there by integrating the central-binomial harmonic generating function.
 
-Formalized by `MetaMathlibExt.catalan_harmonic_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean, line 998](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean#L998). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html#catalan-harmonic-generating-function).
+Formalized by `MetaMathlibExt.catalan_harmonic_generating_function`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean, line 998](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/CatalanHarmonicGeneratingFunction.lean#L998). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html#catalan-harmonic-generating-function).
 
 ## Central binomial–harmonic generating function
 
@@ -58,7 +58,7 @@ $$
 
 - Hongwei Chen, "Interesting Series Associated with Central Binomial Coefficients, Catalan Numbers and Harmonic Numbers," Journal of Integer Sequences 19 (2016), Article 16.1.5, Theorem, lines 147–151, https://cs.uwaterloo.ca/journals/JIS/VOL19/Chen/chen21.tex.
 
-Formalized by `MetaMathlibExt.hasSum_centralBinomial_harmonic`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CentralBinomialHarmonicGeneratingFunction.lean, line 757](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/CentralBinomialHarmonicGeneratingFunction.lean#L757). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html#has-sum-central-binomial-harmonic).
+Formalized by `MetaMathlibExt.hasSum_centralBinomial_harmonic`, a theorem declared in [MathlibExt/Combinatorics/Enumerative/CentralBinomialHarmonicGeneratingFunction.lean, line 757](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/CentralBinomialHarmonicGeneratingFunction.lean#L757). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html#has-sum-central-binomial-harmonic).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Central binomial and Catalan–harmonic generating functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/binomial-coefficients/central-binomial-harmonic-sums/central-binomial-and-catalan-harmonic-generating)

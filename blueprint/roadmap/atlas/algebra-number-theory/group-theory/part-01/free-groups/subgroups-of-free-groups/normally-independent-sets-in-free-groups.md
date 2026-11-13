@@ -7,7 +7,7 @@ statement: formalized
 
 # Normally independent sets in free groups
 
-3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html).
+3 results, 2 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html).
 
 ## Normally independent sets in the free group of rank two
 
@@ -16,7 +16,7 @@ $F_2$ on two generators is normally independent when no element $w \in E$ lies i
 closure of $E \setminus \{w\}$, the smallest normal subgroup of $F_2$ containing
 $E \setminus \{w\}$.
 
-Formalized by `MathlibExt.GroupTheory.MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.IsNormallyIndependent`, a definition declared in [WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html#is-normally-independent).
+Formalized by `MathlibExt.GroupTheory.MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.IsNormallyIndependent`, a definition declared in [WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html#is-normally-independent).
 
 ## Grigorchuk's problem on massive independent sets in the free group of rank two
 
@@ -30,7 +30,7 @@ Since $F_2$ has $4 \cdot 3^{n-1}$ reduced words of length $n \ge 1$, $\limsup |E
 always, so massiveness says $\limsup |E_n|^{1/n} = 3$, as in Kourovka Notebook Problem 10.13
 (R. I. Grigorchuk).
 
-Formalized by `MathlibExt.GroupTheory.MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.existsMassiveNormallyIndependentSet`, a definition declared in [WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html#exists-massive-normally-independent-set).
+Formalized by `MathlibExt.GroupTheory.MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.existsMassiveNormallyIndependentSet`, a definition declared in [WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html#exists-massive-normally-independent-set).
 
 ## No massive normally independent set in the free group of rank two
 
@@ -50,7 +50,7 @@ such set".
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 10.13 (R. I. Grigorchuk); resolution: L. Koch-Hyde and É. Olive, Two problems about bases and independent sets in free groups, arXiv:2609.00382 (2026), Theorem 1.7 (an independent set S ⊆ B_n ⊆ F_r has |S| = O((2r - 1)^{n/2})) and the Solution to Problem 1.5; the Kourovka Notebook (21st issue) marks 10.13 solved, https://arxiv.org/abs/2609.00382.
 
-Stated but not proved: `MathlibExt.GroupTheory.MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.existsMassiveNormallyIndependentSet_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html#exists-massive-normally-independent-set-2).
+Stated but not proved: `MathlibExt.GroupTheory.MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.existsMassiveNormallyIndependentSet_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MassiveIndependentSetFreeGroupKourovka10Problem13Wanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html#exists-massive-normally-independent-set-2).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Normally independent sets in free groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/free-groups/subgroups-of-free-groups/normally-independent-sets-in-free-groups)

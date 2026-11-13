@@ -8,7 +8,7 @@ proof: formalized
 
 # James' reflexivity theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem/index.html).
 
 ## Finite-coordinate Goldstine theorem
 
@@ -18,7 +18,7 @@ $T \in X^{**}$ with $\|T\| \le 1$. Then for every finite set $s \subseteq X^*$ a
 $\varepsilon > 0$ there is $x \in X$ with $\|x\| \le 1$ such that $|z(x) - T(z)| < \varepsilon$
 for every $z \in s$.
 
-Formalized by `NormedSpace.goldstine_finite`, a theorem declared in [MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem/index.html#goldstine-finite).
+Formalized by `NormedSpace.goldstine_finite`, a theorem declared in [MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean, line 681](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean#L681). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem/index.html#goldstine-finite).
 
 ## James' reflexivity theorem
 
@@ -36,7 +36,7 @@ scalars to $\mathbb{K}$.
 
 - R. C. James, Reflexivity and the Supremum of Linear Functionals, Ann. of Math. 66 (1957), DOI 10.2307/1970122; Bourbaki form; Lean states `RCLike` Banach case with norm-attainment equivalence for reflexivity.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.james_reflexivity`, a theorem declared in [MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean, line 1203](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean#L1203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem/index.html#james-reflexivity).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.BanachSpaceWanted.james_reflexivity`, a theorem declared in [MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean, line 1203](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Normed/Module/JamesReflexivity.lean#L1203). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem/index.html#james-reflexivity).
 
 ## Depends on
 
@@ -45,4 +45,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: James' reflexivity theorem](https://deicyde.github.io/atlas-lean/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/banach-spaces/duality-and-weak-topologies/james-reflexivity-theorem)

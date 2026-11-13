@@ -8,7 +8,7 @@ proof: formalized
 
 # Riemann–Lebesgue lemma
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html).
 
 ## A Fourier coefficient is bounded by the L¹ norm
 
@@ -22,7 +22,7 @@ The bound holds because $|e^{-2\pi i n t / T}| = 1$. No integrability is assumed
 the Bochner integral, an integral whose integrand is not integrable is $0$, and so is any
 $E$-valued integral when $E$ is not complete.
 
-Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.norm_fourierCoeff_le_integral_norm`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#norm-fourier-coeff-le-integral-norm).
+Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.norm_fourierCoeff_le_integral_norm`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#norm-fourier-coeff-le-integral-norm).
 
 ## Riemann–Lebesgue for continuous functions
 
@@ -35,7 +35,7 @@ along the cofinite filter on $\mathbb{Z}$.
 The proof uses Parseval's identity in $L^2(\mu)$: the sequence $|\hat g(n)|^2$ is summable, so
 it tends to $0$.
 
-Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.tendsto_fourierCoeff_cofinite_of_continuous`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#tendsto-fourier-coeff-cofinite-of-contin).
+Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.tendsto_fourierCoeff_cofinite_of_continuous`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#tendsto-fourier-coeff-cofinite-of-contin).
 
 ## Riemann–Lebesgue lemma on the circle
 
@@ -45,7 +45,7 @@ $f : \mathbb{R}/T\mathbb{Z} \to \mathbb{C}$, the Fourier coefficients
 $\hat f(n) = \int e^{-2\pi i n t / T} f(t)\,d\mu(t)$ tend to $0$ as $|n| \to \infty$, that is,
 along the cofinite filter on $\mathbb{Z}$.
 
-Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.tendsto_fourierCoeff_cofinite`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#tendsto-fourier-coeff-cofinite).
+Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.tendsto_fourierCoeff_cofinite`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#tendsto-fourier-coeff-cofinite).
 
 ## Riemann–Lebesgue lemma on an interval
 
@@ -57,7 +57,7 @@ $$\hat f(n) = \frac{1}{b - a} \int_a^b e^{-2\pi i n x / (b - a)} f(x)\,dx,$$
 
 tend to $0$ as $|n| \to \infty$, that is, along the cofinite filter on $\mathbb{Z}$.
 
-Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.tendsto_fourierCoeffOn_cofinite`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#tendsto-fourier-coeff-on-cofinite).
+Formalized by `MathlibExt.Analysis.Fourier.AddCircle.RiemannLebesgue.tendsto_fourierCoeffOn_cofinite`, a theorem declared in [MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Fourier/AddCircle/RiemannLebesgue.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html#tendsto-fourier-coeff-on-cofinite).
 
 ## Depends on
 
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Riemann–Lebesgue lemma](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/riemann-lebesgue-lemma)

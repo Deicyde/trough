@@ -7,7 +7,7 @@ statement: formalized
 
 # Orthogonal systems and general orthogonal series
 
-7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html).
+7 results, 4 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html).
 
 ## Banach's Problem 186: a complete orthonormal system with divergent Fourier series
 
@@ -29,7 +29,7 @@ Fourier coefficients $\delta_{0i}$ and bounded partial sums).
 
 - S. Banach, Problem 186 of the Scottish Book; answered by A. M. Olevskii, "Fourier series with respect to general orthogonal systems" (1975). See the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook186Wanted.banach186_orthonormal_system_divergent_ae` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook186Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook186Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#banach186-orthonormal-system-divergent-a).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook186Wanted.banach186_orthonormal_system_divergent_ae` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook186Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook186Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#banach186-orthonormal-system-divergent-a).
 
 ## Countability of orthogonal systems of sequences
 
@@ -41,7 +41,7 @@ $\sum_{n} f_n g_n$ converges absolutely and its sum is $0$.
 The zero sequence is excluded because it is orthogonal to everything, so without this it
 would be a trivial member of every family.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.SequenceSystemsAreCountable`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#sequence-systems-are-countable).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.SequenceSystemsAreCountable`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean, line 33](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean#L33). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#sequence-systems-are-countable).
 
 ## Countability of orthogonal systems of functions
 
@@ -57,7 +57,7 @@ almost-everywhere-equal copies of one function would satisfy the orthogonality c
 vacuously. The first property excludes the indicator functions of single points, each of which
 is zero almost everywhere.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.FunctionSystemsAreCountable`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#function-systems-are-countable).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.FunctionSystemsAreCountable`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#function-systems-are-countable).
 
 ## Orthogonal systems need not be countable
 
@@ -81,14 +81,14 @@ separable Hilbert spaces.
 
 - S. Mazur, Problem 51 of the Scottish Book; A. M. Plichko and V. Razenkov, On three problems from the Scottish Book connected with orthogonal systems, Colloq. Math. 70 (1996), 227-234, Section 3; see the commentary in R. D. Mauldin (ed.), The Scottish Book, 2nd ed. (Birkhäuser, 2015).
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.orthogonal_systems_not_necessarily_countable` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#orthogonal-systems-not-necessarily-count).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook51Wanted.orthogonal_systems_not_necessarily_countable` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook51Wanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#orthogonal-systems-not-necessarily-count).
 
 ## Lebesgue measure on the unit interval (Scottish Book Problem 86)
 
 Lebesgue measure on
 $\mathbb{R}$ restricted to the unit interval $[0, 1]$, the ambient measure for Problem 86.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted.scottishBook86Measure`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#scottish-book86-measure).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted.scottishBook86Measure`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#scottish-book86-measure).
 
 ## Scottish Book Problem 86 (Banach)
 
@@ -106,7 +106,7 @@ almost everywhere on $[0, 1]$.
 The case of interest in the original problem is when infinitely many functions are necessary
 for the completion.
 
-Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted.ScottishBookProblem86Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#scottish-book-problem86-claim).
+Formalized by `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted.ScottishBookProblem86Claim`, a definition declared in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#scottish-book-problem86-claim).
 
 ## Banach's Scottish Book Problem 86 fails
 
@@ -124,7 +124,7 @@ everywhere on $[0, 1]$.
 
 - S. Banach, Problem 86 of the Scottish Book; negative answer via A. Plichko and A. Razenkov, "On three problems from the Scottish Book connected with orthogonal systems", Colloq. Math. 70 (1996), 227–234, Proposition 3, which constructs a bounded orthogonal sequence in a Banach space densely and non-compactly embedded in a Hilbert space that admits no extension to a fundamental orthogonal sequence using elements of the Banach space. Earlier work on the problem includes S. Kaczmarz (1936) and K. S. Kazarian ("On a problem of S. Banach from the Scottish Book", Proc. Amer. Math. Soc. 110 (1990), 881–887).
 
-Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted.banach86_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#banach86-refuted).
+Stated but not proved: `MathlibExt.Analysis.FunctionalAnalysis.ScottishBook86Wanted.banach86_refuted` is written with `theorem_wanted` in [WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/FunctionalAnalysis/ScottishBook86Wanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html#banach86-refuted).
 
 ## Depends on
 
@@ -133,4 +133,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Orthogonal systems and general orthogonal series](https://deicyde.github.io/atlas-lean/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/hilbert-spaces/orthogonal-systems-and-general-orthogonal-series)

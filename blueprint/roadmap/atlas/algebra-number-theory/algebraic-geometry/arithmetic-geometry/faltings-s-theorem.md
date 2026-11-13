@@ -7,7 +7,7 @@ statement: formalized
 
 # Faltings's theorem
 
-10 results, 3 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html).
+10 results, 3 proved and 7 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html).
 
 ## Place
 
@@ -19,7 +19,7 @@ every $z \in F$. See [Stichtenoth, Definition 1.1.4 and 1.1.8].
 Stichtenoth calls the maximal ideal of $\mathcal{O}$ the place, which determines $\mathcal{O}$,
 and also requires $\mathcal{O} \neq K$; that condition is omitted since it is automatic.
 
-Formalized by `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Place`, a structure declared in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#place).
+Formalized by `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Place`, a structure declared in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#place).
 
 ## Finitely many poles
 
@@ -32,7 +32,7 @@ $x$ has only finitely many poles. See [Stichtenoth, Corollary 1.3.4].
 
 -. Problem `faltings` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.finite_setOf_place_notMem` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#finite-set-of-place-not-mem).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.finite_setOf_place_notMem` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#finite-set-of-place-not-mem).
 
 ## Adele ring
 
@@ -43,7 +43,7 @@ elements are the families $\alpha = (\alpha_P)_P$ with $\alpha_P \in F$ for ever
 and $\alpha_P \in \mathcal{O}_P$ for all but finitely many $P$. See [Stichtenoth, Definition
 1.5.2].
 
-Formalized by `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Adele`, an abbreviation declared in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#adele).
+Formalized by `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Adele`, an abbreviation declared in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#adele).
 
 ## Principal adele map
 
@@ -58,7 +58,7 @@ separately.
 
 -. Problem `faltings` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Adele.principal` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#principal).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Adele.principal` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#principal).
 
 ## Coordinates of a principal adele
 
@@ -70,7 +70,7 @@ $P$ of $F/K$, the coordinate at $P$ of the principal adele of $x$ is $x$.
 
 -. Problem `faltings` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Adele.principal_apply` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#principal-apply).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.Adele.principal_apply` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#principal-apply).
 
 ## The adele algebra map is the principal embedding
 
@@ -83,7 +83,7 @@ principal adele map $F \to \mathcal{A}_F$.
 
 -. Problem `faltings` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.instAlgebraAdele_algebraMap` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#inst-algebra-adele-algebra-map).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.instAlgebraAdele_algebraMap` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#inst-algebra-adele-algebra-map).
 
 ## Integral adeles
 
@@ -93,7 +93,7 @@ consisting of the adeles $\alpha = (\alpha_P)_P$ whose coordinate $\alpha_P$ lie
 valuation ring $\mathcal{O}_P$ of $P$ for every place $P$ of $F/K$. See [Stichtenoth,
 Definition 1.5.3].
 
-Formalized by `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.integralAdele`, a definition declared in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#integral-adele).
+Formalized by `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.integralAdele`, a definition declared in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#integral-adele).
 
 ## Genus of a function field
 
@@ -107,7 +107,7 @@ See [Stichtenoth, Corollary 1.5.5].
 
 -. Problem `faltings` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.genus` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#genus).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.genus` is written with `def_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 175](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L175). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#genus).
 
 ## Genus as the dimension of the adele class space
 
@@ -125,7 +125,7 @@ The dimension is the finite rank, taken to be $0$ if the quotient is infinite-di
 
 -. Problem `faltings` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.genus_eq` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#genus-eq).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.genus_eq` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#genus-eq).
 
 ## Faltings' theorem (Mordell conjecture)
 
@@ -139,7 +139,7 @@ has dimension $1$ over $K$.
 
 -. Problem `faltings` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.faltings` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#faltings).
+Stated but not proved: `MathlibExt.AlgebraicGeometry.FaltingsWanted.AlgebraicGeometry.Faltings.faltings` is written with `theorem_wanted` in [WantedExt/AlgebraicGeometry/FaltingsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/AlgebraicGeometry/FaltingsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html#faltings).
 
 ## Depends on
 
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Faltings's theorem](https://deicyde.github.io/atlas-lean/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/AlgebraicGeometry/arithmetic-geometry/faltings-s-theorem)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Tribonacci representations and the Trithoff array
 
-40 results, 16 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html).
+40 results, 16 proved and 24 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html).
 
 ## Tribonacci representation
 
@@ -22,7 +22,7 @@ entries of $w$) are allowed.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 2.3 (Tribonacci representation).
 
-Formalized by `MetaMathlibExt.IsTribonacciRepr`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-tribonacci-repr).
+Formalized by `MetaMathlibExt.IsTribonacciRepr`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 41](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L41). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-tribonacci-repr).
 
 ## The empty word represents zero
 
@@ -33,7 +33,7 @@ of $0$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 2.3.
 
-Formalized by `MetaMathlibExt.isTribonacciRepr_nil`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-tribonacci-repr-nil).
+Formalized by `MetaMathlibExt.isTribonacciRepr_nil`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-tribonacci-repr-nil).
 
 ## A Tribonacci representation of nine
 
@@ -48,7 +48,7 @@ $9 = T_6 + T_4 = 7 + 2$, the paper's example $(9)_T = 1010$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 2.3.
 
-Formalized by `MetaMathlibExt.isTribonacciRepr_nine`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-tribonacci-repr-nine).
+Formalized by `MetaMathlibExt.isTribonacciRepr_nine`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-tribonacci-repr-nine).
 
 ## Duchêne–Rigo: letters of the Tribonacci word from Tribonacci representations
 
@@ -65,7 +65,7 @@ This is the paper's statement about the $n$-th letter, with $m = n - 1$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Theorem 1 (quoting Duchêne and Rigo 2008) (`jis-2025-25.5.4-thm-1`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciWord_eq_of_isTribonacciRepr` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-word-eq-of-is-tribonacci-repr).
+Stated but not proved: `MetaMathlibExt.tribonacciWord_eq_of_isTribonacciRepr` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-word-eq-of-is-tribonacci-repr).
 
 ## Tribonacci approximation error bound
 
@@ -80,7 +80,7 @@ $$|T_{n+1} - \alpha T_n| < \frac{2 \alpha^{-n/2}}{|\beta - \gamma|}.$$
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 2 (`jis-2025-25.5.4-lem-2`).
 
-Stated but not proved: `MetaMathlibExt.abs_tribonacci_succ_sub_mul_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#abs-tribonacci-succ-sub-mul-lt).
+Stated but not proved: `MetaMathlibExt.abs_tribonacci_succ_sub_mul_lt` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#abs-tribonacci-succ-sub-mul-lt).
 
 ## Tribonacci differences do not keep one strict sign for three steps
 
@@ -94,7 +94,7 @@ negative.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 3 (`jis-2025-25.5.4-prop-3`).
 
-Stated but not proved: `MetaMathlibExt.tribonacci_succ_sub_mul_sign_changes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-sub-mul-sign-changes).
+Stated but not proved: `MetaMathlibExt.tribonacci_succ_sub_mul_sign_changes` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 92](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L92). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-sub-mul-sign-changes).
 
 ## Growth of the first column of the Trithoff array
 
@@ -110,7 +110,7 @@ The limit equals $(\alpha^2 + 1) / 2$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 6 (`jis-2025-25.5.4-prop-6`).
 
-Stated but not proved: `MetaMathlibExt.tendsto_trithoff_first_column_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tendsto-trithoff-first-column-div).
+Stated but not proved: `MetaMathlibExt.tendsto_trithoff_first_column_div` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tendsto-trithoff-first-column-div).
 
 ## Sums of Fibternary and Tribternary numbers
 
@@ -124,7 +124,7 @@ may be $0$ and need not be distinct).
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 21 (`jis-2025-25.5.4-prop-21`).
 
-Stated but not proved: `MetaMathlibExt.exists_fibternary_sum_four_and_tribternary_sum_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-fibternary-sum-four-and-tribterna).
+Stated but not proved: `MetaMathlibExt.exists_fibternary_sum_four_and_tribternary_sum_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-fibternary-sum-four-and-tribterna).
 
 ## Fibternary multiples
 
@@ -136,7 +136,7 @@ of $m$ are both $1$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 22 (`jis-2025-25.5.4-prop-22`).
 
-Stated but not proved: `MetaMathlibExt.exists_fibternary_multiple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-fibternary-multiple).
+Stated but not proved: `MetaMathlibExt.exists_fibternary_multiple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 131](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L131). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-fibternary-multiple).
 
 ## Tribbinary and Tribternary multiples
 
@@ -149,7 +149,7 @@ Tribternary number).
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Corollary 23 (`jis-2025-25.5.4-cor-23`).
 
-Stated but not proved: `MetaMathlibExt.exists_tribbinary_and_tribternary_multiple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-tribbinary-and-tribternary-multip).
+Stated but not proved: `MetaMathlibExt.exists_tribbinary_and_tribternary_multiple` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 141](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L141). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-tribbinary-and-tribternary-multip).
 
 ## Tribonacci value of a digit word
 
@@ -167,7 +167,7 @@ significant digit $0$ is the Tribonacci successor $\mathrm{out}(n)$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Sections 2.3, 5 and 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciValue`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value).
+Formalized by `MetaMathlibExt.tribonacciValue`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 156](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L156). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value).
 
 ## The empty digit word has Tribonacci value zero
 
@@ -178,7 +178,7 @@ digit word is $0$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 2.3.
 
-Formalized by `MetaMathlibExt.tribonacciValue_nil`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-nil).
+Formalized by `MetaMathlibExt.tribonacciValue_nil`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-nil).
 
 ## The non-canonical Tribonacci word $1110$ has value $13$
 
@@ -191,7 +191,7 @@ non-canonical representation: its digits are $0$ and $1$ but it has three consec
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 5.
 
-Formalized by `MetaMathlibExt.tribonacciValue_one_one_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-one-one-one-zero).
+Formalized by `MetaMathlibExt.tribonacciValue_one_one_one_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 172](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L172). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-one-one-one-zero).
 
 ## The improper Tribonacci word $1030$ has value $13$
 
@@ -204,7 +204,7 @@ example of an improper representation, with a digit larger than $1$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciValue_one_zero_three_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-one-zero-three-zero).
+Formalized by `MetaMathlibExt.tribonacciValue_one_zero_three_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 180](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L180). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-one-zero-three-zero).
 
 ## Indices used by records of the Tribonacci successor
 
@@ -223,7 +223,7 @@ is a positive record, and $T_{i+4} - \alpha T_{i+3} < 0$ when $n$ is a negative 
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 4, part 1 and its negative analogue (`jis-2025-25.5.4-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciSucc_record_indices` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-record-indices).
+Stated but not proved: `MetaMathlibExt.tribonacciSucc_record_indices` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-record-indices).
 
 ## Partial sums along the positive and negative indices are records
 
@@ -244,7 +244,7 @@ a negative record.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 4, part 2 and its negative analogue (`jis-2025-25.5.4-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciSucc_record_of_partial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-record-of-partial-sum).
+Stated but not proved: `MetaMathlibExt.tribonacciSucc_record_of_partial_sum` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 211](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L211). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-record-of-partial-sum).
 
 ## Late records use $T_{P(t)}$ and $T_{Q(t)}$
 
@@ -271,7 +271,7 @@ only indices $i$ with $T_{i+1} - \alpha T_i < 0$ (Proposition 4, part 1).
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 4, part 3 (`jis-2025-25.5.4-prop-4`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciSucc_record_eventually_contains` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-record-eventually-contai).
+Stated but not proved: `MetaMathlibExt.tribonacciSucc_record_eventually_contains` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 233](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L233). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-succ-record-eventually-contai).
 
 ## Row numbers of the Trithoff array
 
@@ -291,7 +291,7 @@ displayed values $0, 1, 2, 3, 6, 11, \dots$ are used.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 7 (`jis-2025-25.5.4-lem-7`).
 
-Stated but not proved: `MetaMathlibExt.trithoff_row_number_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-row-number-eq).
+Stated but not proved: `MetaMathlibExt.trithoff_row_number_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 253](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L253). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-row-number-eq).
 
 ## Differences along a Trithoff row
 
@@ -314,7 +314,7 @@ $[b]_T$ is the difference of two consecutive entries of that row.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 8 (`jis-2025-25.5.4-prop-8`).
 
-Stated but not proved: `MetaMathlibExt.exists_trithoff_row_difference_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-trithoff-row-difference-eq).
+Stated but not proved: `MetaMathlibExt.exists_trithoff_row_difference_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 267](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L267). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#exists-trithoff-row-difference-eq).
 
 ## Appending a zero to a non-canonical Tribonacci representation
 
@@ -331,7 +331,7 @@ $\mathrm{out}(n) = [v0]_T$ of $n$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 12 (`jis-2025-25.5.4-lem-12`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciValue_cons_zero_of_noncanonical` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-cons-zero-of-noncanonic).
+Stated but not proved: `MetaMathlibExt.tribonacciValue_cons_zero_of_noncanonical` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 281](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L281). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-value-cons-zero-of-noncanonic).
 
 ## Precolumns of the Trithoff array
 
@@ -347,7 +347,7 @@ Then $W = [abc]_T + 1$, $S = [ab]_T + c$, and the pre-seed $n - W - S$ equals $[
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 13 (`jis-2025-25.5.4-lem-13`).
 
-Stated but not proved: `MetaMathlibExt.trithoff_precolumns` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-precolumns).
+Stated but not proved: `MetaMathlibExt.trithoff_precolumns` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 294](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L294). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-precolumns).
 
 ## Wall, seed and pre-seed of the Trithoff array via the Tribonacci word
 
@@ -370,7 +370,7 @@ position $m$ holds $a$ or $b$ and exactly twice if it holds $c$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Theorem 14 (`jis-2025-25.5.4-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.trithoff_wall_seed_preseed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-wall-seed-preseed).
+Stated but not proved: `MetaMathlibExt.trithoff_wall_seed_preseed` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 315](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L315). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-wall-seed-preseed).
 
 ## Gaps in the first column of the Trithoff array
 
@@ -387,7 +387,7 @@ The paper identifies these sums $p_a(k) + p_b(k)$, that is A003144 + A003145, wi
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Proposition 11 (`jis-2025-25.5.4-prop-11`).
 
-Stated but not proved: `MetaMathlibExt.trithoff_first_column_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-first-column-sub).
+Stated but not proved: `MetaMathlibExt.trithoff_first_column_sub` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 339](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L339). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#trithoff-first-column-sub).
 
 ## ExtraTribs
 
@@ -400,7 +400,7 @@ positive: there is an integer $N$ with $S(n) > 0$ for all $n \ge N$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 4.
 
-Formalized by `MetaMathlibExt.IsExtraTrib`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-extra-trib).
+Formalized by `MetaMathlibExt.IsExtraTrib`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 357](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L357). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#is-extra-trib).
 
 ## The zero sequence is not an extraTrib
 
@@ -411,7 +411,7 @@ $\mathbb{Z}$ is not an extraTrib.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 4.
 
-Formalized by `MetaMathlibExt.not_isExtraTrib_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#not-is-extra-trib-zero).
+Formalized by `MetaMathlibExt.not_isExtraTrib_zero`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 365](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L365). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#not-is-extra-trib-zero).
 
 ## Difference-inverses of extraTribs
 
@@ -427,7 +427,7 @@ every $n \in \mathbb{Z}$, $S(n)$ is even exactly when $(n - k) \bmod 4$ is $0$ o
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Theorem 9 (`jis-2025-25.5.4-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.extraTrib_difference_inverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-difference-inverse).
+Stated but not proved: `MetaMathlibExt.extraTrib_difference_inverse` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 376](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L376). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-difference-inverse).
 
 ## ExtraTribs cannot be inverted forever
 
@@ -440,7 +440,7 @@ is, $S_{k+1}(n+1) - S_{k+1}(n) = S_k(n)$ for all $n \in \mathbb{Z}$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Theorem 10 (`jis-2025-25.5.4-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.extraTrib_not_infinitely_invertible` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-not-infinitely-invertible).
+Stated but not proved: `MetaMathlibExt.extraTrib_not_infinitely_invertible` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 388](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L388). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-not-infinitely-invertible).
 
 ## Row numbers of divisible extraTribs
 
@@ -458,7 +458,7 @@ Trithoff array, then $r + 1 \equiv 1 \pmod{n}$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Theorem 18 (`jis-2025-25.5.4-thm-18`).
 
-Stated but not proved: `MetaMathlibExt.extraTrib_row_number_modEq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-row-number-mod-eq-one).
+Stated but not proved: `MetaMathlibExt.extraTrib_row_number_modEq_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 399](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L399). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-row-number-mod-eq-one).
 
 ## Signs of an extraTrib to the left
 
@@ -470,7 +470,7 @@ $S(n)$, $S(n+1)$, $S(n+2)$ are neither all positive nor all negative.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 19 (`jis-2025-25.5.4-lem-19`).
 
-Stated but not proved: `MetaMathlibExt.extraTrib_left_extension` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-left-extension).
+Stated but not proved: `MetaMathlibExt.extraTrib_left_extension` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 411](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L411). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#extra-trib-left-extension).
 
 ## The reversal of an extraTrib is not an extraTrib
 
@@ -481,7 +481,7 @@ is an extraTrib, then the sequence $n \mapsto |S(-n)|$ is not an extraTrib.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Theorem 20 (`jis-2025-25.5.4-thm-20`).
 
-Stated but not proved: `MetaMathlibExt.not_isExtraTrib_reversal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#not-is-extra-trib-reversal).
+Stated but not proved: `MetaMathlibExt.not_isExtraTrib_reversal` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 420](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L420). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#not-is-extra-trib-reversal).
 
 ## Leftmost carrying
 
@@ -495,7 +495,7 @@ leaves the other digits unchanged; it is undefined when there is no such $k$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciLeftmostCarry`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-leftmost-carry).
+Formalized by `MetaMathlibExt.tribonacciLeftmostCarry`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 434](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L434). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-leftmost-carry).
 
 ## Leftmost carrying of $0111$
 
@@ -506,7 +506,7 @@ significant digit first, to $1000$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 5.
 
-Formalized by `MetaMathlibExt.tribonacciLeftmostCarry_zero_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-leftmost-carry-zero-one-one-o).
+Formalized by `MetaMathlibExt.tribonacciLeftmostCarry_zero_one_one_one`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 448](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L448). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-leftmost-carry-zero-one-one-o).
 
 ## Weight of an improper word
 
@@ -520,7 +520,7 @@ digits of $v$ that come after the last $0$ of $v$ before position $p$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciImproperWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-improper-weight).
+Formalized by `MetaMathlibExt.tribonacciImproperWeight`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 458](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L458). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-improper-weight).
 
 ## Weight of the improper word $010113$
 
@@ -531,7 +531,7 @@ first, has weight $1 + 1 + 3 = 5$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciImproperWeight_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-improper-weight-example).
+Formalized by `MetaMathlibExt.tribonacciImproperWeight_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 468](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L468). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-improper-weight-example).
 
 ## One step of Tribonacci canonization
 
@@ -550,7 +550,7 @@ $01a0cd \mapsto 10(a-2)0(c+1)(d+1)$. All other digits of $v$ are unchanged.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciCanonizationStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-step).
+Formalized by `MetaMathlibExt.tribonacciCanonizationStep`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 481](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L481). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-step).
 
 ## Canonization run
 
@@ -564,7 +564,7 @@ run of at most $n - 1$ steps on the result, and it is undefined when that step i
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciCanonizationRun`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run).
+Formalized by `MetaMathlibExt.tribonacciCanonizationRun`, a definition declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 501](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L501). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run).
 
 ## Canonizing $2000000$
 
@@ -580,7 +580,7 @@ produces the result.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Section 6.1.
 
-Formalized by `MetaMathlibExt.tribonacciCanonizationRun_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run-example).
+Formalized by `MetaMathlibExt.tribonacciCanonizationRun_example`, a theorem declared in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 512](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L512). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run-example).
 
 ## Leftmost carrying does not move the improper boundary left or raise the weight
 
@@ -594,7 +594,7 @@ least its position in $0w$, and the weight of $u$ is at most the weight of $w$.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Lemma 15 (`jis-2025-25.5.4-lem-15`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciLeftmostCarry_boundary_weight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-leftmost-carry-boundary-weigh).
+Stated but not proved: `MetaMathlibExt.tribonacciLeftmostCarry_boundary_weight` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 523](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L523). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-leftmost-carry-boundary-weigh).
 
 ## Termination of the canonization procedure
 
@@ -608,7 +608,7 @@ digits are all $0$ or $1$ and which has no three consecutive $1$s.
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Theorem 16 (`jis-2025-25.5.4-thm-16`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciCanonizationRun_terminates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run-terminates).
+Stated but not proved: `MetaMathlibExt.tribonacciCanonizationRun_terminates` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 535](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L535). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run-terminates).
 
 ## Canonizing a word followed by zeros
 
@@ -622,7 +622,7 @@ of the canonization procedure on $w 0^k$ ($w$ followed by $k$ zeros) yields $v 0
 
 - E. Chen et al., *Generalizing the Wythoff Array and Other Fibonacci Facts to Tribonacci Numbers*, Journal of Integer Sequences 28 (2025), Article 25.5.4, Corollary 17 (`jis-2025-25.5.4-cor-17`).
 
-Stated but not proved: `MetaMathlibExt.tribonacciCanonizationRun_append_zeros` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run-append-zeros).
+Stated but not proved: `MetaMathlibExt.tribonacciCanonizationRun_append_zeros` is written with `theorem_wanted` in [WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean, line 546](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Enumerative/TribonacciWythoffWanted.lean#L546). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html#tribonacci-canonization-run-append-zeros).
 
 ## Depends on
 
@@ -631,4 +631,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Tribonacci representations and the Trithoff array](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/automatic-sequences/tribonacci-representations-and-the-trithoff-arra)

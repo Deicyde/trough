@@ -8,7 +8,7 @@ proof: formalized
 
 # Curtis–Hedlund–Lyndon theorem
 
-2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/index.html).
+2 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/index.html).
 
 ## Curtis–Hedlund–Lyndon theorem with an arbitrary discrete output alphabet
 
@@ -22,7 +22,7 @@ $F(x)_n = \varphi(x_{n-r}, \dots, x_{n+r})$ for all $x \in A^{\mathbb{Z}}$ and $
 if and only if $F$ is continuous and commutes with every shift: $F(\sigma^k x) = \sigma^k F(x)$
 for all $x \in A^{\mathbb{Z}}$ and $k \in \mathbb{Z}$.
 
-Formalized by `MetaMathlibExt.curtis_hedlund_lyndon_general`, a theorem declared in [MathlibExt/Dynamics/CurtisHedlundLyndon.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Dynamics/CurtisHedlundLyndon.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/index.html#curtis-hedlund-lyndon-general).
+Formalized by `MetaMathlibExt.curtis_hedlund_lyndon_general`, a theorem declared in [MathlibExt/Dynamics/CurtisHedlundLyndon.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Dynamics/CurtisHedlundLyndon.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/index.html#curtis-hedlund-lyndon-general).
 
 ## Curtis–Hedlund–Lyndon theorem
 
@@ -40,7 +40,7 @@ for all $x \in A^{\mathbb{Z}}$ and $k \in \mathbb{Z}$.
 
 - https://en.wikipedia.org/wiki/Curtis%E2%80%93Hedlund%E2%80%93Lyndon_theorem (statement id `curtis-hedlund-s1`).
 
-Formalized by `MetaMathlibExt.curtis_hedlund_lyndon`, a theorem declared in [MathlibExt/Dynamics/CurtisHedlundLyndon.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Dynamics/CurtisHedlundLyndon.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/index.html#curtis-hedlund-lyndon).
+Formalized by `MetaMathlibExt.curtis_hedlund_lyndon`, a theorem declared in [MathlibExt/Dynamics/CurtisHedlundLyndon.lean, line 161](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Dynamics/CurtisHedlundLyndon.lean#L161). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/index.html#curtis-hedlund-lyndon).
 
 ## Depends on
 
@@ -49,4 +49,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Curtis–Hedlund–Lyndon theorem](https://deicyde.github.io/atlas-lean/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Dynamics/topological-symbolic-dynamics/curtis-hedlund-lyndon-theorem)

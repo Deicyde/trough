@@ -7,7 +7,7 @@ statement: formalized
 
 # Beatty sequences
 
-20 results, 7 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html).
+20 results, 7 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html).
 
 ## Beatty term
 
@@ -16,7 +16,7 @@ $b_n(\alpha)$ is the natural number $\max(\lfloor n/\alpha \rfloor, 0)$: the $n$
 $\lfloor n \cdot (1/\alpha) \rfloor$ of the Beatty sequence of slope $1/\alpha$, truncated at
 $0$. Division by zero is read as $0$, so $b_n(0) = 0$.
 
-Formalized by `MetaMathlibExt.beattyTerm`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-term).
+Formalized by `MetaMathlibExt.beattyTerm`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-term).
 
 ## Beatty term as a natural-number floor
 
@@ -25,7 +25,7 @@ number $\alpha$, the Beatty term $b_n(\alpha)$ equals the natural-number floor o
 the largest natural number $m$ with $m \le n/\alpha$ when $n/\alpha \ge 0$, and $0$ when
 $n/\alpha < 0$. Division by zero is read as $0$, so $n/0 = 0$.
 
-Formalized by `MetaMathlibExt.beattyTerm_eq_floor`, a theorem declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-term-eq-floor).
+Formalized by `MetaMathlibExt.beattyTerm_eq_floor`, a theorem declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-term-eq-floor).
 
 ## Almost Beatty sequence
 
@@ -35,7 +35,7 @@ $0 < \alpha < 1$, the sequence is strictly increasing, $s_n > 0$ for every $n \g
 there is a natural number $B$ with $|s_n - b_n(\alpha)| \le B$ for every $n \ge 1$, where
 $b_n(\alpha)$ is the Beatty term, equal to $\lfloor n/\alpha \rfloor$ once $\alpha > 0$.
 
-Formalized by `MetaMathlibExt.IsAlmostBeattySequence`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#is-almost-beatty-sequence).
+Formalized by `MetaMathlibExt.IsAlmostBeattySequence`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#is-almost-beatty-sequence).
 
 ## Three-way partition of the positive integers
 
@@ -45,7 +45,7 @@ pairwise disjoint, that is, $s_i(m) \ne s_j(n)$ for all $i \ne j$ and all positi
 and $n$, and the union of their ranges is exactly the set of positive integers: a natural
 number $k$ is a value of some $s_i$ if and only if $k > 0$.
 
-Formalized by `MetaMathlibExt.IsPositiveNatThreeWayPartition`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#is-positive-nat-three-way-partition).
+Formalized by `MetaMathlibExt.IsPositiveNatThreeWayPartition`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#is-positive-nat-three-way-partition).
 
 ## Almost Beatty partition
 
@@ -55,7 +55,7 @@ Beatty partition when, for each $i$, the sequence $s_i$ is an almost Beatty sequ
 $\alpha_i$, and the three sequences form a three-way partition of the positive integers: their
 ranges are pairwise disjoint and their union is the set of positive integers.
 
-Formalized by `MetaMathlibExt.IsAlmostBeattyPartition`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#is-almost-beatty-partition).
+Formalized by `MetaMathlibExt.IsAlmostBeattyPartition`, a definition declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#is-almost-beatty-partition).
 
 ## Beatty sequences are almost Beatty
 
@@ -66,7 +66,7 @@ indexed by the positive integers $n$, is an almost Beatty sequence for $\alpha$.
 The proof takes the bound $B = 0$ and derives strict monotonicity and positivity from
 $0 < \alpha < 1$.
 
-Formalized by `MetaMathlibExt.beattyTerm_isAlmostBeattySequence`, a theorem declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-term-is-almost-beatty-sequence).
+Formalized by `MetaMathlibExt.beattyTerm_isAlmostBeattySequence`, a theorem declared in [MathlibExt/NumberTheory/AlmostBeattyPartition.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/AlmostBeattyPartition.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-term-is-almost-beatty-sequence).
 
 ## Uspensky's theorem on Beatty partitions
 
@@ -83,7 +83,7 @@ No irrationality hypothesis is imposed on the $\alpha_i$.
 
 - A. J. Hildebrand, Xiaomin Li, Junxian Li, and Yun Xie, *Almost Beatty Partitions*, Journal of Integer Sequences 22 (2019), Article 19.4.6, Theorem B (Uspensky's theorem), lines 234–236, <https://cs.uwaterloo.ca/journals/JIS/VOL22/Hildebrand/hilde2.tex>; first proved by Uspensky in 1927 (lines 238–244).
 
-Formalized by `MetaMathlibExt.uspensky_no_partition_into_three_or_more_beatty_sequences`, a theorem declared in [MathlibExt/NumberTheory/Beatty/UspenskyBeattyPartition.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Beatty/UspenskyBeattyPartition.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#uspensky-no-partition-into-three-or-more).
+Formalized by `MetaMathlibExt.uspensky_no_partition_into_three_or_more_beatty_sequences`, a theorem declared in [MathlibExt/NumberTheory/Beatty/UspenskyBeattyPartition.lean, line 489](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Beatty/UspenskyBeattyPartition.lean#L489). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#uspensky-no-partition-into-three-or-more).
 
 ## Beatty's theorem and its converse
 
@@ -100,7 +100,7 @@ integers.
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Theorem 1 (Beatty–Rayleigh).
 
-Stated but not proved: `MetaMathlibExt.beatty_complementary_iff_irrational_inv_add_inv` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-complementary-iff-irrational-inv).
+Stated but not proved: `MetaMathlibExt.beatty_complementary_iff_irrational_inv_add_inv` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-complementary-iff-irrational-inv).
 
 ## Counting $\beta$-Beatty terms between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
@@ -116,7 +116,7 @@ By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then compl
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.beatty_card_compl_between_eq_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-compl-between-eq-floor).
+Stated but not proved: `MetaMathlibExt.beatty_card_compl_between_eq_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-compl-between-eq-floor).
 
 ## Counting $\alpha$-Beatty terms between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
@@ -132,7 +132,7 @@ By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then compl
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.beatty_card_self_between_eq_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-self-between-eq-floor).
+Stated but not proved: `MetaMathlibExt.beatty_card_self_between_eq_floor` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 63](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L63). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-self-between-eq-floor).
 
 ## Polanco's floor identity for $\lfloor (2 - \alpha) n \rfloor$
 
@@ -155,7 +155,7 @@ complementary Beatty sequences.
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Theorem 5, identity (7).
 
-Stated but not proved: `MetaMathlibExt.beatty_floor_inv_sub_eq_floor_two_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-inv-sub-eq-floor-two-sub).
+Stated but not proved: `MetaMathlibExt.beatty_floor_inv_sub_eq_floor_two_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-inv-sub-eq-floor-two-sub).
 
 ## Polanco's floor identity for $\lfloor (\beta - 2) n \rfloor$
 
@@ -177,7 +177,7 @@ complementary Beatty sequences.
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Theorem 5, identity (8).
 
-Stated but not proved: `MetaMathlibExt.beatty_floor_inv_sub_eq_floor_sub_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-inv-sub-eq-floor-sub-two).
+Stated but not proved: `MetaMathlibExt.beatty_floor_inv_sub_eq_floor_sub_two` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-inv-sub-eq-floor-sub-two).
 
 ## The $\beta$-Beatty counts between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$ form a Beatty sequence
 
@@ -194,7 +194,7 @@ By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then compl
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.beatty_card_compl_between_isBeatty` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-compl-between-is-beatty).
+Stated but not proved: `MetaMathlibExt.beatty_card_compl_between_isBeatty` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 96](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L96). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-compl-between-is-beatty).
 
 ## Multiplicities of the values of $\lfloor n\alpha\rfloor$ for $1/(k + 1) < \alpha < 1/k$
 
@@ -207,7 +207,7 @@ it is exactly $k$, and there are infinitely many $t$ for which it is exactly $k 
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_eq_or_eq_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-eq-or-eq-succ).
+Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_eq_or_eq_succ` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-eq-or-eq-succ).
 
 ## Multiplicity $k + 1$ for $\alpha$ is multiplicity $k$ for $\alpha/(1 - \alpha)$
 
@@ -221,7 +221,7 @@ $k$ positive integers $n$.
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 2.
 
-Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_succ_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-succ-iff).
+Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_succ_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 121](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L121). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-succ-iff).
 
 ## The values of $\lfloor n\alpha\rfloor$ of each multiplicity form Beatty sets
 
@@ -237,7 +237,7 @@ $\lfloor m\delta\rfloor$ for positive integers $m$.
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_sets_isBeatty` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-sets-is-beatty).
+Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_sets_isBeatty` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 132](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L132). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-sets-is-beatty).
 
 ## Multiplicities of $\lfloor n\alpha\rfloor$ are $k$ plus the indicator of a Beatty set
 
@@ -252,7 +252,7 @@ and for exactly $k$ positive integers $n$ if $t \notin D$.
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_eq_add_indicator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-eq-add-indicator).
+Stated but not proved: `MetaMathlibExt.beatty_floor_fiber_card_eq_add_indicator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 146](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L146). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-floor-fiber-card-eq-add-indicator).
 
 ## Increments of the $\beta$-Beatty counts between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
@@ -270,7 +270,7 @@ By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then compl
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.beatty_card_compl_between_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-compl-between-succ-sub).
+Stated but not proved: `MetaMathlibExt.beatty_card_compl_between_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 157](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L157). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-compl-between-succ-sub).
 
 ## Increments of the $\alpha$-Beatty counts between $\lfloor n\alpha\rfloor$ and $\lfloor n\beta\rfloor$
 
@@ -289,7 +289,7 @@ By Beatty's theorem, the Beatty sequences of $\alpha$ and $\beta$ are then compl
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.beatty_card_self_between_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-self-between-succ-sub).
+Stated but not proved: `MetaMathlibExt.beatty_card_self_between_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 171](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L171). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-card-self-between-succ-sub).
 
 ## Multiplicities of Polanco's skipping sequence
 
@@ -312,7 +312,7 @@ or zero.
 
 - Geremias Polanco, *Decomposition of Beatty and Complementary Sequences*, INTEGERS 25 (2025), Article A104, Lemma 6.
 
-Stated but not proved: `MetaMathlibExt.beatty_skipping_card_eq_add_indicator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-skipping-card-eq-add-indicator).
+Stated but not proved: `MetaMathlibExt.beatty_skipping_card_eq_add_indicator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BeattyDecompositionWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BeattyDecompositionWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html#beatty-skipping-card-eq-add-indicator).
 
 ## Depends on
 
@@ -321,4 +321,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Beatty sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-approximation/uniform-distribution-metric/beatty-sequences)

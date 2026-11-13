@@ -7,7 +7,7 @@ statement: formalized
 
 # Ranks of the elliptic curves y² = x³ − 2pqx
 
-5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html).
+5 results, 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html).
 
 ## Multivariable Hensel lemma over the p-adic integers
 
@@ -21,7 +21,7 @@ there is a point $x \in \mathbb{Z}_p^n$ with $f(x) = 0$.
 
 - Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Lemma 1, quoted there as Hensel's lemma.
 
-Stated but not proved: `MetaMathlibExt.exists_mvPolynomial_eval_eq_zero_of_norm_lt_norm_pderiv_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#exists-mv-polynomial-eval-eq-zero-of-nor).
+Stated but not proved: `MetaMathlibExt.exists_mvPolynomial_eval_eq_zero_of_norm_lt_norm_pderiv_sq` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#exists-mv-polynomial-eval-eq-zero-of-nor).
 
 ## Odd-rank curves y² = x³ − 2pqx: rank one cases
 
@@ -39,7 +39,7 @@ interchanged is the same curve.
 
 - Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 1 (i).
 
-Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-one).
+Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_one` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-one).
 
 ## Odd-rank curves y² = x³ − 2pqx: rank one or three cases
 
@@ -56,7 +56,7 @@ The odd-rank hypothesis stands for the parity conjecture for $E$.
 
 - Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 1 (ii).
 
-Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_one_or_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-one-or-thre).
+Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_one_or_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-one-or-thre).
 
 ## Odd-rank curves y² = x³ − 2pqx: rank one, three or five case
 
@@ -71,7 +71,7 @@ The odd-rank hypothesis stands for the parity conjecture for $E$.
 
 - Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 1 (iii).
 
-Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_one_or_three_or_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-one-or-thre-2).
+Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_one_or_three_or_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-one-or-thre-2).
 
 ## Odd-rank curves y² = x³ − 2pqx: a rank three family
 
@@ -86,7 +86,7 @@ The odd-rank hypothesis stands for the parity conjecture for $E$.
 
 - Renz Jimwel Mina and Jerico Bacani, *Rank of the Elliptic Curve y^2=x^3-2pqx*, INTEGERS 26 (2026), Article A51, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-three).
+Stated but not proved: `MetaMathlibExt.finrank_point_two_mul_mul_eq_three` is written with `theorem_wanted` in [WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean, line 99](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/EllipticCurveTwoPQRankWanted.lean#L99). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html#finrank-point-two-mul-mul-eq-three).
 
 ## Depends on
 
@@ -95,4 +95,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Ranks of the elliptic curves y² = x³ − 2pqx](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-geometry/ranks-of-the-elliptic-curves-y-x-2pqx)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Roots in braid groups
 
-4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html).
+4 results, 3 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html).
 
 ## Artin's braid relators
 
@@ -18,7 +18,7 @@ $\sigma_i \sigma_j \sigma_i^{-1} \sigma_j^{-1}$ for $0 \le i$ and $i + 2 \le j \
 words $\sigma_i \sigma_{i+1} \sigma_i (\sigma_{i+1} \sigma_i \sigma_{i+1})^{-1}$ for
 $0 \le i \le n - 3$.
 
-Formalized by `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.braidRelators`, a definition declared in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-relators).
+Formalized by `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.braidRelators`, a definition declared in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 40](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L40). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-relators).
 
 ## The braid group $B_n$ by Artin's presentation
 
@@ -28,7 +28,7 @@ relations $\sigma_i \sigma_j = \sigma_j \sigma_i$ for $j \ge i + 2$ and
 $\sigma_i \sigma_{i+1} \sigma_i = \sigma_{i+1} \sigma_i \sigma_{i+1}$ for $0 \le i \le n - 3$; it is
 the trivial group when $n \le 1$.
 
-Formalized by `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.BraidGroup`, an abbreviation declared in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-group).
+Formalized by `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.BraidGroup`, an abbreviation declared in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-group).
 
 ## Makanin's root-uniqueness question for braid groups
 
@@ -37,7 +37,7 @@ number $n$ and every integer $k \ge 1$, any two elements $\alpha, \beta$ of the 
 $n$ strands with $\alpha^k = \beta^k$ are conjugate in $B_n$. This is Kourovka Problem 10.23
 (G. S. Makanin).
 
-Formalized by `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.braidRootsUniqueUpToConjugacy`, a definition declared in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-roots-unique-up-to-conjugacy).
+Formalized by `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.braidRootsUniqueUpToConjugacy`, a definition declared in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-roots-unique-up-to-conjugacy).
 
 ## Roots in braid groups are unique up to conjugacy (González-Meneses)
 
@@ -50,7 +50,7 @@ Kourovka Problem 10.23 (G. S. Makanin) affirmatively.
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 10.23 (G. S. Makanin); resolution: J. González-Meneses, The nth root of a braid is unique up to conjugacy, Algebr. Geom. Topol. 3 (2003), 1103-1118, main theorem; Kourovka Archive, Problem 10.23 ("Yes, it is true"), https://doi.org/10.2140/agt.2003.3.1103.
 
-Stated but not proved: `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.braidRootsUniqueUpToConjugacy_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-roots-unique-up-to-conjugacy-holds).
+Stated but not proved: `MathlibExt.GroupTheory.BraidRootsConjugateKourovka10Problem23Wanted.braidRootsUniqueUpToConjugacy_holds` is written with `theorem_wanted` in [WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/BraidRootsConjugateKourovka10Problem23Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html#braid-roots-unique-up-to-conjugacy-holds).
 
 ## Depends on
 
@@ -59,4 +59,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Roots in braid groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/presentations-and-decision-problems/braid-and-artin/roots-in-braid-groups)

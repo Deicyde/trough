@@ -7,7 +7,7 @@ statement: formalized
 
 # Sets with square pairwise sums
 
-16 results, 2 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html).
+16 results, 2 proved and 14 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html).
 
 ## Families whose pairwise sums are squares
 
@@ -17,7 +17,7 @@ arbitrary types $I$ and $J$. They have all pairwise sums square when, for every 
 $j \in J$, the sum $a_i + b_j$ is a square in $\alpha$, that is, $a_i + b_j = c \cdot c$ for some
 $c \in \alpha$.
 
-Formalized by `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.PairwiseSumsSquares`, a definition declared in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares).
+Formalized by `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.PairwiseSumsSquares`, a definition declared in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares).
 
 ## Semi-magic matrix of squares
 
@@ -26,7 +26,7 @@ squares when the matrix $(e_{ij}^2)$ of its squared entries is semi-magic: there
 $S$ such that $\sum_{j=1}^{3} e_{ij}^2 = S$ for every row $i$ and $\sum_{i=1}^{3} e_{ij}^2 = S$ for
 every column $j$.
 
-Formalized by `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.IsSemiMagicRoots`, a definition declared in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#is-semi-magic-roots).
+Formalized by `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.IsSemiMagicRoots`, a definition declared in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#is-semi-magic-roots).
 
 ## Scaling rational families with square pairwise sums to integers
 
@@ -41,7 +41,7 @@ of an integer.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Lemma 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_int_pairwiseSumsSquares_scale_translate` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-int-pairwise-sums-squares-scale-t).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_int_pairwiseSumsSquares_scale_translate` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-int-pairwise-sums-squares-scale-t).
 
 ## Triples with square pairwise sums from a semi-magic square of squares
 
@@ -55,7 +55,7 @@ $a_i + b_j$ is a perfect square for all $i, j \in \{1, 2, 3\}$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_of_isSemiMagicRoots` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-of-is-semi).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_of_isSemiMagicRoots` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 85](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L85). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-of-is-semi).
 
 ## Triples with square pairwise sums come from semi-magic squares
 
@@ -71,7 +71,7 @@ $e_{33}^2 = a_3 + b_2$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_isSemiMagicRoots_of_pairwiseSumsSquares_triple` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-is-semi-magic-roots-of-pairwise-s).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_isSemiMagicRoots_of_pairwiseSumsSquares_triple` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-is-semi-magic-roots-of-pairwise-s).
 
 ## Five integers with square sums from two semi-magic squares of squares
 
@@ -87,7 +87,7 @@ all $1 \le i \le 5$ and $1 \le j \le 3$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quintuple_of_isSemiMagicRoots` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quintuple-of-is-se).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quintuple_of_isSemiMagicRoots` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quintuple-of-is-se).
 
 ## Quintuple extensions come from a second semi-magic square
 
@@ -104,7 +104,7 @@ $f_{22}^2 = e_{22}^2$, $f_{33}^2 = e_{33}^2$, $a_4 = f_{13}^2$ and $a_5 = f_{31}
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_isSemiMagicRoots_f_of_pairwiseSumsSquares_quintuple` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-is-semi-magic-roots-f-of-pairwise).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_isSemiMagicRoots_f_of_pairwiseSumsSquares_quintuple` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-is-semi-magic-roots-f-of-pairwise).
 
 ## Extending the triples to quadruples with square pairwise sums
 
@@ -121,7 +121,7 @@ $a_i + b_j$ is the square of an integer for all $1 \le i, j \le 4$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_of_isSemiMagicRoots` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-of-is-se).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_of_isSemiMagicRoots` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-of-is-se).
 
 ## Quadruple extensions come from two further semi-magic squares
 
@@ -140,7 +140,7 @@ $a_4 = g_{22}^2$ and $b_4 = g_{11}^2 - g_{22}^2$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Lemma 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_isSemiMagicRoots_gh_of_pairwiseSumsSquares_quadruple` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-is-semi-magic-roots-gh-of-pairwis).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.exists_isSemiMagicRoots_gh_of_pairwiseSumsSquares_quadruple` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#exists-is-semi-magic-roots-gh-of-pairwis).
 
 ## Four-parameter triples with square pairwise sums, family (3.1)
 
@@ -153,7 +153,7 @@ square for all $i, j \in \{1, 2, 3\}$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_family31` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-family31).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_family31` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-family31).
 
 ## Four-parameter triples with square pairwise sums, family (3.2)
 
@@ -168,7 +168,7 @@ $i, j \in \{1, 2, 3\}$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_family32` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-family32).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_family32` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 209](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L209). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-family32).
 
 ## Four-parameter triples with square pairwise sums, family (3.3)
 
@@ -181,7 +181,7 @@ is a perfect square for all $i, j \in \{1, 2, 3\}$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Theorem 1.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_family33` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-family33).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_triple_family33` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 226](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L226). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-triple-family33).
 
 ## A seven-parameter family of five and three rationals with square pairwise sums
 
@@ -207,7 +207,7 @@ Then $a_i + b_j$ is the square of a rational number for all $1 \le i \le 5$ and 
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Theorem 2.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quintuple_family41` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quintuple-family41).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quintuple_family41` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 240](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L240). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quintuple-family41).
 
 ## A four-parameter family of integer quadruples with square pairwise sums
 
@@ -230,7 +230,7 @@ Then $a_i + b_j$ is the square of an integer for all $1 \le i, j \le 4$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Theorem 3.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_family51` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-family51).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_family51` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 278](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L278). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-family51).
 
 ## First three-parameter family of rational quadruples with square pairwise sums
 
@@ -258,7 +258,7 @@ Then $a_i + b_j$ is the square of a rational number for all $1 \le i, j \le 4$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_family58` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-family58).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_family58` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 324](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L324). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-family58).
 
 ## Second three-parameter family of rational quadruples with square pairwise sums
 
@@ -286,7 +286,7 @@ Then $a_i + b_j$ is the square of a rational number for all $1 \le i, j \le 4$.
 
 - Ajai Choudhry, "Two Sets of Integers Such That All Elements of the Sumset of the Two Sets Are Perfect Squares", Theorem 4.
 
-Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_family59` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-family59).
+Stated but not proved: `MathlibExt.NumberTheory.TwoSetsSumsetSquaresWanted.pairwiseSumsSquares_quadruple_family59` is written with `theorem_wanted` in [WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean, line 366](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/TwoSetsSumsetSquaresWanted.lean#L366). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html#pairwise-sums-squares-quadruple-family59).
 
 ## Depends on
 
@@ -295,4 +295,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sets with square pairwise sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/diophantine-equations/diophantine-tuples-egyptian/sets-with-square-pairwise-sums)

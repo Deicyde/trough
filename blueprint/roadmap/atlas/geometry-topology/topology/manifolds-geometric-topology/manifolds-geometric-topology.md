@@ -7,7 +7,7 @@ statement: formalized
 
 # Manifolds and geometric topology: its own results
 
-3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html).
+3 results, 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html).
 
 Topological and smooth manifolds in low and high dimensions: surfaces, 3- and 4-manifolds, the Poincaré conjecture, exotic spheres, triangulations, diffeomorphism groups and transformation groups.
 
@@ -26,7 +26,7 @@ has the same image as $e_j$.
 
 - R. Budney and D. Gabai, 'Knotted 3-balls in S⁴', Corollary 8.6, arXiv:1912.09029v3 (2021), https://arxiv.org/abs/1912.09029. Problem `budney_gabai_knotted_three_spheres` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.BudneyGabaiWanted.Topology.budney_gabai_knotted_three_spheres` is written with `theorem_wanted` in [WantedExt/Topology/BudneyGabaiWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/BudneyGabaiWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html#budney-gabai-knotted-three-spheres).
+Stated but not proved: `MathlibExt.Topology.BudneyGabaiWanted.Topology.budney_gabai_knotted_three_spheres` is written with `theorem_wanted` in [WantedExt/Topology/BudneyGabaiWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/BudneyGabaiWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html#budney-gabai-knotted-three-spheres).
 
 ## Milnor's exotic 7-sphere
 
@@ -39,7 +39,7 @@ smooth structure.
 
 - J. Milnor, On manifolds homeomorphic to the 7-sphere, Ann. of Math. 64 (1956), 399-405. Problem `milnor_exotic_sphere_seven` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.MilnorExoticSphereSevenWanted.Topology.milnor_exotic_sphere_seven` is written with `theorem_wanted` in [WantedExt/Topology/MilnorExoticSphereSevenWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/MilnorExoticSphereSevenWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html#milnor-exotic-sphere-seven).
+Stated but not proved: `MathlibExt.Topology.MilnorExoticSphereSevenWanted.Topology.milnor_exotic_sphere_seven` is written with `theorem_wanted` in [WantedExt/Topology/MilnorExoticSphereSevenWanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/MilnorExoticSphereSevenWanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html#milnor-exotic-sphere-seven).
 
 ## Pardon's theorem: the p-adic integers cannot act faithfully and continuously on a connected 3-manifold
 
@@ -58,7 +58,7 @@ classical reduction to $\mathbb{Z}_p$-actions, which is not part of this stateme
 
 - John Pardon, 'The Hilbert-Smith conjecture for three-manifolds', Journal of the American Mathematical Society 26 (2013), no. 3, 879-899, Theorem 1.5. https://doi.org/10.1090/S0894-0347-2013-00766-3. Problem `hilbert_smith_padic_dimension_three` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Topology.HilbertSmith3DWanted.Topology.hilbert_smith_padic_dimension_three` is written with `theorem_wanted` in [WantedExt/Topology/HilbertSmith3DWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Topology/HilbertSmith3DWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html#hilbert-smith-padic-dimension-three).
+Stated but not proved: `MathlibExt.Topology.HilbertSmith3DWanted.Topology.hilbert_smith_padic_dimension_three` is written with `theorem_wanted` in [WantedExt/Topology/HilbertSmith3DWanted.lean, line 71](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Topology/HilbertSmith3DWanted.lean#L71). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html#hilbert-smith-padic-dimension-three).
 
 ## Depends on
 
@@ -67,4 +67,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Manifolds and geometric topology](https://deicyde.github.io/atlas-lean/roadmap/Topology/manifolds-geometric-topology/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Topology/manifolds-geometric-topology)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Topology/manifolds-geometric-topology)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Shannon's circuit-size lower bound
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound/index.html).
 
 ## Wire count of a flat circuit
 
@@ -16,7 +16,7 @@ given as a list of gates, is the sum over its gates of the lengths of their pred
 every reference of a gate to a gate index is counted, with multiplicity, while input variables
 and constants contribute nothing and the modulus of a mod gate is not counted.
 
-Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ShannonHardFunction.wireCount`, a definition declared in [WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound/index.html#wire-count).
+Formalized by `MetaMathlibExt.Complexity.KeyTheorems.ShannonHardFunction.wireCount`, a definition declared in [WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound/index.html#wire-count).
 
 ## Shannon: most Boolean functions need exponential circuits
 
@@ -31,7 +31,7 @@ gates or the value of the last gate of $C$ on $x$ differs from $f(x)$.
 
 - C. E. Shannon, "The synthesis of two-terminal switching circuits", Bell System Technical Journal 28 (1949), 59-98.
 
-Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.ShannonHardFunction.shannon_hard_function` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound/index.html#shannon-hard-function).
+Stated but not proved: `MetaMathlibExt.Complexity.KeyTheorems.ShannonHardFunction.shannon_hard_function` is written with `theorem_wanted` in [WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean, line 52](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/KeyTheorems/ShannonHardFunctionWanted.lean#L52). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound/index.html#shannon-hard-function).
 
 ## Depends on
 
@@ -40,4 +40,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Shannon's circuit-size lower bound](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/circuit-complexity/shannon-s-circuit-size-lower-bound)

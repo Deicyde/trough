@@ -8,7 +8,7 @@ proof: formalized
 
 # Sequence transforms and generating functions: its own results
 
-4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html).
+4 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html).
 
 Operators on integer sequences and coefficient extraction: binomial, multiple and falling k-binomial transforms, INVERT and Catalan transforms, hypersequences, convolutions, C-finite sequences, and recovering terms from generating-function values.
 
@@ -44,7 +44,7 @@ In the hypothesis, the terms with $j > k$ vanish because $\binom{k}{j} = 0$ ther
 
 - Paul Barry, "A Catalan Transform and Related Transformations on Integer Sequences", Journal of Integer Sequences 8 (2005), Article 05.4.5, proposition lines 302--311, <https://cs.uwaterloo.ca/journals/JIS/VOL8/Barry/barry84.tex>.
 
-Formalized by `MetaMathlibExt.catalan_transform_pair`, a theorem declared in [MathlibExt/Combinatorics/CatalanTransformPair.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/CatalanTransformPair.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#catalan-transform-pair).
+Formalized by `MetaMathlibExt.catalan_transform_pair`, a theorem declared in [MathlibExt/Combinatorics/CatalanTransformPair.lean, line 777](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/CatalanTransformPair.lean#L777). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#catalan-transform-pair).
 
 ## C-finite polynomial sequences
 
@@ -58,7 +58,7 @@ $$
 a_{n+k+1} = \sum_{i=1}^{k} p_i \, a_{n+i}.
 $$
 
-Formalized by `MetaMathlibExt.IsCFiniteSequence`, a definition declared in [MathlibExt/Combinatorics/Enumerative/CFiniteSequence.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Enumerative/CFiniteSequence.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#is-cfinite-sequence).
+Formalized by `MetaMathlibExt.IsCFiniteSequence`, a definition declared in [MathlibExt/Combinatorics/Enumerative/CFiniteSequence.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Enumerative/CFiniteSequence.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#is-cfinite-sequence).
 
 ## Hadamard product of two Fibonacci-type series
 
@@ -78,7 +78,7 @@ in $R[[x]]$, where the denominator has constant coefficient $1$ and so is invert
 
 - Jong Hyun Kim, "Hadamard Products and Tilings", Journal of Integer Sequences 12 (2009), Article 09.7.4, Theorem `eq:61`, lines 430-437, <https://cs.uwaterloo.ca/journals/JIS/VOL12/Kim/kim18.tex>.
 
-Formalized by `MetaMathlibExt.hadamard_fibonacci_product`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/HadamardFibonacciProduct.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/RingTheory/PowerSeries/HadamardFibonacciProduct.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#hadamard-fibonacci-product).
+Formalized by `MetaMathlibExt.hadamard_fibonacci_product`, a theorem declared in [MathlibExt/RingTheory/PowerSeries/HadamardFibonacciProduct.lean, line 286](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/PowerSeries/HadamardFibonacciProduct.lean#L286). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#hadamard-fibonacci-product).
 
 ## Recovering a sequence term from its generating function
 
@@ -93,7 +93,7 @@ $$t_N = \Bigl\lfloor c^{N^2} \sum_{k \ge 0} t_k \, (c^{-N})^k \Bigr\rfloor \bmod
 
 - M. Prunescu and J. M. Shunia, "On Modular Representations of C-Recursive Integer Sequences", Journal of Integer Sequences 28 (2025), Article 25.5.3, Theorem `ThmExtraction1`, source lines 169–173, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Prunescu/prunescu3.tex>. The paper attributes the result to Prunescu and Sauras-Altuzarra. Only the first representation (for `N ≥ m ≥ 2` with `t j < c ^ (j - 2)`) is recorded, not the `c ≥ 8` variant for all `n ≥ 1`.
 
-Formalized by `MetaMathlibExt.generating_function_term_extraction`, a theorem declared in [MathlibExt/Combinatorics/Sequences/GeneratingFunctionTermExtraction.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Sequences/GeneratingFunctionTermExtraction.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#generating-function-term-extraction).
+Formalized by `MetaMathlibExt.generating_function_term_extraction`, a theorem declared in [MathlibExt/Combinatorics/Sequences/GeneratingFunctionTermExtraction.lean, line 47](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Sequences/GeneratingFunctionTermExtraction.lean#L47). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html#generating-function-term-extraction).
 
 ## Depends on
 
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Sequence transforms and generating functions](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/riordan-arrays-transforms/sequence-transforms)

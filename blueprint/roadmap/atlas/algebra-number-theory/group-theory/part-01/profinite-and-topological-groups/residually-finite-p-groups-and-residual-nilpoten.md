@@ -7,7 +7,7 @@ statement: formalized
 
 # Residually finite p-groups and residual nilpotence
 
-2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten/index.html).
+2 results, 1 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten/index.html).
 
 ## Kuz'min's question on residually finite $p$-groups (Kourovka 14.52)
 
@@ -18,7 +18,7 @@ $g \ne 1$ lies outside some normal subgroup $N$ such that $G/N$ is a finite $p$-
 residually torsion-free nilpotent when every element $g \ne 1$ lies outside some normal subgroup
 $N$ such that $G/N$ is nilpotent and has no nontrivial elements of finite order.
 
-Formalized by `MathlibExt.GroupTheory.ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.residuallyFinitePImpliesResiduallyTorsionFreeNilpotent`, a definition declared in [WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten/index.html#residually-finite-pimplies-residually-to).
+Formalized by `MathlibExt.GroupTheory.ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.residuallyFinitePImpliesResiduallyTorsionFreeNilpotent`, a definition declared in [WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean, line 38](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean#L38). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten/index.html#residually-finite-pimplies-residually-to).
 
 ## Residual $p$-finiteness for all $p$ does not imply residual torsion-free nilpotence
 
@@ -33,7 +33,7 @@ normal subgroup $N$ such that $G/N$ is nilpotent and has no nontrivial elements 
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Archive of Solved Problems, Problem 14.52 (Yu. V. Kuz'min); resolution: B. Hartley, in: Symposia Mathematica XVII (Convegno sui Gruppi Infiniti, INDAM, Roma, 1973), Academic Press, London, 1976, 225-234, Kourovka Archive, Problem 14.52 (answer: Not always).
 
-Stated but not proved: `MathlibExt.GroupTheory.ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.residuallyFinitePImpliesResiduallyTorsionFreeNilpotent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten/index.html#residually-finite-pimplies-residually-to-2).
+Stated but not proved: `MathlibExt.GroupTheory.ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.residuallyFinitePImpliesResiduallyTorsionFreeNilpotent_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/ResiduallyFinitePGroupTorsionFreeNilpotentKourovka14Problem52Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten/index.html#residually-finite-pimplies-residually-to-2).
 
 ## Depends on
 
@@ -42,4 +42,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Residually finite p-groups and residual nilpotence](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/profinite-and-topological-groups/residually-finite-p-groups-and-residual-nilpoten)

@@ -1,6 +1,6 @@
 # Discrete Fourier analysis
 
-121 results of ATLAS's vault, all proved, in this branch's topics.
+120 results of ATLAS's vault, all proved, in this branch's topics.
 
 Fourier analysis on finite abelian groups and the Boolean cube: DFT and FFT, Plancherel, finite uncertainty, Young and Hausdorff–Young, Riesz–Thorin on finite sets, influences and noise operators.
 

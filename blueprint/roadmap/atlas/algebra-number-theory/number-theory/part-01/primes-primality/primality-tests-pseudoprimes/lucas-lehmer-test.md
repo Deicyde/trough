@@ -7,7 +7,7 @@ statement: formalized
 
 # Lucas–Lehmer test
 
-22 results, 10 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html).
+22 results, 10 proved and 12 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html).
 
 ## Lucas–Lehmer test with a general seed
 
@@ -28,7 +28,7 @@ Lehmer (1930) and Roettger-Williams (2025).
 
 - E. L. Roettger and H. C. Williams, "Some Remarks Concerning the Lucas-Lehmer Primality Test," Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem, lines 814–819; Assertion A at lines 187–190, https://cs.uwaterloo.ca/journals/JIS/VOL28/Roettger/roettger15.tex
 
-Formalized by `MetaMathlibExt.acceptableSeed_of_jacobi`, a theorem declared in [MathlibExt/NumberTheory/LucasLehmerAcceptableSeed.lean, line 675](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/LucasLehmerAcceptableSeed.lean#L675). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#acceptable-seed-of-jacobi).
+Formalized by `MetaMathlibExt.acceptableSeed_of_jacobi`, a theorem declared in [MathlibExt/NumberTheory/LucasLehmerAcceptableSeed.lean, line 675](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/LucasLehmerAcceptableSeed.lean#L675). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#acceptable-seed-of-jacobi).
 
 ## Lucas–Lehmer test with the rational seed $6/5$
 
@@ -44,7 +44,7 @@ modulo $M_n$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem 17.
 
-Stated but not proved: `MetaMathlibExt.mersenne_prime_iff_lucasLehmer_six_div_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-prime-iff-lucas-lehmer-six-div).
+Stated but not proved: `MetaMathlibExt.mersenne_prime_iff_lucasLehmer_six_div_five` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-prime-iff-lucas-lehmer-six-div).
 
 ## Lehmer's companion sequence
 
@@ -61,7 +61,7 @@ for even $k$ and $V_k(\sqrt R, Q)/\sqrt R$ for odd $k$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 2 (definition of `V̄_n` and recurrence (4thLehmer)).
 
-Formalized by `MetaMathlibExt.lehmerV`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#lehmer-v).
+Formalized by `MetaMathlibExt.lehmerV`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#lehmer-v).
 
 ## Fourth-order recurrence of Lehmer's companion sequence
 
@@ -73,7 +73,7 @@ $\bar V_{k+4}(R, Q) = (R - 2Q)\,\bar V_{k+2}(R, Q) - Q^2\,\bar V_k(R, Q)$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 2, recurrence (4thLehmer).
 
-Formalized by `MetaMathlibExt.lehmerV_add_four`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#lehmer-v-add-four).
+Formalized by `MetaMathlibExt.lehmerV_add_four`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 64](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L64). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#lehmer-v-add-four).
 
 ## Lehmer's companion sequence for $R = 2$ and $Q = -1$
 
@@ -88,7 +88,7 @@ doubling formula (LehmerV2n) predicts.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 2 (formula (LehmerV2n) and the case `R = 2`, `Q = -1` after Theorem 6).
 
-Formalized by `MetaMathlibExt.lehmerV_two_neg_one`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#lehmer-v-two-neg-one).
+Formalized by `MetaMathlibExt.lehmerV_two_neg_one`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#lehmer-v-two-neg-one).
 
 ## Lehmer-sequence primality criterion for Mersenne numbers
 
@@ -103,7 +103,7 @@ is assumed.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Lemma 4.
 
-Stated but not proved: `MetaMathlibExt.mersenne_prime_of_dvd_lehmerV` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-prime-of-dvd-lehmer-v).
+Stated but not proved: `MetaMathlibExt.mersenne_prime_of_dvd_lehmerV` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-prime-of-dvd-lehmer-v).
 
 ## Divisibility of Lehmer's companion sequence by a Mersenne prime
 
@@ -119,7 +119,7 @@ Since $M_n$ is prime, these Jacobi symbols are Legendre symbols.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Lemma 5.
 
-Stated but not proved: `MetaMathlibExt.mersenne_dvd_lehmerV_of_jacobi` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-dvd-lehmer-v-of-jacobi).
+Stated but not proved: `MetaMathlibExt.mersenne_dvd_lehmerV_of_jacobi` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-dvd-lehmer-v-of-jacobi).
 
 ## Divisibility of Lehmer's companion sequence by a Mersenne prime, Diophantine form
 
@@ -136,7 +136,7 @@ Here $D = R - 4Q = dZ^2$, and since $M_n$ is prime the Jacobi symbols are Legend
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Lemma 7.
 
-Stated but not proved: `MetaMathlibExt.mersenne_dvd_lehmerV_of_diophantine` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-dvd-lehmer-v-of-diophantine).
+Stated but not proved: `MetaMathlibExt.mersenne_dvd_lehmerV_of_diophantine` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 107](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L107). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-dvd-lehmer-v-of-diophantine).
 
 ## Euler's family of solutions of $aT^2 - bU^2 = c$
 
@@ -155,7 +155,7 @@ is $(0, 0)$, since $ab$ is not a square.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem 8.
 
-Stated but not proved: `MetaMathlibExt.pell_euler_solutions` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#pell-euler-solutions).
+Stated but not proved: `MetaMathlibExt.pell_euler_solutions` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 122](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L122). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#pell-euler-solutions).
 
 ## Odd squarefree part
 
@@ -170,7 +170,7 @@ half of it otherwise.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 7 (definition of `N^*`).
 
-Formalized by `MetaMathlibExt.IsOddSquarefreePart`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#is-odd-squarefree-part).
+Formalized by `MetaMathlibExt.IsOddSquarefreePart`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 138](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L138). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#is-odd-squarefree-part).
 
 ## The odd squarefree part of $360$
 
@@ -182,7 +182,7 @@ integer $m$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 7 (example `10 = sqf(360)`).
 
-Formalized by `MetaMathlibExt.isOddSquarefreePart_360`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#is-odd-squarefree-part-360).
+Formalized by `MetaMathlibExt.isOddSquarefreePart_360`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 145](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L145). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#is-odd-squarefree-part-360).
 
 ## The order $\Omega(m)$ of $2$, doubled when odd
 
@@ -195,7 +195,7 @@ $\omega(m)$ is odd, and $\Omega(m) = \omega(m)$ otherwise.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 7 (definitions of `ω(m)` and `Ω(m)`).
 
-Formalized by `MetaMathlibExt.mersenneOmega`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-omega).
+Formalized by `MetaMathlibExt.mersenneOmega`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 152](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L152). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-omega).
 
 ## $\Omega$ for the seed $37$
 
@@ -208,7 +208,7 @@ $s_1^-$ and $s_1^+$ for the seed $s_1 = 37$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 7 (example `s_1 = 37`).
 
-Formalized by `MetaMathlibExt.mersenneOmega_1365`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-omega-1365).
+Formalized by `MetaMathlibExt.mersenneOmega_1365`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-omega-1365).
 
 ## Condition (etar) on Jacobi symbols of $M_n$
 
@@ -230,7 +230,7 @@ which is how the source states the condition.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 7, condition (etar).
 
-Formalized by `MetaMathlibExt.MersenneEtaCondition`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-eta-condition).
+Formalized by `MetaMathlibExt.MersenneEtaCondition`, a definition declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-eta-condition).
 
 ## Condition (etar) for the seed $37$
 
@@ -242,7 +242,7 @@ $s_1^- = 35$ and $s_1^+ = 39$ holds for $n = 7$ and fails for $n = 1$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Section 7 (example `s_1 = 37`, `𝒜(37) = {7}`).
 
-Formalized by `MetaMathlibExt.mersenneEtaCondition_37`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-eta-condition-37).
+Formalized by `MetaMathlibExt.mersenneEtaCondition_37`, a theorem declared in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 183](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L183). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-eta-condition-37).
 
 ## Infinitely many acceptable seeds with the same odd squarefree parts
 
@@ -261,7 +261,7 @@ $S - 2$ needs $S - 2 > 0$).
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.infinite_acceptableSeeds_same_parts` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#infinite-acceptable-seeds-same-parts).
+Stated but not proved: `MetaMathlibExt.infinite_acceptableSeeds_same_parts` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 194](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L194). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#infinite-acceptable-seeds-same-parts).
 
 ## Order of $2$ modulo a product of coprime odd numbers
 
@@ -277,7 +277,7 @@ while $\omega(3)\omega(5) = 8$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Proposition 11.
 
-Stated but not proved: `MetaMathlibExt.orderOf_two_mul_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#order-of-two-mul-coprime).
+Stated but not proved: `MetaMathlibExt.orderOf_two_mul_coprime` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#order-of-two-mul-coprime).
 
 ## A zero Legendre symbol forces $\gcd(n, \Omega) > 1$
 
@@ -291,7 +291,7 @@ $\gcd(n, \Omega) > 1$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Proposition 12.
 
-Stated but not proved: `MetaMathlibExt.one_lt_gcd_mersenneOmega_of_legendreSym_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#one-lt-gcd-mersenne-omega-of-legendre-sy).
+Stated but not proved: `MetaMathlibExt.one_lt_gcd_mersenneOmega_of_legendreSym_eq_zero` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 218](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L218). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#one-lt-gcd-mersenne-omega-of-legendre-sy).
 
 ## Condition (etar) fails for some reduced residue when $s_1^- \equiv 3 \pmod 4$
 
@@ -306,7 +306,7 @@ and $n$ fails.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Lemma 13.
 
-Stated but not proved: `MetaMathlibExt.exists_not_mersenneEtaCondition_of_minus` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#exists-not-mersenne-eta-condition-of-min).
+Stated but not proved: `MetaMathlibExt.exists_not_mersenneEtaCondition_of_minus` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 229](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L229). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#exists-not-mersenne-eta-condition-of-min).
 
 ## Condition (etar) fails for some reduced residue when $s_1^+ \equiv 1 \pmod 4$
 
@@ -321,7 +321,7 @@ and $n$ fails.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Lemma 14.
 
-Stated but not proved: `MetaMathlibExt.exists_not_mersenneEtaCondition_of_plus` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#exists-not-mersenne-eta-condition-of-plu).
+Stated but not proved: `MetaMathlibExt.exists_not_mersenneEtaCondition_of_plus` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 239](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L239). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#exists-not-mersenne-eta-condition-of-plu).
 
 ## Residues mod $4$ of $s_1^-$ and $s_1^+$ when (etar) always holds
 
@@ -335,7 +335,7 @@ $\varphi(\Omega)$, then $s_1^- \equiv 1 \pmod 4$ and $s_1^+ \equiv 3 \pmod 4$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Theorem 15.
 
-Stated but not proved: `MetaMathlibExt.minus_mod_four_of_mersenneEtaCondition_all` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#minus-mod-four-of-mersenne-eta-condition).
+Stated but not proved: `MetaMathlibExt.minus_mod_four_of_mersenneEtaCondition_all` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 250](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L250). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#minus-mod-four-of-mersenne-eta-condition).
 
 ## Condition (etar) fails for some reduced residue when the seed is odd
 
@@ -349,7 +349,7 @@ equal to $\varphi(\Omega)$.
 
 - E. L. Roettger and H. C. Williams, *Some Remarks Concerning the Lucas-Lehmer Primality Test*, Journal of Integer Sequences 28 (2025), Article 25.2.5, Corollary 16.
 
-Stated but not proved: `MetaMathlibExt.mersenneEtaCondition_not_all_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-eta-condition-not-all-of-odd).
+Stated but not proved: `MetaMathlibExt.mersenneEtaCondition_not_all_of_odd` is written with `theorem_wanted` in [WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LucasLehmerRationalSeedWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html#mersenne-eta-condition-not-all-of-odd).
 
 ## Depends on
 
@@ -358,4 +358,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Lucas–Lehmer test](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/primes-primality/primality-tests-pseudoprimes/lucas-lehmer-test)

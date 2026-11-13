@@ -8,7 +8,7 @@ proof: formalized
 
 # Jordan normal form
 
-7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html).
+7 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html).
 
 ## Jordan blocks
 
@@ -23,7 +23,7 @@ otherwise: it has $\mu$ on the diagonal, $1$ on the first superdiagonal and $0$ 
 
 - R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Section 3.4.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.JordanNormalFormWanted.jordanBlock`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#jordan-block).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.JordanNormalFormWanted.jordanBlock`, a definition declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#jordan-block).
 
 ## Entries of a Jordan block
 
@@ -35,7 +35,7 @@ $\mu$ is $1$ if $j = i + 1$, is $\mu$ if $i = j$, and is $0$ otherwise.
 
 - https://en.wikipedia.org/wiki/Jordan_normal_form.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.JordanNormalFormWanted.jordanBlock_apply`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#jordan-block-apply).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.JordanNormalFormWanted.jordanBlock_apply`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#jordan-block-apply).
 
 ## Matrix of an endomorphism on a Jordan chain
 
@@ -45,7 +45,7 @@ $V$ such that $f(b_0) = \mu b_0$ and $f(b_{j+1}) = \mu b_{j+1} + b_j$ for every 
 matrix of $f$ with respect to the basis $(b_0, \dots, b_d)$ is the Jordan block of size $d + 1$
 with eigenvalue $\mu$.
 
-Formalized by `LinearMap.toMatrix_eq_jordanBlock`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#to-matrix-eq-jordan-block).
+Formalized by `LinearMap.toMatrix_eq_jordanBlock`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#to-matrix-eq-jordan-block).
 
 ## Matrix of an endomorphism on a basis of Jordan chains
 
@@ -57,7 +57,7 @@ $f(b_{i,j+1}) = \mu_i b_{i,j+1} + b_{i,j}$ for every $i \in \iota$ and every $j 
 matrix of $f$ with respect to $b$ is the block-diagonal matrix whose $i$-th diagonal block is the
 Jordan block of size $d_i + 1$ with eigenvalue $\mu_i$.
 
-Formalized by `LinearMap.toMatrix_eq_blockDiagonal_jordanBlock`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#to-matrix-eq-block-diagonal-jordan-block).
+Formalized by `LinearMap.toMatrix_eq_blockDiagonal_jordanBlock`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#to-matrix-eq-block-diagonal-jordan-block).
 
 ## Jordan chain basis for a nilpotent endomorphism
 
@@ -69,7 +69,7 @@ every $i < k$ and every $j < d_i$, and such that the matrix of $f$ with respect 
 block-diagonal matrix whose $i$-th diagonal block is the Jordan block of size $d_i + 1$ with
 eigenvalue $0$.
 
-Formalized by `Module.End.exists_jordanBasis_of_isNilpotent`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#exists-jordan-basis-of-is-nilpotent).
+Formalized by `Module.End.exists_jordanBasis_of_isNilpotent`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 385](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L385). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#exists-jordan-basis-of-is-nilpotent).
 
 ## Jordan chain basis for an endomorphism with split characteristic polynomial
 
@@ -82,7 +82,7 @@ $f(b_{i,0}) = \mu_i b_{i,0}$ and $f(b_{i,j+1}) = \mu_i b_{i,j+1} + b_{i,j}$ for 
 every $j < d_i$, and such that the matrix of $f$ with respect to $b$ is the block-diagonal matrix
 whose $i$-th diagonal block is the Jordan block of size $d_i + 1$ with eigenvalue $\mu_i$.
 
-Formalized by `Module.End.exists_jordanBasis_of_charpoly_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#exists-jordan-basis-of-charpoly-splits).
+Formalized by `Module.End.exists_jordanBasis_of_charpoly_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 450](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L450). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#exists-jordan-basis-of-charpoly-splits).
 
 ## Jordan normal form
 
@@ -104,7 +104,7 @@ by preimages and adding kernel vectors, as in Wikipedia, "Jordan normal form", s
 
 - R. A. Horn and C. R. Johnson, Matrix Analysis, 2nd ed., Cambridge University Press (2013), Theorem 3.4.1.
 
-Formalized by `MathlibExt.LinearAlgebra.Matrix.JordanNormalFormWanted.exists_jordan_normal_form_of_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#exists-jordan-normal-form-of-splits).
+Formalized by `MathlibExt.LinearAlgebra.Matrix.JordanNormalFormWanted.exists_jordan_normal_form_of_splits`, a theorem declared in [MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean, line 544](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/LinearAlgebra/Matrix/JordanNormalForm.lean#L544). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html#exists-jordan-normal-form-of-splits).
 
 ## Depends on
 
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Jordan normal form](https://deicyde.github.io/atlas-lean/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/LinearAlgebra/eigenvalues-and-canonical-forms/jordan-normal-form)

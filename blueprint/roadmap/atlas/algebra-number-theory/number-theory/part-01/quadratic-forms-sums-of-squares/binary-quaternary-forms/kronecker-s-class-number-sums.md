@@ -7,7 +7,7 @@ statement: formalized
 
 # Kronecker's class number sums
 
-14 results, 11 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html).
+14 results, 11 proved and 3 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html).
 
 ## Reduced forms of a given discriminant
 
@@ -24,7 +24,7 @@ by $a$ and $b$.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Section 1.
 
-Formalized by `MetaMathlibExt.reducedFormsOfDiscriminant`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#reduced-forms-of-discriminant).
+Formalized by `MetaMathlibExt.reducedFormsOfDiscriminant`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#reduced-forms-of-discriminant).
 
 ## Gauss class number of a discriminant
 
@@ -37,7 +37,7 @@ with $b \ge 0$ whenever $|b| = a$ or $a = c$) and primitive ($\gcd(a, b, c) = 1$
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Section 1.
 
-Formalized by `MetaMathlibExt.gaussClassNumber`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#gauss-class-number).
+Formalized by `MetaMathlibExt.gaussClassNumber`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#gauss-class-number).
 
 ## Unweighted Hurwitz class number
 
@@ -55,7 +55,7 @@ literature uses several conventions).
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, equation (1).
 
-Formalized by `MetaMathlibExt.unweightedHurwitzClassNumber`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#unweighted-hurwitz-class-number).
+Formalized by `MetaMathlibExt.unweightedHurwitzClassNumber`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#unweighted-hurwitz-class-number).
 
 ## Weight of a reduced binary quadratic form
 
@@ -70,7 +70,7 @@ for every other form.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, equation (3).
 
-Formalized by `MetaMathlibExt.reducedFormWeight`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#reduced-form-weight).
+Formalized by `MetaMathlibExt.reducedFormWeight`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#reduced-form-weight).
 
 ## Kronecker's sum $F_o(n)$
 
@@ -84,7 +84,7 @@ $a = c$ and $b = 0$, $1/3$ if $a = b = c$, and $1$ otherwise.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, equation (4).
 
-Formalized by `MetaMathlibExt.kroneckerFOdd`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-fodd).
+Formalized by `MetaMathlibExt.kroneckerFOdd`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 84](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L84). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-fodd).
 
 ## Kronecker's sum $F_e(n)$
 
@@ -98,7 +98,7 @@ $a = c$ and $b = 0$, $1/3$ if $a = b = c$, and $1$ otherwise.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, equation (5).
 
-Formalized by `MetaMathlibExt.kroneckerFEven`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-feven).
+Formalized by `MetaMathlibExt.kroneckerFEven`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 93](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L93). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-feven).
 
 ## The discriminant $d(\alpha, g)$ attached to $n = 2^\alpha g h^2$
 
@@ -114,7 +114,7 @@ $\mathbb{Q}(\sqrt{-n})$.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Section 1, after equation (17).
 
-Formalized by `MetaMathlibExt.kroneckerDiscriminant`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-discriminant).
+Formalized by `MetaMathlibExt.kroneckerDiscriminant`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 104](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L104). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-discriminant).
 
 ## Kronecker's class-number multiplier
 
@@ -133,7 +133,7 @@ factor equals $\frac{p^{v+1} - 1}{p - 1} - \left(\frac{d}{p}\right) \frac{p^v - 
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Section 1, definition of `ℓ(n)`.
 
-Formalized by `MetaMathlibExt.kroneckerClassMultiplier`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-class-multiplier).
+Formalized by `MetaMathlibExt.kroneckerClassMultiplier`, a definition declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-class-multiplier).
 
 ## Class numbers of the discriminants $-3$, $-4$ and $-12$
 
@@ -147,7 +147,7 @@ $2x^2 + 2xy + 2y^2$.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Section 1.
 
-Formalized by `MetaMathlibExt.gaussClassNumber_small`, a theorem declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#gauss-class-number-small).
+Formalized by `MetaMathlibExt.gaussClassNumber_small`, a theorem declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 126](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L126). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#gauss-class-number-small).
 
 ## Kronecker's sums at $n = 1$ and $n = 3$
 
@@ -158,7 +158,7 @@ $F_o(1) = 1/2$, $F_e(1) = 0$, $F_o(3) = 1$ and $F_e(3) = 1/3$.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, equations (4) and (5).
 
-Formalized by `MetaMathlibExt.kroneckerF_small`, a theorem declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-f-small).
+Formalized by `MetaMathlibExt.kroneckerF_small`, a theorem declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 137](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L137). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-f-small).
 
 ## Small values of the discriminant $d(\alpha, g)$ and the multiplier $\ell(d, h)$
 
@@ -171,7 +171,7 @@ $\ell(-4, 3) = 5$.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Section 1.
 
-Formalized by `MetaMathlibExt.kroneckerDiscriminant_kroneckerClassMultiplier_small`, a theorem declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-discriminant-kronecker-class-m).
+Formalized by `MetaMathlibExt.kroneckerDiscriminant_kroneckerClassMultiplier_small`, a theorem declared in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-discriminant-kronecker-class-m).
 
 ## Gauss's three-square formula after Aygin and Williams
 
@@ -191,7 +191,7 @@ $r_3(n) = 0$; and if $\alpha$ is odd, then $r_3(n) = 12L$.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.threeSquareRepresentationCount_eq_kronecker_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#three-square-representation-count-eq-kro).
+Stated but not proved: `MetaMathlibExt.threeSquareRepresentationCount_eq_kronecker_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 162](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L162). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#three-square-representation-count-eq-kro).
 
 ## Aygin–Williams evaluation of Kronecker's sums
 
@@ -217,7 +217,7 @@ $t = 2^{\alpha/2}$. Then Kronecker's sums $F_o$ and $F_e$ satisfy:
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.kroneckerFOdd_kroneckerFEven_eq_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-fodd-kronecker-feven-eq-class).
+Stated but not proved: `MetaMathlibExt.kroneckerFOdd_kroneckerFEven_eq_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 188](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L188). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#kronecker-fodd-kronecker-feven-eq-class).
 
 ## Unweighted Hurwitz class numbers via Gauss class numbers
 
@@ -240,7 +240,7 @@ $H(-4n) = (2^{(\alpha + 1)/2} - 1) L$.
 
 - Zafer Selcuk Aygin and Kenneth S. Williams, *A Note on the Evaluation of Two Arithmetic Functions of Kronecker*, INTEGERS 26 (2026), Article A29, Theorem 3.
 
-Stated but not proved: `MetaMathlibExt.unweightedHurwitzClassNumber_neg_four_mul_eq_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#unweighted-hurwitz-class-number-neg-four).
+Stated but not proved: `MetaMathlibExt.unweightedHurwitzClassNumber_neg_four_mul_eq_classNumber` is written with `theorem_wanted` in [WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean, line 220](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/QuadraticForms/KroneckerFormSumsWanted.lean#L220). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html#unweighted-hurwitz-class-number-neg-four).
 
 ## Depends on
 
@@ -249,4 +249,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Kronecker's class number sums](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/quadratic-forms-sums-of-squares/binary-quaternary-forms/kronecker-s-class-number-sums)

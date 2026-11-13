@@ -7,7 +7,7 @@ statement: formalized
 
 # Closest string
 
-5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html).
+5 results, 4 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html).
 
 ## Closest-string instances
 
@@ -16,14 +16,14 @@ $S$ of bitstrings (finite lists of booleans) and a natural number $d$, the dista
 
 The bitstrings are not required to have equal length; that is the well-formedness condition.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.ClosestStringInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-instance).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.ClosestStringInstance`, an abbreviation declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 46](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L46). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-instance).
 
 ## Well-formed closest-string instances
 
 A closest-string instance $(S, d)$ is well formed
 when all bitstrings in the list $S$ have the same length.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#well-formed).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.WellFormed`, a definition declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#well-formed).
 
 ## Feasible closest-string instances
 
@@ -36,7 +36,7 @@ which $c$ and $s$ differ is at most $d$.
 If all bitstrings of $S$ have length $\ell(c)$, this number is the Hamming distance between $c$
 and $s$.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.ClosestStringFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-feasible).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.ClosestStringFeasible`, a definition declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-feasible).
 
 ## The CLOSEST STRING decision problem
 
@@ -45,7 +45,7 @@ bitstring $x$ exactly when $x$ decodes, under the canonical bitstring encoding o
 closest-string instances, to an instance that is well formed and feasible. Bitstrings that do
 not decode to a closest-string instance are rejected.
 
-Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.closestStringDec`, a definition declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-dec).
+Formalized by `MetaMathlibExt.Complexity.NPComplete.ClosestString.closestStringDec`, a definition declared in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 60](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L60). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-dec).
 
 ## CLOSEST STRING is NP-complete
 
@@ -56,7 +56,7 @@ every decision problem in NP has a polynomial-time many-one reduction to it.
 
 - J. K. Lanctot et al., "Distinguishing string selection problems" (2003); M. Frances and A. Litman, "On covering problems of codes" (1997).
 
-Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.ClosestString.closestString_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-np-complete).
+Stated but not proved: `MetaMathlibExt.Complexity.NPComplete.ClosestString.closestString_npComplete` is written with `theorem_wanted` in [WantedExt/Complexity/NPComplete/ClosestStringWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Complexity/NPComplete/ClosestStringWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html#closest-string-np-complete).
 
 ## Depends on
 
@@ -65,4 +65,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Closest string](https://deicyde.github.io/atlas-lean/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/TheoryOfComputation/np-completeness/strings-and-puzzles/closest-string)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Reciprocal lcm sums of integer sets
 
-22 results, 17 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html).
+22 results, 17 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html).
 
 ## Truncated logarithm
 
@@ -20,7 +20,7 @@ $x > 0$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.truncLog`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#trunc-log).
+Formalized by `MetaMathlibExt.truncLog`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 28](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L28). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#trunc-log).
 
 ## Second iterated truncated logarithm
 
@@ -32,7 +32,7 @@ $\operatorname{Log}$ is the truncated logarithm.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.truncLog2`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#trunc-log2).
+Formalized by `MetaMathlibExt.truncLog2`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 35](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L35). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#trunc-log2).
 
 ## Third iterated truncated logarithm
 
@@ -47,7 +47,7 @@ $\operatorname{Log}_3 x = \operatorname{Log}(\operatorname{Log}_2 x)$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.truncLog3`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#trunc-log3).
+Formalized by `MetaMathlibExt.truncLog3`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 42](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L42). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#trunc-log3).
 
 ## The truncated logarithm is at least one
 
@@ -58,7 +58,7 @@ logarithm $\operatorname{Log} x = \max(\log x, 1)$ satisfies $\operatorname{Log}
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.one_le_truncLog`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#one-le-trunc-log).
+Formalized by `MetaMathlibExt.one_le_truncLog`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#one-le-trunc-log).
 
 ## Elements of a set up to a bound
 
@@ -69,7 +69,7 @@ this is the finite set of positive integers $n \in A$ with $n \le x$; it is empt
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.naturalsInSetUpTo`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#naturals-in-set-up-to).
+Formalized by `MetaMathlibExt.naturalsInSetUpTo`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#naturals-in-set-up-to).
 
 ## The empty set has no elements up to any bound
 
@@ -80,7 +80,7 @@ of elements $n$ of the empty set with $1 \le n \le x$ is empty.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.naturalsInSetUpTo_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#naturals-in-set-up-to-empty).
+Formalized by `MetaMathlibExt.naturalsInSetUpTo_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 65](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L65). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#naturals-in-set-up-to-empty).
 
 ## Harmonic sum of a set up to a bound
 
@@ -94,7 +94,7 @@ The sum starts at $n = 1$, matching the paper's convention that natural numbers 
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.recipSumUpTo`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#recip-sum-up-to).
+Formalized by `MetaMathlibExt.recipSumUpTo`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 74](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L74). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#recip-sum-up-to).
 
 ## The harmonic sum over the empty set vanishes
 
@@ -105,7 +105,7 @@ $\sum_{n \in \emptyset,\, n \le x} 1/n = 0$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Notation.
 
-Formalized by `MetaMathlibExt.recipSumUpTo_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#recip-sum-up-to-empty).
+Formalized by `MetaMathlibExt.recipSumUpTo_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#recip-sum-up-to-empty).
 
 ## Double sum of reciprocal least common multiples
 
@@ -118,7 +118,7 @@ $n, m \in A$, $1 \le n \le x$ and $1 \le m \le x$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Equation (12).
 
-Formalized by `MetaMathlibExt.lcmReciprocalSum`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-reciprocal-sum).
+Formalized by `MetaMathlibExt.lcmReciprocalSum`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 89](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L89). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-reciprocal-sum).
 
 ## Double reciprocal lcm sum of the empty set
 
@@ -129,7 +129,7 @@ reciprocal least common multiples of the empty set up to $x$ is $0$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Equation (12).
 
-Formalized by `MetaMathlibExt.lcmReciprocalSum_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-reciprocal-sum-empty).
+Formalized by `MetaMathlibExt.lcmReciprocalSum_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-reciprocal-sum-empty).
 
 ## Logarithmic gcd moment
 
@@ -145,7 +145,7 @@ each with probability proportional to $1/n$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Equation (9).
 
-Formalized by `MetaMathlibExt.gcdLogarithmicMoment`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#gcd-logarithmic-moment).
+Formalized by `MetaMathlibExt.gcdLogarithmicMoment`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 105](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L105). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#gcd-logarithmic-moment).
 
 ## Gcd defect
 
@@ -165,7 +165,7 @@ source.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Equation (9).
 
-Formalized by `MetaMathlibExt.lcmDefect`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-defect).
+Formalized by `MetaMathlibExt.lcmDefect`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-defect).
 
 ## The gcd defect of the empty set
 
@@ -178,7 +178,7 @@ The harmonic sum of the empty set is $0$, and division by $0$ gives $0$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Equation (9).
 
-Formalized by `MetaMathlibExt.lcmDefect_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-defect-empty).
+Formalized by `MetaMathlibExt.lcmDefect_empty`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 124](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L124). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-defect-empty).
 
 ## Products of a fixed number of distinct primes
 
@@ -192,7 +192,7 @@ $\mathcal{P}^{[0]} = \{1\}$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Lemma 1 notation.
 
-Formalized by `MetaMathlibExt.primeProductLayer`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#prime-product-layer).
+Formalized by `MetaMathlibExt.primeProductLayer`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#prime-product-layer).
 
 ## Products of at most a fixed number of distinct primes
 
@@ -206,7 +206,7 @@ $\mathcal{P}^{[\le k]} = \bigcup_{j \le k} \mathcal{P}^{[j]}$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Lemma 1 notation.
 
-Formalized by `MetaMathlibExt.primeProductsAtMost`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#prime-products-at-most).
+Formalized by `MetaMathlibExt.primeProductsAtMost`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#prime-products-at-most).
 
 ## At most zero primes means exactly zero primes
 
@@ -219,7 +219,7 @@ $\mathcal{P}$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Lemma 1 notation.
 
-Formalized by `MetaMathlibExt.primeProductsAtMost_zero`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#prime-products-at-most-zero).
+Formalized by `MetaMathlibExt.primeProductsAtMost_zero`, a theorem declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 151](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L151). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#prime-products-at-most-zero).
 
 ## Growth function of the dense-set construction
 
@@ -239,7 +239,7 @@ $C_0 > 0$ and sufficiently large $x$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Equations (13)--(15).
 
-Formalized by `MetaMathlibExt.lcmDenseGrowthF`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-dense-growth-f).
+Formalized by `MetaMathlibExt.lcmDenseGrowthF`, a definition declared in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 166](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L166). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#lcm-dense-growth-f).
 
 ## Harmonic sums over products of distinct primes
 
@@ -256,7 +256,7 @@ $S^k/(C\,k!) \le T_k \le C\,S^k/k!$ and $S^k/(C\,k!) \le T_{\le k} \le C\,S^k/k!
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.recipSum_primeProductLayer_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#recip-sum-prime-product-layer-asymp).
+Stated but not proved: `MetaMathlibExt.recipSum_primeProductLayer_asymp` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 182](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L182). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#recip-sum-prime-product-layer-asymp).
 
 ## Dense sets with unusually large least common multiples
 
@@ -279,7 +279,7 @@ the exponent is optimal is made precise by Theorem 2(ii) and is stated separatel
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.exists_dense_set_large_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#exists-dense-set-large-lcm).
+Stated but not proved: `MetaMathlibExt.exists_dense_set_large_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 205](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L205). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#exists-dense-set-large-lcm).
 
 ## Dense sets with controlled gcd defect
 
@@ -301,7 +301,7 @@ $\exp(C_0^2)$, but its proof, through the factor $e^\ell$ of (35), gives $e^2 C_
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Theorem 2(i).
 
-Stated but not proved: `MetaMathlibExt.exists_dense_set_controlled_defect` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#exists-dense-set-controlled-defect).
+Stated but not proved: `MetaMathlibExt.exists_dense_set_controlled_defect` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#exists-dense-set-controlled-defect).
 
 ## Baby version of the dense-set construction
 
@@ -326,7 +326,7 @@ written with $\varepsilon$, $\delta$ and $k_0$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Proposition 1, (31) and (32), with (21).
 
-Stated but not proved: `MetaMathlibExt.exists_dense_sets_baby` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#exists-dense-sets-baby).
+Stated but not proved: `MetaMathlibExt.exists_dense_sets_baby` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 255](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L255). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#exists-dense-sets-baby).
 
 ## Harmonic sums of sets with small gcd defect
 
@@ -350,7 +350,7 @@ uniform in $A$.
 
 - Terence Tao, *Dense Sets of Natural Numbers with Unusually Large Least Common Multiples*, INTEGERS 24 (2024), Article A100, Theorem 2(ii).
 
-Stated but not proved: `MetaMathlibExt.uniform_harmonic_bound_of_defect` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#uniform-harmonic-bound-of-defect).
+Stated but not proved: `MetaMathlibExt.uniform_harmonic_bound_of_defect` is written with `theorem_wanted` in [WantedExt/NumberTheory/LcmDenseSetsWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/LcmDenseSetsWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html#uniform-harmonic-bound-of-defect).
 
 ## Depends on
 
@@ -359,4 +359,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Reciprocal lcm sums of integer sets](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/additive-number-theory/reciprocal-lcm-sums-of-integer-sets)

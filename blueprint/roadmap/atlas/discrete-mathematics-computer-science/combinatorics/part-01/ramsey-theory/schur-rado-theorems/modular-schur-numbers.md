@@ -7,7 +7,7 @@ statement: formalized
 
 # Modular Schur numbers
 
-25 results, 6 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html).
+25 results, 6 proved and 19 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html).
 
 ## Sum-free sets modulo $m$
 
@@ -19,7 +19,7 @@ $x_1 + \dots + x_l \equiv y \pmod{m}$.
 
 - J. Chappelon, M. P. Revuelta Marchena, M. I. Sanz Domínguez, *Modular Schur numbers*, Electron. J. Combin. 20(2) (2013), Section 1.1, as used in Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Section 1.
 
-Formalized by `MetaMathlibExt.IsSumFreeMod`, a definition declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#is-sum-free-mod).
+Formalized by `MetaMathlibExt.IsSumFreeMod`, a definition declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#is-sum-free-mod).
 
 ## Sum-free partitions modulo $m$
 
@@ -33,7 +33,7 @@ empty; for $k = 0$ there is no coloring, so the property fails for every $n$, in
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Section 1.
 
-Formalized by `MetaMathlibExt.HasSumFreePartitionMod`, a definition declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#has-sum-free-partition-mod).
+Formalized by `MetaMathlibExt.HasSumFreePartitionMod`, a definition declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#has-sum-free-partition-mod).
 
 ## Modular Schur number
 
@@ -49,7 +49,7 @@ admissible $n$ is at most $m - 1$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Section 1.
 
-Formalized by `MetaMathlibExt.modularSchurNumber`, a definition declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number).
+Formalized by `MetaMathlibExt.modularSchurNumber`, a definition declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 61](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L61). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number).
 
 ## The empty range has a sum-free partition
 
@@ -61,7 +61,7 @@ $l$-sum-free modulo $m$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Section 1 (`0 ≤ S_m(k, l)`).
 
-Formalized by `MetaMathlibExt.hasSumFreePartitionMod_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#has-sum-free-partition-mod-zero).
+Formalized by `MetaMathlibExt.hasSumFreePartitionMod_zero`, a theorem declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#has-sum-free-partition-mod-zero).
 
 ## Sets containing a multiple of the modulus are not sum-free
 
@@ -73,7 +73,7 @@ $A$ is not $l$-sum-free modulo $m$: the sum of $l$ copies of $a$ is congruent to
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Section 1 (the bound `S_m(k, l) ≤ m - 1`).
 
-Formalized by `MetaMathlibExt.not_isSumFreeMod_of_dvd_mem`, a theorem declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#not-is-sum-free-mod-of-dvd-mem).
+Formalized by `MetaMathlibExt.not_isSumFreeMod_of_dvd_mem`, a theorem declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 80](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L80). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#not-is-sum-free-mod-of-dvd-mem).
 
 ## $\{1\}$ is $2$-sum-free modulo $3$
 
@@ -84,7 +84,7 @@ since $1 + 1 \not\equiv 1 \pmod{3}$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 2 context.
 
-Formalized by `MetaMathlibExt.isSumFreeMod_three_two_singleton_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#is-sum-free-mod-three-two-singleton-one).
+Formalized by `MetaMathlibExt.isSumFreeMod_three_two_singleton_one`, a theorem declared in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 94](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L94). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#is-sum-free-mod-three-two-singleton-one).
 
 ## When the singleton $\{1\}$ is sum-free
 
@@ -96,7 +96,7 @@ $l \equiv 1 \pmod{m}$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 1.
 
-Stated but not proved: `MetaMathlibExt.not_isSumFreeMod_singleton_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#not-is-sum-free-mod-singleton-one-iff).
+Stated but not proved: `MetaMathlibExt.not_isSumFreeMod_singleton_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 106](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L106). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#not-is-sum-free-mod-singleton-one-iff).
 
 ## Vanishing of modular Schur numbers
 
@@ -109,7 +109,7 @@ $l \equiv 1 \pmod{m}$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 2.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-eq-zero-iff).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_eq_zero_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-eq-zero-iff).
 
 ## Congruence upper bound for modular Schur numbers
 
@@ -122,7 +122,7 @@ $S_m(k, l) < a$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 3.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_lt_of_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-lt-of-mod-eq).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_lt_of_modEq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 123](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L123). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-lt-of-mod-eq).
 
 ## Modular Schur numbers modulo an even number
 
@@ -135,7 +135,7 @@ otherwise $S_{2n}(k, l) \ge 2$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 4.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_two_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-two-mul).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_two_mul` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-two-mul).
 
 ## Modular Schur numbers attaining $m - 1$
 
@@ -148,7 +148,7 @@ admits a partition into $k$ classes that are $l$-sum-free modulo $m$, equals $m 
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 5.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_eq_sub_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-eq-sub-one).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_eq_sub_one` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 144](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L144). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-eq-sub-one).
 
 ## Lower bound for modular Schur numbers modulo a prime power
 
@@ -161,7 +161,7 @@ a partition into $k$ classes that are $l$-sum-free modulo $p^i$, is at least $k$
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 6.
 
-Stated but not proved: `MetaMathlibExt.le_modularSchurNumber_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#le-modular-schur-number-prime-pow).
+Stated but not proved: `MetaMathlibExt.le_modularSchurNumber_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 154](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L154). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#le-modular-schur-number-prime-pow).
 
 ## Modular Schur numbers modulo a prime power for many classes
 
@@ -174,7 +174,7 @@ $S_{p^i}(k, l) = p^i - 1$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 7.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_prime_pow_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-prime-pow-eq).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_prime_pow_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 164](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L164). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-prime-pow-eq).
 
 ## Modular Schur numbers modulo a prime
 
@@ -187,7 +187,7 @@ $S_p(k, l) = p - 1$ for every natural number $k \ge p - 1$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Corollary 8.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_prime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-prime).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_prime` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 174](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L174). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-prime).
 
 ## Singletons are sum-free modulo a prime power
 
@@ -199,7 +199,7 @@ by $p^i$. Then the singleton $\{a\}$ is $l$-sum-free modulo $p^i$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Lemma 1.
 
-Stated but not proved: `MetaMathlibExt.isSumFreeMod_singleton_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#is-sum-free-mod-singleton-prime-pow).
+Stated but not proved: `MetaMathlibExt.isSumFreeMod_singleton_prime_pow` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#is-sum-free-mod-singleton-prime-pow).
 
 ## Elements of a sum-free pair are congruent modulo $p$
 
@@ -215,7 +215,7 @@ $b$ lie in a common $l$-sum-free set modulo $p^i$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Lemma 2, part 1.
 
-Stated but not proved: `MetaMathlibExt.modEq_of_isSumFreeMod_pair` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#mod-eq-of-is-sum-free-mod-pair).
+Stated but not proved: `MetaMathlibExt.modEq_of_isSumFreeMod_pair` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 196](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L196). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#mod-eq-of-is-sum-free-mod-pair).
 
 ## Modular Schur numbers modulo $2$
 
@@ -229,7 +229,7 @@ Domínguez, *Modular Schur numbers* (2013).
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 1.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-two).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_two` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 206](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L206). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-two).
 
 ## Modular Schur numbers modulo 3
 
@@ -244,7 +244,7 @@ The paper quotes this result from Chappelon, Revuelta Marchena, and Sanz Domíng
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 2.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-three).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_three` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 216](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L216). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-three).
 
 ## Solutions of a linear congruence
 
@@ -259,7 +259,7 @@ with $0 \le u \le d - 1$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 3, quoting a textbook result ([3]).
 
-Stated but not proved: `MetaMathlibExt.linear_congruence_solutions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#linear-congruence-solutions).
+Stated but not proved: `MetaMathlibExt.linear_congruence_solutions` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 228](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L228). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#linear-congruence-solutions).
 
 ## When a singleton set is sum-free
 
@@ -272,7 +272,7 @@ $l$-sum-free modulo $m$ if and only if $l \equiv 1 \pmod{m/d}$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 4.
 
-Stated but not proved: `MetaMathlibExt.not_isSumFreeMod_singleton_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#not-is-sum-free-mod-singleton-iff).
+Stated but not proved: `MetaMathlibExt.not_isSumFreeMod_singleton_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 242](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L242). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#not-is-sum-free-mod-singleton-iff).
 
 ## When the one-class modular Schur number equals one
 
@@ -284,7 +284,7 @@ modulo $m$ equals $1$ if and only if $l = 2$ or $2l \ge m + 1$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 5.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_one_eq_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-one-eq-one-iff).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_one_eq_one_iff` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 252](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L252). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-one-eq-one-iff).
 
 ## Modular Schur numbers modulo 4
 
@@ -297,7 +297,7 @@ $k \ge 2$ and $l \equiv 0$ or $2 \pmod 4$, then $S_4(k, l) = 3$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 6.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-four).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_four` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 262](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L262). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-four).
 
 ## Modular Schur numbers modulo 6
 
@@ -312,7 +312,7 @@ $k = l = 2$; and $S_6(k, l) = 5$ if $k \ge 3$ and $l \equiv 0$ or $2 \pmod 6$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 7.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-six).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_six` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-six).
 
 ## Modular Schur numbers modulo 5
 
@@ -325,7 +325,7 @@ $k \in \{2, 3\}$ and $l = 2$, or if $k \ge 4$, then $S_5(k, l) = 4$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 9.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-five).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_five` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 291](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L291). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-five).
 
 ## Modular Schur numbers modulo 7
 
@@ -341,7 +341,7 @@ $2 \le l \le 4$, or $k \ge 6$.
 
 - Jourdan D'orville, Kai An Sim, Kok Bin Wong, and Chee Kit Ho, *Modular Generalizations of Schur Numbers*, INTEGERS 25 (2025), Article A62, Theorem 10.
 
-Stated but not proved: `MetaMathlibExt.modularSchurNumber_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-seven).
+Stated but not proved: `MetaMathlibExt.modularSchurNumber_seven` is written with `theorem_wanted` in [WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean, line 306](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/Additive/ModularSchurNumbersWanted.lean#L306). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html#modular-schur-number-seven).
 
 ## Depends on
 
@@ -350,4 +350,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Modular Schur numbers](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/ramsey-theory/schur-rado-theorems/modular-schur-numbers)

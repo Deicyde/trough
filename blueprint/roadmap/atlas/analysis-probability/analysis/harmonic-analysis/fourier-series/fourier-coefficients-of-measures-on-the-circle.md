@@ -7,7 +7,7 @@ statement: formalized
 
 # Fourier coefficients of measures on the circle
 
-3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html).
+3 results, 1 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html).
 
 ## Fourier coefficients of a measure on the circle
 
@@ -15,7 +15,7 @@ For a measure $\mu$ on the circle
 $\mathbb{T} = \mathbb{R}/2\pi\mathbb{Z}$ and an integer $k$, the $k$-th Fourier coefficient of
 $\mu$ is $\hat\mu_k = \int_{\mathbb{T}} e^{ikx} \, d\mu(x)$.
 
-Formalized by `MathlibExt.Analysis.WienerAtomWanted.Analysis.fourierCoeffMeasure`, a definition declared in [WantedExt/Analysis/WienerAtomWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/WienerAtomWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html#fourier-coeff-measure).
+Formalized by `MathlibExt.Analysis.WienerAtomWanted.Analysis.fourierCoeffMeasure`, a definition declared in [WantedExt/Analysis/WienerAtomWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/WienerAtomWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html#fourier-coeff-measure).
 
 ## Wiener's atom-detection formula
 
@@ -29,7 +29,7 @@ as $N \to \infty$.
 
 - N. Wiener, The Fourier Integral and Certain of its Applications (1933). Listed as §66 in O. Knill, Some Fundamental Theorems in Mathematics (https://people.math.harvard.edu/~knill/graphgeometry/papers/fundamental.pdf). Problem `wiener_atom_detection` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.Analysis.WienerAtomWanted.Analysis.wiener_atom_detection` is written with `theorem_wanted` in [WantedExt/Analysis/WienerAtomWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/WienerAtomWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html#wiener-atom-detection).
+Stated but not proved: `MathlibExt.Analysis.WienerAtomWanted.Analysis.wiener_atom_detection` is written with `theorem_wanted` in [WantedExt/Analysis/WienerAtomWanted.lean, line 79](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/WienerAtomWanted.lean#L79). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html#wiener-atom-detection).
 
 ## Fourier decay of a circle measure passes to integrable densities
 
@@ -47,7 +47,7 @@ $$
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Measure and integration; Set functions and measures on spaces with additional structure), problem `ma_proofbench_l2_13`.
 
-Stated but not proved: `MathlibExt.MeasureTheory.CircleMeasureFourierDecayIntegrableWanted.tendsto_integral_pow_mul_of_tendsto_integral_pow` is written with `theorem_wanted` in [WantedExt/MeasureTheory/CircleMeasureFourierDecayIntegrableWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/MeasureTheory/CircleMeasureFourierDecayIntegrableWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html#tendsto-integral-pow-mul-of-tendsto-inte).
+Stated but not proved: `MathlibExt.MeasureTheory.CircleMeasureFourierDecayIntegrableWanted.tendsto_integral_pow_mul_of_tendsto_integral_pow` is written with `theorem_wanted` in [WantedExt/MeasureTheory/CircleMeasureFourierDecayIntegrableWanted.lean, line 55](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/MeasureTheory/CircleMeasureFourierDecayIntegrableWanted.lean#L55). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html#tendsto-integral-pow-mul-of-tendsto-inte).
 
 ## Depends on
 
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Fourier coefficients of measures on the circle](https://deicyde.github.io/atlas-lean/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/harmonic-analysis/fourier-series/fourier-coefficients-of-measures-on-the-circle)

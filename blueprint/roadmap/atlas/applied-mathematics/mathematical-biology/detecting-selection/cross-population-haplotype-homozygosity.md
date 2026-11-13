@@ -8,7 +8,7 @@ proof: formalized
 
 # Cross-population haplotype homozygosity
 
-10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html).
+10 results, all proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html).
 
 ## Selection Scan
 
@@ -20,45 +20,45 @@ haplotype test, stronger than the ordinary neutral null.
 Defined as `IdentDistrib` of the two orderings, so the measurability of the joint laws is
 part of the hypothesis rather than restored separately in each theorem.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair`, a definition declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#is-exchangeable-pair).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair`, a definition declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 75](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L75). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#is-exchangeable-pair).
 
 ## Exchangeability is preserved by a common measurable map
 
 Applying the same measurable function to both statistics preserves exchangeability.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.map_comp`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#map-comp).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.map_comp`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#map-comp).
 
 ## Difference of an exchangeable pair has a symmetric law
 
 The difference of an exchangeable pair has a symmetric law.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.map_sub_neg`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#map-sub-neg).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.map_sub_neg`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 91](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L91). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#map-sub-neg).
 
 ## Equal tails of the difference of an exchangeable pair
 
 Equal tails: the upper tail of `X - Y` at `t` has the same probability as the lower tail
 at `-t`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_le_sub`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-sub).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_le_sub`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 103](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L103). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-sub).
 
 ## Two-sided rejection region splits into equal tails
 
 A two-sided rejection region splits into two tails of equal probability.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_abs_sub`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-abs-sub).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_abs_sub`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 119](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L119). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-abs-sub).
 
 ## Equal tails of the log ratio of an exchangeable pair
 
 For positive statistics, the log ratio — the XP-EHH form — has equal tails.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_le_logRatio`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-log-ratio).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_le_logRatio`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 143](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L143). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-log-ratio).
 
 ## Equal tails of the ratio of an exchangeable pair
 
 The same statement for the ratio itself, the form used for relative EHH: the probability
 that the ratio exceeds `c` equals the probability that it falls below `1 / c`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_le_ratio`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-ratio).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.IsExchangeablePair.measure_le_ratio`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 150](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L150). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-ratio).
 
 ## Cross-population extended haplotype homozygosity (XP-EHH)
 
@@ -68,21 +68,21 @@ Both arguments must be positive for the score to be meaningful. Outside that dom
 `Real.log` is totalized by Mathlib, not by the stated junk value: `Real.log 0 = 0` and
 `Real.log (-x) = Real.log x`, so for example `xpehh (-2) 1 = log 2`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.xpehh`, a definition declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#xpehh).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.xpehh`, a definition declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 173](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L173). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#xpehh).
 
 ## XP-EHH in star-genealogy sweep models
 
 XP-EHH computed from two star-genealogy sweep models with the same recombination rate is
 the log ratio of the two ages, with the opposite sign to `ihs`.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.xpehh_ihh`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#xpehh-ihh).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.xpehh_ihh`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 177](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L177). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#xpehh-ihh).
 
 ## Symmetry of the XP-EHH law under exchangeability
 
 Under exchangeability, the XP-EHH score has a symmetric law: the two tails of the
 two-sided test carry the same probability.
 
-Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.measure_le_xpehh`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-xpehh).
+Formalized by `MathlibExt.Biology.PopulationGenetics.SelectionScan.measure_le_xpehh`, a theorem declared in [MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Biology/PopulationGenetics/SelectionScan/CrossPopulationEHH.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html#measure-le-xpehh).
 
 ## Depends on
 
@@ -91,4 +91,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Cross-population haplotype homozygosity](https://deicyde.github.io/atlas-lean/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Biology/detecting-selection/cross-population-haplotype-homozygosity)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Complex integration, residues and singularities: its own results
 
-8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html).
+8 results, 3 proved and 5 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html).
 
 Contour integrals, Cauchy's theorem, residues, argument principle, Rouché, Laurent series, isolated singularities (Casorati–Weierstrass, great Picard), Schwarz reflection, Looman–Menchoff, normal families and local properties of holomorphic functions on discs and annuli.
 
@@ -23,7 +23,7 @@ then $f$ has only finitely many zeros in $D(P,r)$.
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level I (Functions of a complex variable; General properties of functions of one complex variable), problem `ma_proofbench_l1_26`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.FiniteZerosInDiscOfHolomorphicWanted.finite_zeros_in_ball_of_not_identically_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/FiniteZerosInDiscOfHolomorphicWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/FiniteZerosInDiscOfHolomorphicWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#finite-zeros-in-ball-of-not-identically).
+Stated but not proved: `MathlibExt.Analysis.Complex.FiniteZerosInDiscOfHolomorphicWanted.finite_zeros_in_ball_of_not_identically_zero` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/FiniteZerosInDiscOfHolomorphicWanted.lean, line 51](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/FiniteZerosInDiscOfHolomorphicWanted.lean#L51). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#finite-zeros-in-ball-of-not-identically).
 
 ## A three-circles inequality for circles tangent at the origin
 
@@ -41,7 +41,7 @@ A(1)^{2}\le A(2)\,A\!\left(\frac{2}{3}\right).
 
 - MA-ProofBench (L. Pu et al., arXiv:2606.13782), Level II (Functions of a complex variable; Geometric function theory), problem `ma_proofbench_l2_99`.
 
-Stated but not proved: `MathlibExt.Analysis.Complex.SupOnTangentCirclesLogConvexWanted.sq_sSup_norm_circle_one_le_mul` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/SupOnTangentCirclesLogConvexWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/SupOnTangentCirclesLogConvexWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#sq-s-sup-norm-circle-one-le-mul).
+Stated but not proved: `MathlibExt.Analysis.Complex.SupOnTangentCirclesLogConvexWanted.sq_sSup_norm_circle_one_le_mul` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/SupOnTangentCirclesLogConvexWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/SupOnTangentCirclesLogConvexWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#sq-s-sup-norm-circle-one-le-mul).
 
 ## Casorati–Weierstrass theorem
 
@@ -54,7 +54,7 @@ image of the punctured disc $0 < |z - c| < r$ under $f$ is dense in $\mathbb{C}$
 
 - L. V. Ahlfors, Complex Analysis, 3rd ed., isolated singularities.
 
-Formalized by `MathlibExt.Analysis.Complex.CasoratiWeierstrass.casoratiWeierstrass`, a theorem declared in [MathlibExt/Analysis/Complex/CasoratiWeierstrass.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/CasoratiWeierstrass.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#casorati-weierstrass).
+Formalized by `MathlibExt.Analysis.Complex.CasoratiWeierstrass.casoratiWeierstrass`, a theorem declared in [MathlibExt/Analysis/Complex/CasoratiWeierstrass.lean, line 27](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/CasoratiWeierstrass.lean#L27). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#casorati-weierstrass).
 
 ## Classification of isolated singularities
 
@@ -71,7 +71,7 @@ Casorati–Weierstrass).
 
 - L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §3.1 and §3.2 (removable singularities; zeros, poles and the Casorati-Weierstrass theorem).
 
-Stated but not proved: `MathlibExt.Analysis.Complex.IsolatedSingularityWanted.isolatedSingularity_trichotomy` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/IsolatedSingularityWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/IsolatedSingularityWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#isolated-singularity-trichotomy).
+Stated but not proved: `MathlibExt.Analysis.Complex.IsolatedSingularityWanted.isolatedSingularity_trichotomy` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/IsolatedSingularityWanted.lean, line 37](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/IsolatedSingularityWanted.lean#L37). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#isolated-singularity-trichotomy).
 
 ## Laurent expansion on an annulus
 
@@ -86,7 +86,7 @@ $0^n = 0$ for $n < 0$, which matters only at $z = c$ when $r < 0$.
 
 - L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 5, §1.3 (the Laurent series).
 
-Stated but not proved: `MathlibExt.Analysis.Complex.LaurentSeriesWanted.laurentExpansion` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/LaurentSeriesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/LaurentSeriesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#laurent-expansion).
+Stated but not proved: `MathlibExt.Analysis.Complex.LaurentSeriesWanted.laurentExpansion` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/LaurentSeriesWanted.lean, line 29](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/LaurentSeriesWanted.lean#L29). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#laurent-expansion).
 
 ## Looman–Menchoff theorem
 
@@ -103,7 +103,7 @@ exceptional set. A Goursat rectangle estimate and Morera's theorem eliminate tha
 
 - https://en.wikipedia.org/wiki/Looman%E2%80%93Menchoff_theorem (statement id `looman-menchoff-s1`, canonical name "Looman-Menchoff theorem").
 
-Formalized by `MetaMathlibExt.looman_menchoff`, a theorem declared in [MathlibExt/Analysis/Complex/LoomanMenchoff.lean, line 1534](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/LoomanMenchoff.lean#L1534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#looman-menchoff).
+Formalized by `MetaMathlibExt.looman_menchoff`, a theorem declared in [MathlibExt/Analysis/Complex/LoomanMenchoff.lean, line 1534](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/LoomanMenchoff.lean#L1534). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#looman-menchoff).
 
 ## Residue theorem on a disc
 
@@ -122,7 +122,7 @@ Each integral on the right is $2\pi i$ times the residue of $f$ at $s$.
 
 - L. V. Ahlfors, Complex Analysis, 3rd ed., Ch. 4, §5.1 (the residue theorem).
 
-Stated but not proved: `MathlibExt.Analysis.Complex.ResidueTheoremWanted.residueTheorem_closedBall` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ResidueTheoremWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Analysis/Complex/ResidueTheoremWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#residue-theorem-closed-ball).
+Stated but not proved: `MathlibExt.Analysis.Complex.ResidueTheoremWanted.residueTheorem_closedBall` is written with `theorem_wanted` in [WantedExt/Analysis/Complex/ResidueTheoremWanted.lean, line 31](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Analysis/Complex/ResidueTheoremWanted.lean#L31). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#residue-theorem-closed-ball).
 
 ## Schwarz reflection principle
 
@@ -136,7 +136,7 @@ $g(\bar z) = \overline{g(z)}$ for every $z \in \mathbb{C}$.
 
 - https://en.wikipedia.org/wiki/Schwarz_reflection_principle.
 
-Formalized by `MetaMathlibExt.schwarz_reflection`, a theorem declared in [MathlibExt/Analysis/Complex/SchwarzReflection.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Analysis/Complex/SchwarzReflection.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#schwarz-reflection).
+Formalized by `MetaMathlibExt.schwarz_reflection`, a theorem declared in [MathlibExt/Analysis/Complex/SchwarzReflection.lean, line 372](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Analysis/Complex/SchwarzReflection.lean#L372). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html#schwarz-reflection).
 
 ## Depends on
 
@@ -145,4 +145,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Complex integration, residues and singularities](https://deicyde.github.io/atlas-lean/roadmap/Analysis/complex-analysis/cauchy-theory/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Analysis/complex-analysis/cauchy-theory)

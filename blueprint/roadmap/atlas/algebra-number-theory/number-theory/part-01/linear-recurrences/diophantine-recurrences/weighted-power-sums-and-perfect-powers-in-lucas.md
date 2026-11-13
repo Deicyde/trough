@@ -7,7 +7,7 @@ statement: formalized
 
 # Weighted power sums and perfect powers in Lucas sequences
 
-17 results, 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html).
+17 results, 17 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html).
 
 ## Powers of a root of the Lucas characteristic polynomial
 
@@ -20,7 +20,7 @@ $\alpha^2 - x\alpha + y = 0$, then $\alpha^n = \alpha U_n - y U_{n-1}$ for every
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.1 (i), (ii).
 
-Stated but not proved: `MetaMathlibExt.lucasU_root_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-root-pow).
+Stated but not proved: `MetaMathlibExt.lucasU_root_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 36](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L36). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-root-pow).
 
 ## The companion Lucas sequence in terms of the fundamental one
 
@@ -33,7 +33,7 @@ Then $V_n = U_{n+1} - y U_{n-1}$ for every $n \geq 1$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.1 (iii).
 
-Stated but not proved: `MetaMathlibExt.lucasV_eq_lucasU_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-v-eq-lucas-u-succ-sub).
+Stated but not proved: `MetaMathlibExt.lucasV_eq_lucasU_succ_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 45](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L45). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-v-eq-lucas-u-succ-sub).
 
 ## Addition formula for the Lucas sequence $U$
 
@@ -46,7 +46,7 @@ numbers $n \leq m$, $U_{m+n} = U_m V_n - y^n U_{m-n}$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.1 (iv).
 
-Stated but not proved: `MetaMathlibExt.lucasU_add_eq_mul_lucasV_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-add-eq-mul-lucas-v-sub).
+Stated but not proved: `MetaMathlibExt.lucasU_add_eq_mul_lucasV_sub` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 53](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L53). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-add-eq-mul-lucas-v-sub).
 
 ## Square of the companion Lucas sequence
 
@@ -59,7 +59,7 @@ number $n$, $V_n^2 = (x^2 - 4y) U_n^2 + 4 y^n$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.1 (vi).
 
-Stated but not proved: `MetaMathlibExt.lucasV_sq_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-v-sq-eq).
+Stated but not proved: `MetaMathlibExt.lucasV_sq_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-v-sq-eq).
 
 ## Binomial-sum formula for the Lucas sequence $U$
 
@@ -75,7 +75,7 @@ $$
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.1 (vii).
 
-Stated but not proved: `MetaMathlibExt.lucasU_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-eq-sum-choose).
+Stated but not proved: `MetaMathlibExt.lucasU_eq_sum_choose` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 70](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L70). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-eq-sum-choose).
 
 ## Bounds on Lucas sequences by powers of the dominant root
 
@@ -91,7 +91,7 @@ $U_n \leq \alpha^n/\sqrt{D}$ and $\alpha^n \leq V_n \leq \alpha^{n+1}/\sqrt{D}$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.2.
 
-Stated but not proved: `MetaMathlibExt.lucasU_lucasV_alpha_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-lucas-v-alpha-bounds).
+Stated but not proved: `MetaMathlibExt.lucasU_lucasV_alpha_bounds` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 81](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L81). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-lucas-v-alpha-bounds).
 
 ## Lower bounds for ratios of consecutive Lucas terms
 
@@ -105,7 +105,7 @@ $U_n / U_{n-1} \geq (x + \sqrt{x^2 - 4y})/2$ for every $n \geq 2$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.3.
 
-Stated but not proved: `MetaMathlibExt.lucasU_ratio_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-ratio-lower-bound).
+Stated but not proved: `MetaMathlibExt.lucasU_ratio_lower_bound` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 98](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L98). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-u-ratio-lower-bound).
 
 ## Logarithmic bounds for weighted Lucas power sums when $y < 0$
 
@@ -122,7 +122,7 @@ $q \log_\alpha x + (n - 2)q < (k - 1)p + \log_\alpha k +
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.4.
 
-Stated but not proved: `MetaMathlibExt.weighted_power_sum_log_bounds_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#weighted-power-sum-log-bounds-of-neg).
+Stated but not proved: `MetaMathlibExt.weighted_power_sum_log_bounds_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 114](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L114). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#weighted-power-sum-log-bounds-of-neg).
 
 ## Logarithmic bounds for weighted Lucas power sums when $y > 0$
 
@@ -142,7 +142,7 @@ $\alpha = 1$, and $\log_\alpha$ is undefined.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.5.
 
-Stated but not proved: `MetaMathlibExt.weighted_power_sum_log_bounds_of_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#weighted-power-sum-log-bounds-of-pos).
+Stated but not proved: `MetaMathlibExt.weighted_power_sum_log_bounds_of_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 133](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L133). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#weighted-power-sum-log-bounds-of-pos).
 
 ## Valuation of $U_n$ at a prime dividing the discriminant
 
@@ -161,7 +161,7 @@ without it, $x = 6$, $y = 3$ and $\ell = 3 \mid D = 24$ give $\nu_3(U_2) = \nu_3
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.6.
 
-Stated but not proved: `MetaMathlibExt.padicValInt_lucasU_of_dvd_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#padic-val-int-lucas-u-of-dvd-discr).
+Stated but not proved: `MetaMathlibExt.padicValInt_lucasU_of_dvd_discr` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 153](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L153). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#padic-val-int-lucas-u-of-dvd-discr).
 
 ## A quadratic equation in the companion Lucas sequence
 
@@ -181,7 +181,7 @@ $(1, 1, 1, 1)$, $(1, 1, 2, 1)$ and $(1, 1, 2, 5)$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 2.7.
 
-Stated but not proved: `MetaMathlibExt.lucasV_quadratic_eq_pm_discr_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-v-quadratic-eq-pm-discr-zpow).
+Stated but not proved: `MetaMathlibExt.lucasV_quadratic_eq_pm_discr_zpow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 167](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L167). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#lucas-v-quadratic-eq-pm-discr-zpow).
 
 ## Solutions of $1 + 2x^p = U_n^q$ for Lucas sequences with $y = \pm 1$
 
@@ -199,7 +199,7 @@ $\sum_{j=1}^k j U_j^p = U_n^q$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 1.1 and Proposition 3.1.
 
-Stated but not proved: `MetaMathlibExt.one_add_two_mul_pow_eq_lucasU_pow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#one-add-two-mul-pow-eq-lucas-u-pow-iff).
+Stated but not proved: `MetaMathlibExt.one_add_two_mul_pow_eq_lucasU_pow_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 185](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L185). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#one-add-two-mul-pow-eq-lucas-u-pow-iff).
 
 ## No solutions of $\sum_{j=1}^k j U_j^p = U_n^q$ when $y = -1$ and $x \ge 2$ or $y = 1$ and $x \ge 3$, with $k \ge 3$ and exponents at most $11$
 
@@ -214,7 +214,7 @@ $\sum_{j=1}^k j U_j^p \ne U_n^q$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Theorem 1.1, second part.
 
-Stated but not proved: `MetaMathlibExt.weighted_power_sum_ne_lucasU_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#weighted-power-sum-ne-lucas-u-pow).
+Stated but not proved: `MetaMathlibExt.weighted_power_sum_ne_lucasU_pow` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 200](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L200). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#weighted-power-sum-ne-lucas-u-pow).
 
 ## Remainder form of the weighted power-sum equation for Lucas sequences
 
@@ -243,7 +243,7 @@ proof.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Proposition 4.1.
 
-Stated but not proved: `MetaMathlibExt.exists_remainders_weighted_power_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#exists-remainders-weighted-power-sum).
+Stated but not proved: `MetaMathlibExt.exists_remainders_weighted_power_sum` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 215](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L215). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#exists-remainders-weighted-power-sum).
 
 ## Bound on the parameter in the weighted power-sum equation for Lucas sequences
 
@@ -265,7 +265,7 @@ $(n, p, q, x) = (1, 1, 1, 5)$ is a solution and $5 > (1 + 1)^2/4 + 1 = 2$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 4.4.
 
-Stated but not proved: `MetaMathlibExt.le_of_weighted_power_sum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#le-of-weighted-power-sum-eq).
+Stated but not proved: `MetaMathlibExt.le_of_weighted_power_sum_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#le-of-weighted-power-sum-eq).
 
 ## Remainder bound for weighted Lucas power sums when $y = -1$
 
@@ -280,7 +280,7 @@ $D^{q/2} |R_2| < k (D + 1/x)^{q+1} \alpha^{kp - 2k/q + 1}$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 4.2.
 
-Stated but not proved: `MetaMathlibExt.remainder_bound_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#remainder-bound-of-neg).
+Stated but not proved: `MetaMathlibExt.remainder_bound_of_neg` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#remainder-bound-of-neg).
 
 ## Remainder bound for weighted Lucas power sums when $y = 1$
 
@@ -296,7 +296,7 @@ $D^{q/2} |R_2| < k (V_2 + 1/x)^{q+1} \alpha^{kp - 2k/q + 1/2}$.
 
 - Benjamin Earp-Lynch, Simon Earp-Lynch, Omar Kihel and Puntani Pongsumpun, *Extension of the Equation ∑ j F_j^p = F_n^q to a Family of Lucas Sequences*, The Fibonacci Quarterly 62 (2024), no. 3, Lemma 4.3.
 
-Stated but not proved: `MetaMathlibExt.remainder_bound_of_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#remainder-bound-of-pos).
+Stated but not proved: `MetaMathlibExt.remainder_bound_of_pos` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean, line 263](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/LucasWeightedPowerSumWanted.lean#L263). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html#remainder-bound-of-pos).
 
 ## Depends on
 
@@ -305,4 +305,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Weighted power sums and perfect powers in Lucas sequences](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/diophantine-recurrences/weighted-power-sums-and-perfect-powers-in-lucas)

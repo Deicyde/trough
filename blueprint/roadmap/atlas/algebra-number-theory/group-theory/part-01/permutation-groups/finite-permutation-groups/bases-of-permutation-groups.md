@@ -7,7 +7,7 @@ statement: formalized
 
 # Bases of permutation groups
 
-7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html).
+7 results, 6 proved and 1 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html).
 
 ## Base of a group action
 
@@ -15,7 +15,7 @@ For a group $G$ acting on a set $\Omega$, a finite set
 $B \subseteq \Omega$ is a base when its pointwise stabilizer is trivial: the only $g \in G$ with
 $g \cdot \omega = \omega$ for all $\omega \in B$ is $g = 1$.
 
-Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.IsBase`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#is-base).
+Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.IsBase`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 39](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L39). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#is-base).
 
 ## Minimal base
 
@@ -23,7 +23,7 @@ For a group $G$ acting on a set $\Omega$, a finite set $B \subseteq \Omega$
 is a minimal base when it is a base, that is, its pointwise stabilizer in $G$ is trivial, and for
 every $\omega \in B$ the set $B \setminus \{\omega\}$ is not a base.
 
-Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.IsMinimalBase`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#is-minimal-base).
+Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.IsMinimalBase`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 44](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L44). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#is-minimal-base).
 
 ## Maximal size of a minimal base
 
@@ -34,14 +34,14 @@ trivial while that of $B \setminus \{\omega\}$ is not, for every $\omega \in B$.
 such size when these sizes are bounded, as they are for finite $G$, and $0$ when they are
 unbounded.
 
-Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxMinimalBaseSize`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-minimal-base-size).
+Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxMinimalBaseSize`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 49](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L49). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-minimal-base-size).
 
 ## Independent subset of a group
 
 A finite subset $S$ of a group $G$ is independent when no
 element $s \in S$ lies in the subgroup of $G$ generated by $S \setminus \{s\}$.
 
-Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.IsIndependent`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#is-independent).
+Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.IsIndependent`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#is-independent).
 
 ## Maximal size of an independent set
 
@@ -51,7 +51,7 @@ $\mu'(G)$ is the supremum in $\mathbb{N}$ of the sizes of the finite independent
 their largest size when these sizes are bounded, as they are for finite $G$, and $0$ when they are
 unbounded.
 
-Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxIndependentSize`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-independent-size).
+Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxIndependentSize`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-independent-size).
 
 ## Cameron's question on minimal bases and independent sets
 
@@ -62,7 +62,7 @@ of $G$ (a subset none of whose elements lies in the subgroup generated by the ot
 
 This is Kourovka Notebook Problem 16.45, posed by P. J. Cameron.
 
-Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxMinimalBaseSizeEqMaxIndependentSize`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-minimal-base-size-eq-max-independent).
+Formalized by `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxMinimalBaseSizeEqMaxIndependentSize`, a definition declared in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 62](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L62). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-minimal-base-size-eq-max-independent).
 
 ## Kourovka Problem 16.45 has a negative answer
 
@@ -77,7 +77,7 @@ The counterexample in the source is Kriebel's affine group $G = \mathbb{F}_{29}^
 
 - E. I. Khukhro and V. D. Mazurov (eds.), Unsolved Problems in Group Theory: The Kourovka Notebook, 21st issue, arXiv:1401.0300v49 (2026), Problem 16.45 (P. J. Cameron); resolution: A. Kriebel, A counterexample to Kourovka Notebook Problem 16.45, preprint, Zenodo record 22929486 (2026), main theorem: G = F_29^2 ⋊ SL_2(5) of order 100920 has b(G) = 3 < 4 = μ'(G); the Kourovka Notebook (21st issue) marks 16.45 solved (AI solution confirmed by P. J. Cameron), https://zenodo.org/records/22929486.
 
-Stated but not proved: `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxMinimalBaseSizeEqMaxIndependentSize_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-minimal-base-size-eq-max-independent-2).
+Stated but not proved: `MathlibExt.GroupTheory.MinimalBaseIndependentSetKourovka16Problem45Wanted.maxMinimalBaseSizeEqMaxIndependentSize_refuted` is written with `theorem_wanted` in [WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean, line 76](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/GroupTheory/MinimalBaseIndependentSetKourovka16Problem45Wanted.lean#L76). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html#max-minimal-base-size-eq-max-independent-2).
 
 ## Depends on
 
@@ -86,4 +86,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Bases of permutation groups](https://deicyde.github.io/atlas-lean/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/GroupTheory/permutation-groups/finite-permutation-groups/bases-of-permutation-groups)

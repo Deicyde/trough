@@ -7,7 +7,7 @@ statement: formalized
 
 # Denominators of Bernoulli polynomials
 
-25 results, 12 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html).
+25 results, 12 proved and 13 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html).
 
 ## Kellner–Sondow factorization of the denominators of Bernoulli polynomials
 
@@ -25,7 +25,7 @@ $s_p(n+1) < p$.
 
 - Bernd C. Kellner, "On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients," Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem `thm:triple`, lines 351–358, <https://cs.uwaterloo.ca/journals/JIS/VOL27/Kellner/kell2.tex>, restating B. C. Kellner and J. Sondow, "On Carmichael and polygonal numbers, Bernoulli polynomials, and sums of base-p digits," Integers 21 (2021), Theorem 3.1. Factor definitions `eq:ddprod2` at lines 341–346.
 
-Formalized by `MetaMathlibExt.kellner_sondow_bernoulli_denom`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/KellnerSondowBernoulliDenominator.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/NumberTheory/Bernoulli/KellnerSondowBernoulliDenominator.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-sondow-bernoulli-denom).
+Formalized by `MetaMathlibExt.kellner_sondow_bernoulli_denom`, a theorem declared in [MathlibExt/NumberTheory/Bernoulli/KellnerSondowBernoulliDenominator.lean, line 708](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/NumberTheory/Bernoulli/KellnerSondowBernoulliDenominator.lean#L708). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-sondow-bernoulli-denom).
 
 ## The Bernoulli polynomial $B_0(x)$ has denominator one
 
@@ -37,7 +37,7 @@ $\mathfrak{D}_n = \operatorname{denom}(B_n(x))$, this is the convention $\mathfr
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, after Theorem 7.
 
-Formalized by `MetaMathlibExt.polynomialDenominator_bernoulli_zero`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#polynomial-denominator-bernoulli-zero).
+Formalized by `MetaMathlibExt.polynomialDenominator_bernoulli_zero`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 32](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L32). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#polynomial-denominator-bernoulli-zero).
 
 ## Denominator of $B_n(x) - B_n$
 
@@ -54,7 +54,7 @@ $n$-th Bernoulli number.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, equation (2.3) (`eq:ddprod`); OEIS A195441.
 
-Formalized by `MetaMathlibExt.bernoulliDiffDenominator`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator).
+Formalized by `MetaMathlibExt.bernoulliDiffDenominator`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 48](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L48). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator).
 
 ## First values of $\mathbb{D}_n$
 
@@ -66,7 +66,7 @@ $(\mathbb{D}_1, \mathbb{D}_2, \dots, \mathbb{D}_{10}) = (1, 1, 2, 1, 6, 2, 6, 3,
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2 (displayed values of `𝔻_n`).
 
-Formalized by `MetaMathlibExt.bernoulliDiffDenominator_small`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-small).
+Formalized by `MetaMathlibExt.bernoulliDiffDenominator_small`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 56](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L56). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-small).
 
 ## Kellner's product $\mathbb{D}^\perp_n$ over primes not dividing $n$
 
@@ -79,7 +79,7 @@ such prime satisfies $p \le n$.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, equation (2.8) (`eq:ddprod2`); OEIS A324370.
 
-Formalized by `MetaMathlibExt.bernoulliDiffDenominatorCoprimePart`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-coprime-part).
+Formalized by `MetaMathlibExt.bernoulliDiffDenominatorCoprimePart`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 68](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L68). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-coprime-part).
 
 ## Small values of $\mathbb{D}^\perp_n$
 
@@ -92,7 +92,7 @@ $\mathbb{D}^\perp_3 = 2$, $\mathbb{D}^\perp_5 = 6$ and $\mathbb{D}^\perp_9 = 10$
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, equation (2.8).
 
-Formalized by `MetaMathlibExt.bernoulliDiffDenominatorCoprimePart_small`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-coprime-part-2).
+Formalized by `MetaMathlibExt.bernoulliDiffDenominatorCoprimePart_small`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 77](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L77). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-coprime-part-2).
 
 ## Kellner's product $\mathbb{D}^+_n$ over primes above $\sqrt{n}$
 
@@ -105,7 +105,7 @@ such prime satisfies $p \le n$.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 1, equation (1.4) (`eq:ddp`).
 
-Formalized by `MetaMathlibExt.bernoulliDiffDenominatorLargePart`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part).
+Formalized by `MetaMathlibExt.bernoulliDiffDenominatorLargePart`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part).
 
 ## Small values of $\mathbb{D}^+_n$
 
@@ -117,7 +117,7 @@ $s_p(n) \ge p$. Then $\mathbb{D}^+_4 = 1$, $\mathbb{D}^+_5 = 3$ and $\mathbb{D}^
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 1, equation (1.4).
 
-Formalized by `MetaMathlibExt.bernoulliDiffDenominatorLargePart_small`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part-sm).
+Formalized by `MetaMathlibExt.bernoulliDiffDenominatorLargePart_small`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part-sm).
 
 ## Indices of Bernoulli polynomials with integral $k$-th derivative
 
@@ -130,7 +130,7 @@ equal to $1$. We write $\overline{\mathcal{S}}$ for $\overline{\mathcal{S}}_1$.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 1 (`\overline{𝒮}`) and Section 3 (`\overline{𝒮}_k`).
 
-Formalized by `MetaMathlibExt.bernoulliIntegralDerivativeIndices`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-integral-derivative-indices).
+Formalized by `MetaMathlibExt.bernoulliIntegralDerivativeIndices`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 108](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L108). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-integral-derivative-indices).
 
 ## The derivative of $B_1(x)$ has integer coefficients
 
@@ -143,7 +143,7 @@ coefficients.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 1 (`1 ∈ 𝒮`).
 
-Formalized by `MetaMathlibExt.one_mem_bernoulliIntegralDerivativeIndices_one`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#one-mem-bernoulli-integral-derivative-in).
+Formalized by `MetaMathlibExt.one_mem_bernoulliIntegralDerivativeIndices_one`, a theorem declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 116](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L116). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#one-mem-bernoulli-integral-derivative-in).
 
 ## Product formula for the denominator of $B_n(x) - B_n$
 
@@ -156,7 +156,7 @@ primes $p$ with $s_p(n) \ge p$, equals the denominator of the polynomial $B_n(x)
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Section 2, definition of `𝔻_n` and equation (2.3), quoting Kellner (2017), Section 5.
 
-Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominator_eq_polynomialDenominator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-eq-polynomial).
+Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominator_eq_polynomialDenominator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 130](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L130). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-eq-polynomial).
 
 ## Kellner's large-part conjecture
 
@@ -169,7 +169,7 @@ natural number $n > 192$.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Conjecture 2 (i), quoting Kellner (2017), Conjectures 1, 2.
 
-Formalized by `MetaMathlibExt.KellnerLargePartConjecture`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-large-part-conjecture).
+Formalized by `MetaMathlibExt.KellnerLargePartConjecture`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 139](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L139). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-large-part-conjecture).
 
 ## Kellner's asymptotic conjecture on large prime factors
 
@@ -183,7 +183,7 @@ $\omega(\mathbb{D}^{+}_n) \sim \kappa \sqrt{n} / \log n$ as $n \to \infty$.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Conjecture 2 (ii), equation (1.6).
 
-Formalized by `MetaMathlibExt.KellnerLargePartAsymptoticConjecture`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-large-part-asymptotic-conjecture).
+Formalized by `MetaMathlibExt.KellnerLargePartAsymptoticConjecture`, a definition declared in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 147](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L147). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-large-part-asymptotic-conjecture).
 
 ## Kellner's large-prime conjectures imply the Bernoulli derivative conjectures
 
@@ -201,7 +201,7 @@ $\overline{\mathcal{S}}$ is finite.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 3 (`jis-2024-24.2.8-thm-3`).
 
-Stated but not proved: `MetaMathlibExt.kellner_conjectures_imply_bernoulli_integral_derivative_conjectures` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-conjectures-imply-bernoulli-inte).
+Stated but not proved: `MetaMathlibExt.kellner_conjectures_imply_bernoulli_integral_derivative_conjectures` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 159](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L159). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-conjectures-imply-bernoulli-inte).
 
 ## Bordellès–Luca–Moree–Shparlinski asymptotic and finiteness of integral derivatives
 
@@ -219,7 +219,7 @@ Bordellès, Luca, Moree and Shparlinski prove the asymptotic with $\kappa = 2$.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Corollary 4, quoting Bordellès, Luca, Moree, and Shparlinski (2018), Corollary 1.6 (`jis-2024-24.2.8-cor-4`).
 
-Stated but not proved: `MetaMathlibExt.kellnerLargePartAsymptoticConjecture_and_finite_integral_derivative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-large-part-asymptotic-conjecture-2).
+Stated but not proved: `MetaMathlibExt.kellnerLargePartAsymptoticConjecture_and_finite_integral_derivative` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#kellner-large-part-asymptotic-conjecture-2).
 
 ## Constraints on Bernoulli polynomials with integral derivative
 
@@ -231,7 +231,7 @@ $n + 1$ is prime, and if $n \notin \{1, 2, 4, 6, 10, 12, 28, 30, 36, 60\}$, then
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 5 (`jis-2024-24.2.8-thm-5`).
 
-Stated but not proved: `MetaMathlibExt.bernoulli_integral_derivative_succ_prime_and_large` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-integral-derivative-succ-prime).
+Stated but not proved: `MetaMathlibExt.bernoulli_integral_derivative_succ_prime_and_large` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-integral-derivative-succ-prime).
 
 ## Denominators of Bernoulli polynomials are even
 
@@ -253,7 +253,7 @@ above follows that proof.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Corollary 8 (`jis-2024-24.2.8-cor-8`).
 
-Stated but not proved: `MetaMathlibExt.bernoulli_polynomial_denominator_rad_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-polynomial-denominator-rad-eve).
+Stated but not proved: `MetaMathlibExt.bernoulli_polynomial_denominator_rad_even` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 193](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L193). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-polynomial-denominator-rad-eve).
 
 ## Integrality of the derivative of a Bernoulli polynomial
 
@@ -268,7 +268,7 @@ $\operatorname{rad}(n)$. Moreover, if $B_n'(x)$ has integer coefficients, then $
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 9 (`jis-2024-24.2.8-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.bernoulli_derivative_integral_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-derivative-integral-iff).
+Stated but not proved: `MetaMathlibExt.bernoulli_derivative_integral_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-derivative-integral-iff).
 
 ## Indices with $\mathbb{D}_n = \operatorname{rad}(n + 1)$
 
@@ -285,7 +285,7 @@ the set $\overline{\mathcal{R}}$ is finite.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 10 (`jis-2024-24.2.8-thm-10`).
 
-Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominator_eq_radical_succ_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-eq-radical-su).
+Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominator_eq_radical_succ_properties` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 221](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L221). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-eq-radical-su).
 
 ## The odd radical conjecture implies the integral-derivative conjecture
 
@@ -306,7 +306,7 @@ odd $n$; the conclusion is Conjecture 1, and in particular $\overline{\mathcal{S
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 12 (`jis-2024-24.2.8-thm-12`).
 
-Stated but not proved: `MetaMathlibExt.odd_radical_conjecture_implies_bernoulli_integral_derivative_conjecture` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#odd-radical-conjecture-implies-bernoulli).
+Stated but not proved: `MetaMathlibExt.odd_radical_conjecture_implies_bernoulli_integral_derivative_conjecture` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 235](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L235). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#odd-radical-conjecture-implies-bernoulli).
 
 ## Denominators of higher derivatives of Bernoulli polynomials
 
@@ -329,7 +329,7 @@ Finally, $\mathfrak{D}_n^{(1)} = \mathfrak{D}_{n-1} / \operatorname{rad}(n) = \m
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 13 (`jis-2024-24.2.8-thm-13`).
 
-Stated but not proved: `MetaMathlibExt.bernoulli_higher_derivative_denominator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-higher-derivative-denominator).
+Stated but not proved: `MetaMathlibExt.bernoulli_higher_derivative_denominator` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 248](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L248). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-higher-derivative-denominator).
 
 ## Finitely many Bernoulli polynomials have an integral $k$-th derivative
 
@@ -345,7 +345,7 @@ The paper writes $\subset$ for this inclusion; its proof gives inclusion, not st
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Theorem 14 (`jis-2024-24.2.8-thm-14`).
 
-Stated but not proved: `MetaMathlibExt.bernoulliIntegralDerivativeIndices_finite_and_mono` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-integral-derivative-indices-fi).
+Stated but not proved: `MetaMathlibExt.bernoulliIntegralDerivativeIndices_finite_and_mono` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 275](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L275). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-integral-derivative-indices-fi).
 
 ## Parity, radical divisibility and an lcm recursion for $\mathbb{D}_n$
 
@@ -361,7 +361,7 @@ $\mathbb{D}_n = \operatorname{lcm}(\mathbb{D}_{n+1}, \operatorname{rad}(n + 1))$
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Lemma 16 (`jis-2024-24.2.8-lem-16`).
 
-Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominator_parity_radical_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-parity-radica).
+Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominator_parity_radical_lcm` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 287](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L287). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-parity-radica).
 
 ## The large-prime part divides the coprime part
 
@@ -374,7 +374,7 @@ and $s_p(n) \ge p$. Then $\mathbb{D}^+_n$ divides $\mathbb{D}^\perp_n$ for every
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Lemma 17 (`jis-2024-24.2.8-lem-17`).
 
-Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominatorLargePart_dvd_coprimePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part-dv).
+Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominatorLargePart_dvd_coprimePart` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 299](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L299). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part-dv).
 
 ## $\mathbb{D}^+_n$ eventually exceeds every fixed rising product
 
@@ -387,7 +387,7 @@ $\mathbb{D}^+_n > (n + 1)(n + 2) \cdots (n + k)$ for all $n > N$.
 
 - Bernd C. Kellner, *On the Finiteness of Bernoulli Polynomials Whose Derivative Has Only Integral Coefficients*, Journal of Integer Sequences 27 (2024), Article 24.2.8, Lemma 18 (`jis-2024-24.2.8-lem-18`).
 
-Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominatorLargePart_eventually_gt_descFactorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part-ev).
+Stated but not proved: `MetaMathlibExt.bernoulliDiffDenominatorLargePart_eventually_gt_descFactorial` is written with `theorem_wanted` in [WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean, line 307](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BernoulliDerivativeDenominatorWanted.lean#L307). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html#bernoulli-diff-denominator-large-part-ev).
 
 ## Depends on
 
@@ -396,4 +396,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Denominators of Bernoulli polynomials](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/special-numbers/bernoulli-numbers/denominators-of-bernoulli-polynomials)

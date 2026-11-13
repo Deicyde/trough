@@ -7,7 +7,7 @@ statement: formalized
 
 # Multiplicative functions in short intervals
 
-4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html).
+4 results, 2 proved and 2 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html).
 
 ## Extension of an arithmetic function to the integers
 
@@ -16,14 +16,14 @@ element $0$ and let $f$ be an arithmetic function with values in $R$. The extens
 integers is the function on $\mathbb{Z}$ that sends an integer $z$ to $f(z)$ if $z > 0$ and to
 $0$ if $z \le 0$.
 
-Formalized by `ArithmeticFunction.intExtension`, a definition declared in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#int-extension).
+Formalized by `ArithmeticFunction.intExtension`, a definition declared in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 69](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L69). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#int-extension).
 
 ## 1-bounded function
 
 A function $f \colon \mathbb{N} \to \mathbb{C}$ is 1-bounded if
 $|f(n)| \le 1$ for every natural number $n$.
 
-Formalized by `MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.IsOneBounded`, an abbreviation declared in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#is-one-bounded).
+Formalized by `MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.IsOneBounded`, an abbreviation declared in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 82](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L82). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#is-one-bounded).
 
 ## Non-pretentious multiplicative functions do not correlate with polynomial phases on short intervals on average
 
@@ -64,7 +64,7 @@ then $M(f; C X^{k+1} / H^{k+1}, Q) \le B$.
 
 - K. Matomäki, M. Radziwiłł, T. Tao, J. Teräväinen, and T. Ziegler, `Higher uniformity of bounded multiplicative functions in short intervals on average`, Annals of Math, 197 (2) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_bounded_multiplicative_functions` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.theorem_1_3` is written with `theorem_wanted` in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#theorem-1-3).
+Stated but not proved: `MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.theorem_1_3` is written with `theorem_wanted` in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 117](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L117). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#theorem-1-3).
 
 ## Liouville's function does not correlate with polynomial phases on short intervals on average
 
@@ -89,7 +89,7 @@ as the real number $X$ tends to infinity.
 
 - K. Matomäki, M. Radziwiłł, T. Tao, J. Teräväinen, and T. Ziegler, `Higher uniformity of bounded multiplicative functions in short intervals on average`, Annals of Math, 197 (2) 2023. Statement taken from https://github.com/ImperialCollegeLondon/AnnalsChallenge. Problem `annals_bounded_multiplicative_functions` of the lean-eval benchmark.
 
-Stated but not proved: `MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.corollary_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#corollary-1-1).
+Stated but not proved: `MathlibExt.NumberTheory.BoundedMultiplicativeFunctionsWanted.BoundedMultiplicativeFunctions.corollary_1_1` is written with `theorem_wanted` in [WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean, line 135](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/BoundedMultiplicativeFunctionsWanted.lean#L135). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html#corollary-1-1).
 
 ## Depends on
 
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Multiplicative functions in short intervals](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/arithmetic-functions/multiplicative-functions/multiplicative-functions-in-short-intervals)

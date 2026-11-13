@@ -1,6 +1,6 @@
 # Independence, cliques and domination
 
-63 results of ATLAS's vault, 53 proved and 10 stated but not proved, in this branch's topics.
+63 results of ATLAS's vault, 50 proved, 5 stated but not proved and 8 whose declaration the Lean read here does not declare, in this branch's topics.
 
 Independent sets, cliques and dominating sets in graphs, with bounds on their sizes and polynomials counting them.
 

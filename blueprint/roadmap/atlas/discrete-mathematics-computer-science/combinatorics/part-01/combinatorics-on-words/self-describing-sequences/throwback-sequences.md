@@ -7,7 +7,7 @@ statement: formalized
 
 # Throwback sequences
 
-15 results, 6 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html).
+15 results, 6 proved and 9 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html).
 
 ## Kozar's conjecture on the throwback sequence
 
@@ -27,7 +27,7 @@ theorem for every sequence of distinct positive integers.
 
 - Jesiah Darnell and Benjamin F. Dribus, “Throwback Sequences of Positive Integers”, <https://cs.uwaterloo.ca/journals/JIS/VOL28/Dribus/dribus4.tex>; conjecture/introduction lines 71–80; exact throwback definition lines 98–103; general recurrence theorem and proof lines 124–137.
 
-Formalized by `MetaMathlibExt.kozar_throwback_recurrence`, a theorem declared in [MathlibExt/Combinatorics/Sequences/KozarThrowbackRecurrence.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/MathlibExt/Combinatorics/Sequences/KozarThrowbackRecurrence.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#kozar-throwback-recurrence).
+Formalized by `MetaMathlibExt.kozar_throwback_recurrence`, a theorem declared in [MathlibExt/Combinatorics/Sequences/KozarThrowbackRecurrence.lean, line 295](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Combinatorics/Sequences/KozarThrowbackRecurrence.lean#L295). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#kozar-throwback-recurrence).
 
 ## Throwback operation
 
@@ -46,7 +46,7 @@ term, so repeated values stay distinguishable.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 2.
 
-Formalized by `MetaMathlibExt.throwback`, a definition declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback).
+Formalized by `MetaMathlibExt.throwback`, a definition declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 43](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L43). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback).
 
 ## Throwback sequence
 
@@ -59,7 +59,7 @@ operation in which each entry's weight is its own value.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 2.
 
-Formalized by `MetaMathlibExt.throwbackSequence`, a definition declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence).
+Formalized by `MetaMathlibExt.throwbackSequence`, a definition declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 50](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L50). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence).
 
 ## Throwback of the integers from 3 on
 
@@ -71,7 +71,7 @@ its throwback sequence $T(X)$ are $3, 4, 5, 6, 3, 7$ (OEIS A357081).
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Table 1.
 
-Formalized by `MetaMathlibExt.throwback_examples`, a theorem declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-examples).
+Formalized by `MetaMathlibExt.throwback_examples`, a theorem declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 58](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L58). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-examples).
 
 ## Partial placement sequences
 
@@ -93,7 +93,7 @@ position.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Section 4.
 
-Formalized by `MetaMathlibExt.partialPlacement`, a definition declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement).
+Formalized by `MetaMathlibExt.partialPlacement`, a definition declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 73](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L73). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement).
 
 ## First partial placement sequence of the integers from 3 on
 
@@ -105,7 +105,7 @@ positions $0$, $4$ and $-4$, and its positions $1$, $2$ and $3$ are empty.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Table 4.
 
-Formalized by `MetaMathlibExt.partialPlacement_zero_examples`, a theorem declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement-zero-examples).
+Formalized by `MetaMathlibExt.partialPlacement_zero_examples`, a theorem declared in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 88](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L88). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement-zero-examples).
 
 ## Each term eventually settles or leads infinitely often
 
@@ -122,7 +122,7 @@ $k$ throwbacks.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Lemma 1 (`jis-2025-25.5.1-lem-1`).
 
-Stated but not proved: `MetaMathlibExt.throwback_final_position_or_frequently_leader` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-final-position-or-frequently-l).
+Stated but not proved: `MetaMathlibExt.throwback_final_position_or_frequently_leader` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 102](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L102). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-final-position-or-frequently-l).
 
 ## Every term recurs in the throwback sequence
 
@@ -135,7 +135,7 @@ many $k$ with $t_k = x_j$.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Theorem 2 (`jis-2025-25.5.1-thm-2`).
 
-Stated but not proved: `MetaMathlibExt.throwbackSequence_infinite_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-infinite-eq).
+Stated but not proved: `MetaMathlibExt.throwbackSequence_infinite_eq` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 112](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L112). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-infinite-eq).
 
 ## Recursive bound on the time to become leader
 
@@ -156,7 +156,7 @@ become leader.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Lemma 3 (`jis-2025-25.5.1-lem-3`).
 
-Stated but not proved: `MetaMathlibExt.throwback_leader_time_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-leader-time-le).
+Stated but not proved: `MetaMathlibExt.throwback_leader_time_le` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 125](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L125). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-leader-time-le).
 
 ## Limiting frequencies in throwback sequences
 
@@ -176,7 +176,7 @@ For a term $w$ of $X$, $\sigma(w)$ is the index of $w$ in the increasing rearran
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Theorem 4 (`jis-2025-25.5.1-thm-4`).
 
-Stated but not proved: `MetaMathlibExt.throwbackSequence_limiting_frequency` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-limiting-frequency).
+Stated but not proved: `MetaMathlibExt.throwbackSequence_limiting_frequency` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 140](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L140). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-limiting-frequency).
 
 ## Every term has a nonzero limiting frequency
 
@@ -189,7 +189,7 @@ $x_j$ among the first $N$ terms of $T(X)$ converges, as $N \to \infty$, to a non
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Corollary 5 (`jis-2025-25.5.1-cor-5`).
 
-Stated but not proved: `MetaMathlibExt.throwbackSequence_limiting_frequency_ne_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-limiting-frequency-ne).
+Stated but not proved: `MetaMathlibExt.throwbackSequence_limiting_frequency_ne_zero` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 158](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L158). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-limiting-frequency-ne).
 
 ## Partial placement sequences are periodic
 
@@ -203,7 +203,7 @@ same term.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Lemma 6 (`jis-2025-25.5.1-lem-6`).
 
-Stated but not proved: `MetaMathlibExt.partialPlacement_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement-periodic).
+Stated but not proved: `MetaMathlibExt.partialPlacement_periodic` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 170](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L170). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement-periodic).
 
 ## Throwback sequences of increasing sequences are uniformly recurrent
 
@@ -218,7 +218,7 @@ for all $s < L$.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Theorem 7 (`jis-2025-25.5.1-thm-7`).
 
-Stated but not proved: `MetaMathlibExt.throwbackSequence_uniformly_recurrent` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-uniformly-recurrent).
+Stated but not proved: `MetaMathlibExt.throwbackSequence_uniformly_recurrent` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 179](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L179). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-sequence-uniformly-recurrent).
 
 ## Minimal complete blocks of partial placements match configurations
 
@@ -239,7 +239,7 @@ $x_0, \dots, x_n$ in the sequences $\tau^k(X)$ with $k \ge 0$.
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Lemma 8 (`jis-2025-25.5.1-lem-8`).
 
-Stated but not proved: `MetaMathlibExt.partialPlacement_minimal_complete_blocks_iff_configurations` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement-minimal-complete-block).
+Stated but not proved: `MetaMathlibExt.partialPlacement_minimal_complete_blocks_iff_configurations` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 192](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L192). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#partial-placement-minimal-complete-block).
 
 ## Perfect mixing for consecutive integers
 
@@ -254,7 +254,7 @@ $m, m + 1, \dots, m + n$ occupies the same positions in $\tau^{(m+1)^{n+1}}(X)$ 
 
 - Jesiah Darnell and Benjamin F. Dribus, *Throwback Sequences of Positive Integers*, Journal of Integer Sequences 28 (2025), Article 25.5.1, Theorem 9 (`jis-2025-25.5.1-thm-9`).
 
-Stated but not proved: `MetaMathlibExt.throwback_consecutive_perfect_mixing` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-consecutive-perfect-mixing).
+Stated but not proved: `MetaMathlibExt.throwback_consecutive_perfect_mixing` is written with `theorem_wanted` in [WantedExt/Combinatorics/ThrowbackSequencesWanted.lean, line 208](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/Combinatorics/ThrowbackSequencesWanted.lean#L208). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html#throwback-consecutive-perfect-mixing).
 
 ## Depends on
 
@@ -263,4 +263,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Throwback sequences](https://deicyde.github.io/atlas-lean/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/Combinatorics/combinatorics-on-words/self-describing-sequences/throwback-sequences)

@@ -7,7 +7,7 @@ statement: formalized
 
 # Integer values of Fibonacci polynomial generating functions
 
-10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html).
+10 results, 10 stated but not proved, quoted from [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean) at commit [035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce); [its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html).
 
 ## Integer-polynomial values of the Fibonacci polynomial generating function
 
@@ -23,7 +23,7 @@ $q(x) = -F_{i+1}(x) / (b F_i(x))$ for some $i \ge 1$.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Theorem 1.2.
 
-Stated but not proved: `MetaMathlibExt.fibonacciPolyGenFun_mem_intPoly_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fibonacci-poly-gen-fun-mem-int-poly-iff).
+Stated but not proved: `MetaMathlibExt.fibonacciPolyGenFun_mem_intPoly_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 54](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L54). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fibonacci-poly-gen-fun-mem-int-poly-iff).
 
 ## Integer-polynomial values of the Lucas polynomial generating function
 
@@ -40,7 +40,7 @@ some $i \ge 1$.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Theorem 1.3.
 
-Stated but not proved: `MetaMathlibExt.lucasPolyGenFun_mem_intPoly_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-poly-gen-fun-mem-int-poly-iff).
+Stated but not proved: `MetaMathlibExt.lucasPolyGenFun_mem_intPoly_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 67](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L67). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-poly-gen-fun-mem-int-poly-iff).
 
 ## Integer values of the generalized Fibonacci generating function at rationals
 
@@ -55,7 +55,7 @@ $i \ge 1$.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Theorem 1.4.
 
-Stated but not proved: `MetaMathlibExt.fibonacciGenFun_eval_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fibonacci-gen-fun-eval-is-int-iff).
+Stated but not proved: `MetaMathlibExt.fibonacciGenFun_eval_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 83](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L83). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fibonacci-gen-fun-eval-is-int-iff).
 
 ## Integer values of the generalized Lucas generating function at rationals
 
@@ -71,7 +71,7 @@ $i \in \mathbb{N}$, or $q = -F_{i+1}(1) / (b F_i(1))$ for some $i \ge 1$.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Theorem 1.5.
 
-Stated but not proved: `MetaMathlibExt.lucasGenFun_eval_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-gen-fun-eval-is-int-iff).
+Stated but not proved: `MetaMathlibExt.lucasGenFun_eval_isInt_iff` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 97](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L97). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-gen-fun-eval-is-int-iff).
 
 ## Integer values of the generalized Fibonacci generating function in its interval of convergence
 
@@ -89,7 +89,7 @@ The source attributes this result (its Theorem 1.1) to Bulawa and Lee.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Corollary 1.6 and Theorem 1.1.
 
-Stated but not proved: `MetaMathlibExt.fibonacciGenFun_eval_isInt_iff_of_abs_lt_radius` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fibonacci-gen-fun-eval-is-int-iff-of-abs).
+Stated but not proved: `MetaMathlibExt.fibonacciGenFun_eval_isInt_iff_of_abs_lt_radius` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 113](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L113). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fibonacci-gen-fun-eval-is-int-iff-of-abs).
 
 ## Integer values of the generalized Lucas generating function in its interval of convergence
 
@@ -106,7 +106,7 @@ $i \in \mathbb{N}$.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Corollary 1.7.
 
-Stated but not proved: `MetaMathlibExt.lucasGenFun_eval_isInt_iff_of_abs_lt_radius` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-gen-fun-eval-is-int-iff-of-abs-lt).
+Stated but not proved: `MetaMathlibExt.lucasGenFun_eval_isInt_iff_of_abs_lt_radius` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 127](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L127). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-gen-fun-eval-is-int-iff-of-abs-lt).
 
 ## Integer values of the Lucas number generating function in its interval of convergence
 
@@ -121,7 +121,7 @@ This is the case $a = b = 1$ of the generating function $(2 - at) / (1 - at - bt
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Corollary 1.8.
 
-Stated but not proved: `MetaMathlibExt.lucasNumberGenFun_eval_isInt_iff_of_abs_lt_radius` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-number-gen-fun-eval-is-int-iff-of).
+Stated but not proved: `MetaMathlibExt.lucasNumberGenFun_eval_isInt_iff_of_abs_lt_radius` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 142](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L142). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#lucas-number-gen-fun-eval-is-int-iff-of).
 
 ## Polynomial Pell-type solutions as rescaled Fibonacci–Lucas polynomials
 
@@ -138,7 +138,7 @@ $b^{\lfloor n/2 \rfloor} Q(x) = F_n(x)$.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Proposition 2.1.
 
-Stated but not proved: `MetaMathlibExt.fibLucasPoly_of_pell_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fib-lucas-poly-of-pell-eq).
+Stated but not proved: `MetaMathlibExt.fibLucasPoly_of_pell_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 155](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L155). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fib-lucas-poly-of-pell-eq).
 
 ## Pell-type solutions as rescaled odd Fibonacci–Lucas values, squarefree case
 
@@ -153,7 +153,7 @@ $b^n P = L_{2n+1}(1)$ and $b^n Q = F_{2n+1}(1)$.
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Proposition 2.2.
 
-Stated but not proved: `MetaMathlibExt.fibLucas_odd_of_pell_eq_of_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fib-lucas-odd-of-pell-eq-of-squarefree).
+Stated but not proved: `MetaMathlibExt.fibLucas_odd_of_pell_eq_of_squarefree` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 168](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L168). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fib-lucas-odd-of-pell-eq-of-squarefree).
 
 ## Pell-type solutions as rescaled odd Fibonacci–Lucas values
 
@@ -167,7 +167,7 @@ there is $n \in \mathbb{N}$ with $b^n P = L_{2n+1}(1)$ and $b^n Q = F_{2n+1}(1)$
 
 - Yuji Tsuno, *Polynomial Values with Integer Coefficients for the Generating Functions of Fibonacci Polynomials*, The Fibonacci Quarterly 62 (2024), Article tsuno05142024, Proposition 2.3.
 
-Stated but not proved: `MetaMathlibExt.fibLucas_odd_of_pell_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/a3690dd2ad41e1ad4d871b062779ed7b0452800d/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fib-lucas-odd-of-pell-eq).
+Stated but not proved: `MetaMathlibExt.fibLucas_odd_of_pell_eq` is written with `theorem_wanted` in [WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean, line 181](https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/WantedExt/NumberTheory/Recurrences/FibonacciPolynomialGeneratingFunctionValuesWanted.lean#L181). [Its page on the ATLAS site](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html#fib-lucas-odd-of-pell-eq).
 
 ## Depends on
 
@@ -176,4 +176,4 @@ No dependencies are recorded: this chapter reads the vault and the repository's 
 ## Sources
 
 - [ATLAS: Integer values of Fibonacci polynomial generating functions](https://deicyde.github.io/atlas-lean/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin/index.html)
-- [Deicyde/atlas-lean at a3690dd2](https://github.com/Deicyde/atlas-lean/tree/a3690dd2ad41e1ad4d871b062779ed7b0452800d/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin)
+- [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce/blueprint/roadmap/NumberTheory/linear-recurrences/fibonacci-polynomials/integer-values-of-fibonacci-polynomial-generatin)

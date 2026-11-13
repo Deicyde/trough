@@ -1,6 +1,6 @@
 {
  "schema": "trough-atlas/v1",
- "rev": "a3690dd2ad41e1ad4d871b062779ed7b0452800d",
+ "rev": "035e1808ca0c8983682b74153a02628d616d77ce",
  "articles": [
   {
    "path": "Combinatorics/additive-combinatorics/additive-bases/additive-complements/conjecture-holds-2.md",
@@ -6484,7 +6484,7 @@
   },
   {
    "path": "Combinatorics/additive-combinatorics/sumsets-inverse-theorems/sumsets-with-at-least-r-distinct-terms/restricted-sumset-two-zero-one-two.md",
-   "title": "Restricted twofold sumset of {0, 1, 2}",
+   "title": "Restricted twofold sumset of $\\{0, 1, 2\\}$",
    "statement": "In the integers, the restricted sumset\n$2^{\\wedge}\\{0, 1, 2\\}$, the set of sums of two distinct elements of $\\{0, 1, 2\\}$, equals\n$\\{1, 2, 3\\}$.\n\n## Sources\n\n- Jagannath Bhanja, *Sumsets with a Minimum Number of Distinct Terms*, INTEGERS 25 (2025), Article A12, Section 1 (definition of `h^A`).",
    "declaration": "MetaMathlibExt.restrictedSumset_two_zero_one_two",
    "lean": {
@@ -10953,7 +10953,7 @@
    "declaration": "MetaMathlibExt.central_binom_power_sum_stirling",
    "lean": {
     "file": "MathlibExt/Analysis/Series/CentralBinomPowerSum.lean",
-    "line": 600,
+    "line": 586,
     "kind": "theorem",
     "sorry": false
    }
@@ -58389,7 +58389,7 @@
    "declaration": "MetaMathlibExt.mean_short_chords_in_linear_k_chord_diagrams",
    "lean": {
     "file": "MathlibExt/Probability/MeanShortChords.lean",
-    "line": 466,
+    "line": 459,
     "kind": "theorem",
     "sorry": false
    }
@@ -63104,8 +63104,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$\nof rationals and natural numbers $k_1, k_2$,\n\n$$\n\\Lambda(\\alpha, k_1, k_2) = \\sum_{l=0}^{k_1-1} \\binom{k_1-1}{l}\n\\frac{(l+k_2-k_1)!}{(k_2-k_1)!} \\, \\alpha_{l+k_2-k_1},\n$$\n\nwhere differences of natural numbers are truncated at $0$ (this matters only when $k_2 < k_1$).",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.lambda",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 89,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 192,
     "kind": "def",
     "sorry": false
    }
@@ -63116,8 +63116,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of\nrationals and a natural number $j$,\n$\\Omega(\\alpha, j) = \\sum_{l=0}^{j-1} (j-1)^{\\underline{l}} \\, \\alpha_l$, where\n$m^{\\underline{l}} = m(m-1)\\cdots(m-l+1)$ is the falling factorial; in particular\n$\\Omega(\\alpha, 0) = 0$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.omega",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 83,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 186,
     "kind": "def",
     "sorry": false
    }
@@ -63236,8 +63236,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of\nrationals and a natural number $k$, $\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\frac{\\alpha_l}{(k-1-l)!}$;\nin particular $\\Psi_\\alpha(0) = 0$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.psi",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 79,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 182,
     "kind": "def",
     "sorry": false
    }
@@ -63248,8 +63248,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of\nrationals and natural numbers $i, j$, the entry $R_{i,j}$ is\n$\\frac{(-1)^{j-i}}{(j-i)!} \\Psi_\\alpha(i)$ if $i \\le j$ and $0$ if $i > j$, where\n$\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\frac{\\alpha_l}{(k-1-l)!}$. The matrix $R_\\alpha$ uses the\nindices $i, j \\ge 1$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rEntry",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 96,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 199,
     "kind": "def",
     "sorry": false
    }
@@ -63260,8 +63260,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of\nrationals and a natural number $n$, $R_\\alpha(n)$ is the $n \\times n$ rational matrix whose\n$(i, j)$ entry, for $1 \\le i, j \\le n$, is $\\frac{(-1)^{j-i}}{(j-i)!} \\Psi_\\alpha(i)$ if\n$i \\le j$ and $0$ if $i > j$, where\n$\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\frac{\\alpha_l}{(k-1-l)!}$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rMatrix",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 117,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 220,
     "kind": "def",
     "sorry": false
    }
@@ -63272,8 +63272,8 @@
    "statement": "For a sequence\n$\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of rationals and natural numbers $i, j$, the entry\n$\\tilde R_{i,j}$ is $(j-1)^{\\underline{i-1}} / \\Omega(\\alpha, j)$ if $i \\le j$ and $0$ if\n$i > j$, where $\\Omega(\\alpha, j) = \\sum_{l=0}^{j-1} (j-1)^{\\underline{l}} \\, \\alpha_l$,\n$m^{\\underline{l}} = m(m-1)\\cdots(m-l+1)$ is the falling factorial, $0 - 1$ is read as $0$, and\ndivision by $0$ gives $0$. The matrix $\\tilde R_\\alpha$ uses the indices $i, j \\ge 1$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeEntry",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 102,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 205,
     "kind": "def",
     "sorry": false
    }
@@ -63284,9 +63284,9 @@
    "statement": "For a sequence\n$\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of rationals, let\n$\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\frac{\\alpha_l}{(k-1-l)!}$ and\n$\\Omega(\\alpha, j) = \\sum_{l=0}^{j-1} (j-1)^{\\underline{l}} \\, \\alpha_l$, where\n$m^{\\underline{l}} = m(m-1)\\cdots(m-l+1)$ is the falling factorial. For a natural number $n$,\nlet $R_\\alpha(n)$ and $\\tilde R_\\alpha(n)$ be the upper triangular $n \\times n$ rational\nmatrices whose $(i, j)$ entries for $1 \\le i \\le j \\le n$ are\n$\\frac{(-1)^{j-i}}{(j-i)!} \\Psi_\\alpha(i)$ and $(j-1)^{\\underline{i-1}} / \\Omega(\\alpha, j)$\nrespectively. If $\\prod_{j=1}^{n} \\Omega(\\alpha, j) \\ne 0$, then\n$\\tilde R_\\alpha(n) = R_\\alpha(n)^{-1}$.\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Lemma 7.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeMatrix_eq_inv",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 219,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 661,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63296,8 +63296,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of\nrationals and a natural number $n$, $\\tilde R_\\alpha(n)$ is the $n \\times n$ rational matrix\nwhose $(i, j)$ entry, for $1 \\le i, j \\le n$, is $(j-1)^{\\underline{i-1}} / \\Omega(\\alpha, j)$\nif $i \\le j$ and $0$ if $i > j$, where\n$\\Omega(\\alpha, j) = \\sum_{l=0}^{j-1} (j-1)^{\\underline{l}} \\, \\alpha_l$,\n$m^{\\underline{l}} = m(m-1)\\cdots(m-l+1)$ is the falling factorial, and division by $0$ gives\n$0$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.rTildeMatrix",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 121,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 224,
     "kind": "def",
     "sorry": false
    }
@@ -63368,8 +63368,8 @@
    "statement": "For a sequence\n$\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of rationals, the numbers $S_{i,j}$ for natural numbers\n$i, j$ are defined recursively by $S_{1,j} = \\alpha_{j-1}$ for $j \\ge 1$, $S_{i,1} = \\alpha_0$ for\n$i \\ge 2$, $S_{i,j} = S_{i-1,j-1} + j \\, S_{i-1,j}$ for $i, j \\ge 2$, and $S_{i,j} = 0$ when\n$i = 0$ or $j = 0$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeEntry",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 58,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 161,
     "kind": "def",
     "sorry": false
    }
@@ -63380,9 +63380,9 @@
    "statement": "Let\n$\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ be a sequence of rationals. For natural numbers\n$i, j \\ge 1$ define $S_{i,j}$ and $U_{i,j}$ by $S_{1,j} = U_{1,j} = \\alpha_{j-1}$,\n$S_{i,1} = \\alpha_0$ and $U_{i,1} = 0$ for $i \\ge 2$, and, for $i, j \\ge 2$,\n$S_{i,j} = S_{i-1,j-1} + j \\, S_{i-1,j}$ and $U_{i,j} = U_{i-1,j-1} + (j-i+1) \\, U_{i-1,j}$;\nlet $R_{i,j} = \\frac{(-1)^{j-i}}{(j-i)!} \\Psi_\\alpha(i)$ if $i \\le j$ and $R_{i,j} = 0$ if\n$i > j$, where $\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\frac{\\alpha_l}{(k-1-l)!}$. For every natural\nnumber $n$, let $S_\\alpha(n)$, $U_\\alpha(n)$ and $R_\\alpha(n)$ be the $n \\times n$ matrices\n$(S_{i,j})$, $(U_{i,j})$ and $(R_{i,j})$ with $1 \\le i, j \\le n$, let\n$S(n) = (S(i,j))_{1 \\le i, j \\le n}$ be the matrix of Stirling numbers of the second kind, and\nlet $V(n) = (j^{i-1})_{1 \\le i, j \\le n}$. Then $S_\\alpha(n) = S(n) \\, U_\\alpha(n)$ and\n$S_\\alpha(n) = V(n) \\, R_\\alpha(n)$.\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Theorem 3.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix_decomp",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 175,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 517,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63392,9 +63392,9 @@
    "statement": "For a sequence\n$\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$ and $j \\ge 1$ let\n$\\Omega(\\alpha, j) = \\sum_{l=0}^{j-1} (j-1)^{\\underline{l}} \\, \\alpha_l$, where\n$m^{\\underline{l}} = m(m-1)\\cdots(m-l+1)$ is the falling factorial. Then for every\n$n \\in \\mathbb{N}$ the determinant of the $n \\times n$ Stirling-like matrix $S_\\alpha(n)$ is\n$\\det S_\\alpha(n) = \\prod_{j=1}^{n} \\Omega(\\alpha, j)$.\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Theorem 4.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix_det",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 186,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 559,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63404,8 +63404,8 @@
    "statement": "For a sequence $\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$ and\n$n \\in \\mathbb{N}$, the Stirling-like matrix $S_\\alpha(n)$ is the $n \\times n$ rational matrix,\nwith rows and columns indexed by $1, \\dots, n$, whose $(i, j)$ entry is $S_{i,j}$, where\n$S_{1,j} = \\alpha_{j-1}$ for $j \\ge 1$, $S_{i,1} = \\alpha_0$ for $i \\ge 2$, and\n$S_{i,j} = S_{i-1,j-1} + j \\, S_{i-1,j}$ for $i, j \\ge 2$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingLikeMatrix",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 108,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 211,
     "kind": "def",
     "sorry": false
    }
@@ -63416,8 +63416,8 @@
    "statement": "For $n \\in \\mathbb{N}$, the Stirling matrix of the\nsecond kind $S(n)$ is the $n \\times n$ rational matrix, with rows and columns indexed by\n$1, \\dots, n$, whose $(i, j)$ entry is the Stirling number of the second kind $S(i, j)$, the\nnumber of partitions of an $i$-element set into $j$ nonempty blocks.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.stirlingMatrix2",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 126,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 229,
     "kind": "def",
     "sorry": false
    }
@@ -63428,9 +63428,9 @@
    "statement": "Let $\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$, let\n$\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\alpha_l / (k-1-l)!$, and let $R_\\alpha$ be the matrix with\nentries $R_{i,j} = \\frac{(-1)^{j-i}}{(j-i)!} \\Psi_\\alpha(i)$ for $1 \\le i \\le j$ and\n$R_{i,j} = 0$ for $i > j$. Then for every $j \\ge 1$, $\\sum_{i=1}^{j} R_{i,j} = \\alpha_{j-1}$.\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Lemma 2.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_rEntry_col",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 164,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 262,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63440,9 +63440,9 @@
    "statement": "Let $s(i, k)$\ndenote the signed Stirling numbers of the first kind and $\\delta_{i,j}$ the Kronecker delta\n($1$ if $i = j$ and $0$ otherwise). Then for all integers $i, j \\ge 1$, in $\\mathbb{Q}$,\n\n$$\\sum_{k_1=1}^{i} \\sum_{k_2=1}^{j}\n\\frac{(-1)^{j-k_2} \\, s(i,k_1) \\, k_2^{k_1-1}}{(j-k_2)! \\, (k_2-1)!} = \\delta_{i,j}.$$\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Corollary 10.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_eq_delta",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 264,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 828,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63452,9 +63452,9 @@
    "statement": "Let\n$\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$, let $s(i, k)$ denote the signed Stirling numbers of\nthe first kind, let $\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\alpha_l / (k-1-l)!$, and for\n$k_1 \\le k_2$ let $\\Lambda(\\alpha, k_1, k_2) = \\sum_{l=0}^{k_1-1} \\binom{k_1-1}{l}\n\\frac{(l+k_2-k_1)!}{(k_2-k_1)!} \\, \\alpha_{l+k_2-k_1}$. Then for all $i, j \\ge 1$ the sum\n\n$$\\sum_{k_1=1}^{i} \\sum_{k_2=1}^{j} s(i,k_1) \\, k_2^{k_1-1} \\, \\frac{(-1)^{j-k_2}}{(j-k_2)!} \\,\n\\Psi_\\alpha(k_2)$$\n\nequals $\\Lambda(\\alpha, i, j)$ if $i \\le j$ and $0$ if $i > j$.\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Proposition 9.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_signed_psi_eq",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 249,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 769,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63464,9 +63464,9 @@
    "statement": "Let\n$\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$, let $S(i, k)$ denote the Stirling numbers of the\nsecond kind, let $m^{\\underline{l}} = m(m-1)\\cdots(m-l+1)$ be the falling factorial, let\n$\\Omega(\\alpha, j) = \\sum_{l=0}^{j-1} (j-1)^{\\underline{l}} \\, \\alpha_l$, and for $k_1 \\le k_2$\nlet $\\Lambda(\\alpha, k_1, k_2) = \\sum_{l=0}^{k_1-1} \\binom{k_1-1}{l}\n\\frac{(l+k_2-k_1)!}{(k_2-k_1)!} \\, \\alpha_{l+k_2-k_1}$. If $i, j \\ge 1$ and\n$\\prod_{k=1}^{\\max(i,j)} \\Omega(\\alpha, k) \\ne 0$, then\n\n$$\\sum_{k_1=1}^{i} \\sum_{k_2=k_1}^{j} S(i,k_1) \\, (j-1)^{\\underline{k_2-1}} \\,\n\\Lambda(\\alpha, k_1, k_2) = j^{i-1} \\, \\Omega(\\alpha, j).$$\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Proposition 8.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_stirlingSecond_descFactorial_lambda",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 231,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 700,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63476,9 +63476,9 @@
    "statement": "Let\n$\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$, let $S(i, k)$ denote the Stirling numbers of the\nsecond kind, let $\\Psi_\\alpha(k) = \\sum_{l=0}^{k-1} \\alpha_l / (k-1-l)!$, and for $k_1 \\le k_2$\nlet $\\Lambda(\\alpha, k_1, k_2) = \\sum_{l=0}^{k_1-1} \\binom{k_1-1}{l}\n\\frac{(l+k_2-k_1)!}{(k_2-k_1)!} \\, \\alpha_{l+k_2-k_1}$. Then for all $i, j \\ge 1$,\n\n$$\\sum_{k=1}^{\\min(i,j)} S(i,k) \\, \\Lambda(\\alpha, k, j) =\n\\sum_{k=1}^{j} k^{i-1} \\, \\frac{(-1)^{j-k}}{(j-k)!} \\, \\Psi_\\alpha(k).$$\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Proposition 5.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.sum_stirlingSecond_lambda",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 198,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 585,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63488,9 +63488,9 @@
    "statement": "Let\n$\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$ and let $U_\\alpha = (U_{i,j})_{i \\ge 1, j \\ge 0}$ be\ngiven by $U_{i,0} = 0$, $U_{1,j} = \\alpha_{j-1}$ for $j \\ge 1$, $U_{i,1} = 0$ for $i \\ge 2$, and\n$U_{i,j} = U_{i-1,j-1} + (j-i+1) \\, U_{i-1,j}$ for $i, j \\ge 2$. For $k_1 \\le k_2$ let\n$\\Lambda(\\alpha, k_1, k_2) = \\sum_{l=0}^{k_1-1} \\binom{k_1-1}{l}\n\\frac{(l+k_2-k_1)!}{(k_2-k_1)!} \\, \\alpha_{l+k_2-k_1}$. Then $U_{i,j} = \\Lambda(\\alpha, i, j)$\nfor all $1 \\le i \\le j$.\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Lemma 1.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_lambda",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 142,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 421,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63500,9 +63500,9 @@
    "statement": "Let $\\alpha \\colon \\mathbb{N} \\to \\mathbb{Q}$\nand let $U_\\alpha = (U_{i,j})_{i \\ge 1, j \\ge 0}$ be given by $U_{i,0} = 0$,\n$U_{1,j} = \\alpha_{j-1}$ for $j \\ge 1$, $U_{i,1} = 0$ for $i \\ge 2$, and\n$U_{i,j} = U_{i-1,j-1} + (j-i+1) \\, U_{i-1,j}$ for $i, j \\ge 2$. Then $U_{i,j} = 0$ for all\nnatural numbers $j < i$.\n\n## Sources\n\n- M. Bahrami-Taghanaki, A. R. Moghaddamfar, Nima Salehy, and Navid Salehy, \"Some Identities Involving Stirling Numbers Arising from Matrix Decompositions\", Lemma 1.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry_eq_zero_of_lt",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 153,
-    "kind": "theorem_wanted",
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 369,
+    "kind": "theorem",
     "sorry": false
    }
   },
@@ -63512,8 +63512,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$\nof rational numbers, the entries $U_{i,j}$ ($i, j \\ge 1$) of the matrix $U_\\alpha$ are defined by\nrecursion on the row index $i$. The first row is $U_{1,j} = \\alpha_{j-1}$. For $i \\ge 2$ the\nfirst column is $U_{i,1} = 0$, and for $j \\ge 2$\n\n$$U_{i,j} = U_{i-1,j-1} + (j - i + 1)\\, U_{i-1,j}.$$\n\nEntries with $i = 0$ or $j = 0$ are set to $0$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uEntry",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 70,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 173,
     "kind": "def",
     "sorry": false
    }
@@ -63524,8 +63524,8 @@
    "statement": "For a sequence $\\alpha = (\\alpha_0, \\alpha_1, \\dots)$ of\nrationals and a natural number $n$, $U_\\alpha(n)$ is the $n \\times n$ rational matrix whose\n$(i, j)$ entry, for $1 \\le i, j \\le n$, is $U_{i,j}$, where $U_{1,j} = \\alpha_{j-1}$ for\n$j \\ge 1$, $U_{i,1} = 0$ for $i \\ge 2$, and $U_{i,j} = U_{i-1,j-1} + (j - i + 1) \\, U_{i-1,j}$\nfor $i, j \\ge 2$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.uMatrix",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 113,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 216,
     "kind": "def",
     "sorry": false
    }
@@ -63536,8 +63536,8 @@
    "statement": "For $n \\in \\mathbb{N}$, $V(n)$ is the $n \\times n$ rational\nmatrix whose entry in row $i$ and column $j$ ($1 \\le i, j \\le n$) is $V_{i,j} = j^{i-1}$.",
    "declaration": "MathlibExt.Combinatorics.Enumerative.StirlingMatrixWanted.vandermondeMatrix",
    "lean": {
-    "file": "WantedExt/Combinatorics/Enumerative/StirlingMatrixWanted.lean",
-    "line": 132,
+    "file": "MathlibExt/Combinatorics/Enumerative/StirlingMatrix.lean",
+    "line": 235,
     "kind": "def",
     "sorry": false
    }
