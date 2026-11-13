@@ -1,0 +1,15 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/LatticeQFT/Basic.lean",
+   "module": "Physlib.LatticeQFT.Basic",
+   "title": "A. Lattice QFT",
+   "doc": "This module is a stub and a starting point for lattice QFT.\n\n## A.1 References\n\n- External repositories looking at lattice QFT.\n- `Physlib.QFT`\n- `Physlib.CondensedMatter.LatticeModels`",
+   "sections": [],
+   "declarations": [],
+   "private": 0
+  }
+ ]
+}

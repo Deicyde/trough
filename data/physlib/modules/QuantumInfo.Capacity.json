@@ -1,0 +1,134 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/Capacity/Capacity.lean",
+   "module": "QuantumInfo.Capacity.Capacity",
+   "title": "Quantum Capacity",
+   "doc": "## i. Overview\n\nThis file focuses on defining and proving theorems about the quantum capacity, the maximum\nasymptotic rate at which quantum information can be coherently transmitted through a quantum\nchannel. The precise definition is not consistent in the literature, see\n`QuantumInfo/Capacity/Capacity_doc.lean` for a note on what has been used and how that was used\nto arrive at the following definition:\n\n 1. A channel A `Emulates` another channel B if there are D and E such that D∘A∘E = B.\n 2. A channel A `εApproximates` channel B (of the same dimensions) if for every state ρ, the\n    fidelity F(A(ρ), B(ρ)) is at least 1-ε.\n 3. A channel A `AchievesRate` R:ℝ if for every ε>0, n copies of A emulates some channel B such\n    that log2(dimout(B))/n ≥ R, and that B is εApproximately the identity.\n 4. The `quantumCapacity` of the channel A is the supremum of the achievable rates, i.e.\n    `sSup { R : ℝ | AchievesRate A R }`.\n\n## ii. Key results\n\nThe most basic facts:\n * `emulates_self`: Every channel emulates itself.\n * `emulates_trans`: If A emulates B and B emulates C, then A emulates C. (That is, emulation\n   is an ordering.)\n * `εApproximates A B ε` is equivalent to the existence of some δ (depending on ε and dims(A))\n   so that |A-B| has diamond norm at most δ, and δ→0 as ε→0.\n * `achievesRate_0`: Every channel out of a nonempty space achievesRate 0. So, in that case,\n   the set of achievable rates is Nonempty.\n * If a channel achievesRate R₁, it also achievesRate every R₂ ≤ R₁, i.e. it is an interval\n   extending left towards -∞. Achievable rates are `¬BddBelow`.\n * `bddAbove_achievesRate`: A channel C : dimX → dimY cannot achievesRate R with\n   `R > log2(min(dimX, dimY))`. Thus, the interval is `BddAbove`.\n\nThe nice lemmas we would want:\n * Capacity of a replacement channel is zero.\n * Capacity of an identity channel is `log2(D)`.\n * Capacity is superadditive under tensor products. (That is, at least additive. Showing that\n   it isn't _exactly_ additive, unlike classical capacity which is additive, is a much harder\n   task.)\n * Capacity of a kth tensor power is exactly k times the capacity of the original channel.\n * Capacity does not decrease under tensor sums.\n * Capacity does not increase under composition.\n\nThen, we should show that our definition is equivalent to some above. Most, except (3), should\nbe not too hard to prove.\n\nThen the LSD theorem establishes that the single-copy coherent information is a lower bound.\nThis is stated in `coherentInfo_le_quantumCapacity`. The corollary, that the n-copy coherent\ninformation converges to the capacity, is `quantumCapacity_eq_piProd_coherentInfo`.\n\nTODO: The only notion of \"capacity\" here currently is \"quantum capacity\" in the usual sense.\nBut there are several non-equal capacities relevant to quantum channels, see e.g. [Watrous's\nnotes](https://cs.uwaterloo.ca/~watrous/TQI/TQI.8.pdf) for a list:\n * Quantum capacity (`quantumCapacity`)\n * Quantum 1-shot capacity\n * Entanglement-assisted classical capacity\n * Qss, the quantum side-channel capacity\n * Holevo capacity, aka Holevo χ. The Holevo–Schumacher–Westmoreland theorem as a major theorem\n * Entanglement-assisted Holevo capacity\n * Entanglement-assisted quantum capacity\n * One- and two-way distillable entanglement\n\nAnd other important theorems like superdense coding, nonadditivity, superactivation.\n\n## iii. Table of contents\n\n- A. Basic definitions\n- B. Emulation between channels\n- C. Approximation between channels\n- D. Achievable rates\n- E. The quantum capacity\n\n## iv. References\n\n* Watrous's notes, Chapter 8 of The Theory of Quantum Information. [ref: watrous_tqi_ch8]",
+   "sections": [
+    {
+     "line": 99,
+     "text": "## A. Basic definitions"
+    },
+    {
+     "line": 136,
+     "text": "## B. Emulation between channels"
+    },
+    {
+     "line": 160,
+     "text": "## C. Approximation between channels"
+    },
+    {
+     "line": 179,
+     "text": "## D. Achievable rates"
+    },
+    {
+     "line": 241,
+     "text": "## E. The quantum capacity"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CPTPMap.Emulates",
+     "kind": "def",
+     "line": 109,
+     "doc": "A channel Λ₁ `Emulates` another channel Λ₂ if there are D and E such that D∘Λ₁∘E = Λ₂.",
+     "statement": "def Emulates (Λ₁ : CPTPMap d₁ d₂) (Λ₂ : CPTPMap d₃ d₄) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.εApproximates",
+     "kind": "def",
+     "line": 116,
+     "doc": "A channel A `εApproximates` channel B of the same dimensions if for every state ρ, the\nfidelity F(A(ρ), B(ρ)) is at least 1-ε.",
+     "statement": "def εApproximates (A B : CPTPMap d₁ d₂) (ε : ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.AchievesRate",
+     "kind": "def",
+     "line": 123,
+     "doc": "A channel A `AchievesRate` R:ℝ if for every ε>0, some n copies of A emulates a channel B such\nthat log2(dimout(B))/n ≥ R, and that B εApproximates the identity channel.",
+     "statement": "def AchievesRate (A : CPTPMap d₁ d₂) (R : ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.quantumCapacity",
+     "kind": "def",
+     "line": 133,
+     "doc": "The quantum capacity of a channel A: the supremum of all rates R such that\n`A.AchievesRate R`, i.e. the maximum asymptotic rate at which quantum information can be\ncoherently transmitted through the channel.",
+     "statement": "noncomputable def quantumCapacity (A : CPTPMap d₁ d₂) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.emulates_self",
+     "kind": "theorem",
+     "line": 147,
+     "doc": "Every quantum channel emulates itself.",
+     "statement": "theorem emulates_self (Λ : CPTPMap d₁ d₂) : Λ.Emulates Λ",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.emulates_trans",
+     "kind": "theorem",
+     "line": 152,
+     "doc": "If a quantum channel A emulates B, and B emulates C, then A emulates C.",
+     "statement": "theorem emulates_trans (Λ₁ : CPTPMap d₁ d₂) (Λ₂ : CPTPMap d₃ d₄) (Λ₃ : CPTPMap d₅ d₆)\n    (h₁₂ : Λ₁.Emulates Λ₂) (h₂₃ : Λ₂.Emulates Λ₃) : Λ₁.Emulates Λ₃",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.εApproximates_self",
+     "kind": "theorem",
+     "line": 169,
+     "doc": "Every quantum channel perfectly approximates itself, that is, `εApproximates` with `ε = 0`.",
+     "statement": "theorem εApproximates_self (Λ : CPTPMap d₁ d₂) : Λ.εApproximates Λ 0",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.εApproximates_monotone",
+     "kind": "theorem",
+     "line": 173,
+     "doc": "If a quantum channel A approximates B with ε₀, it also approximates B with all larger ε₁.",
+     "statement": "theorem εApproximates_monotone {A B : CPTPMap d₁ d₂} {ε₀ : ℝ} (h : A.εApproximates B ε₀)\n    {ε₁ : ℝ} (h₂ : ε₀ ≤ ε₁) : A.εApproximates B ε₁",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.achievesRate_0",
+     "kind": "theorem",
+     "line": 188,
+     "doc": "Every quantum channel out of a nonempty space achieves at least a rate of zero.",
+     "statement": "theorem achievesRate_0 (Λ : CPTPMap d₁ d₂) [Nonempty d₁] : Λ.AchievesRate 0",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.id_achievesRate_log_dim",
+     "kind": "theorem",
+     "line": 195,
+     "doc": "The identity channel on D dimensional space achieves a rate of log2(D).",
+     "statement": "theorem id_achievesRate_log_dim :\n    (id (dIn := d₁)).AchievesRate (Real.logb 2 (Fintype.card d₁))",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.zero_le_quantumCapacity",
+     "kind": "theorem",
+     "line": 250,
+     "doc": "Quantum channel capacity is nonnegative for channels out of a nonempty space.",
+     "statement": "theorem zero_le_quantumCapacity (Λ : CPTPMap d₁ d₂) [Nonempty d₁] :\n    0 ≤ Λ.quantumCapacity",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/Capacity/Capacity_doc.lean",
+   "module": "QuantumInfo.Capacity.Capacity_doc",
+   "title": "Defining Quantum Capacity",
+   "doc": "Quantum capacity is defined in different reference works in at least seven meaningfully different ways:\n\n(1) https://www.uio.no/studier/emner/matnat/math/MAT4430/v23/timeplan/lectureblup.pdf, Defn 20.3.\n\nDefines the notion of \"(n, m, δ)-coding scheme\", a code for m qubits in n copies of the channel, with diamond-norm distance of δ from the identity channel. Then a rate R is \"achievable\" if there is a sequence of coding schemes that converge m/n -> R and δ -> 0. The set of achieveable rates is a closed interval, and the capacity is the maximum of this interval.\n\n(2) https://cs.uwaterloo.ca/~watrous/TQI/TQI.8.pdf, Defn 8.42.\n\nWatrous doesn't use the word \"coding scheme\", but rather define \"emulating\" (8.1) an \"ε-approximation\" (8.2) of the identity. This is equivalent to the coding scheme and diamond norm part. Then a rate R is \"achievable\" if, for every δ>0, there is a k:ℕ such that k < n implies the existence of a (n, floor(R*n), δ)-coding scheme. Now the set of achievable rates may be an open or closed interval, and the capacity is the supremum of this interval (not the maximum, since an open interval has no maximum).\n\n(3) Works like https://arxiv.org/pdf/1007.2855 (equation 3) and https://arxiv.org/pdf/1801.02019 (equation 186) define the quantum capacity of C as $Q(C) = lim_n 1/n * Q^{(1)}(C ^ {⊗n})$, where $Q^{(1)}$ is the quantum coherent information (or \"one-shot channel capacity\"), and so it is the average coherent information achieved across n copies of the channel, in the large-n limit. This definition makes the LSD theorem (which stats that $Q ≥ Q^{(1)}$) actually entirely trivial, as it requires only the fact that $Q^{(1)}$ is superadditive.\n\n(4) https://arxiv.org/pdf/quant-ph/0304127 (Section 5) and https://arxiv.org/pdf/quant-ph/9809010 specifically distinguish between \"subspace transmission\", \"entanglement transmission\", and \"entanglement generation\" capabilities of the channel. The fact that all three are equal is then a theorem. Option (4), subspace transsmission capacity, is like option (1) above, but instead of the channel having diamond norm at most δ from the identity channel, we require that the channel has fidelity at least 1-δ on all inputs. Converging in fidelity is surely equivalent to converging in diamond norm, but the precise bounds are not obvious. (4) also differs from (1) and (2) in that it has an arbitrary dimension input space, instead of specifically a 2^n-dimensional space of qubits. arxiv:9809010 specifically requires a sequence of codes whose limiting fidelity is 1 and rate is R; arxiv:0304127 doesn't actually precisely say.\n\n(5) \"Entanglement transmission\" asks for a high-entropy state (thus, a large subspace dimension) that can be transmitted through the channel with a high \"entanglement fidelity\". See equation (52) in arxiv:0304127. The rate achieved is the von Neumann entropy of the state, the set of achievable rates are closed, and the rate of the channel is the maximum.\n\n(6) \"Entanglement generation\" changes the task from coding. Instead we need a bipartite state ρ_AB on a Hilbert space of dimension κ, of which the left half goes through the encoder, channel, and decoder. The fidelity between the result C(ρ) and the maximally entangled state must be at least 1-ε. The rates are (1/n)*(log κ), achievable if for all δ and sufficiently large n (etc. - like option (2)), and we take the supremum.\n\nNote: Option (6) is what Devetak, in arxiv:0304127, actually proves the LSD theorem for. Theorem 5 in that reference. (4), (5), and (6) are proven equal.\n\n(7) Wilde's book also of \"coding scheme\", but defines it in terms of entanglement generation and the logarithm of the dimension of the space. Instead of fidelity preserved in the entanglement, it's the trace norm. He effectively defines it by supremum, although he doesn't need to use the word, giving an equivalent δ/ε definition for coding schemes. He then takes supremum (even though maximum would work as well -- the capacity is itself an achievable rate by his definition). In this way, it combines aspects of definitions (1), (2), and (4). He gives as an exercise showing that small trace norm error of transmitted states implies a small diamond norm error from the identity.\n\n----\n\nTo capture the idea of \"quantum capacity\", and some other idea that turns out to be equivalent, (1), (2), or (5) seems best. The definitions (1) and (2) seem to be the more recently popular ones. Between those two, choosing \"supremum\" or \"maximum\", the supremum seems shorter to state in a definition (as it doesn't require proving closure); indeed Mathlib has no notion of \"max real\" as a function, only a supremum which can also be shown to be in the set. But the definition in (2) of \"For every δ>0, there is a k:ℕ such that k < n implies the existence of a (...)-coding scheme\" is cleaner work with as a way to directly construct or extract codes, as opposed to limits of sequences of codes. And finally, the notions of \"emulate\" and \"approximate\" seem useful for defining it more elegantly.\n\nThis leads to the final definition in [Capacity.lean](./QuantumInfo/Finite/Capacity.html).",
+   "sections": [],
+   "declarations": [],
+   "private": 0
+  }
+ ]
+}

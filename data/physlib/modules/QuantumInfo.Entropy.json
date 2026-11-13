@@ -1,0 +1,1492 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/Entropy/DPI.lean",
+   "module": "QuantumInfo.Entropy.DPI",
+   "title": "DPI (Data Processing Inequality)",
+   "doc": "The Data Processing Inequality (DPI) for the sandwiched Rényi relative entropy, and\nas a consequence, the quantum relative entropy.\n\n## Proof structure (for α > 1)\n\nFollowing Leditzky–Rouzé–Datta (arXiv:1306.5920), the proof proceeds as follows:\n\n1. Define the **trace functional** `Q̃_α(ρ‖σ) = Tr[(σ^γ ρ σ^γ)^α]` where `γ = (1 - α) / (2α)`.\n   The sandwiched Rényi divergence satisfies `D̃_α(ρ‖σ) = log(Q̃_α(ρ‖σ)) / (α - 1)`.\n\n2. The DPI for `D̃_α` reduces to **monotonicity of `Q̃_α` under partial trace**:\n   `Q̃_α(ρ_AB‖σ_AB) ≥ Q̃_α(ρ_A‖σ_A)` for `α > 1`.\n\n3. This monotonicity is proved via the **twirling argument**:\n   - `Q̃_α` is invariant under joint unitary conjugation.\n   - `Q̃_α` is jointly convex for `α > 1` (Frank–Lieb).\n   - A twirling set of unitaries `{V_i}` averages any state to a product with the\n     maximally mixed state.\n   - `Q̃_α` is invariant under tensoring with a fixed state.\n\n4. The general DPI for CPTP maps follows via **Stinespring dilation**:\n   any CPTP map can be decomposed as ancilla preparation + unitary + partial trace.",
+   "sections": [
+    {
+     "line": 57,
+     "text": "## The Sandwiched Trace Functional"
+    },
+    {
+     "line": 71,
+     "text": "## Properties of the Trace Functional"
+    },
+    {
+     "line": 109,
+     "text": "## Unitary Invariance\n\n`Q̃_α(UρU†‖UσU†) = Q̃_α(ρ‖σ)` for any unitary `U`.\n\nHere, `conj U.val A` denotes `U * A * U†`, so \"conjugating ρ and σ by\nthe same unitary\" means applying `conj U.val` to both."
+    },
+    {
+     "line": 145,
+     "text": "## Joint Convexity for α > 1\n\nThe trace functional `Q̃_α` is jointly convex for `α > 1`. This is proved by\nFrank and Lieb via a variational formula and strict convexity of trace functions.\n\n### Trace functions convexity\n\nThe following result is used in the proof: for a convex function `g : ℝ → ℝ`,\nthe map `A ↦ Tr[g(A)]` on Hermitian matrices is convex (Carlen, Theorem 2.10)."
+    },
+    {
+     "line": 159,
+     "text": "### Variational formula for the trace functional\nFollowing Frank–Lieb, for `α > 1` we define\n  `f_α(H, ρ, σ) = α · Tr[ρ · H] − (α−1) · Tr[(σ^{−γ} H σ^{−γ})^{α/(α−1)}]`\nwhere `γ = (1−α)/(2α)` (so `−γ = (α−1)/(2α) > 0`).\nKey facts (each stated as a lemma below):\n1. `Q̃_α(ρ‖σ) = sup_{H ≥ 0} f_α(H, ρ, σ)` for α > 1.\n2. For fixed `H`, `f_α` is linear in `ρ` (hence convex).\n3. For fixed `H`, `f_α` is convex in `σ` (uses Lieb concavity).\n4. Therefore `f_α` is jointly convex in `(ρ, σ)` for fixed `H`.\n5. The supremum of jointly convex functions is jointly convex."
+    },
+    {
+     "line": 586,
+     "text": "### Twirling Construction Helpers\nWe construct a twirling set using κ = Perm dB × (dB → Bool).\nFor each (σ, f), the unitary V(σ,f) is the product of a sign-diagonal matrix\n(with entries ±1 determined by f) and a permutation matrix.\nThe averaging property follows from:\n1. Sign averaging: summing over f kills off-diagonal entries\n2. Permutation averaging: summing over σ uniformizes diagonal entries"
+    },
+    {
+     "line": 772,
+     "text": "## Twirling Set\n\nA twirling set for a finite-dimensional system `dB` is a set of unitary matrices\n`{V_i}` on `dB` (indexed by some finite type `κ`) such that the average\n`(1/|κ|) Σ_i V_i X V_i†` equals `Tr(X) · (1/dim(dB))` for all `X`.\nWhen applied as `1_A ⊗ V_i` on a bipartite system `dA × dB`, this gives:\n`(1/|κ|) Σ_i (1_A ⊗ V_i) ρ_AB (1_A ⊗ V_i)† = ρ_A ⊗ π_B`\nwhere `π_B = 1/dim(dB)` is the maximally mixed state.\n\nThe standard construction uses the Heisenberg–Weyl (discrete Weyl) operators."
+    },
+    {
+     "line": 818,
+     "text": "## Tensor Invariance\n\n`Q̃_α(ρ ⊗ τ ‖ σ ⊗ τ) = Q̃_α(ρ ‖ σ)` for any state `τ`.\nThis corresponds to equation (2.4) in the paper."
+    },
+    {
+     "line": 866,
+     "text": "## Twirling MState Helpers\n\nHelper lemmas for constructing MStates via the twirling argument."
+    },
+    {
+     "line": 1049,
+     "text": "## Monotonicity Under Partial Trace (α > 1)\n\nThe main intermediate result: for `α > 1`, the trace functional `Q̃_α` is monotone\nunder partial trace:\n`Q̃_α(ρ_AB ‖ σ_AB) ≥ Q̃_α(ρ_A ‖ σ_A)`.\n\nThe proof uses the twirling argument:\n1. By unitary invariance, `Q̃_α(ρ_AB‖σ_AB) = Q̃_α(V_i ρ_AB V_i†‖V_i σ_AB V_i†)` for each `i`.\n2. Averaging: `Q̃_α(ρ_AB‖σ_AB) = (1/|κ|) Σ_i Q̃_α(V_i ρ_AB V_i†‖V_i σ_AB V_i†)`.\n3. By joint convexity (α > 1): `≥ Q̃_α((1/|κ|) Σ_i V_i ρ_AB V_i†‖(1/|κ|) Σ_i V_i σ_AB V_i†)`.\n4. By twirling: `= Q̃_α(ρ_A ⊗ π_B ‖ σ_A ⊗ π_B)`.\n5. By tensor invariance: `= Q̃_α(ρ_A ‖ σ_A)`."
+    },
+    {
+     "line": 1125,
+     "text": "## DPI for Sandwiched Rényi Divergence Under Partial Trace"
+    },
+    {
+     "line": 1224,
+     "text": "## DPI via Stinespring Dilation"
+    },
+    {
+     "line": 1407,
+     "text": "## Joint Convexity of the Relative Entropy\n\nJoint convexity of the (Umegaki) quantum relative entropy is derived from joint convexity\nof the trace functional `Q̃_α` (`sandwichedTraceFunctional_jointly_convex`) by letting\n`α → 1⁺`, in the same way that `sandwichedRenyiEntropy_DPI_eq_one` follows from the\n`α > 1` case.\n\nFor `α > 1` and states with compatible kernels, `log x ≤ x - 1` gives\n`D̃_α(ρ‖σ) = log (Q̃_α(ρ‖σ)) / (α - 1) ≤ (Q̃_α(ρ‖σ) - 1) / (α - 1)`, and the difference\nquotient on the right is jointly convex in `(ρ, σ)` because `Q̃_α` is. As `α → 1⁺`, the\nleft-hand side tends to `𝐃(ρ‖σ)` (by `sandwichedRelRentropy.continuousOn`), and the\ndifference quotient tends to `𝐃(ρ‖σ)` as well (since `Q̃_α = exp ((α - 1) D̃_α)` and\n`exp x ≤ 1 + x + x²` for `|x| ≤ 1`), so the convex combination passes to the limit."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "sandwichedTraceFunctional",
+     "kind": "def",
+     "line": 65,
+     "doc": "The sandwiched trace functional `Q̃_α(ρ‖σ) = Tr[(σ^γ ρ σ^γ)^α]` where `γ = (1-α)/(2α)`.\nThis is the quantity underlying the sandwiched Rényi divergence:\n`D̃_α(ρ‖σ) = log(Q̃_α(ρ‖σ)) / (α - 1)`.\n\nNote: the `conj` operation gives `A.conj B = B * A.mat * B†`, and since `σ^γ` is Hermitian\n(self-adjoint), `B† = B`, so `ρ.M.conj (σ.M ^ γ).mat = σ^γ * ρ * σ^γ`.",
+     "statement": "noncomputable def sandwichedTraceFunctional (α : ℝ) (ρ σ : MState d) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_eq_log_traceFunctional",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_eq_log_traceFunctional (hα₀ : 0 < α) (hα₁ : α ≠ 1)\n    (hker : σ.M.ker ≤ ρ.M.ker) :\n    D̃_ α(ρ‖σ) = ENNReal.ofReal (Real.log (Q̃_ α(ρ‖σ)) / (α - 1))",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_nonneg",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma sandwichedTraceFunctional_nonneg (ρ σ : MState d) :\n    0 ≤ Q̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_pos",
+     "kind": "theorem",
+     "line": 99,
+     "doc": "The trace functional is strictly positive when the kernel condition holds. Under\n`σ.M.ker ≤ ρ.M.ker` (i.e. `supp(ρ) ⊆ supp(σ)`), the sandwich `σ^γ ρ σ^γ ≠ 0`\nbecause ρ has support inside σ's support.",
+     "statement": "theorem sandwichedTraceFunctional_pos\n    (ρ σ : MState d) (hker : σ.M.ker ≤ ρ.M.ker) :\n    0 < Q̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_conj_unitary_hermitian",
+     "kind": "lemma",
+     "line": 123,
+     "doc": "",
+     "statement": "lemma sandwichedTraceFunctional_conj_unitary_hermitian\n    (U : Matrix.unitaryGroup d ℂ) (A B : HermitianMat d ℂ) :\n    let γ := (1 - α) / (2 * α)\n    ((A.conj U.val).conj ((B.conj U.val) ^ γ).mat ^ α).trace =\n      ((A.conj (B ^ γ).mat) ^ α).trace",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_conj_unitary_MState",
+     "kind": "theorem",
+     "line": 139,
+     "doc": "The trace functional is invariant under joint unitary conjugation of MStates.",
+     "statement": "theorem sandwichedTraceFunctional_conj_unitary_MState\n    (U : Matrix.unitaryGroup d ℂ) (ρ σ : MState d) :\n    Q̃_ α(ρ.uConj U‖σ.uConj U) = Q̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "f_alpha",
+     "kind": "def",
+     "line": 174,
+     "doc": "The variational function `f_α(H, ρ, σ) = α · ⟪ρ, H⟫ − (α−1) · Tr[(σ^{−γ} H σ^{−γ})^{α/(α−1)}]`\nwhere `γ = (1−α)/(2α)`. For fixed `H ≥ 0`, this is linear in `ρ` and convex in `σ`.\nFrank–Lieb show that `Q̃_α(ρ‖σ) = sup_{H ≥ 0} f_α(H, ρ, σ)` for `α > 1`.",
+     "statement": "noncomputable def f_alpha (α : ℝ) (H : HermitianMat d ℂ) (ρ σ : MState d) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "H_hat",
+     "kind": "def",
+     "line": 180,
+     "doc": "The optimizer in the variational formula: `H_hat = σ^γ (σ^γ ρ σ^γ)^{α−1} σ^γ`\nwhere `γ = (1−α)/(2α)`.",
+     "statement": "noncomputable def H_hat (α : ℝ) (ρ σ : MState d) : HermitianMat d ℂ",
+     "sorry": false
+    },
+    {
+     "name": "H_hat_nonneg",
+     "kind": "lemma",
+     "line": 187,
+     "doc": "",
+     "statement": "lemma H_hat_nonneg (ρ σ : MState d) : 0 ≤ H_hat α ρ σ",
+     "sorry": false
+    },
+    {
+     "name": "H_hat_conj_sigma",
+     "kind": "theorem",
+     "line": 220,
+     "doc": "Sub-lemma for Step 1b: the conj of H_hat by σ^{−γ} simplifies to (ρ.M.conj (σ^γ).mat)^{α−1}.\nThis uses σ^{−γ} · σ^γ = identity (on support) to cancel the outer σ^γ factors.",
+     "statement": "theorem H_hat_conj_sigma (hα : 1 < α) (ρ σ : MState d) :\n    let γ := (1 - α) / (2 * α)\n    (H_hat α ρ σ).conj (σ.M ^ (-γ)).mat = (ρ.M.conj (σ.M ^ γ).mat) ^ (α - 1)",
+     "sorry": false
+    },
+    {
+     "name": "inner_rho_H_hat",
+     "kind": "lemma",
+     "line": 238,
+     "doc": "",
+     "statement": "lemma inner_rho_H_hat (hα : 1 < α) (ρ σ : MState d) :\n    let γ := (1 - α) / (2 * α)\n    ⟪ρ.M, H_hat α ρ σ⟫_ℝ = ((ρ.M.conj (σ.M ^ γ).mat) ^ α).trace",
+     "sorry": false
+    },
+    {
+     "name": "f_alpha_at_optimizer",
+     "kind": "lemma",
+     "line": 268,
+     "doc": "",
+     "statement": "lemma f_alpha_at_optimizer (hα : 1 < α) (ρ σ : MState d) :\n    f_alpha α (H_hat α ρ σ) ρ σ = Q̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "rpow_mul_neg_rpow_eq_supportProj",
+     "kind": "lemma",
+     "line": 287,
+     "doc": "For PSD `A` and `γ ≠ 0`, the product `A^γ * A^{-γ}` equals the support projection\nof `A`. This is because `x^γ * x^{-γ} = if x = 0 then 0 else 1` for `x ≥ 0`.",
+     "statement": "lemma rpow_mul_neg_rpow_eq_supportProj {A : HermitianMat d ℂ}\n    (hA : 0 ≤ A) (γ : ℝ) (hγ : γ ≠ 0) :\n    (A ^ γ).mat * (A ^ (-γ)).mat = A.supportProj.mat",
+     "sorry": false
+    },
+    {
+     "name": "supportProj_mul_of_ker_le",
+     "kind": "lemma",
+     "line": 305,
+     "doc": "The support projection of `A` acts as identity on `B` when `A.ker ≤ B.ker`.\nSince `A.supportProj` projects onto `ker(A)⊥` and `B` is zero on `ker(A)`,\nthe projection preserves `B`.",
+     "statement": "lemma supportProj_mul_of_ker_le {A B : HermitianMat d ℂ}\n    (hker : A.ker ≤ B.ker) :\n    A.supportProj.mat * B.mat = B.mat",
+     "sorry": false
+    },
+    {
+     "name": "inner_eq_inner_conj_of_ker_le",
+     "kind": "lemma",
+     "line": 361,
+     "doc": "Under the support condition `σ.M.ker ≤ ρ.M.ker` (i.e., supp(ρ) ⊆ supp(σ)),\nconjugation by `σ^γ` and `σ^{-γ}` preserves the inner product:\n`⟪ρ.M, H⟫ = ⟪σ^γ ρ σ^γ, σ^{-γ} H σ^{-γ}⟫`. This holds because the kernel condition\nensures `ρ` is supported on `supp(σ)`, where `σ^γ σ^{-γ}` acts as the identity.",
+     "statement": "lemma inner_eq_inner_conj_of_ker_le (ρ σ : MState d)\n    (H : HermitianMat d ℂ) (hker : σ.M.ker ≤ ρ.M.ker) (γ : ℝ) (hγ : γ ≠ 0) :\n    ⟪ρ.M, H⟫_ℝ = ⟪ρ.M.conj (σ.M ^ γ).mat, H.conj (σ.M ^ (-γ)).mat⟫_ℝ",
+     "sorry": false
+    },
+    {
+     "name": "f_alpha_le_at_optimizer",
+     "kind": "theorem",
+     "line": 394,
+     "doc": "**Step 1c**: `H_hat` is a maximizer: for all `H ≥ 0`, `f_α(H) ≤ f_α(H_hat)`.\nThis uses the trace Young inequality: for PSD `A, B` and conjugate exponents `p, q > 1`,\n`⟪A, B⟫ ≤ Tr[A^p]/p + Tr[B^q]/q`.\nApplied with `A = σ^γ ρ σ^γ`, `B = σ^{-γ} H σ^{-γ}`, `p = α`, `q = α/(α-1)`,\nthe inner product identity `⟪ρ, H⟫ = ⟪A, B⟫` (under the support condition) yields\n`f_α(H) ≤ Tr[A^α] = Q̃_α(ρ‖σ) = f_α(H_hat)`.\nNote: the support condition `σ.M.ker ≤ ρ.M.ker` (i.e., supp(ρ) ⊆ supp(σ)) is necessary.\nWithout it, the theorem is false: taking ρ orthogonal to σ gives Q̃_α = 0 but\n`f_α(H) = α · Tr[ρH] > 0` for appropriate H.",
+     "statement": "theorem f_alpha_le_at_optimizer (hα : 1 < α) (ρ σ : MState d)\n    (H : HermitianMat d ℂ) (hH : 0 ≤ H) (hker : σ.M.ker ≤ ρ.M.ker) :\n    f_alpha α H ρ σ ≤ f_alpha α (H_hat α ρ σ) ρ σ",
+     "sorry": false
+    },
+    {
+     "name": "traceFunctional_eq_iSup_f_alpha",
+     "kind": "theorem",
+     "line": 434,
+     "doc": "**Step 1 (Variational formula)**: For `α > 1`, the trace functional equals the\nsupremum of `f_α` over all PSD `H`:\n  `Q̃_α(ρ‖σ) = ⨆ (H : HermitianMat d ℂ) (_ : 0 ≤ H), f_alpha α H ρ σ`.\nThe optimizer is `H_hat = σ^γ (σ^γ ρ σ^γ)^{α−1} σ^γ`.",
+     "statement": "theorem traceFunctional_eq_iSup_f_alpha (hα : 1 < α) (ρ σ : MState d) (hker : σ.M.ker ≤ ρ.M.ker) :\n    Q̃_ α(ρ‖σ) = ⨆ (H : {H : HermitianMat d ℂ // 0 ≤ H}), f_alpha α H.1 ρ σ",
+     "sorry": false
+    },
+    {
+     "name": "f_alpha_convex_in_sigma",
+     "kind": "theorem",
+     "line": 452,
+     "doc": "(Convexity in σ): For fixed `H ≥ 0` and `ρ`, and `α > 1`, the map\n`σ ↦ f_alpha α H ρ σ` is convex. The key is that for `p = α/(α−1) > 1`:\n• `A ↦ Tr[A^p]` is convex on PSD matrices (trace function convexity, Theorem 2.10 of Carlen),\n• `σ ↦ σ^{−γ} H σ^{−γ}` is *concave* in `σ` by Lieb concavity (since `−γ = (α−1)/(2α) ∈ (0,½)`),\n• The composition of a convex non-decreasing function with a concave function is convex,\n  but we actually need the sign: the second term has a factor `−(α−1) < 0` which\n  flips concave → convex.\nMore precisely: `σ ↦ Tr[(σ^{−γ} H σ^{−γ})^p]` is concave (by Lieb + trace function convexity),\nso `σ ↦ −(α−1) · Tr[(σ^{−γ} H σ^{−γ})^p]` is convex.",
+     "statement": "theorem f_alpha_convex_in_sigma (hα : 1 < α) (H : HermitianMat d ℂ) (hH : 0 ≤ H)\n    (ρ : MState d) {ι : Type*} [Fintype ι]\n    (w : ι → ℝ) (hw_nonneg : ∀ i, 0 ≤ w i) (hw_sum : ∑ i, w i = 1)\n    (σs : ι → MState d) (σ_mix : MState d)\n    (hσ_mix : σ_mix.M = ∑ i, w i • (σs i).M) :\n    f_alpha α H ρ σ_mix ≤ ∑ i, w i * f_alpha α H ρ (σs i)",
+     "sorry": false
+    },
+    {
+     "name": "f_alpha_jointly_convex",
+     "kind": "lemma",
+     "line": 494,
+     "doc": "",
+     "statement": "lemma f_alpha_jointly_convex (hα : 1 < α) (H : HermitianMat d ℂ) (hH : 0 ≤ H)\n    {ι : Type*} [Fintype ι]\n    (w : ι → ℝ) (hw_nonneg : ∀ i, 0 ≤ w i) (hw_sum : ∑ i, w i = 1)\n    (ρs σs : ι → MState d) (ρ_mix σ_mix : MState d)\n    (hρ_mix : ρ_mix.M = ∑ i, w i • (ρs i).M)\n    (hσ_mix : σ_mix.M = ∑ i, w i • (σs i).M) :\n    f_alpha α H ρ_mix σ_mix ≤ ∑ i, w i * f_alpha α H (ρs i) (σs i)",
+     "sorry": false
+    },
+    {
+     "name": "f_alpha_bddAbove",
+     "kind": "lemma",
+     "line": 517,
+     "doc": "",
+     "statement": "lemma f_alpha_bddAbove (hα : 1 < α) (ρ σ : MState d) (hker : σ.M.ker ≤ ρ.M.ker) :\n    BddAbove (Set.range (fun H : {H : HermitianMat d ℂ // 0 ≤ H} => f_alpha α H.1 ρ σ))",
+     "sorry": false
+    },
+    {
+     "name": "iSup_f_alpha_jointly_convex",
+     "kind": "lemma",
+     "line": 527,
+     "doc": "",
+     "statement": "lemma iSup_f_alpha_jointly_convex (hα : 1 < α)\n    {ι : Type*} [Fintype ι]\n    (w : ι → ℝ) (hw_nonneg : ∀ i, 0 ≤ w i) (hw_sum : ∑ i, w i = 1)\n    (ρs σs : ι → MState d) (ρ_mix σ_mix : MState d)\n    (hρ_mix : ρ_mix.M = ∑ i, w i • (ρs i).M)\n    (hσ_mix : σ_mix.M = ∑ i, w i • (σs i).M)\n    (hker : ∀ i, (σs i).M.ker ≤ (ρs i).M.ker) :\n    (⨆ (H : {H : HermitianMat d ℂ // 0 ≤ H}), f_alpha α H.1 ρ_mix σ_mix) ≤\n      ∑ i, w i * (⨆ (H : {H : HermitianMat d ℂ // 0 ≤ H}), f_alpha α H.1 (ρs i) (σs i))",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.ker_weighted_sum_le",
+     "kind": "theorem",
+     "line": 545,
+     "doc": "If for all i, ker(σs i) ≤ ker(ρs i), then ker(∑ w i • σs i) ≤ ker(∑ w i • ρs i),\nprovided all weights are nonneg and all matrices are PSD.",
+     "statement": "theorem HermitianMat.ker_weighted_sum_le {ι : Type*} [Fintype ι]\n    (w : ι → ℝ) (hw_nonneg : ∀ i, 0 ≤ w i)\n    (ρs σs : ι → HermitianMat d ℂ)\n    (hρs_nonneg : ∀ i, 0 ≤ ρs i)\n    (hσs_nonneg : ∀ i, 0 ≤ σs i)\n    (hker : ∀ i, (σs i).ker ≤ (ρs i).ker) :\n    (∑ i, w i • σs i).ker ≤ (∑ i, w i • ρs i).ker",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_jointly_convex",
+     "kind": "theorem",
+     "line": 568,
+     "doc": "The trace functional `Q̃_α` is jointly convex for `α > 1`.\nThis is Proposition 3 of the paper, originally from Frank–Lieb.\nThe proof uses the variational formula:\n  `Q̃_α(ρ‖σ) = sup_{H ≥ 0} f_α(H, ρ, σ)`\nwhere `f_α(H, ρ, σ) = α · Tr[ρ H] - (α-1) · Tr[(σ^{-γ} H σ^{-γ})^{α/(α-1)}]`\nis jointly convex in `(ρ, σ)` for fixed `H` (since the first term is linear and\nthe second uses the convexity of trace functions). The supremum of jointly convex\nfunctions is jointly convex.",
+     "statement": "theorem sandwichedTraceFunctional_jointly_convex (hα : 1 < α) {ι : Type*} [Fintype ι]\n    (w : ι → ℝ) (hw_nonneg : ∀ i, 0 ≤ w i) (hw_sum : ∑ i, w i = 1)\n    (ρs σs : ι → MState d) (ρ_mix σ_mix : MState d)\n    (hρ_mix : ρ_mix.M = ∑ i, w i • (ρs i).M)\n    (hσ_mix : σ_mix.M = ∑ i, w i • (σs i).M)\n    (hker : ∀ i, (σs i).M.ker ≤ (ρs i).M.ker) :\n    Q̃_ α(ρ_mix‖σ_mix) ≤ ∑ i, w i * Q̃_ α(ρs i‖σs i)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_mul",
+     "kind": "lemma",
+     "line": 827,
+     "doc": "",
+     "statement": "lemma sandwichedTraceFunctional_mul\n    (ρ₁ σ₁ : MState dA) (ρ₂ σ₂ : MState dB) :\n    Q̃_ α(ρ₁ ⊗ᴹ ρ₂‖σ₁ ⊗ᴹ σ₂) = Q̃_ α(ρ₁‖σ₁) * Q̃_ α(ρ₂‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_self",
+     "kind": "lemma",
+     "line": 838,
+     "doc": "",
+     "statement": "lemma sandwichedTraceFunctional_self (hα : 0 < α) (ρ : MState d) :\n    Q̃_ α(ρ‖ρ) = 1",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_tensor_invariant",
+     "kind": "theorem",
+     "line": 861,
+     "doc": "The trace functional is invariant under tensoring with a fixed state.\nThis follows from multiplicativity (`sandwichedTraceFunctional_mul`) and\nthe self-trace-functional being 1 (`sandwichedTraceFunctional_self`).",
+     "statement": "theorem sandwichedTraceFunctional_tensor_invariant (hα : 0 < α)\n    (ρ σ : MState dA) (τ : MState dB) :\n    Q̃_ α(ρ ⊗ᴹ τ‖σ ⊗ᴹ τ) = Q̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "MState.conjTensorUnitary",
+     "kind": "def",
+     "line": 872,
+     "doc": "The MState obtained by conjugating a bipartite state by `1_A ⊗ V` where `V` is a unitary\non the `B` system. This is `(1_A ⊗ V) ρ_AB (1_A ⊗ V)†`.",
+     "statement": "def MState.conjTensorUnitary (ρ : MState (dA × dB)) (V : Matrix.unitaryGroup dB ℂ) :\n    MState (dA × dB)",
+     "sorry": false
+    },
+    {
+     "name": "MState.conjTensorUnitary_M",
+     "kind": "theorem",
+     "line": 879,
+     "doc": "The twirled MState: averaging conjugation by `1_A ⊗ V_i` over all elements of\nthe twirling set gives `ρ_A ⊗ uniform_B`. We state the HermitianMat-level\nequality needed for the joint convexity argument.",
+     "statement": "theorem MState.conjTensorUnitary_M (ρ : MState (dA × dB)) (V : Matrix.unitaryGroup dB ℂ) :\n    (ρ.conjTensorUnitary V).M = ρ.M.conj ((1 : Matrix.unitaryGroup dA ℂ) ⊗ᵤ V).val",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_conj_tensorUnitary",
+     "kind": "theorem",
+     "line": 884,
+     "doc": "The trace functional is invariant under `1_A ⊗ V` conjugation.",
+     "statement": "theorem sandwichedTraceFunctional_conj_tensorUnitary\n    (ρ σ : MState (dA × dB)) (V : Matrix.unitaryGroup dB ℂ) :\n    Q̃_ α(ρ.conjTensorUnitary V‖σ.conjTensorUnitary V) = Q̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "conj_kron_one_entry",
+     "kind": "lemma",
+     "line": 899,
+     "doc": "",
+     "statement": "lemma conj_kron_one_entry (M : Matrix (dA × dB) (dA × dB) ℂ)\n    (V : Matrix dB dB ℂ) (a₁ a₂ : dA) (b₁ b₂ : dB) :\n    (Matrix.kroneckerMap (· * ·) (1 : Matrix dA dA ℂ) V * M *\n     (Matrix.kroneckerMap (· * ·) (1 : Matrix dA dA ℂ) V).conjTranspose) (a₁, b₁) (a₂, b₂) =\n    (V * (Matrix.of fun b₁' b₂' => M (a₁, b₁') (a₂, b₂')) * V.conjTranspose) b₁ b₂",
+     "sorry": false
+    },
+    {
+     "name": "twirling_hermitian_entry",
+     "kind": "lemma",
+     "line": 923,
+     "doc": "",
+     "statement": "lemma twirling_hermitian_entry\n    (κ : Type) [Fintype κ] (V : κ → Matrix.unitaryGroup dB ℂ)\n    (hV : ∀ (X : HermitianMat dB ℂ),\n      (Fintype.card κ : ℝ)⁻¹ • ∑ i : κ, X.conj (V i : Matrix dB dB ℂ) =\n        (X.trace / Fintype.card dB) • (1 : HermitianMat dB ℂ))\n    (X : HermitianMat dB ℂ) (b₁ b₂ : dB) :\n    ∑ i : κ, ((V i).val * X.val * (V i).val.conjTranspose) b₁ b₂ =\n    (X.val.trace / (Fintype.card dB : ℂ)) * (Fintype.card κ : ℂ) *\n      (if b₁ = b₂ then 1 else 0)",
+     "sorry": false
+    },
+    {
+     "name": "twirling_general_matrix",
+     "kind": "lemma",
+     "line": 948,
+     "doc": "",
+     "statement": "lemma twirling_general_matrix\n    (κ : Type) [Fintype κ] (V : κ → Matrix.unitaryGroup dB ℂ)\n    (hV : ∀ (X : HermitianMat dB ℂ),\n      (Fintype.card κ : ℝ)⁻¹ • ∑ i : κ, X.conj (V i : Matrix dB dB ℂ) =\n        (X.trace / Fintype.card dB) • (1 : HermitianMat dB ℂ))\n    (X : Matrix dB dB ℂ) (b₁ b₂ : dB) :\n    ∑ i : κ, ((V i).val * X * (V i).val.conjTranspose) b₁ b₂ =\n    (X.trace / (Fintype.card dB : ℂ)) * (Fintype.card κ : ℂ) *\n      (if b₁ = b₂ then 1 else 0)",
+     "sorry": false
+    },
+    {
+     "name": "MState.conjTensorUnitary'",
+     "kind": "def",
+     "line": 980,
+     "doc": "The MState obtained by conjugating a bipartite state by `1_A ⊗ V`.",
+     "statement": "def MState.conjTensorUnitary' (ρ : MState (dA × dB)) (V : Matrix.unitaryGroup dB ℂ) :\n    MState (dA × dB)",
+     "sorry": false
+    },
+    {
+     "name": "conjTensorUnitary'_entry",
+     "kind": "lemma",
+     "line": 985,
+     "doc": "",
+     "statement": "lemma conjTensorUnitary'_entry (ρ : MState (dA × dB)) (V : Matrix.unitaryGroup dB ℂ)\n    (a₁ a₂ : dA) (b₁ b₂ : dB) :\n    (ρ.conjTensorUnitary' V).M.val (a₁, b₁) (a₂, b₂) =\n    ((V : Matrix dB dB ℂ) * (Matrix.of fun b₁' b₂' => ρ.M.val (a₁, b₁') (a₂, b₂')) *\n     (V : Matrix dB dB ℂ).conjTranspose) b₁ b₂",
+     "sorry": false
+    },
+    {
+     "name": "prod_traceRight_uniform_entry",
+     "kind": "lemma",
+     "line": 993,
+     "doc": "",
+     "statement": "lemma prod_traceRight_uniform_entry [Nonempty dB] (ρ : MState (dA × dB))\n    (a₁ a₂ : dA) (b₁ b₂ : dB) :\n    (ρ.traceRight ⊗ᴹ MState.uniform).M.val (a₁, b₁) (a₂, b₂) =\n    ρ.M.val.traceRight a₁ a₂ * ((Fintype.card dB : ℂ)⁻¹ * if b₁ = b₂ then 1 else 0)",
+     "sorry": false
+    },
+    {
+     "name": "twirling_average_eq",
+     "kind": "lemma",
+     "line": 1006,
+     "doc": "",
+     "statement": "lemma twirling_average_eq [Nonempty dB]\n    (κ : Type) [Fintype κ] (V : κ → Matrix.unitaryGroup dB ℂ)\n    (hV : ∀ (X : HermitianMat dB ℂ),\n      (Fintype.card κ : ℝ)⁻¹ • ∑ i : κ, X.conj (V i : Matrix dB dB ℂ) =\n        (X.trace / Fintype.card dB) • (1 : HermitianMat dB ℂ))\n    (ρ : MState (dA × dB)) :\n    ∑ i : κ, ((Fintype.card κ : ℝ)⁻¹ • (ρ.conjTensorUnitary' (V i)).M) =\n      (ρ.traceRight ⊗ᴹ MState.uniform).M",
+     "sorry": false
+    },
+    {
+     "name": "ker_conj_le_of_ker_le",
+     "kind": "lemma",
+     "line": 1065,
+     "doc": "If `σ.M.ker ≤ ρ.M.ker`, then `(σ.conj B).ker ≤ (ρ.conj B).ker` for any matrix `B`.\nThis follows from `ker_conj` (which expresses `(A.conj B).ker` as a `comap`) and\n`Submodule.comap_mono`.",
+     "statement": "lemma ker_conj_le_of_ker_le {n : Type*} [Fintype n] [DecidableEq n]\n    {A B : HermitianMat n ℂ} (hA : 0 ≤ A) (hB : 0 ≤ B) (h : A.ker ≤ B.ker)\n    (C : Matrix n n ℂ) : (A.conj C).ker ≤ (B.conj C).ker",
+     "sorry": false
+    },
+    {
+     "name": "MState.ker_conjTensorUnitary_le",
+     "kind": "lemma",
+     "line": 1073,
+     "doc": "Unitary conjugation preserves the kernel ordering between MStates.\nIf `σ.M.ker ≤ ρ.M.ker`, then `(σ.conjTensorUnitary V).M.ker ≤ (ρ.conjTensorUnitary V).M.ker`.",
+     "statement": "lemma MState.ker_conjTensorUnitary_le {dA dB : Type*} [Fintype dA] [Fintype dB]\n    [DecidableEq dA] [DecidableEq dB]\n    (ρ σ : MState (dA × dB)) (V : Matrix.unitaryGroup dB ℂ)\n    (hker : σ.M.ker ≤ ρ.M.ker) :\n    (σ.conjTensorUnitary V).M.ker ≤ (ρ.conjTensorUnitary V).M.ker",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedTraceFunctional_mono_traceRight",
+     "kind": "theorem",
+     "line": 1083,
+     "doc": "Monotonicity of the trace functional under partial trace for `α > 1`.\nEquation (2.8) of the paper (second line).",
+     "statement": "theorem sandwichedTraceFunctional_mono_traceRight [Nonempty dB]\n    (hα : 1 < α) (ρ σ : MState (dA × dB)) (hker : σ.M.ker ≤ ρ.M.ker) :\n    Q̃_ α(ρ.traceRight‖σ.traceRight) ≤ Q̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "ker_le_traceRight",
+     "kind": "theorem",
+     "line": 1177,
+     "doc": "The kernel condition `σ.M.ker ≤ ρ.M.ker` is preserved under partial trace.\nThis follows because `supp(ρ) ⊆ supp(σ)` implies `supp(Tr_B ρ) ⊆ supp(Tr_B σ)`:\nif `v ∈ supp(Tr_B ρ)`, then `⟨v, (Tr_B ρ) v⟩ > 0`, so for some basis vector `e_b`\nwe have `v ⊗ e_b ∈ supp(ρ) ⊆ supp(σ)`, hence `⟨v, (Tr_B σ) v⟩ ≥ ⟨v ⊗ e_b, σ (v ⊗ e_b)⟩ > 0`.",
+     "statement": "theorem ker_le_traceRight {ρ σ : MState (dA × dB)}\n    (hker : σ.M.ker ≤ ρ.M.ker) :\n    σ.traceRight.M.ker ≤ ρ.traceRight.M.ker",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_mono_traceRight",
+     "kind": "theorem",
+     "line": 1209,
+     "doc": "The sandwiched Rényi divergence is monotone under partial trace for `α > 1`.\nThis follows from monotonicity of the trace functional together with the fact that\n`D̃_α = log(Q̃_α) / (α - 1)` and both `log` and `1/(α-1)` are order-preserving for α > 1.",
+     "statement": "theorem sandwichedRenyiEntropy_mono_traceRight [Nonempty dB]\n    (hα : 1 < α) (ρ σ : MState (dA × dB))\n    (hker : σ.M.ker ≤ ρ.M.ker) :\n    D̃_ α(ρ.traceRight‖σ.traceRight) ≤ D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_conj_unitary",
+     "kind": "lemma",
+     "line": 1231,
+     "doc": "",
+     "statement": "lemma sandwichedRenyiEntropy_conj_unitary (hα : 0 < α) (ρ σ : MState d)\n    (U : Matrix.unitaryGroup d ℂ) :\n    D̃_ α(ρ.uConj U‖σ.uConj U) = D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_tensor_pure",
+     "kind": "lemma",
+     "line": 1287,
+     "doc": "",
+     "statement": "lemma sandwichedRenyiEntropy_tensor_pure (hα : 0 < α) (ρ σ : MState d₁) (ψ : Ket d₂) :\n    D̃_ α(ρ ⊗ᴹ MState.pure ψ‖σ ⊗ᴹ MState.pure ψ) = D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_SWAP",
+     "kind": "theorem",
+     "line": 1293,
+     "doc": "The sandwiched Rényi divergence is invariant under SWAP.",
+     "statement": "theorem sandwichedRenyiEntropy_SWAP (ρ σ : MState (dA × dB)) :\n    D̃_ α(ρ.SWAP‖σ.SWAP) = D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_mono_traceRight'",
+     "kind": "lemma",
+     "line": 1302,
+     "doc": "",
+     "statement": "lemma sandwichedRenyiEntropy_mono_traceRight' [Nonempty dB]\n    (hα : 1 < α) (ρ σ : MState (dA × dB)) :\n    D̃_ α(ρ.traceRight‖σ.traceRight) ≤ D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_mono_traceLeft",
+     "kind": "theorem",
+     "line": 1314,
+     "doc": "Monotonicity of the sandwiched Rényi divergence under `traceLeft` for `α > 1`.\nFollows from `sandwichedRenyiEntropy_mono_traceRight'` + SWAP invariance.",
+     "statement": "theorem sandwichedRenyiEntropy_mono_traceLeft [Nonempty dA]\n    (hα : 1 < α) (ρ σ : MState (dA × dB)) :\n    D̃_ α(ρ.traceLeft‖σ.traceLeft) ≤ D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "prep_append_eq_tensor_pure",
+     "kind": "theorem",
+     "line": 1327,
+     "doc": "Helper: The Stinespring preparation `prep ∘ append` equals tensoring with a fixed pure state.\n`append = ofEquiv (Equiv.prodPUnit d₁).symm`.\nTODO: PULLOUT to a more reasonable place.",
+     "statement": "theorem prep_append_eq_tensor_pure [Inhabited d₂] (ρ : MState d₁) :\n    let ψ₀ : Ket (d₂ × d₂) := Ket.basis default\n    let τ := MState.pure ψ₀\n    let zero_prep : CPTPMap Unit (d₂ × d₂) := CPTPMap.replacement τ\n    let prep := (CPTPMap.id ⊗ᶜᵖ zero_prep)\n    let append : CPTPMap d₁ (d₁ × Unit) := CPTPMap.ofEquiv (Equiv.prodPUnit d₁).symm\n    (prep ∘ₘ append) ρ = ρ ⊗ᴹ τ",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_DPI_gt_one",
+     "kind": "theorem",
+     "line": 1349,
+     "doc": "The Data Processing Inequality for the Sandwiched Rényi relative entropy (α > 1).\nEvery CPTP map `Φ` satisfies `D̃_α(Φρ‖Φσ) ≤ D̃_α(ρ‖σ)`.\n\nThe proof uses the Stinespring representation (see `CPTPMap.exists_purify`):\nevery CPTP map can be written as ancilla preparation + unitary conjugation + partial trace.\nSince the sandwiched Rényi divergence is invariant under the first two operations\n(by additivity and relabel invariance) and monotone under partial trace\n(by `sandwichedRenyiEntropy_mono_traceRight`), the DPI follows.",
+     "statement": "theorem sandwichedRenyiEntropy_DPI_gt_one (hα : 1 < α) (ρ σ : MState d₁) (Φ : CPTPMap d₁ d₂) :\n    D̃_ α(Φ ρ‖Φ σ) ≤ D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_DPI_eq_one",
+     "kind": "lemma",
+     "line": 1385,
+     "doc": "",
+     "statement": "lemma sandwichedRenyiEntropy_DPI_eq_one (ρ σ : MState d₁) (Φ : CPTPMap d₁ d₂) :\n    D̃_ 1(Φ ρ‖Φ σ) ≤ D̃_ 1(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRenyiEntropy_DPI",
+     "kind": "theorem",
+     "line": 1401,
+     "doc": "The Data Processing Inequality for the Sandwiched Renyi relative entropy.\nProved following the approach of Frank–Lieb and Leditzky–Rouzé–Datta.",
+     "statement": "theorem sandwichedRenyiEntropy_DPI (hα : 1 ≤ α) (ρ σ : MState d₁) (Φ : CPTPMap d₁ d₂) :\n    D̃_ α(Φ ρ‖Φ σ) ≤ D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_tendsto_qRelativeEnt",
+     "kind": "theorem",
+     "line": 1424,
+     "doc": "As `α → 1⁺`, the sandwiched Rényi relative entropy `D̃_α(ρ‖σ)` tends to the relative\nentropy `𝐃(ρ‖σ) = D̃_1(ρ‖σ)`, by continuity of `α ↦ D̃_α` on `(0, ∞)`.",
+     "statement": "theorem sandwichedRelRentropy_tendsto_qRelativeEnt (ρ σ : MState d) :\n    Filter.Tendsto (fun α : ℝ => D̃_ α(ρ‖σ)) (𝓝[>] 1) (𝓝 𝐃(ρ‖σ))",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_joint_convexity",
+     "kind": "theorem",
+     "line": 1523,
+     "doc": "Joint convexity of the quantum relative entropy.\n\nThis is stated using `Mixable`, rather than `ConvexOn`, because `MState d`\nis not an `AddCommMonoid`.",
+     "statement": "theorem qRelativeEnt_joint_convexity :\n    ∀ (ρ₁ ρ₂ σ₁ σ₂ : MState d), ∀ (p : Prob),\n      𝐃(p [ρ₁ ↔ ρ₂]‖p [σ₁ ↔ σ₂]) ≤ p * 𝐃(ρ₁‖σ₁) + (1 - p) * 𝐃(ρ₂‖σ₂)",
+     "sorry": false
+    }
+   ],
+   "private": 18
+  },
+  {
+   "file": "QuantumInfo/Entropy/Relative.lean",
+   "module": "QuantumInfo.Entropy.Relative",
+   "title": "",
+   "doc": "To do relative entropies, we start with the _sandwiched Renyi Relative Entropy_ which is a nice general form.\nThen instead of proving many theorems (like DPI, relabelling, additivity, etc.) several times, we just prove\nit for this one quantity, then it follows for other quantities (like the relative entropy) as a special case.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "weighted_jensen_rpow",
+     "kind": "lemma",
+     "line": 51,
+     "doc": "Weighted Jensen inequality: for weights w_j ≥ 0 with ∑ w_j = 1, values b_j ≥ 0,\nand q ≥ 1: (∑_j w_j * b_j)^q ≤ ∑_j w_j * b_j^q.\n\nThis is the special case of `Real.rpow_arith_mean_le_arith_mean_rpow` applied to\n`Finset.univ`",
+     "statement": "lemma weighted_jensen_rpow (b w : d → ℝ) (q : ℝ)\n  (hb : ∀ j, 0 ≤ b j) (hw : ∀ j, 0 ≤ w j) (hsum : ∑ j, w j = 1) (hq : 1 ≤ q) :\n    (∑ j, w j * b j) ^ q ≤ ∑ j, w j * b j ^ q",
+     "sorry": false
+    },
+    {
+     "name": "doubly_stochastic_holder",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "Doubly stochastic Hölder inequality: for nonneg a, b, doubly stochastic w,\nand conjugate p, q > 1:\n∑_{ij} a_i * b_j * w_{ij} ≤ (∑ a_i^p)^{1/p} * (∑ b_j^q)^{1/q}.",
+     "statement": "lemma doubly_stochastic_holder (a b : d → ℝ) (w : d → d → ℝ)\n    (ha : ∀ i, 0 ≤ a i) (hb : ∀ j, 0 ≤ b j)\n    (hw : ∀ i j, 0 ≤ w i j)\n    (hrow : ∀ i, ∑ j, w i j = 1) (hcol : ∀ j, ∑ i, w i j = 1)\n    (p q : ℝ) (hp : 1 < p) (hpq : 1/p + 1/q = 1) :\n    ∑ i, ∑ j, a i * b j * w i j ≤ (∑ i, a i ^ p) ^ (1/p) * (∑ j, b j ^ q) ^ (1/q)",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.inner_le_trace_rpow_mul",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "Hermitian trace Hölder inequality: for PSD A, B and conjugate exponents p, q > 1,\n⟪A, B⟫ ≤ Tr[A^p]^(1/p) * Tr[B^q]^(1/q).",
+     "statement": "lemma HermitianMat.inner_le_trace_rpow_mul\n    {A B : HermitianMat d ℂ} (hA : 0 ≤ A) (hB : 0 ≤ B)\n    (p q : ℝ) (hp : 1 < p) (hpq : 1/p + 1/q = 1) :\n    ⟪A, B⟫_ℝ ≤ (A ^ p).trace ^ (1/p) * (B ^ q).trace ^ (1/q)",
+     "sorry": false
+    },
+    {
+     "name": "MState.rpow_le_one'",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "",
+     "statement": "lemma MState.rpow_le_one' {r : ℝ} (hσ : 0 < r) : σ.M ^ r ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.eigenvalues_le_one_of_le_one",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "If A ≥ 0 and A ≤ 1, then each eigenvalue of A is in [0, 1].",
+     "statement": "lemma HermitianMat.eigenvalues_le_one_of_le_one\n    (A : HermitianMat d ℂ) (hA1 : A ≤ 1) (i : d) :\n    A.H.eigenvalues i ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.trace_rpow_le_trace_of_le_one",
+     "kind": "lemma",
+     "line": 174,
+     "doc": "For positive A ≤ 1 and p ≥ 1, `Tr[A^p] ≤ Tr[A]`.",
+     "statement": "lemma HermitianMat.trace_rpow_le_trace_of_le_one\n    (A : HermitianMat d ℂ) (hA : 0 ≤ A) (hA1 : A ≤ 1)\n    (p : ℝ) (hp : 1 ≤ p) :\n    (A ^ p).trace ≤ A.trace",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.rpow_neg_mul_rpow_eq_supportProj",
+     "kind": "lemma",
+     "line": 249,
+     "doc": "For PSD A and p ≠ 0, `A^{-p} * A^p = HermitianMat.supportProj A`.",
+     "statement": "lemma HermitianMat.rpow_neg_mul_rpow_eq_supportProj\n    {A : HermitianMat d ℂ} (hA : 0 ≤ A) {p : ℝ} (hp : p ≠ 0) :\n    (A ^ (-p)).mat * (A ^ p).mat = A.supportProj.mat",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.supportProj_mul_self",
+     "kind": "lemma",
+     "line": 264,
+     "doc": "",
+     "statement": "lemma HermitianMat.supportProj_mul_self (A : HermitianMat d ℂ) :\n    A.supportProj.mat * A.mat = A.mat",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.inner_supportProj_self",
+     "kind": "lemma",
+     "line": 292,
+     "doc": "",
+     "statement": "lemma HermitianMat.inner_supportProj_self (A : HermitianMat d ℂ) :\n    ⟪A, A.supportProj⟫ = A.trace",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.mul_supportProj_of_ker_le",
+     "kind": "lemma",
+     "line": 303,
+     "doc": "",
+     "statement": "lemma HermitianMat.mul_supportProj_of_ker_le {A B : HermitianMat d ℂ}\n  (h : LinearMap.ker B.lin.toLinearMap ≤ LinearMap.ker A.lin.toLinearMap) :\n    A.mat * B.supportProj.mat = A.mat",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.inner_supportProj_of_ker_le",
+     "kind": "lemma",
+     "line": 352,
+     "doc": "",
+     "statement": "lemma HermitianMat.inner_supportProj_of_ker_le {A B : HermitianMat d ℂ}\n  (h : LinearMap.ker B.lin.toLinearMap ≤ LinearMap.ker A.lin.toLinearMap) :\n    ⟪A, B.supportProj⟫ = A.trace",
+     "sorry": false
+    },
+    {
+     "name": "supportProj_inner_density",
+     "kind": "lemma",
+     "line": 357,
+     "doc": "",
+     "statement": "lemma supportProj_inner_density (h : σ.M.ker ≤ ρ.M.ker) :\n    ⟪σ.M.supportProj, ρ.M⟫_ℝ = 1",
+     "sorry": false
+    },
+    {
+     "name": "inner_log_sub_log_nonneg",
+     "kind": "lemma",
+     "line": 1154,
+     "doc": "",
+     "statement": "lemma inner_log_sub_log_nonneg (h : σ.M.ker ≤ ρ.M.ker) :\n    0 ≤ ⟪ρ.M, ρ.M.log - σ.M.log⟫",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_nonneg",
+     "kind": "lemma",
+     "line": 1170,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_nonneg {α : ℝ} (hα : 0 < α) (h : σ.M.ker ≤ ρ.M.ker) :\n    0 ≤ if α = 1 then ⟪ρ.M, ρ.M.log - σ.M.log⟫\n      else ((ρ.M.conj (σ.M ^ ((1 - α)/(2 * α)) ).mat) ^ α).trace.log / (α - 1)",
+     "sorry": false
+    },
+    {
+     "name": "ker_kron_le_of_le",
+     "kind": "lemma",
+     "line": 1187,
+     "doc": "If the kernels of the components are contained, then the kernel of the Kronecker product is contained.",
+     "statement": "lemma ker_kron_le_of_le {d₁ d₂ : Type*} [Fintype d₁] [Fintype d₂] [DecidableEq d₁] [DecidableEq d₂]\n    (A C : Matrix d₁ d₁ ℂ) (B D : Matrix d₂ d₂ ℂ)\n    (hA : LinearMap.ker A.toEuclideanLin ≤ LinearMap.ker C.toEuclideanLin)\n    (hB : LinearMap.ker B.toEuclideanLin ≤ LinearMap.ker D.toEuclideanLin) :\n    LinearMap.ker (A.kronecker B).toEuclideanLin ≤ LinearMap.ker (C.kronecker D).toEuclideanLin",
+     "sorry": false
+    },
+    {
+     "name": "ker_le_of_ker_kron_le_left",
+     "kind": "lemma",
+     "line": 1240,
+     "doc": "If the kernel of a product state is contained in another, the left component kernel is contained.",
+     "statement": "lemma ker_le_of_ker_kron_le_left (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂)\n  (h : (σ₁ ⊗ᴹ σ₂).M.ker ≤ (ρ₁ ⊗ᴹ ρ₂).M.ker) :\n    σ₁.M.ker ≤ ρ₁.M.ker",
+     "sorry": false
+    },
+    {
+     "name": "ker_le_of_ker_kron_le_right",
+     "kind": "lemma",
+     "line": 1324,
+     "doc": "If the kernel of a product state is contained in another, the right component kernel is contained.",
+     "statement": "lemma ker_le_of_ker_kron_le_right (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂)\n  (h : (σ₁ ⊗ᴹ σ₂).M.ker ≤ (ρ₁ ⊗ᴹ ρ₂).M.ker) :\n    σ₂.M.ker ≤ ρ₂.M.ker",
+     "sorry": false
+    },
+    {
+     "name": "ker_prod_le_iff",
+     "kind": "lemma",
+     "line": 1400,
+     "doc": "The kernel of a product state is contained in another product state's kernel iff the individual\nkernels are contained.",
+     "statement": "lemma ker_prod_le_iff (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂) :\n    (σ₁ ⊗ᴹ σ₂).M.ker ≤ (ρ₁ ⊗ᴹ ρ₂).M.ker ↔ σ₁.M.ker ≤ ρ₁.M.ker ∧ σ₂.M.ker ≤ ρ₂.M.ker",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.inner_kron",
+     "kind": "lemma",
+     "line": 1408,
+     "doc": "",
+     "statement": "lemma HermitianMat.inner_kron\n    (A : HermitianMat d₁ ℂ) (B : HermitianMat d₂ ℂ) (C : HermitianMat d₁ ℂ) (D : HermitianMat d₂ ℂ) :\n    ⟪A ⊗ₖ B, C ⊗ₖ D⟫ = ⟪A, C⟫ * ⟪B, D⟫",
+     "sorry": false
+    },
+    {
+     "name": "continuousOn_rpow_uniform",
+     "kind": "lemma",
+     "line": 1430,
+     "doc": "",
+     "statement": "lemma continuousOn_rpow_uniform {K : Set ℝ} (hK : IsCompact K) :\n    ContinuousOn (fun r : ℝ ↦ UniformOnFun.ofFun {K} (fun t : ℝ ↦ t ^ r)) (Set.Ioi 0)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_additive_alpha_one_aux",
+     "kind": "lemma",
+     "line": 1453,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_additive_alpha_one_aux (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂)\n  (h1 : σ₁.M.ker ≤ ρ₁.M.ker) (h2 : σ₂.M.ker ≤ ρ₂.M.ker) :\n    ⟪(ρ₁ ⊗ᴹ ρ₂).M, (ρ₁ ⊗ᴹ ρ₂).M.log - (σ₁ ⊗ᴹ σ₂).M.log⟫ =\n    ⟪ρ₁.M, ρ₁.M.log - σ₁.M.log⟫_ℝ + ⟪ρ₂.M, ρ₂.M.log - σ₂.M.log⟫",
+     "sorry": false
+    },
+    {
+     "name": "SandwichedRelRentropy",
+     "kind": "def",
+     "line": 1471,
+     "doc": "The Sandwiched Renyi Relative Entropy, defined with ln (nits). Note that at `α = 1` this definition\nswitch to the standard Relative Entropy, for continuity. For α ≤ 0, this gives junk value 0. (There\nis no conventional value for α < 0; there is a continuous limit at α = 0, but it is complicated and\nunneeded at the moment.)",
+     "statement": "def SandwichedRelRentropy (α : ℝ) (ρ σ : MState d) : ENNReal",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt",
+     "kind": "def",
+     "line": 1488,
+     "doc": "The quantum relative entropy `𝐃(ρ‖σ) := Tr[ρ (log ρ - log σ)]`. Also called\nthe Umegaki quantum relative entropy, when it's necessary to distinguish from other\nrelative entropies.",
+     "statement": "def qRelativeEnt (ρ σ : MState d) : ENNReal",
+     "sorry": false
+    },
+    {
+     "name": "sandwiched_term_product",
+     "kind": "lemma",
+     "line": 1518,
+     "doc": "",
+     "statement": "lemma sandwiched_term_product (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂) (α β : ℝ) :\n    (((ρ₁ ⊗ᴹ ρ₂).M.conj ((σ₁ ⊗ᴹ σ₂).M ^ β).mat) ^ α).trace =\n    ((ρ₁.M.conj (σ₁.M ^ β).mat) ^ α).trace * ((ρ₂.M.conj (σ₂.M ^ β).mat) ^ α).trace",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_additive_alpha_ne_one",
+     "kind": "lemma",
+     "line": 1531,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_additive_alpha_ne_one {α : ℝ} (hα : α ≠ 1) (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂) :\n    D̃_ α(ρ₁ ⊗ᴹ ρ₂‖σ₁ ⊗ᴹ σ₂) = D̃_ α(ρ₁‖σ₁) + D̃_ α(ρ₂‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_additive",
+     "kind": "theorem",
+     "line": 1557,
+     "doc": "The Sandwiched Renyi Relative entropy is additive when the inputs are product states",
+     "statement": "theorem sandwichedRelRentropy_additive (α) (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂) :\n    D̃_ α(ρ₁ ⊗ᴹ ρ₂‖σ₁ ⊗ᴹ σ₂) = D̃_ α(ρ₁‖σ₁) + D̃_ α(ρ₂‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_additive",
+     "kind": "theorem",
+     "line": 1565,
+     "doc": "The quantum relative entropy is additive when the inputs are product states",
+     "statement": "theorem qRelativeEnt_additive (ρ₁ σ₁ : MState d₁) (ρ₂ σ₂ : MState d₂) :\n    𝐃(ρ₁ ⊗ᴹ ρ₂‖σ₁ ⊗ᴹ σ₂) = 𝐃(ρ₁‖σ₁) + 𝐃(ρ₂‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_relabel",
+     "kind": "lemma",
+     "line": 1572,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_relabel (ρ σ : MState d) (e : d₂ ≃ d) :\n    D̃_ α(ρ.relabel e‖σ.relabel e) = D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_self",
+     "kind": "lemma",
+     "line": 1580,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_self (hα : 0 < α) (ρ : MState d) :\n  --Technically this holds for all α except for `-1` and `0`. But those are stupid.\n  --TODO: Maybe SandwichedRelRentropy should actually be defined differently for α = 0?\n    D̃_ α(ρ‖ρ) = 0",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelEntropy_ne_top",
+     "kind": "lemma",
+     "line": 1608,
+     "doc": "",
+     "statement": "lemma sandwichedRelEntropy_ne_top {ρ σ : MState d} [σ.M.NonSingular] : D̃_ α(ρ‖σ) ≠ ⊤",
+     "sorry": false
+    },
+    {
+     "name": "continuousOn_exponent",
+     "kind": "lemma",
+     "line": 1614,
+     "doc": "",
+     "statement": "lemma continuousOn_exponent : ContinuousOn (fun α : ℝ => (1 - α) / (2 * α)) (Set.Ioi 0)",
+     "sorry": false
+    },
+    {
+     "name": "Complex.continuousOn_cpow_const_Ioi",
+     "kind": "lemma",
+     "line": 1618,
+     "doc": "",
+     "statement": "lemma Complex.continuousOn_cpow_const_Ioi (z : ℂ) :\n    ContinuousOn (fun r : ℝ => z ^ (r : ℂ)) (Set.Ioi 0)",
+     "sorry": false
+    },
+    {
+     "name": "maps_to_Iio_of_Ioi_1",
+     "kind": "lemma",
+     "line": 1627,
+     "doc": "The function α ↦ (1 - α) / (2 * α) maps the interval (1, ∞) to (-∞, 0).",
+     "statement": "lemma maps_to_Iio_of_Ioi_1 : Set.MapsTo (fun α : ℝ => (1 - α) / (2 * α)) (Set.Ioi 1) (Set.Iio 0)",
+     "sorry": false
+    },
+    {
+     "name": "frontier_singleton",
+     "kind": "lemma",
+     "line": 1637,
+     "doc": "",
+     "statement": "lemma frontier_singleton {X : Type*} [TopologicalSpace X] [T1Space X] [PerfectSpace X]\n    (p : X) : frontier {p} = {p}",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy.continuousOn",
+     "kind": "lemma",
+     "line": 1765,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy.continuousOn (ρ σ : MState d) :\n    ContinuousOn (fun α => D̃_ α(ρ‖σ)) (Set.Ioi 0)",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_ker",
+     "kind": "theorem",
+     "line": 1778,
+     "doc": "Quantum relative entropy as `Tr[ρ (log ρ - log σ)]` when supports are contained.",
+     "statement": "theorem qRelativeEnt_ker {ρ σ : MState d} (h : σ.M.ker ≤ ρ.M.ker) :\n    𝐃(ρ‖σ).toEReal = ⟪ρ.M, ρ.M.log - σ.M.log⟫",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_ne_top_iff",
+     "kind": "theorem",
+     "line": 1786,
+     "doc": "The quantum relative entropy is finite exactly when the support condition\n`σ.M.ker ≤ ρ.M.ker` holds.",
+     "statement": "theorem qRelativeEnt_ne_top_iff {ρ σ : MState d} : 𝐃(ρ‖σ) ≠ ⊤ ↔ σ.M.ker ≤ ρ.M.ker",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_eq_top_iff",
+     "kind": "theorem",
+     "line": 1792,
+     "doc": "The quantum relative entropy is `⊤` exactly when the support condition fails.",
+     "statement": "theorem qRelativeEnt_eq_top_iff {ρ σ : MState d} : 𝐃(ρ‖σ) = ⊤ ↔ ¬ σ.M.ker ≤ ρ.M.ker",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_eq_neg_Sᵥₙ_add",
+     "kind": "lemma",
+     "line": 1796,
+     "doc": "",
+     "statement": "lemma qRelativeEnt_eq_neg_Sᵥₙ_add (ρ σ : MState d) :\n    (qRelativeEnt ρ σ).toEReal = -(Sᵥₙ ρ : EReal) +\n      if σ.M.ker ≤ ρ.M.ker then (-⟪ρ.M, σ.M.log⟫ : EReal) else (⊤ : EReal)",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_relabel",
+     "kind": "theorem",
+     "line": 1806,
+     "doc": "The quantum relative entropy is unchanged by `MState.relabel`",
+     "statement": "theorem qRelativeEnt_relabel (ρ σ : MState d) (e : d₂ ≃ d) :\n    𝐃(ρ.relabel e‖σ.relabel e) = 𝐃(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_of_unique",
+     "kind": "lemma",
+     "line": 1811,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_of_unique [Unique d] (ρ σ : MState d) :\n    D̃_α(ρ‖σ) = 0",
+     "sorry": false
+    },
+    {
+     "name": "qRelEntropy_of_unique",
+     "kind": "lemma",
+     "line": 1820,
+     "doc": "",
+     "statement": "lemma qRelEntropy_of_unique [Unique d] (ρ σ : MState d) :\n    𝐃(ρ‖σ) = 0",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_heq_congr",
+     "kind": "lemma",
+     "line": 1824,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_heq_congr\n      {d₁ d₂ : Type u} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n      {ρ₁ σ₁ : MState d₁} {ρ₂ σ₂ : MState d₂} (hd : d₁ = d₂) (hρ : ρ₁ ≍ ρ₂) (hσ : σ₁ ≍ σ₂) :\n    D̃_ α(ρ₁‖σ₁) = D̃_ α(ρ₂‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "sandwichedRelRentropy_congr",
+     "kind": "lemma",
+     "line": 1837,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_congr {α : ℝ}\n      {d₁ d₂ : Type u} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n      {ρ₁ σ₁ : MState d₁} {ρ₂ σ₂ : MState d₂} (hd : d₁ = d₂)\n        (hρ : ρ₁ = ρ₂.relabel (Equiv.cast hd)) (hσ : σ₁ = σ₂.relabel (Equiv.cast hd)) :\n    D̃_ α(ρ₁‖σ₁) = D̃_ α(ρ₂‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "qRelEntropy_heq_congr",
+     "kind": "lemma",
+     "line": 1845,
+     "doc": "",
+     "statement": "lemma qRelEntropy_heq_congr {d₁ d₂ : Type u} [Fintype d₁] [DecidableEq d₁] [Fintype d₂] [DecidableEq d₂]\n      {ρ₁ σ₁ : MState d₁} {ρ₂ σ₂ : MState d₂} (hd : d₁ = d₂) (hρ : ρ₁ ≍ ρ₂) (hσ : σ₁ ≍ σ₂) :\n    𝐃(ρ₁‖σ₁) = 𝐃(ρ₂‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_rank",
+     "kind": "theorem",
+     "line": 1851,
+     "doc": "Quantum relative entropy when σ has full rank",
+     "statement": "theorem qRelativeEnt_rank {ρ σ : MState d} [σ.M.NonSingular] :\n    (𝐃(ρ‖σ) : EReal) = ⟪ρ.M, ρ.M.log - σ.M.log⟫",
+     "sorry": false
+    },
+    {
+     "name": "inner_log_bounded_near",
+     "kind": "lemma",
+     "line": 1918,
+     "doc": "",
+     "statement": "lemma inner_log_bounded_near (hx : σ.M.ker ≤ ρ.M.ker) {y : ℝ} (hy : ⟪ρ.M, σ.M.log⟫ < y) :\n    ∀ᶠ x in nhds σ, x.M.ker ≤ ρ.M.ker → ⟪ρ.M, x.M.log⟫ < y",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_lowerSemicontinuous_2",
+     "kind": "lemma",
+     "line": 2046,
+     "doc": "",
+     "statement": "lemma qRelativeEnt_lowerSemicontinuous_2 (ρ x : MState d) (hx : ¬(x.M.ker ≤ ρ.M.ker)) (y : ENNReal) (hy : y < ⊤) :\n    ∀ᶠ (x' : MState d) in nhds x,\n      y < (if x'.M.ker ≤ ρ.M.ker then ⟪ρ.M, ρ.M.log - x'.M.log⟫ else ⊤ : EReal)",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt.lowerSemicontinuous",
+     "kind": "lemma",
+     "line": 2088,
+     "doc": "",
+     "statement": "lemma qRelativeEnt.lowerSemicontinuous (ρ : MState d) : LowerSemicontinuous fun σ => 𝐃(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "qRelEntropy_self",
+     "kind": "lemma",
+     "line": 2119,
+     "doc": "",
+     "statement": "lemma qRelEntropy_self (ρ : MState d) : 𝐃(ρ‖ρ) = 0",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_ne_top",
+     "kind": "lemma",
+     "line": 2123,
+     "doc": "",
+     "statement": "lemma qRelativeEnt_ne_top {ρ σ : MState d} [σ.M.NonSingular] : 𝐃(ρ‖σ) ≠ ⊤",
+     "sorry": false
+    },
+    {
+     "name": "qMutualInfo_as_qRelativeEnt",
+     "kind": "theorem",
+     "line": 2190,
+     "doc": "`I(A:B) = 𝐃(ρᴬᴮ‖ρᴬ ⊗ ρᴮ)`",
+     "statement": "theorem qMutualInfo_as_qRelativeEnt (ρ : MState (dA × dB)) :\n    qMutualInfo ρ = (𝐃(ρ‖ρ.traceRight ⊗ᴹ ρ.traceLeft) : EReal)",
+     "sorry": false
+    },
+    {
+     "name": "qRelEntropy_le_add_of_le_smul",
+     "kind": "lemma",
+     "line": 2417,
+     "doc": "",
+     "statement": "lemma qRelEntropy_le_add_of_le_smul (ρ : MState d) {σ₁ σ₂ : MState d} (hσ : σ₂.M ≤ α • σ₁.M) :\n    𝐃(ρ‖σ₁) ≤ 𝐃(ρ‖σ₂) + ENNReal.ofReal (Real.log α)",
+     "sorry": false
+    },
+    {
+     "name": "qRelativeEnt_op_le",
+     "kind": "lemma",
+     "line": 2448,
+     "doc": "",
+     "statement": "lemma qRelativeEnt_op_le {ρ σ : MState d} (h : ρ.M ≤ α • σ.M) :\n    𝐃(ρ‖σ) ≤ .ofReal (Real.log α)",
+     "sorry": false
+    }
+   ],
+   "private": 70
+  },
+  {
+   "file": "QuantumInfo/Entropy/SSA.lean",
+   "module": "QuantumInfo.Entropy.SSA",
+   "title": "",
+   "doc": "Quantities of quantum _relative entropy_, namely the (standard) quantum relative\nentropy, and generalizations such as sandwiched Rényi relative entropy.",
+   "sections": [
+    {
+     "line": 332,
+     "text": "### Helper lemmas for operator_ineq_SSA"
+    },
+    {
+     "line": 850,
+     "text": "### Weak monotonicity and SSA proof infrastructure"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Matrix.opNorm",
+     "kind": "def",
+     "line": 35,
+     "doc": "The operator norm of a matrix, with respect to the Euclidean norm (l2 norm) on the domain and codomain.",
+     "statement": "noncomputable def Matrix.opNorm (A : Matrix m n 𝕜) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.isometry_preserves_norm",
+     "kind": "lemma",
+     "line": 41,
+     "doc": "",
+     "statement": "lemma Matrix.isometry_preserves_norm (A : Matrix n m 𝕜) (hA : A.Isometry) (x : EuclideanSpace 𝕜 m) :\n    ‖Matrix.toEuclideanLin A x‖ = ‖x‖",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.opNorm_isometry",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma Matrix.opNorm_isometry [Nonempty m] (A : Matrix n m 𝕜) (hA : A.Isometry) : Matrix.opNorm A = 1",
+     "sorry": false
+    },
+    {
+     "name": "map_to_tensor_MES",
+     "kind": "def",
+     "line": 73,
+     "doc": "The matrix representation of the map $v \\mapsto v \\otimes \\sum_k |k\\rangle|k\\rangle$.\nThe output index is `(d1 \\times d2) \\times d2`.",
+     "statement": "def map_to_tensor_MES : Matrix ((d₁ × d₂) × d₂) d₁ ℂ",
+     "sorry": false
+    },
+    {
+     "name": "map_to_tensor_MES_prop",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma map_to_tensor_MES_prop (A : Matrix (d₁ × d₂) (d₁ × d₂) ℂ) :\n    (map_to_tensor_MES d₁ d₂).conjTranspose * (Matrix.kronecker A (1 : Matrix d₂ d₂ ℂ)) * (map_to_tensor_MES d₁ d₂) =\n    A.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "V_rho",
+     "kind": "def",
+     "line": 91,
+     "doc": "The isometry V_rho from the paper.",
+     "statement": "noncomputable def V_rho (ρAB : HermitianMat (dA × dB) ℂ) : Matrix ((dA × dB) × dB) dA ℂ",
+     "sorry": false
+    },
+    {
+     "name": "V_sigma",
+     "kind": "def",
+     "line": 102,
+     "doc": "The isometry V_sigma from the paper.",
+     "statement": "noncomputable def V_sigma (σBC : HermitianMat (dB × dC) ℂ) : Matrix (dB × (dB × dC)) dC ℂ",
+     "sorry": false
+    },
+    {
+     "name": "V_rho_conj_mul_self_eq",
+     "kind": "lemma",
+     "line": 110,
+     "doc": "V_rho^H * V_rho simplifies to sandwiching the traceRight by the inverse square root.",
+     "statement": "lemma V_rho_conj_mul_self_eq (ρAB : HermitianMat (dA × dB) ℂ) (hρ : ρAB.mat.PosDef) :\n    let ρA := ρAB.traceRight\n    let ρA_inv_sqrt := (ρA⁻¹.sqrt : Matrix dA dA ℂ)\n    (V_rho ρAB)ᴴ * (V_rho ρAB) = ρA_inv_sqrt * ρAB.traceRight.mat * ρA_inv_sqrt",
+     "sorry": false
+    },
+    {
+     "name": "PosDef_traceRight",
+     "kind": "lemma",
+     "line": 140,
+     "doc": "The partial trace (left) of a positive definite matrix is positive definite.",
+     "statement": "lemma PosDef_traceRight [Nonempty dB] (A : HermitianMat (dA × dB) ℂ) (hA : A.mat.PosDef) :\n    A.traceRight.mat.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "PosDef_traceLeft",
+     "kind": "lemma",
+     "line": 190,
+     "doc": "",
+     "statement": "lemma PosDef_traceLeft [Nonempty dA] (A : HermitianMat (dA × dB) ℂ) (hA : A.mat.PosDef) :\n    A.traceLeft.mat.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "V_rho_isometry",
+     "kind": "theorem",
+     "line": 197,
+     "doc": "V_rho is an isometry.",
+     "statement": "theorem V_rho_isometry [Nonempty dB] (ρAB : HermitianMat (dA × dB) ℂ) (hρ : ρAB.mat.PosDef) :\n    (V_rho ρAB)ᴴ * (V_rho ρAB) = 1",
+     "sorry": false
+    },
+    {
+     "name": "V_sigma_isometry",
+     "kind": "theorem",
+     "line": 209,
+     "doc": "V_sigma is an isometry.",
+     "statement": "theorem V_sigma_isometry [Nonempty dB] (σBC : HermitianMat (dB × dC) ℂ) (hσ : σBC.mat.PosDef) :\n    (V_sigma σBC).conjTranspose * (V_sigma σBC) = 1",
+     "sorry": false
+    },
+    {
+     "name": "W_mat",
+     "kind": "def",
+     "line": 226,
+     "doc": "The operator W from the paper, defined as a matrix product.",
+     "statement": "noncomputable def W_mat (ρAB : HermitianMat (dA × dB) ℂ) (σBC : HermitianMat (dB × dC) ℂ) : Matrix ((dA × dB) × dC) ((dA × dB) × dC) ℂ",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.opNorm_mul_le",
+     "kind": "theorem",
+     "line": 243,
+     "doc": "The operator norm of a matrix product is at most the product of the operator norms.",
+     "statement": "theorem Matrix.opNorm_mul_le {l m n 𝕜 : Type*} [Fintype l] [Fintype m] [Fintype n]\n    [DecidableEq l] [DecidableEq m] [DecidableEq n] [RCLike 𝕜]\n    (A : Matrix l m 𝕜) (B : Matrix m n 𝕜) :\n    Matrix.opNorm (A * B) ≤ Matrix.opNorm A * Matrix.opNorm B",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.opNorm_reindex_proven",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "",
+     "statement": "lemma Matrix.opNorm_reindex_proven {l m n p : Type*} [Fintype l] [Fintype m] [Fintype n] [Fintype p]\n    [DecidableEq l] [DecidableEq m] [DecidableEq n] [DecidableEq p]\n    (e : m ≃ l) (f : n ≃ p) (A : Matrix m n 𝕜) :\n    Matrix.opNorm (A.reindex e f) = Matrix.opNorm A",
+     "sorry": false
+    },
+    {
+     "name": "U_rho",
+     "kind": "def",
+     "line": 279,
+     "doc": "Define U_rho as the Kronecker product of V_rho and the identity.",
+     "statement": "noncomputable def U_rho (ρAB : HermitianMat (dA × dB) ℂ) : Matrix (((dA × dB) × dB) × dC) (dA × dC) ℂ",
+     "sorry": false
+    },
+    {
+     "name": "U_sigma",
+     "kind": "def",
+     "line": 285,
+     "doc": "Define U_sigma as the Kronecker product of the identity and V_sigma.",
+     "statement": "noncomputable def U_sigma (σBC : HermitianMat (dB × dC) ℂ) : Matrix (dA × (dB × (dB × dC))) (dA × dC) ℂ",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.opNorm_conjTranspose_eq_opNorm",
+     "kind": "theorem",
+     "line": 291,
+     "doc": "The operator norm of the conjugate transpose is equal to the operator norm.",
+     "statement": "theorem Matrix.opNorm_conjTranspose_eq_opNorm {m n : Type*} [Fintype m] [Fintype n]\n    [DecidableEq m] [DecidableEq n] (A : Matrix m n 𝕜) :\n    Matrix.opNorm Aᴴ = Matrix.opNorm A",
+     "sorry": false
+    },
+    {
+     "name": "isometry_mul_conjTranspose_le_one",
+     "kind": "lemma",
+     "line": 299,
+     "doc": "",
+     "statement": "lemma isometry_mul_conjTranspose_le_one {m n : Type*} [Fintype m] [Fintype n]\n    [DecidableEq m] [DecidableEq n]\n    (V : Matrix m n ℂ) (hV : V.conjTranspose * V = 1) :\n    V * V.conjTranspose ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "conjTranspose_isometry_mul_isometry_le_one",
+     "kind": "lemma",
+     "line": 316,
+     "doc": "",
+     "statement": "lemma conjTranspose_isometry_mul_isometry_le_one {m n k : Type*}\n    [Fintype m] [Fintype n] [Fintype k] [DecidableEq m] [DecidableEq n] [DecidableEq k]\n    (A : Matrix k m ℂ) (B : Matrix k n ℂ)\n    (hA : A.conjTranspose * A = 1) (hB : B.conjTranspose * B = 1) :\n    (A.conjTranspose * B).conjTranspose * (A.conjTranspose * B) ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.reindex_le_reindex_iff",
+     "kind": "lemma",
+     "line": 335,
+     "doc": "",
+     "statement": "lemma HermitianMat.reindex_le_reindex_iff {d d₂ : Type*} [Fintype d] [DecidableEq d]\n    [Fintype d₂] [DecidableEq d₂] (e : d ≃ d₂) (A B : HermitianMat d ℂ) :\n    A.reindex e ≤ B.reindex e ↔ A ≤ B",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.inv_kronecker",
+     "kind": "lemma",
+     "line": 341,
+     "doc": "",
+     "statement": "lemma HermitianMat.inv_kronecker {m n : Type*} [Fintype m] [DecidableEq m]\n    [Fintype n] [DecidableEq n] [Nonempty m] [Nonempty n]\n    (A : HermitianMat m ℂ) (B : HermitianMat n ℂ)\n    [A.NonSingular] [B.NonSingular] :\n    (A ⊗ₖ B)⁻¹ = A⁻¹ ⊗ₖ B⁻¹",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.inv_reindex",
+     "kind": "lemma",
+     "line": 356,
+     "doc": "",
+     "statement": "lemma HermitianMat.inv_reindex {d d₂ : Type*} [Fintype d] [DecidableEq d]\n    [Fintype d₂] [DecidableEq d₂] (A : HermitianMat d ℂ) (e : d ≃ d₂) :\n    (A.reindex e)⁻¹ = A⁻¹.reindex e",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.PosDef_kronecker",
+     "kind": "lemma",
+     "line": 363,
+     "doc": "",
+     "statement": "lemma HermitianMat.PosDef_kronecker {m n : Type*} [Fintype m] [DecidableEq m]\n    [Fintype n] [DecidableEq n]\n    (A : HermitianMat m ℂ) (B : HermitianMat n ℂ)\n    (hA : A.mat.PosDef) (hB : B.mat.PosDef) :\n    (A ⊗ₖ B).mat.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.PosDef_reindex",
+     "kind": "lemma",
+     "line": 371,
+     "doc": "",
+     "statement": "lemma HermitianMat.PosDef_reindex {d d₂ : Type*} [Fintype d] [DecidableEq d]\n    [Fintype d₂] [DecidableEq d₂] (A : HermitianMat d ℂ) (e : d ≃ d₂)\n    (hA : A.mat.PosDef) :\n    (A.reindex e).mat.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "BigIdx",
+     "kind": "abbrev",
+     "line": 500,
+     "doc": "",
+     "statement": "abbrev BigIdx (dA dB dC : Type*)",
+     "sorry": false
+    },
+    {
+     "name": "SmallIdx",
+     "kind": "abbrev",
+     "line": 501,
+     "doc": "",
+     "statement": "abbrev SmallIdx (dA dB dC : Type*)",
+     "sorry": false
+    },
+    {
+     "name": "MidIdx",
+     "kind": "abbrev",
+     "line": 502,
+     "doc": "",
+     "statement": "abbrev MidIdx (dA dB dC : Type*)",
+     "sorry": false
+    },
+    {
+     "name": "W_mat_sq_le_one",
+     "kind": "theorem",
+     "line": 718,
+     "doc": "Core inequality: W†W ≤ I.\nThis is the key step, following from the isometry argument:\nV_rho ⊗ I_C and I_A ⊗ V_sigma are isometries, their cross product has norm ≤ 1,\nand the result can be related to W_mat through the MES computation (Eq. 6 in Lin-Kim-Hsieh).",
+     "statement": "theorem W_mat_sq_le_one [Nonempty dA] [Nonempty dB] [Nonempty dC]\n    (ρAB : HermitianMat (dA × dB) ℂ) (σBC : HermitianMat (dB × dC) ℂ)\n    (hρ : ρAB.mat.PosDef) (hσ : σBC.mat.PosDef) :\n    (W_mat ρAB σBC)ᴴ * (W_mat ρAB σBC) ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "intermediate_ineq",
+     "kind": "theorem",
+     "line": 762,
+     "doc": "The intermediate operator inequality: ρ_AB ⊗ σ_C⁻¹ ≤ (ρ_A ⊗ σ_BC⁻¹).reindex(assoc⁻¹).\nThis is derived from W_mat_sq_le_one by algebraic manipulation (conjugation and simplification).",
+     "statement": "theorem intermediate_ineq [Nonempty dA] [Nonempty dB] [Nonempty dC]\n    (ρAB : HermitianMat (dA × dB) ℂ) (σBC : HermitianMat (dB × dC) ℂ)\n    (hρ : ρAB.mat.PosDef) (hσ : σBC.mat.PosDef) :\n    ρAB ⊗ₖ (σBC.traceLeft)⁻¹ ≤\n      (ρAB.traceRight ⊗ₖ σBC⁻¹).reindex (Equiv.prodAssoc dA dB dC).symm",
+     "sorry": false
+    },
+    {
+     "name": "operator_ineq_SSA",
+     "kind": "theorem",
+     "line": 793,
+     "doc": "**Operator extension of SSA** (Main result of Lin-Kim-Hsieh).\nFor positive definite ρ_AB and σ_BC:\n`ρ_A⁻¹ ⊗ σ_BC ≤ ρ_AB⁻¹ ⊗ σ_C`\nwhere ρ_A = Tr_B(ρ_AB) and σ_C = Tr_B(σ_BC), and the RHS is reindexed\nvia the associator `(dA × dB) × dC ≃ dA × (dB × dC)`.",
+     "statement": "theorem operator_ineq_SSA [Nonempty dA] [Nonempty dB] [Nonempty dC]\n    (ρAB : HermitianMat (dA × dB) ℂ) (σBC : HermitianMat (dB × dC) ℂ)\n    (hρ : ρAB.mat.PosDef) (hσ : σBC.mat.PosDef) :\n    ρAB.traceRight⁻¹ ⊗ₖ σBC ≤\n      (ρAB⁻¹ ⊗ₖ σBC.traceLeft).reindex (Equiv.prodAssoc dA dB dC)",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_wm",
+     "kind": "lemma",
+     "line": 1055,
+     "doc": "Weak monotonicity, version with partial traces.",
+     "statement": "lemma Sᵥₙ_wm (ρ : MState (d₁ × d₂ × d₃)) :\n    Sᵥₙ ρ.traceRight + Sᵥₙ ρ.traceLeft.traceLeft ≤\n    Sᵥₙ ρ.assoc'.traceRight + Sᵥₙ ρ.traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_strong_subadditivity",
+     "kind": "theorem",
+     "line": 1189,
+     "doc": "Strong subadditivity on a tripartite system",
+     "statement": "theorem Sᵥₙ_strong_subadditivity (ρ₁₂₃ : MState (d₁ × d₂ × d₃)) :\n    let ρ₁₂ := ρ₁₂₃.assoc'.traceRight;\n    let ρ₂₃ := ρ₁₂₃.traceLeft;\n    let ρ₂ := ρ₁₂₃.traceLeft.traceRight;\n    Sᵥₙ ρ₁₂₃ + Sᵥₙ ρ₂ ≤ Sᵥₙ ρ₁₂ + Sᵥₙ ρ₂₃",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_subadditivity",
+     "kind": "theorem",
+     "line": 1201,
+     "doc": "\"Ordinary\" subadditivity of von Neumann entropy",
+     "statement": "theorem Sᵥₙ_subadditivity (ρ : MState (d₁ × d₂)) :\n    Sᵥₙ ρ ≤ Sᵥₙ ρ.traceRight + Sᵥₙ ρ.traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_pure_tripartite_triangle",
+     "kind": "theorem",
+     "line": 1214,
+     "doc": "Triangle inequality for pure tripartite states: S(A) ≤ S(B) + S(C).",
+     "statement": "theorem Sᵥₙ_pure_tripartite_triangle (ψ : Ket ((d₁ × d₂) × d₃)) :\n    Sᵥₙ (MState.pure ψ).traceRight.traceRight ≤\n    Sᵥₙ (MState.pure ψ).traceRight.traceLeft + Sᵥₙ (MState.pure ψ).traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_triangle_ineq_one_way",
+     "kind": "theorem",
+     "line": 1224,
+     "doc": "One direction of the Araki-Lieb triangle inequality: S(A) ≤ S(B) + S(AB).",
+     "statement": "theorem Sᵥₙ_triangle_ineq_one_way (ρ : MState (d₁ × d₂)) : Sᵥₙ ρ.traceRight ≤ Sᵥₙ ρ.traceLeft + Sᵥₙ ρ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_triangle_subaddivity",
+     "kind": "theorem",
+     "line": 1230,
+     "doc": "Araki-Lieb triangle inequality on von Neumann entropy",
+     "statement": "theorem Sᵥₙ_triangle_subaddivity (ρ : MState (d₁ × d₂)) :\n    abs (Sᵥₙ ρ.traceRight - Sᵥₙ ρ.traceLeft) ≤ Sᵥₙ ρ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_weak_monotonicity",
+     "kind": "theorem",
+     "line": 1241,
+     "doc": "Weak monotonicity of quantum conditional entropy: S(A|B) + S(A|C) ≥ 0.",
+     "statement": "theorem Sᵥₙ_weak_monotonicity (ρ : MState (dA × dB × dC)) :\n    let ρAB := ρ.assoc'.traceRight\n    let ρAC := ρ.SWAP.assoc.traceLeft.SWAP\n    0 ≤ qConditionalEnt ρAB + qConditionalEnt ρAC",
+     "sorry": false
+    },
+    {
+     "name": "qConditionalEnt_strong_subadditivity",
+     "kind": "theorem",
+     "line": 1255,
+     "doc": "Strong subadditivity, stated in terms of conditional entropies.\nAlso called the data processing inequality. H(A|BC) ≤ H(A|B).",
+     "statement": "theorem qConditionalEnt_strong_subadditivity (ρ₁₂₃ : MState (d₁ × d₂ × d₃)) :\n    qConditionalEnt ρ₁₂₃ ≤ qConditionalEnt ρ₁₂₃.assoc'.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "qMutualInfo_strong_subadditivity",
+     "kind": "theorem",
+     "line": 1264,
+     "doc": "Strong subadditivity, stated in terms of quantum mutual information.\nI(A;BC) ≥ I(A;B).",
+     "statement": "theorem qMutualInfo_strong_subadditivity (ρ₁₂₃ : MState (d₁ × d₂ × d₃)) :\n    qMutualInfo ρ₁₂₃ ≥ qMutualInfo ρ₁₂₃.assoc'.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "qcmi_nonneg",
+     "kind": "theorem",
+     "line": 1272,
+     "doc": "The quantum conditional mutual information `QCMI` is nonnegative.",
+     "statement": "theorem qcmi_nonneg (ρ : MState (dA × dB × dC)) :\n    0 ≤ qcmi ρ",
+     "sorry": false
+    },
+    {
+     "name": "qcmi_le_2_log_dim",
+     "kind": "theorem",
+     "line": 1279,
+     "doc": "The quantum conditional mutual information `QCMI ρABC` is at most 2 log dA.",
+     "statement": "theorem qcmi_le_2_log_dim (ρ : MState (dA × dB × dC)) :\n    qcmi ρ ≤ 2 * Real.log (Fintype.card dA)",
+     "sorry": false
+    },
+    {
+     "name": "qcmi_le_2_log_dim'",
+     "kind": "theorem",
+     "line": 1286,
+     "doc": "The quantum conditional mutual information `QCMI ρABC` is at most 2 log dC.",
+     "statement": "theorem qcmi_le_2_log_dim' (ρ : MState (dA × dB × dC)) :\n    qcmi ρ ≤ 2 * Real.log (Fintype.card dC)",
+     "sorry": false
+    }
+   ],
+   "private": 36
+  },
+  {
+   "file": "QuantumInfo/Entropy/VonNeumann.lean",
+   "module": "QuantumInfo.Entropy.VonNeumann",
+   "title": "",
+   "doc": "Quantum notions of information and entropy.\n\nWe start with quantities of _entropy_, namely the von Neumann entropy and its derived quantities:\n * Quantum conditional entropy, `qConditionalEnt`\n * Quantum mutual information, `qMutualInfo`\n * Coherent information, `coherentInfo`\n * Quantum conditional mutual information, `qcmi`.\nand then prove facts about them.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Sᵥₙ",
+     "kind": "def",
+     "line": 72,
+     "doc": "Von Neumann entropy of a mixed state.",
+     "statement": "def Sᵥₙ (ρ : MState d) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "qConditionalEnt",
+     "kind": "def",
+     "line": 76,
+     "doc": "The Quantum Conditional Entropy S(ρᴬ|ρᴮ) is given by S(ρᴬᴮ) - S(ρᴮ).",
+     "statement": "def qConditionalEnt (ρ : MState (dA × dB)) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "qMutualInfo",
+     "kind": "def",
+     "line": 80,
+     "doc": "The Quantum Mutual Information I(A:B) is given by S(ρᴬ) + S(ρᴮ) - S(ρᴬᴮ).",
+     "statement": "def qMutualInfo (ρ : MState (dA × dB)) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "coherentInfo",
+     "kind": "def",
+     "line": 85,
+     "doc": "The Coherent Information of a state ρ passing through a channel Λ is the negative conditional\nentropy of the image under Λ of the purification of ρ.",
+     "statement": "def coherentInfo (ρ : MState d₁) (Λ : CPTPMap d₁ d₂) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "qcmi",
+     "kind": "def",
+     "line": 91,
+     "doc": "The Quantum Conditional Mutual Information, I(A;C|B) = S(A|B) - S(A|BC).",
+     "statement": "def qcmi (ρ : MState (dA × dB × dC)) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_nonneg",
+     "kind": "theorem",
+     "line": 95,
+     "doc": "von Neumman entropy is nonnegative.",
+     "statement": "theorem Sᵥₙ_nonneg (ρ : MState d) : 0 ≤ Sᵥₙ ρ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_le_log_d",
+     "kind": "theorem",
+     "line": 99,
+     "doc": "von Neumman entropy is at most log d.",
+     "statement": "theorem Sᵥₙ_le_log_d (ρ : MState d) : Sᵥₙ ρ ≤ Real.log (Finset.card Finset.univ (α := d))",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_of_pure_zero",
+     "kind": "theorem",
+     "line": 104,
+     "doc": "von Neumman entropy of pure states is zero.",
+     "statement": "theorem Sᵥₙ_of_pure_zero (ψ : Ket d) : Sᵥₙ (MState.pure ψ) = 0",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_eq_neg_trace_log",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "",
+     "statement": "lemma Sᵥₙ_eq_neg_trace_log (ρ : MState d) : Sᵥₙ ρ = -⟪ρ.M.log, ρ.M⟫",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_eq_trace_cfc_negMulLog",
+     "kind": "theorem",
+     "line": 123,
+     "doc": "Von Neumann entropy is the trace of the matrix function `x ↦ -x log x`.",
+     "statement": "theorem Sᵥₙ_eq_trace_cfc_negMulLog (ρ : MState d) :\n    Sᵥₙ ρ = (ρ.M.cfc Real.negMulLog).trace",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_unit_zero",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma Sᵥₙ_unit_zero [Unique d] (ρ : MState d) : Sᵥₙ ρ = 0",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_relabel",
+     "kind": "theorem",
+     "line": 141,
+     "doc": "Von Neumann entropy is invariant under relabeling of the basis.",
+     "statement": "theorem Sᵥₙ_relabel (ρ : MState d₁) (e : d₂ ≃ d₁) :\n    Sᵥₙ (ρ.relabel e) = Sᵥₙ ρ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_of_SWAP_eq",
+     "kind": "theorem",
+     "line": 147,
+     "doc": "Von Neumann entropy is unchanged under SWAP. TODO: All unitaries",
+     "statement": "theorem Sᵥₙ_of_SWAP_eq (ρ : MState (d₁ × d₂)) : Sᵥₙ ρ.SWAP = Sᵥₙ ρ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_of_assoc_eq",
+     "kind": "theorem",
+     "line": 153,
+     "doc": "Von Neumann entropy is unchanged under assoc.",
+     "statement": "theorem Sᵥₙ_of_assoc_eq (ρ : MState ((d₁ × d₂) × d₃)) : Sᵥₙ ρ.assoc = Sᵥₙ ρ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_of_assoc'_eq",
+     "kind": "theorem",
+     "line": 159,
+     "doc": "Von Neumann entropy is unchanged under assoc'.",
+     "statement": "theorem Sᵥₙ_of_assoc'_eq (ρ : MState (d₁ × (d₂ × d₃))) : Sᵥₙ ρ.assoc' = Sᵥₙ ρ",
+     "sorry": false
+    },
+    {
+     "name": "selfAdjointMap_Continuous",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "",
+     "statement": "lemma selfAdjointMap_Continuous {𝕜 : Type*} [RCLike 𝕜] :\n    Continuous (IsMaximalSelfAdjoint.selfadjMap : 𝕜 →+ ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "HermitianMat.trace_Continuous",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "",
+     "statement": "lemma HermitianMat.trace_Continuous {d 𝕜 : Type*} [Fintype d] [RCLike 𝕜]  :\n    Continuous (HermitianMat.trace : HermitianMat d 𝕜 → ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_continuous",
+     "kind": "lemma",
+     "line": 175,
+     "doc": "",
+     "statement": "lemma Sᵥₙ_continuous : Continuous (Sᵥₙ (d := d))",
+     "sorry": false
+    },
+    {
+     "name": "vecToMat",
+     "kind": "def",
+     "line": 185,
+     "doc": "Convert a vector on a product space to a matrix.",
+     "statement": "def vecToMat {d₁ d₂ : Type*} [Fintype d₁] [Fintype d₂] (v : d₁ × d₂ → ℂ) : Matrix d₁ d₂ ℂ",
+     "sorry": false
+    },
+    {
+     "name": "traceLeft_eq_transpose_mul_conj",
+     "kind": "lemma",
+     "line": 200,
+     "doc": "",
+     "statement": "lemma traceLeft_eq_transpose_mul_conj (ψ : Ket (d₁ × d₂)) :\n    (MState.pure ψ).traceLeft.M.val = (vecToMat ψ.vec).transpose * (vecToMat ψ.vec).map star",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_of_partial_eq",
+     "kind": "theorem",
+     "line": 316,
+     "doc": "von Neumman entropies of the left- and right- partial trace of pure states are equal.",
+     "statement": "theorem Sᵥₙ_of_partial_eq (ψ : Ket (d₁ × d₂)) :\n    Sᵥₙ (MState.pure ψ).traceLeft = Sᵥₙ (MState.pure ψ).traceRight",
+     "sorry": false
+    },
+    {
+     "name": "qConditionalEnt_of_pure_symm",
+     "kind": "theorem",
+     "line": 325,
+     "doc": "Quantum conditional entropy is symmetric for pure states.",
+     "statement": "theorem qConditionalEnt_of_pure_symm (ψ : Ket (d₁ × d₂)) :\n    qConditionalEnt (MState.pure ψ).SWAP = qConditionalEnt (MState.pure ψ)",
+     "sorry": false
+    },
+    {
+     "name": "qMutualInfo_symm",
+     "kind": "theorem",
+     "line": 331,
+     "doc": "Quantum mutual information is symmetric.",
+     "statement": "theorem qMutualInfo_symm (ρ : MState (d₁ × d₂)) :\n    qMutualInfo ρ.SWAP = qMutualInfo ρ",
+     "sorry": false
+    },
+    {
+     "name": "Sᵥₙ_pure_complement",
+     "kind": "theorem",
+     "line": 338,
+     "doc": "For a pure state, the entropy of one subsystem equals the entropy of its complement,\neven after relabeling.",
+     "statement": "theorem Sᵥₙ_pure_complement (ψ : Ket d₁) (e : d₂ × d₃ ≃ d₁) :\n    Sᵥₙ ((MState.pure ψ).relabel e).traceLeft = Sᵥₙ ((MState.pure ψ).relabel e).traceRight",
+     "sorry": false
+    }
+   ],
+   "private": 10
+  }
+ ]
+}

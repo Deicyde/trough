@@ -1,0 +1,260 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "PhyslibAlpha/Electromagnetism/BoxChargeConservation.lean",
+   "module": "PhyslibAlpha.Electromagnetism.BoxChargeConservation",
+   "title": "Charge conservation on a box from Maxwell's equations",
+   "doc": "## i. Overview\n\nLet `V` be an electromagnetic potential and `J₄` a Lorentz current density such that `V` is an\nextremum of the free-space action with source `J₄`, i.e. Maxwell's equations hold. Taking the\ndivergence of Ampère's law, the divergence of the curl of the magnetic field vanishes, and the\ndivergence of the displacement current is, by Gauss's law, the time derivative of the charge\ndensity. This gives the continuity equation `∂ₜ ρ + ∇ ⬝ J = 0`.\n\nIntegrating the continuity equation over a coordinate box `[a, b]` and applying the divergence\ntheorem, the net current leaving the box equals minus the rate of change of the charge it\ncontains. In particular, if no charge accumulates inside the box, the currents leaving through\nits six faces sum to zero.\n\nThis is motivated by Kirchhoff's current law, but is not that law: Kirchhoff's current law is a\nstatement about the branch currents meeting at the nodes of a lumped-element circuit, whereas\nthe results here are the integral form of charge conservation on a single box.\n\n## ii. Key results\n\n- `Space.integral_div_box` : the divergence theorem on a coordinate box in `Space`.\n- `Electromagnetism.ThreeDimension.continuityEquation` : the continuity equation.\n- `Electromagnetism.LorentzCurrentDensity.boxFaceCurrent`,\n  `Electromagnetism.LorentzCurrentDensity.boxOutwardCurrent` : the current through a face of a\n  coordinate box, and the net current leaving the box.\n- `Electromagnetism.ThreeDimension.boxOutwardCurrent_eq` : the integral form of charge\n  conservation.\n- `Electromagnetism.ThreeDimension.boxOutwardCurrent_eq_zero_of_steady` : the net current\n  leaving a box in which no charge accumulates is zero.\n\n## iii. Table of contents\n\n- A. Vector calculus on `Space`\n  - A.1. Time derivatives and the divergence\n  - A.2. Smoothness of the curl\n  - A.3. The divergence theorem on a coordinate box\n- B. The continuity equation\n  - B.1. The continuity equation from Gauss's and Ampère's laws\n  - B.2. The continuity equation for an electromagnetic potential\n- C. Charge conservation on a box\n  - C.1. Currents through a box\n  - C.2. The integral form of charge conservation\n  - C.3. Steady charge in a box\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 70,
+     "text": "## A. Vector calculus on `Space`\n\n### A.1. Time derivatives and the divergence"
+    },
+    {
+     "line": 103,
+     "text": "### A.2. Smoothness of the curl"
+    },
+    {
+     "line": 119,
+     "text": "### A.3. The divergence theorem on a coordinate box\n\nThe box `[a, b]` is given in coordinates, `a b : Fin (n + 1) → ℝ`. Its faces normal to the\n`i`-th axis are parametrized, as in Mathlib's divergence theorem, by the remaining coordinates\n`y ∈ [a ∘ i.succAbove, b ∘ i.succAbove]` through `i.insertNth c y` with `c = a i` or `c = b i`.\n\nThe divergence theorem below integrates over the box in coordinates, `x ∈ [a, b]`, rather than\nover the image of the box in `Space`."
+    },
+    {
+     "line": 168,
+     "text": "## B. The continuity equation\n\n### B.1. The continuity equation from Gauss's and Ampère's laws"
+    },
+    {
+     "line": 203,
+     "text": "### B.2. The continuity equation for an electromagnetic potential"
+    },
+    {
+     "line": 225,
+     "text": "## C. Charge conservation on a box\n\n### C.1. Currents through a box"
+    },
+    {
+     "line": 246,
+     "text": "### C.2. The integral form of charge conservation"
+    },
+    {
+     "line": 268,
+     "text": "### C.3. Steady charge in a box"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.div_differentiable_time",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "",
+     "statement": "lemma div_differentiable_time {d} (f : Time → Space d → EuclideanSpace ℝ (Fin d))\n    (hf : ContDiff ℝ 2 ↿f) (x : Space d) :\n    Differentiable ℝ (fun t => (∇ ⬝ f t) x)",
+     "sorry": false
+    },
+    {
+     "name": "Space.time_deriv_div_commute",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "The divergence and the time derivative commute.",
+     "statement": "lemma time_deriv_div_commute {d} (f : Time → Space d → EuclideanSpace ℝ (Fin d))\n    (hf : ContDiff ℝ 2 ↿f) (t : Time) (x : Space d) :\n    ∂ₜ (fun t => (∇ ⬝ f t) x) t = (∇ ⬝ fun x => ∂ₜ (fun t => f t x) t) x",
+     "sorry": false
+    },
+    {
+     "name": "Space.curl_contDiff",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "",
+     "statement": "lemma curl_contDiff {n : WithTop ℕ∞} (f : Space → EuclideanSpace ℝ (Fin 3))\n    (hf : ContDiff ℝ (n + 1) f) : ContDiff ℝ n (∇ ⨯ f)",
+     "sorry": false
+    },
+    {
+     "name": "Space.div_mk_eq_sum_fderiv",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "",
+     "statement": "lemma div_mk_eq_sum_fderiv {n : ℕ} (f : Space n → EuclideanSpace ℝ (Fin n))\n    (hf : Differentiable ℝ f) (x : Fin n → ℝ) :\n    (∇ ⬝ f) ⟨x⟩ = ∑ i, fderiv ℝ (fun y : Fin n → ℝ => f ⟨y⟩ i) x (Pi.single i 1)",
+     "sorry": false
+    },
+    {
+     "name": "Space.integral_div_box",
+     "kind": "lemma",
+     "line": 145,
+     "doc": "The divergence theorem on a coordinate box in `Space`.",
+     "statement": "lemma integral_div_box {n : ℕ} (f : Space (n + 1) → EuclideanSpace ℝ (Fin (n + 1)))\n    (hf : ContDiff ℝ 1 f) (a b : Fin (n + 1) → ℝ) (hle : a ≤ b) :\n    ∫ x in Icc a b, (∇ ⬝ f) ⟨x⟩ =\n      ∑ i, ((∫ y in Icc (a ∘ i.succAbove) (b ∘ i.succAbove), f ⟨i.insertNth (b i) y⟩ i) -\n        ∫ y in Icc (a ∘ i.succAbove) (b ∘ i.succAbove), f ⟨i.insertNth (a i) y⟩ i)",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.ThreeDimension.continuity_of_gauss_ampere",
+     "kind": "lemma",
+     "line": 178,
+     "doc": "Fields `E`, `B`, `ρ` and `J` obeying Gauss's law for the electric field and Ampère's law\nobey the continuity equation.",
+     "statement": "lemma continuity_of_gauss_ampere (𝓕 : FreeSpace)\n    {E B J : Time → Space → EuclideanSpace ℝ (Fin 3)} {ρ : Time → Space → ℝ}\n    (hE : ContDiff ℝ 2 ↿E) (hB : ∀ t, ContDiff ℝ 2 (B t))\n    (hGauss : ∀ t x, (∇ ⬝ E t) x = ρ t x / 𝓕.ε₀)\n    (hAmpere : ∀ t x, (∇ ⨯ B t) x = 𝓕.μ₀ • J t x + 𝓕.μ₀ • 𝓕.ε₀ • ∂ₜ (fun t => E t x) t)\n    (t : Time) (x : Space) :\n    ∂ₜ (fun t => ρ t x) t + (∇ ⬝ J t) x = 0",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.ThreeDimension.magneticField_contDiff_space",
+     "kind": "lemma",
+     "line": 211,
+     "doc": "",
+     "statement": "lemma magneticField_contDiff_space (hV : ContDiff ℝ ∞ V) (t : Time) :\n    ContDiff ℝ 2 (V.magneticField 𝓕.c t)",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.ThreeDimension.continuityEquation",
+     "kind": "theorem",
+     "line": 218,
+     "doc": "The continuity equation: Maxwell's equations imply local conservation of charge.",
+     "statement": "theorem continuityEquation (t : Time) (x : Space)\n    (h : IsExtrema 𝓕 V J₄) (hV : ContDiff ℝ ∞ V) (hJ : ContDiff ℝ ∞ J₄) :\n    ∂ₜ (fun t => J₄.chargeDensity 𝓕.c t x) t + (∇ ⬝ J₄.currentDensity 𝓕.c t) x = 0",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.LorentzCurrentDensity.boxFaceCurrent",
+     "kind": "def",
+     "line": 235,
+     "doc": "The electric current at time `t` through the face `x i = s` of the coordinate box `[a, b]`,\ncounted positively in the direction of increasing `x i`.",
+     "statement": "noncomputable def _root_.Electromagnetism.LorentzCurrentDensity.boxFaceCurrent\n    (c : SpeedOfLight) (J : LorentzCurrentDensity 3) (t : Time) (a b : Fin 3 → ℝ) (i : Fin 3)\n    (s : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.LorentzCurrentDensity.boxOutwardCurrent",
+     "kind": "def",
+     "line": 242,
+     "doc": "The net electric current at time `t` leaving the coordinate box `[a, b]` through its six\nfaces.",
+     "statement": "noncomputable def _root_.Electromagnetism.LorentzCurrentDensity.boxOutwardCurrent\n    (c : SpeedOfLight) (J : LorentzCurrentDensity 3) (t : Time) (a b : Fin 3 → ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.ThreeDimension.boxOutwardCurrent_eq",
+     "kind": "lemma",
+     "line": 254,
+     "doc": "The net current leaving the coordinate box `[a, b]` equals minus the rate of change of the\ncharge inside it.",
+     "statement": "lemma boxOutwardCurrent_eq (t : Time) (a b : Fin 3 → ℝ) (hle : a ≤ b)\n    (h : IsExtrema 𝓕 V J₄) (hV : ContDiff ℝ ∞ V) (hJ : ContDiff ℝ ∞ J₄) :\n    J₄.boxOutwardCurrent 𝓕.c t a b =\n      - ∫ x in Icc a b, ∂ₜ (fun t => J₄.chargeDensity 𝓕.c t ⟨x⟩) t",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.ThreeDimension.boxOutwardCurrent_eq_zero_of_steady",
+     "kind": "lemma",
+     "line": 277,
+     "doc": "If no charge accumulates inside the coordinate box `[a, b]`, the net current leaving through\nits six faces is zero. This is motivated by Kirchhoff's current law, with the box enclosing a\nnode of a circuit.",
+     "statement": "lemma boxOutwardCurrent_eq_zero_of_steady (t : Time) (a b : Fin 3 → ℝ) (hle : a ≤ b)\n    (h : IsExtrema 𝓕 V J₄) (hV : ContDiff ℝ ∞ V) (hJ : ContDiff ℝ ∞ J₄)\n    (hsteady : ∀ x ∈ Icc a b, ∂ₜ (fun t => J₄.chargeDensity 𝓕.c t ⟨x⟩) t = 0) :\n    J₄.boxOutwardCurrent 𝓕.c t a b = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean",
+   "module": "PhyslibAlpha.Electromagnetism.TemperedDistributional.WireJunction",
+   "title": "Junctions of thin wires",
+   "doc": "## i. Overview\n\nLet `A` be a distributional electromagnetic potential and `J` a distributional Lorentz current\ndensity such that Maxwell's equations hold, `IsExtrema 𝓕 A J`. Taking the divergence of\nAmpère's law and using Gauss's law gives the continuity equation `∂ₜ ρ + ∇ ⬝ J = 0` as an\nequation of distributions.\n\nDistributions allow currents to be carried by thin wires. A junction is modelled by finitely\nmany straight, semi-infinite wires leaving the origin in the directions `u k`, carrying steady\ncurrents `I k`. The divergence of such a current density is `(∑ k, I k) δ₀`: the wires end at\nthe origin, where the currents must come from somewhere. If no charge accumulates, the\ncontinuity equation forces `∑ k, I k = 0`.\n\nThis is motivated by Kirchhoff's current law, of which it is a special case: a single node with\nsteady currents, rather than the branch currents at every node of a lumped-element circuit.\n\n## ii. Key results\n\n- `Electromagnetism.TempDistElectromagneticPotential.continuityEquation` : the continuity equation\n  for distributions.\n- `Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction` : the current density of a\n  junction of thin wires.\n- `Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.distSpaceDiv_currentDensity` : the\n  divergence of the current density of a junction.\n- `Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.sum_currents_eq_zero` : the\n  currents leaving a junction of thin wires sum to zero.\n\n## iii. Table of contents\n\n- A. Analysis on `Space`\n  - A.1. Time derivatives and the divergence of distributions\n  - A.2. Schwartz functions along a ray\n  - A.3. Integrating test functions over time\n- B. The continuity equation\n- C. Junctions of thin wires\n  - C.1. The current density of a junction\n  - C.2. The currents at a junction sum to zero\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 64,
+     "text": "## A. Analysis on `Space`\n\n### A.1. Time derivatives and the divergence of distributions"
+    },
+    {
+     "line": 80,
+     "text": "### A.2. Schwartz functions along a ray\n\nThe ray from the origin in the direction `w` is parametrized by `s ↦ s • w`."
+    },
+    {
+     "line": 132,
+     "text": "### A.3. Integrating test functions over time"
+    },
+    {
+     "line": 168,
+     "text": "## B. The continuity equation"
+    },
+    {
+     "line": 217,
+     "text": "## C. Junctions of thin wires\n\n### C.1. The current density of a junction\n\nThe `k`-th wire is the ray `s ↦ s • u k`, `s > 0`. A current `I k` along it has current density\n`I k` times the unit tangent times the arc-length measure on the ray; in the parameter `s` this is\n`I k • u k` times the Lebesgue measure, whatever the length of `u k`. The currents are steady, so\nthe pairing with a test function `η` only sees its time integral."
+    },
+    {
+     "line": 254,
+     "text": "### C.2. The currents at a junction sum to zero"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.distTimeDeriv_distSpaceDiv",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "The divergence and the time derivative of distributions commute.",
+     "statement": "lemma distTimeDeriv_distSpaceDiv {d} (f : (Time × Space d) →d[ℝ] EuclideanSpace ℝ (Fin d)) :\n    distTimeDeriv (distSpaceDiv f) = distSpaceDiv (distTimeDeriv f)",
+     "sorry": false
+    },
+    {
+     "name": "Space.exists_schwartz_eq_comp_ray",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "The restriction of a Schwartz function to a line through the origin is a Schwartz\nfunction.",
+     "statement": "lemma exists_schwartz_eq_comp_ray {d} (χ : 𝓢(Space d, ℝ)) {w : Space d} (hw : w ≠ 0) :\n    ∃ g : 𝓢(ℝ, ℝ), ∀ s : ℝ, g s = χ (s • w)",
+     "sorry": false
+    },
+    {
+     "name": "Space.integral_Ioi_fderiv_ray",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "The fundamental theorem of calculus along the ray in direction `w`.",
+     "statement": "lemma integral_Ioi_fderiv_ray {d} (ψ : 𝓢(Space d, ℝ)) {w : Space d} (hw : w ≠ 0) :\n    ∫ s in Ioi (0 : ℝ), fderiv ℝ ψ (s • w) w = - ψ 0",
+     "sorry": false
+    },
+    {
+     "name": "Space.integral_Ioi_fderiv_ray_basis",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "",
+     "statement": "lemma integral_Ioi_fderiv_ray_basis {d} (ψ : 𝓢(Space d, ℝ)) {u : EuclideanSpace ℝ (Fin d)}\n    (hu : u ≠ 0) :\n    ∑ i, (∫ s in Ioi (0 : ℝ), fderiv ℝ ψ (s • basis.repr.symm u) (basis i)) * u i = - ψ 0",
+     "sorry": false
+    },
+    {
+     "name": "Space.timeIntegralSchwartz_fderiv_space",
+     "kind": "lemma",
+     "line": 139,
+     "doc": "Integrating over time commutes with differentiating in space.",
+     "statement": "lemma timeIntegralSchwartz_fderiv_space {d} (η : 𝓢(Time × Space d, ℝ)) (i : Fin d)\n    (x : Space d) :\n    timeIntegralSchwartz (SchwartzMap.evalCLM ℝ (Time × Space d) ℝ (0, basis i)\n      (fderivCLM ℝ (Time × Space d) ℝ η)) x = fderiv ℝ (timeIntegralSchwartz η) x (basis i)",
+     "sorry": false
+    },
+    {
+     "name": "Space.exists_integral_time_ne_zero",
+     "kind": "lemma",
+     "line": 149,
+     "doc": "Some test function has a non-zero time integral at the origin.",
+     "statement": "lemma exists_integral_time_ne_zero {d} :\n    ∃ η : 𝓢(Time × Space d, ℝ), ∫ t, η (t, 0) ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.TempDistElectromagneticPotential.continuityEquation",
+     "kind": "theorem",
+     "line": 176,
+     "doc": "The continuity equation for distributions: Maxwell's equations imply local conservation of\ncharge.",
+     "statement": "theorem continuityEquation {d} {𝓕 : FreeSpace} (A : TempDistElectromagneticPotential d)\n    (J : TempDistLorentzCurrentDensity d) (h : IsExtrema 𝓕 A J) (ε : 𝓢(Time × Space d, ℝ)) :\n    distTimeDeriv (J.chargeDensity 𝓕.c) ε + distSpaceDiv (J.currentDensity 𝓕.c) ε = 0",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction",
+     "kind": "def",
+     "line": 232,
+     "doc": "The current density of `J` is that of steady currents `I k` flowing away from the origin\nalong thin, straight, semi-infinite wires in the directions `u k`.",
+     "statement": "def IsWireJunction {d} (c : SpeedOfLight) (J : TempDistLorentzCurrentDensity d) {ι : Type}\n    [Fintype ι] (u : ι → EuclideanSpace ℝ (Fin d)) (I : ι → ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.distSpaceDiv_currentDensity",
+     "kind": "lemma",
+     "line": 239,
+     "doc": "The wires of a junction meet at the origin, where they act as a source of strength the\ntotal current leaving along them.",
+     "statement": "lemma IsWireJunction.distSpaceDiv_currentDensity {d} {c : SpeedOfLight}\n    {J : TempDistLorentzCurrentDensity d} {ι : Type} [Fintype ι] {u : ι → EuclideanSpace ℝ (Fin d)}\n    {I : ι → ℝ} (hJ : J.IsWireJunction c u I) (hu : ∀ k, u k ≠ 0) (η : 𝓢(Time × Space d, ℝ)) :\n    distSpaceDiv (J.currentDensity c) η = (∑ k, I k) * ∫ t, η (t, 0)",
+     "sorry": false
+    },
+    {
+     "name": "Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.sum_currents_eq_zero",
+     "kind": "lemma",
+     "line": 263,
+     "doc": "If Maxwell's equations hold and no charge accumulates, the steady currents leaving a junction\nof thin wires sum to zero. This is motivated by Kirchhoff's current law, of which it is the\nspecial case of a single node.",
+     "statement": "lemma IsWireJunction.sum_currents_eq_zero {d} {𝓕 : FreeSpace} {J : TempDistLorentzCurrentDensity d}\n    {ι : Type} [Fintype ι] {u : ι → EuclideanSpace ℝ (Fin d)} {I : ι → ℝ}\n    (hJ : J.IsWireJunction 𝓕.c u I) (hu : ∀ k, u k ≠ 0) (A : TempDistElectromagneticPotential d)\n    (h : TempDistElectromagneticPotential.IsExtrema 𝓕 A J)\n    (hρ : distTimeDeriv (J.chargeDensity 𝓕.c) = 0) :\n    ∑ k, I k = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  }
+ ]
+}

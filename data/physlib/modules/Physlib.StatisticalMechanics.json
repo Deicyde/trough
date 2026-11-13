@@ -1,0 +1,1898 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/StatisticalMechanics/BoltzmannConstant.lean",
+   "module": "Physlib.StatisticalMechanics.BoltzmannConstant",
+   "title": "Boltzmann constant",
+   "doc": "The Boltzmann constant, in the format of `Physlib/Units/Constants.lean`.\n\n## i. Overview\n\nThe Boltzmann constant, named after Ludwig Boltzmann, has the dimension `M L² T⁻² Θ⁻¹` of an energy\nover a temperature, and its value in SI units is exact. Section F adds the instance of one.\n\n## ii. Key results\n\n- `BoltzmannConstant` : The Boltzmann constant in a chosen but arbitrary system of units.\n- `boltzmannConstant` : The Boltzmann constant in our world, `1.380649 × 10⁻²³ J K⁻¹`.\n\n## iii. Table of contents\n\n- A. The type\n- B. Instances\n- C. Positivity\n- D. The dimension\n- E. The value in our world\n- F. Specific to the Boltzmann constant\n\n## iv. References\n\n* The defining value of the Boltzmann constant. [ref: bipm_si_brochure_2019]",
+   "sections": [
+    {
+     "line": 43,
+     "text": "## A. The type"
+    },
+    {
+     "line": 57,
+     "text": "## B. Instances"
+    },
+    {
+     "line": 76,
+     "text": "## C. Positivity"
+    },
+    {
+     "line": 91,
+     "text": "## D. The dimension"
+    },
+    {
+     "line": 103,
+     "text": "## E. The value in our world"
+    },
+    {
+     "line": 117,
+     "text": "## F. Specific to the Boltzmann constant\n\nThe Boltzmann constant equal to `1`, for units in which it is one."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "BoltzmannConstant",
+     "kind": "structure",
+     "line": 50,
+     "doc": "The Boltzmann constant, in a chosen but arbitrary system of units.",
+     "statement": "structure BoltzmannConstant where\n  /-- The underlying value of the Boltzmann constant. -/\n  val : ℝ\n  pos : 0 < val",
+     "sorry": false
+    },
+    {
+     "name": "BoltzmannConstant.instPositiveRealUnitCore",
+     "kind": "instance",
+     "line": 63,
+     "doc": "",
+     "statement": "instance instPositiveRealUnitCore : PositiveRealUnitCore BoltzmannConstant",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 70,
+     "doc": "",
+     "statement": "instance : Coe BoltzmannConstant ℝ",
+     "sorry": false
+    },
+    {
+     "name": "BoltzmannConstant.positiveRealUnitCore_val",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma positiveRealUnitCore_val (kB : BoltzmannConstant) :\n    PositiveRealUnitCore.val kB = kB.val",
+     "sorry": false
+    },
+    {
+     "name": "BoltzmannConstant.val_pos",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma val_pos (kB : BoltzmannConstant) : 0 < (kB : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "BoltzmannConstant.val_nonneg",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "",
+     "statement": "lemma val_nonneg (kB : BoltzmannConstant) : 0 ≤ (kB : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "BoltzmannConstant.val_ne_zero",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma val_ne_zero (kB : BoltzmannConstant) : (kB : ℝ) ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "BoltzmannConstant.instHasDim",
+     "kind": "instance",
+     "line": 98,
+     "doc": "The Boltzmann constant has the dimension `M L² T⁻² Θ⁻¹`.",
+     "statement": "instance instHasDim : HasDim BoltzmannConstant",
+     "sorry": false
+    },
+    {
+     "name": "boltzmannConstant",
+     "kind": "def",
+     "line": 110,
+     "doc": "The Boltzmann constant in our world, `1.380649 × 10⁻²³ J K⁻¹`, exact.",
+     "statement": "noncomputable def boltzmannConstant : Dimensionful BoltzmannConstant",
+     "sorry": false
+    },
+    {
+     "name": "boltzmannConstant_in_SI",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma boltzmannConstant_in_SI : boltzmannConstant SI = ⟨1.380649e-23, by norm_num⟩",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 127,
+     "doc": "",
+     "statement": "instance : One BoltzmannConstant",
+     "sorry": false
+    },
+    {
+     "name": "BoltzmannConstant.val_one",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "",
+     "statement": "lemma val_one : (1 : BoltzmannConstant).val = 1",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Basic.lean",
+   "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.Basic",
+   "title": "Canonical Ensemble: Core Definitions",
+   "doc": "A *canonical ensemble* describes a system in thermal equilibrium with a heat bath at fixed\ntemperature `T`. This file gives a measure–theoretic, semi–classical formalization intended to\nwork uniformly for discrete (counting measure) and continuous (Lebesgue–type) models.\n\n## 1. Semi–Classical Normalization\n\nClassical phase–space integrals produce *dimensionful* quantities. To obtain dimensionless\nthermodynamic objects (and an absolute entropy) we introduce:\n\n* `phaseSpaceUnit : ℝ` (physically Planck's constant `h`);\n* `dof : ℕ` the number of degrees of freedom.\n\nThe *physical* partition function is obtained from the *mathematical* one by dividing by\n`phaseSpaceUnit ^ dof`. This yields the standard semi–classical correction preventing\nambiguities such as the Gibbs paradox.\n\n## 2. Mathematical vs Physical Quantities\n\nWe keep both layers:\n\n* Mathematical / raw:\n  - `mathematicalPartitionFunction kB T` : ∫ exp(-β E) dμ\n  - `probability` (density w.r.t. `μ`)\n  - `differentialEntropy` (can be negative, unit–dependent)\n\n* Physical / dimensionless:\n  - `partitionFunction` : `Z = Z_math / h^dof`\n  - `physicalProbability` : dimensionless density\n  - `helmholtzFreeEnergy` : `F = -kB T log Z`\n  - `thermodynamicEntropy` : absolute entropy `(U - F)/T = -kB ∫ ρ_phys log ρ_phys`\n\nEach physical quantity is expressed explicitly in terms of its mathematical ancestor.\n\n## 3. Core Structure\n\nWe assume `phaseSpaceUnit > 0` and `μ` σ–finite. No probability assumption is imposed:\nnormalization is recovered via the Boltzmann weighted measure.\n\n## 4. Boltzmann & Probability Measures\n\n* `μBolt kB T` : Boltzmann (unnormalized) measure `withDensity exp(-β E)`\n* `μProd kB T` : normalized probability measure (rescaled `μBolt kB T`)\n* `probability kB T i` : the density `exp(-β E(i)) / Z_math`\n* `physicalProbability` : `probability * (phase_space_unit ^ dof)`\n\n## 5. Energies & Entropies\n\n* `meanEnergy` : expectation of energy under `μProd`.\n* `differentialEntropy` : `-kB ∫ log(probability) dμProd`\n* `thermodynamicEntropy` : `-kB ∫ log(physicalProbability) dμProd`\n  (proved later to coincide with the textbook `(U - F)/T`).\n\nA helper lemma supplies positivity of the partition function under mild assumptions and\nnon–negativity criteria for the entropy when `probability ≤ 1` (automatic in finite discrete\nsettings, not in general continuous ones).\n\n## 6. Algebraic Operations\n\nWe construct composite ensembles:\n\n* Addition `(𝓒₁ + 𝓒₂)` on product microstates: energies add, measures take product,\n  degrees of freedom add, and (physically) the same `phaseSpaceUnit` is reused.\n* Multiplicity `nsmul n 𝓒`: `n` distinguishable, non–interacting copies (product of `n` copies).\n* Transport along measurable equivalences via `congr`.\n\nThese operations respect partition functions, free energies, and (under suitable hypotheses)\nmean energies and integrability.\n\n## 7. Notational & Implementation Notes\n\n* We work over an arbitrary measurable type `ι`, allowing both finite and continuous models.\n* `β` is accessed through the `Temperature` structure (`T.β kB`, for a Boltzmann constant `kB`).\n* Every quantity that depends on the temperature takes the Boltzmann constant\n  `kB : BoltzmannConstant` before `T`.\n* Most positivity / finiteness conditions are hypotheses on lemmas instead of global axioms,\n  enabling reuse in formal derivations of fluctuation and response identities.\n\n## 8. References\n\n* L. D. Landau & E. M. Lifshitz, Statistical Physics, Part 1. [ref: landau_statphys1]\n* D. Tong, Cambridge Lecture Notes (sections on canonical ensemble).\n  - https://www.damtp.cam.ac.uk/user/tong/statphys/one.pdf [ref: tong_statphys_notes_one]\n  - https://www.damtp.cam.ac.uk/user/tong/statphys/two.pdf [ref: tong_statphys_notes_two]\n\n## 9. Roadmap\n\nSubsequent files (`Lemmas.lean`) prove:\n* Relations among entropies and free energies.\n* Fundamental identity `F = U - T S`.\n* Derivative (response) formulas: `U = -∂_β log Z`.",
+   "sections": [
+    {
+     "line": 205,
+     "text": "## Properties of physical parameters"
+    },
+    {
+     "line": 230,
+     "text": "## The measure"
+    },
+    {
+     "line": 239,
+     "text": "## The energy of the microstates"
+    },
+    {
+     "line": 257,
+     "text": "## Induction for nsmul"
+    },
+    {
+     "line": 269,
+     "text": "## Non zero nature of the measure"
+    },
+    {
+     "line": 289,
+     "text": "## The Boltzmann measure"
+    },
+    {
+     "line": 353,
+     "text": "## The Mathematical Partition Function"
+    },
+    {
+     "line": 416,
+     "text": "## The probability density"
+    },
+    {
+     "line": 426,
+     "text": "## The probability measure"
+    },
+    {
+     "line": 487,
+     "text": "## Integrability of energy"
+    },
+    {
+     "line": 519,
+     "text": "## The mean energy"
+    },
+    {
+     "line": 565,
+     "text": "## The differential entropy"
+    },
+    {
+     "line": 606,
+     "text": "## Thermodynamic Quantities\n\nThese are the dimensionless physical quantities derived from the mathematical definitions\nby incorporating the phase space volume `𝓒.phaseSpaceUnit ^ 𝓒.dof`."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CanonicalEnsemble",
+     "kind": "structure",
+     "line": 113,
+     "doc": "A Canonical ensemble is described by a type `ι`, corresponding to the type of microstates,\nand a map `ι → ℝ` which associates which each microstate an energy\nand physical constants needed to define dimensionless thermodynamic quantities.",
+     "statement": "structure CanonicalEnsemble (ι : Type) [MeasurableSpace ι] : Type where\n  /-- The energy of associated with a microstate of the canonical ensemble. -/\n  energy : ι → ℝ\n  /-- The number of degrees of freedom, used to make the partition function dimensionless.\n  For a classical system of N particles in 3D, this is `3N`. For a system of N spins,\n  this is typically `0` as the state space is already discrete. -/\n  dof : ℕ\n  /-- The unit of action used to make the phase space volume dimensionless.\n  This constant is necessary to define an absolute (rather than relative) thermodynamic\n  entropy. In the semi-classical approach, this unit is identified with Planck's constant `h`.\n  For discrete systems with a counting measure, this unit should be set to `1`. -/\n  phaseSpaceunit : ℝ := 1\n  /-- Assumption that the phase space unit is positive. -/\n  hPos : 0 < phaseSpaceunit := by positivity\n  energy_measurable : Measurable energy\n  /-- The measure on the indexing set of microstates. -/\n  μ : MeasureTheory.Measure ι := by volume_tac\n  [μ_sigmaFinite : SigmaFinite μ]",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 139,
+     "doc": "",
+     "statement": "instance : SigmaFinite 𝓒.μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.ext",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "",
+     "statement": "lemma ext {𝓒 𝓒' : CanonicalEnsemble ι} (h_energy : 𝓒.energy = 𝓒'.energy)\n    (h_dof : 𝓒.dof = 𝓒'.dof) (h_h : 𝓒.phaseSpaceunit = 𝓒'.phaseSpaceunit)\n    (h_μ : 𝓒.μ = 𝓒'.μ) : 𝓒 = 𝓒'",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.energy_measurable'",
+     "kind": "lemma",
+     "line": 148,
+     "doc": "",
+     "statement": "lemma energy_measurable' : Measurable 𝓒.energy",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 152,
+     "doc": "The addition of two `CanonicalEnsemble`. The degrees of freedom are added.\nNote: This is only physically meaningful if the two systems share the same `phase_space_unit`.",
+     "statement": "noncomputable instance {ι1 ι2 : Type} [MeasurableSpace ι1] [MeasurableSpace ι2] :\n    HAdd (CanonicalEnsemble ι1) (CanonicalEnsemble ι2)\n    (CanonicalEnsemble (ι1 × ι2))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.empty",
+     "kind": "def",
+     "line": 165,
+     "doc": "The canonical ensemble with no microstates.",
+     "statement": "def empty : CanonicalEnsemble Empty",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.congr",
+     "kind": "def",
+     "line": 173,
+     "doc": "Given a measurable equivalence `e : ι1 ≃ᵐ ι`, this is the corresponding canonical ensemble\non `ι1`. The physical properties (`dof`, `phase_space_unit`) are unchanged.",
+     "statement": "noncomputable def congr (e : ι1 ≃ᵐ ι) : CanonicalEnsemble ι1",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.congr_energy_comp_symmm",
+     "kind": "lemma",
+     "line": 186,
+     "doc": "",
+     "statement": "lemma congr_energy_comp_symmm (e : ι1 ≃ᵐ ι) :\n    (𝓒.congr e).energy ∘ e.symm = 𝓒.energy",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.nsmul",
+     "kind": "def",
+     "line": 192,
+     "doc": "Scalar multiplication of `CanonicalEnsemble`, defined such that\n`nsmul n 𝓒` represents `n` non-interacting, distinguishable copies of the ensemble `𝓒`.",
+     "statement": "noncomputable def nsmul (n : ℕ) (𝓒 : CanonicalEnsemble ι) : CanonicalEnsemble (Fin n → ι)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.microstates",
+     "kind": "abbrev",
+     "line": 203,
+     "doc": "The microstates of a canonical ensemble.",
+     "statement": "abbrev microstates (𝓒 : CanonicalEnsemble ι) : Type",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.dof_add",
+     "kind": "lemma",
+     "line": 208,
+     "doc": "",
+     "statement": "lemma dof_add (𝓒1 : CanonicalEnsemble ι) (𝓒2 : CanonicalEnsemble ι1) :\n    (𝓒1 + 𝓒2).dof = 𝓒1.dof + 𝓒2.dof",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.phase_space_unit_add",
+     "kind": "lemma",
+     "line": 212,
+     "doc": "",
+     "statement": "lemma phase_space_unit_add (𝓒1 : CanonicalEnsemble ι) (𝓒2 : CanonicalEnsemble ι1) :\n    (𝓒1 + 𝓒2).phaseSpaceunit = 𝓒1.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.dof_nsmul",
+     "kind": "lemma",
+     "line": 216,
+     "doc": "",
+     "statement": "lemma dof_nsmul (n : ℕ) : (nsmul n 𝓒).dof = n * 𝓒.dof",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.phase_space_unit_nsmul",
+     "kind": "lemma",
+     "line": 219,
+     "doc": "",
+     "statement": "lemma phase_space_unit_nsmul (n : ℕ) :\n    (nsmul n 𝓒).phaseSpaceunit = 𝓒.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.dof_congr",
+     "kind": "lemma",
+     "line": 223,
+     "doc": "",
+     "statement": "lemma dof_congr (e : ι1 ≃ᵐ ι) :\n    (𝓒.congr e).dof = 𝓒.dof",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.phase_space_unit_congr",
+     "kind": "lemma",
+     "line": 227,
+     "doc": "",
+     "statement": "lemma phase_space_unit_congr (e : ι1 ≃ᵐ ι) :\n    (𝓒.congr e).phaseSpaceunit = 𝓒.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μ_add",
+     "kind": "lemma",
+     "line": 232,
+     "doc": "",
+     "statement": "lemma μ_add : (𝓒 + 𝓒1).μ = 𝓒.μ.prod 𝓒1.μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μ_nsmul",
+     "kind": "lemma",
+     "line": 234,
+     "doc": "",
+     "statement": "lemma μ_nsmul (n : ℕ) : (nsmul n 𝓒).μ = MeasureTheory.Measure.pi fun _ => 𝓒.μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μ_nsmul_zero_eq",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "",
+     "statement": "lemma μ_nsmul_zero_eq : (nsmul 0 𝓒).μ = Measure.pi (fun _ => 0)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.energy_add_apply",
+     "kind": "lemma",
+     "line": 246,
+     "doc": "",
+     "statement": "lemma energy_add_apply (i : microstates (𝓒 + 𝓒1)) :\n    (𝓒 + 𝓒1).energy i = 𝓒.energy i.1 + 𝓒1.energy i.2",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.energy_nsmul_apply",
+     "kind": "lemma",
+     "line": 250,
+     "doc": "",
+     "statement": "lemma energy_nsmul_apply (n : ℕ) (f : Fin n → microstates 𝓒) :\n    (nsmul n 𝓒).energy f = ∑ i, 𝓒.energy (f i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.energy_congr_apply",
+     "kind": "lemma",
+     "line": 254,
+     "doc": "",
+     "statement": "lemma energy_congr_apply (e : ι1 ≃ᵐ ι) (i : ι1) :\n    (𝓒.congr e).energy i = 𝓒.energy (e i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.nsmul_succ",
+     "kind": "lemma",
+     "line": 261,
+     "doc": "",
+     "statement": "lemma nsmul_succ (n : ℕ) [SigmaFinite 𝓒.μ] : nsmul n.succ 𝓒 = (𝓒 + nsmul n 𝓒).congr\n    (MeasurableEquiv.piFinSuccAbove (fun _ => ι) 0)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 275,
+     "doc": "",
+     "statement": "instance [NeZero 𝓒.μ] [NeZero 𝓒1.μ] : NeZero (𝓒 + 𝓒1).μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μ_neZero_congr",
+     "kind": "instance",
+     "line": 280,
+     "doc": "",
+     "statement": "instance μ_neZero_congr [NeZero 𝓒.μ] (e : ι1 ≃ᵐ ι) :\n    NeZero (𝓒.congr e).μ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 284,
+     "doc": "",
+     "statement": "instance [NeZero 𝓒.μ] (n : ℕ) : NeZero (nsmul n 𝓒).μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μBolt",
+     "kind": "def",
+     "line": 296,
+     "doc": "The Boltzmann measure on the space of microstates.",
+     "statement": "noncomputable def μBolt (T : Temperature) : MeasureTheory.Measure ι",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 299,
+     "doc": "",
+     "statement": "instance (T : Temperature) : SigmaFinite (𝓒.μBolt kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μBolt_add",
+     "kind": "lemma",
+     "line": 304,
+     "doc": "",
+     "statement": "lemma μBolt_add (T : Temperature) :\n    (𝓒 + 𝓒1).μBolt kB T = (𝓒.μBolt kB T).prod (𝓒1.μBolt kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μBolt_congr",
+     "kind": "lemma",
+     "line": 314,
+     "doc": "",
+     "statement": "lemma μBolt_congr (e : ι1 ≃ᵐ ι) (T : Temperature) : (𝓒.congr e).μBolt kB T =\n    (𝓒.μBolt kB T).map e.symm",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μBolt_nsmul",
+     "kind": "lemma",
+     "line": 324,
+     "doc": "",
+     "statement": "lemma μBolt_nsmul [SigmaFinite 𝓒.μ] (n : ℕ) (T : Temperature) :\n    (nsmul n 𝓒).μBolt kB T = MeasureTheory.Measure.pi fun _ => (𝓒.μBolt kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μBolt_ne_zero_of_μ_ne_zero",
+     "kind": "lemma",
+     "line": 334,
+     "doc": "",
+     "statement": "lemma μBolt_ne_zero_of_μ_ne_zero (T : Temperature) (h : 𝓒.μ ≠ 0) :\n    𝓒.μBolt kB T ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 340,
+     "doc": "",
+     "statement": "instance (T : Temperature) [NeZero 𝓒.μ] : NeZero (𝓒.μBolt kB T)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 345,
+     "doc": "",
+     "statement": "instance (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [IsFiniteMeasure (𝓒1.μBolt kB T)] :\n    IsFiniteMeasure ((𝓒 + 𝓒1).μBolt kB T)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 349,
+     "doc": "",
+     "statement": "instance (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] (n : ℕ) :\n    IsFiniteMeasure ((nsmul n 𝓒).μBolt kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction",
+     "kind": "def",
+     "line": 362,
+     "doc": "The mathematical partition function, defined as the integral of the Boltzmann factor.\nThis quantity may have physical dimensions. See `CanonicalEnsemble.partitionFunction` for\nthe dimensionless physical version.",
+     "statement": "noncomputable def mathematicalPartitionFunction (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_eq_integral",
+     "kind": "lemma",
+     "line": 365,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunction_eq_integral (T : Temperature) :\n    mathematicalPartitionFunction kB 𝓒 T = ∫ i, exp (- T.β kB * 𝓒.energy i) ∂𝓒.μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_add",
+     "kind": "lemma",
+     "line": 374,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunction_add {T : Temperature} :\n    (𝓒 + 𝓒1).mathematicalPartitionFunction kB T =\n    𝓒.mathematicalPartitionFunction kB T * 𝓒1.mathematicalPartitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_congr",
+     "kind": "lemma",
+     "line": 381,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunction_congr (e : ι1 ≃ᵐ ι) (T : Temperature) :\n    (𝓒.congr e).mathematicalPartitionFunction kB T = 𝓒.mathematicalPartitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_nsmul",
+     "kind": "lemma",
+     "line": 386,
+     "doc": "The `mathematicalPartitionFunction_nsmul` function of `n` copies of a canonical ensemble.",
+     "statement": "lemma mathematicalPartitionFunction_nsmul (n : ℕ) (T : Temperature) :\n    (nsmul n 𝓒).mathematicalPartitionFunction kB T =\n      (𝓒.mathematicalPartitionFunction kB T) ^ n",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_nonneg",
+     "kind": "lemma",
+     "line": 391,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunction_nonneg (T : Temperature) :\n    0 ≤ 𝓒.mathematicalPartitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_eq_zero_iff",
+     "kind": "lemma",
+     "line": 394,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunction_eq_zero_iff (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] :\n    mathematicalPartitionFunction kB 𝓒 T = 0 ↔ 𝓒.μ = 0",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_comp_ofβ_apply",
+     "kind": "lemma",
+     "line": 404,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunction_comp_ofβ_apply (β : ℝ≥0) :\n    𝓒.mathematicalPartitionFunction kB (ofβ kB β) =\n    (𝓒.μ.withDensity (fun i => ENNReal.ofReal (exp (- β * 𝓒.energy i)))).real Set.univ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_pos",
+     "kind": "lemma",
+     "line": 411,
+     "doc": "The partition function is strictly positive provided the underlying\nmeasure is non-zero and the Boltzmann measure is finite.",
+     "statement": "lemma mathematicalPartitionFunction_pos (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    0 < 𝓒.mathematicalPartitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability",
+     "kind": "def",
+     "line": 423,
+     "doc": "The probability density function of the canonical ensemble.\nNote: In the general measure-theoretic case, this is a density with respect to the\nunderlying measure `𝓒.μ` and is not necessarily less than or equal to 1. In the\ncase of a finite ensemble with the counting measure, this value corresponds to the\nprobability of the microstate.",
+     "statement": "noncomputable def probability (T : Temperature) (i : ι) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability_add",
+     "kind": "lemma",
+     "line": 429,
+     "doc": "",
+     "statement": "lemma probability_add {T : Temperature} (i : ι × ι1) :\n    (𝓒 + 𝓒1).probability kB T i = 𝓒.probability kB T i.1 * 𝓒1.probability kB T i.2",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability_congr",
+     "kind": "lemma",
+     "line": 434,
+     "doc": "",
+     "statement": "lemma probability_congr (e : ι1 ≃ᵐ ι) (T : Temperature) (i : ι1) :\n    (𝓒.congr e).probability kB T i = 𝓒.probability kB T (e i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability_nsmul",
+     "kind": "lemma",
+     "line": 438,
+     "doc": "",
+     "statement": "lemma probability_nsmul (n : ℕ) (T : Temperature) (f : Fin n → ι) :\n    (nsmul n 𝓒).probability kB T f = ∏ i, 𝓒.probability kB T (f i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μProd",
+     "kind": "def",
+     "line": 450,
+     "doc": "The probability measure associated with the Boltzmann distribution of a\ncanonical ensemble.",
+     "statement": "noncomputable def μProd (T : Temperature) : MeasureTheory.Measure ι",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 453,
+     "doc": "",
+     "statement": "instance (T : Temperature) : SigmaFinite (𝓒.μProd kB T)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 456,
+     "doc": "",
+     "statement": "instance (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)]\n  [NeZero 𝓒.μ] : IsProbabilityMeasure (𝓒.μProd kB T)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 460,
+     "doc": "",
+     "statement": "instance {T} : IsFiniteMeasure (𝓒.μProd kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μProd_add",
+     "kind": "lemma",
+     "line": 464,
+     "doc": "",
+     "statement": "lemma μProd_add {T : Temperature} [IsFiniteMeasure (𝓒.μBolt kB T)]\n    [IsFiniteMeasure (𝓒1.μBolt kB T)] :\n    (𝓒 + 𝓒1).μProd kB T = (𝓒.μProd kB T).prod (𝓒1.μProd kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μProd_congr",
+     "kind": "lemma",
+     "line": 472,
+     "doc": "",
+     "statement": "lemma μProd_congr (e : ι1 ≃ᵐ ι) (T : Temperature) :\n    (𝓒.congr e).μProd kB T = (𝓒.μProd kB T).map e.symm",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μProd_nsmul",
+     "kind": "lemma",
+     "line": 477,
+     "doc": "",
+     "statement": "lemma μProd_nsmul (n : ℕ) (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] :\n    (nsmul n 𝓒).μProd kB T = MeasureTheory.Measure.pi fun _ => 𝓒.μProd kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.integrable_energy_add",
+     "kind": "lemma",
+     "line": 494,
+     "doc": "",
+     "statement": "lemma integrable_energy_add (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)]\n    [IsFiniteMeasure (𝓒1.μBolt kB T)]\n    (h : Integrable 𝓒.energy (𝓒.μProd kB T)) (h1 : Integrable 𝓒1.energy (𝓒1.μProd kB T)) :\n    Integrable (𝓒 + 𝓒1).energy ((𝓒 + 𝓒1).μProd kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.integrable_energy_congr",
+     "kind": "lemma",
+     "line": 502,
+     "doc": "",
+     "statement": "lemma integrable_energy_congr (T : Temperature) (e : ι1 ≃ᵐ ι)\n    (h : Integrable 𝓒.energy (𝓒.μProd kB T)) :\n    Integrable (𝓒.congr e).energy ((𝓒.congr e).μProd kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.integrable_energy_nsmul",
+     "kind": "lemma",
+     "line": 509,
+     "doc": "",
+     "statement": "lemma integrable_energy_nsmul (n : ℕ) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)]\n    (h : Integrable 𝓒.energy (𝓒.μProd kB T)) :\n    Integrable (nsmul n 𝓒).energy ((nsmul n 𝓒).μProd kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy",
+     "kind": "def",
+     "line": 526,
+     "doc": "The mean energy of the canonical ensemble at temperature `T`.",
+     "statement": "noncomputable def meanEnergy (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanSquareEnergy",
+     "kind": "def",
+     "line": 529,
+     "doc": "The mean square energy ⟨E²⟩ of the canonical ensemble at temperature T.",
+     "statement": "noncomputable def meanSquareEnergy (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.energyVariance",
+     "kind": "def",
+     "line": 533,
+     "doc": "Energy variance at temperature `T`.",
+     "statement": "noncomputable def energyVariance (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_add",
+     "kind": "lemma",
+     "line": 537,
+     "doc": "",
+     "statement": "lemma meanEnergy_add {T : Temperature}\n    [IsFiniteMeasure (𝓒1.μBolt kB T)] [IsFiniteMeasure (𝓒.μBolt kB T)]\n    [NeZero 𝓒.μ] [NeZero 𝓒1.μ]\n    (h1 : Integrable 𝓒.energy (𝓒.μProd kB T))\n    (h2 : Integrable 𝓒1.energy (𝓒1.μProd kB T)) :\n    (𝓒 + 𝓒1).meanEnergy kB T = 𝓒.meanEnergy kB T + 𝓒1.meanEnergy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_congr",
+     "kind": "lemma",
+     "line": 548,
+     "doc": "",
+     "statement": "lemma meanEnergy_congr (e : ι1 ≃ᵐ ι) (T : Temperature) :\n    (𝓒.congr e).meanEnergy kB T = 𝓒.meanEnergy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_nsmul",
+     "kind": "lemma",
+     "line": 553,
+     "doc": "",
+     "statement": "lemma meanEnergy_nsmul (n : ℕ) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (h1 : Integrable 𝓒.energy (𝓒.μProd kB T)) :\n    (nsmul n 𝓒).meanEnergy kB T = n * 𝓒.meanEnergy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentialEntropy",
+     "kind": "def",
+     "line": 574,
+     "doc": "The (differential) entropy of the canonical ensemble. In the continuous case, this quantity\nis not absolute but depends on the choice of units for the measure. It can be negative.\nSee `thermodynamicEntropy` for the absolute physical quantity.",
+     "statement": "noncomputable def differentialEntropy (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability_nonneg",
+     "kind": "lemma",
+     "line": 581,
+     "doc": "Probabilities are non-negative, assuming a positive partition function.",
+     "statement": "lemma probability_nonneg\n    (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] (i : ι) :\n    0 ≤ 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability_pos",
+     "kind": "lemma",
+     "line": 587,
+     "doc": "Probabilities are strictly positive.",
+     "statement": "lemma probability_pos\n    (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] (i : ι) :\n    0 < 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentialEntropy_nonneg_of_prob_le_one",
+     "kind": "lemma",
+     "line": 596,
+     "doc": "General entropy non-negativity under a pointwise upper bound `probability ≤ 1`.\nThis assumption holds automatically in the finite/counting case (since sums bound each term),\nbut can fail in general (continuous) settings; hence we separate it as a hypothesis.\nFinite case: see `CanonicalEnsemble.entropy_nonneg` in `Finite`.",
+     "statement": "lemma differentialEntropy_nonneg_of_prob_le_one\n    (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (hInt : Integrable (fun i => Real.log (𝓒.probability kB T i)) (𝓒.μProd kB T))\n    (hP_le_one : ∀ i, 𝓒.probability kB T i ≤ 1) :\n    0 ≤ 𝓒.differentialEntropy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction",
+     "kind": "def",
+     "line": 615,
+     "doc": "The dimensionless thermodynamic partition function, `Z = Z_math / h^dof`.",
+     "statement": "noncomputable def partitionFunction (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_def",
+     "kind": "lemma",
+     "line": 619,
+     "doc": "",
+     "statement": "lemma partitionFunction_def (𝓒 : CanonicalEnsemble ι) (T : Temperature) :\n    𝓒.partitionFunction kB T =\n      𝓒.mathematicalPartitionFunction kB T / (𝓒.phaseSpaceunit ^ 𝓒.dof)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_pos",
+     "kind": "lemma",
+     "line": 623,
+     "doc": "",
+     "statement": "lemma partitionFunction_pos\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    0 < 𝓒.partitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_congr",
+     "kind": "lemma",
+     "line": 629,
+     "doc": "",
+     "statement": "lemma partitionFunction_congr\n    (𝓒 : CanonicalEnsemble ι) (e : ι1 ≃ᵐ ι) (T : Temperature) :\n    (𝓒.congr e).partitionFunction kB T = 𝓒.partitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_add",
+     "kind": "lemma",
+     "line": 634,
+     "doc": "",
+     "statement": "lemma partitionFunction_add\n    (𝓒 : CanonicalEnsemble ι) (𝓒1 : CanonicalEnsemble ι1)\n    (T : Temperature)\n    (h : 𝓒.phaseSpaceunit = 𝓒1.phaseSpaceunit) :\n    (𝓒 + 𝓒1).partitionFunction kB T\n      = 𝓒.partitionFunction kB T * 𝓒1.partitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_nsmul",
+     "kind": "lemma",
+     "line": 642,
+     "doc": "",
+     "statement": "lemma partitionFunction_nsmul\n    (𝓒 : CanonicalEnsemble ι) (n : ℕ) (T : Temperature) :\n    (nsmul n 𝓒).partitionFunction kB T\n      = (𝓒.partitionFunction kB T) ^ n",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_dof_zero",
+     "kind": "lemma",
+     "line": 648,
+     "doc": "",
+     "statement": "lemma partitionFunction_dof_zero\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) (h : 𝓒.dof = 0) :\n    𝓒.partitionFunction kB T = 𝓒.mathematicalPartitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_phase_space_unit_one",
+     "kind": "lemma",
+     "line": 653,
+     "doc": "",
+     "statement": "lemma partitionFunction_phase_space_unit_one\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) (h : 𝓒.phaseSpaceunit = 1) :\n    𝓒.partitionFunction kB T = 𝓒.mathematicalPartitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.log_partitionFunction",
+     "kind": "lemma",
+     "line": 658,
+     "doc": "",
+     "statement": "lemma log_partitionFunction\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    Real.log (𝓒.partitionFunction kB T)\n      = Real.log (𝓒.mathematicalPartitionFunction kB T)\n        - (𝓒.dof : ℝ) * Real.log 𝓒.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.log_partitionFunction_ofβ",
+     "kind": "lemma",
+     "line": 669,
+     "doc": "A rewriting form convenient under a coercion to a temperature obtained from an inverse\ntemperature.",
+     "statement": "lemma log_partitionFunction_ofβ\n    (𝓒 : CanonicalEnsemble ι) (β : ℝ≥0)\n    [IsFiniteMeasure (𝓒.μBolt kB (ofβ kB β))] [NeZero 𝓒.μ] :\n    Real.log (𝓒.partitionFunction kB (ofβ kB β))\n      = Real.log (𝓒.mathematicalPartitionFunction kB (ofβ kB β))\n        - (𝓒.dof : ℝ) * Real.log 𝓒.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.log_mathematicalPartitionFunction_eq",
+     "kind": "lemma",
+     "line": 678,
+     "doc": "The logarithm of the mathematical partition function as an integral.",
+     "statement": "lemma log_mathematicalPartitionFunction_eq\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) :\n    Real.log (𝓒.mathematicalPartitionFunction kB T)\n      = Real.log (∫ i, Real.exp (- T.β kB * 𝓒.energy i) ∂ 𝓒.μ)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy",
+     "kind": "def",
+     "line": 686,
+     "doc": "The Helmholtz free energy, `F = -k_B T log(Z)`. This is the central\nquantity from which other thermodynamic properties are derived.",
+     "statement": "noncomputable def helmholtzFreeEnergy (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_def",
+     "kind": "lemma",
+     "line": 690,
+     "doc": "",
+     "statement": "lemma helmholtzFreeEnergy_def\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) :\n    𝓒.helmholtzFreeEnergy kB T = - (kB : ℝ) * T.val * Real.log (𝓒.partitionFunction kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_congr",
+     "kind": "lemma",
+     "line": 694,
+     "doc": "",
+     "statement": "lemma helmholtzFreeEnergy_congr\n    (𝓒 : CanonicalEnsemble ι) (e : ι1 ≃ᵐ ι) (T : Temperature) :\n    (𝓒.congr e).helmholtzFreeEnergy kB T = 𝓒.helmholtzFreeEnergy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_dof_zero",
+     "kind": "lemma",
+     "line": 699,
+     "doc": "",
+     "statement": "lemma helmholtzFreeEnergy_dof_zero\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) (h : 𝓒.dof = 0) :\n    𝓒.helmholtzFreeEnergy kB T\n      = -(kB : ℝ) * T.val * Real.log (𝓒.mathematicalPartitionFunction kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_phase_space_unit_one",
+     "kind": "lemma",
+     "line": 705,
+     "doc": "",
+     "statement": "lemma helmholtzFreeEnergy_phase_space_unit_one\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) (h : 𝓒.phaseSpaceunit = 1) :\n    𝓒.helmholtzFreeEnergy kB T\n      = -(kB : ℝ) * T.val * Real.log (𝓒.mathematicalPartitionFunction kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_add",
+     "kind": "lemma",
+     "line": 711,
+     "doc": "",
+     "statement": "lemma helmholtzFreeEnergy_add\n    (𝓒 : CanonicalEnsemble ι) (𝓒1 : CanonicalEnsemble ι1) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [IsFiniteMeasure (𝓒1.μBolt kB T)]\n    [NeZero 𝓒.μ] [NeZero 𝓒1.μ]\n    (h : 𝓒.phaseSpaceunit = 𝓒1.phaseSpaceunit) :\n    (𝓒 + 𝓒1).helmholtzFreeEnergy kB T\n      = 𝓒.helmholtzFreeEnergy kB T + 𝓒1.helmholtzFreeEnergy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_nsmul",
+     "kind": "lemma",
+     "line": 723,
+     "doc": "",
+     "statement": "lemma helmholtzFreeEnergy_nsmul\n    (𝓒 : CanonicalEnsemble ι) (n : ℕ) (T : Temperature) :\n    (nsmul n 𝓒).helmholtzFreeEnergy kB T\n      = n * 𝓒.helmholtzFreeEnergy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability",
+     "kind": "def",
+     "line": 733,
+     "doc": "The dimensionless physical probability density. This is is the probability density w.r.t. the\nmeasure, obtained by dividing the phase space measure by the fundamental unit `h^dof`, making the\nprobability density `ρ_phys = ρ_math * h^dof` dimensionless.",
+     "statement": "noncomputable def physicalProbability (T : Temperature) (i : ι) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_def",
+     "kind": "lemma",
+     "line": 737,
+     "doc": "",
+     "statement": "lemma physicalProbability_def (T : Temperature) (i : ι) :\n    𝓒.physicalProbability kB T i\n      = 𝓒.probability kB T i * (𝓒.phaseSpaceunit ^ 𝓒.dof)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_measurable",
+     "kind": "lemma",
+     "line": 741,
+     "doc": "",
+     "statement": "lemma physicalProbability_measurable (T : Temperature) :\n    Measurable (𝓒.physicalProbability kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_nonneg",
+     "kind": "lemma",
+     "line": 746,
+     "doc": "",
+     "statement": "lemma physicalProbability_nonneg\n    (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] (i : ι) :\n    0 ≤ 𝓒.physicalProbability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_pos",
+     "kind": "lemma",
+     "line": 751,
+     "doc": "",
+     "statement": "lemma physicalProbability_pos\n    (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] (i : ι) :\n    0 < 𝓒.physicalProbability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.log_physicalProbability",
+     "kind": "lemma",
+     "line": 756,
+     "doc": "",
+     "statement": "lemma log_physicalProbability\n    (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] (i : ι) :\n    Real.log (𝓒.physicalProbability kB T i)\n      = Real.log (𝓒.probability kB T i) + (𝓒.dof : ℝ) * Real.log 𝓒.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.integral_probability",
+     "kind": "lemma",
+     "line": 763,
+     "doc": "",
+     "statement": "lemma integral_probability\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    (∫ i, 𝓒.probability kB T i ∂ 𝓒.μ) = 1",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.integral_physicalProbability_base",
+     "kind": "lemma",
+     "line": 772,
+     "doc": "Normalization of the dimensionless physical probability density over the base measure.",
+     "statement": "lemma integral_physicalProbability_base\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    (∫ i, 𝓒.physicalProbability kB T i ∂ 𝓒.μ)\n      = 𝓒.phaseSpaceunit ^ 𝓒.dof",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_dof_zero",
+     "kind": "lemma",
+     "line": 779,
+     "doc": "",
+     "statement": "lemma physicalProbability_dof_zero\n    (T : Temperature) (h : 𝓒.dof = 0) (i : ι) :\n    𝓒.physicalProbability kB T i = 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_phase_space_unit_one",
+     "kind": "lemma",
+     "line": 784,
+     "doc": "",
+     "statement": "lemma physicalProbability_phase_space_unit_one\n    (T : Temperature) (h : 𝓒.phaseSpaceunit = 1) (i : ι) :\n    𝓒.physicalProbability kB T i = 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_congr",
+     "kind": "lemma",
+     "line": 789,
+     "doc": "",
+     "statement": "lemma physicalProbability_congr (e : ι1 ≃ᵐ ι) (T : Temperature) (i : ι1) :\n    (𝓒.congr e).physicalProbability kB T i\n      = 𝓒.physicalProbability kB T (e i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.physicalProbability_add",
+     "kind": "lemma",
+     "line": 794,
+     "doc": "",
+     "statement": "lemma physicalProbability_add\n    {ι1} [MeasurableSpace ι1]\n    (𝓒1 : CanonicalEnsemble ι1) (T : Temperature) (i : ι × ι1)\n    (h : 𝓒.phaseSpaceunit = 𝓒1.phaseSpaceunit) :\n    (𝓒 + 𝓒1).physicalProbability kB T i\n      = 𝓒.physicalProbability kB T i.1 * 𝓒1.physicalProbability kB T i.2",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.thermodynamicEntropy",
+     "kind": "def",
+     "line": 806,
+     "doc": "The absolute thermodynamic entropy, defined from its statistical mechanical foundation as\nthe Gibbs-Shannon entropy of the dimensionless physical probability distribution.\nThis corresponds to Landau & Lifshitz, Statistical Physics, §7, Eq. 7.12.",
+     "statement": "noncomputable def thermodynamicEntropy (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.thermodynamicEntropy_def",
+     "kind": "lemma",
+     "line": 810,
+     "doc": "",
+     "statement": "lemma thermodynamicEntropy_def (T : Temperature) :\n    𝓒.thermodynamicEntropy kB T =\n      -(kB : ℝ) * ∫ i, Real.log (𝓒.physicalProbability kB T i) ∂ 𝓒.μProd kB T",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Finite.lean",
+   "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.Finite",
+   "title": "Finite Canonical Ensemble",
+   "doc": "This file specializes the general measure-theoretic framework of the canonical ensemble to systems\nwith a finite number of discrete microstates. This is a common and important case in statistical\nmechanics to study models like spin systems (e.g., the Ising model) and other systems with a\ndiscrete quantum state space.\n\n## Main Definitions and Results\n\nThe specialization is achieved through the `IsFinite` class, which asserts that:\n1. The type of microstates `ι` is a `Fintype`.\n2. The measure `μ` on `ι` is the standard counting measure.\n3. The number of degrees of freedom `dof` is 0.\n4. The `phaseSpaceunit` is 1.\n\nThese assumptions correspond to systems where the state space is fundamentally discrete, and no\nsemi-classical approximation from a continuous phase space is needed. Consequently, the\ndimensionless physical quantities are directly equivalent to their mathematical counterparts.\n\nThe main results proved in this file are:\n- The abstract integral definitions for thermodynamic quantities (partition function, mean energy)\n  are shown to reduce to the familiar finite sums found in introductory texts. For example, the\n  partition function becomes `Z = ∑ᵢ exp(-β Eᵢ)`.\n- The abstract `thermodynamicEntropy`, defined generally for measure-theoretic systems, is proven\n  to be equal to the standard `shannonEntropy` (`S = -k_B ∑ᵢ pᵢ log pᵢ`). The semi-classical\n  correction terms from the general theory vanish under the `IsFinite` assumptions.\n- The **fluctuation-dissipation theorem** in the form `C_V = Var(E) / (k_B T²)`, which connects the\n  heat capacity `C_V` to the variance of energy fluctuations, is formally proven for these systems.\n\nThis file also confirms that the `IsFinite` property is preserved under the composition of\nsystems (addition, `nsmul`, and `congr`).\n\n## References\n\n* L. D. Landau & E. M. Lifshitz, Statistical Physics, Part 1, §31. [ref: landau_statphys1]\n* D. Tong, Lectures on Statistical Physics, §1.3. [ref: tong_statistical_physics]",
+   "sections": [
+    {
+     "line": 309,
+     "text": "## Fluctuations in Finite Systems"
+    },
+    {
+     "line": 329,
+     "text": "## β-parameterization for finite systems"
+    },
+    {
+     "line": 373,
+     "text": "Derivatives of Z and numerator"
+    },
+    {
+     "line": 420,
+     "text": "Quotient rule: dU/db = U^2 - ⟨E^2⟩_β"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CanonicalEnsemble.IsFinite",
+     "kind": "class",
+     "line": 65,
+     "doc": "A finite `CanonicalEnsemble` is one whose microstates form a finite type\nand whose measure is the counting measure. For such systems, the state space is\ninherently discrete and dimensionless, so we require `dof = 0` and\n`phaseSpaceUnit = 1`.",
+     "statement": "class IsFinite (𝓒 : CanonicalEnsemble ι) [Fintype ι] : Prop where\n  μ_eq_count : 𝓒.μ = Measure.count\n  dof_eq_zero : 𝓒.dof = 0\n  phase_space_unit_eq_one : 𝓒.phaseSpaceunit = 1",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 70,
+     "doc": "",
+     "statement": "instance [IsFinite 𝓒] [IsFinite 𝓒1] : IsFinite (𝓒 + 𝓒1)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 88,
+     "doc": "",
+     "statement": "instance [IsFinite 𝓒] (e : ι1 ≃ᵐ ι) : IsFinite (congr 𝓒 e)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 111,
+     "doc": "",
+     "statement": "instance [IsFinite 𝓒] (n : ℕ) : IsFinite (nsmul n 𝓒)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 146,
+     "doc": "",
+     "statement": "instance [IsFinite 𝓒] : IsFiniteMeasure (𝓒.μ)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 151,
+     "doc": "In the finite (counting) case a nonempty index type gives a nonzero measure.",
+     "statement": "instance [IsFinite 𝓒] [Nonempty ι] : NeZero 𝓒.μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.shannonEntropy",
+     "kind": "def",
+     "line": 163,
+     "doc": "The Shannon entropy of a finite canonical ensemble.\nThis is defined by the formula `S = -k_B ∑ pᵢ log pᵢ`. It is proven to be\nequivalent to the `differentialEntropy` and the `thermodynamicEntropy` for systems\nsatisfying the `IsFinite` property.",
+     "statement": "noncomputable def shannonEntropy (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_of_fintype",
+     "kind": "lemma",
+     "line": 166,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunction_of_fintype [IsFinite 𝓒] (T : Temperature) :\n    𝓒.mathematicalPartitionFunction kB T = ∑ i, exp (- β kB T * 𝓒.energy i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_of_fintype",
+     "kind": "lemma",
+     "line": 173,
+     "doc": "",
+     "statement": "lemma partitionFunction_of_fintype [IsFinite 𝓒] (T : Temperature) :\n    𝓒.partitionFunction kB T = ∑ i, exp (- T.β kB * 𝓒.energy i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μBolt_of_fintype",
+     "kind": "lemma",
+     "line": 179,
+     "doc": "",
+     "statement": "lemma μBolt_of_fintype (T : Temperature) [IsFinite 𝓒] (i : ι) :\n    (𝓒.μBolt kB T).real {i} = Real.exp (- β kB T * 𝓒.energy i)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 187,
+     "doc": "",
+     "statement": "instance {T} [IsFinite 𝓒] : IsFiniteMeasure (𝓒.μBolt kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.μProd_of_fintype",
+     "kind": "lemma",
+     "line": 193,
+     "doc": "",
+     "statement": "lemma μProd_of_fintype (T : Temperature) [IsFinite 𝓒] (i : ι) :\n    (𝓒.μProd kB T).real {i} = 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_of_fintype",
+     "kind": "lemma",
+     "line": 200,
+     "doc": "",
+     "statement": "lemma meanEnergy_of_fintype [IsFinite 𝓒] (T : Temperature) :\n    𝓒.meanEnergy kB T = ∑ i, 𝓒.energy i * 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.entropy_of_fintype",
+     "kind": "lemma",
+     "line": 218,
+     "doc": "",
+     "statement": "lemma entropy_of_fintype (T : Temperature) :\n    𝓒.shannonEntropy kB T =\n      - (kB : ℝ) * ∑ i, 𝓒.probability kB T i * log (𝓒.probability kB T i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability_le_one",
+     "kind": "lemma",
+     "line": 223,
+     "doc": "",
+     "statement": "lemma probability_le_one\n    [MeasurableSingletonClass ι] [IsFinite 𝓒] [Nonempty ι] (T : Temperature) (i : ι) :\n    𝓒.probability kB T i ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunction_pos_finite",
+     "kind": "lemma",
+     "line": 235,
+     "doc": "Finite specialization: strict positivity of the mathematical partition function.",
+     "statement": "lemma mathematicalPartitionFunction_pos_finite\n    [MeasurableSingletonClass ι] [IsFinite 𝓒] [Nonempty ι] (T : Temperature) :\n    0 < 𝓒.mathematicalPartitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.partitionFunction_pos_finite",
+     "kind": "lemma",
+     "line": 241,
+     "doc": "Finite specialization: strict positivity of the (physical) partition function.",
+     "statement": "lemma partitionFunction_pos_finite\n    [MeasurableSingletonClass ι] [IsFinite 𝓒] [Nonempty ι] (T : Temperature) :\n    0 < 𝓒.partitionFunction kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probability_nonneg_finite",
+     "kind": "lemma",
+     "line": 249,
+     "doc": "Finite specialization: non-negativity (indeed positivity) of probabilities.",
+     "statement": "lemma probability_nonneg_finite\n    [MeasurableSingletonClass ι] [IsFinite 𝓒] [Nonempty ι] (T : Temperature) (i : ι) :\n    0 ≤ 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.sum_probability_eq_one",
+     "kind": "lemma",
+     "line": 257,
+     "doc": "The sum of probabilities over all microstates is 1.",
+     "statement": "lemma sum_probability_eq_one\n    [MeasurableSingletonClass ι] [IsFinite 𝓒] [Nonempty ι] (T : Temperature) :\n    ∑ i, 𝓒.probability kB T i = 1",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.entropy_nonneg",
+     "kind": "lemma",
+     "line": 266,
+     "doc": "The entropy of a finite canonical ensemble (Shannon entropy) is non-negative.",
+     "statement": "lemma entropy_nonneg [MeasurableSingletonClass ι] [IsFinite 𝓒] [Nonempty ι] (T : Temperature) :\n    0 ≤ 𝓒.shannonEntropy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.shannonEntropy_eq_differentialEntropy",
+     "kind": "lemma",
+     "line": 275,
+     "doc": "",
+     "statement": "lemma shannonEntropy_eq_differentialEntropy\n    [MeasurableSingletonClass ι] [IsFinite 𝓒] (T : Temperature) :\n    𝓒.shannonEntropy kB T = 𝓒.differentialEntropy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.thermodynamicEntropy_eq_shannonEntropy",
+     "kind": "theorem",
+     "line": 283,
+     "doc": "In the finite, nonempty case the thermodynamic and Shannon entropies coincide.\nAll semi-classical correction factors vanish (`dof = 0`, `phaseSpaceUnit = 1`),\nso the absolute thermodynamic entropy reduces to the discrete Shannon form.",
+     "statement": "theorem thermodynamicEntropy_eq_shannonEntropy [MeasurableSingletonClass ι] [IsFinite 𝓒]\n    (T : Temperature) :-- (hT : 0 < T.val) :\n    𝓒.thermodynamicEntropy kB T = 𝓒.shannonEntropy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanSquareEnergy_of_fintype",
+     "kind": "lemma",
+     "line": 313,
+     "doc": "",
+     "statement": "lemma meanSquareEnergy_of_fintype [MeasurableSingletonClass ι] [IsFinite 𝓒] (T : Temperature) :\n    𝓒.meanSquareEnergy kB T = ∑ i, (𝓒.energy i)^2 * 𝓒.probability kB T i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.energyVariance_of_fintype",
+     "kind": "lemma",
+     "line": 320,
+     "doc": "",
+     "statement": "lemma energyVariance_of_fintype\n    [MeasurableSingletonClass ι] [IsFinite 𝓒] [Nonempty ι] (T : Temperature) :\n    𝓒.energyVariance kB T =\n      (∑ i, (𝓒.energy i)^2 * 𝓒.probability kB T i) - (𝓒.meanEnergy kB T)^2",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunctionBetaReal",
+     "kind": "def",
+     "line": 333,
+     "doc": "The finite-sum partition function as a real function of the inverse temperature `b = β`,\ndefined by `Z(b) = ∑ i exp (-b * 𝓒.energy i)`.",
+     "statement": "noncomputable def mathematicalPartitionFunctionBetaReal (b : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.mathematicalPartitionFunctionBetaReal_pos",
+     "kind": "lemma",
+     "line": 336,
+     "doc": "",
+     "statement": "lemma mathematicalPartitionFunctionBetaReal_pos [Nonempty ι] (b : ℝ) :\n    0 < 𝓒.mathematicalPartitionFunctionBetaReal b",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.probabilityBetaReal",
+     "kind": "def",
+     "line": 344,
+     "doc": "For inverse temperature `b = β`, the (real-valued) Boltzmann probability of microstate `i`,\ngiven by `exp (-b * E i) / Z(b)` where `Z(b) = ∑ i exp (-b * E i)`.",
+     "statement": "noncomputable def probabilityBetaReal (b : ℝ) (i : ι) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergyBetaReal",
+     "kind": "def",
+     "line": 350,
+     "doc": "The mean energy as a function of inverse temperature `b = β` in the finite case,\ndefined by `U(b) = ∑ i, E i * p_b i` with `p_b i = exp (-b * E i) / Z(b)` and `Z(b) = ∑ i,\nexp (-b * E i)`.",
+     "statement": "noncomputable def meanEnergyBetaReal (b : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_Beta_eq_finite",
+     "kind": "lemma",
+     "line": 353,
+     "doc": "",
+     "statement": "lemma meanEnergy_Beta_eq_finite [MeasurableSingletonClass ι] [IsFinite 𝓒] (b : ℝ) (hb : 0 < b) :\n    𝓒.meanEnergyBeta kB b = 𝓒.meanEnergyBetaReal b",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentiable_meanEnergyBetaReal",
+     "kind": "lemma",
+     "line": 363,
+     "doc": "",
+     "statement": "lemma differentiable_meanEnergyBetaReal\n    [Nonempty ι] : Differentiable ℝ 𝓒.meanEnergyBetaReal",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentiable_mathematicalPartitionFunctionBetaReal",
+     "kind": "lemma",
+     "line": 375,
+     "doc": "",
+     "statement": "lemma differentiable_mathematicalPartitionFunctionBetaReal :\n    Differentiable ℝ 𝓒.mathematicalPartitionFunctionBetaReal",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergyNumerator",
+     "kind": "def",
+     "line": 383,
+     "doc": "The numerator in the finite-sum expression of the mean energy as a function of the\ninverse temperature `b = β`,\nnamely `∑ i, E i * exp (-b * E i)` (so that `U(b) = meanEnergyNumerator b / Z(b)`).",
+     "statement": "noncomputable def meanEnergyNumerator (b : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentiable_meanEnergyNumerator",
+     "kind": "lemma",
+     "line": 386,
+     "doc": "",
+     "statement": "lemma differentiable_meanEnergyNumerator :\n    Differentiable ℝ 𝓒.meanEnergyNumerator",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.deriv_mathematicalPartitionFunctionBetaReal",
+     "kind": "lemma",
+     "line": 391,
+     "doc": "",
+     "statement": "lemma deriv_mathematicalPartitionFunctionBetaReal (b : ℝ) :\n    deriv 𝓒.mathematicalPartitionFunctionBetaReal b = -𝓒.meanEnergyNumerator b",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.deriv_meanEnergyNumerator",
+     "kind": "lemma",
+     "line": 404,
+     "doc": "",
+     "statement": "lemma deriv_meanEnergyNumerator (b : ℝ) :\n    deriv 𝓒.meanEnergyNumerator b =\n      -∑ i, (𝓒.energy i)^2 * Real.exp (-b * 𝓒.energy i)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.deriv_meanEnergyBetaReal",
+     "kind": "lemma",
+     "line": 424,
+     "doc": "",
+     "statement": "lemma deriv_meanEnergyBetaReal (b : ℝ) :\n    deriv 𝓒.meanEnergyBetaReal b =\n    (𝓒.meanEnergyBetaReal b)^2 - ∑ i, (𝓒.energy i)^2 * 𝓒.probabilityBetaReal b i",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.derivWithin_meanEnergy_Beta_eq_neg_variance",
+     "kind": "lemma",
+     "line": 447,
+     "doc": "(∂U/∂β) = -Var(E) for finite systems.",
+     "statement": "lemma derivWithin_meanEnergy_Beta_eq_neg_variance\n    [MeasurableSingletonClass ι][𝓒.IsFinite] (T : Temperature) (hT_pos : 0 < T.val) :\n    derivWithin (𝓒.meanEnergyBeta kB) (Set.Ioi 0) (T.β kB : ℝ) = - 𝓒.energyVariance kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.fluctuation_dissipation_theorem_finite",
+     "kind": "theorem",
+     "line": 474,
+     "doc": "FDT for finite canonical ensembles: C_V = Var(E) / (k_B T²).",
+     "statement": "theorem fluctuation_dissipation_theorem_finite\n    [MeasurableSingletonClass ι] [𝓒.IsFinite] (T : Temperature) (hT_pos : 0 < T.val) :\n    𝓒.heatCapacity kB T = 𝓒.energyVariance kB T / ((kB : ℝ) * (T.val : ℝ)^2)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean",
+   "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas",
+   "title": "Canonical Ensemble: Thermodynamic Identities and Relations",
+   "doc": "This file develops relations between the *mathematical* objects defined in\n`Basic.lean` and the *physical* thermodynamic quantities, together with\ncalculus identities for the canonical ensemble.\n\n## Contents Overview\n\n1. Helmholtz Free Energies\n  * `mathematicalHelmholtzFreeEnergy`\n  * Relation to physical `helmholtzFreeEnergy` with semi–classical correction.\n\n2. Entropy Relations\n  * Pointwise logarithm of (mathematical / physical) Boltzmann probabilities.\n  * Key identity:\n      `differentialEntropy = kB * β * meanEnergy + kB * log Z_math`\n  * Fundamental link:\n      `thermodynamicEntropy = differentialEntropy - kB * dof * log h`\n    (semi–classical correction term).\n  * Specializations removing the correction when `dof = 0` or `phaseSpaceUnit = 1`.\n\n3. Fundamental Thermodynamic Identity\n  * Proof of `F = U - T S_thermo`.\n  * Equivalent rearrangements giving entropy from energies and free energy.\n  * Discrete / normalized specialization (no correction).\n\n4. Mean energy as\n      `U = - d/dβ log Z_math`\n      and likewise with the physical partition function (constant factor cancels).\n\n## Design Notes\n\n* All derivative statements are given as `derivWithin` on `Set.Ioi 0`, matching the physical\n  domain β > 0.\n* Assumptions (finiteness, integrability) are parameterized to keep lemmas reusable.\n* Semi–classical correction appears systematically as\n    `kB * dof * log phaseSpaceUnit`.\n\n## References\n\n* Same references as `Basic.lean`. [ref: landau_statphys1]\n* Same references as `Basic.lean`, especially the identities `F = U - T S` and\n  `U = -∂_β log Z`. [ref: tong_statistical_physics]",
+   "sections": [
+    {
+     "line": 164,
+     "text": "## The Fundamental Thermodynamic Identity"
+    },
+    {
+     "line": 384,
+     "text": "## Fluctuations: variance identity"
+    },
+    {
+     "line": 405,
+     "text": "## Heat capacity and parametric FDT"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CanonicalEnsemble.mathematicalHelmholtzFreeEnergy",
+     "kind": "def",
+     "line": 71,
+     "doc": "An intermediate potential defined from the mathematical partition function. See\n`helmholtzFreeEnergy` for the physical thermodynamic quantity.",
+     "statement": "noncomputable def mathematicalHelmholtzFreeEnergy (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_eq_helmholtzMathematicalFreeEnergy_add_correction",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "The relationship between the physical Helmholtz Free Energy and the Helmholtz Potential.",
+     "statement": "lemma helmholtzFreeEnergy_eq_helmholtzMathematicalFreeEnergy_add_correction (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    𝓒.helmholtzFreeEnergy kB T = 𝓒.mathematicalHelmholtzFreeEnergy kB T +\n      (kB : ℝ) * T.val * 𝓒.dof * Real.log (𝓒.phaseSpaceunit)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentialEntropy_eq_kB_beta_meanEnergy_add_kB_log_mathZ",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "General identity: S_diff = kB β ⟨E⟩ + kB log Z_math.\nThis connects the differential entropy to the mean energy and the mathematical partition function.\nIntegrability of `log (probability …)` follows from the pointwise formula.",
+     "statement": "lemma differentialEntropy_eq_kB_beta_meanEnergy_add_kB_log_mathZ\n    (T : Temperature) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (hE : Integrable 𝓒.energy (𝓒.μProd kB T)) :\n    𝓒.differentialEntropy kB T = (kB : ℝ) * (T.β kB : ℝ) * 𝓒.meanEnergy kB T +\n      (kB : ℝ) * Real.log (𝓒.mathematicalPartitionFunction kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.log_probability",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "Pointwise logarithm of the Boltzmann probability.",
+     "statement": "lemma log_probability\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] (i : ι) :\n    Real.log (𝓒.probability kB T i)\n      = - (β kB T) * 𝓒.energy i - Real.log (𝓒.mathematicalPartitionFunction kB T)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.kB_mul_beta",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "Auxiliary identity: `kB · β = 1 / T`.\n`β` is defined as `1 / (kB · T)` (see `Temperature.β`).",
+     "statement": "lemma kB_mul_beta (T : Temperature) (hT : 0 < T.val) :\n    (kB : ℝ) * (T.β kB : ℝ) = 1 / T.val",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_sub_correction",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "Fundamental relation between thermodynamic and differential entropy:\n`S_thermo = S_diff - kB * dof * log h`.",
+     "statement": "lemma thermodynamicEntropy_eq_differentialEntropy_sub_correction\n    (T : Temperature)\n    (hE : Integrable 𝓒.energy (𝓒.μProd kB T))\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    𝓒.thermodynamicEntropy kB T\n      = 𝓒.differentialEntropy kB T\n        - (kB : ℝ) * 𝓒.dof * Real.log 𝓒.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_of_dof_zero",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "No semiclassical correction when `dof = 0`.",
+     "statement": "lemma thermodynamicEntropy_eq_differentialEntropy_of_dof_zero\n    (T : Temperature) (hE : Integrable 𝓒.energy (𝓒.μProd kB T))\n    (h0 : 𝓒.dof = 0)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    𝓒.thermodynamicEntropy kB T = 𝓒.differentialEntropy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.thermodynamicEntropy_eq_differentialEntropy_of_phase_space_unit_one",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "No semiclassical correction when `phase_space_unit = 1`.",
+     "statement": "lemma thermodynamicEntropy_eq_differentialEntropy_of_phase_space_unit_one\n    (T : Temperature) (hE : Integrable 𝓒.energy (𝓒.μProd kB T))\n    (h1 : 𝓒.phaseSpaceunit = 1)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ] :\n    𝓒.thermodynamicEntropy kB T = 𝓒.differentialEntropy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.helmholtzFreeEnergy_eq_meanEnergy_sub_temp_mul_thermodynamicEntropy",
+     "kind": "theorem",
+     "line": 174,
+     "doc": "The Helmholtz free energy `F` is related to the mean energy `U` and the absolute\nthermodynamic entropy `S` by the identity `F = U - TS`. This theorem shows that the\nstatistically-defined quantities in this framework correctly satisfy this principle of\nthermodynamics.",
+     "statement": "theorem helmholtzFreeEnergy_eq_meanEnergy_sub_temp_mul_thermodynamicEntropy\n    (T : Temperature) (hT : 0 < T.val)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (hE : Integrable 𝓒.energy (𝓒.μProd kB T)) :\n    𝓒.helmholtzFreeEnergy kB T\n      = 𝓒.meanEnergy kB T - T.val * 𝓒.thermodynamicEntropy kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp_add_correction",
+     "kind": "theorem",
+     "line": 198,
+     "doc": "**Theorem: Helmholtz identity with semi–classical correction term**.\nPhysical identity (always true for `T > 0`) :\n  (U - F)/T = S_thermo\nand:\n  S_thermo = S_diff - kB * dof * log h.\nHence:\n  S_diff = (U - F)/T + kB * dof * log h.\nThis theorem gives the correct relation for the (mathematical / differential) entropy.\n(Removing the correction is only valid in normalized discrete cases\nwith `dof = 0` (or `phaseSpaceUnit = 1`).)",
+     "statement": "theorem differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp_add_correction\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (hT : 0 < T.val)\n    (hE : Integrable 𝓒.energy (𝓒.μProd kB T)) :\n    𝓒.differentialEntropy kB T\n      = (𝓒.meanEnergy kB T - 𝓒.helmholtzFreeEnergy kB T) / T.val\n        + (kB : ℝ) * 𝓒.dof * Real.log 𝓒.phaseSpaceunit",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp",
+     "kind": "lemma",
+     "line": 216,
+     "doc": "Discrete / normalized specialization of the previous theorem.\nIf either `dof = 0` (no semiclassical correction) or `phaseSpaceUnit = 1`\n(so `log h = 0`), the correction term vanishes and we recover the bare Helmholtz identity\nfor the (differential) entropy.",
+     "statement": "lemma differentialEntropy_eq_meanEnergy_sub_helmholtz_div_temp\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (hT : 0 < T.val)\n    (hE : Integrable 𝓒.energy (𝓒.μProd kB T))\n    (hNorm : 𝓒.dof = 0 ∨ 𝓒.phaseSpaceunit = 1) :\n    𝓒.differentialEntropy kB T\n      = (𝓒.meanEnergy kB T - 𝓒.helmholtzFreeEnergy kB T) / T.val",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.hasDerivWithinAt_log_comp",
+     "kind": "lemma",
+     "line": 230,
+     "doc": "Chain rule convenience lemma for `log ∘ f` on a set.",
+     "statement": "lemma hasDerivWithinAt_log_comp\n    {f : ℝ → ℝ} {f' : ℝ} {s : Set ℝ} {x : ℝ}\n    (hf : HasDerivWithinAt f f' s x) (hx : f x ≠ 0) :\n    HasDerivWithinAt (fun t => Real.log (f t)) ((f x)⁻¹ * f') s x",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.hasDerivWithinAt_log_comp'",
+     "kind": "lemma",
+     "line": 237,
+     "doc": "A version rewriting the derivative value with `1 / f x`.",
+     "statement": "lemma hasDerivWithinAt_log_comp'\n    {f : ℝ → ℝ} {f' : ℝ} {s : Set ℝ} {x : ℝ}\n    (hf : HasDerivWithinAt f f' s x) (hx : f x ≠ 0) :\n    HasDerivWithinAt (fun t => Real.log (f t))\n      ((1 / f x) * f') s x",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.integral_bolt_eq_integral_mul_exp",
+     "kind": "lemma",
+     "line": 244,
+     "doc": "",
+     "statement": "lemma integral_bolt_eq_integral_mul_exp\n    {ι} [MeasurableSpace ι] (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    (φ : ι → ℝ) :\n    ∫ x, φ x ∂ 𝓒.μBolt kB T\n      = ∫ x, φ x * Real.exp (-T.β kB * 𝓒.energy x) ∂ 𝓒.μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.integral_energy_bolt",
+     "kind": "lemma",
+     "line": 259,
+     "doc": "A specialization of `integral_bolt_eq_integral_mul_exp`\nto the energy observable.",
+     "statement": "lemma integral_energy_bolt\n    {ι} [MeasurableSpace ι] (𝓒 : CanonicalEnsemble ι) (T : Temperature) :\n    ∫ x, 𝓒.energy x ∂ 𝓒.μBolt kB T\n      = ∫ x, 𝓒.energy x * Real.exp (-T.β kB * 𝓒.energy x) ∂ 𝓒.μ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_eq_ratio_of_integrals",
+     "kind": "lemma",
+     "line": 266,
+     "doc": "The mean energy can be expressed as a ratio of integrals.",
+     "statement": "lemma meanEnergy_eq_ratio_of_integrals\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) :\n    𝓒.meanEnergy kB T =\n      (∫ i, 𝓒.energy i * Real.exp (- T.β kB * 𝓒.energy i) ∂ 𝓒.μ) /\n        (∫ i, Real.exp (- T.β kB * 𝓒.energy i) ∂ 𝓒.μ)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_eq_neg_deriv_log_mathZ_of_beta",
+     "kind": "lemma",
+     "line": 282,
+     "doc": "The mean energy is the negative derivative of the logarithm of the\n(mathematical) partition function with respect to β = 1/(kB T).\nsee: Tong (§1.3.2, §1.3.3), L&L (§31, implicitly, and §36)\nHere the derivative is a `derivWithin` over `Set.Ioi 0`\nsince `β > 0`.",
+     "statement": "lemma meanEnergy_eq_neg_deriv_log_mathZ_of_beta\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    (hT_pos : 0 < T.val) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (h_deriv :\n        HasDerivWithinAt\n          (fun β : ℝ => ∫ i, Real.exp (-β * 𝓒.energy i) ∂ 𝓒.μ)\n          (- ∫ i, 𝓒.energy i * Real.exp (-(T.β kB : ℝ) * 𝓒.energy i) ∂𝓒.μ)\n          (Set.Ioi 0) (T.β kB : ℝ)) :\n    𝓒.meanEnergy kB T =\n      - (derivWithin\n          (fun β : ℝ => Real.log (∫ i, Real.exp (-β * 𝓒.energy i) ∂𝓒.μ))\n          (Set.Ioi 0) (T.β kB : ℝ))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.log_phys_eq_log_math_sub_const_on_Ioi",
+     "kind": "lemma",
+     "line": 321,
+     "doc": "Helper: equality (on `Set.Ioi 0`) between the β–parametrized logarithm of the\nphysical partition function and the β–parametrized logarithm of the *mathematical*\npartition function up to the (β–independent) semiclassical correction. This is used only\nto identify derivatives (the correction drops).\nWe add the hypothesis `h_fin` giving finiteness of the Boltzmann measure for every β > 0\n(as needed to ensure the mathematical partition function is strictly positive).",
+     "statement": "lemma log_phys_eq_log_math_sub_const_on_Ioi\n    (𝓒 : CanonicalEnsemble ι) [NeZero 𝓒.μ]\n    (h_fin :\n      ∀ β > 0,\n        IsFiniteMeasure (𝓒.μBolt kB (Temperature.ofβ kB (Real.toNNReal β)))) :\n    Set.EqOn\n      (fun β : ℝ =>\n        Real.log (𝓒.partitionFunction kB (Temperature.ofβ kB (Real.toNNReal β))))\n      (fun β : ℝ =>\n        Real.log (∫ i, Real.exp (-β * 𝓒.energy i) ∂ 𝓒.μ)\n          - (𝓒.dof : ℝ) * Real.log 𝓒.phaseSpaceunit)\n      (Set.Ioi (0 : ℝ))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.derivWithin_log_phys_eq_derivWithin_log_math",
+     "kind": "lemma",
+     "line": 342,
+     "doc": "Derivative equality needed in `meanEnergy_eq_neg_deriv_log_Z_of_beta`.\nAdds `h_fin` (finiteness of the Boltzmann measure for every β > 0).",
+     "statement": "lemma derivWithin_log_phys_eq_derivWithin_log_math\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    (hT_pos : 0 < T.val) [NeZero 𝓒.μ]\n    (h_fin :\n        ∀ β > 0,\n          IsFiniteMeasure (𝓒.μBolt kB (Temperature.ofβ kB (Real.toNNReal β)))) :\n    derivWithin\n      (fun β : ℝ => Real.log (𝓒.partitionFunction kB (ofβ kB (Real.toNNReal β))))\n      (Set.Ioi 0) (T.β kB : ℝ)\n    =\n    derivWithin\n      (fun β : ℝ => Real.log (∫ i, Real.exp (-β * 𝓒.energy i) ∂ 𝓒.μ))\n      (Set.Ioi 0) (T.β kB : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergy_eq_neg_deriv_log_Z_of_beta",
+     "kind": "theorem",
+     "line": 362,
+     "doc": "The mean energy can also be expressed as the negative derivative of the logarithm of the\n*physical* partition function with respect to β. This follows from the fact that the physical and\nmathematical partition functions differ only by a constant factor, which vanishes upon\ndifferentiation.",
+     "statement": "theorem meanEnergy_eq_neg_deriv_log_Z_of_beta\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature)\n    (hT_pos : 0 < T.val) [IsFiniteMeasure (𝓒.μBolt kB T)] [NeZero 𝓒.μ]\n    (h_fin :\n        ∀ β > 0,\n          IsFiniteMeasure (𝓒.μBolt kB (Temperature.ofβ kB (Real.toNNReal β))))\n    (h_deriv :\n        HasDerivWithinAt\n          (fun β : ℝ => ∫ i, Real.exp (-β * 𝓒.energy i) ∂ 𝓒.μ)\n          (- ∫ i, 𝓒.energy i * Real.exp (-(T.β kB : ℝ) * 𝓒.energy i) ∂𝓒.μ)\n          (Set.Ioi 0) (T.β kB : ℝ)) :\n    𝓒.meanEnergy kB T =\n      - (derivWithin\n          (fun β : ℝ => Real.log (𝓒.partitionFunction kB (ofβ kB (Real.toNNReal β))))\n          (Set.Ioi 0) (T.β kB : ℝ))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.energyVariance_eq_meanSquareEnergy_sub_meanEnergy_sq",
+     "kind": "theorem",
+     "line": 387,
+     "doc": "The identity Var(E) = ⟨E²⟩ - ⟨E⟩².",
+     "statement": "theorem energyVariance_eq_meanSquareEnergy_sub_meanEnergy_sq\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) [IsProbabilityMeasure (𝓒.μProd kB T)]\n    (hE_int : Integrable 𝓒.energy (𝓒.μProd kB T))\n    (hE2_int : Integrable (fun i => (𝓒.energy i)^2) (𝓒.μProd kB T)) :\n    𝓒.energyVariance kB T = 𝓒.meanSquareEnergy kB T - (𝓒.meanEnergy kB T)^2",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergyT",
+     "kind": "def",
+     "line": 410,
+     "doc": "The mean energy as a function of the real-valued temperature t.",
+     "statement": "noncomputable def meanEnergyT (𝓒 : CanonicalEnsemble ι) (t : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.meanEnergyBeta",
+     "kind": "def",
+     "line": 414,
+     "doc": "The mean energy as a function of the real-valued inverse temperature b.",
+     "statement": "noncomputable def meanEnergyBeta (𝓒 : CanonicalEnsemble ι) (b : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.heatCapacity",
+     "kind": "def",
+     "line": 418,
+     "doc": "The heat capacity (at constant volume) C_V = ∂U/∂T (as a derivWithin on T > 0).",
+     "statement": "noncomputable def heatCapacity (𝓒 : CanonicalEnsemble ι) (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.heatCapacity_eq_deriv_meanEnergyBeta",
+     "kind": "lemma",
+     "line": 422,
+     "doc": "Relates C_V = dU/dT to dU/dβ. C_V = dU/dβ * (-1/(kB T²)).",
+     "statement": "lemma heatCapacity_eq_deriv_meanEnergyBeta\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) (hT_pos : 0 < T.val)\n    (hU_deriv :\n      HasDerivWithinAt (𝓒.meanEnergyBeta kB)\n        (derivWithin (𝓒.meanEnergyBeta kB) (Set.Ioi 0) (T.β kB : ℝ))\n        (Set.Ioi 0) (T.β kB : ℝ)) :\n    𝓒.heatCapacity kB T\n      = (derivWithin (𝓒.meanEnergyBeta kB) (Set.Ioi 0) (T.β kB : ℝ))\n        * (-1 / ((kB : ℝ) * (T.val : ℝ)^2))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.fluctuation_dissipation_energy_parametric",
+     "kind": "theorem",
+     "line": 442,
+     "doc": "Parametric FDT: C_V = Var(E)/(kB T²), assuming Var(E) = - dU/dβ.",
+     "statement": "theorem fluctuation_dissipation_energy_parametric\n    (𝓒 : CanonicalEnsemble ι) (T : Temperature) (hT_pos : 0 < T.val)\n    (h_Var_eq_neg_dUdβ :\n      𝓒.energyVariance kB T = - derivWithin (𝓒.meanEnergyBeta kB) (Set.Ioi 0) (T.β kB : ℝ))\n    (hU_deriv :\n      DifferentiableWithinAt ℝ (𝓒.meanEnergyBeta kB) (Set.Ioi 0) (T.β kB : ℝ)) :\n    𝓒.heatCapacity kB T = 𝓒.energyVariance kB T / ((kB : ℝ) * (T.val : ℝ)^2)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/TwoState.lean",
+   "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.TwoState",
+   "title": "Two-state canonical ensemble",
+   "doc": "This module contains the definitions and properties related to the two-state\ncanonical ensemble.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "CanonicalEnsemble.twoState",
+     "kind": "def",
+     "line": 29,
+     "doc": "The canonical ensemble corresponding to state system, with one state of energy\n`E₀` and the other state of energy `E₁`.",
+     "statement": "noncomputable def twoState (E₀ E₁ : ℝ) : CanonicalEnsemble (Fin 2)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 35,
+     "doc": "",
+     "statement": "instance {E₀ E₁} : IsFinite (twoState E₀ E₁)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_partitionFunction_apply",
+     "kind": "lemma",
+     "line": 40,
+     "doc": "",
+     "statement": "lemma twoState_partitionFunction_apply (E₀ E₁ : ℝ) (T : Temperature) :\n    (twoState E₀ E₁).partitionFunction kB T = exp (- β kB T * E₀) + exp (- β kB T * E₁)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_partitionFunction_apply_eq_cosh",
+     "kind": "lemma",
+     "line": 45,
+     "doc": "",
+     "statement": "lemma twoState_partitionFunction_apply_eq_cosh (E₀ E₁ : ℝ) (T : Temperature) :\n    (twoState E₀ E₁).partitionFunction kB T =\n    2 * exp (- β kB T * (E₀ + E₁) / 2) * cosh (β kB T * (E₁ - E₀) / 2)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_energy_fst",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "",
+     "statement": "lemma twoState_energy_fst (E₀ E₁ : ℝ) : (twoState E₀ E₁).energy 0 = E₀",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_energy_snd",
+     "kind": "lemma",
+     "line": 58,
+     "doc": "",
+     "statement": "lemma twoState_energy_snd (E₀ E₁ : ℝ) : (twoState E₀ E₁).energy 1 = E₁",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_probability_fst",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "Probability of the first state (energy `E₀`) in closed form.",
+     "statement": "lemma twoState_probability_fst (E₀ E₁ : ℝ) (T : Temperature) :\n    (twoState E₀ E₁).probability kB T 0 = 1 / 2 * (1 + Real.tanh (β kB T * (E₁ - E₀) / 2))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_probability_snd",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "Probability of the second state (energy `E₁`) in closed form.",
+     "statement": "lemma twoState_probability_snd (E₀ E₁ : ℝ) (T : Temperature) :\n    (twoState E₀ E₁).probability kB T 1 = 1 / 2 * (1 - Real.tanh (β kB T * (E₁ - E₀) / 2))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_meanEnergy_eq",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma twoState_meanEnergy_eq (E₀ E₁ : ℝ) (T : Temperature) :\n    (twoState E₀ E₁).meanEnergy kB T =\n    (E₀ + E₁) / 2 - (E₁ - E₀) / 2 * Real.tanh (β kB T * (E₁ - E₀) / 2)",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_entropy_eq",
+     "kind": "lemma",
+     "line": 106,
+     "doc": "A simplification of the `entropy` of the two-state canonical ensemble.\n\nSince `β kB 0 = 0`, at `T = 0` the right-hand side evaluates to `kB * Real.log 2`.\nSee `twoState_entropy_eq_T_neq_zero` for the same statement carrying `T ≠ 0`.",
+     "statement": "lemma twoState_entropy_eq (E₀ E₁ : ℝ) (T : Temperature) :\n    (twoState E₀ E₁).thermodynamicEntropy kB T =\n      (kB : ℝ) * (Real.log (2 * Real.cosh (β kB T * (E₁ - E₀) / 2))\n        - β kB T * (E₁ - E₀) / 2 * Real.tanh (β kB T * (E₁ - E₀) / 2))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_entropy_eq_T_neq_zero",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "An instance of `twoState_entropy_eq` assuming T ≠ 0",
+     "statement": "lemma twoState_entropy_eq_T_neq_zero (E₀ E₁ : ℝ) (T : Temperature) (_ : T ≠ 0) :\n    (twoState E₀ E₁).thermodynamicEntropy kB T =\n      (kB : ℝ) * (Real.log (2 * Real.cosh (β kB T * (E₁ - E₀) / 2))\n        - β kB T * (E₁ - E₀) / 2 * Real.tanh (β kB T * (E₁ - E₀) / 2))",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_helmholtzFreeEnergy_eq",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "A simplification of the `helmholtzFreeEnergy` of the two-state canonical ensemble.",
+     "statement": "lemma twoState_helmholtzFreeEnergy_eq (E₀ E₁ : ℝ) (T : Temperature) :\n    (twoState E₀ E₁).helmholtzFreeEnergy kB T =\n      (β kB T  * (E₀ + E₁) / 2 - Real.log\n          (2 * Real.cosh (β kB T * (E₁ - E₀) / 2))) / β kB T",
+     "sorry": false
+    },
+    {
+     "name": "CanonicalEnsemble.twoState_helmholtzFreeEnergy_eq_T_neq_zero",
+     "kind": "lemma",
+     "line": 160,
+     "doc": "An instance of `twoState_helmholtzFreeEnergy_eq` assuming T ≠ 0",
+     "statement": "lemma twoState_helmholtzFreeEnergy_eq_T_neq_zero (E₀ E₁ : ℝ) (T : Temperature) (Th : T ≠ 0) :\n    (twoState E₀ E₁).helmholtzFreeEnergy kB T =\n      (E₀ + E₁) / 2 - Real.log (2 * Real.cosh (β kB T * (E₁ - E₀) / 2)) / β kB T",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean",
+   "module": "Physlib.StatisticalMechanics.MicroCanonicalEnsemble.Basic",
+   "title": "The Microcanonical Ensemble",
+   "doc": "",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MicroHamiltonian",
+     "kind": "structure",
+     "line": 27,
+     "doc": "The Hamiltonian for a microcanonical ensemble, parameterized by any extrinsic parameters of data\nD. Since it's an arbitrary type, 'T' would be nice, but we use 'D' for data to avoid confusion\nwith temperature. We define Hamiltonians as an energy function on a real manifold, whose\ndimension n possibly depends on the data D. Energy is a WithTop ℝ, ⊤ is used to mean \"excluded\nas a possibility in phase space\". This formalization does exclude the possibility of discrete\ndegrees of freedom; it is not _completely_ general. A better formalization could have an\narbitrary measurable space.",
+     "statement": "structure MicroHamiltonian (D : Type) where\n  /-- For extrinsic parameters D (e.g. the number of particles of different chemical species,\n    the shape of the box), how many continuous degrees of freedom are there? -/\n  dim : D → Type\n  /-- The number of degrees of freedom is finite. -/\n  [dimFin : ∀ d, Fintype (dim d)]\n  /-- Given the configuration, what is its energy? -/\n  H : {d : D} → (dim d → ℝ) → WithTop ℝ\n  --The energy function must be measurable (else the partition function integral is meaningless).\n  measurable_H : ∀ d, Measurable (@H d)",
+     "sorry": false
+    },
+    {
+     "name": "microHamiltonianFintype",
+     "kind": "instance",
+     "line": 39,
+     "doc": "The dimFin to the instance cache is added so that things like the measure can be synthesized",
+     "statement": "instance microHamiltonianFintype {D} (H : MicroHamiltonian D) (d : D) : Fintype (H.dim d)",
+     "sorry": false
+    },
+    {
+     "name": "NVEHamiltonian",
+     "kind": "abbrev",
+     "line": 44,
+     "doc": "The standard microcanonical ensemble Hamiltonian, where the data is the particle number N and\nthe volume V.",
+     "statement": "abbrev NVEHamiltonian",
+     "sorry": false
+    },
+    {
+     "name": "NVEHamiltonian.N",
+     "kind": "def",
+     "line": 47,
+     "doc": "Helper to get the number in an N-V Hamiltonian",
+     "statement": "def NVEHamiltonian.N : (ℕ × ℝ) → ℕ",
+     "sorry": false
+    },
+    {
+     "name": "NVEHamiltonian.V",
+     "kind": "def",
+     "line": 50,
+     "doc": "Helper to get the volume in an N-V Hamiltonian",
+     "statement": "def NVEHamiltonian.V : (ℕ × ℝ) → ℝ",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/IdealGas.lean",
+   "module": "Physlib.StatisticalMechanics.MicroCanonicalEnsemble.IdealGas",
+   "title": "Ideal gas as a Micro Canonical Ensemble",
+   "doc": "In this module we give the",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "IdealGas",
+     "kind": "def",
+     "line": 25,
+     "doc": "The Hamiltonian for an ideal gas: particles live in a cube of volume V^(1/3), and each\ncontributes an energy p^2/2. The per-particle mass is normalized to 1.",
+     "statement": "def IdealGas : NVEHamiltonian",
+     "sorry": false
+    },
+    {
+     "name": "IdealGas.partitionZ_eq",
+     "kind": "lemma",
+     "line": 56,
+     "doc": "The partition function Z for an ideal gas.",
+     "statement": "lemma partitionZ_eq (hV : 0 < V) (hβ : 0 < β) :\n    IdealGas.partitionZ (n,V) β = V ^ n * (2 * Real.pi / β) ^ (3 * n / 2 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "IdealGas.helmholtzA_eq",
+     "kind": "lemma",
+     "line": 178,
+     "doc": "The Helmholtz Free Energy A for an ideal gas.",
+     "statement": "lemma helmholtzA_eq (hV : 0 < V) (hT : 0 < T) : IdealGas.helmholtzA (n,V) T =\n    -n * T * (Real.log V + (3/2) * Real.log (2 * Real.pi * T))",
+     "sorry": false
+    },
+    {
+     "name": "IdealGas.ZIntegrable",
+     "kind": "lemma",
+     "line": 185,
+     "doc": "",
+     "statement": "lemma ZIntegrable (hV : 0 < V) (hβ : 0 < β) : IdealGas.ZIntegrable (n,V) β",
+     "sorry": false
+    },
+    {
+     "name": "IdealGas.ideal_gas_law",
+     "kind": "theorem",
+     "line": 196,
+     "doc": "The ideal gas law: PV = nRT. In our unitsless system, R = 1.",
+     "statement": "theorem ideal_gas_law (hV : 0 < V) (hT : 0 < T) :\n    let P := IdealGas.pressure (n,V) T;\n    let R := 1;\n    P * V = n * R * T",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean",
+   "module": "Physlib.StatisticalMechanics.MicroCanonicalEnsemble.ThermoQuantities",
+   "title": "The theormodynamical quantities of a microcanonical ensemble",
+   "doc": "",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MicroHamiltonian.partitionZ",
+     "kind": "def",
+     "line": 28,
+     "doc": "The partition function corresponding to a given MicroHamiltonian. This is a function taking a\nthermodynamic β, not a temperature. It also depends on the data D defining the system extrinsincs.\n\n* Ideally this would be an NNReal, but ∫ (NNReal) doesn't work right now, so it would just be a\n  separate proof anyway",
+     "statement": "def partitionZ (β : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.PartitionZComplex",
+     "kind": "def",
+     "line": 34,
+     "doc": "The complexified partition function, viewed as a Laplace transform.",
+     "statement": "def PartitionZComplex (z : ℂ) : ℂ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.ZComplexConvergenceDomain",
+     "kind": "def",
+     "line": 38,
+     "doc": "The complex convergence domain of the partition-function Laplace transform.",
+     "statement": "def ZComplexConvergenceDomain : Set ℂ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.contDiffAt_partitionZ_of_mem_interior_convergenceDomain",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma contDiffAt_partitionZ_of_mem_interior_convergenceDomain {β : ℝ}\n    (hβ : (β : ℂ) ∈ interior (H.ZComplexConvergenceDomain d)) :\n    ContDiffAt ℝ ⊤ (H.partitionZ d) β",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.partitionZT",
+     "kind": "def",
+     "line": 76,
+     "doc": "The partition function as a function of temperature T instead of β.",
+     "statement": "def partitionZT (T : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.internalU",
+     "kind": "def",
+     "line": 80,
+     "doc": "The Internal Energy, U or E, defined as -∂(ln Z)/∂β. Parameterized here with β.",
+     "statement": "def internalU (β : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.helmholtzA",
+     "kind": "def",
+     "line": 85,
+     "doc": "The Helmholtz Free Energy, -T * ln Z. Also denoted F. Parameterized here with temperature T, not\nβ.",
+     "statement": "def helmholtzA (T : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.entropyS",
+     "kind": "def",
+     "line": 89,
+     "doc": "The entropy, defined as the -∂A/∂T. Function of T.",
+     "statement": "def entropyS (T : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.entropySβ",
+     "kind": "def",
+     "line": 93,
+     "doc": "The entropy, defined as ln Z + β*U. Function of β.",
+     "statement": "def entropySβ (β : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.ZIntegrable",
+     "kind": "def",
+     "line": 100,
+     "doc": "To be able to compute or define anything from a Hamiltonian, we need its partition function to\nbe a computable integral. A Hamiltonian is ZIntegrable at β if PartitionZ is Lesbegue integrable\nand nonzero.",
+     "statement": "def ZIntegrable (β : ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.PositiveβIntegrable",
+     "kind": "def",
+     "line": 109,
+     "doc": "This Prop defines the most common case of ZIntegrable, that it is integrable at all finite\ntemperatures (aka all positive β).",
+     "statement": "def PositiveβIntegrable : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.entropy_A_eq_entropy_Z",
+     "kind": "theorem",
+     "line": 133,
+     "doc": "The two definitions of entropy, in terms of `T` or `β = 1 / T`, are equivalent.",
+     "statement": "theorem entropy_A_eq_entropy_Z (T : ℝ) (hT : T ≠ 0)\n    (hZne : H.partitionZ d (1 / T) ≠ 0)\n    (hZint : ((1 / T : ℝ) : ℂ) ∈ interior (H.ZComplexConvergenceDomain d)) :\n    entropyS H d T = entropySβ H d (1 / T)",
+     "sorry": false
+    },
+    {
+     "name": "MicroHamiltonian.β_eq_deriv_S_U",
+     "kind": "theorem",
+     "line": 168,
+     "doc": "The \"definition of temperature from entropy\":\n1/T = (∂S/∂U), when the derivative is at constant extrinsic d (typically N/V).\nHere we use β instead of 1/T on the left, and express the right actually as (∂S/∂β)/(∂U/∂β),\nas all our things are ultimately parameterized by β.\n\nThis identity requires the denominator `∂U/∂β` to be nonzero.",
+     "statement": "theorem β_eq_deriv_S_U {β : ℝ}\n    (hZne : H.partitionZ d β ≠ 0)\n    (hZint : (β : ℂ) ∈ interior (H.ZComplexConvergenceDomain d))\n    (hU' : deriv (H.internalU d) β ≠ 0) :\n    β = (deriv (H.entropySβ d) β) / deriv (H.internalU d) β",
+     "sorry": false
+    },
+    {
+     "name": "NVEHamiltonian.pressure",
+     "kind": "def",
+     "line": 219,
+     "doc": "Pressure, as a function of T. Defined as the conjugate variable to volume.",
+     "statement": "def pressure (T : ℝ) : ℝ",
+     "sorry": false
+    }
+   ],
+   "private": 1
+  }
+ ]
+}

@@ -1,0 +1,2317 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/Channels/Bundled.lean",
+   "module": "QuantumInfo.Channels.Bundled",
+   "title": "Classes of Matrix Maps",
+   "doc": "The bundled `MatrixMap`s: `HPMap`, `UnitalMap`, `TPMap`, `PMap`, and `CPMap`.\nThese are defined over the bare minimum rings (`Semiring` or `RCLike`, respectively).\n\nThe combinations `PTPMap` (positive trace-preserving), `CPTPMap`, and `CPUMap`\n(CP unital maps) take ℂ as the default class.\n\nThe majority of quantum theory revolves around `CPTPMap`s, so those are explored more\nthoroughly in their file CPTP.lean.",
+   "sections": [
+    {
+     "line": 85,
+     "text": "## Hermitian-preserving maps"
+    },
+    {
+     "line": 169,
+     "text": "## Positive-preserving maps"
+    },
+    {
+     "line": 223,
+     "text": "## Positive trace-preserving maps"
+    },
+    {
+     "line": 310,
+     "text": "## Completely positive trace-preserving linear maps"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "HPMap",
+     "kind": "structure",
+     "line": 31,
+     "doc": "Hermitian-preserving linear maps.",
+     "statement": "structure HPMap extends MatrixMap dIn dOut 𝕜 where\n  HP : MatrixMap.IsHermitianPreserving toLinearMap",
+     "sorry": false
+    },
+    {
+     "name": "UnitalMap",
+     "kind": "structure",
+     "line": 35,
+     "doc": "Unital linear maps.",
+     "statement": "structure UnitalMap [DecidableEq dIn] [DecidableEq dOut]\n    extends MatrixMap dIn dOut R where\n  unital : MatrixMap.Unital toLinearMap",
+     "sorry": false
+    },
+    {
+     "name": "TPMap",
+     "kind": "structure",
+     "line": 40,
+     "doc": "Trace-preserving linear maps.",
+     "statement": "structure TPMap [Fintype dIn] [Fintype dOut] extends MatrixMap dIn dOut R where\n  TP : MatrixMap.IsTracePreserving toLinearMap",
+     "sorry": false
+    },
+    {
+     "name": "PMap",
+     "kind": "structure",
+     "line": 49,
+     "doc": "Positive linear maps.",
+     "statement": "structure PMap [Fintype dIn] [Fintype dOut]\n    extends HPMap dIn dOut 𝕜 where\n  pos : MatrixMap.IsPositive toLinearMap\n  HP := pos.IsHermitianPreserving",
+     "sorry": false
+    },
+    {
+     "name": "CPMap",
+     "kind": "structure",
+     "line": 55,
+     "doc": "Completely positive linear maps.",
+     "statement": "structure CPMap [Fintype dIn] [Fintype dOut] [DecidableEq dIn]\n    extends PMap dIn dOut 𝕜 where\n  cp : MatrixMap.IsCompletelyPositive toLinearMap\n  pos := cp.IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap",
+     "kind": "structure",
+     "line": 62,
+     "doc": "Positive trace-preserving linear maps. These includes all channels, but aren't\nnecessarily *completely* positive, see `CPTPMap`.",
+     "statement": "structure PTPMap [Fintype dIn] [Fintype dOut]\n  extends PMap dIn dOut 𝕜, TPMap dIn dOut 𝕜",
+     "sorry": false
+    },
+    {
+     "name": "PUMap",
+     "kind": "structure",
+     "line": 67,
+     "doc": "Positive unital maps. These are important because they are the\ndual to `PTPMap`: they are the most general way to map *observables*.",
+     "statement": "structure PUMap [Fintype dIn] [Fintype dOut] [DecidableEq dIn] [DecidableEq dOut]\n  extends PMap dIn dOut 𝕜, UnitalMap dIn dOut 𝕜",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap",
+     "kind": "structure",
+     "line": 75,
+     "doc": "Completely positive trace-preserving linear maps. This is the most common\nmeaning of \"channel\", often described as \"the most general physically realizable\nquantum operation\".",
+     "statement": "structure CPTPMap [Fintype dIn] [Fintype dOut] [DecidableEq dIn]\n  extends PTPMap dIn dOut (𝕜 := 𝕜), CPMap dIn dOut 𝕜 where",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap",
+     "kind": "structure",
+     "line": 80,
+     "doc": "Completely positive unital maps. These are important because they are the\ndual to `CPTPMap`: they are the physically realizable ways to map *observables*.",
+     "statement": "structure CPUMap [Fintype dIn] [Fintype dOut] [DecidableEq dIn] [DecidableEq dOut]\n  extends CPMap dIn dOut 𝕜, PUMap dIn dOut 𝕜",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.map",
+     "kind": "abbrev",
+     "line": 96,
+     "doc": "",
+     "statement": "abbrev map (M : HPMap dIn dOut 𝕜) : MatrixMap dIn dOut 𝕜",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.ext",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma ext (h : Λ₁.map = Λ₂.map) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.funext_hermitian",
+     "kind": "theorem",
+     "line": 103,
+     "doc": "Two maps are equal if they agree on all Hermitian inputs.",
+     "statement": "theorem funext_hermitian (h : ∀ M : HermitianMat dIn ℂ, CΛ₁.map M = CΛ₂.map M) :\n    CΛ₁ = CΛ₂",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.funext_pos",
+     "kind": "theorem",
+     "line": 113,
+     "doc": "Two maps are equal if they agree on all positive inputs.",
+     "statement": "theorem funext_pos [Fintype dIn] (h : ∀ M : HermitianMat dIn ℂ, 0 ≤ M → CΛ₁.map M = CΛ₂.map M) :\n    CΛ₁ = CΛ₂",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.funext_pos_trace",
+     "kind": "theorem",
+     "line": 123,
+     "doc": "Two maps are equal if they agree on all positive inputs with trace one",
+     "statement": "theorem funext_pos_trace [Fintype dIn]\n  (h : ∀ M : HermitianMat dIn ℂ, 0 ≤ M → M.trace = 1 → CΛ₁.map M = CΛ₂.map M) :\n    CΛ₁ = CΛ₂",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.funext_mstate",
+     "kind": "theorem",
+     "line": 144,
+     "doc": "Two maps are equal if they agree on all `MState`s.",
+     "statement": "theorem funext_mstate [Fintype dIn] [DecidableEq dIn] {Λ₁ Λ₂ : HPMap dIn dOut ℂ}\n  (h : ∀ ρ : MState dIn, Λ₁.map ρ.m = Λ₂.map ρ.m) :\n    Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.instFunLike",
+     "kind": "instance",
+     "line": 150,
+     "doc": "Hermitian-preserving maps are functions from `HermitianMat`s to `HermitianMat`s.",
+     "statement": "noncomputable instance instFunLike : FunLike (HPMap dIn dOut ℂ) (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.apply_hermitianMat_eq",
+     "kind": "lemma",
+     "line": 155,
+     "doc": "",
+     "statement": "lemma apply_hermitianMat_eq (Λ : HPMap dIn dOut ℂ) (ρ : HermitianMat dIn ℂ) :\n    Λ ρ = ⟨Λ.map ρ.1, Λ.HP ρ.2⟩",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 159,
+     "doc": "",
+     "statement": "instance [Fintype dIn] : ContinuousLinearMapClass\n    (HPMap dIn dOut ℂ) ℝ (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PMap.ext",
+     "kind": "lemma",
+     "line": 179,
+     "doc": "",
+     "statement": "lemma ext {Λ₁ Λ₂ : PMap dIn dOut 𝕜} (h : Λ₁.map = Λ₂.map) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "PMap.injective_toHPMap",
+     "kind": "lemma",
+     "line": 183,
+     "doc": "",
+     "statement": "lemma injective_toHPMap : (PMap.toHPMap (dIn := dIn) (dOut := dOut) (𝕜 := 𝕜)).Injective",
+     "sorry": false
+    },
+    {
+     "name": "PMap.instFunLike",
+     "kind": "instance",
+     "line": 187,
+     "doc": "Positive maps are functions from `HermitianMat`s to `HermitianMat`s.",
+     "statement": "noncomputable instance instFunLike : FunLike (PMap dIn dOut ℂ) (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PMap.apply_hermitianMat_eq",
+     "kind": "lemma",
+     "line": 191,
+     "doc": "",
+     "statement": "lemma apply_hermitianMat_eq (Λ : PMap dIn dOut ℂ) (ρ : HermitianMat dIn ℂ) :\n    Λ ρ = ⟨Λ.map ρ.1, Λ.HP ρ.2⟩",
+     "sorry": false
+    },
+    {
+     "name": "PMap.instLinearMapClass",
+     "kind": "instance",
+     "line": 196,
+     "doc": "",
+     "statement": "instance instLinearMapClass : LinearMapClass (PMap dIn dOut ℂ) ℝ (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PMap.instContinuousOrderHomClass",
+     "kind": "instance",
+     "line": 200,
+     "doc": "",
+     "statement": "instance instContinuousOrderHomClass : ContinuousOrderHomClass (PMap dIn dOut ℂ)\n    (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PMap.pos_Hermitian",
+     "kind": "theorem",
+     "line": 210,
+     "doc": "Positive-presering maps also preserve positivity on, specifically, Hermitian matrices.",
+     "statement": "theorem pos_Hermitian (M : PMap dIn dOut ℂ) {x : HermitianMat dIn ℂ} (h : 0 ≤ x) : 0 ≤ M x",
+     "sorry": false
+    },
+    {
+     "name": "CPMap.of_kraus_CPMap",
+     "kind": "def",
+     "line": 217,
+     "doc": "",
+     "statement": "def of_kraus_CPMap {κ : Type*} [Fintype κ] [DecidableEq dIn] (M : κ → Matrix dOut dIn 𝕜) : CPMap dIn dOut 𝕜",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.ext",
+     "kind": "lemma",
+     "line": 234,
+     "doc": "",
+     "statement": "lemma ext {Λ₁ Λ₂ : PTPMap dIn dOut 𝕜} (h : Λ₁.map = Λ₂.map) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.injective_toPMap",
+     "kind": "lemma",
+     "line": 238,
+     "doc": "",
+     "statement": "lemma injective_toPMap : (PTPMap.toPMap (dIn := dIn) (dOut := dOut) (𝕜 := 𝕜)).Injective",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.instFunLike",
+     "kind": "instance",
+     "line": 242,
+     "doc": "Positive trace-preserving maps are functions from `HermitianMat`s to `HermitianMat`s.",
+     "statement": "noncomputable instance instFunLike : FunLike (PTPMap dIn dOut ℂ) (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.apply_hermitianMat_eq_toPMap",
+     "kind": "lemma",
+     "line": 246,
+     "doc": "",
+     "statement": "lemma apply_hermitianMat_eq_toPMap (Λ : PTPMap dIn dOut ℂ) (ρ : HermitianMat dIn ℂ) :\n    Λ ρ = Λ.toPMap ρ",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.instLinearMapClass",
+     "kind": "instance",
+     "line": 249,
+     "doc": "",
+     "statement": "instance instLinearMapClass : LinearMapClass (PTPMap dIn dOut ℂ) ℝ (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.instHContinuousOrderHomClass",
+     "kind": "instance",
+     "line": 253,
+     "doc": "",
+     "statement": "instance instHContinuousOrderHomClass : ContinuousOrderHomClass (PTPMap dIn dOut ℂ)\n    (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.pos_Hermitian",
+     "kind": "theorem",
+     "line": 263,
+     "doc": "PTP maps also preserve positivity on Hermitian matrices.",
+     "statement": "theorem pos_Hermitian (M : PTPMap dIn dOut ℂ) {x : HermitianMat dIn ℂ} (h : 0 ≤ x) : 0 ≤ M x",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.instMFunLike",
+     "kind": "instance",
+     "line": 267,
+     "doc": "`PTPMap`s are functions from `MState`s to `MState`s.",
+     "statement": "noncomputable instance instMFunLike [DecidableEq dIn] [DecidableEq dOut] :\n    FunLike (PTPMap dIn dOut) (MState dIn) (MState dOut)",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.apply_mstate_eq",
+     "kind": "lemma",
+     "line": 278,
+     "doc": "",
+     "statement": "lemma apply_mstate_eq [DecidableEq dIn] [DecidableEq dOut] (Λ : PTPMap dIn dOut ℂ) (ρ : MState dIn) :\n    Λ ρ = MState.mk\n      (Λ.toHPMap ρ.M) (HermitianMat.zero_le_iff.mpr (Λ.pos ρ.psd)) (by\n        rw [HermitianMat.trace_eq_one_iff, ← ρ.tr']\n        exact Λ.TP ρ)",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.instMContinuousMapClass",
+     "kind": "instance",
+     "line": 284,
+     "doc": "",
+     "statement": "instance instMContinuousMapClass [DecidableEq dIn] [DecidableEq dOut] :\n    ContinuousMapClass (PTPMap dIn dOut) (MState dIn) (MState dOut)",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.val_apply_MState",
+     "kind": "lemma",
+     "line": 291,
+     "doc": "",
+     "statement": "lemma val_apply_MState [DecidableEq dIn] (M : PTPMap dIn dOut) (ρ : MState dIn) :\n    (M ρ : HermitianMat dOut ℂ) = (instFunLike.coe M) ρ",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.nonemptyOut",
+     "kind": "lemma",
+     "line": 298,
+     "doc": "",
+     "statement": "lemma nonemptyOut (Λ : PTPMap dIn dOut) [hIn : Nonempty dIn] [DecidableEq dIn] : Nonempty dOut",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.ext",
+     "kind": "theorem",
+     "line": 321,
+     "doc": "Two `CPTPMap`s are equal if their `MatrixMap`s are equal.",
+     "statement": "theorem ext {Λ₁ Λ₂ : CPTPMap dIn dOut 𝕜} (h : Λ₁.map = Λ₂.map) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.injective_toPTPMap",
+     "kind": "lemma",
+     "line": 325,
+     "doc": "",
+     "statement": "lemma injective_toPTPMap : (CPTPMap.toPTPMap (dIn := dIn) (dOut := dOut) (𝕜 := 𝕜)).Injective",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.instMFunLike",
+     "kind": "instance",
+     "line": 350,
+     "doc": "`CPTPMap`s are functions from `MState`s to `MState`s.",
+     "statement": "noncomputable instance instMFunLike [DecidableEq dOut] : FunLike (CPTPMap dIn dOut) (MState dIn) (MState dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.apply_mState_eq_toPTPMap",
+     "kind": "lemma",
+     "line": 354,
+     "doc": "",
+     "statement": "lemma apply_mState_eq_toPTPMap [DecidableEq dOut] (Λ : CPTPMap dIn dOut) (ρ : MState dIn) :\n    Λ ρ = Λ.toPTPMap ρ",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsTracePreserving",
+     "kind": "lemma",
+     "line": 363,
+     "doc": "",
+     "statement": "lemma IsTracePreserving (Λ : CPTPMap dIn dOut 𝕜) : Λ.map.IsTracePreserving",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.of_kraus_CPTPMap",
+     "kind": "def",
+     "line": 366,
+     "doc": "",
+     "statement": "def of_kraus_CPTPMap {κ : Type*} [Fintype κ]\n  (M : κ → Matrix dOut dIn 𝕜)\n  (hTP : (∑ k, (M k).conjTranspose * (M k)) = 1) : CPTPMap dIn dOut 𝕜",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.ext",
+     "kind": "lemma",
+     "line": 379,
+     "doc": "",
+     "statement": "lemma ext {Λ₁ Λ₂ : PUMap dIn dOut 𝕜} (h : Λ₁.map = Λ₂.map) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.injective_toPMap",
+     "kind": "lemma",
+     "line": 383,
+     "doc": "",
+     "statement": "lemma injective_toPMap : (PUMap.toPMap (dIn := dIn) (dOut := dOut) (𝕜 := 𝕜)).Injective",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.instFunLike",
+     "kind": "instance",
+     "line": 388,
+     "doc": "`PUMap`s are functions from `HermitianMat`s to `HermitianMat`s.",
+     "statement": "noncomputable instance instFunLike : FunLike (PUMap dIn dOut ℂ) (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.apply_hermitianMat_eq_toPMap",
+     "kind": "lemma",
+     "line": 392,
+     "doc": "",
+     "statement": "lemma apply_hermitianMat_eq_toPMap (Λ : PUMap dIn dOut ℂ) (ρ : HermitianMat dIn ℂ) :\n    Λ ρ = Λ.toPMap ρ",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.instLinearMapClass",
+     "kind": "instance",
+     "line": 395,
+     "doc": "",
+     "statement": "instance instLinearMapClass : LinearMapClass (PUMap dIn dOut ℂ) ℝ (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.instHContinuousOrderHomClass",
+     "kind": "instance",
+     "line": 399,
+     "doc": "",
+     "statement": "instance instHContinuousOrderHomClass : ContinuousOrderHomClass (PUMap dIn dOut ℂ)\n    (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.instOneHomClass",
+     "kind": "instance",
+     "line": 407,
+     "doc": "",
+     "statement": "instance instOneHomClass : OneHomClass (PUMap dIn dOut ℂ)\n    (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "PUMap.pos_Hermitian",
+     "kind": "theorem",
+     "line": 413,
+     "doc": "CPTP maps also preserve positivity on Hermitian matrices.",
+     "statement": "theorem pos_Hermitian (M : PUMap dIn dOut ℂ) {x : HermitianMat dIn ℂ} (h : 0 ≤ x) : 0 ≤ M x",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.ext",
+     "kind": "lemma",
+     "line": 422,
+     "doc": "",
+     "statement": "lemma ext {Λ₁ Λ₂ : CPUMap dIn dOut 𝕜} (h : Λ₁.map = Λ₂.map) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.injective_toPMap",
+     "kind": "lemma",
+     "line": 426,
+     "doc": "",
+     "statement": "lemma injective_toPMap : (CPMap.toPMap ∘ CPUMap.toCPMap (dIn := dIn) (dOut := dOut) (𝕜 := 𝕜)).Injective",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.instFunLike",
+     "kind": "instance",
+     "line": 431,
+     "doc": "`CPUMap`s are functions from `HermitianMat`s to `HermitianMat`s.",
+     "statement": "noncomputable instance instFunLike : FunLike (CPUMap dIn dOut ℂ) (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.apply_hermitianMat_eq_toPMap",
+     "kind": "lemma",
+     "line": 435,
+     "doc": "",
+     "statement": "lemma apply_hermitianMat_eq_toPMap (Λ : CPUMap dIn dOut ℂ) (ρ : HermitianMat dIn ℂ) :\n    Λ ρ = Λ.toPMap ρ",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.instLinearMapClass",
+     "kind": "instance",
+     "line": 438,
+     "doc": "",
+     "statement": "instance instLinearMapClass : LinearMapClass (CPUMap dIn dOut ℂ) ℝ (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.instHContinuousOrderHomClass",
+     "kind": "instance",
+     "line": 442,
+     "doc": "",
+     "statement": "instance instHContinuousOrderHomClass : ContinuousOrderHomClass (CPUMap dIn dOut ℂ)\n    (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.instOneHomClass",
+     "kind": "instance",
+     "line": 450,
+     "doc": "",
+     "statement": "instance instOneHomClass : OneHomClass (CPUMap dIn dOut ℂ)\n    (HermitianMat dIn ℂ) (HermitianMat dOut ℂ)",
+     "sorry": false
+    },
+    {
+     "name": "CPUMap.pos_Hermitian",
+     "kind": "theorem",
+     "line": 456,
+     "doc": "CPTP maps also preserve positivity on Hermitian matrices.",
+     "statement": "theorem pos_Hermitian (M : CPUMap dIn dOut ℂ) {x : HermitianMat dIn ℂ} (h : 0 ≤ x) : 0 ≤ M x",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/Channels/CPTP.lean",
+   "module": "QuantumInfo.Channels.CPTP",
+   "title": "Completely Positive Trace Preserving maps",
+   "doc": "A `CPTPMap` is a `ℂ`-linear map between matrices (`MatrixMap` is an alias), bundled with the facts\nthat it `IsCompletelyPositive` and `IsTracePreserving`. CPTP maps are typically regarded as the\n\"most general quantum operation\", as they map density matrices (`MState`s) to density matrices. The\ntype `PTPMap`, for maps that are positive (but not necessarily completely positive) is also\ndeclared.\n\nA large portion of the theory is in terms of the Choi matrix (`MatrixMap.choi_matrix`), as the\npositive-definiteness of this matrix corresponds to being a CP map. This is\n[Choi's theorem on CP maps](https://en.wikipedia.org/wiki/Choi%27s_theorem_on_completely_positive_maps).\n\nThis file also defines several important examples of, classes of, and operations on, CPTPMaps:\n * `compose`: Composition of maps\n * `id`: The identity map\n * `replacement`: The replacement channel that always outputs the same state\n * `prod`: Tensor product of two CPTP maps, with notation M₁ ⊗ M₂\n * `piProd`: Tensor product of finitely many CPTP maps (Pi-type product)\n * `of_unitary`: The CPTP map corresponding to a unitary operation `U`\n * `IsUnitary`: Predicate whether the map corresponds to any unitary\n * `purify`: Purifying a channel into a unitary on a larger Hilbert space\n * `complementary`: The complementary channel to its purification\n * `IsEntanglementBreaking`, `IsDegradable`, `IsAntidegradable`: Entanglement breaking, degradable\n    and antidegradable channels.\n * `SWAP`, `assoc`, `assoc'`, `traceLeft`, `traceRight`: The CPTP maps corresponding to important\n    operations on states. These correspond directly to `MState.SWAP`, `MState.assoc`,\n    `MState.assoc'`, `MState.traceLeft`, and `MState.traceRight`.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "CPTPMap.choi",
+     "kind": "def",
+     "line": 56,
+     "doc": "The Choi matrix of a CPTPMap.",
+     "statement": "def choi",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.choi_ext",
+     "kind": "theorem",
+     "line": 59,
+     "doc": "Two CPTPMaps are equal if their Choi matrices are equal.",
+     "statement": "theorem choi_ext {Λ₁ Λ₂ : CPTPMap dIn dOut} (h : Λ₁.choi = Λ₂.choi) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.choi_PSD_of_CPTP",
+     "kind": "theorem",
+     "line": 64,
+     "doc": "The Choi matrix of a channel is PSD.",
+     "statement": "theorem choi_PSD_of_CPTP : Λ.map.choi_matrix.PosSemidef",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.Tr_of_choi_of_CPTP",
+     "kind": "theorem",
+     "line": 69,
+     "doc": "The trace of a Choi matrix of a CPTP map is the cardinality of the input space.",
+     "statement": "theorem Tr_of_choi_of_CPTP : Λ.choi.trace =\n    (Finset.univ (α := dIn)).card",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.CPTP_of_choi_PSD_Tr",
+     "kind": "def",
+     "line": 74,
+     "doc": "Construct a CPTP map from a PSD Choi matrix with correct partial trace.",
+     "statement": "def CPTP_of_choi_PSD_Tr {M : Matrix (dOut × dIn) (dOut × dIn) ℂ} (h₁ : M.PosSemidef)\n    (h₂ : M.traceLeft = 1) : CPTPMap dIn dOut",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.choi_of_CPTP_of_choi",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma choi_of_CPTP_of_choi (M : Matrix (dOut × dIn) (dOut × dIn) ℂ) {h₁} {h₂} :\n    (CPTP_of_choi_PSD_Tr (M := M) h₁ h₂).choi = M",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.mat_coe_eq_apply_mat",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "",
+     "statement": "lemma mat_coe_eq_apply_mat [DecidableEq dOut] (ρ : MState dIn) : (Λ ρ).m = Λ.map ρ.m",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.funext",
+     "kind": "lemma",
+     "line": 92,
+     "doc": "",
+     "statement": "lemma funext [DecidableEq dOut] {Λ₁ Λ₂ : CPTPMap dIn dOut} (h : ∀ ρ, Λ₁ ρ = Λ₂ ρ) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.compose",
+     "kind": "def",
+     "line": 96,
+     "doc": "The composition of CPTPMaps, as a CPTPMap.",
+     "statement": "def compose (Λ₂ : CPTPMap dM dOut) (Λ₁ : CPTPMap dIn dM) : CPTPMap dIn dOut",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.compose_eq",
+     "kind": "theorem",
+     "line": 105,
+     "doc": "Composition of CPTPMaps by `CPTPMap.compose` is compatible with the `instFunLike` action.",
+     "statement": "theorem compose_eq [DecidableEq dOut] {Λ₁ : CPTPMap dIn dM} {Λ₂ : CPTPMap dM dOut} : ∀ρ, (Λ₂ ∘ₘ Λ₁) ρ = Λ₂ (Λ₁ ρ)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.compose_assoc",
+     "kind": "theorem",
+     "line": 109,
+     "doc": "Composition of CPTPMaps is associative.",
+     "statement": "theorem compose_assoc [DecidableEq dOut] (Λ₃ : CPTPMap dM₂ dOut) (Λ₂ : CPTPMap dM dM₂)\n    (Λ₁ : CPTPMap dIn dM) : (Λ₃ ∘ₘ Λ₂) ∘ₘ Λ₁ = Λ₃ ∘ₘ (Λ₂ ∘ₘ Λ₁)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.instMixable",
+     "kind": "instance",
+     "line": 115,
+     "doc": "CPTPMaps have a convex structure from their Choi matrices.",
+     "statement": "instance instMixable : Mixable (Matrix (dOut × dIn) (dOut × dIn) ℂ) (CPTPMap dIn dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.id",
+     "kind": "def",
+     "line": 150,
+     "doc": "The identity channel, which leaves the input unchanged.",
+     "statement": "def id : CPTPMap dIn dIn",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.id_map",
+     "kind": "theorem",
+     "line": 157,
+     "doc": "The map `CPTPMap.id` leaves any matrix unchanged.",
+     "statement": "theorem id_map : (id (dIn := dIn)).map = LinearMap.id",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.id_MState",
+     "kind": "theorem",
+     "line": 162,
+     "doc": "The map `CPTPMap.id` leaves the input state unchanged.",
+     "statement": "theorem id_MState (ρ : MState dIn) : CPTPMap.id (dIn := dIn) ρ = ρ",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.id_compose",
+     "kind": "theorem",
+     "line": 169,
+     "doc": "The map `CPTPMap.id` composed with any map is the same map.",
+     "statement": "theorem id_compose [DecidableEq dOut] (Λ : CPTPMap dIn dOut) : id ∘ₘ Λ = Λ",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.compose_id",
+     "kind": "theorem",
+     "line": 175,
+     "doc": "Any map composed with `CPTPMap.id` is the same map.",
+     "statement": "theorem compose_id (Λ : CPTPMap dIn dOut) : Λ ∘ₘ id = Λ",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.ofEquiv",
+     "kind": "def",
+     "line": 186,
+     "doc": "Given a equivalence (a bijection) between the types d₁ and d₂, that is, if they're\nthe same dimension, then there's a CPTP channel for this. This is what we need for\ndefining e.g. the SWAP channel, which is 'unitary' but takes heterogeneous input\nand outputs types (d₁ × d₂) and (d₂ × d₁).",
+     "statement": "def ofEquiv (σ : dIn ≃ dOut) : CPTPMap dIn dOut",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.ofEquiv_apply",
+     "kind": "lemma",
+     "line": 192,
+     "doc": "",
+     "statement": "lemma ofEquiv_apply (σ : dIn ≃ dOut) (ρ : MState dIn) :\n    ofEquiv σ ρ = ρ.relabel σ.symm",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.equiv_inverse",
+     "kind": "lemma",
+     "line": 197,
+     "doc": "",
+     "statement": "lemma equiv_inverse (σ : dIn ≃ dOut)  : (ofEquiv σ) ∘ (ofEquiv σ.symm) = id (dIn := dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.SWAP",
+     "kind": "def",
+     "line": 207,
+     "doc": "The SWAP operation, as a channel.",
+     "statement": "def SWAP : CPTPMap (d₁ × d₂) (d₂ × d₁)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.assoc",
+     "kind": "def",
+     "line": 211,
+     "doc": "The associator, as a channel.",
+     "statement": "def assoc : CPTPMap ((d₁ × d₂) × d₃) (d₁ × d₂ × d₃)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.assoc'",
+     "kind": "def",
+     "line": 215,
+     "doc": "The inverse associator, as a channel.",
+     "statement": "def assoc' : CPTPMap (d₁ × d₂ × d₃) ((d₁ × d₂) × d₃)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.SWAP_eq_MState_SWAP",
+     "kind": "lemma",
+     "line": 219,
+     "doc": "",
+     "statement": "lemma SWAP_eq_MState_SWAP (ρ : MState (d₁ × d₂)) : SWAP (d₁ := d₁) (d₂ := d₂) ρ = ρ.SWAP",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.assoc_eq_MState_assoc",
+     "kind": "lemma",
+     "line": 223,
+     "doc": "",
+     "statement": "lemma assoc_eq_MState_assoc (ρ : MState ((d₁ × d₂) × d₃)) : assoc (d₁ := d₁) (d₂ := d₂) (d₃ := d₃) ρ = ρ.assoc",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.assoc'_eq_MState_assoc'",
+     "kind": "lemma",
+     "line": 227,
+     "doc": "",
+     "statement": "lemma assoc'_eq_MState_assoc' (ρ : MState (d₁ × d₂ × d₃)) : assoc' (d₁ := d₁) (d₂ := d₂) (d₃ := d₃) ρ = ρ.assoc'",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.assoc_assoc'",
+     "kind": "lemma",
+     "line": 231,
+     "doc": "",
+     "statement": "lemma assoc_assoc' : (assoc (d₁ := d₁) (d₂ := d₂) (d₃ := d₃)) ∘ₘ assoc' = id",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.traceLeft",
+     "kind": "def",
+     "line": 242,
+     "doc": "Partial tracing out the left, as a CPTP map.",
+     "statement": "def traceLeft : CPTPMap (d₁ × d₂) d₂",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.traceRight",
+     "kind": "def",
+     "line": 275,
+     "doc": "Partial tracing out the right, as a CPTP map.",
+     "statement": "def traceRight : CPTPMap (d₁ × d₂) d₁",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.traceLeft_eq_MState_traceLeft",
+     "kind": "lemma",
+     "line": 279,
+     "doc": "",
+     "statement": "lemma traceLeft_eq_MState_traceLeft (ρ : MState (d₁ × d₂)) :\n    traceLeft (d₁ := d₁) (d₂ := d₂) ρ = ρ.traceLeft",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.traceRight_eq_MState_traceRight",
+     "kind": "lemma",
+     "line": 284,
+     "doc": "",
+     "statement": "lemma traceRight_eq_MState_traceRight (ρ : MState (d₁ × d₂)) :\n    traceRight (d₁ := d₁) (d₂ := d₂) ρ = ρ.traceRight",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.replacement",
+     "kind": "def",
+     "line": 291,
+     "doc": "The replacement channel that maps all inputs to a given state.",
+     "statement": "def replacement [Nonempty dIn] [DecidableEq dOut] (ρ : MState dOut) : CPTPMap dIn dOut",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.replacement_apply",
+     "kind": "theorem",
+     "line": 303,
+     "doc": "The output of `replacement ρ` is always that `ρ`.",
+     "statement": "theorem replacement_apply [Nonempty dIn] [DecidableEq dOut] (ρ : MState dOut) (ρ₀ : MState dIn) :\n    replacement ρ ρ₀ = ρ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 318,
+     "doc": "",
+     "statement": "instance [Nonempty dIn] [Nonempty dOut] [DecidableEq dOut] : Inhabited (CPTPMap dIn dOut)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 321,
+     "doc": "",
+     "statement": "instance [Nonempty dIn] [Nonempty dOut] : Nonempty (CPTPMap dIn dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.destroy",
+     "kind": "def",
+     "line": 327,
+     "doc": "There is a CPTP map that takes a system of any (nonzero) dimension and outputs the\ntrivial Hilbert space, 1-dimensional, indexed by any `Unique` type. We can think of this\nas \"destroying\" the whole system; tracing out everything.",
+     "statement": "def destroy [Nonempty dIn] [Unique dOut] : CPTPMap dIn dOut",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.eq_if_output_unique",
+     "kind": "theorem",
+     "line": 331,
+     "doc": "Two CPTP maps into the same one-dimensional output space must be equal",
+     "statement": "theorem eq_if_output_unique [Unique dOut] (Λ₁ Λ₂ : CPTPMap dIn dOut) : Λ₁ = Λ₂",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.instUnique",
+     "kind": "instance",
+     "line": 335,
+     "doc": "There is exactly one CPTPMap to a 1-dimensional space.",
+     "statement": "instance instUnique [Nonempty dIn] [Unique dOut] : Unique (CPTPMap dIn dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.destroy_comp",
+     "kind": "lemma",
+     "line": 340,
+     "doc": "",
+     "statement": "lemma destroy_comp {dOut₂ : Type*} [Unique dOut₂] [DecidableEq dOut] [Nonempty dIn] [Nonempty dOut]\n  (Λ : CPTPMap dIn dOut) :\n    destroy (dOut := dOut₂) ∘ₘ Λ = destroy",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.prod",
+     "kind": "def",
+     "line": 353,
+     "doc": "The tensor product of two CPTPMaps.",
+     "statement": "def prod (Λ₁ : CPTPMap dI₁ dO₁) (Λ₂ : CPTPMap dI₂ dO₂) : CPTPMap (dI₁ × dI₂) (dO₁ × dO₂)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.prod_apply_prod",
+     "kind": "theorem",
+     "line": 363,
+     "doc": "Tensor products commute with channel application:\n`(Λ₁ ⊗ᶜᵖ Λ₂) (ρ₁ ⊗ᴹ ρ₂) = Λ₁ ρ₁ ⊗ᴹ Λ₂ ρ₂`.",
+     "statement": "theorem prod_apply_prod (Λ₁ : CPTPMap dI₁ dO₁) (Λ₂ : CPTPMap dI₂ dO₂)\n    (ρ₁ : MState dI₁) (ρ₂ : MState dI₂) :\n    (Λ₁ ⊗ᶜᵖ Λ₂) (ρ₁ ⊗ᴹ ρ₂) = (Λ₁ ρ₁) ⊗ᴹ (Λ₂ ρ₂)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.piProd",
+     "kind": "def",
+     "line": 380,
+     "doc": "Finitely-indexed tensor products of CPTPMaps.",
+     "statement": "def piProd (Λi : (i:ι) → CPTPMap (dI i) (dO i)) : CPTPMap ((i:ι) → dI i) ((i:ι) → dO i)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.fin_1_piProd",
+     "kind": "lemma",
+     "line": 386,
+     "doc": "",
+     "statement": "lemma fin_1_piProd\n  {dI : Fin 1 → Type v} [Fintype (dI 0)] [DecidableEq (dI 0)]\n  {dO : Fin 1 → Type w} [Fintype (dO 0)] [DecidableEq (dO 0)]\n  (Λi : (i : Fin 1) → CPTPMap (dI 0) (dO 0)) :\n    piProd Λi =\n      ofEquiv (Equiv.funUnique (Fin 1) (dO 0)).symm ∘ₘ\n        ((Λi 1) ∘ₘ ofEquiv (Equiv.funUnique (Fin 1) (dI 0)))",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.piProd_comp",
+     "kind": "theorem",
+     "line": 412,
+     "doc": "The tensor product of composed maps is the composition of the tensor products.",
+     "statement": "theorem piProd_comp\n  {d₁ d₂ d₃ : ι → Type*}\n  [∀ i, Fintype (d₁ i)] [∀ i, DecidableEq (d₁ i)]\n  [∀ i, Fintype (d₂ i)] [∀ i, DecidableEq (d₂ i)]\n  [∀ i, Fintype (d₃ i)] [∀ i, DecidableEq (d₃ i)]\n  (Λ₁ : ∀ i, CPTPMap (d₁ i) (d₂ i)) (Λ₂ : ∀ i, CPTPMap (d₂ i) (d₃ i)) :\n  piProd (fun i => (Λ₂ i) ∘ₘ (Λ₁ i)) = (piProd Λ₂) ∘ₘ (piProd Λ₁)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.piProd_id",
+     "kind": "lemma",
+     "line": 424,
+     "doc": "",
+     "statement": "lemma piProd_id :\n    piProd (fun i ↦ (CPTPMap.id : CPTPMap (dI i) (dI i))) = CPTPMap.id",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.ofUnitary",
+     "kind": "def",
+     "line": 434,
+     "doc": "Conjugating density matrices by a unitary as a channel. This is standard unitary evolution.",
+     "statement": "def ofUnitary (U : 𝐔[dIn]) : CPTPMap dIn dIn",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.ofUnitary_eq_conj",
+     "kind": "theorem",
+     "line": 440,
+     "doc": "The unitary channel U conjugated by U.",
+     "statement": "theorem ofUnitary_eq_conj (U : 𝐔[dIn]) (ρ : MState dIn) :\n    (ofUnitary U) ρ = ρ.uConj U",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsUnitary",
+     "kind": "def",
+     "line": 445,
+     "doc": "A channel is unitary iff it is `ofUnitary U`.",
+     "statement": "def IsUnitary (Λ : CPTPMap dIn dIn) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsUnitary_iff_uConj",
+     "kind": "theorem",
+     "line": 449,
+     "doc": "A channel is unitary iff it can be written as conjugation by a unitary.",
+     "statement": "theorem IsUnitary_iff_uConj (Λ : CPTPMap dIn dIn) : IsUnitary Λ ↔ ∃ U, ∀ ρ, Λ ρ = ρ.uConj U",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsUnitary_equiv",
+     "kind": "lemma",
+     "line": 453,
+     "doc": "",
+     "statement": "lemma IsUnitary_equiv (σ : dIn ≃ dIn) : IsUnitary (ofEquiv σ)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.exists_purify",
+     "kind": "lemma",
+     "line": 710,
+     "doc": "",
+     "statement": "lemma exists_purify (Λ : CPTPMap dIn dOut) :\n    ∃ (Λ' : CPTPMap (dIn × dOut × dOut) (dIn × dOut × dOut)),\n      Λ'.IsUnitary ∧\n      Λ = (\n      let zero_prep : CPTPMap Unit (dOut × dOut) := replacement (MState.pure (Ket.basis default))\n      let prep := (id ⊗ᶜᵖ zero_prep)\n      let append : CPTPMap dIn (dIn × Unit) := CPTPMap.ofEquiv (Equiv.prodPUnit dIn).symm\n      CPTPMap.traceLeft ∘ₘ CPTPMap.traceLeft ∘ₘ Λ' ∘ₘ prep ∘ₘ append\n    )",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.purify",
+     "kind": "def",
+     "line": 750,
+     "doc": "Every channel can be written as a unitary channel on a larger system. In general, if\nthe original channel was A→B, we may need to go as big as dilating the output system (the\nenvironment) by a factor of A*B. One way of stating this would be that it forms an\nisometry from A to (B×A×B). So that we can instead talk about the cleaner unitaries, we\nsay that this is a unitary on (A×B×B). The defining properties that this is a valid\npurification comes are `purify_IsUnitary` and `purify_trace`. This means the environment\nalways has type `dIn × dOut`.\n\nFurthermore, since we need a canonical \"0\" state on B in order to add with the input,\nwe require a typeclass instance [Inhabited dOut].",
+     "statement": "def purify (Λ : CPTPMap dIn dOut) : CPTPMap (dIn × dOut × dOut) (dIn × dOut × dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.purify_IsUnitary",
+     "kind": "lemma",
+     "line": 753,
+     "doc": "",
+     "statement": "lemma purify_IsUnitary (Λ : CPTPMap dIn dOut) : Λ.purify.IsUnitary",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.purify_trace",
+     "kind": "theorem",
+     "line": 763,
+     "doc": "With a channel Λ : A → B, a valid purification (A×B×B)→(A×B×B) is such that:\n * Preparing the default ∣0⟩ state on two copies of B\n * Appending these to the input\n * Applying the purified unitary channel\n * Tracing out the two left parts of the output\nis equivalent to the original channel. This theorem states that the channel output by `purify`\nhas this property.",
+     "statement": "theorem purify_trace (Λ : CPTPMap dIn dOut) : Λ = (\n    let zero_prep : CPTPMap Unit (dOut × dOut) := replacement (MState.pure (Ket.basis default))\n    let prep := (id ⊗ᶜᵖ zero_prep)\n    let append : CPTPMap dIn (dIn × Unit) := CPTPMap.ofEquiv (Equiv.prodPUnit dIn).symm\n    CPTPMap.traceLeft ∘ₘ CPTPMap.traceLeft ∘ₘ Λ.purify ∘ₘ prep ∘ₘ append\n  )",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.prep_append_map_entry",
+     "kind": "theorem",
+     "line": 778,
+     "doc": "The Stinespring preparation `prep ∘ append` acts on a matrix entry by the Kronecker product\nwith the fixed pure state `|default⟩⟨default|` on `dOut × dOut`.",
+     "statement": "theorem prep_append_map_entry (X : Matrix dIn dIn ℂ)\n    (a₁ : dIn) (b₁c₁ : dOut × dOut) (a₂ : dIn) (b₂c₂ : dOut × dOut) :\n    let τ := MState.pure (Ket.basis (default : dOut × dOut))\n    let zero_prep : CPTPMap Unit (dOut × dOut) := replacement τ\n    let prep := (id ⊗ᶜᵖ zero_prep)\n    let append : CPTPMap dIn (dIn × Unit) := CPTPMap.ofEquiv (Equiv.prodPUnit dIn).symm\n    (prep ∘ₘ append).map X (a₁, b₁c₁) (a₂, b₂c₂) =\n    X a₁ a₂ * τ.m b₁c₁ b₂c₂",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.complementary",
+     "kind": "def",
+     "line": 789,
+     "doc": "The complementary channel comes from tracing out the other half (the right half) of the purified channel `purify`.",
+     "statement": "def complementary (Λ : CPTPMap dIn dOut) : CPTPMap dIn (dIn × dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsDegradableTo",
+     "kind": "def",
+     "line": 802,
+     "doc": "A channel is *degradable to* another, if the other can be written as a composition of\na _degrading_ channel D with the original channel.",
+     "statement": "def IsDegradableTo (Λ : CPTPMap dIn dOut) (Λ₂ : CPTPMap dIn dOut₂) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsAntidegradableTo",
+     "kind": "def",
+     "line": 807,
+     "doc": "A channel is *antidegradable to* another, if the other `IsDegradableTo` this one.",
+     "statement": "def IsAntidegradableTo (Λ : CPTPMap dIn dOut) (Λ₂ : CPTPMap dIn dOut₂) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsDegradable",
+     "kind": "def",
+     "line": 811,
+     "doc": "A channel is *degradable* if it `IsDegradableTo` its complementary channel.",
+     "statement": "def IsDegradable (Λ : CPTPMap dIn dOut) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.IsAntidegradable",
+     "kind": "def",
+     "line": 816,
+     "doc": "A channel is *antidegradable* if it `IsAntidegradableTo` its complementary channel.",
+     "statement": "def IsAntidegradable (Λ : CPTPMap dIn dOut) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.instTop",
+     "kind": "instance",
+     "line": 823,
+     "doc": "`CPTPMap`s inherit a topology from their choi matrices.",
+     "statement": "instance instTop : TopologicalSpace (CPTPMap dIn dOut)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.choi_IsEmbedding",
+     "kind": "theorem",
+     "line": 827,
+     "doc": "The projection from `CPTPMap` to the Choi matrix is an embedding",
+     "statement": "theorem choi_IsEmbedding : Topology.IsEmbedding (CPTPMap.choi (dIn := dIn) (dOut := dOut))",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.instT3Space",
+     "kind": "instance",
+     "line": 831,
+     "doc": "",
+     "statement": "instance instT3Space : T3Space (CPTPMap dIn dOut)",
+     "sorry": false
+    }
+   ],
+   "private": 9
+  },
+  {
+   "file": "QuantumInfo/Channels/DegradableOrder.lean",
+   "module": "QuantumInfo.Channels.DegradableOrder",
+   "title": "The Degradable Order",
+   "doc": "We define the \"degradable order\" on channels, where M ≤ N if N can be degraded to M. This is a\nscoped instance, because there are other reasonable orders on channels.\n\nThe degradable order is actually only a preorder, because channels that are degradable to each other\nare not necessarily equal. (For instance, unitary channels are degradable to the identity and vice\nversa.) It can compare channels of different output dimensions, but they must have the same input\ndimension. For this reason the `DegradablePreorder` is parameterized by the channel input type.\n\nOne might hope that if this was defined on the quotient type of \"channels up to unitary equivalence\"\nthat it would become an order; but this is not the case. That is, there are channels `A → B` that\nare degradable to each other, but cannot be degraded to each other by unitary operations. For\ninstance, let A be the replacement channel that goes to a mixed state, and B be a replacement\nchannel that goes to a pure state.\n\nTechnical notes: to model \"channels of different output types\", the preorder is on the Sigma type of\nchannels parameterized by their output type. And since the output type needs to be a Fintype and\nDecidableEq, the argument is also a Sigma to bring this along.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "DegradablePreorder",
+     "kind": "def",
+     "line": 37,
+     "doc": "",
+     "statement": "def DegradablePreorder (dIn : Type*) [Fintype dIn] [DecidableEq dIn] : Preorder\n    (Σ dOut : (Σ t, Fintype t × DecidableEq t), let _ := dOut.snd.1; CPTPMap dIn dOut.fst)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/Channels/Dual.lean",
+   "module": "QuantumInfo.Channels.Dual",
+   "title": "Duals of matrix map",
+   "doc": "Definitions and theorems about the dual of a matrix map.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MatrixMap.dual",
+     "kind": "def",
+     "line": 34,
+     "doc": "The dual of a map between matrices, defined by `Tr[A M(B)] = Tr[(dual M)(A) B]`. Sometimes\ncalled the adjoint of the map instead.",
+     "statement": "def dual (M : MatrixMap dIn dOut R) : MatrixMap dOut dIn R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.Dual.trace_eq",
+     "kind": "theorem",
+     "line": 43,
+     "doc": "The defining property of a dual map: inner products are preserved on the opposite argument.",
+     "statement": "theorem Dual.trace_eq (M : MatrixMap dIn dOut R) (A : Matrix dIn dIn R) (B : Matrix dOut dOut R) :\n    (M A * B).trace = (A * M.dual B).trace",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsHermitianPreserving.dual",
+     "kind": "theorem",
+     "line": 71,
+     "doc": "The dual of a `IsHermitianPreserving` map also `IsHermitianPreserving`.",
+     "statement": "theorem IsHermitianPreserving.dual {M : MatrixMap dIn dOut ℂ} (h : M.IsHermitianPreserving) :\n    M.dual.IsHermitianPreserving",
+     "sorry": false
+    },
+    {
+     "name": "Matrix.PosSemidef.trace_mul_nonneg",
+     "kind": "lemma",
+     "line": 116,
+     "doc": "",
+     "statement": "lemma _root_.Matrix.PosSemidef.trace_mul_nonneg {n : Type*} [Fintype n] [DecidableEq n]\n    {A B : Matrix n n 𝕜} (hA : A.PosSemidef) (hB : B.PosSemidef) :\n    0 ≤ (A * B).trace",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive.dual",
+     "kind": "theorem",
+     "line": 133,
+     "doc": "The dual of a `IsPositive` map also `IsPositive`.",
+     "statement": "theorem IsPositive.dual {M : MatrixMap dIn dOut ℂ} (h : M.IsPositive) : M.dual.IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.dual_Unital",
+     "kind": "theorem",
+     "line": 152,
+     "doc": "The dual of TracePreserving map is *not* trace-preserving, it's *unital*, that is, M*(I) = I.",
+     "statement": "theorem dual_Unital (h : M.IsTracePreserving) : M.dual.Unital",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.dual",
+     "kind": "alias",
+     "line": 163,
+     "doc": "",
+     "statement": "alias IsTracePreserving.dual",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.dual_unique",
+     "kind": "lemma",
+     "line": 168,
+     "doc": "If two matrix maps satisfy the trace duality property, they are equal.",
+     "statement": "lemma dual_unique\n    (M : MatrixMap dIn dOut 𝕜) (M' : MatrixMap dOut dIn 𝕜)\n    (h : ∀ A B, (M A * B).trace = (A * M' B).trace) : M.dual = M'",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.dual_choi_matrix",
+     "kind": "lemma",
+     "line": 184,
+     "doc": "The Choi matrix of the dual map is the transpose of the reindexed Choi matrix of the original map.",
+     "statement": "lemma dual_choi_matrix (M : MatrixMap dIn dOut 𝕜) :\n    M.dual.choi_matrix = (M.choi_matrix.transpose).reindex (Equiv.prodComm dOut dIn) (Equiv.prodComm dOut dIn)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.dual_choi_matrix_posSemidef_of_posSemidef",
+     "kind": "lemma",
+     "line": 207,
+     "doc": "If the Choi matrix of a map is positive semidefinite, then the Choi matrix of its dual is also\npositive semidefinite.",
+     "statement": "lemma dual_choi_matrix_posSemidef_of_posSemidef (M : MatrixMap dIn dOut 𝕜) (h : M.choi_matrix.PosSemidef) :\n    M.dual.choi_matrix.PosSemidef",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.dual_id",
+     "kind": "lemma",
+     "line": 217,
+     "doc": "The dual of the identity map is the identity map.",
+     "statement": "lemma dual_id : (MatrixMap.id dIn 𝕜).dual = MatrixMap.id dIn 𝕜",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.dual_kron",
+     "kind": "lemma",
+     "line": 243,
+     "doc": "The dual of a Kronecker product of maps is the Kronecker product of their duals.",
+     "statement": "lemma dual_kron {A B C D : Type*} [Fintype A] [Fintype B] [Fintype C] [Fintype D]\n    [DecidableEq A] [DecidableEq B] [DecidableEq C] [DecidableEq D]\n    (M : MatrixMap A B 𝕜) (N : MatrixMap C D 𝕜) :\n    (M ⊗ₖₘ N).dual = M.dual ⊗ₖₘ N.dual",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.dual",
+     "kind": "lemma",
+     "line": 268,
+     "doc": "",
+     "statement": "lemma IsCompletelyPositive.dual {M : MatrixMap dIn dOut ℂ} (h : M.IsCompletelyPositive) : M.dual.IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.Module.Basis.dualMap_toDualEquiv_symm_comp_toDualEquiv",
+     "kind": "lemma",
+     "line": 282,
+     "doc": "The composition of the dual of the inverse of the dual basis isomorphism with the dual basis\nisomorphism is the evaluation map.",
+     "statement": "lemma Module.Basis.dualMap_toDualEquiv_symm_comp_toDualEquiv {ι R M : Type*} [Fintype ι] [DecidableEq ι] [CommRing R] [AddCommGroup M] [Module R M] [Module.IsReflexive R M] (b : Module.Basis ι R M) :\n    b.toDualEquiv.symm.toLinearMap.dualMap ∘ₗ b.toDualEquiv.toLinearMap = (Module.evalEquiv R M).toLinearMap",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.Module.Basis.toDualEquiv_symm_comp_dualMap_toDualEquiv",
+     "kind": "lemma",
+     "line": 297,
+     "doc": "The composition of the inverse of the dual basis isomorphism with the dual of the dual basis\nisomorphism is the inverse of the evaluation map.",
+     "statement": "lemma Module.Basis.toDualEquiv_symm_comp_dualMap_toDualEquiv {ι R M : Type*} [Fintype ι] [DecidableEq ι] [CommRing R] [AddCommGroup M] [Module R M] [Module.IsReflexive R M] (b : Module.Basis ι R M) :\n    b.toDualEquiv.symm.toLinearMap ∘ₗ b.toDualEquiv.toLinearMap.dualMap = (Module.evalEquiv R M).symm.toLinearMap",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.dual_dual",
+     "kind": "lemma",
+     "line": 310,
+     "doc": "",
+     "statement": "lemma dual_dual : M.dual.dual = M",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.dual",
+     "kind": "def",
+     "line": 324,
+     "doc": "",
+     "statement": "def dual (M : CPTPMap dIn dOut) : CPUMap dOut dIn",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.dual_pos",
+     "kind": "lemma",
+     "line": 329,
+     "doc": "",
+     "statement": "lemma dual_pos (M : CPTPMap dIn dOut) {T : HermitianMat dOut ℂ} (hT : 0 ≤ T) :\n    0 ≤ M.dual T",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.dual.PTP_POVM",
+     "kind": "theorem",
+     "line": 335,
+     "doc": "The dual of a CPTP map preserves POVMs. Stated here just for two-element POVMs, that is, an\noperator `T` between 0 and 1.",
+     "statement": "theorem dual.PTP_POVM (M : CPTPMap dIn dOut) {T : HermitianMat dOut ℂ} (hT : 0 ≤ T ∧ T ≤ 1) :\n    (0 ≤ M.dual T ∧ M.dual T ≤ 1)",
+     "sorry": false
+    },
+    {
+     "name": "CPTPMap.exp_val_Dual",
+     "kind": "theorem",
+     "line": 343,
+     "doc": "The defining property of a dual channel, as specialized to `MState.exp_val`.",
+     "statement": "theorem exp_val_Dual (ℰ : CPTPMap dIn dOut) (ρ : MState dIn) (T : HermitianMat dOut ℂ) :\n    (ℰ ρ).exp_val T  = ρ.exp_val (ℰ.dual T)",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.ofHermitianMat",
+     "kind": "def",
+     "line": 355,
+     "doc": "",
+     "statement": "def HPMap.ofHermitianMat {dOut : Type*} (f : HermitianMat dIn ℂ →ₗ[ℝ] HermitianMat dOut ℂ) : HPMap dIn dOut",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.linearMap_ofHermitianMat",
+     "kind": "lemma",
+     "line": 393,
+     "doc": "",
+     "statement": "lemma HPMap.linearMap_ofHermitianMat (f : HermitianMat dIn ℂ →ₗ[ℝ] HermitianMat dOut ℂ) :\n    LinearMap.ofClass (HPMap.ofHermitianMat f) = f",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.ofHermitianMat_linearMap",
+     "kind": "lemma",
+     "line": 407,
+     "doc": "",
+     "statement": "lemma HPMap.ofHermitianMat_linearMap (f : HPMap dIn dOut ℂ) :\n    ofHermitianMat (LinearMap.ofClass f) = f",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.hermDual",
+     "kind": "def",
+     "line": 425,
+     "doc": "",
+     "statement": "def HPMap.hermDual : HPMap dOut dIn",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.hermDual_hermDual",
+     "kind": "lemma",
+     "line": 429,
+     "doc": "",
+     "statement": "lemma HPMap.hermDual_hermDual : f.hermDual.hermDual = f",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.inner_hermDual",
+     "kind": "theorem",
+     "line": 435,
+     "doc": "The defining property of a dual map: inner products are preserved on the opposite argument.",
+     "statement": "theorem HPMap.inner_hermDual (B : HermitianMat dOut ℂ) :\n    ⟪f A, B⟫ = ⟪A, f.hermDual B⟫",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.inner_hermDual'",
+     "kind": "theorem",
+     "line": 441,
+     "doc": "Version of `HPMap.inner_hermDual` that uses HermitiaMat.inner directly. TODO cleanup",
+     "statement": "theorem HPMap.inner_hermDual' (B : HermitianMat dOut ℂ) :\n    ⟪f A, B⟫ = ⟪A, f.hermDual B⟫",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive.hermDual",
+     "kind": "theorem",
+     "line": 446,
+     "doc": "The dual of a `IsPositive` map also `IsPositive`.",
+     "statement": "theorem MatrixMap.IsPositive.hermDual (h : MatrixMap.IsPositive f.map) : f.hermDual.map.IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "HPMap.hermDual_Unital",
+     "kind": "theorem",
+     "line": 464,
+     "doc": "The dual of TracePreserving map is *not* trace-preserving, it's *unital*, that is, M*(I) = I.",
+     "statement": "theorem HPMap.hermDual_Unital [DecidableEq dIn] [DecidableEq dOut] (h : MatrixMap.IsTracePreserving f.map) :\n    f.hermDual.map.Unital",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.hermDual",
+     "kind": "alias",
+     "line": 476,
+     "doc": "",
+     "statement": "alias MatrixMap.IsTracePreserving.hermDual",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.hermDual",
+     "kind": "def",
+     "line": 482,
+     "doc": "",
+     "statement": "def hermDual (M : PTPMap dIn dOut) : PUMap dOut dIn",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.hermDual_pos",
+     "kind": "lemma",
+     "line": 487,
+     "doc": "",
+     "statement": "lemma hermDual_pos (M : PTPMap dIn dOut) {T : HermitianMat dOut ℂ} (hT : 0 ≤ T) :\n    0 ≤ M.hermDual T",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.hermDual.PTP_POVM",
+     "kind": "theorem",
+     "line": 493,
+     "doc": "The dual of a PTP map preserves POVMs. Stated here just for two-element POVMs, that is, an\noperator `T` between 0 and 1.",
+     "statement": "theorem hermDual.PTP_POVM (M : PTPMap dIn dOut) {T : HermitianMat dOut ℂ} (hT : 0 ≤ T ∧ T ≤ 1) :\n    (0 ≤ M.hermDual T ∧ M.hermDual T ≤ 1)",
+     "sorry": false
+    },
+    {
+     "name": "PTPMap.exp_val_hermDual",
+     "kind": "theorem",
+     "line": 501,
+     "doc": "The defining property of a dual channel, as specialized to `MState.exp_val`.",
+     "statement": "theorem exp_val_hermDual (ℰ : PTPMap dIn dOut) (ρ : MState dIn) (T : HermitianMat dOut ℂ) :\n    (ℰ ρ).exp_val T  = ρ.exp_val (ℰ.hermDual T)",
+     "sorry": false
+    }
+   ],
+   "private": 1
+  },
+  {
+   "file": "QuantumInfo/Channels/MatrixMap.lean",
+   "module": "QuantumInfo.Channels.MatrixMap",
+   "title": "Linear maps of matrices",
+   "doc": "This file works with `MatrixMap`s, that is, linear maps from square matrices to square matrices.\nAlthough this is just a shorthand for `Matrix A A R →ₗ[R] Matrix B B R`, there are several\nconcepts that specifically make sense in this context.\n\n * `toMatrix` is the rectangular \"transfer matrix\", where matrix multiplication commutes with map\n   composition.\n * `choi_matrix` is the square \"Choi matrix\", see `MatrixMap.choi_PSD_iff_CP_map` for example usage\n * `kron` is the Kronecker product of matrix maps\n * `IsTracePreserving` states the trace of the output is always equal to the trace of the input.\n\nWe provide simp lemmas for relating these facts, prove basic facts e.g. composition and identity,\nand some facts about `IsTracePreserving` maps.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MatrixMap",
+     "kind": "abbrev",
+     "line": 30,
+     "doc": "A `MatrixMap` is a linear map between squares matrices of size A to size B, over R.",
+     "statement": "abbrev MatrixMap (A B R : Type*) [Semiring R]",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.id",
+     "kind": "def",
+     "line": 42,
+     "doc": "Alias of LinearMap.id, but specifically as a MatrixMap.",
+     "statement": "def id : MatrixMap A A R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_matrix",
+     "kind": "def",
+     "line": 47,
+     "doc": "Choi matrix of a given linear matrix map. Note that this is defined even for things that\naren't CPTP, it's just rarely talked about in those contexts. This is the inverse of\n`MatrixMap.of_choi_matrix`. Compare with `MatrixMap.toMatrix`, which gives the transfer matrix.",
+     "statement": "def choi_matrix (M : MatrixMap A B R) : Matrix (B × A) (B × A) R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.of_choi_matrix",
+     "kind": "def",
+     "line": 53,
+     "doc": "Given the Choi matrix, generate the corresponding R-linear map between matrices as a\nMatrixMap. This is the inverse of `MatrixMap.choi_matrix`.",
+     "statement": "def of_choi_matrix (M : Matrix (B × A) (B × A) R) : MatrixMap A B R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.map_choi_inv",
+     "kind": "theorem",
+     "line": 63,
+     "doc": "Proves that `MatrixMap.of_choi_matrix` and `MatrixMap.choi_matrix` inverses.",
+     "statement": "theorem map_choi_inv (M : Matrix (B × A) (B × A) R) : choi_matrix (of_choi_matrix M) = M",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_map_inv",
+     "kind": "theorem",
+     "line": 70,
+     "doc": "Proves that `MatrixMap.choi_matrix` and `MatrixMap.of_choi_matrix` inverses.",
+     "statement": "theorem choi_map_inv (M : MatrixMap A B R) : of_choi_matrix (choi_matrix M) = M",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_matrix_inj",
+     "kind": "theorem",
+     "line": 86,
+     "doc": "The correspondence induced by `MatrixMap.of_choi_matrix` is injective.",
+     "statement": "theorem choi_matrix_inj : Function.Injective (@choi_matrix A B R _ _)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_equiv",
+     "kind": "def",
+     "line": 95,
+     "doc": "The linear equivalence between linear maps of matrices,and Choi matrices.",
+     "statement": "def choi_equiv : MatrixMap A B R ≃ₗ[R] Matrix (B × A) (B × A) R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.toMatrix",
+     "kind": "def",
+     "line": 105,
+     "doc": "The linear equivalence between MatrixMap's and transfer matrices on a larger space.\nCompare with `MatrixMap.choi_matrix`, which gives the Choi matrix instead of the transfer matrix.",
+     "statement": "noncomputable def toMatrix [Fintype B] : MatrixMap A B R ≃ₗ[R] Matrix (B × B) (A × A) R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.toMatrix_comp",
+     "kind": "theorem",
+     "line": 109,
+     "doc": "Multiplication of transfer matrices, `MatrixMap.toMatrix`, is equivalent to composition of maps.",
+     "statement": "theorem toMatrix_comp [Fintype B] [Fintype C] [DecidableEq B] (M₁ : MatrixMap A B R) (M₂ : MatrixMap B C R) : toMatrix (M₂ ∘ₗ M₁) = (toMatrix M₂) * (toMatrix M₁)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.of_kraus",
+     "kind": "def",
+     "line": 121,
+     "doc": "Construct a matrix map out of families of matrices M N : Σ → Matrix B A R\nindexed by κ via X ↦ ∑ k : κ, (M k) * X * (N k)ᴴ",
+     "statement": "def of_kraus (M N : κ → Matrix B A R) : MatrixMap A B R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.exists_kraus",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "",
+     "statement": "lemma exists_kraus (Φ : MatrixMap A B R) :\n    ∃ r : ℕ, ∃ (M N : Fin r → Matrix B A R), Φ = of_kraus M N",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.submatrix",
+     "kind": "def",
+     "line": 175,
+     "doc": "The `MatrixMap` corresponding to applying a `submatrix` operation on each side.",
+     "statement": "def submatrix (f : B → A) : MatrixMap A B R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.submatrix_id",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "",
+     "statement": "lemma submatrix_id : submatrix R _root_.id = id A R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.submatrix_comp",
+     "kind": "lemma",
+     "line": 185,
+     "doc": "",
+     "statement": "lemma submatrix_comp (f : C → B) (g : B → A) :\n    submatrix R f ∘ₗ submatrix R g = submatrix R (g ∘ f)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron",
+     "kind": "def",
+     "line": 199,
+     "doc": "The Kronecker product of MatrixMaps. Defined here using `TensorProduct.map M₁ M₂`, with\nappropriate reindexing operations and `LinearMap.toMatrix`/`Matrix.toLin`. Notation `⊗ₖₘ`.",
+     "statement": "noncomputable def kron [CommSemiring R] (M₁ : MatrixMap A B R) (M₂ : MatrixMap C D R) : MatrixMap (A × C) (B × D) R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_def",
+     "kind": "theorem",
+     "line": 214,
+     "doc": "The extensional definition of the Kronecker product `MatrixMap.kron`, in terms of the entries of\nits image.",
+     "statement": "theorem kron_def [CommSemiring R] (M₁ : MatrixMap A B R) (M₂ : MatrixMap C D R) (M : Matrix (A × C) (A × C) R) :\n    (M₁ ⊗ₖₘ M₂) M (b₁, d₁) (b₂, d₂) = ∑ a₁, ∑ a₂, ∑ c₁, ∑ c₂,\n      (M₁ (Matrix.single a₁ a₂ 1) b₁ b₂) * (M₂ (Matrix.single c₁ c₂ 1) d₁ d₂) * (M (a₁, c₁) (a₂, c₂))",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.add_kron",
+     "kind": "lemma",
+     "line": 275,
+     "doc": "",
+     "statement": "lemma add_kron (ML₁ ML₂ : MatrixMap A B R) (MR : MatrixMap C D R) : (ML₁ + ML₂) ⊗ₖₘ MR = ML₁ ⊗ₖₘ MR + ML₂ ⊗ₖₘ MR",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_add",
+     "kind": "lemma",
+     "line": 278,
+     "doc": "",
+     "statement": "lemma kron_add (ML : MatrixMap A B R) (MR₁ MR₂ : MatrixMap C D R) : ML ⊗ₖₘ (MR₁ + MR₂) = ML ⊗ₖₘ MR₁ + ML ⊗ₖₘ  MR₂",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.smul_kron",
+     "kind": "lemma",
+     "line": 281,
+     "doc": "",
+     "statement": "lemma smul_kron (r : R) (ML : MatrixMap A B R) (MR : MatrixMap C D R) : (r • ML) ⊗ₖₘ MR = r • (ML ⊗ₖₘ MR)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_smul",
+     "kind": "lemma",
+     "line": 284,
+     "doc": "",
+     "statement": "lemma kron_smul (r : R) (ML : MatrixMap A B R) (MR : MatrixMap C D R) : ML ⊗ₖₘ (r • MR) = r • (ML ⊗ₖₘ MR)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.zero_kron",
+     "kind": "lemma",
+     "line": 288,
+     "doc": "",
+     "statement": "lemma zero_kron (MR : MatrixMap C D R) : (0 : MatrixMap A B R) ⊗ₖₘ MR = 0",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_zero",
+     "kind": "lemma",
+     "line": 292,
+     "doc": "",
+     "statement": "lemma kron_zero (ML : MatrixMap A B R) : ML ⊗ₖₘ (0 : MatrixMap C D R) = 0",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_id_id",
+     "kind": "lemma",
+     "line": 296,
+     "doc": "",
+     "statement": "lemma kron_id_id : (id A R ⊗ₖₘ id B R) = id (A × B) R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_comp_distrib",
+     "kind": "theorem",
+     "line": 303,
+     "doc": "For maps L₁, L₂, R₁, and R₂, the product (L₂ ∘ₗ L₁) ⊗ₖₘ (R₂ ∘ₗ R₁) = (L₂ ⊗ₖₘ R₂) ∘ₗ (L₁ ⊗ₖₘ R₁)",
+     "statement": "theorem kron_comp_distrib (L₁ : MatrixMap Dl₁ Dl₂ R) (L₂ : MatrixMap Dl₂ Dl₃ R) (R₁ : MatrixMap Dr₁ Dr₂ R)\n    (R₂ : MatrixMap Dr₂ Dr₃ R) : (L₂ ∘ₗ L₁) ⊗ₖₘ (R₂ ∘ₗ R₁) = (L₂ ⊗ₖₘ R₂) ∘ₗ (L₁ ⊗ₖₘ R₁)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_map_of_kron_state",
+     "kind": "theorem",
+     "line": 318,
+     "doc": "The operational definition of the Kronecker product `MatrixMap.kron`, that it maps a Kronecker\nproduct of inputs to the Kronecker product of outputs. It is the unique bilinear map doing so.",
+     "statement": "theorem kron_map_of_kron_state [CommRing R] (M₁ : MatrixMap A B R) (M₂ : MatrixMap C D R) (MA : Matrix A A R) (MC : Matrix C C R) : (M₁ ⊗ₖₘ M₂) (MA ⊗ₖ MC) = (M₁ MA) ⊗ₖ (M₂ MC)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_matrix_state_rep",
+     "kind": "lemma",
+     "line": 351,
+     "doc": "",
+     "statement": "lemma choi_matrix_state_rep {B : Type*} [Fintype B] [Nonempty A] (M : MatrixMap A B ℂ) :\n    M.choi_matrix = (↑(Fintype.card (α := A)) : ℂ) • (M ⊗ₖₘ (LinearMap.id : MatrixMap A A ℂ)) (MState.pure (Ket.MES A)).m",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.submatrix_kron_submatrix",
+     "kind": "lemma",
+     "line": 377,
+     "doc": "",
+     "statement": "lemma submatrix_kron_submatrix [CommSemiring R] (f : B → A) (g : D → C) :\n    submatrix R f ⊗ₖₘ submatrix R g = submatrix R (Prod.map f g)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.submatrix_kron_id",
+     "kind": "lemma",
+     "line": 383,
+     "doc": "",
+     "statement": "lemma submatrix_kron_id [CommSemiring R] (f : B → A) :\n    submatrix R f ⊗ₖₘ id C R = submatrix R (Prod.map f _root_.id)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.id_kron_submatrix",
+     "kind": "lemma",
+     "line": 387,
+     "doc": "",
+     "statement": "lemma id_kron_submatrix [CommSemiring R] (f : B → A) :\n    id C R ⊗ₖₘ submatrix R f = submatrix R (Prod.map _root_.id f)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.piProd",
+     "kind": "def",
+     "line": 401,
+     "doc": "Finite Pi-type tensor product of MatrixMaps. Defined as `PiTensorProduct.tprod` of the\nunderlying Linear maps. Notation `⨂ₜₘ[R] i, f i`, eventually.",
+     "statement": "noncomputable def piProd (Λi : ∀ i, MatrixMap (dI i) (dO i) R) : MatrixMap (∀i, dI i) (∀i, dO i) R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_matrix_piProd",
+     "kind": "lemma",
+     "line": 412,
+     "doc": "",
+     "statement": "lemma choi_matrix_piProd (Λi : ∀ i, MatrixMap (dI i) (dO i) R) :\n    (MatrixMap.piProd Λi).choi_matrix =\n      Matrix.reindex\n        (Equiv.arrowProdEquivProdArrow ι dO dI)\n        (Equiv.arrowProdEquivProdArrow ι dO dI)\n        (Matrix.piProd (fun i => (Λi i).choi_matrix))",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.piProd_comp",
+     "kind": "theorem",
+     "line": 437,
+     "doc": "Composition of `MatrixMap.piProd` maps distributes over the tensor product.",
+     "statement": "theorem piProd_comp\n  {d₁ d₂ d₃ : ι → Type*}\n  [∀ i, Fintype (d₁ i)] [∀ i, DecidableEq (d₁ i)]\n  [∀ i, Fintype (d₂ i)] [∀ i, DecidableEq (d₂ i)]\n  [∀ i, Fintype (d₃ i)] [∀ i, DecidableEq (d₃ i)]\n  (Λ₁ : ∀ i, MatrixMap (d₁ i) (d₂ i) R) (Λ₂ : ∀ i, MatrixMap (d₂ i) (d₃ i) R) :\n    piProd (fun i ↦ (Λ₂ i) ∘ₗ (Λ₁ i)) = (piProd Λ₂) ∘ₗ (piProd Λ₁)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.piProd_id",
+     "kind": "lemma",
+     "line": 447,
+     "doc": "",
+     "statement": "lemma piProd_id :\n    piProd (fun i ↦ (LinearMap.id : MatrixMap (dI i) (dI i) R)) = LinearMap.id",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/Channels/Pinching.lean",
+   "module": "QuantumInfo.Channels.Pinching",
+   "title": "Pinching channels",
+   "doc": "A pinching channel decoheres in the eigenspaces of a given state.\nMore precisely, given a state ρ, the pinching channel with respect to ρ is defined as\n  E(σ) = ∑ Pᵢ σ Pᵢ\nwhere the P_i are the projectors onto the i-th eigenspaces of ρ = ∑ᵢ pᵢ Pᵢ, with i ≠ j → pᵢ ≠ pⱼ.\n\nTODO: Generalize to pinching with respect to arbitrary P(O)VM.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "pinching_kraus",
+     "kind": "def",
+     "line": 26,
+     "doc": "",
+     "statement": "def pinching_kraus (ρ : MState d) : spectrum ℝ ρ.m → HermitianMat d ℂ",
+     "sorry": false
+    },
+    {
+     "name": "pinching_kraus_commutes",
+     "kind": "lemma",
+     "line": 29,
+     "doc": "",
+     "statement": "lemma pinching_kraus_commutes (ρ : MState d) (i : spectrum ℝ ρ.m) :\n    Commute (pinching_kraus ρ i).mat ρ.m",
+     "sorry": false
+    },
+    {
+     "name": "pinching_kraus_mul_self",
+     "kind": "lemma",
+     "line": 35,
+     "doc": "",
+     "statement": "lemma pinching_kraus_mul_self (ρ : MState d) (i : spectrum ℝ ρ.m) :\n    (pinching_kraus ρ i).mat * ρ.m = i.val • pinching_kraus ρ i",
+     "sorry": false
+    },
+    {
+     "name": "finite_spectrum_inst",
+     "kind": "instance",
+     "line": 45,
+     "doc": "",
+     "statement": "instance finite_spectrum_inst (ρ : MState d) : Fintype (spectrum ℝ ρ.m)",
+     "sorry": false
+    },
+    {
+     "name": "pinching_kraus_orthogonal",
+     "kind": "lemma",
+     "line": 48,
+     "doc": "",
+     "statement": "lemma pinching_kraus_orthogonal (ρ : MState d) {i j : spectrum ℝ ρ.m} (h : i ≠ j) :\n    (pinching_kraus ρ i).mat * (pinching_kraus ρ j).mat = 0",
+     "sorry": false
+    },
+    {
+     "name": "pinching_sq_eq_self",
+     "kind": "theorem",
+     "line": 57,
+     "doc": "The Kraus operators of the pinching channelare projectors: they square to themselves.",
+     "statement": "theorem pinching_sq_eq_self (ρ : MState d) (k) : (pinching_kraus ρ k) ^ 2  = pinching_kraus ρ k",
+     "sorry": false
+    },
+    {
+     "name": "pinching_kraus_ortho",
+     "kind": "theorem",
+     "line": 65,
+     "doc": "The Kraus operators of the pinching channel are orthogonal projectors.",
+     "statement": "theorem pinching_kraus_ortho (ρ : MState d) (i j : spectrum ℝ ρ.m) :\n    (pinching_kraus ρ i).mat * (pinching_kraus ρ j).mat = if i = j then (pinching_kraus ρ i).mat else 0",
+     "sorry": false
+    },
+    {
+     "name": "pinching_sum",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "",
+     "statement": "lemma pinching_sum (ρ : MState d) : ∑ k, pinching_kraus ρ k = 1",
+     "sorry": false
+    },
+    {
+     "name": "pinching_map",
+     "kind": "def",
+     "line": 84,
+     "doc": "",
+     "statement": "def pinching_map (ρ : MState d) : CPTPMap d d ℂ",
+     "sorry": false
+    },
+    {
+     "name": "pinchingMap_apply_M",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma pinchingMap_apply_M (σ ρ : MState d) : (pinching_map σ ρ).M =\n  ⟨_, (MatrixMap.of_kraus_isCompletelyPositive\n    (HermitianMat.mat ∘ pinching_kraus σ)).IsPositive.IsHermitianPreserving ρ.M.H⟩",
+     "sorry": false
+    },
+    {
+     "name": "pinching_eq_sum_conj",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "",
+     "statement": "lemma pinching_eq_sum_conj (σ ρ : MState d) : (pinching_map σ ρ).M =\n    ∑ k, (pinching_kraus σ k).mat * ρ.M * (pinching_kraus σ k).mat",
+     "sorry": false
+    },
+    {
+     "name": "pinching_commutes_kraus",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "",
+     "statement": "lemma pinching_commutes_kraus (σ ρ : MState d) (i : spectrum ℝ σ.m) :\n    Commute (pinching_map σ ρ).m (pinching_kraus σ i).mat",
+     "sorry": false
+    },
+    {
+     "name": "pinching_commutes",
+     "kind": "lemma",
+     "line": 116,
+     "doc": "",
+     "statement": "lemma pinching_commutes (ρ σ : MState d) :\n    Commute (pinching_map σ ρ).m σ.m",
+     "sorry": false
+    },
+    {
+     "name": "pinching_self",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "",
+     "statement": "lemma pinching_self (ρ : MState d) : pinching_map ρ ρ = ρ",
+     "sorry": false
+    },
+    {
+     "name": "pinching_bound",
+     "kind": "theorem",
+     "line": 153,
+     "doc": "Lemma 3.10 of Hayashi's book \"Quantum Information Theory - Mathematical Foundations\".\nAlso, Lemma 5 in https://arxiv.org/pdf/quant-ph/0107004.\n-- Used in (S60)",
+     "statement": "theorem pinching_bound (ρ σ : MState d) : ρ.M ≤ (↑(Fintype.card (spectrum ℝ σ.m)) : ℝ) • (pinching_map σ ρ).M",
+     "sorry": false
+    },
+    {
+     "name": "ker_le_ker_pinching_of_PosDef",
+     "kind": "lemma",
+     "line": 228,
+     "doc": "",
+     "statement": "lemma ker_le_ker_pinching_of_PosDef (ρ σ : MState d) (hpos : σ.m.PosDef) : σ.M.ker ≤ (pinching_map σ ρ).M.ker",
+     "sorry": false
+    },
+    {
+     "name": "pinching_idempotent",
+     "kind": "lemma",
+     "line": 237,
+     "doc": "",
+     "statement": "lemma pinching_idempotent (ρ σ : MState d) :\n    (pinching_map σ) (pinching_map σ ρ) = (pinching_map σ ρ)",
+     "sorry": false
+    },
+    {
+     "name": "inner_cfc_pinching",
+     "kind": "lemma",
+     "line": 247,
+     "doc": "",
+     "statement": "lemma inner_cfc_pinching (ρ σ : MState d) (f : ℝ → ℝ) :\n    ⟪ρ.M, (pinching_map σ ρ).M.cfc f⟫ = ⟪(pinching_map σ ρ).M, (pinching_map σ ρ).M.cfc f⟫",
+     "sorry": false
+    },
+    {
+     "name": "inner_cfc_pinching_right",
+     "kind": "lemma",
+     "line": 273,
+     "doc": "",
+     "statement": "lemma inner_cfc_pinching_right (ρ σ : MState d) (f : ℝ → ℝ) :\n    ⟪(pinching_map σ ρ).M, σ.M.cfc f⟫ = ⟪ρ.M, σ.M.cfc f⟫",
+     "sorry": false
+    },
+    {
+     "name": "pinching_map_eq_sum_conj_hermitian",
+     "kind": "lemma",
+     "line": 302,
+     "doc": "",
+     "statement": "lemma pinching_map_eq_sum_conj_hermitian (σ ρ : MState d) :\n    (pinching_map σ ρ).M = ∑ k, ρ.M.conj (pinching_kraus σ k).mat",
+     "sorry": false
+    },
+    {
+     "name": "pinching_map_ker_le",
+     "kind": "lemma",
+     "line": 307,
+     "doc": "",
+     "statement": "lemma pinching_map_ker_le (ρ σ : MState d) : (pinching_map σ ρ).M.ker ≤ ρ.M.ker",
+     "sorry": false
+    },
+    {
+     "name": "pinching_kraus_ker_of_ne_zero",
+     "kind": "lemma",
+     "line": 331,
+     "doc": "",
+     "statement": "lemma pinching_kraus_ker_of_ne_zero {d : Type*} [Fintype d] [DecidableEq d]\n    (σ : MState d) (v : d → ℂ) (hv : σ.m.mulVec v = 0)\n    (k : spectrum ℝ σ.m) (hk : k.val ≠ 0) :\n    (pinching_kraus σ k).mat *ᵥ v = 0",
+     "sorry": false
+    },
+    {
+     "name": "ker_le_ker_pinching_map_ker",
+     "kind": "lemma",
+     "line": 349,
+     "doc": "",
+     "statement": "lemma ker_le_ker_pinching_map_ker (ρ σ : MState d) (h : σ.M.ker ≤ ρ.M.ker) :\n    σ.M.ker ≤ (pinching_map σ ρ).M.ker",
+     "sorry": false
+    },
+    {
+     "name": "pinching_pythagoras",
+     "kind": "theorem",
+     "line": 395,
+     "doc": "Exercise 2.8 of Hayashi's book \"A group theoretic approach to Quantum Information\".",
+     "statement": "theorem pinching_pythagoras (ρ σ : MState d) :\n    𝐃(ρ‖σ) = 𝐃(ρ‖pinching_map σ ρ) + 𝐃(pinching_map σ ρ‖σ)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/Channels/Unbundled.lean",
+   "module": "QuantumInfo.Channels.Unbundled",
+   "title": "Properties of Matrix Maps",
+   "doc": "Building on `MatrixMap`s, this defines the properties: `IsTracePreserving`, `Unital`,\n`IsHermitianPreserving`, `IsPositive` and `IsCompletelyPositive`. They have basic facts\nsuch as closure under composition, addition, and scaling.\n\nThese are the *unbundled* versions, which just state the relevant properties of a given `MatrixMap`.\nThe bundled versions are `HPMap`, `UnitalMap`, `TPMap`, `PMap`, and `CPMap` respectively, given\nin Bundled.lean.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MatrixMap.IsTracePreserving",
+     "kind": "def",
+     "line": 37,
+     "doc": "A linear matrix map is *trace preserving* if trace of the output equals trace of the input.",
+     "statement": "def IsTracePreserving (M : MatrixMap A B R) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving_iff_trace_choi",
+     "kind": "theorem",
+     "line": 42,
+     "doc": "A map is trace preserving iff the partial trace of the Choi matrix is the identity.",
+     "statement": "theorem IsTracePreserving_iff_trace_choi [DecidableEq A] (M : MatrixMap A B R) : M.IsTracePreserving\n    ↔ M.choi_matrix.traceLeft = 1",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.apply_trace",
+     "kind": "theorem",
+     "line": 72,
+     "doc": "Simp lemma: the trace of the image of a IsTracePreserving map is the same as the original\ntrace.",
+     "statement": "theorem apply_trace (h : M.IsTracePreserving) (ρ : Matrix A A R)\n    : (M ρ).trace = ρ.trace",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.trace_choi",
+     "kind": "theorem",
+     "line": 77,
+     "doc": "The trace of a Choi matrix of a TP map is the cardinality of the input space.",
+     "statement": "theorem trace_choi [DecidableEq A] (h : M.IsTracePreserving) :\n    M.choi_matrix.trace = (Finset.univ (α := A)).card",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.comp",
+     "kind": "theorem",
+     "line": 83,
+     "doc": "The composition of IsTracePreserving maps is also trace preserving.",
+     "statement": "theorem comp (h₁ : M.IsTracePreserving) (h₂ : M₂.IsTracePreserving) :\n    IsTracePreserving (M₂ ∘ₗ M)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.id",
+     "kind": "theorem",
+     "line": 90,
+     "doc": "The identity MatrixMap IsTracePreserving.",
+     "statement": "theorem id : (id A R).IsTracePreserving",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.unit_linear",
+     "kind": "theorem",
+     "line": 95,
+     "doc": "Unit linear combinations of IsTracePreserving maps are IsTracePreserving.",
+     "statement": "theorem unit_linear {M₁ M₂ : MatrixMap A B R} {x y : R}\n    (h₁ : M₁.IsTracePreserving) (h₂ : M₂.IsTracePreserving) (hxy : x + y = 1) :\n    (x • M₁ + y • M₂).IsTracePreserving",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.kron",
+     "kind": "theorem",
+     "line": 103,
+     "doc": "The kronecker product of IsTracePreserving maps is also trace preserving.",
+     "statement": "theorem kron {M₁ : MatrixMap A B R} {M₂ : MatrixMap C D R} (h₁ : M₁.IsTracePreserving) (h₂ : M₂.IsTracePreserving) :\n    (M₁ ⊗ₖₘ M₂).IsTracePreserving",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.piProd",
+     "kind": "theorem",
+     "line": 136,
+     "doc": "The `MatrixMap.piProd` product of IsTracePreserving maps is also trace preserving.",
+     "statement": "theorem piProd {Λi : ∀ i, MatrixMap (dI i) (dO i) R} (h₁ : ∀ i, (Λi i).IsTracePreserving) :\n    (MatrixMap.piProd Λi).IsTracePreserving",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.of_kraus_isTracePreserving",
+     "kind": "theorem",
+     "line": 166,
+     "doc": "The channel X ↦ ∑ k : κ, (M k) * X * (N k)ᴴ formed by Kraus operators M, N : κ → Matrix B A R\nis trace-preserving if ∑ k : κ, (N k)ᴴ * (M k) = 1",
+     "statement": "theorem of_kraus_isTracePreserving\n  (M N : κ → Matrix B A S)\n  (hTP : (∑ k, (N k).conjTranspose * (M k)) = 1) :\n  (MatrixMap.of_kraus M N).IsTracePreserving",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsTracePreserving.submatrix",
+     "kind": "theorem",
+     "line": 179,
+     "doc": "`MatrixMap.submatrix` is trace-preserving when the function is an equivalence.",
+     "statement": "theorem submatrix (e : A ≃ B) : (MatrixMap.submatrix R e).IsTracePreserving",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.Unital",
+     "kind": "def",
+     "line": 191,
+     "doc": "A linear matrix map is *unital* if it preserves the identity.",
+     "statement": "def Unital (M : MatrixMap A B R) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.Unital.map_1",
+     "kind": "lemma",
+     "line": 201,
+     "doc": "",
+     "statement": "lemma map_1 (h : M.Unital) : M 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.Unital.id",
+     "kind": "theorem",
+     "line": 206,
+     "doc": "The identity `MatrixMap` is `Unital`.",
+     "statement": "theorem id : (id A R).Unital",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsHermitianPreserving",
+     "kind": "def",
+     "line": 223,
+     "doc": "A linear matrix map is *Hermitian preserving* if it maps `IsHermitian` matrices to `IsHermitian`.",
+     "statement": "def IsHermitianPreserving (M : MatrixMap A B R) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive",
+     "kind": "def",
+     "line": 227,
+     "doc": "A linear matrix map is *positive* if it maps `PosSemidef` matrices to `PosSemidef`.",
+     "statement": "def IsPositive [Fintype A] [Fintype B] (M : MatrixMap A B R) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive",
+     "kind": "def",
+     "line": 232,
+     "doc": "A linear matrix map is *completely positive* if, for any integer n, the tensor product\nwith `I(n)` is positive.",
+     "statement": "def IsCompletelyPositive [Fintype A] [Fintype B] [DecidableEq A] (M : MatrixMap A B R) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsHermitianPreserving.id",
+     "kind": "theorem",
+     "line": 239,
+     "doc": "The identity MatrixMap IsHermitianPreserving.",
+     "statement": "theorem id : (id A R).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsHermitianPreserving.comp",
+     "kind": "theorem",
+     "line": 243,
+     "doc": "The composition of IsHermitianPreserving maps is also Hermitian preserving.",
+     "statement": "theorem comp {M₁ : MatrixMap A B R} {M₂ : MatrixMap B C R}\n    (h₁ : M₁.IsHermitianPreserving) (h₂ : M₂.IsHermitianPreserving) : IsHermitianPreserving (M₂ ∘ₗ M₁)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive.IsHermitianPreserving",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "",
+     "statement": "lemma IsHermitianPreserving {M : MatrixMap A B R}\n    (hM : IsPositive M) : IsHermitianPreserving M",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive.comp",
+     "kind": "theorem",
+     "line": 266,
+     "doc": "The composition of IsPositive maps is also positive.",
+     "statement": "theorem comp {M₁ : MatrixMap A B R} {M₂ : MatrixMap B C R} (h₁ : M₁.IsPositive)\n    (h₂ : M₂.IsPositive) : IsPositive (M₂ ∘ₗ M₁)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive.id",
+     "kind": "theorem",
+     "line": 273,
+     "doc": "The identity MatrixMap IsPositive.",
+     "statement": "theorem id : (id A R).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive.add",
+     "kind": "theorem",
+     "line": 277,
+     "doc": "Sums of IsPositive maps are IsPositive.",
+     "statement": "theorem add {M₁ M₂ : MatrixMap A B R} (h₁ : M₁.IsPositive) (h₂ : M₂.IsPositive) :\n    (M₁ + M₂).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive.smul",
+     "kind": "theorem",
+     "line": 282,
+     "doc": "Nonnegative scalings of IsPositive maps are IsPositive.",
+     "statement": "theorem smul {M : MatrixMap A B R} (hM : M.IsPositive) {x : R} (hx : 0 ≤ x) :\n    (x • M).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.of_Fintype",
+     "kind": "theorem",
+     "line": 292,
+     "doc": "Definition of a CP map, but with `Fintype T` in the definition instead of a `Fin n`.",
+     "statement": "theorem of_Fintype  {M : MatrixMap A B R} (h : IsCompletelyPositive M)\n    (T : Type*) [Fintype T] [DecidableEq T] :\n    (M.kron (LinearMap.id : MatrixMap T T R)).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.IsPositive",
+     "kind": "lemma",
+     "line": 321,
+     "doc": "",
+     "statement": "lemma IsPositive {M : MatrixMap A B R}\n    (hM : IsCompletelyPositive M) : IsPositive M",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.comp",
+     "kind": "theorem",
+     "line": 348,
+     "doc": "The composition of IsCompletelyPositive maps is also completely positive.",
+     "statement": "theorem comp [DecidableEq B] {M₁ : MatrixMap A B R} {M₂ : MatrixMap B C R} (h₁ : M₁.IsCompletelyPositive)\n    (h₂ : M₂.IsCompletelyPositive) : IsCompletelyPositive (M₂ ∘ₗ M₁)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.id",
+     "kind": "theorem",
+     "line": 361,
+     "doc": "The identity MatrixMap IsCompletelyPositive.",
+     "statement": "theorem id : (id A R).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.add",
+     "kind": "theorem",
+     "line": 366,
+     "doc": "Sums of IsCompletelyPositive maps are IsCompletelyPositive.",
+     "statement": "theorem add {M₁ M₂ : MatrixMap A B R} (h₁ : M₁.IsCompletelyPositive) (h₂ : M₂.IsCompletelyPositive) :\n    (M₁ + M₂).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.smul",
+     "kind": "theorem",
+     "line": 373,
+     "doc": "Nonnegative scalings of `IsCompletelyPositive` maps are `IsCompletelyPositive`.",
+     "statement": "theorem smul {M : MatrixMap A B R} (hM : M.IsCompletelyPositive) {x : R} (hx : 0 ≤ x) :\n    (x • M).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.zero",
+     "kind": "theorem",
+     "line": 381,
+     "doc": "The zero map `IsCompletelyPositive`.",
+     "statement": "theorem zero : (0 : MatrixMap A B R).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.finset_sum",
+     "kind": "theorem",
+     "line": 385,
+     "doc": "A finite sum of completely positive maps is completely positive.",
+     "statement": "theorem finset_sum {ι : Type*} [Fintype ι] {m : ι → MatrixMap A B R} (hm : ∀ i, (m i).IsCompletelyPositive) :\n    (∑ i, m i).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_kronecker_const",
+     "kind": "theorem",
+     "line": 398,
+     "doc": "The map that takes M and returns M ⊗ₖ C, where C is positive semidefinite, is a completely\npositive map.",
+     "statement": "theorem kron_kronecker_const {C : Matrix d d R} (h : C.PosSemidef) {h₁ h₂ : _} : IsCompletelyPositive\n    (⟨⟨fun M => M ⊗ₖ C, h₁⟩, h₂⟩ : MatrixMap A (A × d) R)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_of_kraus",
+     "kind": "lemma",
+     "line": 442,
+     "doc": "",
+     "statement": "lemma choi_of_kraus (K : κ → Matrix B A 𝕜) :\n    (MatrixMap.of_kraus K K).choi_matrix = ∑ k, Matrix.vecMulVec (fun (x : B × A) => K k x.1 x.2) (fun (x : B × A) => star (K k x.1 x.2))",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.conj",
+     "kind": "def",
+     "line": 457,
+     "doc": "The linear map of conjugating a matrix by another, `x → y * x * yᴴ`.",
+     "statement": "def _root_.MatrixMap.conj (y : Matrix B A R) : MatrixMap A B R",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.conj_isPositive",
+     "kind": "lemma",
+     "line": 463,
+     "doc": "",
+     "statement": "lemma conj_isPositive (M : Matrix B A 𝕜) : (conj M).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsPositive_sum",
+     "kind": "lemma",
+     "line": 467,
+     "doc": "",
+     "statement": "lemma IsPositive_sum {ι : Type*} [Fintype ι] (f : ι → MatrixMap A B ℂ) (h : ∀ i, (f i).IsPositive) :\n    (∑ i, f i).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.of_kraus_isPositive",
+     "kind": "lemma",
+     "line": 483,
+     "doc": "",
+     "statement": "lemma of_kraus_isPositive (K : κ → Matrix B A ℂ) :\n    (of_kraus K K).IsPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.conj_kron",
+     "kind": "lemma",
+     "line": 490,
+     "doc": "",
+     "statement": "lemma conj_kron (M : Matrix B A 𝕜) (N : Matrix D C 𝕜) [DecidableEq C] :\n    conj M ⊗ₖₘ conj N = conj (M ⊗ₖ N)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.congruence_one_eq_id",
+     "kind": "lemma",
+     "line": 531,
+     "doc": "",
+     "statement": "lemma congruence_one_eq_id : conj (1 : Matrix A A ℂ) = MatrixMap.id A ℂ",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.congruence_CP",
+     "kind": "lemma",
+     "line": 535,
+     "doc": "",
+     "statement": "lemma congruence_CP {A B : Type*} [Fintype A] [Fintype B] [DecidableEq A] [DecidableEq B] (M : Matrix B A 𝕜) : (conj M).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive_sum",
+     "kind": "lemma",
+     "line": 544,
+     "doc": "",
+     "statement": "lemma IsCompletelyPositive_sum {ι : Type*} [Fintype ι] (f : ι → MatrixMap A B ℂ) (h : ∀ i, (f i).IsCompletelyPositive) :\n    (∑ i, f i).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.of_kraus_eq_sum_conj",
+     "kind": "lemma",
+     "line": 549,
+     "doc": "",
+     "statement": "lemma of_kraus_eq_sum_conj (K : κ → Matrix B A 𝕜) :\n    of_kraus K K = ∑ k, conj (K k)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.of_kraus_CP",
+     "kind": "lemma",
+     "line": 554,
+     "doc": "",
+     "statement": "lemma of_kraus_CP (K : κ → Matrix B A 𝕜) : (of_kraus K K).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.exists_kraus_of_choi_PSD",
+     "kind": "lemma",
+     "line": 567,
+     "doc": "",
+     "statement": "lemma exists_kraus_of_choi_PSD\n    (C : Matrix (B × A) (B × A) 𝕜) (hC : C.PosSemidef) :\n    ∃ (K : (B × A) → Matrix B A 𝕜), C = (MatrixMap.of_kraus K K).choi_matrix",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_matrix_eq_map_proj",
+     "kind": "lemma",
+     "line": 583,
+     "doc": "",
+     "statement": "lemma choi_matrix_eq_map_proj (M : MatrixMap A B R) :\n    M.choi_matrix = (M ⊗ₖₘ MatrixMap.id A R) (Matrix.vecMulVec (fun (x : A × A) => if x.1 = x.2 then 1 else 0) (fun (x : A × A) => star (if x.1 = x.2 then 1 else 0)))",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_PSD_iff_CP_map",
+     "kind": "theorem",
+     "line": 594,
+     "doc": "Choi's theorem on completely positive maps: A map `IsCompletelyPositive` iff its Choi Matrix is PSD.",
+     "statement": "theorem choi_PSD_iff_CP_map (M : MatrixMap A B R) :\n    M.IsCompletelyPositive ↔ M.choi_matrix.PosSemidef",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.conj_eq_mulRightLinearMap_comp_mulRightLinearMap",
+     "kind": "lemma",
+     "line": 607,
+     "doc": "",
+     "statement": "lemma conj_eq_mulRightLinearMap_comp_mulRightLinearMap (y : Matrix B A R) :\n    conj y = mulRightLinearMap B R y.conjTranspose ∘ₗ mulLeftLinearMap A R y",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.conj_isCompletelyPositive",
+     "kind": "theorem",
+     "line": 613,
+     "doc": "The act of conjugating (not necessarily by a unitary, just by any matrix at all) is completely positive.",
+     "statement": "theorem conj_isCompletelyPositive (M : Matrix B A R) : (conj M).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.submatrix",
+     "kind": "theorem",
+     "line": 668,
+     "doc": "`MatrixMap.submatrix` is completely positive",
+     "statement": "theorem IsCompletelyPositive.submatrix (f : B → A) : (MatrixMap.submatrix R f).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.of_kraus_isCompletelyPositive",
+     "kind": "theorem",
+     "line": 675,
+     "doc": "The channel X ↦ ∑ k : κ, (M k) * X * (M k)ᴴ formed by Kraus operators M : κ → Matrix B A R\nis completely positive",
+     "statement": "theorem of_kraus_isCompletelyPositive (M : κ → Matrix B A R) :\n    (of_kraus M M).IsCompletelyPositive",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_of_kraus_R",
+     "kind": "theorem",
+     "line": 684,
+     "doc": "The Choi matrix of a map in symmetric Kraus form is a sum of rank-1 projectors.",
+     "statement": "theorem choi_of_kraus_R [DecidableEq A] (K : κ → Matrix B A 𝕜) :\n    (of_kraus K K).choi_matrix = ∑ k, Matrix.vecMulVec (fun (x : B × A) => K k x.1 x.2) (fun (x : B × A) => star (K k x.1 x.2))",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_eq_kron_id_apply_choi_id",
+     "kind": "lemma",
+     "line": 706,
+     "doc": "",
+     "statement": "lemma choi_eq_kron_id_apply_choi_id (M : MatrixMap A B R) :\n    M.choi_matrix = (M ⊗ₖₘ MatrixMap.id A R) ((MatrixMap.id A R).choi_matrix)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.choi_id_is_PSD",
+     "kind": "lemma",
+     "line": 734,
+     "doc": "",
+     "statement": "lemma choi_id_is_PSD {A R : Type*} [Fintype A] [DecidableEq A] [RCLike R] :\n    (MatrixMap.id A R).choi_matrix.PosSemidef",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.is_CP_implies_choi_PSD",
+     "kind": "lemma",
+     "line": 755,
+     "doc": "",
+     "statement": "lemma is_CP_implies_choi_PSD {A B R : Type*} [Fintype A] [Fintype B] [DecidableEq A] [DecidableEq B] [RCLike R] (M : MatrixMap A B R) (hCP : M.IsCompletelyPositive) :\n    M.choi_matrix.PosSemidef",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.exists_kraus",
+     "kind": "lemma",
+     "line": 760,
+     "doc": "",
+     "statement": "lemma IsCompletelyPositive.exists_kraus (Φ : MatrixMap A B R) (hCP : Φ.IsCompletelyPositive) :\n    ∃ (M : (B × A) → Matrix B A R), Φ = of_kraus M M",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.cp_subunital_kadison_schwarz",
+     "kind": "lemma",
+     "line": 770,
+     "doc": "Kadison-Schwarz for completely positive subunital matrix maps.",
+     "statement": "lemma cp_subunital_kadison_schwarz {M : MatrixMap A B ℂ} [DecidableEq B]\n    (hM : M.IsCompletelyPositive) (hM1 : M 1 ≤ (1 : Matrix B B ℂ))\n    (X : Matrix A A ℂ) :\n    (M X)ᴴ * M X ≤ M (Xᴴ * X)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.positive_subunital_norm_apply_le",
+     "kind": "theorem",
+     "line": 811,
+     "doc": "A positive subunital matrix map is contractive on positive inputs.",
+     "statement": "theorem positive_subunital_norm_apply_le {M : MatrixMap A B ℂ} [DecidableEq B]\n    (hM : M.IsPositive) (hM1 : M 1 ≤ (1 : Matrix B B ℂ))\n    {X : Matrix A A ℂ} (hX : 0 ≤ X) :\n    ‖M X‖ ≤ ‖X‖",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.cp_subunital_opNorm_le_one",
+     "kind": "theorem",
+     "line": 848,
+     "doc": "A completely positive subunital matrix map is contractive in operator norm.",
+     "statement": "theorem cp_subunital_opNorm_le_one {M : MatrixMap A B ℂ} [DecidableEq B]\n    (hM : M.IsCompletelyPositive) (hM1 : M 1 ≤ (1 : Matrix B B ℂ))\n    (X : Matrix A A ℂ) :\n    ‖M X‖ ≤ ‖X‖",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.kron_of_kraus",
+     "kind": "theorem",
+     "line": 863,
+     "doc": "The Kronecker product of two Kraus maps is the Kraus map of the Kronecker products of the operators.",
+     "statement": "theorem kron_of_kraus {A B C D R : Type*} [Fintype A] [Fintype B] [Fintype C] [Fintype D]\n    [DecidableEq A] [DecidableEq C] [CommSemiring R] [StarRing R] [SMulCommClass R R R]\n    {κ ι : Type*} [Fintype κ] [Fintype ι]\n    (M : κ → Matrix B A R) (N : ι → Matrix D C R) :\n    of_kraus M M ⊗ₖₘ of_kraus N N =\n    of_kraus (fun (k : κ × ι) => M k.1 ⊗ₖ N k.2) (fun k => M k.1 ⊗ₖ N k.2)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.kron",
+     "kind": "theorem",
+     "line": 901,
+     "doc": "The Kronecker product of IsCompletelyPositive maps is also completely positive.",
+     "statement": "theorem kron {D : Type*} [DecidableEq C] [Fintype D] {M₁ : MatrixMap A B R} {M₂ : MatrixMap C D R}\n    (h₁ : M₁.IsCompletelyPositive) (h₂ : M₂.IsCompletelyPositive) : IsCompletelyPositive (M₁ ⊗ₖₘ M₂)",
+     "sorry": false
+    },
+    {
+     "name": "MatrixMap.IsCompletelyPositive.piProd",
+     "kind": "theorem",
+     "line": 915,
+     "doc": "The `MatrixMap.piProd` product of IsCompletelyPositive maps is also completely positive.",
+     "statement": "theorem piProd {Λi : ∀ i, MatrixMap (dI i) (dO i) R} (h₁ : ∀ i, (Λi i).IsCompletelyPositive) :\n    IsCompletelyPositive (MatrixMap.piProd Λi)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  }
+ ]
+}

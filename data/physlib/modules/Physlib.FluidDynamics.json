@@ -1,0 +1,673 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/FluidDynamics/Basic.lean",
+   "module": "Physlib.FluidDynamics.Basic",
+   "title": "Basic field types for fluid dynamics",
+   "doc": "## i. Overview\n\nThis module defines the basic field types used to describe a fluid on `d`-dimensional space.\nThe structure-specific APIs are organized in the corresponding `FluidFlow`, `CauchyFlow`, and\n`ThermodynamicCauchyFlow` subdirectories.\n\n## ii. Key results\n\n- `ScalarField` : A time-dependent scalar field on space.\n- `VectorField` : A time-dependent vector field on space.\n- `MassDensity` : A time-dependent scalar density field.\n- `VelocityField` : A time-dependent vector velocity field.\n- `MomentumDensityField` : A time-dependent vector momentum density field.\n- `StressTensor` : A time-dependent matrix-valued stress field.\n\n## iii. Table of contents\n\n- A. Field types\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 45,
+     "text": "## A. Field types"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.ScalarField",
+     "kind": "abbrev",
+     "line": 52,
+     "doc": "A scalar field on `d`-dimensional space, depending on time.",
+     "statement": "abbrev ScalarField (d : ℕ)",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.VectorField",
+     "kind": "abbrev",
+     "line": 55,
+     "doc": "A vector field on `d`-dimensional space, depending on time.",
+     "statement": "abbrev VectorField (d : ℕ)",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.MassDensity",
+     "kind": "abbrev",
+     "line": 58,
+     "doc": "A mass density field on `d`-dimensional space.",
+     "statement": "abbrev MassDensity (d : ℕ)",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.VelocityField",
+     "kind": "abbrev",
+     "line": 61,
+     "doc": "A velocity field on `d`-dimensional space.",
+     "statement": "abbrev VelocityField (d : ℕ)",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.MomentumDensityField",
+     "kind": "abbrev",
+     "line": 64,
+     "doc": "A momentum density field on `d`-dimensional space.",
+     "statement": "abbrev MomentumDensityField (d : ℕ)",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.StressTensor",
+     "kind": "abbrev",
+     "line": 67,
+     "doc": "A matrix-valued stress tensor field on `d`-dimensional space.",
+     "statement": "abbrev StressTensor (d : ℕ)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/CauchyFlow/Basic.lean",
+   "module": "Physlib.FluidDynamics.CauchyFlow.Basic",
+   "title": "Basic API for Cauchy flows",
+   "doc": "## i. Overview\n\nThis module defines `CauchyFlow`, the momentum-balance layer of the fluid API.\nSpecialized predicates and equations for Cauchy flows are organized in sibling modules.\n\nA local Cauchy momentum balance needs two kinds of force data beyond density and velocity. The\nstress tensor encodes contact forces through its divergence, while the specific body force encodes\nvolumetric forces per unit mass and therefore contributes mass density times specific body force.\nTogether these fields are sufficient to state the balance without choosing a material model.\n\nThe momentum equation constrains the flow and forces but does not define a constitutive relation\nbetween them. Pressure and viscosity are therefore not stored as additional fields.\nThey enter through constitutive stress laws, such as the inviscid and Newtonian predicates,\nwhich avoids duplicating data and imposing consistency conditions inside the carrier.\nThermodynamic data is deferred to `ThermodynamicCauchyFlow` because it is not needed\nfor momentum balance alone.\n\n## ii. Key results\n\n- `CauchyFlow` : A fluid flow with Cauchy stress and specific body force.\n\n## iii. Table of contents\n\n- A. Cauchy-flow structure\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. Cauchy-flow structure"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.CauchyFlow",
+     "kind": "structure",
+     "line": 59,
+     "doc": "A fluid flow equipped with Cauchy stress and specific body-force fields.\n\nThese are the additional independent fields needed to state a local momentum balance. The Cauchy\nstress represents contact forces, and the specific body force represents volumetric force per unit\nmass. Pressure and viscosity enter through stress laws rather than as redundant fields of\n`CauchyFlow` itself.",
+     "statement": "structure CauchyFlow (d : ℕ) extends FluidFlow d where\n  /-- The Cauchy stress tensor field. -/\n  stress : StressTensor d\n  /-- The specific body-force field, i.e. force per unit mass. -/\n  specificBodyForce : VectorField d",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/CauchyFlow/BodyForce.lean",
+   "module": "Physlib.FluidDynamics.CauchyFlow.BodyForce",
+   "title": "Body-force predicates for Cauchy flows",
+   "doc": "## i. Overview\n\nThis module defines predicates for conservative specific body forces on `CauchyFlow`.\n\n## ii. Key results\n\n- `CauchyFlow.HasBodyForcePotential` : Predicate encoding the convention\n  `specificBodyForce = -grad Phi`.\n- `CauchyFlow.HasConservativeBodyForce` : Predicate saying the specific body force has some\n  potential.\n\n## iii. Table of contents\n\n- A. Conservative-force convention\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. Conservative-force convention"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.CauchyFlow.HasBodyForcePotential",
+     "kind": "def",
+     "line": 50,
+     "doc": "A flow has body-force potential `Phi` when its specific body force is minus the gradient of\n`Phi`.",
+     "statement": "def HasBodyForcePotential (d : ℕ) (flow : CauchyFlow d) (potential : Space d → ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.CauchyFlow.HasConservativeBodyForce",
+     "kind": "def",
+     "line": 54,
+     "doc": "A flow has conservative body force when its specific body force has some potential.",
+     "statement": "def HasConservativeBodyForce (d : ℕ) (flow : CauchyFlow d) : Prop",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/CauchyFlow/Inviscid.lean",
+   "module": "Physlib.FluidDynamics.CauchyFlow.Inviscid",
+   "title": "Inviscid stress laws for Cauchy flows",
+   "doc": "## i. Overview\n\nThis module defines the inviscid stress law for `CauchyFlow` and the corresponding\nmatrix-divergence identity for pressure stress.\n\n## ii. Key results\n\n- `CauchyFlow.IsInviscid` : Predicate saying the Cauchy stress is the inviscid pressure stress.\n- `CauchyFlow.matrixDiv_stress_eq_neg_grad_pressure_of_is_inviscid` : The inviscid stress\n  contributes the usual pressure-gradient force term.\n\n## iii. Table of contents\n\n- A. Inviscid stress law\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. Inviscid stress law"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.CauchyFlow.IsInviscid",
+     "kind": "def",
+     "line": 54,
+     "doc": "A Cauchy flow is inviscid with pressure `p` when its stress is the isotropic pressure stress\n`-p I`.\n\nIn this formulation, inviscid means that the Cauchy stress has no viscous or shear contribution.\nIt does not rule out body forces; those are carried separately by `CauchyFlow.specificBodyForce`.",
+     "statement": "def IsInviscid (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.CauchyFlow.matrixDiv_inviscid_pressure_stress",
+     "kind": "lemma",
+     "line": 58,
+     "doc": "The matrix divergence of the inviscid pressure stress `-p I` is `-grad p`.",
+     "statement": "lemma matrixDiv_inviscid_pressure_stress (d : ℕ) (pressureAtTime : Space d → ℝ) :\n    matrixDiv d (fun x => (-(pressureAtTime x)) • (1 : Matrix (Fin d) (Fin d) ℝ)) =\n      -∇ pressureAtTime",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.CauchyFlow.matrixDiv_stress_eq_neg_grad_pressure_of_is_inviscid",
+     "kind": "theorem",
+     "line": 73,
+     "doc": "In an inviscid Cauchy flow, the stress-divergence force is the usual\nnegative pressure-gradient term.",
+     "statement": "theorem matrixDiv_stress_eq_neg_grad_pressure_of_is_inviscid\n    (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d)\n    (hInviscid : IsInviscid d flow pressure) :\n    ∀ t, matrixDiv d (flow.stress t) = -∇ (pressure t)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/CauchyFlow/Momentum.lean",
+   "module": "Physlib.FluidDynamics.CauchyFlow.Momentum",
+   "title": "Cauchy momentum equations",
+   "doc": "## i. Overview\n\nThis module defines the conservative and convective Cauchy momentum equations for a fluid flow\nwith stress and specific body-force fields. The stress tensor is left as an input field, so this\nis the balance-law layer before specializing to a constitutive law, such as Euler or\nNavier-Stokes.\n\n## ii. Key results\n\n- `CauchyFlow.CauchyMomentumEquation` : Conservation of momentum using `Space.matrixDiv`.\n- `CauchyFlow.ConvectiveCauchyMomentumEquation` : The Cauchy momentum equation in convective\n  form.\n- `CauchyFlow.cauchyMomentumEquation_iff_convectiveCauchyMomentumEquation` : Equivalence of the\n  two Cauchy momentum equations when continuity holds and the fields are differentiable.\n\n## iii. Table of contents\n\n- A. Cauchy momentum equations\n- B. Equivalence of conservative and convective Cauchy momentum\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 48,
+     "text": "## A. Cauchy momentum equations"
+    },
+    {
+     "line": 81,
+     "text": "## B. Equivalence of conservative and convective Cauchy momentum"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.CauchyFlow.CauchyMomentumEquation",
+     "kind": "def",
+     "line": 62,
+     "doc": "Conservation of momentum in conservative matrix-divergence form.\n\nThe equation is\n\n`partial_t (rho u) + matrixDiv (rho u ⊗ u) = matrixDiv sigma + rho f`.\n\nHere `stress` is intentionally not yet specialized to a constitutive law.",
+     "statement": "def CauchyMomentumEquation (d : ℕ) (flow : CauchyFlow d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.CauchyFlow.ConvectiveCauchyMomentumEquation",
+     "kind": "def",
+     "line": 76,
+     "doc": "Conservation of momentum in convective form.\n\nThe equation is\n\n`rho (partial_t u + (u · ∇)u) = matrixDiv sigma + rho f`.\n\nHere `stress` is intentionally not yet specialized to a constitutive law.",
+     "statement": "def ConvectiveCauchyMomentumEquation (d : ℕ) (flow : CauchyFlow d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.CauchyFlow.cauchyMomentumEquation_iff_convectiveCauchyMomentumEquation",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "The conservative and convective Cauchy momentum equations are equivalent when the classical\ncontinuity equation holds.\n\nThe differentiability assumptions are exactly the product-rule assumptions used to rewrite\n`partial_t (rho u)` and `matrixDiv (rho u ⊗ u)`.",
+     "statement": "lemma cauchyMomentumEquation_iff_convectiveCauchyMomentumEquation\n    (d : ℕ) (flow : CauchyFlow d)\n    (hContinuity : FluidFlow.ClassicalContinuityEquation d flow.toFluidFlow)\n    (hRhoTime : ∀ t x, DifferentiableAt ℝ (flow.rho · x) t)\n    (hVelocityTime : ∀ t x, DifferentiableAt ℝ (flow.velocity · x) t)\n    (hMomentumDensity : ∀ t, Differentiable ℝ (FluidFlow.momentumDensity d flow.toFluidFlow t))\n    (hVelocitySpace : ∀ t, Differentiable ℝ (flow.velocity t)) :\n    CauchyMomentumEquation d flow ↔ ConvectiveCauchyMomentumEquation d flow",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean",
+   "module": "Physlib.FluidDynamics.CauchyFlow.NavierStokes",
+   "title": "The Navier-Stokes equations",
+   "doc": "## i. Overview\n\nThe Navier-Stokes equations are a set of partial differential equations that describe\nthe motion of viscous fluid substances. They are fundamental in fluid dynamics and are\nused to model the behavior of fluids in various contexts, including gas flow and water flow.\n\nThis file defines the Navier-Stokes equations as continuity, Cauchy momentum, and a Newtonian\nstress law. The Cauchy momentum equation supplies the balance-law layer, while\n`CauchyFlow.IsNewtonian` specializes the stress tensor through pressure and viscosity fields.\n\n## ii. Key results\n\n- `NavierStokes` : Classical continuity, Cauchy momentum, and Newtonian stress together.\n- `ConvectiveNavierStokes` : Classical continuity, convective Cauchy momentum, and Newtonian\n  stress together.\n- `navier_stokes_iff_convective_navier_stokes` : Equivalence of the two forms when the fields\n  are differentiable.\n\n## iii. Table of contents\n\n- A. Navier-Stokes equations\n- B. Equivalence of conservative and convective Navier-Stokes forms\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 46,
+     "text": "## A. Navier-Stokes equations"
+    },
+    {
+     "line": 70,
+     "text": "## B. Equivalence of conservative and convective Navier-Stokes forms"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.NavierStokes",
+     "kind": "def",
+     "line": 54,
+     "doc": "The conservative Navier-Stokes equations: continuity, Cauchy momentum, and Newtonian\nstress.",
+     "statement": "def NavierStokes\n    (d : ℕ) (flow : CauchyFlow d)\n    (pressure shearViscosity secondViscosity : ScalarField d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.ConvectiveNavierStokes",
+     "kind": "def",
+     "line": 63,
+     "doc": "The convective Navier-Stokes equations: continuity, convective Cauchy momentum, and\nNewtonian stress.",
+     "statement": "def ConvectiveNavierStokes\n    (d : ℕ) (flow : CauchyFlow d)\n    (pressure shearViscosity secondViscosity : ScalarField d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.navier_stokes_iff_convective_navier_stokes",
+     "kind": "theorem",
+     "line": 78,
+     "doc": "The conservative and convective Navier-Stokes forms are equivalent when the fields are\ndifferentiable enough for the product rules.",
+     "statement": "theorem navier_stokes_iff_convective_navier_stokes\n    (d : ℕ) (flow : CauchyFlow d)\n    (pressure shearViscosity secondViscosity : ScalarField d)\n    (hRhoTime : ∀ t x, DifferentiableAt ℝ (flow.rho · x) t)\n    (hVelocityTime : ∀ t x, DifferentiableAt ℝ (flow.velocity · x) t)\n    (hMomentumDensity : ∀ t,\n      Differentiable ℝ (FluidFlow.momentumDensity d flow.toFluidFlow t))\n    (hVelocitySpace : ∀ t, Differentiable ℝ (flow.velocity t)) :\n    NavierStokes d flow pressure shearViscosity secondViscosity ↔\n      ConvectiveNavierStokes d flow pressure shearViscosity secondViscosity",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/CauchyFlow/Newtonian.lean",
+   "module": "Physlib.FluidDynamics.CauchyFlow.Newtonian",
+   "title": "Newtonian stress law for Cauchy flows",
+   "doc": "## i. Overview\n\nThis module defines the Newtonian constitutive stress law for `CauchyFlow`.\n\n## ii. Key results\n\n- `CauchyFlow.IsNewtonian` : Predicate saying the Cauchy stress has Newtonian constitutive form.\n\n## iii. Table of contents\n\n- A. Newtonian Cauchy flows\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## A. Newtonian Cauchy flows"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.CauchyFlow.IsNewtonian",
+     "kind": "def",
+     "line": 44,
+     "doc": "A Cauchy flow is Newtonian when its stress tensor has the Newtonian constitutive form.",
+     "statement": "def IsNewtonian\n    (d : ℕ) (flow : CauchyFlow d)\n    (pressure shearViscosity secondViscosity : ScalarField d) : Prop",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/Euler/Basic.lean",
+   "module": "Physlib.FluidDynamics.Euler.Basic",
+   "title": "Euler equation for fluid flows",
+   "doc": "## i. Overview\n\nThis module defines the Euler equations for inviscid fluid flow as continuity, Cauchy momentum,\nand an inviscid stress law. The pressure field appears through the constitutive relation for\nthe Cauchy stress tensor rather than as a field of the flow data.\n\n## ii. Key results\n\n- `Euler` : Classical continuity, Cauchy momentum, and inviscid stress together.\n- `ConvectiveEuler` : Classical continuity, convective Cauchy momentum, and inviscid stress.\n- `euler_iff_convectiveEuler` : Equivalence of the conservative and convective forms when the\n  fields are differentiable.\n\n## iii. Table of contents\n\n- A. Euler equations\n- B. Equivalence of conservative and convective Euler forms\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 41,
+     "text": "## A. Euler equations"
+    },
+    {
+     "line": 58,
+     "text": "## B. Equivalence of conservative and convective Euler forms"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.Euler",
+     "kind": "def",
+     "line": 48,
+     "doc": "The conservative Euler equations: continuity, Cauchy momentum, and inviscid stress.",
+     "statement": "def Euler (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.ConvectiveEuler",
+     "kind": "def",
+     "line": 54,
+     "doc": "The convective Euler equations: continuity, convective Cauchy momentum, and inviscid\nstress.",
+     "statement": "def ConvectiveEuler (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.euler_iff_convectiveEuler",
+     "kind": "theorem",
+     "line": 66,
+     "doc": "The conservative and convective Euler forms are equivalent when the fields are\ndifferentiable enough for the product rules.",
+     "statement": "theorem euler_iff_convectiveEuler\n    (d : ℕ) (flow : CauchyFlow d) (pressure : ScalarField d)\n    (hRhoTime : ∀ t x, DifferentiableAt ℝ (flow.rho · x) t)\n    (hVelocityTime : ∀ t x, DifferentiableAt ℝ (flow.velocity · x) t)\n    (hMomentumDensity : ∀ t,\n      Differentiable ℝ (FluidFlow.momentumDensity d flow.toFluidFlow t))\n    (hVelocitySpace : ∀ t, Differentiable ℝ (flow.velocity t)) :\n    Euler d flow pressure ↔ ConvectiveEuler d flow pressure",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/FluidFlow/Basic.lean",
+   "module": "Physlib.FluidDynamics.FluidFlow.Basic",
+   "title": "Basic API for fluid flows",
+   "doc": "## i. Overview\n\nThis module defines `FluidFlow`, the kinematic and mass-transport layer of the fluid API.\n\nThe fluid API is split according to which physical processes require which data. Density and\nvelocity are sufficient at this first layer: they determine the mass flux, momentum density,\nconvective momentum flux, and material derivatives used in continuity and kinematic statements.\n\nStress, body force, and thermodynamic fields are deliberately excluded. Kinematic and\nmass-transport statements do not require them, while adding them here would force those statements\nto depend on unrelated dynamic or constitutive choices. The extension structures add such data\nonly at the layer where it becomes necessary.\n\n## ii. Key results\n\n- `FluidFlow` : The density and velocity fields of a fluid.\n\n## iii. Table of contents\n\n- A. Fluid-flow structure\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 43,
+     "text": "## A. Fluid-flow structure"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.FluidFlow",
+     "kind": "structure",
+     "line": 54,
+     "doc": "The density and velocity fields of a fluid on `d`-dimensional space.\n\nThese fields are the independent data needed for kinematics and mass transport. Quantities such as\nmass flux, momentum density, and material acceleration are derived from them. Dynamic and\nthermodynamic fields are introduced only by extension structures whose statements need them.",
+     "statement": "structure FluidFlow (d : ℕ) where\n  /-- The mass density field. -/\n  rho : MassDensity d\n  /-- The velocity field. -/\n  velocity : VelocityField d",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/FluidFlow/Continuity.lean",
+   "module": "Physlib.FluidDynamics.FluidFlow.Continuity",
+   "title": "Continuity equation for fluid flows",
+   "doc": "## i. Overview\n\nThis module defines the classical conservative mass-balance equation for a fluid flow and the\ncorresponding continuity residual. These definitions are independent of a particular momentum\nequation, so they can be reused by Navier-Stokes, Euler, and other fluid models.\n\n## ii. Key results\n\n- `FluidFlow.ClassicalContinuityEquation` : Classical conservation of mass in conservative form.\n- `FluidFlow.continuityResidual` : The scalar residual `partial_t rho + div (rho u)`.\n- `FluidFlow.SmoothContinuityEquation` : Continuity for globally differentiable fields.\n- `FluidFlow.classicalContinuityEquation_of_smoothContinuityEquation` : A smooth continuity\n  equation implies the classical continuity equation.\n\n## iii. Table of contents\n\n- A. Continuity equations\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. Continuity equations"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.FluidFlow.ClassicalContinuityEquation",
+     "kind": "def",
+     "line": 58,
+     "doc": "Classical conservation of mass in conservative form, `partial_t rho + div (rho u) = 0`.\n\nThe equation is asserted at points where the time derivative of `rho` and the spatial\ndivergence of `rho u` are classical derivatives.",
+     "statement": "def ClassicalContinuityEquation (d : ℕ) (fluid : FluidFlow d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.continuityResidual",
+     "kind": "def",
+     "line": 65,
+     "doc": "The scalar continuity-equation residual\n`partial_t rho + div (rho u)`.",
+     "statement": "noncomputable def continuityResidual (d : ℕ) (fluid : FluidFlow d) : Time → Space d → ℝ",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.SmoothContinuityEquation",
+     "kind": "def",
+     "line": 74,
+     "doc": "A stronger continuity equation for globally differentiable fields.\n\nThis version records the first-order regularity needed by the classical continuity equation:\nthe density is differentiable in time, the mass flux `rho u` is differentiable in space, and\nthe continuity residual vanishes everywhere.",
+     "statement": "def SmoothContinuityEquation (d : ℕ) (fluid : FluidFlow d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.classicalContinuityEquation_of_smoothContinuityEquation",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "A smooth continuity equation satisfies the guarded classical continuity equation.",
+     "statement": "lemma classicalContinuityEquation_of_smoothContinuityEquation\n    (d : ℕ) (fluid : FluidFlow d) :\n    SmoothContinuityEquation d fluid → ClassicalContinuityEquation d fluid",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/FluidFlow/Incompressible.lean",
+   "module": "Physlib.FluidDynamics.FluidFlow.Incompressible",
+   "title": "Incompressible fluid flows",
+   "doc": "## i. Overview\n\nThis module defines general incompressibility predicates for fluid flows. These predicates are\nnot tied to a particular equation of motion, so they can be reused later by incompressible\nNavier-Stokes, incompressible Euler, and Bernoulli-style developments.\n\n## ii. Key results\n\n- `FluidFlow.incompressibilityResidual` : The divergence of the velocity field.\n- `FluidFlow.ClassicalIncompressible` : Incompressibility guarded by velocity differentiability.\n- `FluidFlow.SmoothIncompressible` : Incompressibility with globally differentiable velocity.\n- `FluidFlow.classicalIncompressible_of_smoothIncompressible` : Smooth incompressibility implies\n  classical incompressibility.\n\n## iii. Table of contents\n\n- A. Incompressibility predicates\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 45,
+     "text": "## A. Incompressibility predicates"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.FluidFlow.incompressibilityResidual",
+     "kind": "def",
+     "line": 52,
+     "doc": "The incompressibility residual, given by the divergence of the velocity field.",
+     "statement": "noncomputable def incompressibilityResidual (d : ℕ) (fluid : FluidFlow d) :\n    Time → Space d → ℝ",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.ClassicalIncompressible",
+     "kind": "def",
+     "line": 58,
+     "doc": "A classical incompressible flow has divergence-free velocity at points where the velocity\nfield is differentiable.",
+     "statement": "def ClassicalIncompressible (d : ℕ) (fluid : FluidFlow d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.SmoothIncompressible",
+     "kind": "def",
+     "line": 64,
+     "doc": "A smooth incompressible flow has globally differentiable velocity and vanishing\nincompressibility residual everywhere.",
+     "statement": "def SmoothIncompressible (d : ℕ) (fluid : FluidFlow d) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.classicalIncompressible_of_smoothIncompressible",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "A smooth incompressible flow is classically incompressible.",
+     "statement": "lemma classicalIncompressible_of_smoothIncompressible\n    (d : ℕ) (fluid : FluidFlow d) :\n    SmoothIncompressible d fluid → ClassicalIncompressible d fluid",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/FluidFlow/Kinematics.lean",
+   "module": "Physlib.FluidDynamics.FluidFlow.Kinematics",
+   "title": "Kinematic quantities for fluid flows",
+   "doc": "## i. Overview\n\nThis module defines basic kinematic scalar quantities associated to `FluidFlow`.\n\n## ii. Key results\n\n- `FluidFlow.materialDerivative` : The material derivative along a fluid velocity field.\n- `FluidFlow.specificKineticEnergy` : The specific kinetic energy `|u|^2 / 2`.\n\n## iii. Table of contents\n\n- A. Flow-derived scalar quantities\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 43,
+     "text": "## A. Flow-derived scalar quantities"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.FluidFlow.materialDerivative",
+     "kind": "def",
+     "line": 50,
+     "doc": "The material derivative `D_t f = partial_t f + u · grad f` of a scalar field.",
+     "statement": "noncomputable def materialDerivative (d : ℕ) (fluid : FluidFlow d)\n    (field : ScalarField d) : ScalarField d",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.specificKineticEnergy",
+     "kind": "def",
+     "line": 55,
+     "doc": "The specific kinetic energy `|u|^2 / 2` of a fluid flow.",
+     "statement": "noncomputable def specificKineticEnergy (d : ℕ) (fluid : FluidFlow d) : ScalarField d",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/FluidFlow/Momentum.lean",
+   "module": "Physlib.FluidDynamics.FluidFlow.Momentum",
+   "title": "Momentum fields for fluid flows",
+   "doc": "## i. Overview\n\nThis module defines generic momentum fields for fluid flow and relates conservative momentum\ntransport to mass density times material acceleration. The definitions do not choose a particular\nforce law or stress model, so they can be reused by Navier-Stokes, Euler, and related systems.\n\n## ii. Key results\n\n- `FluidFlow.momentumDensity` : The vector momentum density `rho u`.\n- `FluidFlow.momentumFlux` : The convective momentum flux `rho u ⊗ u`.\n- `FluidFlow.convectiveTerm` : The nonlinear transport term `(u · ∇)u`.\n- `FluidFlow.materialAcceleration` : The material acceleration `∂ₜ u + (u · ∇)u`.\n- `FluidFlow.momentumTransport_eq_materialAcceleration_add_continuityResidual` :\n  The momentum-transport identity relating conservative and convective quantities.\n\n## iii. Table of contents\n\n- A. Momentum fields\n- B. Momentum transport identity\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 48,
+     "text": "## A. Momentum fields"
+    },
+    {
+     "line": 72,
+     "text": "## B. Momentum transport identity"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.FluidFlow.momentumDensity",
+     "kind": "def",
+     "line": 55,
+     "doc": "The momentum density `rho u`.",
+     "statement": "def momentumDensity (d : ℕ) (fluid : FluidFlow d) : MomentumDensityField d",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.momentumFlux",
+     "kind": "def",
+     "line": 59,
+     "doc": "The convective momentum flux `rho u ⊗ u`.",
+     "statement": "def momentumFlux (d : ℕ) (fluid : FluidFlow d) : Time → Space d → Matrix (Fin d) (Fin d) ℝ",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.convectiveTerm",
+     "kind": "def",
+     "line": 65,
+     "doc": "The nonlinear transport term `(u · ∇)u`.",
+     "statement": "noncomputable def convectiveTerm (d : ℕ) (fluid : FluidFlow d) : VectorField d",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.materialAcceleration",
+     "kind": "def",
+     "line": 69,
+     "doc": "The material acceleration `∂ₜ u + (u · ∇)u`.",
+     "statement": "noncomputable def materialAcceleration (d : ℕ) (fluid : FluidFlow d) : VectorField d",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.timeDeriv_smul_velocity",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "Product rule for the time derivative of a scalar field times a velocity field.",
+     "statement": "lemma timeDeriv_smul_velocity (d : ℕ) (rhoAtPosition : Time → ℝ)\n    (velocityAtPosition : Time → EuclideanSpace ℝ (Fin d)) (t : Time)\n    (hRho : DifferentiableAt ℝ rhoAtPosition t)\n    (hVelocity : DifferentiableAt ℝ velocityAtPosition t) :\n    ∂ₜ (fun t' => rhoAtPosition t' • velocityAtPosition t') t =\n      rhoAtPosition t • ∂ₜ velocityAtPosition t + ∂ₜ rhoAtPosition t • velocityAtPosition t",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.timeDeriv_momentumDensity",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "Product rule for the time derivative of the momentum density `rho u`.",
+     "statement": "lemma timeDeriv_momentumDensity (d : ℕ) (fluid : FluidFlow d)\n    (t : Time) (x : Space d)\n    (hRho : DifferentiableAt ℝ (fluid.rho · x) t)\n    (hVelocity : DifferentiableAt ℝ (fluid.velocity · x) t) :\n    ∂ₜ (momentumDensity d fluid · x) t =\n      fluid.rho t x • ∂ₜ (fluid.velocity · x) t + ∂ₜ (fluid.rho · x) t • fluid.velocity t x",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.spaceDeriv_momentumFlux_component",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "Product rule for one spatial derivative of one component of `rho u ⊗ u`.",
+     "statement": "lemma spaceDeriv_momentumFlux_component (d : ℕ) (fluid : FluidFlow d)\n    (t : Time) (x : Space d) (i j : Fin d)\n    (hMomentumDensity : Differentiable ℝ (momentumDensity d fluid t))\n    (hVelocity : Differentiable ℝ (fluid.velocity t)) :\n    ∂[j] (fun x' => momentumFlux d fluid t x' i j) x =\n      fluid.velocity t x i • ∂[j] (fun x' => momentumDensity d fluid t x' j) x +\n      ∂[j] (fun x' => fluid.velocity t x' i) x • momentumDensity d fluid t x j",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.matrixDiv_momentumFlux",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "The matrix divergence of `rho u ⊗ u` split into continuity and convective parts.",
+     "statement": "lemma matrixDiv_momentumFlux (d : ℕ) (fluid : FluidFlow d)\n    (t : Time) (x : Space d)\n    (hMomentumDensity : Differentiable ℝ (momentumDensity d fluid t))\n    (hVelocity : Differentiable ℝ (fluid.velocity t)) :\n    matrixDiv d (momentumFlux d fluid t) x =\n      (∇ ⬝ momentumDensity d fluid t) x • fluid.velocity t x +\n        fluid.rho t x • convectiveTerm d fluid t x",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.momentumTransport_eq_materialAcceleration_add_continuityResidual",
+     "kind": "lemma",
+     "line": 161,
+     "doc": "The conservative momentum transport terms equal mass density times material acceleration plus\nthe continuity residual times velocity.",
+     "statement": "lemma momentumTransport_eq_materialAcceleration_add_continuityResidual\n    (d : ℕ) (fluid : FluidFlow d)\n    (t : Time) (x : Space d)\n    (hRhoTime : DifferentiableAt ℝ (fluid.rho · x) t)\n    (hVelocityTime : DifferentiableAt ℝ (fluid.velocity · x) t)\n    (hMomentumDensity : Differentiable ℝ (momentumDensity d fluid t))\n    (hVelocitySpace : Differentiable ℝ (fluid.velocity t)) :\n    ∂ₜ (momentumDensity d fluid · x) t + matrixDiv d (momentumFlux d fluid t) x =\n      fluid.rho t x • materialAcceleration d fluid t x +\n        continuityResidual d fluid t x • fluid.velocity t x",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/FluidFlow/Newtonian.lean",
+   "module": "Physlib.FluidDynamics.FluidFlow.Newtonian",
+   "title": "Newtonian stress tensors for fluid flows",
+   "doc": "## i. Overview\n\nThis module defines the velocity gradient and Newtonian stress tensor associated to a\n`FluidFlow`.\n\n## ii. Key results\n\n- `FluidFlow.velocityGradient` : The spatial velocity-gradient matrix.\n- `FluidFlow.newtonianStressTensor` : The Newtonian stress tensor determined by pressure and\n  viscosity.\n\n## iii. Table of contents\n\n- A. Newtonian stress tensor\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. Newtonian stress tensor"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.FluidFlow.velocityGradient",
+     "kind": "def",
+     "line": 49,
+     "doc": "The spatial velocity-gradient matrix, with entries `partial_j u_i`.",
+     "statement": "noncomputable def velocityGradient (d : ℕ) (flow : FluidFlow d) :\n    Time → Space d → Matrix (Fin d) (Fin d) ℝ",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.FluidFlow.newtonianStressTensor",
+     "kind": "def",
+     "line": 58,
+     "doc": "The Newtonian stress tensor\n`-p I + mu (grad u + grad u^T) + lambda (div u) I`.\n\nThe scalar fields are pressure, shear viscosity, and second viscosity.",
+     "statement": "noncomputable def newtonianStressTensor (d : ℕ) (flow : FluidFlow d)\n    (pressure shearViscosity secondViscosity : ScalarField d) : StressTensor d",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean",
+   "module": "Physlib.FluidDynamics.ThermodynamicCauchyFlow.Basic",
+   "title": "Basic predicates for thermodynamic Cauchy flows",
+   "doc": "## i. Overview\n\nThis module defines `ThermodynamicCauchyFlow`, the thermodynamic layer currently needed for\nisentropic and Bernoulli-type statements.\n\nThis structure is intentionally the minimal carrier for the present thermodynamic API, not a claim\nthat entropy and enthalpy describe every thermodynamic process. Temperature, heat flux, and other\nstate data should be introduced by a further extension when an energy or heat-transport law needs\nthem. Keeping those fields out here lets Bernoulli and isentropic results avoid assumptions\nunrelated to their statements.\n\n## ii. Key results\n\n- `ThermodynamicCauchyFlow` : A Cauchy flow with entropy and enthalpy fields.\n\n## iii. Table of contents\n\n- A. Thermodynamic Cauchy-flow structure\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 41,
+     "text": "## A. Thermodynamic Cauchy-flow structure"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.ThermodynamicCauchyFlow",
+     "kind": "structure",
+     "line": 52,
+     "doc": "A Cauchy flow equipped with thermodynamic entropy and enthalpy fields.\n\nThese fields are independent of the kinematic and momentum-balance data unless additional\nthermodynamic constitutive laws are imposed. They are sufficient for the current isentropic and\nBernoulli APIs; other thermodynamic fields belong in later extensions that require them.",
+     "statement": "structure ThermodynamicCauchyFlow (d : ℕ) extends CauchyFlow d where\n  /-- The specific entropy field. -/\n  entropy : ScalarField d\n  /-- The specific enthalpy field. -/\n  enthalpy : ScalarField d",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean",
+   "module": "Physlib.FluidDynamics.ThermodynamicCauchyFlow.Bernoulli",
+   "title": "Bernoulli theory for thermodynamic Cauchy flows",
+   "doc": "## i. Overview\n\nThis module is reserved for Bernoulli definitions and results based on the shared\n`ThermodynamicCauchyFlow` data together with an explicit external potential parameter, rather\nthan defining a separate Bernoulli-flow structure.\n\n## ii. Key results\n\n- `bernoulliFunction` : The Bernoulli function `|u|^2 / 2 + h + Phi`.\n- `LocalBernoulliLaw` : Vanishing spatial gradient of the Bernoulli function.\n- `BernoulliLaw` : Spatial constancy of the Bernoulli function at each time.\n\n## iii. Table of contents\n\n- A. Bernoulli function\n- B. Bernoulli-law predicates\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. Bernoulli function"
+    },
+    {
+     "line": 54,
+     "text": "## B. Bernoulli-law predicates"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.bernoulliFunction",
+     "kind": "def",
+     "line": 49,
+     "doc": "The Bernoulli function `|u|^2 / 2 + h + Phi`.",
+     "statement": "noncomputable def bernoulliFunction\n    (d : ℕ) (flow : ThermodynamicCauchyFlow d) (potential : Space d → ℝ) : ScalarField d",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.LocalBernoulliLaw",
+     "kind": "def",
+     "line": 61,
+     "doc": "A local Bernoulli law: the Bernoulli function has zero spatial gradient.",
+     "statement": "def LocalBernoulliLaw\n    (d : ℕ) (flow : ThermodynamicCauchyFlow d) (potential : Space d → ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "FluidDynamics.BernoulliLaw",
+     "kind": "def",
+     "line": 66,
+     "doc": "A global Bernoulli law: the Bernoulli function is spatially constant at each time.",
+     "statement": "def BernoulliLaw\n    (d : ℕ) (flow : ThermodynamicCauchyFlow d) (potential : Space d → ℝ) : Prop",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean",
+   "module": "Physlib.FluidDynamics.ThermodynamicCauchyFlow.Isentropic",
+   "title": "Isentropic thermodynamic Cauchy flows",
+   "doc": "## i. Overview\n\nThis module defines the isentropic predicate for thermodynamic Cauchy flows.\n\n## ii. Key results\n\n- `ThermodynamicCauchyFlow.IsIsentropic` : A thermodynamic Cauchy flow whose entropy is\n  materially conserved.\n\n## iii. Table of contents\n\n- A. Thermodynamic-flow predicates\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Thermodynamic-flow predicates"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "FluidDynamics.ThermodynamicCauchyFlow.IsIsentropic",
+     "kind": "def",
+     "line": 46,
+     "doc": "A thermodynamic flow is isentropic when the entropy is materially conserved along the\nunderlying fluid velocity field.",
+     "statement": "def IsIsentropic (d : ℕ) (flow : ThermodynamicCauchyFlow d) : Prop",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  }
+ ]
+}

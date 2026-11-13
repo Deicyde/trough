@@ -1,0 +1,20 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "PhyslibAlpha/Basic.lean",
+   "module": "PhyslibAlpha.Basic",
+   "title": "PhyslibAlpha",
+   "doc": "The entry point of PhyslibAlpha, an extension of Physlib with a lighter review process.\n\n## i. Overview\n\nPhyslibAlpha is an extension of Physlib with a lighter review process.\nWe expect the file structure to match where possible that of Physlib.\n\nThis file contains no declarations; it documents the purpose and review policy of the project.\n\n## ii. Key results\n\n* None: this file contains only documentation.\n\n## iii. Table of contents\n\n- A. Review policy\n\n## iv. References\n\n* None.",
+   "sections": [
+    {
+     "line": 34,
+     "text": "## A. Review policy\n\nThe idea is that it sits between the high review standards of Physlib and\njust allowing anything in the project.\n\nThe review standard is similar to that of the arXiv, with a \"one-look\" policy.\nWe will look at the code once, and if it looks good, we will merge it, assuming\nit passes CI checks.\n\nWe will not promise to matain files in PhyslibAlpha, if they break, we will simply\nrecord when they broke.\n\nWe will make an effort to move files which are used frequently from PhyslibAlpha to Physlib,\nundertaking the more rigorous review process."
+    }
+   ],
+   "declarations": [],
+   "private": 0
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+---
+declaration: module
+origin: cited
+lean: LocalGaugeFieldAlgebra, LocalGaugeFieldAlgebra.ofComponent, LocalGaugeFieldAlgebra.ofComponent_apply, LocalGaugeFieldAlgebra.ofA, LocalGaugeFieldAlgebra.ofA_apply, LocalGaugeFieldAlgebra.adjoin_ι_eq_top
+statement: formalized
+proof: formalized
+---
+
+# The local gauge field algebra of a gauge theory
+
+The module `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.LocalGauge.Basic`, [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean): 6 declarations, 4 with a docstring.
+
+## i. Overview
+
+> The gauge bosons of a gauge theory with Lie algebra `𝔤` are jointly one bosonic field
+> valued in `Lorentz.CoVector ⊗[ℝ] 𝔤`, the target space `GaugeBoson 𝔤` of
+> `PhyslibAlpha.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Basic`. Its *local gauge field
+> algebra* `LocalGaugeFieldAlgebra 𝔤` — the jet algebra in which the gauge-boson part of a
+> Lagrangian lives — is the free commutative algebra on the component functions `∂_s A_μ^φ`,
+> built here in the same way as the `BBoson` jet algebra, but non-abelian and without a
+> basis of the gauge algebra: the adjoint index is carried by an abstract covector
+> `φ : Module.Dual ℝ 𝔤` throughout, following the dual-family formulation of
+> `Physlib.ClassicalFieldTheory.GaugeTheory.GaugeBoson.Realization`. For the Standard Model,
+> `𝔤` is `StandardModel.GaugeAlgebra`.
+>
+> Following the split promised for this directory, the structure is:
+> 1. this file — the jet algebra with its generators, over the target space and jet
+>    component space of `GaugeBoson.Basic`;
+> 2. `LorentzAction` — the action of the Lorentz group;
+> 3. `GaugeAction` — the action of the jet gauge group;
+> 4. `JetDeriv` — the formal total derivative;
+> 5. `MassDim` and `MassWeightPoly` — the mass-dimension grading;
+> 6. `FieldStrength` — the field strength and its covariant derivatives, out of which the
+>    covariant subalgebra `LocalGaugeCovFieldAlgebra` is generated.
+
+## ii. Key results
+
+> - `LocalGaugeFieldAlgebra` : the local gauge field algebra, the jet algebra of the gauge
+>   bosons.
+> - `LocalGaugeFieldAlgebra.ofComponent`, `LocalGaugeFieldAlgebra.ofA` : the generators.
+
+## iv. References
+
+> * None.
+
+## A. The jet algebra
+
+**`LocalGaugeFieldAlgebra`**, an abbrev, [line 76](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L76).
+
+> The local gauge field algebra, the jet algebra of the gauge bosons: the free
+> commutative algebra on the component functions `∂_s A_μ^φ` of the gauge-boson field,
+> realized as the symmetric algebra on the jet component space. The commutativity of the
+> product is the Bose statistics of the gauge fields.
+
+```lean
+abbrev LocalGaugeFieldAlgebra : Type
+```
+
+### A.1. The generators
+
+**`LocalGaugeFieldAlgebra.ofComponent`**, a def, [line 89](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L89).
+
+> The undifferentiated component function `A^φ` of the gauge-boson field along a
+> covector `φ` on the target space.
+
+```lean
+noncomputable def ofComponent : Module.Dual ℝ (GaugeBoson 𝔤) →ₗ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
+```
+
+**`LocalGaugeFieldAlgebra.ofComponent_apply`**, a lemma, [line 94](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L94).
+
+```lean
+lemma ofComponent_apply (φ : Module.Dual ℝ (GaugeBoson 𝔤)) :
+    (ofComponent 𝔤) φ = SymmetricAlgebra.ι ℝ _ ((1 : SpaceTimeDerivAlgebraℝ) ⊗ₜ[ℝ] φ)
+```
+
+**`LocalGaugeFieldAlgebra.ofA`**, a def, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L102).
+
+> **The component function `A_μ^φ` of the gauge-boson field**: the spacetime index `μ`
+> paired against the Lorentz coordinate basis, the adjoint index against the abstract
+> covector `φ` on the gauge algebra. These are the generators the ambient theory sees;
+> no basis of the gauge algebra is involved.
+
+```lean
+noncomputable def ofA (μ : Fin 1 ⊕ Fin 3) :
+    Module.Dual ℝ 𝔤 →ₗ[ℝ] (LocalGaugeFieldAlgebra 𝔤)
+```
+
+**`LocalGaugeFieldAlgebra.ofA_apply`**, a lemma, [line 107](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L107).
+
+```lean
+lemma ofA_apply (μ : Fin 1 ⊕ Fin 3) (φ : Module.Dual ℝ 𝔤) :
+    (ofA 𝔤) μ φ = (ofComponent 𝔤) ((GaugeBoson.componentDual 𝔤)
+      (Lorentz.CoVector.basis.dualBasis μ) φ)
+```
+
+**`LocalGaugeFieldAlgebra.adjoin_ι_eq_top`**, a lemma, [line 113](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean#L113).
+
+> The jet algebra is generated by the component functions.
+
+```lean
+lemma adjoin_ι_eq_top :
+    Algebra.adjoin ℝ (Set.range (SymmetricAlgebra.ι ℝ (GaugeBoson.JetComponentSpace 𝔤))) = ⊤
+```
+
+## Depends on
+
+- [The gauge-boson field of a gauge theory](gaugeboson-basic.md)
+
+## Proof depends on
+
+- [Functoriality of the symmetric algebra](../../../mathematics/part-01/symmetricalgebra.md)
+
+## Sources
+
+- [PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/GaugeTheory/GaugeBoson/LocalGauge/Basic.lean)

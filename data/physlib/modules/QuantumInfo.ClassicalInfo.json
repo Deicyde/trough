@@ -1,0 +1,1178 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/ClassicalInfo/Capacity.lean",
+   "module": "QuantumInfo.ClassicalInfo.Capacity",
+   "title": "",
+   "doc": "",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Code",
+     "kind": "structure",
+     "line": 26,
+     "doc": "Here we define a *Code* by an encdoder and a decoder. The encoder is a function that takes\nstrings (`List`s) of any length over an alphabet `A`, and returns strings over `I`;\nthe decoder takes `O` and gives back strings over `A`. The idea is that a channel\nwould map from strings of `I` to `O`. Important special cases are where `I=O` (the channel doesn't\nchange the symbol set), and `FixedLengthCode` where the output lengths only depend on input\nlengths.",
+     "statement": "structure Code where\n  encoder : List A → List I\n  decoder : List O → List A",
+     "sorry": false
+    },
+    {
+     "name": "FixedLengthCode",
+     "kind": "structure",
+     "line": 32,
+     "doc": "A `FixedLengthCode` is a `Code` whose output lengths don't depend on the input content, only\nthe input length.",
+     "statement": "structure FixedLengthCode extends Code A I O where\n  enc_length : ℕ → ℕ\n  enc_maps_length : ∀ as, (encoder as).length = enc_length (as.length)\n  dec_length : ℕ → ℕ\n  dec_maps_length : ∀ is, (decoder is).length = dec_length (is.length)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/ClassicalInfo/Channel.lean",
+   "module": "QuantumInfo.ClassicalInfo.Channel",
+   "title": "",
+   "doc": "",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "DMChannel",
+     "kind": "structure",
+     "line": 54,
+     "doc": "Discrete Memoryless Channel. Each input symbol `I` has a corresponding\noutput distribution `Distribution O`, and this process is applied\nindependently on each symbol in the list.",
+     "statement": "structure DMChannel where\n  symb_dist : I → ProbDistribution O",
+     "sorry": false
+    },
+    {
+     "name": "DMChannel.on_fin",
+     "kind": "def",
+     "line": 60,
+     "doc": "Apply a discrete memoryless channel to an n-character string.",
+     "statement": "def on_fin (C : DMChannel I O) {n : ℕ} (is : Fin n → I) : ProbDistribution (Fin n → O)",
+     "sorry": false
+    },
+    {
+     "name": "DMChannel.on_list",
+     "kind": "def",
+     "line": 71,
+     "doc": "Apply a discrete memoryless channel to a list.",
+     "statement": "def on_list (C : DMChannel I O) (is : List I) : ProbDistribution (Fin (is.length) → O)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/ClassicalInfo/Distribution.lean",
+   "module": "QuantumInfo.ClassicalInfo.Distribution",
+   "title": "Distributions on finite sets",
+   "doc": "We define the type `Distribution α` on a `Fintype α`. By restricting ourselves to distributoins on\nfinite types, a lot of notation and casts are greatly simplified.\nThis suffices for (most) finite-dimensional quantum theory.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "ProbDistribution",
+     "kind": "def",
+     "line": 37,
+     "doc": "We define our own (discrete) probability distribution notion here, instead\nof using `PMF` from Mathlib, because that uses ENNReals everywhere to maintain compatibility\nwith `MeasureTheory.Measure`.\n\nThe probabilities internal to a Distribution are NNReals. This lets us more easily\nwrite the statement that they sum to 1, since NNReals can be added. (Probabilities,\non their own, cannot.) But the FunLike instance gives `Prob` out, which carry the\ninformation that they are all in the range [0,1].",
+     "statement": "def ProbDistribution (α : Type u) [Fintype α] : Type u",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.mk'",
+     "kind": "def",
+     "line": 46,
+     "doc": "Make a distribution, proving only that the values are nonnegative and that the\nsum is 1. The fact that the values are at most 1 is derived as a consequence.",
+     "statement": "def mk' (f : α → ℝ) (h₁ : ∀i, 0 ≤ f i) (hN : ∑ i, f i = 1) : ProbDistribution α",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.instFunLikeProb",
+     "kind": "instance",
+     "line": 53,
+     "doc": "",
+     "statement": "instance instFunLikeProb : FunLike (ProbDistribution α) α Prob",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.normalized",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma normalized (d : ProbDistribution α) : Finset.sum Finset.univ (fun i ↦ (d i : ℝ)) = 1",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.prob",
+     "kind": "abbrev",
+     "line": 63,
+     "doc": "",
+     "statement": "abbrev prob (d : ProbDistribution α)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.fun_eq_val",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "",
+     "statement": "lemma fun_eq_val (d : ProbDistribution α) : d.val = d",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.funlike_apply",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma funlike_apply (d : α → Prob) (h : _) (x : α) :\n    DFunLike.coe (self := instFunLikeProb) ⟨d, h⟩ x = d x",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.ext",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "",
+     "statement": "lemma ext {p q : ProbDistribution α} (h : ∀ x, p x = q x) : p = q",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.nonempty",
+     "kind": "theorem",
+     "line": 79,
+     "doc": "A distribution provides a witness that d is nonempty.",
+     "statement": "theorem nonempty (d : ProbDistribution α) : Nonempty α",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.constant",
+     "kind": "def",
+     "line": 86,
+     "doc": "Make an constant distribution: supported on a single element. This is also called, variously, a\n\"One-point distribution\", a \"Degenerate distribution\", a \"Deterministic distribution\", a\n\"Delta function\", or a \"Point mass distribution\".",
+     "statement": "def constant (x : α) : ProbDistribution α",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.constant_def",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "",
+     "statement": "lemma constant_def (x : α) : (constant x : α → Prob) = fun y ↦ if x = y then 1 else 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.constant_eq",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "",
+     "statement": "lemma constant_eq (x : α) : constant x y = if x = y then 1 else 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.constant_def'",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "",
+     "statement": "lemma constant_def' (x y : α) : (constant x : α → Prob) y = if x = y then 1 else 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.constant_of_exists_one",
+     "kind": "theorem",
+     "line": 106,
+     "doc": "If a distribution has an element with probability 1, the distribution has a constant.",
+     "statement": "theorem constant_of_exists_one {D : ProbDistribution α} {x : α} (h : D x = 1) :\n    D = ProbDistribution.constant x",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.uniform",
+     "kind": "def",
+     "line": 123,
+     "doc": "Make an uniform distribution.",
+     "statement": "def uniform [n : Nonempty α] : ProbDistribution α",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.uniform_def",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "",
+     "statement": "lemma uniform_def [Nonempty α] (y : α) : ((uniform y) : ℝ) = 1 / (Finset.univ.card (α := α))",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.prod",
+     "kind": "def",
+     "line": 134,
+     "doc": "Make a distribution on a product of two Fintypes.",
+     "statement": "def prod (d1 : ProbDistribution α) (d2 : ProbDistribution β) : ProbDistribution (Prod α β)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.prod_def",
+     "kind": "lemma",
+     "line": 139,
+     "doc": "",
+     "statement": "lemma prod_def (x : α) (y : β) : prod d1 d2 ⟨x, y⟩ = (d1 x) * (d2 y)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.extend_right",
+     "kind": "def",
+     "line": 144,
+     "doc": "Given a distribution on α, extend it to a distribution on `Sum α β` by\ngiving it no support on `β`.",
+     "statement": "def extend_right (d : ProbDistribution α) : ProbDistribution (α ⊕ β)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.extend_left",
+     "kind": "def",
+     "line": 149,
+     "doc": "Given a distribution on α, extend it to a distribution on `Sum β α` by\ngiving it no support on `β`.",
+     "statement": "def extend_left (d : ProbDistribution α) : ProbDistribution (β ⊕ α)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.instMixable",
+     "kind": "instance",
+     "line": 154,
+     "doc": "Make a convex mixture of two distributions on the same set.",
+     "statement": "instance instMixable : Mixable (α → ℝ) (ProbDistribution α)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.relabel",
+     "kind": "def",
+     "line": 161,
+     "doc": "Given a distribution on type α and an equivalence to type β, get the corresponding\ndistribution on type β.",
+     "statement": "def relabel (d : ProbDistribution α) (σ : β ≃ α) : ProbDistribution β",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.congr",
+     "kind": "def",
+     "line": 170,
+     "doc": "ProbDistribution on α and β are equivalent for equivalent types α ≃ β.",
+     "statement": "def congr (σ : α ≃ β) : ProbDistribution α ≃ ProbDistribution β",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.congr_apply",
+     "kind": "lemma",
+     "line": 186,
+     "doc": "",
+     "statement": "lemma congr_apply (σ : α ≃ β) (d : ProbDistribution α) (j : β): (congr σ d) j = d (σ.symm j)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.congr_symm_apply",
+     "kind": "theorem",
+     "line": 191,
+     "doc": "The inverse and congruence operations for distributions commute",
+     "statement": "theorem congr_symm_apply (σ : α ≃ β) :\n    (ProbDistribution.congr σ).symm = ProbDistribution.congr σ.symm",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.coin",
+     "kind": "def",
+     "line": 197,
+     "doc": "The distribution on Fin 2 corresponding to a coin with probability p.\nChance p of 1, 1-p of 0.",
+     "statement": "def coin (p : Prob) : ProbDistribution (Fin 2)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.coin_val_zero",
+     "kind": "lemma",
+     "line": 201,
+     "doc": "",
+     "statement": "lemma coin_val_zero (p : Prob) : coin p 0 = p",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.coin_val_one",
+     "kind": "lemma",
+     "line": 205,
+     "doc": "",
+     "statement": "lemma coin_val_one (p : Prob) : coin p 1 = 1 - p",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.fin_two_eq_coin",
+     "kind": "theorem",
+     "line": 209,
+     "doc": "Every distribution on two variable is some coin.",
+     "statement": "theorem fin_two_eq_coin (d : ProbDistribution (Fin 2)) : d = coin (d 0)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.coin_eq_iff",
+     "kind": "lemma",
+     "line": 217,
+     "doc": "",
+     "statement": "lemma coin_eq_iff (p : Prob) (f : ProbDistribution (Fin 2)) :\n    ProbDistribution.coin p = f ↔ p = f 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.RandVar",
+     "kind": "structure",
+     "line": 229,
+     "doc": "A `T`-valued random variable over `α` is a map `var : α → T` along\nwith a probability distribution `distr : Distribution α`.",
+     "statement": "structure RandVar (α : Type*) [Fintype α] (T : Type*) where\n  var : α → T\n  distr : ProbDistribution α",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.instFunctor",
+     "kind": "instance",
+     "line": 233,
+     "doc": "",
+     "statement": "instance instFunctor : Functor (RandVar α)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.instLawfulFunctor",
+     "kind": "instance",
+     "line": 235,
+     "doc": "",
+     "statement": "instance instLawfulFunctor : LawfulFunctor (RandVar α)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.expect_val",
+     "kind": "def",
+     "line": 247,
+     "doc": "`Distribution.exp_val` is the expectation value of a random variable `X`. Under the hood,\nit is the \"convex combination over a finite family\" on the type `T`, afforded by\nthe `Mixable` instance, with the probability distribution of `X` as weights.",
+     "statement": "def expect_val (X : RandVar α T) : T",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.expect_val_eq_mixable_mix",
+     "kind": "theorem",
+     "line": 260,
+     "doc": "The expectation value of a random variable over `α = Fin 2` is the same as `Mixable.mix`\nwith probabiliy weight `X.distr 0`",
+     "statement": "theorem expect_val_eq_mixable_mix (d : ProbDistribution (Fin 2)) (x₁ x₂ : T) :\n    expect_val ⟨![x₁, x₂], d⟩ = Mixable.mix (d 0) x₁ x₂",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.expect_val_constant",
+     "kind": "theorem",
+     "line": 278,
+     "doc": "The expectation value of a random variable with constant probability distribution\n`constant x` is its value at `x`",
+     "statement": "theorem expect_val_constant (x : α) (f : α → T) : expect_val ⟨f, (constant x)⟩ = f x",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.zero_le_expect_val",
+     "kind": "theorem",
+     "line": 284,
+     "doc": "The expectation value of a nonnegative real random variable is also nonnegative",
+     "statement": "theorem zero_le_expect_val (d : ProbDistribution α) (f : α → ℝ) (hpos : 0 ≤ f) :\n    0 ≤ expect_val ⟨f, d⟩",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.congrRandVar",
+     "kind": "def",
+     "line": 293,
+     "doc": "`T`-valued random variables on `α` and `β` are equivalent if `α ≃ β`",
+     "statement": "def congrRandVar (σ : α ≃ β) : RandVar α T ≃ RandVar β T",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.map_congr_eq_congr_map",
+     "kind": "lemma",
+     "line": 313,
+     "doc": "Given a `T`-valued random variable `X` over `α`, mapping over `T` commutes\nwith the equivalence over `α`",
+     "statement": "lemma map_congr_eq_congr_map {S : Type _} [Mixable U S] (f : T → S) (σ : α ≃ β) (X : RandVar α T) :\n  f <$> congrRandVar σ X = congrRandVar σ (f <$> X)",
+     "sorry": false
+    },
+    {
+     "name": "ProbDistribution.expect_val_congr_eq_expect_val",
+     "kind": "theorem",
+     "line": 319,
+     "doc": "The expectation value is invariant under equivalence of random variables",
+     "statement": "theorem expect_val_congr_eq_expect_val (σ : α ≃ β) (X : RandVar α T) :\n    expect_val (congrRandVar σ X) = expect_val X",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/ClassicalInfo/Entropy.lean",
+   "module": "QuantumInfo.ClassicalInfo.Entropy",
+   "title": "Shannon entropy",
+   "doc": "Definitions and facts about the Shannon entropy function -x*ln(x), both on a single\nvariable and on a distribution.\n\nThere is significant overlap with `Real.negMulLog` and `Real.binEntropy` in Mathlib,\nand probably these files could be combined in some form.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "H₁",
+     "kind": "def",
+     "line": 28,
+     "doc": "The one-event entropy function, H₁(p) = -p*ln(p). Uses nits.",
+     "statement": "def H₁ : Prob → ℝ",
+     "sorry": false
+    },
+    {
+     "name": "H₁_zero_eq_zero",
+     "kind": "lemma",
+     "line": 33,
+     "doc": "H₁ of 0 is zero.",
+     "statement": "lemma H₁_zero_eq_zero : H₁ 0 = 0",
+     "sorry": false
+    },
+    {
+     "name": "H₁_one_eq_zero",
+     "kind": "lemma",
+     "line": 38,
+     "doc": "H₁ of 1 is zero.",
+     "statement": "lemma H₁_one_eq_zero : H₁ 1 = 0",
+     "sorry": false
+    },
+    {
+     "name": "H₁_nonneg",
+     "kind": "theorem",
+     "line": 42,
+     "doc": "Entropy is nonnegative.",
+     "statement": "theorem H₁_nonneg (p : Prob) : 0 ≤ H₁ p",
+     "sorry": false
+    },
+    {
+     "name": "H₁_le_1",
+     "kind": "theorem",
+     "line": 47,
+     "doc": "Entropy is less than 1.",
+     "statement": "theorem H₁_le_1 (p : Prob) : H₁ p < 1",
+     "sorry": false
+    },
+    {
+     "name": "H₁_le_exp_m1",
+     "kind": "theorem",
+     "line": 57,
+     "doc": "Entropy is at most 1/e.",
+     "statement": "theorem H₁_le_exp_m1 (p : Prob) : H₁ p ≤ Real.exp (-1)",
+     "sorry": false
+    },
+    {
+     "name": "H₁_concave",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "",
+     "statement": "lemma H₁_concave : ∀ (x y : Prob), ∀ (p : Prob), p[H₁ x ↔ H₁ y] ≤ H₁ (p[x ↔ y])",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ",
+     "kind": "def",
+     "line": 86,
+     "doc": "The Shannon entropy of a discrete distribution, H(X) = ∑ H₁(p_x).",
+     "statement": "def Hₛ (d : ProbDistribution α) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_eq_expect_val",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "Shannon entropy is the expected negative logarithm of the outcome probability.\nZero-probability outcomes contribute zero to the expectation.",
+     "statement": "lemma Hₛ_eq_expect_val (d : ProbDistribution α) :\n    Hₛ d = ProbDistribution.expect_val ⟨fun x ↦ -Real.log (d x), d⟩",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_nonneg",
+     "kind": "theorem",
+     "line": 97,
+     "doc": "Shannon entropy of a distribution is nonnegative.",
+     "statement": "theorem Hₛ_nonneg (d : ProbDistribution α) : 0 ≤ Hₛ d",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_concave",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "Shannon entropy is concave under convex mixtures of distributions.",
+     "statement": "lemma Hₛ_concave (d₁ d₂ : ProbDistribution α) (p : Prob) :\n    p[Hₛ d₁ ↔ Hₛ d₂] ≤ Hₛ (p[d₁ ↔ d₂])",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_le_log_d",
+     "kind": "theorem",
+     "line": 108,
+     "doc": "Shannon entropy of a distribution is at most ln d.",
+     "statement": "theorem Hₛ_le_log_d (d : ProbDistribution α) : Hₛ d ≤ Real.log (Fintype.card α)",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_constant_eq_zero",
+     "kind": "theorem",
+     "line": 129,
+     "doc": "The shannon entropy of a constant variable is zero.",
+     "statement": "theorem Hₛ_constant_eq_zero {i : α} : Hₛ (ProbDistribution.constant i) = 0",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_uniform",
+     "kind": "theorem",
+     "line": 133,
+     "doc": "Shannon entropy of a uniform distribution is ln d.",
+     "statement": "theorem Hₛ_uniform [Nonempty α] :\n    Hₛ (ProbDistribution.uniform (α := α)) = Real.log (Finset.univ.card (α := α))",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_coin",
+     "kind": "theorem",
+     "line": 138,
+     "doc": "Shannon entropy of two-event distribution.",
+     "statement": "theorem Hₛ_coin (p : Prob) : Hₛ (ProbDistribution.coin p) = Real.binEntropy p",
+     "sorry": false
+    },
+    {
+     "name": "Hₛ_eq_of_multiset_map_eq",
+     "kind": "lemma",
+     "line": 141,
+     "doc": "",
+     "statement": "lemma Hₛ_eq_of_multiset_map_eq (d₁ : ProbDistribution α) (d₂ : ProbDistribution β)\n    (h : Multiset.map d₁.prob Finset.univ.val = Multiset.map d₂.prob Finset.univ.val) :\n    Hₛ d₁ = Hₛ d₂",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/ClassicalInfo/ForMathlib/Analysis/SpecialFunctions/Log/NegMulLog.lean",
+   "module": "QuantumInfo.ClassicalInfo.ForMathlib.Analysis.SpecialFunctions.Log.NegMulLog",
+   "title": "",
+   "doc": "",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Real.negMulLog_strictMonoOn",
+     "kind": "lemma",
+     "line": 17,
+     "doc": "",
+     "statement": "lemma negMulLog_strictMonoOn : StrictMonoOn Real.negMulLog (Set.Icc 0 (exp (-1)))",
+     "sorry": false
+    },
+    {
+     "name": "Real.negMulLog_strictAntiOn",
+     "kind": "lemma",
+     "line": 25,
+     "doc": "",
+     "statement": "lemma negMulLog_strictAntiOn : StrictAntiOn Real.negMulLog (Set.Ici (exp (-1)))",
+     "sorry": false
+    },
+    {
+     "name": "Real.negMulLog_le_rexp_neg_one",
+     "kind": "lemma",
+     "line": 34,
+     "doc": "",
+     "statement": "lemma negMulLog_le_rexp_neg_one {x : ℝ} (hx : 0 ≤ x) : negMulLog x ≤ exp (-1)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "QuantumInfo/ClassicalInfo/Prob.lean",
+   "module": "QuantumInfo.ClassicalInfo.Prob",
+   "title": "Probabilities",
+   "doc": "This defines a type `Prob`, which is simply any real number in the interval O to 1.\nThis then comes with additional statements such as its application to convex sets, and\nit makes useful type alias for functions that only make sense on probabilities.\n\nA significant application is in the `Mixable` typeclass, also in this file, which is a\ngeneral notion of convex combination that applies to types as opposed to sets;\nelements are `Mixable.mix`ed using `Prob`s.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Prob",
+     "kind": "def",
+     "line": 31,
+     "doc": "`Prob` is a real number in the interval [0,1]. Similar to NNReal in many definitions, but this\nallows other nice things more 'safely' such as convex combination.",
+     "statement": "def Prob : Type _",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 35,
+     "doc": "",
+     "statement": "instance : Coe Prob ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Prob.canLift",
+     "kind": "instance",
+     "line": 37,
+     "doc": "",
+     "statement": "instance canLift : CanLift ℝ Prob Subtype.val fun r => 0 ≤ r ∧ r ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_zero",
+     "kind": "lemma",
+     "line": 41,
+     "doc": "",
+     "statement": "lemma coe_zero : (0 : Prob).val = 0",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_one",
+     "kind": "lemma",
+     "line": 45,
+     "doc": "",
+     "statement": "lemma coe_one : (1 : Prob).val = 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_mul",
+     "kind": "lemma",
+     "line": 49,
+     "doc": "",
+     "statement": "lemma coe_mul (x y : Prob) : (x * y).val = x.val * y.val",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_inf",
+     "kind": "lemma",
+     "line": 53,
+     "doc": "",
+     "statement": "lemma coe_inf (x y : Prob) : (x ⊓ y).val = x.val ⊓ y.val",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_sup",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "",
+     "statement": "lemma coe_sup (x y : Prob) : (x ⊔ y).val = x.val ⊔ y.val",
+     "sorry": false
+    },
+    {
+     "name": "Prob.instInhabited",
+     "kind": "instance",
+     "line": 60,
+     "doc": "",
+     "statement": "instance instInhabited : Inhabited Prob",
+     "sorry": false
+    },
+    {
+     "name": "Prob.instConditionallyCompleteLinearOrder",
+     "kind": "instance",
+     "line": 68,
+     "doc": "Override `ordConnectedSubsetConditionallyCompleteLinearOrder` (activated by `instInhabited`)\nso that `ConditionallyCompleteLinearOrder Prob` agrees definitionally with\n`CompleteLinearOrder Prob`.\n\nThis seems fixed in Mathlib master.",
+     "statement": "instance (priority := high) instConditionallyCompleteLinearOrder :\n    ConditionallyCompleteLinearOrder Prob",
+     "sorry": false
+    },
+    {
+     "name": "Prob.zero_le_coe",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma zero_le_coe {p : Prob} : 0 ≤ (p : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_le_one",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma coe_le_one {p : Prob} : (p : ℝ) ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.zero_le",
+     "kind": "lemma",
+     "line": 81,
+     "doc": "",
+     "statement": "lemma zero_le {p : Prob} : 0 ≤ p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.le_one",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "",
+     "statement": "lemma le_one {p : Prob} : p ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.mem_unitInterval_bounds",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma mem_unitInterval_bounds {x : ℝ} (h : x ∈ unitInterval) : 0 ≤ x ∧ x ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.mem_unitInterval_of_le",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma mem_unitInterval_of_le {x : ℝ} (h₀ : 0 ≤ x) (h₁ : x ≤ 1) : x ∈ unitInterval",
+     "sorry": false
+    },
+    {
+     "name": "Prob.ext",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "protected lemma ext {n m : Prob} : (n : ℝ) = (m : ℝ) → n = m",
+     "sorry": false
+    },
+    {
+     "name": "Prob.ne_iff",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma ne_iff {x y : Prob} : (x : ℝ) ≠ (y : ℝ) ↔ x ≠ y",
+     "sorry": false
+    },
+    {
+     "name": "Prob.toReal_mul",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "",
+     "statement": "lemma toReal_mul (x y : Prob) : (x * y : Prob) = (x : ℝ) * (y : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.toNNReal",
+     "kind": "def",
+     "line": 107,
+     "doc": "Coercion `Prob → ℝ≥0`.",
+     "statement": "def toNNReal : Prob → ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "Prob.toNNReal_mk",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "",
+     "statement": "lemma toNNReal_mk : toNNReal { val := x, property := hx} = { val := x, property := hx.1 }",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 114,
+     "doc": "",
+     "statement": "instance : Coe Prob ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "Prob.canLiftNN",
+     "kind": "instance",
+     "line": 116,
+     "doc": "",
+     "statement": "instance canLiftNN : CanLift ℝ≥0 Prob toNNReal fun r => r ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.eq_iff_nnreal",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "",
+     "statement": "protected lemma eq_iff_nnreal (n m : Prob) : (n : ℝ≥0) = (m : ℝ≥0) ↔ n = m",
+     "sorry": false
+    },
+    {
+     "name": "Prob.toNNReal_zero",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "",
+     "statement": "lemma toNNReal_zero : (0 : Prob) = (0 : ℝ≥0)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.toNNReal_one",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "",
+     "statement": "lemma toNNReal_one : (1 : Prob) = (1 : ℝ≥0)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.ofNNReal_toNNReal",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "",
+     "statement": "lemma ofNNReal_toNNReal : ENNReal.ofNNReal (toNNReal p) = ENNReal.ofReal (p : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.NNReal.asProb",
+     "kind": "def",
+     "line": 136,
+     "doc": "",
+     "statement": "def NNReal.asProb (p : ℝ≥0) (hp : p ≤ 1) : Prob",
+     "sorry": false
+    },
+    {
+     "name": "Prob.NNReal.asProb'",
+     "kind": "def",
+     "line": 139,
+     "doc": "",
+     "statement": "def NNReal.asProb' (p : ℝ≥0) (hp : p.1 ≤ 1) : Prob",
+     "sorry": false
+    },
+    {
+     "name": "Prob.zero_lt_coe",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "",
+     "statement": "lemma zero_lt_coe {p : Prob} (hp : p ≠ 0) : (0 : ℝ) < p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.instSub",
+     "kind": "instance",
+     "line": 148,
+     "doc": "Subtract a probability from another. Truncates to zero, so this is often not great\nto work with, for the same reason that Nat subtraction is a pain. But, it lets you write\n`1 - p`, which is sufficiently useful on its own that this seems worth having.",
+     "statement": "instance instSub : Sub Prob",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_sub",
+     "kind": "lemma",
+     "line": 153,
+     "doc": "",
+     "statement": "lemma coe_sub (p q : Prob) : (p - q : Prob)  = (p.val - q.val) ⊔ (0 : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_one_minus",
+     "kind": "lemma",
+     "line": 157,
+     "doc": "",
+     "statement": "lemma coe_one_minus (p : Prob) : (1 - p : Prob) = 1 - (p : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.add_one_minus",
+     "kind": "lemma",
+     "line": 160,
+     "doc": "",
+     "statement": "lemma add_one_minus (p : Prob) : p.val + (1 - p).val = 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.one_minus_inv",
+     "kind": "lemma",
+     "line": 164,
+     "doc": "",
+     "statement": "lemma one_minus_inv (p : Prob) : 1 - (1 - p) = p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.coe_iInf",
+     "kind": "lemma",
+     "line": 170,
+     "doc": "",
+     "statement": "lemma coe_iInf {ι : Type*} [Nonempty ι] (f : ι → Prob) : ↑(⨅ t, f t) = (⨅ t, f t : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.top_eq_one",
+     "kind": "lemma",
+     "line": 177,
+     "doc": "",
+     "statement": "lemma top_eq_one : (⊤ : Prob) = 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.sub_zero",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "",
+     "statement": "lemma sub_zero (p : Prob) : p - 0 = p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.toNNReal_Continuous",
+     "kind": "lemma",
+     "line": 185,
+     "doc": "",
+     "statement": "lemma toNNReal_Continuous : Continuous Prob.toNNReal",
+     "sorry": false
+    },
+    {
+     "name": "Prob.mul_eq_one_iff",
+     "kind": "lemma",
+     "line": 190,
+     "doc": "",
+     "statement": "lemma mul_eq_one_iff (p q : Prob) : p * q = 1 ↔ p = 1 ∧ q = 1",
+     "sorry": false
+    },
+    {
+     "name": "Mixable",
+     "kind": "class",
+     "line": 217,
+     "doc": "A `Mixable T` typeclass instance gives a compact way of talking about the\naction of probabilities for forming linear combinations in convex spaces.\nThe notation `p [ x₁ ↔ x₂ ]` means to take a convex\ncombination, equal to `x₁` if `p=1` and to `x₂` if `p=0`.\n\nMixable is defined by an \"underlying\" data type `U` with addition and scalar\nmultiplication, and a bijection between the `T` and a convex set of `U`.\nFor instance, in `Mixable (Distribution (Fin n))`, `U` is `n`-element vectors\n(which form the probability simplex, degenerate in one dimension). For\n`QuantumInfo.States.Mixed.MState` density matrices in quantum mechanics, which are\nPSD matrices of trace 1, `U` is the underlying matrix.\n\nWhy not just stick with existing notions of `Convex`? `Convex` requires that\nthe type already forms an `AddCommMonoid` and `Module ℝ`. But many types, such as `Distribution`,\nare not: there is no good notion of \"multiplying a probability distribution by 0.3\" to get another\ndistribution. We can coerce the distribution nto, say, a vector or a function, but then we are not\ndoing arithmetic with distributions. Accordingly, the expression `0.3 * distA + 0.7 * distB`\ncannot represent a distribution on its own.",
+     "statement": "class Mixable (U : outParam (Type u)) (T : Type v) [AddCommMonoid U] [Module ℝ U] where\n  /-- Getter for the underlying data -/\n  to_U : T → U\n  /-- Proof that this getter is injective -/\n  to_U_inj : ∀ {T₁ T₂}, to_U T₁ = to_U T₂ → T₁ = T₂\n  /-- Proof that this image is convex -/\n  convex : Convex ℝ (Set.range to_U)\n  /-- Function to get a T from a proof that U is in the set. -/\n  mkT : {u : U} → (∃ t, to_U t = u) → { t : T // to_U t = u }",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.mix_ab",
+     "kind": "def",
+     "line": 232,
+     "doc": "",
+     "statement": "def mix_ab [inst : Mixable U T] {a b : ℝ} (ha : 0 ≤ a) (hb : 0 ≤ b) (hab : a + b = 1) (x₁ x₂ : T) : T",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.mix",
+     "kind": "def",
+     "line": 241,
+     "doc": "`Mixable.mix` represents the notion of \"convex combination\" on the type `T`, afforded by the\n`Mixable` instance. It takes a `Prob`, that is, a `Real` between 0 and 1. For working directly\nwith a Real, use `mix_ab`.",
+     "statement": "def mix [inst : Mixable U T] (p : Prob) (x₁ x₂ : T) : T",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.to_U_of_mkT",
+     "kind": "lemma",
+     "line": 245,
+     "doc": "",
+     "statement": "lemma to_U_of_mkT [inst : Mixable U T] (u : U) {h} : inst.to_U (mkT (u := u) h).1 = u",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.mix_zero",
+     "kind": "lemma",
+     "line": 254,
+     "doc": "",
+     "statement": "lemma mix_zero [inst : Mixable U T] (x₁ x₂ : T) : (0 : Prob) [ x₁ ↔ x₂ : inst] = x₂",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.mix_one",
+     "kind": "lemma",
+     "line": 260,
+     "doc": "",
+     "statement": "lemma mix_one [inst : Mixable U T] (x₁ x₂ : T) : (1 : Prob) [ x₁ ↔ x₂ : inst] = x₁",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.instUniv",
+     "kind": "instance",
+     "line": 265,
+     "doc": "When T is the whole space, and T is a suitable vector space over ℝ, we get a Mixable instance.",
+     "statement": "instance instUniv [AddCommMonoid T] [Module ℝ T] : Mixable T T",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.mkT_instUniv",
+     "kind": "lemma",
+     "line": 274,
+     "doc": "",
+     "statement": "lemma mkT_instUniv [AddCommMonoid T] [Module ℝ T] {t : T} (h : ∃ t', to_U t' = t) :\n    instUniv.mkT h = ⟨t, rfl⟩",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.to_U_instUniv",
+     "kind": "lemma",
+     "line": 279,
+     "doc": "",
+     "statement": "lemma to_U_instUniv [AddCommMonoid T] [Module ℝ T] {t : T} : instUniv.to_U t = t",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.instPi.lem_1",
+     "kind": "lemma",
+     "line": 284,
+     "doc": "",
+     "statement": "lemma instPi.lem_1 {D : Type*} {T U : D → Type*} [∀i, AddCommMonoid (U i)] [∀ i, Module ℝ (U i)]\n    [inst : ∀i, Mixable (U i) (T i)]\n    {u : (i : D) → U i} (h : ∃ (t : (i : D) → T i), (fun d => to_U (t d)) = u) (d : D) :\n    ∃ (t : T d), to_U t = u d",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.instPi",
+     "kind": "instance",
+     "line": 296,
+     "doc": "Mixable instance on Pi types.",
+     "statement": "instance instPi : Mixable ((i:D) → U i) ((i:D) → T i)",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.val_mkT_instPi",
+     "kind": "lemma",
+     "line": 309,
+     "doc": "",
+     "statement": "lemma val_mkT_instPi (D : Type*) [inst : Mixable U T] {u : D → U} (h : ∃ t, to_U t = u) :\n    (instPi.mkT h).val = fun d ↦ (inst.mkT (instPi.lem_1 h d)).val",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.to_U_instPi",
+     "kind": "lemma",
+     "line": 314,
+     "doc": "",
+     "statement": "lemma to_U_instPi (D : Type*) [inst : Mixable U T] {t : D → T} :\n    (instPi).to_U t = fun d ↦ inst.to_U (t d)",
+     "sorry": false
+    },
+    {
+     "name": "Mixable.instSubtype",
+     "kind": "def",
+     "line": 324,
+     "doc": "Mixable instances on subtypes (of other mixable types), assuming that they\nhave the correct closure properties.",
+     "statement": "def instSubtype {T : Type*} {P : T → Prop} (inst : Mixable U T)\n    (h : ∀{x y:T},\n      ∀⦃a b : ℝ⦄, (ha : 0 ≤ a) → (hb : 0 ≤ b) → (hab : a + b = 1) →\n      P x → P y → P (inst.mix_ab ha hb hab x y))\n    : Mixable U { t // P t}",
+     "sorry": false
+    },
+    {
+     "name": "Prob.instMixable",
+     "kind": "instance",
+     "line": 353,
+     "doc": "Probabilities `Prob` themselves are convex.",
+     "statement": "instance instMixable : Mixable ℝ Prob",
+     "sorry": false
+    },
+    {
+     "name": "Prob.to_U_mixable",
+     "kind": "lemma",
+     "line": 365,
+     "doc": "",
+     "statement": "lemma to_U_mixable [AddCommMonoid T] [SMul ℝ T] (t : Prob) : instMixable.to_U t = t.val",
+     "sorry": false
+    },
+    {
+     "name": "Prob.mkT_mixable",
+     "kind": "lemma",
+     "line": 369,
+     "doc": "",
+     "statement": "lemma mkT_mixable (u : ℝ) (h : ∃ t : Prob, Mixable.to_U t = u) : Mixable.mkT h =\n    ⟨⟨u,Exists.casesOn h fun t ht ↦ ht ▸ t.2⟩, rfl⟩",
+     "sorry": false
+    },
+    {
+     "name": "Prob.mix",
+     "kind": "abbrev",
+     "line": 375,
+     "doc": "`Prob.mix` is an alias of `Mixable.mix` so it can be accessed from a probability with\ndot notation, e.g. `p.mix x y`.",
+     "statement": "abbrev mix [AddCommMonoid U] [Module ℝ U] [inst : Mixable U T]\n    (p : Prob) (x₁ x₂ : T)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog",
+     "kind": "def",
+     "line": 384,
+     "doc": "Map a probability [0,1] to [0,+∞] with -log p. Special case that 0 maps to +∞ (not 0, as\nReal.log does). This makes it strictly antitone.",
+     "statement": "noncomputable def negLog : Prob → ENNReal",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_strictAnti",
+     "kind": "lemma",
+     "line": 393,
+     "doc": "Smaller probabilities have strictly greater negative logarithms, including at zero.",
+     "statement": "lemma negLog_strictAnti : StrictAnti negLog",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_Antitone",
+     "kind": "lemma",
+     "line": 402,
+     "doc": "",
+     "statement": "lemma negLog_Antitone : Antitone negLog",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_zero",
+     "kind": "lemma",
+     "line": 406,
+     "doc": "",
+     "statement": "lemma negLog_zero : —log (0 : Prob) = ⊤",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_one",
+     "kind": "lemma",
+     "line": 410,
+     "doc": "",
+     "statement": "lemma negLog_one : —log 1 = 0",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_eq_top_iff",
+     "kind": "lemma",
+     "line": 415,
+     "doc": "",
+     "statement": "lemma negLog_eq_top_iff {p : Prob} : —log p = ⊤ ↔ p = 0",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_pos_ENNReal",
+     "kind": "lemma",
+     "line": 418,
+     "doc": "",
+     "statement": "lemma negLog_pos_ENNReal {p : Prob} (hp : p ≠ 0) : —log p = .ofNNReal ⟨-Real.log p,\n    Left.nonneg_neg_iff.mpr (Real.log_nonpos p.2.1 p.2.2)⟩",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_pos_Real",
+     "kind": "lemma",
+     "line": 424,
+     "doc": "",
+     "statement": "lemma negLog_pos_Real {p : Prob} : (—log p).toReal = -Real.log p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.le_negLog_of_le_exp",
+     "kind": "lemma",
+     "line": 431,
+     "doc": "",
+     "statement": "lemma le_negLog_of_le_exp {p : Prob} {x : ℝ} (h : p ≤ Real.exp (-x)) : ENNReal.ofReal x ≤ —log p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_ne_top",
+     "kind": "lemma",
+     "line": 456,
+     "doc": "",
+     "statement": "lemma negLog_ne_top {p : Prob} (hp : 0 < p.val) : —log p ≠ ∞",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_eq_neg_ENNReal_log",
+     "kind": "lemma",
+     "line": 462,
+     "doc": "",
+     "statement": "lemma negLog_eq_neg_ENNReal_log (p : Prob) : —log p = -ENNReal.log p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_eq_ofReal_neg_log",
+     "kind": "lemma",
+     "line": 473,
+     "doc": "",
+     "statement": "lemma negLog_eq_ofReal_neg_log {p : Prob} (hp : 0 < p) :\n    ENNReal.ofReal (-Real.log p) = —log p",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLog_surjective",
+     "kind": "lemma",
+     "line": 482,
+     "doc": "Every extended nonnegative value is the negative logarithm of a probability.",
+     "statement": "lemma negLog_surjective : Function.Surjective negLog",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLogOrderIso",
+     "kind": "def",
+     "line": 494,
+     "doc": "The negative logarithm identifies probabilities with extended nonnegative values in reverse\norder, sending zero to infinity and one to zero.",
+     "statement": "def negLogOrderIso : Prob ≃o ENNRealᵒᵈ",
+     "sorry": false
+    },
+    {
+     "name": "Prob.negLogOrderIso_apply",
+     "kind": "lemma",
+     "line": 499,
+     "doc": "",
+     "statement": "lemma negLogOrderIso_apply (p : Prob) : negLogOrderIso p = OrderDual.toDual (negLog p)",
+     "sorry": false
+    },
+    {
+     "name": "Prob.zero_lt_negLog",
+     "kind": "lemma",
+     "line": 504,
+     "doc": "",
+     "statement": "lemma zero_lt_negLog {p : Prob} : 0 < —log p ↔ p ≠ 1",
+     "sorry": false
+    },
+    {
+     "name": "Prob.Continuous_negLog",
+     "kind": "lemma",
+     "line": 522,
+     "doc": "",
+     "statement": "lemma Continuous_negLog : Continuous negLog",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  }
+ ]
+}

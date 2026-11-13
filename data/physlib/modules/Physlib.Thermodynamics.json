@@ -1,0 +1,395 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/Thermodynamics/Basic.lean",
+   "module": "Physlib.Thermodynamics.Basic",
+   "title": "Thermodynamics",
+   "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
+   "sections": [],
+   "declarations": [],
+   "private": 0
+  },
+  {
+   "file": "Physlib/Thermodynamics/IdealGas/Basic.lean",
+   "module": "Physlib.Thermodynamics.IdealGas.Basic",
+   "title": "Ideal gas: basic entropy and adiabatic relations",
+   "doc": "In this module we formalize a simple thermodynamic model of a monophase\nideal gas. We:\n\n* Define the entropy\n    S(U,V,N) = N s₀ + N R (c \\log(U/U₀) + \\log(V/V₀) - (c+1)\\log(N/N₀)),\n* Prove equivalent formulations of the adiabatic relation for two states\n  (U_a, V_a) and (U_b, V_b) at fixed N:\n\n  1. c \\log(U_a/U_b) + \\log(V_a/V_b) = 0,\n  2. (U_a/U_b)^c (V_a/V_b) = 1,\n  3. U_a^c V_a = U_b^c V_b (the latter follows from (2)).",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "entropy",
+     "kind": "def",
+     "line": 34,
+     "doc": "Entropy of a monophase ideal gas:\nS(U,V,N) = N s0 + N R (c log(U/U0) + log(V/V0) - (c+1) log(N/N0)).",
+     "statement": "def entropy\n    (c R s0 U0 V0 N0 : ℝ) (U V N : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "adiabatic_relation_log",
+     "kind": "theorem",
+     "line": 46,
+     "doc": "Adiabatic relation in logarithmic form:\nIf S(Ua,Va,N) = S(Ub,Vb,N) with N fixed,\nthen c * log (Ua/Ub) + log (Va/Vb) = 0.",
+     "statement": "theorem adiabatic_relation_log\n    {s0 U0 V0 N0 c R : ℝ}\n    {Ua Ub Va Vb N : ℝ}\n    (hUa : 0 < Ua) (hUb : 0 < Ub)\n    (hVa : 0 < Va) (hVb : 0 < Vb)\n    (hN : 0 < N)\n    (hU0 : 0 < U0) (hV0 : 0 < V0)\n    (hR : 0 < R)\n    (hS :\n      entropy c R s0 U0 V0 N0 Ua Va N =\n      entropy c R s0 U0 V0 N0 Ub Vb N) :\n    c * log (Ua / Ub) + log (Va / Vb) = 0",
+     "sorry": false
+    },
+    {
+     "name": "adiabatic_relation_UaUbVaVb",
+     "kind": "theorem",
+     "line": 75,
+     "doc": "Adiabatic relation in product form:\nIf S(Ua,Va,N) = S(Ub,Vb,N) with N fixed,\nthen (Ua/Ub)^c * (Va/Vb) = 1.",
+     "statement": "theorem adiabatic_relation_UaUbVaVb\n    {s0 U0 V0 N0 c R : ℝ}\n    {Ua Ub Va Vb N : ℝ}\n    (hUa : 0 < Ua) (hUb : 0 < Ub)\n    (hVa : 0 < Va) (hVb : 0 < Vb)\n    (hN : 0 < N)\n    (hU0 : 0 < U0) (hV0 : 0 < V0)\n    (hR : 0 < R)\n    (hS :\n      entropy c R s0 U0 V0 N0 Ua Va N =\n      entropy c R s0 U0 V0 N0 Ub Vb N) :\n    (Real.rpow (Ua / Ub) c) * (Va / Vb) = 1",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  },
+  {
+   "file": "Physlib/Thermodynamics/Temperature/Basic.lean",
+   "module": "Physlib.Thermodynamics.Temperature.Basic",
+   "title": "Temperature",
+   "doc": "In this module we define the type `Temperature`, corresponding to the temperature in a given\n(but arbitrary) set of units which have absolute zero at zero.\n\nThis is the version of temperature most often used in undergraduate and\nnon-mathematical physics.\n\nThe choice of units can be made on a case-by-case basis, as long as they are done consistently.",
+   "sections": [
+    {
+     "line": 97,
+     "text": "### Regularity of `ofβ`"
+    },
+    {
+     "line": 124,
+     "text": "### Convergence"
+    },
+    {
+     "line": 157,
+     "text": "### Conversion to and from `ℝ≥0`"
+    },
+    {
+     "line": 180,
+     "text": "### Calculus relating T and β"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Temperature",
+     "kind": "structure",
+     "line": 32,
+     "doc": "The type `Temperature` represents the temperature in a given (but arbitrary) set of units\n(preserving zero). It currently wraps `ℝ≥0`, i.e., absolute temperature in nonnegative reals.",
+     "statement": "structure Temperature where\n  /-- The nonnegative real value of the temperature. -/\n  val : ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 41,
+     "doc": "Coercion to `ℝ≥0`.",
+     "statement": "instance : Coe Temperature ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.toReal",
+     "kind": "def",
+     "line": 44,
+     "doc": "The underlying real-number associated with the temperature.",
+     "statement": "noncomputable def toReal (T : Temperature) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 47,
+     "doc": "Coercion to `ℝ`.",
+     "statement": "noncomputable instance : Coe Temperature ℝ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 50,
+     "doc": "Topology on `Temperature` induced from `ℝ≥0`.",
+     "statement": "instance : TopologicalSpace Temperature",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 53,
+     "doc": "",
+     "statement": "instance : Zero Temperature",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ext",
+     "kind": "lemma",
+     "line": 55,
+     "doc": "",
+     "statement": "lemma ext {T₁ T₂ : Temperature} (h : T₁.val = T₂.val) : T₁ = T₂",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.β",
+     "kind": "def",
+     "line": 60,
+     "doc": "The inverse temperature defined as `1/(kB * T)` in a given, but arbitrary set of units.\nThis has the dimension of an inverse energy.",
+     "statement": "noncomputable def β (T : Temperature) : ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.β_toReal",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "",
+     "statement": "lemma β_toReal (T : Temperature) : (β kB T : ℝ) = 1 / ((kB : ℝ) * (T : ℝ))",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofβ",
+     "kind": "def",
+     "line": 66,
+     "doc": "The temperature associated with a given inverse temperature `β`.",
+     "statement": "noncomputable def ofβ (β : ℝ≥0) : Temperature",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofβ_eq",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "",
+     "statement": "lemma ofβ_eq : ofβ kB = fun β => ⟨⟨1 / ((kB : ℝ) * β), by\n    apply div_nonneg\n    · exact zero_le_one\n    · apply mul_nonneg\n      · exact kB.val_nonneg\n      · exact β.2⟩⟩",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.β_ofβ",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "",
+     "statement": "lemma β_ofβ (β' : ℝ≥0) : β kB (ofβ kB β') = β'",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofβ_toReal",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma ofβ_toReal (β : ℝ≥0) : (ofβ kB β).toReal = 1 / ((kB : ℝ) * (β : ℝ))",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofβ_β",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "",
+     "statement": "lemma ofβ_β (T : Temperature) : ofβ kB (β kB T) = T",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.beta_pos",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "Positivity of `β` from positivity of temperature.",
+     "statement": "lemma beta_pos (T : Temperature) (hT_pos : 0 < T.val) : 0 < (T.β kB : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofβ_continuousOn",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "",
+     "statement": "lemma ofβ_continuousOn : ContinuousOn (ofβ kB : ℝ≥0 → Temperature) (Set.Ioi 0)",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofβ_differentiableOn",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma ofβ_differentiableOn :\n    DifferentiableOn ℝ (fun (x : ℝ) => ((ofβ kB (Real.toNNReal x)).val : ℝ)) (Set.Ioi 0)",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.eventually_pos_ofβ",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "Eventually, `ofβ β` is positive as β → ∞`.",
+     "statement": "lemma eventually_pos_ofβ :\n    ∀ᶠ b : ℝ≥0 in atTop, ((Temperature.ofβ kB b : Temperature) : ℝ) > 0",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.tendsto_toReal_ofβ_atTop",
+     "kind": "lemma",
+     "line": 145,
+     "doc": "Core convergence: as β → ∞, `toReal (ofβ β) → 0` in `ℝ`.",
+     "statement": "lemma tendsto_toReal_ofβ_atTop :\n    Tendsto (fun b : ℝ≥0 => (Temperature.ofβ kB b : ℝ))\n      atTop (𝓝 (0 : ℝ))",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.tendsto_ofβ_atTop",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "As β → ∞, T = ofβ β → 0+ in ℝ (within Ioi 0).",
+     "statement": "lemma tendsto_ofβ_atTop :\n    Tendsto (fun b : ℝ≥0 => (Temperature.ofβ kB b : ℝ))\n      atTop (nhdsWithin 0 (Set.Ioi 0))",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofNNReal",
+     "kind": "def",
+     "line": 160,
+     "doc": "Build a `Temperature` directly from a nonnegative real.",
+     "statement": "def ofNNReal (t : ℝ≥0) : Temperature",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofNNReal_val",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "",
+     "statement": "lemma ofNNReal_val (t : ℝ≥0) : (ofNNReal t).val = t",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.coe_ofNNReal_coe",
+     "kind": "lemma",
+     "line": 166,
+     "doc": "",
+     "statement": "lemma coe_ofNNReal_coe (t : ℝ≥0) : ((ofNNReal t : Temperature) : ℝ≥0) = t",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.coe_ofNNReal_real",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "",
+     "statement": "lemma coe_ofNNReal_real (t : ℝ≥0) : ((⟨t⟩ : Temperature) : ℝ) = t",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofRealNonneg",
+     "kind": "def",
+     "line": 173,
+     "doc": "Convenience: build a temperature from a real together with a proof of nonnegativity.",
+     "statement": "noncomputable def ofRealNonneg (t : ℝ) (ht : 0 ≤ t) : Temperature",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.ofRealNonneg_val",
+     "kind": "lemma",
+     "line": 177,
+     "doc": "",
+     "statement": "lemma ofRealNonneg_val {t : ℝ} (ht : 0 ≤ t) :\n    (ofRealNonneg t ht).val = ⟨t, ht⟩",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.betaFromReal",
+     "kind": "def",
+     "line": 187,
+     "doc": "Map a real `t` to the inverse temperature `β` corresponding to the temperature `Real.toNNReal t`\n(`max t 0`), returned as a real number.",
+     "statement": "noncomputable def betaFromReal (t : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.beta_fun_T_formula",
+     "kind": "lemma",
+     "line": 191,
+     "doc": "Explicit closed-form for `Beta_fun_T t` when `t > 0`.",
+     "statement": "lemma beta_fun_T_formula (t : ℝ) (ht : 0 < t) :\n    betaFromReal kB t = 1 / ((kB : ℝ) * t)",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.beta_fun_T_eq_on_Ioi",
+     "kind": "lemma",
+     "line": 196,
+     "doc": "On `Ioi 0`, `Beta_fun_T t` equals `1 / (kB * t)`.",
+     "statement": "lemma beta_fun_T_eq_on_Ioi :\n    EqOn (betaFromReal kB) (fun t : ℝ => 1 / ((kB : ℝ) * t)) (Set.Ioi 0)",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.deriv_beta_wrt_T",
+     "kind": "lemma",
+     "line": 201,
+     "doc": "",
+     "statement": "lemma deriv_beta_wrt_T (T : Temperature) (hT_pos : 0 < T.val) :\n    HasDerivWithinAt (betaFromReal kB) (-1 / ((kB : ℝ) * (T.val : ℝ)^2)) (Set.Ioi 0)\n      (T.val : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "Temperature.chain_rule_T_beta",
+     "kind": "lemma",
+     "line": 221,
+     "doc": "Chain rule for β(T) : d/dT F(β(T)) = F'(β(T)) * (-1 / (kB * T^2)), within `Ioi 0`.",
+     "statement": "lemma chain_rule_T_beta {F : ℝ → ℝ} {F' : ℝ}\n    (T : Temperature) (hT_pos : 0 < T.val)\n    (hF_deriv : HasDerivWithinAt F F' (Set.Ioi 0) (T.β kB : ℝ)) :\n    HasDerivWithinAt (fun t : ℝ => F (betaFromReal kB t))\n      (F' * (-1 / ((kB : ℝ) * (T.val : ℝ)^2))) (Set.Ioi 0) (T.val : ℝ)",
+     "sorry": false
+    }
+   ],
+   "private": 1
+  },
+  {
+   "file": "Physlib/Thermodynamics/Temperature/TemperatureUnits.lean",
+   "module": "Physlib.Thermodynamics.Temperature.TemperatureUnits",
+   "title": "Units on Temperature",
+   "doc": "A unit of temperature corresponds to a choice of translationally-invariant\nmetric on the temperature manifold (to be defined diffeomorphic to `ℝ≥0`).\nSuch a choice is (non-canonically) equivalent to a\nchoice of positive real number. We define the type `TemperatureUnit` to be equivalent to the\npositive reals.\n\nOn `TemperatureUnit` there is an instance of division giving a real number, corresponding to the\nratio of the two scales of temperature unit.\n\nTo define specific temperature units, we first state the existence of a\na given temperature unit, and then construct all other temperature units from it.\nWe choose to state the\nexistence of the temperature unit of kelvin, and construct all other temperature units from that.",
+   "sections": [
+    {
+     "line": 52,
+     "text": "## Specific choices of temperature units\n\nTo define a specific temperature units.\nWe first define the notion of a kelvin to correspond to the temperature unit with underlying value\nequal to `1`. This is really down to a choice in the isomorphism between the set of metrics\non the temperature manifold and the positive reals.\n\nOnce we have defined kelvin, we can define other temperature units by scaling kelvin."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "TemperatureUnit",
+     "kind": "structure",
+     "line": 35,
+     "doc": "The choices of translationally-invariant metrics on the temperature-manifold.\nSuch a choice corresponds to a choice of units for temperature.",
+     "statement": "structure TemperatureUnit where\n  /-- The underlying scale of the unit. -/\n  val : ℝ\n  property : 0 < val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 40,
+     "doc": "",
+     "statement": "instance : PositiveRealUnitCore TemperatureUnit",
+     "sorry": false
+    },
+    {
+     "name": "TemperatureUnit.kelvin",
+     "kind": "def",
+     "line": 66,
+     "doc": "The definition of a temperature unit of kelvin.",
+     "statement": "def kelvin : TemperatureUnit",
+     "sorry": false
+    },
+    {
+     "name": "TemperatureUnit.nanokelvin",
+     "kind": "def",
+     "line": 69,
+     "doc": "The temperature unit of degrees nanokelvin (10^(-9) kelvin).",
+     "statement": "noncomputable def nanokelvin : TemperatureUnit",
+     "sorry": false
+    },
+    {
+     "name": "TemperatureUnit.microkelvin",
+     "kind": "def",
+     "line": 72,
+     "doc": "The temperature unit of degrees microkelvin (10^(-6) kelvin).",
+     "statement": "noncomputable def microkelvin : TemperatureUnit",
+     "sorry": false
+    },
+    {
+     "name": "TemperatureUnit.millikelvin",
+     "kind": "def",
+     "line": 75,
+     "doc": "The temperature unit of degrees millikelvin (10^(-3) kelvin).",
+     "statement": "noncomputable def millikelvin : TemperatureUnit",
+     "sorry": false
+    },
+    {
+     "name": "TemperatureUnit.absoluteFahrenheit",
+     "kind": "def",
+     "line": 79,
+     "doc": "The temperature unit of degrees fahrenheit ((5/9) of a kelvin).\nNote, this is fahrenheit starting at `0` absolute temperature.",
+     "statement": "noncomputable def absoluteFahrenheit : TemperatureUnit",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  }
+ ]
+}

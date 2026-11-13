@@ -1,0 +1,48 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/Operators/Unitary.lean",
+   "module": "QuantumInfo.Operators.Unitary",
+   "title": "Unitary operators on quantum state",
+   "doc": "This file is intended for lemmas about unitary matrices (`Matrix.unitaryGroup`) and how they\napply to `Bra`s, `Ket`s, and `MState` mixed states.\n\nThis is imported by `CPTPMap` to define things like unitary channels, Kraus operators, and\ncomplementary channels, so this file itself does not discuss channels yet.",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "MState.uConj",
+     "kind": "def",
+     "line": 33,
+     "doc": "Conjugate a state by a unitary matrix (applying the unitary as an evolution).",
+     "statement": "def uConj (ρ : MState d) (U : 𝐔[d]) : MState d",
+     "sorry": false
+    },
+    {
+     "name": "MState.uConj_spectrum_eq",
+     "kind": "theorem",
+     "line": 49,
+     "doc": "You might think this should only be true up to permutation, so that it would read like\n`∃ σ : Equiv.Perm d, (ρ.uConj U).spectrum = ρ.spectrum.relabel σ`. But since eigenvalues\nof a matrix are always canonically sorted, this is actually an equality.",
+     "statement": "theorem uConj_spectrum_eq (ρ : MState d) (U : 𝐔[d]) :\n    (ρ.uConj U).spectrum = ρ.spectrum",
+     "sorry": false
+    },
+    {
+     "name": "MState.inner_uConj",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "",
+     "statement": "lemma inner_uConj (ρ σ : MState d) (U : 𝐔[d]) : ⟪U ◃ ρ, U ◃ σ⟫_Prob = ⟪ρ, σ⟫_Prob",
+     "sorry": false
+    },
+    {
+     "name": "MState.no_cloning",
+     "kind": "theorem",
+     "line": 61,
+     "doc": "The **No-cloning theorem**, saying that if states `ψ` and `φ` can both be perfectly cloned\nusing a unitary `U` and a fiducial state `f`, and they aren't identical (their inner product is\nless than 1), then the two states must be orthogonal to begin with. In short: only orthogonal\nstates can be simultaneously cloned.",
+     "statement": "theorem no_cloning {U : 𝐔[d × d]}\n    (hψ : U ◃ pure (ψ ⊗ᵠ f) = pure (ψ ⊗ᵠ ψ))\n    (hφ : U ◃ pure (φ ⊗ᵠ f) = pure (φ ⊗ᵠ φ))\n    (H : ⟪pure ψ, pure φ⟫_Prob < (1 : ℝ)) :\n    ⟪pure ψ, pure φ⟫_Prob = (0 : ℝ)",
+     "sorry": false
+    }
+   ],
+   "private": 0
+  }
+ ]
+}
