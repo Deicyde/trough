@@ -785,6 +785,14 @@ class Writer:
                 return j
             para.append(self.styled(self.inline(arg[0]).strip(), "strong" if name in STRONG else "em"))
             return arg[1]
+        if name == "verb" and j < len(tex):
+            k = j + (tex[j] == "*")
+            end = tex.find(tex[k], k + 1) if k < len(tex) else -1
+            if end < 0:
+                return j
+            code = tex[k + 1 : end]
+            para.append(f"`{code}`" if self.markdown and code else code)
+            return end + 1
         if name in CODE:
             arg = argument(tex, j)
             if not arg:

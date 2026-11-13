@@ -327,6 +327,10 @@ def test_a_title_block_in_the_text_is_dropped():
     assert writer().statement(r"\title[Short]{A long title} \date{\today} \author{A \and B} Text.") == "Text."
 
 
+def test_verb_is_code():
+    assert writer().statement(r"see \verb|Rep.leftRegular R G| and \verb!a|b!.") == "see `Rep.leftRegular R G` and `a|b`."
+
+
 def test_a_thebibliography_is_a_list():
     tex_ = "\\begin{thebibliography}{9}\n\\bibitem{a}\nL.~Carlitz, \\emph{Note}.\n\n\\bibitem[IR]{b} K. Ireland.\n\\end{thebibliography}"
     assert writer().statement(tex_) == "- L. Carlitz, *Note*.\n- K. Ireland."
