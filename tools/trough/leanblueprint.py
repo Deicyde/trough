@@ -53,6 +53,9 @@ VERBATIM = re.compile(r"\\begin\s*\{(verbatim\*?|Verbatim|lstlisting|minted)\}")
 ARCHITECT = "leanarchitect"  # where a copy of LeanArchitect's .lake/build/blueprint sits, beside the TeX
 ARCHITECT_PATH = re.compile(r"(?:^|/)\.lake/build/blueprint/(.+)$")
 UNREAD = re.compile(r" names no (?:file|module|node)$| nests too deep$")  # problems that leave text unread
+# Files an \input can name that hold no blueprint text: a bibliography a LaTeX run writes, or Markdown
+# such as an authors list. When one is missing, nothing the blueprint says is left unread.
+NOT_TEX = (".bbl", ".md")
 SECTION = re.compile(r"\\(part|chapter|section|subsection|subsubsection)(\*?)(?![A-Za-z])")
 MATH = re.compile(
     r"(?s)\$\$.*?\$\$|(?<!\\)\$.*?(?<!\\)\$|\\\[.*?\\\]|\\\(.*?\\\)"
@@ -188,6 +191,9 @@ class Document:
 
     def visit(self, name: str, depth: int, origin: str = "") -> None:
         rel = self.resolve(name)
+        if rel is None and name.endswith(NOT_TEX):
+            self.missing.append(f"{origin}: \\input{{{name}}} holds no blueprint text; skipped")
+            return
         if rel is None or depth > 16:
             self.missing.append(f"{origin}: \\input{{{name}}} names no file" if rel is None
                                 else f"{origin}: \\input{{{name}}} nests too deep")

@@ -305,6 +305,16 @@ def test_missing_files_are_problems(tmp_path):
         leanblueprint.read(tmp_path, "renamed.tex")
 
 
+def test_an_input_that_holds_no_tex_is_skipped(tmp_path):
+    """A bibliography LaTeX writes, or a Markdown file outside the blueprint's TeX, is no text to read."""
+    (tmp_path / "web.tex").write_text("\\author{\\input{../../AUTHORS.md}}\n\\begin{document}\n"
+                                      "\\chapter{A}\n\\input{../print/bu1.bbl}\n\\end{document}\n")
+    problems = leanblueprint.read(tmp_path, "web.tex").problems
+    assert problems == ["web.tex:1: \\input{../../AUTHORS.md} holds no blueprint text; skipped",
+                        "web.tex:4: \\input{../print/bu1.bbl} holds no blueprint text; skipped"]
+    assert not any(leanblueprint.UNREAD.search(problem) for problem in problems)  # so a refresh goes ahead
+
+
 def test_a_proof_inside_a_proof_is_part_of_it(tmp_path):
     (tmp_path / "web.tex").write_text(
         "\\begin{document}\\chapter{C}\\begin{lemma}\\label{a} A. \\end{lemma}\n"
