@@ -24,17 +24,15 @@ Barnette's conjecture states that every finite simple cubic bipartite planar gra
 
 ## Lean: Barnette's Hamiltonian-cycle conjecture
 
-Stated in [BarnetteHamiltonian.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BarnetteHamiltonian.lean).
-
 ```lean
 theorem main : MainStatement.{u}
 ```
 
-Proved in [lean/OAI/Combinatorics/Hamiltonian/Main.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Hamiltonian/Main.lean#L47).
+Stated in [BarnetteHamiltonian.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BarnetteHamiltonian.lean#L48). Proved in [lean/OAI/Combinatorics/Hamiltonian/Main.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Hamiltonian/Main.lean#L47).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

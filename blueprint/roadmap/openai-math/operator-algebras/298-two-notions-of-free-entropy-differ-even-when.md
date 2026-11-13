@@ -24,8 +24,6 @@ The formalization disproves equality of microstates and nonmicrostates free entr
 
 ## Lean: Finite separation of microstates and nonmicrostates free entropy
 
-Stated in [FiniteEntropySeparation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteEntropySeparation.lean).
-
 ```lean
 theorem main :
     ∃ (H : Type) (_ : NormedAddCommGroup H) (_ : InnerProductSpace ℂ H)
@@ -40,11 +38,11 @@ theorem main :
       chiStar τ X S - (1 / 2 : EReal) < (⊤ : EReal)
 ```
 
-Proved in [lean/OAI/Analysis/FreeEntropy/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FreeEntropy/Main.lean#L9).
+Stated in [FiniteEntropySeparation.lean, line 108](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteEntropySeparation.lean#L108). Proved in [lean/OAI/Analysis/FreeEntropy/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FreeEntropy/Main.lean#L9).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

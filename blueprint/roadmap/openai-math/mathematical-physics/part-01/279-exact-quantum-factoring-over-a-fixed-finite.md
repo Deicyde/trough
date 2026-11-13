@@ -24,17 +24,15 @@ The formalization constructs a polynomial-time uniform quantum circuit family th
 
 ## Lean: Exact quantum factoring over a fixed finite gate set
 
-Stated in [ExactQuantumFactoring.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ExactQuantumFactoring.lean).
-
 ```lean
 theorem exact_quantum_factoring : MainTheorem
 ```
 
-Proved in [lean/OAI/Computability/QuantumFactoring/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/QuantumFactoring/Main.lean#L17).
+Stated in [ExactQuantumFactoring.lean, line 149](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ExactQuantumFactoring.lean#L149). Proved in [lean/OAI/Computability/QuantumFactoring/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/QuantumFactoring/Main.lean#L17).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

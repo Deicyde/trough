@@ -34,17 +34,13 @@ The earlier fixed-density statement at $5p/3$ is also retained. Both statements 
 
 ## Lean: Temperature singularity over a density interval
 
-Stated in [ContinuumTransition.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumTransition.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem : MainStatement
 ```
 
-Proved in [lean/OAI/Probability/ContinuumTransition/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ContinuumTransition/Main.lean#L21).
+Stated in [ContinuumTransition.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumTransition.lean#L59). Proved in [lean/OAI/Probability/ContinuumTransition/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ContinuumTransition/Main.lean#L21). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Fixed-density radial continuum phase transition
-
-Stated in [RadialTransition.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RadialTransition.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main :
@@ -56,11 +52,9 @@ theorem main :
       βc ∈ Icc (7/8:ℝ) (9/8) ∧ StrictTemperatureCorner f βc
 ```
 
-Proved in [lean/OAI/Probability/RadialTransition/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/RadialTransition/Main.lean#L53).
+Stated in [RadialTransition.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RadialTransition.lean#L57). Proved in [lean/OAI/Probability/RadialTransition/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/RadialTransition/Main.lean#L53). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: A common radial phase transition over a density interval
-
-Stated in [RadialDensityInterval.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RadialDensityInterval.lean).
 
 ```lean
 theorem densityInterval :
@@ -75,11 +69,11 @@ theorem densityInterval :
         StrictTemperatureCorner (fun β => f β ρ) βc
 ```
 
-Proved in [lean/OAI/Probability/RadialTransition/DensityInterval.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/RadialTransition/DensityInterval.lean#L33).
+Stated in [RadialDensityInterval.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RadialDensityInterval.lean#L57). Proved in [lean/OAI/Probability/RadialTransition/DensityInterval.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/RadialTransition/DensityInterval.lean#L33).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

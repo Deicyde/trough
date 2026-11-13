@@ -38,8 +38,6 @@ More quantitatively, along sequences with $q^3\log n\to\infty$, the required num
 
 ## Lean: Quantitative and superpolynomial sample lower bounds for trace reconstruction
 
-Stated in [TraceReconstruction.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceReconstruction.lean).
-
 ```lean
 theorem quantitative_sample_lower_bound
     (s c : ℝ) (hs : s ∈ Set.Ioc 0 1)
@@ -53,7 +51,7 @@ theorem quantitative_sample_lower_bound
         sampleComplexity (n k) (q k) s
 ```
 
-Proved in [lean/OAI/Probability/TraceReconstruction.lean, line 213](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/TraceReconstruction.lean#L213).
+Stated in [TraceReconstruction.lean, line 62](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceReconstruction.lean#L62). Proved in [lean/OAI/Probability/TraceReconstruction.lean, line 213](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/TraceReconstruction.lean#L213).
 
 ```lean
 theorem superpolynomial_one_trace
@@ -61,7 +59,7 @@ theorem superpolynomial_one_trace
     Tendsto (fun n : ℕ => (n : ℝ) ^ C * minTraceTV n q) atTop (𝓝 0)
 ```
 
-Proved in [lean/OAI/Probability/TraceReconstruction.lean, line 332](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/TraceReconstruction.lean#L332).
+Stated in [TraceReconstruction.lean, line 74](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceReconstruction.lean#L74). Proved in [lean/OAI/Probability/TraceReconstruction.lean, line 332](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/TraceReconstruction.lean#L332).
 
 ```lean
 theorem superpolynomial_sample_complexity
@@ -72,11 +70,11 @@ theorem superpolynomial_sample_complexity
       atTop (𝓝 ⊤)
 ```
 
-Proved in [lean/OAI/Probability/TraceReconstruction.lean, line 378](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/TraceReconstruction.lean#L378).
+Stated in [TraceReconstruction.lean, line 79](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceReconstruction.lean#L79). Proved in [lean/OAI/Probability/TraceReconstruction.lean, line 378](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/TraceReconstruction.lean#L378).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

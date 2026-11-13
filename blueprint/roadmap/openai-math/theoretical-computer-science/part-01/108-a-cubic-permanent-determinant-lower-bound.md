@@ -26,8 +26,6 @@ A general supporting theorem applies to a polynomial in $d\ge2$ variables whose 
 
 ## Lean: Cubic lower bounds for permanent determinantal complexity
 
-Stated in [PermanentCubic.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PermanentCubic.lean).
-
 ```lean
 theorem permanent_cubic_lower_bounds :
     (∀ (m n : ℕ), 1408 ≤ m → HasBorderDeterminant n (permanentPolynomial m) →
@@ -36,11 +34,9 @@ theorem permanent_cubic_lower_bounds :
       (m : ℝ)^3 / (5529600 * Real.exp 1) ≤ (n : ℝ))
 ```
 
-Proved in [lean/OAI/Algebra/Determinantal/Main.lean, line 384](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Determinantal/Main.lean#L384).
+Stated in [PermanentCubic.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PermanentCubic.lean#L33). Proved in [lean/OAI/Algebra/Determinantal/Main.lean, line 384](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Determinantal/Main.lean#L384).
 
 ## Lean: Determinantal lower bound from a smooth initial form
-
-Stated in [SmoothInitialForm.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SmoothInitialForm.lean).
 
 ```lean
 theorem smooth_initial_form_lower_bound (d r : ℕ) (g : Poly (Fin d))
@@ -62,11 +58,11 @@ theorem smooth_initial_form_lower_bound (d r : ℕ) (g : Poly (Fin d))
         ((r - 1 : ℕ) : ℝ) * ((d - 1 : ℕ) : ℝ) / (4 * Real.exp 1) ≤ (n : ℝ))
 ```
 
-Proved in [lean/OAI/Algebra/Determinantal/InitialForm.lean, line 128](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Determinantal/InitialForm.lean#L128).
+Stated in [SmoothInitialForm.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SmoothInitialForm.lean#L35). Proved in [lean/OAI/Algebra/Determinantal/InitialForm.lean, line 128](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Determinantal/InitialForm.lean#L128).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

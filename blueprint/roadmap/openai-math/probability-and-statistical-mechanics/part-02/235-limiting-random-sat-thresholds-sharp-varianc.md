@@ -48,17 +48,13 @@ The formalization proves that the limiting threshold $\alpha$ for uniform random
 
 ## Lean: Limiting satisfiability threshold for every fixed $k\ge3$
 
-Stated in [FixedClauseThreshold.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FixedClauseThreshold.lean).
-
 ```lean
 theorem main (k : ℕ) (hk : 3 ≤ k) : HasLimitingThreshold k
 ```
 
-Proved in [lean/OAI/Probability/RandomSAT/Main.lean, line 122](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/RandomSAT/Main.lean#L122).
+Stated in [FixedClauseThreshold.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FixedClauseThreshold.lean#L51). Proved in [lean/OAI/Probability/RandomSAT/Main.lean, line 122](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/RandomSAT/Main.lean#L122).
 
 ## Lean: Sharpness of random $k$-SAT lifetime and replacement bounds
-
-Stated in [SATSharpness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SATSharpness.lean).
 
 ```lean
 theorem sharpness (k : ℕ) (hk : 3 ≤ k) :
@@ -77,11 +73,9 @@ theorem sharpness (k : ℕ) (hk : 3 ≤ k) :
         blockKill u (k-1) S 1 - e g ≤ blockKill u k S g)
 ```
 
-Proved in [lean/OAI/Probability/SATVariance/Sharpness.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SATVariance/Sharpness.lean#L7).
+Stated in [SATSharpness.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SATSharpness.lean#L58). Proved in [lean/OAI/Probability/SATVariance/Sharpness.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SATVariance/Sharpness.lean#L7).
 
 ## Lean: Variance bounds for the random $k$-SAT hitting time
-
-Stated in [SATVariance.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SATVariance.lean).
 
 ```lean
 theorem variance_main (k : ℕ) (hk : 3 ≤ k) :
@@ -96,21 +90,19 @@ theorem variance_main (k : ℕ) (hk : 3 ≤ k) :
         c * n ≤ variance (T B : Stream n k → ℝ) (streamLaw n k)))
 ```
 
-Proved in [lean/OAI/Probability/SATVariance/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SATVariance/Main.lean#L15).
+Stated in [SATVariance.lean, line 54](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SATVariance.lean#L54). Proved in [lean/OAI/Probability/SATVariance/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SATVariance/Main.lean#L15).
 
 ## Lean: Computability of the random $3$-SAT threshold
-
-Stated in [SATComputability.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SATComputability.lean).
 
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Probability/SATComputability/Main.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SATComputability/Main.lean#L43).
+Stated in [SATComputability.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SATComputability.lean#L45). Proved in [lean/OAI/Probability/SATComputability/Main.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SATComputability/Main.lean#L43).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

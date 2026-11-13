@@ -22,9 +22,9 @@ The descriptions, titles, abstracts, Lean pages and statements are quoted from [
 - [014. Restricted geometric Langlands, global Arthur enhancements, and generic Ramanujan](part-01/014-restricted-geometric-langlands-global-arthur.md)
 - [015. Torus-packet equidistribution in prime, quartic, and sextic degrees](part-01/015-torus-packet-equidistribution-in-prime-quart.md)
 - [016. Zilber–Pink in abelian varieties and the Siegel threefold](part-01/016-zilber-pink-in-abelian-varieties-and-the-sie.md)
-- [017. The irrationality exponent of \*π\* is 2](part-01/017-the-irrationality-exponent-of-is-2.md)
+- [017. The irrationality exponent of *π* is 2](part-01/017-the-irrationality-exponent-of-is-2.md)
 - [018. The Margulis–Platonov conjecture over global fields](part-01/018-the-margulis-platonov-conjecture-over-global.md)
-- [019. The local \*p\*-adic section conjecture and global consequences](part-01/019-the-local-p-adic-section-conjecture-and-glob.md)
+- [019. The local *p*-adic section conjecture and global consequences](part-01/019-the-local-p-adic-section-conjecture-and-glob.md)
 - [020. Squarefree quartics and power-free polynomial values](part-01/020-squarefree-quartics-and-power-free-polynomia.md)
 
 ## [021. A quadratic bound for… to 031. Uchida’s conjecture for…](part-02/README.md)

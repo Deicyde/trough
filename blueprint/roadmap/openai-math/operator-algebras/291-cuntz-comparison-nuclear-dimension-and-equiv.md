@@ -44,17 +44,15 @@ The linked comparison results also prove Jiang–Su absorption and uniform prope
 
 ## Lean: Uniform property $\Gamma$ from tracial real rank zero
 
-Stated in [UniformGamma.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformGamma.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem CurrentMain.main : MainClaim.{uNuclear}
 ```
 
-Proved in [lean/OAI/Analysis/TracialSplitting/Challenge.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TracialSplitting/Challenge.lean#L75).
+Stated in [UniformGamma.lean, line 600](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformGamma.lean#L600). Proved in [lean/OAI/Analysis/TracialSplitting/Challenge.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TracialSplitting/Challenge.lean#L75). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

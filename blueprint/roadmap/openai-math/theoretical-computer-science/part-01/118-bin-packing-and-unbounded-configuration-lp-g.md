@@ -24,8 +24,6 @@ The formalized results rule out a universal additive bound for the configuration
 
 ## Lean: Unbounded configuration gaps and additive hardness
 
-Stated in [BinPackingGap.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinPackingGap.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_results :
     (∀ c : ℕ, ∃ I : Instance, ∃ B : ℕ,
@@ -45,11 +43,11 @@ theorem main_results :
       algorithm.run (BinaryEncoding.rawInstanceBits items) = none))
 ```
 
-Proved in [lean/OAI/Computability/BinPacking/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/BinPacking/Main.lean#L7).
+Stated in [BinPackingGap.lean, line 356](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinPackingGap.lean#L356). Proved in [lean/OAI/Computability/BinPacking/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/BinPacking/Main.lean#L7). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

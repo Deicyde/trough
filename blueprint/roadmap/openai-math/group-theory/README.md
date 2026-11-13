@@ -1,12 +1,12 @@
 # Group theory
 
-14 result families in *Group theory*, with 22 manuscripts; 12 with Lean: 22 statements, 21 of them proved in a file this chapter reads.
+14 result families in *Group theory*, with 22 manuscripts; 12 with Lean: 22 statements, all proved in a file this chapter reads.
 
 The descriptions, titles, abstracts, Lean pages and statements are quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), under its Apache-2.0 license.
 
 - [246. Cannon's conjecture](246-cannons-conjecture.md)
 - [247. An infinite finitely presented residually finite 2-group and a finitely presented nil algebra](247-an-infinite-finitely-presented-residually-fi.md)
-- [248. Thompson's group \*F\* is nonamenable](248-thompsons-group-f-is-nonamenable.md)
+- [248. Thompson's group *F* is nonamenable](248-thompsons-group-f-is-nonamenable.md)
 - [249. A finitely generated Eilenberg–Ganea counterexample](249-a-finitely-generated-eilenberg-ganea-counter.md)
 - [250. Boone–Higman embeddings with higher finiteness](250-boone-higman-embeddings-with-higher-finitene.md)
 - [251. Amenability, unitarizability, and strong Ulam stability](251-amenability-unitarizability-and-strong-ulam.md)

@@ -32,19 +32,15 @@ The formalization proves absence of an infinite cluster at criticality for Berno
 
 ## Lean: No infinite critical clusters on $\mathbb Z^3$
 
-Stated in [CriticalZ3.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalZ3.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem critical_no_infinite :
     (∀ᵐ ω ∂bondLaw bondCritical, ∀ x : Vertex, (bondCluster ω x).Finite) ∧
     (∀ᵐ ω ∂siteLaw siteCritical, ∀ x : Vertex, (siteCluster ω x).Finite)
 ```
 
-Proved in [lean/OAI/Probability/CriticalZ3/Main.lean, line 107](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CriticalZ3/Main.lean#L107).
+Stated in [CriticalZ3.lean, line 56](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalZ3.lean#L56). Proved in [lean/OAI/Probability/CriticalZ3/Main.lean, line 107](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CriticalZ3/Main.lean#L107). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: No infinite cluster at the critical probability
-
-Stated in [CriticalPercolation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalPercolation.lean).
 
 ```lean
 theorem no_percolation_at_criticality [Infinite V]
@@ -55,11 +51,11 @@ theorem no_percolation_at_criticality [Infinite V]
     G.law G.criticalProbability G.percolates = 0
 ```
 
-Proved in [lean/OAI/Probability/CriticalPercolation/Main.lean, line 190](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CriticalPercolation/Main.lean#L190).
+Stated in [CriticalPercolation.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalPercolation.lean#L52). Proved in [lean/OAI/Probability/CriticalPercolation/Main.lean, line 190](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CriticalPercolation/Main.lean#L190).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

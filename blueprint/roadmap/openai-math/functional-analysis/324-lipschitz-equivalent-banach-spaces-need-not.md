@@ -32,27 +32,23 @@ The formalized result constructs one separable real Banach space $X$ that is bi-
 
 ## Lean: Bi-Lipschitz equivalent nonisomorphic Banach spaces
 
-Stated in [LipschitzEquivalence.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LipschitzEquivalence.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainClaim
 ```
 
-Proved in [lean/OAI/Analysis/LipschitzEquivalence/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzEquivalence/Main.lean#L8).
+Stated in [LipschitzEquivalence.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LipschitzEquivalence.lean#L38). Proved in [lean/OAI/Analysis/LipschitzEquivalence/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzEquivalence/Main.lean#L8). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Bi-Lipschitz absorption of $c_0$
-
-Stated in [C0Absorption.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/C0Absorption.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main_result : MainConclusion
 ```
 
-Proved in [lean/OAI/Analysis/C0Absorption/Main.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/C0Absorption/Main.lean#L33).
+Stated in [C0Absorption.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/C0Absorption.lean#L29). Proved in [lean/OAI/Analysis/C0Absorption/Main.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/C0Absorption/Main.lean#L33). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

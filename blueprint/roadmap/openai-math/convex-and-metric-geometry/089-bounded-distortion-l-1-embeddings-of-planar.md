@@ -32,27 +32,23 @@ The formalized result gives a uniform $L_1$ embedding bound for each bounded-tre
 
 ## Lean: Planar graph metrics in $L_1$
 
-Stated in [PlanarL1.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarL1.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem planar_graph_metrics_embed_L1 : MainStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/PlanarL1/Embedding.lean, line 96](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/PlanarL1/Embedding.lean#L96).
+Stated in [PlanarL1.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarL1.lean#L46). Proved in [lean/OAI/Combinatorics/PlanarL1/Embedding.lean, line 96](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/PlanarL1/Embedding.lean#L96). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Bounded-treewidth graph metrics in $L_1$
-
-Stated in [BoundedTreewidthL1.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoundedTreewidthL1.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main_theorem : MainStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/TreewidthL1/Main.lean, line 135](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TreewidthL1/Main.lean#L135).
+Stated in [BoundedTreewidthL1.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoundedTreewidthL1.lean#L43). Proved in [lean/OAI/Combinatorics/TreewidthL1/Main.lean, line 135](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TreewidthL1/Main.lean#L135). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

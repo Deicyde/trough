@@ -69,7 +69,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/UniqueGames/Main.lean"
+        "module": "lean/OAI/Computability/UniqueGames/Main.lean",
+        "main": true
        }
       ]
      },
@@ -91,7 +92,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/MaxCut/Main.lean"
+        "module": "lean/OAI/Computability/MaxCut/Main.lean",
+        "main": true
        }
       ]
      },
@@ -113,7 +115,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/VertexCover/Main.lean"
+        "module": "lean/OAI/Computability/VertexCover/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.VertexCover.every_fixed_factor_below_two",
@@ -127,7 +130,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/VertexCover/Main.lean"
+        "module": "lean/OAI/Computability/VertexCover/Main.lean",
+        "main": true
        }
       ]
      },
@@ -149,7 +153,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/MinUncut/Main.lean"
+        "module": "lean/OAI/Computability/MinUncut/Main.lean",
+        "main": false
        }
       ]
      },
@@ -171,7 +176,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/DirectedFeedback/Main.lean"
+        "module": "lean/OAI/Computability/DirectedFeedback/Main.lean",
+        "main": false
        }
       ]
      }
@@ -217,7 +223,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/Logspace/Equality.lean"
+        "module": "lean/OAI/Computability/Logspace/Equality.lean",
+        "main": true
        }
       ]
      }
@@ -282,7 +289,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Optimization/Tropical/TruffetCounterexample.lean"
+        "module": "lean/OAI/Optimization/Tropical/TruffetCounterexample.lean",
+        "main": false
        }
       ]
      },
@@ -304,7 +312,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/RandomMean/Main.lean"
+        "module": "lean/OAI/Computability/RandomMean/Main.lean",
+        "main": true
        }
       ]
      }
@@ -350,7 +359,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/PerfectCompleteness/Main.lean"
+        "module": "lean/OAI/Computability/PerfectCompleteness/Main.lean",
+        "main": true
        }
       ]
      }
@@ -396,7 +406,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/IndependentSets/Main.lean"
+        "module": "lean/OAI/Combinatorics/IndependentSets/Main.lean",
+        "main": true
        }
       ]
      }
@@ -455,7 +466,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean"
+        "module": "lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.MatrixMultiplication.complex_alpha_gt_93_div_200",
@@ -469,7 +481,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean"
+        "module": "lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.MatrixMultiplication.complex_rectangular_omega_lt_523_div_250",
@@ -483,7 +496,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean"
+        "module": "lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean",
+        "main": true
        }
       ]
      },
@@ -505,7 +519,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/LinearAlgebra/MatrixFields/Main.lean"
+        "module": "lean/OAI/LinearAlgebra/MatrixFields/Main.lean",
+        "main": true
        }
       ]
      }
@@ -551,7 +566,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/Determinantal/Main.lean"
+        "module": "lean/OAI/Algebra/Determinantal/Main.lean",
+        "main": false
        }
       ]
      },
@@ -573,7 +589,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/Determinantal/InitialForm.lean"
+        "module": "lean/OAI/Algebra/Determinantal/InitialForm.lean",
+        "main": false
        }
       ]
      }
@@ -641,7 +658,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/KServer/Main.lean"
+        "module": "lean/OAI/Combinatorics/KServer/Main.lean",
+        "main": false
        }
       ]
      },
@@ -663,7 +681,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/UniformKServer/Main.lean"
+        "module": "lean/OAI/Combinatorics/UniformKServer/Main.lean",
+        "main": false
        }
       ]
      }
@@ -709,7 +728,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/MatroidProphet/Main.lean"
+        "module": "lean/OAI/Probability/MatroidProphet/Main.lean",
+        "main": false
        }
       ]
      },
@@ -731,7 +751,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/MatroidSecretary/Main.lean"
+        "module": "lean/OAI/Probability/MatroidSecretary/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.MatroidProphet.Assigned.hidden_vector",
@@ -745,7 +766,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/MatroidSecretary/Main.lean"
+        "module": "lean/OAI/Probability/MatroidSecretary/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.MatroidProphet.Assigned.secretary",
@@ -759,7 +781,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/MatroidSecretary/Main.lean"
+        "module": "lean/OAI/Probability/MatroidSecretary/Main.lean",
+        "main": false
        }
       ]
      }
@@ -805,7 +828,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/DepthThree/Main.lean"
+        "module": "lean/OAI/Computability/DepthThree/Main.lean",
+        "main": true
        }
       ]
      }
@@ -858,7 +882,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/MatchingCount/Main.lean"
+        "module": "lean/OAI/Combinatorics/MatchingCount/Main.lean",
+        "main": false
        }
       ]
      },
@@ -880,7 +905,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/PerfectMatching/Main.lean"
+        "module": "lean/OAI/Combinatorics/PerfectMatching/Main.lean",
+        "main": true
        }
       ]
      },
@@ -902,7 +928,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/MatchingCount/BinarySolve.lean"
+        "module": "lean/OAI/Computability/MatchingCount/BinarySolve.lean",
+        "main": true
        }
       ]
      },
@@ -924,7 +951,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/LoopMatching/Endpoint.lean"
+        "module": "lean/OAI/Computability/LoopMatching/Endpoint.lean",
+        "main": true
        }
       ]
      },
@@ -941,7 +969,8 @@
         "line": 73,
         "statement": "theorem Refined.pointwise_entropy (G : LooplessGraph V E) (m : ℕ)\n    (hm : 0 < m) (hV : Fintype.card V = 2 * m) (hPM : Nonempty G.Matching)\n    (x : E → ℝ) (hx : x ∈ G.polytope) :\n    entropy x - (2 - 2 / (m : ℝ)) * complementEntropy x ≤ maxMatchingEntropy G x ∧\n      maxMatchingEntropy G x ≤ entropy x",
         "proof": null,
-        "module": "lean/OAI/Combinatorics/MatchingEntropy/Main.lean"
+        "module": "lean/OAI/Combinatorics/MatchingEntropy/Main.lean",
+        "main": false
        }
       ]
      },
@@ -963,7 +992,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/TriangleFace/Main.lean"
+        "module": "lean/OAI/Combinatorics/TriangleFace/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1015,7 +1045,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean"
+        "module": "lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean",
+        "main": true
        }
       ]
      }
@@ -1068,7 +1099,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean"
+        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.ContingencyTables.exactSampling",
@@ -1082,7 +1114,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean"
+        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.ContingencyTables.counting",
@@ -1096,7 +1129,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean"
+        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean",
+        "main": false
        }
       ]
      },
@@ -1118,7 +1152,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean"
+        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.ContingencyTables.exactSampling",
@@ -1132,7 +1167,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean"
+        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.ContingencyTables.counting",
@@ -1146,7 +1182,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean"
+        "module": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean",
+        "main": false
        }
       ]
      }
@@ -1205,7 +1242,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/FormulaHitting/Hitting.lean"
+        "module": "lean/OAI/Algebra/FormulaHitting/Hitting.lean",
+        "main": false
        }
       ]
      },
@@ -1227,7 +1265,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/RationalHitting/Main.lean"
+        "module": "lean/OAI/Computability/RationalHitting/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1279,7 +1318,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/SparsestCut/Main.lean"
+        "module": "lean/OAI/Combinatorics/SparsestCut/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1325,7 +1365,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/BinPacking/Main.lean"
+        "module": "lean/OAI/Computability/BinPacking/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1377,7 +1418,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/InformationTheory/BooleanNoise/Main.lean"
+        "module": "lean/OAI/InformationTheory/BooleanNoise/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1399,7 +1441,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/InformationTheory/SoftChannel/Main.lean"
+        "module": "lean/OAI/InformationTheory/SoftChannel/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1460,7 +1503,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EditApproximation/Specification/RawBandMain.lean"
+        "module": "lean/OAI/Combinatorics/EditApproximation/Specification/RawBandMain.lean",
+        "main": false
        }
       ]
      }
@@ -1518,7 +1562,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/TraceReconstruction.lean"
+        "module": "lean/OAI/Probability/TraceReconstruction.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceReconstruction.superpolynomial_one_trace",
@@ -1532,7 +1577,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/TraceReconstruction.lean"
+        "module": "lean/OAI/Probability/TraceReconstruction.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceReconstruction.superpolynomial_sample_complexity",
@@ -1546,7 +1592,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/TraceReconstruction.lean"
+        "module": "lean/OAI/Probability/TraceReconstruction.lean",
+        "main": false
        }
       ]
      }
@@ -1592,7 +1639,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/Scheduling/Main.lean"
+        "module": "lean/OAI/Computability/Scheduling/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1645,7 +1693,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/KMedianRecovery/Main.lean"
+        "module": "lean/OAI/Combinatorics/KMedianRecovery/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1667,7 +1716,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/KMedianRecovery/Refined/Recovery.lean"
+        "module": "lean/OAI/Combinatorics/KMedianRecovery/Refined/Recovery.lean",
+        "main": false
        }
       ]
      },
@@ -1689,7 +1739,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/KMedian/Threshold.lean"
+        "module": "lean/OAI/Combinatorics/KMedian/Threshold.lean",
+        "main": false
        }
       ]
      },
@@ -1711,7 +1762,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/KMedian/Main.lean"
+        "module": "lean/OAI/Combinatorics/KMedian/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1757,7 +1809,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/MatchingPSD/AffineLift.lean"
+        "module": "lean/OAI/Combinatorics/MatchingPSD/AffineLift.lean",
+        "main": false
        }
       ]
      },
@@ -1779,7 +1832,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/MatchingPSD/Main.lean"
+        "module": "lean/OAI/Combinatorics/MatchingPSD/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1825,7 +1879,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/GotsmanLinial/Main.lean"
+        "module": "lean/OAI/Combinatorics/GotsmanLinial/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1871,7 +1926,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/Superstring/Main.lean"
+        "module": "lean/OAI/Computability/Superstring/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1924,7 +1980,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/TwoWayAutomata/Main.lean"
+        "module": "lean/OAI/Combinatorics/TwoWayAutomata/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1946,7 +2003,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/TwoWayAutomata/ExplicitFamily.lean"
+        "module": "lean/OAI/Combinatorics/TwoWayAutomata/ExplicitFamily.lean",
+        "main": true
        }
       ]
      },
@@ -1968,7 +2026,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Automata/Main.lean"
+        "module": "lean/OAI/Combinatorics/Automata/Main.lean",
+        "main": true
        }
       ]
      }
@@ -2021,7 +2080,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/FourierCircuit/Main.lean"
+        "module": "lean/OAI/Computability/FourierCircuit/Main.lean",
+        "main": true
        }
       ]
      },
@@ -2043,7 +2103,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/FourierTransform/Main.lean"
+        "module": "lean/OAI/Computability/FourierTransform/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.PowerSaving.convolution_main",
@@ -2057,7 +2118,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/FourierTransform/Main.lean"
+        "module": "lean/OAI/Computability/FourierTransform/Main.lean",
+        "main": true
        }
       ]
      }
@@ -2103,7 +2165,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SwitchChain/Main.lean"
+        "module": "lean/OAI/Probability/SwitchChain/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem315.switch_chain_tv_bound",
@@ -2117,7 +2180,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SwitchChain/Main.lean"
+        "module": "lean/OAI/Probability/SwitchChain/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem315.switch_connectivity",
@@ -2131,7 +2195,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SwitchChain/Main.lean"
+        "module": "lean/OAI/Probability/SwitchChain/Main.lean",
+        "main": false
        }
       ]
      }
@@ -2177,7 +2242,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Sensitivity/Separation.lean"
+        "module": "lean/OAI/Combinatorics/Sensitivity/Separation.lean",
+        "main": true
        }
       ]
      }
@@ -2244,7 +2310,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ParityLifts/Main.lean"
+        "module": "lean/OAI/Combinatorics/ParityLifts/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2266,7 +2333,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/WLIdentification/Main.lean"
+        "module": "lean/OAI/Computability/WLIdentification/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2288,7 +2356,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/WeisfeilerLeman/Main.lean"
+        "module": "lean/OAI/Computability/WeisfeilerLeman/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2310,7 +2379,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/VariableWL/Completeness.lean"
+        "module": "lean/OAI/Combinatorics/VariableWL/Completeness.lean",
+        "main": false
        }
       ]
      }
@@ -2370,7 +2440,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/StarHeight/Main.lean"
+        "module": "lean/OAI/Computability/StarHeight/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2392,7 +2463,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/StarHeight/Main.lean"
+        "module": "lean/OAI/Computability/StarHeight/Main.lean",
+        "main": false
        }
       ]
      }
@@ -2438,7 +2510,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/DepthFive/Bounds.lean"
+        "module": "lean/OAI/Algebra/DepthFive/Bounds.lean",
+        "main": false
        }
       ]
      }
@@ -2499,7 +2572,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/SpaceSimulation/Main.lean"
+        "module": "lean/OAI/Computability/SpaceSimulation/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.Fifths.Single.unknown",
@@ -2513,7 +2587,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/SpaceSimulation/Main.lean"
+        "module": "lean/OAI/Computability/SpaceSimulation/Main.lean",
+        "main": true
        }
       ]
      }
@@ -2580,7 +2655,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/LogConcave/Main.lean"
+        "module": "lean/OAI/Probability/LogConcave/Main.lean",
+        "main": true
        }
       ]
      }
@@ -2661,7 +2737,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/MemoryPrecision/Main.lean"
+        "module": "lean/OAI/Probability/MemoryPrecision/Main.lean",
+        "main": true
        }
       ]
      },
@@ -2683,7 +2760,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/GaussianRegression/Main.lean"
+        "module": "lean/OAI/Probability/GaussianRegression/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2705,7 +2783,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/PosteriorReplicas/Main.lean"
+        "module": "lean/OAI/Probability/PosteriorReplicas/Main.lean",
+        "main": true
        }
       ]
      },
@@ -2727,7 +2806,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/Localization/Main.lean"
+        "module": "lean/OAI/Probability/Localization/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2749,7 +2829,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/GaussianInformation/Main.lean"
+        "module": "lean/OAI/Probability/GaussianInformation/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.AllScaleInverseVolume.inverse_volume_without_support",
@@ -2763,7 +2844,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/GaussianInformation/Main.lean"
+        "module": "lean/OAI/Probability/GaussianInformation/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.KernelPotential.kernel_coercivity",
@@ -2772,7 +2854,8 @@
         "line": 200,
         "statement": "theorem kernel_coercivity : CoercivityStatement",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianInformation/Main.lean"
+        "module": "lean/OAI/Probability/GaussianInformation/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.KernelPotential.actual_row_drift",
@@ -2786,7 +2869,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/GaussianInformation/Main.lean"
+        "module": "lean/OAI/Probability/GaussianInformation/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2808,7 +2892,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ProjectionMoments/Main.lean"
+        "module": "lean/OAI/Probability/ProjectionMoments/Main.lean",
+        "main": true
        }
       ]
      },
@@ -2825,7 +2910,8 @@
         "line": 433,
         "statement": "theorem mixedMomentMain : MixedMomentMain",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.actualRowMain",
@@ -2834,7 +2920,8 @@
         "line": 436,
         "statement": "theorem actualRowMain {d m r q : ℕ} {W : Type*} [MeasurableSpace W]\n    [Countable W] [MeasurableSingletonClass W]\n    (hdim : AdmissibleDimensions d m r q)\n    (P : Measure ((Sphere d×W)×Rows m d)) [IsProbabilityMeasure P]\n    (ν : Measure (Sphere d)) [IsProbabilityMeasure ν]\n    (hInd : (P.map swapLast).fst = ν.prod (gaussianRows m d))\n    (H : ℝ) (hν : ν ≤ ENNReal.ofReal H • uniformSphere d)\n    (hEntropy : shannonEntropy (P.map swapLast).snd ≠ ∞)\n    (ρ : PositiveMessage (P.map swapLast).snd → Measure (Sphere d))\n    [∀ w, IsFiniteMeasure (ρ w)]\n    (_hρac : ∀ w, ρ w ≪ uniformSphere d)\n    (B D : PositiveMessage (P.map swapLast).snd → ℝ)\n    (hB : ∀ w, 0 < B w) (hD : ∀ w, 0 < D w)\n    (hgB : ∀ w, LocalGrowth (ρ w) (m+r) (B w))\n    (hgD : ∀ w, LocalGrowth (ρ w) (d-1) (D w))\n    (hCI : Integrable (fun sw : Sphere d×W => Real.log (1+momentBound 9 d\n      (completeFamily (P.map swapLast).snd B 1 sw.2) (completeFamily (P.map swapLast).snd D 1 sw.2))) P.fst) :\n    ActualRowConclusion (r:=r) (q:=q) P (completeFamily (P.map swapLast).snd ρ 0)\n      (completeFamily (P.map swapLast).snd B 1) (completeFamily (P.map swapLast).snd D 1)",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.actualRowRefinement",
@@ -2843,7 +2930,8 @@
         "line": 457,
         "statement": "theorem actualRowRefinement {d m : ℕ} {W E : Type*} [MeasurableSpace W]\n    [MeasurableSpace E] [Countable W] [MeasurableSingletonClass W]\n    [Countable E] [MeasurableSingletonClass E]\n    (P : Measure ((Sphere d×W)×Rows m d)) [IsProbabilityMeasure P]\n    (e : Sphere d×W → E) (he : Measurable e)\n    (_hEntropy : shannonEntropy\n      ((P.map (fun p => ((p.1.1,(p.1.2,e p.1)),p.2))).map swapLast).snd ≠ ∞) :\n    rowInformation (P.map (fun p => ((p.1.1,(p.1.2,e p.1)),p.2))) (gaussianRows m d) =\n      rowInformation P (gaussianRows m d)",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.actualRowSourceMain",
@@ -2852,7 +2940,8 @@
         "line": 468,
         "statement": "theorem actualRowSourceMain {d m r q : ℕ} {W : Type*} [MeasurableSpace W]\n    [Countable W] [MeasurableSingletonClass W]\n    (hdim : AdmissibleDimensions d m r q)\n    (P : Measure ((Sphere d×W)×Rows m d)) [IsProbabilityMeasure P]\n    (ν : Measure (Sphere d)) [IsProbabilityMeasure ν]\n    (hInd : (P.map swapLast).fst = ν.prod (gaussianRows m d))\n    (H : ℝ) (hν : ν ≤ ENNReal.ofReal H • uniformSphere d)\n    (hEntropy : shannonEntropy (P.map swapLast).snd ≠ ∞)\n    (ρ : PositiveMessage (P.map swapLast).snd → Measure (Sphere d))\n    [∀ w, IsFiniteMeasure (ρ w)]\n    (_hρac : ∀ w, ρ w ≪ uniformSphere d)\n    (B D : PositiveMessage (P.map swapLast).snd → ℝ)\n    (hB : ∀ w, 0 < B w) (hD : ∀ w, 0 < D w)\n    (hgB : ∀ w, LocalGrowth (ρ w) (m+r) (B w))\n    (hgD : ∀ w, LocalGrowth (ρ w) (d-1) (D w))\n    (hCI : Integrable (fun sw : Sphere d×W => Real.log (1+momentBound 9 d\n      (completeFamily (P.map swapLast).snd B 1 sw.2) (completeFamily (P.map swapLast).snd D 1 sw.2))) P.fst) :\n    ActualRowSourceConclusion (r:=r) (q:=q) P (completeFamily (P.map swapLast).snd ρ 0)\n      (completeFamily (P.map swapLast).snd B 1) (completeFamily (P.map swapLast).snd D 1)",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.actualRowSourceRefinement",
@@ -2861,7 +2950,8 @@
         "line": 489,
         "statement": "theorem actualRowSourceRefinement {d m : ℕ} {W E : Type*} [MeasurableSpace W]\n    [MeasurableSpace E] [Countable W] [MeasurableSingletonClass W]\n    [Countable E] [MeasurableSingletonClass E]\n    (P : Measure ((Sphere d×W)×Rows m d)) [IsProbabilityMeasure P]\n    (ν : Measure (Sphere d)) [IsProbabilityMeasure ν]\n    (hInd : (P.map swapLast).fst = ν.prod (gaussianRows m d))\n    (e : Sphere d×W → E) (he : Measurable e)\n    (hEntropy : shannonEntropy\n      ((P.map (fun p => ((p.1.1,(p.1.2,e p.1)),p.2))).map swapLast).snd ≠ ∞) :\n    actualConditionalRowInformation (P.map (fun p => ((p.1.1,(p.1.2,e p.1)),p.2))) =\n      actualConditionalRowInformation P",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.criticalComparisonMain",
@@ -2870,7 +2960,8 @@
         "line": 502,
         "statement": "theorem criticalComparisonMain : CriticalComparisonMain",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.oneLevelComparisonMain",
@@ -2879,7 +2970,8 @@
         "line": 505,
         "statement": "theorem oneLevelComparisonMain : OneLevelComparisonMain",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.twoLabelComparisonMain",
@@ -2888,7 +2980,8 @@
         "line": 508,
         "statement": "theorem twoLabelComparisonMain : TwoLabelComparisonMain",
         "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.hybridBlockMain",
@@ -2896,8 +2989,14 @@
         "kind": "theorem",
         "line": 511,
         "statement": "theorem hybridBlockMain : HybridBlockMain",
-        "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "proof": {
+         "file": "lean/OAI/Probability/GaussianReplacement/Hybrid.lean",
+         "line": 97,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": true
        },
        {
         "name": "OAI.CurrentProjection.fiberTwoPointMain",
@@ -2911,7 +3010,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": false
        },
        {
         "name": "OAI.CurrentProjection.fiberBlockMain",
@@ -2919,8 +3019,14 @@
         "kind": "theorem",
         "line": 517,
         "statement": "theorem fiberBlockMain : FiberBlockMain",
-        "proof": null,
-        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean"
+        "proof": {
+         "file": "lean/OAI/Probability/GaussianReplacement/FiberBlock.lean",
+         "line": 74,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Probability/GaussianReplacement/FiberEquality.lean",
+        "main": true
        }
       ]
      },
@@ -2942,7 +3048,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/Subsphere/Main.lean"
+        "module": "lean/OAI/Probability/Subsphere/Main.lean",
+        "main": true
        }
       ]
      }
@@ -3018,7 +3125,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algorithms/SubexponentialSAT/Main.lean"
+        "module": "lean/OAI/Algorithms/SubexponentialSAT/Main.lean",
+        "main": true
        }
       ]
      }

@@ -23,7 +23,7 @@ We prove the four-dimensional Hausdorff-dimension Kakeya conjecture: every subse
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

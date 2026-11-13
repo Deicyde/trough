@@ -12,7 +12,7 @@ navigation: transparent
 - [107. Matrix multiplication with exponent at most 9/4](107-matrix-multiplication-with-exponent-at-most.md)
 - [108. A cubic permanent–determinant lower bound](108-a-cubic-permanent-determinant-lower-bound.md)
 - [109. Integer multiplication below $n\log n$](109-integer-multiplication-below-n-log-n.md)
-- [110. Optimal-order randomized \*k\*-server on arbitrary metrics](110-optimal-order-randomized-k-server-on-arbitra.md)
+- [110. Optimal-order randomized *k*-server on arbitrary metrics](110-optimal-order-randomized-k-server-on-arbitra.md)
 - [111. One-sample matroid prophet inequalities against an almighty adversary](111-one-sample-matroid-prophet-inequalities-agai.md)
 - [112. Beyond the square-root exponent for depth-three circuits](112-beyond-the-square-root-exponent-for-depth-th.md)
 - [113. Approximate counting and entropy of perfect matchings](113-approximate-counting-and-entropy-of-perfect.md)

@@ -56,7 +56,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RingTheory/Multiplicity/Main.lean"
+        "module": "lean/OAI/RingTheory/Multiplicity/Main.lean",
+        "main": false
        }
       ]
      }
@@ -102,7 +103,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean"
+        "module": "lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean",
+        "main": true
        }
       ]
      }
@@ -148,7 +150,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/GroupRing/Main.lean"
+        "module": "lean/OAI/Algebra/GroupRing/Main.lean",
+        "main": true
        }
       ]
      }
@@ -214,7 +217,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean"
+        "module": "lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean",
+        "main": true
        }
       ]
      },
@@ -236,7 +240,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RingTheory/DirectFiniteness/Main.lean"
+        "module": "lean/OAI/RingTheory/DirectFiniteness/Main.lean",
+        "main": false
        }
       ]
      },
@@ -258,7 +263,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/GroupDeterminants/Main.lean"
+        "module": "lean/OAI/Analysis/GroupDeterminants/Main.lean",
+        "main": true
        }
       ]
      },
@@ -280,7 +286,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/OddKaplansky/Main.lean"
+        "module": "lean/OAI/Algebra/OddKaplansky/Main.lean",
+        "main": true
        }
       ]
      }
@@ -326,7 +333,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/Finitistic/Main.lean"
+        "module": "lean/OAI/Algebra/Finitistic/Main.lean",
+        "main": true
        }
       ]
      },
@@ -348,7 +356,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/FinitisticAsymmetry/Main.lean"
+        "module": "lean/OAI/Algebra/FinitisticAsymmetry/Main.lean",
+        "main": true
        }
       ]
      }
@@ -401,7 +410,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/AuslanderReiten/All.lean"
+        "module": "lean/OAI/Algebra/AuslanderReiten/All.lean",
+        "main": true
        }
       ]
      },
@@ -423,7 +433,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RingTheory/Tachikawa/Counterexample.lean"
+        "module": "lean/OAI/RingTheory/Tachikawa/Counterexample.lean",
+        "main": true
        }
       ]
      }
@@ -563,7 +574,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/UniversalSquare/Main.lean"
+        "module": "lean/OAI/RepresentationTheory/UniversalSquare/Main.lean",
+        "main": false
        }
       ]
      },
@@ -585,7 +597,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/Saxl/Main.lean"
+        "module": "lean/OAI/RepresentationTheory/Saxl/Main.lean",
+        "main": true
        }
       ]
      }
@@ -637,7 +650,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/Universal/GraphCriterion.lean"
+        "module": "lean/OAI/Algebra/Universal/GraphCriterion.lean",
+        "main": false
        }
       ]
      }
@@ -689,7 +703,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RingTheory/BassTrace/Main.lean"
+        "module": "lean/OAI/RingTheory/BassTrace/Main.lean",
+        "main": true
        }
       ]
      },
@@ -711,7 +726,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RingTheory/BassTrace/TorsionFree.lean"
+        "module": "lean/OAI/RingTheory/BassTrace/TorsionFree.lean",
+        "main": false
        }
       ]
      }
@@ -799,7 +815,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean"
+        "module": "lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean",
+        "main": true
        }
       ]
      }

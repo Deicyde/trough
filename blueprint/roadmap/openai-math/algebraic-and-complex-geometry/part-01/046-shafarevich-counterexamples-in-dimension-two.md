@@ -23,7 +23,7 @@ We construct a smooth connected projective complex surface whose universal cover
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

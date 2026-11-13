@@ -26,27 +26,23 @@ The formalization also gives simple stably finite $C^*$-algebras whose spatial t
 
 ## Lean: Nonadditive normalized $2$-quasitraces
 
-Stated in [KaplanskyQuasitrace.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyQuasitrace.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem kaplansky_quasitrace_counterexample : MainTarget
 ```
 
-Proved in [lean/OAI/Analysis/Kaplansky/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Kaplansky/Main.lean#L17).
+Stated in [KaplanskyQuasitrace.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyQuasitrace.lean#L48). Proved in [lean/OAI/Analysis/Kaplansky/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Kaplansky/Main.lean#L17). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Tensor-product failure of stable finiteness and quasitrace consequences
-
-Stated in [KaplanskyStableFiniteness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyStableFiniteness.lean).
 
 ```lean
 theorem stable_finiteness_bundle : StableFinitenessBundle
 ```
 
-Proved in [lean/OAI/Analysis/Kaplansky/StableFiniteness.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Kaplansky/StableFiniteness.lean#L18).
+Stated in [KaplanskyStableFiniteness.lean, line 240](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyStableFiniteness.lean#L240). Proved in [lean/OAI/Analysis/Kaplansky/StableFiniteness.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Kaplansky/StableFiniteness.lean#L18).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

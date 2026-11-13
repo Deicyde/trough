@@ -24,8 +24,6 @@ Tingley's problem asks whether a surjective isometry between the unit spheres of
 
 ## Lean: Tingley's sphere-isometry extension
 
-Stated in [TingleySphereIsometry.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TingleySphereIsometry.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem tingley_sphere_isometry_full
     {X : Type u} {Y : Type v}
@@ -42,11 +40,11 @@ theorem tingley_sphere_isometry_full
         L = T.toLinearEquiv.toLinearMap)
 ```
 
-Proved in [lean/OAI/Analysis/SphereIsometry/Extension.lean, line 101](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SphereIsometry/Extension.lean#L101).
+Stated in [TingleySphereIsometry.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TingleySphereIsometry.lean#L22). Proved in [lean/OAI/Analysis/SphereIsometry/Extension.lean, line 101](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SphereIsometry/Extension.lean#L101). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

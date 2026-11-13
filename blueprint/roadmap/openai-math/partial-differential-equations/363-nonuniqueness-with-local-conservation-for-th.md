@@ -32,8 +32,6 @@ On a common initial interval they are strongly continuous in $L^1$, with integra
 
 ## Lean: Two periodic hard-sphere Boltzmann solutions with the same data
 
-Stated in [BoltzmannNonuniqueness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoltzmannNonuniqueness.lean).
-
 ```lean
 theorem nonuniqueness :
     ∃ f₀ : Density, BoundedVelocitySupport f₀ ∧
@@ -42,11 +40,11 @@ theorem nonuniqueness :
         ∃ t ∈ Set.Icc 0 T, ¬(F t =ᵐ[MeasureTheory.volume] G t)
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/Boltzmann/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/Boltzmann/Main.lean#L13).
+Stated in [BoltzmannNonuniqueness.lean, line 204](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoltzmannNonuniqueness.lean#L204). Proved in [lean/OAI/MathematicalPhysics/Boltzmann/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/Boltzmann/Main.lean#L13).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

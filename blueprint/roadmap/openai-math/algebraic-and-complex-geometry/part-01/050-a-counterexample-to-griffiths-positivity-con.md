@@ -26,17 +26,15 @@ The separate very-ampleness result for all admissible even exponents is not incl
 
 ## Lean: Ample bundles without Griffiths-positive metrics
 
-Stated in [QuadricBundles.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuadricBundles.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem : SourceMainTheorem
 ```
 
-Proved in [lean/OAI/Geometry/QuadricBundles/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/QuadricBundles/Main.lean#L10).
+Stated in [QuadricBundles.lean, line 174](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuadricBundles.lean#L174). Proved in [lean/OAI/Geometry/QuadricBundles/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/QuadricBundles/Main.lean#L10). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -1,8 +1,9 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.ArtinCAT0.main, OAI.HarmonicArtin.ParabolicIntersections.unconditional_parabolic_intersections, OAI.HarmonicArtin.ParabolicIntersections.unconditional_arbitrary_intersections, OAI.HarmonicArtin.ParabolicIntersections.unconditional_parabolic_closure, OAI.HarmonicArtin.ParabolicIntersections.unconditional_nonclique_dynamics
+lean: OAI.HarmonicArtin.salvetti_cover_contractible, OAI.ArtinCAT0.main, OAI.HarmonicArtin.ParabolicIntersections.unconditional_parabolic_intersections, OAI.HarmonicArtin.ParabolicIntersections.unconditional_arbitrary_intersections, OAI.HarmonicArtin.ParabolicIntersections.unconditional_parabolic_closure, OAI.HarmonicArtin.ParabolicIntersections.unconditional_nonclique_dynamics
 statement: formalized
+proof: formalized
 ---
 
 # 254. Classifying spaces and geometric obstructions for Artin groups
@@ -45,18 +46,14 @@ For irreducible Artin groups with an infinite Coxeter label, it also proves acyl
 
 ## Lean: Contractibility of the Salvetti cover
 
-Stated in [HarmonicArtin.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HarmonicArtin.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem salvetti_cover_contractible [Finite S] (M : CoxeterMatrix S) :
     ContractibleSpace (SalvettiCover M)
 ```
 
-Its proof is in [lean/OAI/Topology/ArtinGroups/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [HarmonicArtin.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HarmonicArtin.lean#L59). Proved in [lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean#L11). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Artin group with no geometric $\mathrm{CAT}(0)$ action
-
-Stated in [ArtinCAT0.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArtinCAT0.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main :
@@ -69,11 +66,9 @@ theorem main :
       ¬ GeometricAction (ArtinGroup explicitMatrix) X)
 ```
 
-Proved in [lean/OAI/GroupTheory/ArtinCAT0/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/ArtinCAT0/Main.lean#L53).
+Stated in [ArtinCAT0.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArtinCAT0.lean#L65). Proved in [lean/OAI/GroupTheory/ArtinCAT0/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/ArtinCAT0/Main.lean#L53). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Parabolic intersections, closures, and structural consequences
-
-Stated in [ArtinParabolicIntersections.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArtinParabolicIntersections.lean).
 
 ```lean
 theorem unconditional_parabolic_intersections
@@ -83,7 +78,7 @@ theorem unconditional_parabolic_intersections
         conjugate k (artinParabolic M Z)
 ```
 
-Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean#L31).
+Stated in [ArtinParabolicIntersections.lean, line 98](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArtinParabolicIntersections.lean#L98). Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean#L31).
 
 ```lean
 theorem unconditional_arbitrary_intersections
@@ -93,7 +88,7 @@ theorem unconditional_arbitrary_intersections
         sInf F = sInf (↑F₀ : Set (Subgroup (Artin M)))) ∧ IsParabolic M (sInf F)
 ```
 
-Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean#L39).
+Stated in [ArtinParabolicIntersections.lean, line 106](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArtinParabolicIntersections.lean#L106). Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean#L39).
 
 ```lean
 theorem unconditional_parabolic_closure (E : Set (Artin M)) :
@@ -101,7 +96,7 @@ theorem unconditional_parabolic_closure (E : Set (Artin M)) :
       ∀ Q : Subgroup (Artin M), IsParabolic M Q → E ⊆ Q → P ≤ Q
 ```
 
-Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean#L47).
+Stated in [ArtinParabolicIntersections.lean, line 114](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArtinParabolicIntersections.lean#L114). Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/UnconditionalMain.lean#L47).
 
 ```lean
 theorem unconditional_nonclique_dynamics
@@ -110,11 +105,11 @@ theorem unconditional_nonclique_dynamics
       ∀ P : Subgroup (Artin M), IsParabolic M P → P ≠ ⊤ → WeaklyMalnormal P
 ```
 
-Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/DynamicsUnconditional.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/DynamicsUnconditional.lean#L20).
+Stated in [ArtinParabolicIntersections.lean, line 121](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArtinParabolicIntersections.lean#L121). Proved in [lean/OAI/Topology/ArtinGroups/ParabolicIntersections/DynamicsUnconditional.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/ArtinGroups/ParabolicIntersections/DynamicsUnconditional.lean#L20).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

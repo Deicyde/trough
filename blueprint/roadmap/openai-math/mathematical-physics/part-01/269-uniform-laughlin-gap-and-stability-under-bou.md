@@ -36,49 +36,41 @@ For the untruncated planar model, the formalization proves the corresponding ine
 
 ## Lean: Uniform unperturbed spherical Laughlin gap inequality
 
-Stated in [LaughlinGap.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LaughlinGap.lean).
-
 ```lean
 theorem thm_main : MainTarget
 ```
 
-Proved in [lean/OAI/Analysis/LaughlinGap/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LaughlinGap/Main.lean#L57).
+Stated in [LaughlinGap.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LaughlinGap.lean#L78). Proved in [lean/OAI/Analysis/LaughlinGap/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LaughlinGap/Main.lean#L57).
 
 ## Lean: Uniform Laughlin $V_1$ spectral gap
-
-Stated in [Laughlin.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Laughlin.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem mainTarget_proved : MainTarget
 ```
 
-Proved in [lean/OAI/Analysis/Laughlin/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Laughlin/Main.lean#L19).
+Stated in [Laughlin.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Laughlin.lean#L61). Proved in [lean/OAI/Analysis/Laughlin/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Laughlin/Main.lean#L19). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Uniform Fock-space spectral-gap inequality
-
-Stated in [LaughlinFock.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LaughlinFock.lean).
 
 ```lean
 theorem thm_fock (γ : ℝ) (hγ : 0 < γ) (hγStar : γ < gammaStar) :
     ∃ Qγ : ℤ, 1 ≤ Qγ ∧ ∀ Q : ℤ, Qγ ≤ Q → FockInequality Q.toNat γ
 ```
 
-Proved in [lean/OAI/Analysis/LaughlinFock/Main.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LaughlinFock/Main.lean#L69).
+Stated in [LaughlinFock.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LaughlinFock.lean#L58). Proved in [lean/OAI/Analysis/LaughlinFock/Main.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LaughlinFock/Main.lean#L69).
 
 ## Lean: Planar spectral-gap inequality
-
-Stated in [LaughlinPlanar.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LaughlinPlanar.lean).
 
 ```lean
 theorem planar_gap {N : ℕ} (ψ : Planar.HomogeneousState N) :
     ENNReal.ofReal gammaStar * Planar.fullEnergy ψ ≤ Planar.fullSquareNorm ψ
 ```
 
-Proved in [lean/OAI/Analysis/Laughlin/UniformGap.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Laughlin/UniformGap.lean#L29).
+Stated in [LaughlinPlanar.lean, line 76](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LaughlinPlanar.lean#L76). Proved in [lean/OAI/Analysis/Laughlin/UniformGap.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Laughlin/UniformGap.lean#L29).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

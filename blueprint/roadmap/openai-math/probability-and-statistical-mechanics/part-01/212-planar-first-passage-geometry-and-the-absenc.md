@@ -32,8 +32,6 @@ The paper also claims strict convexity for the exponential limit shape. Strict c
 
 ## Lean: Differentiability of the exponential first-passage limit shape
 
-Stated in [PlanarFirstPassage.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarFirstPassage.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem manuscriptMain (Ω : Type) [MeasurableSpace Ω] (P : Measure Ω) (τ : Edge → Ω → ℝ)
     (henv : ExponentialEnvironment P τ) :
@@ -44,21 +42,19 @@ theorem manuscriptMain (Ω : Type) [MeasurableSpace Ω] (P : Measure Ω) (τ : E
       (∀ v ∈ frontier {z | μ z ≤ 1}, HasC1CurveChart (frontier {z | μ z ≤ 1}) v)
 ```
 
-Proved in [lean/OAI/Probability/FirstPassage/BoundaryCurve.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/FirstPassage/BoundaryCurve.lean#L65).
+Stated in [PlanarFirstPassage.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarFirstPassage.lean#L91). Proved in [lean/OAI/Probability/FirstPassage/BoundaryCurve.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/FirstPassage/BoundaryCurve.lean#L65). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Differentiability for every positive Gamma edge-weight law
-
-Stated in [GammaPassage.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GammaPassage.lean).
 
 ```lean
 theorem gamma_differentiability : GammaDifferentiabilityTarget
 ```
 
-Proved in [lean/OAI/Probability/GammaPassage/Differentiability.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GammaPassage/Differentiability.lean#L20).
+Stated in [GammaPassage.lean, line 107](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GammaPassage.lean#L107). Proved in [lean/OAI/Probability/GammaPassage/Differentiability.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GammaPassage/Differentiability.lean#L20).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

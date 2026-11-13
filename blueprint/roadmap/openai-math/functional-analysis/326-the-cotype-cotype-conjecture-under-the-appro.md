@@ -24,17 +24,15 @@ The cotype–cotype problem asks whether finite cotype of a Banach space and its
 
 ## Lean: Cotype–cotype equivalence with approximation property
 
-Stated in [Cotype.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Cotype.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem mainTarget_proved [Nontrivial X] : MainTarget X
 ```
 
-Proved in [lean/OAI/Analysis/Cotype/Main.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Cotype/Main.lean#L26).
+Stated in [Cotype.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Cotype.lean#L53). Proved in [lean/OAI/Analysis/Cotype/Main.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Cotype/Main.lean#L26). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -36,17 +36,15 @@ The Calderón inverse problem asks whether boundary measurements determine an in
 
 ## Lean: Scalar conductivity nonuniqueness
 
-Stated in [Conductivity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Conductivity.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_nonuniqueness : MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/Conductivity/Main.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Conductivity/Main.lean#L73).
+Stated in [Conductivity.lean, line 77](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Conductivity.lean#L77). Proved in [lean/OAI/Analysis/Conductivity/Main.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Conductivity/Main.lean#L73). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

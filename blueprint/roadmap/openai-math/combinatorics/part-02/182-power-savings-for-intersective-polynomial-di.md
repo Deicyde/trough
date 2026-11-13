@@ -36,8 +36,6 @@ The formalization proves a fixed power saving for sets with no nonzero square di
 
 ## Lean: Power saving for square-difference-free sets
 
-Stated in [SquareDifference.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SquareDifference.lean).
-
 ```lean
 theorem power_saving :
     ∃ c C : ℝ, 0 < c ∧ ∀ N : ℕ, 1 ≤ N → ∀ A : Finset ℤ,
@@ -45,11 +43,11 @@ theorem power_saving :
         (A.card : ℝ) ≤ C * (N : ℝ) ^ (1 - c)
 ```
 
-Proved in [lean/OAI/Combinatorics/SquareDifference/Main.lean, line 83](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SquareDifference/Main.lean#L83).
+Stated in [SquareDifference.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SquareDifference.lean#L10). Proved in [lean/OAI/Combinatorics/SquareDifference/Main.lean, line 83](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SquareDifference/Main.lean#L83).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

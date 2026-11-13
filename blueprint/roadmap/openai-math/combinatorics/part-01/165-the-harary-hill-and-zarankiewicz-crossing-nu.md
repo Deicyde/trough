@@ -36,28 +36,24 @@ Zarankiewicz's crossing-number conjecture predicts $\mathrm{cr}(K_{m,n})=\lfloor
 
 ## Lean: Crossing number of complete graphs
 
-Stated in [CompleteCrossing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CompleteCrossing.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem complete_graph_crossing_number (order : ℕ) (at_least_three : 3 ≤ order) :
     ordinaryCrossingNumber (completeGraph order) = hill order
 ```
 
-Proved in [lean/OAI/Combinatorics/CompleteCrossing/Main.lean, line 76](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/CompleteCrossing/Main.lean#L76).
+Stated in [CompleteCrossing.lean, line 81](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CompleteCrossing.lean#L81). Proved in [lean/OAI/Combinatorics/CompleteCrossing/Main.lean, line 76](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/CompleteCrossing/Main.lean#L76). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Crossing number of complete bipartite graphs
-
-Stated in [BipartiteCrossing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BipartiteCrossing.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem mainTarget_proof : MainTarget
 ```
 
-Proved in [lean/OAI/Combinatorics/Crossing/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Crossing/Main.lean#L8).
+Stated in [BipartiteCrossing.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BipartiteCrossing.lean#L60). Proved in [lean/OAI/Combinatorics/Crossing/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Crossing/Main.lean#L8). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -44,8 +44,6 @@ It also proves convergence of the finite-volume dynamics to the infinite-volume 
 
 ## Lean: Low-temperature spontaneous magnetization for every positive spin
 
-Stated in [Heisenberg.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Heisenberg.lean).
-
 ```lean
 theorem spontaneous_magnetization (d ℓ : ℕ) (hd : 3≤d) (hℓ : 1≤ℓ) :
     DynamicsConverges d ℓ ∧
@@ -55,11 +53,11 @@ theorem spontaneous_magnetization (d ℓ : ℕ) (hd : 3≤d) (hℓ : 1≤ℓ) :
           (ℓ:ℝ)/8≤(ω.functional (spinZ d ℓ 0)).re
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/Heisenberg/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/Heisenberg/Main.lean#L60).
+Stated in [Heisenberg.lean, line 206](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Heisenberg.lean#L206). Proved in [lean/OAI/MathematicalPhysics/Heisenberg/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/Heisenberg/Main.lean#L60).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

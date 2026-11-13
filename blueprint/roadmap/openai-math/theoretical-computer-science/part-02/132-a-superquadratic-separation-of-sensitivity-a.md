@@ -24,8 +24,6 @@ The formalized result disproves a universal quadratic bound of block sensitivity
 
 ## Lean: Superquadratic sensitivity separation
 
-Stated in [SensitivitySeparation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SensitivitySeparation.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem quantitative_separation (d : ℕ) (hd : 1 ≤ d) :
     ∃ (n : ℕ) (f : (Fin n → Bool) → Bool),
@@ -35,11 +33,11 @@ theorem quantitative_separation (d : ℕ) (hd : 1 ≤ d) :
         (blockSensitivity f : ℝ) / (sensitivity f : ℝ) ^ 2
 ```
 
-Proved in [lean/OAI/Combinatorics/Sensitivity/Separation.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Sensitivity/Separation.lean#L12).
+Stated in [SensitivitySeparation.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SensitivitySeparation.lean#L30). Proved in [lean/OAI/Combinatorics/Sensitivity/Separation.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Sensitivity/Separation.lean#L12). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

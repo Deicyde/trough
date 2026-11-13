@@ -1,6 +1,6 @@
 # Convex and metric geometry
 
-15 result families in *Convex and metric geometry*, with 30 manuscripts; 13 with Lean: 32 statements, all proved in a file this chapter reads.
+15 result families in *Convex and metric geometry*, with 30 manuscripts; 13 with Lean: 29 statements, all proved in a file this chapter reads.
 
 The descriptions, titles, abstracts, Lean pages and statements are quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), under its Apache-2.0 license.
 

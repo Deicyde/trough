@@ -26,18 +26,16 @@ The selected theorem asserts equality of the language classes. The paper's expli
 
 ## Lean: Exact equality of deterministic and randomized logarithmic space
 
-Stated in [LogspaceEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogspaceEquality.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exact_logarithmic_space_derandomization :
     L = RL ∧ RL = BPL
 ```
 
-Proved in [lean/OAI/Computability/Logspace/Equality.lean, line 104](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/Logspace/Equality.lean#L104).
+Stated in [LogspaceEquality.lean, line 136](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogspaceEquality.lean#L136). Proved in [lean/OAI/Computability/Logspace/Equality.lean, line 104](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/Logspace/Equality.lean#L104). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

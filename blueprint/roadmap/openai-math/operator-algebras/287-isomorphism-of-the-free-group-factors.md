@@ -24,19 +24,17 @@ The free group factor problem asks whether the von Neumann algebras of free grou
 
 ## Lean: Isomorphism of all interpolated free group factors
 
-Stated in [InterpolatedFactors.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InterpolatedFactors.lean).
-
 ```lean
 theorem allInterpolatedIsomorphic (r s : ℝ≥0∞) (hr : 1<r) (hs : 1<s) :
     Nonempty (NormalTracialEquiv (interpolatedTrace r) (interpolatedTrace s)
       (interpolatedTopology r) (interpolatedTopology s))
 ```
 
-Proved in [lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean, line 101](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean#L101).
+Stated in [InterpolatedFactors.lean, line 216](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InterpolatedFactors.lean#L216). Proved in [lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean, line 101](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean#L101).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

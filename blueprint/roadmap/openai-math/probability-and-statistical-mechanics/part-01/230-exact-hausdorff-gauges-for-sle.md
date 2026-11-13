@@ -30,17 +30,15 @@ For $0<\kappa<8$, put $d=1+\kappa/8$. The formalization proves that every contin
 
 ## Lean: Positivity of the explicit gauge on every positive-time segment
 
-Stated in [SLELowerPositivity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SLELowerPositivity.lean).
-
 ```lean
 theorem sourceLowerMain_proved : SourceLowerMainTarget
 ```
 
-Proved in [lean/OAI/Probability/SLE/LowerPositivity.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SLE/LowerPositivity.lean#L60).
+Stated in [SLELowerPositivity.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SLELowerPositivity.lean#L78). Proved in [lean/OAI/Probability/SLE/LowerPositivity.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SLE/LowerPositivity.lean#L60).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

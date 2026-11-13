@@ -8,7 +8,7 @@ proof: formalized
 
 # 293. Invariant projections, hyperinvariant subspaces, and transitive algebras
 
-2 manuscripts and 8 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
+2 manuscripts and 7 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
 Constructs a nonzero norm-quasinilpotent operator on every infinite-dimensional separable complex Hilbert space with no nonzero proper closed subspace invariant under every commuting operator. The construction also gives operators with no nontrivial invariant projection in the hyperfinite type II$_{1}$ factor.
 
@@ -34,17 +34,13 @@ The hyperinvariant-subspace problem asks whether every bounded operator on a com
 
 ## Lean: Finite-factor invariant-projection counterexample
 
-Stated in [FiniteFactor.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteFactor.lean).
-
 ```lean
 theorem main_theorem : MainTarget.{0}
 ```
 
-Proved in [lean/OAI/Analysis/FiniteFactor/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FiniteFactor/Main.lean#L11).
+Stated in [FiniteFactor.lean, line 41](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteFactor.lean#L41). Proved in [lean/OAI/Analysis/FiniteFactor/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FiniteFactor/Main.lean#L11).
 
 ## Lean: Quasinilpotent operator with transitive commutant
-
-Stated in [BackwardIntertwiners.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BackwardIntertwiners.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem direct_algebra_corollary (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H]
@@ -52,31 +48,25 @@ theorem direct_algebra_corollary (H : Type*) [NormedAddCommGroup H] [InnerProduc
     Hyperinvariant233.FullClaim (H:=H)
 ```
 
-Proved in [lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean#L78).
+Stated in [BackwardIntertwiners.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BackwardIntertwiners.lean#L36). Proved in [lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean#L78). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Continuous-weight invariant-projection counterexample
-
-Stated in [ContinuousCircleWeight.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuousCircleWeight.lean).
 
 ```lean
 theorem main_theorem : MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/RotationWeights/Main.lean, line 267](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RotationWeights/Main.lean#L267).
+Stated in [ContinuousCircleWeight.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuousCircleWeight.lean#L50). Proved in [lean/OAI/Analysis/RotationWeights/Main.lean, line 267](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RotationWeights/Main.lean#L267).
 
 ## Lean: Quasinilpotent operator with a transitive commutant
-
-Stated in [HyperinvariantSubspaces.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperinvariantSubspaces.lean).
 
 ```lean
 theorem main_theorem (hInf : ¬FiniteDimensional ℂ H) : FullClaim (H := H)
 ```
 
-Proved in [lean/OAI/Analysis/Hyperinvariant/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Hyperinvariant/Main.lean#L15).
+Stated in [HyperinvariantSubspaces.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperinvariantSubspaces.lean#L38). Proved in [lean/OAI/Analysis/Hyperinvariant/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Hyperinvariant/Main.lean#L15).
 
 ## Lean: Invariant-projection counterexamples for every irrational rotation
-
-Stated in [IrrationalRotation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IrrationalRotation.lean).
 
 ```lean
 theorem prescribed_irrational_counterexample (θ : ℝ)
@@ -84,38 +74,30 @@ theorem prescribed_irrational_counterexample (θ : ℝ)
     ∃ f : C(Circle, ℝ), Rotation.IsContinuousCounterexample θ f
 ```
 
-Proved in [lean/OAI/Analysis/IrrationalRotation/PrescribedAngle.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IrrationalRotation/PrescribedAngle.lean#L17).
+Stated in [IrrationalRotation.lean, line 838](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IrrationalRotation.lean#L838). Proved in [lean/OAI/Analysis/IrrationalRotation/PrescribedAngle.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IrrationalRotation/PrescribedAngle.lean#L17).
 
 ```lean
 theorem product_realization :
     ∃ θ c : ℕ → ℝ, ProductModel.IsCounterexampleRealization θ c
 ```
 
-Proved in [lean/OAI/Analysis/IrrationalRotation/Main.lean, line 670](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IrrationalRotation/Main.lean#L670).
+Stated in [IrrationalRotation.lean, line 843](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IrrationalRotation.lean#L843). Proved in [lean/OAI/Analysis/IrrationalRotation/Main.lean, line 670](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IrrationalRotation/Main.lean#L670).
 
 ## Lean: Brown measure of the selected product weighted shift
-
-Stated in [ProductBrown.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProductBrown.lean).
 
 ```lean
 theorem productBrown : ProductBrownClaim
 ```
 
-Proved in [lean/OAI/Analysis/BrownMeasure/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BrownMeasure/Main.lean#L14).
+Stated in [ProductBrown.lean, line 752](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProductBrown.lean#L752). Proved in [lean/OAI/Analysis/BrownMeasure/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BrownMeasure/Main.lean#L14).
 
 ## Lean: Quasinilpotent operator without a hyperinvariant subspace
 
-Stated in [HyperinvariantSubspaces.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperinvariantSubspaces.lean).
-
-```lean
-theorem main_theorem (hInf : ¬FiniteDimensional ℂ H) : FullClaim (H := H)
-```
-
-Proved in [lean/OAI/Analysis/Hyperinvariant/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Hyperinvariant/Main.lean#L15).
+States the `OAI.Hyperinvariant.main_theorem` quoted above. Stated in [HyperinvariantSubspaces.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperinvariantSubspaces.lean#L38).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

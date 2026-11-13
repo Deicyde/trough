@@ -24,8 +24,6 @@ The cycle–clique Ramsey conjecture predicts the exact number of vertices forci
 
 ## Lean: Exact cycle–clique Ramsey numbers
 
-Stated in [CycleCliqueRamsey.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CycleCliqueRamsey.lean).
-
 ```lean
 theorem thm_main :
     (∀ m n : ℤ, n ≤ m → 3 ≤ n → (m, n) ≠ (3, 3) →
@@ -33,11 +31,11 @@ theorem thm_main :
     cycleCliqueRamsey 3 3 = 6
 ```
 
-Proved in [lean/OAI/Combinatorics/Ramsey/CycleClique/MainTheorem.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Ramsey/CycleClique/MainTheorem.lean#L23).
+Stated in [CycleCliqueRamsey.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CycleCliqueRamsey.lean#L23). Proved in [lean/OAI/Combinatorics/Ramsey/CycleClique/MainTheorem.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Ramsey/CycleClique/MainTheorem.lean#L23).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

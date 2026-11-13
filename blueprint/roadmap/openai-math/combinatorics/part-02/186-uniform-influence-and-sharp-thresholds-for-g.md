@@ -30,8 +30,6 @@ The Friedgut–Kalai sharp-threshold conjecture concerns how quickly a nontrivia
 
 ## Lean: Sharp threshold width for monotone graph properties
 
-Stated in [SharpThreshold.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SharpThreshold.lean).
-
 ```lean
 theorem sharp_threshold_width :
     ∀ (n : ℕ) (f : GraphConfig n → Bool) (ε : ℝ),
@@ -41,11 +39,11 @@ theorem sharp_threshold_width :
         ((2 : ℝ) ^ 19 / (Real.log (n : ℝ)) ^ 2) * Real.log (1 / (2 * ε))
 ```
 
-Proved in [lean/OAI/Combinatorics/SharpThreshold/Main.lean, line 28](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SharpThreshold/Main.lean#L28).
+Stated in [SharpThreshold.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SharpThreshold.lean#L51). Proved in [lean/OAI/Combinatorics/SharpThreshold/Main.lean, line 28](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SharpThreshold/Main.lean#L28).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

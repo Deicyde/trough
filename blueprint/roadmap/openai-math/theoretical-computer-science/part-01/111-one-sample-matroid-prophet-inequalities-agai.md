@@ -26,39 +26,35 @@ A supporting hidden-vector selection result for fixed nonnegative matroid weight
 
 ## Lean: One-sample matroid prophet inequality against an almighty adversary
 
-Stated in [MatroidProphet.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatroidProphet.lean).
-
 ```lean
 theorem one_sample.{u} : OneSampleChallenge.{u}
 ```
 
-Proved in [lean/OAI/Probability/MatroidProphet/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidProphet/Main.lean#L60).
+Stated in [MatroidProphet.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatroidProphet.lean#L89). Proved in [lean/OAI/Probability/MatroidProphet/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidProphet/Main.lean#L60).
 
 ## Lean: Hidden-vector matroid selection with worst-order guarantee
-
-Stated in [MatroidSecretary.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatroidSecretary.lean).
 
 ```lean
 theorem one_sample.{u} : MatroidProphet.OneSampleChallenge.{u}
 ```
 
-Proved in [lean/OAI/Probability/MatroidSecretary/Contracts.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidSecretary/Contracts.lean#L49).
+Stated in [MatroidSecretary.lean, line 235](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatroidSecretary.lean#L235). Proved in [lean/OAI/Probability/MatroidSecretary/Contracts.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidSecretary/Contracts.lean#L49).
 
 ```lean
 theorem hidden_vector : MatroidProphet.HiddenVectorChallenge
 ```
 
-Proved in [lean/OAI/Probability/MatroidSecretary/Contracts.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidSecretary/Contracts.lean#L52).
+Stated in [MatroidSecretary.lean, line 238](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatroidSecretary.lean#L238). Proved in [lean/OAI/Probability/MatroidSecretary/Contracts.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidSecretary/Contracts.lean#L52).
 
 ```lean
 theorem secretary.{u} : MatroidProphet.SecretaryChallenge.{u}
 ```
 
-Proved in [lean/OAI/Probability/MatroidSecretary/Contracts.lean, line 118](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidSecretary/Contracts.lean#L118).
+Stated in [MatroidSecretary.lean, line 241](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatroidSecretary.lean#L241). Proved in [lean/OAI/Probability/MatroidSecretary/Contracts.lean, line 118](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MatroidSecretary/Contracts.lean#L118).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

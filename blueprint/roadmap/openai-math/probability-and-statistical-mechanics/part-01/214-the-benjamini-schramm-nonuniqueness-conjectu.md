@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.Percolation.BenjaminiSchramm.full_main, OAI.Percolation.BenjaminiSchramm.critical_laws, OAI.Percolation.arbitrary_cayley
+lean: OAI.Percolation.BenjaminiSchramm.full_main, OAI.Percolation.BenjaminiSchramm.cayley_main, OAI.Percolation.BenjaminiSchramm.critical_laws, OAI.Percolation.arbitrary_cayley
 statement: formalized
 ---
 
@@ -25,15 +25,13 @@ The selected critical estimates include a finite triangle diagram, susceptibilit
 
 ## Lean: Nonuniqueness phase and critical laws on quasi-transitive graphs
 
-Stated in [BenjaminiSchramm.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BenjaminiSchramm.lean).
-
 ```lean
 theorem full_main {V : Type u} {E : Type v} [Infinite V]
     (G : BondGraph V E) (hc : Connected G) (hl : LocallyFinite G)
     (hq : QuasiTransitive G) (hh : 0 < hV G) : MainConclusion G
 ```
 
-Proved in [lean/OAI/Probability/BenjaminiSchramm/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BenjaminiSchramm/Main.lean#L9).
+Stated in [BenjaminiSchramm.lean, line 217](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BenjaminiSchramm.lean#L217). Proved in [lean/OAI/Probability/BenjaminiSchramm/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BenjaminiSchramm/Main.lean#L9).
 
 ```lean
 theorem cayley_main {Λ : Type u} [Group Λ]
@@ -45,7 +43,7 @@ theorem cayley_main {Λ : Type u} [Group Λ]
         ∀ᵐ ω ∂law p, (infiniteClusters (cayleyBond S) ω).Infinite
 ```
 
-Its proof is in [lean/OAI/Probability/BenjaminiSchramm/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BenjaminiSchramm/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [BenjaminiSchramm.lean, line 229](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BenjaminiSchramm.lean#L229). Its proof is in [lean/OAI/Probability/BenjaminiSchramm/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BenjaminiSchramm/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem critical_laws {V : Type u} {E : Type v} [Infinite V]
@@ -53,11 +51,9 @@ theorem critical_laws {V : Type u} {E : Type v} [Infinite V]
     (hq : QuasiTransitive G) (hh : 0 < hV G) : CriticalLawsConclusion G
 ```
 
-Proved in [lean/OAI/Probability/BenjaminiSchramm/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BenjaminiSchramm/Main.lean#L14).
+Stated in [BenjaminiSchramm.lean, line 223](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BenjaminiSchramm.lean#L223). Proved in [lean/OAI/Probability/BenjaminiSchramm/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BenjaminiSchramm/Main.lean#L14).
 
 ## Lean: Nonuniqueness for every nonamenable Cayley graph
-
-Stated in [CayleyPercolation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CayleyPercolation.lean).
 
 ```lean
 theorem arbitrary_cayley {Λ : Type u} [Group Λ] [Group.FG Λ]
@@ -74,11 +70,11 @@ theorem arbitrary_cayley {Λ : Type u} [Group Λ] [Group.FG Λ]
       ∀ᵐ ω ∂law p, (infiniteClusters (cayleyGraph S) ω).Infinite)
 ```
 
-Proved in [lean/OAI/Probability/UnimodularPercolation/Cayley/Nonuniqueness.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/UnimodularPercolation/Cayley/Nonuniqueness.lean#L18).
+Stated in [CayleyPercolation.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CayleyPercolation.lean#L68). Proved in [lean/OAI/Probability/UnimodularPercolation/Cayley/Nonuniqueness.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/UnimodularPercolation/Cayley/Nonuniqueness.lean#L18).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -26,17 +26,15 @@ The regularized-transport proposition and graph-complex consequences are not inc
 
 ## Lean: Deligne–Drinfeld main statement
 
-Stated in [DeligneDrinfeld.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DeligneDrinfeld.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Algebra/Drinfeld/Completion.lean, line 559](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Drinfeld/Completion.lean#L559).
+Stated in [DeligneDrinfeld.lean, line 189](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DeligneDrinfeld.lean#L189). Proved in [lean/OAI/Algebra/Drinfeld/Completion.lean, line 559](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Drinfeld/Completion.lean#L559). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

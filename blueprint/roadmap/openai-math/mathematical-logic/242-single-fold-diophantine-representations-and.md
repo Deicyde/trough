@@ -26,17 +26,15 @@ The consequence that solvability remains undecidable under an at-most-one-soluti
 
 ## Lean: Single-fold Diophantine representations
 
-Stated in [SingleFold.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SingleFold.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/NumberTheory/SingleFold/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/SingleFold/Main.lean#L21).
+Stated in [SingleFold.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SingleFold.lean#L24). Proved in [lean/OAI/NumberTheory/SingleFold/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/SingleFold/Main.lean#L21). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -24,8 +24,6 @@ Naimark's problem asks whether a $C^*$-algebra whose nonzero irreducible represe
 
 ## Lean: Counterexample to Naimark's problem in ZFC
 
-Stated in [Naimark.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Naimark.lean).
-
 ```lean
 theorem main :
     ∃ (A : Type u) (_ : CStarAlgebra A),
@@ -36,11 +34,11 @@ theorem main :
         ¬ IsIsomorphicToCompacts A H
 ```
 
-Proved in [lean/OAI/Analysis/Naimark/Tracial.lean, line 243](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Naimark/Tracial.lean#L243).
+Stated in [Naimark.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Naimark.lean#L44). Proved in [lean/OAI/Analysis/Naimark/Tracial.lean, line 243](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Naimark/Tracial.lean#L243).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

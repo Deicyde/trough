@@ -8,7 +8,7 @@ proof: formalized
 
 # 134. Generalized star height at most three
 
-3 manuscripts and 2 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
+3 manuscripts and 1 Lean statement, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
 Every regular language over a finite alphabet has a generalized regular expression with at most three nested Kleene stars, allowing union, concatenation and complement over the same alphabet. This establishes an absolute bound independent of automaton size, resolving the uniform-boundedness version of the generalized star-height problem.
 
@@ -40,29 +40,20 @@ Generalized star height measures the nesting of Kleene stars in regular expressi
 
 ## Lean: Uniform generalized star-height bound of three
 
-Stated in [GeneralizedStarHeight.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GeneralizedStarHeight.lean).
-
 ```lean
 theorem main {Alphabet : Type u} [Finite Alphabet] (L : Language Alphabet) (hL : L.IsRegular) :
     HasHeightAtMost L 3
 ```
 
-Proved in [lean/OAI/Computability/StarHeight/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/StarHeight/Main.lean#L9).
+Stated in [GeneralizedStarHeight.lean, line 42](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GeneralizedStarHeight.lean#L42). Proved in [lean/OAI/Computability/StarHeight/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/StarHeight/Main.lean#L9).
 
 ## Lean: Generalized star height at most three
 
-Stated in [GeneralizedStarHeight.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GeneralizedStarHeight.lean).
-
-```lean
-theorem main {Alphabet : Type u} [Finite Alphabet] (L : Language Alphabet) (hL : L.IsRegular) :
-    HasHeightAtMost L 3
-```
-
-Proved in [lean/OAI/Computability/StarHeight/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/StarHeight/Main.lean#L9).
+States the `OAI.GeneralizedStarHeight.main` quoted above. Stated in [GeneralizedStarHeight.lean, line 42](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GeneralizedStarHeight.lean#L42).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

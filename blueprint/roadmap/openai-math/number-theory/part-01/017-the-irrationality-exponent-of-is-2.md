@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# 017. The irrationality exponent of \*π\* is 2
+# 017. The irrationality exponent of *π* is 2
 
 1 manuscript and 1 Lean statement, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
@@ -26,8 +26,6 @@ The paper's convergence consequence for the Flint–Hills series is outside this
 
 ## Lean: The irrationality exponent of $\pi$ equals two
 
-Stated in [PiExponent.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PiExponent.lean).
-
 ```lean
 theorem main :
   (∀ ν : ℝ, 2 < ν → ∃ Q : ℤ, 2 ≤ Q ∧
@@ -39,11 +37,11 @@ theorem main :
       |Real.pi - (r : ℝ)| < (r.den : ℝ) ^ (-ν)}} = 2
 ```
 
-Proved in [lean/OAI/NumberTheory/PiExponent/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/PiExponent/Main.lean#L17).
+Stated in [PiExponent.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PiExponent.lean#L7). Proved in [lean/OAI/NumberTheory/PiExponent/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/PiExponent/Main.lean#L17).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

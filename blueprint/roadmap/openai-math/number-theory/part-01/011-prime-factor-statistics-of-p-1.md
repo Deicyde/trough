@@ -29,7 +29,7 @@ We prove that there are infinitely many primes *p* for which $p-1$ is squarefree
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

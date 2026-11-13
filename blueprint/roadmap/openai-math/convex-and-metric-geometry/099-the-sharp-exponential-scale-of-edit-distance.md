@@ -44,27 +44,21 @@ The selected statements are the binary lower bounds. The paper's constant-distor
 
 ## Lean: Matching exponential-scale bounds for edit-distance distortion
 
-Stated in [EditDistance.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EditDistance.lean).
-
 ```lean
 theorem edit_distance_main : EditDistortion.MainClaim.{u}
 ```
 
-Proved in [lean/OAI/Combinatorics/EditDistance/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EditDistance/Main.lean#L13).
+Stated in [EditDistance.lean, line 67](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EditDistance.lean#L67). Proved in [lean/OAI/Combinatorics/EditDistance/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EditDistance/Main.lean#L13).
 
 ## Lean: Finite-circle obstructions and histogram embeddings for edit distance
-
-Stated in [FiniteCircle.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteCircle.lean).
 
 ```lean
 theorem finiteCircle_fullMain : FiniteCircle.FullMain
 ```
 
-Proved in [lean/OAI/Combinatorics/FiniteCircle/Main.lean, line 139](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/FiniteCircle/Main.lean#L139).
+Stated in [FiniteCircle.lean, line 225](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteCircle.lean#L225). Proved in [lean/OAI/Combinatorics/FiniteCircle/Main.lean, line 139](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/FiniteCircle/Main.lean#L139).
 
 ## Lean: Binary edit-distance distortion lower bound
-
-Stated in [BinaryEditLower.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinaryEditLower.lean).
 
 ```lean
 theorem binary_lower_bound :
@@ -74,21 +68,19 @@ theorem binary_lower_bound :
           growth c d ≤ binarySetDistortion W
 ```
 
-Proved in [lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean#L12).
+Stated in [BinaryEditLower.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinaryEditLower.lean#L51). Proved in [lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean#L12).
 
 ## Lean: Tree-based binary edit-distance distortion lower bound
-
-Stated in [TreeEdit.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TreeEdit.lean).
 
 ```lean
 theorem binary_torus : BinaryLowerBound
 ```
 
-Proved in [lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean, line 106](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean#L106).
+Stated in [TreeEdit.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TreeEdit.lean#L46). Proved in [lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean, line 106](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean#L106).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

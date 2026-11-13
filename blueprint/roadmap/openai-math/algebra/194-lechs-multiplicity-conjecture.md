@@ -26,17 +26,15 @@ This selected statement is the complete-domain Dutta comparison. The paper's ful
 
 ## Lean: Complete-domain Dutta multiplicity comparison
 
-Stated in [DuttaDomain.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DuttaDomain.lean).
-
 ```lean
 theorem dutta_domain : DuttaDomainClaim.{u}
 ```
 
-Proved in [lean/OAI/RingTheory/Multiplicity/DuttaDomain.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/Multiplicity/DuttaDomain.lean#L46).
+Stated in [DuttaDomain.lean, line 74](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DuttaDomain.lean#L74). Proved in [lean/OAI/RingTheory/Multiplicity/DuttaDomain.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/Multiplicity/DuttaDomain.lean#L46).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

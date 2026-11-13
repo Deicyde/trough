@@ -38,8 +38,6 @@ The formalized result proves Talagrand's discrete-convexity assertion with $k=2^
 
 ## Lean: Integral–fractional expectation-threshold comparison
 
-Stated in [TalagrandExpectationThreshold.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TalagrandExpectationThreshold.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem talagrand_expectation_threshold_equivalence [Nonempty α]
     (F : Family α) (_hF : F.Nonempty) (hproper : F ≠ Finset.univ)
@@ -47,11 +45,9 @@ theorem talagrand_expectation_threshold_equivalence [Nonempty α]
     qf F ≤ ((25 : ℝ) * (512 : ℝ) ^ 4) * q F
 ```
 
-Proved in [lean/OAI/Combinatorics/ExpectationThreshold/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ExpectationThreshold/Main.lean#L21).
+Stated in [TalagrandExpectationThreshold.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TalagrandExpectationThreshold.lean#L52). Proved in [lean/OAI/Combinatorics/ExpectationThreshold/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ExpectationThreshold/Main.lean#L21). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Talagrand discrete convexity
-
-Stated in [TalagrandDiscreteConvexity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TalagrandDiscreteConvexity.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem talagrand_discrete_convexity (N : ℕ) (_hN : 1 ≤ N)
@@ -60,11 +56,11 @@ theorem talagrand_discrete_convexity (N : ℕ) (_hN : 1 ≤ N)
     Small p (exceptional ((2 : ℕ) ^ 75) D)
 ```
 
-Proved in [lean/OAI/Combinatorics/DiscreteConvexity/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/DiscreteConvexity/Main.lean#L61).
+Stated in [TalagrandDiscreteConvexity.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TalagrandDiscreteConvexity.lean#L47). Proved in [lean/OAI/Combinatorics/DiscreteConvexity/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/DiscreteConvexity/Main.lean#L61). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

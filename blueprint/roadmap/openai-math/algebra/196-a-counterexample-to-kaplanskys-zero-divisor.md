@@ -26,17 +26,15 @@ The same group admits a finite two-dimensional classifying space $K(G,1)$.
 
 ## Lean: Torsion-free group-algebra counterexample
 
-Stated in [TorsionFreeZeroDivisors.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TorsionFreeZeroDivisors.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainTheorem
 ```
 
-Proved in [lean/OAI/Algebra/GroupRing/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/GroupRing/Main.lean#L13).
+Stated in [TorsionFreeZeroDivisors.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TorsionFreeZeroDivisors.lean#L35). Proved in [lean/OAI/Algebra/GroupRing/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/GroupRing/Main.lean#L13). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

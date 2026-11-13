@@ -32,8 +32,6 @@ The paper's extension to immersed hypersurfaces without an initial graph assumpt
 
 ## Lean: Affine Bernstein classification for complete graphs in dimensions three through nine
 
-Stated in [AffineBernstein.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AffineBernstein.lean).
-
 ```lean
 theorem affine_bernstein
     (n : ℕ) (hn₃ : 3 ≤ n) (hn₉ : n ≤ 9)
@@ -52,11 +50,11 @@ theorem affine_bernstein
         e '' standardParaboloid n = graph Ω u)
 ```
 
-Proved in [lean/OAI/Analysis/AffineBernstein/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/AffineBernstein/Main.lean#L18).
+Stated in [AffineBernstein.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AffineBernstein.lean#L73). Proved in [lean/OAI/Analysis/AffineBernstein/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/AffineBernstein/Main.lean#L18).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

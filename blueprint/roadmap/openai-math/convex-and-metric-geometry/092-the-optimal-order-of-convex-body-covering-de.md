@@ -32,8 +32,6 @@ The formalization determines the order of the largest covering density in dimens
 
 ## Lean: Single-lattice covering bound
 
-Stated in [SingleLatticeCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SingleLatticeCovering.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem single_lattice_covering :
     ∃ C : ℝ, 0 < C ∧ ∀ (n : ℕ), 2 ≤ n →
@@ -43,21 +41,19 @@ theorem single_lattice_covering :
             (volume K).toReal / ZLattice.covolume L ≤ C * (n : ℝ) * Real.log (n : ℝ)
 ```
 
-Proved in [lean/OAI/Geometry/LatticeCovering/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/LatticeCovering/Main.lean#L25).
+Stated in [SingleLatticeCovering.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SingleLatticeCovering.lean#L20). Proved in [lean/OAI/Geometry/LatticeCovering/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/LatticeCovering/Main.lean#L25). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Optimal order for translative and lattice covering-density suprema
-
-Stated in [CoveringDensity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoveringDensity.lean).
 
 ```lean
 theorem CoveringOrder.optimal_order : CoveringOrder.OptimalOrder
 ```
 
-Proved in [lean/OAI/Geometry/CoveringDensity/Main.lean, line 79](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CoveringDensity/Main.lean#L79).
+Stated in [CoveringDensity.lean, line 113](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoveringDensity.lean#L113). Proved in [lean/OAI/Geometry/CoveringDensity/Main.lean, line 79](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CoveringDensity/Main.lean#L79).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -29,7 +29,7 @@ We prove Cardy's formula for annealed crossing probabilities in critical planar 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

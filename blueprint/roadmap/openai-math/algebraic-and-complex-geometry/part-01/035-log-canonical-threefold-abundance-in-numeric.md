@@ -23,7 +23,7 @@ Let *X* be a projective ℚ-factorial terminal threefold over an algebraically c
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -40,8 +40,6 @@ The formalized result constructs polynomial-size hitting lists for noncommutativ
 
 ## Lean: One rational matrix tuple hitting all bounded-size noncommutative formulas
 
-Stated in [FormulaHitting.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FormulaHitting.lean).
-
 ```lean
 theorem universal_hitting (n s : ℕ) (hn : 1 ≤ n) (hs : 1 ≤ s)
     (F : Type u_2) [Field F] [CharZero F] (f : Formula F n)
@@ -50,21 +48,19 @@ theorem universal_hitting (n s : ℕ) (hn : 1 ≤ n) (hs : 1 ≤ s)
       (fun i r q => (generator n s i r q : F)) ≠ 0
 ```
 
-Proved in [lean/OAI/Algebra/FormulaHitting/Hitting.lean, line 86](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/FormulaHitting/Hitting.lean#L86).
+Stated in [FormulaHitting.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FormulaHitting.lean#L57). Proved in [lean/OAI/Algebra/FormulaHitting/Hitting.lean, line 86](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/FormulaHitting/Hitting.lean#L86).
 
 ## Lean: Polynomial hitting lists for rational formulas
-
-Stated in [RationalHitting.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RationalHitting.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Computability/RationalHitting/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/RationalHitting/Main.lean#L44).
+Stated in [RationalHitting.lean, line 108](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RationalHitting.lean#L108). Proved in [lean/OAI/Computability/RationalHitting/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/RationalHitting/Main.lean#L44). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

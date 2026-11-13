@@ -24,17 +24,15 @@ Banach's simple Lebesgue-spectrum problem asks for a probability-preserving tran
 
 ## Lean: Smooth simple Lebesgue spectrum on the three-torus
 
-Stated in [ThreeTorus.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeTorus.lean).
-
 ```lean
 theorem simple_lebesgue_spectrum : MainConclusion
 ```
 
-Proved in [lean/OAI/Dynamics/ThreeTorus/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/ThreeTorus/Main.lean#L17).
+Stated in [ThreeTorus.lean, line 82](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeTorus.lean#L82). Proved in [lean/OAI/Dynamics/ThreeTorus/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/ThreeTorus/Main.lean#L17).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

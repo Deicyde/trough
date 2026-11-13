@@ -26,8 +26,6 @@ A separate formalized result gives a finite-dimensional complex algebra whose li
 
 ## Lean: Infinite little finitistic dimension
 
-Stated in [LittleFinitistic.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LittleFinitistic.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_counterexample :
     ∃ (A : Type) (_ : Ring A) (_ : Algebra ℂ A),
@@ -37,11 +35,9 @@ theorem exists_counterexample :
             projectiveDimension N < ⊤
 ```
 
-Proved in [lean/OAI/Algebra/Finitistic/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Finitistic/Main.lean#L44).
+Stated in [LittleFinitistic.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LittleFinitistic.lean#L23). Proved in [lean/OAI/Algebra/Finitistic/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Finitistic/Main.lean#L44). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Left/right finitistic-dimension asymmetry
-
-Stated in [FinitisticAsymmetry.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FinitisticAsymmetry.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem extreme_left_right_asymmetry :
@@ -52,11 +48,11 @@ theorem extreme_left_right_asymmetry :
       ¬ InjectivesGenerate Λ ∧ InjectivesGenerate Λᵐᵒᵖ
 ```
 
-Proved in [lean/OAI/Algebra/FinitisticAsymmetry/Main.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/FinitisticAsymmetry/Main.lean#L48).
+Stated in [FinitisticAsymmetry.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FinitisticAsymmetry.lean#L29). Proved in [lean/OAI/Algebra/FinitisticAsymmetry/Main.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/FinitisticAsymmetry/Main.lean#L48). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

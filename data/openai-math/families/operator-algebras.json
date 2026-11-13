@@ -89,7 +89,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean"
+        "module": "lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean",
+        "main": false
        }
       ]
      }
@@ -135,7 +136,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean"
+        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean",
+        "main": false
        },
        {
         "name": "OAI.KadisonSimilarity.universalHyperreflexivity",
@@ -149,7 +151,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean"
+        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean",
+        "main": false
        },
        {
         "name": "OAI.KadisonSimilarity.similarityTheorem",
@@ -163,7 +166,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean"
+        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean",
+        "main": false
        }
       ]
      },
@@ -185,7 +189,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Commutator/Main.lean"
+        "module": "lean/OAI/Analysis/Commutator/Main.lean",
+        "main": false
        }
       ]
      }
@@ -243,7 +248,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/KadisonKastler/StrongStability.lean"
+        "module": "lean/OAI/Analysis/KadisonKastler/StrongStability.lean",
+        "main": false
        }
       ]
      }
@@ -289,8 +295,14 @@
         "kind": "theorem",
         "line": 88,
         "statement": "theorem bounded_recovery (S : StandardModularData H) (hscalar : S.ScalarCentralizer)\n    (omega : Ultrafilter ℕ) (hfree : (omega : Filter ℕ) ≤ Filter.atTop)\n    (T : H →L[ℂ] H) (s : ℝ) (delta : ℕ → ℝ) (hdelta : ∀ n, 0 < delta n)\n    (hdelta0 : Tendsto delta atTop (𝓝 0)) (h : ℕ → H) (hunit : ∀ n, ‖h n‖ = 1)\n    (hband : ∀ n, S.D.HasSpectralSupport (Icc (s - delta n) (s + delta n)) (h n))\n    (hpositive : 0 < Filter.limsup\n      (fun n => fixedMean omega (fun t => ‖T (S.D.unitary t (h n))‖ ^ 2)) atTop) :\n    RecoveryConclusion S T s delta",
-        "proof": null,
-        "module": "lean/OAI/Analysis/ModularRecovery/Main.lean"
+        "proof": {
+         "file": "lean/OAI/Analysis/ModularRecovery/Recovery.lean",
+         "line": 227,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/ModularRecovery/Main.lean",
+        "main": true
        }
       ]
      }
@@ -354,7 +366,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TracialSplitting/Challenge.lean"
+        "module": "lean/OAI/Analysis/TracialSplitting/Challenge.lean",
+        "main": true
        }
       ]
      }
@@ -400,7 +413,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/NuclearUltrapower/Main.lean"
+        "module": "lean/OAI/Analysis/NuclearUltrapower/Main.lean",
+        "main": false
        }
       ]
      }
@@ -453,7 +467,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/FiniteFactor/Main.lean"
+        "module": "lean/OAI/Analysis/FiniteFactor/Main.lean",
+        "main": false
        }
       ]
      },
@@ -475,7 +490,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean"
+        "module": "lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean",
+        "main": true
        }
       ]
      },
@@ -497,7 +513,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/RotationWeights/Main.lean"
+        "module": "lean/OAI/Analysis/RotationWeights/Main.lean",
+        "main": false
        }
       ]
      },
@@ -519,7 +536,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Hyperinvariant/Main.lean"
+        "module": "lean/OAI/Analysis/Hyperinvariant/Main.lean",
+        "main": false
        }
       ]
      },
@@ -541,7 +559,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/IrrationalRotation/Main.lean"
+        "module": "lean/OAI/Analysis/IrrationalRotation/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Invariant233.Results.product_realization",
@@ -555,7 +574,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/IrrationalRotation/Main.lean"
+        "module": "lean/OAI/Analysis/IrrationalRotation/Main.lean",
+        "main": false
        }
       ]
      },
@@ -577,7 +597,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/BrownMeasure/Main.lean"
+        "module": "lean/OAI/Analysis/BrownMeasure/Main.lean",
+        "main": false
        }
       ]
      },
@@ -599,7 +620,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Hyperinvariant/Main.lean"
+        "module": "lean/OAI/Analysis/Hyperinvariant/Main.lean",
+        "main": false
        }
       ]
      }
@@ -645,7 +667,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Kaplansky/Main.lean"
+        "module": "lean/OAI/Analysis/Kaplansky/Main.lean",
+        "main": true
        }
       ]
      },
@@ -667,7 +690,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Kaplansky/StableFiniteness.lean"
+        "module": "lean/OAI/Analysis/Kaplansky/StableFiniteness.lean",
+        "main": false
        }
       ]
      }
@@ -713,7 +737,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/BoundedHochschild/MainResult.lean"
+        "module": "lean/OAI/Analysis/BoundedHochschild/MainResult.lean",
+        "main": false
        }
       ]
      }
@@ -759,7 +784,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/FactorGeneration/Main.lean"
+        "module": "lean/OAI/Analysis/FactorGeneration/Main.lean",
+        "main": true
        }
       ]
      },
@@ -781,7 +807,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/RelativeGeneration/Main.lean"
+        "module": "lean/OAI/Analysis/RelativeGeneration/Main.lean",
+        "main": false
        }
       ]
      }
@@ -827,7 +854,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Naimark/Tracial.lean"
+        "module": "lean/OAI/Analysis/Naimark/Tracial.lean",
+        "main": false
        }
       ]
      }
@@ -873,7 +901,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/FreeEntropy/Main.lean"
+        "module": "lean/OAI/Analysis/FreeEntropy/Main.lean",
+        "main": false
        }
       ]
      }
@@ -919,7 +948,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/CharacterCriterion/Main.lean"
+        "module": "lean/OAI/Analysis/CharacterCriterion/Main.lean",
+        "main": true
        }
       ]
      }
@@ -986,7 +1016,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": true
        },
        {
         "name": "OAI.TraceConeClassification.TraceConeEquiv.idealOrderIso_zeroIdeal",
@@ -1000,7 +1031,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": true
        },
        {
         "name": "OAI.TraceConeClassification.closed_ideal_weight_exists",
@@ -1014,7 +1046,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": true
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.zero_mem_finiteSquareSet",
@@ -1028,7 +1061,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.star_mem_finiteSquareSet",
@@ -1042,7 +1076,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.smul_mem_finiteSquareSet",
@@ -1056,7 +1091,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.add_mem_finiteSquareSet",
@@ -1070,7 +1106,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteSquareSet_left",
@@ -1084,7 +1121,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.isClosed_finiteIdeal",
@@ -1098,7 +1136,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteIdeal_left",
@@ -1112,7 +1151,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteIdeal_right",
@@ -1126,7 +1166,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.lowerSemicontinuous_supportWeight",
@@ -1140,7 +1181,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ClosedIdeal.weight_idempotent",
@@ -1154,7 +1196,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ClosedIdeal.finiteIdeal_weight",
@@ -1168,7 +1211,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ClosedIdeal.le_iff_add_weight",
@@ -1182,7 +1226,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.ExtendedTrace.idempotent_eq_weight",
@@ -1196,7 +1241,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        },
        {
         "name": "OAI.TraceConeClassification.closedIdealEquivOfAdditive_weight",
@@ -1210,7 +1256,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean"
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
        }
       ]
      }
@@ -1277,7 +1324,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/WeakInfiniteness/Main.lean"
+        "module": "lean/OAI/Analysis/WeakInfiniteness/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.WeakPureInfiniteness.exact_weaklyPurelyInfinite_stronglyPurelyInfinite",
@@ -1291,7 +1339,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/WeakInfiniteness/Main.lean"
+        "module": "lean/OAI/Analysis/WeakInfiniteness/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1313,7 +1362,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean"
+        "module": "lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean",
+        "main": false
        }
       ]
      }

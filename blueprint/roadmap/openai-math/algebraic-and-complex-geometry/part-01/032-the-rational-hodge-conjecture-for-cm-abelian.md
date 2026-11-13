@@ -54,8 +54,6 @@ We thank the contributors to [HodgeConjecture](https://github.com/Paul-Lez/Hodge
 
 ## Lean: Rational Hodge classes on CM abelian varieties are algebraic
 
-Stated in [Challenge.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Challenge.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem hodge_conjecture_for_cm_abelian_varieties
     (X : Over (Spec ↧ℂ)) [IsIntegral X.left] [Smooth X.hom]
@@ -64,11 +62,11 @@ theorem hodge_conjecture_for_cm_abelian_varieties
     Hdg^p(X; ℚ) ≤ _root_.OAI.AlgebraicGeometry.ComplexPoint.Basic.ComplexSchemePoint.algebraicCycleClassSpan X p
 ```
 
-Proved in [lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean#L11).
+Stated in [Challenge.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Challenge.lean#L38). Proved in [lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean#L11). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -40,8 +40,6 @@ For $d\ge3$, positive probability of transience in any nonzero direction already
 
 ## Lean: Directional zero–one law under strict ellipticity
 
-Stated in [DirectionalWalk.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectionalWalk.lean).
-
 ```lean
 theorem directional_zero_one (d : ℕ) (hd : 3 ≤ d)
     (μ : Measure (Row d)) [IsProbabilityMeasure μ]
@@ -49,21 +47,17 @@ theorem directional_zero_one (d : ℕ) (hd : 3 ≤ d)
     annealed μ 0 (escape ℓ) = 0 ∨ annealed μ 0 (escape ℓ) = 1
 ```
 
-Proved in [lean/OAI/Probability/DirectionalWalk/Main.lean, line 121](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/DirectionalWalk/Main.lean#L121).
+Stated in [DirectionalWalk.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectionalWalk.lean#L85). Proved in [lean/OAI/Probability/DirectionalWalk/Main.lean, line 121](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/DirectionalWalk/Main.lean#L121).
 
 ## Lean: Directional transience implies ballisticity
-
-Stated in [DirectionalBallisticity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectionalBallisticity.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem directional_transience_implies_ballisticity : MainStatement
 ```
 
-Proved in [lean/OAI/Probability/Ballisticity/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Ballisticity/Main.lean#L25).
+Stated in [DirectionalBallisticity.lean, line 95](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectionalBallisticity.lean#L95). Proved in [lean/OAI/Probability/Ballisticity/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Ballisticity/Main.lean#L25). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Positive-probability transience and the velocity hemisphere
-
-Stated in [VelocityHemisphere.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VelocityHemisphere.lean).
 
 ```lean
 theorem positive_probability_transience_velocity_hemisphere
@@ -81,11 +75,11 @@ theorem positive_probability_transience_velocity_hemisphere
         annealedLaw ν (TransientPaths u) = 0)
 ```
 
-Proved in [lean/OAI/Probability/Ballisticity/VelocityHemisphere.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Ballisticity/VelocityHemisphere.lean#L10).
+Stated in [VelocityHemisphere.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VelocityHemisphere.lean#L85). Proved in [lean/OAI/Probability/Ballisticity/VelocityHemisphere.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Ballisticity/VelocityHemisphere.lean#L10).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

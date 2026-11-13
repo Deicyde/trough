@@ -24,19 +24,17 @@ The formalized result gives global existence and uniqueness for the three-dimens
 
 ## Lean: Global classical Vlasov–Maxwell solutions
 
-Stated in [VlasovMaxwell.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VlasovMaxwell.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem global_classical_solution (d : Datum) (hd : Admissible d) :
     ∃ s : Solution, Classical d s ∧ SmoothOnFiniteHorizons s ∧
       ∀ s' : Solution, Classical d s' → SameNonnegativeTime s s'
 ```
 
-Proved in [lean/OAI/Analysis/VlasovMaxwell/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/VlasovMaxwell/Main.lean#L44).
+Stated in [VlasovMaxwell.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VlasovMaxwell.lean#L103). Proved in [lean/OAI/Analysis/VlasovMaxwell/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/VlasovMaxwell/Main.lean#L44). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

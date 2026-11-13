@@ -26,29 +26,25 @@ The linked commutator estimate is uniform over all finite matrix amplifications:
 
 ## Lean: Kadison's similarity theorem and uniform hyperreflexivity
 
-Stated in [KadisonSimilarity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KadisonSimilarity.lean).
-
 ```lean
 theorem universalCommutatorTheorem : UniversalCommutatorTheorem.{u}
 ```
 
-Proved in [lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean#L19).
+Stated in [KadisonSimilarity.lean, line 107](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KadisonSimilarity.lean#L107). Proved in [lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean#L19).
 
 ```lean
 theorem universalHyperreflexivity : UniversalHyperreflexivity.{u} universalConstant
 ```
 
-Proved in [lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean#L23).
+Stated in [KadisonSimilarity.lean, line 111](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KadisonSimilarity.lean#L111). Proved in [lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean#L23).
 
 ```lean
 theorem similarityTheorem : SimilarityTheorem.{u,v}
 ```
 
-Proved in [lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean#L16).
+Stated in [KadisonSimilarity.lean, line 115](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KadisonSimilarity.lean#L115). Proved in [lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean#L16).
 
 ## Lean: Uniform amplified commutator estimate
-
-Stated in [UniformCommutator.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformCommutator.lean).
 
 ```lean
 theorem uniform_commutator :
@@ -61,11 +57,11 @@ theorem uniform_commutator :
         C * commutatorSeminorm P Y * ‖matrixOperator h X‖
 ```
 
-Proved in [lean/OAI/Analysis/Commutator/UniversalMain.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Commutator/UniversalMain.lean#L16).
+Stated in [UniformCommutator.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformCommutator.lean#L26). Proved in [lean/OAI/Analysis/Commutator/UniversalMain.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Commutator/UniversalMain.lean#L16).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

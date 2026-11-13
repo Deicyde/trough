@@ -1,6 +1,6 @@
 # Theoretical computer science
 
-41 result families in *Theoretical computer science*, with 74 manuscripts; 35 with Lean: 98 statements, 86 of them proved in a file this chapter reads.
+41 result families in *Theoretical computer science*, with 74 manuscripts; 35 with Lean: 94 statements, 84 of them proved in a file this chapter reads.
 
 The descriptions, titles, abstracts, Lean pages and statements are quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), under its Apache-2.0 license.
 
@@ -14,7 +14,7 @@ The descriptions, titles, abstracts, Lean pages and statements are quoted from [
 - [107. Matrix multiplication with exponent at most 9/4](part-01/107-matrix-multiplication-with-exponent-at-most.md)
 - [108. A cubic permanent–determinant lower bound](part-01/108-a-cubic-permanent-determinant-lower-bound.md)
 - [109. Integer multiplication below $n\log n$](part-01/109-integer-multiplication-below-n-log-n.md)
-- [110. Optimal-order randomized \*k\*-server on arbitrary metrics](part-01/110-optimal-order-randomized-k-server-on-arbitra.md)
+- [110. Optimal-order randomized *k*-server on arbitrary metrics](part-01/110-optimal-order-randomized-k-server-on-arbitra.md)
 - [111. One-sample matroid prophet inequalities against an almighty adversary](part-01/111-one-sample-matroid-prophet-inequalities-agai.md)
 - [112. Beyond the square-root exponent for depth-three circuits](part-01/112-beyond-the-square-root-exponent-for-depth-th.md)
 - [113. Approximate counting and entropy of perfect matchings](part-01/113-approximate-counting-and-entropy-of-perfect.md)
@@ -31,7 +31,7 @@ The descriptions, titles, abstracts, Lean pages and statements are quoted from [
 
 - [122. Quantitative trace-reconstruction bounds with a uniform decoder](part-02/122-quantitative-trace-reconstruction-bounds-wit.md)
 - [124. Polynomial-time scheduling on three identical machines](part-02/124-polynomial-time-scheduling-on-three-identica.md)
-- [125. The metric \*k\*-median approximation threshold and recovery](part-02/125-the-metric-k-median-approximation-threshold.md)
+- [125. The metric *k*-median approximation threshold and recovery](part-02/125-the-metric-k-median-approximation-threshold.md)
 - [126. Exponential semidefinite complexity of perfect matching](part-02/126-exponential-semidefinite-complexity-of-perfe.md)
 - [127. Average sensitivity of polynomial threshold functions](part-02/127-average-sensitivity-of-polynomial-threshold.md)
 - [128. A factor-two approximation for shortest common superstring](part-02/128-a-factor-two-approximation-for-shortest-comm.md)

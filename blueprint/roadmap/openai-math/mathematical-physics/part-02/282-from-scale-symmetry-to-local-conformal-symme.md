@@ -17,7 +17,7 @@ We prove that scale symmetry implies local conformal symmetry for a class of fou
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

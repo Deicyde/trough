@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.CKSMain.schwarzschild_equality_examples
+lean: OAI.CKSSourceExterior.area_controlled_end_replacement, OAI.CKSMain.schwarzschild_equality_examples
 statement: formalized
 ---
 
@@ -103,8 +103,6 @@ The implementation retains a conditional inequality for the connected marginal-b
 
 ## Lean: Area-controlled end replacement and Schwarzschild equality examples
 
-Stated in [CKSBondiPenrose.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CKSBondiPenrose.lean).
-
 ```lean
 theorem area_controlled_end_replacement
     (g : OAI.CKSMetricGluing.SmoothMetric OAI.CKSGeometricCuts.I3 (M := N)) (K : OAI.CKSMetricGluing.InnerField OAI.CKSGeometricCuts.I3 (M := N))
@@ -149,18 +147,18 @@ theorem area_controlled_end_replacement
             (1-ε R) * OAI.CKSSourceExterior.cutArea g D ≤ OAI.CKSSourceExterior.cutArea gR D
 ```
 
-Its proof is in [lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean) or a file it imports further down, which this chapter does not read.
+Stated in [CKSBondiPenrose.lean, line 3312](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CKSBondiPenrose.lean#L3312). Its proof is in [lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem schwarzschild_equality_examples (m : ℝ) (hm : 0 < m) :
     SchwarzschildExample.{v} m hm
 ```
 
-Proved in [lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean#L12).
+Stated in [CKSBondiPenrose.lean, line 3591](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CKSBondiPenrose.lean#L3591). Proved in [lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean#L12).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

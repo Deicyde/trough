@@ -26,8 +26,6 @@ Every integer $m\ge2$ occurs as a denominator in an expansion of $1$, with lengt
 
 ## Lean: Short expansions, counting, and prescribed denominators
 
-Stated in [EgyptianFractions.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem egyptian_length_is_minimum :
     ∀ a b : ℕ, 1 ≤ a → a < b →
@@ -38,7 +36,7 @@ theorem egyptian_length_is_minimum :
     egyptianLength a b ≤ k)
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L27).
+Stated in [EgyptianFractions.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L48). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L27).
 
 ```lean
 theorem main_double_log_order :
@@ -48,7 +46,7 @@ theorem main_double_log_order :
     (maxEgyptianLength b : ℝ) ≤ c2 * Real.log (Real.log (b : ℝ))
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 40](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L40).
+Stated in [EgyptianFractions.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L57). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 40](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L40). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem one_expansions_finite_and_bounded :
@@ -58,7 +56,7 @@ theorem one_expansions_finite_and_bounded :
     ∀ i : Fin k, n i ≤ k ^ (2 ^ i.val))
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L61).
+Stated in [EgyptianFractions.lean, line 64](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L64). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L61).
 
 ```lean
 theorem counting_double_log_order :
@@ -68,7 +66,7 @@ theorem counting_double_log_order :
     Real.log (Real.log (F k : ℝ)) ≤ C * (k : ℝ)
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 120](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L120).
+Stated in [EgyptianFractions.lean, line 71](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L71). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 120](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L120). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem exact_marker_padding :
@@ -78,14 +76,14 @@ theorem exact_marker_padding :
       IsOneExpansion n' ∧ ∃ i : Fin (r + 1), n' i = m
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L73).
+Stated in [EgyptianFractions.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L78). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L73).
 
 ```lean
 theorem every_exact_marker_occurs :
     ∀ m : ℕ, 2 ≤ m → ∃ k : ℕ, m ∈ D k
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 80](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L80).
+Stated in [EgyptianFractions.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L85). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 80](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L80).
 
 ```lean
 theorem quantitative_marked_length :
@@ -97,7 +95,7 @@ theorem quantitative_marked_length :
       (k : ℝ) ≤ (257 / Real.log 2 + ε) * Real.log (Real.log (m : ℝ))
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L84).
+Stated in [EgyptianFractions.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L89). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L84).
 
 ```lean
 theorem missing_denominator_semantics :
@@ -109,7 +107,7 @@ theorem missing_denominator_semantics :
   (1 ≤ k → v k ≤ 1 + k ^ (2 ^ (k - 1)))
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 93](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L93).
+Stated in [EgyptianFractions.lean, line 98](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L98). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 93](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L93).
 
 ```lean
 theorem prescribed_denominator_corollary :
@@ -125,11 +123,9 @@ theorem prescribed_denominator_corollary :
       Real.exp (Real.exp (c * (k : ℝ))) ≤ (v k : ℝ))
 ```
 
-Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L103).
+Stated in [EgyptianFractions.lean, line 107](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EgyptianFractions.lean#L107). Proved in [lean/OAI/NumberTheory/EgyptianFractions/Main.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/EgyptianFractions/Main.lean#L103). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Optimal order of the shortest Egyptian-fraction expansions
-
-Stated in [ShortEgyptianFractions.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ShortEgyptianFractions.lean).
 
 ```lean
 theorem main :
@@ -140,11 +136,11 @@ theorem main :
         (maxMinLength b : ℝ) ≤ c₂ * Real.log (Real.log (b : ℝ))
 ```
 
-Proved in [lean/OAI/NumberTheory/ShortEgyptian/Main.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/ShortEgyptian/Main.lean#L33).
+Stated in [ShortEgyptianFractions.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ShortEgyptianFractions.lean#L17). Proved in [lean/OAI/NumberTheory/ShortEgyptian/Main.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/ShortEgyptian/Main.lean#L33).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

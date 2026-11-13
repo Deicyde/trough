@@ -39,17 +39,13 @@ $m^{1/3}R_m\longrightarrow (81\pi^2/2)^{1/3}$ as $m\to\infty$. The large-nuclear
 
 ## Lean: Generalized Coulomb ionization-energy asymptotics
 
-Stated in [CoulombIonization.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoulombIonization.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem generalized_ionization : MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/CoulombIonization/Main.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CoulombIonization/Main.lean#L46).
+Stated in [CoulombIonization.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoulombIonization.lean#L92). Proved in [lean/OAI/Analysis/CoulombIonization/Main.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CoulombIonization/Main.lean#L46). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Asymptotic outer-electron radii of neutral atoms
-
-Stated in [CoulombRadii.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoulombRadii.lean).
 
 ```lean
 theorem generalized_outer_radii
@@ -61,11 +57,11 @@ theorem generalized_outer_radii
       atTop (𝓝 (bTF : EReal))
 ```
 
-Proved in [lean/OAI/Analysis/CoulombRadii/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CoulombRadii/Main.lean#L15).
+Stated in [CoulombRadii.lean, line 77](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoulombRadii.lean#L77). Proved in [lean/OAI/Analysis/CoulombRadii/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CoulombRadii/Main.lean#L15).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

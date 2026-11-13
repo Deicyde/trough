@@ -8,7 +8,7 @@ proof: formalized
 
 # 071. Koebe’s circle-domain conjecture
 
-2 manuscripts and 4 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
+2 manuscripts and 2 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
 Resolves the existence part of Koebe's circle-domain conjecture: every domain in the Riemann sphere is conformally equivalent to a domain whose complementary components are round disks or points. It also proves that circle domains with conformally removable boundary are rigid, meaning every conformal equivalence to another circle domain is Möbius, establishing this direction of the He–Schramm conjecture.
 
@@ -34,8 +34,6 @@ Koebe's circle-domain conjecture asks whether every domain in the Riemann sphere
 
 ## Lean: Removable-boundary rigidity and the circle-domain theorem
 
-Stated in [KoebeCircleDomains.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KoebeCircleDomains.lean).
-
 ```lean
 theorem koebe_circle_domain :
     ∀ U : Set Sphere, IsOpen U → IsConnected U →
@@ -43,7 +41,7 @@ theorem koebe_circle_domain :
         IsCircleDomain V ∧ IsConformalEquivalence f U V
 ```
 
-Proved in [lean/OAI/Analysis/CircleDomains/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CircleDomains/Main.lean#L10).
+Stated in [KoebeCircleDomains.lean, line 62](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KoebeCircleDomains.lean#L62). Proved in [lean/OAI/Analysis/CircleDomains/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CircleDomains/Main.lean#L10).
 
 ```lean
 theorem removability_implies_rigidity :
@@ -53,34 +51,17 @@ theorem removability_implies_rigidity :
       ∃ M : Mobius, ∀ p ∈ U, f p = M • p
 ```
 
-Proved in [lean/OAI/Analysis/CircleDomains/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CircleDomains/Main.lean#L16).
+Stated in [KoebeCircleDomains.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KoebeCircleDomains.lean#L68). Proved in [lean/OAI/Analysis/CircleDomains/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CircleDomains/Main.lean#L16).
 
 ## Lean: Koebe's circle-domain theorem and removable-boundary rigidity
 
-Stated in [KoebeCircleDomains.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KoebeCircleDomains.lean).
+States the `OAI.Problem047.koebe_circle_domain` quoted above. Stated in [KoebeCircleDomains.lean, line 62](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KoebeCircleDomains.lean#L62).
 
-```lean
-theorem koebe_circle_domain :
-    ∀ U : Set Sphere, IsOpen U → IsConnected U →
-      ∃ (V : Set Sphere) (f : Sphere → Sphere),
-        IsCircleDomain V ∧ IsConformalEquivalence f U V
-```
-
-Proved in [lean/OAI/Analysis/CircleDomains/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CircleDomains/Main.lean#L10).
-
-```lean
-theorem removability_implies_rigidity :
-    ∀ (U V : Set Sphere) (f : Sphere → Sphere),
-      IsCircleDomain U → IsCircleDomain V →
-      IsConformallyRemovable (frontier U) → IsConformalEquivalence f U V →
-      ∃ M : Mobius, ∀ p ∈ U, f p = M • p
-```
-
-Proved in [lean/OAI/Analysis/CircleDomains/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CircleDomains/Main.lean#L16).
+States the `OAI.Problem047.removability_implies_rigidity` quoted above. Stated in [KoebeCircleDomains.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KoebeCircleDomains.lean#L68).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

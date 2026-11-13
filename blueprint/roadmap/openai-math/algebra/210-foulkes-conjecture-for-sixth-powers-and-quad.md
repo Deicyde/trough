@@ -30,18 +30,16 @@ The formalized result proves surjectivity of the canonical averaged Foulkes–Ho
 
 ## Lean: Quadratic stabilization of the canonical Foulkes–Howe map
 
-Stated in [FoulkesHowe.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FoulkesHowe.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem canonical_foulkes_howe_surjective :
     ∀ (V : Type u) [AddCommGroup V] [Module ℂ V] [FiniteDimensional ℂ V] (a b : ℕ), 2 ≤ a → a * (a - 1) ≤ b → ∃ μ : SymPow b (SymPow a V) →ₗ[ℂ] SymPow a (SymPow b V), IsFoulkesMap a b V μ ∧ Function.Surjective μ ∧ ∀ ν : SymPow b (SymPow a V) →ₗ[ℂ] SymPow a (SymPow b V), IsFoulkesMap a b V ν → ν = μ
 ```
 
-Proved in [lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean#L15).
+Stated in [FoulkesHowe.lean, line 42](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FoulkesHowe.lean#L42). Proved in [lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/FoulkesHowe/Stabilization.lean#L15). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -36,8 +36,6 @@ The formalization proves equidistribution of volume-weighted torus packets for t
 
 ## Lean: Equidistribution of prime-degree torus packets
 
-Stated in [DukePrimeDegree.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DukePrimeDegree.lean).
-
 ```lean
 theorem prime_degree_packet_measure_equidistribution_unconditional
     (d : ℕ) (hprime : Nat.Prime (d+1)) (hfive : 5 ≤ d+1)
@@ -52,7 +50,7 @@ theorem prime_degree_packet_measure_equidistribution_unconditional
       IsTightMeasureSet (Set.range (fun i => packetMeasure (M i) (σ i)))
 ```
 
-Proved in [lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean#L60).
+Stated in [DukePrimeDegree.lean, line 200](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DukePrimeDegree.lean#L200). Proved in [lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean#L60).
 
 ```lean
 theorem prime_degree_packet_measures_tendsto_haar_unconditional
@@ -69,11 +67,11 @@ theorem prime_degree_packet_measures_tendsto_haar_unconditional
       (m : Measure (X (d+1)))
 ```
 
-Proved in [lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean, line 80](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean#L80).
+Stated in [DukePrimeDegree.lean, line 215](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DukePrimeDegree.lean#L215). Proved in [lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean, line 80](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean#L80).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

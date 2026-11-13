@@ -30,21 +30,19 @@ The paper's main conclusion is an actual isomorphism $A\otimes\mathcal W\otimes\
 
 ## Lean: Transport of trace ideals and their additive-idempotent description
 
-Stated in [TraceIdealTransportSupport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem idealOrderIso_finIdeal (τ : ExtendedTrace A) :
     F.idealOrderIso τ.finIdeal = (F.toEquiv τ).finIdeal
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 400](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L400).
+Stated in [TraceIdealTransportSupport.lean, line 225](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L225). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 400](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L400). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem idealOrderIso_zeroIdeal (τ : ExtendedTrace A) :
     F.idealOrderIso τ.zeroIdeal = (F.toEquiv τ).zeroIdeal
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 411](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L411).
+Stated in [TraceIdealTransportSupport.lean, line 229](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L229). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 411](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L411). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem closed_ideal_weight_exists
@@ -54,27 +52,27 @@ theorem closed_ideal_weight_exists
     ∃ τ : ExtendedTrace A, ∀ a : Positive A, τ a = if a.1 ∈ I then 0 else ∞
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 106](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L106).
+Stated in [TraceIdealTransportSupport.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L61). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 106](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L106). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 lemma zero_mem_finiteSquareSet : (0 : A) ∈ τ.finiteSquareSet
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 174](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L174).
+Stated in [TraceIdealTransportSupport.lean, line 71](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L71). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 174](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L174).
 
 ```lean
 lemma star_mem_finiteSquareSet {x : A} (hx : x ∈ τ.finiteSquareSet) :
     star x ∈ τ.finiteSquareSet
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 178](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L178).
+Stated in [TraceIdealTransportSupport.lean, line 72](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L72). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 178](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L178).
 
 ```lean
 lemma smul_mem_finiteSquareSet (c : ℂ) {x : A} (hx : x ∈ τ.finiteSquareSet) :
     c • x ∈ τ.finiteSquareSet
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 187](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L187).
+Stated in [TraceIdealTransportSupport.lean, line 74](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L74). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 187](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L187).
 
 ```lean
 lemma add_mem_finiteSquareSet {x y : A}
@@ -82,67 +80,67 @@ lemma add_mem_finiteSquareSet {x y : A}
     x + y ∈ τ.finiteSquareSet
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 202](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L202).
+Stated in [TraceIdealTransportSupport.lean, line 76](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L76). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 202](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L202).
 
 ```lean
 lemma mul_mem_finiteSquareSet_left (x : A) {y : A} (hy : y ∈ τ.finiteSquareSet) :
     x * y ∈ τ.finiteSquareSet
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 218](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L218).
+Stated in [TraceIdealTransportSupport.lean, line 79](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L79). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 218](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L218).
 
 ```lean
 lemma isClosed_finiteIdeal : IsClosed (τ.finiteIdeal : Set A)
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 246](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L246).
+Stated in [TraceIdealTransportSupport.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L91). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 246](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L246).
 
 ```lean
 lemma mul_mem_finiteIdeal_left (x : A) {y : A} (hy : y ∈ τ.finiteIdeal) :
     x * y ∈ τ.finiteIdeal
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 249](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L249).
+Stated in [TraceIdealTransportSupport.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L92). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 249](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L249).
 
 ```lean
 lemma mul_mem_finiteIdeal_right {x : A} (hx : x ∈ τ.finiteIdeal) (y : A) :
     x * y ∈ τ.finiteIdeal
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 256](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L256).
+Stated in [TraceIdealTransportSupport.lean, line 94](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L94). Proved in [lean/OAI/Analysis/TraceCone/FiniteIdeal.lean, line 256](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/FiniteIdeal.lean#L256).
 
 ```lean
 lemma lowerSemicontinuous_supportWeight (τ : ExtendedTrace A) :
     LowerSemicontinuous (fun a : Positive A => if τ a = 0 then (0 : ℝ≥0∞) else ∞)
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 280](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L280).
+Stated in [TraceIdealTransportSupport.lean, line 134](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L134). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 280](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L280).
 
 ```lean
 theorem weight_idempotent (I : ClosedIdeal A) : I.weight.add I.weight = I.weight
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 83](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L83).
+Stated in [TraceIdealTransportSupport.lean, line 157](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L157). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 83](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L83).
 
 ```lean
 theorem finiteIdeal_weight (I : ClosedIdeal A) : I.weight.finiteIdeal = I.1
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L89).
+Stated in [TraceIdealTransportSupport.lean, line 158](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L158). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L89).
 
 ```lean
 theorem le_iff_add_weight (I J : ClosedIdeal A) :
     I ≤ J ↔ I.weight.add J.weight = I.weight
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 108](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L108).
+Stated in [TraceIdealTransportSupport.lean, line 159](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L159). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 108](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L108).
 
 ```lean
 theorem idempotent_eq_weight {τ : ExtendedTrace A} (hτ : τ.add τ = τ) :
     τ.finIdeal.weight = τ
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 151](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L151).
+Stated in [TraceIdealTransportSupport.lean, line 164](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L164). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 151](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L151).
 
 ```lean
 lemma closedIdealEquivOfAdditive_weight (e : ExtendedTrace A ≃ ExtendedTrace B)
@@ -150,11 +148,11 @@ lemma closedIdealEquivOfAdditive_weight (e : ExtendedTrace A ≃ ExtendedTrace B
     (closedIdealEquivOfAdditive e he I).weight = e I.weight
 ```
 
-Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 210](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L210).
+Stated in [TraceIdealTransportSupport.lean, line 193](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TraceIdealTransportSupport.lean#L193). Proved in [lean/OAI/Analysis/TraceCone/IdealTransport.lean, line 210](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TraceCone/IdealTransport.lean#L210).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

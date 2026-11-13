@@ -24,8 +24,6 @@ Start with the complete graph on $n$ vertices and repeatedly delete the three ed
 
 ## Lean: Sharp terminal edge count in random triangle removal
 
-Stated in [TriangleRemoval.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangleRemoval.lean).
-
 ```lean
 theorem sharp_terminal_leave :
     Tendsto (fun n => expectation n (fun G =>
@@ -37,11 +35,11 @@ theorem sharp_terminal_leave :
       atTop (𝓝 sharpConstant)
 ```
 
-Proved in [lean/OAI/Combinatorics/TriangleRemoval/Main.lean, line 79](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TriangleRemoval/Main.lean#L79).
+Stated in [TriangleRemoval.lean, line 55](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangleRemoval.lean#L55). Proved in [lean/OAI/Combinatorics/TriangleRemoval/Main.lean, line 79](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TriangleRemoval/Main.lean#L79).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

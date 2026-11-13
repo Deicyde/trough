@@ -3,7 +3,7 @@ declaration: section
 origin: cited
 ---
 
-# 019. The local \*p\*-adic section conjecture and global consequences
+# 019. The local *p*-adic section conjecture and global consequences
 
 2 manuscripts, with no Lean, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
@@ -23,7 +23,7 @@ We prove the local *p*-adic section conjecture for smooth proper geometrically c
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

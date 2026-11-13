@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.ThreeState.TreeClauses.Tree.regular_reconstructs_above_KS, OAI.ThreeState.TreeClauses.Tree.poisson_reconstructs_above_KS
+lean: OAI.ThreeState.regular_supercritical, OAI.ThreeState.poisson_supercritical, OAI.ThreeState.TreeClauses.Tree.regular_reconstructs_above_KS, OAI.ThreeState.TreeClauses.Tree.poisson_reconstructs_above_KS
 statement: formalized
 ---
 
@@ -37,43 +37,39 @@ The selected statements cover reconstruction above the Kesten–Stigum threshold
 
 ## Lean: Supercritical reconstruction on regular and Poisson trees
 
-Stated in [ThreeStateSupercritical.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeStateSupercritical.lean).
-
 ```lean
 theorem regular_supercritical (b : ℕ) (hb : 2 ≤ b) (lam : ℝ) (h : Admissible lam)
     (hcrit : 1 < (b : ℝ) * lam ^ 2) : Reconstructs (regularAdvantage b lam h)
 ```
 
-Its proof is in [lean/OAI/Probability/ThreeState/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeState/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [ThreeStateSupercritical.lean, line 98](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeStateSupercritical.lean#L98). Its proof is in [lean/OAI/Probability/ThreeState/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeState/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem poisson_supercritical (d : ℝ) (hd : 1 < d) (lam : ℝ) (h : Admissible lam)
     (hcrit : 1 < d * lam ^ 2) : Reconstructs (poissonAdvantage d hd lam h)
 ```
 
-Its proof is in [lean/OAI/Probability/ThreeState/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeState/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [ThreeStateSupercritical.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeStateSupercritical.lean#L102). Its proof is in [lean/OAI/Probability/ThreeState/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeState/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Lean: Three-state reconstruction above the Kesten–Stigum threshold
-
-Stated in [ThreeStateTreeClauses.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeStateTreeClauses.lean).
 
 ```lean
 theorem regular_reconstructs_above_KS (b : ℕ) (lam : ℝ) (hlam : Admissible lam)
     (hKS : 1 < (b:ℝ)*lam^2) : Reconstructs lam hlam (PMF.pure b)
 ```
 
-Proved in [lean/OAI/Probability/ThreeStateClauses/RegularReconstruction.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeStateClauses/RegularReconstruction.lean#L103).
+Stated in [ThreeStateTreeClauses.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeStateTreeClauses.lean#L92). Proved in [lean/OAI/Probability/ThreeStateClauses/RegularReconstruction.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeStateClauses/RegularReconstruction.lean#L103).
 
 ```lean
 theorem poisson_reconstructs_above_KS (d : ℝ≥0) (lam : ℝ) (hlam : Admissible lam)
     (hKS : 1 < (d:ℝ)*lam^2) : Reconstructs lam hlam (poissonPMF d)
 ```
 
-Proved in [lean/OAI/Probability/ThreeStateClauses/PoissonReconstruction.lean, line 192](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeStateClauses/PoissonReconstruction.lean#L192).
+Stated in [ThreeStateTreeClauses.lean, line 96](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeStateTreeClauses.lean#L96). Proved in [lean/OAI/Probability/ThreeStateClauses/PoissonReconstruction.lean, line 192](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThreeStateClauses/PoissonReconstruction.lean#L192).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

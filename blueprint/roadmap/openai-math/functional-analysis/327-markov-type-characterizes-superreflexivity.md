@@ -24,18 +24,16 @@ The formalized result proves that a real Banach space has nontrivial Markov type
 
 ## Lean: Nontrivial Markov type and superreflexivity
 
-Stated in [MarkovType.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MarkovType.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem hasNontrivialMarkovType_iff_hasEquivalentUCNorm [CompleteSpace X] :
     HasNontrivialMarkovType X ↔ HasEquivalentUCNorm X
 ```
 
-Proved in [lean/OAI/Analysis/MarkovType/Main.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MarkovType/Main.lean#L36).
+Stated in [MarkovType.lean, line 71](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MarkovType.lean#L71). Proved in [lean/OAI/Analysis/MarkovType/Main.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MarkovType/Main.lean#L36). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

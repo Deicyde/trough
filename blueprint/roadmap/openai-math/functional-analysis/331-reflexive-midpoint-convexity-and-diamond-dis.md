@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.ForestSpace.main_theorem, OAI.SegmentLenses.midpoint_lens_main, OAI.DiamondDistortion.headline_all_pairs, OAI.ExactModuli.kadets_werner_existence, OAI.ExactModuli.exact_example, OAI.BoundedTreePotentials.TreeCalculus.main_counterexample, OAI.IndependentProducts.main_exponential, OAI.ComparatorModel.RecursivePotentials.main
+lean: OAI.ForestSpace.main_theorem, OAI.SegmentLenses.midpoint_lens_main, OAI.DiamondDistortion.headline_all_pairs, OAI.ExactModuli.exact_main, OAI.ExactModuli.kadets_werner_existence, OAI.ExactModuli.exact_example, OAI.BoundedTreePotentials.TreeCalculus.main_counterexample, OAI.IndependentProducts.main_general
 statement: formalized
 ---
 
@@ -85,8 +85,6 @@ The formalization also covers a separated-midpoint result for the joined space a
 
 ## Lean: Reflexive tree space, midpoint modulus, and diamond distortion
 
-Stated in [ForestSpace.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ForestSpace.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem :
     (¬FiniteDimensional ℝ (FullDual Vertex)) ∧
@@ -99,11 +97,9 @@ theorem main_theorem :
       Diamond.EmbeddingBound k f C → Real.sqrt (1+(k:ℝ)/12) ≤ C)
 ```
 
-Proved in [lean/OAI/Analysis/ForestSpace/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ForestSpace/Main.lean#L16).
+Stated in [ForestSpace.lean, line 453](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ForestSpace.lean#L453). Proved in [lean/OAI/Analysis/ForestSpace/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ForestSpace/Main.lean#L16). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Midpoint-lens tail estimate
-
-Stated in [MidpointLenses.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MidpointLenses.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem midpoint_lens_main :
@@ -117,11 +113,9 @@ theorem midpoint_lens_main :
       ‖tail H y.val‖ ≤ 2 * Real.sqrt (R ^ 2 - ‖x‖ ^ 2))
 ```
 
-Proved in [lean/OAI/Analysis/SegmentLenses/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SegmentLenses/Main.lean#L7).
+Stated in [MidpointLenses.lean, line 328](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MidpointLenses.lean#L328). Proved in [lean/OAI/Analysis/SegmentLenses/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SegmentLenses/Main.lean#L7). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: All-pairs diamond distortion bound
-
-Stated in [DiamondDistortion.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DiamondDistortion.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem headline_all_pairs :
@@ -133,11 +127,9 @@ theorem headline_all_pairs :
         ‖f u-f v‖ ≤ D*s*Diamond.distance k u v) → 1+(k:ℝ)/4 ≤ D^2)
 ```
 
-Proved in [lean/OAI/Analysis/DiamondDistortion/Descent.lean, line 104](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DiamondDistortion/Descent.lean#L104).
+Stated in [DiamondDistortion.lean, line 302](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DiamondDistortion.lean#L302). Proved in [lean/OAI/Analysis/DiamondDistortion/Descent.lean, line 104](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DiamondDistortion/Descent.lean#L104). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Exact asymptotic moduli and a Daugavet example
-
-Stated in [DaugavetModuli.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DaugavetModuli.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem exact_main {Ω : Type u_1} [MeasurableSpace Ω] (μ : Measure Ω)
@@ -153,7 +145,7 @@ theorem exact_main {Ω : Type u_1} [MeasurableSpace Ω] (μ : Measure Ω)
     (∀ N : Seminorm ℝ E, EquivalentNorm N → ¬ AUC N)
 ```
 
-Its proof is in [lean/OAI/Analysis/Daugavet/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Daugavet/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [DaugavetModuli.lean, line 72](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DaugavetModuli.lean#L72). Its proof is in [lean/OAI/Analysis/Daugavet/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Daugavet/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem kadets_werner_existence :
@@ -162,7 +154,7 @@ theorem kadets_werner_existence :
       MeasurePrecompactBall kwMeasure E ∧ UnitSliceProperty E ∧ Daugavet E
 ```
 
-Proved in [lean/OAI/Analysis/Daugavet/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Daugavet/Main.lean#L11).
+Stated in [DaugavetModuli.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DaugavetModuli.lean#L85). Proved in [lean/OAI/Analysis/Daugavet/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Daugavet/Main.lean#L11).
 
 ```lean
 theorem exact_example :
@@ -178,11 +170,9 @@ theorem exact_example :
       (∀ N : Seminorm ℝ E, EquivalentNorm N → ¬ AUC N)
 ```
 
-Proved in [lean/OAI/Analysis/Daugavet/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Daugavet/Main.lean#L22).
+Stated in [DaugavetModuli.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DaugavetModuli.lean#L91). Proved in [lean/OAI/Analysis/Daugavet/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Daugavet/Main.lean#L22). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Tree-potential midpoint convexity and renorming obstruction
-
-Stated in [BoundedTreePotentials.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoundedTreePotentials.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem TreeCalculus.main_counterexample (r : Bool) (k : QuadraticKind) :
@@ -196,11 +186,9 @@ theorem TreeCalculus.main_counterexample (r : Bool) (k : QuadraticKind) :
       (TestCompletion (treeTestFamily r k) ≃L[ℝ] Y) → ¬IsAUCReal Y)
 ```
 
-Proved in [lean/OAI/Analysis/TreePotential/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TreePotential/Main.lean#L12).
+Stated in [BoundedTreePotentials.lean, line 339](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoundedTreePotentials.lean#L339). Proved in [lean/OAI/Analysis/TreePotential/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/TreePotential/Main.lean#L12). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Independent-product spaces and positive midpoint moduli
-
-Stated in [IndependentProducts.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndependentProducts.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main_general (μ : Measure ℝ) (hμ : MultiplierHypotheses μ) :
@@ -209,7 +197,7 @@ theorem main_general (μ : Measure ℝ) (hμ : MultiplierHypotheses μ) :
       IsEquivalentNorm (productSpan μ) N → ¬ IsAUC (productSpan μ) N
 ```
 
-Its proof is in [lean/OAI/Analysis/ProductSpaces/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [IndependentProducts.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndependentProducts.lean#L89). Proved in [lean/OAI/Analysis/ProductSpaces/WeakNullity.lean, line 203](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/WeakNullity.lean#L203). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem main_exponential (t : ℝ) (ht : 0 < t) :
@@ -219,7 +207,7 @@ theorem main_exponential (t : ℝ) (ht : 0 < t) :
     0 < (7 * t / 30) * excessConstant (10 / t)
 ```
 
-Proved in [lean/OAI/Analysis/ProductSpaces/Main.lean, line 54](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/Main.lean#L54).
+Stated in [IndependentProducts.lean, line 95](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndependentProducts.lean#L95). Proved in [lean/OAI/Analysis/ProductSpaces/Main.lean, line 54](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/Main.lean#L54). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem main_gaussian_24 (t : ℝ) (ht : 0 < t) :
@@ -229,7 +217,7 @@ theorem main_gaussian_24 (t : ℝ) (ht : 0 < t) :
     0 < gaussianTail (4 * Real.sqrt 2 * (2 + Real.sqrt 2) / t) / 8
 ```
 
-Its proof is in [lean/OAI/Analysis/ProductSpaces/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [IndependentProducts.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndependentProducts.lean#L102). Its proof is in [lean/OAI/Analysis/ProductSpaces/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem main_gaussian_12 (t : ℝ) (ht : 0 < t) :
@@ -239,21 +227,19 @@ theorem main_gaussian_12 (t : ℝ) (ht : 0 < t) :
     0 < gaussianTail (8 * Real.sqrt 6 / t) / 4
 ```
 
-Its proof is in [lean/OAI/Analysis/ProductSpaces/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [IndependentProducts.lean, line 109](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndependentProducts.lean#L109). Its proof is in [lean/OAI/Analysis/ProductSpaces/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ProductSpaces/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Lean: Recursive-potential spaces and midpoint convexity
-
-Stated in [RecursivePotentials.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RecursivePotentials.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main : MainClaim
 ```
 
-Proved in [lean/OAI/Analysis/RecursivePotentials/Challenge.lean, line 259](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RecursivePotentials/Challenge.lean#L259).
+Stated in [RecursivePotentials.lean, line 955](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RecursivePotentials.lean#L955). Proved in [lean/OAI/Analysis/RecursivePotentials/Challenge.lean, line 259](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RecursivePotentials/Challenge.lean#L259). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

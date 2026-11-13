@@ -52,47 +52,39 @@ The formalization proves EXPTIME-completeness of deciding joint-update $k$-dimen
 
 ## Lean: Parity-lift characterization of Weisfeiler–Leman equivalence
 
-Stated in [ParityLifts.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ParityLifts.lean).
-
 ```lean
 theorem parity_reduction : ParityReductionStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/ParityLifts/Main.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ParityLifts/Main.lean#L103).
+Stated in [ParityLifts.lean, line 204](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ParityLifts.lean#L204). Proved in [lean/OAI/Combinatorics/ParityLifts/Main.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ParityLifts/Main.lean#L103).
 
 ## Lean: EXPTIME-completeness of Weisfeiler–Leman graph identification
-
-Stated in [WLIdentification.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WLIdentification.lean).
 
 ```lean
 theorem main : EXPTIMEComplete dimensionLanguage
 ```
 
-Proved in [lean/OAI/Computability/WLIdentification/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/WLIdentification/Main.lean#L7).
+Stated in [WLIdentification.lean, line 140](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WLIdentification.lean#L140). Proved in [lean/OAI/Computability/WLIdentification/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/WLIdentification/Main.lean#L7).
 
 ## Lean: Unconditional sequential time lower bounds for Weisfeiler–Leman equivalence
-
-Stated in [WeisfeilerLeman.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeisfeilerLeman.lean).
 
 ```lean
 theorem WLTime.unconditional_time_lower_bound : WLTime.MainClaim
 ```
 
-Proved in [lean/OAI/Computability/WeisfeilerLeman/Main.lean, line 64](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/WeisfeilerLeman/Main.lean#L64).
+Stated in [WeisfeilerLeman.lean, line 267](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeisfeilerLeman.lean#L267). Proved in [lean/OAI/Computability/WeisfeilerLeman/Main.lean, line 64](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/WeisfeilerLeman/Main.lean#L64).
 
 ## Lean: EXPTIME-completeness of variable-dimension Weisfeiler–Leman equivalence
-
-Stated in [VariableWL.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VariableWL.lean).
 
 ```lean
 theorem main : EXPTIMEComplete WL ∧ EXPTIMEComplete SubWL
 ```
 
-Proved in [lean/OAI/Combinatorics/VariableWL/Completeness.lean, line 315](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/VariableWL/Completeness.lean#L315).
+Stated in [VariableWL.lean, line 125](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VariableWL.lean#L125). Proved in [lean/OAI/Combinatorics/VariableWL/Completeness.lean, line 315](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/VariableWL/Completeness.lean#L315).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

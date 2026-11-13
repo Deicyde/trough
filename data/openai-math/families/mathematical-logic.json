@@ -47,7 +47,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/ModelTheory/Categoricity/Main.lean"
+        "module": "lean/OAI/ModelTheory/Categoricity/Main.lean",
+        "main": true
        }
       ]
      }
@@ -93,7 +94,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/DegreeRigidity/Main.lean"
+        "module": "lean/OAI/Computability/DegreeRigidity/Main.lean",
+        "main": true
        }
       ]
      }
@@ -139,7 +141,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/SingleFold/Main.lean"
+        "module": "lean/OAI/NumberTheory/SingleFold/Main.lean",
+        "main": true
        }
       ]
      }
@@ -192,7 +195,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/ModelTheory/Choiceless/Separation.lean"
+        "module": "lean/OAI/ModelTheory/Choiceless/Separation.lean",
+        "main": true
        }
       ]
      },
@@ -214,7 +218,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/WitnessedChoice/Main.lean"
+        "module": "lean/OAI/Computability/WitnessedChoice/Main.lean",
+        "main": false
        }
       ]
      }
@@ -260,7 +265,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/SetTheory/PartitionPrinciple/Main.lean"
+        "module": "lean/OAI/SetTheory/PartitionPrinciple/Main.lean",
+        "main": true
        }
       ]
      },
@@ -282,7 +288,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/SetTheory/PartitionConsistency/Main.lean"
+        "module": "lean/OAI/SetTheory/PartitionConsistency/Main.lean",
+        "main": false
        }
       ]
      }
@@ -328,7 +335,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Computability/TypeSystem/Normalization.lean"
+        "module": "lean/OAI/Computability/TypeSystem/Normalization.lean",
+        "main": false
        }
       ]
      }

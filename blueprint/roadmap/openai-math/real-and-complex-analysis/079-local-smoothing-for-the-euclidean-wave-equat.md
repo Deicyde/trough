@@ -34,8 +34,6 @@ The development also proves a logarithmic lower bound for the volume occupied by
 
 ## Lean: Euclidean half-wave local smoothing
 
-Stated in [LocalSmoothing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem euclidean_local_smoothing :
     ∀ n : ℕ, 2 ≤ n → ∀ p ε : ℝ, 2 ≤ p → (0 < ε ∨ (p = 2 ∧ ε = 0)) →
@@ -51,11 +49,9 @@ theorem euclidean_local_smoothing :
             (ENNReal.ofReal p) volume
 ```
 
-Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L85).
+Stated in [LocalSmoothing.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean#L84). Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L85). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Bochner–Riesz multiplier bounds uniform in the radius
-
-Stated in [LocalSmoothing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem bochner_riesz :
@@ -67,11 +63,9 @@ theorem bochner_riesz :
           ENNReal.ofReal C * eLpNorm f p volume
 ```
 
-Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 100](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L100).
+Stated in [LocalSmoothing.lean, line 99](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean#L99). Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 100](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L100). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Spherical restriction in extension form
-
-Stated in [LocalSmoothing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem spherical_restriction :
@@ -84,11 +78,9 @@ theorem spherical_restriction :
           ENNReal.ofReal C * eLpNorm g a (sphereMeasure n)
 ```
 
-Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 110](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L110).
+Stated in [LocalSmoothing.lean, line 109](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean#L109). Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 110](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L110). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Kakeya maximal estimate
-
-Stated in [LocalSmoothing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem kakeya_maximal :
@@ -99,22 +91,18 @@ theorem kakeya_maximal :
           ENNReal.ofReal (C * δ ^ (-ε)) * eLpNorm f n volume
 ```
 
-Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 121](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L121).
+Stated in [LocalSmoothing.lean, line 120](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean#L120). Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 121](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L121). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Full Hausdorff dimension of Euclidean Kakeya sets
-
-Stated in [LocalSmoothing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem kakeya :
     ∀ n : ℕ, 2 ≤ n → ∀ F : Set (Space n), IsKakeyaSet F → dimH F = n
 ```
 
-Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 130](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L130).
+Stated in [LocalSmoothing.lean, line 129](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean#L129). Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 130](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L130). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Stein square-function estimate
-
-Stated in [LocalSmoothing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem stein_square :
@@ -126,11 +114,11 @@ theorem stein_square :
           ENNReal.ofReal C * eLpNorm f (ENNReal.ofReal p) volume
 ```
 
-Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 135](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L135).
+Stated in [LocalSmoothing.lean, line 134](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LocalSmoothing.lean#L134). Proved in [lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean, line 135](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean#L135). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

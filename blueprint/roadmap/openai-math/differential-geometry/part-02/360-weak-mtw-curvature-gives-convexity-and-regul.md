@@ -1,8 +1,9 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.WeakMTWTransport.uniform_biHolder_transport
+lean: OAI.WeakMTWGlobalSupport.current_main_convexity, OAI.WeakMTWTransport.uniform_biHolder_transport
 statement: formalized
+proof: formalized
 ---
 
 # 360. Weak MTW curvature gives convexity and regular optimal transport
@@ -31,8 +32,6 @@ The formalized result gives uniform bi-Hölder optimal transport for squared-dis
 
 ## Lean: Convex injectivity domains under weak MTW
 
-Stated in [WeakMTWGlobalSupport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeakMTWGlobalSupport.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem current_main_convexity
     {n : ℕ} (hn : 2 ≤ n) {M : Type*}
@@ -47,11 +46,9 @@ theorem current_main_convexity
     WeakMTW.MainConvexity (n := n) (M := M)
 ```
 
-Its proof is in [lean/OAI/Geometry/WeakMTW/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/WeakMTW/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [WeakMTWGlobalSupport.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeakMTWGlobalSupport.lean#L63). Proved in [lean/OAI/Geometry/WeakMTW/Convexity.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/WeakMTW/Convexity.lean#L65). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Uniform bi-Hölder optimal transport
-
-Stated in [BiholderTransport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BiholderTransport.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem uniform_biHolder_transport
@@ -77,11 +74,11 @@ theorem uniform_biHolder_transport
           BiHolderEstimate alpha C T
 ```
 
-Proved in [lean/OAI/Analysis/BiholderTransport/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BiholderTransport/Main.lean#L27).
+Stated in [BiholderTransport.lean, line 100](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BiholderTransport.lean#L100). Proved in [lean/OAI/Analysis/BiholderTransport/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BiholderTransport/Main.lean#L27). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

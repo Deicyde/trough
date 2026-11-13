@@ -30,8 +30,6 @@ The formalized result gives integrality gaps for the Goemans–Linial relaxation
 
 ## Lean: Uniform sparsest-cut integrality gaps
 
-Stated in [UniformSparsestCut.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformSparsestCut.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem mainGap :
     ∃ c : ℝ, 0 < c ∧
@@ -44,11 +42,11 @@ theorem mainGap :
             OPT (C j) / glValue (C j)
 ```
 
-Proved in [lean/OAI/Combinatorics/SparsestCut/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SparsestCut/Main.lean#L14).
+Stated in [UniformSparsestCut.lean, line 40](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformSparsestCut.lean#L40). Proved in [lean/OAI/Combinatorics/SparsestCut/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SparsestCut/Main.lean#L14). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

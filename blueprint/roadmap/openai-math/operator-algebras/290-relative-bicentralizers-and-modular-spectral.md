@@ -1,6 +1,9 @@
 ---
 declaration: section
 origin: cited
+lean: OAI.BoundedRecovery.bounded_recovery
+statement: formalized
+proof: formalized
 ---
 
 # 290. Relative bicentralizers and modular spectral recovery
@@ -27,8 +30,6 @@ For a faithful normal state with scalar centralizer in the stated standard-space
 
 ## Lean: Bounded recovery from modular spectral averages
 
-Stated in [BoundedRecovery.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoundedRecovery.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem bounded_recovery (S : StandardModularData H) (hscalar : S.ScalarCentralizer)
     (omega : Ultrafilter ℕ) (hfree : (omega : Filter ℕ) ≤ Filter.atTop)
@@ -40,11 +41,11 @@ theorem bounded_recovery (S : StandardModularData H) (hscalar : S.ScalarCentrali
     RecoveryConclusion S T s delta
 ```
 
-Its proof is in [lean/OAI/Analysis/ModularRecovery/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ModularRecovery/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [BoundedRecovery.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BoundedRecovery.lean#L88). Proved in [lean/OAI/Analysis/ModularRecovery/Recovery.lean, line 227](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/ModularRecovery/Recovery.lean#L227). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

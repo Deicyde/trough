@@ -8,7 +8,7 @@ proof: formalized
 
 # 275. QMA-hardness of continuum Coulomb energy
 
-2 manuscripts and 4 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
+2 manuscripts and 2 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
 Proves QMA-hardness of approximating the electronic Coulomb energy infimum in three dimensions, minimizing over the full spinful fermionic continuum space. Deterministic polynomial-time reductions work even with only unit-charge nuclei at distinct rational positions, polynomially many electrons and an energy-threshold separation of at least one.
 
@@ -34,39 +34,27 @@ The same Comparator file also includes the companion hardness result when positi
 
 ## Lean: QMA-hardness of continuum Coulomb energy with binary charges
 
-Stated in [ContinuumCoulombHardness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumCoulombHardness.lean).
-
 ```lean
 theorem unit_coulomb_qmaHard : QMAHard unitCoulombCodec.encode unitCoulombPromise
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean#L14).
+Stated in [ContinuumCoulombHardness.lean, line 546](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumCoulombHardness.lean#L546). Proved in [lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean#L14).
 
 ```lean
 theorem binary_coulomb_qmaHard : QMAHard binaryCoulombCodec.encode binaryCoulombPromise
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean#L17).
+Stated in [ContinuumCoulombHardness.lean, line 549](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumCoulombHardness.lean#L549). Proved in [lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean#L17).
 
 ## Lean: QMA-hardness of continuum Coulomb ground-energy approximation
 
-Stated in [ContinuumCoulombHardness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumCoulombHardness.lean).
+States the `OAI.ContinuumCoulomb.unit_coulomb_qmaHard` quoted above. Stated in [ContinuumCoulombHardness.lean, line 546](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumCoulombHardness.lean#L546).
 
-```lean
-theorem unit_coulomb_qmaHard : QMAHard unitCoulombCodec.encode unitCoulombPromise
-```
-
-Proved in [lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean#L14).
-
-```lean
-theorem binary_coulomb_qmaHard : QMAHard binaryCoulombCodec.encode binaryCoulombPromise
-```
-
-Proved in [lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean#L17).
+States the `OAI.ContinuumCoulomb.binary_coulomb_qmaHard` quoted above. Stated in [ContinuumCoulombHardness.lean, line 549](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContinuumCoulombHardness.lean#L549).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

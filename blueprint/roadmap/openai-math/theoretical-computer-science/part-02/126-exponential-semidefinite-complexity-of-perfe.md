@@ -26,8 +26,6 @@ These selected statements give superpolynomial growth. They do not state the pap
 
 ## Lean: Superpolynomial lower bound for affine semidefinite lifts
 
-Stated in [MatchingAffineLift.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingAffineLift.lean).
-
 ```lean
 theorem affine_lift_lower_bound :
     ∀ C : ℝ, 0 < C → ∃ n₀ : ℕ, 4 ≤ n₀ ∧
@@ -35,21 +33,19 @@ theorem affine_lift_lower_bound :
         HasAffineLift n r → (n : ℝ) ^ C < (r : ℝ)
 ```
 
-Proved in [lean/OAI/Combinatorics/MatchingPSD/AffineLift.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingPSD/AffineLift.lean#L11).
+Stated in [MatchingAffineLift.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingAffineLift.lean#L27). Proved in [lean/OAI/Combinatorics/MatchingPSD/AffineLift.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingPSD/AffineLift.lean#L11).
 
 ## Lean: Superpolynomial PSD rank for the perfect-matching slack matrix
-
-Stated in [MatchingPSD.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingPSD.lean).
 
 ```lean
 theorem main : MainClaim
 ```
 
-Proved in [lean/OAI/Combinatorics/MatchingPSD/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingPSD/Main.lean#L53).
+Stated in [MatchingPSD.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingPSD.lean#L50). Proved in [lean/OAI/Combinatorics/MatchingPSD/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingPSD/Main.lean#L53).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

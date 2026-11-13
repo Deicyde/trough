@@ -24,8 +24,6 @@ The formalized result proves positive-density power-free values for every intege
 
 ## Lean: Positive density of power-free polynomial values
 
-Stated in [PowerFreeValues.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PowerFreeValues.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem allDegrees (f : Polynomial ℤ)
     (hirr : Irreducible (f.map (Int.castRingHom ℚ)))
@@ -34,11 +32,11 @@ theorem allDegrees (f : Polynomial ℤ)
     DensityStatement f (f.natDegree - 2)
 ```
 
-Proved in [lean/OAI/NumberTheory/PowerFree/Main.lean, line 144](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/PowerFree/Main.lean#L144).
+Stated in [PowerFreeValues.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PowerFreeValues.lean#L37). Proved in [lean/OAI/NumberTheory/PowerFree/Main.lean, line 144](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/PowerFree/Main.lean#L144). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

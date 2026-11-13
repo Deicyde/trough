@@ -24,8 +24,6 @@ Cannon's conjecture asks whether a hyperbolic group with boundary homeomorphic t
 
 ## Lean: Cannon's geometric-action conclusion
 
-Stated in [CannonGeometricAction.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CannonGeometricAction.lean).
-
 ```lean
 theorem cannon (G : Type u) [Group G] [TopologicalSpace G] [DiscreteTopology G]
     (D : CayleyData G) (hthin : D.ThinTriangles)
@@ -34,11 +32,11 @@ theorem cannon (G : Type u) [Group G] [TopologicalSpace G] [DiscreteTopology G]
       (ρ.ker : Set G).Finite
 ```
 
-Proved in [lean/OAI/Geometry/Cannon/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Cannon/Main.lean#L23).
+Stated in [CannonGeometricAction.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CannonGeometricAction.lean#L89). Proved in [lean/OAI/Geometry/Cannon/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Cannon/Main.lean#L23).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

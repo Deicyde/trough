@@ -24,8 +24,6 @@ The formalized supplement proves that the indices $n$ for which $p_n/n<p_{n+1}/(
 
 ## Lean: Positive lower density of prime-ratio increases
 
-Stated in [PrimeGaps.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PrimeGaps.lean).
-
 ```lean
 theorem large_gaps_and_ratio_density :
     (∀ C : ℝ, 0 < C →
@@ -34,11 +32,11 @@ theorem large_gaps_and_ratio_density :
     0 < lowerAsymptoticDensity ratioIncreaseIndices
 ```
 
-Proved in [lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean#L30).
+Stated in [PrimeGaps.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PrimeGaps.lean#L36). Proved in [lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean#L30).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -23,7 +23,7 @@ Let *X* be a smooth projective complex threefold with trivial canonical bundle. 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

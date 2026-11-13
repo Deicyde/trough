@@ -60,17 +60,15 @@ For every fixed $q>4$, the formalization proves the Brownian continuum-random-tr
 
 ## Lean: Brownian continuum-random-tree limit for finite FK maps
 
-Stated in [FKCRT.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FKCRT.lean).
-
 ```lean
 theorem finite_fk_maps_converge_to_brownian_crt : MainStatement
 ```
 
-Proved in [lean/OAI/Probability/FKMaps/Convergence.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/FKMaps/Convergence.lean#L68).
+Stated in [FKCRT.lean, line 208](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FKCRT.lean#L208). Proved in [lean/OAI/Probability/FKMaps/Convergence.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/FKMaps/Convergence.lean#L68).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

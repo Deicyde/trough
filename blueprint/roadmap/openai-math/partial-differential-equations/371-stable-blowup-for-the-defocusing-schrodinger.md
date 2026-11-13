@@ -26,8 +26,6 @@ For each such construction, Gaussian Fourier data with decay exponent $\alpha>k+
 
 ## Lean: Stable self-similar blowup and positive-probability Gaussian blowup
 
-Stated in [DefocusingNLS.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DefocusingNLS.lean).
-
 ```lean
 theorem stable_blowup (p₀ : ℕ) :
     ∃ p k : ℕ, p₀ ≤ p ∧ Odd p ∧ 3 ≤ p ∧ ∃ hk : 8 < (k : ℝ),
@@ -37,7 +35,7 @@ theorem stable_blowup (p₀ : ℕ) :
           (1 / ((p : ℝ) - 1)) f
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean#L20).
+Stated in [DefocusingNLS.lean, line 269](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DefocusingNLS.lean#L269). Proved in [lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean#L20).
 
 ```lean
 theorem gaussian_blowup (p₀ : ℕ) :
@@ -54,7 +52,7 @@ theorem gaussian_blowup (p₀ : ℕ) :
         0 < weightedGaussianLaw k α U
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean#L30).
+Stated in [DefocusingNLS.lean, line 279](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DefocusingNLS.lean#L279). Proved in [lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean#L30).
 
 ```lean
 theorem gaussian_not_almost_sure_global (p₀ : ℕ) :
@@ -64,11 +62,11 @@ theorem gaussian_not_almost_sure_global (p₀ : ℕ) :
           maximalSobolevInteractionDomain k (by linarith) ((p - 1) / 2) f = univ
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean#L45).
+Stated in [DefocusingNLS.lean, line 294](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DefocusingNLS.lean#L294). Proved in [lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean#L45).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

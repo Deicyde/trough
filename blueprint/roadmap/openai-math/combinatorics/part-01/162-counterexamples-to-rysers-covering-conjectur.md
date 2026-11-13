@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank, OAI.RyserOdd.eventualOddFailures_and_infinite
+lean: OAI.Balanced.main_result, OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank, OAI.RyserOdd.eventualOddFailures_and_infinite
 statement: formalized
 ---
 
@@ -31,17 +31,13 @@ Ryser's covering conjecture predicts $\tau\le(r-1)\nu$ for an $r$-partite hyperg
 
 ## Lean: Balanced Ryser counterexamples at prime orders
 
-Stated in [BalancedRyser.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BalancedRyser.lean).
-
 ```lean
 theorem main_result : MainResult
 ```
 
-Its proof is in [lean/OAI/Combinatorics/BalancedRyser/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/BalancedRyser/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [BalancedRyser.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BalancedRyser.lean#L39). Its proof is in [lean/OAI/Combinatorics/BalancedRyser/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/BalancedRyser/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Lean: Fixed-prime Ryser counterexamples
-
-Stated in [RyserCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RyserCovering.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem exists_prime_eventually_counterexampleRank :
@@ -50,11 +46,9 @@ theorem exists_prime_eventually_counterexampleRank :
         CounterexampleRank (p ^ n + 1)
 ```
 
-Proved in [lean/OAI/Combinatorics/Ryser/Construction/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Ryser/Construction/Main.lean#L14).
+Stated in [RyserCovering.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RyserCovering.lean#L49). Proved in [lean/OAI/Combinatorics/Ryser/Construction/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Ryser/Construction/Main.lean#L14). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Counterexamples in odd extension degrees
-
-Stated in [RyserOddExtensions.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RyserOddExtensions.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem eventualOddFailures_and_infinite :
@@ -66,11 +60,11 @@ theorem eventualOddFailures_and_infinite :
     Set.Infinite {rank : ℕ | Specification.ExplicitFailureAt rank}
 ```
 
-Proved in [lean/OAI/Combinatorics/Ryser/OddExtensions.lean, line 132](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Ryser/OddExtensions.lean#L132).
+Stated in [RyserOddExtensions.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RyserOddExtensions.lean#L61). Proved in [lean/OAI/Combinatorics/Ryser/OddExtensions.lean, line 132](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Ryser/OddExtensions.lean#L132). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

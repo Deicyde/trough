@@ -42,18 +42,14 @@ Both character parities are included. No explicit value of $c$ is given. This ex
 
 ## Lean: Riemann zeta $7/8$ bound
 
-Stated in [QuasiRiemannHypothesis.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuasiRiemannHypothesis.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem riemannZeta_ne_zero_of_seven_eighths_lt_re
     {s : ℂ} (hs : (7 / 8 : ℝ) < s.re) : riemannZeta s ≠ 0
 ```
 
-Proved in [lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean#L29).
+Stated in [QuasiRiemannHypothesis.lean, line 5](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuasiRiemannHypothesis.lean#L5). Proved in [lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean#L29). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Dirichlet $L$-function $7/8$ bound
-
-Stated in [DirichletSevenEighths.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirichletSevenEighths.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem LFunction_ne_zero_of_seven_eighths_lt_re
@@ -62,11 +58,9 @@ theorem LFunction_ne_zero_of_seven_eighths_lt_re
     _root_.DirichletCharacter.LFunction χ s ≠ 0
 ```
 
-Proved in [lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean#L19).
+Stated in [DirichletSevenEighths.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirichletSevenEighths.lean#L8). Proved in [lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean#L19). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Finite-order Hecke $L$-function $7/8$ bound
-
-Stated in [HeckeSevenEighths.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HeckeSevenEighths.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem LFunction_ne_zero_of_seven_eighths_lt_re
@@ -74,11 +68,9 @@ theorem LFunction_ne_zero_of_seven_eighths_lt_re
     (hpole : ¬ (χ.residue = 1 ∧ s = 1)) : LFunction χ s ≠ 0
 ```
 
-Proved in [lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean#L13).
+Stated in [HeckeSevenEighths.lean, line 237](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HeckeSevenEighths.lean#L237). Proved in [lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean#L13). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Uniform real-zero gap
-
-Stated in [SiegelZeros.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SiegelZeros.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem exists_absolute_real_zero_gap :
@@ -90,7 +82,7 @@ theorem exists_absolute_real_zero_gap :
           c ≤ (1 - β) * Real.log (q : ℝ)
 ```
 
-Proved in [lean/OAI/NumberTheory/SiegelZeros/Conclusions/Theorem.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/SiegelZeros/Conclusions/Theorem.lean#L11).
+Stated in [SiegelZeros.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SiegelZeros.lean#L8). Proved in [lean/OAI/NumberTheory/SiegelZeros/Conclusions/Theorem.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/SiegelZeros/Conclusions/Theorem.lean#L11). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem WeightedTorusJets.dirichletRealZeroBound_proof :
@@ -102,11 +94,11 @@ theorem WeightedTorusJets.dirichletRealZeroBound_proof :
             c ≤ (1 - β) * Real.log (q : ℝ)
 ```
 
-Proved in [lean/OAI/NumberTheory/SiegelZeros/Characters/DirichletRealZeroBoundProof.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/SiegelZeros/Characters/DirichletRealZeroBoundProof.lean#L17).
+Stated in [SiegelZeros.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SiegelZeros.lean#L19). Proved in [lean/OAI/NumberTheory/SiegelZeros/Characters/DirichletRealZeroBoundProof.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/SiegelZeros/Characters/DirichletRealZeroBoundProof.lean#L17).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

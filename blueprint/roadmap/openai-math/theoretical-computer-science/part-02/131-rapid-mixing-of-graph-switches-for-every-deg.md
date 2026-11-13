@@ -26,32 +26,30 @@ The paper's exactly uniform sampling algorithm is outside these selected chain e
 
 ## Lean: Polynomial mixing and connectivity for every graphical degree sequence
 
-Stated in [SwitchChain.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SwitchChain.lean).
-
 ```lean
 theorem switch_chain_main :
     ∀ (n : Nat) (d : Fin n → Nat), 4 ≤ n → (∀ v, d v ≤ n - 1) → Graphical n d → ((∃ h : (∃ t : Nat, MixedAt n d t), mixingTime n d h ≤ 2 * n ^ 8) ∧ (stateCount n d = 1 → (MixedAt n d 0 ∧ ∀ h : (∃ t : Nat, MixedAt n d t), mixingTime n d h = 0)) ∧ (1 < stateCount n d → hasSpectralGapAtLeast n d ((1 : ℝ) / (24 * (n : ℝ) ^ 2 * (Nat.choose n 4 : ℝ)))))
 ```
 
-Proved in [lean/OAI/Probability/SwitchChain/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SwitchChain/Main.lean#L18).
+Stated in [SwitchChain.lean, line 155](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SwitchChain.lean#L155). Proved in [lean/OAI/Probability/SwitchChain/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SwitchChain/Main.lean#L18).
 
 ```lean
 theorem switch_chain_tv_bound :
     ∀ (n : Nat) (d : Fin n → Nat), 4 ≤ n → (∀ v, d v ≤ n - 1) → Graphical n d → 1 < stateCount n d → ∀ (t : Nat) (G : GraphState n d), tvDistanceFrom n d t G ≤ Real.sqrt (stateCount n d : ℝ) / 2 * Real.exp (- (t : ℝ) / (24 * (n : ℝ) ^ 2 * (Nat.choose n 4 : ℝ)))
 ```
 
-Proved in [lean/OAI/Probability/SwitchChain/Main.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SwitchChain/Main.lean#L30).
+Stated in [SwitchChain.lean, line 159](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SwitchChain.lean#L159). Proved in [lean/OAI/Probability/SwitchChain/Main.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SwitchChain/Main.lean#L30).
 
 ```lean
 theorem switch_connectivity :
     ∀ (n : Nat) (d : Fin n → Nat), 4 ≤ n → (∀ v, d v ≤ n - 1) → Graphical n d → ∀ G H : GraphState n d, Relation.ReflTransGen (SwitchStep n d) G H
 ```
 
-Proved in [lean/OAI/Probability/SwitchChain/Main.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SwitchChain/Main.lean#L36).
+Stated in [SwitchChain.lean, line 163](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SwitchChain.lean#L163). Proved in [lean/OAI/Probability/SwitchChain/Main.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SwitchChain/Main.lean#L36).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -26,8 +26,6 @@ It also proves optimality of the exponent: on a fixed cube, pairs of three-atom 
 
 ## Lean: One-third stability of Brenier maps and sharpness
 
-Stated in [Brenier.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Brenier.lean).
-
 ```lean
 theorem one_third_stability :
     ∀ (dimension : ℕ) (source container : Set (E dimension)),
@@ -44,7 +42,7 @@ theorem one_third_stability :
               constant * Real.rpow (wasserstein2 first second) (1 / 3 : ℝ)
 ```
 
-Proved in [lean/OAI/Analysis/Brenier/Stability.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Brenier/Stability.lean#L20).
+Stated in [Brenier.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Brenier.lean#L73). Proved in [lean/OAI/Analysis/Brenier/Stability.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Brenier/Stability.lean#L20).
 
 ```lean
 theorem one_third_exponent_is_sharp :
@@ -63,11 +61,11 @@ theorem one_third_exponent_is_sharp :
             mapL2Dist (uniformMeasure (cube dimension)) firstMap secondMap
 ```
 
-Proved in [lean/OAI/Analysis/Brenier/Stability.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Brenier/Stability.lean#L48).
+Stated in [Brenier.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Brenier.lean#L88). Proved in [lean/OAI/Analysis/Brenier/Stability.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Brenier/Stability.lean#L48).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -30,8 +30,6 @@ The formalized result gives a logarithmic improvement in the independence number
 
 ## Lean: Logarithmic independence bound for clique-free graphs
 
-Stated in [CliqueFreeLog.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CliqueFreeLog.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem logarithmic_independence_bound (r : ℕ) (hr : 4 ≤ r) :
     ∃ c : ℝ, 0 < c ∧
@@ -41,11 +39,11 @@ theorem logarithmic_independence_bound (r : ℕ) (hr : 4 ≤ r) :
           (G.indepNum : ℝ)
 ```
 
-Proved in [lean/OAI/Combinatorics/CliqueFree/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/CliqueFree/Main.lean#L22).
+Stated in [CliqueFreeLog.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CliqueFreeLog.lean#L11). Proved in [lean/OAI/Combinatorics/CliqueFree/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/CliqueFree/Main.lean#L22). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

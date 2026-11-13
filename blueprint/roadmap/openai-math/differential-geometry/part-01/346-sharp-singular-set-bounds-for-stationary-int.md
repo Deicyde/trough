@@ -23,7 +23,7 @@ We resolve the almost-everywhere regularity conjecture of Brena, Decio, and De L
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

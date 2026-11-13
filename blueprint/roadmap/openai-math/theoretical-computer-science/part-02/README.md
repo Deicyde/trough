@@ -6,7 +6,7 @@ navigation: transparent
 
 - [122. Quantitative trace-reconstruction bounds with a uniform decoder](122-quantitative-trace-reconstruction-bounds-wit.md)
 - [124. Polynomial-time scheduling on three identical machines](124-polynomial-time-scheduling-on-three-identica.md)
-- [125. The metric \*k\*-median approximation threshold and recovery](125-the-metric-k-median-approximation-threshold.md)
+- [125. The metric *k*-median approximation threshold and recovery](125-the-metric-k-median-approximation-threshold.md)
 - [126. Exponential semidefinite complexity of perfect matching](126-exponential-semidefinite-complexity-of-perfe.md)
 - [127. Average sensitivity of polynomial threshold functions](127-average-sensitivity-of-polynomial-threshold.md)
 - [128. A factor-two approximation for shortest common superstring](128-a-factor-two-approximation-for-shortest-comm.md)

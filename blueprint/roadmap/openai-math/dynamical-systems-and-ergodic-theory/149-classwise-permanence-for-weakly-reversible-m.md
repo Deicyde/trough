@@ -30,8 +30,6 @@ The boundedness and persistence conjectures for mass-action systems ask whether 
 
 ## Lean: Global boundedness and persistence for weakly reversible mass-action systems
 
-Stated in [MassAction.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MassAction.lean).
-
 ```lean
 theorem global_bounded_persistent_solution :
     ∀ (d : ℕ) (N : ReactionNetwork d) (κ : Reaction N → ℝ),
@@ -43,11 +41,11 @@ theorem global_bounded_persistent_solution :
         ∀ t : ℝ, 0 ≤ t → ∀ i : Fin d, ε ≤ x t i ∧ x t i ≤ ε⁻¹
 ```
 
-Proved in [lean/OAI/Analysis/MassAction/Main.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MassAction/Main.lean#L73).
+Stated in [MassAction.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MassAction.lean#L46). Proved in [lean/OAI/Analysis/MassAction/Main.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MassAction/Main.lean#L73).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

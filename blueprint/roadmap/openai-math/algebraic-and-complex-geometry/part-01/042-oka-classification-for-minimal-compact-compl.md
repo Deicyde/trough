@@ -17,7 +17,7 @@ We prove that every complex K3 surface *X* is Oka, resolving the K3 Oka conjectu
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

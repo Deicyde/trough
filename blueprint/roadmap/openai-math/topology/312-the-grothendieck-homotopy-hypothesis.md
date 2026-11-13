@@ -1,6 +1,9 @@
 ---
 declaration: section
 origin: cited
+lean: OAI.Grothendieck.elementary_expansion
+statement: formalized
+proof: formalized
 ---
 
 # 312. The Grothendieck homotopy hypothesis
@@ -23,8 +26,6 @@ The later semi-model structure and full comparison with the homotopy theory of s
 
 ## Lean: Elementary-expansion weak equivalence
 
-Stated in [GrothendieckElementaryExpansion.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GrothendieckElementaryExpansion.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem elementary_expansion (C : GlobularTheory.{v}) (hC : C.IsCoherator)
     (X : C.Model) (hX : X.IsCellular) (n : ℕ)
@@ -35,11 +36,11 @@ theorem elementary_expansion (C : GlobularTheory.{v}) (hC : C.IsCoherator)
     GlobularTheory.Model.WeakEquivalence hC i
 ```
 
-Its proof is in [lean/OAI/CategoryTheory/Globular/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Globular/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GrothendieckElementaryExpansion.lean, line 465](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GrothendieckElementaryExpansion.lean#L465). Proved in [lean/OAI/CategoryTheory/Globular/ElementaryExpansion.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Globular/ElementaryExpansion.lean#L34). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

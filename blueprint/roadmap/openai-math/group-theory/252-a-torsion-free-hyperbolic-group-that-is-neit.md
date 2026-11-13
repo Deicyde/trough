@@ -26,18 +26,16 @@ Nonlinearity over every field is not a separate conclusion of the statement link
 
 ## Lean: Torsion-free hyperbolic group that is not residually finite
 
-Stated in [TorsionFreeHyperbolic.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TorsionFreeHyperbolic.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : ∃ (G : Type) (_ : Group G),
     TorsionFree G ∧ WordHyperbolic G ∧ ¬ Group.ResiduallyFinite G
 ```
 
-Proved in [lean/OAI/GroupTheory/Hyperbolic/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/Hyperbolic/Main.lean#L7).
+Stated in [TorsionFreeHyperbolic.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TorsionFreeHyperbolic.lean#L37). Proved in [lean/OAI/GroupTheory/Hyperbolic/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/Hyperbolic/Main.lean#L7). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

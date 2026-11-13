@@ -17,7 +17,7 @@ We prove Milne's rationality conjecture for abelian varieties, including residue
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

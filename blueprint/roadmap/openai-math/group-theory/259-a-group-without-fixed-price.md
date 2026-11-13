@@ -17,7 +17,7 @@ We construct a finitely generated group with two essentially free probability-me
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -32,8 +32,6 @@ For torsion-free $G$, it identifies the trace on $K_0(\mathbb C[G])$ with the in
 
 ## Lean: Complex Bass trace vanishing and support
 
-Stated in [BassTrace.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BassTrace.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem bassTraceModules_vanishing_and_support {G : Type u} [_root_.Group G]
     (x : ModuleK0.{u,v} (MonoidAlgebra ℂ G)) :
@@ -42,11 +40,9 @@ theorem bassTraceModules_vanishing_and_support {G : Type u} [_root_.Group G]
         {c | ∃ g : G, IsOfFinOrder g ∧ ConjClasses.mk g = c}
 ```
 
-Proved in [lean/OAI/RingTheory/BassTrace/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/BassTrace/Main.lean#L23).
+Stated in [BassTrace.lean, line 470](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BassTrace.lean#L470). Proved in [lean/OAI/RingTheory/BassTrace/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/BassTrace/Main.lean#L23). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Trace rank and characteristic-zero Kaplansky idempotents for torsion-free groups
-
-Stated in [BassTorsionFree.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BassTorsionFree.lean).
 
 ```lean
 theorem torsion_free_corollary (G : Type*) [Group G] (hG : TorsionFree G) :
@@ -59,11 +55,11 @@ theorem torsion_free_corollary (G : Type*) [Group G] (hG : TorsionFree G) :
       (e : MonoidAlgebra R G), e ^ 2 = e → e = 0 ∨ e = 1)
 ```
 
-Proved in [lean/OAI/RingTheory/BassTrace/TorsionFree.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/BassTrace/TorsionFree.lean#L50).
+Stated in [BassTorsionFree.lean, line 299](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BassTorsionFree.lean#L299). Proved in [lean/OAI/RingTheory/BassTrace/TorsionFree.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/BassTrace/TorsionFree.lean#L50).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

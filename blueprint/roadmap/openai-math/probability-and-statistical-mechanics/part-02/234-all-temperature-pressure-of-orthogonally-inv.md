@@ -26,8 +26,6 @@ The formalization also covers every positive temperature, a ground-state limit, 
 
 ## Lean: Pressure and ground-state limits for invariant Ising models
 
-Stated in [InvariantIsing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean).
-
 ```lean
 theorem limiting_pressure_of_extreme_limits_unconditional :
   ∀ {Ω : Type*} [MeasurableSpace Ω] (P : Measure Ω) [IsProbabilityMeasure P]
@@ -47,7 +45,7 @@ theorem limiting_pressure_of_extreme_limits_unconditional :
       atTop (𝓝 (variationalFunctional (measureR (ν : Measure ℝ) b)).toReal)
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L27).
+Stated in [InvariantIsing.lean, line 282](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L282). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L27).
 
 ```lean
 theorem limiting_wasserstein_field_pressure_of_extreme_limits_unconditional :
@@ -72,7 +70,7 @@ theorem limiting_wasserstein_field_pressure_of_extreme_limits_unconditional :
       atTop (𝓝 (magneticFieldFunctional (ν : Measure ℝ) b ξ))
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L45).
+Stated in [InvariantIsing.lean, line 300](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L300). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L45).
 
 ```lean
 theorem positive_temperature_pressure_unconditional :
@@ -92,7 +90,7 @@ theorem positive_temperature_pressure_unconditional :
       atTop (𝓝 (variationalFunctional (measureR (scaledSpectralLaw ν β : Measure ℝ) (β*b))).toReal)
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 67](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L67).
+Stated in [InvariantIsing.lean, line 322](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L322). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 67](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L67).
 
 ```lean
 theorem ground_state_limit_unconditional :
@@ -113,7 +111,7 @@ theorem ground_state_limit_unconditional :
       Tendsto (thermalVariationalValue ν b) atTop (𝓝 M)
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L84).
+Stated in [InvariantIsing.lean, line 339](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L339). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L84).
 
 ```lean
 theorem random_pressure_tendsto_in_measure_unconditional
@@ -136,7 +134,7 @@ theorem random_pressure_tendsto_in_measure_unconditional
       (fun _ => (variationalFunctional (measureR (ν : Measure ℝ) b)).toReal)
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L102).
+Stated in [InvariantIsing.lean, line 357](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L357). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L102).
 
 ```lean
 theorem random_pressure_limit_unconditional :
@@ -164,7 +162,7 @@ theorem random_pressure_limit_unconditional :
       (𝓝 (variationalFunctional (measureR (ν : Measure ℝ) b)).toReal)
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L124).
+Stated in [InvariantIsing.lean, line 377](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L377). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L124).
 
 ```lean
 theorem random_pressure_tendsto_ae_unconditional :
@@ -186,7 +184,7 @@ theorem random_pressure_tendsto_ae_unconditional :
       (𝓝 (variationalFunctional (measureR (ν : Measure ℝ) b)).toReal)
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 149](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L149).
+Stated in [InvariantIsing.lean, line 402](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L402). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 149](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L149).
 
 ```lean
 theorem random_field_pressure_tendsto_ae_unconditional :
@@ -211,7 +209,7 @@ theorem random_field_pressure_tendsto_ae_unconditional :
       (𝓝 (magneticFieldFunctional (ν : Measure ℝ) b ξ))
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 168](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L168).
+Stated in [InvariantIsing.lean, line 421](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L421). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 168](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L168).
 
 ```lean
 theorem gaussianPattern_pressure_limit_unconditional :
@@ -228,7 +226,7 @@ theorem gaussianPattern_pressure_limit_unconditional :
       (𝓝 (gaussianPatternLimit α c))
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 190](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L190).
+Stated in [InvariantIsing.lean, line 443](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L443). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 190](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L190).
 
 ```lean
 theorem gaussianPattern_ground_limit_unconditional :
@@ -245,7 +243,7 @@ theorem gaussianPattern_ground_limit_unconditional :
       Tendsto (fun β => gaussianPatternLimit α (ε*β)/β) atTop (𝓝 e)
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 204](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L204).
+Stated in [InvariantIsing.lean, line 457](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L457). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 204](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L204).
 
 ```lean
 theorem gaussianPattern_norm_limits_unconditional :
@@ -268,11 +266,11 @@ theorem gaussianPattern_norm_limits_unconditional :
           Real.sqrt (-2*eminus)) 1 P) atTop (𝓝 0))
 ```
 
-Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 218](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L218).
+Stated in [InvariantIsing.lean, line 471](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InvariantIsing.lean#L471). Proved in [lean/OAI/Probability/InvariantIsing/Unconditional.lean, line 218](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/InvariantIsing/Unconditional.lean#L218).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -58,8 +58,6 @@ The formalization also contains fixed-field transfer results, separate from the 
 
 ## Lean: Finitely presented characteristic-two counterexample
 
-Stated in [KaplanskyFinitelyPresented.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyFinitelyPresented.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem finitelyPresented_counterexample :
     ∃ (K : Type) (_ : Field K) (_ : Fintype K) (_ : CharP K 2),
@@ -68,41 +66,35 @@ theorem finitelyPresented_counterexample :
         ∃ a_out b_out : MonoidAlgebra K G, a_out * b_out = 1 ∧ b_out * a_out ≠ 1
 ```
 
-Proved in [lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean#L35).
+Stated in [KaplanskyFinitelyPresented.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyFinitelyPresented.lean#L7). Proved in [lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/DirectFiniteness/FinitelyPresented.lean#L35). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Characteristic-two direct-finiteness counterexample
-
-Stated in [KaplanskyDirectFiniteness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyDirectFiniteness.lean).
 
 ```lean
 theorem main_theorem : MainClaim
 ```
 
-Proved in [lean/OAI/RingTheory/DirectFiniteness/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/DirectFiniteness/Main.lean#L9).
+Stated in [KaplanskyDirectFiniteness.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KaplanskyDirectFiniteness.lean#L12). Proved in [lean/OAI/RingTheory/DirectFiniteness/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/DirectFiniteness/Main.lean#L9).
 
 ## Lean: Group-ring determinant counterexample
-
-Stated in [GroupRingDeterminant.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GroupRingDeterminant.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/GroupDeterminants/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/GroupDeterminants/Main.lean#L13).
+Stated in [GroupRingDeterminant.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GroupRingDeterminant.lean#L52). Proved in [lean/OAI/Analysis/GroupDeterminants/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/GroupDeterminants/Main.lean#L13). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Prescribed odd-characteristic counterexample
-
-Stated in [OddKaplansky.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OddKaplansky.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main_theorem : MainClaim
 ```
 
-Proved in [lean/OAI/Algebra/OddKaplansky/Main.lean, line 81](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/OddKaplansky/Main.lean#L81).
+Stated in [OddKaplansky.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OddKaplansky.lean#L26). Proved in [lean/OAI/Algebra/OddKaplansky/Main.lean, line 81](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/OddKaplansky/Main.lean#L81). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

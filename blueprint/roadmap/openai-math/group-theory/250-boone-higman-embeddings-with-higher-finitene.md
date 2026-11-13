@@ -42,18 +42,14 @@ The group $H$ is fixed before the groups embedded into it are chosen. No word-pr
 
 ## Lean: Boone–Higman equivalence
 
-Stated in [BooneHigman.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BooneHigman.lean).
-
 ```lean
 theorem main (GroupType : Type u) [Group GroupType] [Group.FG GroupType] :
     HasDecidableWordProblem GroupType ↔ EmbedsInFinitelyPresentedSimpleGroup GroupType
 ```
 
-Proved in [lean/OAI/GroupTheory/BooneHigman/Main.lean, line 115](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/BooneHigman/Main.lean#L115).
+Stated in [BooneHigman.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BooneHigman.lean#L26). Proved in [lean/OAI/GroupTheory/BooneHigman/Main.lean, line 115](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/BooneHigman/Main.lean#L115).
 
 ## Lean: Simple type $F_\infty$ overgroups of groups with decidable word problem
-
-Stated in [SimpleOvergroups.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SimpleOvergroups.lean).
 
 ```lean
 theorem main (G : Type u) [Group G] [Group.FG G]
@@ -62,11 +58,9 @@ theorem main (G : Type u) [Group G] [Group.FG G]
       HasTypeFInfty H ∧ ∃ f : G →* H, Function.Injective f
 ```
 
-Proved in [lean/OAI/GroupTheory/SimpleOvergroups/SourceProducer.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/SimpleOvergroups/SourceProducer.lean#L73).
+Stated in [SimpleOvergroups.lean, line 28](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SimpleOvergroups.lean#L28). Proved in [lean/OAI/GroupTheory/SimpleOvergroups/SourceProducer.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/SimpleOvergroups/SourceProducer.lean#L73).
 
 ## Lean: Universal group of type $F_\infty$
-
-Stated in [UniversalFInfinity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniversalFInfinity.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem universal_group_of_type_FInfinity :
@@ -76,11 +70,11 @@ theorem universal_group_of_type_FInfinity :
         ∃ φ : G →* H, Function.Injective φ
 ```
 
-Proved in [lean/OAI/GroupTheory/UniversalGroup/Main.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/UniversalGroup/Main.lean#L20).
+Stated in [UniversalFInfinity.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniversalFInfinity.lean#L16). Proved in [lean/OAI/GroupTheory/UniversalGroup/Main.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/UniversalGroup/Main.lean#L20). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

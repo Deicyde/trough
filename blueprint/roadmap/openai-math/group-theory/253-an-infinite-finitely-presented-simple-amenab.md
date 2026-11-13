@@ -26,18 +26,16 @@ The later general claims about central kernels and enlargements across families 
 
 ## Lean: Infinite finitely presented simple amenable group
 
-Stated in [SimpleAmenable.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SimpleAmenable.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : ∃ (G : Type) (_ : Group G),
     Infinite G ∧ Group.IsFinitelyPresented G ∧ IsSimpleGroup G ∧ FolnerAmenable G
 ```
 
-Proved in [lean/OAI/GroupTheory/SimpleAmenable/Main.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/SimpleAmenable/Main.lean#L102).
+Stated in [SimpleAmenable.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SimpleAmenable.lean#L15). Proved in [lean/OAI/GroupTheory/SimpleAmenable/Main.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/SimpleAmenable/Main.lean#L102). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

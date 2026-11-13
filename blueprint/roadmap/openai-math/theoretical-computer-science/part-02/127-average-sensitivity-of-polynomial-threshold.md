@@ -24,17 +24,15 @@ The formalized result proves the average-sensitivity bound $8d\sqrt n$ for every
 
 ## Lean: Average sensitivity of polynomial threshold functions
 
-Stated in [GotsmanLinial.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GotsmanLinial.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem gotsmanLinialStatement : GotsmanLinialStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/GotsmanLinial/Main.lean, line 123](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/GotsmanLinial/Main.lean#L123).
+Stated in [GotsmanLinial.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GotsmanLinial.lean#L49). Proved in [lean/OAI/Combinatorics/GotsmanLinial/Main.lean, line 123](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/GotsmanLinial/Main.lean#L123). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

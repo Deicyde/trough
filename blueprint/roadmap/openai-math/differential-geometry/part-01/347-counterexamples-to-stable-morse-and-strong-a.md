@@ -48,19 +48,17 @@ The critical-number form of Arnold's fixed-point conjecture predicts at least as
 
 ## Lean: Three-fixed-point Arnold counterexample
 
-Stated in [ArnoldCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArnoldCounterexample.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main :
     ∃ φ : Q3 ≃ Q3, IsHamiltonian φ ∧ (fixedSet φ).encard = 3 ∧
       (3 : ℕ∞) < 4 ∧ 4 ≤ criticalNumber ∧ HasDegenerateFixedPoint φ
 ```
 
-Proved in [lean/OAI/Geometry/Arnold/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Arnold/Main.lean#L14).
+Stated in [ArnoldCounterexample.lean, line 111](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ArnoldCounterexample.lean#L111). Proved in [lean/OAI/Geometry/Arnold/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Arnold/Main.lean#L14). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

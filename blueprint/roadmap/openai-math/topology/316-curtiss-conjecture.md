@@ -17,7 +17,7 @@ We prove Curtis's conjecture: in every positive degree, the mod-two stable Hurew
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -26,8 +26,6 @@ It also proves that each of the orderings $P^+(n)<P^+(n+1)$ and $P^+(n+1)<P^+(n)
 
 ## Lean: Joint Dickman law and equal ordering densities for consecutive integers
 
-Stated in [JointDickman.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/JointDickman.lean).
-
 ```lean
 theorem joint_law (a b : ℝ) (ha : 0 < a) (ha1 : a < 1) (hb : 0 < b) (hb1 : b < 1) :
     Tendsto (realDensity (fun n =>
@@ -36,7 +34,7 @@ theorem joint_law (a b : ℝ) (ha : 0 < a) (ha1 : a < 1) (hb : 0 < b) (hb1 : b <
         Erdos970.NumberTheoryLean.Dickman.rho (1 / b)))
 ```
 
-Proved in [lean/OAI/NumberTheory/JointDickman/PaperMain.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/JointDickman/PaperMain.lean#L13).
+Stated in [JointDickman.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/JointDickman.lean#L44). Proved in [lean/OAI/NumberTheory/JointDickman/PaperMain.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/JointDickman/PaperMain.lean#L13).
 
 ```lean
 theorem increasing_order :
@@ -44,7 +42,7 @@ theorem increasing_order :
       atTop (𝓝 (1 / 2))
 ```
 
-Proved in [lean/OAI/NumberTheory/JointDickman/PaperMain.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/JointDickman/PaperMain.lean#L21).
+Stated in [JointDickman.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/JointDickman.lean#L52). Proved in [lean/OAI/NumberTheory/JointDickman/PaperMain.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/JointDickman/PaperMain.lean#L21).
 
 ```lean
 theorem decreasing_order :
@@ -52,11 +50,11 @@ theorem decreasing_order :
       atTop (𝓝 (1 / 2))
 ```
 
-Proved in [lean/OAI/NumberTheory/JointDickman/PaperMain.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/JointDickman/PaperMain.lean#L27).
+Stated in [JointDickman.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/JointDickman.lean#L58). Proved in [lean/OAI/NumberTheory/JointDickman/PaperMain.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/JointDickman/PaperMain.lean#L27).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

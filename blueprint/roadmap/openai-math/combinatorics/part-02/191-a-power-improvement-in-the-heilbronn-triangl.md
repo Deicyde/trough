@@ -24,8 +24,6 @@ Heilbronn's triangle problem asks how large the smallest triangle determined by 
 
 ## Lean: Power improvement for the smallest Heilbronn triangle
 
-Stated in [HeilbronnTriangle.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HeilbronnTriangle.lean).
-
 ```lean
 theorem heilbronn_power_lower_bound :
     0 < heilbronnExponent ∧ ∃ n : ℕ → ℕ, ∃ P : ℕ → Finset Point,
@@ -35,7 +33,7 @@ theorem heilbronn_power_lower_bound :
           (Real.rpow (n j : ℝ) (-2 + heilbronnExponent))
 ```
 
-Proved in [lean/OAI/Geometry/HeilbronnTriangle/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HeilbronnTriangle/Main.lean#L15).
+Stated in [HeilbronnTriangle.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HeilbronnTriangle.lean#L51). Proved in [lean/OAI/Geometry/HeilbronnTriangle/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HeilbronnTriangle/Main.lean#L15).
 
 ```lean
 theorem almost_n_minus_two_refuted :
@@ -43,11 +41,11 @@ theorem almost_n_minus_two_refuted :
       ¬ eventualAlmostUpperBound (heilbronnExponent / 2)
 ```
 
-Proved in [lean/OAI/Geometry/HeilbronnTriangle/Main.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HeilbronnTriangle/Main.lean#L33).
+Stated in [HeilbronnTriangle.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HeilbronnTriangle.lean#L59). Proved in [lean/OAI/Geometry/HeilbronnTriangle/Main.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HeilbronnTriangle/Main.lean#L33).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

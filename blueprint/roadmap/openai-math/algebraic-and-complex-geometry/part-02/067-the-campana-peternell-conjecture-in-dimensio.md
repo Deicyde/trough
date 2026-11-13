@@ -17,7 +17,7 @@ We prove that every smooth connected complex projective Fano sixfold with nef ta
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

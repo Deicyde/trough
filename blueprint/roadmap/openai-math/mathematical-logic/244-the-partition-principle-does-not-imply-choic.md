@@ -26,8 +26,6 @@ The linked model-construction result also constructs a transitive model of the P
 
 ## Lean: Partition Principle without Choice from a ground model
 
-Stated in [PartitionPrinciple.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PartitionPrinciple.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_model_partitionPrinciple_without_choice
     (pairing : Realize M.sets SetFormula.pairing Fin.elim0)
@@ -42,22 +40,20 @@ theorem exists_model_partitionPrinciple_without_choice
       ¬ Realize N.sets SetFormula.choice Fin.elim0
 ```
 
-Proved in [lean/OAI/SetTheory/PartitionPrinciple/Models/Separation.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/SetTheory/PartitionPrinciple/Models/Separation.lean#L34).
+Stated in [PartitionPrinciple.lean, line 262](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PartitionPrinciple.lean#L262). Proved in [lean/OAI/SetTheory/PartitionPrinciple/Models/Separation.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/SetTheory/PartitionPrinciple/Models/Separation.lean#L34). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Relative consistency of the Partition Principle with ordinal Choice and failure of Choice
-
-Stated in [PartitionConsistency.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PartitionConsistency.lean).
 
 ```lean
 theorem main_consistency :
     Consistent SetLanguage.ZF → Consistent SetLanguage.targetTheory
 ```
 
-Proved in [lean/OAI/SetTheory/PartitionConsistency/Main.lean, line 181](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/SetTheory/PartitionConsistency/Main.lean#L181).
+Stated in [PartitionConsistency.lean, line 318](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PartitionConsistency.lean#L318). Proved in [lean/OAI/SetTheory/PartitionConsistency/Main.lean, line 181](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/SetTheory/PartitionConsistency/Main.lean#L181).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

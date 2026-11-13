@@ -24,8 +24,6 @@ For $p>1$, $p\ne2$, the formalization bounds the least dimension needed to embed
 
 ## Lean: Dimension reduction in $L_p$
 
-Stated in [SubpolynomialLp.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SubpolynomialLp.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem source_main (p : ℝ) (hp : 1 < p) (hp2 : p ≠ 2) :
     (∀ D : ℝ, 1 < D → ∃ C : ℝ, ∀ n : ℕ, 2 ≤ n →
@@ -41,11 +39,11 @@ theorem source_main (p : ℝ) (hp : 1 < p) (hp2 : p ≠ 2) :
         atTop (𝓝 (if 1 < D then 0 else 2)))
 ```
 
-Proved in [lean/OAI/Analysis/LpDimension/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LpDimension/Main.lean#L13).
+Stated in [SubpolynomialLp.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SubpolynomialLp.lean#L32). Proved in [lean/OAI/Analysis/LpDimension/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LpDimension/Main.lean#L13). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

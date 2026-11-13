@@ -26,8 +26,6 @@ Separate formalized consequences give counterexamples to the individual covering
 
 ## Lean: Infinite matroid packing/covering counterexample
 
-Stated in [InfiniteMatroid.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InfiniteMatroid.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main :
     Countable E ∧ Infinite E ∧
@@ -38,11 +36,9 @@ theorem main :
       ¬ HasPackingCovering M₀ M₁
 ```
 
-Proved in [lean/OAI/Combinatorics/InfiniteMatroid/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/InfiniteMatroid/Main.lean#L12).
+Stated in [InfiniteMatroid.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InfiniteMatroid.lean#L23). Proved in [lean/OAI/Combinatorics/InfiniteMatroid/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/InfiniteMatroid/Main.lean#L12). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Partitional intersection, covering, and packing counterexamples
-
-Stated in [InfiniteMatroidCorollaries.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InfiniteMatroidCorollaries.lean).
 
 ```lean
 theorem partitional_intersection_counterexample :
@@ -56,7 +52,7 @@ theorem partitional_intersection_counterexample :
       ¬ HasPackingCovering M₀ M₁ ∧ ¬ HasIntersection M₀ M₁
 ```
 
-Proved in [lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean#L11).
+Stated in [InfiniteMatroidCorollaries.lean, line 108](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InfiniteMatroidCorollaries.lean#L108). Proved in [lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean#L11).
 
 ```lean
 theorem separate_covering_packing_counterexamples :
@@ -66,11 +62,11 @@ theorem separate_covering_packing_counterexamples :
       (∀ i, (M i).E = F) ∧ ¬ PackingConjectureFor F M)
 ```
 
-Proved in [lean/OAI/Combinatorics/InfiniteMatroid/SeparateCounterexamples.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/InfiniteMatroid/SeparateCounterexamples.lean#L10).
+Stated in [InfiniteMatroidCorollaries.lean, line 119](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/InfiniteMatroidCorollaries.lean#L119). Proved in [lean/OAI/Combinatorics/InfiniteMatroid/SeparateCounterexamples.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/InfiniteMatroid/SeparateCounterexamples.lean#L10).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

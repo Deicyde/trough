@@ -34,8 +34,6 @@ The stronger claim that every constituent appears in the orbit span of one presc
 
 ## Lean: Universal irreducible tensor squares for symmetric groups
 
-Stated in [UniversalTensorSquares.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniversalTensorSquares.lean).
-
 ```lean
 theorem universal_tensor_square
     (n : ℕ) (hn : 0 < n) (h2 : n ≠ 2) (h4 : n ≠ 4) (h9 : n ≠ 9) :
@@ -52,21 +50,19 @@ theorem universal_tensor_square
           Function.Injective F
 ```
 
-Proved in [lean/OAI/RepresentationTheory/UniversalSquare/Main.lean, line 205](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/UniversalSquare/Main.lean#L205).
+Stated in [UniversalTensorSquares.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniversalTensorSquares.lean#L91). Proved in [lean/OAI/RepresentationTheory/UniversalSquare/Main.lean, line 205](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/UniversalSquare/Main.lean#L205).
 
 ## Lean: Saxl's conjecture
-
-Stated in [Saxl.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Saxl.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem saxl_conjecture : SaxlConjecture
 ```
 
-Proved in [lean/OAI/RepresentationTheory/Saxl/Main.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/Saxl/Main.lean#L88).
+Stated in [Saxl.lean, line 112](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Saxl.lean#L112). Proved in [lean/OAI/RepresentationTheory/Saxl/Main.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/Saxl/Main.lean#L88). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

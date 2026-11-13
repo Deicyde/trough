@@ -30,17 +30,15 @@ The formalized result disproves the proposed Euclidean upper comparison for dime
 
 ## Lean: Counterexample to harmonic dimension comparison
 
-Stated in [HarmonicGrowth.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HarmonicGrowth.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainClaim
 ```
 
-Proved in [lean/OAI/Geometry/HarmonicGrowth/Main.lean, line 475](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HarmonicGrowth/Main.lean#L475).
+Stated in [HarmonicGrowth.lean, line 98](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HarmonicGrowth.lean#L98). Proved in [lean/OAI/Geometry/HarmonicGrowth/Main.lean, line 475](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HarmonicGrowth/Main.lean#L475). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

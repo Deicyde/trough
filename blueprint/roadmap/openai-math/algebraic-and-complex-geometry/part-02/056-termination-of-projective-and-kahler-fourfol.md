@@ -41,7 +41,7 @@ We prove that a globally Weil-ℚ-factorial compact Kähler klt fourfold pair wi
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

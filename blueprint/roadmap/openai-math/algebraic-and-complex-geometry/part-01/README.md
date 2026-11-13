@@ -15,7 +15,7 @@ navigation: transparent
 - [040. Bloch’s conjecture for complex surfaces](040-blochs-conjecture-for-complex-surfaces.md)
 - [041. Hyperkähler SYZ and projective-space bases](041-hyperkahler-syz-and-projective-space-bases.md)
 - [042. Oka classification for minimal compact complex surfaces: Kodaira dimension zero and class VII](042-oka-classification-for-minimal-compact-compl.md)
-- [043. \*P\* = \*W\* for fixed-determinant SL$_{n}$ moduli spaces](043-p-w-for-fixed-determinant-sl-n-moduli-spaces.md)
+- [043. *P* = *W* for fixed-determinant SL$_{n}$ moduli spaces](043-p-w-for-fixed-determinant-sl-n-moduli-spaces.md)
 - [044. The equivariant cohomological Hikita conjecture](044-the-equivariant-cohomological-hikita-conject.md)
 - [046. Shafarevich counterexamples in dimension two and with large fundamental group](046-shafarevich-counterexamples-in-dimension-two.md)
 - [047. Zariski cancellation and affine fibrations over the complex numbers](047-zariski-cancellation-and-affine-fibrations-o.md)

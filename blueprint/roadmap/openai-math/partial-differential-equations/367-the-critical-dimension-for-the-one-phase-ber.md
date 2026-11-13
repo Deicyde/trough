@@ -26,18 +26,16 @@ The flatness classification in dimensions at most six and the resulting regulari
 
 ## Lean: A nonflat one-homogeneous Bernoulli minimizer in dimension seven
 
-Stated in [BernoulliNonflatInSeven.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BernoulliNonflatInSeven.lean).
-
 ```lean
 theorem nonflat_in_seven : ∃ u : Space 7 → ℝ,
     GlobalMinimizer u ∧ Nonzero u ∧ OneHomogeneous u ∧ ¬ Flat u
 ```
 
-Proved in [lean/OAI/Analysis/BernoulliCone/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BernoulliCone/Main.lean#L10).
+Stated in [BernoulliNonflatInSeven.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BernoulliNonflatInSeven.lean#L78). Proved in [lean/OAI/Analysis/BernoulliCone/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BernoulliCone/Main.lean#L10).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

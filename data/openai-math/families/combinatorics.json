@@ -41,7 +41,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/PeriodicTiling/Main.lean"
+        "module": "lean/OAI/Geometry/PeriodicTiling/Main.lean",
+        "main": true
        }
       ]
      }
@@ -87,7 +88,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/Borsuk/Main.lean"
+        "module": "lean/OAI/Geometry/Borsuk/Main.lean",
+        "main": true
        }
       ]
      }
@@ -146,7 +148,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ListHadwiger/Main.lean"
+        "module": "lean/OAI/Combinatorics/ListHadwiger/Main.lean",
+        "main": false
        }
       ]
      },
@@ -168,7 +171,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean"
+        "module": "lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.HadwigerCounterexample.not_hadwiger_conjecture",
@@ -182,7 +186,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean"
+        "module": "lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean",
+        "main": true
        }
       ]
      }
@@ -228,7 +233,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/PlaneColoring/Five.lean"
+        "module": "lean/OAI/Geometry/PlaneColoring/Five.lean",
+        "main": true
        }
       ]
      },
@@ -250,7 +256,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/PlaneColoring/Main.lean"
+        "module": "lean/OAI/Geometry/PlaneColoring/Main.lean",
+        "main": true
        }
       ]
      }
@@ -291,7 +298,8 @@
         "line": 31,
         "statement": "theorem manuscriptReciprocalProgressionTheorem : ReciprocalProgressionTheorem",
         "proof": null,
-        "module": "lean/OAI/Combinatorics/Progressions/Main.lean"
+        "module": "lean/OAI/Combinatorics/Progressions/Main.lean",
+        "main": false
        }
       ]
      }
@@ -337,7 +345,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ProgressionColoring/Main.lean"
+        "module": "lean/OAI/Combinatorics/ProgressionColoring/Main.lean",
+        "main": true
        }
       ]
      }
@@ -383,7 +392,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Sidorenko/RandomHost.lean"
+        "module": "lean/OAI/Combinatorics/Sidorenko/RandomHost.lean",
+        "main": false
        }
       ]
      }
@@ -431,7 +441,8 @@
         "line": 39,
         "statement": "theorem main_result : MainResult",
         "proof": null,
-        "module": "lean/OAI/Combinatorics/BalancedRyser/Main.lean"
+        "module": "lean/OAI/Combinatorics/BalancedRyser/Main.lean",
+        "main": false
        }
       ]
      },
@@ -453,7 +464,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Ryser/Construction/Main.lean"
+        "module": "lean/OAI/Combinatorics/Ryser/Construction/Main.lean",
+        "main": true
        }
       ]
      },
@@ -475,7 +487,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Ryser/OddExtensions.lean"
+        "module": "lean/OAI/Combinatorics/Ryser/OddExtensions.lean",
+        "main": true
        }
       ]
      }
@@ -543,7 +556,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/CompleteCrossing/Main.lean"
+        "module": "lean/OAI/Combinatorics/CompleteCrossing/Main.lean",
+        "main": true
        }
       ]
      },
@@ -565,7 +579,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Crossing/Main.lean"
+        "module": "lean/OAI/Combinatorics/Crossing/Main.lean",
+        "main": true
        }
       ]
      }
@@ -633,7 +648,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/PinnedDistances/Main.lean"
+        "module": "lean/OAI/Geometry/PinnedDistances/Main.lean",
+        "main": true
        }
       ]
      },
@@ -655,7 +671,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/UnitDistances/Main.lean"
+        "module": "lean/OAI/Geometry/UnitDistances/Main.lean",
+        "main": false
        }
       ]
      }
@@ -701,7 +718,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/KazhdanLusztig/Invariance.lean"
+        "module": "lean/OAI/RepresentationTheory/KazhdanLusztig/Invariance.lean",
+        "main": false
        }
       ]
      }
@@ -747,7 +765,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Chromatic/Main.lean"
+        "module": "lean/OAI/Combinatorics/Chromatic/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.elementaryPositivityWitness",
@@ -761,7 +780,8 @@
          "kind": "def",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Chromatic/Main.lean"
+        "module": "lean/OAI/Combinatorics/Chromatic/Main.lean",
+        "main": false
        }
       ]
      }
@@ -814,7 +834,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/RamseyFive/Main.lean"
+        "module": "lean/OAI/Combinatorics/RamseyFive/Main.lean",
+        "main": false
        }
       ]
      },
@@ -836,7 +857,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/SharpRamsey/Main.lean"
+        "module": "lean/OAI/Combinatorics/SharpRamsey/Main.lean",
+        "main": false
        }
       ]
      }
@@ -897,7 +919,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Main.lean"
+        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Main.lean",
+        "main": true
        }
       ]
      },
@@ -919,7 +942,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/SphericalRamsey/Main.lean"
+        "module": "lean/OAI/Combinatorics/SphericalRamsey/Main.lean",
+        "main": true
        }
       ]
      },
@@ -941,7 +965,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Circle.lean"
+        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Circle.lean",
+        "main": false
        }
       ]
      },
@@ -963,7 +988,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EuclideanRamsey/NineStatement.lean"
+        "module": "lean/OAI/Combinatorics/EuclideanRamsey/NineStatement.lean",
+        "main": false
        }
       ]
      },
@@ -985,7 +1011,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Quadratic.lean"
+        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Quadratic.lean",
+        "main": false
        }
       ]
      },
@@ -1007,7 +1034,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Spherical.lean"
+        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Spherical.lean",
+        "main": false
        }
       ]
      },
@@ -1029,7 +1057,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Transitive.lean"
+        "module": "lean/OAI/Combinatorics/EuclideanRamsey/Transitive.lean",
+        "main": false
        }
       ]
      }
@@ -1075,7 +1104,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/SecondNeighborhood/Main.lean"
+        "module": "lean/OAI/Combinatorics/SecondNeighborhood/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1128,7 +1158,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ThinTrees/Main.lean"
+        "module": "lean/OAI/Combinatorics/ThinTrees/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1150,7 +1181,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ThinTrees/AlgorithmicMain.lean"
+        "module": "lean/OAI/Combinatorics/ThinTrees/AlgorithmicMain.lean",
+        "main": false
        }
       ]
      }
@@ -1209,7 +1241,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/ExpectationThreshold/Main.lean"
+        "module": "lean/OAI/Combinatorics/ExpectationThreshold/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1231,7 +1264,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/DiscreteConvexity/Main.lean"
+        "module": "lean/OAI/Combinatorics/DiscreteConvexity/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1277,7 +1311,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/GraphThreshold/Main.lean"
+        "module": "lean/OAI/Combinatorics/GraphThreshold/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1323,7 +1358,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Coboundary/Main.lean"
+        "module": "lean/OAI/Combinatorics/Coboundary/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1384,7 +1420,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean"
+        "module": "lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1406,7 +1443,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/LinearAlgebra/Barker/Main.lean"
+        "module": "lean/OAI/LinearAlgebra/Barker/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1452,7 +1490,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Hamiltonian/Main.lean"
+        "module": "lean/OAI/Combinatorics/Hamiltonian/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1498,7 +1537,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/CycleDecomposition/Main.lean"
+        "module": "lean/OAI/Combinatorics/CycleDecomposition/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1556,7 +1596,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/SquareDifference/Main.lean"
+        "module": "lean/OAI/Combinatorics/SquareDifference/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1602,7 +1643,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/HalvingLines/Main.lean"
+        "module": "lean/OAI/Combinatorics/HalvingLines/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1654,7 +1696,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/CliqueFree/Main.lean"
+        "module": "lean/OAI/Combinatorics/CliqueFree/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1700,7 +1743,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/InfiniteMatroid/Main.lean"
+        "module": "lean/OAI/Combinatorics/InfiniteMatroid/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1722,7 +1766,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean"
+        "module": "lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean",
+        "main": false
        },
        {
         "name": "OAI.InfiniteMatroidCounterexample.separate_covering_packing_counterexamples",
@@ -1736,7 +1781,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean"
+        "module": "lean/OAI/Combinatorics/InfiniteMatroid/Corollaries.lean",
+        "main": false
        }
       ]
      }
@@ -1788,7 +1834,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/SharpThreshold/Main.lean"
+        "module": "lean/OAI/Combinatorics/SharpThreshold/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1834,7 +1881,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/SnakyCertificate/Main.lean"
+        "module": "lean/OAI/Combinatorics/SnakyCertificate/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1856,7 +1904,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GameTheory/SnakyConditional/Main.lean"
+        "module": "lean/OAI/GameTheory/SnakyConditional/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1878,7 +1927,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GameTheory/SnakyTwentyOne/Main.lean"
+        "module": "lean/OAI/GameTheory/SnakyTwentyOne/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1924,7 +1974,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/TriangleRemoval/Main.lean"
+        "module": "lean/OAI/Combinatorics/TriangleRemoval/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1970,7 +2021,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Ramsey/CycleClique/Main.lean"
+        "module": "lean/OAI/Combinatorics/Ramsey/CycleClique/Main.lean",
+        "main": false
        }
       ]
      }
@@ -2016,7 +2068,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/MatrixRemoval/Main.lean"
+        "module": "lean/OAI/Combinatorics/MatrixRemoval/Main.lean",
+        "main": true
        }
       ]
      }
@@ -2062,7 +2115,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/HeilbronnTriangle/Main.lean"
+        "module": "lean/OAI/Geometry/HeilbronnTriangle/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem355.almost_n_minus_two_refuted",
@@ -2076,7 +2130,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/HeilbronnTriangle/Main.lean"
+        "module": "lean/OAI/Geometry/HeilbronnTriangle/Main.lean",
+        "main": false
        }
       ]
      }
@@ -2122,7 +2177,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/BooleanFunctions/Main.lean"
+        "module": "lean/OAI/Combinatorics/BooleanFunctions/Main.lean",
+        "main": false
        }
       ]
      }

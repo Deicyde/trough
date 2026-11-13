@@ -24,18 +24,16 @@ The formalization proves the $\beta$-Barendregt–Geuvers–Klop conjecture for 
 
 ## Lean: Weak normalization implies strong normalization in every pure type system
 
-Stated in [TypeSystemNormalization.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TypeSystemNormalization.lean).
-
 ```lean
 theorem weak_implies_strong {S : Type u} (P : Specification S)
     (h : SystemWeaklyNormalizing P) : SystemStronglyNormalizing P
 ```
 
-Proved in [lean/OAI/Computability/TypeSystem/Normalization.lean, line 82](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/TypeSystem/Normalization.lean#L82).
+Stated in [TypeSystemNormalization.lean, line 116](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TypeSystemNormalization.lean#L116). Proved in [lean/OAI/Computability/TypeSystem/Normalization.lean, line 82](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/TypeSystem/Normalization.lean#L82).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

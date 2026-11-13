@@ -26,8 +26,6 @@ It also gives two consequences without exact overlaps: the usual entropy-over-Ly
 
 ## Lean: Entropy-rate dimension formula
 
-Stated in [SelfSimilar.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SelfSimilar.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem entropy_rate_dimension {ι : Type uι} [Fintype ι] [Nonempty ι]
     (S : System ι) (μ : Measure ℝ) [IsProbabilityMeasure μ]
@@ -35,11 +33,9 @@ theorem entropy_rate_dimension {ι : Type uι} [Fintype ι] [Nonempty ι]
     lowerHausdorffDimension μ = ENNReal.ofReal (min 1 (S.entropyRate / S.lyapunov))
 ```
 
-Proved in [lean/OAI/MeasureTheory/SelfSimilar/Main.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/SelfSimilar/Main.lean#L59).
+Stated in [SelfSimilar.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SelfSimilar.lean#L65). Proved in [lean/OAI/MeasureTheory/SelfSimilar/Main.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/SelfSimilar/Main.lean#L59). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Homogeneous-measure and self-similar-attractor dimension formulas
-
-Stated in [SelfSimilarCorollaries.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SelfSimilarCorollaries.lean).
 
 ```lean
 theorem homogeneous_dimension_direct {ι : Type uι} [Fintype ι] [Nonempty ι] (S : System ι)
@@ -50,7 +46,7 @@ theorem homogeneous_dimension_direct {ι : Type uι} [Fintype ι] [Nonempty ι] 
       ENNReal.ofReal (min 1 (symbolEntropy S / Real.log (1/lam)))
 ```
 
-Proved in [lean/OAI/MeasureTheory/SelfSimilar/HomogeneousDimension.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/SelfSimilar/HomogeneousDimension.lean#L34).
+Stated in [SelfSimilarCorollaries.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SelfSimilarCorollaries.lean#L49). Proved in [lean/OAI/MeasureTheory/SelfSimilar/HomogeneousDimension.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/SelfSimilar/HomogeneousDimension.lean#L34).
 
 ```lean
 theorem cor_set {ι : Type uι} [Fintype ι] [Nonempty ι]
@@ -63,11 +59,11 @@ theorem cor_set {ι : Type uι} [Fintype ι] [Nonempty ι]
       dimH (attractor r t) = ENNReal.ofReal (min 1 s))
 ```
 
-Proved in [lean/OAI/MeasureTheory/SelfSimilar/AttractorFormula.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/SelfSimilar/AttractorFormula.lean#L32).
+Stated in [SelfSimilarCorollaries.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SelfSimilarCorollaries.lean#L78). Proved in [lean/OAI/MeasureTheory/SelfSimilar/AttractorFormula.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/SelfSimilar/AttractorFormula.lean#L32).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

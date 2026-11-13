@@ -38,32 +38,28 @@ The formalized result gives the unconditional bound $\omega(F)<2.371054886006746
 
 ## Lean: Complex square, dual, and rectangular exponent bounds
 
-Stated in [MatrixMultiplication.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixMultiplication.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem complex_omega_le_nine_quarters :
     Arithmetic.omega ℂ ≤ (9 : ℝ) / 4
 ```
 
-Proved in [lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean#L14).
+Stated in [MatrixMultiplication.lean, line 118](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixMultiplication.lean#L118). Proved in [lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean#L14). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem complex_alpha_gt_93_div_200 :
     (93 : ℝ) / 200 < Arithmetic.complexAlpha
 ```
 
-Proved in [lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean#L19).
+Stated in [MatrixMultiplication.lean, line 122](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixMultiplication.lean#L122). Proved in [lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean#L19). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem complex_rectangular_omega_lt_523_div_250 :
     Arithmetic.rectangularOmega ℂ ((709 : ℝ) / 1000) < (523 : ℝ) / 250
 ```
 
-Proved in [lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean#L25).
+Stated in [MatrixMultiplication.lean, line 126](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixMultiplication.lean#L126). Proved in [lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixMultiplication/Main.lean#L25). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Matrix-multiplication exponent over every field
-
-Stated in [MatrixFields.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixFields.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem omega_lt_source_constant (F : Type u) [Field F] :
@@ -71,11 +67,11 @@ theorem omega_lt_source_constant (F : Type u) [Field F] :
     (2371054886006746 : ℝ) / 10 ^ 15 < (2371056 : ℝ) / 10 ^ 6
 ```
 
-Proved in [lean/OAI/LinearAlgebra/MatrixFields/Conclusions/AllFieldsBound.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixFields/Conclusions/AllFieldsBound.lean#L17).
+Stated in [MatrixFields.lean, line 109](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixFields.lean#L109). Proved in [lean/OAI/LinearAlgebra/MatrixFields/Conclusions/AllFieldsBound.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/MatrixFields/Conclusions/AllFieldsBound.lean#L17). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

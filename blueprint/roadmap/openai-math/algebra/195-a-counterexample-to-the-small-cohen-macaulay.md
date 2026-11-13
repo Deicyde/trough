@@ -28,8 +28,6 @@ The paper's main counterexample requires that no nonzero finitely generated modu
 
 ## Lean: Ring-theoretic properties of the completed surface-cone candidate
 
-Stated in [SurfaceConeCandidateSupport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SurfaceConeCandidateSupport.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem candidate_ring_properties :
     ∃ (R : Type) (_ : CommRing R) (_ : IsDomain R) (_ : IsNoetherianRing R)
@@ -39,11 +37,11 @@ theorem candidate_ring_properties :
       Function.Bijective (algebraMap ℂ (IsLocalRing.ResidueField R))
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean#L16).
+Stated in [SurfaceConeCandidateSupport.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SurfaceConeCandidateSupport.lean#L8). Proved in [lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/SurfaceCones/CandidateRing.lean#L16). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

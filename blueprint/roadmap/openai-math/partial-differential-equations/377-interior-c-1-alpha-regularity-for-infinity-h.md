@@ -17,7 +17,7 @@ We prove a uniform interior $C^{1,\alpha_d}$ estimate for bounded infinity-harmo
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

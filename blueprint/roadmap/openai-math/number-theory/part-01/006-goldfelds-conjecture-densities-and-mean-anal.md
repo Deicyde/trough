@@ -23,7 +23,7 @@ For every elliptic curve over ℚ, we prove that the average analytic rank of it
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

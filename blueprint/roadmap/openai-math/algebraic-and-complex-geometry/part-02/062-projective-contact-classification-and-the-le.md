@@ -17,7 +17,7 @@ We resolve the contact-Fano homogeneity conjecture and the Riemannian LeBrun–S
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -36,27 +36,23 @@ The later field-extension, endomorphism-algebra, and related homological consequ
 
 ## Lean: Auslander–Reiten counterexample
 
-Stated in [AuslanderReiten.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AuslanderReiten.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : FullStatement.{v}
 ```
 
-Proved in [lean/OAI/Algebra/AuslanderReiten/All.lean, line 738](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/AuslanderReiten/All.lean#L738).
+Stated in [AuslanderReiten.lean, line 70](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AuslanderReiten.lean#L70). Proved in [lean/OAI/Algebra/AuslanderReiten/All.lean, line 738](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/AuslanderReiten/All.lean#L738). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Tachikawa counterexample
-
-Stated in [Tachikawa.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Tachikawa.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main_theorem : Counterexample
 ```
 
-Proved in [lean/OAI/RingTheory/Tachikawa/Counterexample.lean, line 293](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/Tachikawa/Counterexample.lean#L293).
+Stated in [Tachikawa.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Tachikawa.lean#L32). Proved in [lean/OAI/RingTheory/Tachikawa/Counterexample.lean, line 293](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RingTheory/Tachikawa/Counterexample.lean#L293). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

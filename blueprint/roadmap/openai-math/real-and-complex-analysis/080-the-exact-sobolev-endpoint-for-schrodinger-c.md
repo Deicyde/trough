@@ -23,7 +23,7 @@ We resolve the Sobolev endpoint of Carleson's pointwise convergence problem in e
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -23,7 +23,7 @@ We prove that the unique ground state of a uniformly gapped nearest-neighbor Ham
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

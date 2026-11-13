@@ -24,29 +24,27 @@ Patterson's first-moment conjecture concerns the average of normalized cubic Gau
 
 ## Lean: Patterson first moment and angular cancellation
 
-Stated in [PattersonFirstMoment.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PattersonFirstMoment.lean).
-
 ```lean
 theorem patterson_firstMoment : FirstMomentStatement
 ```
 
-Proved in [lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean#L17).
+Stated in [PattersonFirstMoment.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PattersonFirstMoment.lean#L84). Proved in [lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean#L17).
 
 ```lean
 theorem patterson_angularComparison : AngularComparisonStatement
 ```
 
-Proved in [lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean#L10).
+Stated in [PattersonFirstMoment.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PattersonFirstMoment.lean#L88). Proved in [lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean#L10).
 
 ```lean
 theorem patterson_angularCancellation : AngularCancellationStatement
 ```
 
-Proved in [lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean#L13).
+Stated in [PattersonFirstMoment.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PattersonFirstMoment.lean#L92). Proved in [lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean#L13).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

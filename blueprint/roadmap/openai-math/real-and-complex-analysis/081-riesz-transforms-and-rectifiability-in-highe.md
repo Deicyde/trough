@@ -24,17 +24,15 @@ The formalized result proves that bounded Riesz transforms force quantitative un
 
 ## Lean: Quantitative higher-codimension Riesz rectifiability
 
-Stated in [RieszQuantitative.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RieszQuantitative.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem quantitative_higher_codimension_riesz_rectifiability : QuantitativeFullStatement
 ```
 
-Proved in [lean/OAI/Analysis/RieszRectifiability/Uniformity/Rectifiability.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RieszRectifiability/Uniformity/Rectifiability.lean#L89).
+Stated in [RieszQuantitative.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RieszQuantitative.lean#L57). Proved in [lean/OAI/Analysis/RieszRectifiability/Uniformity/Rectifiability.lean, line 89](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RieszRectifiability/Uniformity/Rectifiability.lean#L89). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

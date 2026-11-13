@@ -24,17 +24,15 @@ The Gaussian propeller problem asks how large the sum of squared Gaussian first 
 
 ## Lean: Gaussian propeller bound and attainment
 
-Stated in [GaussianPropeller.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianPropeller.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem all_partitions : AllPartitions
 ```
 
-Proved in [lean/OAI/Probability/GaussianPropeller/Main.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianPropeller/Main.lean#L78).
+Stated in [GaussianPropeller.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianPropeller.lean#L38). Proved in [lean/OAI/Probability/GaussianPropeller/Main.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianPropeller/Main.lean#L78). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

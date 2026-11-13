@@ -25,7 +25,7 @@ Let $A_{n}$ be a symmetric random matrix whose entries on and above the diagonal
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

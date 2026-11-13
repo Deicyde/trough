@@ -24,8 +24,6 @@ The fixed-point question asks whether reflexivity suffices for nonexpansive maps
 
 ## Lean: Nonexpansive fixed points in reflexive spaces
 
-Stated in [ReflexiveFixedPoints.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ReflexiveFixedPoints.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_fixedPoint_of_canonicallyReflexive
     {X : Type u} [NormedAddCommGroup X] [NormedSpace ℝ X] [CompleteSpace X]
@@ -37,11 +35,11 @@ theorem exists_fixedPoint_of_canonicallyReflexive
     ∃ a : C, F a = a
 ```
 
-Proved in [lean/OAI/Analysis/Nonexpansive/Main.lean, line 40](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Nonexpansive/Main.lean#L40).
+Stated in [ReflexiveFixedPoints.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ReflexiveFixedPoints.lean#L21). Proved in [lean/OAI/Analysis/Nonexpansive/Main.lean, line 40](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Nonexpansive/Main.lean#L40). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

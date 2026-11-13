@@ -17,7 +17,7 @@ We give a positive answer to the constant-error formulation of the Aaronson–Ku
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

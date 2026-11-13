@@ -38,27 +38,23 @@ A further statement chooses one family of real sign polynomials for all lengths 
 
 ## Lean: Asymptotically minimal Littlewood maximum
 
-Stated in [AsymptoticallyMinimalLittlewood.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/Littlewood/Main.lean, line 187](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Littlewood/Main.lean#L187).
+Stated in [AsymptoticallyMinimalLittlewood.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AsymptoticallyMinimalLittlewood.lean#L18). Proved in [lean/OAI/Analysis/Littlewood/Main.lean, line 187](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Littlewood/Main.lean#L187). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Finite-exponent flatness of one all-length Littlewood family
 
-Stated in [LittlewoodFiniteFlatness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LittlewoodFiniteFlatness.lean).
-
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/Littlewood/FiniteFlatness.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Littlewood/FiniteFlatness.lean#L14).
+Stated in [LittlewoodFiniteFlatness.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LittlewoodFiniteFlatness.lean#L34). Proved in [lean/OAI/Analysis/Littlewood/FiniteFlatness.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Littlewood/FiniteFlatness.lean#L14).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

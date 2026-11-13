@@ -24,8 +24,6 @@ Donaldson's tamed-to-compatible conjecture asks whether an almost-complex struct
 
 ## Lean: Taming implies compatibility
 
-Stated in [TamingCompatibility.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TamingCompatibility.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem taming_implies_compatibility
     [T2Space X] [SecondCountableTopology X] [CompactSpace X] [ConnectedSpace X]
@@ -34,11 +32,11 @@ theorem taming_implies_compatibility
     ∃ η : TwoForm X, IsSymplectic η ∧ Compatible η J
 ```
 
-Proved in [lean/OAI/Geometry/TamingCompatibility/Main.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/TamingCompatibility/Main.lean#L30).
+Stated in [TamingCompatibility.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TamingCompatibility.lean#L58). Proved in [lean/OAI/Geometry/TamingCompatibility/Main.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/TamingCompatibility/Main.lean#L30). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

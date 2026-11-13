@@ -26,8 +26,6 @@ The linked supplements also give equivariant IID sampling for invariant strongly
 
 ## Lean: Strongly Rayleigh and determinantal-process IID factors
 
-Stated in [StronglyRayleighDPP.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StronglyRayleighDPP.lean).
-
 ```lean
 theorem finite_strongly_rayleigh_response :
     ∀ (F : Type u_1) [Fintype F] [Nonempty F] (μ : ProbabilityMeasure (F → Bool)),
@@ -44,7 +42,7 @@ theorem finite_strongly_rayleigh_response :
             |tiltMean μ h i - tiltMean μ h' i| ≤ D / 2)
 ```
 
-Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L21).
+Stated in [StronglyRayleighDPP.lean, line 132](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StronglyRayleighDPP.lean#L132). Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L21).
 
 ```lean
 theorem strongly_rayleigh_group_factor :
@@ -53,7 +51,7 @@ theorem strongly_rayleigh_group_factor :
         StronglyRayleighCountable μ → InvariantBinaryLaw μ → HasEquivariantIIDFactor μ
 ```
 
-Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L39).
+Stated in [StronglyRayleighDPP.lean, line 147](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StronglyRayleighDPP.lean#L147). Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L39).
 
 ```lean
 theorem finite_positive_contraction_dpp_is_strongly_rayleigh :
@@ -64,7 +62,7 @@ theorem finite_positive_contraction_dpp_is_strongly_rayleigh :
             StronglyRayleighFinite μ
 ```
 
-Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L48).
+Stated in [StronglyRayleighDPP.lean, line 153](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StronglyRayleighDPP.lean#L153). Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L48).
 
 ```lean
 theorem countable_positive_contraction_dpp_exists_unique :
@@ -73,7 +71,7 @@ theorem countable_positive_contraction_dpp_exists_unique :
         ∃! μ : ProbabilityMeasure (I → Bool), IsDeterminantalLaw μ K
 ```
 
-Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L57).
+Stated in [StronglyRayleighDPP.lean, line 161](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StronglyRayleighDPP.lean#L161). Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L57).
 
 ```lean
 theorem invariant_positive_contraction_dpp_factor :
@@ -83,7 +81,7 @@ theorem invariant_positive_contraction_dpp_factor :
         InvariantBinaryLaw μ → HasEquivariantIIDFactor μ
 ```
 
-Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L65).
+Stated in [StronglyRayleighDPP.lean, line 167](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StronglyRayleighDPP.lean#L167). Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L65).
 
 ```lean
 theorem translation_invariant_kernel_dpp_factor :
@@ -93,22 +91,20 @@ theorem translation_invariant_kernel_dpp_factor :
           IsDeterminantalLaw μ K ∧ InvariantBinaryLaw μ ∧ HasEquivariantIIDFactor μ
 ```
 
-Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L75).
+Stated in [StronglyRayleighDPP.lean, line 174](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StronglyRayleighDPP.lean#L174). Proved in [lean/OAI/Probability/StrongRayleigh/Main.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/StrongRayleigh/Main.lean#L75).
 
 ## Lean: A universal IID factor for the free uniform spanning forest
-
-Stated in [FreeUniformSpanningForest.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FreeUniformSpanningForest.lean).
 
 ```lean
 theorem fusf_is_factor_iid :
     ∃ Phi : FactorRule, RuleBorel Phi ∧ RuleEquivariant Phi ∧ ∀ G : GraphCode, WorksOnGraph Phi G
 ```
 
-Proved in [lean/OAI/Probability/SpanningForest/Factor.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SpanningForest/Factor.lean#L13).
+Stated in [FreeUniformSpanningForest.lean, line 141](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FreeUniformSpanningForest.lean#L141). Proved in [lean/OAI/Probability/SpanningForest/Factor.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SpanningForest/Factor.lean#L13).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

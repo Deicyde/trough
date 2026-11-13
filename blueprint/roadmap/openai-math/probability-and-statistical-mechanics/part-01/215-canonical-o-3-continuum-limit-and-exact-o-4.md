@@ -52,17 +52,15 @@ The formalized result proves exponential decay of spin correlations for the two-
 
 ## Lean: Exponential correlation decay for classical $O(n)$ models
 
-Stated in [ClassicalON.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ClassicalON.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : ExponentialDecay
 ```
 
-Proved in [lean/OAI/Probability/ClassicalON/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ClassicalON/Main.lean#L19).
+Stated in [ClassicalON.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ClassicalON.lean#L53). Proved in [lean/OAI/Probability/ClassicalON/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ClassicalON/Main.lean#L19). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

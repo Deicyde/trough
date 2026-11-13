@@ -26,27 +26,23 @@ The earlier quantitative renorming result for real $\ell_1$ is retained: for eac
 
 ## Lean: Quantitative renorming of real $\ell_1$
 
-Stated in [RealL1Renorming.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RealL1Renorming.lean).
-
 ```lean
 theorem real_l1_quantitative_renorming : RealL1RenormingStatement
 ```
 
-Proved in [lean/OAI/Analysis/LipschitzFree/Renorming.lean, line 41](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzFree/Renorming.lean#L41).
+Stated in [RealL1Renorming.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RealL1Renorming.lean#L48). Proved in [lean/OAI/Analysis/LipschitzFree/Renorming.lean, line 41](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzFree/Renorming.lean#L41).
 
 ## Lean: Uniformly discrete Lipschitz-free space with AP but no BAP
-
-Stated in [DiscreteLipschitzFree.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DiscreteLipschitzFree.lean).
 
 ```lean
 theorem source_endpoints : BlockStatement ∧ MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/LipschitzFree/Main.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzFree/Main.lean#L92).
+Stated in [DiscreteLipschitzFree.lean, line 156](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DiscreteLipschitzFree.lean#L156). Proved in [lean/OAI/Analysis/LipschitzFree/Main.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzFree/Main.lean#L92).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

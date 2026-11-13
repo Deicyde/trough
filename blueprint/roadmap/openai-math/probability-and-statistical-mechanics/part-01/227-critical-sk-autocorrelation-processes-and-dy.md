@@ -78,17 +78,13 @@ The result covers both rate-one-per-site continuous-time heat-bath dynamics and 
 
 ## Lean: Spectral-gap bound throughout the high-temperature SK phase
 
-Stated in [SKHighTemperature.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKHighTemperature.lean).
-
 ```lean
 theorem sk_main (β : ℝ) (hβ0 : 0 < β) (hβ1 : β < 1) : MainStatement β
 ```
 
-Proved in [lean/OAI/Probability/SKGap/Main.lean, line 112](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKGap/Main.lean#L112).
+Stated in [SKHighTemperature.lean, line 70](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKHighTemperature.lean#L70). Proved in [lean/OAI/Probability/SKGap/Main.lean, line 112](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKGap/Main.lean#L112).
 
 ## Lean: Discrete mixing-time ratio cutoff for $\beta<1/2$
-
-Stated in [SKRatio.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKRatio.lean).
 
 ```lean
 theorem ratio_cutoff (β ε η : ℝ)
@@ -102,11 +98,9 @@ theorem ratio_cutoff (β ε η : ℝ)
     (∀ᶠ n : ℕ in atTop, ∀ g : Disorder n, 0 < mixingTime g (1 - ε))
 ```
 
-Proved in [lean/OAI/Probability/SKRatio/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKRatio/Main.lean#L19).
+Stated in [SKRatio.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKRatio.lean#L59). Proved in [lean/OAI/Probability/SKRatio/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKRatio/Main.lean#L19).
 
 ## Lean: Critical SK mixing bounds
-
-Stated in [CriticalSKMixing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalSKMixing.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem critical_mixing_bounds (ε : ℝ) (hε : 0 < ε) :
@@ -118,11 +112,9 @@ theorem critical_mixing_bounds (ε : ℝ) (hε : 0 < ε) :
       (discreteMixingTime W : ℝ) ≤ Real.exp (ε * n)}).toReal) atTop (𝓝 1)
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/CriticalMixing/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalMixing/Main.lean#L23).
+Stated in [CriticalSKMixing.lean, line 67](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalSKMixing.lean#L67). Proved in [lean/OAI/MathematicalPhysics/CriticalMixing/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalMixing/Main.lean#L23). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Equilibrium starts, covariance, and mixing lower bounds
-
-Stated in [CriticalSK.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalSK.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem realized_equilibrium_initial_states :
@@ -138,7 +130,7 @@ theorem realized_equilibrium_initial_states :
           δ ≤ |discreteGoodMass W (k n) - 1|}).toReal) atTop (𝓝 0))
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/CriticalSK/Equilibrium.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalSK/Equilibrium.lean#L103).
+Stated in [CriticalSK.lean, line 112](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalSK.lean#L112). Proved in [lean/OAI/MathematicalPhysics/CriticalSK/Equilibrium.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalSK/Equilibrium.lean#L103).
 
 ```lean
 theorem covariance_and_linear_tests (M : ℕ → ℝ)
@@ -150,7 +142,7 @@ theorem covariance_and_linear_tests (M : ℕ → ℝ)
       linearRayleigh W ≤ M n * (n : ℝ) ^ ((2 : ℝ) / 3)}).toReal) atTop (𝓝 1)
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/CriticalSK/Rayleigh.lean, line 607](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalSK/Rayleigh.lean#L607).
+Stated in [CriticalSK.lean, line 127](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalSK.lean#L127). Proved in [lean/OAI/MathematicalPhysics/CriticalSK/Rayleigh.lean, line 607](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalSK/Rayleigh.lean#L607). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem critical_mixing_lower_bounds (ε : ℝ) (hε : 0 < ε) :
@@ -160,11 +152,9 @@ theorem critical_mixing_lower_bounds (ε : ℝ) (hε : 0 < ε) :
       (n : ℝ) ^ (5 / 3 - ε) ≤ (discreteMixingTime W : ℝ)}) atTop (𝓝 1)
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/CriticalSK/Mixing.lean, line 284](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalSK/Mixing.lean#L284).
+Stated in [CriticalSK.lean, line 138](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalSK.lean#L138). Proved in [lean/OAI/MathematicalPhysics/CriticalSK/Mixing.lean, line 284](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/CriticalSK/Mixing.lean#L284).
 
 ## Lean: Stretched-exponential barriers from typical equilibrium initial states
-
-Stated in [SKBarriers.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKBarriers.lean).
 
 ```lean
 theorem main (β : ℝ) (hβ : 1 < β) :
@@ -172,11 +162,11 @@ theorem main (β : ℝ) (hβ : 1 < β) :
     Tendsto (discreteBadMass β) atTop (𝓝 1)
 ```
 
-Proved in [lean/OAI/Probability/SKBarriers/Main.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKBarriers/Main.lean#L36).
+Stated in [SKBarriers.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKBarriers.lean#L84). Proved in [lean/OAI/Probability/SKBarriers/Main.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKBarriers/Main.lean#L36).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

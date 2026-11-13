@@ -30,8 +30,6 @@ The coarse Novikov conjecture predicts rational injectivity of the ordinary coar
 
 ## Lean: Failure of rational injectivity for ordinary coarse assembly
 
-Stated in [CoarseAssembly.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoarseAssembly.lean).
-
 ```lean
 theorem bounded_geometry_graph_counterexample_unconditional :
     (∀ j, Finite (FiberVertex j) ∧
@@ -47,11 +45,11 @@ theorem bounded_geometry_graph_counterexample_unconditional :
         ¬ Function.Injective (constructedCoarseAssembly.toIntLinearMap.lTensor ℚ)
 ```
 
-Proved in [lean/OAI/Topology/CoarseAssembly/UnconditionalConclusion.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/CoarseAssembly/UnconditionalConclusion.lean#L38).
+Stated in [CoarseAssembly.lean, line 6629](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoarseAssembly.lean#L6629). Proved in [lean/OAI/Topology/CoarseAssembly/UnconditionalConclusion.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/CoarseAssembly/UnconditionalConclusion.lean#L38).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

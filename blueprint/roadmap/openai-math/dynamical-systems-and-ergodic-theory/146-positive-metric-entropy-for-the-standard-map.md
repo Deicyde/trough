@@ -26,27 +26,21 @@ It also constructs a positive-area invariant ergodic hyperbolic component. That 
 
 ## Lean: Positive-area hyperbolic Bernoulli component
 
-Stated in [StandardMapComponents.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StandardMapComponents.lean).
-
 ```lean
 theorem main_components : MainComponentsObligation
 ```
 
-Proved in [lean/OAI/Dynamics/StandardMap/ComponentsMain.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/StandardMap/ComponentsMain.lean#L51).
+Stated in [StandardMapComponents.lean, line 105](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StandardMapComponents.lean#L105). Proved in [lean/OAI/Dynamics/StandardMap/ComponentsMain.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/StandardMap/ComponentsMain.lean#L51).
 
 ## Lean: Positive metric entropy for all sufficiently large parameters
-
-Stated in [StandardMapEntropy.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StandardMapEntropy.lean).
 
 ```lean
 theorem main_entropy : MainObligation
 ```
 
-Proved in [lean/OAI/Dynamics/StandardMap/EntropyEndpoint.lean, line 56](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/StandardMap/EntropyEndpoint.lean#L56).
+Stated in [StandardMapEntropy.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StandardMapEntropy.lean#L48). Proved in [lean/OAI/Dynamics/StandardMap/EntropyEndpoint.lean, line 56](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/StandardMap/EntropyEndpoint.lean#L56).
 
 ## Lean: Positive Lyapunov exponents and entropy
-
-Stated in [StandardMapLyapunov.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StandardMapLyapunov.lean).
 
 ```lean
 theorem main_entropy_complete :
@@ -56,11 +50,11 @@ theorem main_entropy_complete :
       (0 < metricEntropy area (standardMap k) ↔ PositiveLargestLyapunov k)
 ```
 
-Proved in [lean/OAI/Dynamics/StandardMap/EntropyLyapunov.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/StandardMap/EntropyLyapunov.lean#L38).
+Stated in [StandardMapLyapunov.lean, line 101](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StandardMapLyapunov.lean#L101). Proved in [lean/OAI/Dynamics/StandardMap/EntropyLyapunov.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/StandardMap/EntropyLyapunov.lean#L38).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -47,7 +47,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/LienardCycles/Main.lean"
+        "module": "lean/OAI/Analysis/LienardCycles/Main.lean",
+        "main": true
        }
       ]
      }
@@ -93,7 +94,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/ThreeTorus/Main.lean"
+        "module": "lean/OAI/Dynamics/ThreeTorus/Main.lean",
+        "main": false
        }
       ]
      }
@@ -139,7 +141,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/MultipleMixing/Main.lean"
+        "module": "lean/OAI/Dynamics/MultipleMixing/Main.lean",
+        "main": false
        }
       ]
      }
@@ -185,7 +188,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/StandardMap/ComponentsMain.lean"
+        "module": "lean/OAI/Dynamics/StandardMap/ComponentsMain.lean",
+        "main": false
        }
       ]
      },
@@ -207,7 +211,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/StandardMap/EntropyEndpoint.lean"
+        "module": "lean/OAI/Dynamics/StandardMap/EntropyEndpoint.lean",
+        "main": false
        }
       ]
      },
@@ -229,7 +234,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/StandardMap/EntropyLyapunov.lean"
+        "module": "lean/OAI/Dynamics/StandardMap/EntropyLyapunov.lean",
+        "main": false
        }
       ]
      }
@@ -296,7 +302,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MeasureTheory/SelfSimilar/Main.lean"
+        "module": "lean/OAI/MeasureTheory/SelfSimilar/Main.lean",
+        "main": true
        }
       ]
      },
@@ -318,7 +325,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MeasureTheory/SelfSimilar/DimensionCorollaries.lean"
+        "module": "lean/OAI/MeasureTheory/SelfSimilar/DimensionCorollaries.lean",
+        "main": false
        },
        {
         "name": "OAI.CorSetReference.cor_set",
@@ -332,7 +340,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MeasureTheory/SelfSimilar/DimensionCorollaries.lean"
+        "module": "lean/OAI/MeasureTheory/SelfSimilar/DimensionCorollaries.lean",
+        "main": false
        }
       ]
      }
@@ -384,7 +393,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/MassAction/Main.lean"
+        "module": "lean/OAI/Analysis/MassAction/Main.lean",
+        "main": false
        }
       ]
      }
@@ -436,7 +446,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/TriangleBilliards/Main.lean"
+        "module": "lean/OAI/Dynamics/TriangleBilliards/Main.lean",
+        "main": false
        }
       ]
      }
@@ -482,7 +493,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/EntropyCounterexample/Counterexample.lean"
+        "module": "lean/OAI/Dynamics/EntropyCounterexample/Counterexample.lean",
+        "main": false
        }
       ]
      }
@@ -528,7 +540,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Dynamics/SmoothObstruction/Main.lean"
+        "module": "lean/OAI/Dynamics/SmoothObstruction/Main.lean",
+        "main": false
        }
       ]
      }

@@ -36,17 +36,15 @@ The formalization proves the strong Kadison–Kastler conjecture uniformly. For 
 
 ## Lean: Universal near-identity unitary conjugacy for close von Neumann algebras
 
-Stated in [StrongKadisonKastler.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StrongKadisonKastler.lean).
-
 ```lean
 theorem universal_strong_stability : UniversalStrongStability.{u}
 ```
 
-Proved in [lean/OAI/Analysis/KadisonKastler/UnconditionalStability.lean, line 41](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonKastler/UnconditionalStability.lean#L41).
+Stated in [StrongKadisonKastler.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StrongKadisonKastler.lean#L37). Proved in [lean/OAI/Analysis/KadisonKastler/UnconditionalStability.lean, line 41](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/KadisonKastler/UnconditionalStability.lean#L41).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -44,8 +44,6 @@ The formalized result gives one randomized algorithm for the complete zero-thres
 
 ## Lean: Finite counterexample to Truffet's optimization procedure
 
-Stated in [TruffetCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TruffetCounterexample.lean).
-
 ```lean
 theorem finite_execution_not_optimal :
     crossRowRestriction initial ∧
@@ -60,21 +58,19 @@ theorem finite_execution_not_optimal :
     eval initial.cost better < eval finalState.cost output
 ```
 
-Proved in [lean/OAI/Optimization/Tropical/TruffetCounterexample.lean, line 126](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Optimization/Tropical/TruffetCounterexample.lean#L126).
+Stated in [TruffetCounterexample.lean, line 118](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TruffetCounterexample.lean#L118). Proved in [lean/OAI/Optimization/Tropical/TruffetCounterexample.lean, line 126](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Optimization/Tropical/TruffetCounterexample.lean#L126).
 
 ## Lean: Randomized quasipolynomial mean-payoff algorithm
-
-Stated in [RandomizedMeanPayoff.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RandomizedMeanPayoff.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem randomized_quasipolynomial_mean_payoff : MeanPayoff.MainClaim
 ```
 
-Proved in [lean/OAI/Computability/RandomMean/Main.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/RandomMean/Main.lean#L65).
+Stated in [RandomizedMeanPayoff.lean, line 123](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RandomizedMeanPayoff.lean#L123). Proved in [lean/OAI/Computability/RandomMean/Main.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/RandomMean/Main.lean#L65). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

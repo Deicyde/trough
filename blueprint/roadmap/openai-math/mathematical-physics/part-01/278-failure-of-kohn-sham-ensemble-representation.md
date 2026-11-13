@@ -17,7 +17,7 @@ We construct a finite three-electron Coulomb molecule whose spin-summed ground-s
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

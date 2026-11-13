@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.Nagata.nagata_conjecture, OAI.Nagata.nagata_conjecture_coordinates, OAI.MaximalSeshadri.Geometry.maximalSeshadriConstants
+lean: OAI.Nagata.Workers.W30.exists_positive_degree_equation_of_homogeneous_cycle, OAI.Nagata.nagata_conjecture, OAI.Nagata.nagata_conjecture_coordinates, OAI.MaximalSeshadri.Geometry.maximalSeshadriConstants
 statement: formalized
 ---
 
@@ -47,8 +47,6 @@ For every $r$ above a threshold depending on $(S,L)$, it gives a countable union
 
 ## Lean: Nagata's conjecture
 
-Stated in [Nagata.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Nagata.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_positive_degree_equation_of_homogeneous_cycle
     (cycle : Ideal TernaryPolynomial →₀ ℕ) (nonzero : cycle ≠ 0)
@@ -60,7 +58,7 @@ theorem exists_positive_degree_equation_of_homogeneous_cycle
         0 < polynomial.totalDegree ∧ equationIdealCycle polynomial = cycle
 ```
 
-Its proof is in [lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean) or a file it imports further down, which this chapter does not read.
+Stated in [Nagata.lean, line 174](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Nagata.lean#L174). Its proof is in [lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem nagata_conjecture :
@@ -76,28 +74,26 @@ theorem nagata_conjecture :
               (Workers.W10.curveDegree curve : ℝ) * Real.sqrt (count : ℝ)
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean, line 148](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean#L148).
+Stated in [Nagata.lean, line 352](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Nagata.lean#L352). Proved in [lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean, line 148](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean#L148). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem nagata_conjecture_coordinates : FullNagata
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean, line 162](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean#L162).
+Stated in [Nagata.lean, line 365](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Nagata.lean#L365). Proved in [lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean, line 162](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean#L162).
 
 ## Lean: Eventual maximal Seshadri constants
-
-Stated in [MaximalSeshadriConstants.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MaximalSeshadriConstants.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem maximalSeshadriConstants (S : Surface) (L : LineBundle S.scheme)
     (hL : LineBundle.IsAmple S.scheme L) : EventualMaximalSeshadri S L
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/Seshadri/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/Seshadri/Main.lean#L25).
+Stated in [MaximalSeshadriConstants.lean, line 408](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MaximalSeshadriConstants.lean#L408). Proved in [lean/OAI/AlgebraicGeometry/Seshadri/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/Seshadri/Main.lean#L25). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

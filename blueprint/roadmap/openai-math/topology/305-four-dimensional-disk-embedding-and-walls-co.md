@@ -29,7 +29,7 @@ We construct a finitely presented integral Poincaré duality group of dimension 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

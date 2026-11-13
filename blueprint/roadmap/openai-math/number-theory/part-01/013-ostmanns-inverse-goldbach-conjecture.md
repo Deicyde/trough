@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.Ostmann.inverseGoldbach, OAI.Ostmann.twoInfiniteSummandsImpossible
+lean: OAI.Ostmann.inverseGoldbach, OAI.Ostmann.twoInfiniteSummandsImpossible, OAI.Ostmann.main
 statement: formalized
 ---
 
@@ -23,34 +23,30 @@ The formalization proves Ostmann's inverse Goldbach conjecture. For any two sets
 
 ## Lean: Ostmann's inverse Goldbach theorem and the infinite-summands case
 
-Stated in [OstmannComplete.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OstmannComplete.lean).
-
 ```lean
 theorem inverseGoldbach : InverseGoldbach
 ```
 
-Proved in [lean/OAI/NumberTheory/Ostmann/Complete.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Ostmann/Complete.lean#L21).
+Stated in [OstmannComplete.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OstmannComplete.lean#L30). Proved in [lean/OAI/NumberTheory/Ostmann/Complete.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Ostmann/Complete.lean#L21).
 
 ```lean
 theorem twoInfiniteSummandsImpossible : TwoInfiniteSummandsImpossible
 ```
 
-Proved in [lean/OAI/NumberTheory/Ostmann/Complete.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Ostmann/Complete.lean#L16).
+Stated in [OstmannComplete.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OstmannComplete.lean#L33). Proved in [lean/OAI/NumberTheory/Ostmann/Complete.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Ostmann/Complete.lean#L16).
 
 ## Lean: Additive indecomposability of the primes up to finite changes
-
-Stated in [OstmannPrimes.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OstmannPrimes.lean).
 
 ```lean
 theorem main : ∀ A B : Set ℕ, A.Nontrivial → B.Nontrivial →
     Set.Infinite ((A + B) ∆ {n : ℕ | Nat.Prime n})
 ```
 
-Its proof is in [lean/OAI/NumberTheory/Ostmann/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Ostmann/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [OstmannPrimes.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OstmannPrimes.lean#L9). Its proof is in [lean/OAI/NumberTheory/Ostmann/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Ostmann/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

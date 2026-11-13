@@ -24,8 +24,6 @@ The formalization proves vanishing of bounded Hochschild cohomology in every deg
 
 ## Lean: Bounded primitives for all Hochschild cocycles of degree at least two
 
-Stated in [KadisonRingrose.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KadisonRingrose.lean).
-
 ```lean
 theorem main_result
     {M : Type u} [CStarAlgebra M] [PartialOrder M] [StarOrderedRing M] [WStarAlgebra M]
@@ -35,11 +33,11 @@ theorem main_result
       differentialValue g x = f x
 ```
 
-Proved in [lean/OAI/Analysis/BoundedHochschild/MainResult.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BoundedHochschild/MainResult.lean#L13).
+Stated in [KadisonRingrose.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KadisonRingrose.lean#L30). Proved in [lean/OAI/Analysis/BoundedHochschild/MainResult.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BoundedHochschild/MainResult.lean#L13).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

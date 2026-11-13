@@ -17,7 +17,7 @@ We give a negative answer to Wall's finite $D(2)$ problem. We construct a finite
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

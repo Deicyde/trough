@@ -24,8 +24,6 @@ The elementary-positivity part of the Shareshian–Wachs conjecture asks whether
 
 ## Lean: Elementary positivity for natural unit interval graphs
 
-Stated in [ElementaryPositivity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ElementaryPositivity.lean).
-
 ```lean
 theorem elementaryPositivityExpansion (n : ℕ)
     (G : ElementaryPositivity.NaturalUnitIntervalGraph n) (r : ℕ) :
@@ -36,7 +34,7 @@ theorem elementaryPositivityExpansion (n : ℕ)
             ((elementaryPositivityWitness n G).theta σ)
 ```
 
-Proved in [lean/OAI/Combinatorics/Chromatic/Main.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Chromatic/Main.lean#L35).
+Stated in [ElementaryPositivity.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ElementaryPositivity.lean#L63). Proved in [lean/OAI/Combinatorics/Chromatic/Main.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Chromatic/Main.lean#L35).
 
 ```lean
 def elementaryPositivityWitness (n : ℕ)
@@ -44,11 +42,11 @@ def elementaryPositivityWitness (n : ℕ)
     G.PermutationWitness
 ```
 
-Defined in [lean/OAI/Combinatorics/Chromatic/Main.lean, line 28](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Chromatic/Main.lean#L28).
+Stated in [ElementaryPositivity.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ElementaryPositivity.lean#L58). Defined in [lean/OAI/Combinatorics/Chromatic/Main.lean, line 28](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Chromatic/Main.lean#L28).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

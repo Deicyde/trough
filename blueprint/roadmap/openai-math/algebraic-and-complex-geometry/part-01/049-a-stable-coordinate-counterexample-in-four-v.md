@@ -34,8 +34,6 @@ A companion gives $n-1$ commuting, locally nilpotent derivations, linearly indep
 
 ## Lean: Noncoordinate polynomial in every dimension at least four
 
-Stated in [AbhyankarSathaye.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AbhyankarSathaye.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_noncoordinate_polynomial (n : ℕ) (hn : 4 ≤ n) :
     ∃ F : MvPolynomial (Fin n) ℂ,
@@ -45,11 +43,9 @@ theorem exists_noncoordinate_polynomial (n : ℕ) (hn : 4 ≤ n) :
         (index : Fin n), equiv (MvPolynomial.X index) = F
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean#L35).
+Stated in [AbhyankarSathaye.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AbhyankarSathaye.lean#L11). Proved in [lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean#L35). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Commuting locally nilpotent derivations
-
-Stated in [CommutingDerivations.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CommutingDerivations.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem commuting_derivations_with_ordinary_extras (n : ℕ) (hn : 4 ≤ n) :
@@ -67,21 +63,19 @@ theorem commuting_derivations_with_ordinary_extras (n : ℕ) (hn : 4 ≤ n) :
         pderiv (blocksToAmbient hn (Sum.inl i)))
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean#L25).
+Stated in [CommutingDerivations.lean, line 54](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CommutingDerivations.lean#L54). Proved in [lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean#L25). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Degree-five stable noncoordinate with nonrectifiable affine-space fibers
-
-Stated in [StableCoordinateFour.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StableCoordinateFour.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem principal_package : PrincipalPackage
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean#L31).
+Stated in [StableCoordinateFour.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StableCoordinateFour.lean#L49). Proved in [lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean#L31). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

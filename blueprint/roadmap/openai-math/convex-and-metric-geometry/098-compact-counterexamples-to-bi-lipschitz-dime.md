@@ -24,19 +24,15 @@ The formalized result gives a doubling subset of real $\ell_2$, with doubling co
 
 ## Lean: Doubling Hilbert subset without finite-dimensional embedding
 
-Stated in [DoublingHilbert.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DoublingHilbert.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : ∃ S : Set RealL2,
     DoublingAtMost S 76800 ∧
       ∀ k : ℕ, 0 < k → ¬ AdmitsBiLipschitzEmbedding S k
 ```
 
-Proved in [lean/OAI/Geometry/DoublingHilbert/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/DoublingHilbert/Main.lean#L57).
+Stated in [DoublingHilbert.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DoublingHilbert.lean#L23). Proved in [lean/OAI/Geometry/DoublingHilbert/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/DoublingHilbert/Main.lean#L57). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Compact counterexamples in infinite-dimensional Banach spaces
-
-Stated in [CompactBanach.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CompactBanach.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main : ∃ Λ : ℕ, ∀ (B : Type u) [NormedAddCommGroup B] [NormedSpace ℝ B]
@@ -46,11 +42,11 @@ theorem main : ∃ Λ : ℕ, ∀ (B : Type u) [NormedAddCommGroup B] [NormedSpac
         [FiniteDimensional ℝ E], ¬ AdmitsBiLipschitzEmbedding K E
 ```
 
-Proved in [lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean#L20).
+Stated in [CompactBanach.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CompactBanach.lean#L25). Proved in [lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean#L20). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

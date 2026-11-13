@@ -23,7 +23,7 @@ We construct a Smith–Toda complex $V(4)$ at the prime 1009. It is an ordinary 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

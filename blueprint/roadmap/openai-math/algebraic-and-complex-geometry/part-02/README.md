@@ -14,7 +14,7 @@ navigation: transparent
 - [060. The Global Spherical Shell conjecture](060-the-global-spherical-shell-conjecture.md)
 - [062. Projective contact classification and the LeBrun–Salamon conjecture](062-projective-contact-classification-and-the-le.md)
 - [063. The generalized Mukai conjecture](063-the-generalized-mukai-conjecture.md)
-- [064. Topological triviality of \*μ\*-constant surface singularities](064-topological-triviality-of-constant-surface-s.md)
+- [064. Topological triviality of *μ*-constant surface singularities](064-topological-triviality-of-constant-surface-s.md)
 - [065. Virasoro constraints for complete intersections and projective-bundle towers](065-virasoro-constraints-for-complete-intersecti.md)
 - [066. Bounded klt complements for Fano contractions](066-bounded-klt-complements-for-fano-contraction.md)
 - [067. The Campana–Peternell conjecture in dimension six](067-the-campana-peternell-conjecture-in-dimensio.md)

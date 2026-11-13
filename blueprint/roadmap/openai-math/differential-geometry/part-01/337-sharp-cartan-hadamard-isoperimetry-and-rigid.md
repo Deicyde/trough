@@ -32,8 +32,6 @@ A second statement proves that this coefficient is optimal by giving, in Euclide
 
 ## Lean: Optimality of the Euclidean filling coefficient
 
-Stated in [FillingCoefficient.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FillingCoefficient.lean).
-
 ```lean
 theorem coefficient_optimal (n : ℕ) (hn : 2 ≤ n) :
     ∃ T : IntegralCurrent (Euc (n + 1)) n,
@@ -43,11 +41,9 @@ theorem coefficient_optimal (n : ℕ) (hn : 2 ≤ n) :
         fillingCoefficient n * (mass T.val) ^ fillingPower n ≤ mass S.val
 ```
 
-Proved in [lean/OAI/Geometry/IntegralFillings/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/IntegralFillings/Main.lean#L60).
+Stated in [FillingCoefficient.lean, line 120](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FillingCoefficient.lean#L120). Proved in [lean/OAI/Geometry/IntegralFillings/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/IntegralFillings/Main.lean#L60).
 
 ## Lean: Sharp integral fillings in proper $\mathrm{CAT}(0)$ spaces
-
-Stated in [SharpCAT0Filling.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SharpCAT0Filling.lean).
 
 ```lean
 theorem sharp_integral_filling
@@ -59,11 +55,11 @@ theorem sharp_integral_filling
       mass S.val ≤ fillingCoefficient n * (mass T.val) ^ fillingPower n
 ```
 
-Proved in [lean/OAI/Geometry/CAT0Fillings/Main.lean, line 111](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CAT0Fillings/Main.lean#L111).
+Stated in [SharpCAT0Filling.lean, line 135](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SharpCAT0Filling.lean#L135). Proved in [lean/OAI/Geometry/CAT0Fillings/Main.lean, line 111](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CAT0Fillings/Main.lean#L111).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

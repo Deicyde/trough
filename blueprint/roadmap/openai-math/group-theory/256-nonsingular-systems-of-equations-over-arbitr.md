@@ -30,18 +30,16 @@ Kervaire's conjecture states that the free product of a nontrivial group with an
 
 ## Lean: Coefficient-group injectivity for unimodular one-relator quotients
 
-Stated in [Kervaire.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Kervaire.lean).
-
 ```lean
 theorem coefficient_injective (A : Type u) [Group A] (w : WordGroup A)
     (hw : Unimodular w) : Function.Injective (coefficientMap w)
 ```
 
-Proved in [lean/OAI/GroupTheory/Kervaire/Main.lean, line 86](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/Kervaire/Main.lean#L86).
+Stated in [Kervaire.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Kervaire.lean#L31). Proved in [lean/OAI/GroupTheory/Kervaire/Main.lean, line 86](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/Kervaire/Main.lean#L86).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -35,7 +35,7 @@ We resolve the numerical-dimension-one case of the minimal-model conjecture for 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

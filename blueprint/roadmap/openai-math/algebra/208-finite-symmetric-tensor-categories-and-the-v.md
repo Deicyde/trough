@@ -17,7 +17,7 @@ We prove the finite case of the Benson–Etingof–Ostrik conjecture: every fini
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

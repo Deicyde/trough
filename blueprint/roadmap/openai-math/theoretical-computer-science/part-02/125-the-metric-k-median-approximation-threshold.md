@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# 125. The metric \*k\*-median approximation threshold and recovery
+# 125. The metric *k*-median approximation threshold and recovery
 
 2 manuscripts and 4 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
@@ -36,17 +36,13 @@ Assuming $P\ne NP$, it also proves that the infimum of all polynomial-time appro
 
 ## Lean: Randomized metric $k$-median approximation below two
 
-Stated in [KMedianRecovery.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KMedianRecovery.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem global_application : globalApplicationClaim
 ```
 
-Proved in [lean/OAI/Combinatorics/KMedianRecovery/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedianRecovery/Main.lean#L21).
+Stated in [KMedianRecovery.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KMedianRecovery.lean#L102). Proved in [lean/OAI/Combinatorics/KMedianRecovery/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedianRecovery/Main.lean#L21). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Exact-budget recovery from accurate distinct cluster proxies
-
-Stated in [KMedianRefinedRecovery.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KMedianRefinedRecovery.lean).
 
 ```lean
 theorem refined_recovery :
@@ -61,22 +57,18 @@ theorem refined_recovery :
               ((1 + 2 / Real.exp 1 + ε) * (I.metric.cost C.centers : ℝ)))
 ```
 
-Proved in [lean/OAI/Combinatorics/KMedianRecovery/Refined/Recovery.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedianRecovery/Refined/Recovery.lean#L11).
+Stated in [KMedianRefinedRecovery.lean, line 153](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KMedianRefinedRecovery.lean#L153). Proved in [lean/OAI/Combinatorics/KMedianRecovery/Refined/Recovery.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedianRecovery/Refined/Recovery.lean#L11).
 
 ## Lean: Exact approximation threshold under $P\ne NP$
-
-Stated in [KMedianThreshold.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KMedianThreshold.lean).
 
 ```lean
 theorem threshold (h : Complexity.PNeNP) :
     sInf approximationFactors=1+2/Real.exp 1
 ```
 
-Proved in [lean/OAI/Combinatorics/KMedian/Threshold.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedian/Threshold.lean#L25).
+Stated in [KMedianThreshold.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KMedianThreshold.lean#L102). Proved in [lean/OAI/Combinatorics/KMedian/Threshold.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedian/Threshold.lean#L25).
 
 ## Lean: Deterministic metric $k$-median approximation at the threshold
-
-Stated in [MetricKMedian.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MetricKMedian.lean).
 
 ```lean
 theorem main_finite_work : ∀ ε : ℝ, 0 < ε →
@@ -84,11 +76,11 @@ theorem main_finite_work : ∀ ε : ℝ, 0 < ε →
       (∀ k : P.tm.K, Finite (P.tm.Γ k)) ∧ ∀ I, Correct ε I (algorithm I)
 ```
 
-Proved in [lean/OAI/Combinatorics/KMedian/Main.lean, line 54](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedian/Main.lean#L54).
+Stated in [MetricKMedian.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MetricKMedian.lean#L59). Proved in [lean/OAI/Combinatorics/KMedian/Main.lean, line 54](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KMedian/Main.lean#L54).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

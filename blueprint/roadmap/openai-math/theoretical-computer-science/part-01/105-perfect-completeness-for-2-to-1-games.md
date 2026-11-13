@@ -24,18 +24,16 @@ The formalized result establishes perfect-completeness hardness for 2-to-1 games
 
 ## Lean: Perfect-completeness reduction for 2-to-1 games
 
-Stated in [PerfectCompleteness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PerfectCompleteness.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_reduction (δ : ℚ) (positive : 0 < δ) (less_than_one : δ < 1) :
     Nonempty (PerfectCompleteness.BinaryGapReduction δ)
 ```
 
-Proved in [lean/OAI/Computability/PerfectCompleteness/Theorem11.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/PerfectCompleteness/Theorem11.lean#L21).
+Stated in [PerfectCompleteness.lean, line 179](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PerfectCompleteness.lean#L179). Proved in [lean/OAI/Computability/PerfectCompleteness/Theorem11.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/PerfectCompleteness/Theorem11.lean#L21). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

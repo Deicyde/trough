@@ -110,48 +110,40 @@ This establishes the bridge-mass estimate in the companion's finite boundary and
 
 ## Lean: Finiteness of critical bridge mass and first length moments
 
-Stated in [HoneycombBridgeFiniteness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HoneycombBridgeFiniteness.lean).
-
 ```lean
 theorem finite_bridge_sums : FiniteBridgeSums
 ```
 
-Proved in [lean/OAI/Combinatorics/HoneycombCorridor/BridgeFiniteness.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HoneycombCorridor/BridgeFiniteness.lean#L91).
+Stated in [HoneycombBridgeFiniteness.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HoneycombBridgeFiniteness.lean#L60). Proved in [lean/OAI/Combinatorics/HoneycombCorridor/BridgeFiniteness.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HoneycombCorridor/BridgeFiniteness.lean#L91).
 
 ## Lean: Existence of the honeycomb free-energy limit
-
-Stated in [HoneycombFreeEnergy.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HoneycombFreeEnergy.lean).
 
 ```lean
 theorem logPartition_tendsto (o : Vertex) (e : ℂ) (s : ℝ) :
     Tendsto (logPartition o e s) atTop (𝓝 (freeEnergy o e s))
 ```
 
-Proved in [lean/OAI/Probability/Honeycomb/FreeEnergy.lean, line 716](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Honeycomb/FreeEnergy.lean#L716).
+Stated in [HoneycombFreeEnergy.lean, line 64](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HoneycombFreeEnergy.lean#L64). Proved in [lean/OAI/Probability/Honeycomb/FreeEnergy.lean, line 716](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Honeycomb/FreeEnergy.lean#L716).
 
 ## Lean: Critical honeycomb strip mass and displacement moment
-
-Stated in [CriticalStripMass.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalStripMass.lean).
 
 ```lean
 theorem critical_strip_mass : CriticalStripMass
 ```
 
-Proved in [lean/OAI/Combinatorics/StripMass/PhysicalPorts.lean, line 552](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/StripMass/PhysicalPorts.lean#L552).
+Stated in [CriticalStripMass.lean, line 76](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CriticalStripMass.lean#L76). Proved in [lean/OAI/Combinatorics/StripMass/PhysicalPorts.lean, line 552](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/StripMass/PhysicalPorts.lean#L552).
 
 ## Lean: Strict honeycomb bridge mass of order $(1+h)^{-1/4}$
-
-Stated in [HoneycombBridgeMassSupport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HoneycombBridgeMassSupport.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem finiteBridgeMassEstimate : FiniteBridgeMassEstimate
 ```
 
-Proved in [lean/OAI/Combinatorics/HoneycombChords/BridgeMass.lean, line 114](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HoneycombChords/BridgeMass.lean#L114).
+Stated in [HoneycombBridgeMassSupport.lean, line 72](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HoneycombBridgeMassSupport.lean#L72). Proved in [lean/OAI/Combinatorics/HoneycombChords/BridgeMass.lean, line 114](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HoneycombChords/BridgeMass.lean#L114). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

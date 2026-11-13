@@ -24,18 +24,16 @@ The formalization proves the Mézard–Parisi hierarchical cavity formula for di
 
 ## Lean: Mézard–Parisi variational equality for diluted even-arity spin glasses
 
-Stated in [DilutedSpin.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DilutedSpin.lean).
-
 ```lean
 theorem mezard_parisi {p : ℕ} (M : Model p) (hM : Admissible M) :
     Tendsto (pressure M) atTop (𝓝 (variationalValue M))
 ```
 
-Proved in [lean/OAI/Probability/DilutedSpin/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/DilutedSpin/Main.lean#L12).
+Stated in [DilutedSpin.lean, line 148](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DilutedSpin.lean#L148). Proved in [lean/OAI/Probability/DilutedSpin/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/DilutedSpin/Main.lean#L12).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -17,7 +17,7 @@ We prove the modularity conjecture for elliptic curves over imaginary quadratic 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -26,8 +26,6 @@ For exact algebras, proper infiniteness of one fixed finite amplification of eve
 
 ## Lean: Fixed-amplification pure infiniteness for exact algebras
 
-Stated in [ExactInfiniteness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ExactInfiniteness.lean).
-
 ```lean
 theorem exact_weaklyPurelyInfinite_individuallyProperlyInfinite_any
     {A : Type u} [NonUnitalCStarAlgebra A] [PartialOrder A] [StarOrderedRing A]
@@ -35,7 +33,7 @@ theorem exact_weaklyPurelyInfinite_individuallyProperlyInfinite_any
     ProperlyInfinite (diagonalCopies 1 a)
 ```
 
-Proved in [lean/OAI/Analysis/WeakInfiniteness/UniverseIndividualInfiniteness.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/WeakInfiniteness/UniverseIndividualInfiniteness.lean#L57).
+Stated in [ExactInfiniteness.lean, line 164](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ExactInfiniteness.lean#L164). Proved in [lean/OAI/Analysis/WeakInfiniteness/UniverseIndividualInfiniteness.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/WeakInfiniteness/UniverseIndividualInfiniteness.lean#L57).
 
 ```lean
 theorem exact_weaklyPurelyInfinite_stronglyPurelyInfinite
@@ -43,11 +41,9 @@ theorem exact_weaklyPurelyInfinite_stronglyPurelyInfinite
     (hExact : Exact A) (hWeak : WeaklyPurelyInfinite A) : StronglyPurelyInfinite A
 ```
 
-Proved in [lean/OAI/Analysis/WeakInfiniteness/ExactInfiniteness.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/WeakInfiniteness/ExactInfiniteness.lean#L23).
+Stated in [ExactInfiniteness.lean, line 170](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ExactInfiniteness.lean#L170). Proved in [lean/OAI/Analysis/WeakInfiniteness/ExactInfiniteness.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/WeakInfiniteness/ExactInfiniteness.lean#L23).
 
 ## Lean: Individual proper infiniteness implies strong pure infiniteness
-
-Stated in [IndividualStrongInfiniteness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndividualStrongInfiniteness.lean).
 
 ```lean
 theorem individual_to_strong_main (hP : PropertyP A) :
@@ -59,11 +55,11 @@ theorem individual_to_strong_main (hP : PropertyP A) :
     MainGap.StronglyPurelyInfinite A
 ```
 
-Proved in [lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean#L43).
+Stated in [IndividualStrongInfiniteness.lean, line 319](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndividualStrongInfiniteness.lean#L319). Proved in [lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean#L43).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

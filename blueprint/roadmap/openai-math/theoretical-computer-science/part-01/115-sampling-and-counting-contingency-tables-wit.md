@@ -8,7 +8,7 @@ proof: formalized
 
 # 115. Sampling and counting contingency tables with arbitrary margins
 
-2 manuscripts and 6 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
+2 manuscripts and 3 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
 For nonnegative integer matrices with prescribed row and column sums, gives exact uniform sampling in expected polynomial bit time and almost-uniform sampling in worst-case polynomial bit time. The dimensions and binary-encoded margins are unrestricted. Also gives a fully polynomial randomized approximation scheme for counting such tables with arbitrary individual cell bounds, including structural zeros, with polynomial cost on every execution.
 
@@ -36,51 +36,35 @@ The running time is polynomial in the encoded input size, $\varepsilon^{-1}$, an
 
 ## Lean: Exact and bounded-time sampling of contingency tables
 
-Stated in [ContingencyTables.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean).
-
 ```lean
 theorem boundedSampling : Algorithms.BoundedSamplingStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L19).
+Stated in [ContingencyTables.lean, line 211](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean#L211). Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L19).
 
 ```lean
 theorem exactSampling : Algorithms.ExactSamplingStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L24).
+Stated in [ContingencyTables.lean, line 214](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean#L214). Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L24).
 
 ```lean
 theorem counting : Algorithms.CountingStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L29).
+Stated in [ContingencyTables.lean, line 217](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean#L217). Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L29).
 
 ## Lean: Randomized approximate counting of cell-bounded contingency tables
 
-Stated in [ContingencyTables.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean).
+States the `OAI.ContingencyTables.boundedSampling` quoted above. Stated in [ContingencyTables.lean, line 211](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean#L211).
 
-```lean
-theorem boundedSampling : Algorithms.BoundedSamplingStatement
-```
+States the `OAI.ContingencyTables.exactSampling` quoted above. Stated in [ContingencyTables.lean, line 214](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean#L214).
 
-Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L19).
-
-```lean
-theorem exactSampling : Algorithms.ExactSamplingStatement
-```
-
-Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L24).
-
-```lean
-theorem counting : Algorithms.CountingStatement
-```
-
-Proved in [lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean#L29).
+States the `OAI.ContingencyTables.counting` quoted above. Stated in [ContingencyTables.lean, line 217](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ContingencyTables.lean#L217).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

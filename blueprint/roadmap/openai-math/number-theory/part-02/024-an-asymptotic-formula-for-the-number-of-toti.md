@@ -26,8 +26,6 @@ The formalization also gives asymptotics for totients $v\le x$ whose least preim
 
 ## Lean: Totient-count asymptotics and regular variation
 
-Stated in [TotientAsymptotic.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TotientAsymptotic.lean).
-
 ```lean
 theorem totient_asymptotic_formula
     :
@@ -39,7 +37,7 @@ theorem totient_asymptotic_formula
     ∀ c : ℝ, 0 < c → Tendsto (fun x => V (c*x)/V x) atTop (nhds c)
 ```
 
-Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L12).
+Stated in [TotientAsymptotic.lean, line 118](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TotientAsymptotic.lean#L118). Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L12).
 
 ```lean
 theorem weighted_totient_asymptotic
@@ -55,7 +53,7 @@ theorem weighted_totient_asymptotic
       (∀ x : ℝ, 0<x → N k x=0) ∧ (∀ s∈Set.Ico (0 : ℝ) 1, A (fk k) s=0))
 ```
 
-Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L23).
+Stated in [TotientAsymptotic.lean, line 128](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TotientAsymptotic.lean#L128). Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L23).
 
 ```lean
 theorem weighted_totient_one_two
@@ -64,18 +62,16 @@ theorem weighted_totient_one_two
       ∀ s∈Set.Ico (0 : ℝ) 1, c≤A (fk k) s
 ```
 
-Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L37).
+Stated in [TotientAsymptotic.lean, line 141](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TotientAsymptotic.lean#L141). Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L37).
 
 ```lean
 theorem coefficient_nonnegative (H : ℕ) {s : ℝ}
     (hs : s ∈ Set.Ico (0 : ℝ) 1) : 0 ≤ AH H (fun _ => 1) s
 ```
 
-Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L44).
+Stated in [TotientAsymptotic.lean, line 147](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TotientAsymptotic.lean#L147). Proved in [lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean#L44).
 
 ## Lean: Exact zero case for the companion totient counts
-
-Stated in [TotientCompanionZero.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TotientCompanionZero.lean).
 
 ```lean
 theorem companion_zero_case (k : ℕ) (_hk : 0 < k)
@@ -84,11 +80,11 @@ theorem companion_zero_case (k : ℕ) (_hk : 0 < k)
     (∀ s ∈ Set.Ico (0 : ℝ) 1, A (fk k) s = 0)
 ```
 
-Proved in [lean/OAI/NumberTheory/TotientAsymptotic/Companion.lean, line 87](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/Companion.lean#L87).
+Stated in [TotientCompanionZero.lean, line 95](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TotientCompanionZero.lean#L95). Proved in [lean/OAI/NumberTheory/TotientAsymptotic/Companion.lean, line 87](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TotientAsymptotic/Companion.lean#L87).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

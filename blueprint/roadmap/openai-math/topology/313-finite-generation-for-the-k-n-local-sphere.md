@@ -17,7 +17,7 @@ We prove that the homotopy groups of the $K(n)$-local sphere are finitely genera
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

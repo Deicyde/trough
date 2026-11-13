@@ -32,27 +32,23 @@ For Boolean functions this includes the Courtade–Kumar inequality $I(f(X);Y)\l
 
 ## Lean: Courtade–Kumar inequality and attainment
 
-Stated in [CourtadeKumar.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CourtadeKumar.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem courtadeKumarAndAttainment : FullStatement
 ```
 
-Proved in [lean/OAI/InformationTheory/BooleanNoise/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/BooleanNoise/Main.lean#L60).
+Stated in [CourtadeKumar.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CourtadeKumar.lean#L69). Proved in [lean/OAI/InformationTheory/BooleanNoise/Main.lean, line 60](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/BooleanNoise/Main.lean#L60). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Sharp binary-channel contraction and entropy production
-
-Stated in [SoftChannel204.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SoftChannel204.lean).
 
 ```lean
 theorem fullMain : FullMain
 ```
 
-Proved in [lean/OAI/InformationTheory/SoftChannel/Main.lean, line 113](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/SoftChannel/Main.lean#L113).
+Stated in [SoftChannel204.lean, line 114](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SoftChannel204.lean#L114). Proved in [lean/OAI/InformationTheory/SoftChannel/Main.lean, line 113](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/SoftChannel/Main.lean#L113).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

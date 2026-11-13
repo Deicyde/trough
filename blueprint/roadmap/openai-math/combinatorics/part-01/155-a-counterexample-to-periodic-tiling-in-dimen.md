@@ -24,8 +24,6 @@ The periodic-tiling question asks whether a finite tile that tiles a lattice mus
 
 ## Lean: Aperiodic translational tile in dimension three
 
-Stated in [PeriodicTilingThree.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PeriodicTilingThree.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem periodic_tiling_counterexample_and_minimality :
     (∃ T : Finset (Lattice 3), T.Nonempty ∧
@@ -37,11 +35,11 @@ theorem periodic_tiling_counterexample_and_minimality :
     IsLeast {d : ℕ | HasTileWithoutPeriodicComplement d} 3
 ```
 
-Proved in [lean/OAI/Geometry/PeriodicTiling/Counterexample.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PeriodicTiling/Counterexample.lean#L23).
+Stated in [PeriodicTilingThree.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PeriodicTilingThree.lean#L52). Proved in [lean/OAI/Geometry/PeriodicTiling/Counterexample.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PeriodicTiling/Counterexample.lean#L23). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -23,7 +23,7 @@ We prove that the relative $\mathop{\mathrm{SU}}\nolimits (2)$ BFSS Hamiltonian 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -30,17 +30,15 @@ The formalized result gives a fully polynomial randomized approximation scheme f
 
 ## Lean: FPRAS for common matroid bases
 
-Stated in [CommonBasesFPRAS.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CommonBasesFPRAS.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem common_bases_fpras : CommonBasesFPRAS.MainTheorem
 ```
 
-Proved in [lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean, line 26093](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean#L26093).
+Stated in [CommonBasesFPRAS.lean, line 128](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CommonBasesFPRAS.lean#L128). Proved in [lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean, line 26093](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean#L26093). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

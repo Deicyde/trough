@@ -32,19 +32,17 @@ This selected statement identifies the spectral set. It does not assert the pure
 
 ## Lean: Almost-sure spectrum of the planar Anderson operator
 
-Stated in [PlanarAndersonSpectrum.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarAndersonSpectrum.lean).
-
 ```lean
 theorem anderson_spectrum_ae {h : ℝ} (hh : 0 < h) :
     ∀ᵐ v ∂disorderLaw h, ∃ H : Hilbert →L[ℂ] Hilbert,
       IsAndersonOperator v H ∧ IsSelfAdjoint H ∧ spectrum ℂ H = spectralInterval h
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/PlanarAnderson/Spectrum.lean, line 674](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/PlanarAnderson/Spectrum.lean#L674).
+Stated in [PlanarAndersonSpectrum.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarAndersonSpectrum.lean#L26). Proved in [lean/OAI/MathematicalPhysics/PlanarAnderson/Spectrum.lean, line 674](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/PlanarAnderson/Spectrum.lean#L674).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

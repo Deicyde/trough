@@ -1,6 +1,8 @@
 ---
 declaration: section
 origin: cited
+lean: OAI.HardSphere.condensation_with_mixed
+statement: formalized
 ---
 
 # 267. Positive-temperature Bose–Einstein condensation and exact quantum depletion
@@ -47,8 +49,6 @@ The bound covers every pure ground state, every mixed state supported on the gro
 
 ## Lean: Uniform ground-state condensation in the dilute hard-sphere gas
 
-Stated in [HardSphere.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HardSphere.lean).
-
 ```lean
 theorem condensation_with_mixed :
     ∃ε₀ c₀ : ℝ,0<ε₀ ∧ 0<c₀ ∧
@@ -64,11 +64,11 @@ theorem condensation_with_mixed :
         c₀≤liminf (fun k ↦ mixedOccupation (hN k) (T k)) atTop)
 ```
 
-Its proof is in [lean/OAI/Analysis/HardSphere/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HardSphere/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [HardSphere.lean, line 372](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HardSphere.lean#L372). Its proof is in [lean/OAI/Analysis/HardSphere/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HardSphere/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

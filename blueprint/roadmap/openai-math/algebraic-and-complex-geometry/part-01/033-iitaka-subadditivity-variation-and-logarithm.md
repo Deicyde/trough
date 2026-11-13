@@ -50,8 +50,6 @@ The finite-dimension and negative-base branches of the paper's additivity theore
 
 ## Lean: Logarithmic Kodaira additivity in the negative-fiber branch
 
-Stated in [LogKodairaFiberNegative.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogKodairaFiberNegative.lean).
-
 ```lean
 theorem veryGenerally_fiber_negative_branch
     {X Y : SmoothProjectiveVariety} {E : X.ReducedSNCBoundary} {D : Y.ReducedSNCBoundary}
@@ -62,11 +60,11 @@ theorem veryGenerally_fiber_negative_branch
         ∀ (m : ℕ), 0 < m → ∀ s : X.RationalPluriform m, s ∈ E.sections m → s = 0
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean#L53).
+Stated in [LogKodairaFiberNegative.lean, line 233](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogKodairaFiberNegative.lean#L233). Proved in [lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean#L53).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

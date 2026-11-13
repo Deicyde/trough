@@ -17,7 +17,7 @@ We prove that, at each singular point of the first singular time of the mean-cur
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -96,7 +96,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+        "module": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+        "main": true
        }
       ]
      },
@@ -118,7 +119,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+        "module": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+        "main": true
        }
       ]
      },
@@ -140,7 +142,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean"
+        "module": "lean/OAI/NumberTheory/DirichletL/Hecke/Nonvanishing.lean",
+        "main": true
        }
       ]
      },
@@ -162,7 +165,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/SiegelZeros/Main.lean"
+        "module": "lean/OAI/NumberTheory/SiegelZeros/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.SiegelZeros.WeightedTorusJets.dirichletRealZeroBound_proof",
@@ -176,7 +180,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/SiegelZeros/Main.lean"
+        "module": "lean/OAI/NumberTheory/SiegelZeros/Main.lean",
+        "main": false
        }
       ]
      }
@@ -238,7 +243,8 @@
         "line": 7,
         "statement": "theorem catalan_irrational :\n    Irrational (∑' j : ℕ, (-1 : ℝ) ^ j / ((2 * j + 1 : ℕ) : ℝ) ^ 2)",
         "proof": null,
-        "module": "lean/OAI/NumberTheory/Catalan/Main.lean"
+        "module": "lean/OAI/NumberTheory/Catalan/Main.lean",
+        "main": false
        }
       ]
      }
@@ -305,7 +311,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/Main.lean"
+        "module": "lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/Main.lean",
+        "main": false
        }
       ]
      },
@@ -327,7 +334,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.OrdinaryTwoPointCorrelations.binary_corrected_elliott",
@@ -341,7 +349,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.OrdinaryTwoPointCorrelations.affine_corrected_elliott",
@@ -355,7 +364,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean"
+        "module": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+        "main": false
        }
       ]
      }
@@ -401,7 +411,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/Drinfeld/Completion.lean"
+        "module": "lean/OAI/Algebra/Drinfeld/Completion.lean",
+        "main": true
        }
       ]
      }
@@ -459,7 +470,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/BogomolovPop/Injectivity.lean"
+        "module": "lean/OAI/Algebra/BogomolovPop/Injectivity.lean",
+        "main": false
        }
       ]
      }
@@ -559,7 +571,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean"
+        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean",
+        "main": false
        },
        {
         "name": "OAI.JointDickmanPaper.increasing_order",
@@ -573,7 +586,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean"
+        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean",
+        "main": false
        },
        {
         "name": "OAI.JointDickmanPaper.decreasing_order",
@@ -587,7 +601,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean"
+        "module": "lean/OAI/NumberTheory/JointDickman/PaperMain.lean",
+        "main": false
        }
       ]
      }
@@ -633,7 +648,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/Ostmann/Complete.lean"
+        "module": "lean/OAI/NumberTheory/Ostmann/Complete.lean",
+        "main": false
        },
        {
         "name": "OAI.Ostmann.twoInfiniteSummandsImpossible",
@@ -647,7 +663,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/Ostmann/Complete.lean"
+        "module": "lean/OAI/NumberTheory/Ostmann/Complete.lean",
+        "main": false
        }
       ]
      },
@@ -664,7 +681,8 @@
         "line": 9,
         "statement": "theorem main : ∀ A B : Set ℕ, A.Nontrivial → B.Nontrivial →\n    Set.Infinite ((A + B) ∆ {n : ℕ | Nat.Prime n})",
         "proof": null,
-        "module": "lean/OAI/NumberTheory/Ostmann/Main.lean"
+        "module": "lean/OAI/NumberTheory/Ostmann/Main.lean",
+        "main": false
        }
       ]
      }
@@ -779,7 +797,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean"
+        "module": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.DukePrimeDegree.prime_degree_packet_measures_tendsto_haar_unconditional",
@@ -793,7 +812,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean"
+        "module": "lean/OAI/NumberTheory/DukePrimeDegree/MainUnconditional.lean",
+        "main": false
        }
       ]
      }
@@ -872,7 +892,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/PiExponent/Main.lean"
+        "module": "lean/OAI/NumberTheory/PiExponent/Main.lean",
+        "main": false
        }
       ]
      }
@@ -960,7 +981,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/PowerFree/Main.lean"
+        "module": "lean/OAI/NumberTheory/PowerFree/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1006,7 +1028,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/Jacobsthal/Main.lean"
+        "module": "lean/OAI/NumberTheory/Jacobsthal/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1028,7 +1051,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/Jacobsthal/Main.lean"
+        "module": "lean/OAI/NumberTheory/Jacobsthal/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1089,7 +1113,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean"
+        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean",
+        "main": false
        },
        {
         "name": "OAI.CubicFirstMoment.patterson_angularComparison",
@@ -1103,7 +1128,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean"
+        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean",
+        "main": false
        },
        {
         "name": "OAI.CubicFirstMoment.patterson_angularCancellation",
@@ -1117,7 +1143,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean"
+        "module": "lean/OAI/NumberTheory/CubicMoment/Theta/CubicThetaMains.lean",
+        "main": false
        }
       ]
      }
@@ -1163,7 +1190,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.TotientAsymptotic.weighted_totient_asymptotic",
@@ -1177,7 +1205,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.TotientAsymptotic.weighted_totient_one_two",
@@ -1191,7 +1220,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+        "main": false
        },
        {
         "name": "OAI.TotientAsymptotic.coefficient_nonnegative",
@@ -1205,7 +1235,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean"
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/UnconditionalMain.lean",
+        "main": false
        }
       ]
      },
@@ -1227,7 +1258,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/TotientAsymptotic/Main.lean"
+        "module": "lean/OAI/NumberTheory/TotientAsymptotic/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1273,7 +1305,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem337.main_double_log_order",
@@ -1287,7 +1320,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.Problem337.one_expansions_finite_and_bounded",
@@ -1301,7 +1335,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem337.counting_double_log_order",
@@ -1315,7 +1350,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.Problem337.exact_marker_padding",
@@ -1329,7 +1365,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem337.every_exact_marker_occurs",
@@ -1343,7 +1380,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem337.quantitative_marked_length",
@@ -1357,7 +1395,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem337.missing_denominator_semantics",
@@ -1371,7 +1410,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem337.prescribed_denominator_corollary",
@@ -1385,7 +1425,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean"
+        "module": "lean/OAI/NumberTheory/EgyptianFractions/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1407,7 +1448,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/ShortEgyptian/Main.lean"
+        "module": "lean/OAI/NumberTheory/ShortEgyptian/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1453,7 +1495,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean"
+        "module": "lean/OAI/NumberTheory/PrimeGaps/RatioCorollary.lean",
+        "main": false
        }
       ]
      }
@@ -1499,7 +1542,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean"
+        "module": "lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean",
+        "main": true
        }
       ]
      }
@@ -1545,7 +1589,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/NumberTheory/GaussianMoat/Main.lean"
+        "module": "lean/OAI/NumberTheory/GaussianMoat/Main.lean",
+        "main": true
        }
       ]
      }

@@ -41,7 +41,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/VlasovMaxwell/Main.lean"
+        "module": "lean/OAI/Analysis/VlasovMaxwell/Main.lean",
+        "main": true
        }
       ]
      }
@@ -93,7 +94,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/Boltzmann/Main.lean"
+        "module": "lean/OAI/MathematicalPhysics/Boltzmann/Main.lean",
+        "main": false
        }
       ]
      }
@@ -172,7 +174,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Conductivity/Main.lean"
+        "module": "lean/OAI/Analysis/Conductivity/Main.lean",
+        "main": true
        }
       ]
      }
@@ -233,7 +236,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/BernoulliCone/Main.lean"
+        "module": "lean/OAI/Analysis/BernoulliCone/Main.lean",
+        "main": false
        }
       ]
      }
@@ -300,7 +304,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/HotSpots/Main.lean"
+        "module": "lean/OAI/Analysis/HotSpots/Main.lean",
+        "main": false
        }
       ]
      }
@@ -346,7 +351,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/HenonEmden/Main.lean"
+        "module": "lean/OAI/Analysis/HenonEmden/Main.lean",
+        "main": true
        }
       ]
      }
@@ -392,7 +398,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean"
+        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+        "main": false
        },
        {
         "name": "OAI.DefocusingNLS.gaussian_blowup",
@@ -406,7 +413,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean"
+        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+        "main": false
        },
        {
         "name": "OAI.DefocusingNLS.gaussian_not_almost_sure_global",
@@ -420,7 +428,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean"
+        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+        "main": false
        }
       ]
      }
@@ -466,7 +475,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean"
+        "module": "lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean",
+        "main": false
        }
       ]
      }
@@ -512,7 +522,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/CoulombTransport/Main.lean"
+        "module": "lean/OAI/Analysis/CoulombTransport/Main.lean",
+        "main": false
        }
       ]
      }
@@ -558,7 +569,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Brenier/Stability.lean"
+        "module": "lean/OAI/Analysis/Brenier/Stability.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem358.one_third_exponent_is_sharp",
@@ -572,7 +584,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Brenier/Stability.lean"
+        "module": "lean/OAI/Analysis/Brenier/Stability.lean",
+        "main": false
        }
       ]
      }
@@ -684,7 +697,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean"
+        "module": "lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean",
+        "main": false
        }
       ]
      },
@@ -706,7 +720,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/AlternatingFlow/Development.lean"
+        "module": "lean/OAI/MathematicalPhysics/AlternatingFlow/Development.lean",
+        "main": false
        }
       ]
      },
@@ -728,7 +743,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/Main.lean"
+        "module": "lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/Main.lean",
+        "main": false
        }
       ]
      },
@@ -750,7 +766,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/BoxTransport/Routing.lean"
+        "module": "lean/OAI/Analysis/BoxTransport/Routing.lean",
+        "main": false
        }
       ]
      },
@@ -772,7 +789,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean"
+        "module": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean",
+        "main": false
        }
       ]
      },
@@ -794,7 +812,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean"
+        "module": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean",
+        "main": false
        }
       ]
      }

@@ -24,17 +24,15 @@ The formalized result constructs a finite connected aspherical complex with a li
 
 ## Lean: Hyperbolic group with no geometric CAT(0) action
 
-Stated in [HyperbolicObstruction.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperbolicObstruction.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainStatement.{u}
 ```
 
-Proved in [lean/OAI/Geometry/HyperbolicGroups/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HyperbolicGroups/Main.lean#L15).
+Stated in [HyperbolicObstruction.lean, line 154](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperbolicObstruction.lean#L154). Proved in [lean/OAI/Geometry/HyperbolicGroups/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/HyperbolicGroups/Main.lean#L15). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

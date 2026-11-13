@@ -32,33 +32,29 @@ A separate uniform formalization gives fixed deterministic programs for every po
 
 ## Lean: Subsequential savings for exact Fourier circuits
 
-Stated in [ExactFourier.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ExactFourier.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem : MainStatement
 ```
 
-Proved in [lean/OAI/Computability/FourierCircuit/Main.lean, line 277](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/FourierCircuit/Main.lean#L277).
+Stated in [ExactFourier.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ExactFourier.lean#L57). Proved in [lean/OAI/Computability/FourierCircuit/Main.lean, line 277](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/FourierCircuit/Main.lean#L277). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Uniform exact DFT and convolution with a power saving
-
-Stated in [UniformFourier.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformFourier.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem transform_main : DFTGoal
 ```
 
-Proved in [lean/OAI/Computability/FourierTransform/Main.lean, line 137](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/FourierTransform/Main.lean#L137).
+Stated in [UniformFourier.lean, line 326](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformFourier.lean#L326). Proved in [lean/OAI/Computability/FourierTransform/Main.lean, line 137](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/FourierTransform/Main.lean#L137). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem convolution_main : ConvGoal
 ```
 
-Proved in [lean/OAI/Computability/FourierTransform/Main.lean, line 141](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/FourierTransform/Main.lean#L141).
+Stated in [UniformFourier.lean, line 330](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformFourier.lean#L330). Proved in [lean/OAI/Computability/FourierTransform/Main.lean, line 141](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/FourierTransform/Main.lean#L141). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

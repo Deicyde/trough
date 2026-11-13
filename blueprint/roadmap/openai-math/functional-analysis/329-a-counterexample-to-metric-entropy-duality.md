@@ -24,8 +24,6 @@ Metric-entropy duality predicts a universal comparison between covering numbers 
 
 ## Lean: Counterexample to metric-entropy duality
 
-Stated in [MetricEntropyDuality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MetricEntropyDuality.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_entropy_duality_counterexample_with_covers
     (a b : ℝ) (ha : 1 ≤ a) (hb : 1 ≤ b) :
@@ -37,11 +35,11 @@ theorem exists_entropy_duality_counterexample_with_covers
         Real.log (coveringNumber K (cube (Fin n)) : ℝ)
 ```
 
-Proved in [lean/OAI/Analysis/MetricEntropy/Main.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MetricEntropy/Main.lean#L48).
+Stated in [MetricEntropyDuality.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MetricEntropyDuality.lean#L45). Proved in [lean/OAI/Analysis/MetricEntropy/Main.lean, line 48](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MetricEntropy/Main.lean#L48). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

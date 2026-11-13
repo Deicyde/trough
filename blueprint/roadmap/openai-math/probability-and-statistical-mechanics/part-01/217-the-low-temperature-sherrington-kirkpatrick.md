@@ -23,7 +23,7 @@ For the zero-field Gaussian Sherrington–Kirkpatrick model at every fixed inver
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -30,17 +30,15 @@ The finitely presented Burnside question asks whether a finitely presented group
 
 ## Lean: Infinite finitely presented periodic group
 
-Stated in [PeriodicGroup.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PeriodicGroup.lean).
-
 ```lean
 theorem thm_main : MainStatement ∧ BurnsideStatement
 ```
 
-Proved in [lean/OAI/GroupTheory/PeriodicGroups/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PeriodicGroups/Main.lean#L18).
+Stated in [PeriodicGroup.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PeriodicGroup.lean#L51). Proved in [lean/OAI/GroupTheory/PeriodicGroups/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PeriodicGroups/Main.lean#L18).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

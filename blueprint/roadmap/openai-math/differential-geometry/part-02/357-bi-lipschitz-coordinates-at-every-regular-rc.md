@@ -17,7 +17,7 @@ We resolve the regular-point bi-Lipschitz conjecture in the noncollapsed setting
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

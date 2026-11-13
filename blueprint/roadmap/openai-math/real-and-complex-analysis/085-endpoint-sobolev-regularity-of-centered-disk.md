@@ -26,27 +26,23 @@ The earlier signed finite-band estimate for smooth compactly supported functions
 
 ## Lean: Signed finite-band disk-maximal gradient bound
 
-Stated in [SignedFiniteBand.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SignedFiniteBand.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_signed_finite_band : SignedFiniteBandStatement
 ```
 
-Proved in [lean/OAI/Analysis/SignedDisk/Main.lean, line 296](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SignedDisk/Main.lean#L296).
+Stated in [SignedFiniteBand.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SignedFiniteBand.lean#L45). Proved in [lean/OAI/Analysis/SignedDisk/Main.lean, line 296](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SignedDisk/Main.lean#L296). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Endpoint gradient bound for the centered disk maximal operator
-
-Stated in [DiskMaximal.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DiskMaximal.lean).
 
 ```lean
 theorem main_endpoint : EndpointStatement
 ```
 
-Proved in [lean/OAI/Analysis/DiskMaximal/Main.lean, line 144](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DiskMaximal/Main.lean#L144).
+Stated in [DiskMaximal.lean, line 56](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DiskMaximal.lean#L56). Proved in [lean/OAI/Analysis/DiskMaximal/Main.lean, line 144](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DiskMaximal/Main.lean#L144).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

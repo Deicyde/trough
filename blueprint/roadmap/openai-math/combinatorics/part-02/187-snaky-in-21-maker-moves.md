@@ -26,8 +26,6 @@ The linked supplements reconstruct the older $35$-move appendix's finite recursi
 
 ## Lean: Reconstruction of the 35-move Snaky certificate
 
-Stated in [SnakyCertificate.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SnakyCertificate.lean).
-
 ```lean
 theorem certificate_correct :
     TableValid ∧ placementCount = 1837 ∧
@@ -38,11 +36,9 @@ theorem certificate_correct :
     AllRows
 ```
 
-Proved in [lean/OAI/Combinatorics/SnakyCertificate/Main.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SnakyCertificate/Main.lean#L50).
+Stated in [SnakyCertificate.lean, line 1387](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SnakyCertificate.lean#L1387). Proved in [lean/OAI/Combinatorics/SnakyCertificate/Main.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SnakyCertificate/Main.lean#L50).
 
 ## Lean: Conditional winning templates from finite partial positions
-
-Stated in [SnakyConditional.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SnakyConditional.lean).
 
 ```lean
 theorem snaky_winning_strategy_with_legal_states :
@@ -57,11 +53,9 @@ theorem snaky_winning_strategy_with_legal_states :
           (playState σ 35 β ∅ ∅ k).2.card = k
 ```
 
-Proved in [lean/OAI/GameTheory/SnakyConditional/OriginalResult.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GameTheory/SnakyConditional/OriginalResult.lean#L16).
+Stated in [SnakyConditional.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SnakyConditional.lean#L44). Proved in [lean/OAI/GameTheory/SnakyConditional/OriginalResult.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GameTheory/SnakyConditional/OriginalResult.lean#L16).
 
 ## Lean: Legal Snaky winning strategy within 21 Maker moves
-
-Stated in [SnakyTwentyOne.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SnakyTwentyOne.lean).
 
 ```lean
 theorem snaky_winning_strategy_21_with_legal_states :
@@ -76,11 +70,11 @@ theorem snaky_winning_strategy_21_with_legal_states :
           (playState σ 21 β ∅ ∅ k).2.card = k
 ```
 
-Proved in [lean/OAI/GameTheory/SnakyTwentyOne/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GameTheory/SnakyTwentyOne/Main.lean#L18).
+Stated in [SnakyTwentyOne.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SnakyTwentyOne.lean#L45). Proved in [lean/OAI/GameTheory/SnakyTwentyOne/Main.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GameTheory/SnakyTwentyOne/Main.lean#L18).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

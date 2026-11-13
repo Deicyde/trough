@@ -77,7 +77,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/FKMaps/Convergence.lean"
+        "module": "lean/OAI/Probability/FKMaps/Convergence.lean",
+        "main": false
        }
       ]
      }
@@ -129,7 +130,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/FirstPassage/BoundaryCurve.lean"
+        "module": "lean/OAI/Probability/FirstPassage/BoundaryCurve.lean",
+        "main": true
        }
       ]
      },
@@ -151,7 +153,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/GammaPassage/Differentiability.lean"
+        "module": "lean/OAI/Probability/GammaPassage/Differentiability.lean",
+        "main": false
        }
       ]
      }
@@ -204,7 +207,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/CriticalZ3/Main.lean"
+        "module": "lean/OAI/Probability/CriticalZ3/Main.lean",
+        "main": true
        }
       ]
      },
@@ -226,7 +230,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/CriticalPercolation/Main.lean"
+        "module": "lean/OAI/Probability/CriticalPercolation/Main.lean",
+        "main": false
        }
       ]
      }
@@ -272,7 +277,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/BenjaminiSchramm/Main.lean"
+        "module": "lean/OAI/Probability/BenjaminiSchramm/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Percolation.BenjaminiSchramm.cayley_main",
@@ -281,7 +287,8 @@
         "line": 229,
         "statement": "theorem cayley_main {Λ : Type u} [Group Λ]\n    (S : Finset Λ) (hsym : ∀ s ∈ S, s⁻¹ ∈ S) (_hone : 1 ∉ S)\n    (hgen : Subgroup.closure (S : Set Λ) = ⊤) (hna : ¬ FolnerAmenable Λ) :\n    OperatorBounded (cayleyBond S) (pc (cayleyBond S)) ∧\n      MainConclusion (cayleyBond S) ∧\n      ∀ p : unitInterval, pc (cayleyBond S) < p → p < pu (cayleyBond S) →\n        ∀ᵐ ω ∂law p, (infiniteClusters (cayleyBond S) ω).Infinite",
         "proof": null,
-        "module": "lean/OAI/Probability/BenjaminiSchramm/Main.lean"
+        "module": "lean/OAI/Probability/BenjaminiSchramm/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Percolation.BenjaminiSchramm.critical_laws",
@@ -295,7 +302,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/BenjaminiSchramm/Main.lean"
+        "module": "lean/OAI/Probability/BenjaminiSchramm/Main.lean",
+        "main": false
        }
       ]
      },
@@ -317,7 +325,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/UnimodularPercolation/CayleyMain.lean"
+        "module": "lean/OAI/Probability/UnimodularPercolation/CayleyMain.lean",
+        "main": false
        }
       ]
      }
@@ -387,7 +396,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ClassicalON/Main.lean"
+        "module": "lean/OAI/Probability/ClassicalON/Main.lean",
+        "main": true
        }
       ]
      }
@@ -529,7 +539,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/Ising/Main.lean"
+        "module": "lean/OAI/Probability/Ising/Main.lean",
+        "main": false
        }
       ]
      }
@@ -609,7 +620,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/DirectionalWalk/Main.lean"
+        "module": "lean/OAI/Probability/DirectionalWalk/Main.lean",
+        "main": false
        }
       ]
      },
@@ -631,7 +643,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/Ballisticity/Main.lean"
+        "module": "lean/OAI/Probability/Ballisticity/Main.lean",
+        "main": true
        }
       ]
      },
@@ -653,7 +666,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/Ballisticity/VelocityHemisphere.lean"
+        "module": "lean/OAI/Probability/Ballisticity/VelocityHemisphere.lean",
+        "main": false
        }
       ]
      }
@@ -699,7 +713,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/DilutedSpin/Main.lean"
+        "module": "lean/OAI/Probability/DilutedSpin/Main.lean",
+        "main": false
        }
       ]
      }
@@ -764,7 +779,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/IsingPerceptron/VariationalFiniteness.lean"
+        "module": "lean/OAI/Probability/IsingPerceptron/VariationalFiniteness.lean",
+        "main": false
        }
       ]
      },
@@ -786,7 +802,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/Perceptron/Main.lean"
+        "module": "lean/OAI/Probability/Perceptron/Main.lean",
+        "main": false
        }
       ]
      },
@@ -808,7 +825,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SphericalField/Main.lean"
+        "module": "lean/OAI/Probability/SphericalField/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1001,7 +1019,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SKGap/Main.lean"
+        "module": "lean/OAI/Probability/SKGap/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1023,7 +1042,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SKRatio/Main.lean"
+        "module": "lean/OAI/Probability/SKRatio/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1045,7 +1065,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/CriticalMixing/Main.lean"
+        "module": "lean/OAI/MathematicalPhysics/CriticalMixing/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1067,7 +1088,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/CriticalSK/Main.lean"
+        "module": "lean/OAI/MathematicalPhysics/CriticalSK/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.CriticalSK.covariance_and_linear_tests",
@@ -1081,7 +1103,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/CriticalSK/Main.lean"
+        "module": "lean/OAI/MathematicalPhysics/CriticalSK/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.CriticalSK.critical_mixing_lower_bounds",
@@ -1095,7 +1118,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/MathematicalPhysics/CriticalSK/Main.lean"
+        "module": "lean/OAI/MathematicalPhysics/CriticalSK/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1117,7 +1141,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SKBarriers/Main.lean"
+        "module": "lean/OAI/Probability/SKBarriers/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1170,7 +1195,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ContinuumTransition/Main.lean"
+        "module": "lean/OAI/Probability/ContinuumTransition/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1192,7 +1218,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/RadialTransition/Main.lean"
+        "module": "lean/OAI/Probability/RadialTransition/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1214,7 +1241,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/RadialTransition/DensityInterval.lean"
+        "module": "lean/OAI/Probability/RadialTransition/DensityInterval.lean",
+        "main": false
        }
       ]
      }
@@ -1267,7 +1295,8 @@
         "line": 98,
         "statement": "theorem regular_supercritical (b : ℕ) (hb : 2 ≤ b) (lam : ℝ) (h : Admissible lam)\n    (hcrit : 1 < (b : ℝ) * lam ^ 2) : Reconstructs (regularAdvantage b lam h)",
         "proof": null,
-        "module": "lean/OAI/Probability/ThreeState/Main.lean"
+        "module": "lean/OAI/Probability/ThreeState/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.ThreeState.poisson_supercritical",
@@ -1276,7 +1305,8 @@
         "line": 102,
         "statement": "theorem poisson_supercritical (d : ℝ) (hd : 1 < d) (lam : ℝ) (h : Admissible lam)\n    (hcrit : 1 < d * lam ^ 2) : Reconstructs (poissonAdvantage d hd lam h)",
         "proof": null,
-        "module": "lean/OAI/Probability/ThreeState/Main.lean"
+        "module": "lean/OAI/Probability/ThreeState/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1298,7 +1328,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ThreeStateClauses/Main.lean"
+        "module": "lean/OAI/Probability/ThreeStateClauses/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.ThreeState.TreeClauses.Tree.poisson_reconstructs_above_KS",
@@ -1312,7 +1343,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ThreeStateClauses/Main.lean"
+        "module": "lean/OAI/Probability/ThreeStateClauses/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1365,7 +1397,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SLE/LowerPositivity.lean"
+        "module": "lean/OAI/Probability/SLE/LowerPositivity.lean",
+        "main": false
        }
       ]
      }
@@ -1411,7 +1444,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean"
+        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem336AdditiveD139.strongly_rayleigh_group_factor",
@@ -1425,7 +1459,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean"
+        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem336AdditiveD139.finite_positive_contraction_dpp_is_strongly_rayleigh",
@@ -1439,7 +1474,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean"
+        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem336AdditiveD139.countable_positive_contraction_dpp_exists_unique",
@@ -1453,7 +1489,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean"
+        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem336AdditiveD139.invariant_positive_contraction_dpp_factor",
@@ -1467,7 +1504,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean"
+        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.Problem336AdditiveD139.translation_invariant_kernel_dpp_factor",
@@ -1481,7 +1519,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean"
+        "module": "lean/OAI/Probability/StrongRayleigh/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1503,7 +1542,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SpanningForest/Factor.lean"
+        "module": "lean/OAI/Probability/SpanningForest/Factor.lean",
+        "main": false
        }
       ]
      }
@@ -1591,7 +1631,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.limiting_wasserstein_field_pressure_of_extreme_limits_unconditional",
@@ -1605,7 +1646,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.positive_temperature_pressure_unconditional",
@@ -1619,7 +1661,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.ground_state_limit_unconditional",
@@ -1633,7 +1676,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.random_pressure_tendsto_in_measure_unconditional",
@@ -1647,7 +1691,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.random_pressure_limit_unconditional",
@@ -1661,7 +1706,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.random_pressure_tendsto_ae_unconditional",
@@ -1675,7 +1721,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.random_field_pressure_tendsto_ae_unconditional",
@@ -1689,7 +1736,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.gaussianPattern_pressure_limit_unconditional",
@@ -1703,7 +1751,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.gaussianPattern_ground_limit_unconditional",
@@ -1717,7 +1766,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        },
        {
         "name": "OAI.InvariantIsing.gaussianPattern_norm_limits_unconditional",
@@ -1731,7 +1781,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean"
+        "module": "lean/OAI/Probability/InvariantIsing/Unconditional.lean",
+        "main": false
        }
       ]
      }
@@ -1797,7 +1848,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/RandomSAT/Main.lean"
+        "module": "lean/OAI/Probability/RandomSAT/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1819,7 +1871,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SATVariance/Sharpness.lean"
+        "module": "lean/OAI/Probability/SATVariance/Sharpness.lean",
+        "main": false
        }
       ]
      },
@@ -1841,7 +1894,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SATVariance/Main.lean"
+        "module": "lean/OAI/Probability/SATVariance/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1863,7 +1917,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SATComputability/Main.lean"
+        "module": "lean/OAI/Probability/SATComputability/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1909,7 +1964,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/FreeIsing/Main.lean"
+        "module": "lean/OAI/Probability/FreeIsing/Main.lean",
+        "main": true
        }
       ]
      }
@@ -2030,7 +2086,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/HoneycombCorridor/BridgeFiniteness.lean"
+        "module": "lean/OAI/Combinatorics/HoneycombCorridor/BridgeFiniteness.lean",
+        "main": false
        }
       ]
      },
@@ -2052,7 +2109,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/Honeycomb/FreeEnergy.lean"
+        "module": "lean/OAI/Probability/Honeycomb/FreeEnergy.lean",
+        "main": false
        }
       ]
      },
@@ -2074,7 +2132,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/StripMass/Main.lean"
+        "module": "lean/OAI/Combinatorics/StripMass/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2096,7 +2155,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/HoneycombChords/BridgeMass.lean"
+        "module": "lean/OAI/Combinatorics/HoneycombChords/BridgeMass.lean",
+        "main": true
        }
       ]
      }
@@ -2217,7 +2277,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ThorpShuffle/FirstMain.lean"
+        "module": "lean/OAI/Probability/ThorpShuffle/FirstMain.lean",
+        "main": false
        }
       ]
      },
@@ -2239,7 +2300,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ThorpResults/FullDevelopment.lean"
+        "module": "lean/OAI/Probability/ThorpResults/FullDevelopment.lean",
+        "main": false
        }
       ]
      },
@@ -2261,7 +2323,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/PartialPermutation/Main.lean"
+        "module": "lean/OAI/RepresentationTheory/PartialPermutation/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2283,7 +2346,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ThorpRouting/Main.lean"
+        "module": "lean/OAI/Probability/ThorpRouting/Main.lean",
+        "main": true
        }
       ]
      },
@@ -2305,7 +2369,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/RowColumn/Occupied.lean"
+        "module": "lean/OAI/RepresentationTheory/RowColumn/Occupied.lean",
+        "main": false
        },
        {
         "name": "OAI.RowColumn.occupied_overlap",
@@ -2319,7 +2384,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/RowColumn/Occupied.lean"
+        "module": "lean/OAI/RepresentationTheory/RowColumn/Occupied.lean",
+        "main": false
        }
       ]
      },
@@ -2341,7 +2407,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/CubeShuffle/WeightedMoments.lean"
+        "module": "lean/OAI/Probability/CubeShuffle/WeightedMoments.lean",
+        "main": false
        }
       ]
      },
@@ -2363,7 +2430,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ThorpRouting/RegularTrace.lean"
+        "module": "lean/OAI/Probability/ThorpRouting/RegularTrace.lean",
+        "main": false
        }
       ]
      },
@@ -2385,7 +2453,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/ThorpCompatibility/Main.lean"
+        "module": "lean/OAI/Probability/ThorpCompatibility/Main.lean",
+        "main": true
        }
       ]
      },
@@ -2407,7 +2476,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/RepresentationTheory/SpinAngle/TypeAngle.lean"
+        "module": "lean/OAI/RepresentationTheory/SpinAngle/TypeAngle.lean",
+        "main": false
        }
       ]
      },
@@ -2429,7 +2499,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/SignedSweeps/Main.lean"
+        "module": "lean/OAI/Probability/SignedSweeps/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2451,7 +2522,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/BinarySweep/Main.lean"
+        "module": "lean/OAI/Probability/BinarySweep/Main.lean",
+        "main": true
        }
       ]
      },
@@ -2473,7 +2545,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/CoordinateSweeps/Main.lean"
+        "module": "lean/OAI/Probability/CoordinateSweeps/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.CoordinateSweeps.all_grid_moment",
@@ -2487,7 +2560,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/CoordinateSweeps/Main.lean"
+        "module": "lean/OAI/Probability/CoordinateSweeps/Main.lean",
+        "main": false
        }
       ]
      },
@@ -2509,7 +2583,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/Permanent/Main.lean"
+        "module": "lean/OAI/Combinatorics/Permanent/Main.lean",
+        "main": false
        }
       ]
      }

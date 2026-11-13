@@ -118,8 +118,6 @@ The formalization proves the paper's strict four-row permanent inequality. There
 
 ## Lean: Reciprocal Specht degrees and eight-block Fourier bound
 
-Stated in [ThorpFirstReciprocal.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpFirstReciprocal.lean).
-
 ```lean
 theorem first_reciprocal_main :
     (BddAbove (Set.range (fun n : {n : ℕ // 1 ≤ n} => reciprocalFirst n.val)) ∧
@@ -143,11 +141,9 @@ theorem first_reciprocal_main :
       Real.sqrt (32 * C1) * (Module.finrank ℂ E : ℝ) ^ (-5 / 16 : ℝ))
 ```
 
-Proved in [lean/OAI/Probability/ThorpShuffle/FirstMain.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpShuffle/FirstMain.lean#L13).
+Stated in [ThorpFirstReciprocal.lean, line 205](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpFirstReciprocal.lean#L205). Proved in [lean/OAI/Probability/ThorpShuffle/FirstMain.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpShuffle/FirstMain.lean#L13).
 
 ## Lean: Frame, spectral, and density estimates for Thorp mixing
-
-Stated in [ThorpRemaining.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpRemaining.lean).
 
 ```lean
 theorem remaining_main :
@@ -155,21 +151,17 @@ theorem remaining_main :
       DegreeSavingMain ∧ FullDensityMain ∧ ForwardMixingMain ∧ OptimalOrderMain
 ```
 
-Proved in [lean/OAI/Probability/ThorpResults/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpResults/Main.lean#L8).
+Stated in [ThorpRemaining.lean, line 543](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpRemaining.lean#L543). Proved in [lean/OAI/Probability/ThorpResults/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpResults/Main.lean#L8).
 
 ## Lean: Fourier bounds from complementary coset caps
-
-Stated in [PartialPermutation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PartialPermutation.lean).
 
 ```lean
 theorem complementaryCosets_finite : ComplementaryCosetsFiniteStatement
 ```
 
-Proved in [lean/OAI/RepresentationTheory/PartialPermutation/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/PartialPermutation/Main.lean#L11).
+Stated in [PartialPermutation.lean, line 110](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PartialPermutation.lean#L110). Proved in [lean/OAI/RepresentationTheory/PartialPermutation/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/PartialPermutation/Main.lean#L11).
 
 ## Lean: Nine routing-density and representation estimates
-
-Stated in [ThorpRouting.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpRouting.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem ThorpNine.main :
@@ -184,27 +176,23 @@ theorem ThorpNine.main :
     ThorpNine.SparseSaving.Thorp.SparseRegime.MainStatement
 ```
 
-Proved in [lean/OAI/Probability/ThorpRouting/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpRouting/Main.lean#L13).
+Stated in [ThorpRouting.lean, line 2567](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpRouting.lean#L2567). Proved in [lean/OAI/Probability/ThorpRouting/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpRouting/Main.lean#L13). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Row–column overlap on occupied boards
-
-Stated in [OccupiedOverlap.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OccupiedOverlap.lean).
 
 ```lean
 theorem RowColumn.occupied_overlap_endpoint : RowColumn.OccupiedOverlapEndpoint
 ```
 
-Proved in [lean/OAI/RepresentationTheory/RowColumn/Occupied.lean, line 203](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/RowColumn/Occupied.lean#L203).
+Stated in [OccupiedOverlap.lean, line 260](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OccupiedOverlap.lean#L260). Proved in [lean/OAI/RepresentationTheory/RowColumn/Occupied.lean, line 203](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/RowColumn/Occupied.lean#L203).
 
 ```lean
 theorem RowColumn.occupied_overlap : RowColumn.OccupiedOverlapEndpoint
 ```
 
-Proved in [lean/OAI/RepresentationTheory/RowColumn/Occupied.lean, line 274](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/RowColumn/Occupied.lean#L274).
+Stated in [OccupiedOverlap.lean, line 263](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OccupiedOverlap.lean#L263). Proved in [lean/OAI/RepresentationTheory/RowColumn/Occupied.lean, line 274](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/RowColumn/Occupied.lean#L274).
 
 ## Lean: Weighted Schatten moments and operator contraction for coordinate sweeps
-
-Stated in [WeightedSweepMoments.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeightedSweepMoments.lean).
 
 ```lean
 theorem weighted_sweep_moments :
@@ -220,31 +208,25 @@ theorem weighted_sweep_moments :
         ‖fourierSweep d μ‖ ≤ dimension μ.1 ^ (-3 / (4 * pStar))
 ```
 
-Proved in [lean/OAI/Probability/CubeShuffle/WeightedMoments.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CubeShuffle/WeightedMoments.lean#L19).
+Stated in [WeightedSweepMoments.lean, line 287](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeightedSweepMoments.lean#L287). Proved in [lean/OAI/Probability/CubeShuffle/WeightedMoments.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CubeShuffle/WeightedMoments.lean#L19).
 
 ## Lean: Regular trace smoothing and full-permutation mixing
-
-Stated in [CoordinateTrace.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoordinateTrace.lean).
 
 ```lean
 theorem regular_trace_smoothing : MainStatement
 ```
 
-Proved in [lean/OAI/Probability/ThorpRouting/RegularTrace.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpRouting/RegularTrace.lean#L69).
+Stated in [CoordinateTrace.lean, line 366](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoordinateTrace.lean#L366). Proved in [lean/OAI/Probability/ThorpRouting/RegularTrace.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpRouting/RegularTrace.lean#L69).
 
 ## Lean: Weighted row–column compatibility bound
-
-Stated in [ThorpWeightedCompatibility.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpWeightedCompatibility.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem weightedCompatibility_main : WeightedCompatibilityTheorem
 ```
 
-Proved in [lean/OAI/Probability/ThorpCompatibility/Main.lean, line 109](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpCompatibility/Main.lean#L109).
+Stated in [ThorpWeightedCompatibility.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThorpWeightedCompatibility.lean#L47). Proved in [lean/OAI/Probability/ThorpCompatibility/Main.lean, line 109](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ThorpCompatibility/Main.lean#L109). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: One-sided angle bound for signed spin types
-
-Stated in [SpinAngle.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SpinAngle.lean).
 
 ```lean
 theorem one_sided_type_angle (W : Finset (R × C))
@@ -264,11 +246,9 @@ theorem one_sided_type_angle (W : Finset (R × C))
       (W.card + 1) ^ ((Fintype.card R + Fintype.card C) * q * (q - 1))
 ```
 
-Proved in [lean/OAI/RepresentationTheory/SpinAngle/TypeAngle.lean, line 189](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/SpinAngle/TypeAngle.lean#L189).
+Stated in [SpinAngle.lean, line 521](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SpinAngle.lean#L521). Proved in [lean/OAI/RepresentationTheory/SpinAngle/TypeAngle.lean, line 189](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/SpinAngle/TypeAngle.lean#L189).
 
 ## Lean: Uniform signed-occurrence moment bound for coordinate sweeps
-
-Stated in [SignedSweepMoment.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SignedSweepMoment.lean).
 
 ```lean
 theorem signed_occurrence_moment_bound :
@@ -287,11 +267,9 @@ theorem signed_occurrence_moment_bound :
                             remainderBudget κ d l : ℝ) : EReal)
 ```
 
-Proved in [lean/OAI/Probability/SignedSweeps/UniformMoment.lean, line 128](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SignedSweeps/UniformMoment.lean#L128).
+Stated in [SignedSweepMoment.lean, line 169](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SignedSweepMoment.lean#L169). Proved in [lean/OAI/Probability/SignedSweeps/UniformMoment.lean, line 128](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SignedSweeps/UniformMoment.lean#L128).
 
 ## Lean: Binary sweep contraction and mixing
-
-Stated in [BinarySweep.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinarySweep.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem binary_sweep_contraction_and_mixing :
@@ -301,17 +279,15 @@ theorem binary_sweep_contraction_and_mixing :
     BinaryCoordinateSweeps.UniformSweepMixingTarget
 ```
 
-Proved in [lean/OAI/Probability/BinarySweep/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BinarySweep/Main.lean#L10).
+Stated in [BinarySweep.lean, line 95](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinarySweep.lean#L95). Proved in [lean/OAI/Probability/BinarySweep/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/BinarySweep/Main.lean#L10). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Conditional coordinate-sweep moment estimate
-
-Stated in [CoordinateSweeps.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoordinateSweeps.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem conditional_main : ConditionalMain
 ```
 
-Proved in [lean/OAI/Probability/CoordinateSweeps/Main.lean, line 454](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CoordinateSweeps/Main.lean#L454).
+Stated in [CoordinateSweeps.lean, line 307](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoordinateSweeps.lean#L307). Proved in [lean/OAI/Probability/CoordinateSweeps/Main.lean, line 454](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CoordinateSweeps/Main.lean#L454). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem all_grid_moment {r : ℕ} (hr : ScaleLarge r) (hrS : SparseScalar.ScaleReady r)
@@ -320,11 +296,9 @@ theorem all_grid_moment {r : ℕ} (hr : ScaleLarge r) (hrS : SparseScalar.ScaleR
     ∀ G : Grid, G.Allowed r → MomentBound G SparseScalar.q z
 ```
 
-Proved in [lean/OAI/Probability/CoordinateSweeps/Main.lean, line 412](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CoordinateSweeps/Main.lean#L412).
+Stated in [CoordinateSweeps.lean, line 300](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoordinateSweeps.lean#L300). Proved in [lean/OAI/Probability/CoordinateSweeps/Main.lean, line 412](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/CoordinateSweeps/Main.lean#L412).
 
 ## Lean: Strict four-row permanent inequality near the uniform law
-
-Stated in [FourRowPermanent.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FourRowPermanent.lean).
 
 ```lean
 theorem robust_permanent :
@@ -335,11 +309,11 @@ theorem robust_permanent :
         permanentExpectation ν f ≤ ∏ i, lpNorm p₀ (f i)
 ```
 
-Proved in [lean/OAI/Combinatorics/Permanent/Main.lean, line 100](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Permanent/Main.lean#L100).
+Stated in [FourRowPermanent.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FourRowPermanent.lean#L37). Proved in [lean/OAI/Combinatorics/Permanent/Main.lean, line 100](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Permanent/Main.lean#L100).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

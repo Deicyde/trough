@@ -24,8 +24,6 @@ The Eilenberg–Ganea conjecture predicts that a group of integral cohomological
 
 ## Lean: Counterexample to the Eilenberg–Ganea conjecture
 
-Stated in [EilenbergGanea.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EilenbergGanea.lean).
-
 ```lean
 theorem source_main :
     Group.FG SourceGroup ∧ Group.ResiduallyFinite SourceGroup ∧
@@ -34,11 +32,11 @@ theorem source_main :
     ¬ HasClassifyingSpace.{u} SourceGroup 2
 ```
 
-Proved in [lean/OAI/Topology/EilenbergGanea/Main.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/EilenbergGanea/Main.lean#L30).
+Stated in [EilenbergGanea.lean, line 113](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EilenbergGanea.lean#L113). Proved in [lean/OAI/Topology/EilenbergGanea/Main.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Topology/EilenbergGanea/Main.lean#L30).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

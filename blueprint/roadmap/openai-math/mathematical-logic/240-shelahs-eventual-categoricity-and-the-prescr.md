@@ -32,8 +32,6 @@ No amalgamation, joint embedding, tameness, or absence-of-maximal-models assumpt
 
 ## Lean: CH categoricity-threshold obstruction
 
-Stated in [CHObstruction.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CHObstruction.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main (hCH : CH.{u}) :
     ∃ (L : ℕ → Type), Countable (Σ n, L n) ∧
@@ -42,11 +40,11 @@ theorem main (hCH : CH.{u}) :
         ∀ μ, tailThreshold ≤ μ → K.Categorical μ
 ```
 
-Proved in [lean/OAI/ModelTheory/Categoricity/Main.lean, line 233](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/ModelTheory/Categoricity/Main.lean#L233).
+Stated in [CHObstruction.lean, line 96](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CHObstruction.lean#L96). Proved in [lean/OAI/ModelTheory/Categoricity/Main.lean, line 233](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/ModelTheory/Categoricity/Main.lean#L233). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

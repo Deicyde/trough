@@ -3,7 +3,7 @@ declaration: section
 origin: cited
 ---
 
-# 064. Topological triviality of \*μ\*-constant surface singularities
+# 064. Topological triviality of *μ*-constant surface singularities
 
 1 manuscript, with no Lean, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
@@ -17,7 +17,7 @@ We prove that every holomorphic one-parameter family of isolated hypersurface si
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

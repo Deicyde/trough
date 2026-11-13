@@ -17,7 +17,7 @@ We construct closed connected aspherical topological four-manifolds that are hom
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -30,17 +30,15 @@ It also proves that the ratio of the sum of the absolute values of those coeffic
 
 ## Lean: Unbounded violations of the square-root Fourier-degree bound
 
-Stated in [SquareRootDegree.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SquareRootDegree.lean).
-
 ```lean
 theorem main : SignedViolations ∧ ¬ BddAbove AbsoluteRatios
 ```
 
-Proved in [lean/OAI/Combinatorics/BooleanFunctions/Main.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/BooleanFunctions/Main.lean#L20).
+Stated in [SquareRootDegree.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SquareRootDegree.lean#L57). Proved in [lean/OAI/Combinatorics/BooleanFunctions/Main.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/BooleanFunctions/Main.lean#L20).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

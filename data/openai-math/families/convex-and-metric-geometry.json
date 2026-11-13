@@ -55,7 +55,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Mahler/MainTheorem.lean"
+        "module": "lean/OAI/Analysis/Mahler/MainTheorem.lean",
+        "main": true
        }
       ]
      },
@@ -77,7 +78,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Mahler/Classification.lean"
+        "module": "lean/OAI/Analysis/Mahler/Classification.lean",
+        "main": true
        }
       ]
      },
@@ -99,7 +101,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean"
+        "module": "lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean",
+        "main": false
        }
       ]
      },
@@ -121,7 +124,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/PolarProducts/Main.lean"
+        "module": "lean/OAI/Geometry/PolarProducts/Main.lean",
+        "main": true
        }
       ]
      }
@@ -174,7 +178,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/ProjectionBodies/Main.lean"
+        "module": "lean/OAI/Geometry/ProjectionBodies/Main.lean",
+        "main": true
        }
       ]
      },
@@ -196,7 +201,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/ProjectionBody/Counterexample.lean"
+        "module": "lean/OAI/Geometry/ProjectionBody/Counterexample.lean",
+        "main": true
        }
       ]
      },
@@ -218,7 +224,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean"
+        "module": "lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean",
+        "main": true
        }
       ]
      }
@@ -271,7 +278,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/PlanarL1/Embedding.lean"
+        "module": "lean/OAI/Combinatorics/PlanarL1/Embedding.lean",
+        "main": true
        }
       ]
      },
@@ -293,7 +301,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/TreewidthL1/Main.lean"
+        "module": "lean/OAI/Combinatorics/TreewidthL1/Main.lean",
+        "main": true
        }
       ]
      }
@@ -358,7 +367,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Triangular/Main.lean"
+        "module": "lean/OAI/Analysis/Triangular/Main.lean",
+        "main": false
        }
       ]
      },
@@ -380,7 +390,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Triangular/Energy/Universal.lean"
+        "module": "lean/OAI/Analysis/Triangular/Energy/Universal.lean",
+        "main": false
        }
       ]
      },
@@ -402,7 +413,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Triangular/GaussianMinorants.lean"
+        "module": "lean/OAI/Analysis/Triangular/GaussianMinorants.lean",
+        "main": false
        }
       ]
      },
@@ -424,7 +436,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/PlanarPacking/Main.lean"
+        "module": "lean/OAI/Analysis/PlanarPacking/Main.lean",
+        "main": false
        }
       ]
      }
@@ -470,7 +483,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean"
+        "module": "lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean",
+        "main": true
        }
       ]
      }
@@ -523,7 +537,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/LatticeCovering/Main.lean"
+        "module": "lean/OAI/Geometry/LatticeCovering/Main.lean",
+        "main": true
        }
       ]
      },
@@ -545,7 +560,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/CoveringDensity/Main.lean"
+        "module": "lean/OAI/Geometry/CoveringDensity/Main.lean",
+        "main": false
        }
       ]
      }
@@ -606,7 +622,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/LpDimension/Main.lean"
+        "module": "lean/OAI/Analysis/LpDimension/Main.lean",
+        "main": true
        }
       ]
      }
@@ -664,7 +681,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/HyperbolicCones/Main.lean"
+        "module": "lean/OAI/Analysis/HyperbolicCones/Main.lean",
+        "main": true
        }
       ]
      }
@@ -710,7 +728,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Probability/GaussianPropeller/Main.lean"
+        "module": "lean/OAI/Probability/GaussianPropeller/Main.lean",
+        "main": true
        }
       ]
      }
@@ -756,7 +775,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Steinitz/Main.lean"
+        "module": "lean/OAI/Analysis/Steinitz/Main.lean",
+        "main": true
        }
       ]
      }
@@ -802,7 +822,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/DoublingHilbert/Main.lean"
+        "module": "lean/OAI/Geometry/DoublingHilbert/Main.lean",
+        "main": true
        }
       ]
      },
@@ -824,7 +845,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean"
+        "module": "lean/OAI/Geometry/DoublingHilbert/CompactBanach.lean",
+        "main": true
        }
       ]
      }
@@ -884,7 +906,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/EditDistance/Main.lean"
+        "module": "lean/OAI/Combinatorics/EditDistance/Main.lean",
+        "main": false
        }
       ]
      },
@@ -906,7 +929,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/FiniteCircle/Main.lean"
+        "module": "lean/OAI/Combinatorics/FiniteCircle/Main.lean",
+        "main": false
        }
       ]
      },
@@ -928,7 +952,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean"
+        "module": "lean/OAI/Combinatorics/BinaryEdit/BinaryLowerBound.lean",
+        "main": false
        }
       ]
      },
@@ -950,7 +975,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean"
+        "module": "lean/OAI/Combinatorics/TreeEdit/TorusLowerBound.lean",
+        "main": false
        }
       ]
      }
@@ -1017,7 +1043,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean"
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1039,7 +1066,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/TriangularCovering/Main.lean"
+        "module": "lean/OAI/Geometry/TriangularCovering/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1061,7 +1089,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean"
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1083,7 +1112,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/RuledCovering/Main.lean"
+        "module": "lean/OAI/Geometry/RuledCovering/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1105,7 +1135,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean"
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
        }
       ]
      },
@@ -1127,7 +1158,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean"
+        "module": "lean/OAI/Geometry/CylinderCovering/Main.lean",
+        "main": false
        }
       ]
      }

@@ -38,8 +38,6 @@ If two isomorphisms of perfect closures preserving the constant fields induce th
 
 ## Lean: Injectivity of Bogomolov–Pop reconstruction modulo the stated ambiguities
 
-Stated in [BogomolovPopInjectivity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BogomolovPopInjectivity.lean).
-
 ```lean
 theorem main_graph_injective (ell : ℕ) [Fact ell.Prime]
     (k K l L : Type*) [Field k] [Field K] [Field l] [Field L]
@@ -51,11 +49,11 @@ theorem main_graph_injective (ell : ℕ) [Fact ell.Prime]
       PhiGraph a b → PhiGraph a' b → a = a'
 ```
 
-Proved in [lean/OAI/Algebra/BogomolovPop/Injectivity.lean, line 305](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/BogomolovPop/Injectivity.lean#L305).
+Stated in [BogomolovPopInjectivity.lean, line 117](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BogomolovPopInjectivity.lean#L117). Proved in [lean/OAI/Algebra/BogomolovPop/Injectivity.lean, line 305](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/BogomolovPop/Injectivity.lean#L305).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

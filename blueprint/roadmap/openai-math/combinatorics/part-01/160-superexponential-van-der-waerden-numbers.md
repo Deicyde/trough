@@ -24,19 +24,17 @@ Let $W(r,k)$ be the least interval length forcing a monochromatic $k$-term arith
 
 ## Lean: Uniform van der Waerden lower bound
 
-Stated in [QuantitativeVanDerWaerden.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuantitativeVanDerWaerden.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem uniform_lower_bound :
     ∃ K : ℕ, ∀ k ≥ K, ∀ r ≥ 2,
       (k : ℝ) ^ ((1 / 100000 : ℝ) * k * (Nat.log 2 r : ℝ)) < (W r k : ℝ)
 ```
 
-Proved in [lean/OAI/Combinatorics/ProgressionColoring/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ProgressionColoring/Main.lean#L12).
+Stated in [QuantitativeVanDerWaerden.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuantitativeVanDerWaerden.lean#L26). Proved in [lean/OAI/Combinatorics/ProgressionColoring/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ProgressionColoring/Main.lean#L12). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

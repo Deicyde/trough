@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# 248. Thompson's group \*F\* is nonamenable
+# 248. Thompson's group *F* is nonamenable
 
 1 manuscript and 1 Lean statement, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
@@ -24,8 +24,6 @@ The amenability problem for Thompson's group $F$ asks whether it admits a positi
 
 ## Lean: Nonamenability of Thompson's group $F$
 
-Stated in [ThompsonNonamenability.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThompsonNonamenability.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem thompson_F_nonamenable_composition :
     ∃ group : Group F, letI := group;
@@ -34,11 +32,11 @@ theorem thompson_F_nonamenable_composition :
       ¬ Nonempty (InvariantMean F)
 ```
 
-Proved in [lean/OAI/GroupTheory/Thompson/Main.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/Thompson/Main.lean#L69).
+Stated in [ThompsonNonamenability.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThompsonNonamenability.lean#L78). Proved in [lean/OAI/GroupTheory/Thompson/Main.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/Thompson/Main.lean#L69). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

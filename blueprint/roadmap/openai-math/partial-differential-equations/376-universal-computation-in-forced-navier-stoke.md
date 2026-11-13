@@ -86,8 +86,6 @@ It also encodes every finite machine and input in a smooth, compactly supported 
 
 ## Lean: Positive diagonal programs on incompressible coding sheets
 
-Stated in [SolenoidalSheetPrograms.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SolenoidalSheetPrograms.lean).
-
 ```lean
 theorem sheet_theorem {N : ℕ} (D : SheetData N) (ν : ℝ)
     (hν : 0 < ν) (hνcomp : ComputableReal ν) :
@@ -107,22 +105,18 @@ theorem sheet_theorem {N : ℕ} (D : SheetData N) (ν : ℝ)
       (N = 0 → f = 0 ∧ u = 0)
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean#L15).
+Stated in [SolenoidalSheetPrograms.lean, line 175](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SolenoidalSheetPrograms.lean#L175). Proved in [lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean#L15).
 
 ## Lean: Rapidly decaying alternating-coordinate memory
-
-Stated in [NavierStokesAlternating.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NavierStokesAlternating.lean).
 
 ```lean
 theorem alternating (ν : ℝ) (hν : 0 < ν) (hc : ComputableReal ν) :
     AlternatingConclusion ν
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/AlternatingFlow/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/AlternatingFlow/Main.lean#L11).
+Stated in [NavierStokesAlternating.lean, line 239](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NavierStokesAlternating.lean#L239). Proved in [lean/OAI/MathematicalPhysics/AlternatingFlow/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/AlternatingFlow/Main.lean#L11).
 
 ## Lean: Pointwise and integral velocity-field detection of halting
-
-Stated in [NavierStokesVelocity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NavierStokesVelocity.lean).
 
 ```lean
 theorem main_result :
@@ -166,11 +160,9 @@ theorem main_result :
             ∀ t ≥ 0, (∀ X, v t X = u t X) ∧ (∀ X, p t X = 0))
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/MainResult.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/MainResult.lean#L11).
+Stated in [NavierStokesVelocity.lean, line 1232](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NavierStokesVelocity.lean#L1232). Proved in [lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/MainResult.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/MainResult.lean#L11).
 
 ## Lean: Incompressible transport of solid boxes
-
-Stated in [BalancedBoxRouting.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BalancedBoxRouting.lean).
 
 ```lean
 theorem balanced_box_routing
@@ -183,12 +175,10 @@ theorem balanced_box_routing
       AdmissibleField U ∧ IsGlobalFlow U Φ ∧ Delivers a b h k Φ
 ```
 
-Proved in [lean/OAI/Analysis/BoxTransport/Routing.lean, line 172](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BoxTransport/Routing.lean#L172).
+Stated in [BalancedBoxRouting.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BalancedBoxRouting.lean#L84). Proved in [lean/OAI/Analysis/BoxTransport/Routing.lean, line 172](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/BoxTransport/Routing.lean#L172).
 
 ## Lean: Finite computation in a balanced zero-data fluid flow
 
-Stated in [BalancedThreeStack.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BalancedThreeStack.lean).
-
 ```lean
 theorem balanced_three_stack_realization :
     ∃ U f₀ f₁ : Family Velocity,
@@ -216,12 +206,10 @@ theorem balanced_three_stack_realization :
           (∀ name : ℕ → ℚ, RealName name ν → EffectiveFieldIn {nameOracle name} f)
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean#L12).
+Stated in [BalancedThreeStack.lean, line 211](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BalancedThreeStack.lean#L211). Proved in [lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean#L12).
 
 ## Lean: Effective finite computation detected by a fixed particle
 
-Stated in [ForcedNavierStokesComputation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ForcedNavierStokesComputation.lean).
-
 ```lean
 theorem balanced_three_stack_realization :
     ∃ U f₀ f₁ : Family Velocity,
@@ -249,11 +237,11 @@ theorem balanced_three_stack_realization :
           (∀ name : ℕ → ℚ, RealName name ν → EffectiveFieldIn {nameOracle name} f)
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean#L12).
+Stated in [ForcedNavierStokesComputation.lean, line 206](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ForcedNavierStokesComputation.lean#L206). Proved in [lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean#L12).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

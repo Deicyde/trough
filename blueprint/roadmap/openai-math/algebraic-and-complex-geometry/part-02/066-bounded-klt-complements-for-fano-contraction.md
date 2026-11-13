@@ -34,8 +34,6 @@ This compactness result applies to one such chart. It does not construct a Carti
 
 ## Lean: Compactness of normalized chart-field retractions
 
-Stated in [CartierChartCompactnessSupport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CartierChartCompactnessSupport.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 lemma isCompact_closedChartFieldRetraction_cone
     (a : σ → NNReal) (ha : ∀ i, 0 < a i) :
@@ -44,11 +42,11 @@ lemma isCompact_closedChartFieldRetraction_cone
       normalizedWeights a)
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean#L47).
+Stated in [CartierChartCompactnessSupport.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CartierChartCompactnessSupport.lean#L25). Proved in [lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean#L47). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

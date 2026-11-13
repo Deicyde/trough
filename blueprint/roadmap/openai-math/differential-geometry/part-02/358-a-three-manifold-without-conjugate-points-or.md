@@ -24,17 +24,15 @@ The formalized result separates absence of conjugate points from nonpositive sec
 
 ## Lean: No conjugate points without a nonpositively curved metric
 
-Stated in [ConjugatePoints.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ConjugatePoints.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem : MainStatement
 ```
 
-Proved in [lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean, line 260](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean#L260).
+Stated in [ConjugatePoints.lean, line 109](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ConjugatePoints.lean#L109). Proved in [lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean, line 260](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean#L260). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

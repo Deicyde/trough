@@ -24,8 +24,6 @@ The formalized result determines the unassisted classical capacity of every gene
 
 ## Lean: Additivity and capacity for generalized amplitude damping
 
-Stated in [AmplitudeDamping.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AmplitudeDamping.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main (γ ν : ℝ) (hγ : γ ∈ Set.Icc (0 : ℝ) 1)
     (hν : ν ∈ Set.Icc (0 : ℝ) 1) :
@@ -38,11 +36,11 @@ theorem main (γ ν : ℝ) (hγ : γ ∈ Set.Icc (0 : ℝ) 1)
       holevo γ ν n = phaseValue γ ν p n)
 ```
 
-Proved in [lean/OAI/InformationTheory/AmplitudeDamping/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/AmplitudeDamping/Main.lean#L38).
+Stated in [AmplitudeDamping.lean, line 113](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AmplitudeDamping.lean#L113). Proved in [lean/OAI/InformationTheory/AmplitudeDamping/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/AmplitudeDamping/Main.lean#L38). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

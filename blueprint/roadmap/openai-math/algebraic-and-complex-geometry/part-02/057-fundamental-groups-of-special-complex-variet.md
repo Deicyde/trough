@@ -29,7 +29,7 @@ Using the abelianity theorem for special compact Kähler manifolds in every dime
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

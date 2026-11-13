@@ -24,19 +24,17 @@ The strict hot-spots conjecture asks whether extrema of a first nonconstant Neum
 
 ## Lean: Strict hot spots and absence of interior critical points
 
-Stated in [HotSpots.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HotSpots.lean).
-
 ```lean
 theorem main_theorem (Ω : Set Plane) (hΩ : AdmissibleDomain Ω)
     (u : Plane → ℝ) (hu : InFirstNeumannEigenspace Ω u)
     (hne : ∃ x ∈ Ω, u x ≠ 0) : MainConclusion Ω u
 ```
 
-Proved in [lean/OAI/Analysis/HotSpots/Main.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HotSpots/Main.lean#L78).
+Stated in [HotSpots.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HotSpots.lean#L49). Proved in [lean/OAI/Analysis/HotSpots/Main.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HotSpots/Main.lean#L78).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

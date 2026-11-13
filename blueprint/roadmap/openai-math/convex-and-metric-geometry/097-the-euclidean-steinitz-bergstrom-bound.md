@@ -24,17 +24,15 @@ The formalized result gives the Euclidean Steinitz–Bergström bound with one a
 
 ## Lean: Euclidean signed and reordered prefix bounds
 
-Stated in [SteinitzBergstrom.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SteinitzBergstrom.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : ∃ C : ℝ, SignedPrefixBound C ∧ OrderingPrefixBound C
 ```
 
-Proved in [lean/OAI/Analysis/Steinitz/Main.lean, line 111](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Steinitz/Main.lean#L111).
+Stated in [SteinitzBergstrom.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SteinitzBergstrom.lean#L24). Proved in [lean/OAI/Analysis/Steinitz/Main.lean, line 111](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Steinitz/Main.lean#L111). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

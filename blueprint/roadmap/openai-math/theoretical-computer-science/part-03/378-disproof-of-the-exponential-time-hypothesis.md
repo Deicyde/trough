@@ -26,8 +26,6 @@ For $m$ clauses, the October 25 manuscript gives the sharper time bound $(n+m)^{
 
 ## Lean: Exact counting and SAT on canonical inputs in subexponential time and polynomial space
 
-Stated in [SubexponentialSAT.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SubexponentialSAT.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exact_count_and_sat (k : ℕ) (hk : 2 ≤ k) :
     ∃ (machine : Computation.PrimitiveMachine)
@@ -55,11 +53,11 @@ theorem exact_count_and_sat (k : ℕ) (hk : 2 ≤ k) :
               S * ((Encoding.formulaBitLength F : ℝ) + 1) ^ e
 ```
 
-Proved in [lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean, line 74](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean#L74).
+Stated in [SubexponentialSAT.lean, line 194](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SubexponentialSAT.lean#L194). Proved in [lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean, line 74](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean#L74). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

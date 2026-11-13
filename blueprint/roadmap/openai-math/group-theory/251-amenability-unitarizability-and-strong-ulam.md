@@ -32,27 +32,23 @@ For every nonamenable group and every $\varepsilon>0$, it also gives a nonunitar
 
 ## Lean: Unitarizability for all discrete groups
 
-Stated in [DixmierAllDiscrete.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DixmierAllDiscrete.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem current_main_theorem : CurrentMainTheorem.{u,v}
 ```
 
-Proved in [lean/OAI/Analysis/Unitarizability/AllDiscrete.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Unitarizability/AllDiscrete.lean#L12).
+Stated in [DixmierAllDiscrete.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DixmierAllDiscrete.lean#L43). Proved in [lean/OAI/Analysis/Unitarizability/AllDiscrete.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Unitarizability/AllDiscrete.lean#L12). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Separable nonunitarizable witnesses for countable nonamenable groups
-
-Stated in [Dixmier.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Dixmier.lean).
 
 ```lean
 theorem main_theorem_all_universes : MainTheorem.{u,v}
 ```
 
-Proved in [lean/OAI/Analysis/Unitarizability/UniverseTransport.lean, line 55](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Unitarizability/UniverseTransport.lean#L55).
+Stated in [Dixmier.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Dixmier.lean#L44). Proved in [lean/OAI/Analysis/Unitarizability/UniverseTransport.lean, line 55](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Unitarizability/UniverseTransport.lean#L55).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

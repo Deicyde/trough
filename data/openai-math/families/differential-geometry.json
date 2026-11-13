@@ -41,7 +41,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/SurfaceImmersion/Main.lean"
+        "module": "lean/OAI/Geometry/SurfaceImmersion/Main.lean",
+        "main": false
        }
       ]
      }
@@ -87,7 +88,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/IsometricImmersion/Main.lean"
+        "module": "lean/OAI/Geometry/IsometricImmersion/Main.lean",
+        "main": true
        }
       ]
      }
@@ -187,7 +189,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/IntegralFillings/Main.lean"
+        "module": "lean/OAI/Geometry/IntegralFillings/Main.lean",
+        "main": false
        }
       ]
      },
@@ -209,7 +212,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/CAT0Fillings/Main.lean"
+        "module": "lean/OAI/Geometry/CAT0Fillings/Main.lean",
+        "main": false
        }
       ]
      }
@@ -315,7 +319,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/TamingCompatibility/Main.lean"
+        "module": "lean/OAI/Geometry/TamingCompatibility/Main.lean",
+        "main": true
        }
       ]
      }
@@ -361,7 +366,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/BallPacking/Main.lean"
+        "module": "lean/OAI/Geometry/BallPacking/Main.lean",
+        "main": false
        }
       ]
      },
@@ -383,7 +389,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/BallPacking/Necessity/Main.lean"
+        "module": "lean/OAI/Geometry/BallPacking/Necessity/Main.lean",
+        "main": false
        }
       ]
      }
@@ -504,7 +511,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/Arnold/Main.lean"
+        "module": "lean/OAI/Geometry/Arnold/Main.lean",
+        "main": true
        }
       ]
      }
@@ -562,7 +570,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean"
+        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean",
+        "main": false
        },
        {
         "name": "OAI.PositiveEinsteinFour.classificationOn",
@@ -576,7 +585,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean"
+        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean",
+        "main": false
        },
        {
         "name": "OAI.PositiveEinsteinFour.classification",
@@ -590,7 +600,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean"
+        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean",
+        "main": false
        }
       ]
      }
@@ -665,7 +676,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/NodalLength/Main.lean"
+        "module": "lean/OAI/Analysis/NodalLength/Main.lean",
+        "main": false
        }
       ]
      },
@@ -687,7 +699,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/SmoothYau/Main.lean"
+        "module": "lean/OAI/Geometry/SmoothYau/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.YauCounterexamples.sphere_two_torus_two",
@@ -701,7 +714,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/SmoothYau/Main.lean"
+        "module": "lean/OAI/Geometry/SmoothYau/Main.lean",
+        "main": true
        }
       ]
      },
@@ -723,7 +737,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/NodalSets/Main.lean"
+        "module": "lean/OAI/Geometry/NodalSets/Main.lean",
+        "main": true
        }
       ]
      }
@@ -817,7 +832,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/AffineBernstein/Main.lean"
+        "module": "lean/OAI/Analysis/AffineBernstein/Main.lean",
+        "main": false
        }
       ]
      }
@@ -863,7 +879,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/CubicTorus/Main.lean"
+        "module": "lean/OAI/Geometry/CubicTorus/Main.lean",
+        "main": false
        }
       ]
      }
@@ -930,7 +947,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/WeakHessian/Main.lean"
+        "module": "lean/OAI/Geometry/WeakHessian/Main.lean",
+        "main": true
        }
       ]
      }
@@ -991,7 +1009,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean"
+        "module": "lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean",
+        "main": true
        }
       ]
      }
@@ -1043,7 +1062,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/Kahler/Main.lean"
+        "module": "lean/OAI/Geometry/Kahler/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.PinchedHartogs.controlled_potential",
@@ -1057,7 +1077,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/Kahler/Main.lean"
+        "module": "lean/OAI/Geometry/Kahler/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.PinchedHartogs.metric_transfer",
@@ -1071,7 +1092,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/Kahler/Main.lean"
+        "module": "lean/OAI/Geometry/Kahler/Main.lean",
+        "main": false
        }
       ]
      }
@@ -1118,8 +1140,14 @@
         "kind": "theorem",
         "line": 63,
         "statement": "theorem current_main_convexity\n    {n : ℕ} (hn : 2 ≤ n) {M : Type*}\n    [MetricSpace M] [ChartedSpace (WeakMTW.Model n) M]\n    [IsManifold (WeakMTW.model n) ∞ M]\n    [CompactSpace M] [ConnectedSpace M]\n    [RiemannianBundle (fun x : M => TangentSpace (WeakMTW.model n) x)]\n    [IsContMDiffRiemannianBundle (WeakMTW.model n) ∞ (WeakMTW.Model n)\n      (fun x : M => TangentSpace (WeakMTW.model n) x)]\n    [IsRiemannianManifold (WeakMTW.model n) M]\n    (hmtw : WeakMTW.HasWeakMTW (n := n) (M := M)) :\n    WeakMTW.MainConvexity (n := n) (M := M)",
-        "proof": null,
-        "module": "lean/OAI/Geometry/WeakMTW/Main.lean"
+        "proof": {
+         "file": "lean/OAI/Geometry/WeakMTW/Convexity.lean",
+         "line": 65,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/WeakMTW/Main.lean",
+        "main": true
        }
       ]
      },
@@ -1141,7 +1169,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/BiholderTransport/Main.lean"
+        "module": "lean/OAI/Analysis/BiholderTransport/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1193,7 +1222,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/HarmonicGrowth/Main.lean"
+        "module": "lean/OAI/Geometry/HarmonicGrowth/Main.lean",
+        "main": true
        }
       ]
      }

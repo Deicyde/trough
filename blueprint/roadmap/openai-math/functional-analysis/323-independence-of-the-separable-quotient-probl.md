@@ -26,17 +26,15 @@ This is the conditional counterexample direction. The positive consistency direc
 
 ## Lean: Failure of the separable quotient assertion under the continuum hypothesis
 
-Stated in [SeparableQuotientNegative.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SeparableQuotientNegative.lean).
-
 ```lean
 theorem negative_main (hCH : CH) : ¬ SQ.{u} ℝ ∧ ¬ SQ.{u} ℂ
 ```
 
-Proved in [lean/OAI/Analysis/SeparableQuotients/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SeparableQuotients/Main.lean#L9).
+Stated in [SeparableQuotientNegative.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SeparableQuotientNegative.lean#L26). Proved in [lean/OAI/Analysis/SeparableQuotients/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SeparableQuotients/Main.lean#L9).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

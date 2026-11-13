@@ -26,14 +26,12 @@ At a fixed short scale for $1$-Lipschitz fields, the formalization also gives pr
 
 ## Lean: Uniform short Hilbert-transform bounds for Lipschitz directions
 
-Stated in [LipschitzHilbert.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LipschitzHilbert.lean).
-
 ```lean
 theorem main :
     ∃ a : ℝ, a∈Ioo 0 (1/2) ∧ ∃ C : ℝ≥0, 0<C ∧ ShortHilbertConclusion a C
 ```
 
-Proved in [lean/OAI/Analysis/LipschitzHilbert/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzHilbert/Main.lean#L17).
+Stated in [LipschitzHilbert.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LipschitzHilbert.lean#L63). Proved in [lean/OAI/Analysis/LipschitzHilbert/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzHilbert/Main.lean#L17).
 
 ```lean
 theorem uniform_truncation :
@@ -44,11 +42,11 @@ theorem uniform_truncation :
         eLpNorm (shortTransform v epsilon R f) 2 volume≤ENNReal.ofReal (C*‖f.toLp 2 volume‖)
 ```
 
-Proved in [lean/OAI/Analysis/LipschitzHilbert/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzHilbert/Main.lean#L23).
+Stated in [LipschitzHilbert.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LipschitzHilbert.lean#L68). Proved in [lean/OAI/Analysis/LipschitzHilbert/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LipschitzHilbert/Main.lean#L23).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -30,18 +30,16 @@ The finite lattice representation problem asks which finite lattices occur as th
 
 ## Lean: Colored-graph criterion for finite congruence lattices
 
-Stated in [FiniteCongruenceGraph.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteCongruenceGraph.lean).
-
 ```lean
 theorem graph_criterion (Lat : Type) [Fintype Lat] [Lattice Lat] [OrderBot Lat] :
     Representable Lat ↔ HasGraphWitness Lat
 ```
 
-Proved in [lean/OAI/Algebra/Universal/GraphCriterion.lean, line 291](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Universal/GraphCriterion.lean#L291).
+Stated in [FiniteCongruenceGraph.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FiniteCongruenceGraph.lean#L57). Proved in [lean/OAI/Algebra/Universal/GraphCriterion.lean, line 291](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/Universal/GraphCriterion.lean#L291).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -8,7 +8,7 @@ proof: formalized
 
 # 100. Cylinder coverings below the half-area bound
 
-4 manuscripts and 6 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
+4 manuscripts and 3 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
 Covers the entire closed regular tetrahedron by finitely many cylinders with compact triangular perpendicular bases whose total area is less than half its smallest orthogonal projection area. This disproves Bang's half-area cylinder-covering bound and the stronger directionwise normalized conjecture in dimension three.
 
@@ -56,8 +56,6 @@ The same aggregate includes finite cylinder covers of regular tetrahedra below h
 
 ## Lean: Cylinder-covering counterexamples and companion approximations
 
-Stated in [CylinderCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean).
-
 ```lean
 theorem fourPaperMain :
     AngularExplicitStatement ∧
@@ -69,82 +67,39 @@ theorem fourPaperMain :
     RadialSweep.ActualSweepStatement
 ```
 
-Proved in [lean/OAI/Geometry/CylinderCovering/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CylinderCovering/Main.lean#L44).
+Stated in [CylinderCovering.lean, line 561](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean#L561). Proved in [lean/OAI/Geometry/CylinderCovering/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CylinderCovering/Main.lean#L44).
 
 ## Lean: Explicit triangular-cylinder cover below half area
-
-Stated in [TriangularCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangularCovering.lean).
 
 ```lean
 theorem main : A_min = H ∧ MainAsymptotic ∧ NormalizedCounterexample
 ```
 
-Proved in [lean/OAI/Geometry/TriangularCovering/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/TriangularCovering/Main.lean#L61).
+Stated in [TriangularCovering.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangularCovering.lean#L65). Proved in [lean/OAI/Geometry/TriangularCovering/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/TriangularCovering/Main.lean#L61).
 
 ## Lean: Ruled-set approximation within the cylinder-covering aggregate
 
-Stated in [CylinderCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean).
-
-```lean
-theorem fourPaperMain :
-    AngularExplicitStatement ∧
-    RuledApproximation.HyperbolicStatement ∧
-    RuledApproximation.NilpotentC1Statement ∧
-    RegularParallelogramCounterexampleStatement ∧
-    RegularOpenCounterexampleStatement ∧
-    RadialSweep.AlignedStatement ∧
-    RadialSweep.ActualSweepStatement
-```
-
-Proved in [lean/OAI/Geometry/CylinderCovering/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CylinderCovering/Main.lean#L44).
+States the `OAI.CylinderCovering.fourPaperMain` quoted above. Stated in [CylinderCovering.lean, line 561](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean#L561).
 
 ## Lean: Finite cylinder approximation for the selected ruled families
-
-Stated in [RuledCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RuledCovering.lean).
 
 ```lean
 theorem fullMain : FullMain
 ```
 
-Proved in [lean/OAI/Geometry/RuledCovering/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/RuledCovering/Main.lean#L13).
+Stated in [RuledCovering.lean, line 215](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RuledCovering.lean#L215). Proved in [lean/OAI/Geometry/RuledCovering/Main.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/RuledCovering/Main.lean#L13).
 
 ## Lean: Cylinder-covering counterexamples and approximation results
 
-Stated in [CylinderCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean).
-
-```lean
-theorem fourPaperMain :
-    AngularExplicitStatement ∧
-    RuledApproximation.HyperbolicStatement ∧
-    RuledApproximation.NilpotentC1Statement ∧
-    RegularParallelogramCounterexampleStatement ∧
-    RegularOpenCounterexampleStatement ∧
-    RadialSweep.AlignedStatement ∧
-    RadialSweep.ActualSweepStatement
-```
-
-Proved in [lean/OAI/Geometry/CylinderCovering/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CylinderCovering/Main.lean#L44).
+States the `OAI.CylinderCovering.fourPaperMain` quoted above. Stated in [CylinderCovering.lean, line 561](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean#L561).
 
 ## Lean: Finite triangular approximation of radial sweeps
 
-Stated in [CylinderCovering.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean).
-
-```lean
-theorem fourPaperMain :
-    AngularExplicitStatement ∧
-    RuledApproximation.HyperbolicStatement ∧
-    RuledApproximation.NilpotentC1Statement ∧
-    RegularParallelogramCounterexampleStatement ∧
-    RegularOpenCounterexampleStatement ∧
-    RadialSweep.AlignedStatement ∧
-    RadialSweep.ActualSweepStatement
-```
-
-Proved in [lean/OAI/Geometry/CylinderCovering/Main.lean, line 44](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CylinderCovering/Main.lean#L44).
+States the `OAI.CylinderCovering.fourPaperMain` quoted above. Stated in [CylinderCovering.lean, line 561](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CylinderCovering.lean#L561).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

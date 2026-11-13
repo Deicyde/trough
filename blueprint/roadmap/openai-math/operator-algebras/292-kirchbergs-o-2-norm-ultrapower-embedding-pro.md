@@ -24,17 +24,15 @@ Kirchberg's norm-ultrapower embedding problem asks whether separable $C^*$-algeb
 
 ## Lean: Obstruction to nuclear norm-ultrapower embeddings
 
-Stated in [NuclearUltrapower.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NuclearUltrapower.lean).
-
 ```lean
 theorem main_no_embedding : MainStatementWithCuntzCorollary.{0}
 ```
 
-Proved in [lean/OAI/Analysis/NuclearUltrapower/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/NuclearUltrapower/Main.lean#L14).
+Stated in [NuclearUltrapower.lean, line 208](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NuclearUltrapower.lean#L208). Proved in [lean/OAI/Analysis/NuclearUltrapower/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/NuclearUltrapower/Main.lean#L14).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

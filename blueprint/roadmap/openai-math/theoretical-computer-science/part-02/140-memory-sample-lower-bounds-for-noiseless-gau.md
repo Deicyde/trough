@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.MemoryPrecision.main, OAI.NoiselessRegression.main, OAI.PosteriorReplicas.source_main, OAI.RepeatedLocalization.FiniteEntropy.finite_expected_regularization, OAI.RepeatedLocalization.repeated_localization, OAI.AllScaleInverseVolume.inverse_volume_without_support, OAI.KernelPotential.actual_row_drift, OAI.ProjectionMoments.main
+lean: OAI.MemoryPrecision.main, OAI.NoiselessRegression.main, OAI.PosteriorReplicas.source_main, OAI.RepeatedLocalization.FiniteEntropy.finite_expected_regularization, OAI.RepeatedLocalization.repeated_localization, OAI.AllScaleInverseVolume.inverse_volume_without_support, OAI.KernelPotential.kernel_coercivity, OAI.KernelPotential.actual_row_drift
 statement: formalized
 ---
 
@@ -75,8 +75,6 @@ The formalization also covers radius-weighted block and terminal estimates, affi
 
 ## Lean: Projection estimates and memory–precision bounds
 
-Stated in [MemoryPrecision.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MemoryPrecision.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main :
   AmbientGramStatement ∧
@@ -115,21 +113,17 @@ theorem main :
         ((2*ε*Real.exp (C*(1+(M:ℝ)/(d:ℝ)^2)*(MemoryPrecision.Kernel.BlockCount T ((d-1)/8):ℝ)))^(((d:ℝ)-1)/2))))
 ```
 
-Proved in [lean/OAI/Probability/MemoryPrecision/Main.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MemoryPrecision/Main.lean#L59).
+Stated in [MemoryPrecision.lean, line 771](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MemoryPrecision.lean#L771). Proved in [lean/OAI/Probability/MemoryPrecision/Main.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/MemoryPrecision/Main.lean#L59). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Subquadratic and fixed-quadratic memory–precision lower bounds
-
-Stated in [NoiselessRegression.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NoiselessRegression.lean).
 
 ```lean
 theorem main : SubquadraticMemory.{u} ∧ FixedQuadraticMemory.{u}
 ```
 
-Proved in [lean/OAI/Probability/GaussianRegression/Main.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianRegression/Main.lean#L91).
+Stated in [NoiselessRegression.lean, line 118](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NoiselessRegression.lean#L118). Proved in [lean/OAI/Probability/GaussianRegression/Main.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianRegression/Main.lean#L91).
 
 ## Lean: Posterior-replica comparisons and sample lower bound
-
-Stated in [PosteriorReplicas.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PosteriorReplicas.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem source_main : EqualLabelMeasureIdentity ∧ EqualLabelVersions ∧
@@ -138,65 +132,57 @@ theorem source_main : EqualLabelMeasureIdentity ∧ EqualLabelVersions ∧
     PosteriorRegression.KernelSubquadraticMemory.{u}
 ```
 
-Proved in [lean/OAI/Probability/PosteriorReplicas/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/PosteriorReplicas/Main.lean#L19).
+Stated in [PosteriorReplicas.lean, line 447](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PosteriorReplicas.lean#L447). Proved in [lean/OAI/Probability/PosteriorReplicas/Main.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/PosteriorReplicas/Main.lean#L19). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Finite-entropy localization and regularization bounds
-
-Stated in [GaussianFiniteEntropy.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianFiniteEntropy.lean).
 
 ```lean
 theorem finite_expected_regularization : FiniteEntropyStatement
 ```
 
-Proved in [lean/OAI/Probability/Localization/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Localization/Main.lean#L12).
+Stated in [GaussianFiniteEntropy.lean, line 198](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianFiniteEntropy.lean#L198). Proved in [lean/OAI/Probability/Localization/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Localization/Main.lean#L12).
 
 ## Lean: Information growth under repeated exact Gaussian observations
-
-Stated in [GaussianInformation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianInformation.lean).
 
 ```lean
 theorem repeated_localization : MainStatement
 ```
 
-Proved in [lean/OAI/Probability/GaussianInformation/Dyadic/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Dyadic/Main.lean#L22).
+Stated in [GaussianInformation.lean, line 104](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianInformation.lean#L104). Proved in [lean/OAI/Probability/GaussianInformation/Dyadic/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Dyadic/Main.lean#L22).
 
 ```lean
 theorem inverse_volume_without_support : InverseVolumeStatement
 ```
 
-Proved in [lean/OAI/Probability/GaussianInformation/Inverse/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Inverse/Main.lean#L15).
+Stated in [GaussianInformation.lean, line 138](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianInformation.lean#L138). Proved in [lean/OAI/Probability/GaussianInformation/Inverse/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Inverse/Main.lean#L15).
 
 ```lean
 theorem kernel_coercivity : CoercivityStatement
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianInformation/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianInformation.lean, line 200](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianInformation.lean#L200). Its proof is in [lean/OAI/Probability/GaussianInformation/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem actual_row_drift : DriftStatement
 ```
 
-Proved in [lean/OAI/Probability/GaussianInformation/Kernel/Main.lean, line 97](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Kernel/Main.lean#L97).
+Stated in [GaussianInformation.lean, line 201](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianInformation.lean#L201). Proved in [lean/OAI/Probability/GaussianInformation/Kernel/Main.lean, line 97](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianInformation/Kernel/Main.lean#L97).
 
 ## Lean: Projection, cap, and Riesz estimates with regression bounds
-
-Stated in [ProjectionMoments.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProjectionMoments.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main : MainStatement.{u}
 ```
 
-Proved in [lean/OAI/Probability/ProjectionMoments/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ProjectionMoments/Main.lean#L14).
+Stated in [ProjectionMoments.lean, line 707](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProjectionMoments.lean#L707). Proved in [lean/OAI/Probability/ProjectionMoments/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/ProjectionMoments/Main.lean#L14). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Gaussian replacement and information bounds
-
-Stated in [GaussianReplacement.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem mixedMomentMain : MixedMomentMain
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 433](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L433). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem actualRowMain {d m r q : ℕ} {W : Type*} [MeasurableSpace W]
@@ -220,7 +206,7 @@ theorem actualRowMain {d m r q : ℕ} {W : Type*} [MeasurableSpace W]
       (completeFamily (P.map swapLast).snd B 1) (completeFamily (P.map swapLast).snd D 1)
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 436](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L436). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem actualRowRefinement {d m : ℕ} {W E : Type*} [MeasurableSpace W]
@@ -234,7 +220,7 @@ theorem actualRowRefinement {d m : ℕ} {W E : Type*} [MeasurableSpace W]
       rowInformation P (gaussianRows m d)
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 457](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L457). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem actualRowSourceMain {d m r q : ℕ} {W : Type*} [MeasurableSpace W]
@@ -258,7 +244,7 @@ theorem actualRowSourceMain {d m r q : ℕ} {W : Type*} [MeasurableSpace W]
       (completeFamily (P.map swapLast).snd B 1) (completeFamily (P.map swapLast).snd D 1)
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 468](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L468). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem actualRowSourceRefinement {d m : ℕ} {W E : Type*} [MeasurableSpace W]
@@ -274,57 +260,55 @@ theorem actualRowSourceRefinement {d m : ℕ} {W E : Type*} [MeasurableSpace W]
       actualConditionalRowInformation P
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 489](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L489). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem criticalComparisonMain : CriticalComparisonMain
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 502](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L502). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem oneLevelComparisonMain : OneLevelComparisonMain
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 505](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L505). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem twoLabelComparisonMain : TwoLabelComparisonMain
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 508](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L508). Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem hybridBlockMain : HybridBlockMain
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 511](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L511). Proved in [lean/OAI/Probability/GaussianReplacement/Hybrid.lean, line 97](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/Hybrid.lean#L97). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem fiberTwoPointMain : FiberTwoPointMain
 ```
 
-Proved in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean, line 141](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean#L141).
+Stated in [GaussianReplacement.lean, line 514](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L514). Proved in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean, line 141](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean#L141).
 
 ```lean
 theorem fiberBlockMain : FiberBlockMain
 ```
 
-Its proof is in [lean/OAI/Probability/GaussianReplacement/FiberEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberEquality.lean) or a file it imports further down, which this chapter does not read.
+Stated in [GaussianReplacement.lean, line 517](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianReplacement.lean#L517). Proved in [lean/OAI/Probability/GaussianReplacement/FiberBlock.lean, line 74](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/GaussianReplacement/FiberBlock.lean#L74). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Subsphere estimates and memory–sample lower bounds
-
-Stated in [SubsphereCurrent.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SubsphereCurrent.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem full_current_main_scope : CurrentMainScope.{u,v,w}
 ```
 
-Proved in [lean/OAI/Probability/Subsphere/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Subsphere/Main.lean#L15).
+Stated in [SubsphereCurrent.lean, line 442](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SubsphereCurrent.lean#L442). Proved in [lean/OAI/Probability/Subsphere/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Subsphere/Main.lean#L15). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

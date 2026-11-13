@@ -32,27 +32,23 @@ The strong thin-tree problem asks for a spanning tree that crosses every cut spa
 
 ## Lean: Strong thin-tree bound
 
-Stated in [StrongThinTree.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StrongThinTree.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem strongThinTree : MainStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/ThinTrees/Main.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ThinTrees/Main.lean#L24).
+Stated in [StrongThinTree.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StrongThinTree.lean#L38). Proved in [lean/OAI/Combinatorics/ThinTrees/Main.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ThinTrees/Main.lean#L24). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Polynomial-time construction of strong thin trees
-
-Stated in [AlgorithmicThinTrees.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AlgorithmicThinTrees.lean).
 
 ```lean
 theorem algorithmic_strong_thin_trees : AlgorithmicStrongThinTrees
 ```
 
-Proved in [lean/OAI/Combinatorics/ThinTrees/Encoding/AlgorithmicMain.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ThinTrees/Encoding/AlgorithmicMain.lean#L65).
+Stated in [AlgorithmicThinTrees.lean, line 191](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AlgorithmicThinTrees.lean#L191). Proved in [lean/OAI/Combinatorics/ThinTrees/Encoding/AlgorithmicMain.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ThinTrees/Encoding/AlgorithmicMain.lean#L65).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

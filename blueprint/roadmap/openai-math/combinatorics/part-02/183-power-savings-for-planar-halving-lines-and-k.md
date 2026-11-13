@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# 183. Power savings for planar halving lines and \*k\*-sets
+# 183. Power savings for planar halving lines and *k*-sets
 
 1 manuscript and 1 Lean statement, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
@@ -24,8 +24,6 @@ A halving pair in an even planar point set is a pair whose line leaves equally m
 
 ## Lean: Power-saving bounds for halving pairs and level switches
 
-Stated in [HalvingLines.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HalvingLines.lean).
-
 ```lean
 theorem power_bounds :
     (∃ ε : ℝ, 0 < ε ∧ ∃ C : ℝ, ∃ n₀ : ℕ,
@@ -36,11 +34,11 @@ theorem power_bounds :
         ∀ k : ℕ, k ≤ n → (switchCount P k : ℝ) ≤ C * (n : ℝ) ^ ((4 : ℝ) / 3 - ε))
 ```
 
-Proved in [lean/OAI/Combinatorics/HalvingLines/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HalvingLines/Main.lean#L27).
+Stated in [HalvingLines.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HalvingLines.lean#L45). Proved in [lean/OAI/Combinatorics/HalvingLines/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HalvingLines/Main.lean#L27).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

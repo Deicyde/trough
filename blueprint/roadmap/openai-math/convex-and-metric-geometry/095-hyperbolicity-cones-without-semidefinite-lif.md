@@ -36,8 +36,6 @@ The generalized Lax conjecture predicts that every hyperbolicity cone is spectra
 
 ## Lean: Nonspectrahedral hyperbolicity cone
 
-Stated in [HyperbolicCones.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperbolicCones.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_result :
     Module.finrank ℝ Ambient = 23 ∧
@@ -49,11 +47,11 @@ theorem main_result :
       cone ≠ {x | (L x : Mat N ℝ).PosSemidef}
 ```
 
-Proved in [lean/OAI/Analysis/HyperbolicCones/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HyperbolicCones/Main.lean#L25).
+Stated in [HyperbolicCones.lean, line 67](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HyperbolicCones.lean#L67). Proved in [lean/OAI/Analysis/HyperbolicCones/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HyperbolicCones/Main.lean#L25). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -17,7 +17,7 @@ For a finite *p*-group *G* and a subgroup *H*, we prove that the optimal chromat
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

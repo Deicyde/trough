@@ -30,8 +30,6 @@ The formalization transfers a weak Hessian upper bound to every prescribed minim
 
 ## Lean: Weak Hessian bounds along every geodesic
 
-Stated in [WeakHessian.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeakHessian.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem every_geodesic [CompleteSpace X] [TopologicalSpace.SeparableSpace X]
     (m : Measure X) (K N : ℝ) (hN : 1 < N)
@@ -42,11 +40,11 @@ theorem every_geodesic [CompleteSpace X] [TopologicalSpace.SeparableSpace X]
     (σ : Curve X) (hσ : IsGeodesic σ) : CurveSecondDerivativeBound F G σ
 ```
 
-Proved in [lean/OAI/Geometry/WeakHessian/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/WeakHessian/Main.lean#L38).
+Stated in [WeakHessian.lean, line 220](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WeakHessian.lean#L220). Proved in [lean/OAI/Geometry/WeakHessian/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/WeakHessian/Main.lean#L38). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

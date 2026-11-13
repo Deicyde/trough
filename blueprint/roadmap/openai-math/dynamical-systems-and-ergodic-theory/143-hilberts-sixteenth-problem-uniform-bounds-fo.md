@@ -30,19 +30,17 @@ For the quintic Liénard system $x'=y-F(x)$, $y'=-x$, the formalized result prov
 
 ## Lean: Exact two-cycle bound for quintic Liénard systems
 
-Stated in [QuinticLienard.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuinticLienard.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main :
     (∀ F : Polynomial ℝ, F.degree ≤ 5 → {C : Set Plane | IsLimitCycle F C}.encard ≤ 2) ∧
     (∃ F : Polynomial ℝ, F.degree ≤ 5 ∧ {C : Set Plane | IsLimitCycle F C}.encard = 2)
 ```
 
-Proved in [lean/OAI/Analysis/LienardCycles/Main.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LienardCycles/Main.lean#L20).
+Stated in [QuinticLienard.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/QuinticLienard.lean#L39). Proved in [lean/OAI/Analysis/LienardCycles/Main.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LienardCycles/Main.lean#L20). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -36,27 +36,21 @@ The underlying estimate gives constants $0<\varepsilon<1/4$ and $C<\infty$ such 
 
 ## Lean: Brennan and inverse-square integral-means bounds
 
-Stated in [Brennan.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Brennan.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem : MainStatement
 ```
 
-Proved in [lean/OAI/Analysis/IntegralMeans/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IntegralMeans/Main.lean#L10).
+Stated in [Brennan.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Brennan.lean#L47). Proved in [lean/OAI/Analysis/IntegralMeans/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IntegralMeans/Main.lean#L10). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Sharp endpoint divergence
-
-Stated in [BrennanSharp.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BrennanSharp.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem sharp_endpoints : SharpEndpointStatement
 ```
 
-Proved in [lean/OAI/Analysis/IntegralMeans/SharpEndpoints.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IntegralMeans/SharpEndpoints.lean#L23).
+Stated in [BrennanSharp.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BrennanSharp.lean#L36). Proved in [lean/OAI/Analysis/IntegralMeans/SharpEndpoints.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/IntegralMeans/SharpEndpoints.lean#L23). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Strict inverse-first-power bound and consequences
-
-Stated in [StrictMeans.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StrictMeans.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main :
@@ -68,11 +62,11 @@ theorem main :
     (¬ ∀ p : ℝ, boundedSpectrum p = kraetzerPrediction p)
 ```
 
-Proved in [lean/OAI/Analysis/StrictMeans/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/StrictMeans/Main.lean#L7).
+Stated in [StrictMeans.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StrictMeans.lean#L34). Proved in [lean/OAI/Analysis/StrictMeans/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/StrictMeans/Main.lean#L7). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

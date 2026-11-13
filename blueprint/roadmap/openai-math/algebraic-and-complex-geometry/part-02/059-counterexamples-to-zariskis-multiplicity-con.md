@@ -23,7 +23,7 @@ We give a negative answer to Zariski's multiplicity question in four complex var
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

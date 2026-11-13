@@ -36,8 +36,6 @@ The formalization classifies connected smooth closed Einstein four-manifolds wit
 
 ## Lean: Classification of positively curved Einstein four-manifolds
 
-Stated in [EinsteinFour.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EinsteinFour.lean).
-
 ```lean
 theorem orientedClassification (X : ClosedOrientedMetricFour.{u})
     (hEinstein : IsEinstein X.metric) (hpositive : HasPositiveSectionalCurvature X.metric) :
@@ -45,13 +43,13 @@ theorem orientedClassification (X : ClosedOrientedMetricFour.{u})
       ScaledIsometricTo X.metric a fubiniStudyDistance)
 ```
 
-Proved in [lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean#L63).
+Stated in [EinsteinFour.lean, line 190](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EinsteinFour.lean#L190). Proved in [lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean#L63).
 
 ```lean
 theorem classificationOn : ClassificationOn M
 ```
 
-Proved in [lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean#L78).
+Stated in [EinsteinFour.lean, line 202](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EinsteinFour.lean#L202). Proved in [lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean, line 78](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean#L78).
 
 ```lean
 theorem classification (M : Type*) [TopologicalSpace M] [ChartedSpace FourSpace M]
@@ -64,11 +62,11 @@ theorem classification (M : Type*) [TopologicalSpace M] [ChartedSpace FourSpace 
         ScaledIsometricTo g a realProjectiveDistance)
 ```
 
-Proved in [lean/OAI/Geometry/EinsteinFour/Classification.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/EinsteinFour/Classification.lean#L13).
+Stated in [EinsteinFour.lean, line 208](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EinsteinFour.lean#L208). Proved in [lean/OAI/Geometry/EinsteinFour/Classification.lean, line 13](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/EinsteinFour/Classification.lean#L13).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.DirectCrouzeix.complete_crouzeix, OAI.DirectCrouzeix.uniform_sharpness, OAI.CompleteCrouzeix.main, OAI.StructuralCrouzeixReference.challenge, OAI.CrouzeixHilbert.hilbert, OAI.HilbertCrouzeix.rational_denominator_isUnit, OAI.HilbertCrouzeix.zeroConclusion
+lean: OAI.DirectCrouzeix.complete_crouzeix, OAI.DirectCrouzeix.uniform_sharpness, OAI.CompleteCrouzeix.main, OAI.StructuralCrouzeixReference.challenge, OAI.CrouzeixHilbert.hilbert, OAI.HilbertCrouzeix.numericalClosure_geometry, OAI.HilbertCrouzeix.exists_finite_compression, OAI.HilbertCrouzeix.rational_denominator_isUnit
 statement: formalized
 ---
 
@@ -33,44 +33,36 @@ For finite matrices in a bounded convex domain with regular real-analytic Jordan
 
 ## Lean: Complete Crouzeix inequality and sharpness
 
-Stated in [DirectCrouzeix.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectCrouzeix.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem complete_crouzeix : UniversalBound 2
 ```
 
-Proved in [lean/OAI/Analysis/DirectCrouzeix/CompleteBound.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DirectCrouzeix/CompleteBound.lean#L65).
+Stated in [DirectCrouzeix.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectCrouzeix.lean#L34). Proved in [lean/OAI/Analysis/DirectCrouzeix/CompleteBound.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DirectCrouzeix/CompleteBound.lean#L65). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem uniform_sharpness (c : ℝ) (hc : UniversalBound c) : 2 ≤ c
 ```
 
-Proved in [lean/OAI/Analysis/DirectCrouzeix/Sharpness.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DirectCrouzeix/Sharpness.lean#L75).
+Stated in [DirectCrouzeix.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectCrouzeix.lean#L37). Proved in [lean/OAI/Analysis/DirectCrouzeix/Sharpness.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/DirectCrouzeix/Sharpness.lean#L75).
 
 ## Lean: Complete polynomial inequality and sharpness
-
-Stated in [CompleteCrouzeix.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CompleteCrouzeix.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main : UniversalBound 2 ∧ ∀ C : ℝ, UniversalBound C → 2 ≤ C
 ```
 
-Proved in [lean/OAI/Analysis/NumericalRange/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/NumericalRange/Main.lean#L61).
+Stated in [CompleteCrouzeix.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CompleteCrouzeix.lean#L33). Proved in [lean/OAI/Analysis/NumericalRange/Main.lean, line 61](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/NumericalRange/Main.lean#L61). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Optimal similarity and boundary representation
-
-Stated in [StructuralCrouzeix.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StructuralCrouzeix.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem challenge : StructuralCrouzeix.FullEndpoint ∧
     StructuralCrouzeix.IsAdmissible (Metric.ball (0 : ℂ) 1)
 ```
 
-Proved in [lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean#L7).
+Stated in [StructuralCrouzeix.lean, line 210](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/StructuralCrouzeix.lean#L210). Proved in [lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean#L7). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Complete sharp Crouzeix theorem on arbitrary Hilbert spaces
-
-Stated in [CrouzeixHilbert.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CrouzeixHilbert.lean).
 
 ```lean
 theorem hilbert (H : Type u) [NormedAddCommGroup H] [InnerProductSpace ℂ H]
@@ -79,11 +71,9 @@ theorem hilbert (H : Type u) [NormedAddCommGroup H] [InnerProductSpace ℂ H]
     (Subsingleton H → ZeroConclusion A) ∧ SharpConstant
 ```
 
-Proved in [lean/OAI/Analysis/Crouzeix/HilbertInequality.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Crouzeix/HilbertInequality.lean#L12).
+Stated in [CrouzeixHilbert.lean, line 148](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CrouzeixHilbert.lean#L148). Proved in [lean/OAI/Analysis/Crouzeix/HilbertInequality.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Crouzeix/HilbertInequality.lean#L12).
 
 ## Lean: Numerical-range geometry and finite-compression support
-
-Stated in [HilbertCrouzeix.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HilbertCrouzeix.lean).
 
 ```lean
 theorem numericalClosure_geometry (A : H →L[ℂ] H) :
@@ -91,7 +81,7 @@ theorem numericalClosure_geometry (A : H →L[ℂ] H) :
       spectrum ℂ A ⊆ numericalClosure A
 ```
 
-Its proof is in [lean/OAI/Analysis/HilbertCrouzeix/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [HilbertCrouzeix.lean, line 115](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HilbertCrouzeix.lean#L115). Its proof is in [lean/OAI/Analysis/HilbertCrouzeix/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem exists_finite_compression {m d : ℕ} (A : H →L[ℂ] H)
@@ -104,7 +94,7 @@ theorem exists_finite_compression {m d : ℕ} (A : H →L[ℂ] H)
           polynomialEval A B (↑ξ)
 ```
 
-Its proof is in [lean/OAI/Analysis/HilbertCrouzeix/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [HilbertCrouzeix.lean, line 121](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HilbertCrouzeix.lean#L121). Its proof is in [lean/OAI/Analysis/HilbertCrouzeix/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ```lean
 theorem rational_denominator_isUnit [Nontrivial H] (A : H →L[ℂ] H)
@@ -112,17 +102,17 @@ theorem rational_denominator_isUnit [Nontrivial H] (A : H →L[ℂ] H)
     (i j : Fin m) : IsUnit (Polynomial.aeval A (R i j).denom)
 ```
 
-Proved in [lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean#L51).
+Stated in [HilbertCrouzeix.lean, line 131](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HilbertCrouzeix.lean#L131). Proved in [lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean#L51).
 
 ```lean
 theorem zeroConclusion [Subsingleton H] (A : H →L[ℂ] H) : ZeroConclusion A
 ```
 
-Proved in [lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean#L84).
+Stated in [HilbertCrouzeix.lean, line 136](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HilbertCrouzeix.lean#L136). Proved in [lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean, line 84](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean#L84).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -24,8 +24,6 @@ Borsuk's conjecture predicts that every bounded subset of $\mathbb R^d$ can be c
 
 ## Lean: Nine-dimensional Borsuk counterexample
 
-Stated in [BorsukNine.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BorsukNine.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem :
     IsCompact projectorSet ∧
@@ -34,11 +32,11 @@ theorem main_theorem :
     ¬ HasTenSmallCover
 ```
 
-Proved in [lean/OAI/Geometry/Borsuk/Counterexample.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Borsuk/Counterexample.lean#L49).
+Stated in [BorsukNine.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BorsukNine.lean#L25). Proved in [lean/OAI/Geometry/Borsuk/Counterexample.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Borsuk/Counterexample.lean#L49). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

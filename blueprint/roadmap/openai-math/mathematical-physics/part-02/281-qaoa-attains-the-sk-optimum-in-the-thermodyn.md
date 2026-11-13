@@ -36,8 +36,6 @@ The statement also constructs the associated diffusion and proves its selected s
 
 ## Lean: Parisi ground-state value identities and finite Gaussian approximation
 
-Stated in [SKValue.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKValue.lean).
-
 ```lean
 theorem value_consequences :
     (∀ (W : BrownianSpace) (γ : OrderParameter) (X : ℝ → W.Ω → ℝ),
@@ -49,22 +47,20 @@ theorem value_consequences :
       IsMinimizer W γ → groundStateValue = parisi W γ)
 ```
 
-Proved in [lean/OAI/Probability/SKValue/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKValue/Main.lean#L16).
+Stated in [SKValue.lean, line 163](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKValue.lean#L163). Proved in [lean/OAI/Probability/SKValue/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKValue/Main.lean#L16).
 
 ## Lean: Full support of zero-temperature SK minimizers
-
-Stated in [SKFullSupport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKFullSupport.lean).
 
 ```lean
 theorem full_support (W : BrownianSystem Ω) (γ : OrderParameter)
     (hmin : IsMinimizer W γ) : FullSupportConclusion W γ
 ```
 
-Proved in [lean/OAI/Probability/SKSupport/Main.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKSupport/Main.lean#L35).
+Stated in [SKFullSupport.lean, line 90](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SKFullSupport.lean#L90). Proved in [lean/OAI/Probability/SKSupport/Main.lean, line 35](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SKSupport/Main.lean#L35).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -24,8 +24,6 @@ The formalization gives exponential threshold parallel repetition for every fini
 
 ## Lean: Threshold parallel repetition for entangled games
 
-Stated in [EntangledGames.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EntangledGames.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem threshold_parallel_repetition :
     ∃ κ₀ : ℝ, 0 < κ₀ ∧
@@ -39,11 +37,11 @@ theorem threshold_parallel_repetition :
           Real.exp (-κ₀ * δ ^ 13 / (1 + Real.log (((a + 1) * (b + 1) : ℕ) : ℝ)) * k)
 ```
 
-Proved in [lean/OAI/Probability/EntangledGames/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/EntangledGames/Main.lean#L9).
+Stated in [EntangledGames.lean, line 64](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EntangledGames.lean#L64). Proved in [lean/OAI/Probability/EntangledGames/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/EntangledGames/Main.lean#L9). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

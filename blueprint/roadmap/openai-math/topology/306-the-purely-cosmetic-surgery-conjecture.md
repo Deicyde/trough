@@ -17,7 +17,7 @@ We prove the purely cosmetic surgery conjecture for knots in the three-sphere. D
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

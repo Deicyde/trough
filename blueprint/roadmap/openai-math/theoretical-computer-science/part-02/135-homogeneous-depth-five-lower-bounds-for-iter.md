@@ -26,8 +26,6 @@ It also gives, over every field and for $n\ge2$, circuits with at most $n^{\sqrt
 
 ## Lean: Homogeneous depth-five bounds for iterated matrix multiplication
 
-Stated in [DepthFive.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DepthFive.lean).
-
 ```lean
 theorem main :
     (∃ threshold : ℕ, ∀ size : ℕ, threshold ≤ size →
@@ -43,11 +41,11 @@ theorem main :
         (upperGateBound size : ℝ) ≤ (size : ℝ) ^ (Real.sqrt (size : ℝ) + 4))
 ```
 
-Proved in [lean/OAI/Algebra/DepthFive/Bounds.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/DepthFive/Bounds.lean#L31).
+Stated in [DepthFive.lean, line 118](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DepthFive.lean#L118). Proved in [lean/OAI/Algebra/DepthFive/Bounds.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/DepthFive/Bounds.lean#L31).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

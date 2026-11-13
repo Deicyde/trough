@@ -24,8 +24,6 @@ The Kirchberg–Rørdam criterion relates Jiang–Su absorption to characters of
 
 ## Lean: Kirchberg–Rørdam character criterion
 
-Stated in [CharacterCriterion.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CharacterCriterion.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem character_criterion
     (A : Type) [CStarAlgebra A] [Nontrivial A] [TopologicalSpace.SeparableSpace A]
@@ -34,11 +32,11 @@ theorem character_criterion
       Nonempty (A ≃⋆ₐ[ℂ] MinTensor.Algebra A JiangSu.Algebra)
 ```
 
-Proved in [lean/OAI/Analysis/CharacterCriterion/Main.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CharacterCriterion/Main.lean#L52).
+Stated in [CharacterCriterion.lean, line 2128](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CharacterCriterion.lean#L2128). Proved in [lean/OAI/Analysis/CharacterCriterion/Main.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CharacterCriterion/Main.lean#L52). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

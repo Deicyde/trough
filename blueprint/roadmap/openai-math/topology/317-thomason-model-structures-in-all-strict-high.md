@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.Thomason.main
+lean: OAI.Thomason.main, OAI.Thomason.nerveDetection_allDimensions
 statement: formalized
 ---
 
@@ -25,13 +25,11 @@ The selected statements also identify weak equivalences by the Street nerve in a
 
 ## Lean: Thomason model structures and nerve detection in all positive strict dimensions
 
-Stated in [ThomasonModelStructures.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThomasonModelStructures.lean).
-
 ```lean
 theorem Thomason.main : OAI.Thomason.FullMain.{u}
 ```
 
-Proved in [lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean, line 683](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean#L683).
+Stated in [ThomasonModelStructures.lean, line 2460](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThomasonModelStructures.lean#L2460). Proved in [lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean, line 683](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean#L683).
 
 ```lean
 theorem Thomason.nerveDetection_allDimensions :
@@ -41,11 +39,11 @@ theorem Thomason.nerveDetection_allDimensions :
       OAI.Thomason.simplicialWeakEquivalences.inverseImage (OAI.Thomason.streetNerveFinite n)
 ```
 
-Its proof is in [lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean) or a file it imports further down, which this chapter does not read.
+Stated in [ThomasonModelStructures.lean, line 2463](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThomasonModelStructures.lean#L2463). Its proof is in [lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/CategoryTheory/Thomason/RankedFaithfulness.lean) or a file it imports further down, which this chapter does not read.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

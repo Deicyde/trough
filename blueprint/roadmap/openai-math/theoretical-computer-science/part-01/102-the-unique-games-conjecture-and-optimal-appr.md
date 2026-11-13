@@ -56,8 +56,6 @@ A directed feedback vertex set meets every directed cycle. The formalization pro
 
 ## Lean: Unique Games gap reduction
 
-Stated in [UniqueGamesTheorem.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniqueGamesTheorem.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem theorem11 (ε δ : ℝ)
     (hε : 0 < ε) (hεhalf : ε < 1 / 2)
@@ -65,58 +63,50 @@ theorem theorem11 (ε δ : ℝ)
     Nonempty (Explicit.MachineOutputContract.BinaryGapReduction ε δ)
 ```
 
-Proved in [lean/OAI/Computability/UniqueGames/Theorem.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/UniqueGames/Theorem.lean#L26).
+Stated in [UniqueGamesTheorem.lean, line 231](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniqueGamesTheorem.lean#L231). Proved in [lean/OAI/Computability/UniqueGames/Theorem.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/UniqueGames/Theorem.lean#L26). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Optimal Max-Cut hardness gap
-
-Stated in [OptimalMaxCut.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OptimalMaxCut.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem OptimalMaxCut.main : OptimalMaxCut.MainStatement
 ```
 
-Proved in [lean/OAI/Computability/MaxCut/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/MaxCut/Main.lean#L53).
+Stated in [OptimalMaxCut.lean, line 153](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OptimalMaxCut.lean#L153). Proved in [lean/OAI/Computability/MaxCut/Main.lean, line 53](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/MaxCut/Main.lean#L53). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Vertex Cover gap and factor-two hardness
-
-Stated in [VertexCover.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VertexCover.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem explicit_cover_gap (m : ℕ) (hm : 4 ≤ m) : Nonempty (GapReduction m)
 ```
 
-Proved in [lean/OAI/Computability/VertexCover/Main.lean, line 113](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/VertexCover/Main.lean#L113).
+Stated in [VertexCover.lean, line 145](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VertexCover.lean#L145). Proved in [lean/OAI/Computability/VertexCover/Main.lean, line 113](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/VertexCover/Main.lean#L113).
 
 ```lean
 theorem every_fixed_factor_below_two (α : ℝ) (hα : 1 ≤ α) (hα2 : α < 2)
     (algorithm : Approximation α) : Nonempty ThreeSATDecision
 ```
 
-Proved in [lean/OAI/Computability/VertexCover/Main.lean, line 115](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/VertexCover/Main.lean#L115).
+Stated in [VertexCover.lean, line 148](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VertexCover.lean#L148). Proved in [lean/OAI/Computability/VertexCover/Main.lean, line 115](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/VertexCover/Main.lean#L115). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Arbitrary constant-factor hardness of Min-UnCut
-
-Stated in [MinUncut.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MinUncut.lean).
 
 ```lean
 theorem main : Nonempty Reduction
 ```
 
-Proved in [lean/OAI/Computability/MinUncut/Main.lean, line 106](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/MinUncut/Main.lean#L106).
+Stated in [MinUncut.lean, line 125](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MinUncut.lean#L125). Proved in [lean/OAI/Computability/MinUncut/Main.lean, line 106](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/MinUncut/Main.lean#L106).
 
 ## Lean: Constant-factor hardness of directed feedback vertex set
-
-Stated in [DirectedFeedback.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectedFeedback.lean).
 
 ```lean
 theorem DirectedFeedback.main : DirectedFeedback.MainStatement
 ```
 
-Proved in [lean/OAI/Computability/DirectedFeedback/Main.lean, line 1132](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DirectedFeedback/Main.lean#L1132).
+Stated in [DirectedFeedback.lean, line 98](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DirectedFeedback.lean#L98). Proved in [lean/OAI/Computability/DirectedFeedback/Main.lean, line 1132](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DirectedFeedback/Main.lean#L1132).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

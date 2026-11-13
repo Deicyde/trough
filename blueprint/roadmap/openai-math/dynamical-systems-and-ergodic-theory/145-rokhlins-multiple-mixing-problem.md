@@ -24,19 +24,17 @@ Rokhlin's multiple-mixing problem asks whether ordinary mixing of one invertible
 
 ## Lean: Mixing of every finite order for one mixing transformation
 
-Stated in [Rokhlin.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Rokhlin.lean).
-
 ```lean
 theorem mixing_all_finite_orders (μ : Measure Ω) [IsProbabilityMeasure μ]
     (T : Ω ≃ᵐ Ω) (h_pres : MeasurePreserving T μ μ) (h_mix : IsMixing μ T) :
     ∀ k : ℕ, 3 ≤ k → MixingOfOrder μ T k
 ```
 
-Proved in [lean/OAI/Dynamics/MultipleMixing/Main.lean, line 317](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/MultipleMixing/Main.lean#L317).
+Stated in [Rokhlin.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Rokhlin.lean#L30). Proved in [lean/OAI/Dynamics/MultipleMixing/Main.lean, line 317](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/MultipleMixing/Main.lean#L317).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

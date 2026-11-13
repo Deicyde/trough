@@ -29,7 +29,7 @@ We prove the Gaussian free field and SLE$_4$ scaling limits for uniformly sample
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

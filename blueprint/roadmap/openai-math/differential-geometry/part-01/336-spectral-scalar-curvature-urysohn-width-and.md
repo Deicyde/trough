@@ -29,7 +29,7 @@ We prove the quantitative continuous form of Gromov's scalar-curvature conjectur
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

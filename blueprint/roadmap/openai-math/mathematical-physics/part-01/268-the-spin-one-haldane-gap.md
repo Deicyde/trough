@@ -23,7 +23,7 @@ We prove a uniform spectral gap for odd open spin-one antiferromagnetic Heisenbe
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

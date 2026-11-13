@@ -17,7 +17,7 @@ For each fixed point on the critical Ashkin–Teller line, including the four-st
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

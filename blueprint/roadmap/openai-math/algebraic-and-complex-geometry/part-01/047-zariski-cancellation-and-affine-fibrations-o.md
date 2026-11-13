@@ -26,17 +26,15 @@ The separate stable-coordinate and general line-bundle lifting consequences are 
 
 ## Lean: Complex affine-space cancellation counterexample
 
-Stated in [ComplexCancellation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ComplexCancellation.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Algebra/AffineCancellation/Main.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/AffineCancellation/Main.lean#L32).
+Stated in [ComplexCancellation.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ComplexCancellation.lean#L25). Proved in [lean/OAI/Algebra/AffineCancellation/Main.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Algebra/AffineCancellation/Main.lean#L32). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

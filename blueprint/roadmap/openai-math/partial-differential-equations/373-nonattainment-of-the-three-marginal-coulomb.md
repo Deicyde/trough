@@ -26,18 +26,16 @@ Nevertheless, the Monge and Kantorovich infima are equal: preserving maps with f
 
 ## Lean: Coulomb Monge nonattainment with equality of infima
 
-Stated in [CoulombCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoulombCounterexample.lean).
-
 ```lean
 theorem coulomb_counterexample_and_equal_infima :
     ∃ rho : E3 → ℝ, HasFullCoulombConclusion rho
 ```
 
-Proved in [lean/OAI/Analysis/CoulombTransport/Conclusion.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CoulombTransport/Conclusion.lean#L7).
+Stated in [CoulombCounterexample.lean, line 94](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoulombCounterexample.lean#L94). Proved in [lean/OAI/Analysis/CoulombTransport/Conclusion.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/CoulombTransport/Conclusion.lean#L7).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

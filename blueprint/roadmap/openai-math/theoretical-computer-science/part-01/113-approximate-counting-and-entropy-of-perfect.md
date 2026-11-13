@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.MatchingFPRAS.thm_main, OAI.MatchingEntropy.entropy_main, OAI.BinaryMatching.deterministic_approximate_counting, OAI.LoopMatching.fullEndpoint, OAI.TriangleFace198.triangle_expansion_face
+lean: OAI.MatchingFPRAS.thm_main, OAI.MatchingEntropy.entropy_main, OAI.BinaryMatching.deterministic_approximate_counting, OAI.LoopMatching.fullEndpoint, OAI.MatchingEntropyBounds.Refined.pointwise_entropy, OAI.TriangleFace198.triangle_expansion_face
 statement: formalized
 ---
 
@@ -39,17 +39,13 @@ A further statement identifies the exact face obtained by expanding a degree-thr
 
 ## Lean: Randomized approximation of the perfect-matching count
 
-Stated in [MatchingFPRAS.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingFPRAS.lean).
-
 ```lean
 theorem thm_main : MainStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/MatchingCount/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingCount/Main.lean#L21).
+Stated in [MatchingFPRAS.lean, line 105](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingFPRAS.lean#L105). Proved in [lean/OAI/Combinatorics/MatchingCount/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingCount/Main.lean#L21).
 
 ## Lean: Perfect-matching entropy bound
-
-Stated in [MatchingEntropy.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingEntropy.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem entropy_main (G : LooplessGraph V E) (m : ℕ)
@@ -59,11 +55,9 @@ theorem entropy_main (G : LooplessGraph V E) (m : ℕ)
       8 * (m : ℝ) * (1 - Real.exp (-marginalEntropy y / (m : ℝ)))
 ```
 
-Proved in [lean/OAI/Combinatorics/PerfectMatching/Main.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/PerfectMatching/Main.lean#L85).
+Stated in [MatchingEntropy.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingEntropy.lean#L58). Proved in [lean/OAI/Combinatorics/PerfectMatching/Main.lean, line 85](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/PerfectMatching/Main.lean#L85). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Deterministic approximate matching count
-
-Stated in [BinaryMatching.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinaryMatching.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem deterministic_approximate_counting :
@@ -74,21 +68,17 @@ theorem deterministic_approximate_counting :
         ∀ G,A G≤count G ∧ count G≤2^(9*G.n)*A G ∧ (A G=0 ↔ count G=0)
 ```
 
-Proved in [lean/OAI/Computability/MatchingCount/BinarySolve.lean, line 143](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/MatchingCount/BinarySolve.lean#L143).
+Stated in [BinaryMatching.lean, line 66](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BinaryMatching.lean#L66). Proved in [lean/OAI/Computability/MatchingCount/BinarySolve.lean, line 143](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/MatchingCount/BinarySolve.lean#L143). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Approximate counting with singleton loops
-
-Stated in [SingletonLoopMatching.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SingletonLoopMatching.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem fullEndpoint : FullEndpoint
 ```
 
-Proved in [lean/OAI/Computability/LoopMatching/Main.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/LoopMatching/Main.lean#L24).
+Stated in [SingletonLoopMatching.lean, line 127](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SingletonLoopMatching.lean#L127). Proved in [lean/OAI/Computability/LoopMatching/Main.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/LoopMatching/Main.lean#L24). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Refined pointwise perfect-matching entropy bounds
-
-Stated in [MatchingEntropyBounds.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingEntropyBounds.lean).
 
 ```lean
 theorem Refined.pointwise_entropy (G : LooplessGraph V E) (m : ℕ)
@@ -98,11 +88,9 @@ theorem Refined.pointwise_entropy (G : LooplessGraph V E) (m : ℕ)
       maxMatchingEntropy G x ≤ entropy x
 ```
 
-Its proof is in [lean/OAI/Combinatorics/MatchingEntropy/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingEntropy/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [MatchingEntropyBounds.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatchingEntropyBounds.lean#L73). Its proof is in [lean/OAI/Combinatorics/MatchingEntropy/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatchingEntropy/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Lean: Face correspondence under triangle expansion
-
-Stated in [TriangleFace.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangleFace.lean).
 
 ```lean
 theorem triangle_expansion_face {V : Type uV} {E : Type uE}
@@ -123,11 +111,11 @@ theorem triangle_expansion_face {V : Type uV} {E : Type uE}
       (∀ x ∈ G.polytope, CanonicalFace198.minFace H.polytope (f x) = f '' CanonicalFace198.minFace G.polytope x)
 ```
 
-Proved in [lean/OAI/Combinatorics/TriangleFace/Main.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TriangleFace/Main.lean#L51).
+Stated in [TriangleFace.lean, line 169](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangleFace.lean#L169). Proved in [lean/OAI/Combinatorics/TriangleFace/Main.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TriangleFace/Main.lean#L51).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

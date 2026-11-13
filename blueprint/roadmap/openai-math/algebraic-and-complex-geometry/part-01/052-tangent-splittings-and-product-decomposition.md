@@ -34,8 +34,6 @@ The formalization proves integrability of both summands in a holomorphic splitti
 
 ## Lean: Universal-cover product splitting
 
-Stated in [KahlerSplitting.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KahlerSplitting.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main (X : ComplexManifold.{u} n) [CompactSpace X.Carrier]
     [ConnectedSpace X.Carrier] (hn : 2 ≤ n) (hr₁ : 0 < r₁) (hr₂ : 0 < r₂)
@@ -48,21 +46,19 @@ theorem main (X : ComplexManifold.{u} n) [CompactSpace X.Carrier]
       CompatibleProduct S π Y₁ Y₂
 ```
 
-Proved in [lean/OAI/Geometry/KahlerSplitting/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/KahlerSplitting/Main.lean#L14).
+Stated in [KahlerSplitting.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KahlerSplitting.lean#L124). Proved in [lean/OAI/Geometry/KahlerSplitting/Main.lean, line 14](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/KahlerSplitting/Main.lean#L14). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Integrability of both holomorphic tangent summands
-
-Stated in [SplitTangentIntegrability.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SplitTangentIntegrability.lean).
 
 ```lean
 theorem integrability_main : IntegrabilityStatement.{u}
 ```
 
-Proved in [lean/OAI/Geometry/SplitTangent/RationalVariation.lean, line 188](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SplitTangent/RationalVariation.lean#L188).
+Stated in [SplitTangentIntegrability.lean, line 135](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SplitTangentIntegrability.lean#L135). Proved in [lean/OAI/Geometry/SplitTangent/RationalVariation.lean, line 188](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SplitTangent/RationalVariation.lean#L188).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

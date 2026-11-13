@@ -52,19 +52,15 @@ The linked spherical-field result supplies a supporting dual formula: finite hie
 
 ## Lean: Finiteness of the Ising-perceptron variational value
 
-Stated in [IsingFiniteness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IsingFiniteness.lean).
-
 ```lean
 theorem variationalValue_real_of_continuous {α : ℝ} (hα : 0 ≤ α)
     {f : ℝ → ℝ} (hf : Continuous f) (hbounded : ∃ K : ℝ, ∀ x, |f x| ≤ K) :
     ∃ p : ℝ, variationalValue α f = (p : EReal)
 ```
 
-Proved in [lean/OAI/Probability/IsingPerceptron/VariationalFiniteness.lean, line 196](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/IsingPerceptron/VariationalFiniteness.lean#L196).
+Stated in [IsingFiniteness.lean, line 86](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IsingFiniteness.lean#L86). Proved in [lean/OAI/Probability/IsingPerceptron/VariationalFiniteness.lean, line 196](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/IsingPerceptron/VariationalFiniteness.lean#L196).
 
 ## Lean: Variational formula for spherical-perceptron pressure
-
-Stated in [PerceptronFreeEnergy.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PerceptronFreeEnergy.lean).
 
 ```lean
 theorem main (P : Measure BrownianPath) [IsProbabilityMeasure P]
@@ -77,21 +73,19 @@ theorem main (P : Measure BrownianPath) [IsProbabilityMeasure P]
           {g | ε < |pressure α β φ (N + 1) g - p|}) atTop (𝓝 0)
 ```
 
-Proved in [lean/OAI/Probability/Perceptron/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Perceptron/Main.lean#L21).
+Stated in [PerceptronFreeEnergy.lean, line 97](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PerceptronFreeEnergy.lean#L97). Proved in [lean/OAI/Probability/Perceptron/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Perceptron/Main.lean#L21).
 
 ## Lean: Spherical linear-field dual formula and approximation
-
-Stated in [SphericalField.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SphericalField.lean).
 
 ```lean
 theorem spherical_linear_field_formula : SphericalLinearFieldFormula
 ```
 
-Proved in [lean/OAI/Probability/SphericalField/Main.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SphericalField/Main.lean#L26).
+Stated in [SphericalField.lean, line 553](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SphericalField.lean#L553). Proved in [lean/OAI/Probability/SphericalField/Main.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/SphericalField/Main.lean#L26).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

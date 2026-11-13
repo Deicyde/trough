@@ -26,8 +26,6 @@ The selected statement does not include complete rationality of the net, unitari
 
 ## Lean: Energy bounds, strong locality, and an irreducible conformal net
 
-Stated in [VertexAlgebraNet.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VertexAlgebraNet.lean).
-
 ```lean
 theorem main (_hSimple : A.toVertexAlgebra.IsSimple)
     (hSR : A.IsStronglyRational.{u,v}) :
@@ -35,11 +33,11 @@ theorem main (_hSimple : A.toVertexAlgebra.IsSimple)
       Nonempty (OAI.MinimalVertex.IrreducibleConformalNetStructure (OAI.MinimalVertex.intervalAlgebra U hSR.2.2))
 ```
 
-Proved in [lean/OAI/RepresentationTheory/VertexAlgebra/MinimalComparator.lean, line 676](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/VertexAlgebra/MinimalComparator.lean#L676).
+Stated in [VertexAlgebraNet.lean, line 822](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/VertexAlgebraNet.lean#L822). Proved in [lean/OAI/RepresentationTheory/VertexAlgebra/MinimalComparator.lean, line 676](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/VertexAlgebra/MinimalComparator.lean#L676).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

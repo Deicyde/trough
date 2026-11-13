@@ -24,18 +24,16 @@ The formalization proves that every closed smooth Riemannian surface admits a sm
 
 ## Lean: Smooth isometric immersion of every closed surface into four-space
 
-Stated in [SurfaceImmersion.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SurfaceImmersion.lean).
-
 ```lean
 theorem smooth_isometric_immersion (g : SmoothMetric M) :
     ∃ F : M → Space, IsSmoothIsometricImmersion M g F
 ```
 
-Proved in [lean/OAI/Geometry/SurfaceImmersion/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SurfaceImmersion/Main.lean#L16).
+Stated in [SurfaceImmersion.lean, line 40](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SurfaceImmersion.lean#L40). Proved in [lean/OAI/Geometry/SurfaceImmersion/Main.lean, line 16](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SurfaceImmersion/Main.lean#L16).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

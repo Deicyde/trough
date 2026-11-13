@@ -17,7 +17,7 @@ We prove that the two-color Ramsey number of the *n*-dimensional binary cube is 
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

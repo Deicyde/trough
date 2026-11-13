@@ -24,18 +24,16 @@ The formalized result shows hardness of finding large independent sets even unde
 
 ## Lean: Independent-set hardness in three-colorable graphs
 
-Stated in [IndependentSets.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndependentSets.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem mainTheoremReal :
     ∀ δ : ℝ, 0 < δ → δ < 1 / 3 → Nonempty (RealGraphReduction δ)
 ```
 
-Proved in [lean/OAI/Combinatorics/IndependentSets/Main.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/IndependentSets/Main.lean#L124).
+Stated in [IndependentSets.lean, line 77](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IndependentSets.lean#L77). Proved in [lean/OAI/Combinatorics/IndependentSets/Main.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/IndependentSets/Main.lean#L124). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

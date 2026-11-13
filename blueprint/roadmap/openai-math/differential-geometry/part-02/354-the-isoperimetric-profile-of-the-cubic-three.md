@@ -26,8 +26,6 @@ The classification includes all equality cases at the transition volumes $4\pi/8
 
 ## Lean: Isoperimetric profile and all minimizers in the cubic flat three-torus
 
-Stated in [CubicTorus.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CubicTorus.lean).
-
 ```lean
 theorem unit_cubic_isoperimetric (V : ℝ) (hV : V ∈ Ioo 0 1) :
     (∃ E : Set Torus, IsMinimizerAt V E) ∧
@@ -36,11 +34,11 @@ theorem unit_cubic_isoperimetric (V : ℝ) (hV : V ∈ Ioo 0 1) :
     (∀ E : Set Torus, IsMinimizerAt V E ↔ StandardRegionAt V E)
 ```
 
-Proved in [lean/OAI/Geometry/CubicTorus/Main.lean, line 1103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CubicTorus/Main.lean#L1103).
+Stated in [CubicTorus.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CubicTorus.lean#L88). Proved in [lean/OAI/Geometry/CubicTorus/Main.lean, line 1103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/CubicTorus/Main.lean#L1103).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

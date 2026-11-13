@@ -24,19 +24,17 @@ The shortest common superstring problem asks for the shortest string containing 
 
 ## Lean: Polynomial-time 2-approximation for shortest common superstring
 
-Stated in [Superstring.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Superstring.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main : ∃ f : Instance → Word,
     HasPolynomialImplementation f ∧
     ∀ S, IsCommonSuperstring S (f S) ∧ (f S).length ≤ 2 * opt S
 ```
 
-Proved in [lean/OAI/Computability/Superstring/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/Superstring/Main.lean#L57).
+Stated in [Superstring.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Superstring.lean#L36). Proved in [lean/OAI/Computability/Superstring/Main.lean, line 57](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/Superstring/Main.lean#L57). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

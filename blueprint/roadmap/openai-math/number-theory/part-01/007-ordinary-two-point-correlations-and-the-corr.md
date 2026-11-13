@@ -26,8 +26,6 @@ For two one-bounded multiplicative functions, if at least one is uniformly nonpr
 
 ## Lean: Ordinary Elliott cancellation under uniform nonpretentiousness
 
-Stated in [OrdinaryElliott.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OrdinaryElliott.lean).
-
 ```lean
 theorem binary_corrected_elliott
     (f₁ f₂ : ℕ → ℂ) (hf₁ : OneBounded f₁) (hf₂ : OneBounded f₂)
@@ -37,11 +35,9 @@ theorem binary_corrected_elliott
     Tendsto (shiftAverage f₁ f₂ h₁ h₂) atTop (nhds 0)
 ```
 
-Proved in [lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/BinaryCorrectedElliott.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/BinaryCorrectedElliott.lean#L37).
+Stated in [OrdinaryElliott.lean, line 33](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OrdinaryElliott.lean#L33). Proved in [lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/BinaryCorrectedElliott.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/OrdinaryCorrelations/Elliott/BinaryCorrectedElliott.lean#L37).
 
 ## Lean: Ordinary Liouville and multiplicative two-point correlations
-
-Stated in [OrdinaryTwoPointCorrelations.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.lean).
 
 ```lean
 theorem liouville_log_saving :
@@ -52,7 +48,7 @@ theorem liouville_log_saving :
           C * X / Real.rpow (Real.log X) c
 ```
 
-Proved in [lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean#L10).
+Stated in [OrdinaryTwoPointCorrelations.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.lean#L43). Proved in [lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean#L10).
 
 ```lean
 theorem binary_corrected_elliott :
@@ -63,7 +59,7 @@ theorem binary_corrected_elliott :
         Tendsto (fun N : ℕ => correlationSum f₁ f₂ h₁ h₂ N / (N : ℂ)) atTop (nhds 0)
 ```
 
-Proved in [lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean#L18).
+Stated in [OrdinaryTwoPointCorrelations.lean, line 51](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.lean#L51). Proved in [lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean, line 18](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean#L18).
 
 ```lean
 theorem affine_corrected_elliott :
@@ -74,11 +70,11 @@ theorem affine_corrected_elliott :
         Tendsto (fun N : ℕ => affineSum f₁ f₂ a₁ a₂ b₁ b₂ N / (N : ℂ)) atTop (nhds 0)
 ```
 
-Proved in [lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean#L26).
+Stated in [OrdinaryTwoPointCorrelations.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OrdinaryTwoPointCorrelations.lean#L59). Proved in [lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean#L26).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

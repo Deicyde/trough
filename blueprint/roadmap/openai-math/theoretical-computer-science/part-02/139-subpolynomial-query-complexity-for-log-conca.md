@@ -24,8 +24,6 @@ The formalized result determines the dimension exponent of exact value-and-gradi
 
 ## Lean: Subpolynomial query complexity for log-concave sampling
 
-Stated in [LogConcaveQuery.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogConcaveQuery.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exact_source_main :
     (∀ ε : ℝ, 0 < ε → ∃ C : ℝ, ∀ d : ℕ, 2 ≤ d →
@@ -35,11 +33,11 @@ theorem exact_source_main :
     gammaStar = 0
 ```
 
-Proved in [lean/OAI/Probability/LogConcave/Main.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/LogConcave/Main.lean#L68).
+Stated in [LogConcaveQuery.lean, line 81](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogConcaveQuery.lean#L81). Proved in [lean/OAI/Probability/LogConcave/Main.lean, line 68](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/LogConcave/Main.lean#L68). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

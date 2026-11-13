@@ -30,29 +30,27 @@ The formalized result constructs a nonempty contractible complex threefold with 
 
 ## Lean: Negatively pinched Kähler threefold without bounded coordinates
 
-Stated in [PinchedKahler.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PinchedKahler.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_theorem : MainTheorem
 ```
 
-Proved in [lean/OAI/Geometry/Kahler/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Kahler/Main.lean#L38).
+Stated in [PinchedKahler.lean, line 146](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PinchedKahler.lean#L146). Proved in [lean/OAI/Geometry/Kahler/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Kahler/Main.lean#L38). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem controlled_potential : ControlledPotential
 ```
 
-Proved in [lean/OAI/Geometry/Kahler/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Kahler/Main.lean#L23).
+Stated in [PinchedKahler.lean, line 149](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PinchedKahler.lean#L149). Proved in [lean/OAI/Geometry/Kahler/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Kahler/Main.lean#L23).
 
 ```lean
 theorem metric_transfer : MetricTransfer
 ```
 
-Proved in [lean/OAI/Geometry/Kahler/HartogsTransfer.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Kahler/HartogsTransfer.lean#L22).
+Stated in [PinchedKahler.lean, line 152](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PinchedKahler.lean#L152). Proved in [lean/OAI/Geometry/Kahler/HartogsTransfer.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Kahler/HartogsTransfer.lean#L22).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

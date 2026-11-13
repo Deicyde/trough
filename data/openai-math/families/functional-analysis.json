@@ -41,7 +41,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/SphereIsometry/Main.lean"
+        "module": "lean/OAI/Analysis/SphereIsometry/Main.lean",
+        "main": true
        }
       ]
      }
@@ -87,7 +88,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/SeparableQuotients/Main.lean"
+        "module": "lean/OAI/Analysis/SeparableQuotients/Main.lean",
+        "main": false
        }
       ]
      }
@@ -140,7 +142,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/LipschitzEquivalence/Main.lean"
+        "module": "lean/OAI/Analysis/LipschitzEquivalence/Main.lean",
+        "main": true
        }
       ]
      },
@@ -162,7 +165,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/C0Absorption/Main.lean"
+        "module": "lean/OAI/Analysis/C0Absorption/Main.lean",
+        "main": true
        }
       ]
      }
@@ -215,7 +219,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/DirectCrouzeix/Main.lean"
+        "module": "lean/OAI/Analysis/DirectCrouzeix/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.DirectCrouzeix.uniform_sharpness",
@@ -229,7 +234,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/DirectCrouzeix/Main.lean"
+        "module": "lean/OAI/Analysis/DirectCrouzeix/Main.lean",
+        "main": false
        }
       ]
      },
@@ -251,7 +257,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/NumericalRange/Main.lean"
+        "module": "lean/OAI/Analysis/NumericalRange/Main.lean",
+        "main": true
        }
       ]
      },
@@ -273,7 +280,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean"
+        "module": "lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean",
+        "main": true
        }
       ]
      },
@@ -295,7 +303,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Crouzeix/Main.lean"
+        "module": "lean/OAI/Analysis/Crouzeix/Main.lean",
+        "main": false
        }
       ]
      },
@@ -312,7 +321,8 @@
         "line": 115,
         "statement": "theorem numericalClosure_geometry (A : H →L[ℂ] H) :\n    IsCompact (numericalClosure A) ∧ Convex ℝ (numericalClosure A) ∧\n      spectrum ℂ A ⊆ numericalClosure A",
         "proof": null,
-        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean"
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.HilbertCrouzeix.exists_finite_compression",
@@ -321,7 +331,8 @@
         "line": 121,
         "statement": "theorem exists_finite_compression {m d : ℕ} (A : H →L[ℂ] H)\n    (B : Fin (d + 1) → Coeff m) (ξ : H ⊗[ℂ] CoeffSpace m) :\n    ∃ (E : Submodule ℂ H) (hE : FiniteDimensional ℂ E),\n      letI : FiniteDimensional ℂ E := hE\n      ∃ η : Amplification E m,\n        tensorInclusion E m η = (↑ξ : Amplification H m) ∧\n        tensorInclusion E m (polynomialEval (compression A E) B η) =\n          polynomialEval A B (↑ξ)",
         "proof": null,
-        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean"
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.HilbertCrouzeix.rational_denominator_isUnit",
@@ -335,7 +346,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean"
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.HilbertCrouzeix.zeroConclusion",
@@ -349,7 +361,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean"
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
        }
       ]
      }
@@ -395,7 +408,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Cotype/Main.lean"
+        "module": "lean/OAI/Analysis/Cotype/Main.lean",
+        "main": true
        }
       ]
      }
@@ -441,7 +455,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/MarkovType/Main.lean"
+        "module": "lean/OAI/Analysis/MarkovType/Main.lean",
+        "main": true
        }
       ]
      }
@@ -487,7 +502,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Nonexpansive/Main.lean"
+        "module": "lean/OAI/Analysis/Nonexpansive/Main.lean",
+        "main": true
        }
       ]
      }
@@ -533,7 +549,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/MetricEntropy/Main.lean"
+        "module": "lean/OAI/Analysis/MetricEntropy/Main.lean",
+        "main": true
        }
       ]
      }
@@ -579,7 +596,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/LipschitzFree/Renorming.lean"
+        "module": "lean/OAI/Analysis/LipschitzFree/Renorming.lean",
+        "main": false
        }
       ]
      },
@@ -601,7 +619,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/LipschitzFree/Main.lean"
+        "module": "lean/OAI/Analysis/LipschitzFree/Main.lean",
+        "main": false
        }
       ]
      }
@@ -689,7 +708,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/ForestSpace/Main.lean"
+        "module": "lean/OAI/Analysis/ForestSpace/Main.lean",
+        "main": true
        }
       ]
      },
@@ -711,7 +731,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/SegmentLenses/Main.lean"
+        "module": "lean/OAI/Analysis/SegmentLenses/Main.lean",
+        "main": true
        }
       ]
      },
@@ -733,7 +754,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/DiamondDistortion/Descent.lean"
+        "module": "lean/OAI/Analysis/DiamondDistortion/Descent.lean",
+        "main": true
        }
       ]
      },
@@ -750,7 +772,8 @@
         "line": 72,
         "statement": "theorem exact_main {Ω : Type u_1} [MeasurableSpace Ω] (μ : Measure Ω)\n    [IsProbabilityMeasure μ] (E : Submodule ℝ (Lp ℝ 1 μ))\n    (_hclosed : IsClosed (E : Set (Lp ℝ 1 μ))) (hdim : ¬ FiniteDimensional ℝ E)\n    (hprecompact : MeasurePrecompactBall μ E) (hdaugavet : Daugavet E) :\n    (∀ (x : E), ‖x‖ = 1 → ∀ t : ℝ, 0 < t →\n      H (normSeminorm ℝ E) x t = max (t / 2) (t - 1) ∧\n      D (normSeminorm ℝ E) x t = max 0 (t - 2)) ∧\n    (∀ t : ℝ, 0 < t →\n      averagedModulus (normSeminorm ℝ E) t = max (t / 2) (t - 1) ∧\n      oneSidedModulus (normSeminorm ℝ E) t = max 0 (t - 2)) ∧\n    (∀ N : Seminorm ℝ E, EquivalentNorm N → ¬ AUC N)",
         "proof": null,
-        "module": "lean/OAI/Analysis/Daugavet/Main.lean"
+        "module": "lean/OAI/Analysis/Daugavet/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.ExactModuli.kadets_werner_existence",
@@ -764,7 +787,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Daugavet/Main.lean"
+        "module": "lean/OAI/Analysis/Daugavet/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.ExactModuli.exact_example",
@@ -778,7 +802,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Daugavet/Main.lean"
+        "module": "lean/OAI/Analysis/Daugavet/Main.lean",
+        "main": true
        }
       ]
      },
@@ -800,7 +825,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/TreePotential/Main.lean"
+        "module": "lean/OAI/Analysis/TreePotential/Main.lean",
+        "main": true
        }
       ]
      },
@@ -816,8 +842,14 @@
         "kind": "theorem",
         "line": 89,
         "statement": "theorem main_general (μ : Measure ℝ) (hμ : MultiplierHypotheses μ) :\n    ¬ FiniteDimensional ℝ (productSpan μ) ∧\n    ∀ N : Seminorm ℝ (productSpan μ),\n      IsEquivalentNorm (productSpan μ) N → ¬ IsAUC (productSpan μ) N",
-        "proof": null,
-        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean"
+        "proof": {
+         "file": "lean/OAI/Analysis/ProductSpaces/WeakNullity.lean",
+         "line": 203,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.IndependentProducts.main_exponential",
@@ -831,7 +863,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean"
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": true
        },
        {
         "name": "OAI.IndependentProducts.main_gaussian_24",
@@ -840,7 +873,8 @@
         "line": 102,
         "statement": "theorem main_gaussian_24 (t : ℝ) (ht : 0 < t) :\n    gaussianTail (4 * Real.sqrt 2 * (2 + Real.sqrt 2) / t) / 8 ≤\n      averagedMidpointModulus (productSpan gaussianSquareLaw)\n        (normSeminorm ℝ (productSpan gaussianSquareLaw)) t ∧\n    0 < gaussianTail (4 * Real.sqrt 2 * (2 + Real.sqrt 2) / t) / 8",
         "proof": null,
-        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean"
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.IndependentProducts.main_gaussian_12",
@@ -849,7 +883,8 @@
         "line": 109,
         "statement": "theorem main_gaussian_12 (t : ℝ) (ht : 0 < t) :\n    gaussianTail (8 * Real.sqrt 6 / t) / 4 ≤\n      averagedMidpointModulus (productSpan gaussianSquareLaw)\n        (normSeminorm ℝ (productSpan gaussianSquareLaw)) t ∧\n    0 < gaussianTail (8 * Real.sqrt 6 / t) / 4",
         "proof": null,
-        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean"
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": false
        }
       ]
      },
@@ -871,7 +906,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/RecursivePotentials/Challenge.lean"
+        "module": "lean/OAI/Analysis/RecursivePotentials/Challenge.lean",
+        "main": true
        }
       ]
      }

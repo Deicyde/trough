@@ -17,7 +17,7 @@ We prove that the real Banach space $ℓ_{1}$ has metric Markov cotype two, answ
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

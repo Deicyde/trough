@@ -47,7 +47,7 @@ For every fixed $1\le q\le4$, critical square-lattice random-cluster Dobrushin i
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

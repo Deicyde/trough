@@ -24,18 +24,16 @@ Seymour's second-neighborhood conjecture asserts that every nonempty finite orie
 
 ## Lean: Seymour's second-neighborhood conjecture
 
-Stated in [SeymourSecondNeighborhood.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SeymourSecondNeighborhood.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_goodVertex (r : V → V → Prop) (hr : IsOriented r) :
     ∃ v, GoodVertex r v
 ```
 
-Proved in [lean/OAI/Combinatorics/SecondNeighborhood/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SecondNeighborhood/Main.lean#L11).
+Stated in [SeymourSecondNeighborhood.lean, line 34](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SeymourSecondNeighborhood.lean#L34). Proved in [lean/OAI/Combinatorics/SecondNeighborhood/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SecondNeighborhood/Main.lean#L11). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

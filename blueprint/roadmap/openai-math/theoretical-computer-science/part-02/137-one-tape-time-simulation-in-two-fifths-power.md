@@ -26,8 +26,6 @@ A second simulator needs no time cap: on an input that halts at time $t$, it ret
 
 ## Lean: Time-capped and unknown-time one-tape simulation in two-fifths-power space
 
-Stated in [OneTapeSpace.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OneTapeSpace.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem capped [Fintype X] (A : M.Sym) (p q : ℝ) (hp : 1 ≤ p) (_hq : 1 ≤ q) :
     ∃ (N : TM X Unit M.Outcome) (e : ℕ) (c : ℝ), 0 < c ∧
@@ -36,7 +34,7 @@ theorem capped [Fintype X] (A : M.Sym) (p q : ℝ) (hp : 1 ≤ p) (_hq : 1 ≤ q
           (b:ℝ) ≤ c*(T:ℝ)^exponent*(Log T)^e
 ```
 
-Proved in [lean/OAI/Computability/SpaceSimulation/Main.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/SpaceSimulation/Main.lean#L39).
+Stated in [OneTapeSpace.lean, line 258](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OneTapeSpace.lean#L258). Proved in [lean/OAI/Computability/SpaceSimulation/Main.lean, line 39](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/SpaceSimulation/Main.lean#L39). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem unknown [Fintype X] (A : M.Sym) (p q : ℝ) (hp : 1 ≤ p) (_hq : 1 ≤ q) :
@@ -47,11 +45,11 @@ theorem unknown [Fintype X] (A : M.Sym) (p q : ℝ) (hp : 1 ≤ p) (_hq : 1 ≤ 
             (b:ℝ) ≤ c*((t:ℝ)+2)^exponent*(Log t)^e
 ```
 
-Proved in [lean/OAI/Computability/SpaceSimulation/Main.lean, line 64](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/SpaceSimulation/Main.lean#L64).
+Stated in [OneTapeSpace.lean, line 265](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OneTapeSpace.lean#L265). Proved in [lean/OAI/Computability/SpaceSimulation/Main.lean, line 64](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/SpaceSimulation/Main.lean#L64). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -29,7 +29,7 @@ We prove a sequential elliptic inequality for the renormalized Einstein–Hilber
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

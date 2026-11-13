@@ -24,18 +24,16 @@ The formalized result determines the factor-of-IID threshold for the free zero-f
 
 ## Lean: Factor-of-IID threshold for the free Ising model
 
-Stated in [FreeIsing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FreeIsing.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem free_ising_factor_iff_threshold :
     ∀ (d : ℕ) (beta : ℝ), 3 ≤ d → 0 ≤ beta → (IsFactorOfIID d (Real.tanh beta) ↔ Real.tanh beta ≤ 1 / Real.sqrt ((d : ℝ) - 1))
 ```
 
-Proved in [lean/OAI/Probability/FreeIsing/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/FreeIsing/Main.lean#L21).
+Stated in [FreeIsing.lean, line 87](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FreeIsing.lean#L87). Proved in [lean/OAI/Probability/FreeIsing/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/FreeIsing/Main.lean#L21). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

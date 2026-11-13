@@ -26,29 +26,25 @@ It also proves the paper's relative-generation result. For an irreducible inclus
 
 ## Lean: Single generation of separable-predual $\mathrm{II}_1$ factors
 
-Stated in [FactorGeneration.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FactorGeneration.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem single_generation_of_II1_separable_predual
     (S : StarSubalgebra ℂ (H →L[ℂ] H)) (hS : IsII1Factor S)
     (hsep : HasSeparablePredual S) : SinglyGenerated S
 ```
 
-Proved in [lean/OAI/Analysis/FactorGeneration/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FactorGeneration/Main.lean#L15).
+Stated in [FactorGeneration.lean, line 41](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FactorGeneration.lean#L41). Proved in [lean/OAI/Analysis/FactorGeneration/Main.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FactorGeneration/Main.lean#L15). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Dense relative generators for irreducible inclusions of finite factors
-
-Stated in [RelativeGeneration.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RelativeGeneration.lean).
 
 ```lean
 theorem main_theorem : MainTarget.{level}
 ```
 
-Proved in [lean/OAI/Analysis/RelativeGeneration/Main.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RelativeGeneration/Main.lean#L92).
+Stated in [RelativeGeneration.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RelativeGeneration.lean#L103). Proved in [lean/OAI/Analysis/RelativeGeneration/Main.lean, line 92](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/RelativeGeneration/Main.lean#L92).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

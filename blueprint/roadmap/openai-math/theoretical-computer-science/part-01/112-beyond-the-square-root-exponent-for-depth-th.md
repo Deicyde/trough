@@ -24,8 +24,6 @@ The formalized result gives one polynomial-time Boolean language whose exact dep
 
 ## Lean: Depth-three circuit lower bound beyond every square-root constant
 
-Stated in [DepthThree.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DepthThree.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_polynomial_time_language_depth_three_lower_bound :
     ∃ (L : List Bool → Bool) (M : FiniteMultiTapeMachine) (C a : ℕ),
@@ -36,11 +34,11 @@ theorem exists_polynomial_time_language_depth_three_lower_bound :
           (2 : ℝ) ^ (A * Real.sqrt (n : ℝ)) < (D.gateCount : ℝ)
 ```
 
-Proved in [lean/OAI/Computability/DepthThree/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DepthThree/Main.lean#L8).
+Stated in [DepthThree.lean, line 133](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DepthThree.lean#L133). Proved in [lean/OAI/Computability/DepthThree/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DepthThree/Main.lean#L8). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -32,28 +32,24 @@ The planar unit-distance problem asks how many pairs at distance one can occur a
 
 ## Lean: Weak pinned planar distance theorem
 
-Stated in [PinnedDistances.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PinnedDistances.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main (s : ℝ) (hs : 0<s) : Tendsto (fun n : ℕ => F n s) atTop (𝓝 0)
 ```
 
-Proved in [lean/OAI/Geometry/PinnedDistances/Main.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PinnedDistances/Main.lean#L29).
+Stated in [PinnedDistances.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PinnedDistances.lean#L29). Proved in [lean/OAI/Geometry/PinnedDistances/Main.lean, line 29](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PinnedDistances/Main.lean#L29). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Power saving for planar unit distances
-
-Stated in [PlanarUnitDistances.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarUnitDistances.lean).
 
 ```lean
 theorem main : ∃ C β : ℝ, 0 < C ∧ 1 ≤ β ∧ β < (4 : ℝ) / 3 ∧
     ∀ n : ℕ, (u n : ℝ) ≤ C * (n : ℝ) ^ β
 ```
 
-Proved in [lean/OAI/Geometry/UnitDistances/Main.lean, line 129](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/UnitDistances/Main.lean#L129).
+Stated in [PlanarUnitDistances.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarUnitDistances.lean#L19). Proved in [lean/OAI/Geometry/UnitDistances/Main.lean, line 129](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/UnitDistances/Main.lean#L129).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -65,7 +65,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean"
+        "module": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean",
+        "main": true
        }
       ]
      }
@@ -135,7 +136,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean"
+        "module": "lean/OAI/AlgebraicGeometry/LogKodaira/FiberNegative.lean",
+        "main": false
        }
       ]
      }
@@ -378,7 +380,8 @@
         "line": 174,
         "statement": "theorem exists_positive_degree_equation_of_homogeneous_cycle\n    (cycle : Ideal TernaryPolynomial →₀ ℕ) (nonzero : cycle ≠ 0)\n    (homogeneous : ∀ ideal ∈ cycle.support,\n      ideal.IsPrime ∧ ideal ≠ ⊥ ∧ ideal.IsPrincipal ∧\n        ideal.IsHomogeneous (MvPolynomial.homogeneousSubmodule (Fin 3) ℂ)) :\n    ∃ polynomial : TernaryPolynomial,\n      polynomial ≠ 0 ∧ polynomial.IsHomogeneous polynomial.totalDegree ∧\n        0 < polynomial.totalDegree ∧ equationIdealCycle polynomial = cycle",
         "proof": null,
-        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean"
+        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean",
+        "main": false
        },
        {
         "name": "OAI.Nagata.nagata_conjecture",
@@ -392,7 +395,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean"
+        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean",
+        "main": true
        },
        {
         "name": "OAI.Nagata.nagata_conjecture_coordinates",
@@ -406,7 +410,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean"
+        "module": "lean/OAI/AlgebraicGeometry/PlaneCurves/Nagata.lean",
+        "main": false
        }
       ]
      },
@@ -428,7 +433,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/Seshadri/Main.lean"
+        "module": "lean/OAI/AlgebraicGeometry/Seshadri/Main.lean",
+        "main": true
        }
       ]
      }
@@ -576,7 +582,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Algebra/AffineCancellation/Main.lean"
+        "module": "lean/OAI/Algebra/AffineCancellation/Main.lean",
+        "main": true
        }
       ]
      }
@@ -644,7 +651,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean"
+        "module": "lean/OAI/AlgebraicGeometry/AbhyankarSathaye/Counterexample.lean",
+        "main": true
        }
       ]
      },
@@ -666,7 +674,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean"
+        "module": "lean/OAI/AlgebraicGeometry/CommutingDerivations/OrdinaryExtraMain.lean",
+        "main": true
        }
       ]
      },
@@ -688,7 +697,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean"
+        "module": "lean/OAI/AlgebraicGeometry/StableCoordinate/Principal.lean",
+        "main": true
        }
       ]
      }
@@ -734,7 +744,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/QuadricBundles/Main.lean"
+        "module": "lean/OAI/Geometry/QuadricBundles/Main.lean",
+        "main": true
        }
       ]
      }
@@ -802,7 +813,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/KahlerSplitting/Main.lean"
+        "module": "lean/OAI/Geometry/KahlerSplitting/Main.lean",
+        "main": true
        }
       ]
      },
@@ -824,7 +836,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/SplitTangent/RationalVariation.lean"
+        "module": "lean/OAI/Geometry/SplitTangent/RationalVariation.lean",
+        "main": false
        }
       ]
      }
@@ -993,7 +1006,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/SymmetricDomains/Main.lean"
+        "module": "lean/OAI/Analysis/SymmetricDomains/Main.lean",
+        "main": true
        }
       ]
      }
@@ -1147,7 +1161,8 @@
          "kind": "lemma",
          "sorry": false
         },
-        "module": "lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean"
+        "module": "lean/OAI/AlgebraicGeometry/CartierSections/ChartCompactness.lean",
+        "main": true
        }
       ]
      }

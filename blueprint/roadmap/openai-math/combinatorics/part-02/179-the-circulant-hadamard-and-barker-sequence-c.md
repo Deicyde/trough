@@ -26,29 +26,25 @@ It also proves the even-length part of the Barker-sequence consequence. A positi
 
 ## Lean: Classification of circulant Hadamard orders
 
-Stated in [CirculantHadamard.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CirculantHadamard.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_iff_order_one_or_four (n : ℕ) (hn : 0 < n) :
     ExistsRealCirculantHadamard n ↔ n = 1 ∨ n = 4
 ```
 
-Proved in [lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean#L21).
+Stated in [CirculantHadamard.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CirculantHadamard.lean#L24). Proved in [lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/CirculantHadamard/Main.lean#L21). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Classification of positive even Barker lengths
-
-Stated in [EvenBarker.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EvenBarker.lean).
 
 ```lean
 theorem even_length_eq_two_or_four {n : ℕ} (h : Fin n → ℤ)
     (hnpos : 0 < n) (hn : Even n) (hb : IsBarker h) : n = 2 ∨ n = 4
 ```
 
-Proved in [lean/OAI/LinearAlgebra/Barker/Main.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/Barker/Main.lean#L63).
+Stated in [EvenBarker.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EvenBarker.lean#L21). Proved in [lean/OAI/LinearAlgebra/Barker/Main.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/Barker/Main.lean#L63).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

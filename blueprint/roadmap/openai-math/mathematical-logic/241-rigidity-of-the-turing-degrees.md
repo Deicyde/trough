@@ -24,17 +24,15 @@ The rigidity problem asks whether the ordering of Turing degrees by relative com
 
 ## Lean: Rigidity of the Turing degrees
 
-Stated in [DegreeRigidity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DegreeRigidity.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem rigidity : MainTheorem
 ```
 
-Proved in [lean/OAI/Computability/DegreeRigidity/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DegreeRigidity/Main.lean#L27).
+Stated in [DegreeRigidity.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DegreeRigidity.lean#L38). Proved in [lean/OAI/Computability/DegreeRigidity/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/DegreeRigidity/Main.lean#L27). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

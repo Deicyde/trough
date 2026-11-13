@@ -17,7 +17,7 @@ We prove the quasilinear-size PCP-for-PPAD conjecture of Babichenko, Papadimitri
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -24,17 +24,15 @@ The Gaussian moat problem asks whether an infinite walk through distinct Gaussia
 
 ## Lean: Uniform bounds for bounded-step Gaussian-prime walks
 
-Stated in [GaussianMoat.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianMoat.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem fullMain : MainEndpoint ∧ UniformEndpoint
 ```
 
-Proved in [lean/OAI/NumberTheory/GaussianMoat/Main.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/GaussianMoat/Main.lean#L102).
+Stated in [GaussianMoat.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GaussianMoat.lean#L36). Proved in [lean/OAI/NumberTheory/GaussianMoat/Main.lean, line 102](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/GaussianMoat/Main.lean#L102). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

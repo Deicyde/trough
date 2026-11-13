@@ -24,17 +24,15 @@ The Erdős–Gallai cycle-decomposition conjecture asks for a linear bound on th
 
 ## Lean: Linear cycle-and-edge decomposition
 
-Stated in [CycleDecomposition.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CycleDecomposition.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem erdos_gallai : MainStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/CycleDecomposition/Main.lean, line 207](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/CycleDecomposition/Main.lean#L207).
+Stated in [CycleDecomposition.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CycleDecomposition.lean#L31). Proved in [lean/OAI/Combinatorics/CycleDecomposition/Main.lean, line 207](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/CycleDecomposition/Main.lean#L207). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -24,8 +24,6 @@ The local isometric-immersion problem asks whether every smooth surface metric c
 
 ## Lean: Smooth local isometric-immersion obstruction
 
-Stated in [IsometricImmersion.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IsometricImmersion.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem exists_local_metric_without_local_immersion :
     ∃ g : coordinateSquareOpen → Matrix (Fin 2) (Fin 2) ℝ,
@@ -39,11 +37,11 @@ theorem exists_local_metric_without_local_immersion :
                   v ⬝ᵥ (g ⟨p, hUS p.property⟩ *ᵥ w))
 ```
 
-Proved in [lean/OAI/Geometry/IsometricImmersion/Main.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/IsometricImmersion/Main.lean#L49).
+Stated in [IsometricImmersion.lean, line 46](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IsometricImmersion.lean#L46). Proved in [lean/OAI/Geometry/IsometricImmersion/Main.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/IsometricImmersion/Main.lean#L49). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

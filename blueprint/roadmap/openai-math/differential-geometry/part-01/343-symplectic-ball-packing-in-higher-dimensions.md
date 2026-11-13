@@ -30,19 +30,15 @@ Capacity is $\pi$ times squared Euclidean radius, and each embedding is defined 
 
 ## Lean: Exact criterion for higher-dimensional symplectic ball packings
 
-Stated in [BallPacking.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BallPacking.lean).
-
 ```lean
 theorem main_theorem (n k : ℕ) (hn : 3 ≤ n) (hk : 1 ≤ k)
     (R : ℝ) (r : Fin k → ℝ) (hR : 0 < R) (hr : ∀ i, 0 < r i) :
     HasPacking n k R r ↔ PackingInequalities n k R r
 ```
 
-Proved in [lean/OAI/Geometry/BallPacking/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/BallPacking/Main.lean#L17).
+Stated in [BallPacking.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BallPacking.lean#L36). Proved in [lean/OAI/Geometry/BallPacking/Main.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/BallPacking/Main.lean#L17).
 
 ## Lean: Necessity of the volume and pairwise capacity inequalities
-
-Stated in [BallPackingNecessity.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BallPackingNecessity.lean).
 
 ```lean
 theorem packing_necessity (n k : ℕ) (hn : 3 ≤ n) (hk : 1 ≤ k)
@@ -50,11 +46,11 @@ theorem packing_necessity (n k : ℕ) (hn : 3 ≤ n) (hk : 1 ≤ k)
     (hp : HasPacking n k R r) : PackingInequalities n k R r
 ```
 
-Proved in [lean/OAI/Geometry/BallPacking/Necessity/PackingNecessity.lean, line 402](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/BallPacking/Necessity/PackingNecessity.lean#L402).
+Stated in [BallPackingNecessity.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BallPackingNecessity.lean#L38). Proved in [lean/OAI/Geometry/BallPacking/Necessity/PackingNecessity.lean, line 402](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/BallPacking/Necessity/PackingNecessity.lean#L402).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

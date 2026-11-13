@@ -17,7 +17,7 @@ For every fixed integer *d* ≥ 3, we prove that every set of *n* ≥ 2 distinct
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

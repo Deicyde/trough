@@ -11,7 +11,7 @@ navigation: transparent
 - [180. Barnette’s Hamiltonian-cycle conjecture](180-barnettes-hamiltonian-cycle-conjecture.md)
 - [181. The Erdős–Gallai cycle-decomposition conjecture](181-the-erdos-gallai-cycle-decomposition-conject.md)
 - [182. Power savings for intersective polynomial differences and prime arguments](182-power-savings-for-intersective-polynomial-di.md)
-- [183. Power savings for planar halving lines and \*k\*-sets](183-power-savings-for-planar-halving-lines-and-k.md)
+- [183. Power savings for planar halving lines and *k*-sets](183-power-savings-for-planar-halving-lines-and-k.md)
 - [184. Correspondence coloring with a fixed forbidden subgraph](184-correspondence-coloring-with-a-fixed-forbidd.md)
 - [185. Counterexamples to infinite matroid intersection and packing/covering](185-counterexamples-to-infinite-matroid-intersec.md)
 - [186. Uniform influence and sharp thresholds for graph and hypergraph properties](186-uniform-influence-and-sharp-thresholds-for-g.md)

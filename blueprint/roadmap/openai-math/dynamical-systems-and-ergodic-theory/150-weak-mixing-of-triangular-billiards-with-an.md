@@ -30,18 +30,16 @@ The formalization proves that the unit-speed billiard flow in every nondegenerat
 
 ## Lean: Ergodicity of triangular billiards with an irrational angle
 
-Stated in [IrrationalTriangleBilliard.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IrrationalTriangleBilliard.lean).
-
 ```lean
 theorem irrational_triangle_billiard (Q : Triangle) (hQ : Q.HasIrrationalAngle) :
     MainConclusion Q
 ```
 
-Proved in [lean/OAI/Dynamics/TriangleBilliards/Main.lean, line 418](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/TriangleBilliards/Main.lean#L418).
+Stated in [IrrationalTriangleBilliard.lean, line 119](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/IrrationalTriangleBilliard.lean#L119). Proved in [lean/OAI/Dynamics/TriangleBilliards/Main.lean, line 418](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/TriangleBilliards/Main.lean#L418).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

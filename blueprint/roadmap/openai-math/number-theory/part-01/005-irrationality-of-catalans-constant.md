@@ -1,6 +1,8 @@
 ---
 declaration: section
 origin: cited
+lean: OAI.InternalCatalan.catalan_irrational
+statement: formalized
 ---
 
 # 005. Irrationality of Catalan’s constant
@@ -21,18 +23,16 @@ The formalization proves that Catalan's constant $G=\sum_{j=0}^{\infty}(-1)^j/(2
 
 ## Lean: Irrationality of Catalan's constant
 
-Stated in [Catalan.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Catalan.lean).
-
 ```lean
 theorem catalan_irrational :
     Irrational (∑' j : ℕ, (-1 : ℝ) ^ j / ((2 * j + 1 : ℕ) : ℝ) ^ 2)
 ```
 
-Its proof is in [lean/OAI/NumberTheory/Catalan/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Catalan/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [Catalan.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/Catalan.lean#L7). Its proof is in [lean/OAI/NumberTheory/Catalan/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/NumberTheory/Catalan/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

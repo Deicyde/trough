@@ -46,8 +46,6 @@ No boundary smoothness or strict convexity is assumed. An embedding at capacity 
 
 ## Lean: Symmetric Mahler inequality
 
-Stated in [MahlerConjecture.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MahlerConjecture.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem symmetric_mahler {n : ℕ} (hn : 1 ≤ n)
     {K : Set (Fin n → ℝ)} (hK : IsCompact K) (hconv : Convex ℝ K)
@@ -56,11 +54,9 @@ theorem symmetric_mahler {n : ℕ} (hn : 1 ≤ n)
       (volume K).toReal*(volume (coordinatePolar K)).toReal
 ```
 
-Proved in [lean/OAI/Analysis/Mahler/MainTheorem.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Mahler/MainTheorem.lean#L12).
+Stated in [MahlerConjecture.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MahlerConjecture.lean#L15). Proved in [lean/OAI/Analysis/Mahler/MainTheorem.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Mahler/MainTheorem.lean#L12). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Symmetric Mahler equality characterization
-
-Stated in [SymmetricMahlerEquality.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SymmetricMahlerEquality.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem symmetric_mahler_equality {n : ℕ} (hn : 1 ≤ n)
@@ -70,11 +66,9 @@ theorem symmetric_mahler_equality {n : ℕ} (hn : 1 ≤ n)
       (4 : ℝ)^n / (Nat.factorial n : ℝ)) ↔ IsLinearHanner K
 ```
 
-Proved in [lean/OAI/Analysis/Mahler/Classification.lean, line 534](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Mahler/Classification.lean#L534).
+Stated in [SymmetricMahlerEquality.lean, line 43](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SymmetricMahlerEquality.lean#L43). Proved in [lean/OAI/Analysis/Mahler/Classification.lean, line 534](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Mahler/Classification.lean#L534). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: General Mahler inequality and simplex equality cases
-
-Stated in [GeneralMahler.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GeneralMahler.lean).
 
 ```lean
 theorem general_mahler {n : ℕ} (hn : 1 ≤ n)
@@ -87,11 +81,9 @@ theorem general_mahler {n : ℕ} (hn : 1 ≤ n)
           AffineIndependent ℝ vertices ∧ K = convexHull ℝ (range vertices))
 ```
 
-Proved in [lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean#L17).
+Stated in [GeneralMahler.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GeneralMahler.lean#L24). Proved in [lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/Convex/GeneralMahler/Theorem.lean#L17).
 
 ## Lean: Gromov width of symmetric polar products
-
-Stated in [SymmetricPolar.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SymmetricPolar.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem symmetric_polar_main {n : ℕ} (hn : 2 ≤ n)
@@ -101,11 +93,11 @@ theorem symmetric_polar_main {n : ℕ} (hn : 2 ≤ n)
         HasSymplecticEmbedding (capacityBall n c) (polarProduct K)
 ```
 
-Proved in [lean/OAI/Geometry/PolarProducts/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PolarProducts/Main.lean#L7).
+Stated in [SymmetricPolar.lean, line 40](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SymmetricPolar.lean#L40). Proved in [lean/OAI/Geometry/PolarProducts/Main.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PolarProducts/Main.lean#L7). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

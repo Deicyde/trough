@@ -24,19 +24,17 @@ The second Kahn–Kalai conjecture compares the threshold for a random graph to 
 
 ## Lean: Second Kahn–Kalai threshold bounds
 
-Stated in [SecondKahnKalai.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SecondKahnKalai.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem secondKahnKalaiBounds (n : ℕ) (V : Type u) [Fintype V]
     (H : SimpleGraph V) (hn : 2 ≤ n) (hcard : Fintype.card V ≤ n)
     (hedge : 1 ≤ edgeCount H) : SecondKahnKalaiBounds n H
 ```
 
-Proved in [lean/OAI/Combinatorics/GraphThreshold/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/GraphThreshold/Main.lean#L25).
+Stated in [SecondKahnKalai.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SecondKahnKalai.lean#L65). Proved in [lean/OAI/Combinatorics/GraphThreshold/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/GraphThreshold/Main.lean#L25). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

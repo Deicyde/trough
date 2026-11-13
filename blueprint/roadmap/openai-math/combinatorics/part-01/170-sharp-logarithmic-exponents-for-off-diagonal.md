@@ -40,27 +40,23 @@ More explicitly, for each $\varepsilon>0$ the lower bound $t^{s-1}/(\log t)^{s-2
 
 ## Lean: Sharp logarithmic exponent of $r(5,t)$
 
-Stated in [RamseyFive.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RamseyFive.lean).
-
 ```lean
 theorem main : SharpBounds ∧ SharpExponent
 ```
 
-Proved in [lean/OAI/Combinatorics/RamseyFive/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/RamseyFive/Main.lean#L27).
+Stated in [RamseyFive.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/RamseyFive.lean#L25). Proved in [lean/OAI/Combinatorics/RamseyFive/Main.lean, line 27](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/RamseyFive/Main.lean#L27).
 
 ## Lean: Sharp logarithmic exponent for fixed off-diagonal Ramsey numbers
-
-Stated in [SharpLogRamsey.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SharpLogRamsey.lean).
 
 ```lean
 theorem main (s : ℕ) (hs : 6 ≤ s) : MainBounds s ∧ MainLimit s
 ```
 
-Proved in [lean/OAI/Combinatorics/SharpRamsey/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SharpRamsey/Main.lean#L12).
+Stated in [SharpLogRamsey.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SharpLogRamsey.lean#L32). Proved in [lean/OAI/Combinatorics/SharpRamsey/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SharpRamsey/Main.lean#L12).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -95,7 +95,7 @@ We prove semiampleness of the actual ℚ-Cartier adjoint $K_X+\Delta$ of a norma
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

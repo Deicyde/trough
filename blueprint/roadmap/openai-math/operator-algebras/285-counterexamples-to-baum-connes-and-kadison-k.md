@@ -29,7 +29,7 @@ We construct a finitely generated discrete group whose reduced group $C^{∗}$-a
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

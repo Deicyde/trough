@@ -24,8 +24,6 @@ The logarithmic Brunn–Minkowski conjecture asserts that logarithmic interpolat
 
 ## Lean: Logarithmic Brunn–Minkowski inequality
 
-Stated in [LogBrunnMinkowski.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogBrunnMinkowski.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main (n : ℕ) (hn : 1 ≤ n) (K L : Set (Space n))
     (hK : IsConvexBody K) (hL : IsConvexBody L)
@@ -34,11 +32,11 @@ theorem main (n : ℕ) (hn : 1 ≤ n) (K L : Set (Space n))
     (volume K) ^ (1 - t) * (volume L) ^ t ≤ volume (logCombination K L t)
 ```
 
-Proved in [lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean, line 24481](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean#L24481).
+Stated in [LogBrunnMinkowski.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LogBrunnMinkowski.lean#L30). Proved in [lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean, line 24481](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/LogVolume/BrunnMinkowski.lean#L24481). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

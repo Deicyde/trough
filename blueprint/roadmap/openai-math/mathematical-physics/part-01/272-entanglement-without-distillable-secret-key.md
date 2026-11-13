@@ -26,8 +26,6 @@ The paper's zero-distillable-secret-key statement is outside these two selected 
 
 ## Lean: PPT channel on dimension 21 whose square is not entanglement breaking
 
-Stated in [DimensionTenChannel.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DimensionTenChannel.lean).
-
 ```lean
 theorem exists_channel_fin21 :
     ∃ Θ : ChannelCompletion.Map (Fin 21) (Fin 21),
@@ -35,11 +33,9 @@ theorem exists_channel_fin21 :
         ¬ ChannelCompletion.EntanglementBreaking (Θ.comp Θ)
 ```
 
-Proved in [lean/OAI/Analysis/Quantum/DimensionTen/Channel.lean, line 140](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Quantum/DimensionTen/Channel.lean#L140).
+Stated in [DimensionTenChannel.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DimensionTenChannel.lean#L45). Proved in [lean/OAI/Analysis/Quantum/DimensionTen/Channel.lean, line 140](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Quantum/DimensionTen/Channel.lean#L140).
 
 ## Lean: Dimension-ten PPT pair with non-entanglement-breaking composition
-
-Stated in [DimensionTenPair.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DimensionTenPair.lean).
 
 ```lean
 theorem main_pair :
@@ -52,11 +48,11 @@ theorem main_pair :
        ¬ EntanglementBreaking (Φ₂ ∘ Φ₁))
 ```
 
-Proved in [lean/OAI/Analysis/Quantum/DimensionTen/Main.lean, line 90](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Quantum/DimensionTen/Main.lean#L90).
+Stated in [DimensionTenPair.lean, line 112](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DimensionTenPair.lean#L112). Proved in [lean/OAI/Analysis/Quantum/DimensionTen/Main.lean, line 90](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Quantum/DimensionTen/Main.lean#L90).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -34,8 +34,6 @@ The formalization gives a family of one-way nondeterministic automata with $h+3$
 
 ## Lean: Two-way nondeterministic complementation lower bound
 
-Stated in [TwoWayComplementation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TwoWayComplementation.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem complementation_lower_bound_finite (n : ℕ) (hn : 4 ≤ n) :
     ∃ A : TwoNFA (SetRel (Fin (n - 2)) (Fin (n - 2))) (Fin n),
@@ -44,11 +42,9 @@ theorem complementation_lower_bound_finite (n : ℕ) (hn : 4 ≤ n) :
           (1 / 2 : ℝ) * 2 ^ ((n - 4) / 127) - 1 ≤ (Fintype.card Q : ℝ)
 ```
 
-Proved in [lean/OAI/Combinatorics/TwoWayAutomata/Main.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TwoWayAutomata/Main.lean#L31).
+Stated in [TwoWayComplementation.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TwoWayComplementation.lean#L36). Proved in [lean/OAI/Combinatorics/TwoWayAutomata/Main.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TwoWayAutomata/Main.lean#L31). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Same-family determinization lower bound
-
-Stated in [TwoWayDeterminization.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TwoWayDeterminization.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem explicit_family_main (n : ℕ) (hn : 4 ≤ n) :
@@ -64,11 +60,9 @@ theorem explicit_family_main (n : ℕ) (hn : 4 ≤ n) :
           (1 / 2 : ℝ) * 2 ^ ((n - 4) / 127) ≤ (Fintype.card Q : ℝ))
 ```
 
-Proved in [lean/OAI/Combinatorics/TwoWayAutomata/ExplicitFamily.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TwoWayAutomata/ExplicitFamily.lean#L36).
+Stated in [TwoWayDeterminization.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TwoWayDeterminization.lean#L58). Proved in [lean/OAI/Combinatorics/TwoWayAutomata/ExplicitFamily.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/TwoWayAutomata/ExplicitFamily.lean#L36). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Exponential deterministic state lower bound for liveness
-
-Stated in [OneWayLiveness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OneWayLiveness.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem main_theorem (h : ℕ) (hh : 2 ≤ h) :
@@ -79,11 +73,11 @@ theorem main_theorem (h : ℕ) (hh : 2 ≤ h) :
       2 ^ ((h - 2) / 31) ≤ 4 * (s + if positive then 2 else 1) ^ 2)
 ```
 
-Proved in [lean/OAI/Combinatorics/Automata/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Automata/Main.lean#L10).
+Stated in [OneWayLiveness.lean, line 95](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/OneWayLiveness.lean#L95). Proved in [lean/OAI/Combinatorics/Automata/Main.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Automata/Main.lean#L10). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

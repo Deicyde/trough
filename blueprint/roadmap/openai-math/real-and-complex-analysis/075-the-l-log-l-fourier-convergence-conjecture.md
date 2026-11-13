@@ -25,8 +25,6 @@ $\sum_{k=-N}^{N}\widehat f(k)e^{ikx}\to f(x)$ along the full sequence $N\to\inft
 
 ## Lean: Almost-everywhere convergence of full symmetric Fourier partial sums
 
-Stated in [FourierLLogL.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FourierLLogL.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem paperMain (f : AddCircle (2 * Real.pi) → ℂ)
     (hfm : AEStronglyMeasurable f AddCircle.haarAddCircle)
@@ -40,11 +38,11 @@ theorem paperMain (f : AddCircle (2 * Real.pi) → ℂ)
           atTop (𝓝 (f x))
 ```
 
-Proved in [lean/OAI/Analysis/FourierLLogL/PaperMain.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FourierLLogL/PaperMain.lean#L8).
+Stated in [FourierLLogL.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FourierLLogL.lean#L12). Proved in [lean/OAI/Analysis/FourierLLogL/PaperMain.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/FourierLLogL/PaperMain.lean#L8). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -32,8 +32,6 @@ The action need not be free, and the ambient algebraic set may be singular.
 
 ## Lean: Symmetry of semialgebraic bounded domains
 
-Stated in [SymmetricDomains.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SymmetricDomains.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main {n : ℕ} (V U : Set (Affine n))
     (hV : IsAffineAlgebraic V) (hUV : U ⊆ V)
@@ -48,11 +46,11 @@ theorem main {n : ℕ} (V U : Set (Affine n))
       IsBoundedSymmetricDomain D ∧ Nonempty (Biholomorph U D)
 ```
 
-Proved in [lean/OAI/Analysis/SymmetricDomains/Main.lean, line 55](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SymmetricDomains/Main.lean#L55).
+Stated in [SymmetricDomains.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SymmetricDomains.lean#L47). Proved in [lean/OAI/Analysis/SymmetricDomains/Main.lean, line 55](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/SymmetricDomains/Main.lean#L55). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

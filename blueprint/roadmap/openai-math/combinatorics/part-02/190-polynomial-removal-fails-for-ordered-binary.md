@@ -24,8 +24,6 @@ The formalized result disproves a polynomial removal bound for one explicit $66\
 
 ## Lean: Failure of polynomial removal for ordered binary matrices
 
-Stated in [MatrixRemoval.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixRemoval.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem no_polynomial_removal_bound :
     ∀ c C : ℝ, 0 < c → 0 < C →
@@ -37,11 +35,11 @@ theorem no_polynomial_removal_bound :
           c * Real.rpow ε C * ((n : ℝ) ^ 132)
 ```
 
-Proved in [lean/OAI/Combinatorics/MatrixRemoval/Main.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatrixRemoval/Main.lean#L26).
+Stated in [MatrixRemoval.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MatrixRemoval.lean#L63). Proved in [lean/OAI/Combinatorics/MatrixRemoval/Main.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/MatrixRemoval/Main.lean#L26). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

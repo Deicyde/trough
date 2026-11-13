@@ -40,8 +40,6 @@ Yau's nodal upper-bound conjecture predicts that the nodal measure of an eigenfu
 
 ## Lean: Sharp upper bound for nodal length on smooth surfaces
 
-Stated in [NodalLength.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NodalLength.lean).
-
 ```lean
 theorem Main [CompactSpace M] [ConnectedSpace M]
     [IsContMDiffRiemannianBundle 𝓘(ℝ,Plane) ∞ Plane
@@ -49,11 +47,9 @@ theorem Main [CompactSpace M] [ConnectedSpace M]
     [IsRiemannianManifold 𝓘(ℝ,Plane) M] : MainStatement M
 ```
 
-Proved in [lean/OAI/Analysis/NodalLength/Main.lean, line 377](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/NodalLength/Main.lean#L377).
+Stated in [NodalLength.lean, line 52](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/NodalLength.lean#L52). Proved in [lean/OAI/Analysis/NodalLength/Main.lean, line 377](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/NodalLength/Main.lean#L377).
 
 ## Lean: Nodal counterexamples in dimensions three and four
-
-Stated in [SmoothYau.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SmoothYau.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem sphere_three (gRound : SmoothMetric (Euclidean 3) (Sphere 3))
@@ -63,7 +59,7 @@ theorem sphere_three (gRound : SmoothMetric (Euclidean 3) (Sphere 3))
       ∃ g ∈ N, HasUnboundedNodalRatio g 3
 ```
 
-Proved in [lean/OAI/Geometry/SmoothYau/SphereMetric/ThreeSphere.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SmoothYau/SphereMetric/ThreeSphere.lean#L12).
+Stated in [SmoothYau.lean, line 132](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SmoothYau.lean#L132). Proved in [lean/OAI/Geometry/SmoothYau/SphereMetric/ThreeSphere.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SmoothYau/SphereMetric/ThreeSphere.lean#L12). formalization.yaml lists it as one of the repository's main results.
 
 ```lean
 theorem sphere_two_torus_two :
@@ -71,21 +67,19 @@ theorem sphere_two_torus_two :
       HasUnboundedNodalRatio g 4
 ```
 
-Proved in [lean/OAI/Geometry/SmoothYau/ProductMetric/SphereProduct.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SmoothYau/ProductMetric/SphereProduct.lean#L75).
+Stated in [SmoothYau.lean, line 139](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SmoothYau.lean#L139). Proved in [lean/OAI/Geometry/SmoothYau/ProductMetric/SphereProduct.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/SmoothYau/ProductMetric/SphereProduct.lean#L75). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Unbounded nodal ratio on $S^4\times S^1$
-
-Stated in [YauCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/YauCounterexample.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem yau_nodal_set_upper_bound_counterexample : MainTarget
 ```
 
-Proved in [lean/OAI/Geometry/NodalSets/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/NodalSets/Main.lean#L8).
+Stated in [YauCounterexample.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/YauCounterexample.lean#L65). Proved in [lean/OAI/Geometry/NodalSets/Main.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/NodalSets/Main.lean#L8). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

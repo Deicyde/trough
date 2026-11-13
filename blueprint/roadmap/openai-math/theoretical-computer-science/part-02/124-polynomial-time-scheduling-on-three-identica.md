@@ -24,17 +24,15 @@ The formalization gives a deterministic polynomial-time algorithm for scheduling
 
 ## Lean: Optimal three-machine unit-job scheduling
 
-Stated in [ThreeMachine.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeMachine.lean).
-
 ```lean
 theorem main_theorem : ReleaseTheorem
 ```
 
-Proved in [lean/OAI/Computability/Scheduling/Main.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/Scheduling/Main.lean#L59).
+Stated in [ThreeMachine.lean, line 95](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ThreeMachine.lean#L95). Proved in [lean/OAI/Computability/Scheduling/Main.lean, line 59](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/Scheduling/Main.lean#L59).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

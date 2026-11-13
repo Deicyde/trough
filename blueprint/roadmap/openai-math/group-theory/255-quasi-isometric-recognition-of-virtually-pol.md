@@ -26,8 +26,6 @@ The linked structural estimate controls the height-coordinate behavior of self q
 
 ## Lean: Quasi-isometric recognition of virtually polycyclic groups and solvable lattices
 
-Stated in [PolycyclicRecognition.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PolycyclicRecognition.lean).
-
 ```lean
 theorem group_recognition
     {P J : Type} [Group P] [Group J] [Group.FG P] [Group.FG J]
@@ -38,7 +36,7 @@ theorem group_recognition
           IsUniformLattice Λ ∧ Nonempty (Γ ≃* Λ)
 ```
 
-Proved in [lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean#L24).
+Stated in [PolycyclicRecognition.lean, line 209](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PolycyclicRecognition.lean#L209). Proved in [lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean#L24).
 
 ```lean
 theorem main_uniform_bounded_height
@@ -57,7 +55,7 @@ theorem main_uniform_bounded_height
           ‖(π (F.toFun g)).toAdd - ((π (F.toFun 1)).toAdd + AF.val (π g).toAdd)‖ ≤ B
 ```
 
-Proved in [lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean, line 80](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean#L80).
+Stated in [PolycyclicRecognition.lean, line 219](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PolycyclicRecognition.lean#L219). Proved in [lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean, line 80](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean#L80).
 
 ```lean
 theorem lattice_recognition
@@ -69,11 +67,11 @@ theorem lattice_recognition
         IsUniformLattice Δ ∧ Nonempty (Γ ≃* Δ)
 ```
 
-Proved in [lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean#L63).
+Stated in [PolycyclicRecognition.lean, line 236](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PolycyclicRecognition.lean#L236). Proved in [lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean, line 63](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean#L63).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -36,17 +36,15 @@ The formalized result determines the sharp one-dimensional Lieb–Thirring const
 
 ## Lean: Sharp one-dimensional Lieb–Thirring inequality
 
-Stated in [LiebThirring.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LiebThirring.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem sharp_lieb_thirring : MainClaim
 ```
 
-Proved in [lean/OAI/Analysis/LiebThirring/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LiebThirring/Main.lean#L38).
+Stated in [LiebThirring.lean, line 94](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/LiebThirring.lean#L94). Proved in [lean/OAI/Analysis/LiebThirring/Main.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/LiebThirring/Main.lean#L38). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

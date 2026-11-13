@@ -24,17 +24,13 @@ The formalization proves the Falconer distance conjecture in every dimension. Fo
 
 ## Lean: Planar Falconer distance theorem
 
-Stated in [PlanarFalconer.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarFalconer.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem mainTarget_proved : MainTarget
 ```
 
-Proved in [lean/OAI/MeasureTheory/Falconer/Main.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/Falconer/Main.lean#L50).
+Stated in [PlanarFalconer.lean, line 20](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarFalconer.lean#L20). Proved in [lean/OAI/MeasureTheory/Falconer/Main.lean, line 50](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/Falconer/Main.lean#L50). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Falconer distance theorem in every dimension
-
-Stated in [FalconerAllDimensions.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FalconerAllDimensions.lean).
 
 ```lean
 theorem falconer_distance_conjecture :
@@ -43,11 +39,11 @@ theorem falconer_distance_conjecture :
         0 < volume {r : ℝ | ∃ x ∈ E, ∃ y ∈ E, dist x y = r}
 ```
 
-Proved in [lean/OAI/MeasureTheory/Falconer/Campaign123PlanarFurstenbergProof.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/Falconer/Campaign123PlanarFurstenbergProof.lean#L47).
+Stated in [FalconerAllDimensions.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/FalconerAllDimensions.lean#L11). Proved in [lean/OAI/MeasureTheory/Falconer/Campaign123PlanarFurstenbergProof.lean, line 47](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/Falconer/Campaign123PlanarFurstenbergProof.lean#L47).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

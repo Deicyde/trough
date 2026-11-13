@@ -23,7 +23,7 @@ We prove that a smooth strictly convex planar billiard with positive curvature i
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

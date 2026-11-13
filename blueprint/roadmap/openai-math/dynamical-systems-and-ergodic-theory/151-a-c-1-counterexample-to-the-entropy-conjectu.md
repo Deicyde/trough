@@ -24,18 +24,16 @@ Shub's entropy conjecture predicts that a smooth self-map's topological entropy 
 
 ## Lean: A $C^1$ counterexample to the entropy conjecture
 
-Stated in [C1EntropyCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/C1EntropyCounterexample.lean).
-
 ```lean
 theorem exists_C1_entropy_counterexample :
     ∃ q : ℕ, 0 < q ∧ ∃ f : CounterexampleManifold q → CounterexampleManifold q, ∃ hf : IsC1SelfMap q f, Dynamics.coverEntropy f (Set.univ : Set (CounterexampleManifold q)) = (0 : EReal) ∧ (∃ v : RealSingularHomology 2 (CounterexampleManifold q), v ≠ 0 ∧ realHomologyMap 2 f hf.1 v = (2 : ℝ) • v) ∧ 0 < Real.log (2 : ℝ) ∧ Real.log (2 : ℝ) ≤ Real.log (totalRealHomologySpectralRadius f hf.1) ∧ ¬ Function.Bijective f ∧ 5 ≤ 2 * q + 3
 ```
 
-Proved in [lean/OAI/Dynamics/EntropyCounterexample/Counterexample.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/EntropyCounterexample/Counterexample.lean#L10).
+Stated in [C1EntropyCounterexample.lean, line 65](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/C1EntropyCounterexample.lean#L65). Proved in [lean/OAI/Dynamics/EntropyCounterexample/Counterexample.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/EntropyCounterexample/Counterexample.lean#L10).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

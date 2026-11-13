@@ -42,8 +42,6 @@ Thus the proposed maximum fails in dimension $20$. The paper's exponential-facto
 
 ## Lean: Petty's projection-volume inequality
 
-Stated in [PettyProjectionVolume.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PettyProjectionVolume.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem petty_projection_volume (n : ℕ) (hn : 4 ≤ n)
     (K : Set (Space n)) (hK : IsConvexBody K) :
@@ -51,22 +49,18 @@ theorem petty_projection_volume (n : ℕ) (hn : 4 ≤ n)
       (projectionRatio K = pettyConstant n ↔ IsEllipsoid K)
 ```
 
-Proved in [lean/OAI/Geometry/ProjectionBodies/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ProjectionBodies/Main.lean#L11).
+Stated in [PettyProjectionVolume.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PettyProjectionVolume.lean#L45). Proved in [lean/OAI/Geometry/ProjectionBodies/Main.lean, line 11](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ProjectionBodies/Main.lean#L11). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Failure of the simplex upper bound in dimension 20
-
-Stated in [ProjectionCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProjectionCounterexample.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem universal_simplex_upper_bound_false :
     ¬ (∀ P : Set (E 20), IsConvexBody P → ratio P ≤ ratio (simplex 20))
 ```
 
-Proved in [lean/OAI/Geometry/ProjectionBody/Counterexample.lean, line 96](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ProjectionBody/Counterexample.lean#L96).
+Stated in [ProjectionCounterexample.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProjectionCounterexample.lean#L37). Proved in [lean/OAI/Geometry/ProjectionBody/Counterexample.lean, line 96](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ProjectionBody/Counterexample.lean#L96). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Explicit product-of-simplices counterexample
-
-Stated in [ProjectionVolume.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProjectionVolume.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem product_counterexample :
@@ -81,11 +75,11 @@ theorem product_counterexample :
       simplexConstant 20 * (volume productWitness).toReal ^ 19
 ```
 
-Proved in [lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean#L31).
+Stated in [ProjectionVolume.lean, line 45](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ProjectionVolume.lean#L45). Proved in [lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/ProjectionVolume/ProductCounterexample.lean#L31). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

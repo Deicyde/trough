@@ -6,7 +6,7 @@ statement: formalized
 proof: formalized
 ---
 
-# 110. Optimal-order randomized \*k\*-server on arbitrary metrics
+# 110. Optimal-order randomized *k*-server on arbitrary metrics
 
 2 manuscripts and 2 Lean statements, quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae).
 
@@ -36,27 +36,23 @@ Preprocessing is polynomial in the encoded input length, and each request is pro
 
 ## Lean: Squared-logarithmic randomized $k$-server on arbitrary metrics
 
-Stated in [KServer.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KServer.lean).
-
 ```lean
 theorem main_theorem : MainStatement.{u}
 ```
 
-Proved in [lean/OAI/Combinatorics/KServer/Main.lean, line 155](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KServer/Main.lean#L155).
+Stated in [KServer.lean, line 62](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KServer.lean#L62). Proved in [lean/OAI/Combinatorics/KServer/Main.lean, line 155](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/KServer/Main.lean#L155).
 
 ## Lean: Uniform bit algorithm for the squared-logarithmic $k$-server bound
-
-Stated in [UniformKServer.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformKServer.lean).
 
 ```lean
 theorem uniform_squared_logarithmic_main : UniformAlgorithmClaim
 ```
 
-Proved in [lean/OAI/Combinatorics/UniformKServer/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/UniformKServer/Main.lean#L25).
+Stated in [UniformKServer.lean, line 200](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/UniformKServer.lean#L200). Proved in [lean/OAI/Combinatorics/UniformKServer/Main.lean, line 25](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/UniformKServer/Main.lean#L25).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -24,17 +24,15 @@ The formalization constructs bounded-degree $\mathbb F_2$ coboundary expanders i
 
 ## Lean: Bounded-degree coboundary expanders in dimensions at least three
 
-Stated in [CoboundaryExpanders.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoboundaryExpanders.lean).
-
 ```lean
 theorem main : MainStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/Coboundary/Main.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Coboundary/Main.lean#L88).
+Stated in [CoboundaryExpanders.lean, line 91](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CoboundaryExpanders.lean#L91). Proved in [lean/OAI/Combinatorics/Coboundary/Main.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Coboundary/Main.lean#L88).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

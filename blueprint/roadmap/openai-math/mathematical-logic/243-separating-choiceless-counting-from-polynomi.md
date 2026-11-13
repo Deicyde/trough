@@ -32,8 +32,6 @@ The formalization proves that witnessed symmetric choice strictly increases the 
 
 ## Lean: Polynomial-time query outside choiceless polynomial time
 
-Stated in [ChoicelessPolynomialTime.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ChoicelessPolynomialTime.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main :
     (∀ (A B : Type) [Fintype A] [Fintype B] (S : Input A) (T : Input B),
@@ -42,21 +40,19 @@ theorem main :
     ¬ FullCPT.EvaluationDefinable (fun {_} [_] I => I.query)
 ```
 
-Proved in [lean/OAI/ModelTheory/Choiceless/Separation.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/ModelTheory/Choiceless/Separation.lean#L7).
+Stated in [ChoicelessPolynomialTime.lean, line 549](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ChoicelessPolynomialTime.lean#L549). Proved in [lean/OAI/ModelTheory/Choiceless/Separation.lean, line 7](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/ModelTheory/Choiceless/Separation.lean#L7). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Strict expressive gain from one witnessed symmetric choice
-
-Stated in [WitnessedChoice.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WitnessedChoice.lean).
 
 ```lean
 theorem WitnessedChoice.main : WitnessedChoice.BGS.MainStatement
 ```
 
-Proved in [lean/OAI/Computability/WitnessedChoice/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/WitnessedChoice/Main.lean#L12).
+Stated in [WitnessedChoice.lean, line 469](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/WitnessedChoice.lean#L469). Proved in [lean/OAI/Computability/WitnessedChoice/Main.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Computability/WitnessedChoice/Main.lean#L12).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

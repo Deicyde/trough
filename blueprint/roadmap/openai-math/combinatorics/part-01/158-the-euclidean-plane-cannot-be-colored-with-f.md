@@ -24,27 +24,23 @@ The Hadwiger–Nelson problem asks for the fewest colors needed to color the pla
 
 ## Lean: No proper five-coloring
 
-Stated in [EuclideanFiveColor.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanFiveColor.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem no_proper_five_coloring : ¬ ∃ coloring : ℂ → Fin 5, ProperColoring 5 coloring
 ```
 
-Proved in [lean/OAI/Geometry/PlaneColoring/Five.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PlaneColoring/Five.lean#L124).
+Stated in [EuclideanFiveColor.lean, line 10](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanFiveColor.lean#L10). Proved in [lean/OAI/Geometry/PlaneColoring/Five.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PlaneColoring/Five.lean#L124). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Proper seven-coloring
-
-Stated in [PlaneColoring.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlaneColoring.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem properColoring_seven : ProperColoring 7
 ```
 
-Proved in [lean/OAI/Geometry/PlaneColoring/Seven.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PlaneColoring/Seven.lean#L36).
+Stated in [PlaneColoring.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlaneColoring.lean#L15). Proved in [lean/OAI/Geometry/PlaneColoring/Seven.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Geometry/PlaneColoring/Seven.lean#L36). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

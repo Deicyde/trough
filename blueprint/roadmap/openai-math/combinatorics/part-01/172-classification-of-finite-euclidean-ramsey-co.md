@@ -26,8 +26,6 @@ The formalization also gives spherical non-Ramsey examples: the specified twelve
 
 ## Lean: Tensor-field classification of Ramsey configurations
 
-Stated in [EuclideanRamsey.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamsey.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem classification {s d : ℕ} (a : Fin s → Space d)
     (hs : 2 ≤ s) (hd : 1 ≤ d) (ha : Function.Injective a)
@@ -35,21 +33,17 @@ theorem classification {s d : ℕ} (a : Fin s → Space d)
     Ramsey a ↔ FieldCriterion a
 ```
 
-Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Main.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Main.lean#L69).
+Stated in [EuclideanRamsey.lean, line 42](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamsey.lean#L42). Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Main.lean, line 69](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Main.lean#L69). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Twelve-point spherical non-Ramsey example
-
-Stated in [GrahamSpherical.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GrahamSpherical.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem full_main : Specification.FullAuthoredResult
 ```
 
-Proved in [lean/OAI/Combinatorics/SphericalRamsey/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SphericalRamsey/Main.lean#L23).
+Stated in [GrahamSpherical.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/GrahamSpherical.lean#L58). Proved in [lean/OAI/Combinatorics/SphericalRamsey/Main.lean, line 23](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/SphericalRamsey/Main.lean#L23). formalization.yaml lists it as one of the repository's main results.
 
 ## Lean: Ramsey property for at most five circle points
-
-Stated in [EuclideanRamseyCircle.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyCircle.lean).
 
 ```lean
 theorem at_most_five_circle_points_ramsey {s : ℕ} (a : Fin s → Space 2)
@@ -57,11 +51,9 @@ theorem at_most_five_circle_points_ramsey {s : ℕ} (a : Fin s → Space 2)
     (hsphere : ∃ c : Space 2, ∃ r : ℝ, ∀ i, dist (a i) c = r) : Ramsey a
 ```
 
-Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Circle.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Circle.lean#L21).
+Stated in [EuclideanRamseyCircle.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyCircle.lean#L21). Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Circle.lean, line 21](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Circle.lean#L21).
 
 ## Lean: Nine-point non-Ramsey circle configuration
-
-Stated in [EuclideanRamseyNine.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyNine.lean).
 
 ```lean
 theorem nine_circle_configuration (t : Fin 9 → ℝ)
@@ -71,11 +63,9 @@ theorem nine_circle_configuration (t : Fin 9 → ℝ)
       ¬ Ramsey (literalCircleConfig t)
 ```
 
-Proved in [lean/OAI/Combinatorics/EuclideanRamsey/NineStatement.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/NineStatement.lean#L24).
+Stated in [EuclideanRamseyNine.lean, line 26](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyNine.lean#L26). Proved in [lean/OAI/Combinatorics/EuclideanRamsey/NineStatement.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/NineStatement.lean#L24).
 
 ## Lean: Quadratic-independence criterion for spherical configurations
-
-Stated in [EuclideanRamseyQuadratic.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyQuadratic.lean).
 
 ```lean
 theorem spherical_quadraticIndependent_ramsey_all {s d : ℕ}
@@ -87,11 +77,9 @@ theorem spherical_quadraticIndependent_ramsey_all {s d : ℕ}
         augmented a i q.1 * augmented a i q.2)) : Ramsey a
 ```
 
-Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Quadratic.lean, line 253](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Quadratic.lean#L253).
+Stated in [EuclideanRamseyQuadratic.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyQuadratic.lean#L31). Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Quadratic.lean, line 253](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Quadratic.lean#L253).
 
 ## Lean: Cosphericity of Ramsey configurations
-
-Stated in [EuclideanRamseySpherical.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseySpherical.lean).
 
 ```lean
 theorem ramsey_cospherical {s d : ℕ} (a : Fin s → Space d)
@@ -99,11 +87,9 @@ theorem ramsey_cospherical {s d : ℕ} (a : Fin s → Space d)
     EuclideanGeometry.Cospherical (Set.range a)
 ```
 
-Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Spherical.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Spherical.lean#L15).
+Stated in [EuclideanRamseySpherical.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseySpherical.lean#L19). Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Spherical.lean, line 15](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Spherical.lean#L15).
 
 ## Lean: Ramsey property for subsets of finite transitive configurations
-
-Stated in [EuclideanRamseyTransitive.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyTransitive.lean).
 
 ```lean
 theorem subset_of_finite_transitive_ramsey {s t D : ℕ}
@@ -114,11 +100,11 @@ theorem subset_of_finite_transitive_ramsey {s t D : ℕ}
     (hsub : Set.range a ⊆ Set.range y) : Ramsey a
 ```
 
-Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Transitive.lean, line 136](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Transitive.lean#L136).
+Stated in [EuclideanRamseyTransitive.lean, line 19](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EuclideanRamseyTransitive.lean#L19). Proved in [lean/OAI/Combinatorics/EuclideanRamsey/Transitive.lean, line 136](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EuclideanRamsey/Transitive.lean#L136).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

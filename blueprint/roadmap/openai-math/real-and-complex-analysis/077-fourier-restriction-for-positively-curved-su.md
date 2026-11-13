@@ -23,7 +23,7 @@ We prove the diagonal Fourier extension conjecture for compact smooth positively
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

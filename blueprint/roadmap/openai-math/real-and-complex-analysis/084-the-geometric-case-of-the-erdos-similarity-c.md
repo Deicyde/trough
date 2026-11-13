@@ -30,8 +30,6 @@ The formalization proves the dyadic case of the Erdős similarity conjecture. Fo
 
 ## Lean: Positive-measure avoidance of every affine dyadic sequence
 
-Stated in [DyadicAvoidance.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DyadicAvoidance.lean).
-
 ```lean
 theorem dyadic_affine_avoidance :
     ∀ η : ℝ, 0 < η → η < 1 → ∃ E : Set ℝ,
@@ -41,11 +39,11 @@ theorem dyadic_affine_avoidance :
         x + s * dyadicPoint n ∉ E
 ```
 
-Proved in [lean/OAI/MeasureTheory/DyadicAvoidance/Main.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/DyadicAvoidance/Main.lean#L103).
+Stated in [DyadicAvoidance.lean, line 12](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/DyadicAvoidance.lean#L12). Proved in [lean/OAI/MeasureTheory/DyadicAvoidance/Main.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MeasureTheory/DyadicAvoidance/Main.lean#L103).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

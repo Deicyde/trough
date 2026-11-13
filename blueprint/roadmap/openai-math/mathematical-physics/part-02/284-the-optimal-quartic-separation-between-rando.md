@@ -17,7 +17,7 @@ We construct total Boolean functions with a nearly quartic separation between bo
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

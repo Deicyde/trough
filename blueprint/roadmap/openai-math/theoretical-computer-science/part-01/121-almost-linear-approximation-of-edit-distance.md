@@ -26,8 +26,6 @@ For total length at most $N$ and integer symbols bounded by a fixed polynomial i
 
 ## Lean: Almost-linear randomized approximation of edit distance
 
-Stated in [EditApproximation.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EditApproximation.lean).
-
 ```lean
 theorem almostLinearEditDistanceRawBand (epsilon : OAI.EditApproximation.BinaryFraction)
     (hepsilon : 0 < epsilon.value) (_hepsilonOne : epsilon.value < 1)
@@ -51,11 +49,11 @@ theorem almostLinearEditDistanceRawBand (epsilon : OAI.EditApproximation.BinaryF
         ∀ outcome, OAI.EditApproximation.integerBinarySpaceFootprintRawBand source target N epsilon outcome ≤ (N + 2) ^ (C + 65564))
 ```
 
-Proved in [lean/OAI/Combinatorics/EditApproximation/Specification/RawBandMain.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EditApproximation/Specification/RawBandMain.lean#L8).
+Stated in [EditApproximation.lean, line 19146](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EditApproximation.lean#L19146). Proved in [lean/OAI/Combinatorics/EditApproximation/Specification/RawBandMain.lean, line 8](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/EditApproximation/Specification/RawBandMain.lean#L8).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -41,7 +41,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/Cannon/Main.lean"
+        "module": "lean/OAI/Geometry/Cannon/Main.lean",
+        "main": false
        }
       ]
      }
@@ -93,7 +94,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/PeriodicGroups/Main.lean"
+        "module": "lean/OAI/GroupTheory/PeriodicGroups/Main.lean",
+        "main": false
        }
       ]
      }
@@ -139,7 +141,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/Thompson/Main.lean"
+        "module": "lean/OAI/GroupTheory/Thompson/Main.lean",
+        "main": true
        }
       ]
      }
@@ -185,7 +188,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Topology/EilenbergGanea/Main.lean"
+        "module": "lean/OAI/Topology/EilenbergGanea/Main.lean",
+        "main": false
        }
       ]
      }
@@ -245,7 +249,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/BooneHigman/Main.lean"
+        "module": "lean/OAI/GroupTheory/BooneHigman/Main.lean",
+        "main": false
        }
       ]
      },
@@ -267,7 +272,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/SimpleOvergroups/Main.lean"
+        "module": "lean/OAI/GroupTheory/SimpleOvergroups/Main.lean",
+        "main": false
        }
       ]
      },
@@ -289,7 +295,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/UniversalGroup/Main.lean"
+        "module": "lean/OAI/GroupTheory/UniversalGroup/Main.lean",
+        "main": true
        }
       ]
      }
@@ -341,7 +348,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Unitarizability/AllDiscrete.lean"
+        "module": "lean/OAI/Analysis/Unitarizability/AllDiscrete.lean",
+        "main": true
        }
       ]
      },
@@ -363,7 +371,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Analysis/Unitarizability/UniverseTransport.lean"
+        "module": "lean/OAI/Analysis/Unitarizability/UniverseTransport.lean",
+        "main": false
        }
       ]
      }
@@ -409,7 +418,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/Hyperbolic/Main.lean"
+        "module": "lean/OAI/GroupTheory/Hyperbolic/Main.lean",
+        "main": true
        }
       ]
      }
@@ -455,7 +465,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/SimpleAmenable/Main.lean"
+        "module": "lean/OAI/GroupTheory/SimpleAmenable/Main.lean",
+        "main": true
        }
       ]
      }
@@ -509,8 +520,14 @@
         "kind": "theorem",
         "line": 59,
         "statement": "theorem salvetti_cover_contractible [Finite S] (M : CoxeterMatrix S) :\n    ContractibleSpace (SalvettiCover M)",
-        "proof": null,
-        "module": "lean/OAI/Topology/ArtinGroups/Main.lean"
+        "proof": {
+         "file": "lean/OAI/Topology/ArtinGroups/Realizations/SalvettiCoverContractible.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Topology/ArtinGroups/Main.lean",
+        "main": true
        }
       ]
      },
@@ -532,7 +549,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/ArtinCAT0/Main.lean"
+        "module": "lean/OAI/GroupTheory/ArtinCAT0/Main.lean",
+        "main": true
        }
       ]
      },
@@ -554,7 +572,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean"
+        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.HarmonicArtin.ParabolicIntersections.unconditional_arbitrary_intersections",
@@ -568,7 +587,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean"
+        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.HarmonicArtin.ParabolicIntersections.unconditional_parabolic_closure",
@@ -582,7 +602,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean"
+        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean",
+        "main": false
        },
        {
         "name": "OAI.HarmonicArtin.ParabolicIntersections.unconditional_nonclique_dynamics",
@@ -596,7 +617,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean"
+        "module": "lean/OAI/Topology/ArtinGroups/ParabolicIntersections/Main.lean",
+        "main": false
        }
       ]
      }
@@ -642,7 +664,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean"
+        "module": "lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean",
+        "main": false
        },
        {
         "name": "OAI.PolycyclicRecognition.main_uniform_bounded_height",
@@ -656,7 +679,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean"
+        "module": "lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean",
+        "main": false
        },
        {
         "name": "OAI.PolycyclicRecognition.lattice_recognition",
@@ -670,7 +694,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean"
+        "module": "lean/OAI/GroupTheory/PolycyclicRecognition/Recognition.lean",
+        "main": false
        }
       ]
      }
@@ -722,7 +747,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/GroupTheory/Kervaire/Main.lean"
+        "module": "lean/OAI/GroupTheory/Kervaire/Main.lean",
+        "main": false
        }
       ]
      }
@@ -768,7 +794,8 @@
          "kind": "theorem",
          "sorry": false
         },
-        "module": "lean/OAI/Geometry/HyperbolicGroups/Main.lean"
+        "module": "lean/OAI/Geometry/HyperbolicGroups/Main.lean",
+        "main": true
        }
       ]
      }

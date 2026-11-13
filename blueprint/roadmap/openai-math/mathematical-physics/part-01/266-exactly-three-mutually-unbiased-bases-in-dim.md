@@ -36,8 +36,6 @@ This is a supporting Fourier cancellation statement. The paper's full character-
 
 ## Lean: Order-six Hadamard Fourier vanishing and a five-basis upper bound
 
-Stated in [MUBSix.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MUBSix.lean).
-
 ```lean
 theorem fourier_and_family_bound :
     (∀ H : CMatrix, IsHadamard H → ¬Equivalent H tao →
@@ -45,11 +43,9 @@ theorem fourier_and_family_bound :
     (∀ n : ℕ, Attainable n → n ≤ 5)
 ```
 
-Proved in [lean/OAI/Analysis/MutuallyUnbiased/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MutuallyUnbiased/Main.lean#L22).
+Stated in [MUBSix.lean, line 56](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/MUBSix.lean#L56). Proved in [lean/OAI/Analysis/MutuallyUnbiased/Main.lean, line 22](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/MutuallyUnbiased/Main.lean#L22).
 
 ## Lean: Cube-fiber cancellation for order-six Hadamard row ratios
-
-Stated in [HadamardCubeFiber.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HadamardCubeFiber.lean).
 
 ```lean
 lemma rowRatio_cubeFiber_sum_zero {H : Matrix6} (hH : IsComplexHadamard H)
@@ -59,11 +55,11 @@ lemma rowRatio_cubeFiber_sum_zero {H : Matrix6} (hH : IsComplexHadamard H)
     ∑ k ∈ cubeFiber (rowRatio H i j) a, H i k * star (H j k) = 0
 ```
 
-Proved in [lean/OAI/LinearAlgebra/Hadamard/CubeFibers.lean, line 172](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/Hadamard/CubeFibers.lean#L172).
+Stated in [HadamardCubeFiber.lean, line 28](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HadamardCubeFiber.lean#L28). Proved in [lean/OAI/LinearAlgebra/Hadamard/CubeFibers.lean, line 172](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/LinearAlgebra/Hadamard/CubeFibers.lean#L172).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

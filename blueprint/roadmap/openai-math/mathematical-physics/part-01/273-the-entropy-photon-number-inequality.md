@@ -26,8 +26,6 @@ Entanglement among modes within either input is allowed. The thermal-attenuator 
 
 ## Lean: Entropy photon-number inequality for finite-energy bosonic inputs
 
-Stated in [EntropyPhotonNumber.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EntropyPhotonNumber.lean).
-
 ```lean
 theorem entropy_photon_number_inequality
     (n : ℕ) (hn : 1 ≤ n) (ρA ρB ρC : State n)
@@ -38,11 +36,11 @@ theorem entropy_photon_number_inequality
       gInv (entropy ρC / n)
 ```
 
-Proved in [lean/OAI/InformationTheory/PhotonNumber/Inequality.lean, line 689](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/PhotonNumber/Inequality.lean#L689).
+Stated in [EntropyPhotonNumber.lean, line 99](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/EntropyPhotonNumber.lean#L99). Proved in [lean/OAI/InformationTheory/PhotonNumber/Inequality.lean, line 689](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/InformationTheory/PhotonNumber/Inequality.lean#L689).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

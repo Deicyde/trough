@@ -46,8 +46,6 @@ The planar Cohn–Elkies sharpness conjecture asks whether the two-point Fourier
 
 ## Lean: Sharp Gaussian minorants from an atomic certificate
 
-Stated in [AtomicGaussian.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AtomicGaussian.lean).
-
 ```lean
 theorem sharp_gaussian_minorants_atomic (α : ℝ) (hα : 0 < α) :
     ∃ f : SchwartzMap Plane ℝ,
@@ -58,11 +56,9 @@ theorem sharp_gaussian_minorants_atomic (α : ℝ) (hα : 0 < α) :
       (1 ≤ α → Construction.HasAtomicConstruction α f)
 ```
 
-Proved in [lean/OAI/Analysis/Triangular/Main.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Triangular/Main.lean#L75).
+Stated in [AtomicGaussian.lean, line 239](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/AtomicGaussian.lean#L239). Proved in [lean/OAI/Analysis/Triangular/Main.lean, line 75](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Triangular/Main.lean#L75).
 
 ## Lean: Universal energy minimality of the triangular lattice
-
-Stated in [TriangularEnergy.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangularEnergy.lean).
 
 ```lean
 theorem universal_energy_minimum (g : ℝ → ℝ) (C : Set Plane)
@@ -70,11 +66,9 @@ theorem universal_energy_minimum (g : ℝ → ℝ) (C : Set Plane)
     latticeEnergy g ≤ energy g C ∧ latticeEnergy g = energy g A
 ```
 
-Proved in [lean/OAI/Analysis/Triangular/Energy/Universal.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Triangular/Energy/Universal.lean#L9).
+Stated in [TriangularEnergy.lean, line 66](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangularEnergy.lean#L66). Proved in [lean/OAI/Analysis/Triangular/Energy/Universal.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Triangular/Energy/Universal.lean#L9).
 
 ## Lean: Gaussian Fourier minorants with their construction
-
-Stated in [TriangularGaussian.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangularGaussian.lean).
 
 ```lean
 theorem sharp_gaussian_minorants_with_construction (α : ℝ) (hα : 0 < α) :
@@ -86,22 +80,20 @@ theorem sharp_gaussian_minorants_with_construction (α : ℝ) (hα : 0 < α) :
       (1 ≤ α → AtomicConstruction α f)
 ```
 
-Proved in [lean/OAI/Analysis/Triangular/GaussianMinorants.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Triangular/GaussianMinorants.lean#L73).
+Stated in [TriangularGaussian.lean, line 263](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/TriangularGaussian.lean#L263). Proved in [lean/OAI/Analysis/Triangular/GaussianMinorants.lean, line 73](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/Triangular/GaussianMinorants.lean#L73).
 
 ## Lean: Sharp Fourier certificate for planar circle packing
-
-Stated in [PlanarPacking.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarPacking.lean).
 
 ```lean
 theorem sharp_fourier_certificate :
     ∃ f : SchwartzMap SharpPlanar.Plane ℝ, SharpPlanar.SharpCertificate f
 ```
 
-Proved in [lean/OAI/Analysis/PlanarPacking/Main.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/PlanarPacking/Main.lean#L32).
+Stated in [PlanarPacking.lean, line 36](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/PlanarPacking.lean#L36). Proved in [lean/OAI/Analysis/PlanarPacking/Main.lean, line 32](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/PlanarPacking/Main.lean#L32).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

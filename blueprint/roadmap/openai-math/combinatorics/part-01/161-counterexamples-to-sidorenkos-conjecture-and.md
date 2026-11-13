@@ -24,18 +24,16 @@ Sidorenko's conjecture predicts that every bipartite graph $H$ has homomorphism 
 
 ## Lean: Counterexample to Sidorenko's conjecture
 
-Stated in [SidorenkoCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SidorenkoCounterexample.lean).
-
 ```lean
 theorem main : ∃ size : ℕ, 0 < size ∧ ∃ host : SimpleGraph (Fin size),
     (∃ left right, host.Adj left right) ∧ homDensity H host < (edgeDensity host) ^ 66
 ```
 
-Proved in [lean/OAI/Combinatorics/Sidorenko/RandomHost.lean, line 319](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Sidorenko/RandomHost.lean#L319).
+Stated in [SidorenkoCounterexample.lean, line 41](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SidorenkoCounterexample.lean#L41). Proved in [lean/OAI/Combinatorics/Sidorenko/RandomHost.lean, line 319](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Sidorenko/RandomHost.lean#L319).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

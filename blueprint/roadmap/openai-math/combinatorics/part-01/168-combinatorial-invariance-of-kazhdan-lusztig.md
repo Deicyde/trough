@@ -24,8 +24,6 @@ The combinatorial invariance conjecture asks whether a Kazhdan–Lusztig polynom
 
 ## Lean: Combinatorial invariance of Kazhdan–Lusztig polynomials
 
-Stated in [KLInvariance.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KLInvariance.lean).
-
 ```lean
 theorem combinatorial_invariance
     {B' : Type u'} {W' : Type v'} [Group W'] {M' : CoxeterMatrix B'}
@@ -36,11 +34,11 @@ theorem combinatorial_invariance
     klPolynomial cs u b = klPolynomial cs' u' b'
 ```
 
-Proved in [lean/OAI/RepresentationTheory/KazhdanLusztig/Invariance.lean, line 547](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/KazhdanLusztig/Invariance.lean#L547).
+Stated in [KLInvariance.lean, line 88](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/KLInvariance.lean#L88). Proved in [lean/OAI/RepresentationTheory/KazhdanLusztig/Invariance.lean, line 547](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/RepresentationTheory/KazhdanLusztig/Invariance.lean#L547).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

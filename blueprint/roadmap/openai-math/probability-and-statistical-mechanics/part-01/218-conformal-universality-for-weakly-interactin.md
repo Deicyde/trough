@@ -54,8 +54,6 @@ The formalized result compares conditional Ising probabilities on finite graphs 
 
 ## Lean: Finite-graph buffered Ising likelihood comparison
 
-Stated in [BufferedIsing.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BufferedIsing.lean).
-
 ```lean
 theorem finite_graph_comparison {n m : ℕ} (G : FiniteGraph n m)
     (h : Fin n → ℝ) (I J F : Finset (Fin n))
@@ -70,11 +68,11 @@ theorem finite_graph_comparison {n m : ℕ} (G : FiniteGraph n m)
         Real.exp (4 * Real.artanh (qZero G I J F i j))
 ```
 
-Proved in [lean/OAI/Probability/Ising/Main.lean, line 72](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Ising/Main.lean#L72).
+Stated in [BufferedIsing.lean, line 98](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/BufferedIsing.lean#L98). Proved in [lean/OAI/Probability/Ising/Main.lean, line 72](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Probability/Ising/Main.lean#L72).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

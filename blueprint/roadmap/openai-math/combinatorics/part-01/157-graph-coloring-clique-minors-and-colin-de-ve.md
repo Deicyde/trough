@@ -40,17 +40,13 @@ The Linear List Hadwiger conjecture asks for a universal linear bound on list ch
 
 ## Lean: Linear list-coloring bound in the Hadwiger number
 
-Stated in [ListHadwiger.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ListHadwiger.lean).
-
 ```lean
 theorem main_theorem : MainStatement
 ```
 
-Proved in [lean/OAI/Combinatorics/ListHadwiger/Main.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ListHadwiger/Main.lean#L58).
+Stated in [ListHadwiger.lean, line 30](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ListHadwiger.lean#L30). Proved in [lean/OAI/Combinatorics/ListHadwiger/Main.lean, line 58](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/ListHadwiger/Main.lean#L58).
 
 ## Lean: Arbitrarily large counterexamples to Hadwiger's conjecture
-
-Stated in [HadwigerCounterexample.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HadwigerCounterexample.lean); one of the main results in the repository's formalization.yaml.
 
 ```lean
 theorem exists_counterexamples (M : ℕ) : ∃ m : ℕ, max M 5 ≤ m ∧
@@ -64,7 +60,7 @@ theorem exists_counterexamples (M : ℕ) : ∃ m : ℕ, max M 5 ≤ m ∧
       G.chromaticNumber = ↑(G.chromaticNumber.toNat)
 ```
 
-Proved in [lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean, line 101](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean#L101).
+Stated in [HadwigerCounterexample.lean, line 38](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HadwigerCounterexample.lean#L38). Proved in [lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean, line 101](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean#L101).
 
 ```lean
 theorem not_hadwiger_conjecture :
@@ -72,11 +68,11 @@ theorem not_hadwiger_conjecture :
       G.chromaticNumber ≤ ↑(hadwigerNumber G))
 ```
 
-Proved in [lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean, line 120](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean#L120).
+Stated in [HadwigerCounterexample.lean, line 49](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HadwigerCounterexample.lean#L49). Proved in [lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean, line 120](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/HadwigerCounterexample/Main.lean#L120). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

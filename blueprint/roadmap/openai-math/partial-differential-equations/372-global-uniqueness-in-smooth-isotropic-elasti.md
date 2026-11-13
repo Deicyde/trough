@@ -24,17 +24,15 @@ The formalization proves global uniqueness in the three-dimensional static isotr
 
 ## Lean: Global uniqueness of smooth isotropic Lamé moduli
 
-Stated in [ElasticityUniqueness.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ElasticityUniqueness.lean).
-
 ```lean
 theorem global_uniqueness : MainClaim
 ```
 
-Proved in [lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean, line 94](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean#L94).
+Stated in [ElasticityUniqueness.lean, line 103](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ElasticityUniqueness.lean#L103). Proved in [lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean, line 94](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean#L94).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

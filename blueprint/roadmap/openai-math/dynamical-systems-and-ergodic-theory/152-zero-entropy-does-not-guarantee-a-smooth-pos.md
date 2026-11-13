@@ -26,8 +26,6 @@ The linked statement gives finite entropy; the paper's stronger zero-entropy con
 
 ## Lean: Finite-entropy system without a smooth positive-volume model
 
-Stated in [SmoothObstruction.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SmoothObstruction.lean).
-
 ```lean
 theorem main :
     ∃ (X : Type) (_ : MeasurableSpace X) (μ : Measure X)
@@ -36,11 +34,11 @@ theorem main :
         ¬ HasSmoothPositiveVolumeModel μ T
 ```
 
-Proved in [lean/OAI/Dynamics/SmoothObstruction/Main.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/SmoothObstruction/Main.lean#L124).
+Stated in [SmoothObstruction.lean, line 90](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/SmoothObstruction.lean#L90). Proved in [lean/OAI/Dynamics/SmoothObstruction/Main.lean, line 124](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Dynamics/SmoothObstruction/Main.lean#L124).
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

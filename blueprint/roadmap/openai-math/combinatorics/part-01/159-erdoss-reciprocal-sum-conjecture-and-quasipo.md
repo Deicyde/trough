@@ -1,6 +1,8 @@
 ---
 declaration: section
 origin: cited
+lean: OAI.Erdos3.manuscriptReciprocalProgressionTheorem
+statement: formalized
 ---
 
 # 159. Erdős’s reciprocal-sum conjecture and quasipolynomial Szemerédi bounds
@@ -27,17 +29,15 @@ The selected theorem is the reciprocal-sum consequence. The paper's quantitative
 
 ## Lean: Erdős's reciprocal-sum arithmetic-progression conjecture
 
-Stated in [ErdosReciprocal.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ErdosReciprocal.lean).
-
 ```lean
 theorem manuscriptReciprocalProgressionTheorem : ReciprocalProgressionTheorem
 ```
 
-Its proof is in [lean/OAI/Combinatorics/Progressions/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Progressions/Main.lean) or a file it imports further down, which this chapter does not read.
+Stated in [ErdosReciprocal.lean, line 31](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/ErdosReciprocal.lean#L31). Its proof is in [lean/OAI/Combinatorics/Progressions/Main.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Combinatorics/Progressions/Main.lean) or a file it imports further down, which this chapter does not read.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

@@ -24,19 +24,17 @@ The formalized result proves nonexistence of positive entire solutions to the su
 
 ## Lean: Subcritical Hénon–Lane–Emden nonexistence
 
-Stated in [HenonEmden.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HenonEmden.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem main_nonexistence (n : ℕ) (hn : 2 ≤ n) (p q A B : ℝ)
     (hp : 0 < p) (hq : 0 < q) (hsub : Subcritical n p q A B) :
     ¬ ∃ u v : Space n → ℝ, IsSolution n p q A B u v
 ```
 
-Proved in [lean/OAI/Analysis/HenonEmden/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HenonEmden/Main.lean#L9).
+Stated in [HenonEmden.lean, line 24](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/HenonEmden.lean#L24). Proved in [lean/OAI/Analysis/HenonEmden/Main.lean, line 9](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/Analysis/HenonEmden/Main.lean#L9). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

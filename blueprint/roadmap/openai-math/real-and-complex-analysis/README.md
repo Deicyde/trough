@@ -1,6 +1,6 @@
 # Real and complex analysis
 
-16 result families in *Real and complex analysis*, with 27 manuscripts; 11 with Lean: 25 statements, all proved in a file this chapter reads.
+16 result families in *Real and complex analysis*, with 27 manuscripts; 11 with Lean: 23 statements, all proved in a file this chapter reads.
 
 The descriptions, titles, abstracts, Lean pages and statements are quoted from [openai/math](https://github.com/openai/math) at commit [4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), under its Apache-2.0 license.
 

@@ -26,18 +26,16 @@ Existence of integral points and Zariski density are not established. The paper'
 
 ## Lean: Compatibility of the produced marked solution with every seam equation
 
-Stated in [CharacterVarietiesAllSeamsSupport.lean](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CharacterVarietiesAllSeamsSupport.lean); one of the main results in the repository's formalization.yaml.
-
 ```lean
 theorem producedMarkedValues_allSeams :
     D.ProducedMarkedSeamEquations q hproper hmax hg P x b0 i0
 ```
 
-Proved in [lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean#L37).
+Stated in [CharacterVarietiesAllSeamsSupport.lean, line 17](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/ComparatorChallenges/CharacterVarietiesAllSeamsSupport.lean#L17). Proved in [lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean, line 37](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/lean/OAI/AlgebraicGeometry/CharacterVarieties/Seams/ProducedSolution.lean#L37). formalization.yaml lists it as one of the repository's main results.
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 

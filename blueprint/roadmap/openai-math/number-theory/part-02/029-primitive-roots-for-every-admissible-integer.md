@@ -23,7 +23,7 @@ For every fixed finite set of distinct positive primes, we prove that at least $
 
 ## Depends on
 
-No dependencies are recorded: the collection records none between its families.
+No dependencies are recorded here: the chapter draws no edges between families.
 
 ## Sources
 
