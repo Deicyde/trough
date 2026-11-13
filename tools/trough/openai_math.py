@@ -1,6 +1,6 @@
 """The chapter on OpenAI Math: an article per result family of OpenAI's manuscript collection.
 
-openai/math holds research manuscripts written by an OpenAI model, 721 of them in
+openai/math holds research manuscripts produced by an OpenAI model, 721 of them in
 373 result families at the time of writing, and Lean formalizations of some of
 their results. CONTENTS.md lists the families in order, each with its
 description and its manuscripts' titles, PDFs and abstracts; overview.tex files
@@ -9,12 +9,12 @@ whose scope section says what the Lean covers and whose table links a statement
 file under lean/ComparatorChallenges/ for each formalized result. Each statement
 file has a configuration beside it that names the declarations it states and the
 module whose declarations of the same names prove them. tools/refresh_openai_math.py
-reads a checkout at a pinned commit into data/openai-math/: the subjects and
-families, the manuscripts, the Lean pages, each statement as the statement file
-writes it, and where the repository's Lean declares its proof, read by
-trough.leansource without Lean. The chapter has a part per subject and an article
-per family, with a block per manuscript and per formalized result. The articles
-have no edges.
+reads a checkout at a pinned commit into data/openai-math/: the README's words
+the root quotes, formalization.yaml's facts, the subjects and families, the
+manuscripts, the Lean pages, each statement as the statement file writes it, and
+where the repository's Lean declares its proof, read by trough.leansource without
+Lean. The chapter has a part per subject and an article per family, with a block
+per manuscript and per formalized result. The articles have no edges.
 """
 
 from __future__ import annotations
@@ -28,9 +28,9 @@ from urllib.parse import quote as percent
 
 import yaml
 
-from . import leansource
+from . import ff, formalization, leansource
 from .blueprints import Built, escape
-from .formal_conjectures import OPAQUE, natural, plural
+from .formal_conjectures import OPAQUE, REFERENCE_ENTITY, natural, plural
 from .vault import Container, Entry, Leaf, chunk, slugify
 
 SCHEMA = "trough-openai-math/v1"
@@ -58,7 +58,14 @@ SCRIPTED = re.compile(r"<i>(?P<base>[^<\s]{1,12})</i>(?P<scripts>(?:<(?:sup|sub)
 ENTITY = re.compile(r"&(?:#(?P<number>[0-9]+)|(?P<name>gt|lt|amp|emsp|nbsp|quot));")
 NAMED = {"gt": ">", "lt": "<", "amp": "&", "emsp": "", "nbsp": " ", "quot": '"'}
 UNESCAPED_BRACE = re.compile(r"(?<!\\)\{")
-NO_DEPENDS = "No dependencies are recorded: the collection records none between its families."
+# A tag, comment or other markup the site's Markdown reads as raw HTML (Python-Markdown's pattern), which the site
+# does not publish; an autolink, <https://...>, is a link.
+HTML = re.compile(r"<(?:/?[a-zA-Z][^<>@ ]*(?: [^<>]*)?|!--(?:(?!<!--|-->).)*--|[?](?:(?!<[?]|[?]>).)*[?]|"
+                  r"!\[CDATA\[(?:(?!<!\[CDATA\[|\]\]>).)*\]\])>", re.S)
+AUTOLINK = re.compile(r"<(?:(?:[Ff]|[Hh][Tt])[Tt][Pp][Ss]?://[^<>]*|[^<> !]+@[^@<> ]+)>")
+# An emphasized span of a title, from CONTENTS.md's <i>.
+EMPHASIS = re.compile(r"(\*[^*\s][^*\n]*\*)")
+NO_DEPENDS = "No dependencies are recorded here: the chapter draws no edges between families."
 LEAN_NAMES = 8  # the names a card's Lean row shows
 # The bytes of article Markdown a listing page folds in before its next article starts a page.
 PAGE_BUDGET = 300_000
@@ -81,6 +88,13 @@ def markdown(text: str) -> str:
     return text.strip()
 
 
+def markup(text: str) -> list[str]:
+    """The raw HTML and character references left in *text* outside code and formulas, which the site does not
+    publish."""
+    plain = AUTOLINK.sub(" ", OPAQUE.sub(" ", text))
+    return [match.group() for pattern in (HTML, REFERENCE_ENTITY) for match in pattern.finditer(plain)]
+
+
 def read_contents(text: str) -> tuple[list[dict], list[str]]:
     """CONTENTS.md's families in order, each with its number, title, description, Lean page and manuscripts."""
     families: list[dict] = []
@@ -90,9 +104,13 @@ def read_contents(text: str) -> tuple[list[dict], list[str]]:
         if family := FAMILY.fullmatch(cell):
             description = family["description"].strip()
             lean = LEAN_LINK.search(description)
+            description = description[: lean.start()] if lean else description
+            if any("lean/docs/" in link["target"] for link in LINK.finditer(description)):
+                problems.append(f"CONTENTS.md: family {family['number']} links its Lean page in a form this chapter "
+                                "does not read")
             families.append({"number": family["number"], "title": markdown(family["title"]).rstrip("."),
-                             "description": markdown(description[: lean.start()] if lean else description),
-                             "doc": lean["doc"] if lean else None, "manuscripts": []})
+                             "description": markdown(description), "doc": lean["doc"] if lean else None,
+                             "manuscripts": []})
         elif manuscript := MANUSCRIPT.fullmatch(cell):
             if not families:
                 problems.append("CONTENTS.md lists a manuscript before any family")
@@ -107,6 +125,11 @@ def read_contents(text: str) -> tuple[list[dict], list[str]]:
     problems += [f"CONTENTS.md lists family {number} {count} times" for number, count in numbers.items() if count > 1]
     problems += [f"CONTENTS.md: family {family['number']} has no manuscripts" for family in families
                  if not family["manuscripts"]]
+    for family in families:
+        texts = [family["title"], family["description"]] + [
+            manuscript[key] for manuscript in family["manuscripts"] for key in ("title", "note", "abstract")]
+        if left := [piece for text in texts for piece in markup(text)]:
+            problems.append(f"CONTENTS.md: family {family['number']} keeps HTML or a character reference: {left[0]!r}")
     return families, problems
 
 
@@ -121,6 +144,21 @@ def read_overview(text: str) -> list[dict]:
         elif subjects:
             subjects[-1]["families"].append(value)
     return subjects
+
+
+def readme_words(text: str) -> dict[str, str]:
+    """The README's sentences the chapter's root quotes: its first, those on issues and on raw research data, the
+    first on how the results were produced, and the paragraph on the exceptions to that procedure."""
+    paragraphs = [" ".join(block.split()) for block in re.split(r"\n\s*\n", text)
+                  if block.strip() and not block.lstrip().startswith(("#", "-", "|", "*"))]
+    sentences = [sentence for paragraph in paragraphs for sentence in re.split(r"(?<=[.!?])\s+", paragraph)]
+
+    def first(pattern: str) -> str:
+        return next((sentence for sentence in sentences if re.search(pattern, sentence)), "")
+
+    return {"opening": sentences[0] if sentences else "", "issues": first(r"could have issues"),
+            "raw": first(r"raw research data"), "procedure": first(r"^The vast majority of results"),
+            "exceptions": next((paragraph for paragraph in paragraphs if paragraph.startswith("Exceptions")), "")}
 
 
 def section(text: str, heading: str) -> str | None:
@@ -146,22 +184,28 @@ def read_doc(text: str, path: str) -> tuple[dict, list[str]]:
               for match in LINK.finditer(text[: text.find("## Scope")]) if match["target"].endswith(".pdf")]
     results = []
     for row in table.split("\n"):
-        cells = [cell.strip() for cell in row.strip().strip("|").split("|")]
-        if not row.startswith("|") or len(cells) < 2 or set(row) <= set("|- ") or cells[-1] == "Comparator statement":
+        inner = row.strip().strip("|")
+        # The last cell links the statement file; the label is all before it, a `|` in a formula included.
+        bars = [match.start() for match in re.finditer(r"(?<!\\)\|", inner)]
+        if not row.startswith("|") or not bars or set(row) <= set("|- "):
             continue
-        links = list(LINK.finditer(cells[-1]))
+        label, last = inner[: bars[-1]].strip(), inner[bars[-1] + 1:].strip()
+        if last == "Comparator statement":
+            continue
+        links = list(LINK.finditer(last))
         if len(links) != 1:
             problems.append(f"{path}: a Comparator links row does not link one statement file: {row[:80]!r}")
             continue
         target, _, fragment = links[0]["target"].partition("#")
-        result = {"label": " | ".join(cells[:-1]),
-                  "challenge": posixpath.normpath(posixpath.join(posixpath.dirname(path), target))}
+        result = {"label": label, "challenge": posixpath.normpath(posixpath.join(posixpath.dirname(path), target))}
         # A row may link one declaration of a statement file by its line.
         if line := re.fullmatch(r"L(\d+)", fragment):
             result["line"] = int(line[1])
         results.append(result)
     if not results:
         problems.append(f"{path} links no statement file")
+    if left := markup(scope) + [piece for result in results for piece in markup(result["label"])]:
+        problems.append(f"{path} keeps HTML or a character reference: {left[0]!r}")
     return {"path": path, "title": title["title"], "papers": papers, "scope": scope, "results": results}, problems
 
 
@@ -190,11 +234,13 @@ def module_path(module: str) -> str:
 
 
 def solution_files(checkout: Path) -> list[str]:
-    """The files the refresh reads proofs from: each solution module and, for one that is checked out but does not
-    declare every name its configuration names, the OAI modules it imports. A sparse checkout adds these in two
-    rounds."""
+    """The files the refresh reads proofs from: each solution module, each file formalization.yaml names for a main
+    result and, for a solution module that is checked out but does not declare every name its configuration names,
+    the OAI modules it imports. A sparse checkout adds these in two rounds."""
     configs, _ = read_configs(checkout / "lean")
+    main, _ = read_main_results(checkout)
     wanted = {module_path(config["solution_module"]) for config in configs.values()}
+    wanted |= {file for declarations in main.values() for file in declarations.values() if file}
     for config in configs.values():
         path = checkout / module_path(config["solution_module"])
         if not path.is_file():
@@ -206,45 +252,54 @@ def solution_files(checkout: Path) -> list[str]:
     return sorted(wanted, key=natural)
 
 
-def read_main_results(checkout: Path) -> tuple[set[str], list[str]]:
-    """The statement files of formalization.yaml's main results, by their configurations' paths."""
-    path = checkout / "lean" / "formalization.yaml"
+def read_main_results(checkout: Path) -> tuple[dict[str, dict[str, str]], list[str]]:
+    """formalization.yaml's main results: by their configurations' paths, each declaration it lists with the file it
+    names for it."""
     try:
-        data = yaml.safe_load(path.read_text(encoding="utf-8"))
-        rows = data["status"]["main_results"]
-    except (OSError, yaml.YAMLError, KeyError, TypeError) as error:
-        return set(), [f"lean/formalization.yaml does not read: {error!r}"]
-    return {"lean/" + row["comparator_config"] for row in rows if isinstance(row, dict) and row.get("comparator_config")}, []
+        config = formalization.load((checkout / "lean" / "formalization.yaml").read_text(encoding="utf-8"))
+    except (OSError, ValueError, yaml.YAMLError) as error:
+        return {}, [f"lean/formalization.yaml does not read: {error}"]
+    if not config.main_results:
+        return {}, ["lean/formalization.yaml lists no main results"]
+    main: dict[str, dict[str, str]] = {}
+    for row in config.main_results:
+        if row.get("comparator_config"):
+            main.setdefault("lean/" + str(row["comparator_config"]), {})[str(row.get("declaration") or "")] = (
+                "lean/" + str(row["file"]) if row.get("file") else "")
+    return main, []
 
 
 class Lean:
-    """The declarations of the files read so far, by file."""
+    """The declarations of the files read so far, by file, and the files whose scopes don't close."""
 
     def __init__(self, checkout: Path):
         self.checkout = checkout
         self.files: dict[str, dict[str, leansource.Declaration] | None] = {}
         self.counts: Counter = Counter()
+        self.unread: list[str] = []
 
     def declared(self, path: str) -> dict[str, leansource.Declaration] | None:
         if path not in self.files:
             file = self.checkout / path
-            if not file.is_file():
-                self.files[path] = None
-            else:
-                found = leansource.declarations(file.read_text(encoding="utf-8"), relaxed=True)
+            found = leansource.declarations(file.read_text(encoding="utf-8"), relaxed=True) if file.is_file() else None
+            if file.is_file():
                 self.counts["lean_files"] += 1
-                self.counts["unread_files"] += found is None
-                self.files[path] = {declaration.name: declaration for declaration in found or []
-                                    if declaration.name and not declaration.private}
+                if found is None:
+                    self.unread.append(path)
+            self.files[path] = None if found is None else {
+                declaration.name: declaration for declaration in found if declaration.name and not declaration.private}
         return self.files[path]
 
-    def find(self, name: str, module: str) -> dict | None:
-        """Where the solution module, or a module it imports, declares *name*."""
+    def find(self, name: str, module: str, listed: str = "") -> dict | None:
+        """Where the solution module, a module it imports, or the file formalization.yaml lists for *name* declares
+        it."""
         path = module_path(module)
         candidates = [path]
         if (self.checkout / path).is_file():
             candidates += [module_path(match["module"]) for match in
                            IMPORT.finditer(leansource.blank((self.checkout / path).read_text(encoding="utf-8")))]
+        if listed and listed not in candidates:
+            candidates.append(listed)
         for candidate in candidates:
             found = (self.declared(candidate) or {}).get(name)
             if found:
@@ -268,6 +323,12 @@ def read(checkout: Path) -> tuple[dict, dict[str, list[dict]], dict, list[str]]:
     problems += [f"overview.tex does not file family {number}" for number in by_number if number not in set(filed)]
     problems += [f"overview.tex files family {number} more than once"
                  for number, count in Counter(filed).items() if count > 1]
+    problems += [f"overview.tex has {count} subjects that slugify to {slug!r}"
+                 for slug, count in Counter(slugify(subject["title"]) for subject in subjects).items() if count > 1]
+    docs = {family["doc"] for family in families if family["doc"]}
+    problems += [f"lean/docs/{path.name} is linked by no family of CONTENTS.md"
+                 for path in sorted((checkout / "lean" / "docs").glob("*.md"), key=lambda path: natural(path.name))
+                 if re.fullmatch(r"\d+\.md", path.name) and f"lean/docs/{path.name}" not in docs]
     configs, found = read_configs(checkout / "lean")
     problems += found
     main, found = read_main_results(checkout)
@@ -291,12 +352,15 @@ def read(checkout: Path) -> tuple[dict, dict[str, list[dict]], dict, list[str]]:
             family["lean"] = None
             continue
         counts["families_with_lean"] += 1
+        # Rows that link one statement file state its declarations again; each counts once.
+        seen: set[tuple[str, str]] = set()
         for result in doc["results"]:
             counts["results"] += 1
             config = configs.get(result["challenge"])
             if config is None:
                 problems.append(f"{family['doc']} links {result['challenge']}, which has no configuration")
                 continue
+            listed = main.get(config["config"], {})
             result |= {"config": config["config"], "main": config["config"] in main, "statements": []}
             counts["results_main"] += result["main"]
             stated = lean.declared(result["challenge"])
@@ -319,19 +383,23 @@ def read(checkout: Path) -> tuple[dict, dict[str, list[dict]], dict, list[str]]:
                 if declaration is None or declaration.statement is None:
                     problems.append(f"{result['challenge']} does not state {name}, which {config['config']} names")
                     continue
-                proof = lean.find(name, config["solution_module"])
-                counts["statements"] += 1
-                counts["proofs_found" if proof else "proofs_not_found"] += 1
-                counts["proofs_with_sorry"] += bool(proof and proof["sorry"])
+                proof = lean.find(name, config["solution_module"], listed.get(name, ""))
+                if (result["challenge"], name) not in seen:
+                    seen.add((result["challenge"], name))
+                    counts["statements"] += 1
+                    counts["proofs_found" if proof else "proofs_not_found"] += 1
+                    counts["proofs_with_sorry"] += bool(proof and proof["sorry"])
                 result["statements"].append({"name": name, "role": kind, "kind": declaration.kind,
                                              "line": declaration.line, "statement": declaration.statement,
-                                             "proof": proof, "module": module_path(config["solution_module"])})
+                                             "proof": proof, "module": module_path(config["solution_module"]),
+                                             "main": name in listed})
         family["lean"] = doc
-    counts["lean_files"], counts["unread_files"] = lean.counts["lean_files"], lean.counts["unread_files"]
+    problems += [f"{path}: its scopes don't close" for path in lean.unread if path not in configs]
+    counts["lean_files"] = lean.counts["lean_files"]
     counts["subjects"] = len(subjects)
     counts["main_results"] = len(main)
     linked = {result.get("config") for family in families if family.get("lean") for result in family["lean"]["results"]}
-    counts["main_results_unlinked"] = len(main - linked)
+    counts["main_results_unlinked"] = len(set(main) - linked)
     by_subject = {subject["title"]: [by_number[number] for number in subject["families"] if number in by_number]
                   for subject in subjects}
     return {"subjects": subjects}, by_subject, dict(sorted(counts.items())), problems
@@ -375,7 +443,8 @@ def relink(text: str, directory: str, source: dict) -> str:
         target = match["target"]
         if "://" in target or target.startswith(("#", "mailto:")):
             return match.group()
-        return f"[{match['text']}]({blob(source, posixpath.normpath(posixpath.join(directory, target)))})"
+        path, mark, fragment = target.partition("#")
+        return f"[{match['text']}]({blob(source, posixpath.normpath(posixpath.join(directory, path)))}{mark}{fragment})"
 
     return LINK.sub(link, text)
 
@@ -383,22 +452,30 @@ def relink(text: str, directory: str, source: dict) -> str:
 def proof_line(statement: dict, source: dict) -> str:
     proof = statement["proof"]
     if proof is None:
-        return (f"Its proof is in [{statement['module']}]({blob(source, statement['module'])}) or a file it imports "
+        line = (f"Its proof is in [{statement['module']}]({blob(source, statement['module'])}) or a file it imports "
                 "further down, which this chapter does not read.")
-    where = f"[{proof['file']}, line {proof['line']}]({blob(source, proof['file'], proof['line'])})"
-    if proof["sorry"]:
-        return f"Declared in {where}, where its value contains `sorry`."
-    return f"{'Defined' if statement['role'] == 'definition' else 'Proved'} in {where}."
+    elif proof["sorry"]:
+        line = (f"Declared in [{proof['file']}, line {proof['line']}]({blob(source, proof['file'], proof['line'])}), "
+                "where its value contains `sorry`.")
+    else:
+        line = (f"{'Defined' if statement['role'] == 'definition' else 'Proved'} in "
+                f"[{proof['file']}, line {proof['line']}]({blob(source, proof['file'], proof['line'])}).")
+    return line + (" formalization.yaml lists it as one of the repository's main results." if statement.get("main")
+                   else "")
 
 
-def result_block(result: dict, source: dict) -> str:
+def result_block(result: dict, source: dict, seen: set[tuple[str, str]]) -> str:
+    """A result's block: each statement quoted with its line and where it is proved, or, when an earlier row of the
+    family quotes it, named."""
     lines = [f"## Lean: {braces(result['label'])}", ""]
-    challenge = f"[{posixpath.basename(result['challenge'])}]({blob(source, result['challenge'])})"
-    lines += [f"Stated in {challenge}"
-              + ("; one of the main results in the repository's formalization.yaml." if result.get("main") else "."),
-              ""]
     for statement in result.get("statements", []):
-        lines += ["```lean", statement["statement"], "```", "", proof_line(statement, source), ""]
+        stated = (f"Stated in [{posixpath.basename(result['challenge'])}, line {statement['line']}]"
+                  f"({blob(source, result['challenge'], statement['line'])}).")
+        if (result["challenge"], statement["name"]) in seen:
+            lines += [f"States the `{statement['name']}` quoted above. {stated}", ""]
+            continue
+        seen.add((result["challenge"], statement["name"]))
+        lines += ["```lean", statement["statement"], "```", "", f"{stated} {proof_line(statement, source)}", ""]
     return "\n".join(lines).rstrip()
 
 
@@ -420,8 +497,13 @@ def tally(families: list[dict]) -> Counter:
         counts["manuscripts"] += len(family["manuscripts"])
         if family["lean"]:
             counts["formalized"] += 1
+            # Rows that link one statement file state its declarations again; each counts once.
+            seen = set()
             for result in family["lean"]["results"]:
                 for statement in result.get("statements", []):
+                    if (result["challenge"], statement["name"]) in seen:
+                        continue
+                    seen.add((result["challenge"], statement["name"]))
                     counts["statements"] += 1
                     proof = statement["proof"]
                     counts["proved" if proof and not proof["sorry"] else "unproved"] += 1
@@ -445,21 +527,28 @@ def article(family: dict, data: dict, links: dict[str, str]) -> Leaf:
     if lean:
         parts.append("## The Lean formalization\n\n" + braces(relink(lean["scope"], posixpath.dirname(lean["path"]),
                                                                     source)))
-        parts += [result_block(result, source) for result in lean["results"] if "config" in result]
-    names = [statement["name"] for result in (lean["results"] if lean else []) for statement in result.get("statements", [])
-             if statement["proof"]]
+        seen: set[tuple[str, str]] = set()
+        parts += [result_block(result, source, seen) for result in lean["results"] if "config" in result]
+    statements = [(result, statement) for result in (lean["results"] if lean else [])
+                  for statement in result.get("statements", [])]
+    names = list(dict.fromkeys(statement["name"] for _, statement in statements))
     fields = [("declaration", "section"), ("origin", "cited")]
     if names:
-        shown = list(dict.fromkeys(names))[:LEAN_NAMES]
+        shown = names[:LEAN_NAMES]
         fields += [("lean", ", ".join(shown)), ("statement", "formalized")]
         if counts["proved"] == counts["statements"]:
             fields.append(("proof", "formalized"))
-        for result in lean["results"]:
-            for statement in result.get("statements", []):
-                if statement["name"] in shown and statement["proof"]:
-                    links[statement["name"]] = blob(source, statement["proof"]["file"], statement["proof"]["line"])
+        # A name links its proof's line, or its statement's when no proof is found.
+        for result, statement in statements:
+            if statement["name"] in shown:
+                proof = statement["proof"]
+                links[statement["name"]] = (blob(source, proof["file"], proof["line"]) if proof
+                                            else blob(source, result["challenge"], statement["line"]))
     title = f"{family['number']}. {family['title']}"
-    leaf = Leaf(escape(title), slugify(title), fields, "\n\n".join(parts), no_depends=NO_DEPENDS)
+    # The title's emphasis stays emphasis; the text around it is escaped.
+    label = "".join(f"*{escape(part[1:-1])}*" if EMPHASIS.fullmatch(part) else escape(part)
+                    for part in EMPHASIS.split(title))
+    leaf = Leaf(label, slugify(title), fields, "\n\n".join(parts), no_depends=NO_DEPENDS)
     leaf.sources = [(f"{source['repo']} at {source['rev'][:8]}: CONTENTS.md", blob(source, "CONTENTS.md"))]
     if lean:
         leaf.sources.append((f"{source['repo']} at {source['rev'][:8]}: {lean['path']}", blob(source, lean["path"])))
@@ -512,20 +601,30 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
 def intro(data: dict, stats: Counter) -> str:
     source = data["source"]
     counts = source["counts"]
+    readme = source.get("readme", {})
     unlinked = counts.get("main_results_unlinked", 0)
+
+    def quotes(*keys: str) -> str:
+        return " ".join(f"“{ff.safe(readme[key])}”" for key in keys if readme.get(key))
+
+    produced = quotes("procedure", "exceptions")
     return "\n\n".join([
-        f"[OpenAI Math]({GITHUB}/{source['repo']}) is a collection of mathematical manuscripts written by an OpenAI "
-        "model, which its README calls raw research data rather than polished papers, with Lean formalizations of "
-        f"some of their results. This chapter maps it at commit {at(source)} ({source['date'][:10]}).",
+        f"This chapter maps [OpenAI Math]({GITHUB}/{source['repo']}). Its [README]({blob(source, 'README.md')}) "
+        f"opens: {quotes('opening')}" + (f" It adds: {quotes('issues', 'raw')}" if quotes("issues", "raw") else ""),
+        *([f"On how the results were produced: {produced}"] if produced else []),
+        *([f"Its [formalization.yaml]({blob(source, 'lean/formalization.yaml')}) describes the Lean: "
+           f"“{ff.safe(source['project']['description'])}”"] if source["project"]["description"] else []),
+        ff.facts(source),
         f"Its {plural(stats['manuscripts'], 'manuscript')} form "
         f"{plural(stats['families'], 'result family', 'result families')}, an article each, under the "
         f"{plural(stats['parts'], 'subject')} of its overview; {described(stats)}.",
         "No Lean is run here. Each statement is quoted from the repository's statement file, which leaves its proof "
         "as `sorry` by design; its proof is the declaration of the same name in the solution module the statement's "
-        "configuration names, or in a module that one imports, read from the source text. A statement is proved "
-        "here when that declaration's value holds no `sorry`, whatever it uses. "
+        "configuration names, in a module that one imports, or in the file formalization.yaml names for it, read "
+        "from the source text. A statement is proved here when that declaration's value holds no `sorry`, whatever "
+        "it uses. "
         + (f"{plural(unlinked, 'main result')} of the repository's formalization.yaml "
            f"{'is' if unlinked == 1 else 'are'} not linked from any family's Lean page. " if unlinked else "")
-        + "The families have no recorded dependencies.",
+        + "The articles have no edges.",
         credit(source),
     ])

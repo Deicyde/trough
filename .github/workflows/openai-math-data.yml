@@ -4,8 +4,9 @@
 # statement file writes it, and where the repository's Lean proves it, read
 # from the source without Lean. The pages are then regenerated from that data.
 # The checkout is blobless and sparse: the collection's text files, the Lean
-# pages and statement files, and only the Lean files the proofs are in, added
-# in two rounds (the solution modules, then the modules they import). The
+# pages and statement files, then in two rounds the solution modules and the
+# files formalization.yaml names for its main results and, where a solution
+# module does not declare every name itself, the modules it imports. The
 # repository's PDFs and the rest of its Lean are never fetched.
 #
 # A push that changes the reader or the data runs it too, so the committed data
@@ -23,7 +24,6 @@ on:
     paths:
       - "tools/refresh_openai_math.py"
       - "tools/trough/openai_math.py"
-      - "tools/trough/atlas.py"
       - "tools/trough/leansource.py"
       - "tools/trough/ff.py"
       - "tools/trough/formalization.py"
@@ -42,7 +42,6 @@ on:
     paths:
       - "tools/refresh_openai_math.py"
       - "tools/trough/openai_math.py"
-      - "tools/trough/atlas.py"
       - "tools/trough/leansource.py"
       - "tools/trough/ff.py"
       - "tools/trough/formalization.py"
@@ -121,10 +120,10 @@ jobs:
           git init --quiet "$dir"
           git -C "$dir" remote add origin https://github.com/openai/math.git
           git -C "$dir" fetch --quiet --depth 1 --filter=blob:none origin "$REV"
-          git -C "$dir" sparse-checkout set --no-cone /CONTENTS.md /overview.tex /LICENSE /lean/docs/ \
+          git -C "$dir" sparse-checkout set --no-cone /README.md /CONTENTS.md /overview.tex /LICENSE /lean/docs/ \
             /lean/ComparatorChallenges/ /lean/formalization.yaml /lean/lean-toolchain /lean/lake-manifest.json
           git -C "$dir" checkout --quiet FETCH_HEAD
-          # The solution modules, then the modules they import.
+          # The solution modules and the files formalization.yaml names, then the modules they import.
           for round in 1 2; do
             uv run --no-dev python tools/refresh_openai_math.py --files "$dir" | sed 's|^|/|' > "$RUNNER_TEMP/files"
             xargs -a "$RUNNER_TEMP/files" git -C "$dir" sparse-checkout add

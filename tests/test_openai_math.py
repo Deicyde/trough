@@ -3,6 +3,8 @@ import os
 import subprocess
 from pathlib import Path
 
+import pytest
+
 import refresh_openai_math
 from trough import blueprints, openai_math
 from trough.vault import Container, Leaf, assign_paths, render_tree, walk
@@ -65,9 +67,19 @@ FILES = {
         "  sorry\n\nend OAI.Zeta\n"),
     "lean/OAI/NumberTheory/Zeta/Region.lean": "namespace OAI.Zeta\n\ndef region : Set ℂ := ∅\n\nend OAI.Zeta\n",
     "lean/formalization.yaml": (
-        'version: "v0.4"\nstatus:\n  main_results:\n    - comparator_config: ComparatorChallenges/Ring.json\n'
+        'version: "v0.4"\nproject:\n  name: "OpenAI math repository"\n'
+        '  description: "Lean formalizations accompanying a mathematics manuscript collection."\n'
+        '  authors: ["OpenAI"]\n  license: "Apache-2.0"\nsources:\n  - title: "Rings (and more)"\n'
+        "    id: ../preprints/Rings-(and-more)-October-2-2026/paper.pdf\nautomation:\n  methods:\n    - method: agent\n"
+        "review:\n  status: unchecked\nstatus:\n  main_results:\n    - comparator_config: ComparatorChallenges/Ring.json\n"
         "      declaration: OAI.ring_is_ring\n      file: OAI/Algebra/Ring/Main.lean\n"
         "    - comparator_config: ComparatorChallenges/Gone.json\n      declaration: OAI.gone\n      file: OAI/Gone.lean\n"),
+    "README.md": (
+        "# Readme\n\nThis repository contains manuscripts produced by a model. \n\nNot all have Lean.\n\n"
+        "Some of the unformalized results could have issues. We will fix them.\n\nIn our view, these manuscripts are "
+        "raw research data, rather than polished academic papers.\n\n## How the results were produced\n\n"
+        "The vast majority of results were obtained with one procedure. Each took three hours.\n\n"
+        "Exceptions to this fixed procedure include the zeta work. Additionally, its writeup was human\nedited.\n"),
     "lean/lean-toolchain": "leanprover/lean4:v4.34.1\n",
     "lean/lake-manifest.json": json.dumps({"packages": [{"name": "mathlib", "rev": "d" * 40, "inputRev": "v4.34.1"}]}),
 }
@@ -96,9 +108,9 @@ def checkout(root: Path, files: dict[str, str] = FILES, license_text: str = LICE
     return root
 
 
-def build(tmp_path: Path):
+def build(tmp_path: Path, files: dict[str, str] = FILES):
     out = tmp_path / "data" / "openai-math"
-    assert refresh_openai_math.refresh(checkout(tmp_path / "math"), out) == []
+    assert refresh_openai_math.refresh(checkout(tmp_path / "math", files), out) == []
     built, lean_links = openai_math.chapter(openai_math.load(tmp_path / "data"))
     vault = Path("blueprint")
     assign_paths(built.root, vault / "roadmap" / "openai-math")
@@ -107,6 +119,7 @@ def build(tmp_path: Path):
 
 
 ROOT = Path("blueprint/roadmap/openai-math")
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def test_the_collections_html_becomes_the_sites_markdown():
@@ -144,7 +157,7 @@ def test_a_family_with_lean_gets_its_statements_and_where_the_lean_proves_them(t
     assert (result["label"], result["challenge"], result["config"], result["main"]) == (
         "Rings are rings", "lean/ComparatorChallenges/Ring.lean", "lean/ComparatorChallenges/Ring.json", True)
     [statement] = result["statements"]
-    assert statement["statement"] == "theorem ring_is_ring (R : Type) [Ring R] :\n    True"
+    assert statement["statement"] == "theorem ring_is_ring (R : Type) [Ring R] :\n    True" and statement["main"]
     assert statement["proof"] == {"file": "lean/OAI/Algebra/Ring/Main.lean", "line": 3, "kind": "theorem", "sorry": False}
     zeta, hecke = families["Number theory"][1]["lean"]["results"]
     assert [(entry["name"], entry["role"]) for entry in zeta["statements"]] == [
@@ -153,7 +166,7 @@ def test_a_family_with_lean_gets_its_statements_and_where_the_lean_proves_them(t
     bound, region = (entry["proof"] for entry in zeta["statements"])
     assert (bound["file"], bound["sorry"]) == ("lean/OAI/NumberTheory/Zeta/Main.lean", True)
     assert region["file"] == "lean/OAI/NumberTheory/Zeta/Region.lean"
-    # A statement file in a folder of its own, whose solution module is not checked out.
+    # A statement file in a folder of its own, whose solution module is absent at the commit.
     assert hecke["challenge"] == "lean/ComparatorChallenges/Hecke/Challenge.lean"
     assert hecke["statements"][0]["proof"] is None
     assert {key: counts[key] for key in ("families", "manuscripts", "families_with_lean", "results", "results_main",
@@ -178,8 +191,10 @@ def test_what_does_not_read_or_match_is_listed(tmp_path):
 
 def test_the_sparse_checkout_adds_solution_modules_then_their_imports(tmp_path):
     bare = {name: text for name, text in FILES.items() if not name.startswith("lean/OAI/")}
+    # The files formalization.yaml names for its main results are read too.
     assert openai_math.solution_files(checkout(tmp_path / "bare", bare)) == [
-        "lean/OAI/Algebra/Ring/Main.lean", "lean/OAI/NumberTheory/Hecke/Main.lean", "lean/OAI/NumberTheory/Zeta/Main.lean"]
+        "lean/OAI/Algebra/Ring/Main.lean", "lean/OAI/Gone.lean", "lean/OAI/NumberTheory/Hecke/Main.lean",
+        "lean/OAI/NumberTheory/Zeta/Main.lean"]
     assert "lean/OAI/NumberTheory/Zeta/Region.lean" in openai_math.solution_files(checkout(tmp_path / "full"))
 
 
@@ -211,8 +226,12 @@ def test_an_article_has_its_manuscripts_and_a_block_per_result(tmp_path):
     assert "or a file it imports further down, which this chapter does not read." in zeta
     # Not every statement is proved in a file read, so the card does not say the proof is formalized.
     assert "statement: formalized" in zeta and "proof: formalized" not in zeta
+    assert "Stated in [Zeta.lean, line 7](https://github.com/openai/math/blob/" in zeta
+    assert "/lean/ComparatorChallenges/Zeta.lean#L7). Declared in [" in zeta
+    assert "main results" not in zeta
     ring = files[ROOT / "algebra/002-a-ring-theorem.md"]
-    assert "/lean/ComparatorChallenges/Ring.lean); one of the main results in the repository's formalization.yaml." in ring
+    assert ("/lean/ComparatorChallenges/Ring.lean#L5). Proved in [lean/OAI/Algebra/Ring/Main.lean, line 3](" in ring
+            and "#L3). formalization.yaml lists it as one of the repository's main results." in ring)
     assert "proof: formalized" in ring
     # A link's parentheses are percent-encoded, and a relative link points to the file at the pin.
     assert "/preprints/Rings-%28and-more%29-October-2-2026/paper.pdf)" in ring
@@ -227,7 +246,16 @@ def test_the_root_credits_the_collection_and_counts_what_is_unlinked(tmp_path):
     root = files[ROOT / "README.md"]
     assert "Its 4 manuscripts form 3 result families, an article each, under the 2 subjects of its overview; 2 with Lean: 4 statements, 2 of them proved in a file this chapter reads." in root
     assert "1 main result of the repository's formalization.yaml is not linked from any family's Lean page." in root
-    assert "under its Apache-2.0 license." in root
+    assert "under its Apache-2.0 license." in root and "The articles have no edges." in root
+    # The README and formalization.yaml are quoted, not paraphrased, and the facts listed.
+    assert "/README.md) opens: “This repository contains manuscripts produced by a model.”" in root
+    assert ("It adds: “Some of the unformalized results could have issues.” “In our view, these manuscripts are raw "
+            "research data, rather than polished academic papers.”") in root
+    assert ("On how the results were produced: “The vast majority of results were obtained with one procedure.” "
+            "“Exceptions to this fixed procedure include the zeta work. Additionally, its writeup was human edited.”") in root
+    assert "describes the Lean: “Lean formalizations accompanying a mathematics manuscript collection.”" in root
+    assert "## Facts" in root and "- Authors: OpenAI." in root and "- Review status: “unchecked”." in root
+    assert "- Automation: agent" in root and "- Lean toolchain v4.34.1" in root
 
 
 def test_the_refresh_writes_the_source_the_structure_and_the_families(tmp_path):
@@ -268,3 +296,214 @@ def test_a_row_that_links_a_line_states_the_declaration_there_or_the_next(tmp_pa
     region, bound = families["Number theory"][1]["lean"]["results"]
     assert (region["line"], [entry["name"] for entry in region["statements"]]) == (5, ["OAI.Zeta.region"])
     assert (bound["line"], [entry["name"] for entry in bound["statements"]]) == (6, ["OAI.Zeta.bound"])
+
+
+def test_rows_that_link_one_statement_file_count_its_statements_once(tmp_path):
+    again = "| Zeta again | [Zeta.lean](../ComparatorChallenges/Zeta.lean) |\n"
+    files = FILES | {"lean/docs/003.md": DOC_003 + again}
+    _, _, counts, problems = openai_math.read(checkout(tmp_path / "math", files))
+    assert problems == [] and (counts["results"], counts["statements"], counts["proofs_found"]) == (4, 4, 3)
+    built, _, pages = build(tmp_path / "built", files)
+    assert built.stats["statements"] == 4
+    zeta = pages[ROOT / "number-theory/003-zeta-bounds.md"]
+    assert "1 manuscript and 3 Lean statements, quoted from" in zeta
+    # The second row names what the first quotes, with its line.
+    assert zeta.count("```lean\ntheorem bound") == 1
+    assert "## Lean: Zeta again\n\nStates the `OAI.Zeta.bound` quoted above. Stated in [Zeta.lean, line 7](" in zeta
+    assert "States the `OAI.Zeta.region` quoted above. Stated in [Zeta.lean, line 5](" in zeta
+
+
+def test_a_title_keeps_its_emphasis():
+    families, problems = openai_math.read_contents(
+        cell("**017. The irrationality exponent of <i>π</i> is 2.** It is 2.")
+        + cell("&emsp;[Pi](preprints/Pi/paper.pdf)\n\nPi."))
+    assert problems == [] and families[0]["title"] == "The irrationality exponent of *π* is 2"
+    leaf = openai_math.article(families[0] | {"lean": None}, {"source": {"repo": "openai/math", "rev": "a" * 40}}, {})
+    assert leaf.title == "017. The irrationality exponent of *π* is 2" and "\\*" not in leaf.title
+    assert leaf.slug == "017-the-irrationality-exponent-of-is-2"
+
+
+def test_only_the_statements_formalization_yaml_lists_are_marked_main(tmp_path):
+    main = ("    - comparator_config: ComparatorChallenges/Zeta.json\n      declaration: OAI.Zeta.bound\n"
+            "      file: OAI/NumberTheory/Zeta/Main.lean\n")
+    files = FILES | {"lean/formalization.yaml": FILES["lean/formalization.yaml"] + main}
+    _, families, counts, problems = openai_math.read(checkout(tmp_path / "math", files))
+    assert problems == []
+    zeta = families["Number theory"][1]["lean"]["results"][0]
+    assert zeta["main"] and [(entry["name"], entry["main"]) for entry in zeta["statements"]] == [
+        ("OAI.Zeta.bound", True), ("OAI.Zeta.region", False)]
+    # The counts stay per configuration.
+    assert (counts["main_results"], counts["results_main"], counts["main_results_unlinked"]) == (3, 2, 1)
+    _, _, pages = build(tmp_path / "built", files)
+    page = pages[ROOT / "number-theory/003-zeta-bounds.md"]
+    assert page.count("formalization.yaml lists it as one of the repository's main results.") == 1
+    assert "where its value contains `sorry`. formalization.yaml lists it as one" in page
+
+
+def test_a_proof_is_also_read_from_the_file_formalization_yaml_names(tmp_path):
+    main = ("    - comparator_config: ComparatorChallenges/Hecke.json\n      declaration: OAI.Hecke.bound\n"
+            "      file: OAI/NumberTheory/Hecke/Deep.lean\n")
+    files = FILES | {"lean/formalization.yaml": FILES["lean/formalization.yaml"] + main,
+                     "lean/OAI/NumberTheory/Hecke/Deep.lean": "namespace OAI.Hecke\n\ntheorem bound : True := trivial\n\nend OAI.Hecke\n"}
+    assert "lean/OAI/NumberTheory/Hecke/Deep.lean" in openai_math.solution_files(checkout(tmp_path / "math", files))
+    _, families, counts, problems = openai_math.read(tmp_path / "math")
+    assert problems == [] and counts["proofs_not_found"] == 0
+    hecke = families["Number theory"][1]["lean"]["results"][1]["statements"][0]
+    assert hecke["proof"] == {"file": "lean/OAI/NumberTheory/Hecke/Deep.lean", "line": 3, "kind": "theorem", "sorry": False}
+
+
+def test_a_family_whose_statements_have_no_proof_found_is_still_formalized(tmp_path):
+    hecke = DOC_003.split("| Zeta $7/8$")[0] + "| Hecke bound | [Challenge.lean](../ComparatorChallenges/Hecke/Challenge.lean) |\n"
+    _, lean_links, pages = build(tmp_path, FILES | {"lean/docs/003.md": hecke})
+    page = pages[ROOT / "number-theory/003-zeta-bounds.md"]
+    assert "lean: OAI.Hecke.bound" in page and "statement: formalized" in page and "proof: formalized" not in page
+    # The name links its statement's line, as no proof is found.
+    assert lean_links["OAI.Hecke.bound"].endswith("/lean/ComparatorChallenges/Hecke/Challenge.lean#L3")
+
+
+def test_a_label_keeps_a_bar_in_its_formula_and_a_relative_link_its_fragment():
+    doc, problems = openai_math.read_doc(
+        DOC_002.replace("| Rings are rings |", "| Bound $|x| \\le 1$ |"), "lean/docs/002.md")
+    assert problems == [] and doc["results"][0]["label"] == "Bound $|x| \\le 1$"
+    source = {"repo": "openai/math", "rev": "r" * 40}
+    assert openai_math.relink("[x](../ComparatorChallenges/Zeta.lean#L5)", "lean/docs", source) == (
+        f"[x](https://github.com/openai/math/blob/{'r' * 40}/lean/ComparatorChallenges/Zeta.lean#L5)")
+
+
+def test_html_and_character_references_are_found_outside_formulas():
+    assert openai_math.markup("a <b>bold</b> and &hellip;") == ["<b>", "</b>", "&hellip;"]
+    assert openai_math.markup("$k<n$ and $m>2$, `<b>`, <https://example.org> and x < y > z") == []
+    assert openai_math.markup(openai_math.markdown("$`k<n`$ and <i>p</i> &gt; 2")) == []
+
+
+def with_cell(after: str, text: str) -> str:
+    """CONTENTS with a cell added after the cell that holds *after*."""
+    start = CONTENTS.index(after)
+    end = CONTENTS.index("</tr></tbody>\n", start) + len("</tr></tbody>\n")
+    return CONTENTS[:end] + cell(text) + CONTENTS[end:]
+
+
+BROKEN = {
+    "stray-cell": ({"CONTENTS.md": with_cell("Again.", "Just text.")},
+                   "CONTENTS.md has a cell that is neither a family nor a manuscript: 'Just text.'"),
+    "duplicate-family": ({"CONTENTS.md": with_cell("Again.", "**001. Twice.** Again.")},
+                         "CONTENTS.md lists family 001 2 times"),
+    "no-manuscripts": ({"CONTENTS.md": CONTENTS.replace("</table>", cell("**004. Alone.** None.") + "</table>")},
+                       "CONTENTS.md: family 004 has no manuscripts"),
+    "manuscript-first": ({"CONTENTS.md": CONTENTS.replace("</th></tr></thead>\n", "</th></tr></thead>\n"
+                                                          + cell("&emsp;[Stray](preprints/Stray/paper.pdf)\n\nStray."))},
+                         "CONTENTS.md lists a manuscript before any family"),
+    "html": ({"CONTENTS.md": CONTENTS.replace("is odd, with", "is <b>odd</b>, with")},
+             "CONTENTS.md: family 001 keeps HTML or a character reference: '<b>'"),
+    "reference": ({"CONTENTS.md": CONTENTS.replace("Again.", "Again&hellip;")},
+                  "CONTENTS.md: family 002 keeps HTML or a character reference: '&hellip;'"),
+    "lean-link-form": ({"CONTENTS.md": CONTENTS.replace("(lean/docs/002.md))", "(lean/docs/002.md)).")},
+                       "CONTENTS.md: family 002 links its Lean page in a form this chapter does not read"),
+    "doc-unlinked": ({"CONTENTS.md": CONTENTS.replace(" ([Lean](lean/docs/002.md))", "")},
+                     "lean/docs/002.md is linked by no family of CONTENTS.md"),
+    "filed-twice": ({"overview.tex": OVERVIEW + "\\resultentry{001}{Again}{Again.}{links}\n"},
+                    "overview.tex files family 001 more than once"),
+    "subject-slugs": ({"overview.tex": OVERVIEW.replace("{Algebra}", "{Number Theory}")},
+                      "overview.tex has 2 subjects that slugify to 'number-theory'"),
+    "config": ({"lean/ComparatorChallenges/Ring.json": json.dumps({"solution_module": "OAI.Algebra.Ring.Main"})},
+               "lean/ComparatorChallenges/Ring.json does not read: KeyError('challenge_module')"),
+    "no-main-results": ({"lean/formalization.yaml": FILES["lean/formalization.yaml"].split("\nstatus:")[0] + "\n"},
+                        "lean/formalization.yaml lists no main results"),
+    "yaml": ({"lean/formalization.yaml": 'version: "v0.3"\n'}, "lean/formalization.yaml does not read: "),
+    "no-scope": ({"lean/docs/002.md": DOC_002.replace("## Scope", "## Range")},
+                 "lean/docs/002.md lacks its title, its Scope section or its Comparator links section"),
+    "scope-html": ({"lean/docs/002.md": DOC_002.replace("Every ring is a ring;", "Every ring<br>is a ring;")},
+                   "lean/docs/002.md keeps HTML or a character reference: '<br>'"),
+    "two-links": ({"lean/docs/002.md": DOC_002.replace("(../ComparatorChallenges/Ring.lean) |\n",
+                                                       "(../ComparatorChallenges/Ring.lean) [Zeta.lean](../ComparatorChallenges/Zeta.lean) |\n")},
+                  "lean/docs/002.md: a Comparator links row does not link one statement file: "),
+    "no-rows": ({"lean/docs/002.md": DOC_002.split("| Rings are rings")[0]}, "lean/docs/002.md links no statement file"),
+    "line-after-all": ({"lean/docs/003.md": DOC_003.replace("Zeta.lean) |", "Zeta.lean#L99) |")},
+                       "lean/docs/003.md links line 99 of lean/ComparatorChallenges/Zeta.lean, after every declaration "
+                       "its configuration names"),
+    "not-stated": ({"lean/ComparatorChallenges/Ring.json": config("ComparatorChallenges.Ring", "OAI.Algebra.Ring.Main",
+                                                                  ["OAI.ring_is_ring", "OAI.missing"])},
+                   "lean/ComparatorChallenges/Ring.lean does not state OAI.missing, which "
+                   "lean/ComparatorChallenges/Ring.json names"),
+    "statement-scopes": ({"lean/ComparatorChallenges/Ring.lean": FILES["lean/ComparatorChallenges/Ring.lean"]
+                          .replace("end OAI", "end Wrong")},
+                         "lean/ComparatorChallenges/Ring.lean is missing or its scopes don't close"),
+    "solution-scopes": ({"lean/OAI/Algebra/Ring/Main.lean": FILES["lean/OAI/Algebra/Ring/Main.lean"]
+                         .replace("end OAI", "end Wrong")},
+                        "lean/OAI/Algebra/Ring/Main.lean: its scopes don't close"),
+}
+
+
+@pytest.mark.parametrize("name", BROKEN)
+def test_each_guard_lists_what_does_not_read_or_match(tmp_path, name):
+    files, expected = BROKEN[name]
+    _, _, _, problems = openai_math.read(checkout(tmp_path / "math", FILES | files))
+    assert any(problem.startswith(expected) for problem in problems), problems
+
+
+def test_a_problem_writes_nothing(tmp_path):
+    out = tmp_path / "out"
+    repo = checkout(tmp_path / "math", FILES | BROKEN["solution-scopes"][0])
+    assert refresh_openai_math.refresh(repo, out) == ["lean/OAI/Algebra/Ring/Main.lean: its scopes don't close"]
+    assert not out.exists()
+    empty = {name: text for name, text in FILES.items() if not name.startswith("lean/docs/")}
+    empty |= {"CONTENTS.md": "# Mathematics manuscript collection\n", "overview.tex": "\\cataloguesection{Algebra}{1}\n"}
+    repo = checkout(tmp_path / "empty", empty)
+    assert refresh_openai_math.refresh(repo, out) == [
+        f"openai/math at {git(repo, 'rev-parse', 'HEAD')[:8]}: CONTENTS.md lists no families"]
+    readme = {name: text for name, text in FILES.items() if name != "README.md"}
+    repo = checkout(tmp_path / "readme", readme)
+    assert refresh_openai_math.refresh(repo, out) == [
+        f"openai/math at {git(repo, 'rev-parse', 'HEAD')[:8]}: README.md does not read"]
+    assert not out.exists()
+
+
+def test_a_listed_file_in_the_commit_but_not_checked_out_writes_nothing(tmp_path):
+    out = tmp_path / "out"
+    repo = checkout(tmp_path / "math")
+    (repo / "lean/OAI/NumberTheory/Zeta/Region.lean").unlink()
+    assert refresh_openai_math.refresh(repo, out) == ["not checked out: lean/OAI/NumberTheory/Zeta/Region.lean"]
+    assert not out.exists()
+
+
+def test_a_license_with_text_before_apaches_writes_nothing(tmp_path):
+    out = tmp_path / "out"
+    repo = checkout(tmp_path / "math", license_text="Manuscripts are CC BY-NC 4.0.\n" + LICENSE)
+    assert refresh_openai_math.refresh(repo, out) == [
+        f"openai/math at {git(repo, 'rev-parse', 'HEAD')[:8]}: its LICENSE is not Apache-2.0"]
+    assert not out.exists()
+
+
+def test_the_families_with_lean_dropping_under_half_writes_nothing(tmp_path):
+    out = tmp_path / "out"
+    out.mkdir()
+    (out / "source.json").write_text(json.dumps({"counts": {"families_with_lean": 5}}), encoding="utf-8")
+    assert refresh_openai_math.refresh(checkout(tmp_path / "math"), out) == [
+        "2 families with Lean, under half the 5 of the last record"]
+    assert sorted(path.name for path in out.iterdir()) == ["source.json"]
+
+
+def test_a_subject_renamed_leaves_no_stale_shard(tmp_path):
+    out = tmp_path / "out"
+    repo = checkout(tmp_path / "math")
+    assert refresh_openai_math.refresh(repo, out) == []
+    write(repo, {"overview.tex": OVERVIEW.replace("{Algebra}", "{Rings and fields}")})
+    git(repo, "commit", "--quiet", "-am", "rename")
+    assert refresh_openai_math.refresh(repo, out) == []
+    assert sorted(path.name for path in (out / "families").iterdir()) == ["number-theory.json", "rings-and-fields.json"]
+
+
+def test_the_committed_data_build_the_chapter():
+    loaded = openai_math.load(REPO_ROOT / "data")
+    source, counts = loaded["source"], loaded["source"]["counts"]
+    assert source["repo"] == openai_math.REPO and len(source["rev"]) == 40
+    assert loaded["structure"]["schema"] == openai_math.SCHEMA and loaded["structure"]["rev"] == source["rev"]
+    built, links = openai_math.chapter(loaded)
+    leaves = [node for node in walk(built.root) if isinstance(node, Leaf)]
+    assert len(leaves) == built.stats["families"] == counts["families"]
+    assert built.stats["statements"] == counts["statements"]
+    assert built.stats["proved"] == counts["proofs_found"] - counts["proofs_with_sorry"]
+    assert set(links) == {name for leaf in leaves for name in dict(leaf.fields).get("lean", "").split(", ") if name}
+    assert all(len(dict(leaf.fields).get("lean", "").split(", ")) <= openai_math.LEAN_NAMES for leaf in leaves)
+    assert all(dict(leaf.fields)["declaration"] == "section" for leaf in leaves)
+    assert all(len(node.children) <= 20 for node in walk(built.root) if isinstance(node, Container))
