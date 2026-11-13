@@ -42,7 +42,7 @@ statement: formalized
 >     the Cantor set $C(\alpha)$." Preprint, 2026.
 >     https://doi.org/10.13140/RG.2.2.13923.52001
 
-*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 1 open and 5 solved. It also has 2 test statements, counted here but not shown.
 
@@ -58,7 +58,7 @@ theorem problem_10_61 (α : ℝ) (hα : IsPisot α) (hα2 : 2 < α) :
     ∀ ξ ∈ pisotCantorSet α, ¬ IsEquidistributedModuloOne fun n : ℕ => ξ * α ^ (n + 1)
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L89).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 89](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L89).
 
 ## `Bugeaud61.problem_10_61.variants.almost_every`
 
@@ -75,7 +75,7 @@ theorem problem_10_61.variants.almost_every (α : ℝ) (hα : 1 < α) :
       IsEquidistributedModuloOne fun n : ℕ => ξ * α ^ (n + 1)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L100).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 100](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L100).
 
 ## `Bugeaud61.problem_10_61.variants.covering_criterion`
 
@@ -96,7 +96,7 @@ theorem problem_10_61.variants.covering_criterion {a b : ℤ} {α : ℝ}
     ∀ ξ ∈ pisotCantorSet α, ¬ IsEquidistributedModuloOne fun n : ℕ => ξ * α ^ (n + 1)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L117).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 117](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L117).
 
 ## `Bugeaud61.problem_10_61.variants.covering_criterion_range`
 
@@ -115,7 +115,7 @@ theorem problem_10_61.variants.covering_criterion_range {a b : ℤ} {α : ℝ}
       1 < (Real.logb 2 α - 1) * (Real.logb 2 α - Real.logb 2 |(b : ℝ)| - 1)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L133).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 133](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L133).
 
 ## `Bugeaud61.problem_10_61.variants.two_add_sqrt_five`
 
@@ -133,7 +133,7 @@ theorem problem_10_61.variants.two_add_sqrt_five :
         Int.fract (ξ * (2 + Real.sqrt 5) ^ n) ∉ Set.Ioo (x - r) (x + r)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 148](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L148).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 148](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L148).
 
 ## `Bugeaud61.problem_10_61.variants.two_add_sqrt_three`
 
@@ -149,7 +149,7 @@ theorem problem_10_61.variants.two_add_sqrt_three :
       ¬ IsEquidistributedModuloOne fun n : ℕ => ξ * (2 + Real.sqrt 3) ^ (n + 1)
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L162).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [37 Dynamical systems and ergodic theory](../by-subject/part-02/37-dynamical-systems-and-ergodic-theory/README.md). Declared in [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean, line 162](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean#L162).
 
 ## Depends on
 
@@ -157,5 +157,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean)
+- [FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Books/BugeaudDistributionModuloOne/Problem10_61.lean)
 - [https://doi.org/10.13140/RG.2.2.13923.52001](https://doi.org/10.13140/RG.2.2.13923.52001)

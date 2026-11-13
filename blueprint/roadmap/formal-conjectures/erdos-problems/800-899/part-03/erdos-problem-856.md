@@ -18,7 +18,7 @@ statement: formalized
 > [erdosproblems.com/857](https://www.erdosproblems.com/857). The version with natural density in
 > place of the harmonic sum is [erdosproblems.com/536](https://www.erdosproblems.com/536).
 
-*Quoted from [FormalConjectures/ErdosProblems/856.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/856.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/ErdosProblems/856.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/856.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The problem's page on erdosproblems.com: [https://www.erdosproblems.com/856](https://www.erdosproblems.com/856).
 
@@ -42,7 +42,7 @@ theorem erdos_856 (k : ℕ) (hk : 3 ≤ k) :
     f k =Θ[atTop] erdos_856.answer k
 ```
 
-Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/856.lean#L87).
+Category `research open`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/856.lean#L87).
 
 ## `Erdos856.erdos_856.variants.erdos_upper`
 
@@ -59,7 +59,7 @@ theorem erdos_856.variants.erdos_upper (k : ℕ) (hk : 3 ≤ k) :
     ∃ C > (0 : ℝ), ∀ᶠ N : ℕ in atTop, f k N ≤ C * (Real.log N / Real.log (Real.log N))
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/856.lean#L98).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/856.lean#L98).
 
 ## `Erdos856.erdos_856.variants.tang_zhang_lower`
 
@@ -76,7 +76,7 @@ theorem erdos_856.variants.tang_zhang_lower (k : ℕ) (hk : 3 ≤ k) (ε : ℝ) 
     ∀ᶠ N : ℕ in atTop, Real.log N ^ (tangZhangExponent k - ε) ≤ f k N
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/856.lean#L114).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/856.lean#L114).
 
 ## `Erdos856.erdos_856.variants.tang_zhang_three_lower`
 
@@ -94,7 +94,7 @@ theorem erdos_856.variants.tang_zhang_three_lower (ε : ℝ) (hε : 0 < ε) :
     ∀ᶠ N : ℕ in atTop, Real.log N ^ (Real.log 1.551 - ε) ≤ f 3 N
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/856.lean#L126).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 126](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/856.lean#L126).
 
 ## `Erdos856.erdos_856.variants.tang_zhang_three_upper`
 
@@ -112,7 +112,7 @@ theorem erdos_856.variants.tang_zhang_three_upper (ε : ℝ) (hε : 0 < ε) :
     ∀ᶠ N : ℕ in atTop, f 3 N ≤ Real.log N ^ (3 / (2 : ℝ) ^ ((2 : ℝ) / 3) - 1 + ε)
 ```
 
-Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 138](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/856.lean#L138).
+Category `research solved`; AMS [11 Number theory](../../../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/ErdosProblems/856.lean, line 138](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/856.lean#L138).
 
 ## Depends on
 
@@ -120,5 +120,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/ErdosProblems/856.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/ErdosProblems/856.lean)
+- [FormalConjectures/ErdosProblems/856.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/ErdosProblems/856.lean)
 - [erdosproblems.com/856](https://www.erdosproblems.com/856)

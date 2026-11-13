@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Elliott–Halberstam conjecture to Gap conjecture
+# Dirichlet divisor problem to Fuglede's conjecture in…
 
+- [Dirichlet divisor problem](dirichlet-divisor-problem.md)
 - [Elliott–Halberstam conjecture](elliott-halberstam-conjecture.md)
 - [Some conjectures about ranks of elliptic curves over ℚ](some-conjectures-about-ranks-of-elliptic-curves.md)
 - [Emirps](emirps.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Convergence of the Flint Hills and Cookson Hills series](convergence-of-the-flint-hills-and-cookson-hills.md)
 - [Fortune's Conjecture](fortunes-conjecture.md)
 - [Fuglede's conjecture in dimensions 1 and 2](fugledes-conjecture-in-dimensions-1-and-2.md)
-- [Gap conjecture](gap-conjecture.md)

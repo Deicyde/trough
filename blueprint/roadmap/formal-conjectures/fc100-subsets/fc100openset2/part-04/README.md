@@ -22,5 +22,5 @@ navigation: transparent
 - [76. `Erdos572.erdos_572` (research open), in Erdős Problem 572](../../../erdos-problems/500-599/part-03/erdos-problem-572.md)
 - [77. `Transcendental.exp_add_pi_transcendental` (research open), in Open questions on transcendence of numbers](../../../wikipedia/part-09/open-questions-on-transcendence-of-numbers.md)
 - [78. `Erdos510.erdos_510` (research open), in Erdős Problem 510](../../../erdos-problems/500-599/part-01/erdos-problem-510.md)
-- [79. `Green50.green_50` (research open), in Ben Green's Open Problem 50](../../../greens-open-problems/part-02/ben-greens-open-problem-50.md)
+- [79. `Green50.green_50` (research open), in Ben Green's Open Problem 50](../../../greens-open-problems/part-03/ben-greens-open-problem-50.md)
 - [80. `Erdos242.erdos_242` (research open), in Erdős Problem 242](../../../erdos-problems/200-299/part-02/erdos-problem-242.md)

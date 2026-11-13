@@ -30,7 +30,7 @@ statement: formalized
 >   modulo squares." Annals of Mathematics 172 (2010), 567-596, Conjecture 2.1,
 >   [annals](https://annals.math.princeton.edu/wp-content/uploads/annals-v172-n1-p11-p.pdf)
 
-*Quoted from [FormalConjectures/Millennium/BSD.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/BSD.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Millennium/BSD.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/BSD.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 4 open. It also has 1 API statement, counted here but not shown.
 
@@ -45,7 +45,7 @@ Open: stated without proof.
 theorem weakBSD [E.IsElliptic] : WeakBSD E
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/BSD.lean#L91).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 91](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/BSD.lean#L91).
 
 ## `WeierstrassCurve.Affine.NumberField.strongBSD`
 
@@ -57,7 +57,7 @@ Open: stated without proof.
 theorem strongBSD [E.IsElliptic] : StrongBSD E
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/BSD.lean#L96).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/BSD.lean#L96).
 
 ## `WeierstrassCurve.Affine.Rat.weakBSD`
 
@@ -69,7 +69,7 @@ Open: stated without proof.
 theorem weakBSD : NumberField.WeakBSD E
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 113](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/BSD.lean#L113).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 113](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/BSD.lean#L113).
 
 ## `WeierstrassCurve.Affine.Rat.strongBSD`
 
@@ -81,7 +81,7 @@ Open: stated without proof.
 theorem strongBSD : NumberField.StrongBSD E
 ```
 
-Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/BSD.lean#L118).
+Category `research open`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [14 Algebraic geometry](../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Millennium/BSD.lean, line 118](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/BSD.lean#L118).
 
 ## Depends on
 
@@ -89,5 +89,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Millennium/BSD.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/BSD.lean)
+- [FormalConjectures/Millennium/BSD.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/BSD.lean)
 - [The Clay Institute](https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/)

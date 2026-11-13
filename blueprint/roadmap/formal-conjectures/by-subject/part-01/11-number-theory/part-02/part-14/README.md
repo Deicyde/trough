@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Number of pairs of twin primes… to Smallest power with base>1 and…
+# Smallest prime formed by… to Fibonacci transform satisfying…
 
+- [Smallest prime formed by concatenation $n, n-1, \dots, n-k$](../../../../../oeis/part-05/smallest-prime-formed-by-concatenation-n-n-1-dot.md)
+- [Conjectures associated with A087719](../../../../../oeis/part-05/conjectures-associated-with-a087719.md)
 - [Number of pairs of twin primes between $n^2$ and $(n+1)^2$](../../../../../oeis/part-05/number-of-pairs-of-twin-primes-between-n-2-and-n.md)
 - [Primality and primitive root property from divisibility $n \mid (a(n-1) + 2^{n-2})$](../../../../../oeis/part-05/primality-and-primitive-root-property-from-divis.md)
 - [Tug of war score between prime gap increases and decreases](../../../../../oeis/part-05/tug-of-war-score-between-prime-gap-increases-and.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [$a(0) = 1$, $a(n) = a(n-1)a(n-1) + 2$](../../../../../oeis/part-06/a-0-1-a-n-a-n-1-a-n-1-2.md)
 - [Number of decompositions of $2n+1$ into $2p+q$, where $p$ and $q$ are both odd primes](../../../../../oeis/part-06/number-of-decompositions-of-2n-1-into-2p-q-where.md)
 - [Fibonacci transform satisfying $|a(n)| = F(n+1)$](../../../../../oeis/part-06/fibonacci-transform-satisfying-a-n-f-n-1.md)
-- [$a(n) = 3a(n-1) + a(n-2) - 3a(n-3)$](../../../../../oeis/part-06/a-n-3a-n-1-a-n-2-3a-n-3.md)
-- [Smallest power with base>1 and exponent $n$ without digit 0](../../../../../oeis/part-06/smallest-power-with-base-1-and-exponent-n-withou.md)

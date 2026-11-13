@@ -44,7 +44,7 @@ statement: formalized
 > the errata is not represented here, since this file formalizes the four prize
 > alternatives rather than the later weak-solution discussion.
 
-*Quoted from [FormalConjectures/Millennium/NavierStokes.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/NavierStokes.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Millennium/NavierStokes.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/NavierStokes.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 2 open and 2 solved. It also has 5 API statements, counted here but not shown.
 
@@ -60,7 +60,7 @@ theorem navier_stokes_existence_and_smoothness_R3 (nu : ℝ) (hnu : nu > 0)
     ∃ v p, NavierStokesExistenceAndSmoothnessRn nu u₀ (f := 0) v p
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 274](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/NavierStokes.lean#L274).
+Category `research open`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 274](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/NavierStokes.lean#L274).
 
 ## `NavierStokes.navier_stokes_existence_and_smoothness_periodic`
 
@@ -74,7 +74,7 @@ theorem navier_stokes_existence_and_smoothness_periodic (nu : ℝ) (hnu : nu > 0
     ∃ v p, NavierStokesExistenceAndSmoothnessPeriodic nu u₀ (f := 0) v p
 ```
 
-Category `research open`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 281](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/NavierStokes.lean#L281).
+Category `research open`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 281](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/NavierStokes.lean#L281).
 
 ## `NavierStokes.navier_stokes_breakdown_R3`
 
@@ -91,7 +91,7 @@ theorem navier_stokes_breakdown_R3 (nu : ℝ) (hnu : nu > 0) :
     ¬ (∃ v p, NavierStokesExistenceAndSmoothnessRn nu u₀ f v p)
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 295](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/NavierStokes.lean#L295).
+Category `research solved`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 295](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/NavierStokes.lean#L295).
 
 ## `NavierStokes.navier_stokes_breakdown_periodic`
 
@@ -108,7 +108,7 @@ theorem navier_stokes_breakdown_periodic (nu : ℝ) (hnu : nu > 0) :
     ¬ (∃ v p, NavierStokesExistenceAndSmoothnessPeriodic nu u₀ f v p)
 ```
 
-Category `research solved`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 310](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/NavierStokes.lean#L310).
+Category `research solved`; AMS [35 Partial differential equations](../by-subject/part-02/35-partial-differential-equations/README.md). Declared in [FormalConjectures/Millennium/NavierStokes.lean, line 310](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/NavierStokes.lean#L310).
 
 ## Depends on
 
@@ -116,5 +116,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Millennium/NavierStokes.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/NavierStokes.lean)
+- [FormalConjectures/Millennium/NavierStokes.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/NavierStokes.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_existence_and_smoothness)

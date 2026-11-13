@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Erdős Problem 881 to Erdős Problem 921
+# Erdős Problem 872 to Erdős Problem 918
 
+- [Erdős Problem 872](../../../../../erdos-problems/800-899/part-04/erdos-problem-872.md)
+- [Erdős Problem 877](../../../../../erdos-problems/800-899/part-04/erdos-problem-877.md)
 - [Erdős Problem 881](../../../../../erdos-problems/800-899/part-04/erdos-problem-881.md)
 - [Erdős Problem 882](../../../../../erdos-problems/800-899/part-04/erdos-problem-882.md)
 - [Erdős Problem 883](../../../../../erdos-problems/800-899/part-04/erdos-problem-883.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Erdős Problem 915](../../../../../erdos-problems/900-999/part-01/erdos-problem-915.md)
 - [Erdős Problem 917](../../../../../erdos-problems/900-999/part-01/erdos-problem-917.md)
 - [Erdős Problem 918](../../../../../erdos-problems/900-999/part-01/erdos-problem-918.md)
-- [Erdős Problem 920](../../../../../erdos-problems/900-999/part-01/erdos-problem-920.md)
-- [Erdős Problem 921](../../../../../erdos-problems/900-999/part-01/erdos-problem-921.md)

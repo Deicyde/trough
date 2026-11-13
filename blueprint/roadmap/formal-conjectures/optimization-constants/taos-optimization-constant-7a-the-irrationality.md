@@ -25,7 +25,7 @@ statement: formalized
 >   2*](https://github.com/openai/math/blob/main/preprints/The-irrationality-exponent-of-pi-is-2-September-24-2026/paper.pdf),
 >   2026.
 
-*Quoted from [FormalConjectures/OptimizationConstants/7a.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OptimizationConstants/7a.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 7 research or textbook statements: 5 solved and 2 textbook results. It also has 3 API statements, counted here but not shown.
 
@@ -41,7 +41,7 @@ theorem two_le_irrationalityExponent {x : ℝ} (hx : Irrational x) :
     2 ≤ irrationalityExponent x
 ```
 
-Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean#L98).
+Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean#L98).
 
 ## `Constant7a.irrationalityExponent_of_algebraic`
 
@@ -55,7 +55,7 @@ theorem irrationalityExponent_of_algebraic {x : ℝ} (hx : IsAlgebraic ℚ x) :
     irrationalityExponent x ≤ 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean#L105).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean#L105).
 
 ## `Constant7a.c7a_lower_bound`
 
@@ -68,7 +68,7 @@ Textbook result, proved here.
 theorem c7a_lower_bound : 2 ≤ C7a
 ```
 
-Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean#L116).
+Category `textbook`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean#L116).
 
 ## `Constant7a.c7a_le_42`
 
@@ -81,7 +81,7 @@ Solved: stated here without proof.
 theorem c7a_le_42 : C7a ≤ 42
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean#L121).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean#L121).
 
 ## `Constant7a.c7a_lt_14_797075`
 
@@ -94,7 +94,7 @@ Solved: stated here without proof.
 theorem c7a_lt_14_797075 : C7a < 14.797075
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 127](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean#L127).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 127](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean#L127).
 
 ## `Constant7a.c7a_upper_bound`
 
@@ -106,7 +106,7 @@ Solved: stated here without proof.
 theorem c7a_upper_bound : C7a < 7.103205334138
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean#L132).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean#L132).
 
 ## `Constant7a.c7a_eq_two`
 
@@ -118,7 +118,7 @@ Solved: stated here; a Lean proof is at [https://github.com/openai/math/blob/mai
 theorem c7a_eq_two : C7a = 2
 ```
 
-Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 139](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean#L139).
+Category `research solved`; AMS [11 Number theory](../by-subject/part-01/11-number-theory/README.md). Declared in [FormalConjectures/OptimizationConstants/7a.lean, line 139](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean#L139).
 
 ## Depends on
 
@@ -126,5 +126,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OptimizationConstants/7a.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OptimizationConstants/7a.lean)
+- [FormalConjectures/OptimizationConstants/7a.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OptimizationConstants/7a.lean)
 - [Tao's Optimization Constant 7a](https://teorth.github.io/optimizationproblems/constants/7a.html)

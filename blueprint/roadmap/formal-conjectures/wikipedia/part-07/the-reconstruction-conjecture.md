@@ -21,7 +21,7 @@ statement: formalized
 > * [Bo91] Bondy, J. A. (1991). "A graph reconstructor's manual." In *Surveys in Combinatorics*,
 >   LMS Lecture Note Series 166, Cambridge University Press, pp. 221--252.
 
-*Quoted from [FormalConjectures/Wikipedia/ReconstructionConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/ReconstructionConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 2 open and 4 solved. It also has 1 test statement and 3 API statements, counted here but not shown.
 
@@ -41,7 +41,7 @@ theorem reconstruction_conjecture {V W : Type} [Fintype V] [Fintype W]
     (h : Hypomorphic G H) : Nonempty (G ≃g H)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L92).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 92](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L92).
 
 ## `ReconstructionConjecture.reconstruction_conjecture.variants.tree`
 
@@ -58,7 +58,7 @@ theorem reconstruction_conjecture.variants.tree {V W : Type} [Fintype V] [Fintyp
     (hc : G.Connected) (ha : G.IsAcyclic) (h : Hypomorphic G H) : Nonempty (G ≃g H)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L104).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 104](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L104).
 
 ## `ReconstructionConjecture.reconstruction_conjecture.variants.disconnected`
 
@@ -75,7 +75,7 @@ theorem reconstruction_conjecture.variants.disconnected {V W : Type} [Fintype V]
     (hd : ¬G.Connected) (h : Hypomorphic G H) : Nonempty (G ≃g H)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L116).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L116).
 
 ## `ReconstructionConjecture.edge_reconstruction_conjecture`
 
@@ -92,7 +92,7 @@ theorem edge_reconstruction_conjecture {V : Type} [Fintype V] (G H : SimpleGraph
     (hE : 4 ≤ G.edgeSet.ncard) (h : EdgeHypomorphic G H) : Nonempty (G ≃g H)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 152](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L152).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 152](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L152).
 
 ## `ReconstructionConjecture.edge_reconstruction_conjecture.variants.lovasz`
 
@@ -111,7 +111,7 @@ theorem edge_reconstruction_conjecture.variants.lovasz {V : Type} [Fintype V]
     (h : EdgeHypomorphic G H) : Nonempty (G ≃g H)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 165](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L165).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 165](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L165).
 
 ## `ReconstructionConjecture.edge_reconstruction_conjecture.variants.mueller`
 
@@ -130,7 +130,7 @@ theorem edge_reconstruction_conjecture.variants.mueller {V : Type} [Fintype V]
     (h : EdgeHypomorphic G H) : Nonempty (G ≃g H)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 179](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L179).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/ReconstructionConjecture.lean, line 179](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean#L179).
 
 ## Depends on
 
@@ -138,5 +138,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/ReconstructionConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/ReconstructionConjecture.lean)
+- [FormalConjectures/Wikipedia/ReconstructionConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/ReconstructionConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Reconstruction_conjecture)

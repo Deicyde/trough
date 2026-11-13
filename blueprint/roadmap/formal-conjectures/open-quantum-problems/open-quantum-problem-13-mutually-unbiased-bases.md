@@ -119,7 +119,7 @@ statement: formalized
 >
 > This is why the theorem `mutuallyUnbiasedBases_dim6` is marked as an open research statement.
 
-*Quoted from [FormalConjectures/OpenQuantumProblems/13.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/OpenQuantumProblems/13.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 9 research or textbook statements: 6 open and 3 solved. It also has 2 test statements and 28 API statements, counted here but not shown.
 
@@ -133,7 +133,7 @@ Proved here.
 theorem mutuallyUnbiasedBases_dim2 : IsMaxMUBCount 2 3
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 526](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L526).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 526](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L526).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases_dim6_bounds`
 
@@ -147,7 +147,7 @@ theorem mutuallyUnbiasedBases_dim6_bounds :
     HasMUBs 6 3 ∧ ∀ m : ℕ, HasMUBs 6 m → m ≤ 7
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 534](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L534).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 534](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L534).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases_dim6_bounds.variants.upper_five`
 
@@ -163,7 +163,7 @@ theorem mutuallyUnbiasedBases_dim6_bounds.variants.upper_five :
     ∀ m : ℕ, HasMUBs 6 m → m ≤ 5
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 545](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L545).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 545](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L545).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases_dim6`
 
@@ -177,7 +177,7 @@ theorem mutuallyUnbiasedBases_dim6 :
     IsMaxMUBCount 6 (mutuallyUnbiasedBases_dim6.answer)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 556](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L556).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 556](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L556).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases_dim10`
 
@@ -191,7 +191,7 @@ theorem mutuallyUnbiasedBases_dim10 :
     IsMaxMUBCount 10 (mutuallyUnbiasedBases_dim10.answer)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 565](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L565).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 565](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L565).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases_dim12`
 
@@ -205,7 +205,7 @@ theorem mutuallyUnbiasedBases_dim12 :
     IsMaxMUBCount 12 (mutuallyUnbiasedBases_dim12.answer)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 574](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L574).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 574](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L574).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases_dim14`
 
@@ -219,7 +219,7 @@ theorem mutuallyUnbiasedBases_dim14 :
     IsMaxMUBCount 14 (mutuallyUnbiasedBases_dim14.answer)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 583](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L583).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 583](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L583).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases_dim15`
 
@@ -233,7 +233,7 @@ theorem mutuallyUnbiasedBases_dim15 :
     IsMaxMUBCount 15 (mutuallyUnbiasedBases_dim15.answer)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 592](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L592).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 592](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L592).
 
 ## `OpenQuantumProblem13.mutuallyUnbiasedBases`
 
@@ -247,7 +247,7 @@ theorem mutuallyUnbiasedBases (d : ℕ) (hd : 2 ≤ d) :
     IsMaxMUBCount d (mutuallyUnbiasedBases.answer d)
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 601](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean#L601).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [81 Quantum theory](../by-subject/part-03/81-quantum-theory/README.md), [94 Information and communication, circuits](../by-subject/part-03/94-information-and-communication-circuits/README.md). Declared in [FormalConjectures/OpenQuantumProblems/13.lean, line 601](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean#L601).
 
 ## Depends on
 
@@ -255,5 +255,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/OpenQuantumProblems/13.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/OpenQuantumProblems/13.lean)
+- [FormalConjectures/OpenQuantumProblems/13.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/OpenQuantumProblems/13.lean)
 - [https://oqp.iqoqi.oeaw.ac.at/mutually-unbiased-bases](https://oqp.iqoqi.oeaw.ac.at/mutually-unbiased-bases)

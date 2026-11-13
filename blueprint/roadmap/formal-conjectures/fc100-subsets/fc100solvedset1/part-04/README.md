@@ -5,7 +5,7 @@ navigation: transparent
 # Entries 64 to 84
 
 - [64. `Erdos26.erdos_26.variants.rusza` (research solved), in Erdős Problem 26](../../../erdos-problems/1-99/part-02/erdos-problem-26.md)
-- [65. `InverseGalois.inverse_galois_problem.variants.symmetric_group` (research solved), in Inverse Galois problem](../../../wikipedia/part-04/inverse-galois-problem.md)
+- [65. `InverseGalois.inverse_galois_problem.variants.symmetric_group` (research solved), in Inverse Galois problem](../../../wikipedia/part-05/inverse-galois-problem.md)
 - [66. `Erdos1067.erdos_1067.variants.infinite_edge_connectivity` (research solved), in Erdős Problem 1067](../../../erdos-problems/1000-1099/part-03/erdos-problem-1067.md)
 - [67. `Erdos1074.erdos_1074.variants.EHSNumbers_init` (test), in Erdős Problem 1074](../../../erdos-problems/1000-1099/part-04/erdos-problem-1074.md)
 - [68. `Erdos26.not_isThick_of_finite` (test), in Erdős Problem 26](../../../erdos-problems/1-99/part-02/erdos-problem-26.md)

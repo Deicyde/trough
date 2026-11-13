@@ -29,7 +29,7 @@ statement: formalized
 >   ([PDF page 15](https://arxiv.org/pdf/2604.08040v1#page=15))
 > * **OpenConjecture ID:** 1512
 
-*Quoted from [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 3 solved. It also has 5 test statements, counted here but not shown.
 
@@ -53,7 +53,7 @@ theorem solvable_of_cyc_lt :
       cyc G < 2 ^ (numPrimeFactors G + 2) → Group.IsSolvable G
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean#L81).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean, line 81](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean#L81).
 
 ## `Arxiv.«2604.08040».nilpotent_of_cyc_lt`
 
@@ -66,7 +66,7 @@ theorem nilpotent_of_cyc_lt (h : cyc G < 5 * 2 ^ (numPrimeFactors G - 2)) :
     Group.IsNilpotent G
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean#L90).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean, line 90](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean#L90).
 
 ## `Arxiv.«2604.08040».solvable_of_cyc_lt_two_pow_succ`
 
@@ -82,7 +82,7 @@ theorem solvable_of_cyc_lt_two_pow_succ (h : cyc G < 2 ^ (numPrimeFactors G + 1)
     Group.IsSolvable G
 ```
 
-Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean#L101).
+Category `research solved`; AMS [20 Group theory and generalizations](../../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean, line 101](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean#L101).
 
 ## Depends on
 
@@ -90,5 +90,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean)
+- [FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2604.08040/Conjecture5_5.lean)
 - [arXiv:2604.08040v1](https://arxiv.org/abs/2604.08040v1)

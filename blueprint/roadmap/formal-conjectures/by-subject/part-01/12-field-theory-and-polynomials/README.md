@@ -18,12 +18,12 @@ The 30 problems with a statement whose `AMS` attribute names 12, Field theory an
 - [Normality of Irrational Algebraic Numbers](../../../wikipedia/part-01/normality-of-irrational-algebraic-numbers.md)
 - [Bateman-Horn Conjecture](../../../wikipedia/part-01/bateman-horn-conjecture.md)
 - [Open questions regarding the existence of Euler bricks](../../../wikipedia/part-03/open-questions-regarding-the-existence-of-euler.md)
-- [Inverse Galois problem](../../../wikipedia/part-04/inverse-galois-problem.md)
+- [Inverse Galois problem](../../../wikipedia/part-05/inverse-galois-problem.md)
 - [Local uniformization](../../../wikipedia/part-05/local-uniformization.md)
 - [Mean value problem](../../../wikipedia/part-06/mean-value-problem.md)
 - [Rational_variety](../../../wikipedia/part-06/rational-variety.md)
 - [Sendov's conjecture](../../../wikipedia/part-08/sendovs-conjecture.md)
-- [Tarski's exponential function problem](../../../wikipedia/part-08/tarskis-exponential-function-problem.md)
+- [Tarski's exponential function problem](../../../wikipedia/part-09/tarskis-exponential-function-problem.md)
 
 ## [Ben Green's Open Problem 93 to Lam--Litt conjecture](part-02/README.md)
 

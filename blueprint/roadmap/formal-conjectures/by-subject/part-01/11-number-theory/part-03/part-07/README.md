@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Amicable numbers to Some conjectures about ranks of…
+# Normality of Irrational… to Dirichlet divisor problem
 
+- [Normality of Irrational Algebraic Numbers](../../../../../wikipedia/part-01/normality-of-irrational-algebraic-numbers.md)
+- [Non-Power-of-2 Almost Perfect Numbers Conjecture](../../../../../wikipedia/part-01/non-power-of-2-almost-perfect-numbers-conjecture.md)
 - [Amicable numbers](../../../../../wikipedia/part-01/amicable-numbers.md)
 - [Andrica's conjecture](../../../../../wikipedia/part-01/andricas-conjecture.md)
 - [Artin's conjecture on primitive roots](../../../../../wikipedia/part-01/artins-conjecture-on-primitive-roots.md)
@@ -21,6 +23,4 @@ navigation: transparent
 - [Congruent Number](../../../../../wikipedia/part-02/congruent-number.md)
 - [Dickson's conjecture](../../../../../wikipedia/part-02/dicksons-conjecture.md)
 - [Diophantine $m$-tuples](../../../../../wikipedia/part-02/diophantine-m-tuples.md)
-- [Dirichlet divisor problem](../../../../../wikipedia/part-02/dirichlet-divisor-problem.md)
-- [Elliott–Halberstam conjecture](../../../../../wikipedia/part-03/elliott-halberstam-conjecture.md)
-- [Some conjectures about ranks of elliptic curves over ℚ](../../../../../wikipedia/part-03/some-conjectures-about-ranks-of-elliptic-curves.md)
+- [Dirichlet divisor problem](../../../../../wikipedia/part-03/dirichlet-divisor-problem.md)

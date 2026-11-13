@@ -11,7 +11,7 @@ statement: formalized
 > **The microscopic weighting on a metric space**
 > by *Emily Roff, Simon Willerton*
 
-*Quoted from [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 4 research or textbook statements: 3 solved and 1 textbook result.
 
@@ -28,7 +28,7 @@ theorem concentration_unique {M : Matrix X X ℝ} (hM : M.IsSymm) {g g' : X → 
     (h : IsGauging M g c) (h' : IsGauging M g' c') : c = c'
 ```
 
-Category `textbook`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L70).
+Category `textbook`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 70](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L70).
 
 ## `Arxiv.«2607.05349».microscopic_weighting_iff_finite_concentration`
 
@@ -96,7 +96,7 @@ theorem microscopic_weighting_iff_finite_concentration :
       HasMicroscopicWeighting X ↔ HasFiniteConcentration (distanceMatrix X)
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L146).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 146](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L146).
 
 ## `Arxiv.«2607.05349».hasFiniteConcentration_of_hasMicroscopicWeighting`
 
@@ -110,7 +110,7 @@ theorem hasFiniteConcentration_of_hasMicroscopicWeighting
     (h : HasMicroscopicWeighting X) : HasFiniteConcentration (distanceMatrix X)
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 156](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L156).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 156](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L156).
 
 ## `Arxiv.«2607.05349».hasMicroscopicWeighting_iff_of_isUnit`
 
@@ -124,7 +124,7 @@ theorem hasMicroscopicWeighting_iff_of_isUnit (h : IsUnit (distanceMatrix X).det
     HasMicroscopicWeighting X ↔ HasFiniteConcentration (distanceMatrix X)
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 165](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L165).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [51 Geometry](../../by-subject/part-02/51-geometry/README.md). Declared in [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean, line 165](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean#L165).
 
 ## Depends on
 
@@ -132,5 +132,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean)
+- [FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.05349/MicroscopicWeighting.lean)
 - [arxiv/2607.05349](https://arxiv.org/abs/2607.05349)

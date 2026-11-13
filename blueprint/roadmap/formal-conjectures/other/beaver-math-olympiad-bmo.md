@@ -25,7 +25,7 @@ statement: formalized
 > - [Antihydra web page](https://bbchallenge.org/antihydra)
 > - [Antihydra wiki page](https://wiki.bbchallenge.org/wiki/Antihydra)
 
-*Quoted from [FormalConjectures/Other/BeaverMathOlympiad.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Other/BeaverMathOlympiad.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 7 research or textbook statements: 5 open and 2 solved.
 
@@ -66,7 +66,7 @@ theorem beaver_math_olympiad_problem_1 :
     ∃ i, a i = b i
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean#L71).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 71](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean#L71).
 
 ## `BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra`
 
@@ -100,7 +100,7 @@ theorem beaver_math_olympiad_problem_2_antihydra
     ∀ n, b n ≥ 0
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean#L98).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 98](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean#L98).
 
 ## `BeaverMathOlympiad.beaver_math_olympiad_problem_2_antihydra.variants.set`
 
@@ -119,7 +119,7 @@ theorem beaver_math_olympiad_problem_2_antihydra.variants.set
       2 * ((Finset.Ico 0 n).filter fun x ↦ Even (a x)).card
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean#L114).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 114](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean#L114).
 
 ## `BeaverMathOlympiad.beaver_math_olympiad_problem_3`
 
@@ -151,7 +151,7 @@ theorem beaver_math_olympiad_problem_3
     ¬ (∃ n k, a n = 4 ^ k)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 144](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean#L144).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 144](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean#L144).
 
 ## `BeaverMathOlympiad.beaver_math_olympiad_problem_4`
 
@@ -186,7 +186,7 @@ theorem beaver_math_olympiad_problem_4
     ¬ (∃ n, a n % 3 = 1)
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 176](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean#L176).
+Category `research solved`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 176](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean#L176).
 
 ## `BeaverMathOlympiad.beaver_math_olympiad_problem_5`
 
@@ -226,7 +226,7 @@ theorem beaver_math_olympiad_problem_5 :
     ∃ i, b i = f (a i) - 1
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 211](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean#L211).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 211](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean#L211).
 
 ## `BeaverMathOlympiad.beaver_math_olympiad_problem_8`
 
@@ -262,7 +262,7 @@ theorem beaver_math_olympiad_problem_8 :
     ∃ i, a i = b i / 2 + 1
 ```
 
-Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 239](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean#L239).
+Category `research open`; AMS [05 Combinatorics](../by-subject/part-01/05-combinatorics/README.md), [11 Number theory](../by-subject/part-01/11-number-theory/README.md), [68 Computer science](../by-subject/part-02/68-computer-science/README.md). Declared in [FormalConjectures/Other/BeaverMathOlympiad.lean, line 239](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean#L239).
 
 ## Depends on
 
@@ -270,5 +270,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Other/BeaverMathOlympiad.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/BeaverMathOlympiad.lean)
+- [FormalConjectures/Other/BeaverMathOlympiad.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/BeaverMathOlympiad.lean)
 - [bbchallenge.org](https://bbchallenge.org)

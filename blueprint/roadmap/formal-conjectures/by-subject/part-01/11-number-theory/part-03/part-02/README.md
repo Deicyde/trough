@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Values $m = \sigma(k)$ ($0 < m… to Number of integers $0 < k \le…
+# Number of ways to write $n = p… to Number of positive integers $k…
 
+- [Number of ways to write $n = p + q$ ($q > 0$) with $p$ and $(\phi(p)\phi(q))^4 + 1$ prime](../../../../../oeis/part-13/number-of-ways-to-write-n-p-q-q-0-with-p-and-phi.md)
+- [Number of primes $p < n$ such that $p \phi(n - p) - 1$ is also prime](../../../../../oeis/part-13/number-of-primes-p-n-such-that-p-phi-n-p-1-is-al.md)
 - [Values $m = \sigma(k)$ ($0 < m < 2n$) with $2n - 1 - m$ and $2n - 1 + m$ prime](../../../../../oeis/part-13/values-m-sigma-k-0-m-2n-with-2n-1-m-and-2n-1-m-p.md)
 - [Number of integers $0 < k < n$ such that $k \phi(n - k) + 1$ is a square](../../../../../oeis/part-13/number-of-integers-0-k-n-such-that-k-phi-n-k-1-i.md)
 - [Number of integers $0 < k < n$ such that $(k + 1)^{\phi(n - k)} + k$ is prime](../../../../../oeis/part-13/number-of-integers-0-k-n-such-that-k-1-phi-n-k-k.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Pairs $\{j, k\}$ with $0 < j < k \le n$, $k \equiv 1 \pmod j$, and $\pi(jn) \mid \pi(kn)$](../../../../../oeis/part-14/pairs-j-k-with-0-j-k-le-n-k-equiv-1-pmod-j-and-p.md)
 - [Equal prime counts in adjacent intervals $(kn, (k+1)n)$ and $((k+1)n, (k+2)n)$](../../../../../oeis/part-14/equal-prime-counts-in-adjacent-intervals-kn-k-1.md)
 - [Number of positive integers $k < n$ such that $n^2 - \pi(k n)$ is prime](../../../../../oeis/part-14/number-of-positive-integers-k-n-such-that-n-2-pi.md)
-- [Number of primes $p < n$ with $\text{prime}(p)^2 + (\text{prime}(n) - 1)^2$ prime](../../../../../oeis/part-14/number-of-primes-p-n-with-prime-p-2-prime-n-1-2.md)
-- [Number of integers $0 < k \le n$ such that $\pi(\pi(k n))$ is a square](../../../../../oeis/part-14/number-of-integers-0-k-le-n-such-that-pi-pi-k-n.md)

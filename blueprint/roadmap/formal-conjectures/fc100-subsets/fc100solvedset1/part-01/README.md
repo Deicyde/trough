@@ -19,7 +19,7 @@ navigation: transparent
 - [14. `Erdos686.erdos_686.variants.four_three` (research solved), in Erdős Problem 686](../../../erdos-problems/600-699/part-04/erdos-problem-686.md)
 - [15. `OpenQuantumProblem23.hasConstantOverlapSq_singleton` (test), in Open Quantum Problem 23: SIC-POVMs](../../../open-quantum-problems/open-quantum-problem-23-sic-povms.md)
 - [17. `Erdos678.lcmInterval_lt_example3` (test), in Erdős Problem 678](../../../erdos-problems/600-699/part-04/erdos-problem-678.md)
-- [18. `Gourevitch.gourevitch_series_identity` (research solved), in Gourevitch's series identity](../../../papers/part-01/gourevitchs-series-identity.md)
+- [18. `Gourevitch.gourevitch_series_identity` (research solved), in Gourevitch's series identity](../../../papers/part-02/gourevitchs-series-identity.md)
 - [19. `WrittenOnTheWallII.GraphConjecture16.conjecture16` (research solved), in Written on the Wall II - Conjecture 16](../../../written-on-the-wall-ii/part-01/written-on-the-wall-ii-conjecture-16.md)
 - [20. `Erdos12.erdos_12.variants.erdos_sarkozy` (research solved), in Erdős Problem 12](../../../erdos-problems/1-99/part-01/erdos-problem-12.md)
 - [21. `Mahler32.mahler_conjecture.variants.consequence` (textbook), in Mahler's 3/2 Problem](../../../wikipedia/part-06/mahlers-3-2-problem.md)

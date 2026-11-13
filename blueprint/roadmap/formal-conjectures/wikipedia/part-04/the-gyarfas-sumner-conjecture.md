@@ -20,7 +20,7 @@ statement: formalized
 > * [SS20] Scott, A. and Seymour, P. (2020). "A survey of χ-boundedness." *J. Graph Theory* 95,
 >   pp. 473--504. [arXiv:1812.07500](https://arxiv.org/abs/1812.07500)
 
-*Quoted from [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved. It also has 1 test statement, counted here but not shown.
 
@@ -40,7 +40,7 @@ theorem gyarfas_sumner_conjecture :
       T.IsTree → ∃ f : ℕ → ℕ, IsChiBoundedBy T f
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean#L58).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean, line 58](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean#L58).
 
 ## `GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.path`
 
@@ -58,7 +58,7 @@ theorem gyarfas_sumner_conjecture.variants.path (n : ℕ) :
     ∃ f : ℕ → ℕ, IsChiBoundedBy (pathGraph n) f
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean#L72).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean, line 72](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean#L72).
 
 ## `GyarfasSumnerConjecture.gyarfas_sumner_conjecture.variants.radius_two`
 
@@ -78,7 +78,7 @@ theorem gyarfas_sumner_conjecture.variants.radius_two
     ∃ f : ℕ → ℕ, IsChiBoundedBy T f
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean#L85).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean#L85).
 
 ## Depends on
 
@@ -86,5 +86,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean)
+- [FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/GyarfasSumnerConjecture.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Gy%C3%A1rf%C3%A1s%E2%80%93Sumner_conjecture)

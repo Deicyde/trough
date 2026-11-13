@@ -15,7 +15,7 @@ statement: formalized
 >
 > The formalisations in this file are based on the ones written by Junyan Xu in Mathlib4.
 
-*Quoted from [FormalConjectures/Millennium/Poincare.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Millennium/Poincare.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 9 research or textbook statements: 2 open, 2 solved and 5 textbook results.
 
@@ -29,7 +29,7 @@ Solved: stated here without proof.
 theorem poincare_conjecture : ConjectureFor 3
 ```
 
-Category `research solved`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L52).
+Category `research solved`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 52](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L52).
 
 ## `PoincareConjecture.poincare_conjecture.variants.dimension_two`
 
@@ -41,7 +41,7 @@ Textbook result, stated without proof.
 theorem poincare_conjecture.variants.dimension_two : ConjectureFor 2
 ```
 
-Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L59).
+Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 59](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L59).
 
 ## `PoincareConjecture.poincare_conjecture.variants.dimension_ge_five`
 
@@ -53,7 +53,7 @@ Textbook result, stated without proof.
 theorem poincare_conjecture.variants.dimension_ge_five (n : ℕ) (hn : 5 ≤ n) : ConjectureFor n
 ```
 
-Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L66).
+Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 66](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L66).
 
 ## `PoincareConjecture.poincare_conjecture.variants.dimension_four`
 
@@ -65,7 +65,7 @@ Textbook result, stated without proof.
 theorem poincare_conjecture.variants.dimension_four : ConjectureFor 4
 ```
 
-Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L73).
+Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 73](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L73).
 
 ## `PoincareConjecture.poincare_conjecture.variants.smooth_for_three`
 
@@ -77,7 +77,7 @@ Textbook result, stated without proof.
 theorem poincare_conjecture.variants.smooth_for_three : SmoothConjectureFor 3
 ```
 
-Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L87).
+Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 87](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L87).
 
 ## `PoincareConjecture.poincare_conjecture.variants.smooth_implication`
 
@@ -91,7 +91,7 @@ theorem poincare_conjecture.variants.smooth_implication (H : SmoothConjectureFor
     ConjectureFor 3
 ```
 
-Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L93).
+Category `textbook`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 93](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L93).
 
 ## `PoincareConjecture.poincare_conjecture.variants.smooth_known_cases`
 
@@ -105,7 +105,7 @@ theorem poincare_conjecture.variants.smooth_known_cases (n : ℕ) (hn : n ∈ Sm
     SmoothConjectureFor n
 ```
 
-Category `research solved`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L103).
+Category `research solved`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 103](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L103).
 
 ## `PoincareConjecture.poincare_conjecture.variants.smooth_dimension_four`
 
@@ -118,7 +118,7 @@ Open: stated without proof.
 theorem poincare_conjecture.variants.smooth_dimension_four : SmoothConjectureFor 4
 ```
 
-Category `research open`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L110).
+Category `research open`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L110).
 
 ## `PoincareConjecture.poincare_conjecture.variants.smooth_other_cases`
 
@@ -132,7 +132,7 @@ theorem poincare_conjecture.variants.smooth_other_cases (n : ℕ) (hn : n > 4)
     (hn' : n ∉ SmoothTrueValues) : ¬ SmoothConjectureFor n
 ```
 
-Category `research open`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean#L116).
+Category `research open`; AMS [54 General topology](../by-subject/part-02/54-general-topology/README.md), [57 Manifolds and cell complexes](../by-subject/part-02/57-manifolds-and-cell-complexes/README.md). Declared in [FormalConjectures/Millennium/Poincare.lean, line 116](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean#L116).
 
 ## Depends on
 
@@ -140,5 +140,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Millennium/Poincare.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Millennium/Poincare.lean)
+- [FormalConjectures/Millennium/Poincare.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Millennium/Poincare.lean)
 - [Miln2022](https://www.claymath.org/wp-content/uploads/2022/06/poincare.pdf)

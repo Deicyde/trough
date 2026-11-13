@@ -2,8 +2,19 @@
 navigation: transparent
 ---
 
-# The 1-2-3 conjecture… to The Balister–Győri–Schelp…
+# Degree sequences in… to Ringel's Conjecture and…
 
+- [Degree sequences in triangle-free graphs](../../../../../papers/part-01/degree-sequences-in-triangle-free-graphs.md)
+- [Euclidean Ramsey configurations on a circle](../../../../../papers/part-01/euclidean-ramsey-configurations-on-a-circle.md)
+- [Main conjecture on fusible numbers](../../../../../papers/part-01/main-conjecture-on-fusible-numbers.md)
+- [The Hall ratio conjecture (Harris 2019) — disproved](../../../../../papers/part-02/the-hall-ratio-conjecture-harris-2019-disproved.md)
+- [The Irving–Leather conjecture on stable matchings](../../../../../papers/part-02/the-irving-leather-conjecture-on-stable-matching.md)
+- [Kotzig's Conjecture](../../../../../papers/part-02/kotzigs-conjecture.md)
+- [Conjectures about Latin Squares](../../../../../papers/part-02/conjectures-about-latin-squares.md)
+- [Latin Tableau Conjecture](../../../../../papers/part-02/latin-tableau-conjecture.md)
+- [Lennon–Pittel conjecture on random stable matchings](../../../../../papers/part-02/lennon-pittel-conjecture-on-random-stable-matchi.md)
+- [The Manickam–Miklós–Singhi conjecture (1988)](../../../../../papers/part-02/the-manickam-miklos-singhi-conjecture-1988.md)
+- [Monochromatic quantum graphs (inherited vertex colorings)](../../../../../papers/part-02/monochromatic-quantum-graphs-inherited-vertex-co.md)
 - [The 1-2-3 conjecture (Karoński–Łuczak–Thomason 2004; proved by Keusch 2024)](../../../../../papers/part-02/the-1-2-3-conjecture-karonski-uczak-thomason-200.md)
 - [Reed's omega, delta, and chi conjecture](../../../../../papers/part-02/reeds-omega-delta-and-chi-conjecture.md)
 - [Ringel's Conjecture](../../../../../papers/part-03/ringels-conjecture.md)
@@ -11,16 +22,5 @@ navigation: transparent
 - [Size, Order, and Connected Domination](../../../../../papers/part-03/size-order-and-connected-domination.md)
 - [Tu-Deng Conjecture](../../../../../papers/part-03/tu-deng-conjecture.md)
 - [The length of an $s$-increasing sequence of $r$-tuples](../../../../../arxiv/part-01/the-length-of-an-s-increasing-sequence-of-r-tupl.md)
+- [Pittel's second-moment conjecture for nearly balanced markets](../../../../../arxiv/part-01/pittels-second-moment-conjecture-for-nearly-bala.md)
 - [Ringel's Conjecture and Kotzig's Conjecture for large $n$](../../../../../arxiv/part-01/ringels-conjecture-and-kotzigs-conjecture-for-la.md)
-- [Barker sequences](../../../../../arxiv/part-01/barker-sequences.md)
-- [Independent Domination of Regular Graphs, Conjecture 1.6](../../../../../arxiv/part-01/independent-domination-of-regular-graphs-conject.md)
-- [Digit $2$ in base $3$ representation of $2^n$](../../../../../arxiv/part-01/digit-2-in-base-3-representation-of-2-n.md)
-- [TxGraffiti Conjecture 1: independence, annihilation, and residue](../../../../../arxiv/part-01/txgraffiti-conjecture-1-independence-annihilatio.md)
-- [TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs)](../../../../../arxiv/part-02/txgraffiti-conjecture-2-zero-forcing-versus-inde.md)
-- [TxGraffiti Conjecture 3: independent domination versus saturation (regular)](../../../../../arxiv/part-02/txgraffiti-conjecture-3-independent-domination-v.md)
-- [TxGraffiti Conjecture 4: the saturation number versus the harmonic index](../../../../../arxiv/part-02/txgraffiti-conjecture-4-the-saturation-number-ve.md)
-- [First Proof, Theorem 6](../../../../../arxiv/part-02/first-proof-theorem-6.md)
-- [Dean's conjecture on cycles of length divisible by \`k\`](../../../../../arxiv/part-02/deans-conjecture-on-cycles-of-length-divisible-b.md)
-- [Bondy's conjecture on longest cycles in highly connected graphs](../../../../../arxiv/part-02/bondys-conjecture-on-longest-cycles-in-highly-co.md)
-- [The Alon-Tarsi short cycle cover conjecture](../../../../../arxiv/part-02/the-alon-tarsi-short-cycle-cover-conjecture.md)
-- [The Balister–Győri–Schelp conjecture](../../../../../arxiv/part-02/the-balister-gyori-schelp-conjecture.md)

@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Concatenation of the next $n$… to Determinant of matrix with…
+# Expansion of g.f.… to Value of $n$-th cyclotomic…
 
+- [Expansion of g.f. $(1-\sqrt{1-4x-4x^2})/(2(1+x))$](../../../../../oeis/part-03/expansion-of-g-f-1-sqrt-1-4x-4x-2-2-1-x.md)
+- [$a(n) = (\text{smallest prime} > n^2) - n^2$](../../../../../oeis/part-03/a-n-smallest-prime-n-2-n-2.md)
 - [Concatenation of the next $n$ numbers](../../../../../oeis/part-03/concatenation-of-the-next-n-numbers.md)
 - [Catalan-Larcombe-French sequence](../../../../../oeis/part-03/catalan-larcombe-french-sequence.md)
 - [Least $m$ such that $\phi(m) = n!$](../../../../../oeis/part-03/least-m-such-that-phi-m-n.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Number of primes $p$ such that $n^n \le p \le n^n + n^2$](../../../../../oeis/part-04/number-of-primes-p-such-that-n-n-le-p-le-n-n-n-2.md)
 - [Number of primes $p$ such that $2^n \le p \le 2^n + \mathrm{prime}(n)$](../../../../../oeis/part-04/number-of-primes-p-such-that-2-n-le-p-le-2-n-pri.md)
 - [Value of $n$-th cyclotomic polynomial at $n$](../../../../../oeis/part-04/value-of-n-th-cyclotomic-polynomial-at-n.md)
-- [Recurrence $a(n+2) = |a(n+1)a(n) - a(n)a(n+1)|$ via concatenation](../../../../../oeis/part-04/recurrence-a-n-2-a-n-1-a-n-a-n-a-n-1-via-concate.md)
-- [Determinant of matrix with entries indicating primality of $i^2 + j^2$](../../../../../oeis/part-04/determinant-of-matrix-with-entries-indicating-pr.md)

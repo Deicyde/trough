@@ -14,7 +14,7 @@ statement: formalized
 >   by *P. N. Balister, E. Győri, and R. H. Schelp*, European Journal of Combinatorics 32(4),
 >   533–537 (2011)
 
-*Quoted from [FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 1 research or textbook statement: 1 open.
 
@@ -38,7 +38,7 @@ theorem balister_gyori_schelp_conjecture (s : ℕ) (hs : 2 ≤ s)
       ∀ i, e (i, 0) + e (i, 1) = v i
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean, line 45](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean#L45).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md). Declared in [FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean, line 45](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean#L45).
 
 ## Depends on
 
@@ -46,5 +46,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean)
+- [FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2607.08630/BalisterGyoriSchelp.lean)
 - [Perfect Matchings with Prescribed Differences Beyond Hall: The Two-Hole Problem](https://arxiv.org/abs/2607.08630)

@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Pierce–Birkhoff conjecture to Hypothesis H
+# The Petersen colouring… to Schanuel's Conjecture
 
+- [The Petersen colouring conjecture (Jaeger 1988)](the-petersen-colouring-conjecture-jaeger-1988.md)
 - [Pierce–Birkhoff conjecture](pierce-birkhoff-conjecture.md)
 - [Pierpont primes](pierpont-primes.md)
 - [Pollock's (tetrahedral numbers) conjecture](pollocks-tetrahedral-numbers-conjecture.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Rudin's conjecture on squares in arithmetic progressions](rudins-conjecture-on-squares-in-arithmetic-progr.md)
 - [Sato–Tate conjecture](sato-tate-conjecture.md)
 - [Schanuel's Conjecture](schanuels-conjecture.md)
-- [Hypothesis H](hypothesis-h.md)

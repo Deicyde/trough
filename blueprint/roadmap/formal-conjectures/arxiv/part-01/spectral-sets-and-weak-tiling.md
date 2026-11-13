@@ -19,7 +19,7 @@ statement: formalized
 > - [Ki26] Kenta Kitamura, A Lean proof of Problem 7.2 of Kolountzakis–Lev–Matolcsi in dimension
 >   three, [GitHub repository](https://github.com/KitaKen1/klm-7-2-spectral-product-3d) (2026).
 
-*Quoted from [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 5 research or textbook statements: 2 open and 3 solved.
 
@@ -38,7 +38,7 @@ theorem exists_nowhereDense_spectralSet :
         IsNowhereDense Ω ∧ 0 < volume Ω ∧ isSpectral Ω
 ```
 
-Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 48](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L48).
+Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 48](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L48).
 
 ## `SpectralSetProduct.isSpectral_right_of_product_one_dimensional`
 
@@ -52,7 +52,7 @@ theorem isSpectral_right_of_product_one_dimensional :
     ∀ (m : ℕ), 0 < m → spectralProductImpliesRightSpectral 1 m
 ```
 
-Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L79).
+Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 79](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L79).
 
 ## `SpectralSetProduct.isSpectral_right_of_product_two_dimensional`
 
@@ -66,7 +66,7 @@ theorem isSpectral_right_of_product_two_dimensional :
     ∀ (m : ℕ), 0 < m → spectralProductImpliesRightSpectral 2 m
 ```
 
-Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L88).
+Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 88](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L88).
 
 ## `SpectralSetProduct.isSpectral_right_of_product_three_dimensional`
 
@@ -82,7 +82,7 @@ theorem isSpectral_right_of_product_three_dimensional :
     ∀ (m : ℕ), 0 < m → spectralProductImpliesRightSpectral 3 m
 ```
 
-Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L102).
+Category `research solved`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 102](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L102).
 
 ## `SpectralSetProduct.isSpectral_right_of_product_of_convexBody`
 
@@ -97,7 +97,7 @@ theorem isSpectral_right_of_product_of_convexBody :
       spectralProductImpliesRightSpectral n m
 ```
 
-Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L111).
+Category `research open`; AMS [42 Harmonic analysis on Euclidean spaces](../../by-subject/part-02/42-harmonic-analysis-on-euclidean-spaces/README.md), [46 Functional analysis](../../by-subject/part-02/46-functional-analysis/README.md). Declared in [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean, line 111](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean#L111).
 
 ## Depends on
 
@@ -105,5 +105,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean)
+- [FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv/2209.04540/SpectralSetsAndWeakTiling.lean)
 - [Spectral sets and weak tiling](https://arxiv.org/abs/2209.04540)

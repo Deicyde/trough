@@ -42,7 +42,7 @@ statement: formalized
 > - [Wikipedia](https://en.wikipedia.org/wiki/Dedekind_number)
 > - [Oeis/A372](https://oeis.org/A000372)
 
-*Quoted from [FormalConjectures/Wikipedia/DedekindNumber.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/DedekindNumber.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 6 research or textbook statements: 2 open, 1 solved and 3 textbook results. It also has 13 test statements and 6 API statements, counted here but not shown.
 
@@ -58,7 +58,7 @@ lemma exists_minimal_true_subset {n : ℕ} {f : (Fin n → Bool) → Bool} (_ : 
     ∃ t, t ⊆ s ∧ f (χ t) = true ∧ ∀ u, u ⊆ t → f (χ u) = true → t ⊆ u
 ```
 
-Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 168](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean#L168).
+Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 168](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean#L168).
 
 ## `DedekindNumber.fromSperner_toSperner`
 
@@ -71,7 +71,7 @@ lemma fromSperner_toSperner {n : ℕ} (f : (Fin n → Bool) → Bool) (hf : Mono
     fromSperner (toSperner f) = f
 ```
 
-Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 184](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean#L184).
+Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 184](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean#L184).
 
 ## `DedekindNumber.toSperner_fromSperner`
 
@@ -84,7 +84,7 @@ lemma toSperner_fromSperner {n : ℕ} (A : Finset (Finset (Fin n))) (hA : IsSper
     toSperner (fromSperner A) = A
 ```
 
-Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 203](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean#L203).
+Category `textbook`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 203](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean#L203).
 
 ## `DedekindNumber.M_eq_kisielewiczFormula`
 
@@ -104,7 +104,7 @@ Solved: stated here without proof.
 theorem M_eq_kisielewiczFormula : M = kisielewiczFormula
 ```
 
-Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 259](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean#L259).
+Category `research solved`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 259](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean#L259).
 
 ## `DedekindNumber.M_eq`
 
@@ -117,7 +117,7 @@ Open: stated without proof.
 theorem M_eq : M = M_eq.answer
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 269](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean#L269).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 269](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean#L269).
 
 ## `DedekindNumber.Dedekind_10`
 
@@ -129,7 +129,7 @@ Open: stated without proof.
 theorem Dedekind_10 : M 10 = Dedekind_10.answer
 ```
 
-Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 278](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean#L278).
+Category `research open`; AMS [05 Combinatorics](../../by-subject/part-01/05-combinatorics/README.md), [06 Order, lattices, ordered algebraic structures](../../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md). Declared in [FormalConjectures/Wikipedia/DedekindNumber.lean, line 278](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean#L278).
 
 ## Depends on
 
@@ -137,5 +137,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/DedekindNumber.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/DedekindNumber.lean)
+- [FormalConjectures/Wikipedia/DedekindNumber.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/DedekindNumber.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Dedekind_number)

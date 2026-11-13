@@ -25,9 +25,12 @@ The Erdős problems numbered 1100 to 1199 that Formal Conjectures states, one ar
 - [Erdős Problem 1125](part-01/erdos-problem-1125.md)
 - [Erdős Problem 1126](part-01/erdos-problem-1126.md)
 
-## [Erdős Problem 1128 to Erdős Problem 1157](part-02/README.md)
+## [Erdős Problem 1128 to Erdős Problem 1150](part-02/README.md)
 
 - [Erdős Problem 1128](part-02/erdos-problem-1128.md)
+- [Erdős Problem 1129](part-02/erdos-problem-1129.md)
+- [Erdős Problem 1130](part-02/erdos-problem-1130.md)
+- [Erdős Problem 1132](part-02/erdos-problem-1132.md)
 - [Erdős Problem 1133](part-02/erdos-problem-1133.md)
 - [Erdős Problem 1134](part-02/erdos-problem-1134.md)
 - [Erdős Problem 1135](part-02/erdos-problem-1135.md)
@@ -44,12 +47,12 @@ The Erdős problems numbered 1100 to 1199 that Formal Conjectures states, one ar
 - [Erdős Problem 1148](part-02/erdos-problem-1148.md)
 - [Erdős Problem 1149](part-02/erdos-problem-1149.md)
 - [Erdős Problem 1150](part-02/erdos-problem-1150.md)
-- [Erdős Problem 1152](part-02/erdos-problem-1152.md)
-- [Erdős Problem 1154](part-02/erdos-problem-1154.md)
-- [Erdős Problem 1157](part-02/erdos-problem-1157.md)
 
-## [Erdős Problem 1158 to Erdős Problem 1180](part-03/README.md)
+## [Erdős Problem 1152 to Erdős Problem 1177](part-03/README.md)
 
+- [Erdős Problem 1152](part-03/erdos-problem-1152.md)
+- [Erdős Problem 1154](part-03/erdos-problem-1154.md)
+- [Erdős Problem 1157](part-03/erdos-problem-1157.md)
 - [Erdős Problem 1158](part-03/erdos-problem-1158.md)
 - [Erdős Problem 1159](part-03/erdos-problem-1159.md)
 - [Erdős Problem 1160](part-03/erdos-problem-1160.md)
@@ -67,12 +70,12 @@ The Erdős problems numbered 1100 to 1199 that Formal Conjectures states, one ar
 - [Erdős Problem 1175](part-03/erdos-problem-1175.md)
 - [Erdős Problem 1176](part-03/erdos-problem-1176.md)
 - [Erdős Problem 1177](part-03/erdos-problem-1177.md)
-- [Erdős Problem 1178](part-03/erdos-problem-1178.md)
-- [Erdős Problem 1179](part-03/erdos-problem-1179.md)
-- [Erdős Problem 1180](part-03/erdos-problem-1180.md)
 
-## [Erdős Problem 1182 to Erdős Problem 1199](part-04/README.md)
+## [Erdős Problem 1178 to Erdős Problem 1199](part-04/README.md)
 
+- [Erdős Problem 1178](part-04/erdos-problem-1178.md)
+- [Erdős Problem 1179](part-04/erdos-problem-1179.md)
+- [Erdős Problem 1180](part-04/erdos-problem-1180.md)
 - [Erdős Problem 1182](part-04/erdos-problem-1182.md)
 - [Erdős Problem 1183](part-04/erdos-problem-1183.md)
 - [Erdős Problem 1185](part-04/erdos-problem-1185.md)

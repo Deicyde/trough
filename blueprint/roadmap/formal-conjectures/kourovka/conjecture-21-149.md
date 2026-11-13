@@ -28,7 +28,7 @@ statement: formalized
 >   [arXiv:2607.17477](https://arxiv.org/abs/2607.17477).
 > - [Dl] V. Dlab, *On a family of simple ordered groups*, J. Austral. Math. Soc. 8 (1968), 591–608.
 
-*Quoted from [FormalConjectures/Kourovka/21_149.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/21_149.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Kourovka/21_149.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/21_149.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 2 research or textbook statements: 2 solved.
 
@@ -53,7 +53,7 @@ theorem kourovka_21_149 :
           ∃ e : G →* A, Function.Injective e ∧ ∃ u : A, ∀ f : G, e (α f) = u⁻¹ * e f * u
 ```
 
-Category `research solved`; AMS [06 Order, lattices, ordered algebraic structures](../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md), [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Kourovka/21_149.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/21_149.lean#L105).
+Category `research solved`; AMS [06 Order, lattices, ordered algebraic structures](../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md), [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Kourovka/21_149.lean, line 105](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/21_149.lean#L105).
 
 ## `Kourovka.«21.149».kourovka_21_149.variants.not_inner`
 
@@ -72,7 +72,7 @@ theorem kourovka_21_149.variants.not_inner :
         ¬ ∃ u : G, ∀ f : G, α f = u⁻¹ * f * u
 ```
 
-Category `research solved`; AMS [06 Order, lattices, ordered algebraic structures](../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md), [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Kourovka/21_149.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/21_149.lean#L125).
+Category `research solved`; AMS [06 Order, lattices, ordered algebraic structures](../by-subject/part-01/06-order-lattices-ordered-algebraic-structures/README.md), [20 Group theory and generalizations](../by-subject/part-01/20-group-theory-and-generalizations/README.md). Declared in [FormalConjectures/Kourovka/21_149.lean, line 125](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/21_149.lean#L125).
 
 ## Depends on
 
@@ -80,5 +80,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Kourovka/21_149.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Kourovka/21_149.lean)
+- [FormalConjectures/Kourovka/21_149.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Kourovka/21_149.lean)
 - [The Kourovka Notebook](https://arxiv.org/abs/1401.0300v46)

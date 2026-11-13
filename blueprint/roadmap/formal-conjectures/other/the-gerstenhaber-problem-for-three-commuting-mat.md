@@ -22,7 +22,7 @@ statement: formalized
 >   *A computing strategy and programs to resolve the Gerstenhaber Problem for
 >   commuting triples of matrices*.
 
-*Quoted from [FormalConjectures/Other/GerstenhaberThreeMatrices.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/GerstenhaberThreeMatrices.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Other/GerstenhaberThreeMatrices.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/GerstenhaberThreeMatrices.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 3 research or textbook statements: 1 open and 2 solved.
 
@@ -39,7 +39,7 @@ theorem finrank_adjoin_pair_le (A B : Matrix (Fin n) (Fin n) K) (hAB : Commute A
     Module.finrank K (Algebra.adjoin K {A, B}) ≤ n
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Other/GerstenhaberThreeMatrices.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/GerstenhaberThreeMatrices.lean#L51).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Other/GerstenhaberThreeMatrices.lean, line 51](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/GerstenhaberThreeMatrices.lean#L51).
 
 ## `Gerstenhaber.finrank_adjoin_triple_le`
 
@@ -56,7 +56,7 @@ theorem finrank_adjoin_triple_le :
         Module.finrank K (Algebra.adjoin K {A, B, C}) ≤ n
 ```
 
-Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Other/GerstenhaberThreeMatrices.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/GerstenhaberThreeMatrices.lean#L61).
+Category `research open`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Other/GerstenhaberThreeMatrices.lean, line 61](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/GerstenhaberThreeMatrices.lean#L61).
 
 ## `Gerstenhaber.exists_finrank_adjoin_quadruple_gt`
 
@@ -75,7 +75,7 @@ theorem exists_finrank_adjoin_quadruple_gt (K : Type*) [Field K] :
       4 < Module.finrank K (Algebra.adjoin K {A, B, C, D})
 ```
 
-Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Other/GerstenhaberThreeMatrices.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/GerstenhaberThreeMatrices.lean#L75).
+Category `research solved`; AMS [15 Linear and multilinear algebra; matrix theory](../by-subject/part-01/15-linear-and-multilinear-algebra-matrix-theory/README.md), [16 Associative rings and algebras](../by-subject/part-01/16-associative-rings-and-algebras/README.md). Declared in [FormalConjectures/Other/GerstenhaberThreeMatrices.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/GerstenhaberThreeMatrices.lean#L75).
 
 ## Depends on
 
@@ -83,5 +83,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Other/GerstenhaberThreeMatrices.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Other/GerstenhaberThreeMatrices.lean)
+- [FormalConjectures/Other/GerstenhaberThreeMatrices.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Other/GerstenhaberThreeMatrices.lean)
 - [https://doi.org/10.2307/1970336](https://doi.org/10.2307/1970336)

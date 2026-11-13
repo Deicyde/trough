@@ -42,7 +42,7 @@ statement: formalized
 >   J. Pure Appl. Algebra 223 (2019), 1801–1816.
 >   [arXiv:1510.05146](https://arxiv.org/abs/1510.05146)
 
-*Quoted from [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0, as are the docstrings and Lean statements below.*
+*Quoted from [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0, as are the docstrings and Lean statements below.*
 
 The file states 7 research or textbook statements: 2 open and 5 solved.
 
@@ -59,7 +59,7 @@ theorem supportDim_add_supportDim_le_ringKrullDim (h : IsFiniteLength R (M ⊗[R
     Module.supportDim R M + Module.supportDim R N ≤ ringKrullDim R
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L75).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 75](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L75).
 
 ## `SerreMultiplicityConjectures.intersectionMultiplicity_nonneg`
 
@@ -74,7 +74,7 @@ theorem intersectionMultiplicity_nonneg (h : IsFiniteLength R (M ⊗[R] N)) :
     0 ≤ intersectionMultiplicity R M N
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L85).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 85](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L85).
 
 ## `SerreMultiplicityConjectures.intersectionMultiplicity_eq_zero_of_lt`
 
@@ -91,7 +91,7 @@ theorem intersectionMultiplicity_eq_zero_of_lt (h : IsFiniteLength R (M ⊗[R] N
     intersectionMultiplicity R M N = 0
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L96).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 96](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L96).
 
 ## `SerreMultiplicityConjectures.intersectionMultiplicity_pos`
 
@@ -110,7 +110,7 @@ theorem intersectionMultiplicity_pos (h : IsFiniteLength R (M ⊗[R] N))
     0 < intersectionMultiplicity R M N
 ```
 
-Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L110).
+Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 110](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L110).
 
 ## `SerreMultiplicityConjectures.intersectionMultiplicity_pos_quotient`
 
@@ -127,7 +127,7 @@ theorem intersectionMultiplicity_pos_quotient (P Q : Ideal R) [P.IsPrime] [Q.IsP
     0 < intersectionMultiplicity R (R ⧸ P) (R ⧸ Q)
 ```
 
-Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L121).
+Category `research open`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 121](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L121).
 
 ## `SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_equalCharacteristic`
 
@@ -143,7 +143,7 @@ theorem intersectionMultiplicity_pos_of_equalCharacteristic (k : Type*) [Field k
     0 < intersectionMultiplicity R M N
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L132).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 132](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L132).
 
 ## `SerreMultiplicityConjectures.intersectionMultiplicity_pos_of_unramified`
 
@@ -161,7 +161,7 @@ theorem intersectionMultiplicity_pos_of_unramified (p : ℕ) [CharP (ResidueFiel
     0 < intersectionMultiplicity R M N
 ```
 
-Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L145).
+Category `research solved`; AMS [13 Commutative algebra](../../by-subject/part-01/13-commutative-algebra/README.md), [14 Algebraic geometry](../../by-subject/part-01/14-algebraic-geometry/README.md). Declared in [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean, line 145](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean#L145).
 
 ## Depends on
 
@@ -169,5 +169,5 @@ No dependencies are recorded: this chapter reads Formal Conjectures' source text
 
 ## Sources
 
-- [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean at 2055e5ad](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean)
+- [FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean at 5258ab9a](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Wikipedia/SerreMultiplicityConjectures.lean)
 - [Wikipedia](https://en.wikipedia.org/wiki/Serre%27s_multiplicity_conjectures)

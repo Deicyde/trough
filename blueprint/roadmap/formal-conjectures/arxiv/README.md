@@ -1,10 +1,10 @@
 # arXiv
 
-The 42 problem files in [FormalConjectures/Arxiv](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Arxiv) that state a research or textbook statement, at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), one article each.
+The 44 problem files in [FormalConjectures/Arxiv](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Arxiv) that state a research or textbook statement, at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), one article each.
 
 Their docstrings and Lean statements are quoted from [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at that commit, under its Apache-2.0 license.
 
-## [Generic and maximal rank of… to TxGraffiti Conjecture 1…](part-01/README.md)
+## [Generic and maximal rank of… to An Arithmetic Sum Associated…](part-01/README.md)
 
 - [Generic and maximal rank of 3-tensors](part-01/generic-and-maximal-rank-of-3-tensors.md)
 - [Central Binomial Tail Bounds, Conjecture 6.3](part-01/central-binomial-tail-bounds-conjecture-6-3.md)
@@ -15,6 +15,7 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Boxdot Conjecture](part-01/boxdot-conjecture.md)
 - [Unique Crystal Components](part-01/unique-crystal-components.md)
 - [The length of an $s$-increasing sequence of $r$-tuples](part-01/the-length-of-an-s-increasing-sequence-of-r-tupl.md)
+- [Pittel's second-moment conjecture for nearly balanced markets](part-01/pittels-second-moment-conjecture-for-nearly-bala.md)
 - [Ringel's Conjecture and Kotzig's Conjecture for large $n$](part-01/ringels-conjecture-and-kotzigs-conjecture-for-la.md)
 - [Barker sequences](part-01/barker-sequences.md)
 - [Independent Domination of Regular Graphs, Conjecture 1.6](part-01/independent-domination-of-regular-graphs-conject.md)
@@ -23,12 +24,13 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [Spectral sets and weak tiling](part-01/spectral-sets-and-weak-tiling.md)
 - [Furstenberg's \`times p, times q\` conjectures](part-01/furstenbergs-times-p-times-q-conjectures.md)
 - [The circulant Hadamard conjecture](part-01/the-circulant-hadamard-conjecture.md)
+- [Pittel's stable-matching hyperbola threshold conjecture](part-01/pittels-stable-matching-hyperbola-threshold-conj.md)
 - [An Arithmetic Sum Associated with the Classical Theta Function](part-01/an-arithmetic-sum-associated-with-the-classical.md)
-- [A conjecture by Margulis on matrix groups](part-01/a-conjecture-by-margulis-on-matrix-groups.md)
-- [TxGraffiti Conjecture 1: independence, annihilation, and residue](part-01/txgraffiti-conjecture-1-independence-annihilatio.md)
 
-## [TxGraffiti Conjecture 2: zero… to The Dixmier Conjecture](part-02/README.md)
+## [A conjecture by Margulis on… to Banach-Mazur Rotation Problem](part-02/README.md)
 
+- [A conjecture by Margulis on matrix groups](part-02/a-conjecture-by-margulis-on-matrix-groups.md)
+- [TxGraffiti Conjecture 1: independence, annihilation, and residue](part-02/txgraffiti-conjecture-1-independence-annihilatio.md)
 - [TxGraffiti Conjecture 2: zero forcing versus independence (cubic graphs)](part-02/txgraffiti-conjecture-2-zero-forcing-versus-inde.md)
 - [TxGraffiti Conjecture 3: independent domination versus saturation (regular)](part-02/txgraffiti-conjecture-3-independent-domination-v.md)
 - [TxGraffiti Conjecture 4: the saturation number versus the harmonic index](part-02/txgraffiti-conjecture-4-the-saturation-number-ve.md)
@@ -47,10 +49,10 @@ Their docstrings and Lean statements are quoted from [Formal Conjectures](https:
 - [The Balister–Győri–Schelp conjecture](part-02/the-balister-gyori-schelp-conjecture.md)
 - [The Maxwell conjecture](part-02/the-maxwell-conjecture.md)
 - [Banach-Mazur Rotation Problem](part-02/banach-mazur-rotation-problem.md)
-- [Finite generation of the cohomology of finite-dimensional Hopf algebras](part-02/finite-generation-of-the-cohomology-of-finite-di.md)
-- [The Dixmier Conjecture](part-02/the-dixmier-conjecture.md)
 
-## [The Poisson Conjecture to Algebraic consequences of the…](part-03/README.md)
+## [Finite generation of the… to Algebraic consequences of the…](part-03/README.md)
 
+- [Finite generation of the cohomology of finite-dimensional Hopf algebras](part-03/finite-generation-of-the-cohomology-of-finite-di.md)
+- [The Dixmier Conjecture](part-03/the-dixmier-conjecture.md)
 - [The Poisson Conjecture](part-03/the-poisson-conjecture.md)
 - [Algebraic consequences of the Farrell–Jones conjecture](part-03/algebraic-consequences-of-the-farrell-jones-conj.md)

@@ -1,6 +1,6 @@
 # Convex and discrete geometry
 
-The 96 problems with a statement whose `AMS` attribute names 52, Convex and discrete geometry, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
+The 98 problems with a statement whose `AMS` attribute names 52, Convex and discrete geometry, in the Mathematics Subject Classification. A problem with statements in several subjects is listed under each; its article sits in its source folder's part.
 
 ## [Erdős Problem 89 to Erdős Problem 209](part-01/README.md)
 
@@ -81,7 +81,7 @@ The 96 problems with a statement whose `AMS` attribute names 52, Convex and disc
 - [Erdős Problem 1066](../../../erdos-problems/1000-1099/part-03/erdos-problem-1066.md)
 - [Erdős Problem 1069](../../../erdos-problems/1000-1099/part-03/erdos-problem-1069.md)
 - [Erdős Problem 1070](../../../erdos-problems/1000-1099/part-03/erdos-problem-1070.md)
-- [Erdős Problem 1071](../../../erdos-problems/1000-1099/part-03/erdos-problem-1071.md)
+- [Erdős Problem 1071](../../../erdos-problems/1000-1099/part-04/erdos-problem-1071.md)
 - [Erdős Problem 1083](../../../erdos-problems/1000-1099/part-04/erdos-problem-1083.md)
 - [Erdős Problem 1084](../../../erdos-problems/1000-1099/part-04/erdos-problem-1084.md)
 - [Erdős Problem 1085](../../../erdos-problems/1000-1099/part-04/erdos-problem-1085.md)
@@ -101,12 +101,14 @@ The 96 problems with a statement whose `AMS` attribute names 52, Convex and disc
 - [Ben Green's Open Problem 41](../../../greens-open-problems/part-02/ben-greens-open-problem-41.md)
 - [Green's Open Problem 42](../../../greens-open-problems/part-02/greens-open-problem-42.md)
 - [Ben Green's Open Problem 54](../../../greens-open-problems/part-03/ben-greens-open-problem-54.md)
+- [Ben Green's Open Problem 69](../../../greens-open-problems/part-03/ben-greens-open-problem-69.md)
 - [Ben Green's Open Problem 70](../../../greens-open-problems/part-03/ben-greens-open-problem-70.md)
 - [Ben Green's Open Problem 72](../../../greens-open-problems/part-03/ben-greens-open-problem-72.md)
+- [Ben Green's Open Problem 74](../../../greens-open-problems/part-03/ben-greens-open-problem-74.md)
 - [Ben Green's Open Problem 75](../../../greens-open-problems/part-03/ben-greens-open-problem-75.md)
-- [Ben Green's Open Problem 76](../../../greens-open-problems/part-03/ben-greens-open-problem-76.md)
-- [Ben Green's Open Problem 77](../../../greens-open-problems/part-03/ben-greens-open-problem-77.md)
-- [Green's Open Problem 85](../../../greens-open-problems/part-03/greens-open-problem-85.md)
+- [Ben Green's Open Problem 76](../../../greens-open-problems/part-04/ben-greens-open-problem-76.md)
+- [Ben Green's Open Problem 77](../../../greens-open-problems/part-04/ben-greens-open-problem-77.md)
+- [Green's Open Problem 85](../../../greens-open-problems/part-04/greens-open-problem-85.md)
 - [Ben Green's Open Problem 88](../../../greens-open-problems/part-04/ben-greens-open-problem-88.md)
 - [Euclidean Ramsey configurations on a circle](../../../papers/part-01/euclidean-ramsey-configurations-on-a-circle.md)
 - [Is Every Convex Polyhedron Rupert?](../../../papers/part-03/is-every-convex-polyhedron-rupert.md)

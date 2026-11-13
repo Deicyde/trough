@@ -4,7 +4,7 @@
 > verified formal statements (`category research open`), excluding sub-variants,
 > OEIS sequences, and machine-generated graph conjectures.
 
-*Quoted from [FormalConjectures/Subsets/FC100OpenSet2.lean](https://github.com/google-deepmind/formal-conjectures/blob/2055e5adadae0b2e392365938faa82ef6f1464f0/FormalConjectures/Subsets/FC100OpenSet2.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [2055e5ad](https://github.com/google-deepmind/formal-conjectures/tree/2055e5adadae0b2e392365938faa82ef6f1464f0), Apache-2.0.*
+*Quoted from [FormalConjectures/Subsets/FC100OpenSet2.lean](https://github.com/google-deepmind/formal-conjectures/blob/5258ab9ac6db5eb0047aa4100ea0f995c5466da6/FormalConjectures/Subsets/FC100OpenSet2.lean) in [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) (Google DeepMind) at commit [5258ab9a](https://github.com/google-deepmind/formal-conjectures/tree/5258ab9ac6db5eb0047aa4100ea0f995c5466da6), Apache-2.0.*
 
 The 100 statements the list names, numbered as it lists them, each linked to its problem's article.
 
@@ -18,12 +18,12 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [6. `ABC.abc` (research open), in \*abc\* conjecture](../../wikipedia/part-01/abc-conjecture.md)
 - [7. `AlgebraicGeometry.resolution_of_singularities` (research open), in Resolution of singularities](../../wikipedia/part-07/resolution-of-singularities.md)
 - [8. `GoldbachConjecture.goldbach` (research open), in Goldbach's conjecture](../../wikipedia/part-04/goldbachs-conjecture.md)
-- [9. `InverseGalois.inverse_galois_problem` (research open), in Inverse Galois problem](../../wikipedia/part-04/inverse-galois-problem.md)
+- [9. `InverseGalois.inverse_galois_problem` (research open), in Inverse Galois problem](../../wikipedia/part-05/inverse-galois-problem.md)
 - [10. `PoincareConjecture.poincare_conjecture.variants.smooth_dimension_four` (research open), in The Poincaré Conjecture](../../millennium-problems/the-poincare-conjecture.md)
 - [11. `TwinPrimes.twin_primes` (research open), in Twin prime conjecture](../../wikipedia/part-09/twin-prime-conjecture.md)
 - [12. `Kakeya.kakeya_set_conjecture` (research open), in Kakeya problem](../../wikipedia/part-05/kakeya-problem.md)
 - [13. `ComplexityTheory.NP_ne_coNP` (research open), in Conjectures in Complexity Theory](../../millennium-problems/conjectures-in-complexity-theory.md)
-- [14. `Schinzel.schinzel_conjecture` (research open), in Hypothesis H](../../wikipedia/part-07/hypothesis-h.md)
+- [14. `Schinzel.schinzel_conjecture` (research open), in Hypothesis H](../../wikipedia/part-08/hypothesis-h.md)
 - [15. `HardyLittlewood.first_hardy_littlewood_conjecture` (research open), in First Hardy–Littlewood conjecture](../../wikipedia/part-04/first-hardy-littlewood-conjecture.md)
 - [16. `Mandelbrot.MLC` (research open), in Conjectures about the Mandelbrot and Multibrot sets](../../wikipedia/part-06/conjectures-about-the-mandelbrot-and-multibrot-s.md)
 - [17. `LittlewoodConjecture.littlewood_conjecture` (research open), in Littlewood conjectures](../../wikipedia/part-05/littlewood-conjectures.md)
@@ -69,13 +69,13 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [51. `GaussCircleProblem.error_isBigO` (research open), in Gauss circle problem](../../wikipedia/part-04/gauss-circle-problem.md)
 - [52. `PrimesAndPerfectSquares.infinite_prime_sq_add_one` (research open), in Primes and perfect squares](../../wikipedia/part-07/primes-and-perfect-squares.md)
 - [53. `BabaiSeressConjectures.babai_seress_conjecture` (research open), in Babai–Seress Conjectures on the Diameter of Finite Groups](../../wikipedia/part-02/babai-seress-conjectures-on-the-diameter-of-fini.md)
-- [54. `TarskiExponentialFunctionProblem.tarski_exponential_function_problem` (research open), in Tarski's exponential function problem](../../wikipedia/part-08/tarskis-exponential-function-problem.md)
-- [55. `Margulis.conjecture_1_1` (research open), in A conjecture by Margulis on matrix groups](../../arxiv/part-01/a-conjecture-by-margulis-on-matrix-groups.md)
+- [54. `TarskiExponentialFunctionProblem.tarski_exponential_function_problem` (research open), in Tarski's exponential function problem](../../wikipedia/part-09/tarskis-exponential-function-problem.md)
+- [55. `Margulis.conjecture_1_1` (research open), in A conjecture by Margulis on matrix groups](../../arxiv/part-02/a-conjecture-by-margulis-on-matrix-groups.md)
 - [56. `Exponentials.four_exponentials_conjecture` (research open), in Exponentials conjectures and theorems](../../wikipedia/part-03/exponentials-conjectures-and-theorems.md)
-- [57. `HopfAlgebraCohomology.cohomologyRing_finiteType` (research open), in Finite generation of the cohomology of finite-dimensional Hopf algebras](../../arxiv/part-02/finite-generation-of-the-cohomology-of-finite-di.md)
+- [57. `HopfAlgebraCohomology.cohomologyRing_finiteType` (research open), in Finite generation of the cohomology of finite-dimensional Hopf algebras](../../arxiv/part-03/finite-generation-of-the-cohomology-of-finite-di.md)
 - [58. `Erdos723.erdos_723` (research open), in Erdős Problem 723: The prime power conjecture.](../../erdos-problems/700-799/part-02/erdos-problem-723-the-prime-power-conjecture.md)
 - [59. `AndrewsCurtis.andrews_curtis_conjecture` (research open), in The Andrews-Curtis conjecture](../../wikipedia/part-01/the-andrews-curtis-conjecture.md)
-- [60. `GapConjecture.gap_conjecture` (research open), in Gap conjecture](../../wikipedia/part-03/gap-conjecture.md)
+- [60. `GapConjecture.gap_conjecture` (research open), in Gap conjecture](../../wikipedia/part-04/gap-conjecture.md)
 
 ## [Entries 61 to 80](part-04/README.md)
 
@@ -97,7 +97,7 @@ The 100 statements the list names, numbered as it lists them, each linked to its
 - [76. `Erdos572.erdos_572` (research open), in Erdős Problem 572](../../erdos-problems/500-599/part-03/erdos-problem-572.md)
 - [77. `Transcendental.exp_add_pi_transcendental` (research open), in Open questions on transcendence of numbers](../../wikipedia/part-09/open-questions-on-transcendence-of-numbers.md)
 - [78. `Erdos510.erdos_510` (research open), in Erdős Problem 510](../../erdos-problems/500-599/part-01/erdos-problem-510.md)
-- [79. `Green50.green_50` (research open), in Ben Green's Open Problem 50](../../greens-open-problems/part-02/ben-greens-open-problem-50.md)
+- [79. `Green50.green_50` (research open), in Ben Green's Open Problem 50](../../greens-open-problems/part-03/ben-greens-open-problem-50.md)
 - [80. `Erdos242.erdos_242` (research open), in Erdős Problem 242](../../erdos-problems/200-299/part-02/erdos-problem-242.md)
 
 ## [Entries 81 to 100](part-05/README.md)

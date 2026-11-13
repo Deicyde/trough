@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# Ben Green's Open Problem 1 to Green's Open Problem 27
+# Ben Green's Open Problem 1 to Green's Open Problem 26
 
 - [Ben Green's Open Problem 1](ben-greens-open-problem-1.md)
 - [Ben Green's Open Problem 2](ben-greens-open-problem-2.md)
@@ -15,6 +15,7 @@ navigation: transparent
 - [Ben Green's Open Problem 14](ben-greens-open-problem-14.md)
 - [Green's Open Problem 15](greens-open-problem-15.md)
 - [Ben Green's Open Problem 16](ben-greens-open-problem-16.md)
+- [Ben Green's Open Problem 17](ben-greens-open-problem-17.md)
 - [Ben Green's Open Problem 18](ben-greens-open-problem-18.md)
 - [Ben Green's Open Problem 19](ben-greens-open-problem-19.md)
 - [Ben Green's Open Problem 21](ben-greens-open-problem-21.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Green's Open Problem 24](greens-open-problem-24.md)
 - [Green's Open Problem 25](greens-open-problem-25.md)
 - [Green's Open Problem 26](greens-open-problem-26.md)
-- [Green's Open Problem 27](greens-open-problem-27.md)

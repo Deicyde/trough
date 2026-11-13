@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Green's Open Problem 28 to Ben Green's Open Problem 50
+# Green's Open Problem 27 to Green's Open Problem 49
 
+- [Green's Open Problem 27](greens-open-problem-27.md)
 - [Green's Open Problem 28](greens-open-problem-28.md)
 - [Ben Green's Open Problem 29](ben-greens-open-problem-29.md)
 - [Ben Green's Open Problem 31](ben-greens-open-problem-31.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Ben Green's Open Problem 46](ben-greens-open-problem-46.md)
 - [Green's Open Problem 47](greens-open-problem-47.md)
 - [Green's Open Problem 49](greens-open-problem-49.md)
-- [Ben Green's Open Problem 50](ben-greens-open-problem-50.md)

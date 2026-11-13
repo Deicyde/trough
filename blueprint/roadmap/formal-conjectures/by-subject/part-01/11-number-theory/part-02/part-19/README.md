@@ -2,8 +2,10 @@
 navigation: transparent
 ---
 
-# Normalized convolution of… to Twin primes of the form $(3^n -…
+# Coefficients of $\prod_{k>0} (1… to Partial sums of $(-1)^{k -…
 
+- [Coefficients of $\prod_{k>0} (1 - x^k/k!)$](../../../../../oeis/part-10/coefficients-of-prod-k-0-1-x-k-k.md)
+- [Number of ways to write $n = x + y$ ($0 < x < y < n$) with $6x \pm 1$ and $6y \pm 1$ prime](../../../../../oeis/part-10/number-of-ways-to-write-n-x-y-0-x-y-n-with-6x-pm.md)
 - [Normalized convolution of $\binom{6k}{3k}\binom{3k}{k}$](../../../../../oeis/part-10/normalized-convolution-of-binom-6k-3k-binom-3k-k.md)
 - [Primorial squared plus one](../../../../../oeis/part-10/primorial-squared-plus-one.md)
 - [Sequence $a(n) = n + \lfloor n r / t \rfloor + \lfloor n s / t \rfloor$](../../../../../oeis/part-10/sequence-a-n-n-lfloor-n-r-t-rfloor-lfloor-n-s-t.md)
@@ -22,5 +24,3 @@ navigation: transparent
 - [Sequence $\frac{(8n)! n!}{(4n)! (3n)! (2n)!}$](../../../../../oeis/part-11/sequence-frac-8n-n-4n-3n-2n.md)
 - [Balanced walks on a 4-dimensional cubic lattice with neighbor steps](../../../../../oeis/part-11/balanced-walks-on-a-4-dimensional-cubic-lattice.md)
 - [Partial sums of $(-1)^{k - \Omega(k)}$](../../../../../oeis/part-11/partial-sums-of-1-k-omega-k.md)
-- [Remainder of $2^{n+2}$ modulo $n$](../../../../../oeis/part-11/remainder-of-2-n-2-modulo-n.md)
-- [Twin primes of the form $(3^n - k) 2^n \pm 1$](../../../../../oeis/part-11/twin-primes-of-the-form-3-n-k-2-n-pm-1.md)
