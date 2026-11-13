@@ -2,8 +2,9 @@
 navigation: transparent
 ---
 
-# Nair–Tenenbaum short sums of… to Square-difference-free…
+# Modular forms and the… to Simple zeros of the Riemann…
 
+- [Modular forms and the generalized residue theorem](leanmodularforms.md)
 - [Nair–Tenenbaum short sums of arithmetic functions](nair-tenenbaum-short-sums.md)
 - [Neukirch's Algebraic Number Theory: Hilbert ramification theory](neukirch.md)
 - [Newman normalizer bounds for congruence subgroups](congruence-normalizers.md)
@@ -23,4 +24,3 @@ navigation: transparent
 - [Sharp asymptotic bounds for runs of multiples in finite sets](runs-of-multiples.md)
 - [Sharp Five-Distance and Sup-Norm Gap Theorems](five-distance-sharp.md)
 - [Simple zeros of the Riemann zeta function](zeta-zeros.md)
-- [Square-difference-free polynomials beyond Naslund's conjectured bound](naslund-counterexample.md)

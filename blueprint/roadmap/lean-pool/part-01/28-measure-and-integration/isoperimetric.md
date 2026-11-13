@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes the Prekopa-Leindler inequality, Brunn-Minkowski inequality, and an isoperimetric inequality.
 
-*Quoted from the card [LeanPool/projects/isoperimetric.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/isoperimetric.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/isoperimetric.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/isoperimetric.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,11 +18,11 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 3 main results, each with its informal statement quoted from the card. The scan finds 3 of their declarations in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`prekopa_leindler`](https://leanpool.github.io/lean-pool/LeanPool/Isoperimetric/PrekopaLeindler.html#prekopa_leindler) (theorem; a main declaration), declared in [LeanPool/Isoperimetric/PrekopaLeindler.lean, line 625](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Isoperimetric/PrekopaLeindler.lean#L625): “Proves the Prekopa-Leindler inequality.”
-- [`brunn_minkowski`](https://leanpool.github.io/lean-pool/LeanPool/Isoperimetric/BrunnMinkowski.html#brunn_minkowski) (theorem; a main declaration), declared in [LeanPool/Isoperimetric/BrunnMinkowski.lean, line 86](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Isoperimetric/BrunnMinkowski.lean#L86): “Proves the Brunn-Minkowski inequality.”
-- [`isoperimetric_inequality`](https://leanpool.github.io/lean-pool/LeanPool/Isoperimetric/Isoperimetric.html#isoperimetric_inequality) (theorem; a main declaration), declared in [LeanPool/Isoperimetric/Isoperimetric.lean, line 41](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Isoperimetric/Isoperimetric.lean#L41): “Proves the isoperimetric inequality derived from Brunn-Minkowski.”
+- [`prekopa_leindler`](https://leanpool.github.io/lean-pool/LeanPool/Isoperimetric/PrekopaLeindler.html#prekopa_leindler) (theorem; a main declaration), declared in [LeanPool/Isoperimetric/PrekopaLeindler.lean, line 625](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Isoperimetric/PrekopaLeindler.lean#L625): “Proves the Prekopa-Leindler inequality.”
+- [`brunn_minkowski`](https://leanpool.github.io/lean-pool/LeanPool/Isoperimetric/BrunnMinkowski.html#brunn_minkowski) (theorem; a main declaration), declared in [LeanPool/Isoperimetric/BrunnMinkowski.lean, line 86](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Isoperimetric/BrunnMinkowski.lean#L86): “Proves the Brunn-Minkowski inequality.”
+- [`isoperimetric_inequality`](https://leanpool.github.io/lean-pool/LeanPool/Isoperimetric/Isoperimetric.html#isoperimetric_inequality) (theorem; a main declaration), declared in [LeanPool/Isoperimetric/Isoperimetric.lean, line 41](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Isoperimetric/Isoperimetric.lean#L41): “Proves the isoperimetric inequality derived from Brunn-Minkowski.”
 
 ## Project
 
@@ -32,9 +32,9 @@ The card lists 3 main results, each with its informal statement quoted from the 
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
 - License: Apache-2.0.
 - MSC2020: 28A75, 52A40, 49Q20.
-- In Lean Pool: [LeanPool/Isoperimetric](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Isoperimetric), from the card [LeanPool/projects/isoperimetric.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/isoperimetric.yaml).
+- In Lean Pool: [LeanPool/Isoperimetric](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Isoperimetric), from the card [LeanPool/projects/isoperimetric.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/isoperimetric.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/isoperimetric.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/isoperimetric.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/Isoperimetric](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Isoperimetric)
+- [Lean Pool at 701389c0: LeanPool/projects/isoperimetric.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/isoperimetric.yaml)
+- [Lean Pool at 701389c0: LeanPool/Isoperimetric](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Isoperimetric)

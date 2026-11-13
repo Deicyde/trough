@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes certified upper and lower bounds for one-round randomized algorithms that 2-color cycles.
 
-*Quoted from the card [LeanPool/projects/2-coloring-1-round.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/2-coloring-1-round.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/2-coloring-1-round.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/2-coloring-1-round.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`Distributed2Coloring.pStar_ge_23879`](https://leanpool.github.io/lean-pool/LeanPool/TwoColoringOneRound/MainResults.html#Distributed2Coloring.pStar_ge_23879) (theorem; a main declaration), declared in [LeanPool/TwoColoringOneRound/MainResults.lean, line 70](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/TwoColoringOneRound/MainResults.lean#L70): “Proves that every one-round classical algorithm has monochromatic-edge probability at least 0.23879.”
-- [`Distributed2Coloring.pStar_lt_24118`](https://leanpool.github.io/lean-pool/LeanPool/TwoColoringOneRound/MainResults.html#Distributed2Coloring.pStar_lt_24118) (theorem; a main declaration), declared in [LeanPool/TwoColoringOneRound/MainResults.lean, line 79](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/TwoColoringOneRound/MainResults.lean#L79): “Proves that an explicit one-round algorithm attains monochromatic-edge probability strictly below 0.24118.”
+- [`Distributed2Coloring.pStar_ge_23879`](https://leanpool.github.io/lean-pool/LeanPool/TwoColoringOneRound/MainResults.html#Distributed2Coloring.pStar_ge_23879) (theorem; a main declaration), declared in [LeanPool/TwoColoringOneRound/MainResults.lean, line 70](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/TwoColoringOneRound/MainResults.lean#L70): “Proves that every one-round classical algorithm has monochromatic-edge probability at least 0.23879.”
+- [`Distributed2Coloring.pStar_lt_24118`](https://leanpool.github.io/lean-pool/LeanPool/TwoColoringOneRound/MainResults.html#Distributed2Coloring.pStar_lt_24118) (theorem; a main declaration), declared in [LeanPool/TwoColoringOneRound/MainResults.lean, line 79](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/TwoColoringOneRound/MainResults.lean#L79): “Proves that an explicit one-round algorithm attains monochromatic-edge probability strictly below 0.24118.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0, keeping its copyright line: “Copyright (c) 2026 Jukka Suomela”.
 - MSC2020: 68W15, 05C15.
-- In Lean Pool: [LeanPool/TwoColoringOneRound](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/TwoColoringOneRound), from the card [LeanPool/projects/2-coloring-1-round.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/2-coloring-1-round.yaml).
+- In Lean Pool: [LeanPool/TwoColoringOneRound](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/TwoColoringOneRound), from the card [LeanPool/projects/2-coloring-1-round.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/2-coloring-1-round.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/2-coloring-1-round.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/2-coloring-1-round.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/TwoColoringOneRound](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/TwoColoringOneRound)
+- [Lean Pool at 701389c0: LeanPool/projects/2-coloring-1-round.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/2-coloring-1-round.yaml)
+- [Lean Pool at 701389c0: LeanPool/TwoColoringOneRound](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/TwoColoringOneRound)

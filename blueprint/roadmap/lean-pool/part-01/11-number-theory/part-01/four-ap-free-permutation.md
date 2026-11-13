@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes Boon Suan Ho's construction of a permutation of the positive integers with no four-term arithmetic progression as a subsequence, proving the binary-order lemmas, extension lemma, and computable limit.
 
-*Quoted from the card [LeanPool/projects/four-ap-free-permutation.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/four-ap-free-permutation.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/four-ap-free-permutation.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/four-ap-free-permutation.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`FourAP.exists_fourAPFree_positive_permutation`](https://leanpool.github.io/lean-pool/LeanPool/FourAP/Main.html#FourAP.exists_fourAPFree_positive_permutation) (theorem; a main declaration), declared in [LeanPool/FourAP/Main.lean, line 44](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FourAP/Main.lean#L44): “There exists a bijection of the positive integers such that no four increasing positions map to a nonconstant four-term arithmetic progression, including negative common differences.”
-- [`FourAP.explicitPositivePermutation_apFree`](https://leanpool.github.io/lean-pool/LeanPool/FourAP/Construction.html#FourAP.explicitPositivePermutation_apFree) (theorem), declared in [LeanPool/FourAP/Construction.lean, line 141](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FourAP/Construction.lean#L141): “The explicit computable positive-integer permutation constructed in the development has the stated four-term progression avoidance property.”
+- [`FourAP.exists_fourAPFree_positive_permutation`](https://leanpool.github.io/lean-pool/LeanPool/FourAP/Main.html#FourAP.exists_fourAPFree_positive_permutation) (theorem; a main declaration), declared in [LeanPool/FourAP/Main.lean, line 44](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/FourAP/Main.lean#L44): “There exists a bijection of the positive integers such that no four increasing positions map to a nonconstant four-term arithmetic progression, including negative common differences.”
+- [`FourAP.explicitPositivePermutation_apFree`](https://leanpool.github.io/lean-pool/LeanPool/FourAP/Construction.html#FourAP.explicitPositivePermutation_apFree) (theorem), declared in [LeanPool/FourAP/Construction.lean, line 141](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/FourAP/Construction.lean#L141): “The explicit computable positive-integer permutation constructed in the development has the stated four-term progression avoidance property.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: human, which in Lean Pool's terms means its Lean proofs were “written by people”.
 - License: MIT, under which the project was published; Lean Pool redistributes it under Apache-2.0.
 - MSC2020: 11B25, 05D10.
-- In Lean Pool: [LeanPool/FourAP](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FourAP), from the card [LeanPool/projects/four-ap-free-permutation.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/four-ap-free-permutation.yaml).
+- In Lean Pool: [LeanPool/FourAP](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/FourAP), from the card [LeanPool/projects/four-ap-free-permutation.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/four-ap-free-permutation.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/four-ap-free-permutation.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/four-ap-free-permutation.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/FourAP](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/FourAP)
+- [Lean Pool at 701389c0: LeanPool/projects/four-ap-free-permutation.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/four-ap-free-permutation.yaml)
+- [Lean Pool at 701389c0: LeanPool/FourAP](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/FourAP)

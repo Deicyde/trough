@@ -1,8 +1,8 @@
 # Number theory
 
-The Lean Pool projects whose card's first MSC2020 code is in class 11, Number theory: 67 articles, one per card.
+The Lean Pool projects whose card's first MSC2020 code is in class 11, Number theory: 68 articles, one per card.
 
-## [A 4AP-free permutation of the… to Exact odd-prime distributions…](part-01/README.md)
+## [A 4AP-free permutation of the… to Every Pisot number is a…](part-01/README.md)
 
 - [A 4AP-free permutation of the positive integers](part-01/four-ap-free-permutation.md)
 - [A Conditional Sieve Criterion for Twin Primes via Krafft Geometry](part-01/krafftsieve.md)
@@ -12,6 +12,7 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [ABC implies that Ramanujan's tau function misses almost all primes](part-01/ramanujan-tau-misses-primes.md)
 - [Almost all primes are partially regular](part-01/partial-regularity.md)
 - [Carlet's Kasami cyclic-additive conjecture](part-01/kasami-cyclic-additive.md)
+- [Chabauty–Coleman bounds for odd-degree hyperelliptic curves](part-01/hyperelliptic-chabauty-coleman.md)
 - [Champernowne normality in every base](part-01/champernowne-normality.md)
 - [Convex geometry and the Erdős–Ginzburg–Ziv problem](part-01/egz-formal-proof.md)
 - [Dead Ends in Square-Free Digit Walks](part-01/dead-ends.md)
@@ -23,10 +24,10 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Euler's pentagonal number theorem](part-01/pentagonal-number-theorem.md)
 - [Euler's pentagonal number theorem, two independent proofs, and the Jacobi triple product](part-01/pentagonal-number-theorem-analytic.md)
 - [Every Pisot number is a two-sided limit of Salem numbers](part-01/salem-theorem.md)
-- [Exact odd-prime distributions of central-binomial valuations](part-01/odd-prime-valuation-distribution.md)
 
-## [Exceptional Set in the abc… to Modular forms and the…](part-02/README.md)
+## [Exact odd-prime distributions… to Minimum modulus for the unique…](part-02/README.md)
 
+- [Exact odd-prime distributions of central-binomial valuations](part-02/odd-prime-valuation-distribution.md)
 - [Exceptional Set in the abc Conjecture](part-02/abc-exceptions.md)
 - [Fermat's Last Theorem for regular primes](part-02/flt-regular.md)
 - [FLT Eichler-Shimura](part-02/flt-eichler-shimura.md)
@@ -46,10 +47,10 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Linear independence of 1, zeta(2), and zeta(3)](part-02/zeta2-zeta3-linear-independence.md)
 - [Markoff mod p](part-02/markoff-modp.md)
 - [Minimum modulus for the unique multiset-sum problem](part-02/min-modulus-unique-multiset-sum.md)
-- [Modular forms and the generalized residue theorem](part-02/leanmodularforms.md)
 
-## [Nair–Tenenbaum short sums of… to Square-difference-free…](part-03/README.md)
+## [Modular forms and the… to Simple zeros of the Riemann…](part-03/README.md)
 
+- [Modular forms and the generalized residue theorem](part-03/leanmodularforms.md)
 - [Nair–Tenenbaum short sums of arithmetic functions](part-03/nair-tenenbaum-short-sums.md)
 - [Neukirch's Algebraic Number Theory: Hilbert ramification theory](part-03/neukirch.md)
 - [Newman normalizer bounds for congruence subgroups](part-03/congruence-normalizers.md)
@@ -69,10 +70,10 @@ The Lean Pool projects whose card's first MSC2020 code is in class 11, Number th
 - [Sharp asymptotic bounds for runs of multiples in finite sets](part-03/runs-of-multiples.md)
 - [Sharp Five-Distance and Sup-Norm Gap Theorems](part-03/five-distance-sharp.md)
 - [Simple zeros of the Riemann zeta function](part-03/zeta-zeros.md)
-- [Square-difference-free polynomials beyond Naslund's conjectured bound](part-03/naslund-counterexample.md)
 
-## [Sum of sets in several… to Weierstrass models and singular…](part-04/README.md)
+## [Square-difference-free… to Weierstrass models and singular…](part-04/README.md)
 
+- [Square-difference-free polynomials beyond Naslund's conjectured bound](part-04/naslund-counterexample.md)
 - [Sum of sets in several dimensions](part-04/sum-of-sets-in-several-dimensions.md)
 - [Sums of Distinct Factorials That Are Powers of Two (Erdos Problem 403)](part-04/erdos403.md)
 - [Sums of Three Squares](part-04/sumsthreesquares.md)

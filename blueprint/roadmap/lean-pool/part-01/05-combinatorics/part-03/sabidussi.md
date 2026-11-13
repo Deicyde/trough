@@ -10,7 +10,7 @@ proof: formalized
 
 > Formalizes Sabidussi's compatibility conjecture for finite labelled endpoint multigraphs with loops and parallel edges, where a loop contributes two half-edge incidences to the degree of its vertex. Given an Euler tour and minimum degree at least four, the main theorem constructs a partition of all edges into nonempty, edge-connected, 2-regular ordinary circuits such that consecutive edges of the Euler tour never lie in the same circuit. The proof runs a four-colour (F_2^2) algebra over the cyclic transition word, uses an odd balancing parity lemma to choose compatible local frames, and transports the resulting colouring back to a compatible ordinary circuit decomposition.
 
-*Quoted from the card [LeanPool/projects/sabidussi.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/sabidussi.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd), Apache-2.0.*
+*Quoted from the card [LeanPool/projects/sabidussi.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/sabidussi.yaml) of [LeanPool/lean-pool](https://github.com/LeanPool/lean-pool) at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5), Apache-2.0.*
 
 ## Depends on
 
@@ -18,10 +18,10 @@ No dependencies are recorded: edges between declarations need Lean, and this cha
 
 ## Main results
 
-The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [2b205bf9](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
+The card lists 2 main results, each with its informal statement quoted from the card. The scan finds 2 of their declarations in the project's files at commit [701389c0](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5). A found declaration links its page in Lean Pool's documentation, which Lean Pool rebuilds daily from its main branch, and its line at this commit.
 
-- [`Sabidussi.LoopMultigraph.loop_sabidussi_compatibility_ordinary`](https://leanpool.github.io/lean-pool/LeanPool/Sabidussi/OrdinaryCircuit.html#Sabidussi.LoopMultigraph.loop_sabidussi_compatibility_ordinary) (theorem; a main declaration), declared in [LeanPool/Sabidussi/OrdinaryCircuit.lean, line 451](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sabidussi/OrdinaryCircuit.lean#L451): “For any finite endpoint multigraph with an Euler tour and minimum degree at least four, the edges partition into ordinary, nonempty, connected, 2-regular circuits that are compatible with the tour: no circuit contains two consecutive tour edges.”
-- [`Sabidussi.LoopMultigraph.loop_sabidussi_compatibility`](https://leanpool.github.io/lean-pool/LeanPool/Sabidussi/LoopGraphBridge.html#Sabidussi.LoopMultigraph.loop_sabidussi_compatibility) (theorem), declared in [LeanPool/Sabidussi/LoopGraphBridge.lean, line 133](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sabidussi/LoopGraphBridge.lean#L133): “The same compatibility statement phrased with the intrinsic even-edge-set circuit decomposition, from which the ordinary-circuit form is derived.”
+- [`Sabidussi.LoopMultigraph.loop_sabidussi_compatibility_ordinary`](https://leanpool.github.io/lean-pool/LeanPool/Sabidussi/OrdinaryCircuit.html#Sabidussi.LoopMultigraph.loop_sabidussi_compatibility_ordinary) (theorem; a main declaration), declared in [LeanPool/Sabidussi/OrdinaryCircuit.lean, line 451](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Sabidussi/OrdinaryCircuit.lean#L451): “For any finite endpoint multigraph with an Euler tour and minimum degree at least four, the edges partition into ordinary, nonempty, connected, 2-regular circuits that are compatible with the tour: no circuit contains two consecutive tour edges.”
+- [`Sabidussi.LoopMultigraph.loop_sabidussi_compatibility`](https://leanpool.github.io/lean-pool/LeanPool/Sabidussi/LoopGraphBridge.html#Sabidussi.LoopMultigraph.loop_sabidussi_compatibility) (theorem), declared in [LeanPool/Sabidussi/LoopGraphBridge.lean, line 133](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Sabidussi/LoopGraphBridge.lean#L133): “The same compatibility statement phrased with the intrinsic even-edge-set circuit decomposition, from which the ordinary-circuit form is derived.”
 
 ## Project
 
@@ -31,9 +31,9 @@ The card lists 2 main results, each with its informal statement quoted from the 
 - Provenance: AI, which in Lean Pool's terms means its Lean proofs were “mostly produced by an AI system”.
 - License: Apache-2.0.
 - MSC2020: 05C45.
-- In Lean Pool: [LeanPool/Sabidussi](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sabidussi), from the card [LeanPool/projects/sabidussi.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/sabidussi.yaml).
+- In Lean Pool: [LeanPool/Sabidussi](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Sabidussi), from the card [LeanPool/projects/sabidussi.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/sabidussi.yaml).
 
 ## Sources
 
-- [Lean Pool at 2b205bf9: LeanPool/projects/sabidussi.yaml](https://github.com/LeanPool/lean-pool/blob/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/projects/sabidussi.yaml)
-- [Lean Pool at 2b205bf9: LeanPool/Sabidussi](https://github.com/LeanPool/lean-pool/tree/2b205bf904013a5e06d8ef03069430dd79e1c8bd/LeanPool/Sabidussi)
+- [Lean Pool at 701389c0: LeanPool/projects/sabidussi.yaml](https://github.com/LeanPool/lean-pool/blob/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/projects/sabidussi.yaml)
+- [Lean Pool at 701389c0: LeanPool/Sabidussi](https://github.com/LeanPool/lean-pool/tree/701389c04bdd56aabf8dbb9ad729165fdba772b5/LeanPool/Sabidussi)
