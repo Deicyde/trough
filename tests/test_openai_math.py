@@ -207,8 +207,11 @@ def test_the_chapter_has_a_part_per_subject_and_an_article_per_family(tmp_path):
     assert all(isinstance(node, (Container, Leaf)) for node in walk(root))
     assert lean_links == {
         "OAI.Zeta.bound": f"https://github.com/openai/math/blob/{built.root.prose.split('/tree/')[1][:40]}/lean/OAI/NumberTheory/Zeta/Main.lean#L5",
-        "OAI.Zeta.region": lean_links["OAI.Zeta.region"], "OAI.ring_is_ring": lean_links["OAI.ring_is_ring"]}
+        "OAI.Zeta.region": lean_links["OAI.Zeta.region"], "OAI.ring_is_ring": lean_links["OAI.ring_is_ring"],
+        "OAI.Hecke.bound": lean_links["OAI.Hecke.bound"]}
     assert lean_links["OAI.Zeta.region"].endswith("/lean/OAI/NumberTheory/Zeta/Region.lean#L3")
+    # A statement with no proof found links its own line.
+    assert lean_links["OAI.Hecke.bound"].endswith("/lean/ComparatorChallenges/Hecke/Challenge.lean#L3")
 
 
 def test_an_article_has_its_manuscripts_and_a_block_per_result(tmp_path):
@@ -308,7 +311,7 @@ def test_rows_that_link_one_statement_file_count_its_statements_once(tmp_path):
     zeta = pages[ROOT / "number-theory/003-zeta-bounds.md"]
     assert "1 manuscript and 3 Lean statements, quoted from" in zeta
     # The second row names what the first quotes, with its line.
-    assert zeta.count("```lean\ntheorem bound") == 1
+    assert zeta.count("```lean\ntheorem bound : ∀ s") == 1
     assert "## Lean: Zeta again\n\nStates the `OAI.Zeta.bound` quoted above. Stated in [Zeta.lean, line 7](" in zeta
     assert "States the `OAI.Zeta.region` quoted above. Stated in [Zeta.lean, line 5](" in zeta
 
@@ -347,7 +350,7 @@ def test_a_proof_is_also_read_from_the_file_formalization_yaml_names(tmp_path):
                      "lean/OAI/NumberTheory/Hecke/Deep.lean": "namespace OAI.Hecke\n\ntheorem bound : True := trivial\n\nend OAI.Hecke\n"}
     assert "lean/OAI/NumberTheory/Hecke/Deep.lean" in openai_math.solution_files(checkout(tmp_path / "math", files))
     _, families, counts, problems = openai_math.read(tmp_path / "math")
-    assert problems == [] and counts["proofs_not_found"] == 0
+    assert problems == [] and counts["proofs_found"] == 4 and "proofs_not_found" not in counts
     hecke = families["Number theory"][1]["lean"]["results"][1]["statements"][0]
     assert hecke["proof"] == {"file": "lean/OAI/NumberTheory/Hecke/Deep.lean", "line": 3, "kind": "theorem", "sorry": False}
 
